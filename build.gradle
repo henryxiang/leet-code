@@ -25,6 +25,13 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
+test {
+    useJUnitPlatform()
+    testLogging {
+        // events "PASSED", "STARTED", "FAILED", "SKIPPED"
+        events "PASSED", "FAILED"
+    }
+}
 // Define the main class for the application
 // mainClassName = 'com.leetcode.App'
 mainClassName = project.hasProperty('mainClass') ? getProperty('mainClass') : 'com.leetcode.App'
