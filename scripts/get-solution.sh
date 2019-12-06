@@ -2,10 +2,10 @@
 
 base=`dirname $0`
 
-source "$base/.env"
+source "$base/../.env"
 
 cookie="__cfduid=d922a8f7ccc89f29f69e5889a5e1875ca1574708850; _ga=GA1.2.815432614.1574708857; __stripe_mid=233b6606-dd24-4f32-84cd-6af0ae22aeec; __atuvc=3%7C49; _gid=GA1.2.1989788763.1575582766; csrftoken=$TOKEN; LEETCODE_SESSION=$SESSION; _gat=1; c_a_u=\"aGVucnl4aWFuZw==:1id4mr:WGlvwdwNs27vTPZxfN_RAtJt56I\""
-query="{\"operationName\":\"QuestionNote\",\"variables\":{\"titleSlug\":\"$1\"},\"query\":\"query QuestionNote(\$titleSlug: String!) { question(titleSlug: \$titleSlug) { questionId article solution { id url content contentTypeId canSeeDetail rating { id count average userRating { score __typename } __typename } __typename } __typename } }\"}"
+query="{\"operationName\":\"QuestionNote\",\"variables\":{\"titleSlug\":\"$1\"},\"query\":\"query QuestionNote(\$titleSlug: String!) { question(titleSlug: \$titleSlug) { questionId article solution { id url content contentTypeId canSeeDetail rating { id count average userRating { score } } } } }\"}"
 
 curl -s 'https://leetcode.com/graphql' \
 	-H 'authority: leetcode.com' \
