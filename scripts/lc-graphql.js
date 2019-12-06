@@ -16,7 +16,7 @@ const allQuestions = {
 			difficulty
 			isPaidOnly
 			categoryTitle
-	}`
+	  }`,
 };
 const question = {
   operationName: 'questionData',
@@ -29,8 +29,6 @@ const question = {
       title
       titleSlug
       content
-      translatedTitle
-      translatedContent
       isPaidOnly
       difficulty
       likes
@@ -41,28 +39,21 @@ const question = {
         username
         profileUrl
         avatarUrl
-        __typename
       }
-      langToValidPlayground
       topicTags {
         name
         slug
-        translatedName
-        __typename
       }
       companyTagStats
       codeSnippets {
         lang
-        langSlug
         code
-        __typename
       }
       stats
       hints
       solution {
         id
         canSeeDetail
-        __typename
       }
       status
       sampleTestCase
@@ -72,16 +63,13 @@ const question = {
       mysqlSchemas
       enableRunCode
       enableTestMode
-      envInfo
       libraryUrl
-      __typename
 		}
 	}`,
 };
-const article = {
+const solution = {
   operationName: 'QuestionNote',
   variables: {titleSlug: ''},
-  // variables: {titleSlug: 'coin-change-2'},
   query: `query QuestionNote($titleSlug: String!) {
 	  question(titleSlug: $titleSlug) {
 	    questionId
@@ -98,15 +86,11 @@ const article = {
 	        average
 	        userRating {
 	          score
-	          __typename
 	        }
-	        __typename
 	      }
-	      __typename
 	    }
-	    __typename
 	  }
   }`
 };
 
-module.exports = { allQuestions, question, article }
+module.exports = { allQuestions, question, solution }
