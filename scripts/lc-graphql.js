@@ -9,7 +9,6 @@ const allQuestions = {
 		fragment questionSummaryFields on QuestionNode {
 			title
 			titleSlug
-			translatedTitle
 			questionId
 			questionFrontendId
 			status
@@ -28,6 +27,7 @@ const question = {
       boundTopicId
       title
       titleSlug
+			categoryTitle
       content
       isPaidOnly
       difficulty
