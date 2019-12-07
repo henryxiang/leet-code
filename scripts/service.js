@@ -84,6 +84,7 @@ async function getQuestionSolution(titleSlug) {
 
 async function getQuestionDetails(titleSlug) {
   const doc = await getQuestionDescription(titleSlug);
+  if (!doc) return ({});
   const solution = await getQuestionSolution(titleSlug);
   if (solution) doc.solution = { ...doc.solution, ...solution };
   return doc;

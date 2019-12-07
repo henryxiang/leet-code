@@ -28,10 +28,10 @@ async function importTopics (db) {
 async function importQuestions (db) {
   try {
     const questions = await getAllQuestions();
-    for (const q of questions) {
-      const { titleSlug } = q;
-      const doc = await getQuestionDetails(titleSlug);
-      doc._id = titleSlug;
+    for (const question of questions) {
+      const { titleSlug } = question;
+      const details = await getQuestionDetails(titleSlug);
+      const doc = { _id: titleSlug, ...question, ...details };
       const result = await save(db, collection.question, doc);
       if (result) {
         console.log(`Imported Question: (${doc.questionId}) ${doc.title}`);
