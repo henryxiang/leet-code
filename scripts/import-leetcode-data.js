@@ -12,8 +12,8 @@ async function importTopics (db) {
   try {
     const topics = await getTopics();
     for (const topic of topics) {
-      const saved = await findById(db, collection.topic, topic.slug);
-      if (saved) continue;
+      // const saved = await findById(db, collection.topic, topic.slug);
+      // if (saved) continue;
       topic._id = topic.slug;
       const result = await save(db, collection.topic, topic);
       if (result) {
@@ -33,7 +33,7 @@ async function importQuestions (db) {
     for (const question of questions) {
       const { titleSlug } = question;
       const saved = await findById(db, collection.question, titleSlug);
-      if (saved) continue;
+      if (saved && saved.solution) continue;
       const details = await getQuestionDetails(titleSlug);
       const doc = { _id: titleSlug, ...question, ...details };
       const result = await save(db, collection.question, doc);
