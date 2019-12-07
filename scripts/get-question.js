@@ -10,5 +10,6 @@ const titleSlug = process.argv[2];
     process.exit(1);
   }
   const doc = await getQuestionDetails(titleSlug);
+  doc._id = titleSlug;
   console.log(JSON.stringify(doc, null, 2));
 })()

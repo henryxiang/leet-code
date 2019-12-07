@@ -26,7 +26,30 @@ async function save(db, collection, doc) {
   } 
 }
 
+async function findById(db, collection, id) {
+  try{
+    return await db.collection(collection).findOne({ _id: id});
+  } catch (err) {
+    console.error(doc.titleSlug, err);
+    return null;
+  } 
+}
+
+async function search(db, collection, query) {
+  try{
+    const results = []
+    const cursor = await db.collection(collection).find(query);
+    while (await cursor.hasNext()) results.push(await cursor.next());
+    return results;
+  } catch (err) {
+    console.error(doc.titleSlug, err);
+    return [];
+  }  
+}
+
 module.exports = {
   connect,
   save,
+  findById,
+  search,
 }
