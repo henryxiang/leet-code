@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const Entities = require('html-entities').AllHtmlEntities;
 const { connect, search } = require('./database');
 
 const id = process.argv[2];
@@ -9,20 +10,7 @@ const query = {
 };
 
 function decodeEntities(encodedString) {
-  const translate_re = /&(nbsp|amp|quot|lt|gt);/g;
-  const translate = {
-      'nbsp': ' ',
-      'amp' : '&',
-      'quot': '"',
-      'lt'  : '<',
-      'gt'  : '>'
-  };
-  return encodedString.replace(translate_re, function(match, entity) {
-      return translate[entity];
-  }).replace(/&#(\d+);/gi, function(match, numStr) {
-      var num = parseInt(numStr, 10);
-      return String.fromCharCode(num);
-  });
+  return (new Entities).decode(encodedString);
 }
 
 (async function() {
