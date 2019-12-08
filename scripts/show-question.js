@@ -29,8 +29,8 @@ function decodeEntities(encodedString) {
       console.log(`Category: ${categoryTitle}`);
       console.log(`Difficulty: ${difficulty}`);
       console.log(`Tags: ${topics}\n`);
-      console.log(decodeEntities(content.replace(/<.+?>/g, '')));
-      if (showSolution && solution) {
+      if (content) console.log(decodeEntities(content.replace(/<.+?>/g, '')));
+      if (showSolution && solution && solution.content) {
         console.log(decodeEntities(solution.content.replace(/<.+?>/g, '')));
       }
     }

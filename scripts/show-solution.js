@@ -25,7 +25,7 @@ function decodeEntities(encodedString) {
       const { questionId, title, categoryTitle, difficulty, topicTags, solution } = question;
       const topics = topicTags ? topicTags.map(t => t.name).join(', ') : 'Others';
       console.log(`${questionId}. ${title} | ${categoryTitle} | ${difficulty} | ${topics}\n`);
-      if (solution) {
+      if (solution && solution.content) {
         console.log(decodeEntities(solution.content.replace(/<.+?>/g, '')));
       } else {
         console.log('No solution.');
