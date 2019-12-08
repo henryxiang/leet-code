@@ -30,7 +30,7 @@ async function findById(db, collection, id) {
   try{
     return await db.collection(collection).findOne({ _id: id});
   } catch (err) {
-    console.error(doc.titleSlug, err);
+    console.error(collection, id, err);
     return null;
   } 
 }
