@@ -9,7 +9,7 @@ const config = {
 async function connect() {
   const mongo = await MongoClient.connect(config.url, config.option);
   const db = mongo.db(config.database);
-  console.info(`Connected to MongoDB: ${config.database}`);
+  // console.info(`Connected to MongoDB: ${config.database}`);
   return { mongo, db };
 }
 
@@ -42,7 +42,7 @@ async function search(db, collection, query) {
     while (await cursor.hasNext()) results.push(await cursor.next());
     return results;
   } catch (err) {
-    console.error(doc.titleSlug, err);
+    console.error(collection, query, err);
     return [];
   }  
 }

@@ -9,9 +9,9 @@ const query = { solution: null };
   try {
     const { mongo, db } = await connect();
     const unsolved = await search(db, collection, query);
-    for (question of unsolved) {
-        const { questionId, titleSlug, categoryTitle } = question;
-        console.log(`${questionId}|${titleSlug}|${categoryTitle}`);
+    for (let question of unsolved) {
+        const { questionId, titleSlug, categoryTitle, difficulty } = question;
+        console.log(`${questionId}|${titleSlug}|${categoryTitle}|${difficulty}`);
     }
     mongo.close();
   } catch (err) {
