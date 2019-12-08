@@ -9,7 +9,9 @@ const collection = 'Questions';
 const query = {
   topicTags: { $elemMatch: { slug: topic } },
 };
-if (level) query.difficulty = difficulty[level];
+if (level) {
+  query.difficulty = difficulty[level];
+}
 
 (async function() {
   if (!topic) {
@@ -18,7 +20,17 @@ if (level) query.difficulty = difficulty[level];
   }
   try {
     const { mongo, db } = await connect();
-    const questions = await search(db, collection, query);
+    let questions = [];
+    if (level) {
+      questions = await search(db, collection, query);
+    } else {
+      for (const d of difficulty.slice(1, difficulty.length)) {
+        query.difficulty = d;
+        const results = await search(db, collection, query);
+        questions = [...questions, ...results];
+      }
+    }
+
     for (let question of questions) {
       const { questionId, titleSlug, difficulty } = question;
       console.log(`${questionId}|${titleSlug}|${difficulty}`);
