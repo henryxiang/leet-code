@@ -2,6 +2,7 @@
 
 const { connect, search } = require('./database');
 
+const showQuestions = process.argv[2];
 const collection = 'Topics';
 const query = {};
 
@@ -13,7 +14,7 @@ const query = {};
     for (let topic of topics) {
         const { name, slug, questions } = topic;
         console.log(`${slug}|${name}|${questions.length}`);
-        console.log(`>${slug}|${questions.join(',')}`);
+        if (showQuestions) console.log(`>${slug}|${questions.join(',')}`);
     }
     mongo.close();
   } catch (err) {
