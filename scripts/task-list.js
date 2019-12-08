@@ -19,7 +19,7 @@ const baseUrl = 'https://leetcode.com/problems';
       for (let question of questions) {
           const { questionId, title, titleSlug, topicTags } = question;
           const topics = topicTags ? topicTags.map(t => t.name).join(', ') : 'Others';
-          console.log(`- [] [${questionId}. ${title}](${baseUrl}/${titleSlug}/) (${topics})`);
+          console.log(`- [ ] [${questionId}. ${title}](${baseUrl}/${titleSlug}/) (${topics})`);
       }
     }
     mongo.close();
