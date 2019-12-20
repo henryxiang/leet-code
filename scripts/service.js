@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 const headers = require('./headers');
-const { allQuestions, question, solution } = require('./lc-graphql');
+const { allQuestions, question, solution, allCards, chapter, chapters }
+= require('./lc-graphql');
 
 const url = 'https://leetcode.com/graphql';
 const options = {
@@ -36,6 +37,7 @@ async function getAllQuestions() {
   try {
     options.body = JSON.stringify(allQuestions);
     const res = await fetch(url, options);
+    // console.debug(res);
     if (!res.ok) {
       console.error(res.status, res.statusText);
       return [];
@@ -46,6 +48,16 @@ async function getAllQuestions() {
     console.error(err);
     return [];
   }
+}
+
+async function getQuestionById(questionId) {
+  const questions = await getAllQuestions();
+  for (const q of questions) {
+    if (q.questionId === questionId) {
+      return await getQuestionDescription(q.titleSlug);
+    }
+  }
+  return null;
 }
 
 async function getQuestionDescription(titleSlug) {
@@ -90,10 +102,79 @@ async function getQuestionDetails(titleSlug) {
   return doc;
 }
 
+async function getAllCards(category = null) {
+  try {
+    allCards.variables.categorySlug = category;
+    options.body = JSON.stringify(allCards);
+    const res = await fetch(url, options);
+    // console.debug(res);
+    if (!res.ok) {
+      console.error(res.status, res.statusText);
+      return [];
+    }
+    const json = await res.json();
+    const ids = {};
+    const cards = [];
+    for (const cat of json.data.categories) {
+      for (const card of cat.cards) {
+        if (ids[card.id]) continue;
+        cards.push(card);
+        ids[card.id] = 1;
+      }
+    }
+    cards.sort((a, b) =>
+      `${a.categorySlug}:${a.createdAt}` > `${b.categorySlug}:${b.createdAt}` ? 1 : -1);
+    return cards;
+  } catch (err) {
+    console.error(err);
+    return [];
+  }
+}
+
+async function getCardChapters(cardSlug) {
+  try {
+    chapters.variables.cardSlug = cardSlug;
+    options.body = JSON.stringify(chapters);
+    const res = await fetch(url, options);
+    // console.debug(res);
+    if (!res.ok) {
+      console.error(res.status, res.statusText);
+      return [];
+    }
+    const json = await res.json();
+    return json.data.chapters;
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+}
+
+async function getChapter(chapterId) {
+  try {
+    chapter.variables.chapterId = chapterId;
+    options.body = JSON.stringify(chapter);
+    const res = await fetch(url, options);
+    // console.debug(res);
+    if (!res.ok) {
+      console.error(res.status, res.statusText);
+      return [];
+    }
+    const json = await res.json();
+    return json.data;
+  } catch (error) {
+    console.error(error);
+    return [];
+  } 
+}
+
 module.exports = {
   getAllQuestions,
+  getQuestionById,
   getQuestionDetails,
   getQuestionDescription,
   getQuestionSolution,
   getTopics,
+  getAllCards,
+  getCardChapters,
+  getChapter,
 }

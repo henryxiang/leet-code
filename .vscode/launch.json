@@ -1,8 +1,16 @@
 {
   "configurations": [
     {
+      "type": "node",
+      "request": "launch",
+      "name": "Node Launch Program",
+      "program": "${workspaceFolder}/scripts/test-service.js",
+      "args": ["getChapter", "88"],
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
       "type": "java",
-      "name": "CodeLens (Launch) - Hello",
+      "name": "Java CodeLens (Launch) - Hello",
       "request": "launch",
       "mainClass": "com.leetcode.Hello",
       "projectName": "leet-code"

@@ -92,5 +92,106 @@ const solution = {
 	  }
   }`
 };
+const allCards = {
+	operationName: 'GetCategories',
+	variables: {
+    categorySlug: 'interview',
+	},
+	query: `
+	query GetCategories($categorySlug: String, $num: Int) {
+	  categories(slug: $categorySlug) {
+	    id
+	    title
+	    slug
+	    cards(num: $num) {
+	      ...CardDetailFragment
+	    }
+	  }
+	  mostRecentCard {
+	    ...CardDetailFragment
+	    progress
+	  }
+	  allProgress
+	}
+	fragment CardDetailFragment on CardNode {
+	  id
+	  img
+	  title
+	  slug
+	  categorySlug
+	  description
+	  createdAt
+	  lastModified
+	  paidOnly
+	  published
+	  numChapters
+	  numItems
+	}`
+};
+const chapters = {
+	operationName: 'GetChapters',
+	variables: {
+		cardSlug: '',
+	},
+	query: `
+	query GetChapters($cardSlug: String!) {
+	  chapters(cardSlug: $cardSlug) {
+	    descriptionText
+	    id
+	    title
+	    slug
+	  }
+	}`
+};
+const chapter = {
+	operationName: 'GetChapter',
+	variables: {
+		chapterId: '',
+		cardSlug: 'foo',
+	},
+	query: `
+	query GetChapter($chapterId: String, $cardSlug: String) {
+	  chapter(chapterId: $chapterId, cardSlug: $cardSlug) {
+	    ...ExtendedChapterDetail
+	    description
+	  }
+	}
+	fragment ExtendedChapterDetail on ChapterNode {
+	  id
+	  title
+	  slug
+	  items {
+	    id
+      title
+	    type
+	    info
+	    paidOnly
+	    chapterId
+	    prerequisites {
+	      id
+	      chapterId
+      }
+      question {
+	      questionId
+	      title
+        titleSlug
+			}
+			article {
+				id
+				title
+			}
+			htmlArticle {
+				id
+				html
+			}
+			video {
+				id
+			}
+			webPage {
+				id
+			}
+	  }
+	}`
+};
 
-module.exports = { allQuestions, question, solution }
+module.exports = { allQuestions, question, solution, allCards, chapter, chapters }
