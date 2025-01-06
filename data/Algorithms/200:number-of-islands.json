@@ -1,0 +1,119 @@
+{
+  "questionId": "200",
+  "questionFrontendId": "200",
+  "boundTopicId": null,
+  "title": "Number of Islands",
+  "titleSlug": "number-of-islands",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a 2d grid map of <code>&#39;1&#39;</code>s (land) and <code>&#39;0&#39;</code>s (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\n11110\r\n11010\r\n11000\r\n00000\r\n\r\n<strong>Output:</strong>&nbsp;1\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\n11000\r\n11000\r\n00100\r\n00011\r\n\r\n<strong>Output: </strong>3\r\n</pre>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 3704,
+  "dislikes": 135,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Surrounded Regions\", \"titleSlug\": \"surrounded-regions\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Walls and Gates\", \"titleSlug\": \"walls-and-gates\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Islands II\", \"titleSlug\": \"number-of-islands-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Number of Connected Components in an Undirected Graph\", \"titleSlug\": \"number-of-connected-components-in-an-undirected-graph\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Distinct Islands\", \"titleSlug\": \"number-of-distinct-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Max Area of Island\", \"titleSlug\": \"max-area-of-island\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "mithmatt",
+      "profileUrl": "/mithmatt/",
+      "avatarUrl": "https://assets.leetcode.com/users/mithmatt/avatar_1538278871.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"DoorDash\", \"slug\": \"doordash\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Coursera\", \"slug\": \"coursera\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"AppDynamics\", \"slug\": \"appdynamics\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nvidia\", \"slug\": \"nvidia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Sumologic\", \"slug\": \"sumologic\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Square\", \"slug\": \"square\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"LiveRamp\", \"slug\": \"liveramp\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Arista Networks\", \"slug\": \"arista-networks\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Zenefits\", \"slug\": \"zenefits\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 131}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 17}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 17}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 15}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 14}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Cruise Automation\", \"slug\": \"cruise-automation\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Evernote\", \"slug\": \"evernote\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Audible\", \"slug\": \"audible\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Twitch\", \"slug\": \"twitch\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Affirm\", \"slug\": \"affirm\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Houzz\", \"slug\": \"houzz\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Zulily\", \"slug\": \"zulily\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Hulu\", \"slug\": \"hulu\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citrix\", \"slug\": \"citrix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Spotify\", \"slug\": \"spotify\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numIslands(vector<vector<char>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numIslands(char[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numIslands(self, grid):\n        \"\"\"\n        :type grid: List[List[str]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numIslands(self, grid: List[List[str]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numIslands(char** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumIslands(char[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[][]} grid\n * @return {number}\n */\nvar numIslands = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[][]} grid\n# @return {Integer}\ndef num_islands(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numIslands(_ grid: [[Character]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numIslands(grid [][]byte) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numIslands(grid: Array[Array[Char]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numIslands(grid: Array<CharArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_islands(grid: Vec<Vec<char>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $grid\n     * @return Integer\n     */\n    function numIslands($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"500.6K\", \"totalSubmission\": \"1.1M\", \"totalAcceptedRaw\": 500623, \"totalSubmissionRaw\": 1135941, \"acRate\": \"44.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "342",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-islands/",
+    "content": "[TOC]\r\n\r\n#### Approach #1 DFS [Accepted]\r\n\r\n**Intuition**\r\n\r\nTreat the 2d grid map as an undirected graph and there is an edge\r\nbetween two horizontally or vertically adjacent nodes of value '1'.\r\n\r\n**Algorithm**\r\n\r\nLinear scan the 2d grid map, if a node contains a '1', then it is a root node\r\nthat triggers a Depth First Search. During DFS, every visited node should be\r\nset as '0' to mark as visited node. Count the number of root nodes that trigger\r\nDFS, this number would be the number of islands since each DFS starting at some\r\nroot identifies an island.\r\n\r\nThe algorithm can be better illustrated by the animation below:\r\n!?!../Documents/200_number_of_islands_dfs.json:1024,768!?!\r\n\r\n<iframe src=\"https://leetcode.com/playground/8iHthxuc/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"8iHthxuc\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(M \\times N)$$ where $$M$$ is the number of rows and\r\n  $$N$$ is the number of columns.\r\n\r\n* Space complexity : worst case $$O(M \\times N)$$ in case that the grid map\r\n  is filled with lands where DFS goes by $$M \\times N$$ deep.\r\n\r\n---\r\n\r\n\r\n#### Approach #2: BFS [Accepted]\r\n\r\n**Algorithm**\r\n\r\nLinear scan the 2d grid map, if a node contains a '1', then it is a root node\r\nthat triggers a Breadth First Search. Put it into a queue and set its value\r\nas '0' to mark as visited node. Iteratively search the neighbors of enqueued\r\nnodes until the queue becomes empty.\r\n\r\n<iframe src=\"https://leetcode.com/playground/A72rWpdb/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"A72rWpdb\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(M \\times N)$$ where $$M$$ is the number of rows and\r\n  $$N$$ is the number of columns.\r\n\r\n* Space complexity : $$O(min(M, N))$$ because in worst case where the\r\n  grid is filled with lands, the size of queue can grow up to min($$M,N$$).\r\n\r\n---\r\n\r\n\r\n#### Approach #3: Union Find (aka Disjoint Set) [Accepted]\r\n\r\n**Algorithm**\r\n\r\nTraverse the 2d grid map and union adjacent lands horizontally or vertically,\r\nat the end, return the number of connected components maintained in the UnionFind\r\ndata structure.\r\n\r\nFor details regarding to Union Find, you can refer to this [article](https://leetcode.com/articles/redundant-connection/).\r\n\r\nThe algorithm can be better illustrated by the animation below:\r\n!?!../Documents/200_number_of_islands_unionfind.json:1024,768!?!\r\n\r\n<iframe src=\"https://leetcode.com/playground/WxXFcSGH/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"WxXFcSGH\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(M \\times N)$$ where $$M$$ is the number of rows and\r\n  $$N$$ is the number of columns. Note that Union operation takes essentially constant\r\n  time[^1] when UnionFind is implemented with both path compression and union by rank.\r\n\r\n* Space complexity : $$O(M \\times N)$$ as required by UnionFind data structure.\r\n\r\n---\r\n\r\nAnalysis written by: [@imsure](https://leetcode.com/imsure).\r\n\r\nThanks to [@williamfu4leetcode](https://leetcode.com/williamfu4leetcode/) for correcting the space complexity analysis of BFS approach. \r\n\r\n---\r\n\r\n**Footnotes**\r\n\r\n[^1]: [https://en.wikipedia.org/wiki/Disjoint-set_data_structure](https://en.wikipedia.org/wiki/Disjoint-set_data_structure)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "337",
+      "count": 39,
+      "average": 4.615,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[\"1\",\"1\",\"1\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"0\",\"0\"]]",
+  "metaData": "{\r\n  \"name\": \"numIslands\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"character[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

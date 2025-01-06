@@ -1,0 +1,105 @@
+{
+  "questionId": "161",
+  "questionFrontendId": "161",
+  "boundTopicId": null,
+  "title": "One Edit Distance",
+  "titleSlug": "one-edit-distance",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two strings <b><i>s</i></b>&nbsp;and <b><i>t</i></b>, determine if they are both one edit distance apart.</p>\r\n\r\n<p><strong>Note:</strong>&nbsp;</p>\r\n\r\n<p>There are 3 possiblities to satisify one edit distance apart:</p>\r\n\r\n<ol>\r\n\t<li>Insert a&nbsp;character into <strong><em>s</em></strong>&nbsp;to get&nbsp;<strong><em>t</em></strong></li>\r\n\t<li>Delete a&nbsp;character from&nbsp;<strong><em>s</em></strong>&nbsp;to get&nbsp;<strong><em>t</em></strong></li>\r\n\t<li>Replace a character of&nbsp;<strong><em>s</em></strong>&nbsp;to get&nbsp;<strong><em>t</em></strong></li>\r\n</ol>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <strong><em>s</em></strong> = &quot;ab&quot;, <strong><em>t</em></strong> = &quot;acb&quot;\r\n<strong>Output:</strong> true\r\n<strong>Explanation:</strong> We can insert &#39;c&#39; into <strong><em>s</em></strong>&nbsp;to get&nbsp;<strong><em>t.</em></strong>\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <strong><em>s</em></strong> = &quot;cab&quot;, <strong><em>t</em></strong> = &quot;ad&quot;\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> We cannot get <strong><em>t </em></strong>from <strong><em>s </em></strong>by only one step.</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <strong><em>s</em></strong> = &quot;1203&quot;, <strong><em>t</em></strong> = &quot;1213&quot;\r\n<strong>Output:</strong> true\r\n<strong>Explanation:</strong> We can replace &#39;0&#39; with &#39;1&#39; to get&nbsp;<strong><em>t.</em></strong></pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 503,
+  "dislikes": 94,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Edit Distance\", \"titleSlug\": \"edit-distance\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isOneEditDistance(string s, string t) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isOneEditDistance(String s, String t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isOneEditDistance(self, s, t):\n        \"\"\"\n        :type s: str\n        :type t: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isOneEditDistance(self, s: str, t: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isOneEditDistance(char * s, char * t){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsOneEditDistance(string s, string t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {string} t\n * @return {boolean}\n */\nvar isOneEditDistance = function(s, t) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String} t\n# @return {Boolean}\ndef is_one_edit_distance(s, t)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isOneEditDistance(_ s: String, _ t: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isOneEditDistance(s string, t string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isOneEditDistance(s: String, t: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isOneEditDistance(s: String, t: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_one_edit_distance(s: String, t: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $t\n     * @return Boolean\n     */\n    function isOneEditDistance($s, $t) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"93.3K\", \"totalSubmission\": \"290.5K\", \"totalAcceptedRaw\": 93296, \"totalSubmissionRaw\": 290462, \"acRate\": \"32.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "693",
+    "canSeeDetail": true,
+    "url": "/articles/one-edit-distance/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: One pass algorithm\n\n**Intuition**\n\nFirst of all, let's ensure that the string lengths are not too far from each \nother. If the length difference is 2 or more characters, then `s` and `t` couldn't be \none edit away strings.\n\n![compute](../Figures/161/one_away.png)\n\nFor the next let's assume that `s` is always shorter or the same length as `t`.\nIf not, one could always call `isOneEditDistance(t, s)` to inverse the string order.\n\nNow it's time to pass along the strings and to look for the first different character.\n\nIf there is no differences between the first `len(s)` characters, \nonly two situations are possible :\n\n- The strings are equal.\n\n- The strings are one edit away distance.\n\n![compute](../Figures/161/161_pic2.png)\n\nNow what if there _is_ a different character so that `s[i] != t[i]`. \n\n- If the strings are of the same length, _all_ next \ncharacters should be equal to keep one edit away distance. To verify it,\none has to compare the substrings of `s` and `t` \nboth starting from the `i + 1`th character. \n\n- If `t` is one character longer than `s`, \nthe additional character `t[i]` should be the only difference\nbetween both strings. To verify it, one has to compare\na substring of `s` starting from the `i`th character and \na substring of `t` starting from the `i + 1`th character.\n\n![compute](../Figures/161/161_pic3.png)\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/oyLVZc7K/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"oyLVZc7K\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ in the worst case when\nstring lengths are close enough `abs(ns - nt) <= 1`, \nwhere `N` is a number of characters in the longest string. \n$$\\mathcal{O}(1)$$ in the best case when `abs(ns - nt) > 1`.\n \n* Space complexity : $$\\mathcal{O}(N)$$ because strings are immutable\nin Python and Java and to create substring costs $$\\mathcal{O}(N)$$ space. \n\n**Problem generalization : Edit distance**\n\n[Given two words word1 and word2, find the minimum number of operations required to convert word1 to word2.](https://leetcode.com/articles/edit-distance/)\n\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "678",
+      "count": 16,
+      "average": 4.75,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"ab\"\n\"acb\"",
+  "metaData": "{\r\n  \"name\": \"isOneEditDistance\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"t\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

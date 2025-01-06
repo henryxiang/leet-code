@@ -1,0 +1,120 @@
+{
+  "questionId": "560",
+  "questionFrontendId": "560",
+  "boundTopicId": null,
+  "title": "Subarray Sum Equals K",
+  "titleSlug": "subarray-sum-equals-k",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers and an integer <b>k</b>, you need to find the total number of continuous subarrays whose sum equals to <b>k</b>.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b>nums = [1,1,1], k = 2\r\n<b>Output:</b> 2\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The length of the array is in range [1, 20,000].</li>\r\n<li>The range of numbers in the array is [-1000, 1000] and the range of the integer <b>k</b> is [-1e7, 1e7].</li>\r\n</ol>\r\n</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2905,
+  "dislikes": 79,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Two Sum\", \"titleSlug\": \"two-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Continuous Subarray Sum\", \"titleSlug\": \"continuous-subarray-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Subarray Product Less Than K\", \"titleSlug\": \"subarray-product-less-than-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Pivot Index\", \"titleSlug\": \"find-pivot-index\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Subarray Sums Divisible by K\", \"titleSlug\": \"subarray-sums-divisible-by-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 53}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 13}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Twilio\", \"slug\": \"twilio\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Indeed\", \"slug\": \"indeed\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int subarraySum(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int subarraySum(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def subarraySum(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def subarraySum(self, nums: List[int], k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint subarraySum(int* nums, int numsSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SubarraySum(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar subarraySum = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer}\ndef subarray_sum(nums, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func subarraySum(_ nums: [Int], _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func subarraySum(nums []int, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def subarraySum(nums: Array[Int], k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun subarraySum(nums: IntArray, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn subarray_sum(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer\n     */\n    function subarraySum($nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"171.8K\", \"totalSubmission\": \"397.1K\", \"totalAcceptedRaw\": 171779, \"totalSubmissionRaw\": 397054, \"acRate\": \"43.3%\"}",
+  "hints": [
+    "Will Brute force work here? Try to optimize it.",
+    "Can we optimize it by using some extra space?",
+    "What about storing sum frequencies in a hash table? Will it be useful?",
+    "sum(i,j)=sum(0,j)-sum(0,i), where sum(i,j) represents the sum of all the elements from index i to j-1.\r\n\r\nCan we use this property to optimize it."
+  ],
+  "solution": {
+    "id": "119",
+    "canSeeDetail": true,
+    "url": "/articles/subarray-sum-equals-k/",
+    "content": "[TOC]\n## Summary\n\n\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\n**Algorithm**\n\nThe simplest method is to consider every possible subarray of the given $$nums$$ array, find the sum of the elements of each of those subarrays and check for the equality of the sum obtained with the given $$k$$. Whenver the sum equals $$k$$, we can increment the $$count$$ used to store the required result.\n\n<iframe src=\"https://leetcode.com/playground/uzdLhWrz/shared\" frameBorder=\"0\" name=\"uzdLhWrz\" width=\"100%\" height=\"309\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^3)$$. Considering every possible subarray takes $$O(n^2)$$ time. For each of the subarray we calculate the sum taking $$O(n)$$ time in the worst case, taking a total of $$O(n^3)$$ time.\n\n* Space complexity : $$O(1)$$. Constant space is used.\n\n---\n#### Approach #2 Using Cummulative sum [Accepted]\n\n**Algorithm**\n\nInstead of determining the sum of elements everytime for every new subarray considered, we can make use of a cumulative sum array , $$sum$$. Then, in order to calculate the sum of elements lying between two indices, we can subtract the cumulative sum corresponding to the two indices to obtain the sum directly, instead of iterating over the subarray to obtain the sum.\n\nIn this implementation, we make use of a cumulative sum array, $$sum$$, such that $$sum[i]$$ is used to store the cumulative sum of $$nums$$ array upto the element corresponding to the $$(i-1)^{th}$$ index. Thus, to determine the sum of elements for the subarray $$nums[i:j]$$, we can directly use $$sum[j+1] - sum[i]$$.\n\n<iframe src=\"https://leetcode.com/playground/YnknRnC6/shared\" frameBorder=\"0\" name=\"YnknRnC6\" width=\"100%\" height=\"326\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. Considering every possible subarray takes $$O(n^2)$$ time. Finding out the sum of any subarray takes $$O(1)$$ time after the initial processing of $$O(n)$$ for creating the cumulative sum array.\n\n* Space complexity : $$O(n)$$. Cumulative sum array $$sum$$ of size $$n+1$$ is used.\n\n---\n\n#### Approach #3 Without space [Accepted]\n\n**Algorithm**\n\nInstead of considering all the $$start$$ and $$end$$ points and then finding the sum for each subarray corresponding to those points, we can directly find the sum on the go while considering different $$end$$ points. i.e. We can choose a particular $$start$$ point and while iterating over the $$end$$ points, we can add the element corresponding to the $$end$$ point to the sum formed till now. Whenver the $$sum$$ equals the required $$k$$ value, we can update the $$count$$ value. We do so while iterating over all the $$end$$ indices possible for every $$start$$ index. Whenver, we update the $$start$$ index, we need to reset the $$sum$$ value to 0.\n\n<iframe src=\"https://leetcode.com/playground/MGuUEEUy/shared\" frameBorder=\"0\" name=\"MGuUEEUy\" width=\"100%\" height=\"292\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. We need to consider every subarray possible.\n\n* Space complexity : $$O(1)$$. Constant space is used.\n\n---\n#### Approach #4 Using hashmap [Accepted]\n\n**Algorithm**\n\nThe idea behind this approach is as follows: If the cumulative sum(repreesnted by $$sum[i]$$ for sum upto $$i^{th}$$ index) upto two indices is the same, the sum of the elements lying in between those indices is zero. Extending the same thought further, if the cumulative sum upto two indices, say $$i$$ and $$j$$ is at a difference of $$k$$ i.e. if $$sum[i] - sum[j] = k$$, the sum of elements lying between indices $$i$$ and $$j$$ is $$k$$.\n\nBased on these thoughts, we make use of a hashmap $$map$$ which is used to store the cumulative sum upto all the indices possible along with the number of times the same sum occurs. We store the data in the form: $$(sum_i, no. of occurences of sum_i)$$. We traverse over the array $$nums$$ and keep on finding the cumulative sum. Every time we encounter a new sum, we make a new entry in the hashmap corresponding to that sum. If the same sum occurs again, we increment the count corresponding to that sum in the hashmap. Further, for every sum encountered, we also determine the number of times the sum $$sum-k$$ has occured already, since it will determine the number of times a subarray with sum $$k$$ has occured upto the current index. We increment the $$count$$ by the same amount. \n\nAfter the complete array has been traversed, the $$count$$ gives the required result.\n\nThe animation below depicts the process.\n\n!?!../Documents/560_Subarray.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/S6xciAtN/shared\" frameBorder=\"0\" name=\"S6xciAtN\" width=\"100%\" height=\"292\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. The entire $$nums$$ array is traversed only once.\n\n* Space complexity : $$O(n)$$. Hashmap $$map$$ can contain upto $$n$$ distinct entries in the worst case.\n\n---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "117",
+      "count": 102,
+      "average": 4.49,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,1,1]\n2",
+  "metaData": "{\r\n  \"name\": \"subarraySum\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

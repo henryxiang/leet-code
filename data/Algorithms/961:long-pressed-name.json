@@ -1,0 +1,115 @@
+{
+  "questionId": "961",
+  "questionFrontendId": "925",
+  "boundTopicId": null,
+  "title": "Long Pressed Name",
+  "titleSlug": "long-pressed-name",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Your friend is typing his <code>name</code>&nbsp;into a keyboard.&nbsp; Sometimes, when typing a character <code>c</code>, the key might get <em>long pressed</em>, and the character will be typed 1 or more times.</p>\r\n\r\n<p>You examine the <code>typed</code>&nbsp;characters of the keyboard.&nbsp; Return <code>True</code> if it is possible that it was your friends name, with some characters (possibly none) being long pressed.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>name = <span id=\"example-input-1-1\">&quot;alex&quot;</span>, typed = <span id=\"example-input-1-2\">&quot;aaleex&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n<strong>Explanation: </strong>'a' and 'e' in 'alex' were long pressed.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>name = <span id=\"example-input-2-1\">&quot;saeed&quot;</span>, typed = <span id=\"example-input-2-2\">&quot;ssaaedd&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">false</span>\r\n<strong>Explanation: </strong>'e' must have been pressed twice, but it wasn't in the typed output.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>name = <span id=\"example-input-3-1\">&quot;leelee&quot;</span>, typed = <span id=\"example-input-3-2\">&quot;lleeelee&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>name = <span id=\"example-input-4-1\">&quot;laiden&quot;</span>, typed = <span id=\"example-input-4-2\">&quot;laiden&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">true</span>\r\n<strong>Explanation: </strong>It's not necessary to long press any character.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>name.length &lt;= 1000</code></li>\r\n\t<li><code>typed.length &lt;= 1000</code></li>\r\n\t<li>The characters of <code>name</code> and <code>typed</code> are lowercase letters.</li>\r\n</ol>\r\n\r\n<div>\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 365,
+  "dislikes": 48,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Hemant_323",
+      "profileUrl": "/hemant_323/",
+      "avatarUrl": "https://assets.leetcode.com/users/007_mrlazy/avatar_1517113489.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isLongPressedName(string name, string typed) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isLongPressedName(String name, String typed) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isLongPressedName(self, name, typed):\n        \"\"\"\n        :type name: str\n        :type typed: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isLongPressedName(self, name: str, typed: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isLongPressedName(char * name, char * typed){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsLongPressedName(string name, string typed) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} name\n * @param {string} typed\n * @return {boolean}\n */\nvar isLongPressedName = function(name, typed) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} name\n# @param {String} typed\n# @return {Boolean}\ndef is_long_pressed_name(name, typed)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isLongPressedName(_ name: String, _ typed: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isLongPressedName(name string, typed string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isLongPressedName(name: String, typed: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isLongPressedName(name: String, typed: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_long_pressed_name(name: String, typed: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $name\n     * @param String $typed\n     * @return Boolean\n     */\n    function isLongPressedName($name, $typed) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"27.1K\", \"totalSubmission\": \"60.9K\", \"totalAcceptedRaw\": 27105, \"totalSubmissionRaw\": 60884, \"acRate\": \"44.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "591",
+    "canSeeDetail": true,
+    "url": "/articles/long-pressed-name/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Group into Blocks\n\n**Intuition and Algorithm**\n\nFor a string like `S = 'aabbbbccc'`, we can group it into blocks `groupify(S) = [('a', 2), ('b', 4), ('c', 3)]`, that consist of a *key* `'abc'` and a *count* `[2, 4, 3]`.\n\nThen, the necessary and sufficient condition for `typed` to be a long-pressed version of `name` is that the keys are the same, and each entry of the count of `typed` is at least the entry for the count of `name`.\n\nFor example, `'aaleex'` is a long-pressed version of `'alex'`: because when considering the groups `[('a', 2), ('l', 1), ('e', 2), ('x', 1)]` and `[('a', 1), ('l', 1), ('e', 1), ('x', 1)]`, they both have the key `'alex'`, and the count `[2,1,2,1]` is at least `[1,1,1,1]` when making an element-by-element comparison `(2 >= 1, 1 >= 1, 2 >= 1, 1 >= 1)`.\n\n<iframe src=\"https://leetcode.com/playground/TfwwqxiQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"TfwwqxiQ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N+T)$$, where $$N, T$$ are the lengths of `name` and `typed`.\n\n* Space Complexity:  $$O(N+T)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Two Pointer\n\n**Intuition**\n\nAs in *Approach 1*, we want to check the key and the count.  We can do this on the fly.\n\nSuppose we read through the characters `name`, and eventually it doesn't match `typed`.\n\nThere are some cases for when we are allowed to skip characters of `typed`. Let's use a tuple to denote the case (`name`, `typed`):\n\n* In a case like `('aab', 'aaaaab')`, we can skip the 3rd, 4th, and 5th `'a'` in `typed` because we have already processed an `'a'` in this block.\n\n* In a case like `('a', 'b')`, we can't skip the 1st `'b'` in `typed` because we haven't processed anything in the current block yet.\n\n**Algorithm**\n\nThis leads to the following algorithm:\n\n* For each character in `name`, if there's a mismatch with the next character in `typed`:\n    * If it's the first character of the block in `typed`, the answer is `False`.\n    * Else, discard all similar characers of `typed` coming up.  The next (different) character coming must match.\n\nAlso, we'll keep track on the side of whether we are at the first character of the block.\n\n<iframe src=\"https://leetcode.com/playground/Wv6ufLEV/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Wv6ufLEV\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N+T)$$, where $$N, T$$ are the lengths of `name` and `typed`.\n\n* Space Complexity:  $$O(1)$$ in additional space complexity.  (In Java, `.toCharArray` makes this $$O(N)$$, but this can be easily remedied.)\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "577",
+      "count": 12,
+      "average": 3.917,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"alex\"\n\"aaleex\"",
+  "metaData": "{\r\n  \"name\": \"isLongPressedName\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"name\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"typed\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

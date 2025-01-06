@@ -1,0 +1,121 @@
+{
+  "questionId": "714",
+  "questionFrontendId": "714",
+  "boundTopicId": null,
+  "title": "Best Time to Buy and Sell Stock with Transaction Fee",
+  "titleSlug": "best-time-to-buy-and-sell-stock-with-transaction-fee",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Your are given an array of integers <code>prices</code>, for which the <code>i</code>-th element is the price of a given stock on day <code>i</code>; and a non-negative integer <code>fee</code> representing a transaction fee.</p>\r\n<p>You may complete as many transactions as you like, but you need to pay the transaction fee for each transaction.  You may not buy more than 1 share of a stock at a time (ie. you must sell the stock share before you buy again.)</p>\r\n<p>Return the maximum profit you can make.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> prices = [1, 3, 2, 8, 4, 9], fee = 2\r\n<b>Output:</b> 8\r\n<b>Explanation:</b> The maximum profit can be achieved by:\r\n<li>Buying at prices[0] = 1</li><li>Selling at prices[3] = 8</li><li>Buying at prices[4] = 4</li><li>Selling at prices[5] = 9</li>The total profit is ((8 - 1) - 2) + ((9 - 4) - 2) = 8.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<li><code>0 < prices.length <= 50000</code>.</li>\r\n<li><code>0 < prices[i] < 50000</code>.</li>\r\n<li><code>0 <= fee < 50000</code>.</li>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1154,
+  "dislikes": 34,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Best Time to Buy and Sell Stock II\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Jiachen_",
+      "profileUrl": "/jiachen_/",
+      "avatarUrl": "https://www.gravatar.com/avatar/2357fa596e51d5ec92a22423b825a659.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxProfit(vector<int>& prices, int fee) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxProfit(int[] prices, int fee) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxProfit(self, prices, fee):\n        \"\"\"\n        :type prices: List[int]\n        :type fee: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxProfit(self, prices: List[int], fee: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxProfit(int* prices, int pricesSize, int fee){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxProfit(int[] prices, int fee) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} prices\n * @param {number} fee\n * @return {number}\n */\nvar maxProfit = function(prices, fee) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} prices\n# @param {Integer} fee\n# @return {Integer}\ndef max_profit(prices, fee)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxProfit(_ prices: [Int], _ fee: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxProfit(prices []int, fee int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxProfit(prices: Array[Int], fee: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxProfit(prices: IntArray, fee: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_profit(prices: Vec<i32>, fee: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $prices\n     * @param Integer $fee\n     * @return Integer\n     */\n    function maxProfit($prices, $fee) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"52.6K\", \"totalSubmission\": \"100.1K\", \"totalAcceptedRaw\": 52608, \"totalSubmissionRaw\": 100068, \"acRate\": \"52.6%\"}",
+  "hints": [
+    "Consider the first K stock prices.  At the end, the only legal states are that you don't own a share of stock, or that you do.  Calculate the most profit you could have under each of these two cases."
+  ],
+  "solution": {
+    "id": "265",
+    "canSeeDetail": true,
+    "url": "/articles/best-time-to-buy-and-sell-stock-with-transaction-fee/",
+    "content": "[TOC]\n\n\n#### Approach #1: Dynamic Programming [Accepted]\n\n**Intuition and Algorithm**\n\nAt the end of the `i`-th day, we maintain `cash`, the maximum profit we could have if we did not have a share of stock, and `hold`, the maximum profit we could have if we owned a share of stock.\n\nTo transition from the `i`-th day to the `i+1`-th day, we either sell our stock `cash = max(cash, hold + prices[i] - fee)` or buy a stock `hold = max(hold, cash - prices[i])`.  At the end, we want to return `cash`.  We can transform `cash` first without using temporary variables because selling and buying on the same day can't be better than just continuing to hold the stock.\n\n**Python**\n```python\nclass Solution(object):\n    def maxProfit(self, prices, fee):\n        cash, hold = 0, -prices[0]\n        for i in range(1, len(prices)):\n            cash = max(cash, hold + prices[i] - fee)\n            hold = max(hold, cash - prices[i])\n        return cash\n```\n\n**Java**\n```java\nclass Solution {\n    public int maxProfit(int[] prices, int fee) {\n        int cash = 0, hold = -prices[0];\n        for (int i = 1; i < prices.length; i++) {\n            cash = Math.max(cash, hold + prices[i] - fee);\n            hold = Math.max(hold, cash - prices[i]);\n        }\n        return cash;\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the number of prices.\n\n* Space Complexity: $$O(1)$$, the space used by `cash` and `hold`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "260",
+      "count": 51,
+      "average": 4.647,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,3,2,8,4,9]\n2",
+  "metaData": "{\r\n  \"name\": \"maxProfit\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"prices\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"fee\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

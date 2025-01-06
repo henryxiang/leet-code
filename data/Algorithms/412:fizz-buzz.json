@@ -1,0 +1,100 @@
+{
+  "questionId": "412",
+  "questionFrontendId": "412",
+  "boundTopicId": null,
+  "title": "Fizz Buzz",
+  "titleSlug": "fizz-buzz",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Write a program that outputs the string representation of numbers from 1 to <i>n</i>.</p>\r\n\r\n<p>But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.</p>\r\n\r\n<p><b>Example:</b>\r\n<pre>\r\nn = 15,\r\n\r\nReturn:\r\n[\r\n    \"1\",\r\n    \"2\",\r\n    \"Fizz\",\r\n    \"4\",\r\n    \"Buzz\",\r\n    \"Fizz\",\r\n    \"7\",\r\n    \"8\",\r\n    \"Fizz\",\r\n    \"Buzz\",\r\n    \"11\",\r\n    \"Fizz\",\r\n    \"13\",\r\n    \"14\",\r\n    \"FizzBuzz\"\r\n]\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 658,
+  "dislikes": 958,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Fizz Buzz Multithreaded\", \"titleSlug\": \"fizz-buzz-multithreaded\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"IBM\", \"slug\": \"ibm\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Spotify\", \"slug\": \"spotify\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Capital One\", \"slug\": \"capital-one\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> fizzBuzz(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> fizzBuzz(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def fizzBuzz(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def fizzBuzz(self, n: int) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** fizzBuzz(int n, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> FizzBuzz(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {string[]}\n */\nvar fizzBuzz = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {String[]}\ndef fizz_buzz(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func fizzBuzz(_ n: Int) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func fizzBuzz(n int) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def fizzBuzz(n: Int): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun fizzBuzz(n: Int): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn fizz_buzz(n: i32) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return String[]\n     */\n    function fizzBuzz($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"262.5K\", \"totalSubmission\": \"432.9K\", \"totalAcceptedRaw\": 262528, \"totalSubmissionRaw\": 432941, \"acRate\": \"60.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "569",
+    "canSeeDetail": true,
+    "url": "/articles/fizz-buzz/",
+    "content": "[TOC]\n\n## Solution\n---\n\nYou must have played FizzBuzz as kids. FizzBuzz charm never gets old. And so here we are looking at how you can take on one step at a time and impress your interviewer with a better and neat approach to solve this problem.\n\n#### Approach 1: Naive Approach\n\n**Intuition**\n\nThe moment you hear of FizzBuzz you think whether the number is divisible by `3`, `5` or both.\n\n**Algorithm**\n\n1. Initialize an empty answer list.\n1. Iterate on the numbers from $$1 ... N$$.\n2. For every number, if it is divisible by both 3 and 5, add FizzBuzz to the answer list.\n3. Else, Check if the number is divisible by 3, add Fizz.\n4. Else, Check if the number is divisible by 5, add Buzz.\n5. Else, add the number.\n</pre>\n\n<br>\n\n<iframe src=\"https://leetcode.com/playground/kohPDrYw/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"kohPDrYw\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$\n* Space Complexity: $$O(1)$$\n<br/>\n<br/>\n---\n\n#### Approach 2: String Concatenation\n\n**Intuition**\n\nThis approach won't reduce the asymptotic complexity, but proves to be a neater solution when `FizzBuzz` comes with a twist.\nWhat if `FizzBuzz` is now `FizzBuzzJazz` i.e.\n<pre>\n3 ---> \"Fizz\" , 5 ---> \"Buzz\", 7 ---> \"Jazz\"\n</pre>\n\nIf you try to solve this with the previous approach the program would have too many conditions to check:\n\n1. Divisible by 3\n2. Divisible by 5\n3. Divisible by 7\n4. Divisible by 3 and 5\n5. Divisible by 3 and 7\n6. Divisible by 7 and 3\n7. Divisible by 3 and 5 and 7\n8. Not divisible by 3 or 5 or 7.\n\nThis way if the `FizzBuzz` mappings increase, the conditions would grow exponentially in your program.  \n\n**Algorithm**\n\nInstead of checking for every combination of these conditions, check for divisibility by given numbers i.e. 3, 5 as given in the problem. If the number is divisible, concatenate the corresponding string mapping `Fizz` or `Buzz` to the current answer string.\n\nFor eg. If we are checking for the number 15, the steps would be:\n<pre>\nCondition 1: 15 % 3 == 0 , num_ans_str = \"Fizz\"\nCondition 2: 15 % 5 == 0 , num_ans_str += \"Buzz\"\n=> num_ans_str = \"FizzBuzz\"\n</pre>\n\nSo for `FizzBuzz` we just check for two conditions instead of three conditions as in the first approach.\n\nSimilarly, for `FizzBuzzJazz` now we would just have three conditions to check for divisibility.\n\n<iframe src=\"https://leetcode.com/playground/kpRjpMFa/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"kpRjpMFa\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$\n* Space Complexity: $$O(1)$$\n<br/>\n<br/>\n---\n\n#### Approach 3: Hash it!\n\n**Intuition**\n\nThis approach is an optimization over approach 2. When the number of mappings are limited, approach 2 looks good. But what if you face a tricky interviewer and he decides to add too many mappings?\n\nHaving a condition for every mapping is not feasible or may be we can say the code might get ugly and tough to maintain.\n\nWhat if tomorrow we have to change a mapping or may be delete a mapping? Are we going to change the code every time we have a modification in the mappings?\n\nWe don't have to. We can put all these mappings in a `Hash Table`.\n\n**Algorithm**\n\n1. Put all the mappings in a hash table. The hash table `fizzBuzzHash` would look something like ``{ 3: 'Fizz', 5: 'Buzz' }``\n2. Iterate on the numbers from $$1 ... N$$.\n3. For every number, iterate over the `fizzBuzzHash` keys and check for divisibility.\n4. If the number is divisible by the key, concatenate the corresponding hash value to the answer string for current number. We do this for every entry in the hash table.\n5. Add the answer string to the answer list.\n\n> This way you can add/delete mappings to/from to the hash table and not worry about changing the code.\n\nSo, for `FizzBuzzJazz` the hash table would look something like ``{ 3: 'Fizz', 5: 'Buzz', 7: 'Jazz' }``\n\n<iframe src=\"https://leetcode.com/playground/yRV2JDsz/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"yRV2JDsz\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity : $$O(N)$$\n* Space Complexity : $$O(1)$$\n<br /><br/>\n\n---\nAnalysis written by: [@godayaldivya](https://leetcode.com/godayaldivya/).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "557",
+      "count": 37,
+      "average": 4.649,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "1",
+  "metaData": "{\r\n  \"name\": \"fizzBuzz\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

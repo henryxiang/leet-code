@@ -1,0 +1,101 @@
+{
+  "questionId": "1197",
+  "questionFrontendId": "1106",
+  "boundTopicId": null,
+  "title": "Parsing A Boolean Expression",
+  "titleSlug": "parsing-a-boolean-expression",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Return the result of evaluating a given boolean <code>expression</code>, represented as a string.</p>\n\n<p>An expression can either be:</p>\n\n<ul>\n\t<li><code>&quot;t&quot;</code>, evaluating to <code>True</code>;</li>\n\t<li><code>&quot;f&quot;</code>, evaluating to <code>False</code>;</li>\n\t<li><code>&quot;!(expr)&quot;</code>, evaluating to the logical NOT of the inner expression <code>expr</code>;</li>\n\t<li><code>&quot;&amp;(expr1,expr2,...)&quot;</code>, evaluating to the logical AND of 2 or more inner expressions <code>expr1, expr2, ...</code>;</li>\n\t<li><code>&quot;|(expr1,expr2,...)&quot;</code>, evaluating to the logical OR of 2 or more inner expressions <code>expr1, expr2, ...</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> expression = &quot;!(f)&quot;\n<strong>Output:</strong> true\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> expression = &quot;|(f,t)&quot;\n<strong>Output:</strong> true\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> expression = &quot;&amp;(t,f)&quot;\n<strong>Output:</strong> false\n</pre>\n\n<p><strong>Example 4:</strong></p>\n\n<pre>\n<strong>Input:</strong> expression = &quot;|(&amp;(t,f,t),!(t))&quot;\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= expression.length &lt;= 20000</code></li>\n\t<li><code>expression[i]</code>&nbsp;consists of characters in <code>{&#39;(&#39;, &#39;)&#39;, &#39;&amp;&#39;, &#39;|&#39;, &#39;!&#39;, &#39;t&#39;, &#39;f&#39;, &#39;,&#39;}</code>.</li>\n\t<li><code>expression</code> is a valid expression representing a boolean, as given in the description.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 159,
+  "dislikes": 11,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Affinity\", \"slug\": \"affinity\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool parseBoolExpr(string expression) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean parseBoolExpr(String expression) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def parseBoolExpr(self, expression):\n        \"\"\"\n        :type expression: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def parseBoolExpr(self, expression: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool parseBoolExpr(char * expression){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ParseBoolExpr(string expression) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} expression\n * @return {boolean}\n */\nvar parseBoolExpr = function(expression) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} expression\n# @return {Boolean}\ndef parse_bool_expr(expression)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func parseBoolExpr(_ expression: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func parseBoolExpr(expression string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def parseBoolExpr(expression: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun parseBoolExpr(expression: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn parse_bool_expr(expression: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $expression\n     * @return Boolean\n     */\n    function parseBoolExpr($expression) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.1K\", \"totalSubmission\": \"12.2K\", \"totalAcceptedRaw\": 7081, \"totalSubmissionRaw\": 12249, \"acRate\": \"57.8%\"}",
+  "hints": [
+    "Write a function \"parse\" which calls helper functions \"parse_or\", \"parse_and\", \"parse_not\"."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"!(f)\"",
+  "metaData": "{\n  \"name\": \"parseBoolExpr\",\n  \"params\": [\n    {\n      \"name\": \"expression\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

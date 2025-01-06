@@ -1,0 +1,76 @@
+{
+  "questionId": "615",
+  "questionFrontendId": "615",
+  "boundTopicId": null,
+  "title": "Average Salary: Departments VS Company",
+  "titleSlug": "average-salary-departments-vs-company",
+  "categoryTitle": "Database",
+  "content": "Given two tables as below, write a query to display the comparison result (higher/lower/same) of the average salary of employees in a department to the company&#39;s average salary.\r\n<p>&nbsp;</p>\r\nTable: <code>salary</code>\r\n\r\n<pre>\r\n| id | employee_id | amount | pay_date   |\r\n|----|-------------|--------|------------|\r\n| 1  | 1           | 9000   | 2017-03-31 |\r\n| 2  | 2           | 6000   | 2017-03-31 |\r\n| 3  | 3           | 10000  | 2017-03-31 |\r\n| 4  | 1           | 7000   | 2017-02-28 |\r\n| 5  | 2           | 6000   | 2017-02-28 |\r\n| 6  | 3           | 8000   | 2017-02-28 |\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\nThe <b>employee_id</b> column refers to the <b>employee_id</b> in the following table <code>employee</code>.\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n| employee_id | department_id |\r\n|-------------|---------------|\r\n| 1           | 1             |\r\n| 2           | 2             |\r\n| 3           | 2             |\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\nSo for the sample data above, the result is:\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n| pay_month | department_id | comparison  |\r\n|-----------|---------------|-------------|\r\n| 2017-03   | 1             | higher      |\r\n| 2017-03   | 2             | lower       |\r\n| 2017-02   | 1             | same        |\r\n| 2017-02   | 2             | same        |\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<b>Explanation</b>\r\n\r\n<p>&nbsp;</p>\r\nIn March, the company&#39;s average salary is (9000+6000+10000)/3 = 8333.33...\r\n\r\n<p>&nbsp;</p>\r\nThe average salary for department &#39;1&#39; is 9000, which is the salary of <b>employee_id</b> &#39;1&#39; since there is only one employee in this department. So the comparison result is &#39;higher&#39; since 9000 &gt; 8333.33 obviously.\r\n\r\n<p>&nbsp;</p>\r\nThe average salary of department &#39;2&#39; is (6000 + 10000)/2 = 8000, which is the average of <b>employee_id</b> &#39;2&#39; and &#39;3&#39;. So the comparison result is &#39;lower&#39; since 8000 &lt; 8333.33.\r\n\r\n<p>&nbsp;</p>\r\nWith he same formula for the average salary comparison in February, the result is &#39;same&#39; since both the department &#39;1&#39; and &#39;2&#39; have the same average salary with the company, which is 7000.\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 49,
+  "dislikes": 18,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Mr-Bin",
+      "profileUrl": "/mr-bin/",
+      "avatarUrl": "https://assets.leetcode.com/users/mr-bin/avatar_1547655304.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.9K\", \"totalSubmission\": \"14.3K\", \"totalAcceptedRaw\": 5911, \"totalSubmissionRaw\": 14272, \"acRate\": \"41.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "169",
+    "canSeeDetail": true,
+    "url": "/articles/average-salary-departments-vs-company/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `avg()` and `case...when...` [Accepted]\n\n**Intuition**\n\nSolve this problem by 3 steps as below.\n\n**Algorithm**\n\n1.Calculate the company's average salary in every month\nMySQL has the built-in function avg() to get the average of a list of numbers. Also, we need to format the *pay_date* column for future use.\n\n```sql\nselect avg(amount) as company_avg,  date_format(pay_date, '%Y-%m') as pay_month\nfrom salary\ngroup by date_format(pay_date, '%Y-%m')\n;\n```\n\n| company_avg | pay_month |\n|-------------|-----------|\n| 7000.0000   | 2017-02   |\n| 8333.3333   | 2017-03   |\n\n2.Calculate the each department's average salary in every month\nTo do this, we need to join the **salary** table with the **employee** table using condition `salary.employee_id = employee.id`.\n\n```sql\nselect department_id, avg(amount) as department_avg, date_format(pay_date, '%Y-%m') as pay_month\nfrom salary\njoin employee on salary.employee_id = employee.employee_id\ngroup by department_id, pay_month\n;\n```\n\n| department_id | department_avg | pay_month |\n|---------------|----------------|-----------|\n| 1             | 7000.0000      | 2017-02   |\n| 1             | 9000.0000      | 2017-03   |\n| 2             | 7000.0000      | 2017-02   |\n| 2             | 8000.0000      | 2017-03   |\n\n3.Compare the previous numbers and display the result\nThis step might be the hardest if you have no idea on how to use MySQL flow control statement [`case...when...`](https://dev.mysql.com/doc/refman/5.7/en/case.html).\n\nMySQL, like other programming languages, also has its flow control. Click [this link](https://dev.mysql.com/doc/refman/5.7/en/flow-control-statements.html) to learn it.\n\nAt last, combine the above two query and join them `on department_salary.pay_month = company_salary.pay_month`.\n\n**MySQL**\n\n```sql\nselect department_salary.pay_month, department_id,\ncase\n  when department_avg>company_avg then 'higher'\n  when department_avg<company_avg then 'lower'\n  else 'same'\nend as comparison\nfrom\n(\n  select department_id, avg(amount) as department_avg, date_format(pay_date, '%Y-%m') as pay_month\n  from salary join employee on salary.employee_id = employee.employee_id\n  group by department_id, pay_month\n) as department_salary\njoin\n(\n  select avg(amount) as company_avg,  date_format(pay_date, '%Y-%m') as pay_month from salary group by date_format(pay_date, '%Y-%m')\n) as company_salary\non department_salary.pay_month = company_salary.pay_month\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "164",
+      "count": 7,
+      "average": 4.857,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"salary\":[\"id\",\"employee_id\",\"amount\",\"pay_date\"],\"employee\":[\"employee_id\",\"department_id\"]},\"rows\":{\"salary\":[[1,1,9000,\"2017/03/31\"],[2,2,6000,\"2017/03/31\"],[3,3,10000,\"2017/03/31\"],[4,1,7000,\"2017/02/28\"],[5,2,6000,\"2017/02/28\"],[6,3,8000,\"2017/02/28\"]],\"employee\":[[1,1],[2,2],[3,2]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists salary (id int, employee_id int, amount int, pay_date date)\",\r\n    \"Create table If Not Exists employee (employee_id int, department_id int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table salary (id int, employee_id int, amount int, pay_date date)\",\r\n    \"Create table employee (employee_id int, department_id int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table salary (id int, employee_id int, amount int, pay_date date)\",\r\n    \"Create table employee (employee_id int, department_id int)\",\r\n    \"alter SESSION set NLS_DATE_FORMAT = 'YYYY/MM/DD'\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists salary (id int, employee_id int, amount int, pay_date date)",
+    "Create table If Not Exists employee (employee_id int, department_id int)",
+    "Truncate table salary",
+    "insert into salary (id, employee_id, amount, pay_date) values ('1', '1', '9000', '2017/03/31')",
+    "insert into salary (id, employee_id, amount, pay_date) values ('2', '2', '6000', '2017/03/31')",
+    "insert into salary (id, employee_id, amount, pay_date) values ('3', '3', '10000', '2017/03/31')",
+    "insert into salary (id, employee_id, amount, pay_date) values ('4', '1', '7000', '2017/02/28')",
+    "insert into salary (id, employee_id, amount, pay_date) values ('5', '2', '6000', '2017/02/28')",
+    "insert into salary (id, employee_id, amount, pay_date) values ('6', '3', '8000', '2017/02/28')",
+    "Truncate table employee",
+    "insert into employee (employee_id, department_id) values ('1', '1')",
+    "insert into employee (employee_id, department_id) values ('2', '2')",
+    "insert into employee (employee_id, department_id) values ('3', '2')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

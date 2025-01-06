@@ -1,0 +1,103 @@
+{
+  "questionId": "353",
+  "questionFrontendId": "353",
+  "boundTopicId": null,
+  "title": "Design Snake Game",
+  "titleSlug": "design-snake-game",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design a <a href=\"https://en.wikipedia.org/wiki/Snake_(video_game)\" target=\"_blank\">Snake game</a> that is played on a device with screen size = <i>width</i> x <i>height</i>. <a href=\"http://patorjk.com/games/snake/\" target=\"_blank\">Play the game online</a> if you are not familiar with the game.</p>\r\n\r\n<p>The snake is initially positioned at the top left corner (0,0) with length = 1 unit.</p>\r\n\r\n<p>You are given a list of food&#39;s positions in row-column order. When a snake eats the food, its length and the game&#39;s score both increase by 1.</p>\r\n\r\n<p>Each food appears one by one on the screen. For example, the second food will not appear until the first food was eaten by the snake.</p>\r\n\r\n<p>When a food does appear on the screen, it is guaranteed that it will not appear on a block occupied by the snake.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\nGiven width = 3, height = 2, and food = [[1,2],[0,1]].\r\n\r\nSnake snake = new Snake(width, height, food);\r\n\r\nInitially the snake appears at position (0,0) and the food at (1,2).\r\n\r\n|S| | |\r\n| | |F|\r\n\r\nsnake.move(&quot;R&quot;); -&gt; Returns 0\r\n\r\n| |S| |\r\n| | |F|\r\n\r\nsnake.move(&quot;D&quot;); -&gt; Returns 0\r\n\r\n| | | |\r\n| |S|F|\r\n\r\nsnake.move(&quot;R&quot;); -&gt; Returns 1 (Snake eats the first food and right after that, the second food appears at (0,1) )\r\n\r\n| |F| |\r\n| |S|S|\r\n\r\nsnake.move(&quot;U&quot;); -&gt; Returns 1\r\n\r\n| |F|S|\r\n| | |S|\r\n\r\nsnake.move(&quot;L&quot;); -&gt; Returns 2 (Snake eats the second food)\r\n\r\n| |S|S|\r\n| | |S|\r\n\r\nsnake.move(&quot;U&quot;); -&gt; Returns -1 (Game over because snake collides with border)\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 288,
+  "dislikes": 124,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "elmirap",
+      "profileUrl": "/elmirap/",
+      "avatarUrl": "https://www.gravatar.com/avatar/ba92194ffdce151caf7dffd9037a6997.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Queue",
+      "slug": "queue"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class SnakeGame {\npublic:\n    /** Initialize your data structure here.\n        @param width - screen width\n        @param height - screen height \n        @param food - A list of food positions\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */\n    SnakeGame(int width, int height, vector<vector<int>>& food) {\n        \n    }\n    \n    /** Moves the snake.\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \n        @return The game's score after the move. Return -1 if game over. \n        Game over when snake crosses the screen boundary or bites its body. */\n    int move(string direction) {\n        \n    }\n};\n\n/**\n * Your SnakeGame object will be instantiated and called as such:\n * SnakeGame* obj = new SnakeGame(width, height, food);\n * int param_1 = obj->move(direction);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class SnakeGame {\n\n    /** Initialize your data structure here.\n        @param width - screen width\n        @param height - screen height \n        @param food - A list of food positions\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */\n    public SnakeGame(int width, int height, int[][] food) {\n        \n    }\n    \n    /** Moves the snake.\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \n        @return The game's score after the move. Return -1 if game over. \n        Game over when snake crosses the screen boundary or bites its body. */\n    public int move(String direction) {\n        \n    }\n}\n\n/**\n * Your SnakeGame object will be instantiated and called as such:\n * SnakeGame obj = new SnakeGame(width, height, food);\n * int param_1 = obj.move(direction);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class SnakeGame(object):\n\n    def __init__(self, width, height, food):\n        \"\"\"\n        Initialize your data structure here.\n        @param width - screen width\n        @param height - screen height \n        @param food - A list of food positions\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0].\n        :type width: int\n        :type height: int\n        :type food: List[List[int]]\n        \"\"\"\n        \n\n    def move(self, direction):\n        \"\"\"\n        Moves the snake.\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \n        @return The game's score after the move. Return -1 if game over. \n        Game over when snake crosses the screen boundary or bites its body.\n        :type direction: str\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your SnakeGame object will be instantiated and called as such:\n# obj = SnakeGame(width, height, food)\n# param_1 = obj.move(direction)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class SnakeGame:\n\n    def __init__(self, width: int, height: int, food: List[List[int]]):\n        \"\"\"\n        Initialize your data structure here.\n        @param width - screen width\n        @param height - screen height \n        @param food - A list of food positions\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0].\n        \"\"\"\n        \n\n    def move(self, direction: str) -> int:\n        \"\"\"\n        Moves the snake.\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \n        @return The game's score after the move. Return -1 if game over. \n        Game over when snake crosses the screen boundary or bites its body.\n        \"\"\"\n        \n\n\n# Your SnakeGame object will be instantiated and called as such:\n# obj = SnakeGame(width, height, food)\n# param_1 = obj.move(direction)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} SnakeGame;\n\n/** Initialize your data structure here.\n        @param width - screen width\n        @param height - screen height \n        @param food - A list of food positions\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */\n\nSnakeGame* snakeGameCreate(int width, int height, int** food, int foodSize, int* foodColSize) {\n    \n}\n\n/** Moves the snake.\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \n        @return The game's score after the move. Return -1 if game over. \n        Game over when snake crosses the screen boundary or bites its body. */\nint snakeGameMove(SnakeGame* obj, char * direction) {\n  \n}\n\nvoid snakeGameFree(SnakeGame* obj) {\n    \n}\n\n/**\n * Your SnakeGame struct will be instantiated and called as such:\n * SnakeGame* obj = snakeGameCreate(width, height, food, foodSize, foodColSize);\n * int param_1 = snakeGameMove(obj, direction);\n \n * snakeGameFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class SnakeGame {\r\n\r\n    /** Initialize your data structure here.\r\n        @param width - screen width\r\n        @param height - screen height \r\n        @param food - A list of food positions\r\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */\r\n    public SnakeGame(int width, int height, int[][] food) {\r\n        \r\n    }\r\n    \r\n    /** Moves the snake.\r\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \r\n        @return The game's score after the move. Return -1 if game over. \r\n        Game over when snake crosses the screen boundary or bites its body. */\r\n    public int Move(string direction) {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your SnakeGame object will be instantiated and called as such:\r\n * SnakeGame obj = new SnakeGame(width, height, food);\r\n * int param_1 = obj.Move(direction);\r\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Initialize your data structure here.\n        @param width - screen width\n        @param height - screen height \n        @param food - A list of food positions\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0].\n * @param {number} width\n * @param {number} height\n * @param {number[][]} food\n */\nvar SnakeGame = function(width, height, food) {\n    \n};\n\n/**\n * Moves the snake.\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \n        @return The game's score after the move. Return -1 if game over. \n        Game over when snake crosses the screen boundary or bites its body. \n * @param {string} direction\n * @return {number}\n */\nSnakeGame.prototype.move = function(direction) {\n    \n};\n\n/** \n * Your SnakeGame object will be instantiated and called as such:\n * var obj = new SnakeGame(width, height, food)\n * var param_1 = obj.move(direction)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class SnakeGame\r\n\r\n=begin\r\n    Initialize your data structure here.\r\n        @param width - screen width\r\n        @param height - screen height \r\n        @param food - A list of food positions\r\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0].\r\n    :type width: Integer\r\n    :type height: Integer\r\n    :type food: Integer[][]\r\n=end\r\n    def initialize(width, height, food)\r\n        \r\n    end\r\n\r\n\r\n=begin\r\n    Moves the snake.\r\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \r\n        @return The game's score after the move. Return -1 if game over. \r\n        Game over when snake crosses the screen boundary or bites its body.\r\n    :type direction: String\r\n    :rtype: Integer\r\n=end\r\n    def move(direction)\r\n        \r\n    end\r\n\r\n\r\nend\r\n\r\n# Your SnakeGame object will be instantiated and called as such:\r\n# obj = SnakeGame.new(width, height, food)\r\n# param_1 = obj.move(direction)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\r\nclass SnakeGame {\r\n\r\n    /** Initialize your data structure here.\r\n        @param width - screen width\r\n        @param height - screen height \r\n        @param food - A list of food positions\r\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */\r\n    init(_ width: Int, _ height: Int, _ food: [[Int]]) {\r\n        \r\n    }\r\n    \r\n    /** Moves the snake.\r\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \r\n        @return The game's score after the move. Return -1 if game over. \r\n        Game over when snake crosses the screen boundary or bites its body. */\r\n    func move(_ direction: String) -> Int {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your SnakeGame object will be instantiated and called as such:\r\n * let obj = SnakeGame(width, height, food)\r\n * let ret_1: Int = obj.move(direction)\r\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type SnakeGame struct {\r\n    \r\n}\r\n\r\n\r\n/** Initialize your data structure here.\r\n        @param width - screen width\r\n        @param height - screen height \r\n        @param food - A list of food positions\r\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */\r\nfunc Constructor(width int, height int, food [][]int) SnakeGame {\r\n    \r\n}\r\n\r\n\r\n/** Moves the snake.\r\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \r\n        @return The game's score after the move. Return -1 if game over. \r\n        Game over when snake crosses the screen boundary or bites its body. */\r\nfunc (this *SnakeGame) Move(direction string) int {\r\n    \r\n}\r\n\r\n\r\n/**\r\n * Your SnakeGame object will be instantiated and called as such:\r\n * obj := Constructor(width, height, food);\r\n * param_1 := obj.Move(direction);\r\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class SnakeGame(_width: Int, _height: Int, _food: Array[Array[Int]]) {\r\n\r\n    /** Initialize your data structure here.\r\n        @param width - screen width\r\n        @param height - screen height \r\n        @param food - A list of food positions\r\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */\r\n    \r\n\r\n    /** Moves the snake.\r\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \r\n        @return The game's score after the move. Return -1 if game over. \r\n        Game over when snake crosses the screen boundary or bites its body. */\r\n    def move(direction: String): Int = {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your SnakeGame object will be instantiated and called as such:\r\n * var obj = new SnakeGame(width, height, food)\r\n * var param_1 = obj.move(direction)\r\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class SnakeGame(width: Int, height: Int, food: Array<IntArray>) {\r\n\r\n    /** Initialize your data structure here.\r\n        @param width - screen width\r\n        @param height - screen height \r\n        @param food - A list of food positions\r\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */\r\n    \r\n\r\n    /** Moves the snake.\r\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \r\n        @return The game's score after the move. Return -1 if game over. \r\n        Game over when snake crosses the screen boundary or bites its body. */\r\n    fun move(direction: String): Int {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your SnakeGame object will be instantiated and called as such:\r\n * var obj = SnakeGame(width, height, food)\r\n * var param_1 = obj.move(direction)\r\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct SnakeGame {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl SnakeGame {\n\n    /** Initialize your data structure here.\n        @param width - screen width\n        @param height - screen height \n        @param food - A list of food positions\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */\n    fn new(width: i32, height: i32, food: Vec<Vec<i32>>) -> Self {\n        \n    }\n    \n    /** Moves the snake.\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \n        @return The game's score after the move. Return -1 if game over. \n        Game over when snake crosses the screen boundary or bites its body. */\n    fn move(&self, direction: String) -> i32 {\n        \n    }\n}\n\n/**\n * Your SnakeGame object will be instantiated and called as such:\n * let obj = SnakeGame::new(width, height, food);\n * let ret_1: i32 = obj.move(direction);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class SnakeGame {\n    /**\n     * Initialize your data structure here.\n        @param width - screen width\n        @param height - screen height \n        @param food - A list of food positions\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0].\n     * @param Integer $width\n     * @param Integer $height\n     * @param Integer[][] $food\n     */\n    function __construct($width, $height, $food) {\n        \n    }\n  \n    /**\n     * Moves the snake.\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \n        @return The game's score after the move. Return -1 if game over. \n        Game over when snake crosses the screen boundary or bites its body.\n     * @param String $direction\n     * @return Integer\n     */\n    function move($direction) {\n        \n    }\n}\n\n/**\n * Your SnakeGame object will be instantiated and called as such:\n * $obj = SnakeGame($width, $height, $food);\n * $ret_1 = $obj->move($direction);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"27.2K\", \"totalSubmission\": \"84.1K\", \"totalAcceptedRaw\": 27206, \"totalSubmissionRaw\": 84073, \"acRate\": \"32.4%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"SnakeGame\",\"move\",\"move\",\"move\",\"move\",\"move\",\"move\"]\n[[3,2,[[1,2],[0,1]]],[\"R\"],[\"D\"],[\"R\"],[\"U\"],[\"L\"],[\"U\"]]",
+  "metaData": "{\r\n    \"classname\": \"SnakeGame\",\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"width\"\r\n            },\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"height\"\r\n            },\r\n            {\r\n                \"type\": \"integer[][]\",\r\n                \"name\": \"food\"\r\n            },\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"foodSize\",\r\n                \"lang\": \"c\",\r\n                \"value\": \"size_3\"\r\n            }\r\n        ],\r\n        \"comment\": \"Initialize your data structure here.\\n        @param width - screen width\\n        @param height - screen height \\n        @param food - A list of food positions\\n        E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0].\"\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"move\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"string\",\r\n                    \"name\": \"direction\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            },\r\n            \"comment\": \"Moves the snake.\\n        @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down \\n        @return The game's score after the move. Return -1 if game over. \\n        Game over when snake crosses the screen boundary or bites its body.\"\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

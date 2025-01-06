@@ -1,0 +1,99 @@
+{
+  "questionId": "459",
+  "questionFrontendId": "459",
+  "boundTopicId": null,
+  "title": "Repeated Substring Pattern",
+  "titleSlug": "repeated-substring-pattern",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together. You may assume the given string consists of lowercase English letters only and its length will not exceed 10000.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;abab&quot;\r\n<b>Output:</b> True\r\n<b>Explanation:</b> It&#39;s the substring &quot;ab&quot; twice.\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;aba&quot;\r\n<b>Output:</b> False\r\n</pre>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;abcabcabcabc&quot;\r\n<b>Output:</b> True\r\n<b>Explanation:</b> It&#39;s the substring &quot;abc&quot; four times. (And the substring &quot;abcabc&quot; twice.)\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1036,
+  "dislikes": 118,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Implement strStr()\", \"titleSlug\": \"implement-strstr\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Repeated String Match\", \"titleSlug\": \"repeated-string-match\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "YuhanXu",
+      "profileUrl": "/yuhanxu/",
+      "avatarUrl": "https://assets.leetcode.com/users/yuhanxu/avatar_1531029503.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool repeatedSubstringPattern(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean repeatedSubstringPattern(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def repeatedSubstringPattern(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def repeatedSubstringPattern(self, s: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool repeatedSubstringPattern(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool RepeatedSubstringPattern(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar repeatedSubstringPattern = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Boolean}\ndef repeated_substring_pattern(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func repeatedSubstringPattern(_ s: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func repeatedSubstringPattern(s string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def repeatedSubstringPattern(s: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun repeatedSubstringPattern(s: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn repeated_substring_pattern(s: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Boolean\n     */\n    function repeatedSubstringPattern($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"99.9K\", \"totalSubmission\": \"243.3K\", \"totalAcceptedRaw\": 99877, \"totalSubmissionRaw\": 243287, \"acRate\": \"41.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"abab\"",
+  "metaData": "{\r\n  \"name\": \"repeatedSubstringPattern\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

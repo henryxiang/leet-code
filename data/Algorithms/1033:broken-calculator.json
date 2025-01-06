@@ -1,0 +1,115 @@
+{
+  "questionId": "1033",
+  "questionFrontendId": "991",
+  "boundTopicId": null,
+  "title": "Broken Calculator",
+  "titleSlug": "broken-calculator",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On a broken calculator that has a number showing on its display, we can perform two operations:</p>\r\n\r\n<ul>\r\n\t<li><strong>Double</strong>: Multiply the number on the display by 2, or;</li>\r\n\t<li><strong>Decrement</strong>: Subtract 1 from the number on the display.</li>\r\n</ul>\r\n\r\n<p>Initially, the calculator is displaying the number <code>X</code>.</p>\r\n\r\n<p>Return the minimum number of operations needed to display the number <code>Y</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>X = <span id=\"example-input-1-1\">2</span>, Y = <span id=\"example-input-1-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\r\n<strong>Explanation: </strong>Use double operation and then decrement operation {2 -&gt; 4 -&gt; 3}.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>X = <span id=\"example-input-2-1\">5</span>, Y = <span id=\"example-input-2-2\">8</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">2</span>\r\n<strong>Explanation: </strong>Use decrement and then double {5 -&gt; 4 -&gt; 8}.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>X = <span id=\"example-input-3-1\">3</span>, Y = <span id=\"example-input-3-2\">10</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">3</span>\r\n<strong>Explanation: </strong> Use double, decrement and double {3 -&gt; 6 -&gt; 5 -&gt; 10}.\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>X = <span id=\"example-input-4-1\">1024</span>, Y = <span id=\"example-input-4-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">1023</span>\r\n<strong>Explanation: </strong>Use decrement operations 1023 times.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= X &lt;= 10^9</code></li>\r\n\t<li><code>1 &lt;= Y &lt;= 10^9</code></li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 245,
+  "dislikes": 60,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"2 Keys Keyboard\", \"titleSlug\": \"2-keys-keyboard\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "shubpate",
+      "profileUrl": "/shubpate/",
+      "avatarUrl": "https://assets.leetcode.com/users/manuk89/avatar_1524350746.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 16}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int brokenCalc(int X, int Y) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int brokenCalc(int X, int Y) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def brokenCalc(self, X, Y):\n        \"\"\"\n        :type X: int\n        :type Y: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def brokenCalc(self, X: int, Y: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint brokenCalc(int X, int Y){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int BrokenCalc(int X, int Y) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} X\n * @param {number} Y\n * @return {number}\n */\nvar brokenCalc = function(X, Y) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} x\n# @param {Integer} y\n# @return {Integer}\ndef broken_calc(x, y)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func brokenCalc(_ X: Int, _ Y: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func brokenCalc(X int, Y int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def brokenCalc(X: Int, Y: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun brokenCalc(X: Int, Y: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn broken_calc(x: i32, y: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $X\n     * @param Integer $Y\n     * @return Integer\n     */\n    function brokenCalc($X, $Y) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11K\", \"totalSubmission\": \"25.5K\", \"totalAcceptedRaw\": 10988, \"totalSubmissionRaw\": 25479, \"acRate\": \"43.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "690",
+    "canSeeDetail": true,
+    "url": "/articles/broken-calculator/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Work Backwards\n\n**Intuition**\n\nInstead of multiplying by 2 or subtracting 1 from `X`, we could divide by 2 (when `Y` is even) or add 1 to `Y`.\n\nThe motivation for this is that it turns out we always greedily divide by 2:\n\n* If say `Y` is even, then if we perform 2 additions and one division, we could instead perform one division and one addition for less operations [`(Y+2) / 2` vs `Y/2 + 1`].\n\n* If say `Y` is odd, then if we perform 3 additions and one division, we could instead perform 1 addition, 1 division, and 1 addition for less operations [`(Y+3) / 2` vs `(Y+1) / 2 + 1`].\n\n**Algorithm**\n\nWhile `Y` is larger than `X`, add 1 if it is odd, else divide by 2.  After, we need to do `X - Y` additions to reach `X`.\n\n<iframe src=\"https://leetcode.com/playground/xhbtbZzk/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"xhbtbZzk\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\log Y)$$.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "675",
+      "count": 17,
+      "average": 4.882,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "2\n3",
+  "metaData": "{\r\n  \"name\": \"brokenCalc\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"X\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"Y\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

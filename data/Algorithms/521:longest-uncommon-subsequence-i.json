@@ -1,0 +1,111 @@
+{
+  "questionId": "521",
+  "questionFrontendId": "521",
+  "boundTopicId": null,
+  "title": "Longest Uncommon Subsequence I ",
+  "titleSlug": "longest-uncommon-subsequence-i",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a group of two strings, you need to find the longest uncommon subsequence of this group of two strings.\r\nThe longest uncommon subsequence is defined as the longest subsequence of one of these strings and this subsequence should not be <b>any</b> subsequence of the other strings.\r\n</p>\r\n\r\n<p>\r\nA <b>subsequence</b> is a sequence that can be derived from one sequence by deleting some characters without changing the order of the remaining elements. Trivially, any string is a subsequence of itself and an empty string is a subsequence of any string.\r\n</p>\r\n\r\n<p>\r\nThe input will be two strings, and the output needs to be the length of the longest uncommon subsequence. If the longest uncommon subsequence doesn't exist, return -1.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \"aba\", \"cdc\"\r\n<b>Output:</b> 3\r\n<b>Explanation:</b> The longest uncommon subsequence is \"aba\" (or \"cdc\"), <br/>because \"aba\" is a subsequence of \"aba\", <br/>but not a subsequence of any other strings in the group of two strings. \r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<ol>\r\n<li>Both strings' lengths will not exceed 100.</li>\r\n<li>Only letters from a ~ z will appear in input strings. </li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 237,
+  "dislikes": 3762,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Uncommon Subsequence II\", \"titleSlug\": \"longest-uncommon-subsequence-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findLUSlength(string a, string b) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findLUSlength(String a, String b) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findLUSlength(self, a, b):\n        \"\"\"\n        :type a: str\n        :type b: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findLUSlength(self, a: str, b: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findLUSlength(char * a, char * b){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindLUSlength(string a, string b) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} a\n * @param {string} b\n * @return {number}\n */\nvar findLUSlength = function(a, b) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} a\n# @param {String} b\n# @return {Integer}\ndef find_lu_slength(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findLUSlength(_ a: String, _ b: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findLUSlength(a string, b string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findLUSlength(a: String, b: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findLUSlength(a: String, b: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_lu_slength(a: String, b: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $a\n     * @param String $b\n     * @return Integer\n     */\n    function findLUSlength($a, $b) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"53K\", \"totalSubmission\": \"92.9K\", \"totalAcceptedRaw\": 52978, \"totalSubmissionRaw\": 92888, \"acRate\": \"57.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "99",
+    "canSeeDetail": true,
+    "url": "/articles/longest-uncommon-subsequence-i/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\nIn the brute force approach we will generate all the possible $$2^n$$ subsequences of both the strings and store their number of occurences in a hashmap.\nLongest subsequence whose frequency is equal to $$1$$ will be the required subsequence.\nAnd, if it is not found we will return $$-1$$.\n\n\n<iframe src=\"https://leetcode.com/playground/tSXGPoqU/shared\" frameBorder=\"0\" name=\"tSXGPoqU\" width=\"100%\" height=\"479\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(2^x+2^y)$$. where $$x$$ and $$y$$ are the lengths of strings $$a$$ and $$b$$ respectively . Number of subsequences will be $$2^x+2^y$$.\n* Space complexity : $$O(2^x+2^y)$$. $$2^x+2^y$$ subsequences will be generated.\n\n---\n#### Approach #2 Simple Solution[Accepted]\n\n**Algorithm**\n\nSimple analysis of this problem can lead to an easy solution.\n\nThese three cases are possible with string $$a$$ and $$b$$:-\n\n* $$a=b$$. If both the strings are identical, it is obvious that no subsequence will be uncommon. Hence, return -1.\n\n* $$length(a)=length(b)$$ and $$a \\ne b$$. Example: $$abc$$ and $$abd$$. In this case we can consider any string i.e. $$abc$$ or $$abd$$ as a required subsequence, as out of these two strings one string will never be a subsequence of other string. Hence, return $$length(a)$$ or $$length(b)$$.\n\n* $$length(a) \\ne length(b)$$. Example $$abcd$$ and $$abc$$. In this case we can consider bigger string as a required subsequence because bigger string can't be a subsequence of smaller string. Hence, return $$max(length(a),length(b))$$.\n\n\n<iframe src=\"https://leetcode.com/playground/YdNcPgTE/shared\" frameBorder=\"0\" name=\"YdNcPgTE\" width=\"100%\" height=\"173\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(min(x,y))$$. where $$x$$ and $$y$$ are the lengths of strings $$a$$ and $$b$$ respectively. Here equals method will take $$min(x,y)$$ time .\n\n* Space complexity : $$O(1)$$. No extra space required.\n\n---\n\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "97",
+      "count": 32,
+      "average": 3.656,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"aba\"\n\"cdc\"",
+  "metaData": "{\r\n  \"name\": \"findLUSlength\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"a\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"b\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

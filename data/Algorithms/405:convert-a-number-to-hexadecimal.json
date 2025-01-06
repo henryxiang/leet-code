@@ -1,0 +1,93 @@
+{
+  "questionId": "405",
+  "questionFrontendId": "405",
+  "boundTopicId": null,
+  "title": "Convert a Number to Hexadecimal",
+  "titleSlug": "convert-a-number-to-hexadecimal",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven an integer, write an algorithm to convert it to hexadecimal. For negative integer, <a href=\"https://en.wikipedia.org/wiki/Two%27s_complement\" target=\"_blank\">two’s complement</a> method is used.\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<ol>\r\n<li>All letters in hexadecimal (<code>a-f</code>) must be in lowercase.</li>\r\n<li>The hexadecimal string must not contain extra leading <code>0</code>s. If the number is zero, it is represented by a single zero character <code>'0'</code>; otherwise, the first character in the hexadecimal string will not be the zero character.</li>\r\n<li>The given number is guaranteed to fit within the range of a 32-bit signed integer.</li>\r\n<li>You <b>must not use <i>any</i> method provided by the library</b> which converts/formats the number to hex directly.</li>\r\n</ol>\r\n</p>\r\n\r\n<p><b>Example 1:</b>\r\n<pre>\r\nInput:\r\n26\r\n\r\nOutput:\r\n\"1a\"\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b>\r\n<pre>\r\nInput:\r\n-1\r\n\r\nOutput:\r\n\"ffffffff\"\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 341,
+  "dislikes": 90,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string toHex(int num) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String toHex(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def toHex(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def toHex(self, num: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * toHex(int num){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ToHex(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} num\n * @return {string}\n */\nvar toHex = function(num) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num\n# @return {String}\ndef to_hex(num)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func toHex(_ num: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func toHex(num int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def toHex(num: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun toHex(num: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn to_hex(num: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return String\n     */\n    function toHex($num) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"56.3K\", \"totalSubmission\": \"131.4K\", \"totalAcceptedRaw\": 56336, \"totalSubmissionRaw\": 131360, \"acRate\": \"42.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "26",
+  "metaData": "{\r\n  \"name\": \"toHex\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"num\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

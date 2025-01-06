@@ -1,0 +1,97 @@
+{
+  "questionId": "742",
+  "questionFrontendId": "709",
+  "boundTopicId": null,
+  "title": "To Lower Case",
+  "titleSlug": "to-lower-case",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;Hello&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;hello&quot;</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">&quot;here&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">&quot;here&quot;</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">&quot;LOVELY&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">&quot;lovely&quot;</span>\r\n</pre>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 368,
+  "dislikes": 1267,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string toLowerCase(string str) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String toLowerCase(String str) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def toLowerCase(self, str):\n        \"\"\"\n        :type str: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def toLowerCase(self, str: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * toLowerCase(char * str){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ToLowerCase(string str) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} str\n * @return {string}\n */\nvar toLowerCase = function(str) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} str\n# @return {String}\ndef to_lower_case(str)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func toLowerCase(_ str: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func toLowerCase(str string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def toLowerCase(str: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun toLowerCase(str: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn to_lower_case(str: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $str\n     * @return String\n     */\n    function toLowerCase($str) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"168.9K\", \"totalSubmission\": \"216K\", \"totalAcceptedRaw\": 168875, \"totalSubmissionRaw\": 216040, \"acRate\": \"78.2%\"}",
+  "hints": [
+    "Most languages support lowercase conversion for a string data type. However, that is certainly not the purpose of the problem. Think about how the implementation of the lowercase function call can be done easily.",
+    "<b>Think ASCII!</b>",
+    "Think about the different capital letters and their ASCII codes and how that relates to their lowercase counterparts. Does there seem to be any pattern there? Any mathematical relationship that we can use?"
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"Hello\"",
+  "metaData": "{\r\n  \"name\": \"toLowerCase\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"str\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

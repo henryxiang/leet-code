@@ -1,0 +1,115 @@
+{
+  "questionId": "901",
+  "questionFrontendId": "870",
+  "boundTopicId": null,
+  "title": "Advantage Shuffle",
+  "titleSlug": "advantage-shuffle",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two arrays <code>A</code> and <code>B</code> of equal size, the <em>advantage of <code>A</code> with respect to <code>B</code></em> is the number of indices <code>i</code>&nbsp;for which <code>A[i] &gt; B[i]</code>.</p>\r\n\r\n<p>Return <strong>any</strong> permutation of <code>A</code> that maximizes its advantage with respect to <code>B</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[2,7,11,15]</span>, B = <span id=\"example-input-1-2\">[1,10,4,11]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[2,11,7,15]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">[12,24,8,32]</span>, B = <span id=\"example-input-2-2\">[13,25,32,11]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[24,32,8,12]</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length = B.length &lt;= 10000</code></li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 10^9</code></li>\r\n\t<li><code>0 &lt;= B[i] &lt;= 10^9</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 350,
+  "dislikes": 22,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ngonie54",
+      "profileUrl": "/ngonie54/",
+      "avatarUrl": "https://www.gravatar.com/avatar/31006aa24bafa73b9a237829202860f3.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> advantageCount(vector<int>& A, vector<int>& B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] advantageCount(int[] A, int[] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def advantageCount(self, A, B):\n        \"\"\"\n        :type A: List[int]\n        :type B: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def advantageCount(self, A: List[int], B: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* advantageCount(int* A, int ASize, int* B, int BSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] AdvantageCount(int[] A, int[] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number[]} B\n * @return {number[]}\n */\nvar advantageCount = function(A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer[]} b\n# @return {Integer[]}\ndef advantage_count(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func advantageCount(_ A: [Int], _ B: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func advantageCount(A []int, B []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def advantageCount(A: Array[Int], B: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun advantageCount(A: IntArray, B: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn advantage_count(a: Vec<i32>, b: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer[] $B\n     * @return Integer[]\n     */\n    function advantageCount($A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"15.3K\", \"totalSubmission\": \"34.7K\", \"totalAcceptedRaw\": 15265, \"totalSubmissionRaw\": 34664, \"acRate\": \"44.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "507",
+    "canSeeDetail": true,
+    "url": "/articles/advantage-shuffle/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Greedy\n\n**Intuition**\n\nIf the smallest card `a` in `A` beats the smallest card `b` in `B`, we should pair them.  Otherwise, `a` is useless for our score, as it can't beat any cards.\n\nWhy should we pair `a` and `b` if `a > b`?  Because every card in `A` is larger than `b`, any card we place in front of `b` will score a point.  We might as well use the weakest card to pair with `b` as it makes the rest of the cards in `A` strictly larger, and thus have more potential to score points.\n\n**Algorithm**\n\nWe can use the above intuition to create a greedy approach.  The current smallest card to beat in `B` will always be `b = sortedB[j]`.  For each card `a` in `sortedA`, we will either have `a` beat that card `b` (put `a` into `assigned[b]`), or throw `a` out (put `a` into `remaining`).\n\nAfterwards, we can use our annotations `assigned` and `remaining` to reconstruct the answer.  Please see the comments for more details.\n\n\n<iframe src=\"https://leetcode.com/playground/GJdLmnhx/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"GJdLmnhx\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the length of `A` and `B`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "500",
+      "count": 8,
+      "average": 4.625,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,7,11,15]\n[1,10,4,11]",
+  "metaData": "{\r\n  \"name\": \"advantageCount\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

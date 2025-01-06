@@ -1,0 +1,111 @@
+{
+  "questionId": "920",
+  "questionFrontendId": "884",
+  "boundTopicId": null,
+  "title": "Uncommon Words from Two Sentences",
+  "titleSlug": "uncommon-words-from-two-sentences",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We are given two sentences <code>A</code> and <code>B</code>.&nbsp; (A <em>sentence</em>&nbsp;is a string of space separated words.&nbsp; Each <em>word</em> consists only of lowercase letters.)</p>\r\n\r\n<p>A word is <em>uncommon</em>&nbsp;if it appears exactly once in one of the sentences, and does not appear in the other sentence.</p>\r\n\r\n<p>Return a list of all uncommon words.&nbsp;</p>\r\n\r\n<p>You may return the list in any order.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">&quot;this apple is sweet&quot;</span>, B = <span id=\"example-input-1-2\">&quot;this apple is sour&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[&quot;sweet&quot;,&quot;sour&quot;]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">&quot;apple apple&quot;</span>, B = <span id=\"example-input-2-2\">&quot;banana&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[&quot;banana&quot;]</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= A.length &lt;= 200</code></li>\r\n\t<li><code>0 &lt;= B.length &lt;= 200</code></li>\r\n\t<li><code>A</code> and <code>B</code> both contain only spaces and lowercase letters.</li>\r\n</ol>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 299,
+  "dislikes": 72,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> uncommonFromSentences(string A, string B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String[] uncommonFromSentences(String A, String B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def uncommonFromSentences(self, A, B):\n        \"\"\"\n        :type A: str\n        :type B: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def uncommonFromSentences(self, A: str, B: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** uncommonFromSentences(char * A, char * B, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string[] UncommonFromSentences(string A, string B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} A\n * @param {string} B\n * @return {string[]}\n */\nvar uncommonFromSentences = function(A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} a\n# @param {String} b\n# @return {String[]}\ndef uncommon_from_sentences(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func uncommonFromSentences(_ A: String, _ B: String) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func uncommonFromSentences(A string, B string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def uncommonFromSentences(A: String, B: String): Array[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun uncommonFromSentences(A: String, B: String): Array<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn uncommon_from_sentences(a: String, b: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $A\n     * @param String $B\n     * @return String[]\n     */\n    function uncommonFromSentences($A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"42.3K\", \"totalSubmission\": \"68.7K\", \"totalAcceptedRaw\": 42341, \"totalSubmissionRaw\": 68721, \"acRate\": \"61.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "530",
+    "canSeeDetail": true,
+    "url": "/articles/uncommon-words-from-two-sentences/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Counting\n\n**Intuition and Algorithm**\n\nEvery uncommon word occurs exactly once in total.  We can count the number of occurrences of every word, then return ones that occur exactly once.\n\n<iframe src=\"https://leetcode.com/playground/YwdvfZv6/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"YwdvfZv6\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(M + N)$$, where $$M, N$$ are the lengths of `A` and `B` respectively.\n\n* Space Complexity:  $$O(M + N)$$, the space used by `count`.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "523",
+      "count": 5,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"this apple is sweet\"\n\"this apple is sour\"",
+  "metaData": "{\r\n  \"name\": \"uncommonFromSentences\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

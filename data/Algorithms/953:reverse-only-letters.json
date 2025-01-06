@@ -1,0 +1,113 @@
+{
+  "questionId": "953",
+  "questionFrontendId": "917",
+  "boundTopicId": null,
+  "title": "Reverse Only Letters",
+  "titleSlug": "reverse-only-letters",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>S</code>, return the &quot;reversed&quot; string where all characters that are not a letter&nbsp;stay in the same place, and all letters reverse their positions.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<div>\r\n<div>\r\n<ol>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;ab-cd&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;dc-ba&quot;</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">&quot;a-bC-dEf-ghIj&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">&quot;j-Ih-gfE-dCba&quot;</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">&quot;Test1ng-Leet=code-Q!&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">&quot;Qedo1ct-eeLg=ntse-T!&quot;</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong><span>Note:</span></strong></p>\r\n\r\n<ol>\r\n\t<li><code>S.length &lt;= 100</code></li>\r\n\t<li><code>33 &lt;= S[i].ASCIIcode &lt;= 122</code>&nbsp;</li>\r\n\t<li><code>S</code> doesn&#39;t contain <code>\\</code> or <code>&quot;</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 362,
+  "dislikes": 30,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "wangyudi",
+      "profileUrl": "/wangyudi/",
+      "avatarUrl": "https://www.gravatar.com/avatar/63f3a78f8c73ff0dcfe57ff271ad02df.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string reverseOnlyLetters(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String reverseOnlyLetters(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def reverseOnlyLetters(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def reverseOnlyLetters(self, S: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * reverseOnlyLetters(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ReverseOnlyLetters(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {string}\n */\nvar reverseOnlyLetters = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef reverse_only_letters(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func reverseOnlyLetters(_ S: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func reverseOnlyLetters(S string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def reverseOnlyLetters(S: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun reverseOnlyLetters(S: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn reverse_only_letters(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return String\n     */\n    function reverseOnlyLetters($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"41.3K\", \"totalSubmission\": \"72.8K\", \"totalAcceptedRaw\": 41313, \"totalSubmissionRaw\": 72756, \"acRate\": \"56.8%\"}",
+  "hints": [
+    "This problem is exactly like reversing a normal string except that there are certain characters that we have to simply skip. That should be easy enough to do if you know how to reverse a string using the two-pointer approach."
+  ],
+  "solution": {
+    "id": "581",
+    "canSeeDetail": true,
+    "url": "/articles/reverse-only-letters/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Stack of Letters\n\n**Intuition and Algorithm**\n\nCollect the letters of `S` separately into a stack, so that popping the stack reverses the letters.  (Alternatively, we could have collected the letters into an array and reversed the array.)\n\nThen, when writing the characters of `S`, any time we need a letter, we use the one we have prepared instead.\n\n<iframe src=\"https://leetcode.com/playground/2S2yvnpZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"2S2yvnpZ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Reverse Pointer\n\n**Intuition**\n\nWrite the characters of `S` one by one.  When we encounter a letter, we want to write the next letter that occurs if we iterated through the string backwards.\n\nSo we do just that: keep track of a pointer `j` that iterates through the string backwards.  When we need to write a letter, we use it.\n\n<iframe src=\"https://leetcode.com/playground/2RFgNCou/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"2RFgNCou\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "569",
+      "count": 8,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"ab-cd\"",
+  "metaData": "{\r\n  \"name\": \"reverseOnlyLetters\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

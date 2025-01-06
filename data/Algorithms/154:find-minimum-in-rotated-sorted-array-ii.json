@@ -1,0 +1,109 @@
+{
+  "questionId": "154",
+  "questionFrontendId": "154",
+  "boundTopicId": null,
+  "title": "Find Minimum in Rotated Sorted Array II",
+  "titleSlug": "find-minimum-in-rotated-sorted-array-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.</p>\r\n\r\n<p>(i.e., &nbsp;<code>[0,1,2,4,5,6,7]</code>&nbsp;might become &nbsp;<code>[4,5,6,7,0,1,2]</code>).</p>\r\n\r\n<p>Find the minimum element.</p>\r\n\r\n<p>The array may contain duplicates.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [1,3,5]\r\n<strong>Output:</strong> 1</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [2,2,2,0,1]\r\n<strong>Output:</strong> 0</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>This is a follow up problem to&nbsp;<a href=\"https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/\">Find Minimum in Rotated Sorted Array</a>.</li>\r\n\t<li>Would allow duplicates affect the run-time complexity? How and why?</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 615,
+  "dislikes": 172,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Find Minimum in Rotated Sorted Array\", \"titleSlug\": \"find-minimum-in-rotated-sorted-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findMin(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findMin(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findMin(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findMin(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findMin(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindMin(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar findMin = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef find_min(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findMin(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findMin(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findMin(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findMin(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_min(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function findMin($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"152.8K\", \"totalSubmission\": \"381.5K\", \"totalAcceptedRaw\": 152817, \"totalSubmissionRaw\": 381537, \"acRate\": \"40.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "820",
+    "canSeeDetail": true,
+    "url": "/articles/find-minimum-in-rotated-sorted-array-ii/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Variant of Binary Search\n\n**Intuition**\n\nGiven a sorted array in ascending order (denoted as `L[i]`), the array is then rotated over certain _unknown pivot_, (denoted as `L'[i]`). We are asked to find the _minimum value_ of this sorted and rotated array, which is to find the value of the first element in the original array, _i.e._ `L[0]`.\n\nThe problem resembles a common problem of _finding a given value from a sorted array_, to which problem one could apply the **binary search** algorithm. Intuitively, one might wonder if we could apply a variant of binary search algorithm to solve our problem here.\n\nIndeed, this is the right intuition, though the tricky part is to figure out a _**concise solution**_ that could work for all cases.\n\nTo illustrate the algorithm, we draw the array in a 2D dimension in the following graph, where the X axis indicates the index of each element in the array and the Y axis indicates the value of the element.\n\n![pic](../Figures/154/154_axis.png)\n\n_The main structure of our algorithm remains the same as the classical binary search algorithm._ As a reminder, we summarize it briefly as follows:\n\n- We keep two pointers, _i.e._ `low`, `high` which point to the lowest and highest boundary of our search scope.\n<br/>\n- We then reduce the search scope by moving either of pointers, according to various situations. Usually we shift one of pointers to the mid point between `low` and `high`, (_i.e._ `pivot = (low+high)/2`), which reduces the search scope down to half. This is also where the name of the algorithm comes from.\n<br/>\n- The reduction of the search scope would stop, either we find the desired element or the two pointers converge (_i.e._ `low == high`).\n\n\n**Algorithm**\n\nIn the classical binary search algorithm, we would compare the pivot element (_i.e._ `nums[pivot]`) with the value that we would like to locate. In our case, however, we would compare the pivot element to the element pointed by the upper bound pointer (_i.e._ `nums[high]`).\n\n>Following the structure of the binary search algorithm, the essential part remained is to design the cases on how to update the two pointers.\n\nHere we give one example on how we can break it down _**concisely**_ into three cases. Note that given the array, we consider the element pointed by the `low` index to be on the left-hand side of the array, and the element pointed by the `high` index to be on the right-hand side.  \n\n>Case 1). `nums[pivot] < nums[high]`\n\n![pic](../Figures/154/154_case_1.png)\n\n- The pivot element resides in _the same half_ as the upper bound element.\n- Therefore, the desired minimum element should reside to the **left-hand side** of pivot element. As a result, we then move the upper bound down to the pivot index, _i.e._ `high = pivot`.\n\n>Case 2). `nums[pivot] > nums[high]`\n\n![pic](../Figures/154/154_case_2.png)\n\n- The pivot element resides in _the different half_ of array as the upper bound element.\n- Therefore, the desired minium element should reside to the **right-hand side** of the pivot element. As a result, we then move the lower bound up next to the pivot index, _i.e._ `low = pivot + 1`. \n\n>Case 3). `nums[pivot] == nums[high]` \n\n![pic](../Figures/154/154_case_3_ii.png)\n\n- In this case, we are not sure which side of the pivot that the desired minimum element would reside.\n- To further reduce the search scope, a safe measure would be to reduce the upper bound by one (_i.e._ `high = high - 1`), rather than moving _aggressively_ to the pivot point.\n- The above strategy would prevent the algorithm from stagnating (_i.e._ endless loop). More importantly, it maintains the **correctness** of the procedure, _i.e._ we would not end up with skipping the desired element.\n\nTo summarize, this algorithm differs to the classical binary search algorithm in two parts:\n\n- We use the upper bound of search scope as the reference for the comparison with the pivot element, while in the classical binary search the reference would be the desired value.\n<br/>\n- When the result of comparison is equal (_i.e._ Case #3), we further move the upper bound, while in the classical binary search normally we would return the value immediately.\n\nHere are some sample implementations based on the above algorithm. _Note:_ the idea is inspired by the post from [sheehan](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/discuss/48808/My-pretty-simple-code-to-solve-it) in the discussion forum.\n\n<iframe src=\"https://leetcode.com/playground/LUWiqdzr/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"LUWiqdzr\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: on average $$\\mathcal{O}(\\log_{2}{N})$$ where $$N$$ is the length of the array, since in general it is a binary search algorithm. However, in the worst case where the array contains identical elements (_i.e._ case #3 `nums[pivot]==nums[high]`), the algorithm would deteriorate to iterating each element, as a result, the time complexity becomes $$\\mathcal{O}(N)$$.\n\n* Space complexity : $$\\mathcal{O}(1)$$, it's a constant space solution.\n\n\n**Discussion**\n\n>The problem is a follow-up to the problem of [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/). The difference is that in this problem the array can contain duplicates.\n_So the question is \"Would allow duplicates affect the run-time complexity? How and why?\"_\n\nFirst of all, the problem of [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) can be considered as a specific case of this problem, where it just happens that the array does not contain any duplicate. As a result, the very solutions of this problem would work for the problem of [#153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) as well. It is just that we would never come cross the case #3 (_i.e._ `nums[pivot] == nums[high]`) in the problem of [#153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/).\n\nIt is due to the fact that there might exist some duplicates in the array, that we come up the case #3 which eventually render the time complexity of the algorithm to be linear $$\\mathcal{O}(N)$$, rather than $$\\mathcal{O}(\\log_{2}{N})$$.\n\n>One might wonder that whether it works in case #3 if we move the lower boundary (_i.e._ `low += 1`), rather than the upper boundary (_i.e._ `high -= 1`).\n\nThe short answer is that it could work for some cases, but not for all. For instance, given the input `[1, 3, 3]`, by moving the lower boundary, we would skip the correct answer.\n\n>While we do `low = pivot + 1` to reduce the search scope, then why not do `high = pivot - 1` instead of `high = pivot`?\nOr a similar question would be _\"why don't we do check of `low <= high` rather than `low < high`\"?_\n\nAs a matter of fact, the binary search algorithm has several [forms of implementation](https://en.wikipedia.org/wiki/Binary_search_algorithm), regarding how we set the boundaries and the loop conditions. One can refer to the [Explore card of Binary Search](https://leetcode.com/explore/learn/card/binary-search/) in LeetCode for more details. As simple as the idea of binary search might seem to be, it is tricky to make it work for all cases.\n\nAs one would discover from the card, the above implementation of binary search complies with the [template II](https://leetcode.com/explore/learn/card/binary-search/126/template-ii/937/) of binary search. And by replacing `high = pivot` with `high = pivot - 1`, the algorithm will not work.\n\nAs subtle as it looks like, the update of the pointers should be consistent with the conditions of the loop. As a rule of thumb, it is advised to stick with one form of binary search, and not to mix them up.\n\n> One might notice that we are calculating the pivot with the formula of `pivot = low + (high-low)/2`, rather than the more intuitive term `pivot = (high+low)/2`.\n\nActually, this is done intentionally to prevent the numeric overflow issue, since the sum of two integers could exceed the limit of the integer number. As a fun fact, the above mistake prevails in many implementations of binary search, as revealed from a post titled [_\"Nearly All Binary Searches and Mergesorts are Broken\"_](https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html) from googleblog in 2006.\n\n---\n\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/) and @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "784",
+      "count": 9,
+      "average": 4.889,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,3,5]",
+  "metaData": "{\r\n  \"name\": \"findMin\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

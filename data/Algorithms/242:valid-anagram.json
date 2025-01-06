@@ -1,0 +1,109 @@
+{
+  "questionId": "242",
+  "questionFrontendId": "242",
+  "boundTopicId": null,
+  "title": "Valid Anagram",
+  "titleSlug": "valid-anagram",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two strings <em>s</em> and <em>t&nbsp;</em>, write a function to determine if <em>t</em> is an anagram of <em>s</em>.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> <em>s</em> = &quot;anagram&quot;, <em>t</em> = &quot;nagaram&quot;\r\n<b>Output:</b> true\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> <em>s</em> = &quot;rat&quot;, <em>t</em> = &quot;car&quot;\r\n<b>Output: </b>false\r\n</pre>\r\n\r\n<p><strong>Note:</strong><br />\r\nYou may assume the string contains only lowercase alphabets.</p>\r\n\r\n<p><strong>Follow up:</strong><br />\r\nWhat if the inputs contain unicode characters? How would you adapt your solution to such case?</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1014,
+  "dislikes": 126,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Group Anagrams\", \"titleSlug\": \"group-anagrams\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindrome Permutation\", \"titleSlug\": \"palindrome-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Find All Anagrams in a String\", \"titleSlug\": \"find-all-anagrams-in-a-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zulily\", \"slug\": \"zulily\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Morgan Stanley\", \"slug\": \"morgan-stanley\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isAnagram(string s, string t) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isAnagram(String s, String t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isAnagram(self, s, t):\n        \"\"\"\n        :type s: str\n        :type t: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isAnagram(self, s: str, t: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isAnagram(char * s, char * t){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsAnagram(string s, string t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {string} t\n * @return {boolean}\n */\nvar isAnagram = function(s, t) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String} t\n# @return {Boolean}\ndef is_anagram(s, t)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isAnagram(_ s: String, _ t: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isAnagram(s string, t string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isAnagram(s: String, t: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isAnagram(s: String, t: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_anagram(s: String, t: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $t\n     * @return Boolean\n     */\n    function isAnagram($s, $t) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"443.1K\", \"totalSubmission\": \"812.9K\", \"totalAcceptedRaw\": 443095, \"totalSubmissionRaw\": 812949, \"acRate\": \"54.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "5",
+    "canSeeDetail": true,
+    "url": "/articles/valid-anagram/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n---\r\n#### Approach #1 (Sorting) [Accepted]\r\n\r\n**Algorithm**\r\n\r\nAn anagram is produced by rearranging the letters of $$s$$ into $$t$$. Therefore, if $$t$$ is an anagram of $$s$$, sorting both strings will result in two identical strings. Furthermore, if $$s$$ and $$t$$ have different lengths, $$t$$ must not be an anagram of $$s$$ and we can return early.\r\n\r\n```java\r\npublic boolean isAnagram(String s, String t) {\r\n    if (s.length() != t.length()) {\r\n        return false;\r\n    }\r\n    char[] str1 = s.toCharArray();\r\n    char[] str2 = t.toCharArray();\r\n    Arrays.sort(str1);\r\n    Arrays.sort(str2);\r\n    return Arrays.equals(str1, str2);\r\n}\r\n```\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(n \\log n)$$.\r\nAssume that $$n$$ is the length of $$s$$, sorting costs $$O(n \\log n)$$ and comparing two strings costs $$O(n)$$. Sorting time dominates and the overall time complexity is $$O(n \\log n)$$.\r\n\r\n* Space complexity : $$O(1)$$.\r\nSpace depends on the sorting implementation which, usually, costs $$O(1)$$ auxiliary space if `heapsort` is used. Note that in Java, `toCharArray()` makes a copy of the string so it costs $$O(n)$$ extra space, but we ignore this for complexity analysis because:\r\n\r\n    * It is a language dependent detail.\r\n    * It depends on how the function is designed. For example, the function parameter types can be changed to `char[]`.\r\n\r\n---\r\n#### Approach #2 (Hash Table) [Accepted]\r\n\r\n**Algorithm**\r\n\r\nTo examine if $$t$$ is a rearrangement of $$s$$, we can count occurrences of each letter in the two strings and compare them. Since both $$s$$ and $$t$$ contain only letters from $$a-z$$, a simple counter table of size 26 is suffice.\r\n\r\nDo we need *two* counter tables for comparison? Actually no, because we could increment the counter for each letter in $$s$$ and decrement the counter for each letter in $$t$$, then check if the counter reaches back to zero.\r\n\r\n```java\r\npublic boolean isAnagram(String s, String t) {\r\n    if (s.length() != t.length()) {\r\n        return false;\r\n    }\r\n    int[] counter = new int[26];\r\n    for (int i = 0; i < s.length(); i++) {\r\n        counter[s.charAt(i) - 'a']++;\r\n        counter[t.charAt(i) - 'a']--;\r\n    }\r\n    for (int count : counter) {\r\n        if (count != 0) {\r\n            return false;\r\n        }\r\n    }\r\n    return true;\r\n}\r\n```\r\n\r\nOr we could first increment the counter for $$s$$, then decrement the counter for $$t$$. If at any point the counter drops below zero, we know that $$t$$ contains an extra letter not in $$s$$ and return false immediately.\r\n\r\n```java\r\npublic boolean isAnagram(String s, String t) {\r\n    if (s.length() != t.length()) {\r\n        return false;\r\n    }\r\n    int[] table = new int[26];\r\n    for (int i = 0; i < s.length(); i++) {\r\n        table[s.charAt(i) - 'a']++;\r\n    }\r\n    for (int i = 0; i < t.length(); i++) {\r\n        table[t.charAt(i) - 'a']--;\r\n        if (table[t.charAt(i) - 'a'] < 0) {\r\n            return false;\r\n        }\r\n    }\r\n    return true;\r\n}\r\n```\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(n)$$.\r\nTime complexity is $$O(n)$$ because accessing the counter table is a constant time operation.\r\n\r\n* Space complexity : $$O(1)$$.\r\nAlthough we do use extra space, the space complexity is $$O(1)$$ because the table's size stays constant no matter how large $$n$$ is.\r\n\r\n**Follow up**\r\n\r\nWhat if the inputs contain unicode characters? How would you adapt your solution to such case?\r\n\r\n**Answer**\r\n\r\nUse a hash table instead of a fixed size counter. Imagine allocating a large size array to fit the entire range of unicode characters, which could go up to [more than 1 million](http://stackoverflow.com/a/5928054/490463). A hash table is a more generic solution and could adapt to any range of characters.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "2",
+      "count": 66,
+      "average": 4.879,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"anagram\"\n\"nagaram\"",
+  "metaData": "{\r\n  \"name\": \"isAnagram\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"t\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

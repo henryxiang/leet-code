@@ -1,0 +1,96 @@
+{
+  "questionId": "1414",
+  "questionFrontendId": "1293",
+  "boundTopicId": null,
+  "title": "Shortest Path in a Grid with Obstacles Elimination",
+  "titleSlug": "shortest-path-in-a-grid-with-obstacles-elimination",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <code>m * n</code> grid, where each cell is either <code>0</code> (empty)&nbsp;or <code>1</code> (obstacle).&nbsp;In one step, you can move up, down, left or right from and to an empty cell.</p>\r\n\r\n<p>Return the minimum number of steps to walk from the upper left corner&nbsp;<code>(0, 0)</code>&nbsp;to the lower right corner&nbsp;<code>(m-1, n-1)</code> given that you can eliminate&nbsp;<strong>at most</strong> <code>k</code> obstacles. If it is not possible to find such&nbsp;walk return -1.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\ngrid = \r\n[[0,0,0],\r\n&nbsp;[1,1,0],\r\n [0,0,0],\r\n&nbsp;[0,1,1],\r\n [0,0,0]], \r\nk = 1\r\n<strong>Output:</strong> 6\r\n<strong>Explanation: \r\n</strong>The shortest path without eliminating any obstacle is 10.&nbsp;\r\nThe shortest path with one obstacle elimination at position (3,2) is 6. Such path is <code>(0,0) -&gt; (0,1) -&gt; (0,2) -&gt; (1,2) -&gt; (2,2) -&gt; <strong>(3,2)</strong> -&gt; (4,2)</code>.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\ngrid = \r\n[[0,1,1],\r\n&nbsp;[1,1,1],\r\n&nbsp;[1,0,0]], \r\nk = 1\r\n<strong>Output:</strong> -1\r\n<strong>Explanation: \r\n</strong>We need to eliminate at least two obstacles to find such a walk.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>grid.length&nbsp;== m</code></li>\r\n\t<li><code>grid[0].length&nbsp;== n</code></li>\r\n\t<li><code>1 &lt;= m, n &lt;= 40</code></li>\r\n\t<li><code>1 &lt;= k &lt;= m*n</code></li>\r\n\t<li><code>grid[i][j] == 0 <strong>or</strong> 1</code></li>\r\n\t<li><code>grid[0][0] == grid[m-1][n-1] == 0</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 137,
+  "dislikes": 1,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int shortestPath(vector<vector<int>>& grid, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int shortestPath(int[][] grid, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestPath(self, grid, k):\n        \"\"\"\n        :type grid: List[List[int]]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestPath(self, grid: List[List[int]], k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint shortestPath(int** grid, int gridSize, int* gridColSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ShortestPath(int[][] grid, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @param {number} k\n * @return {number}\n */\nvar shortestPath = function(grid, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @param {Integer} k\n# @return {Integer}\ndef shortest_path(grid, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestPath(_ grid: [[Int]], _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestPath(grid [][]int, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestPath(grid: Array[Array[Int]], k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestPath(grid: Array<IntArray>, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_path(grid: Vec<Vec<i32>>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @param Integer $k\n     * @return Integer\n     */\n    function shortestPath($grid, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.7K\", \"totalSubmission\": \"9.3K\", \"totalAcceptedRaw\": 3692, \"totalSubmissionRaw\": 9293, \"acRate\": \"39.7%\"}",
+  "hints": [
+    "Use BFS.",
+    "BFS on (x,y,r) x,y is coordinate, r is remain number of obstacles you can remove."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]]\n1",
+  "metaData": "{\n  \"name\": \"shortestPath\",\n  \"params\": [\n    {\n      \"name\": \"grid\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,63 @@
+{
+  "questionId": "1318",
+  "questionFrontendId": "1194",
+  "boundTopicId": null,
+  "title": "Tournament Winners",
+  "titleSlug": "tournament-winners",
+  "categoryTitle": "Database",
+  "content": "<p>Table:&nbsp;<code>Players</code></p>\n\n<pre>\n+-------------+-------+\n| Column Name | Type  |\n+-------------+-------+\n| player_id   | int   |\n| group_id    | int   |\n+-------------+-------+\nplayer_id is the primary key of this table.\nEach row of this table indicates the group of each player.\n</pre>\n\n<p>Table:&nbsp;<code>Matches</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| match_id      | int     |\n| first_player  | int     |\n| second_player | int     | \n| first_score   | int     |\n| second_score  | int     |\n+---------------+---------+\nmatch_id is the primary key of this table.\nEach row is a record of a match, first_player and second_player contain the player_id of each match.\nfirst_score and second_score contain the number of points of the first_player and second_player respectively.\nYou may assume that, in each match, players belongs to the same group.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>The winner in each group is the player who scored the maximum total points within the group.&nbsp;In the case of a tie, the <strong>lowest</strong> player_id&nbsp;wins.</p>\n\n<p>Write an SQL query to find the winner in each group.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\n<code>Players </code>table:\n+-----------+------------+\n| player_id | group_id   |\n+-----------+------------+\n| 15        | 1          |\n| 25        | 1          |\n| 30        | 1          |\n| 45        | 1          |\n| 10        | 2          |\n| 35        | 2          |\n| 50        | 2          |\n| 20        | 3          |\n| 40        | 3          |\n+-----------+------------+\n\n<code>Matches </code>table:\n+------------+--------------+---------------+-------------+--------------+\n| match_id   | first_player | second_player | first_score | second_score |\n+------------+--------------+---------------+-------------+--------------+\n| 1          | 15           | 45            | 3           | 0            |\n| 2          | 30           | 25            | 1           | 2            |\n| 3          | 30           | 15            | 2           | 0            |\n| 4          | 40           | 20            | 5           | 2            |\n| 5          | 35           | 50            | 1           | 1            |\n+------------+--------------+---------------+-------------+--------------+\n\nResult table:\n+-----------+------------+\n| group_id  | player_id  |\n+-----------+------------+ \n| 1         | 15         |\n| 2         | 35         |\n| 3         | 40         |\n+-----------+------------+\n</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 11,
+  "dislikes": 6,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.2K\", \"totalSubmission\": \"2.2K\", \"totalAcceptedRaw\": 1197, \"totalSubmissionRaw\": 2183, \"acRate\": \"54.8%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Players\":[\"player_id\",\"group_id\"],\"Matches\":[\"match_id\",\"first_player\",\"second_player\",\"first_score\",\"second_score\"]},\"rows\":{\"Players\":[[10,2],[15,1],[20,3],[25,1],[30,1],[35,2],[40,3],[45,1],[50,2]],\"Matches\":[[1,15,45,3,0],[2,30,25,1,2],[3,30,15,2,0],[4,40,20,5,2],[5,35,50,1,1]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Players (player_id int, group_id int)\",\n    \"Create table If Not Exists Matches (match_id int, first_player int, second_player int, first_score int, second_score int)\\n\"\n  ],\n  \"mssql\": [\n    \"Create table Players (player_id int, group_id int)\",\n    \"Create table Matches (match_id int, first_player int, second_player int, first_score int, second_score int)\\n\"\n  ],\n  \"oraclesql\": [\n    \"Create table Players (player_id int, group_id int)\",\n    \"Create table Matches (match_id int, first_player int, second_player int, first_score int, second_score int)\\n\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Players (player_id int, group_id int)",
+    "Create table If Not Exists Matches (match_id int, first_player int, second_player int, first_score int, second_score int)\n",
+    "Truncate table Players",
+    "insert into Players (player_id, group_id) values ('10', '2')",
+    "insert into Players (player_id, group_id) values ('15', '1')",
+    "insert into Players (player_id, group_id) values ('20', '3')",
+    "insert into Players (player_id, group_id) values ('25', '1')",
+    "insert into Players (player_id, group_id) values ('30', '1')",
+    "insert into Players (player_id, group_id) values ('35', '2')",
+    "insert into Players (player_id, group_id) values ('40', '3')",
+    "insert into Players (player_id, group_id) values ('45', '1')",
+    "insert into Players (player_id, group_id) values ('50', '2')",
+    "Truncate table Matches",
+    "insert into Matches (match_id, first_player, second_player, first_score, second_score) values ('1', '15', '45', '3', '0')",
+    "insert into Matches (match_id, first_player, second_player, first_score, second_score) values ('2', '30', '25', '1', '2')",
+    "insert into Matches (match_id, first_player, second_player, first_score, second_score) values ('3', '30', '15', '2', '0')",
+    "insert into Matches (match_id, first_player, second_player, first_score, second_score) values ('4', '40', '20', '5', '2')",
+    "insert into Matches (match_id, first_player, second_player, first_score, second_score) values ('5', '35', '50', '1', '1')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

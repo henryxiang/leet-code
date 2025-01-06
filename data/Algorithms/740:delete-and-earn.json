@@ -1,0 +1,113 @@
+{
+  "questionId": "740",
+  "questionFrontendId": "740",
+  "boundTopicId": null,
+  "title": "Delete and Earn",
+  "titleSlug": "delete-and-earn",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>nums</code> of integers, you can perform operations on the array.</p>\r\n\r\n<p>In each operation, you pick any <code>nums[i]</code> and delete it to earn <code>nums[i]</code> points. After, you must delete <b>every</b> element equal to <code>nums[i] - 1</code> or <code>nums[i] + 1</code>.</p>\r\n\r\n<p>You start with 0 points. Return the maximum number of points you can earn by applying such operations.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> nums = [3, 4, 2]\r\n<b>Output:</b> 6\r\n<b>Explanation:</b> \r\nDelete 4 to earn 4 points, consequently 3 is also deleted.\r\nThen, delete 2 to earn 2 points. 6 total points are earned.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> nums = [2, 2, 3, 3, 3, 4]\r\n<b>Output:</b> 9\r\n<b>Explanation:</b> \r\nDelete 3 to earn 3 points, deleting both 2&#39;s and the 4.\r\nThen, delete 3 again to earn 3 points, and 3 again to earn 3 points.\r\n9 total points are earned.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ul>\r\n\t<li>The length of <code>nums</code> is at most <code>20000</code>.</li>\r\n\t<li>Each element <code>nums[i]</code> is an integer in the range <code>[1, 10000]</code>.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 738,
+  "dislikes": 68,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"House Robber\", \"titleSlug\": \"house-robber\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "imsure",
+      "profileUrl": "/imsure/",
+      "avatarUrl": "https://assets.leetcode.com/users/imsure/avatar_1521747091.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Quip (Salesforce)\", \"slug\": \"quip\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 0}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int deleteAndEarn(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int deleteAndEarn(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def deleteAndEarn(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def deleteAndEarn(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint deleteAndEarn(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int DeleteAndEarn(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar deleteAndEarn = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef delete_and_earn(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func deleteAndEarn(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func deleteAndEarn(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def deleteAndEarn(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun deleteAndEarn(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn delete_and_earn(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function deleteAndEarn($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"28.9K\", \"totalSubmission\": \"60.7K\", \"totalAcceptedRaw\": 28870, \"totalSubmissionRaw\": 60700, \"acRate\": \"47.6%\"}",
+  "hints": [
+    "If you take a number, you might as well take them all.  Keep track of what the value is of the subset of the input with maximum M when you either take or don't take M."
+  ],
+  "solution": {
+    "id": "314",
+    "canSeeDetail": true,
+    "url": "/articles/delete-and-earn/",
+    "content": "[TOC]\n\n\n#### Approach #1: Dynamic Programming [Accepted]\n\n**Intuition**\n\nBecause all numbers are positive, if we \"take\" a number (use it to score points), we might as well take all copies of it, since we've already erased all its neighbors.  We could keep a count of each number so we know how many points taking a number is worth total.\n\nNow let's investigate what happens when we add a new number `X` (plus copies) that is larger than all previous numbers.  Naively, our answer would be the previous answer, plus the value of `X` - which can be solved with dynamic programming.  However, this fails if our previous answer had a number taken that was adjacent to `X`.\n\nLuckily, we can remedy this.  Let's say we knew `using`, the value of our previous answer, and `avoid`, the value of our previous answer that doesn't use the previously largest value `prev`.  Then we could compute new values of `using` and `avoid` appropriately.\n\n**Algorithm**\n\nFor each unique value `k` of `nums` in increasing order, let's maintain the correct values of `avoid` and `using`, which represent the answer if we don't take or take `k` respectively.\n\nIf the new value `k` is adjacent to the previously largest value `prev`, then the answer if we must take `k` is `(the point value of k) + avoid`, while the answer if we must not take `k` is `max(avoid, using)`.  Similarly, if `k` is not adjacent to `prev`, the answer if we must take `k` is `(the point value of k) + max(avoid, using)`, and the answer if we must not take `k` is `max(avoid, using)`.\n\nAt the end, the best answer may or may not use the largest value in `nums`, so we return `max(avoid, using)`.\n\nOur demonstrated solutions showcase two different kinds of sorts: a library one, and a radix sort.  For each language, the other kind of solution can be done without much difficulty, by using an array (Python) or HashMap (Java) respectively.\n\n<iframe src=\"https://leetcode.com/playground/TBKVkiLD/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"TBKVkiLD\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity (Python): $$O(N \\log N)$$, where $$N$$ is the length of `nums`.  We make a single pass through the sorted keys of $$N$$, and the complexity is dominated by the sorting step.\n\n* Space Complexity (Python): $$O(N)$$, the size of our `count`.\n\n* Time Complexity (Java): We performed a radix sort instead, so our complexity is $$O(N+W)$$ where $$W$$ is the range of allowable values for `nums[i]`.\n\n* Space Complexity (Java): $$O(W)$$, the size of our `count`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "309",
+      "count": 27,
+      "average": 4.296,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,4,2]",
+  "metaData": "{\r\n  \"name\": \"deleteAndEarn\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

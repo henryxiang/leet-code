@@ -1,0 +1,125 @@
+{
+  "questionId": "778",
+  "questionFrontendId": "767",
+  "boundTopicId": null,
+  "title": "Reorganize String",
+  "titleSlug": "reorganize-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>S</code>, check if the letters can be rearranged so that two characters that are adjacent to each other are not the same.</p>\r\n\r\n<p>If possible, output any possible result.&nbsp; If not possible, return the empty string.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> S = &quot;aab&quot;\r\n<strong>Output:</strong> &quot;aba&quot;\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> S = &quot;aaab&quot;\r\n<strong>Output:</strong> &quot;&quot;\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>S</code> will consist of lowercase letters and have length in range <code>[1, 500]</code>.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 837,
+  "dislikes": 42,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Rearrange String k Distance Apart\", \"titleSlug\": \"rearrange-string-k-distance-apart\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Task Scheduler\", \"titleSlug\": \"task-scheduler\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "ti9yowl",
+      "profileUrl": "/ti9yowl/",
+      "avatarUrl": "https://assets.leetcode.com/users/ti9yowl/avatar_1521572960.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Heap",
+      "slug": "heap"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twitch\", \"slug\": \"twitch\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Tesla\", \"slug\": \"tesla\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string reorganizeString(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String reorganizeString(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def reorganizeString(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def reorganizeString(self, S: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * reorganizeString(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ReorganizeString(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {string}\n */\nvar reorganizeString = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef reorganize_string(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func reorganizeString(_ S: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func reorganizeString(S string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def reorganizeString(S: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun reorganizeString(S: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn reorganize_string(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return String\n     */\n    function reorganizeString($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"44.2K\", \"totalSubmission\": \"97.4K\", \"totalAcceptedRaw\": 44228, \"totalSubmissionRaw\": 97407, \"acRate\": \"45.4%\"}",
+  "hints": [
+    "Alternate placing the most common letters."
+  ],
+  "solution": {
+    "id": "383",
+    "canSeeDetail": true,
+    "url": "/articles/reorganized-string/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Sort by Count [Accepted]\n\n**Intuition**\n\nIf we should make no two `'a'`s adjacent, it is natural to write `\"aXaXaXa...\"` where `\"X\"` is some letter.  For now, let's assume that the task is possible (ie. the answer is not `\"\"`.)\n\nLet's sort the string `S`, so all of the same kind of letter occur in continuous *blocks*.  Then when writing in the following interleaving pattern, like `S[3], S[0], S[4], S[1], S[5], S[2]`, adjacent letters never touch.  (The specific interleaving pattern is that we start writing at index 1 and step by 2; then start from index 0 and step by 2.)\n\nThe exception to this rule is if `N` is odd, and then when interleaving like `S[2], S[0], S[3], S[1], S[4]`, we might fail incorrectly if there is a block of the same 3 letters starting at `S[0]` or `S[1]`.  To prevent failing erroneously in this case, we need to make sure that the most common letters all occur at the end.\n\nFinally, it is easy to see that if `N` is the length of the string, and the count of some letter is greater than `(N+1) / 2`, the task is impossible.\n\n**Algorithm**\n\nFind the count of each character, and use it to sort the string by count.\n\nIf at some point the number of occurrences of some character is greater than `(N + 1) / 2`, the task is impossible.\n\nOtherwise, interleave the characters in the order described above.\n\n<iframe src=\"https://leetcode.com/playground/HYKSoqaR/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"HYKSoqaR\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(\\mathcal{A}(N + \\log{\\mathcal{A}}))$$, where $$N$$ is the length of $$S$$, and $$\\mathcal{A}$$ is the size of the alphabet.  In Java, our implementation is $$O(N + \\mathcal{A} \\log {\\mathcal{A}})$$.  If $$\\mathcal{A}$$ is fixed, this complexity is $$O(N)$$.\n\n* Space Complexity: $$O(N)$$.  In Java, our implementation is $$O(N + \\mathcal{A})$$.\n\n---\n#### Approach #2: Greedy with Heap [Accepted]\n\n**Intuition**\n\nOne consequence of the reasoning in *Approach #1*, is that a greedy approach that tries to write the most common letter (that isn't the same as the previous letter written) will work.\n\nThe reason is that the task is only impossible if the frequency of a letter exceeds `(N+1) / 2`.  Writing the most common letter followed by the second most common letter keeps this invariant.\n\nA heap is a natural structure to repeatedly return the current top 2 letters with the largest remaining counts.\n\n**Approach**\n\nWe store a heap of (count, letter).  [In Python, our implementation stores negative counts.]\n\nWe pop the top two elements from the heap (representing different letters with positive remaining count), and then write the most frequent one that isn't the same as the most recent one written.  After, we push the correct counts back onto the heap.\n\nActually, we don't even need to keep track of the most recent one written.  If it is possible to organize the string, the letter written second can never be written first in the very next writing.\n\nAt the end, we might have one element still on the heap, which must have a count of one.  If we do, we'll add that to the answer too.\n\n**Proof of Invariant**\n\nThe invariant mentioned in the *[Intuition]* section seems true when playing with it, but here is a proof.  Let $$C_i$$ be the count of each letter yet to be written, and $$N$$ be the number of letters left to write.  We want to show this procedure maintains the invariant $$2 * \\max\\limits_i(C_i) \\leq N+1$$.\n\nSay $$C'_i$$ are the counts after one writing step.\n\n* If $$\\max(C_i) > \\text{3rdmax}(C_i)$$, then $$\\max(C'_i) \\leq \\max(C_i) - 1$$, and so $$2\\max(C'_i) \\leq 2\\max(C_i) - 2 \\leq N-1$$ as desired.\n\n* If $$M = \\max(C_i) = \\text{3rdmax}(C_i)$$, then $$3M \\leq N$$.  Also, because $$M \\geq 1$$, $$N \\geq 3$$.  Then, $$2M \\leq \\frac{2N}{3} \\leq N-1$$ as desired.\n\nThis completes the proof of this invariant.\n\n<iframe src=\"https://leetcode.com/playground/Emwok2sq/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Emwok2sq\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N \\log{\\mathcal{A}}))$$, where $$N$$ is the length of $$S$$, and $$\\mathcal{A}$$ is the size of the alphabet.  If $$\\mathcal{A}$$ is fixed, this complexity is $$O(N)$$.\n\n* Space Complexity: $$O(\\mathcal{A})$$.  If $$\\mathcal{A}$$ is fixed, this complexity is $$O(1)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "377",
+      "count": 43,
+      "average": 3.837,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"aab\"",
+  "metaData": "{\r\n  \"name\": \"reorganizeString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

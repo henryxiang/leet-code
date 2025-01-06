@@ -1,0 +1,117 @@
+{
+  "questionId": "739",
+  "questionFrontendId": "739",
+  "boundTopicId": null,
+  "title": "Daily Temperatures",
+  "titleSlug": "daily-temperatures",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a list of daily temperatures <code>T</code>, return a list such that, for each day in the input, tells you how many days you would have to wait until a warmer temperature.  If there is no future day for which this is possible, put <code>0</code> instead.\r\n</p><p>\r\nFor example, given the list of temperatures <code>T = [73, 74, 75, 71, 69, 72, 76, 73]</code>, your output should be <code>[1, 1, 4, 2, 1, 1, 0, 0]</code>.\r\n</p>\r\n\r\n<p><b>Note:</b>\r\nThe length of <code>temperatures</code> will be in the range <code>[1, 30000]</code>.\r\nEach temperature will be an integer in the range <code>[30, 100]</code>.\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1863,
+  "dislikes": 56,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Next Greater Element I\", \"titleSlug\": \"next-greater-element-i\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Rizve",
+      "profileUrl": "/rizve/",
+      "avatarUrl": "https://www.gravatar.com/avatar/8a4f92e0f174e48eb90dbb3464125a86.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> dailyTemperatures(vector<int>& T) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] dailyTemperatures(int[] T) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def dailyTemperatures(self, T):\n        \"\"\"\n        :type T: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def dailyTemperatures(self, T: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* dailyTemperatures(int* T, int TSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] DailyTemperatures(int[] T) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} T\n * @return {number[]}\n */\nvar dailyTemperatures = function(T) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} t\n# @return {Integer[]}\ndef daily_temperatures(t)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func dailyTemperatures(_ T: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func dailyTemperatures(T []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def dailyTemperatures(T: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun dailyTemperatures(T: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn daily_temperatures(t: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $T\n     * @return Integer[]\n     */\n    function dailyTemperatures($T) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"108.4K\", \"totalSubmission\": \"176.2K\", \"totalAcceptedRaw\": 108382, \"totalSubmissionRaw\": 176224, \"acRate\": \"61.5%\"}",
+  "hints": [
+    "If the temperature is say, 70 today, then in the future a warmer temperature must be either 71, 72, 73, ..., 99, or 100.  We could remember when all of them occur next."
+  ],
+  "solution": {
+    "id": "312",
+    "canSeeDetail": true,
+    "url": "/articles/daily-temperatures/",
+    "content": "[TOC]\n\n#### Approach #1: Next Array [Accepted]\n\n**Intuition**\n\nThe problem statement asks us to find the next occurrence of a warmer temperature.  Because temperatures can only be in `[30, 100]`, if the temperature right now is say, `T[i] = 50`, we only need to check for the next occurrence of `51`, `52`, ..., `100` and take the one that occurs soonest.\n\n**Algorithm**\n\nLet's process each `i` in reverse (decreasing order).  At each `T[i]`, to know when the next occurrence of say, temperature `100` is, we should just remember the last one we've seen, `next[100]`.\n\nThen, the first occurrence of a warmer value occurs at `warmer_index`, the minimum of `next[T[i]+1], next[T[i]+2], ..., next[100]`.\n\n<iframe src=\"https://leetcode.com/playground/zXoveQ5r/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"zXoveQ5r\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(NW)$$, where $$N$$ is the length of `T` and $$W$$ is the number of allowed values for `T[i]`.  Since $$W = 71$$, we can consider this complexity $$O(N)$$.\n\n* Space Complexity: $$O(N + W)$$, the size of the answer and the next array.\n\n---\n#### Approach #2: Stack [Accepted]\n\n**Intuition**\n\nConsider trying to find the next warmer occurrence at `T[i]`.  What information (about `T[j]` for `j > i`) must we remember?\n\nSay we are trying to find `T[0]`.  If we remembered `T[10] = 50`, knowing `T[20] = 50` wouldn't help us, as any `T[i]` that has its next warmer ocurrence at `T[20]` would have it at `T[10]` instead.  However, `T[20] = 100` would help us, since if `T[0]` were `80`, then `T[20]` might be its next warmest occurrence, while `T[10]` couldn't.\n\nThus, we should remember a list of indices representing a strictly increasing list of temperatures.  For example, `[10, 20, 30]` corresponding to temperatures `[50, 80, 100]`.  When we get a new temperature like `T[i] = 90`, we will have `[5, 30]` as our list of indices (corresponding to temperatures `[90, 100]`).  The most basic structure that will satisfy our requirements is a *stack*, where the top of the stack is the first value in the list, and so on.\n\n**Algorithm**\n\nAs in *Approach #1*, process indices `i` in descending order.  We'll keep a `stack` of indices such that `T[stack[-1]] < T[stack[-2]] < ...`, where `stack[-1]` is the top of the stack, `stack[-2]` is second from the top, and so on; and where `stack[-1] > stack[-2] > ...`; and we will maintain this invariant as we process each temperature.\n\nAfter, it is easy to know the next occurrence of a warmer temperature: it's simply the top index in the stack.\n\nHere is a worked example of the contents of the `stack` as we work through `T = [73, 74, 75, 71, 69, 72, 76, 73]` in reverse order, at the end of the loop (after we add `T[i]`).  For clarity, `stack` only contains indices `i`, but we will write the value of `T[i]` beside it in brackets, such as `0 (73)`.\n\n* When `i = 7`, `stack = [7 (73)]`.  `ans[i] = 0`.\n* When `i = 6`, `stack = [6 (76)]`.  `ans[i] = 0`.\n* When `i = 5`, `stack = [5 (72), 6 (76)]`.  `ans[i] = 1`.\n* When `i = 4`, `stack = [4 (69), 5 (72), 6 (76)]`.  `ans[i] = 1`.\n* When `i = 3`, `stack = [3 (71), 5 (72), 6 (76)]`.  `ans[i] = 2`.\n* When `i = 2`, `stack = [2 (75), 6 (76)]`.  `ans[i] = 4`.\n* When `i = 1`, `stack = [1 (74), 2 (75), 6 (76)]`.  `ans[i] = 1`.\n* When `i = 0`, `stack = [0 (73), 1 (74), 2 (75), 6 (76)]`.  `ans[i] = 1`.\n\n<iframe src=\"https://leetcode.com/playground/GrKNCrcf/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"GrKNCrcf\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `T` and $$W$$ is the number of allowed values for `T[i]`.  Each index gets pushed and popped at most once from the stack.\n\n* Space Complexity: $$O(W)$$.  The size of the stack is bounded as it represents strictly increasing temperatures.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "307",
+      "count": 70,
+      "average": 3.529,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[73,74,75,71,69,72,76,73]",
+  "metaData": "{\r\n  \"name\": \"dailyTemperatures\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"T\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

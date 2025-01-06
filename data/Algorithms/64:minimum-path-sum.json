@@ -1,0 +1,109 @@
+{
+  "questionId": "64",
+  "questionFrontendId": "64",
+  "boundTopicId": null,
+  "title": "Minimum Path Sum",
+  "titleSlug": "minimum-path-sum",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <em>m</em> x <em>n</em> grid filled with non-negative numbers, find a path from top left to bottom right which <em>minimizes</em> the sum of all numbers along its path.</p>\r\n\r\n<p><strong>Note:</strong> You can only move either down or right at any point in time.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\n[\r\n&nbsp; [1,3,1],\r\n  [1,5,1],\r\n  [4,2,1]\r\n]\r\n<strong>Output:</strong> 7\r\n<strong>Explanation:</strong> Because the path 1&rarr;3&rarr;1&rarr;1&rarr;1 minimizes the sum.\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1859,
+  "dislikes": 46,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Unique Paths\", \"titleSlug\": \"unique-paths\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Dungeon Game\", \"titleSlug\": \"dungeon-game\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Cherry Pickup\", \"titleSlug\": \"cherry-pickup\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Rubrik\", \"slug\": \"rubrik\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minPathSum(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minPathSum(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minPathSum(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minPathSum(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minPathSum(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinPathSum(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar minPathSum = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef min_path_sum(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minPathSum(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minPathSum(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minPathSum(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minPathSum(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_path_sum(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function minPathSum($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"287.3K\", \"totalSubmission\": \"575.8K\", \"totalAcceptedRaw\": 287261, \"totalSubmissionRaw\": 575819, \"acRate\": \"49.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "68",
+    "canSeeDetail": true,
+    "url": "/articles/minimum-path-sum/",
+    "content": "[TOC]\n\n## Summary\n\nWe have to find the minimum sum of numbers over a path from the top left to the bottom right of the given matrix .\n\n## Solution\n\n---\n#### Approach 1: Brute Force\n\nThe Brute Force approach involves recursion. For each element, we consider two paths, rightwards and downwards and find the minimum sum out of those two. It specifies whether we need to take a right step or downward step to minimize the sum.\n\n$$\n\\mathrm{cost}(i, j)=\\mathrm{grid}[i][j] + \\min \\big(\\mathrm{cost}(i+1, j), \\mathrm{cost}(i, j+1) \\big)\n$$\n\n\n<iframe src=\"https://leetcode.com/playground/trbHWoJe/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"trbHWoJe\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(2^{m+n}\\big)$$. For every move, we have atmost 2 options.\n* Space complexity : $$O(m+n)$$. Recursion of depth $$m+n$$.\n<br />\n<br />\n---\n#### Approach 2: Dynamic Programming 2D\n\n**Algorithm**\n\nWe use an extra matrix $$dp$$ of the same size as the original matrix. In this matrix, $$dp(i, j)$$ represents the minimum sum of the path from the index $$(i, j)$$ to\nthe bottom rightmost element. We start by initializing the bottom rightmost element\nof $$dp$$ as the last element of the given matrix. Then for each element starting from\nthe bottom right, we traverse backwards and fill in the matrix with the required\nminimum sums. Now, we need to note that at every element, we can move either\nrightwards or downwards. Therefore, for filling in the minimum sum, we use the\nequation:\n\n$$\ndp(i, j)= \\mathrm{grid}(i,j)+\\min\\big(dp(i+1,j),dp(i,j+1)\\big)\n$$\n\ntaking care of the boundary conditions.\n\nThe following figure illustrates the process:\n<!--![Minimum Path Sum](https://leetcode.com/media/original_images/64_Minimum_Path_Sum.gif)-->\n!?!../Documents/64_Minimum_Path_Sum.json:859,390!?!\n\n<iframe src=\"https://leetcode.com/playground/TL2RboTL/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"TL2RboTL\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(mn)$$. We traverse the entire matrix once.\n\n* Space complexity : $$O(mn)$$. Another matrix of the same size is used.\n<br />\n<br />\n---\n#### Approach 3: Dynamic Programming 1D\n\n**Algorithm**\n\nIn the previous case, instead of using a 2D matrix for dp, we can do the same\nwork using a $$dp$$ array of the row size, since for making the current entry all we need is the dp entry for the bottom and\n the right element. Thus,\nwe start by initializing only the last element of the array as the last element of the given matrix.\nThe last entry is the bottom rightmost element of the given matrix. Then, we start\nmoving towards the left and update the entry $$dp(j)$$ as:\n\n$$\ndp(j)=\\mathrm{grid}(i,j)+\\min\\big(dp(j),dp(j+1)\\big)\n$$\n\nWe repeat the same process for every row as we move upwards. At the end $$dp(0)$$ gives the\n required minimum sum.\n\n\n <iframe src=\"https://leetcode.com/playground/HSZpohSU/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"HSZpohSU\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(mn)$$. We traverse the entire matrix once.\n\n* Space complexity : $$O(n)$$. Another array of row size is used.\n<br />\n<br />\n---\n#### Approach 4: Dynamic Programming (Without Extra Space)\n\n**Algorithm**\n\nThis approach is same as [Approach 2](#approach-2-dynamic-programming-2d), with a slight difference. Instead of using\nanother $$dp$$ matrix. We can store the minimum sums in the original matrix itself,\nsince we need not retain the original matrix here. Thus, the governing equation\nnow becomes:\n\n$$\n\\mathrm{grid}(i, j)=\\mathrm{grid}(i,j)+\\min \\big(\\mathrm{grid}(i+1,j), \\mathrm{grid}(i,j+1)\\big)\n$$\n\n<iframe src=\"https://leetcode.com/playground/FsCWyoPx/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"FsCWyoPx\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(mn)$$. We traverse the entire matrix once.\n\n* Space complexity : $$O(1)$$. No extra space is used.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "66",
+      "count": 14,
+      "average": 4.571,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,3,1],[1,5,1],[4,2,1]]",
+  "metaData": "{\r\n  \"name\": \"minPathSum\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

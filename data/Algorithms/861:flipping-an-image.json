@@ -1,0 +1,111 @@
+{
+  "questionId": "861",
+  "questionFrontendId": "832",
+  "boundTopicId": null,
+  "title": "Flipping an Image",
+  "titleSlug": "flipping-an-image",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary matrix <code>A</code>, we want to flip the image horizontally, then invert it, and return the resulting image.</p>\r\n\r\n<p>To flip an image horizontally means that each row of the image is reversed.&nbsp; For example, flipping&nbsp;<code>[1, 1, 0]</code>&nbsp;horizontally results in&nbsp;<code>[0, 1, 1]</code>.</p>\r\n\r\n<p>To invert an image means&nbsp;that each <code>0</code> is replaced by <code>1</code>, and each <code>1</code> is replaced by <code>0</code>.&nbsp;For example, inverting&nbsp;<code>[0, 1, 1]</code>&nbsp;results in&nbsp;<code>[1, 0, 0]</code>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[[1,1,0],[1,0,1],[0,0,0]]\r\n<strong>Output: </strong>[[1,0,0],[0,1,0],[1,1,1]]\r\n<strong>Explanation:</strong> First reverse each row: [[0,1,1],[1,0,1],[0,0,0]].\r\nThen, invert the image: [[1,0,0],[0,1,0],[1,1,1]]\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]\r\n<strong>Output: </strong>[[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]\r\n<strong>Explanation:</strong> First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]].\r\nThen invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]\r\n</pre>\r\n\r\n<p><strong>Notes:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= A.length = A[0].length &lt;= 20</code></li>\r\n\t<li><code>0 &lt;= A[i][j]<font face=\"sans-serif, Arial, Verdana, Trebuchet MS\">&nbsp;&lt;=&nbsp;</font>1</code></li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 654,
+  "dislikes": 135,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<int>> flipAndInvertImage(vector<vector<int>>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[][] flipAndInvertImage(int[][] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def flipAndInvertImage(self, A):\n        \"\"\"\n        :type A: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def flipAndInvertImage(self, A: List[List[int]]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** flipAndInvertImage(int** A, int ASize, int* AColSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[][] FlipAndInvertImage(int[][] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} A\n * @return {number[][]}\n */\nvar flipAndInvertImage = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} a\n# @return {Integer[][]}\ndef flip_and_invert_image(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func flipAndInvertImage(_ A: [[Int]]) -> [[Int]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func flipAndInvertImage(A [][]int) [][]int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def flipAndInvertImage(A: Array[Array[Int]]): Array[Array[Int]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun flipAndInvertImage(A: Array<IntArray>): Array<IntArray> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn flip_and_invert_image(a: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $A\n     * @return Integer[][]\n     */\n    function flipAndInvertImage($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"139.1K\", \"totalSubmission\": \"187.4K\", \"totalAcceptedRaw\": 139052, \"totalSubmissionRaw\": 187375, \"acRate\": \"74.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "467",
+    "canSeeDetail": true,
+    "url": "/articles/flipping-an-image/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Direct [Accepted]\n\n**Intuition and Algorithm**\n\nWe can do this in place.  In each row, the `i`th value from the left is equal to the inverse of the `i`th value from the right.\n\nWe use `(C+1) / 2` (with floor division) to iterate over all indexes `i` in the first half of the row, including the center.\n\n<iframe src=\"https://leetcode.com/playground/rePZz3yF/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"rePZz3yF\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where `N` is the total number of elements in `A`.\n\n* Space Complexity: $$O(1)$$ in *additional* space complexity.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "459",
+      "count": 49,
+      "average": 3.857,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,1,0],[1,0,1],[0,0,0]]",
+  "metaData": "{\r\n  \"name\": \"flipAndInvertImage\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

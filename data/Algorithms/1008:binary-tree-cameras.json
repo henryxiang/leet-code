@@ -1,0 +1,119 @@
+{
+  "questionId": "1008",
+  "questionFrontendId": "968",
+  "boundTopicId": null,
+  "title": "Binary Tree Cameras",
+  "titleSlug": "binary-tree-cameras",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary tree, we install cameras on the nodes of the tree.&nbsp;</p>\r\n\r\n<p>Each camera at&nbsp;a node can monitor <strong>its parent, itself, and its immediate children</strong>.</p>\r\n\r\n<p>Calculate the minimum number of cameras needed to monitor all nodes of the tree.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/29/bst_cameras_01.png\" style=\"width: 138px; height: 163px;\" />\r\n<div>\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[0,0,null,0,0]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">1</span>\r\n<strong>Explanation: </strong>One camera is enough to monitor all nodes if placed as shown.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/29/bst_cameras_02.png\" style=\"width: 139px; height: 312px;\" />\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[0,0,null,0,null,0,null,null,0]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">2\r\n<strong>Explanation:</strong> At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid configurations of camera placement.</span>\r\n</pre>\r\n\r\n<p><br />\r\n<strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>The number of nodes in the given tree will be in the range&nbsp;<code>[1, 1000]</code>.</li>\r\n\t<li><strong>Every</strong> node has value 0.</li>\r\n</ol>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 444,
+  "dislikes": 12,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Distribute Coins in Binary Tree\", \"titleSlug\": \"distribute-coins-in-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "thuss",
+      "profileUrl": "/thuss/",
+      "avatarUrl": "https://assets.leetcode.com/users/thuss/avatar_1569182502.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    int minCameraCover(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public int minCameraCover(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def minCameraCover(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def minCameraCover(self, root: TreeNode) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nint minCameraCover(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public int MinCameraCover(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number}\n */\nvar minCameraCover = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {Integer}\ndef min_camera_cover(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func minCameraCover(_ root: TreeNode?) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc minCameraCover(root *TreeNode) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def minCameraCover(root: TreeNode): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun minCameraCover(root: TreeNode?): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn min_camera_cover(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Integer\n     */\n    function minCameraCover($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.6K\", \"totalSubmission\": \"34.4K\", \"totalAcceptedRaw\": 12579, \"totalSubmissionRaw\": 34371, \"acRate\": \"36.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "651",
+    "canSeeDetail": true,
+    "url": "/articles/binary-tree-cameras/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Dynamic Programming\n\n**Intuition**\n\nLet's try to cover every node, starting from the top of the tree and working down.  Every node considered must be covered by a camera at that node or some neighbor.\n\nBecause cameras only care about local state, we can hope to leverage this fact for an efficient solution.  Specifically, when deciding to place a camera at a node, we might have placed cameras to cover some subset of this node, its left child, and its right child already.\n\n**Algorithm**\n\nLet `solve(node)` be some information about how many cameras it takes to cover the subtree at this node in various states.  There are essentially 3 states:\n\n* [State 0] Strict subtree:  All the nodes below this node are covered, but not this node.\n* [State 1] Normal subtree:  All the nodes below and including this node are covered, but there is no camera here.\n* [State 2] Placed camera:  All the nodes below and including this node are covered, and there is a camera here (which may cover nodes above this node).\n\nOnce we frame the problem in this way, the answer falls out:\n\n* To cover a strict subtree, the children of this node must be in state 1.\n* To cover a normal subtree without placing a camera here, the children of this node must be in states 1 or 2, and at least one of those children must be in state 2.\n* To cover the subtree when placing a camera here, the children can be in any state.\n\n<iframe src=\"https://leetcode.com/playground/GQRhR3Gm/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"GQRhR3Gm\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of nodes in the given tree.\n\n* Space Complexity:  $$O(H)$$, where $$H$$ is the height of the given tree.\n<br />\n<br />\n\n\n---\n#### Approach 2: Greedy\n\n**Intuition**\n\nInstead of trying to cover every node from the top down, let's try to cover it from the bottom up - considering placing a camera with the deepest nodes first, and working our way up the tree.\n\nIf a node has its children covered and has a parent, then it is strictly better to place the camera at this node's parent.\n\n**Algorithm**\n\nIf a node has children that are not covered by a camera, then we must place a camera here.  Additionally, if a node has no parent and it is not covered, we must place a camera here.\n\n<iframe src=\"https://leetcode.com/playground/3xpUDVV3/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"3xpUDVV3\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of nodes in the given tree.\n\n* Space Complexity:  $$O(H)$$, where $$H$$ is the height of the given tree.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "636",
+      "count": 30,
+      "average": 4.733,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,0,null,0,0]",
+  "metaData": "{\r\n  \"name\": \"minCameraCover\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

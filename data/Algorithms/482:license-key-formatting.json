@@ -1,0 +1,94 @@
+{
+  "questionId": "482",
+  "questionFrontendId": "482",
+  "boundTopicId": null,
+  "title": "License Key Formatting",
+  "titleSlug": "license-key-formatting",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given a license key represented as a string S which consists only alphanumeric character and dashes. The string is separated into N+1 groups by N dashes.</p>\r\n\r\n<p>Given a number K, we would want to reformat the strings such that each group contains <i>exactly</i> K characters, except for the first group which could be shorter than K, but still must contain at least one character. Furthermore, there must be a dash inserted between two groups and all lowercase letters should be converted to uppercase.</p>\r\n\r\n<p>Given a non-empty string S and a number K, format the string according to the rules described above.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> S = \"5F3Z-2e-9-w\", K = 4\r\n\r\n<b>Output:</b> \"5F3Z-2E9W\"\r\n\r\n<b>Explanation:</b> The string S has been split into two parts, each part has 4 characters.\r\nNote that the two extra dashes are not needed and can be removed.\r\n</pre>\r\n</p>\r\n\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> S = \"2-5g-3-J\", K = 2\r\n\r\n<b>Output:</b> \"2-5G-3J\"\r\n\r\n<b>Explanation:</b> The string S has been split into three parts, each part has 2 characters except the first part as it could be shorter as mentioned above.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The length of string S will not exceed 12,000, and K is a positive integer.</li>\r\n<li>String S consists only of alphanumerical characters (a-z and/or A-Z and/or 0-9) and dashes(-).</li>\r\n<li>String S is non-empty.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 372,
+  "dislikes": 625,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "aizj_Forever",
+      "profileUrl": "/aizj_forever/",
+      "avatarUrl": "https://www.gravatar.com/avatar/0113bb228e7dc61718cc7cc9a58c874a.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 13}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string licenseKeyFormatting(string S, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String licenseKeyFormatting(String S, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def licenseKeyFormatting(self, S, K):\n        \"\"\"\n        :type S: str\n        :type K: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def licenseKeyFormatting(self, S: str, K: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * licenseKeyFormatting(char * S, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string LicenseKeyFormatting(string S, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @param {number} K\n * @return {string}\n */\nvar licenseKeyFormatting = function(S, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} k\n# @return {String}\ndef license_key_formatting(s, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func licenseKeyFormatting(_ S: String, _ K: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func licenseKeyFormatting(S string, K int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def licenseKeyFormatting(S: String, K: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun licenseKeyFormatting(S: String, K: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn license_key_formatting(s: String, k: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @param Integer $K\n     * @return String\n     */\n    function licenseKeyFormatting($S, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"108.2K\", \"totalSubmission\": \"255.5K\", \"totalAcceptedRaw\": 108171, \"totalSubmissionRaw\": 255543, \"acRate\": \"42.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"5F3Z-2e-9-w\"\n4",
+  "metaData": "{\r\n  \"name\": \"licenseKeyFormatting\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

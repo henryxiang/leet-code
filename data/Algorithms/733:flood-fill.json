@@ -1,0 +1,113 @@
+{
+  "questionId": "733",
+  "questionFrontendId": "733",
+  "boundTopicId": null,
+  "title": "Flood Fill",
+  "titleSlug": "flood-fill",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nAn <code>image</code> is represented by a 2-D array of integers, each integer representing the pixel value of the image (from 0 to 65535).\r\n</p><p>\r\nGiven a coordinate <code>(sr, sc)</code> representing the starting pixel (row and column) of the flood fill, and a pixel value <code>newColor</code>, \"flood fill\" the image.\r\n</p><p>\r\nTo perform a \"flood fill\", consider the starting pixel, plus any pixels connected 4-directionally to the starting pixel of the same color as the starting pixel, plus any pixels connected 4-directionally to those pixels (also with the same color as the starting pixel), and so on.  Replace the color of all of the aforementioned pixels with the newColor.\r\n</p><p>\r\nAt the end, return the modified image.\r\n</p>\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\nimage = [[1,1,1],[1,1,0],[1,0,1]]\r\nsr = 1, sc = 1, newColor = 2\r\n<b>Output:</b> [[2,2,2],[2,2,0],[2,0,1]]\r\n<b>Explanation:</b> \r\nFrom the center of the image (with position (sr, sc) = (1, 1)), all pixels connected \r\nby a path of the same color as the starting pixel are colored with the new color.\r\nNote the bottom corner is not colored 2, because it is not 4-directionally connected\r\nto the starting pixel.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<li>The length of <code>image</code> and <code>image[0]</code> will be in the range <code>[1, 50]</code>.</li>\r\n<li>The given starting pixel will satisfy <code>0 <= sr < image.length</code> and <code>0 <= sc < image[0].length</code>.</li>\r\n<li>The value of each color in <code>image[i][j]</code> and <code>newColor</code> will be an integer in <code>[0, 65535]</code>.</li>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 668,
+  "dislikes": 138,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Island Perimeter\", \"titleSlug\": \"island-perimeter\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "jatermelon",
+      "profileUrl": "/jatermelon/",
+      "avatarUrl": "https://assets.leetcode.com/users/jatermelon/avatar.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int newColor) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def floodFill(self, image, sr, sc, newColor):\n        \"\"\"\n        :type image: List[List[int]]\n        :type sr: int\n        :type sc: int\n        :type newColor: int\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** floodFill(int** image, int imageSize, int* imageColSize, int sr, int sc, int newColor, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[][] FloodFill(int[][] image, int sr, int sc, int newColor) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} image\n * @param {number} sr\n * @param {number} sc\n * @param {number} newColor\n * @return {number[][]}\n */\nvar floodFill = function(image, sr, sc, newColor) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} image\n# @param {Integer} sr\n# @param {Integer} sc\n# @param {Integer} new_color\n# @return {Integer[][]}\ndef flood_fill(image, sr, sc, new_color)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func floodFill(_ image: [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int) -> [[Int]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def floodFill(image: Array[Array[Int]], sr: Int, sc: Int, newColor: Int): Array[Array[Int]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun floodFill(image: Array<IntArray>, sr: Int, sc: Int, newColor: Int): Array<IntArray> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn flood_fill(image: Vec<Vec<i32>>, sr: i32, sc: i32, new_color: i32) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $image\n     * @param Integer $sr\n     * @param Integer $sc\n     * @param Integer $newColor\n     * @return Integer[][]\n     */\n    function floodFill($image, $sr, $sc, $newColor) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"77.8K\", \"totalSubmission\": \"148.1K\", \"totalAcceptedRaw\": 77839, \"totalSubmissionRaw\": 148124, \"acRate\": \"52.5%\"}",
+  "hints": [
+    "Write a recursive function that paints the pixel if it's the correct color, then recurses on neighboring pixels."
+  ],
+  "solution": {
+    "id": "307",
+    "canSeeDetail": true,
+    "url": "/articles/flood-fill/",
+    "content": "[TOC]\n\n#### Approach #1: Depth-First Search [Accepted]\n\n**Intuition**\n\nWe perform the algorithm explained in the problem description: paint the starting pixels, plus adjacent pixels of the same color, and so on.\n\n**Algorithm**\n\nSay `color` is the color of the starting pixel.  Let's floodfill the starting pixel: we change the color of that pixel to the new color, then check the 4 neighboring pixels to make sure they are valid pixels of the same `color`, and of the valid ones, we floodfill those, and so on.\n\nWe can use a function `dfs` to perform a floodfill on a target pixel.\n\n<iframe src=\"https://leetcode.com/playground/iMoEAq7k/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"iMoEAq7k\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the number of pixels in the image.  We might process every pixel.\n\n* Space Complexity: $$O(N)$$, the size of the implicit call stack when calling `dfs`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "302",
+      "count": 21,
+      "average": 4.048,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,1,1],[1,1,0],[1,0,1]]\n1\n1\n2",
+  "metaData": "{\r\n  \"name\": \"floodFill\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"image\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"sr\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"sc\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"newColor\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

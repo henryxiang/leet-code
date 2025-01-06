@@ -1,0 +1,111 @@
+{
+  "questionId": "962",
+  "questionFrontendId": "926",
+  "boundTopicId": null,
+  "title": "Flip String to Monotone Increasing",
+  "titleSlug": "flip-string-to-monotone-increasing",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A string of <code>&#39;0&#39;</code>s and <code>&#39;1&#39;</code>s is <em>monotone increasing</em> if it consists of some number of <code>&#39;0&#39;</code>s (possibly 0), followed by some number of <code>&#39;1&#39;</code>s (also possibly 0.)</p>\r\n\r\n<p>We are given a string <code>S</code> of <code>&#39;0&#39;</code>s and <code>&#39;1&#39;</code>s, and we may flip any <code>&#39;0&#39;</code> to a <code>&#39;1&#39;</code> or a <code>&#39;1&#39;</code> to a <code>&#39;0&#39;</code>.</p>\r\n\r\n<p>Return the minimum number of flips to make <code>S</code>&nbsp;monotone increasing.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;00110&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">1</span>\r\n<strong>Explanation: </strong>We flip the last digit to get 00111.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">&quot;010110&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">2</span>\r\n<strong>Explanation: </strong>We flip to get 011111, or alternatively 000111.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">&quot;00011000&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">2</span>\r\n<strong>Explanation: </strong>We flip to get 00000000.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><span>Note:</span></strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= S.length &lt;= 20000</code></li>\r\n\t<li><code>S</code> only consists of <code>&#39;0&#39;</code> and <code>&#39;1&#39;</code> characters.</li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 414,
+  "dislikes": 13,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ramyarao",
+      "profileUrl": "/ramyarao/",
+      "avatarUrl": "https://www.gravatar.com/avatar/edeb7d79c9740caa07e260f06cc3a0ce.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minFlipsMonoIncr(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minFlipsMonoIncr(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minFlipsMonoIncr(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minFlipsMonoIncr(self, S: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minFlipsMonoIncr(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinFlipsMonoIncr(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {number}\n */\nvar minFlipsMonoIncr = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef min_flips_mono_incr(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minFlipsMonoIncr(_ S: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minFlipsMonoIncr(S string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minFlipsMonoIncr(S: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minFlipsMonoIncr(S: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_flips_mono_incr(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return Integer\n     */\n    function minFlipsMonoIncr($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.6K\", \"totalSubmission\": \"32.3K\", \"totalAcceptedRaw\": 16550, \"totalSubmissionRaw\": 32279, \"acRate\": \"51.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "592",
+    "canSeeDetail": true,
+    "url": "/articles/flip-string-to-monotone-increasing/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Prefix Sums\n\n**Intuition**\n\nFor say a 5 digit string, the answer is either `'00000'`, `'00001'`, `'00011'`, `'00111'`, `'01111'`, or `'11111'`.  Let's try to calculate the cost of switching to that answer.  The answer has two halves, a left (zero) half, and a right (one) half.\n\nEvidently, it comes down to a question of knowing, for each candidate half: how many ones are in the left half, and how many zeros are in the right half.\n\nWe can use prefix sums.  Say `P[i+1] = A[0] + A[1] + ... + A[i]`, where `A[i] = 1` if `S[i] == '1'`, else `A[i] = 0`.  We can calculate `P` in linear time.\n\nThen if we want `x` zeros followed by `N-x` ones, there are `P[x]` ones in the start that must be flipped, plus `(N-x) - (P[N] - P[x])` zeros that must be flipped.  The last calculation comes from the fact that there are `P[N] - P[x]` ones in the later segment of length `N-x`, but we want the number of zeros.\n\n**Algorithm**\n\nFor example, with `S = \"010110\"`:  we have `P = [0, 0, 1, 1, 2, 3, 3]`.  Now say we want to evaluate having `x=3` zeros.\n\nThere are `P[3] = 1` ones in the first 3 characters, and `P[6] - P[3] = 2` ones in the later `N-x = 3` characters.\n\nSo, there is `(N-x) - (P[N] - P[x]) = 1` zero in the later `N-x` characters.\n\nWe take the minimum among all candidate answers to arrive at the final answer.\n\n<iframe src=\"https://leetcode.com/playground/AoUF2isa/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"AoUF2isa\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "578",
+      "count": 19,
+      "average": 4.368,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"00110\"",
+  "metaData": "{\r\n  \"name\": \"minFlipsMonoIncr\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

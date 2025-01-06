@@ -1,0 +1,121 @@
+{
+  "questionId": "770",
+  "questionFrontendId": "765",
+  "boundTopicId": null,
+  "title": "Couples Holding Hands",
+  "titleSlug": "couples-holding-hands",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nN couples sit in 2N seats arranged in a row and want to hold hands.  We want to know the minimum number of swaps so that every couple is sitting side by side.  A <i>swap</i> consists of choosing <b>any</b> two people, then they stand up and switch seats. \r\n</p><p>\r\nThe people and seats are represented by an integer from <code>0</code> to <code>2N-1</code>, the couples are numbered in order, the first couple being <code>(0, 1)</code>, the second couple being <code>(2, 3)</code>, and so on with the last couple being <code>(2N-2, 2N-1)</code>.\r\n</p><p>\r\nThe couples' initial seating is given by <code>row[i]</code> being the value of the person who is initially sitting in the i-th seat.\r\n\r\n<p><b>Example 1:</b><br /><pre>\r\n<b>Input:</b> row = [0, 2, 1, 3]\r\n<b>Output:</b> 1\r\n<b>Explanation:</b> We only need to swap the second (row[1]) and third (row[2]) person.\r\n</pre></p>\r\n\r\n<p><b>Example 2:</b><br /><pre>\r\n<b>Input:</b> row = [3, 2, 0, 1]\r\n<b>Output:</b> 0\r\n<b>Explanation:</b> All couples are already seated side by side.\r\n</pre></p>\r\n\r\n<p>\r\n<b>Note:</b>\r\n<ol> \r\n<li> <code>len(row)</code> is even and in the range of <code>[4, 60]</code>.</li>\r\n<li> <code>row</code> is guaranteed to be a permutation of <code>0...len(row)-1</code>.</li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 471,
+  "dislikes": 53,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"First Missing Positive\", \"titleSlug\": \"first-missing-positive\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Missing Number\", \"titleSlug\": \"missing-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"K-Similar Strings\", \"titleSlug\": \"k-similar-strings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minSwapsCouples(vector<int>& row) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minSwapsCouples(int[] row) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minSwapsCouples(self, row):\n        \"\"\"\n        :type row: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minSwapsCouples(self, row: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minSwapsCouples(int* row, int rowSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinSwapsCouples(int[] row) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} row\n * @return {number}\n */\nvar minSwapsCouples = function(row) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} row\n# @return {Integer}\ndef min_swaps_couples(row)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minSwapsCouples(_ row: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minSwapsCouples(row []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minSwapsCouples(row: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minSwapsCouples(row: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_swaps_couples(row: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $row\n     * @return Integer\n     */\n    function minSwapsCouples($row) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"19.3K\", \"totalSubmission\": \"36.4K\", \"totalAcceptedRaw\": 19304, \"totalSubmissionRaw\": 36444, \"acRate\": \"53.0%\"}",
+  "hints": [
+    "Say there are N two-seat couches.  For each couple, draw an edge from the couch of one partner to the couch of the other partner."
+  ],
+  "solution": {
+    "id": "376",
+    "canSeeDetail": true,
+    "url": "/articles/couples-holding-hands/",
+    "content": "[TOC]\r\n\r\n#### Approach Framework\r\n\r\n**Observations**\r\n\r\nFirst, instead of couples `(0, 1), (2, 3), (4, 5), ...`, we could just consider couples `(0, 0), (1, 1), (2, 2), ...` without changing the answer.  Also, we could imagine that we have `N` two-seat couches `0, 1, 2, ..., N-1`.  This is because the person sitting on the left-most seat of the row must be paired with the person sitting on the second-left-most seat, the third-left-most paired with the fourth-left-most, and so on.\r\nCall a person happy if they are with their partner on the same couch.  Intuitively, a swap that keeps both persons swapped unhappy is not part of some optimal solution.  We'll call this the *happy swap assumption* (HSA), and we'll prove it in Approach #2.\r\n\r\n---\r\n\r\n#### Approach #1: Backtracking [Time Limit Exceeded]\r\n\r\n**Intuition**\r\n\r\nWe could guess without proof that a solution where we make the people on each couch happy in order is optimal.  This assumption is stronger than HSA, but it seems reasonable because at each move we are making at least 1 couple happy.  (See Approach #2 for a proof.)\r\nUnder such an assumption, for some couch with unhappy people X and Y, we either replace Y with X's partner, or replace X with Y's partner.\r\nFor each of the two possibilities, we can try both using a backtracking approach.\r\n\r\n**Algorithm**\r\n\r\nFor each couch with two possibilities (ie. both people on the couch are unhappy), we will try the first possibility, find the answer as `ans1`, then undo our move and try the second possibility, find the associated answer as `ans2`, undo our move and then return the smallest answer.\r\n\r\n<iframe src=\"https://leetcode.com/playground/GTJChCAv/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"GTJChCAv\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(N * 2^N)$$, where $$N$$ is the number of couples, as for each couch we check up to two complete possibilities.  The $$N$$ factor is from searching for `jx` and `jy`; this factor can be removed with a more efficient algorithm that keeps track of where `pairs[j][k]` is `x` as we swap elements through pairs.\r\n\r\n* Space Complexity: $$O(N)$$.\r\n\r\n---\r\n#### Approach #2: Cycle Finding [Accepted]\r\n\r\n**Intuition**\r\n\r\nIf we take the HSA as true, it means that if a couple is on two separate couches, there are two possible moves to make this couple happy, depending on which partner visits their partner and which stays in place.\r\nThis leads to the following idea: for each couple sitting at couches X and Y (possibly the same), draw an undirected edge from X to Y.  Call such a graph the couples graph.  This graph is 2-regular (every node has degree 2), and it is easy to see that every connected component of this graph must be a cycle.\r\n\r\n<br />\r\n<center>\r\n    <img src=\"../Figures/765/couples_cycle_finding.png\" alt=\"Diagram of cyclic list\" width=\"350\"/>\r\n</center>\r\n<br />\r\n\r\nThen, making a swap for $$X_1$$ to meet their partner $$X_2$$ has a corresponding move on the couples graph equivalent to contracting the corresponding edge to $$X_1X_2$$ plus having a node with a single self edge.\r\nOur goal is to have `N` connected components in the graph, one for each couch.  Every swap (allowed by the scheme above) always increases that number by exactly 1, so under HSA, the answer is just `N` minus the number of connected components in the couples graph.\r\n\r\nNow to prove HSA, observe that it is impossible with *any* swap to create more than 1 additional connected component in the couples graph.  So any optimal solution must have at least the number of moves in the answer we've constructed.  (This also proves the ordering assumption made in Approach #1, as we can make edge contractions of a cycle in any order without changing the answer.)\r\n\r\n**Algorithm**\r\n\r\nWe'll construct the graph: `adj[node]` will be the index of the two nodes that this `node` is adjacent to.\r\nAfter, we'll find all connected components (which are also cycles.)  If at some couch (node) a person is unvisited, we will visit it and repeatedly visit some neighbor until we complete the cycle.\r\n\r\n<iframe src=\"https://leetcode.com/playground/EZcv6s7J/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"EZcv6s7J\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(N)$$, where $$N$$ is the number of couples.\r\n\r\n* Space Complexity: $$O(N)$$, the size of `adj` and associated data structures.\r\n\r\n---\r\n#### Approach #3: Greedy [Accepted]\r\n\r\n**Intuition**\r\n\r\nFrom guessing, or by the proof in *Approach #2*, our strategy is to resolve each couch in order.\r\n\r\nTo resolve a couch, fix the first person and have their partner swap into the second seat if they are not already there.\r\n\r\n**Algorithm**\r\n\r\nIf a person is number `x`, their partner is `x ^ 1`, where `^` is the bitwise XOR operator.\r\n\r\nFor each first person `x = row[i]` on a couch who is unpartnered, let's find their partner at `row[j]` and have them swap seats with `row[i+1]`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/ZGZA2PgH/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"ZGZA2PgH\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(N^2)$$, where $$N$$ is the number of couples.\r\n\r\n* Space Complexity: $$O(1)$$ additional complexity: the swaps are in place.\r\n\r\n---\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "371",
+      "count": 13,
+      "average": 3.538,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,2,1,3]",
+  "metaData": "{\r\n  \"name\": \"minSwapsCouples\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"row\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "921",
+  "questionFrontendId": "885",
+  "boundTopicId": null,
+  "title": "Spiral Matrix III",
+  "titleSlug": "spiral-matrix-iii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On a 2 dimensional grid with <code>R</code> rows and <code>C</code> columns, we start at <code>(r0, c0)</code> facing east.</p>\r\n\r\n<p>Here, the north-west corner of the grid is at the&nbsp;first row and column, and the south-east corner of the grid is at the last row and column.</p>\r\n\r\n<p>Now, we walk in a clockwise spiral shape to visit every position in this grid.&nbsp;</p>\r\n\r\n<p>Whenever we would move outside the boundary of the grid, we continue our walk outside the grid (but may return to the grid boundary later.)&nbsp;</p>\r\n\r\n<p>Eventually, we reach all <code>R * C</code> spaces of the grid.</p>\r\n\r\n<p>Return a list of coordinates representing the positions of the grid in the order they were visited.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>R = <span id=\"example-input-1-1\">1</span>, C = <span id=\"example-input-1-2\">4</span>, r0 = <span id=\"example-input-1-3\">0</span>, c0 = <span id=\"example-input-1-4\">0</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[[0,0],[0,1],[0,2],[0,3]]</span>\r\n\r\n<img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/24/example_1.png\" style=\"width: 174px; height: 99px;\" />\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>R = <span id=\"example-input-2-1\">5</span>, C = <span id=\"example-input-2-2\">6</span>, r0 = <span id=\"example-input-2-3\">1</span>, c0 = <span id=\"example-input-2-4\">4</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[[1,4],[1,5],[2,5],[2,4],[2,3],[1,3],[0,3],[0,4],[0,5],[3,5],[3,4],[3,3],[3,2],[2,2],[1,2],[0,2],[4,5],[4,4],[4,3],[4,2],[4,1],[3,1],[2,1],[1,1],[0,1],[4,0],[3,0],[2,0],[1,0],[0,0]]</span>\r\n\r\n<img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/24/example_2.png\" style=\"width: 202px; height: 142px;\" />\r\n</pre>\r\n\r\n<div>\r\n<div>\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= R &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= C &lt;= 100</code></li>\r\n\t<li><code>0 &lt;= r0 &lt; R</code></li>\r\n\t<li><code>0 &lt;= c0 &lt; C</code></li>\r\n</ol>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 144,
+  "dislikes": 211,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Spiral Matrix\", \"titleSlug\": \"spiral-matrix\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Spiral Matrix II\", \"titleSlug\": \"spiral-matrix-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "dmgcodevil",
+      "profileUrl": "/dmgcodevil/",
+      "avatarUrl": "https://assets.leetcode.com/users/dmgcodevil/avatar_1526319931.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Dataminr\", \"slug\": \"dataminr\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<vector<int>> spiralMatrixIII(int R, int C, int r0, int c0) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\r\n    public int[][] spiralMatrixIII(int R, int C, int r0, int c0) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def spiralMatrixIII(self, R, C, r0, c0):\r\n        \"\"\"\r\n        :type R: int\r\n        :type C: int\r\n        :type r0: int\r\n        :type c0: int\r\n        :rtype: List[List[int]]\r\n        \"\"\""
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def spiralMatrixIII(self, R: int, C: int, r0: int, c0: int) -> List[List[int]]:"
+    },
+    {
+      "lang": "C",
+      "code": "/**\r\n * Return an array of arrays of size *returnSize.\r\n * The sizes of the arrays are returned as *returnColumnSizes array.\r\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\r\n */\r\nint** spiralMatrixIII(int R, int C, int r0, int c0, int* returnSize, int** returnColumnSizes){\r\n\r\n}"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[][] SpiralMatrixIII(int R, int C, int r0, int c0) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {number} R\r\n * @param {number} C\r\n * @param {number} r0\r\n * @param {number} c0\r\n * @return {number[][]}\r\n */\r\nvar spiralMatrixIII = function(R, C, r0, c0) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} r\r\n# @param {Integer} c\r\n# @param {Integer} r0\r\n# @param {Integer} c0\r\n# @return {Integer[][]}\r\ndef spiral_matrix_iii(r, c, r0, c0)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func spiralMatrixIII(_ R: Int, _ C: Int, _ r0: Int, _ c0: Int) -> [[Int]] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func spiralMatrixIII(R int, C int, r0 int, c0 int) [][]int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def spiralMatrixIII(R: Int, C: Int, r0: Int, c0: Int): Array[Array[Int]] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun spiralMatrixIII(R: Int, C: Int, r0: Int, c0: Int): Array<IntArray> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn spiral_matrix_iii(r: i32, c: i32, r0: i32, c0: i32) -> Vec<Vec<i32>> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param Integer $R\r\n     * @param Integer $C\r\n     * @param Integer $r0\r\n     * @param Integer $c0\r\n     * @return Integer[][]\r\n     */\r\n    function spiralMatrixIII($R, $C, $r0, $c0) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.4K\", \"totalSubmission\": \"21.5K\", \"totalAcceptedRaw\": 14401, \"totalSubmissionRaw\": 21495, \"acRate\": \"67.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "531",
+    "canSeeDetail": true,
+    "url": "/articles/spiral-matrix-iii/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Walk in a Spiral\n\n**Intuition**\n\nWe can walk in a spiral shape from the starting square, ignoring whether we stay in the grid or not.  Eventually, we must have reached every square in the grid.\n\n**Algorithm**\n\nExamining the lengths of our walk in each direction, we find the following pattern: `1, 1, 2, 2, 3, 3, 4, 4, ...`  That is, we walk 1 unit east, then 1 unit south, then 2 units west, then 2 units north, then 3 units east, etc.  Because our walk is self-similar, this pattern repeats in the way we expect.\n\nAfter, the algorithm is straightforward: perform the walk and record positions of the grid in the order we visit them.  Please read the inline comments for more details.\n\n<iframe src=\"https://leetcode.com/playground/XTsQ5Bi8/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"XTsQ5Bi8\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O((\\max(R, C))^2)$$.  Potentially, our walk needs to spiral until we move $$R$$ in one direction, and $$C$$ in another direction, so as to reach every cell of the grid.\n\n* Space Complexity:  $$O(R * C)$$, the space used by the answer.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "524",
+      "count": 13,
+      "average": 3.308,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "1\n4\n0\n0",
+  "metaData": "{\r\n  \"name\": \"spiralMatrixIII\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"R\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"C\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"r0\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"c0\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

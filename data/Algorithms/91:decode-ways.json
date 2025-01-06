@@ -1,0 +1,97 @@
+{
+  "questionId": "91",
+  "questionFrontendId": "91",
+  "boundTopicId": null,
+  "title": "Decode Ways",
+  "titleSlug": "decode-ways",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A message containing letters from <code>A-Z</code> is being encoded to numbers using the following mapping:</p>\r\n\r\n<pre>\r\n&#39;A&#39; -&gt; 1\r\n&#39;B&#39; -&gt; 2\r\n...\r\n&#39;Z&#39; -&gt; 26\r\n</pre>\r\n\r\n<p>Given a <strong>non-empty</strong> string containing only digits, determine the total number of ways to decode it.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;12&quot;\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong>&nbsp;It could be decoded as &quot;AB&quot; (1 2) or &quot;L&quot; (12).\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;226&quot;\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong>&nbsp;It could be decoded as &quot;BZ&quot; (2 26), &quot;VF&quot; (22 6), or &quot;BBF&quot; (2 2 6).</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1921,
+  "dislikes": 2168,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Decode Ways II\", \"titleSlug\": \"decode-ways-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 12}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Databricks\", \"slug\": \"databricks\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Square\", \"slug\": \"square\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Barclays\", \"slug\": \"barclays\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int numDecodings(string s) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numDecodings(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numDecodings(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numDecodings(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numDecodings(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int NumDecodings(string s) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar numDecodings = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @return {Integer}\r\ndef num_decodings(s)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func numDecodings(_ s: String) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numDecodings(s string) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def numDecodings(s: String): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun numDecodings(s: String): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_decodings(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function numDecodings($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"323.4K\", \"totalSubmission\": \"1.4M\", \"totalAcceptedRaw\": 323357, \"totalSubmissionRaw\": 1385138, \"acRate\": \"23.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"12\"",
+  "metaData": "{ \r\n  \"name\": \"numDecodings\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

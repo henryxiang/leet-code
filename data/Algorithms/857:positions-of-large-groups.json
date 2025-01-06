@@ -1,0 +1,111 @@
+{
+  "questionId": "857",
+  "questionFrontendId": "830",
+  "boundTopicId": null,
+  "title": "Positions of Large Groups",
+  "titleSlug": "positions-of-large-groups",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a string&nbsp;<code>S</code>&nbsp;of lowercase letters, these letters form consecutive groups of the same character.</p>\r\n\r\n<p>For example, a string like <code>S = &quot;abbxxxxzyy&quot;</code> has the groups <code>&quot;a&quot;</code>, <code>&quot;bb&quot;</code>, <code>&quot;xxxx&quot;</code>, <code>&quot;z&quot;</code> and&nbsp;<code>&quot;yy&quot;</code>.</p>\r\n\r\n<p>Call a group <em>large</em> if it has 3 or more characters.&nbsp; We would like the starting and ending positions of every large group.</p>\r\n\r\n<p>The final answer should be in lexicographic order.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;abbxxxxzzy&quot;\r\n<strong>Output: </strong>[[3,6]]\r\n<strong>Explanation</strong>: <code>&quot;xxxx&quot; is the single </code>large group with starting  3 and ending positions 6.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;abc&quot;\r\n<strong>Output: </strong>[]\r\n<strong>Explanation</strong>: We have &quot;a&quot;,&quot;b&quot; and &quot;c&quot; but no large group.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;abcdddeeeeaabbbcd&quot;\r\n<strong>Output: </strong>[[3,5],[6,9],[12,14]]</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:&nbsp;</strong>&nbsp;<code>1 &lt;= S.length &lt;= 1000</code></p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 253,
+  "dislikes": 69,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<int>> largeGroupPositions(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<List<Integer>> largeGroupPositions(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def largeGroupPositions(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def largeGroupPositions(self, S: str) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** largeGroupPositions(char * S, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<IList<int>> LargeGroupPositions(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {number[][]}\n */\nvar largeGroupPositions = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer[][]}\ndef large_group_positions(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func largeGroupPositions(_ S: String) -> [[Int]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func largeGroupPositions(S string) [][]int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def largeGroupPositions(S: String): List[List[Int]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun largeGroupPositions(S: String): List<List<Int>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn large_group_positions(s: String) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return Integer[][]\n     */\n    function largeGroupPositions($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"34.3K\", \"totalSubmission\": \"70.8K\", \"totalAcceptedRaw\": 34292, \"totalSubmissionRaw\": 70822, \"acRate\": \"48.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "463",
+    "canSeeDetail": true,
+    "url": "/articles/positions-of-large-groups/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Two Pointer [Accepted]\n\n**Intuition**\n\nWe scan through the string to identify the start and end of each group.  If the size of the group is at least 3, we add it to the answer.\n\n**Algorithm**\n\nMaintain pointers `i, j` with `i <= j`.  The `i` pointer will represent the start of the current group, and we will increment `j` forward until it reaches the end of the group.\n\nWe know that we have reached the end of the group when `j` is at the end of the string, or `S[j] != S[j+1]`.  At this point, we have some group `[i, j]`; and after, we will update `i = j+1`, the start of the next group.\n\n<iframe src=\"https://leetcode.com/playground/m9hgNCUd/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"m9hgNCUd\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.\n\n* Space Complexity: $$O(N)$$, the space used by the answer.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "458",
+      "count": 13,
+      "average": 3.077,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"abbxxxxzzy\"",
+  "metaData": "{\r\n  \"name\": \"largeGroupPositions\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<list<integer>>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

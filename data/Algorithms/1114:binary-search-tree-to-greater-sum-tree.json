@@ -1,0 +1,101 @@
+{
+  "questionId": "1114",
+  "questionFrontendId": "1038",
+  "boundTopicId": null,
+  "title": "Binary Search Tree to Greater Sum Tree",
+  "titleSlug": "binary-search-tree-to-greater-sum-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given the root of a binary <strong>search</strong> tree with distinct values, modify it so that every <code>node</code>&nbsp;has a new value equal to the sum of the values of the original tree that are greater than or equal to <code>node.val</code>.</p>\r\n\r\n<p>As a reminder, a&nbsp;<em>binary search tree</em> is a tree that satisfies these constraints:</p>\r\n\r\n<ul>\r\n\t<li>The left subtree of a node contains only nodes with keys&nbsp;<strong>less than</strong>&nbsp;the node&#39;s key.</li>\r\n\t<li>The right subtree of a node contains only nodes with keys&nbsp;<strong>greater than</strong>&nbsp;the node&#39;s key.</li>\r\n\t<li>Both the left and right subtrees must also be binary search trees.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/05/02/tree.png\" style=\"width: 280px; height: 191px;\" /></strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]</span>\r\n</pre>\r\n\r\n<div>\r\n<p>&nbsp;</p>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>The number of nodes in the tree is between <code>1</code> and <code>100</code>.</li>\r\n\t<li>Each node will have value between <code>0</code> and <code>100</code>.</li>\r\n\t<li>The given tree is a binary search tree.</li>\r\n</ol>\r\n\r\n<div>\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 439,
+  "dislikes": 68,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "coding4232",
+      "profileUrl": "/coding4232/",
+      "avatarUrl": "https://assets.leetcode.com/users/coding4232/avatar_1554483797.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search Tree",
+      "slug": "binary-search-tree"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * struct TreeNode {\r\n *     int val;\r\n *     TreeNode *left;\r\n *     TreeNode *right;\r\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\r\n * };\r\n */\r\nclass Solution {\r\npublic:\r\n    TreeNode* bstToGst(TreeNode* root) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public TreeNode bstToGst(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def bstToGst(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: TreeNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def bstToGst(self, root: TreeNode) -> TreeNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nstruct TreeNode* bstToGst(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * public class TreeNode {\r\n *     public int val;\r\n *     public TreeNode left;\r\n *     public TreeNode right;\r\n *     public TreeNode(int x) { val = x; }\r\n * }\r\n */\r\npublic class Solution {\r\n    public TreeNode BstToGst(TreeNode root) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {TreeNode}\n */\nvar bstToGst = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\r\n# class TreeNode\r\n#     attr_accessor :val, :left, :right\r\n#     def initialize(val)\r\n#         @val = val\r\n#         @left, @right = nil, nil\r\n#     end\r\n# end\r\n\r\n# @param {TreeNode} root\r\n# @return {TreeNode}\r\ndef bst_to_gst(root)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * public class TreeNode {\r\n *     public var val: Int\r\n *     public var left: TreeNode?\r\n *     public var right: TreeNode?\r\n *     public init(_ val: Int) {\r\n *         self.val = val\r\n *         self.left = nil\r\n *         self.right = nil\r\n *     }\r\n * }\r\n */\r\nclass Solution {\r\n    func bstToGst(_ root: TreeNode?) -> TreeNode? {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * type TreeNode struct {\r\n *     Val int\r\n *     Left *TreeNode\r\n *     Right *TreeNode\r\n * }\r\n */\r\nfunc bstToGst(root *TreeNode) *TreeNode {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * class TreeNode(var _value: Int) {\r\n *   var value: Int = _value\r\n *   var left: TreeNode = null\r\n *   var right: TreeNode = null\r\n * }\r\n */\r\nobject Solution {\r\n    def bstToGst(root: TreeNode): TreeNode = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\r\n * Example:\r\n * var ti = TreeNode(5)\r\n * var v = ti.`val`\r\n * Definition for a binary tree node.\r\n * class TreeNode(var `val`: Int) {\r\n *     var left: TreeNode? = null\r\n *     var right: TreeNode? = null\r\n * }\r\n */\r\nclass Solution {\r\n    fun bstToGst(root: TreeNode?): TreeNode? {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn bst_to_gst(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return TreeNode\n     */\n    function bstToGst($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"29.1K\", \"totalSubmission\": \"37.1K\", \"totalAcceptedRaw\": 29126, \"totalSubmissionRaw\": 37106, \"acRate\": \"78.5%\"}",
+  "hints": [
+    "What traversal method organizes all nodes in sorted order?"
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]",
+  "metaData": "{\r\n  \"name\": \"bstToGst\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"TreeNode\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

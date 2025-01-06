@@ -1,0 +1,113 @@
+{
+  "questionId": "750",
+  "questionFrontendId": "749",
+  "boundTopicId": null,
+  "title": "Contain Virus",
+  "titleSlug": "contain-virus",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nA virus is spreading rapidly, and your task is to quarantine the infected area by installing walls.\r\n</p><p>\r\nThe world is modeled as a 2-D array of cells, where <code>0</code> represents uninfected cells, and <code>1</code> represents cells contaminated with the virus.  A wall (and only one wall) can be installed <b>between any two 4-directionally adjacent cells</b>, on the shared boundary.\r\n</p><p>\r\nEvery night, the virus spreads to all neighboring cells in all four directions unless blocked by a wall.\r\nResources are limited. Each day, you can install walls around only one region -- the affected area (continuous block of infected cells) that threatens the most uninfected cells the following night. There will never be a tie.\r\n</p><p>\r\nCan you save the day? If so, what is the number of walls required? If not, and the world becomes fully infected, return the number of walls used.\r\n</p><p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> grid = \r\n[[0,1,0,0,0,0,0,1],\r\n [0,1,0,0,0,0,0,1],\r\n [0,0,0,0,0,0,0,1],\r\n [0,0,0,0,0,0,0,0]]\r\n<b>Output:</b> 10\r\n<b>Explanation:</b>\r\nThere are 2 contaminated regions.\r\nOn the first day, add 5 walls to quarantine the viral region on the left. The board after the virus spreads is:\r\n\r\n[[0,1,0,0,0,0,1,1],\r\n [0,1,0,0,0,0,1,1],\r\n [0,0,0,0,0,0,1,1],\r\n [0,0,0,0,0,0,0,1]]\r\n\r\nOn the second day, add 5 walls to quarantine the viral region on the right. The virus is fully contained.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> grid = \r\n[[1,1,1],\r\n [1,0,1],\r\n [1,1,1]]\r\n<b>Output:</b> 4\r\n<b>Explanation:</b> Even though there is only one cell saved, there are 4 walls built.\r\nNotice that walls are only built on the shared boundary of two different cells.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b><br />\r\n<pre>\r\n<b>Input:</b> grid = \r\n[[1,1,1,0,0,0,0,0,0],\r\n [1,0,1,0,1,1,1,1,1],\r\n [1,1,1,0,0,0,0,0,0]]\r\n<b>Output:</b> 13\r\n<b>Explanation:</b> The region on the left only builds two new walls.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The number of rows and columns of <code>grid</code> will each be in the range <code>[1, 50]</code>.</li>\r\n<li>Each <code>grid[i][j]</code> will be either <code>0</code> or <code>1</code>.</li>\r\n<li>Throughout the described process, there is always a contiguous viral region that will infect <b>strictly more</b> uncontaminated squares in the next round.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 58,
+  "dislikes": 184,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "yujiehuang",
+      "profileUrl": "/yujiehuang/",
+      "avatarUrl": "https://www.gravatar.com/avatar/920735278f8daa6cc808c835ff94488b.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int containVirus(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int containVirus(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def containVirus(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def containVirus(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint containVirus(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ContainVirus(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar containVirus = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef contain_virus(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func containVirus(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func containVirus(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def containVirus(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun containVirus(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn contain_virus(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function containVirus($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.5K\", \"totalSubmission\": \"8.3K\", \"totalAcceptedRaw\": 3528, \"totalSubmissionRaw\": 8296, \"acRate\": \"42.5%\"}",
+  "hints": [
+    "The implementation is long - we want to perfrom the following steps:\r\n\r\n* Find all viral regions (connected components), additionally for each region keeping track of the frontier (neighboring uncontaminated cells), and the perimeter of the region.\r\n\r\n* Disinfect the most viral region, adding it's perimeter to the answer.\r\n\r\n* Spread the virus in the remaining regions outward by 1 square."
+  ],
+  "solution": {
+    "id": "346",
+    "canSeeDetail": true,
+    "url": "/articles/contain-virus/",
+    "content": "[TOC]\n\n#### Approach #1: Simulation [Accepted]\n\n**Intuition**\n\nLet's work on simulating one turn of the process.  We can repeat this as necessary while there are still infected regions.\n\n**Algorithm**\n\nThough the implementation is long, the algorithm is straightforward.  We perform the following steps:\n\n* Find all viral regions (connected components), additionally for each region keeping track of the frontier (neighboring uncontaminated cells), and the perimeter of the region.\n\n* Disinfect the most viral region, adding it's perimeter to the answer.\n\n* Spread the virus in the remaining regions outward by 1 square.\n\n<iframe src=\"https://leetcode.com/playground/VFSzJzRe/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"VFSzJzRe\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O((R*C)^{\\frac{4}{3}})$$ where $$R, C$$ is the number of rows and columns.  After time $$t$$, viral regions that are alive must have size at least $$t^2 + (t-1)^2$$, so the total number removed across all time is $$\\Omega(t^3) \\leq R*C$$.\n\n* Space Complexity: $$O(R*C)$$ in additional space.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "341",
+      "count": 4,
+      "average": 2.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,1,0,0,0,0,0,1],[0,1,0,0,0,0,0,1],[0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0]]",
+  "metaData": "{\r\n  \"name\": \"containVirus\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

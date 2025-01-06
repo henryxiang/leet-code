@@ -1,0 +1,111 @@
+{
+  "questionId": "864",
+  "questionFrontendId": "835",
+  "boundTopicId": null,
+  "title": "Image Overlap",
+  "titleSlug": "image-overlap",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Two images <code>A</code> and <code>B</code> are given, represented as&nbsp;binary, square matrices of the same size.&nbsp; (A binary matrix has only 0s and 1s as values.)</p>\r\n\r\n<p>We translate one image however we choose (sliding it left, right, up, or down any number of units), and place it on top of the other image.&nbsp; After, the <em>overlap</em> of this translation is the number of positions that have a 1 in both images.</p>\r\n\r\n<p>(Note also that a translation does <strong>not</strong> include any kind of rotation.)</p>\r\n\r\n<p>What is the largest possible overlap?</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = [[1,1,0],\r\n            [0,1,0],\r\n&nbsp;           [0,1,0]]\r\n&nbsp;      B = [[0,0,0],\r\n&nbsp;           [0,1,1],\r\n&nbsp;           [0,0,1]]\r\n<strong>Output: </strong>3\r\n<strong>Explanation:</strong> We slide A to right by 1 unit and down by 1 unit.</pre>\r\n\r\n<p><strong>Notes:</strong>&nbsp;</p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length = A[0].length = B.length = B[0].length &lt;= 30</code></li>\r\n\t<li><code>0 &lt;=&nbsp;A[i][j], B[i][j] &lt;= 1</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 240,
+  "dislikes": 325,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int largestOverlap(vector<vector<int>>& A, vector<vector<int>>& B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int largestOverlap(int[][] A, int[][] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def largestOverlap(self, A, B):\n        \"\"\"\n        :type A: List[List[int]]\n        :type B: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def largestOverlap(self, A: List[List[int]], B: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint largestOverlap(int** A, int ASize, int* AColSize, int** B, int BSize, int* BColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LargestOverlap(int[][] A, int[][] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} A\n * @param {number[][]} B\n * @return {number}\n */\nvar largestOverlap = function(A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} a\n# @param {Integer[][]} b\n# @return {Integer}\ndef largest_overlap(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func largestOverlap(_ A: [[Int]], _ B: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func largestOverlap(A [][]int, B [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def largestOverlap(A: Array[Array[Int]], B: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun largestOverlap(A: Array<IntArray>, B: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn largest_overlap(a: Vec<Vec<i32>>, b: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $A\n     * @param Integer[][] $B\n     * @return Integer\n     */\n    function largestOverlap($A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.5K\", \"totalSubmission\": \"26.3K\", \"totalAcceptedRaw\": 14503, \"totalSubmissionRaw\": 26347, \"acRate\": \"55.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "464",
+    "canSeeDetail": true,
+    "url": "/articles/image-overlap/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Translate by Delta [Accepted]\n\n**Intuition and Algorithm**\n\nFor each translation `delta`, we calculate the candidate answer `overlap(delta)`, which is the size of the overlap if we shifted the matrix `A` by delta.\n\nWe only need to check `delta` for which some point in `A` maps to some point in `B`, since a candidate overlap must be at least 1.  Using a Set `seen`, we remember if we've calculated `overlap(delta)`, so that we don't perform this expensive check more than once per `delta`.\n\nWe use `java.awt.Point` (or `complex` in Python) to handle our 2D vectors gracefully.  We could have also mapped a vector `delta = (x, y)` (which has coordinates between `-(N-1)` and `N-1`) to `2*N x + y` for convenience.  Note that we cannot map it to `N*dx, dy` as there would be interference: `(0, N-1)` and `(1, -1)` would map to the same point.\n\n<iframe src=\"https://leetcode.com/playground/gnwqTeGt/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"gnwqTeGt\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^6)$$, where $$N$$ is the length of `A` or `B`.\n\n* Space Complexity: $$O(N^2)$$.\n\n\n---\n#### Approach #2: Count by Delta [Accepted]\n\n**Intuition and Algorithm**\n\nWe can do the reverse of *Approach #1*: count every possible `delta = b - a` we see.  If we see say, 5 of the same `delta = b - a`, then the translation by `delta` must have overlap 5.\n\n<iframe src=\"https://leetcode.com/playground/YmA2kxzz/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"YmA2kxzz\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^4)$$, where $$N$$ is the length of `A` or `B`.\n\n* Space Complexity: $$O(N^2)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "460",
+      "count": 37,
+      "average": 1.703,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,1,0],[0,1,0],[0,1,0]]\n[[0,0,0],[0,1,1],[0,0,1]]",
+  "metaData": "{\r\n  \"name\": \"largestOverlap\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

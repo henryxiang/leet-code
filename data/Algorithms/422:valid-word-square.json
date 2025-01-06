@@ -1,0 +1,88 @@
+{
+  "questionId": "422",
+  "questionFrontendId": "422",
+  "boundTopicId": null,
+  "title": "Valid Word Square",
+  "titleSlug": "valid-word-square",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a sequence of words, check whether it forms a valid word square.</p>\r\n\r\n<p>A sequence of words forms a valid word square if the <i>k</i><sup>th</sup> row and column read the exact same string, where 0 &le; <i>k</i> &lt; max(numRows, numColumns).</p>\r\n\r\n<p><b>Note:</b><br />\r\n<ol>\r\n<li>The number of words given is at least 1 and does not exceed 500.</li>\r\n<li>Word length will be at least 1 and does not exceed 500.</li>\r\n<li>Each word contains only lowercase English alphabet <code>a-z</code>.</li>\r\n</ol>\r\n</p>\r\n\r\n<p><b>Example 1:</b>\r\n<pre>\r\n<b>Input:</b>\r\n[\r\n  \"abcd\",\r\n  \"bnrt\",\r\n  \"crmy\",\r\n  \"dtye\"\r\n]\r\n\r\n<b>Output:</b>\r\ntrue\r\n\r\n<b>Explanation:</b>\r\nThe first row and first column both read \"abcd\".\r\nThe second row and second column both read \"bnrt\".\r\nThe third row and third column both read \"crmy\".\r\nThe fourth row and fourth column both read \"dtye\".\r\n\r\nTherefore, it is a valid word square.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b>\r\n<pre>\r\n<b>Input:</b>\r\n[\r\n  \"abcd\",\r\n  \"bnrt\",\r\n  \"crm\",\r\n  \"dt\"\r\n]\r\n\r\n<b>Output:</b>\r\ntrue\r\n\r\n<b>Explanation:</b>\r\nThe first row and first column both read \"abcd\".\r\nThe second row and second column both read \"bnrt\".\r\nThe third row and third column both read \"crm\".\r\nThe fourth row and fourth column both read \"dt\".\r\n\r\nTherefore, it is a valid word square.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b>\r\n<pre>\r\n<b>Input:</b>\r\n[\r\n  \"ball\",\r\n  \"area\",\r\n  \"read\",\r\n  \"lady\"\r\n]\r\n\r\n<b>Output:</b>\r\nfalse\r\n\r\n<b>Explanation:</b>\r\nThe third row reads \"read\" while the third column reads \"lead\".\r\n\r\nTherefore, it is <b>NOT</b> a valid word square.\r\n</pre>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 138,
+  "dislikes": 94,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Word Squares\", \"titleSlug\": \"word-squares\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Toeplitz Matrix\", \"titleSlug\": \"toeplitz-matrix\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool validWordSquare(vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean validWordSquare(List<String> words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def validWordSquare(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def validWordSquare(self, words: List[str]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool validWordSquare(char ** words, int wordsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ValidWordSquare(IList<string> words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {boolean}\n */\nvar validWordSquare = function(words) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @return {Boolean}\ndef valid_word_square(words)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func validWordSquare(_ words: [String]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func validWordSquare(words []string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def validWordSquare(words: List[String]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun validWordSquare(words: List<String>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn valid_word_square(words: Vec<String>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return Boolean\n     */\n    function validWordSquare($words) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"25.2K\", \"totalSubmission\": \"68.5K\", \"totalAcceptedRaw\": 25248, \"totalSubmissionRaw\": 68468, \"acRate\": \"36.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"abcd\",\"bnrt\",\"crmy\",\"dtye\"]",
+  "metaData": "{\r\n  \"name\": \"validWordSquare\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"list<string>\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

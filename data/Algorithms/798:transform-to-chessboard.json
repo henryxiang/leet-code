@@ -1,0 +1,115 @@
+{
+  "questionId": "798",
+  "questionFrontendId": "782",
+  "boundTopicId": null,
+  "title": "Transform to Chessboard",
+  "titleSlug": "transform-to-chessboard",
+  "categoryTitle": "Algorithms",
+  "content": "<p>An N x N <code>board</code> contains only <code>0</code>s and <code>1</code>s. In each move, you can swap any 2 rows with each other, or any 2 columns with each other.</p>\r\n\r\n<p>What is the minimum number of moves to transform the board into a &quot;chessboard&quot; - a board where no <code>0</code>s and no <code>1</code>s are 4-directionally adjacent? If the task is impossible, return -1.</p>\r\n\r\n<pre>\r\n<strong>Examples:</strong>\r\n<strong>Input:</strong> board = [[0,1,1,0],[0,1,1,0],[1,0,0,1],[1,0,0,1]]\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong>\r\nOne potential sequence of moves is shown below, from left to right:\r\n\r\n0110     1010     1010\r\n0110 --&gt; 1010 --&gt; 0101\r\n1001     0101     1010\r\n1001     0101     0101\r\n\r\nThe first move swaps the first and second column.\r\nThe second move swaps the second and third row.\r\n\r\n\r\n<strong>Input:</strong> board = [[0, 1], [1, 0]]\r\n<strong>Output:</strong> 0\r\n<strong>Explanation:</strong>\r\nAlso note that the board with 0 in the top left corner,\r\n01\r\n10\r\n\r\nis also a valid chessboard.\r\n\r\n<strong>Input:</strong> board = [[1, 0], [1, 0]]\r\n<strong>Output:</strong> -1\r\n<strong>Explanation:</strong>\r\nNo matter what sequence of moves you make, you cannot end with a valid chessboard.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>board</code> will have the same number of rows and columns, a number in the range <code>[2, 30]</code>.</li>\r\n\t<li><code>board[i][j]</code> will be only <code>0</code>s or <code>1</code>s.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 102,
+  "dislikes": 108,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ngoc_lam",
+      "profileUrl": "/ngoc_lam/",
+      "avatarUrl": "https://assets.leetcode.com/users/ngoc_lam/avatar_1528594557.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int movesToChessboard(vector<vector<int>>& board) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int movesToChessboard(int[][] board) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def movesToChessboard(self, board):\n        \"\"\"\n        :type board: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def movesToChessboard(self, board: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint movesToChessboard(int** board, int boardSize, int* boardColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MovesToChessboard(int[][] board) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} board\n * @return {number}\n */\nvar movesToChessboard = function(board) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} board\n# @return {Integer}\ndef moves_to_chessboard(board)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func movesToChessboard(_ board: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func movesToChessboard(board [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def movesToChessboard(board: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun movesToChessboard(board: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn moves_to_chessboard(board: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $board\n     * @return Integer\n     */\n    function movesToChessboard($board) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.8K\", \"totalSubmission\": \"9.2K\", \"totalAcceptedRaw\": 3759, \"totalSubmissionRaw\": 9230, \"acRate\": \"40.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "412",
+    "canSeeDetail": true,
+    "url": "/articles/transform-to-chessboard/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Dimension Independence [Accepted]\r\n\r\n**Intuition**\r\n\r\nAfter a swap of columns, two rows that were the same stay the same, and two rows that were different stay different.  Since the final state of a chessboard has only two different kinds of rows, there must have originally been only two different kinds of rows.\r\n\r\nFurthermore, these rows must have had half zeros and half ones, (except when the length is odd, where there could be an extra zero or one), and one row must be the opposite (`0` changed to `1` and vice versa) of the other row.  This is because moves do not change these properties either.\r\n\r\nSimilarly, the above is true for columns.\r\n\r\nNow, because a row move followed by a column move is the same as a column move followed by a row move, we can assume all the row moves happen first, then all the column moves.  (Note: it is *not* true that a row move followed by another row move is the same as those moves backwards.)\r\n\r\nSince there are only two kinds of rows, we want the minimum number of moves to make them alternating; and similarly for columns.  This reduces to a one dimensional problem, where we have an array like `[0, 1, 1, 1, 0, 0]` and we want to know the least cost to make it `[0, 1, 0, 1, 0, 1]` or `[1, 0, 1, 0, 1, 0]`.\r\n\r\n**Algorithm**\r\n\r\nFor each set of rows (and columns respectively), make sure there are only 2 kinds of lines in the right quantities that are opposites of each other.\r\n\r\nThen, for each possible ideal transformation of that line, find the minimum number of swaps to convert that line to it's ideal and add it to the answer.  For example, `[0, 1, 1, 1, 0, 0]` has two ideals `[0, 1, 0, 1, 0, 1]` or `[1, 0, 1, 0, 1, 0]`; but `[0, 1, 1, 1, 0]` only has one ideal `[1, 0, 1, 0, 1]`.\r\n\r\nIn Java, we use integers to represent the rows as binary numbers.  We check the number of differences with `[1, 0, 1, 0, 1, 0, ...]` by xoring with `0b010101010101.....01 = 0x55555555`.  To make sure we don't add extra large powers of 2, we also bitwise-AND by `0b00...0011...11` where there are `N` ones in this mask.\r\n\r\n<iframe src=\"https://leetcode.com/playground/EfgAzVUH/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"EfgAzVUH\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the number of rows (and columns) in `board`.\r\n\r\n* Space Complexity:  $$O(N)$$, the space used by `count`.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "407",
+      "count": 14,
+      "average": 4.429,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,1,1,0],[0,1,1,0],[1,0,0,1],[1,0,0,1]]",
+  "metaData": "{\r\n  \"name\": \"movesToChessboard\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"board\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

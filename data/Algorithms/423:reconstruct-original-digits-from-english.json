@@ -1,0 +1,105 @@
+{
+  "questionId": "423",
+  "questionFrontendId": "423",
+  "boundTopicId": null,
+  "title": "Reconstruct Original Digits from English",
+  "titleSlug": "reconstruct-original-digits-from-english",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <b>non-empty</b> string containing an out-of-order English representation of digits <code>0-9</code>, output the digits in ascending order.</p>\r\n\r\n<p><b>Note:</b><br />\r\n<ol>\r\n<li>Input contains only lowercase English letters.</li>\r\n<li>Input is guaranteed to be valid and can be transformed to its original digits. That means invalid inputs such as \"abc\" or \"zerone\" are not permitted.</li>\r\n<li>Input length is less than 50,000.</li>\r\n</ol>\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\nInput: \"owoztneoer\"\r\n\r\nOutput: \"012\"\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\nInput: \"fviefuro\"\r\n\r\nOutput: \"45\"\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 142,
+  "dislikes": 495,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string originalDigits(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String originalDigits(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def originalDigits(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def originalDigits(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * originalDigits(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string OriginalDigits(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar originalDigits = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef original_digits(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func originalDigits(_ s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func originalDigits(s string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def originalDigits(s: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun originalDigits(s: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn original_digits(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function originalDigits($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"21.5K\", \"totalSubmission\": \"46.5K\", \"totalAcceptedRaw\": 21533, \"totalSubmissionRaw\": 46493, \"acRate\": \"46.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "691",
+    "canSeeDetail": true,
+    "url": "/articles/reconstruct-original-digits-from-english/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Hashmap\n\n**Intuition**\n\nThe naive approach would be to construct as many `\"zero\"`s \nas it's possible from letters available in the input string, \nthen as many `\"one\"`s as it's possible, etc. \nThe problem is that letters `\"o\"`, `\"n\"`, `\"e\"` could be present\nas well in the another numbers that means that \nthe straightforward approach could be misleading.\n\n![compute](../Figures/423/misleading.png)\n\nHence the idea is to look for something unique. One could notice\nthat all even numbers contain each a unique letter :\n\n* Letter \"z\" is present only in \"zero\".\n* Letter \"w\" is present only in \"two\".\n* Letter \"u\" is present only in \"four\".\n* Letter \"x\" is present only in \"six\".\n* Letter \"g\" is present only in \"eight\".\n\n> Hence there is a good way to count even numbers.\n\nThat is actually the key how to count `3`s, `5`s and `7`s since\nsome letters are present only in one odd and one even number\n(and all even numbers has already been counted) :\n\n* Letter \"h\" is present only in \"three\" and \"eight\".\n* Letter \"f\" is present only in \"five\" and \"four\".\n* Letter \"s\" is present only in \"seven\" and \"six\".\n\nNow one needs to count `9`s and `1`s only, and the logic is\nbasically the same :\n\n* Letter \"i\" is present in \"nine\", \"five\", \"six\", and \"eight\".\n* Letter \"n\" is present in \"one\", \"seven\", and \"nine\".\n\n**Implementation**\n\n!?!../Documents/423_LIS.json:1000,626!?!\n\n<iframe src=\"https://leetcode.com/playground/JKNmVw8W/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"JKNmVw8W\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ where `N`\nis a number of characters in the input string. \n$$\\mathcal{O}(N)$$ time is needed to compute hashmap `count`\n\"letter -> its frequency in the input string\". Then we deal with \na data structure `out` which contains `10` elements only and \nall operations are done in a constant time.\n \n* Space complexity : $$\\mathcal{O}(1)$$.\n`count` contains constant number of elements since \ninput string contains only lowercase English letters, and\n`out` contains not more than `10` elements. \n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "676",
+      "count": 10,
+      "average": 4.7,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"owoztneoer\"",
+  "metaData": "{ \r\n  \"name\": \"originalDigits\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

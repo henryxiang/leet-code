@@ -1,0 +1,111 @@
+{
+  "questionId": "260",
+  "questionFrontendId": "260",
+  "boundTopicId": null,
+  "title": "Single Number III",
+  "titleSlug": "single-number-iii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of numbers <code>nums</code>, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>  <code>[1,2,1,3,2,5]</code>\r\n<strong>Output:</strong> <code>[3,5]</code></pre>\r\n\r\n<p><b>Note</b>:</p>\r\n\r\n<ol>\r\n\t<li>The order of the result is not important. So in the above example, <code>[5, 3]</code> is also correct.</li>\r\n\t<li>Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?</li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1080,
+  "dislikes": 86,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Single Number\", \"titleSlug\": \"single-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Single Number II\", \"titleSlug\": \"single-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "jianchao-li",
+      "profileUrl": "/jianchao-li/",
+      "avatarUrl": "https://assets.leetcode.com/users/jianchaolifighter/avatar_1529298385.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> singleNumber(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] singleNumber(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def singleNumber(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def singleNumber(self, nums: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* singleNumber(int* nums, int numsSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] SingleNumber(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar singleNumber = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer[]}\ndef single_number(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func singleNumber(_ nums: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func singleNumber(nums []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def singleNumber(nums: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun singleNumber(nums: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn single_number(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer[]\n     */\n    function singleNumber($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"121.4K\", \"totalSubmission\": \"205.8K\", \"totalAcceptedRaw\": 121362, \"totalSubmissionRaw\": 205807, \"acRate\": \"59.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "764",
+    "canSeeDetail": true,
+    "url": "/articles/single-number-iii/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Overview\r\n\r\nThe problem could be solved in $$\\mathcal{O}(N)$$ time \r\nand $$\\mathcal{O}(N)$$ space by using hashmap. \r\n\r\nTo solve the problem in a constant space is a bit tricky \r\nbut could be done with the help of two bitmasks. \r\n\r\n![fig](../Figures/260/two2.png)\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Hashmap\r\n\r\nBuild a hashmap : element -> its frequency. Return only the \r\nelements with the frequency equal to 1.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/adSapNM5/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"adSapNM5\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$ to iterate over the input array. \r\n\r\n* Space complexity : $$\\mathcal{O}(N)$$ to keep the hashmap of $$N$$ elements.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Two bitmasks \r\n\r\n**Prerequisites**\r\n\r\nThis article will use two bitwise\r\ntricks, discussed in details last week :\r\n\r\n- If one builds an array bitmask with the help of XOR operator,\r\nfollowing `bitmask ^= x` strategy,\r\nthe bitmask would keep only the bits which appear odd number of times. \r\nThat was discussed in details in the article \r\n[Single Number II](https://leetcode.com/articles/single-number-ii/).\r\n\r\n![fig](../Figures/260/xor3.png)\r\n\r\n- `x & (-x)` is a way to isolate the rightmost 1-bit, \r\ni.e. to keep the rightmost 1-bit and to set all the others bits to zero.\r\nPlease refer to the article [Power of Two](https://leetcode.com/articles/power-of-two/)\r\nfor the detailed explanation. \r\n\r\n![fig](../Figures/260/isolate3.png)\r\n\r\n**Intuition**\r\n\r\n> An interview tip. Imagine, you have a problem to indentify an array\r\nelement (or elements), which appears exactly given number of times.\r\nProbably, the key is to build first an array bitmask using XOR operator.\r\nExamples: [In-Place Swap](leetcode.com/articles/single-number-ii/356460/Single-Number-II/324042), \r\n[Single Number](https://leetcode.com/articles/single-number/), [Single Number II](leetcode.com/articles/single-number-ii/356460/Single-Number-II/324042).\r\n  \r\nSo let's create an array bitmask : `bitmask ^= x`. \r\nThis bitmask will _not_ keep any number which appears twice \r\nbecause XOR of two equal bits results in a zero bit\r\n`a^a = 0`.\r\n\r\nInstead, the bitmask would keep only the difference\r\nbetween two numbers (let's call them x and y) which appear just once.\r\nThe difference here it's the bits which are different for x and y. \r\n\r\n![fig](../Figures/260/diff_new.png)\r\n\r\n> Could we extract x and y directly from this bitmask? No. \r\nThough we could use this bitmask as a marker to separate x and y.\r\n\r\nLet's do `bitmask & (-bitmask)` to isolate the rightmost 1-bit,\r\nwhich is different between x and y. Let's say this is 1-bit for x, \r\nand 0-bit for y. \r\n\r\n![fig](../Figures/260/isolate2_new.png)\r\n\r\nNow let's use XOR as before, but for the new bitmask `x_bitmask`, \r\nwhich will contain only the numbers which have\r\n1-bit in the position of `bitmask & (-bitmask)`. \r\nThis way, this new bitmask will \r\ncontain only number x `x_bitmask = x`, because of two reasons:\r\n\r\n- y has 0-bit in the position `bitmask & (-bitmask)` and hence will\r\nnot enter this new bitmask. \r\n\r\n- All numbers but x will not be visible in this new bitmask because\r\nthey appear two times. \r\n\r\n![fig](../Figures/260/x_bitmask2.png)\r\n\r\nVoila, x is identified. Now to identify y is simple: `y = bitmask^x`.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/oCtQxEYx/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"oCtQxEYx\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$ to iterate over the input array. \r\n\r\n* Space complexity : $$\\mathcal{O}(1)$$, it's a constant space solution.\r\n\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "749",
+      "count": 15,
+      "average": 4.667,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,1,3,2,5]",
+  "metaData": "{\r\n  \"name\": \"singleNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

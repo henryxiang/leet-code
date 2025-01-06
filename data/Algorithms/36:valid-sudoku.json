@@ -1,0 +1,105 @@
+{
+  "questionId": "36",
+  "questionFrontendId": "36",
+  "boundTopicId": null,
+  "title": "Valid Sudoku",
+  "titleSlug": "valid-sudoku",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Determine if a&nbsp;9x9 Sudoku board&nbsp;is valid.&nbsp;Only the filled cells need to be validated&nbsp;<strong>according to the following rules</strong>:</p>\r\n\r\n<ol>\r\n\t<li>Each row&nbsp;must contain the&nbsp;digits&nbsp;<code>1-9</code> without repetition.</li>\r\n\t<li>Each column must contain the digits&nbsp;<code>1-9</code>&nbsp;without repetition.</li>\r\n\t<li>Each of the 9 <code>3x3</code> sub-boxes of the grid must contain the digits&nbsp;<code>1-9</code>&nbsp;without repetition.</li>\r\n</ol>\r\n\r\n<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png\" style=\"height:250px; width:250px\" /><br />\r\n<small>A partially filled sudoku which is valid.</small></p>\r\n\r\n<p>The Sudoku board could be partially filled, where empty cells are filled with the character <code>&#39;.&#39;</code>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\n[\r\n  [&quot;5&quot;,&quot;3&quot;,&quot;.&quot;,&quot;.&quot;,&quot;7&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;],\r\n  [&quot;6&quot;,&quot;.&quot;,&quot;.&quot;,&quot;1&quot;,&quot;9&quot;,&quot;5&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;],\r\n  [&quot;.&quot;,&quot;9&quot;,&quot;8&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;6&quot;,&quot;.&quot;],\r\n  [&quot;8&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;6&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;3&quot;],\r\n  [&quot;4&quot;,&quot;.&quot;,&quot;.&quot;,&quot;8&quot;,&quot;.&quot;,&quot;3&quot;,&quot;.&quot;,&quot;.&quot;,&quot;1&quot;],\r\n  [&quot;7&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;2&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;6&quot;],\r\n  [&quot;.&quot;,&quot;6&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;2&quot;,&quot;8&quot;,&quot;.&quot;],\r\n  [&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;4&quot;,&quot;1&quot;,&quot;9&quot;,&quot;.&quot;,&quot;.&quot;,&quot;5&quot;],\r\n  [&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;8&quot;,&quot;.&quot;,&quot;.&quot;,&quot;7&quot;,&quot;9&quot;]\r\n]\r\n<strong>Output:</strong> true\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\n[\r\n&nbsp; [&quot;8&quot;,&quot;3&quot;,&quot;.&quot;,&quot;.&quot;,&quot;7&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;],\r\n&nbsp; [&quot;6&quot;,&quot;.&quot;,&quot;.&quot;,&quot;1&quot;,&quot;9&quot;,&quot;5&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;],\r\n&nbsp; [&quot;.&quot;,&quot;9&quot;,&quot;8&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;6&quot;,&quot;.&quot;],\r\n&nbsp; [&quot;8&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;6&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;3&quot;],\r\n&nbsp; [&quot;4&quot;,&quot;.&quot;,&quot;.&quot;,&quot;8&quot;,&quot;.&quot;,&quot;3&quot;,&quot;.&quot;,&quot;.&quot;,&quot;1&quot;],\r\n&nbsp; [&quot;7&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;2&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;6&quot;],\r\n&nbsp; [&quot;.&quot;,&quot;6&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;2&quot;,&quot;8&quot;,&quot;.&quot;],\r\n&nbsp; [&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;4&quot;,&quot;1&quot;,&quot;9&quot;,&quot;.&quot;,&quot;.&quot;,&quot;5&quot;],\r\n&nbsp; [&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;8&quot;,&quot;.&quot;,&quot;.&quot;,&quot;7&quot;,&quot;9&quot;]\r\n]\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> Same as Example 1, except with the <strong>5</strong> in the top left corner being \r\n    modified to <strong>8</strong>. Since there are two 8&#39;s in the top left 3x3 sub-box, it is invalid.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>A Sudoku board (partially filled) could be valid but is not necessarily solvable.</li>\r\n\t<li>Only the filled cells need to be validated according to the mentioned&nbsp;rules.</li>\r\n\t<li>The given board&nbsp;contain only digits <code>1-9</code> and the character <code>&#39;.&#39;</code>.</li>\r\n\t<li>The given board size is always <code>9x9</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1171,
+  "dislikes": 390,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Sudoku Solver\", \"titleSlug\": \"sudoku-solver\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isValidSudoku(vector<vector<char>>& board) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isValidSudoku(char[][] board) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isValidSudoku(self, board):\n        \"\"\"\n        :type board: List[List[str]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isValidSudoku(self, board: List[List[str]]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isValidSudoku(char** board, int boardSize, int* boardColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsValidSudoku(char[][] board) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[][]} board\n * @return {boolean}\n */\nvar isValidSudoku = function(board) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[][]} board\n# @return {Boolean}\ndef is_valid_sudoku(board)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isValidSudoku(_ board: [[Character]]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isValidSudoku(board [][]byte) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isValidSudoku(board: Array[Array[Char]]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isValidSudoku(board: Array<CharArray>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $board\n     * @return Boolean\n     */\n    function isValidSudoku($board) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"294.2K\", \"totalSubmission\": \"641K\", \"totalAcceptedRaw\": 294233, \"totalSubmissionRaw\": 641001, \"acRate\": \"45.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "663",
+    "canSeeDetail": true,
+    "url": "/articles/valid-sudoku/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Intuition\n\nThe naive solution would be to iterate _three_ times over the board to ensure that :\n\n* There is no rows with duplicates.\n* There is no columns with duplicates.\n* There is no sub-boxes with duplicates.\n\nActually, all this could be done in just one iteration. \n\n---\n   \n#### Approach 1: One iteration\n\nLet's first discuss two questions.\n\n* How to enumerate sub-boxes?\n\n> One could use `box_index = (row / 3) * 3 + col / 3` where\n`/` is an integer division, `row` is a row number, and `col`\nis a column number.\n\n<img src=\"../Figures/36/36_boxes_2.png\" width=\"500\">\n\n* How to ensure that there is no duplicates in a row / column / box?\n\n> One could just track all values which were already encountered\nin a hash map `value -> count`.\n\nNow everything is ready for the overall algorithm :\n\n* Move along the board. \n   * Check for each cell value if it was seen already in the current\n   row / column / box :\n      * Return `false` if yes.\n      * Keep this value for a further tracking if no. \n* Return `true`.\n\n!?!../Documents/36_LIS.json:1000,616!?!\n\n<iframe src=\"https://leetcode.com/playground/5zEd8GrN/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"5zEd8GrN\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(1)$$ since all we do here is just one \niteration over the board with `81` cells. \n* Space complexity : $$\\mathcal{O}(1)$$. \n\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "649",
+      "count": 35,
+      "average": 3.171,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[\"5\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"],[\"6\",\".\",\".\",\"1\",\"9\",\"5\",\".\",\".\",\".\"],[\".\",\"9\",\"8\",\".\",\".\",\".\",\".\",\"6\",\".\"],[\"8\",\".\",\".\",\".\",\"6\",\".\",\".\",\".\",\"3\"],[\"4\",\".\",\".\",\"8\",\".\",\"3\",\".\",\".\",\"1\"],[\"7\",\".\",\".\",\".\",\"2\",\".\",\".\",\".\",\"6\"],[\".\",\"6\",\".\",\".\",\".\",\".\",\"2\",\"8\",\".\"],[\".\",\".\",\".\",\"4\",\"1\",\"9\",\".\",\".\",\"5\"],[\".\",\".\",\".\",\".\",\"8\",\".\",\".\",\"7\",\"9\"]]",
+  "metaData": "{\r\n  \"name\": \"isValidSudoku\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"board\",\r\n      \"type\": \"character[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

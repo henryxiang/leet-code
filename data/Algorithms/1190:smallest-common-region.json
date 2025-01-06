@@ -1,0 +1,97 @@
+{
+  "questionId": "1190",
+  "questionFrontendId": "1257",
+  "boundTopicId": null,
+  "title": "Smallest Common Region",
+  "titleSlug": "smallest-common-region",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given some lists of <code>regions</code>&nbsp;where the first region of each list includes all other regions in that list.</p>\n\n<p>Naturally, if a region <code>X</code>&nbsp;contains another region <code>Y</code>&nbsp;then <code>X</code>&nbsp;is bigger than <code>Y</code>. Also by definition a region X contains itself.</p>\n\n<p>Given two regions <code>region1</code>, <code>region2</code>, find out the <strong>smallest</strong> region that contains both of them.</p>\n\n<p>If you are given regions <code>r1</code>, <code>r2</code> and <code>r3</code> such that <code>r1</code> includes <code>r3</code>, it is guaranteed there is no <code>r2</code> such that <code>r2</code> includes <code>r3</code>.<br />\n<br />\nIt&#39;s guaranteed the smallest region exists.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:\n</strong>regions = [[&quot;Earth&quot;,&quot;North America&quot;,&quot;South America&quot;],\n[&quot;North America&quot;,&quot;United States&quot;,&quot;Canada&quot;],\n[&quot;United States&quot;,&quot;New York&quot;,&quot;Boston&quot;],\n[&quot;Canada&quot;,&quot;Ontario&quot;,&quot;Quebec&quot;],\n[&quot;South America&quot;,&quot;Brazil&quot;]],\nregion1 = &quot;Quebec&quot;,\nregion2 = &quot;New York&quot;\n<strong>Output:</strong> &quot;North America&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= regions.length &lt;= 10^4</code></li>\n\t<li><code>region1 != region2</code></li>\n\t<li>All strings consist of English letters and spaces with at most 20 letters.</li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 56,
+  "dislikes": 10,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Lowest Common Ancestor of a Binary Search Tree\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-search-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Lowest Common Ancestor of a Binary Tree\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string findSmallestRegion(vector<vector<string>>& regions, string region1, string region2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String findSmallestRegion(List<List<String>> regions, String region1, String region2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findSmallestRegion(self, regions, region1, region2):\n        \"\"\"\n        :type regions: List[List[str]]\n        :type region1: str\n        :type region2: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findSmallestRegion(self, regions: List[List[str]], region1: str, region2: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * findSmallestRegion(char *** regions, int regionsSize, int* regionsColSize, char * region1, char * region2){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string FindSmallestRegion(IList<IList<string>> regions, string region1, string region2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[][]} regions\n * @param {string} region1\n * @param {string} region2\n * @return {string}\n */\nvar findSmallestRegion = function(regions, region1, region2) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[][]} regions\n# @param {String} region1\n# @param {String} region2\n# @return {String}\ndef find_smallest_region(regions, region1, region2)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findSmallestRegion(_ regions: [[String]], _ region1: String, _ region2: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findSmallestRegion(regions [][]string, region1 string, region2 string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findSmallestRegion(regions: List[List[String]], region1: String, region2: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findSmallestRegion(regions: List<List<String>>, region1: String, region2: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_smallest_region(regions: Vec<Vec<String>>, region1: String, region2: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $regions\n     * @param String $region1\n     * @param String $region2\n     * @return String\n     */\n    function findSmallestRegion($regions, $region1, $region2) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.6K\", \"totalSubmission\": \"4.8K\", \"totalAcceptedRaw\": 2600, \"totalSubmissionRaw\": 4778, \"acRate\": \"54.4%\"}",
+  "hints": [
+    "Try to model the problem as a graph problem.",
+    "The given graph is a tree.",
+    "The problem is reduced to finding the lowest common ancestor of two nodes in a tree."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[\"Earth\",\"North America\",\"South America\"],[\"North America\",\"United States\",\"Canada\"],[\"United States\",\"New York\",\"Boston\"],[\"Canada\",\"Ontario\",\"Quebec\"],[\"South America\",\"Brazil\"]]\n\"Quebec\"\n\"New York\"",
+  "metaData": "{\n  \"name\": \"findSmallestRegion\",\n  \"params\": [\n    {\n      \"name\": \"regions\",\n      \"type\": \"list<list<string>>\"\n    },\n    {\n      \"name\": \"region1\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"region2\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

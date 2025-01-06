@@ -1,0 +1,96 @@
+{
+  "questionId": "1400",
+  "questionFrontendId": "1275",
+  "boundTopicId": null,
+  "title": "Find Winner on a Tic Tac Toe Game",
+  "titleSlug": "find-winner-on-a-tic-tac-toe-game",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Tic-tac-toe is played&nbsp;by&nbsp;two players <em>A</em> and <em>B</em> on a&nbsp;<i>3</i>&nbsp;x&nbsp;<i>3</i>&nbsp;grid.</p>\r\n\r\n<p>Here are the rules of Tic-Tac-Toe:</p>\r\n\r\n<ul>\r\n\t<li>Players take turns placing characters into empty squares (&quot; &quot;).</li>\r\n\t<li>The first player <em>A</em> always places &quot;X&quot; characters, while the second player <em>B</em>&nbsp;always places &quot;O&quot; characters.</li>\r\n\t<li>&quot;X&quot; and &quot;O&quot; characters are always placed into empty squares, never on filled ones.</li>\r\n\t<li>The game ends when there are 3 of the same (non-empty) character filling any row, column, or diagonal.</li>\r\n\t<li>The game also ends if all squares are non-empty.</li>\r\n\t<li>No more moves can be played if the game is over.</li>\r\n</ul>\r\n\r\n<p>Given an array <code>moves</code> where each element&nbsp;is another array of size 2 corresponding to the row and column of the grid where they mark their respective character in the order in which <em>A</em> and <em>B</em> play.</p>\r\n\r\n<p>Return the winner of the game if it exists (<em>A</em> or <em>B</em>), in case the game ends in a draw return &quot;Draw&quot;, if there are still movements to play return &quot;Pending&quot;.</p>\r\n\r\n<p>You can assume that&nbsp;<code>moves</code> is&nbsp;<strong>valid</strong> (It follows the rules of Tic-Tac-Toe),&nbsp;the grid is initially empty and <em>A</em> will play <strong>first</strong>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> moves = [[0,0],[2,0],[1,1],[2,1],[2,2]]\r\n<strong>Output:</strong> &quot;A&quot;\r\n<strong>Explanation:</strong> &quot;A&quot; wins, he always plays first.\r\n&quot;X  &quot;    &quot;X  &quot;    &quot;X  &quot;    &quot;X  &quot;    &quot;<strong>X</strong>  &quot;\r\n&quot;   &quot; -&gt; &quot;   &quot; -&gt; &quot; X &quot; -&gt; &quot; X &quot; -&gt; &quot; <strong>X</strong> &quot;\r\n&quot;   &quot;    &quot;O  &quot;    &quot;O  &quot;    &quot;OO &quot;    &quot;OO<strong>X</strong>&quot;\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> moves = [[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]\r\n<strong>Output:</strong> &quot;B&quot;\r\n<strong>Explanation:</strong> &quot;B&quot; wins.\r\n&quot;X  &quot;    &quot;X  &quot;    &quot;XX &quot;    &quot;XXO&quot;    &quot;XXO&quot;    &quot;XX<strong>O</strong>&quot;\r\n&quot;   &quot; -&gt; &quot; O &quot; -&gt; &quot; O &quot; -&gt; &quot; O &quot; -&gt; &quot;XO &quot; -&gt; &quot;X<strong>O</strong> &quot; \r\n&quot;   &quot;    &quot;   &quot;    &quot;   &quot;    &quot;   &quot;    &quot;   &quot;    &quot;<strong>O</strong>  &quot;\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> moves = [[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]]\r\n<strong>Output:</strong> &quot;Draw&quot;\r\n<strong>Explanation:</strong> The game ends in a draw since there are no moves to make.\r\n&quot;XXO&quot;\r\n&quot;OOX&quot;\r\n&quot;XOX&quot;\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> moves = [[0,0],[1,1]]\r\n<strong>Output:</strong> &quot;Pending&quot;\r\n<strong>Explanation:</strong> The game has not finished yet.\r\n&quot;X  &quot;\r\n&quot; O &quot;\r\n&quot;   &quot;\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= moves.length &lt;= 9</code></li>\r\n\t<li><code>moves[i].length == 2</code></li>\r\n\t<li><code>0 &lt;= moves[i][j] &lt;= 2</code></li>\r\n\t<li>There are no repeated elements on <code>moves</code>.</li>\r\n\t<li><code>moves</code> follow the rules of tic tac toe.</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 48,
+  "dislikes": 18,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Zoho\", \"slug\": \"zoho\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string tictactoe(vector<vector<int>>& moves) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String tictactoe(int[][] moves) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def tictactoe(self, moves):\n        \"\"\"\n        :type moves: List[List[int]]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def tictactoe(self, moves: List[List[int]]) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * tictactoe(int** moves, int movesSize, int* movesColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string Tictactoe(int[][] moves) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} moves\n * @return {string}\n */\nvar tictactoe = function(moves) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} moves\n# @return {String}\ndef tictactoe(moves)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func tictactoe(_ moves: [[Int]]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func tictactoe(moves [][]int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def tictactoe(moves: Array[Array[Int]]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun tictactoe(moves: Array<IntArray>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn tictactoe(moves: Vec<Vec<i32>>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $moves\n     * @return String\n     */\n    function tictactoe($moves) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6K\", \"totalSubmission\": \"10.8K\", \"totalAcceptedRaw\": 5967, \"totalSubmissionRaw\": 10838, \"acRate\": \"55.1%\"}",
+  "hints": [
+    "It's straightforward to check if A or B won or not, check for each row/column/diag if all the three are the same.",
+    "Then if no one wins, the game is a draw iff the board is full, i.e. moves.length = 9 otherwise is pending."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[0,0],[2,0],[1,1],[2,1],[2,2]]",
+  "metaData": "{\n  \"name\": \"tictactoe\",\n  \"params\": [\n    {\n      \"name\": \"moves\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

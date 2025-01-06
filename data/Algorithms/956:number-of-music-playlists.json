@@ -1,0 +1,111 @@
+{
+  "questionId": "956",
+  "questionFrontendId": "920",
+  "boundTopicId": null,
+  "title": "Number of Music Playlists",
+  "titleSlug": "number-of-music-playlists",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Your music player contains <code>N</code>&nbsp;different songs and she wants to listen to <code>L</code><strong> </strong>(not necessarily different) songs during your trip. &nbsp;You&nbsp;create&nbsp;a playlist so&nbsp;that:</p>\r\n\r\n<ul>\r\n\t<li>Every song is played at least once</li>\r\n\t<li>A song can only be played again only if&nbsp;<code>K</code>&nbsp;other songs have been played</li>\r\n</ul>\r\n\r\n<p>Return the number of possible playlists.&nbsp; <strong>As the answer can be very large, return it modulo <code>10^9 + 7</code></strong>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<div>\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-1-1\">3</span>, L = <span id=\"example-input-1-2\">3</span>, K = <span id=\"example-input-1-3\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">6\r\n<strong>Explanation</strong>: </span><span>There are 6 possible playlists. [1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1].</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-2-1\">2</span>, L = <span id=\"example-input-2-2\">3</span>, K = <span id=\"example-input-2-3\">0</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">6\r\n</span><span id=\"example-output-1\"><strong>Explanation</strong>: </span><span>There are 6 possible playlists. [1, 1, 2], [1, 2, 1], [2, 1, 1], [2, 2, 1], [2, 1, 2], [1, 2, 2]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-3-1\">2</span>, L = <span id=\"example-input-3-2\">3</span>, K = <span id=\"example-input-3-3\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">2\r\n<strong>Explanation</strong>: </span><span>There are 2 possible playlists. [1, 2, 1], [2, 1, 2]</span>\r\n</pre>\r\n</div>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= K &lt; N &lt;= L &lt;= 100</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 271,
+  "dislikes": 34,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "AlphaZero",
+      "profileUrl": "/alphazero/",
+      "avatarUrl": "https://assets.leetcode.com/users/alphazero/avatar_1519395551.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Coursera\", \"slug\": \"coursera\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numMusicPlaylists(int N, int L, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numMusicPlaylists(int N, int L, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numMusicPlaylists(self, N, L, K):\n        \"\"\"\n        :type N: int\n        :type L: int\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numMusicPlaylists(self, N: int, L: int, K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numMusicPlaylists(int N, int L, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumMusicPlaylists(int N, int L, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @param {number} L\n * @param {number} K\n * @return {number}\n */\nvar numMusicPlaylists = function(N, L, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} l\n# @param {Integer} k\n# @return {Integer}\ndef num_music_playlists(n, l, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numMusicPlaylists(_ N: Int, _ L: Int, _ K: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numMusicPlaylists(N int, L int, K int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numMusicPlaylists(N: Int, L: Int, K: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numMusicPlaylists(N: Int, L: Int, K: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_music_playlists(n: i32, l: i32, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @param Integer $L\n     * @param Integer $K\n     * @return Integer\n     */\n    function numMusicPlaylists($N, $L, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.5K\", \"totalSubmission\": \"16.8K\", \"totalAcceptedRaw\": 7544, \"totalSubmissionRaw\": 16788, \"acRate\": \"44.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "580",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-music-playlists/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Dynamic Programming\n\n**Intuition**\n\nLet `dp[i][j]` be the number of playlists of length `i` that have exactly `j` unique songs.  We want `dp[L][N]`, and it seems likely we can develop a recurrence for `dp`.\n\n**Algorithm**\n\nConsider `dp[i][j]`.  Last song, we either played a song for the first time or we didn't.  If we did, then we had `dp[i-1][j-1] * (N-j)` ways to choose it.  If we didn't, then we repeated a previous song in `dp[i-1][j] * max(j-K, 0)` ways (`j` of them, except the last `K` ones played are banned.)\n\n<iframe src=\"https://leetcode.com/playground/9tJ8LAAB/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"9tJ8LAAB\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(NL)$$.\n\n* Space Complexity:  $$O(NL)$$.  (However, we can adapt this algorithm to only store the last row of `dp` to easily get $$O(L)$$ space complexity.)\n<br />\n<br />\n\n\n---\n#### Approach 2: Partitions + Dynamic Programming\n\n(*Note: This solution is extremely challenging, but is a natural consequence of trying to enumerate the playlists in this manner.*)\n\n**Intuition**\n\nSince we are interested in playing every song at least once, let's keep track of what times $$x = (x_1, x_2, \\cdots)$$ a song was played that wasn't yet played before.  For example, if we have 5 songs `abcde`, and we play `abacabdcbaeacbd`, then $$x = (1, 2, 4, 7, 11)$$ as these are the first occurrences of a unique song.  For convenience, we'll also put $$x_{N+1} = L+1$$.  Our strategy is to count the number of playlists $$\\#_x$$ that satisfy this $$x$$, so that our final answer will be $$\\sum \\#_x$$.  \n\nDoing a direct count,\n\n$$\n\\#_x = N * (N-1) * \\cdots * (N-K+1) 1^{x_{K+1} - x_K - 1} * (N-K+2)  2^{x_{K+2} - x_{K+1}} * \\cdots\n$$\n\n$$\n\\Rightarrow \\#_x = N! \\prod_{j=1}^{N-K+1} j^{x_{K+j} - x_{K+j-1} - 1}\n$$\n\nNow, let $$\\delta_i = x_{K+i} - x_{K+i-1} - 1$$, so that $$\\sum \\delta_i = L-N$$.  To recap, the final answer will be (for $$S = L-N, P = N-K+1$$):\n\n$$\nN! \\Big(\\sum\\limits_{\\delta : \\sum\\limits_{0 \\leq i \\leq P} \\delta_i = S} \\prod\\limits_{j=1}^P j^{\\delta_j} \\Big)\n$$\n\nFor convenience, let's denote the stuff in the large brackets as $$\\langle S, P\\rangle$$.\n\n**Algorithm**\n\nWe can develop a recurrence for $$\\langle S, P\\rangle$$ mathematically, by factoring out the $$P^{\\delta_P}$$ term.\n\n$$\n\\langle S, P\\rangle = \\sum_{\\delta_P = 0}^S P^{\\delta_P} \\sum_{\\sum\\limits_{0\\leq i < P} \\delta_i = S - \\delta_P} \\prod\\limits_{j=1}^{P-1} j^{\\delta_j}\n$$\n\n$$\n\\Rightarrow \\langle S, P\\rangle = \\sum_{\\delta_P = 0}^S P^{\\delta_P} \\langle S - \\delta_P, P-1\\rangle\n$$\n\nso that it can be shown through algebraic manipulation that:\n$$\n\\langle S, P \\rangle = P \\langle S-1, P-1 \\rangle + \\langle S, P-1 \\rangle\n$$\n\nWith this recurrence, we can perform dynamic programming similar to Approach 1.  The final answer is $$N! \\langle L-N, N-K+1 \\rangle$$.\n\n<iframe src=\"https://leetcode.com/playground/KdGurUUX/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"KdGurUUX\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(NL)$$.\n\n* Space Complexity:  $$O(L)$$.\n<br />\n<br />\n\n\n---\n#### Approach 3: Generating Functions\n\n(*Note: This solution is extremely challenging and not recommended for interviews, but is included here for completeness.*)\n\n**Analysis**\n\nFollowing the terminology of Approach 2, we would like to compute $$\\langle S, P \\rangle$$ quickly.  We can use generating functions.\n\nFor a fixed $$P$$, consider the function:\n\n$$\nf(x) = (1^0x^0 + 1^1x^1 + 1^2x^2 + 1^3x^3 + \\cdots) * (2^0x^0 + 2^1x^1 + 2^2x^2 + 2^3x^3 + \\cdots)\n$$\n$$\n\\cdots * (P^0x^0 + P^1x^1 + P^2x^2 + P^3x^3 + \\cdots)\n$$\n\n$$\n\\Leftrightarrow f(x) = \\prod_{k=1}^{P} (\\sum_{j \\geq 0} k^j x^j) = \\prod_{k=1}^P \\frac{1}{1-kx}\n$$\n\nThe coefficient of $$x^S$$ in $$f$$ (denoted $$[x^S]f$$) is the desired $$\\langle S, P \\rangle$$.\n\nBy the Chinese Remainder theorem on polynomials, this product can be written as a partial fraction decomposition:\n\n$$\n\\prod_{k=1}^P \\frac{1}{1-kx} = \\sum_{k=1}^P \\frac{A_k}{1-kx}\n$$\n\nfor some rational coefficients $$A_k$$.  We can solve for these coefficients by clearing denominators and setting $$x = 1/m$$ for $$1 \\leq m \\leq P$$.  Then for a given $$m$$, all the terms except the $$m$$-th vanish, and:\n\n$$\nA_m = \\frac{1}{\\prod\\limits_{\\substack{1 \\leq j \\leq P\\\\j \\neq m}} 1 - j/m} = \\prod_{j \\neq m} \\frac{m}{m-j}\n$$\n\nSince a geometric series has sum $$\\sum_{j \\geq 0} (kx)^j = \\frac{1}{1-kx}$$, altogether it implies:\n\n$$\n[x^S]f = \\sum_{k=1}^P A_k * k^S\n$$\n\nso that the final answer is\n\n$$\n\\text{answer} = N! \\sum_{k=1}^{N-K} k^{L-N} \\prod_{\\substack{1 \\leq j \\leq N-K\\\\j \\neq k}} \\frac{k}{k-j}\n$$\n\n$$\n\\Rightarrow \\text{answer} = N! \\sum_k k^{L-K-1} \\prod_{j \\neq k} \\frac{1}{k-j}\n$$\n\nWe only need a quick way to compute $$C_k = \\prod\\limits_{j \\neq k} \\frac{1}{k-j}$$.  Indeed,\n\n$$\nC_{k+1} = C_k * \\frac{k - (N-K)}{k}\n$$\n\nso that we now have everything we need to compute the answer quickly.\n\n\n<iframe src=\"https://leetcode.com/playground/ypP5xqYU/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"ypP5xqYU\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log L)$$.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "568",
+      "count": 15,
+      "average": 4.467,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "3\n3\n1",
+  "metaData": "{\r\n  \"name\": \"numMusicPlaylists\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"L\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

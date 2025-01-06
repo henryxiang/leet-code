@@ -1,0 +1,85 @@
+{
+  "questionId": "761",
+  "questionFrontendId": "759",
+  "boundTopicId": null,
+  "title": "Employee Free Time",
+  "titleSlug": "employee-free-time",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We are given a list <code>schedule</code> of employees, which represents the working time for each employee.</p>\r\n\r\n<p>Each employee has a list of non-overlapping <code>Intervals</code>, and these intervals are in sorted order.</p>\r\n\r\n<p>Return the list of finite intervals representing <b>common, positive-length free time</b> for <i>all</i> employees, also in sorted order.</p>\r\n\r\n<p>(Even though we are representing <code>Intervals</code> in the form <code>[x, y]</code>, the objects inside are <code>Intervals</code>, not lists or arrays. For example, <code>schedule[0][0].start = 1</code>, <code>schedule[0][0].end = 2</code>, and <code>schedule[0][0][0]</code> is not defined).&nbsp; Also, we wouldn&#39;t include intervals like [5, 5] in our answer, as they have zero length.</p>\r\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> schedule = [[[1,2],[5,6]],[[1,3]],[[4,10]]]\n<strong>Output:</strong> [[3,4]]\n<strong>Explanation:</strong> There are a total of three employees, and all common\nfree time intervals would be [-inf, 1], [3, 4], [10, inf].\nWe discard any intervals that contain inf as they aren&#39;t finite.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> schedule = [[[1,3],[6,7]],[[2,4]],[[2,5],[9,12]]]\n<strong>Output:</strong> [[5,6],[7,9]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= schedule.length , schedule[i].length &lt;= 50</code></li>\n\t<li><code>0 &lt;= schedule[i].start &lt; schedule[i].end &lt;= 10^8</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 328,
+  "dislikes": 23,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Interval List Intersections\", \"titleSlug\": \"interval-list-intersections\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Heap",
+      "slug": "heap"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"DoorDash\", \"slug\": \"doordash\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/*\n// Definition for an Interval.\nclass Interval {\npublic:\n    int start;\n    int end;\n\n    Interval() {}\n\n    Interval(int _start, int _end) {\n        start = _start;\n        end = _end;\n    }\n};\n*/\nclass Solution {\npublic:\n    vector<Interval> employeeFreeTime(vector<vector<Interval>> schedule) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/*\n// Definition for an Interval.\nclass Interval {\n    public int start;\n    public int end;\n\n    public Interval() {}\n\n    public Interval(int _start, int _end) {\n        start = _start;\n        end = _end;\n    }\n};\n*/\nclass Solution {\n    public List<Interval> employeeFreeTime(List<List<Interval>> schedule) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "\"\"\"\n# Definition for an Interval.\nclass Interval(object):\n    def __init__(self, start=None, end=None):\n        self.start = start\n        self.end = end\n\"\"\"\nclass Solution(object):\n    def employeeFreeTime(self, schedule):\n        \"\"\"\n        :type schedule: [[Interval]]\n        :rtype: [Interval]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "\"\"\"\n# Definition for an Interval.\nclass Interval:\n    def __init__(self, start: int = None, end: int = None):\n        self.start = start\n        self.end = end\n\"\"\"\nclass Solution:\n    def employeeFreeTime(self, schedule: '[[Interval]]') -> '[Interval]':\n        "
+    },
+    {
+      "lang": "C#",
+      "code": "/*\n// Definition for an Interval.\npublic class Interval {\n    public int start;\n    public int end;\n\n    public Interval(){}\n    public Interval(int _start, int _end) {\n        start = _start;\n        end = _end;\n    }\n}\n*/\npublic class Solution {\n    public IList<Interval> EmployeeFreeTime(IList<IList<Interval>> schedule) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * // Definition for an Interval.\n * function Interval(start, end) {\n *    this.start = start;\n *    this.end = end;\n * };\n */\n/**\n * @param {Interval[][]} schedule\n * @return {Interval[]}\n */\nvar employeeFreeTime = function(schedule) {\n    \n};"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24.8K\", \"totalSubmission\": \"38.9K\", \"totalAcceptedRaw\": 24816, \"totalSubmissionRaw\": 38918, \"acRate\": \"63.8%\"}",
+  "hints": [
+    "Take all the intervals and do an \"events\" (or \"line sweep\") approach - an event of (x, OPEN) increases the number of active intervals, while (x, CLOSE) decreases it.\r\n\r\nProcessing in sorted order from left to right, if the number of active intervals is zero, then you crossed a region of common free time."
+  ],
+  "solution": {
+    "id": "371",
+    "canSeeDetail": true,
+    "url": "/articles/employee-free-time/",
+    "content": "[TOC]\r\n\r\n#### Approach #1: Events (Line Sweep) [Accepted]\r\n\r\n**Intuition**\r\n\r\nIf some interval overlaps *any* interval (for any employee), then it won't be included in the answer.  So we could reduce our problem to the following: given a set of intervals, find all places where there are no intervals.\r\n\r\nTo do this, we can use an \"events\" approach present in other interval problems.  For each interval `[s, e]`, we can think of this as two events: `balance++` when `time = s`, and `balance--` when `time = e`.  We want to know the regions where `balance == 0`.\r\n\r\n**Algorithm**\r\n\r\nFor each interval, create two events as described above, and sort the events.  Now for each event occuring at time `t`, if the `balance` is `0`, then the preceding segment `[prev, t]` did not have any intervals present, where `prev` is the previous value of `t`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/kBSV5SQo/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"kBSV5SQo\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(C\\log C)$$, where $$C$$ is the number of intervals across all employees.\r\n\r\n* Space Complexity: $$O(C)$$.\r\n\r\n---\r\n#### Approach #2: Priority Queue [Accepted]\r\n\r\n**Intuition**\r\n\r\nSay we are at some time where no employee is working.  That work-free period will last until the next time some employee has to work.\r\n\r\nSo let's maintain a heap of the next time an employee has to work, and it's associated job.  When we process the next time from the heap, we can add the next job for that employee.\r\n\r\n**Algorithm**\r\n\r\nKeep track of the latest time `anchor` that we don't know of a job overlapping that time.\r\n\r\nWhen we process the earliest occurring job not yet processed, it occurs at time `t`, by employee `e_id`, and it was that employee's `e_jx`'th job.  If `anchor < t`, then there was a free interval `Interval(anchor, t)`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/6F67ionM/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"6F67ionM\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(C\\log N)$$, where $$N$$ is the number of employees, and $$C$$ is the number of jobs across all employees.  The maximum size of the heap is $$N$$, so each push and pop operation is $$O(\\log N)$$, and there are $$O(C)$$ such operations.\r\n\r\n* Space Complexity: $$O(N)$$ in additional space complexity.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "366",
+      "count": 32,
+      "average": 3.969,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[[1,2],[5,6]],[[1,3]],[[4,10]]]",
+  "metaData": "{\n  \"name\": \"employeeFreeTime\",\n  \"params\": [\n    {\n      \"name\": \"schedule\",\n      \"type\": \"list<list<Interval>>\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<Interval>\"\n  },\n  \"structures\": [\n    {\n      \"name\": \"Interval\",\n      \"comment\": \"Definition for an Interval.\",\n      \"members\": [\n        {\n          \"name\": \"start\",\n          \"type\": \"integer\"\n        },\n        {\n          \"name\": \"end\",\n          \"type\": \"integer\"\n        }\n      ]\n    }\n  ],\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"csharp\",\n    \"javascript\",\n    \"python3\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

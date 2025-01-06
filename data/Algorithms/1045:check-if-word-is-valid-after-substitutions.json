@@ -1,0 +1,97 @@
+{
+  "questionId": "1045",
+  "questionFrontendId": "1003",
+  "boundTopicId": null,
+  "title": "Check If Word Is Valid After Substitutions",
+  "titleSlug": "check-if-word-is-valid-after-substitutions",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We are given that the string <code>&quot;abc&quot;</code> is valid.</p>\r\n\r\n<p>From any valid string <code>V</code>, we may split&nbsp;<code>V</code> into two pieces <code>X</code> and <code>Y</code> such that <code>X + Y</code> (<code>X</code> concatenated with <code>Y</code>) is equal to <code>V</code>.&nbsp; (<code>X</code> or <code>Y</code> may be empty.)&nbsp; Then, <code>X + &quot;abc&quot; + Y</code> is also valid.</p>\r\n\r\n<p>If for example <code>S = &quot;abc&quot;</code>, then examples of valid strings are: <code>&quot;abc&quot;, &quot;aabcbc&quot;, &quot;abcabc&quot;, &quot;abcabcababcc&quot;</code>.&nbsp; Examples of <strong>invalid</strong>&nbsp;strings are: <code>&quot;abccba&quot;</code>, <code>&quot;ab&quot;</code>, <code>&quot;cababc&quot;</code>, <code>&quot;bac&quot;</code>.</p>\r\n\r\n<p>Return <code>true</code> if and only if the given string&nbsp;<code>S</code>&nbsp;is valid.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;aabcbc&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n<strong>Explanation: </strong>\r\nWe start with the valid string &quot;abc&quot;.\r\nThen we can insert another &quot;abc&quot; between &quot;a&quot; and &quot;bc&quot;, resulting in &quot;a&quot; + &quot;abc&quot; + &quot;bc&quot; which is &quot;aabcbc&quot;.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">&quot;abcabcababcc&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">true</span>\r\n<strong>Explanation: </strong>\r\n&quot;abcabcabc&quot; is valid after consecutive insertings of &quot;abc&quot;.\r\nThen we can insert &quot;abc&quot; before the last letter, resulting in &quot;abcabcab&quot; + &quot;abc&quot; + &quot;c&quot; which is &quot;abcabcababcc&quot;.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">&quot;abccba&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">false</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">&quot;cababc&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">false</span></pre>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= S.length &lt;= 20000</code></li>\r\n\t<li><code>S[i]</code> is <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code>, or <code>&#39;c&#39;</code></li>\r\n</ol>\r\n\r\n<div>\r\n<div>\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 123,
+  "dislikes": 197,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Valid Parentheses\", \"titleSlug\": \"valid-parentheses\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isValid(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isValid(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isValid(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isValid(self, S: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isValid(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsValid(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {boolean}\n */\nvar isValid = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Boolean}\ndef is_valid(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isValid(_ S: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isValid(S string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isValid(S: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isValid(S: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_valid(s: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return Boolean\n     */\n    function isValid($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.6K\", \"totalSubmission\": \"27.3K\", \"totalAcceptedRaw\": 14627, \"totalSubmissionRaw\": 27285, \"acRate\": \"53.6%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"aabcbc\"",
+  "metaData": "{\r\n  \"name\": \"isValid\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,93 @@
+{
+  "questionId": "276",
+  "questionFrontendId": "276",
+  "boundTopicId": null,
+  "title": "Paint Fence",
+  "titleSlug": "paint-fence",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There is a fence with n posts, each post can be painted with one of the k colors.</p>\r\n\r\n<p>You have to paint all the posts such that no more than two adjacent fence posts have the same color.</p>\r\n\r\n<p>Return the total number of ways you can paint the fence.</p>\r\n\r\n<p><b>Note:</b><br />\r\nn and k are non-negative integers.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> n = 3, k = 2\r\n<b>Output:</b> 6\r\n<strong>Explanation: </strong>Take c1 as color 1, c2 as color 2. All possible ways are:\r\n\r\n&nbsp;           post1  post2  post3      \r\n -----      -----  -----  -----       \r\n   1         c1     c1     c2 \r\n&nbsp;  2         c1     c2     c1 \r\n&nbsp;  3         c1     c2     c2 \r\n&nbsp;  4         c2     c1     c1&nbsp; \r\n   5         c2     c1     c2\r\n&nbsp;  6         c2     c2     c1\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 534,
+  "dislikes": 161,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"House Robber\", \"titleSlug\": \"house-robber\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"House Robber II\", \"titleSlug\": \"house-robber-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Paint House\", \"titleSlug\": \"paint-house\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Paint House II\", \"titleSlug\": \"paint-house-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numWays(int n, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numWays(int n, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numWays(self, n, k):\n        \"\"\"\n        :type n: int\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numWays(self, n: int, k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numWays(int n, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumWays(int n, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar numWays = function(n, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} k\n# @return {Integer}\ndef num_ways(n, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numWays(_ n: Int, _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numWays(n int, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numWays(n: Int, k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numWays(n: Int, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_ways(n: i32, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $k\n     * @return Integer\n     */\n    function numWays($n, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"48.3K\", \"totalSubmission\": \"129.3K\", \"totalAcceptedRaw\": 48257, \"totalSubmissionRaw\": 129283, \"acRate\": \"37.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "3\n2",
+  "metaData": "{\r\n  \"name\": \"numWays\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

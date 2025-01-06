@@ -1,0 +1,105 @@
+{
+  "questionId": "305",
+  "questionFrontendId": "305",
+  "boundTopicId": null,
+  "title": "Number of Islands II",
+  "titleSlug": "number-of-islands-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A 2d grid map of <code>m</code> rows and <code>n</code> columns is initially filled with water. We may perform an <i>addLand</i> operation which turns the water at position (row, col) into a land. Given a list of positions to operate, <b>count the number of islands after each <i>addLand</i> operation</b>. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> m = 3, n = 3, positions = [[0,0], [0,1], [1,2], [2,1]]\r\n<b>Output:</b> [1,1,2,3]\r\n</pre>\r\n\r\n<p><b>Explanation:</b></p>\r\n\r\n<p>Initially, the 2d grid <code>grid</code> is filled with water. (Assume 0 represents water and 1 represents land).</p>\r\n\r\n<pre>\r\n0 0 0\r\n0 0 0\r\n0 0 0\r\n</pre>\r\n\r\n<p>Operation #1: addLand(0, 0) turns the water at grid[0][0] into a land.</p>\r\n\r\n<pre>\r\n1 0 0\r\n0 0 0   Number of islands = 1\r\n0 0 0\r\n</pre>\r\n\r\n<p>Operation #2: addLand(0, 1) turns the water at grid[0][1] into a land.</p>\r\n\r\n<pre>\r\n1 1 0\r\n0 0 0   Number of islands = 1\r\n0 0 0\r\n</pre>\r\n\r\n<p>Operation #3: addLand(1, 2) turns the water at grid[1][2] into a land.</p>\r\n\r\n<pre>\r\n1 1 0\r\n0 0 1   Number of islands = 2\r\n0 0 0\r\n</pre>\r\n\r\n<p>Operation #4: addLand(2, 1) turns the water at grid[2][1] into a land.</p>\r\n\r\n<pre>\r\n1 1 0\r\n0 0 1   Number of islands = 3\r\n0 1 0\r\n</pre>\r\n\r\n<p><b>Follow up:</b></p>\r\n\r\n<p>Can you do it in time complexity O(k log mn), where k is the length of the <code>positions</code>?</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 666,
+  "dislikes": 15,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Number of Islands\", \"titleSlug\": \"number-of-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<int> numIslands2(int m, int n, vector<vector<int>>& positions) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> numIslands2(int m, int n, int[][] positions) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numIslands2(self, m, n, positions):\n        \"\"\"\n        :type m: int\n        :type n: int\n        :type positions: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numIslands2(self, m: int, n: int, positions: List[List[int]]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* numIslands2(int m, int n, int** positions, int positionsSize, int* positionsColSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public IList<int> NumIslands2(int m, int n, int[][] positions) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} m\n * @param {number} n\n * @param {number[][]} positions\n * @return {number[]}\n */\nvar numIslands2 = function(m, n, positions) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} m\r\n# @param {Integer} n\r\n# @param {Integer[][]} positions\r\n# @return {Integer[]}\r\ndef num_islands2(m, n, positions)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func numIslands2(_ m: Int, _ n: Int, _ positions: [[Int]]) -> [Int] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numIslands2(m int, n int, positions [][]int) []int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def numIslands2(m: Int, n: Int, positions: Array[Array[Int]]): List[Int] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun numIslands2(m: Int, n: Int, positions: Array<IntArray>): List<Int> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_islands2(m: i32, n: i32, positions: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $m\n     * @param Integer $n\n     * @param Integer[][] $positions\n     * @return Integer[]\n     */\n    function numIslands2($m, $n, $positions) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"65.3K\", \"totalSubmission\": \"160.5K\", \"totalAcceptedRaw\": 65278, \"totalSubmissionRaw\": 160513, \"acRate\": \"40.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "359",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-islands-ii/",
+    "content": "[TOC]\r\n\r\n#### Approach #1 (Brute force) [Time Limit Exceeded]\r\n\r\n**Algorithm**\r\n\r\nReuse the code for Problem 200: [Number of Islands](https://leetcode.com/problems/number-of-islands/description/), for each _addLand_ operation, just call the `numIslands` function of Problem 200 to get the number of islands after performing that operation.\r\n\r\n<iframe src=\"https://leetcode.com/playground/3eaGgC3g/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"3eaGgC3g\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(L \\times m \\times n)$$ where $$L$$ is the number of operations, $$m$$ is the\r\n  number of rows and $$n$$ is the number of columns.\r\n\r\n* Space complexity : $$O(m \\times n)$$ for the `grid` and `visited` 2D arrays.\r\n\r\n---\r\n\r\n\r\n#### Approach #2: (Ad hoc) [Accepted]\r\n\r\n**Algorithm**\r\n\r\nUse a `HashMap` to map index of a land to its island_ID (starting from 0).\r\nFor each _addLand_ operation at position (row, col), check if its adjacent neighbors are in the `HashMap` or not and put the `island_ID` of identified neighbors into a `set` (where each element is unique):\r\n\r\n- if the `set` is empty, then the new land at position (row, col) forms a new island (monotonically increasing island_ID by 1);\r\n\r\n- if the `set` contains only one island_ID, then the new land belongs to an existing island and island_ID remains unchanged;\r\n\r\n- if the `set` contains more than one island_ID, then the new land bridges these separate islands into one island, we need to iterate through the `HashMap` to update this information (time consuming!) and decrease the number of island appropriately.\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/6Ak2MyiC/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"6Ak2MyiC\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(L^2)$$, for each operation, we have to traverse the entire HashMap to update island id and the number of operations is $$L$$.\r\n\r\n* Space complexity : $$O(L)$$ for the `HashMap`.\r\n\r\nP.S. C++ solution was accepted with 1409 ms runtime, but Java solution got an TLE (Time Limit Exceeded).\r\n\r\n---\r\n\r\n\r\n#### Approach #3: Union Find (aka Disjoint Set) [Accepted]\r\n\r\n**Intuition**\r\n\r\nTreat the 2d grid map as an undirected graph (formatted as adjacency matrix) and there is an edge\r\nbetween two horizontally or vertically adjacent nodes of value `1`, then the problem reduces to finding the number of connected components in the graph after each _addLand_ operation.\r\n\r\n**Algorithm**\r\n\r\nMake use of a `Union Find` data structure of size `m*n` to store all the nodes in the graph and initially each node's parent value is set to `-1` to represent an empty graph. Our goal is to update `Union Find`  with lands added by _addLand_ operation and union lands belong to the same island.\r\n\r\nFor each _addLand_ operation at position (row, col), union it with its adjacent neighbors if they belongs to some islands, if none of its neighbors belong to any islands, then initialize the new position as a new island (set parent value to itself) within `Union Find`.\r\n\r\nFor detailed description of `Union Find` (implemented with path compression and union by rank), you can refer to this [article](https://leetcode.com/articles/redundant-connection/).\r\n\r\nThe algorithm can be better illustrated by the animation below (including how `Union Find` with _path compression_ and _union by rank_ works):\r\n!?!../Documents/305_number_of_islands_ii_unionfind.json:1024,768!?!\r\n\r\n<iframe src=\"https://leetcode.com/playground/jKBZamy3/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"jKBZamy3\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(m \\times n + L)$$ where $$L$$ is the number of operations, $$m$$ is the\r\n  number of rows and $$n$$ is the number of columns. it takes $$O(m \\times n)$$ to initialize UnionFind, and $$O(L)$$ to process positions. Note that Union operation takes essentially constant\r\n  time[^1] when UnionFind is implemented with both path compression and union by rank.\r\n\r\n* Space complexity : $$O(m \\times n)$$ as required by UnionFind data structure.\r\n\r\n---\r\n\r\nAnalysis written by: [@imsure](https://leetcode.com/imsure).\r\n\r\n---\r\n\r\n**Footnotes**\r\n\r\n[^1]: [https://en.wikipedia.org/wiki/Disjoint-set_data_structure](https://en.wikipedia.org/wiki/Disjoint-set_data_structure)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "354",
+      "count": 12,
+      "average": 4.667,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "3\n3\n[[0,0],[0,1],[1,2],[2,1]]",
+  "metaData": "{\r\n  \"name\": \"numIslands2\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"m\",\r\n      \"type\": \"integer\",\r\n      \"dealloc\": false\r\n    },\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\",\r\n      \"dealloc\": false\r\n    },\r\n    {\r\n      \"name\": \"positions\",\r\n      \"type\": \"integer[][]\",\r\n      \"dealloc\": false\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,101 @@
+{
+  "questionId": "467",
+  "questionFrontendId": "467",
+  "boundTopicId": null,
+  "title": "Unique Substrings in Wraparound String",
+  "titleSlug": "unique-substrings-in-wraparound-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Consider the string <code>s</code> to be the infinite wraparound string of \"abcdefghijklmnopqrstuvwxyz\", so <code>s</code> will look like this: \"...zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd....\".</p>\r\n\r\n<p>Now we have another string <code>p</code>. Your job is to find out how many unique non-empty substrings of <code>p</code> are present in <code>s</code>. In particular, your input is the string <code>p</code> and you need to output the number of different non-empty substrings of <code>p</code> in the string <code>s</code>.</p>\r\n\r\n<p><b>Note:</b> <code>p</code> consists of only lowercase English letters and the size of p might be over 10000.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \"a\"\r\n<b>Output:</b> 1\r\n\r\n<b>Explanation:</b> Only the substring \"a\" of string \"a\" is in the string \u0010s.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> \"cac\"\r\n<b>Output:</b> 2\r\n<b>Explanation:</b> There are two substrings \"a\", \"c\" of string \"cac\" in the string s.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b><br />\r\n<pre>\r\n<b>Input:</b> \"zab\"\r\n<b>Output:</b> 6\r\n<b>Explanation:</b> There are six substrings \"z\", \"a\", \"b\", \"za\", \"ab\", \"zab\" of string \"zab\" in the string s.\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 446,
+  "dislikes": 72,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ramanjot",
+      "profileUrl": "/ramanjot/",
+      "avatarUrl": "https://assets.leetcode.com/users/ramanjot/avatar_1528634410.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"MAQ Software\", \"slug\": \"maq-software\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findSubstringInWraproundString(string p) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findSubstringInWraproundString(String p) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findSubstringInWraproundString(self, p):\n        \"\"\"\n        :type p: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findSubstringInWraproundString(self, p: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findSubstringInWraproundString(char * p){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindSubstringInWraproundString(string p) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} p\n * @return {number}\n */\nvar findSubstringInWraproundString = function(p) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} p\n# @return {Integer}\ndef find_substring_in_wrapround_string(p)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findSubstringInWraproundString(_ p: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findSubstringInWraproundString(p string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findSubstringInWraproundString(p: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findSubstringInWraproundString(p: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_substring_in_wrapround_string(p: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $p\n     * @return Integer\n     */\n    function findSubstringInWraproundString($p) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"21.6K\", \"totalSubmission\": \"62.1K\", \"totalAcceptedRaw\": 21572, \"totalSubmissionRaw\": 62150, \"acRate\": \"34.7%\"}",
+  "hints": [
+    "One possible solution might be to consider allocating an array size of 26 for each character in the alphabet. (Credits to @r2ysxu)"
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"a\"",
+  "metaData": "{\r\n  \"name\": \"findSubstringInWraproundString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"p\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

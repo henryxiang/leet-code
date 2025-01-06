@@ -1,0 +1,108 @@
+{
+  "questionId": "1152",
+  "questionFrontendId": "1183",
+  "boundTopicId": null,
+  "title": "Maximum Number of Ones",
+  "titleSlug": "maximum-number-of-ones",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Consider a matrix <code>M</code> with dimensions <code>width * height</code>, such that every cell has value <code>0</code>&nbsp;or <code>1</code>, and any <strong>square</strong>&nbsp;sub-matrix of <code>M</code> of size <code>sideLength * sideLength</code>&nbsp;has at most <code>maxOnes</code>&nbsp;ones.</p>\n\n<p>Return the maximum possible number of ones that the matrix <code>M</code> can have.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> width = 3, height = 3, sideLength = 2, maxOnes = 1\n<strong>Output:</strong> 4\n<strong>Explanation:</strong>\nIn a 3*3 matrix, no 2*2 sub-matrix can have more than 1 one.\nThe best solution that has 4 ones is:\n[1,0,1]\n[0,0,0]\n[1,0,1]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> width = 3, height = 3, sideLength = 2, maxOnes = 2\n<strong>Output:</strong> 6\n<strong>Explanation:</strong>\n[1,0,1]\n[1,0,1]\n[1,0,1]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= width, height &lt;= 100</code></li>\n\t<li><code>1 &lt;= sideLength &lt;= width, height</code></li>\n\t<li><code>0 &lt;= maxOnes &lt;= sideLength * sideLength</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 42,
+  "dislikes": 6,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "swapnilJ",
+      "profileUrl": "/swapnilj/",
+      "avatarUrl": "https://assets.leetcode.com/users/javanjal/avatar_1538024798.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Qualcomm\", \"slug\": \"qualcomm\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maximumNumberOfOnes(int width, int height, int sideLength, int maxOnes) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maximumNumberOfOnes(int width, int height, int sideLength, int maxOnes) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maximumNumberOfOnes(self, width, height, sideLength, maxOnes):\n        \"\"\"\n        :type width: int\n        :type height: int\n        :type sideLength: int\n        :type maxOnes: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maximumNumberOfOnes(self, width: int, height: int, sideLength: int, maxOnes: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maximumNumberOfOnes(int width, int height, int sideLength, int maxOnes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaximumNumberOfOnes(int width, int height, int sideLength, int maxOnes) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} width\n * @param {number} height\n * @param {number} sideLength\n * @param {number} maxOnes\n * @return {number}\n */\nvar maximumNumberOfOnes = function(width, height, sideLength, maxOnes) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} width\n# @param {Integer} height\n# @param {Integer} side_length\n# @param {Integer} max_ones\n# @return {Integer}\ndef maximum_number_of_ones(width, height, side_length, max_ones)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maximumNumberOfOnes(_ width: Int, _ height: Int, _ sideLength: Int, _ maxOnes: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maximumNumberOfOnes(width int, height int, sideLength int, maxOnes int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maximumNumberOfOnes(width: Int, height: Int, sideLength: Int, maxOnes: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maximumNumberOfOnes(width: Int, height: Int, sideLength: Int, maxOnes: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn maximum_number_of_ones(width: i32, height: i32, side_length: i32, max_ones: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $width\n     * @param Integer $height\n     * @param Integer $sideLength\n     * @param Integer $maxOnes\n     * @return Integer\n     */\n    function maximumNumberOfOnes($width, $height, $sideLength, $maxOnes) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"928\", \"totalSubmission\": \"1.9K\", \"totalAcceptedRaw\": 928, \"totalSubmissionRaw\": 1867, \"acRate\": \"49.7%\"}",
+  "hints": [
+    "Think of a greedy mathematical solution.",
+    "Say you choose to set some cell (i, j) to 1, all cells (x, y) such that i % sideLength == x % sideLength and j % sideLength == y % sideLength can also be set to 1 without increasing the max number of ones in a sub-matrix.",
+    "In one move, choose to set all the cells with some modulus (i % sideLength, j % sideLength) to 1.",
+    "Choose the cells with max frequency."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "3\n3\n2\n1",
+  "metaData": "{\n  \"name\": \"maximumNumberOfOnes\",\n  \"params\": [\n    {\n      \"name\": \"width\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"height\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"sideLength\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"maxOnes\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

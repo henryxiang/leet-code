@@ -1,0 +1,101 @@
+{
+  "questionId": "1218",
+  "questionFrontendId": "1123",
+  "boundTopicId": null,
+  "title": "Lowest Common Ancestor of Deepest Leaves",
+  "titleSlug": "lowest-common-ancestor-of-deepest-leaves",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a rooted binary tree, return the lowest common ancestor of its deepest leaves.</p>\n\n<p>Recall that:</p>\n\n<ul>\n\t<li>The node of a binary tree is a <em>leaf</em> if and only if it has no children</li>\n\t<li>The <em>depth</em> of the root of the tree is 0, and if the depth of a node is <code>d</code>, the depth of each of its children&nbsp;is&nbsp;<code>d+1</code>.</li>\n\t<li>The <em>lowest common ancestor</em> of a set <code>S</code> of nodes is the node <code>A</code> with the largest depth such that every node in S is in the subtree with root <code>A</code>.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1,2,3]\n<strong>Output:</strong> [1,2,3]\n<strong>Explanation:</strong> \nThe deepest leaves are the nodes with values 2 and 3.\nThe lowest common ancestor of these leaves is the node with value 1.\nThe answer returned is a TreeNode object (not an array) with serialization &quot;[1,2,3]&quot;.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1,2,3,4]\n<strong>Output:</strong> [4]\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1,2,3,4,5]\n<strong>Output:</strong> [2,4,5]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The given tree will have between 1 and 1000 nodes.</li>\n\t<li>Each node of the tree will have a distinct value between 1 and 1000.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 156,
+  "dislikes": 217,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    TreeNode* lcaDeepestLeaves(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public TreeNode lcaDeepestLeaves(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def lcaDeepestLeaves(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: TreeNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def lcaDeepestLeaves(self, root: TreeNode) -> TreeNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nstruct TreeNode* lcaDeepestLeaves(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public TreeNode LcaDeepestLeaves(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {TreeNode}\n */\nvar lcaDeepestLeaves = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {TreeNode}\ndef lca_deepest_leaves(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func lcaDeepestLeaves(_ root: TreeNode?) -> TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc lcaDeepestLeaves(root *TreeNode) *TreeNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def lcaDeepestLeaves(root: TreeNode): TreeNode = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun lcaDeepestLeaves(root: TreeNode?): TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn lca_deepest_leaves(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return TreeNode\n     */\n    function lcaDeepestLeaves($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13K\", \"totalSubmission\": \"19.9K\", \"totalAcceptedRaw\": 13019, \"totalSubmissionRaw\": 19887, \"acRate\": \"65.5%\"}",
+  "hints": [
+    "Do a postorder traversal.",
+    "Then, if both subtrees contain a deepest leaf, you can mark this node as the answer (so far).",
+    "The final node marked will be the correct answer."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2,3]",
+  "metaData": "{\n  \"name\": \"lcaDeepestLeaves\",\n  \"params\": [\n    {\n      \"name\": \"root\",\n      \"type\": \"TreeNode\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"TreeNode\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

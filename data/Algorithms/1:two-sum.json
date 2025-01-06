@@ -1,0 +1,113 @@
+{
+  "questionId": "1",
+  "questionFrontendId": "1",
+  "boundTopicId": null,
+  "title": "Two Sum",
+  "titleSlug": "two-sum",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers, return <strong>indices</strong> of the two numbers such that they add up to a specific target.</p>\r\n\r\n<p>You may assume that each input would have <strong><em>exactly</em></strong> one solution, and you may not use the <em>same</em> element twice.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\nGiven nums = [2, 7, 11, 15], target = 9,\r\n\r\nBecause nums[<strong>0</strong>] + nums[<strong>1</strong>] = 2 + 7 = 9,\r\nreturn [<strong>0</strong>, <strong>1</strong>].\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 12855,
+  "dislikes": 457,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"3Sum\", \"titleSlug\": \"3sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"4Sum\", \"titleSlug\": \"4sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Two Sum II - Input array is sorted\", \"titleSlug\": \"two-sum-ii-input-array-is-sorted\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Two Sum III - Data structure design\", \"titleSlug\": \"two-sum-iii-data-structure-design\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Subarray Sum Equals K\", \"titleSlug\": \"subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Two Sum IV - Input is a BST\", \"titleSlug\": \"two-sum-iv-input-is-a-bst\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Two Sum Less Than K\", \"titleSlug\": \"two-sum-less-than-k\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 205}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 90}, {\"taggedByAdmin\": true, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 58}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 44}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 32}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 24}, {\"taggedByAdmin\": true, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 18}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 15}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 8}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Splunk\", \"slug\": \"splunk\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Huawei\", \"slug\": \"huawei\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"FactSet\", \"slug\": \"factset\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Morgan Stanley\", \"slug\": \"morgan-stanley\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intel\", \"slug\": \"intel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tableau\", \"slug\": \"tableau\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Qualcomm\", \"slug\": \"qualcomm\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Audible\", \"slug\": \"audible\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Roblox\", \"slug\": \"roblox\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Twilio\", \"slug\": \"twilio\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Zoho\", \"slug\": \"zoho\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Spotify\", \"slug\": \"spotify\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nvidia\", \"slug\": \"nvidia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ServiceNow\", \"slug\": \"servicenow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Indeed\", \"slug\": \"indeed\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"GoDaddy\", \"slug\": \"godaddy\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 12}, {\"taggedByAdmin\": false, \"name\": \"Aetion\", \"slug\": \"aetion\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"BlackRock\", \"slug\": \"blackrock\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Works Applications\", \"slug\": \"works-applications\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Affirm\", \"slug\": \"affirm\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Valve\", \"slug\": \"valve\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"DiDi\", \"slug\": \"didi\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"IBM\", \"slug\": \"ibm\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"NetEase\", \"slug\": \"netease\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Radius\", \"slug\": \"radius\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Box\", \"slug\": \"box\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citrix\", \"slug\": \"citrix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"MAQ Software\", \"slug\": \"maq-software\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Drawbridge\", \"slug\": \"drawbridge\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Groupon\", \"slug\": \"groupon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Deutsche Bank\", \"slug\": \"deutsche-bank\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"EMC\", \"slug\": \"emc\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Capital One\", \"slug\": \"capital-one\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"HTC\", \"slug\": \"htc\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"GE Digital\", \"slug\": \"ge-digital\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Dataminr\", \"slug\": \"dataminr\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> twoSum(vector<int>& nums, int target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def twoSum(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* twoSum(int* nums, int numsSize, int target, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] TwoSum(int[] nums, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number[]}\n */\nvar twoSum = function(nums, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} target\n# @return {Integer[]}\ndef two_sum(nums, target)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func twoSum(nums []int, target int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def twoSum(nums: Array[Int], target: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun twoSum(nums: IntArray, target: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $target\n     * @return Integer[]\n     */\n    function twoSum($nums, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.4M\", \"totalSubmission\": \"5.3M\", \"totalAcceptedRaw\": 2398862, \"totalSubmissionRaw\": 5346964, \"acRate\": \"44.9%\"}",
+  "hints": [
+    "A really brute force way would be to search for all possible pairs of numbers but that would be too slow. Again, it's best to try out brute force solutions for just for completeness. It is from these brute force solutions that you can come up with optimizations.",
+    "So, if we fix one of the numbers, say <pre>x</pre>, we have to scan the entire array to find the next number <pre>y</pre> which is <pre>value - x</pre> where value is the input parameter. Can we change our array somehow so that this search becomes faster?",
+    "The second train of thought is, without changing the array, can we use additional space somehow? Like maybe a hash map to speed up the search?"
+  ],
+  "solution": {
+    "id": "7",
+    "canSeeDetail": true,
+    "url": "/articles/two-sum/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Brute Force\n\nThe brute force approach is simple. Loop through each element $$x$$ and find if there is another value that equals to $$target - x$$.\n\n<iframe src=\"https://leetcode.com/playground/CLZq9vzU/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"CLZq9vzU\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$.\nFor each element, we try to find its complement by looping through the rest of array which takes $$O(n)$$ time. Therefore, the time complexity is $$O(n^2)$$.\n\n* Space complexity : $$O(1)$$.\n<br />\n<br />\n\n---\n#### Approach 2: Two-pass Hash Table\n\nTo improve our run time complexity, we need a more efficient way to check if the complement exists in the array. If the complement exists, we need to look up its index. What is the best way to maintain a mapping of each element in the array to its index? A hash table.\n\nWe reduce the look up time from $$O(n)$$ to $$O(1)$$ by trading space for speed. A hash table is built exactly for this purpose, it supports fast look up in *near* constant time. I say \"near\" because if a collision occurred, a look up could degenerate to $$O(n)$$ time. But look up in hash table should be amortized $$O(1)$$ time as long as the hash function was chosen carefully.\n\nA simple implementation uses two iterations. In the first iteration, we add each element's value and its index to the table. Then, in the second iteration we check if each element's complement ($$target - nums[i]$$) exists in the table. Beware that the complement must not be $$nums[i]$$ itself!\n\n<iframe src=\"https://leetcode.com/playground/QhqBrfm7/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"QhqBrfm7\"></iframe>\n\n**Complexity Analysis:**\n\n* Time complexity : $$O(n)$$.\nWe traverse the list containing $$n$$ elements exactly twice. Since the hash table reduces the look up time to $$O(1)$$, the time complexity is $$O(n)$$.\n\n* Space complexity : $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores exactly $$n$$ elements.\n<br />\n<br />\n\n---\n#### Approach 3: One-pass Hash Table\n\nIt turns out we can do it in one-pass. While we iterate and inserting elements into the table, we also look back to check if current element's complement already exists in the table. If it exists, we have found a solution and return immediately.\n\n<iframe src=\"https://leetcode.com/playground/fbBQEjxv/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"fbBQEjxv\"></iframe>\n\n**Complexity Analysis:**\n\n* Time complexity : $$O(n)$$.\nWe traverse the list containing $$n$$ elements only once. Each look up in the table costs only $$O(1)$$ time.\n\n* Space complexity : $$O(n)$$.\nThe extra space required depends on the number of items stored in the hash table, which stores at most $$n$$ elements.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "4",
+      "count": 2129,
+      "average": 4.797,
+      "userRating": null
+    }
+  },
+  "status": "ac",
+  "sampleTestCase": "[2,7,11,15]\n9",
+  "metaData": "{\n  \"name\": \"twoSum\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"target\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\",\n    \"size\": 2\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "small",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

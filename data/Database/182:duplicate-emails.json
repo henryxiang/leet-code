@@ -1,0 +1,62 @@
+{
+  "questionId": "182",
+  "questionFrontendId": "182",
+  "boundTopicId": null,
+  "title": "Duplicate Emails",
+  "titleSlug": "duplicate-emails",
+  "categoryTitle": "Database",
+  "content": "<p>Write a SQL query to find all duplicate emails in a table named <code>Person</code>.</p>\r\n\r\n<pre>\r\n+----+---------+\r\n| Id | Email   |\r\n+----+---------+\r\n| 1  | a@b.com |\r\n| 2  | c@d.com |\r\n| 3  | a@b.com |\r\n+----+---------+\r\n</pre>\r\n\r\n<p>For example, your query should return the following for the above table:</p>\r\n\r\n<pre>\r\n+---------+\r\n| Email   |\r\n+---------+\r\n| a@b.com |\r\n+---------+\r\n</pre>\r\n\r\n<p><strong>Note</strong>: All emails are in lowercase.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 348,
+  "dislikes": 23,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"144.7K\", \"totalSubmission\": \"248K\", \"totalAcceptedRaw\": 144673, \"totalSubmissionRaw\": 248025, \"acRate\": \"58.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "214",
+    "canSeeDetail": true,
+    "url": "/articles/duplicate-emails/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach I: Using `GROUP BY` and a temporary table [Accepted]\n\n**Algorithm**\n\nDuplicated emails existed more than one time. To count the times each email exists, we can use the following code.\n\n```sql\nselect Email, count(Email) as num\nfrom Person\ngroup by Email;\n```\n\n```\n| Email   | num |\n|---------|-----|\n| a@b.com | 2   |\n| c@d.com | 1   |\n```\n\nTaking this as a temporary table, we can get a solution as below.\n\n```sql\nselect Email from\n(\n  select Email, count(Email) as num\n  from Person\n  group by Email\n) as statistic\nwhere num > 1\n;\n```\n\n#### Approach II: Using `GROUP BY` and `HAVING` condition [Accepted]\n\nA more common used way to add a condition to a `GROUP BY` is to use the `HAVING` clause, which is much simpler and more efficient.\n\nSo we can rewrite the above solution to this one.\n\n**MySQL**\n\n```sql\nselect Email\nfrom Person\ngroup by Email\nhaving count(Email) > 1;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "209",
+      "count": 29,
+      "average": 4.69,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"Person\": [\"Id\", \"Email\"]}, \"rows\": {\"Person\": [[1, \"a@b.com\"], [2, \"c@d.com\"], [3, \"a@b.com\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Person (Id int, Email varchar(255))\"\n  ],\n  \"mssql\": [\n    \"create table Person ( Id int, Email varchar(255) )\"\n  ],\n  \"oraclesql\": [\n    \"create table Person ( Id int, Email varchar(255) )\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Person (Id int, Email varchar(255))",
+    "Truncate table Person",
+    "insert into Person (Id, Email) values ('1', 'a@b.com')",
+    "insert into Person (Id, Email) values ('2', 'c@d.com')",
+    "insert into Person (Id, Email) values ('3', 'a@b.com')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,97 @@
+{
+  "questionId": "394",
+  "questionFrontendId": "394",
+  "boundTopicId": null,
+  "title": "Decode String",
+  "titleSlug": "decode-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an encoded string, return its decoded string.</p>\n\n<p>The encoding rule is: <code>k[encoded_string]</code>, where the <i>encoded_string</i> inside the square brackets is being repeated exactly <i>k</i> times. Note that <i>k</i> is guaranteed to be a positive integer.</p>\n\n<p>You may assume that the input string is always valid; No extra white spaces, square brackets are well-formed, etc.</p>\n\n<p>Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, <i>k</i>. For example, there won&#39;t be input like <code>3a</code> or <code>2[4]</code>.</p>\n\n<p><b>Examples:</b></p>\n\n<pre>\ns = &quot;3[a]2[bc]&quot;, return &quot;aaabcbc&quot;.\ns = &quot;3[a2[c]]&quot;, return &quot;accaccacc&quot;.\ns = &quot;2[abc]3[cd]ef&quot;, return &quot;abcabccdcdcdef&quot;.\n</pre>\n\n<p>&nbsp;</p>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2220,
+  "dislikes": 117,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Encode String with Shortest Length\", \"titleSlug\": \"encode-string-with-shortest-length\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Number of Atoms\", \"titleSlug\": \"number-of-atoms\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Brace Expansion\", \"titleSlug\": \"brace-expansion\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 17}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cruise Automation\", \"slug\": \"cruise-automation\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Coupang\", \"slug\": \"coupang\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Huawei\", \"slug\": \"huawei\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"AppDynamics\", \"slug\": \"appdynamics\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string decodeString(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String decodeString(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def decodeString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def decodeString(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * decodeString(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string DecodeString(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar decodeString = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef decode_string(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func decodeString(_ s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func decodeString(s string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def decodeString(s: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun decodeString(s: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn decode_string(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function decodeString($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"152.8K\", \"totalSubmission\": \"322K\", \"totalAcceptedRaw\": 152838, \"totalSubmissionRaw\": 322027, \"acRate\": \"47.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"3[a]2[bc]\"",
+  "metaData": "{\r\n  \"name\": \"decodeString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,117 @@
+{
+  "questionId": "768",
+  "questionFrontendId": "763",
+  "boundTopicId": null,
+  "title": "Partition Labels",
+  "titleSlug": "partition-labels",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nA string <code>S</code> of lowercase letters is given.  We want to partition this string into as many parts as possible so that each letter appears in at most one part, and return a list of integers representing the size of these parts.\r\n</p><p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> S = \"ababcbacadefegdehijhklij\"\r\n<b>Output:</b> [9,7,8]\r\n<b>Explanation:</b>\r\nThe partition is \"ababcbaca\", \"defegde\", \"hijhklij\".\r\nThis is a partition so that each letter appears in at most one part.\r\nA partition like \"ababcbacadefegde\", \"hijhklij\" is incorrect, because it splits S into less parts.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br><ol>\r\n<li><code>S</code> will have length in range <code>[1, 500]</code>.</li>\r\n<li><code>S</code> will consist of lowercase letters (<code>'a'</code> to <code>'z'</code>) only.</li>\r\n</ol></p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1466,
+  "dislikes": 78,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 31}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> partitionLabels(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> partitionLabels(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def partitionLabels(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def partitionLabels(self, S: str) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* partitionLabels(char * S, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> PartitionLabels(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {number[]}\n */\nvar partitionLabels = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer[]}\ndef partition_labels(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func partitionLabels(_ S: String) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func partitionLabels(S string) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def partitionLabels(S: String): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun partitionLabels(S: String): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn partition_labels(s: String) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return Integer[]\n     */\n    function partitionLabels($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"81.6K\", \"totalSubmission\": \"111.6K\", \"totalAcceptedRaw\": 81625, \"totalSubmissionRaw\": 111634, \"acRate\": \"73.1%\"}",
+  "hints": [
+    "Try to greedily choose the smallest partition that includes the first letter.  If you have something like \"abaccbdeffed\", then you might need to add b.  You can use an map like \"last['b'] = 5\" to help you expand the width of your partition."
+  ],
+  "solution": {
+    "id": "374",
+    "canSeeDetail": true,
+    "url": "/articles/partition-labels/",
+    "content": "[TOC]\n\n#### Approach #1: Greedy [Accepted]\n\n**Intuition**\n\nLet's try to repeatedly choose the smallest left-justified partition.\nConsider the first label, say it's `'a'`.  The first partition must include it, and also the last occurrence of `'a'`.\nHowever, between those two occurrences of `'a'`, there could be other labels that make the minimum size of this partition bigger.  For example, in `\"abccaddbeffe\"`, the minimum first partition is `\"abccaddb\"`. \nThis gives us the idea for the algorithm:  For each letter encountered, process the last occurrence of that letter, extending the current partition `[anchor, j]` appropriately.\n\n**Algorithm**\n\nWe need an array `last[char] -> index of S where char occurs last`.\nThen, let `anchor` and `j` be the start and end of the current partition.\nIf we are at a label that occurs last at some index after `j`, we'll extend the partition `j = last[c]`.  If we are at the end of the partition (`i == j`) then we'll append a partition size to our answer, and set the start of our new partition to `i+1`.\n\n<iframe src=\"https://leetcode.com/playground/sSLPrXHh/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"sSLPrXHh\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of $$S$$.\n\n* Space Complexity: $$O(N)$$.\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "369",
+      "count": 48,
+      "average": 4.583,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"ababcbacadefegdehijhklij\"",
+  "metaData": "{\r\n  \"name\": \"partitionLabels\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

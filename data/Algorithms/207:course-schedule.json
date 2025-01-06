@@ -1,0 +1,109 @@
+{
+  "questionId": "207",
+  "questionFrontendId": "207",
+  "boundTopicId": null,
+  "title": "Course Schedule",
+  "titleSlug": "course-schedule",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are a total of <i>n</i> courses you have to take, labeled from <code>0</code> to <code>n-1</code>.</p>\r\n\r\n<p>Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: <code>[0,1]</code></p>\r\n\r\n<p>Given the total number of courses and a list of prerequisite <b>pairs</b>, is it possible for you to finish all courses?</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 2, [[1,0]] \r\n<strong>Output: </strong>true\r\n<strong>Explanation:</strong>&nbsp;There are a total of 2 courses to take. \r\n&nbsp;            To take course 1 you should have finished course 0. So it is possible.</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 2, [[1,0],[0,1]]\r\n<strong>Output: </strong>false\r\n<strong>Explanation:</strong>&nbsp;There are a total of 2 courses to take. \r\n&nbsp;            To take course 1 you should have finished course 0, and to take course 0 you should\r\n&nbsp;            also have finished course 1. So it is impossible.\r\n</pre>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>The input prerequisites is a graph represented by <b>a list of edges</b>, not adjacency matrices. Read more about <a href=\"https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs\" target=\"_blank\">how a graph is represented</a>.</li>\r\n\t<li>You may assume that there are no duplicate edges in the input prerequisites.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2559,
+  "dislikes": 131,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Course Schedule II\", \"titleSlug\": \"course-schedule-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Graph Valid Tree\", \"titleSlug\": \"graph-valid-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Height Trees\", \"titleSlug\": \"minimum-height-trees\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Course Schedule III\", \"titleSlug\": \"course-schedule-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    },
+    {
+      "name": "Topological Sort",
+      "slug": "topological-sort"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 16}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Cohesity\", \"slug\": \"cohesity\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Zenefits\", \"slug\": \"zenefits\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canFinish(int numCourses, int[][] prerequisites) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canFinish(self, numCourses, prerequisites):\n        \"\"\"\n        :type numCourses: int\n        :type prerequisites: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool canFinish(int numCourses, int** prerequisites, int prerequisitesSize, int* prerequisitesColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool CanFinish(int numCourses, int[][] prerequisites) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} numCourses\n * @param {number[][]} prerequisites\n * @return {boolean}\n */\nvar canFinish = function(numCourses, prerequisites) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num_courses\r\n# @param {Integer[][]} prerequisites\r\n# @return {Boolean}\r\ndef can_finish(num_courses, prerequisites)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func canFinish(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canFinish(numCourses int, prerequisites [][]int) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def canFinish(numCourses: Int, prerequisites: Array[Array[Int]]): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun canFinish(numCourses: Int, prerequisites: Array<IntArray>): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_finish(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $numCourses\n     * @param Integer[][] $prerequisites\n     * @return Boolean\n     */\n    function canFinish($numCourses, $prerequisites) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"296.9K\", \"totalSubmission\": \"738.4K\", \"totalAcceptedRaw\": 296923, \"totalSubmissionRaw\": 738382, \"acRate\": \"40.2%\"}",
+  "hints": [
+    "This problem is equivalent to finding if a cycle exists in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.",
+    "<a href=\"https://class.coursera.org/algo-003/lecture/52\" target=\"_blank\">Topological Sort via DFS</a> - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.",
+    "Topological sort could also be done via <a href=\"http://en.wikipedia.org/wiki/Topological_sorting#Algorithms\" target=\"_blank\">BFS</a>."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "2\n[[1,0]]",
+  "metaData": "{\r\n  \"name\": \"canFinish\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"numCourses\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"prerequisites\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

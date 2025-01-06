@@ -1,0 +1,65 @@
+{
+  "questionId": "157",
+  "questionFrontendId": "157",
+  "boundTopicId": null,
+  "title": "Read N Characters Given Read4",
+  "titleSlug": "read-n-characters-given-read4",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a file and assume that you can only read the file using a given method&nbsp;<code>read4</code>, implement a method to read <em>n</em> characters.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Method read4: </b></p>\r\n\r\n<p>The API&nbsp;<code>read4</code> reads 4 consecutive characters from the file, then writes those characters into the buffer array <code>buf</code>.</p>\r\n\r\n<p>The return value is the number of actual characters read.</p>\r\n\r\n<p>Note that&nbsp;<code>read4()</code> has its own file pointer, much like <code>FILE *fp</code> in C.</p>\r\n\r\n<p><b>Definition of read4:</b></p>\r\n\r\n<pre>\r\n    Parameter:  char[] buf\r\n    Returns:    int\r\n\r\nNote: buf[] is destination not source, the results from read4 will be copied to buf[]\r\n</pre>\r\n\r\n<p>Below is a high level example of how <code>read4</code> works:</p>\r\n\r\n<pre>\r\n<code>File file(&quot;abcdefghijk&quot;); // File is &quot;abcdefghijk&quot;, initially file pointer (fp) points to &#39;a&#39;\r\nchar[] buf = new char[4]; // Create buffer with enough space to store characters\r\nread4(buf); // read4 returns 4. Now buf = &quot;abcd&quot;, fp points to &#39;e&#39;\r\nread4(buf); // read4 returns 4. Now buf = &quot;efgh&quot;, fp points to &#39;i&#39;\r\nread4(buf); // read4 returns 3. Now buf = &quot;ijk&quot;, fp points to end of file</code>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Method read:</strong></p>\r\n\r\n<p>By using the <code>read4</code> method, implement the method&nbsp;<code>read</code> that reads <i>n</i> characters from the file and store it in the&nbsp;buffer array&nbsp;<code>buf</code>. Consider that you <strong>cannot</strong> manipulate the file directly.</p>\r\n\r\n<p>The return value is the number of actual characters read.</p>\r\n\r\n<p><b>Definition of read: </b></p>\r\n\r\n<pre>\r\n    Parameters:\tchar[] buf, int n\r\n    Returns:\tint\r\n\r\nNote: buf[] is destination not source, you will need to write the results to buf[]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>file = &quot;abc&quot;, n = 4\r\n<strong>Output: </strong>3\r\n<strong>Explanation:</strong>&nbsp;After calling your read method, buf should contain &quot;abc&quot;. We read a total of 3 characters from the file, so return 3. Note that &quot;abc&quot; is the file&#39;s content, not buf. buf is the destination buffer that you will have to write the results to.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>file = &quot;abcde&quot;, n = 5\r\n<strong>Output: </strong>5\r\n<strong>Explanation: </strong>After calling your read method, buf should contain &quot;abcde&quot;. We read a total of 5 characters from the file, so return 5.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>file = &quot;abcdABCD1234&quot;, n = 12\r\n<strong>Output: </strong>12\r\n<strong>Explanation: </strong>After calling your read method, buf should contain &quot;abcdABCD1234&quot;. We read a total of 12 characters from the file, so return 12.\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>file = &quot;leetcode&quot;, n = 5\r\n<strong>Output: </strong>5\r\n<strong>Explanation: </strong>After calling your read method, buf should contain &quot;leetc&quot;. We read a total of 5 characters from the file, so return 5.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>Consider that you <strong>cannot</strong> manipulate the file directly, the file is only accesible for <code>read4</code> but&nbsp;<strong>not</strong> for <code>read</code>.</li>\r\n\t<li>The <code>read</code> function will only be called once for each test case.</li>\r\n\t<li>You may assume the destination buffer array,&nbsp;<code>buf</code>,&nbsp;is guaranteed to have enough&nbsp;space for storing&nbsp;<em>n</em>&nbsp;characters.</li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 201,
+  "dislikes": 1692,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Read N Characters Given Read4 II - Call multiple times\", \"titleSlug\": \"read-n-characters-given-read4-ii-call-multiple-times\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "// Forward declaration of the read4 API.\r\nint read4(char *buf);\r\n\r\nclass Solution {\r\npublic:\r\n    /**\r\n     * @param buf Destination buffer\r\n     * @param n   Number of characters to read\r\n     * @return    The number of actual characters read\r\n     */\r\n    int read(char *buf, int n) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\r\n * The read4 API is defined in the parent class Reader4.\r\n *     int read4(char[] buf);\r\n */\r\npublic class Solution extends Reader4 {\r\n    /**\r\n     * @param buf Destination buffer\r\n     * @param n   Number of characters to read\r\n     * @return    The number of actual characters read\r\n     */\r\n    public int read(char[] buf, int n) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "\"\"\"\r\nThe read4 API is already defined for you.\r\n\r\n    @param buf, a list of characters\r\n    @return an integer\r\n    def read4(buf):\r\n\r\n# Below is an example of how the read4 API can be called.\r\nfile = File(\"abcdefghijk\") # File is \"abcdefghijk\", initially file pointer (fp) points to 'a'\r\nbuf = [' '] * 4 # Create buffer with enough space to store characters\r\nread4(buf) # read4 returns 4. Now buf = ['a','b','c','d'], fp points to 'e'\r\nread4(buf) # read4 returns 4. Now buf = ['e','f','g','h'], fp points to 'i'\r\nread4(buf) # read4 returns 3. Now buf = ['i','j','k',...], fp points to end of file\r\n\"\"\"\r\nclass Solution(object):\r\n    def read(self, buf, n):\r\n        \"\"\"\r\n        :type buf: Destination buffer (List[str])\r\n        :type n: Number of characters to read (int)\r\n        :rtype: The number of actual characters read (int)\r\n        \"\"\"\r\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "\"\"\"\r\nThe read4 API is already defined for you.\r\n\r\n    @param buf, a list of characters\r\n    @return an integer\r\n    def read4(buf):\r\n\r\n# Below is an example of how the read4 API can be called.\r\nfile = File(\"abcdefghijk\") # File is \"abcdefghijk\", initially file pointer (fp) points to 'a'\r\nbuf = [' '] * 4 # Create buffer with enough space to store characters\r\nread4(buf) # read4 returns 4. Now buf = ['a','b','c','d'], fp points to 'e'\r\nread4(buf) # read4 returns 4. Now buf = ['e','f','g','h'], fp points to 'i'\r\nread4(buf) # read4 returns 3. Now buf = ['i','j','k',...], fp points to end of file\r\n\"\"\"\r\nclass Solution:\r\n    def read(self, buf, n):\r\n        \"\"\"\r\n        :type buf: Destination buffer (List[str])\r\n        :type n: Number of characters to read (int)\r\n        :rtype: The number of actual characters read (int)\r\n        \"\"\"\r\n        "
+    },
+    {
+      "lang": "C#",
+      "code": "/**\r\n * The Read4 API is defined in the parent class Reader4.\r\n *     int Read4(char[] buf);\r\n */\r\npublic class Solution : Reader4 {\r\n    /**\r\n     * @param buf Destination buffer\r\n     * @param n   Number of characters to read\r\n     * @return    The number of actual characters read\r\n     */\r\n    public int Read(char[] buf, int n) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * Definition for read4()\r\n * \r\n * @param {character[]} buf Destination buffer\r\n * @return {number} The number of actual characters read\r\n * read4 = function(buf) {\r\n *     ...\r\n * };\r\n */\r\n\r\n/**\r\n * @param {function} read4()\r\n * @return {function}\r\n */\r\nvar solution = function(read4) {\r\n    /**\r\n     * @param {character[]} buf Destination buffer\r\n     * @param {number} n Number of characters to read\r\n     * @return {number} The number of actual characters read\r\n     */\r\n    return function(buf, n) {\r\n        \r\n    };\r\n};"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\r\n * The read4 API is already defined for you.\r\n *\r\n *     read4 := func(buf []byte) int\r\n *\r\n * // Below is an example of how the read4 API can be called.\r\n * file := File(\"abcdefghijk\") // File is \"abcdefghijk\", initially file pointer (fp) points to 'a'\r\n * buf := make([]byte, 4) // Create buffer with enough space to store characters\r\n * read4(buf) // read4 returns 4. Now buf = ['a','b','c','d'], fp points to 'e'\r\n * read4(buf) // read4 returns 4. Now buf = ['e','f','g','h'], fp points to 'i'\r\n * read4(buf) // read4 returns 3. Now buf = ['i','j','k',...], fp points to end of file\r\n */\r\nvar solution = func(read4 func([]byte) int) func([]byte, int) int {\r\n    // implement read below.\r\n    return func(buf []byte, n int) int {\r\n        \r\n    }\r\n}\r\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"87.3K\", \"totalSubmission\": \"275.7K\", \"totalAcceptedRaw\": 87309, \"totalSubmissionRaw\": 275711, \"acRate\": \"31.7%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"abc\"\n4",
+  "metaData": "{\n  \"name\": \"read\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"input\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  },\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"csharp\",\n    \"javascript\",\n    \"golang\",\n    \"python3\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

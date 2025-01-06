@@ -1,0 +1,93 @@
+{
+  "questionId": "396",
+  "questionFrontendId": "396",
+  "boundTopicId": null,
+  "title": "Rotate Function",
+  "titleSlug": "rotate-function",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven an array of integers <code>A</code> and let <i>n</i> to be its length.\r\n</p>\r\n\r\n<p>\r\nAssume <code>B<sub>k</sub></code> to be an array obtained by rotating the array <code>A</code> <i>k</i> positions clock-wise, we define a \"rotation function\" <code>F</code> on <code>A</code> as follow:\r\n</p>\r\n\r\n<p>\r\n<code>F(k) = 0 * B<sub>k</sub>[0] + 1 * B<sub>k</sub>[1] + ... + (n-1) * B<sub>k</sub>[n-1]</code>.</p>\r\n\r\n<p>Calculate the maximum value of <code>F(0), F(1), ..., F(n-1)</code>. \r\n</p>\r\n\r\n<p><b>Note:</b><br />\r\n<i>n</i> is guaranteed to be less than 10<sup>5</sup>.\r\n</p>\r\n\r\n<p><b>Example:</b>\r\n<pre>\r\nA = [4, 3, 2, 6]\r\n\r\nF(0) = (0 * 4) + (1 * 3) + (2 * 2) + (3 * 6) = 0 + 3 + 4 + 18 = 25\r\nF(1) = (0 * 6) + (1 * 4) + (2 * 3) + (3 * 2) = 0 + 4 + 6 + 6 = 16\r\nF(2) = (0 * 2) + (1 * 6) + (2 * 4) + (3 * 3) = 0 + 6 + 8 + 9 = 23\r\nF(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26\r\n\r\nSo the maximum value of F(0), F(1), F(2), F(3) is F(3) = 26.\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 314,
+  "dislikes": 104,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxRotateFunction(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxRotateFunction(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxRotateFunction(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxRotateFunction(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxRotateFunction(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxRotateFunction(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar maxRotateFunction = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef max_rotate_function(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxRotateFunction(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxRotateFunction(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxRotateFunction(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxRotateFunction(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_rotate_function(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function maxRotateFunction($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"39K\", \"totalSubmission\": \"109.4K\", \"totalAcceptedRaw\": 39016, \"totalSubmissionRaw\": 109417, \"acRate\": \"35.7%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[]",
+  "metaData": "{\r\n  \"name\": \"maxRotateFunction\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

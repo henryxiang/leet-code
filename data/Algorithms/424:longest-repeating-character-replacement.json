@@ -1,0 +1,97 @@
+{
+  "questionId": "424",
+  "questionFrontendId": "424",
+  "boundTopicId": null,
+  "title": "Longest Repeating Character Replacement",
+  "titleSlug": "longest-repeating-character-replacement",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>s</code>&nbsp;that consists of only uppercase English letters, you can perform at most <code>k</code> operations on that string.</p>\r\n\r\n<p>In one operation, you can choose <strong>any</strong> character of the string and change it to any other uppercase English character.</p>\r\n\r\n<p>Find the length of the longest sub-string containing all repeating letters you can get after performing the above operations.</p>\r\n\r\n<p><b>Note:</b><br />\r\nBoth the string&#39;s length and <i>k</i> will not exceed 10<sup>4</sup>.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b>\r\ns = &quot;ABAB&quot;, k = 2\r\n\r\n<b>Output:</b>\r\n4\r\n\r\n<b>Explanation:</b>\r\nReplace the two &#39;A&#39;s with two &#39;B&#39;s or vice versa.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b>\r\ns = &quot;AABABBA&quot;, k = 1\r\n\r\n<b>Output:</b>\r\n4\r\n\r\n<b>Explanation:</b>\r\nReplace the one &#39;A&#39; in the middle with &#39;B&#39; and form &quot;AABBBBA&quot;.\r\nThe substring &quot;BBBB&quot; has the longest repeating letters, which is 4.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 806,
+  "dislikes": 57,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Substring with At Most K Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-k-distinct-characters\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Max Consecutive Ones III\", \"titleSlug\": \"max-consecutive-ones-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 0}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int characterReplacement(string s, int k) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int characterReplacement(String s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def characterReplacement(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def characterReplacement(self, s: str, k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\r\n\r\nint characterReplacement(char * s, int k){\r\n\r\n}\r\n\r\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int CharacterReplacement(string s, int k) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar characterReplacement = function(s, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @param {Integer} k\r\n# @return {Integer}\r\ndef character_replacement(s, k)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func characterReplacement(_ s: String, _ k: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func characterReplacement(s string, k int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def characterReplacement(s: String, k: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun characterReplacement(s: String, k: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn character_replacement(s: String, k: i32) -> i32 {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return Integer\n     */\n    function characterReplacement($s, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"45.5K\", \"totalSubmission\": \"101.3K\", \"totalAcceptedRaw\": 45550, \"totalSubmissionRaw\": 101255, \"acRate\": \"45.0%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"ABAB\"\n2",
+  "metaData": "{ \r\n  \"name\": \"characterReplacement\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n        \"name\": \"k\",\r\n        \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

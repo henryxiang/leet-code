@@ -1,0 +1,97 @@
+{
+  "questionId": "439",
+  "questionFrontendId": "439",
+  "boundTopicId": null,
+  "title": "Ternary Expression Parser",
+  "titleSlug": "ternary-expression-parser",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string representing arbitrarily nested ternary expressions, calculate the result of the expression. You can always assume that the given expression is valid and only consists of digits <code>0-9</code>, <code>?</code>, <code>:</code>, <code>T</code> and <code>F</code> (<code>T</code> and <code>F</code> represent True and False respectively).\r\n\r\n<p><b>Note:</b>\r\n<ol>\r\n<li>The length of the given string is &le; 10000.</li>\r\n<li>Each number will contain only one digit.</li>\r\n<li>The conditional expressions group right-to-left (as usual in most languages).</li>\r\n<li>The condition will always be either <code>T</code> or <code>F</code>. That is, the condition will never be a digit.</li>\r\n<li>The result of the expression will always evaluate to either a digit <code>0-9</code>, <code>T</code> or <code>F</code>.</li>\r\n</ol>\r\n</p>\r\n\r\n<p>\r\n<b>Example 1:</b>\r\n<pre>\r\n<b>Input:</b> \"T?2:3\"\r\n\r\n<b>Output:</b> \"2\"\r\n\r\n<b>Explanation:</b> If true, then result is 2; otherwise result is 3.\r\n</pre>\r\n</p>\r\n\r\n<p>\r\n<b>Example 2:</b>\r\n<pre>\r\n<b>Input:</b> \"F?1:T?4:5\"\r\n\r\n<b>Output:</b> \"4\"\r\n\r\n<b>Explanation:</b> The conditional expressions group right-to-left. Using parenthesis, it is read/evaluated as:\r\n\r\n             \"(F ? 1 : (T ? 4 : 5))\"                   \"(F ? 1 : (T ? 4 : 5))\"\r\n          -> \"(F ? 1 : 4)\"                 or       -> \"(T ? 4 : 5)\"\r\n          -> \"4\"                                    -> \"4\"\r\n</pre>\r\n</p>\r\n\r\n<p>\r\n<b>Example 3:</b>\r\n<pre>\r\n<b>Input:</b> \"T?T?F:5:3\"\r\n\r\n<b>Output:</b> \"F\"\r\n\r\n<b>Explanation:</b> The conditional expressions group right-to-left. Using parenthesis, it is read/evaluated as:\r\n\r\n             \"(T ? (T ? F : 5) : 3)\"                   \"(T ? (T ? F : 5) : 3)\"\r\n          -> \"(T ? F : 3)\"                 or       -> \"(T ? F : 5)\"\r\n          -> \"F\"                                    -> \"F\"\r\n</pre>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 209,
+  "dislikes": 30,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Mini Parser\", \"titleSlug\": \"mini-parser\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Remove Comments\", \"titleSlug\": \"remove-comments\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Parse Lisp Expression\", \"titleSlug\": \"parse-lisp-expression\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string parseTernary(string expression) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String parseTernary(String expression) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def parseTernary(self, expression):\n        \"\"\"\n        :type expression: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def parseTernary(self, expression: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * parseTernary(char * expression){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ParseTernary(string expression) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} expression\n * @return {string}\n */\nvar parseTernary = function(expression) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} expression\n# @return {String}\ndef parse_ternary(expression)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func parseTernary(_ expression: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func parseTernary(expression string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def parseTernary(expression: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun parseTernary(expression: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn parse_ternary(expression: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $expression\n     * @return String\n     */\n    function parseTernary($expression) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.2K\", \"totalSubmission\": \"31.5K\", \"totalAcceptedRaw\": 17237, \"totalSubmissionRaw\": 31466, \"acRate\": \"54.8%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"T?2:3\"",
+  "metaData": "{ \r\n  \"name\": \"parseTernary\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"expression\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,101 @@
+{
+  "questionId": "1423",
+  "questionFrontendId": "1297",
+  "boundTopicId": null,
+  "title": "Maximum Number of Occurrences of a Substring",
+  "titleSlug": "maximum-number-of-occurrences-of-a-substring",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>s</code>, return the maximum number of ocurrences of <strong>any</strong> substring&nbsp;under the following rules:</p>\r\n\r\n<ul>\r\n\t<li>The number of unique characters in the substring must be less than or equal to <code>maxLetters</code>.</li>\r\n\t<li>The substring size must be between <code>minSize</code> and <code>maxSize</code>&nbsp;inclusive.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;aababcaab&quot;, maxLetters = 2, minSize = 3, maxSize = 4\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> Substring &quot;aab&quot; has 2 ocurrences in the original string.\r\nIt satisfies the conditions, 2 unique letters and size 3 (between minSize and maxSize).\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;aaaa&quot;, maxLetters = 1, minSize = 3, maxSize = 3\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> Substring &quot;aaa&quot; occur 2 times in the string. It can overlap.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;aabcabcab&quot;, maxLetters = 2, minSize = 2, maxSize = 3\r\n<strong>Output:</strong> 3\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;abcde&quot;, maxLetters = 2, minSize = 3, maxSize = 3\r\n<strong>Output:</strong> 0\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= s.length &lt;= 10^5</code></li>\r\n\t<li><code>1 &lt;= maxLetters &lt;= 26</code></li>\r\n\t<li><code>1 &lt;= minSize &lt;= maxSize &lt;= min(26, s.length)</code></li>\r\n\t<li><code>s</code> only contains lowercase English letters.</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 47,
+  "dislikes": 39,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Roblox\", \"slug\": \"roblox\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int maxFreq(string s, int maxLetters, int minSize, int maxSize) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\r\n    public int maxFreq(String s, int maxLetters, int minSize, int maxSize) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def maxFreq(self, s, maxLetters, minSize, maxSize):\r\n        \"\"\"\r\n        :type s: str\r\n        :type maxLetters: int\r\n        :type minSize: int\r\n        :type maxSize: int\r\n        :rtype: int\r\n        \"\"\""
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def maxFreq(self, s: str, maxLetters: int, minSize: int, maxSize: int) -> int:"
+    },
+    {
+      "lang": "C",
+      "code": "int maxFreq(char * s, int maxLetters, int minSize, int maxSize){\r\n\r\n}"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int MaxFreq(string s, int maxLetters, int minSize, int maxSize) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {string} s\r\n * @param {number} maxLetters\r\n * @param {number} minSize\r\n * @param {number} maxSize\r\n * @return {number}\r\n */\r\nvar maxFreq = function(s, maxLetters, minSize, maxSize) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @param {Integer} max_letters\r\n# @param {Integer} min_size\r\n# @param {Integer} max_size\r\n# @return {Integer}\r\ndef max_freq(s, max_letters, min_size, max_size)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func maxFreq(_ s: String, _ maxLetters: Int, _ minSize: Int, _ maxSize: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxFreq(s string, maxLetters int, minSize int, maxSize int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def maxFreq(s: String, maxLetters: Int, minSize: Int, maxSize: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun maxFreq(s: String, maxLetters: Int, minSize: Int, maxSize: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn max_freq(s: String, max_letters: i32, min_size: i32, max_size: i32) -> i32 {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param String $s\r\n     * @param Integer $maxLetters\r\n     * @param Integer $minSize\r\n     * @param Integer $maxSize\r\n     * @return Integer\r\n     */\r\n    function maxFreq($s, $maxLetters, $minSize, $maxSize) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.6K\", \"totalSubmission\": \"8.3K\", \"totalAcceptedRaw\": 3619, \"totalSubmissionRaw\": 8306, \"acRate\": \"43.6%\"}",
+  "hints": [
+    "Check out the constraints, (maxSize <=26).",
+    "This means you can explore all substrings in O(n * 26).",
+    "Find the Maximum Number of Occurrences of a Substring with bruteforce."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"aababcaab\"\n2\n3\n4",
+  "metaData": "{\n  \"name\": \"maxFreq\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"maxLetters\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"minSize\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"maxSize\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

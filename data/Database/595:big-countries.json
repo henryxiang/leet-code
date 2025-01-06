@@ -1,0 +1,70 @@
+{
+  "questionId": "595",
+  "questionFrontendId": "595",
+  "boundTopicId": null,
+  "title": "Big Countries",
+  "titleSlug": "big-countries",
+  "categoryTitle": "Database",
+  "content": "<p>There is a table <code>World</code></p>\r\n\r\n<pre>\r\n+-----------------+------------+------------+--------------+---------------+\r\n| name            | continent  | area       | population   | gdp           |\r\n+-----------------+------------+------------+--------------+---------------+\r\n| Afghanistan     | Asia       | 652230     | 25500100     | 20343000      |\r\n| Albania         | Europe     | 28748      | 2831741      | 12960000      |\r\n| Algeria         | Africa     | 2381741    | 37100000     | 188681000     |\r\n| Andorra         | Europe     | 468        | 78115        | 3712000       |\r\n| Angola          | Africa     | 1246700    | 20609294     | 100990000     |\r\n+-----------------+------------+------------+--------------+---------------+\r\n</pre>\r\n\r\n<p>A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</p>\r\n\r\n<p>Write a SQL solution to output big countries&#39; name, population and area.</p>\r\n\r\n<p>For example, according to the above table, we should output:</p>\r\n\r\n<pre>\r\n+--------------+-------------+--------------+\r\n| name         | population  | area         |\r\n+--------------+-------------+--------------+\r\n| Afghanistan  | 25500100    | 652230       |\r\n| Algeria      | 37100000    | 2381741      |\r\n+--------------+-------------+--------------+\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 413,
+  "dislikes": 600,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Douglas1612",
+      "profileUrl": "/douglas1612/",
+      "avatarUrl": "https://www.gravatar.com/avatar/8e60a4b596b7a8ba118c776bac2a0b04.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"146.6K\", \"totalSubmission\": \"193.9K\", \"totalAcceptedRaw\": 146553, \"totalSubmissionRaw\": 193854, \"acRate\": \"75.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "200",
+    "canSeeDetail": true,
+    "url": "/articles/big-countries/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach I: Using `WHERE` clause and `OR` [Accepted]\n\n**Intuition**\n\nUse `WHERE` clause in SQL to filter these records and get the target countries.\n\n**Algorithm**\n\nAccording to the definition, a big country meets at least one of the following two conditions:\n1. It has an area of bigger than 3 million square km.\n2. It has a population of more than 25 million.\n\nSo for the first condition, we can use the following code to get the big countries of this type.\n```sql\nSELECT name, population, area FROM world WHERE area > 3000000\n```\n\nIn addition, we can use below code to get big countries of more than 25 million people.\n```sql\nSELECT name, population, area FROM world WHERE population > 25000000\n```\n\nAs most people may already come into mind, we can use `OR` to combine these two solutions for the two sub-problems together.\n\n**MySQL**\n\n```sql\nSELECT\n    name, population, area\nFROM\n    world\nWHERE\n    area > 3000000 OR population > 25000000\n;\n```\n\n#### Approach II: Using `WHERE` clause and `UNION` [Accepted]\n\n**Algorithm**\n\nThe idea of this approach is the same as the first one. However, we use `UNION` instead of `OR`.\n\n**MySQL**\n\n```sql\nSELECT\n    name, population, area\nFROM\n    world\nWHERE\n    area > 3000000\n\nUNION\n\nSELECT\n    name, population, area\nFROM\n    world\nWHERE\n    population > 25000000\n;\n```\n>Note: This solution runs a little bit faster than the first one. However, they do not have big difference.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "197",
+      "count": 22,
+      "average": 4.864,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"World\": [\"name\", \"continent\",\t\"area\",\t\"population\", \"gdp\"]}, \"rows\": {\"World\": [[\"Afghanistan\", \"Asia\", 652230, 25500100, 20343000000], [\"Albania\", \"Europe\", 28748, 2831741, 12960000000], [\"Algeria\", \"Africa\", 2381741, 37100000, 188681000000], [\"Andorra\", \"Europe\", 468, 78115,\t3712000000], [\"Angola\", \"Africa\", 1246700, 20609294, 100990000000]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists World (name varchar(255), continent varchar(255), area int, population int, gdp int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table World (name varchar(255), continent varchar(255), area int, population int, gdp bigint)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table World (name varchar(255), continent varchar(255), area int, population int, gdp int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists World (name varchar(255), continent varchar(255), area int, population int, gdp int)",
+    "Truncate table World",
+    "insert into World (name, continent, area, population, gdp) values ('Afghanistan', 'Asia', '652230', '25500100', '20343000000')",
+    "insert into World (name, continent, area, population, gdp) values ('Albania', 'Europe', '28748', '2831741', '12960000000')",
+    "insert into World (name, continent, area, population, gdp) values ('Algeria', 'Africa', '2381741', '37100000', '188681000000')",
+    "insert into World (name, continent, area, population, gdp) values ('Andorra', 'Europe', '468', '78115', '3712000000')",
+    "insert into World (name, continent, area, population, gdp) values ('Angola', 'Africa', '1246700', '20609294', '100990000000')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

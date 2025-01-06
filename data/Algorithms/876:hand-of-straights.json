@@ -1,0 +1,111 @@
+{
+  "questionId": "876",
+  "questionFrontendId": "846",
+  "boundTopicId": null,
+  "title": "Hand of Straights",
+  "titleSlug": "hand-of-straights",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Alice has a <code>hand</code> of cards, given as an array of integers.</p>\r\n\r\n<p>Now she wants to rearrange the cards into groups so that each group is size <code>W</code>, and consists of <code>W</code> consecutive cards.</p>\r\n\r\n<p>Return <code>true</code> if and only if she can.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>hand = [1,2,3,6,2,3,4,7,8], W = 3\r\n<strong>Output: </strong>true\r\n<strong>Explanation:</strong> Alice&#39;s <code>hand</code> can be rearranged as <code>[1,2,3],[2,3,4],[6,7,8]</code>.</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>hand = [1,2,3,4,5], W = 4\r\n<strong>Output: </strong>false\r\n<strong>Explanation:</strong> Alice&#39;s <code>hand</code> can&#39;t be rearranged into groups of <code>4</code>.</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= hand.length &lt;= 10000</code></li>\r\n\t<li><code>0 &lt;= hand[i]&nbsp;&lt;= 10^9</code></li>\r\n\t<li><code>1 &lt;= W &lt;= hand.length</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 379,
+  "dislikes": 55,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Ordered Map",
+      "slug": "ordered-map"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isNStraightHand(vector<int>& hand, int W) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isNStraightHand(int[] hand, int W) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isNStraightHand(self, hand, W):\n        \"\"\"\n        :type hand: List[int]\n        :type W: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isNStraightHand(self, hand: List[int], W: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isNStraightHand(int* hand, int handSize, int W){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsNStraightHand(int[] hand, int W) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} hand\n * @param {number} W\n * @return {boolean}\n */\nvar isNStraightHand = function(hand, W) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} hand\n# @param {Integer} w\n# @return {Boolean}\ndef is_n_straight_hand(hand, w)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isNStraightHand(_ hand: [Int], _ W: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isNStraightHand(hand []int, W int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isNStraightHand(hand: Array[Int], W: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isNStraightHand(hand: IntArray, W: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_n_straight_hand(hand: Vec<i32>, w: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $hand\n     * @param Integer $W\n     * @return Boolean\n     */\n    function isNStraightHand($hand, $W) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"26.5K\", \"totalSubmission\": \"51.9K\", \"totalAcceptedRaw\": 26462, \"totalSubmissionRaw\": 51912, \"acRate\": \"51.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "479",
+    "canSeeDetail": true,
+    "url": "/articles/hand-of-straights/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Brute Force [Accepted]\n\n**Intuition**\n\nWe will repeatedly try to form a group (of size W) starting with the lowest card.  This works because the lowest card still in our hand must be the bottom end of a size `W` straight.\n\n**Algorithm**\n\nLet's keep a count `{card: number of copies of card}` as a `TreeMap` (or `dict`).\n\nThen, repeatedly we will do the following steps: find the lowest value card that has 1 or more copies (say with value `x`), and try to remove `x, x+1, x+2, ..., x+W-1` from our count.  If we can't, then the task is impossible.\n\n<iframe src=\"https://leetcode.com/playground/VyDASsga/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"VyDASsga\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N * (N/W))$$, where $$N$$ is the length of `hand`.  The $$(N / W)$$ factor comes from `min(count)`.  In Java, the $$(N / W)$$ factor becomes $$\\log N$$ due to the complexity of `TreeMap`.\n\n* Space Complexity:  $$O(N)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "474",
+      "count": 16,
+      "average": 3,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,6,2,3,4,7,8]\n3",
+  "metaData": "{\r\n  \"name\": \"isNStraightHand\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"hand\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"W\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

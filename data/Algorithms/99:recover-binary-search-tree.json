@@ -1,0 +1,109 @@
+{
+  "questionId": "99",
+  "questionFrontendId": "99",
+  "boundTopicId": null,
+  "title": "Recover Binary Search Tree",
+  "titleSlug": "recover-binary-search-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Two elements of a binary search tree (BST) are swapped by mistake.</p>\r\n\r\n<p>Recover the tree without changing its structure.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [1,3,null,null,2]\r\n\r\n&nbsp;  1\r\n&nbsp; /\r\n&nbsp;3\r\n&nbsp; \\\r\n&nbsp;  2\r\n\r\n<strong>Output:</strong> [3,1,null,null,2]\r\n\r\n&nbsp;  3\r\n&nbsp; /\r\n&nbsp;1\r\n&nbsp; \\\r\n&nbsp;  2\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [3,1,4,null,null,2]\r\n\r\n  3\r\n / \\\r\n1   4\r\n&nbsp;  /\r\n&nbsp; 2\r\n\r\n<strong>Output:</strong> [2,1,4,null,null,3]\r\n\r\n  2\r\n / \\\r\n1   4\r\n&nbsp;  /\r\n &nbsp;3\r\n</pre>\r\n\r\n<p><strong>Follow up:</strong></p>\r\n\r\n<ul>\r\n\t<li>A solution using O(<em>n</em>) space is pretty straight forward.</li>\r\n\t<li>Could you devise a constant space solution?</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 1087,
+  "dislikes": 57,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 7}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    void recoverTree(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public void recoverTree(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def recoverTree(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: None Do not return anything, modify root in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def recoverTree(self, root: TreeNode) -> None:\n        \"\"\"\n        Do not return anything, modify root in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nvoid recoverTree(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public void RecoverTree(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {void} Do not return anything, modify root in-place instead.\n */\nvar recoverTree = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {Void} Do not return anything, modify root in-place instead.\ndef recover_tree(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func recoverTree(_ root: TreeNode?) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc recoverTree(root *TreeNode)  {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def recoverTree(root: TreeNode): Unit = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun recoverTree(root: TreeNode?): Unit {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn recover_tree(root: &mut Option<Rc<RefCell<TreeNode>>>) {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return NULL\n     */\n    function recoverTree($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"138K\", \"totalSubmission\": \"375.7K\", \"totalAcceptedRaw\": 138002, \"totalSubmissionRaw\": 375684, \"acRate\": \"36.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "746",
+    "canSeeDetail": true,
+    "url": "/articles/recover-binary-search-tree/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Approach 1: Sort an Almost Sorted Array Where Two Elements Are Swapped\r\n\r\n**Intuition**\r\n\r\nLet's start from straightforward but not optimal solution \r\nwith a linear time and space complexity. \r\nThis solution serves to identify and discuss all subproblems.\r\n  \r\nIt's known that [inorder traversal of BST is an array sorted in\r\nthe ascending order](https://leetcode.com/articles/delete-node-in-a-bst/).\r\nHere is how one could compute an inorder traversal\r\n\r\n<iframe src=\"https://leetcode.com/playground/3w3jrvEC/shared\" frameBorder=\"0\" width=\"100%\" height=\"157\" name=\"3w3jrvEC\"></iframe>\r\n\r\nHere two nodes are swapped, and hence inorder traversal is \r\nan almost sorted array where only two elements are swapped.\r\nTo identify two swapped elements in a sorted array is \r\na classical problem that could be solved in linear time.\r\nHere is a solution code\r\n\r\n<iframe src=\"https://leetcode.com/playground/8Ay4nJsq/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"8Ay4nJsq\"></iframe>\r\n\r\nWhen swapped nodes are known, one could traverse the tree \r\nagain and swap their values.\r\n\r\n<img src=\"../Figures/99/iinorde.png\" width=\"700\">\r\n\r\n**Algorithm**\r\n\r\nHere is the algorithm:\r\n\r\n1. Construct inorder traversal of the tree. \r\nIt should be an almost sorted list where only two elements are swapped.\r\n\r\n2. Identify two swapped elements x and y in an almost sorted array \r\nin linear time.\r\n\r\n3. Traverse the tree again. Change value x to y and value y to x.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/C282pApt/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"C282pApt\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$. To compute inorder traversal takes\r\n$$\\mathcal{O}(N)$$ time, to identify and to swap back swapped nodes : $$\\mathcal{O}(1)$$\r\nin the best case and $$\\mathcal{O}(N)$$ in the worst.\r\n\r\n* Space complexity : $$\\mathcal{O}(N)$$ since we keep inorder traversal \r\n`nums` with N elements.\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### What Is Coming Next\r\n\r\nIn approach 1 we discussed three easy subproblems of this hard problem:\r\n\r\n1. Construct inorder traversal.\r\n\r\n2. Find swapped elements in \r\nan almost sorted array where only two elements are swapped.\r\n\r\n3. Swap values of two nodes.\r\n\r\nNow we will discuss three more approaches, and basically they are \r\nall the same :\r\n\r\n- Merge steps 1 and 2, i.e. identify swapped nodes during the\r\ninorder traversal.\r\n\r\n- Swap node values.\r\n\r\nThe difference in-between the following approaches is in a chosen \r\nmethod to implement inorder traversal :\r\n\r\n- Approach 2 : Iterative.\r\n\r\n- Approach 3 : Recursive.\r\n\r\n- Approach 4 : Morris.\r\n\r\n<img src=\"../Figures/99/mmorris.png\" width=\"700\">\r\n\r\nIterative and recursive approaches here do less than _one pass_,\r\nand they both need up to $$\\mathcal{O}(H)$$ space to keep stack,\r\nwhere H is a tree height.\r\n\r\nMorris approach is _two pass_ approach, but it's a constant-space one.\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Iterative Inorder Traversal\r\n\r\n**Intuition**\r\n\r\nHere we construct inorder traversal by iterations \r\nand identify swapped nodes at the same time, in one pass.\r\n\r\n> Iterative inorder traversal is simple:\r\ngo left as far as you can, then one step right. Repeat till \r\nthe end of nodes in the tree.  \r\n\r\nTo identify swapped nodes, \r\ntrack the last node `pred` in the inorder traversal (i.e. the\r\n_predecessor_ of the current node)\r\nand compare it with current node value.\r\nIf the current node value is smaller than its predecessor `pred` value,\r\nthe swapped node is here. \r\n\r\nThere are only two swapped nodes here, and hence one could break after \r\nhaving the second node identified.\r\n\r\nDoing so, one could get directly nodes (and not only their values),\r\nand hence swap node values in $$\\mathcal{O}(1)$$ time, drastically\r\nreducing the time needed for step 3.\r\n\r\n!?!../Documents/99_LIS.json:1000,310!?!\r\n\r\n**Implementation**\r\n\r\n[Don't use Stack in Java, use ArrayDeque instead](https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html).\r\n\r\n<iframe src=\"https://leetcode.com/playground/ZNVYQwz2/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ZNVYQwz2\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(1)$$ in the best case, and \r\n$$\\mathcal{O}(N)$$ in the worst case\r\nwhen one of the swapped nodes is a rightmost leaf.\r\n* Space complexity : up to $$\\mathcal{O}(H)$$ to keep the stack\r\nwhere H is a tree height.\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 3: Recursive Inorder Traversal\r\n\r\nIterative approach 2 could be converted into recursive one.\r\n\r\nRecursive inorder traversal is extremely simple: \r\nfollow `Left->Node->Right` direction, i.e. do the recursive call\r\nfor the _left_ child, then do all the business with the node\r\n(= if the node is the swapped one or not), and\r\nthen do the recursive call for the _right_ child.\r\n\r\nOn the following figure the nodes are numerated in the order you visit them, \r\nplease follow `1-2-3-4-5` to compare different DFS strategies.\r\n\r\n<img src=\"../Figures/99/ddfs.png\" width=\"700\">\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/Bde8YrHe/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"Bde8YrHe\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(1)$$ in the best case, and \r\n$$\\mathcal{O}(N)$$ in the worst case\r\nwhen one of the swapped nodes is a rightmost leaf.\r\n* Space complexity : up to $$\\mathcal{O}(H)$$ to keep the recursion stack,\r\nwhere H is a tree height.\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 4: Morris Inorder Traversal\r\n\r\nWe discussed already iterative and recursive inorder traversals,\r\nwhich both have great time complexity though use up to\r\n$$\\mathcal{O}(H)$$ to keep stack. \r\nWe could trade in performance to save space. \r\n\r\nThe idea of Morris inorder traversal is simple:\r\nto use no space but to traverse the tree.\r\n\r\n> How that could be even possible? At each node one has to decide where to go:\r\nleft or right, traverse left subtree or traverse right subtree. \r\nHow one could know that the left subtree is already done if no \r\nadditional memory is allowed?  \r\n\r\nThe idea of [Morris](https://www.sciencedirect.com/science/article/pii/0020019079900681)\r\nalgorithm is to set the _temporary link_ between the node and its \r\n[predecessor](https://leetcode.com/articles/delete-node-in-a-bst/):\r\n`predecessor.right = root`.\r\nSo one starts from the node, computes its predecessor and\r\nverifies if the link is present.\r\n\r\n- There is no link? Set it and go to the left subtree.\r\n\r\n- There is a link? Break it and go to the right subtree.  \r\n\r\nThere is one small issue to deal with : what if there is no\r\nleft child, i.e. there is no left subtree? \r\nThen go straightforward to the right subtree.  \r\n\r\n!?!../Documents/99_SEC.json:1000,377!?!\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/GydZuqRE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"GydZuqRE\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$ since we visit each node up to\r\ntwo times.\r\n \r\n* Space complexity : $$\\mathcal{O}(1)$$.\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "731",
+      "count": 62,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,3,null,null,2]",
+  "metaData": "{\r\n  \"name\": \"recoverTree\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"void\"\r\n  },\r\n  \"output\": {\r\n    \"paramindex\": 0\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

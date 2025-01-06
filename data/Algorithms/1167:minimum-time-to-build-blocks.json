@@ -1,0 +1,104 @@
+{
+  "questionId": "1167",
+  "questionFrontendId": "1199",
+  "boundTopicId": null,
+  "title": "Minimum Time to Build Blocks",
+  "titleSlug": "minimum-time-to-build-blocks",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given a list of blocks, where <code>blocks[i] = t</code> means that the&nbsp;<code>i</code>-th block needs&nbsp;<code>t</code>&nbsp;units of time to be built. A block can only be built by exactly one worker.</p>\n\n<p>A worker can either split into two workers (number of workers increases by one) or build a block then go home. Both decisions cost some time.</p>\n\n<p>The time cost of spliting one worker into two workers is&nbsp;given as an integer <code>split</code>. Note that if two workers split at the same time, they split in parallel so the cost would be&nbsp;<code>split</code>.</p>\n\n<p>Output the minimum time needed to build all blocks.</p>\n\n<p>Initially, there is only <strong>one</strong> worker.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> blocks = [1], split = 1\n<strong>Output:</strong> 1\n<strong>Explanation: </strong>We use 1 worker to build 1 block in 1 time unit.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> blocks = [1,2], split = 5\n<strong>Output:</strong> 7\n<strong>Explanation: </strong>We split the worker into 2 workers in 5 time units then assign each of them to a block so the cost is 5 + max(1, 2) = 7.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> blocks = [1,2,3], split = 1\n<strong>Output:</strong> 4\n<strong>Explanation: </strong>Split 1 worker into 2, then assign the first worker to the last block and split the second worker into 2.\nThen, use the two unassigned workers to build the first two blocks.\nThe cost is 1 + max(3, 1 + max(1, 2)) = 4.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= blocks.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= blocks[i] &lt;= 10^5</code></li>\n\t<li><code>1 &lt;= split &lt;= 100</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 61,
+  "dislikes": 7,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minBuildTime(vector<int>& blocks, int split) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minBuildTime(int[] blocks, int split) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minBuildTime(self, blocks, split):\n        \"\"\"\n        :type blocks: List[int]\n        :type split: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minBuildTime(self, blocks: List[int], split: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minBuildTime(int* blocks, int blocksSize, int split){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinBuildTime(int[] blocks, int split) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} blocks\n * @param {number} split\n * @return {number}\n */\nvar minBuildTime = function(blocks, split) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} blocks\n# @param {Integer} split\n# @return {Integer}\ndef min_build_time(blocks, split)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minBuildTime(_ blocks: [Int], _ split: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minBuildTime(blocks []int, split int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minBuildTime(blocks: Array[Int], split: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minBuildTime(blocks: IntArray, split: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_build_time(blocks: Vec<i32>, split: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $blocks\n     * @param Integer $split\n     * @return Integer\n     */\n    function minBuildTime($blocks, $split) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.4K\", \"totalSubmission\": \"4.3K\", \"totalAcceptedRaw\": 1433, \"totalSubmissionRaw\": 4252, \"acRate\": \"33.7%\"}",
+  "hints": [
+    "A greedy approach will not work as the examples show.",
+    "Try all possible moves using DP.",
+    "For the DP state, dp[i][j] is the minimum time cost to build the first i blocks using j workers.",
+    "In one step you can either assign a worker to a block or choose a number of workers to split.",
+    "If you choose to assign a worker to a block it is always better to assign him to the block with the maximum time so we sort the array before using DP.",
+    "To optimize the solution from O(n^3) to O(n^2) notice that if you choose to split, it is always better to split all the workers you have."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1]\n1",
+  "metaData": "{\n  \"name\": \"minBuildTime\",\n  \"params\": [\n    {\n      \"name\": \"blocks\",\n      \"type\": \"integer[]\"\n    },\n    {\n     \t\"name\": \"split\",\n      \t\"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

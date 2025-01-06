@@ -1,0 +1,125 @@
+{
+  "questionId": "744",
+  "questionFrontendId": "743",
+  "boundTopicId": null,
+  "title": "Network Delay Time",
+  "titleSlug": "network-delay-time",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are <code>N</code> network nodes, labelled <code>1</code> to <code>N</code>.</p>\r\n\r\n<p>Given <code>times</code>, a list of travel times as <b>directed</b> edges <code>times[i] = (u, v, w)</code>, where <code>u</code> is the source node, <code>v</code> is the target node, and <code>w</code> is the time it takes for a signal to travel from source to target.</p>\r\n\r\n<p>Now, we send a signal from a certain node <code>K</code>. How long will it take for all nodes to receive the signal? If it is impossible, return <code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/05/23/931_example_1.png\" style=\"width: 200px; height: 220px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>times = <span id=\"example-input-1-1\">[[2,1,1],[2,3,1],[3,4,1]]</span>, N = <span id=\"example-input-1-2\">4</span>, K = <span id=\"example-input-1-3\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li><code>N</code> will be in the range <code>[1, 100]</code>.</li>\r\n\t<li><code>K</code> will be in the range <code>[1, N]</code>.</li>\r\n\t<li>The length of <code>times</code> will be in the range <code>[1, 6000]</code>.</li>\r\n\t<li>All edges <code>times[i] = (u, v, w)</code> will have <code>1 &lt;= u, v &lt;= N</code> and <code>0 &lt;= w &lt;= 100</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 911,
+  "dislikes": 191,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "zestypanda",
+      "profileUrl": "/zestypanda/",
+      "avatarUrl": "https://assets.leetcode.com/users/zestypanda/avatar_1521508455.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Heap",
+      "slug": "heap"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 7}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int networkDelayTime(vector<vector<int>>& times, int N, int K) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int networkDelayTime(int[][] times, int N, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def networkDelayTime(self, times, N, K):\n        \"\"\"\n        :type times: List[List[int]]\n        :type N: int\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint networkDelayTime(int** times, int timesSize, int* timesColSize, int N, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int NetworkDelayTime(int[][] times, int N, int K) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} times\n * @param {number} N\n * @param {number} K\n * @return {number}\n */\nvar networkDelayTime = function(times, N, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} times\r\n# @param {Integer} n\r\n# @param {Integer} k\r\n# @return {Integer}\r\ndef network_delay_time(times, n, k)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func networkDelayTime(_ times: [[Int]], _ N: Int, _ K: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func networkDelayTime(times [][]int, N int, K int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def networkDelayTime(times: Array[Array[Int]], N: Int, K: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun networkDelayTime(times: Array<IntArray>, N: Int, K: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn network_delay_time(times: Vec<Vec<i32>>, n: i32, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $times\n     * @param Integer $N\n     * @param Integer $K\n     * @return Integer\n     */\n    function networkDelayTime($times, $N, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"58.5K\", \"totalSubmission\": \"130.3K\", \"totalAcceptedRaw\": 58481, \"totalSubmissionRaw\": 130306, \"acRate\": \"44.9%\"}",
+  "hints": [
+    "We visit each node at some time, and if that time is better than the fastest time we've reached this node, we travel along outgoing edges in sorted order.  Alternatively, we could use Dijkstra's algorithm."
+  ],
+  "solution": {
+    "id": "335",
+    "canSeeDetail": true,
+    "url": "/articles/network-delay-time/",
+    "content": "[TOC]\n\n#### Approach #1: Depth-First Search [Accepted]\n\n**Intuition**\n\nLet's record the time `dist[node]` when the signal reaches the node.  If some signal arrived earlier, we don't need to broadcast it anymore.  Otherwise, we should broadcast the signal.\n\n**Algorithm**\n\nWe'll maintain `dist[node]`, the earliest that we arrived at each `node`.  When visiting a `node` while `elapsed` time has elapsed, if this is the currently-fastest signal at this node, let's broadcast signals from this node.\n\nTo speed things up, at each visited node we'll consider signals exiting the node that are faster first, by sorting the edges.\n\n\n<iframe src=\"https://leetcode.com/playground/YadsYraY/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"YadsYraY\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^N + E \\log E)$$ where $$E$$ is the length of `times`.  We can only fully visit each node up to $$N-1$$ times, one per each other node.  Plus, we have to explore every edge and sort them.  Sorting each small bucket of outgoing edges is bounded by sorting all of them, because of repeated use of the inequality $$x \\log x + y \\log y \\leq (x+y) \\log (x+y)$$.\n\n* Space Complexity: $$O(N + E)$$, the size of the graph ($$O(E)$$), plus the size of the implicit call stack in our DFS ($$O(N)$$).\n\n---\n#### Approach #2: Dijkstra's Algorithm [Accepted]\n\n**Intuition and Algorithm**\n\nWe use *Dijkstra's algorithm* to find the shortest path from our source to all targets.  This is a textbook algorithm, refer to [this link](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) for more details.\n\nDijkstra's algorithm is based on repeatedly making the candidate move that has the least distance travelled.\n\nIn our implementations below, we showcase both $$O(N^2)$$ (basic) and $$O(N \\log N)$$ (heap) approaches.\n\n*Basic Implementation*\n<iframe src=\"https://leetcode.com/playground/HxrhmhUo/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"HxrhmhUo\"></iframe>\n\n*Heap Implementation*\n\n<iframe src=\"https://leetcode.com/playground/FAHPcmsE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"FAHPcmsE\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2 + E)$$m where $$E$$ is the length of `times` in the basic implementation, and $$O(E \\log E)$$ in the heap implementation, as potentially every edge gets added to the heap.\n\n* Space Complexity: $$O(N + E)$$, the size of the graph ($$O(E)$$), plus the size of the other objects used ($$O(N)$$).\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "330",
+      "count": 33,
+      "average": 3.576,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[2,1,1],[2,3,1],[3,4,1]]\n4\n2",
+  "metaData": "{\r\n  \"name\": \"networkDelayTime\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"times\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,101 @@
+{
+  "questionId": "1131",
+  "questionFrontendId": "1180",
+  "boundTopicId": null,
+  "title": "Count Substrings with Only One Distinct Letter",
+  "titleSlug": "count-substrings-with-only-one-distinct-letter",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>S</code>,&nbsp;return the number of substrings that have&nbsp;only <strong>one distinct</strong> letter.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> S = &quot;aaaba&quot;\n<strong>Output:</strong> 8\n<strong>Explanation: </strong>The substrings with one distinct letter are &quot;aaa&quot;, &quot;aa&quot;, &quot;a&quot;, &quot;b&quot;.\n&quot;aaa&quot; occurs 1 time.\n&quot;aa&quot; occurs 2 times.\n&quot;a&quot; occurs 4 times.\n&quot;b&quot; occurs 1 time.\nSo the answer is 1 + 2 + 4 + 1 = 8.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> S = &quot;aaaaaaaaaa&quot;\n<strong>Output:</strong> 55\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= S.length &lt;= 1000</code></li>\n\t<li><code>S[i]</code> consists of only lowercase English letters.</li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 61,
+  "dislikes": 13,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Virtu Financial\", \"slug\": \"virtu\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int countLetters(string S) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countLetters(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countLetters(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countLetters(self, S: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint countLetters(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int CountLetters(string S) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {number}\n */\nvar countLetters = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @return {Integer}\r\ndef count_letters(s)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func countLetters(_ S: String) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countLetters(S string) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def countLetters(S: String): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun countLetters(S: String): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_letters(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return Integer\n     */\n    function countLetters($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.2K\", \"totalSubmission\": \"6.8K\", \"totalAcceptedRaw\": 5240, \"totalSubmissionRaw\": 6834, \"acRate\": \"76.7%\"}",
+  "hints": [
+    "What if we divide the string into substrings containing only one distinct character with maximal lengths?",
+    "Now that you have sub-strings with only one distinct character, Try to come up with a formula that counts the number of its sub-strings.",
+    "Alternatively, Observe that the constraints are small so you can use brute force."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"aaaba\"",
+  "metaData": "{\r\n  \"name\": \"countLetters\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

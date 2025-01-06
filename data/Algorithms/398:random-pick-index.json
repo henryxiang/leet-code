@@ -1,0 +1,93 @@
+{
+  "questionId": "398",
+  "questionFrontendId": "398",
+  "boundTopicId": null,
+  "title": "Random Pick Index",
+  "titleSlug": "random-pick-index",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers with possible duplicates, randomly output the index of a given target number. You can assume that the given target number must exist in the array.</p>\r\n\r\n<p><b>Note:</b><br />\r\nThe array size can be very large. Solution that uses too much extra space will not pass the judge.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\nint[] nums = new int[] {1,2,3,3,3};\r\nSolution solution = new Solution(nums);\r\n\r\n// pick(3) should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning.\r\nsolution.pick(3);\r\n\r\n// pick(1) should return 0. Since in the array only nums[0] is equal to 1.\r\nsolution.pick(1);\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 323,
+  "dislikes": 538,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Linked List Random Node\", \"titleSlug\": \"linked-list-random-node\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Random Pick with Blacklist\", \"titleSlug\": \"random-pick-with-blacklist\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Random Pick with Weight\", \"titleSlug\": \"random-pick-with-weight\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Reservoir Sampling",
+      "slug": "reservoir-sampling"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 7}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    Solution(vector<int>& nums) {\n        \n    }\n    \n    int pick(int target) {\n        \n    }\n};\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution* obj = new Solution(nums);\n * int param_1 = obj->pick(target);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n\n    public Solution(int[] nums) {\n        \n    }\n    \n    public int pick(int target) {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(nums);\n * int param_1 = obj.pick(target);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n\n    def __init__(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        \"\"\"\n        \n\n    def pick(self, target):\n        \"\"\"\n        :type target: int\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution(nums)\n# param_1 = obj.pick(target)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n\n    def __init__(self, nums: List[int]):\n        \n\n    def pick(self, target: int) -> int:\n        \n\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution(nums)\n# param_1 = obj.pick(target)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} Solution;\n\n\nSolution* solutionCreate(int* nums, int numsSize) {\n    \n}\n\nint solutionPick(Solution* obj, int target) {\n  \n}\n\nvoid solutionFree(Solution* obj) {\n    \n}\n\n/**\n * Your Solution struct will be instantiated and called as such:\n * Solution* obj = solutionCreate(nums, numsSize);\n * int param_1 = solutionPick(obj, target);\n \n * solutionFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n\n    public Solution(int[] nums) {\n        \n    }\n    \n    public int Pick(int target) {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(nums);\n * int param_1 = obj.Pick(target);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n */\nvar Solution = function(nums) {\n    \n};\n\n/** \n * @param {number} target\n * @return {number}\n */\nSolution.prototype.pick = function(target) {\n    \n};\n\n/** \n * Your Solution object will be instantiated and called as such:\n * var obj = new Solution(nums)\n * var param_1 = obj.pick(target)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class Solution\n\n=begin\n    :type nums: Integer[]\n=end\n    def initialize(nums)\n        \n    end\n\n\n=begin\n    :type target: Integer\n    :rtype: Integer\n=end\n    def pick(target)\n        \n    end\n\n\nend\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution.new(nums)\n# param_1 = obj.pick(target)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass Solution {\n\n    init(_ nums: [Int]) {\n        \n    }\n    \n    func pick(_ target: Int) -> Int {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * let obj = Solution(nums)\n * let ret_1: Int = obj.pick(target)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type Solution struct {\n    \n}\n\n\nfunc Constructor(nums []int) Solution {\n    \n}\n\n\nfunc (this *Solution) Pick(target int) int {\n    \n}\n\n\n/**\n * Your Solution object will be instantiated and called as such:\n * obj := Constructor(nums);\n * param_1 := obj.Pick(target);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class Solution(_nums: Array[Int]) {\n\n    def pick(target: Int): Int = {\n        \n    }\n\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * var obj = new Solution(nums)\n * var param_1 = obj.pick(target)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution(nums: IntArray) {\n\n    fun pick(target: Int): Int {\n        \n    }\n\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * var obj = Solution(nums)\n * var param_1 = obj.pick(target)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct Solution {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl Solution {\n\n    fn new(nums: Vec<i32>) -> Self {\n        \n    }\n    \n    fn pick(&self, target: i32) -> i32 {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * let obj = Solution::new(nums);\n * let ret_1: i32 = obj.pick(target);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n    /**\n     * @param Integer[] $nums\n     */\n    function __construct($nums) {\n        \n    }\n  \n    /**\n     * @param Integer $target\n     * @return Integer\n     */\n    function pick($target) {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * $obj = Solution($nums);\n * $ret_1 = $obj->pick($target);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"66.6K\", \"totalSubmission\": \"127.2K\", \"totalAcceptedRaw\": 66586, \"totalSubmissionRaw\": 127171, \"acRate\": \"52.4%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"Solution\",\"pick\"]\n[[[1,2,3,3,3]],[3]]",
+  "metaData": "{\r\n    \"classname\": \"Solution\",\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"name\": \"nums\",\r\n                \"type\": \"integer[]\"\r\n            },\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"numsSize\",\r\n                \"lang\": \"c\",\r\n                \"value\": \"size_1\"\r\n            }\r\n        ]\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"pick\",\r\n            \"params\": [\r\n                {\r\n                  \"name\": \"target\",\r\n                  \"type\": \"integer\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

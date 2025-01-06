@@ -1,0 +1,111 @@
+{
+  "questionId": "837",
+  "questionFrontendId": "819",
+  "boundTopicId": null,
+  "title": "Most Common Word",
+  "titleSlug": "most-common-word",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a paragraph&nbsp;and a list of banned words, return the most frequent word that is not in the list of banned words.&nbsp; It is guaranteed there is at least one word that isn&#39;t banned, and that the answer is unique.</p>\r\n\r\n<p>Words in the list of banned words are given in lowercase, and free of punctuation.&nbsp; Words in the paragraph are not case sensitive.&nbsp; The answer is in lowercase.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\nparagraph = &quot;Bob hit a ball, the hit BALL flew far after it was hit.&quot;\r\nbanned = [&quot;hit&quot;]\r\n<strong>Output:</strong> &quot;ball&quot;\r\n<strong>Explanation:</strong> \r\n&quot;hit&quot; occurs 3 times, but it is a banned word.\r\n&quot;ball&quot; occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph. \r\nNote that words in the paragraph are not case sensitive,\r\nthat punctuation is ignored (even if adjacent to words, such as &quot;ball,&quot;), \r\nand that &quot;hit&quot; isn&#39;t the answer even though it occurs more because it is banned.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note: </strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= paragraph.length &lt;= 1000</code>.</li>\r\n\t<li><code>0 &lt;= banned.length &lt;= 100</code>.</li>\r\n\t<li><code>1 &lt;= banned[i].length &lt;= 10</code>.</li>\r\n\t<li>The answer is unique, and written in lowercase (even if its occurrences in <code>paragraph</code>&nbsp;may have&nbsp;uppercase symbols, and even if it is a proper noun.)</li>\r\n\t<li><code>paragraph</code> only consists of letters, spaces, or the punctuation symbols <code>!?&#39;,;.</code></li>\r\n\t<li>There are no hyphens or hyphenated words.</li>\r\n\t<li>Words only consist of letters, never apostrophes or other punctuation symbols.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 435,
+  "dislikes": 1095,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 52}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string mostCommonWord(string paragraph, vector<string>& banned) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String mostCommonWord(String paragraph, String[] banned) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def mostCommonWord(self, paragraph, banned):\n        \"\"\"\n        :type paragraph: str\n        :type banned: List[str]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * mostCommonWord(char * paragraph, char ** banned, int bannedSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string MostCommonWord(string paragraph, string[] banned) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} paragraph\n * @param {string[]} banned\n * @return {string}\n */\nvar mostCommonWord = function(paragraph, banned) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} paragraph\r\n# @param {String[]} banned\r\n# @return {String}\r\ndef most_common_word(paragraph, banned)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func mostCommonWord(_ paragraph: String, _ banned: [String]) -> String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func mostCommonWord(paragraph string, banned []string) string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def mostCommonWord(paragraph: String, banned: Array[String]): String = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun mostCommonWord(paragraph: String, banned: Array<String>): String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn most_common_word(paragraph: String, banned: Vec<String>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $paragraph\n     * @param String[] $banned\n     * @return String\n     */\n    function mostCommonWord($paragraph, $banned) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"101.2K\", \"totalSubmission\": \"233.3K\", \"totalAcceptedRaw\": 101175, \"totalSubmissionRaw\": 233311, \"acRate\": \"43.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "450",
+    "canSeeDetail": true,
+    "url": "/articles/most-common-word/",
+    "content": "[TOC]\n\n---\n\n#### Approach #1: Counting [Accepted]\n\n**Intuition**\n\nThis problem is about the implementation, as the question tells us how to solve the problem. We'll count each word separately, ignoring punctuation and converting each word to lowercase. The word with the highest frequency that isn't in the banned list is the answer.\n\n**Algorithm**\n\nWe'll need some `count` of words (converted to lowercase) that we have seen in the paragraph. As we iterate through the paragraph, we will collect these words (with punctuation removed and converted to lowercase).\n\nThere are two ways we could try to collect these words: we could try to split the paragraph (delimited by spaces) and then clean up the fragment like `\"Bob!\"` to be `\"bob\"`. Or, we could add characters one by one to build the next word, stopping when we reach a character that isn't a letter.\n\nFor each word (lowercase, and free of punctuation), we'll update our count and update the answer if the count of that word is highest (and the word is not banned.)\n\n<iframe src=\"https://leetcode.com/playground/vAHSEpAf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"vAHSEpAf\"></iframe>\n\n**Complexity Analysis**\n\n- Time Complexity: $$O(P + B)$$, where $$P$$ is the size of `paragraph` and $$B$$ is the size of `banned`.\n\n- Space Complexity: $$O(P + B)$$, to store the `count` and the banned set.\n\n---\n\nAnalysis written by [@awice](https://leetcode.com/awice) and editted by [@Khaled](https://leetcode.com/khaled-ali).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "445",
+      "count": 119,
+      "average": 1.689,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"Bob hit a ball, the hit BALL flew far after it was hit.\"\n[\"hit\"]",
+  "metaData": "{\r\n  \"name\": \"mostCommonWord\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"paragraph\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"banned\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

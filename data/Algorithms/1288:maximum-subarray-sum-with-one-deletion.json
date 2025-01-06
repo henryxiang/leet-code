@@ -1,0 +1,97 @@
+{
+  "questionId": "1288",
+  "questionFrontendId": "1186",
+  "boundTopicId": null,
+  "title": "Maximum Subarray Sum with One Deletion",
+  "titleSlug": "maximum-subarray-sum-with-one-deletion",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers, return the maximum sum for a <strong>non-empty</strong>&nbsp;subarray (contiguous elements) with at most one element deletion.&nbsp;In other words, you want to choose a subarray and optionally delete one element from it so that there is still at least one element left and the&nbsp;sum of the remaining elements is maximum possible.</p>\r\n\r\n<p>Note that the subarray needs to be <strong>non-empty</strong> after deleting one element.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr = [1,-2,0,3]\r\n<strong>Output:</strong> 4\r\n<strong>Explanation: </strong>Because we can choose [1, -2, 0, 3] and drop -2, thus the subarray [1, 0, 3] becomes the maximum value.</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr = [1,-2,-2,3]\r\n<strong>Output:</strong> 3\r\n<strong>Explanation: </strong>We just choose [3] and it&#39;s the maximum sum.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr = [-1,-1,-1,-1]\r\n<strong>Output:</strong> -1\r\n<strong>Explanation:</strong>&nbsp;The final subarray needs to be non-empty. You can&#39;t choose [-1] and delete -1 from it, then get an empty subarray to make the sum equals to 0.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= arr.length &lt;= 10^5</code></li>\r\n\t<li><code>-10^4 &lt;= arr[i] &lt;= 10^4</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 277,
+  "dislikes": 12,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int maximumSum(vector<int>& arr) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maximumSum(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def maximumSum(self, arr):\r\n        \"\"\"\r\n        :type arr: List[int]\r\n        :rtype: int\r\n        \"\"\""
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def maximumSum(self, arr: List[int]) -> int:"
+    },
+    {
+      "lang": "C",
+      "code": "int maximumSum(int* arr, int arrSize){\r\n\r\n}"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int MaximumSum(int[] arr) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {number[]} arr\r\n * @return {number}\r\n */\r\nvar maximumSum = function(arr) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\r\n# @return {Integer}\r\ndef maximum_sum(arr)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func maximumSum(_ arr: [Int]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maximumSum(arr []int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def maximumSum(arr: Array[Int]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun maximumSum(arr: IntArray): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn maximum_sum(arr: Vec<i32>) -> i32 {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param Integer[] $arr\r\n     * @return Integer\r\n     */\r\n    function maximumSum($arr) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"8.9K\", \"totalSubmission\": \"25.6K\", \"totalAcceptedRaw\": 8943, \"totalSubmissionRaw\": 25645, \"acRate\": \"34.9%\"}",
+  "hints": [
+    "How to solve this problem if no deletions are allowed ?",
+    "Try deleting each element and find the maximum subarray sum to both sides of that element.",
+    "To do that efficiently, use the idea of Kadane's algorithm."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,-2,0,3]",
+  "metaData": "{\n  \"name\": \"maximumSum\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

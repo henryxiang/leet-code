@@ -1,0 +1,100 @@
+{
+  "questionId": "1057",
+  "questionFrontendId": "1012",
+  "boundTopicId": null,
+  "title": "Numbers With Repeated Digits",
+  "titleSlug": "numbers-with-repeated-digits",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a positive integer <code>N</code>, return the number of positive integers less than or equal to <code>N</code> that have at least 1 repeated digit.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">20</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">1</span>\r\n<strong>Explanation: </strong>The only positive number (&lt;= 20) with at least 1 repeated digit is 11.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">100</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">10</span>\r\n<strong>Explanation: </strong>The positive numbers (&lt;= 100) with atleast 1 repeated digit are 11, 22, 33, 44, 55, 66, 77, 88, 99, and 100.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">1000</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">262</span>\r\n</pre>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><span>Note:</span></strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= N &lt;= 10^9</code></li>\r\n</ol>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 122,
+  "dislikes": 38,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numDupDigitsAtMostN(int N) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numDupDigitsAtMostN(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numDupDigitsAtMostN(self, N):\n        \"\"\"\n        :type N: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numDupDigitsAtMostN(self, N: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numDupDigitsAtMostN(int N){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int NumDupDigitsAtMostN(int N) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @return {number}\n */\nvar numDupDigitsAtMostN = function(N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\r\n# @return {Integer}\r\ndef num_dup_digits_at_most_n(n)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func numDupDigitsAtMostN(_ N: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numDupDigitsAtMostN(N int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def numDupDigitsAtMostN(N: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun numDupDigitsAtMostN(N: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_dup_digits_at_most_n(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @return Integer\n     */\n    function numDupDigitsAtMostN($N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.9K\", \"totalSubmission\": \"10.6K\", \"totalAcceptedRaw\": 3851, \"totalSubmissionRaw\": 10608, \"acRate\": \"36.3%\"}",
+  "hints": [
+    "How many numbers with no duplicate digits?  How many numbers with K digits and no duplicates?",
+    "How many numbers with same length as N?  How many numbers with same prefix as N?"
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "20",
+  "metaData": "{\r\n  \"name\": \"numDupDigitsAtMostN\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

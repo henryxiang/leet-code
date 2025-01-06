@@ -1,0 +1,110 @@
+{
+  "questionId": "73",
+  "questionFrontendId": "73",
+  "boundTopicId": null,
+  "title": "Set Matrix Zeroes",
+  "titleSlug": "set-matrix-zeroes",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <em>m</em> x <em>n</em> matrix, if an element is 0, set its entire row and column to 0. Do it <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\"><strong>in-place</strong></a>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\n[\r\n&nbsp; [1,1,1],\r\n&nbsp; [1,0,1],\r\n&nbsp; [1,1,1]\r\n]\r\n<strong>Output:</strong> \r\n[\r\n&nbsp; [1,0,1],\r\n&nbsp; [0,0,0],\r\n&nbsp; [1,0,1]\r\n]\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\n[\r\n&nbsp; [0,1,2,0],\r\n&nbsp; [3,4,5,2],\r\n&nbsp; [1,3,1,5]\r\n]\r\n<strong>Output:</strong> \r\n[\r\n&nbsp; [0,0,0,0],\r\n&nbsp; [0,4,5,0],\r\n&nbsp; [0,3,1,0]\r\n]\r\n</pre>\r\n\r\n<p><strong>Follow up:</strong></p>\r\n\r\n<ul>\r\n\t<li>A straight forward solution using O(<em>m</em><em>n</em>) space is probably a bad idea.</li>\r\n\t<li>A simple improvement uses O(<em>m</em> + <em>n</em>) space, but still not the best solution.</li>\r\n\t<li>Could you devise a constant space solution?</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1446,
+  "dislikes": 245,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Game of Life\", \"titleSlug\": \"game-of-life\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"TripAdvisor\", \"slug\": \"tripadvisor\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Docusign\", \"slug\": \"docusign\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    void setZeroes(vector<vector<int>>& matrix) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public void setZeroes(int[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def setZeroes(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: None Do not return anything, modify matrix in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def setZeroes(self, matrix: List[List[int]]) -> None:\n        \"\"\"\n        Do not return anything, modify matrix in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nvoid setZeroes(int** matrix, int matrixSize, int* matrixColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public void SetZeroes(int[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} matrix\n * @return {void} Do not return anything, modify matrix in-place instead.\n */\nvar setZeroes = function(matrix) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} matrix\n# @return {Void} Do not return anything, modify matrix in-place instead.\ndef set_zeroes(matrix)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func setZeroes(_ matrix: inout [[Int]]) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func setZeroes(matrix [][]int)  {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def setZeroes(matrix: Array[Array[Int]]): Unit = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun setZeroes(matrix: Array<IntArray>): Unit {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn set_zeroes(matrix: &mut Vec<Vec<i32>>) {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @return NULL\n     */\n    function setZeroes(&$matrix) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"258.1K\", \"totalSubmission\": \"621.4K\", \"totalAcceptedRaw\": 258075, \"totalSubmissionRaw\": 621380, \"acRate\": \"41.5%\"}",
+  "hints": [
+    "If any cell of the matrix has a zero we can record its row and column number using additional memory.\r\nBut if you don't want to use extra memory then you can manipulate the array instead. i.e. simulating exactly what the question says.",
+    "Setting cell values to zero on the fly while iterating might lead to discrepancies. What if you use some other integer value as your marker?\r\nThere is still a better approach for this problem with 0(1) space.",
+    "We could have used 2 sets to keep a record of rows/columns which need to be set to zero. But for an O(1) space solution, you can use one of the rows and and one of the columns to keep track of this information.",
+    "We can use the first cell of every row and column as a flag. This flag would determine whether a row or column has been set to zero."
+  ],
+  "solution": {
+    "id": "578",
+    "canSeeDetail": true,
+    "url": "/articles/set-matrix-zeroes/",
+    "content": "[TOC]\n\n## Solution\n---\n\nThe question seems to be pretty simple but the trick here is that we need to modify the given matrix in place i.e. our space complexity needs to $$O(1)$$.\n\nWe will go through three different approaches to the question. The first approach makes use of additional memory while the other two don't.\n<br/>\n<br/>\n\n---\n\n#### Approach 1: Additional Memory Approach\n\n**Intuition**\n\nIf any cell of the matrix has a zero we can record its row and column number. All the cells of this recorded row and column can be marked zero in the next iteration.\n\n**Algorithm**\n\n1. We make a pass over our original array and look for zero entries.\n2. If we find that an entry at `[i, j]` is 0, then we need to record somewhere the row `i` and column `j`.\n3. So, we use two `sets`, one for the rows and one for the columns.\n    <pre>\n    if cell[i][j] == 0 {\n        row_set.add(i)\n        column_set.add(j)\n    }</pre>\n\n4. Finally, we iterate over the original matrix. For every cell we check if the row `r` or column `c` had been marked earlier. If any of them was marked, we set the value in the cell to 0.\n    <pre>\n    if r in row_set or c in column_set {\n        cell[r][c] = 0\n    }</pre>\n\n<iframe src=\"https://leetcode.com/playground/kPV6bYHr/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"kPV6bYHr\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(M \\times N)$$ where M and N are the number of rows and columns respectively.\n\n* Space Complexity: $$O(M + N)$$.\n<br/>\n<br/>\n\n---\n\n#### Approach 2: Brute O(1) space.\n\n**Intuition**\n\nIn the above approach we use additional memory to keep a track of rows and columns which need to be set to zero. This additional use of space can be avoided by manipulating the original array instead.  \n\n**Algorithm**\n\n1. Iterate over the original array and if we find an entry, say `cell[i][j]` to be 0, then we iterate over row `i` and column `j` separately and set all the **non zero** elements to some high negative dummy value (say `-1000000`). Note, choosing the right dummy value for your solution is dependent on the constraints of the problem. Any value outside the range of permissible values in the matrix will work as a dummy value. \n2. Finally, we iterate over the original matrix and if we find an entry to be equal to the high negative value (constant defined initially in the code as `MODIFIED`), then we set the value in the cell to 0.\n\n<iframe src=\"https://leetcode.com/playground/3qUZbzut/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"3qUZbzut\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity : $$O((M \\times N) \\times (M + N))$$ where M and N are the number of rows and columns respectively. Even though this solution avoids using space, but is very inefficient since in worst case for every cell we might have to zero out its corresponding row and column. Thus for all $$(M \\times N)$$ cells zeroing out $$(M +  N)$$ cells.  \n* Space Complexity : $$O(1)$$\n<br/>\n<br/>\n\n---\n\n#### Approach 3: O(1) Space, Efficient Solution\n\n**Intuition**\n\nThe inefficiency in the second approach is that we might be repeatedly setting a row or column even if it was set to zero already. We can avoid this by postponing the step of setting a row or a column to zeroes.\n\n> We can rather use the first cell of every row and column as a flag. This flag would determine whether a row or column has been set to zero. This means for every cell instead of going to $$M+N$$ cells and setting it to zero we just set the flag in two cells.\n\n<pre>\nif cell[i][j] == 0 {\n    cell[i][0] = 0\n    cell[0][j] = 0\n}\n</pre>\n\n These flags are used later to update the matrix. If the first cell of a row is set to zero this means the row should be marked zero. If the first cell of a column is set to zero this means the column should be marked zero.\n\n**Algorithm**\n\n1. We iterate over the matrix and we mark the first cell of a row `i` and first cell of a column `j`, if the condition in the pseudo code above is satisfied. i.e. if `cell[i][j] == 0`.\n\n2. The first cell of row and column for the first row and first column is the same i.e. `cell[0][0]`. Hence, we use an additional variable to tell us if the first column had been marked or not and the `cell[0][0]` would be used to tell the same for the first row.\n\n3. Now, we iterate over the original matrix starting from second row and second column i.e. `matrix[1][1]` onwards. For every cell we check if the row `r` or column `c` had been marked earlier by checking the respective first row cell or first column cell. If any of them was marked, we set the value in the cell to 0. Note the first row and first column serve as the `row_set` and `column_set` that we used in the first approach.\n\n5. We then check if `cell[0][0] == 0`, if this is the case, we mark the first row as zero.\n\n6. And finally, we check if the first column was marked, we make all entries in it as zeros.\n\n!?!../Documents/73_Matrix_Zeroes.json:1000,400!?!\n\nIn the above animation we iterate all the cells and mark the corresponding first row/column cell incase of a cell with zero value.\n\n<center>\n<img src=\"../Figures/73/MatrixZeros_18_1.png\" width=\"400\"/>\n</center>\n\nWe iterate the matrix we got from the above steps and mark respective cells zeroes.\n\n<center>\n<img src=\"../Figures/73/MatrixZeros_18_2.png\" width=\"400\"/>\n</center>\n\n<br>\n\n<iframe src=\"https://leetcode.com/playground/2tGE5XF8/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"2tGE5XF8\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity : $$O(M \\times N)$$\n* Space Complexity : $$O(1)$$\n\n<br/><br/>\n\n---\nAnalysis written by: [@godayaldivya](https://leetcode.com/godayaldivya/).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "566",
+      "count": 54,
+      "average": 4.333,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,1,1],[1,0,1],[1,1,1]]",
+  "metaData": "{\r\n  \"name\": \"setZeroes\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"matrix\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"void\"\r\n  },\r\n  \"output\": {\r\n    \"paramindex\": 0\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

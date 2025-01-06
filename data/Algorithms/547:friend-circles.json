@@ -1,0 +1,115 @@
+{
+  "questionId": "547",
+  "questionFrontendId": "547",
+  "boundTopicId": null,
+  "title": "Friend Circles",
+  "titleSlug": "friend-circles",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nThere are <b>N</b> students in a class. Some of them are friends, while some are not. Their friendship is transitive in nature. For example, if A is a <b>direct</b> friend of B, and B is a <b>direct</b> friend of C, then A is an <b>indirect</b> friend of C. And we defined a friend circle is a group of students who are direct or indirect friends.\r\n</p>\r\n\r\n<p>\r\nGiven a <b>N*N</b> matrix <b>M</b> representing the friend relationship between students in the class. If M[i][j] = 1, then the i<sub>th</sub> and j<sub>th</sub> students are <b>direct</b> friends with each other, otherwise not. And you have to output the total number of friend circles among all the students.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\n[[1,1,0],\r\n [1,1,0],\r\n [0,0,1]]\r\n<b>Output:</b> 2\r\n<b>Explanation:</b>The 0<sub>th</sub> and 1<sub>st</sub> students are direct friends, so they are in a friend circle. <br/>The 2<sub>nd</sub> student himself is in a friend circle. So return 2.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\n[[1,1,0],\r\n [1,1,1],\r\n [0,1,1]]\r\n<b>Output:</b> 1\r\n<b>Explanation:</b>The 0<sub>th</sub> and 1<sub>st</sub> students are direct friends, the 1<sub>st</sub> and 2<sub>nd</sub> students are direct friends, <br/>so the 0<sub>th</sub> and 2<sub>nd</sub> students are indirect friends. All of them are in the same friend circle, so return 1.\r\n</pre>\r\n</p>\r\n\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>N is in range [1,200].</li>\r\n<li>M[i][i] = 1 for all students.</li>\r\n<li>If M[i][j] = 1, then M[j][i] = 1.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1370,
+  "dislikes": 107,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Number of Connected Components in an Undirected Graph\", \"titleSlug\": \"number-of-connected-components-in-an-undirected-graph\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Robot Return to Origin\", \"titleSlug\": \"robot-return-to-origin\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sentence Similarity\", \"titleSlug\": \"sentence-similarity\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sentence Similarity II\", \"titleSlug\": \"sentence-similarity-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"The Earliest Moment When Everyone Become Friends\", \"titleSlug\": \"the-earliest-moment-when-everyone-become-friends\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "flinkseeds",
+      "profileUrl": "/flinkseeds/",
+      "avatarUrl": "https://assets.leetcode.com/users/flinkseeds/avatar_1551566309.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Drawbridge\", \"slug\": \"drawbridge\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 17}, {\"taggedByAdmin\": false, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findCircleNum(vector<vector<int>>& M) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findCircleNum(int[][] M) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findCircleNum(self, M):\n        \"\"\"\n        :type M: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findCircleNum(self, M: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findCircleNum(int** M, int MSize, int* MColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindCircleNum(int[][] M) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} M\n * @return {number}\n */\nvar findCircleNum = function(M) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} m\n# @return {Integer}\ndef find_circle_num(m)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findCircleNum(_ M: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findCircleNum(M [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findCircleNum(M: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findCircleNum(M: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_circle_num(m: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $M\n     * @return Integer\n     */\n    function findCircleNum($M) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"121.9K\", \"totalSubmission\": \"217K\", \"totalAcceptedRaw\": 121898, \"totalSubmissionRaw\": 217025, \"acRate\": \"56.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "101",
+    "canSeeDetail": true,
+    "url": "/articles/friend-circles/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Using Depth First Search[Accepted]\n\n**Algorithm**\n\nThe given matrix can be viewed as the Adjacency Matrix of a graph. By viewing the matrix in such a manner, our problem reduces\nto the problem of finding the number of connected components in an undirected graph. In order to understand the above statement, consider the\nexample matrix below:\n\n```\nM= [1 1 0 0 0 0\n\n    1 1 0 0 0 0\n\n    0 0 1 1 1 0\n\n    0 0 1 1 0 0\n\n    0 0 1 0 1 0\n\n    0 0 0 0 0 1]\n\n```\n\nIf we view this matrix M as the adjancency matrix of a graph, the following graph is formed:\n\n![Friend_Circles](../Figures/647_Friend_Circles_1.jpg)\n\nIn this graph, the node numbers represent the indices in the matrix M and an edge exists between the nodes numbered $$i$$ and $$j$$,\nif there is a 1 at the corresponding $$M[i][j]$$.\n\nIn order to find the number of connected components in an undirected graph, one of the simplest methods is to make use of Depth First Search\nstarting from every node. We make use of $$visited$$ array of size $$N$$($$M$$ is of size $$NxN$$). This $$visited[i]$$ element\nis used to indicate that the $$i^{th}$$ node has already been visited while undergoing a Depth First Search from some node.\n\nTo undergo DFS, we pick up a node and visit all its directly connected nodes. But, as soon as we visit any of those nodes, we recursively apply the same process to them as well. Thus, we try to go as deeper into the levels of the graph as possible starting from a current node first, leaving the other direct neighbour nodes to be visited later on.\n\nThe depth first search for an arbitrary graph is shown below:\n\n<!--![Friend_Circles](../Figures/647_Friend_Circles2.gif)-->\n\n!?!../Documents/547_Friend_Circles_dfs.json:1000,563!?!\n\nFrom the graph, we can see that the components which are connected can be reached starting from any single node of the connected group.\nThus, to find the number of connected components, we start from every node which isn't visited right now and apply DFS starting with it.\nWe increment the $$count$$ of connected components for every new starting node.\n\n\n<iframe src=\"https://leetcode.com/playground/YcWQPXNS/shared\" frameBorder=\"0\" name=\"YcWQPXNS\" width=\"100%\" height=\"445\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. The complete matrix of size $$n^2$$ is traversed.\n\n* Space complexity : $$O(n)$$. $$visited$$ array of size $$n$$ is used.\n\n---\n\n#### Approach #2 Using Breadth First Search[Accepted]\n\n**Algorithm**\n\nAs discussed in the above method, if we view the given matrix as an adjacency matrix of a graph, we can use graph algorithms easily to find the number of connected components. This approach makes use of Breadth First Search for a graph.\n\nIn case of Breadth First Search, we start from a particular node and visit all its directly connected nodes first. After all the direct neighbours have been visited, we apply the same process to the neighbour nodes as well. Thus, we exhaust the nodes of a graph on a level by level basis. An example of Breadth First Search is shown below:\n\n<!--![Friend_Circles](../Figures/647_Friend_Circles3.gif)-->\n!?!../Documents/547_Friend_Circles_bfs.json:1000,563!?!\n\nIn this case also, we apply BFS starting from one of the nodes. We make use of a $$visited$$ array to keep a track of the already visited nodes. We increment the $$count$$ of connected components whenever we need to start off with a new node as the root node for applying BFS which hasn't been already visited.\n\n<iframe src=\"https://leetcode.com/playground/srJD42Lf/shared\" frameBorder=\"0\" name=\"srJD42Lf\" width=\"100%\" height=\"428\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. The complete matrix of size $$n^2$$ is traversed.\n\n* Space complexity : $$O(n)$$. A $$queue$$ and $$visited$$ array of size $$n$$ is used.\n\n---\n\n\n#### Approach #3 Using Union-Find Method[Accepted]\n\n**Algorithm**\n\nAnother method that can be used to determine the number of connected components in a graph is the union find method. The method is simple.\n\nWe make use of a $$parent$$ array of size $$N$$. We traverse over all the nodes of the graph. For every node traversed, we traverse over all the nodes directly connected to it and assign them to a single group which is represented by their $$parent$$ node. This process is called forming a $$union$$. Every group has a single $$parent$$ node, whose own parent is given by $$\\text{-1}$$.\n\nFor every new pair of nodes found, we look for the parents of both the nodes. If the parents nodes are the same, it indicates that they have already been united into the same group. If the parent nodes differ, it means they are yet to be united. Thus, for the pair of nodes $$(x, y)$$, while forming the union, we assign $$parent\\big[parent[x]\\big]=parent[y]$$, which ultimately combines them into the same group.\n\nThe following animation depicts the process for a simple matrix:\n\n<!--![Friend_Circles](../Figures/647_Friend_Circles4.gif)-->\n\n!?!../Documents/547_Friend_Circles_dfs.json:1000,563!?!\n\nAt the end, we find the number of groups, or the number of parent nodes. Such nodes have their parents indicated by a $$\\text{-1}$$. This gives us the required count.\n\n\n<iframe src=\"https://leetcode.com/playground/LC2i2T7b/shared\" frameBorder=\"0\" name=\"LC2i2T7b\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^3)$$. We traverse over the complete matrix once. Union and find operations take $$O(n)$$ time in the worst case.\n* Space complexity : $$O(n)$$. $$parent$$ array of size $$n$$ is used.\n\n---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "100",
+      "count": 23,
+      "average": 4.435,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,1,0],[1,1,0],[0,0,1]]",
+  "metaData": "{\r\n  \"name\": \"findCircleNum\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"M\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

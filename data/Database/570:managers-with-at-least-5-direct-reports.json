@@ -1,0 +1,76 @@
+{
+  "questionId": "570",
+  "questionFrontendId": "570",
+  "boundTopicId": null,
+  "title": "Managers with at Least 5 Direct Reports",
+  "titleSlug": "managers-with-at-least-5-direct-reports",
+  "categoryTitle": "Database",
+  "content": "<p>The <code>Employee</code> table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.</p>\r\n\r\n<pre>\r\n+------+----------+-----------+----------+\r\n|Id    |Name \t  |Department |ManagerId |\r\n+------+----------+-----------+----------+\r\n|101   |John \t  |A \t      |null      |\r\n|102   |Dan \t  |A \t      |101       |\r\n|103   |James \t  |A \t      |101       |\r\n|104   |Amy \t  |A \t      |101       |\r\n|105   |Anne \t  |A \t      |101       |\r\n|106   |Ron \t  |B \t      |101       |\r\n+------+----------+-----------+----------+\r\n</pre>\r\n\r\n<p>Given the <code>Employee</code> table, write a SQL query that finds out managers with at least 5 direct report. For the above table, your SQL query should return:</p>\r\n\r\n<pre>\r\n+-------+\r\n| Name  |\r\n+-------+\r\n| John  |\r\n+-------+\r\n</pre>\r\n\r\n<p><b>Note:</b><br />\r\nNo one would report to himself.</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 85,
+  "dislikes": 7,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Douglas1612",
+      "profileUrl": "/douglas1612/",
+      "avatarUrl": "https://www.gravatar.com/avatar/8e60a4b596b7a8ba118c776bac2a0b04.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.1K\", \"totalSubmission\": \"26.6K\", \"totalAcceptedRaw\": 17123, \"totalSubmissionRaw\": 26597, \"acRate\": \"64.4%\"}",
+  "hints": [
+    "Try to get all the mangerIDs that have count bigger than 5",
+    "Use the last hint's result as a table and do join with origin table at id equals to managerId",
+    "This is a very good example to show the performance of SQL code. Try to work out other solutions and you may be surprised by running time difference.",
+    "If your solution uses 'IN' function and runs more than 5 seconds, try to optimize it by using 'JOIN' instead."
+  ],
+  "solution": {
+    "id": "209",
+    "canSeeDetail": true,
+    "url": "/articles/managers-with-at-least-5-direct-reports/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `JOIN` and a temporary table [Accepted]\n\n**Algorithm**\n\nFirst, we can get the Id of the manager having more than 5 direct reports just using this *ManagerId* column.\n\nThen, we can get the name of this manager by join that table with the **Employee** table.\n\n**MySQL**\n\n```sql\nSELECT\n    Name\nFROM\n    Employee AS t1 JOIN\n    (SELECT\n        ManagerId\n    FROM\n        Employee\n    GROUP BY ManagerId\n    HAVING COUNT(ManagerId) >= 5) AS t2\n    ON t1.Id = t2.ManagerId\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "204",
+      "count": 4,
+      "average": 3.75,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"Employee\": [\"Id\", \"Name\", \"Department\", \"ManagerId\"]}, \"rows\": {\"Employee\": [[101, \"John\", \"A\", null],[102, \"Dan\", \"A\", 101], [103, \"James\", \"A\", 101], [104, \"Amy\", \"A\", 101], [105, \"Anne\", \"A\", 101], [106, \"Ron\", \"B\", 101]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists Employee (Id int, Name varchar(255), Department varchar(255), ManagerId int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table Employee (Id int, Name varchar(255), Department varchar(255), ManagerId int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table Employee (Id int, Name varchar(255), Department varchar(255), ManagerId int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Employee (Id int, Name varchar(255), Department varchar(255), ManagerId int)",
+    "Truncate table Employee",
+    "insert into Employee (Id, Name, Department, ManagerId) values ('101', 'John', 'A', 'None')",
+    "insert into Employee (Id, Name, Department, ManagerId) values ('102', 'Dan', 'A', '101')",
+    "insert into Employee (Id, Name, Department, ManagerId) values ('103', 'James', 'A', '101')",
+    "insert into Employee (Id, Name, Department, ManagerId) values ('104', 'Amy', 'A', '101')",
+    "insert into Employee (Id, Name, Department, ManagerId) values ('105', 'Anne', 'A', '101')",
+    "insert into Employee (Id, Name, Department, ManagerId) values ('106', 'Ron', 'B', '101')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

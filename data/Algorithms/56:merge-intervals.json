@@ -1,0 +1,109 @@
+{
+  "questionId": "56",
+  "questionFrontendId": "56",
+  "boundTopicId": null,
+  "title": "Merge Intervals",
+  "titleSlug": "merge-intervals",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a collection of intervals, merge all overlapping intervals.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [[1,3],[2,6],[8,10],[15,18]]\r\n<strong>Output:</strong> [[1,6],[8,10],[15,18]]\r\n<strong>Explanation:</strong> Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [[1,4],[4,5]]\r\n<strong>Output:</strong> [[1,5]]\r\n<strong>Explanation:</strong> Intervals [1,4] and [4,5] are considered overlapping.</pre>\r\n\r\n<p><strong>NOTE:</strong>&nbsp;input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2954,
+  "dislikes": 229,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Insert Interval\", \"titleSlug\": \"insert-interval\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Meeting Rooms\", \"titleSlug\": \"meeting-rooms\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Meeting Rooms II\", \"titleSlug\": \"meeting-rooms-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Teemo Attacking\", \"titleSlug\": \"teemo-attacking\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Add Bold Tag in String\", \"titleSlug\": \"add-bold-tag-in-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Range Module\", \"titleSlug\": \"range-module\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Employee Free Time\", \"titleSlug\": \"employee-free-time\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Partition Labels\", \"titleSlug\": \"partition-labels\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Interval List Intersections\", \"titleSlug\": \"interval-list-intersections\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 25}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 11}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Zulily\", \"slug\": \"zulily\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Postmates\", \"slug\": \"postmates\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"DoorDash\", \"slug\": \"doordash\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Sumologic\", \"slug\": \"sumologic\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cruise Automation\", \"slug\": \"cruise-automation\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"GoDaddy\", \"slug\": \"godaddy\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Dataminr\", \"slug\": \"dataminr\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zenefits\", \"slug\": \"zenefits\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twitch\", \"slug\": \"twitch\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<vector<int>> merge(vector<vector<int>>& intervals) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[][] merge(int[][] intervals) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def merge(self, intervals):\n        \"\"\"\n        :type intervals: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def merge(self, intervals: List[List[int]]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** merge(int** intervals, int intervalsSize, int* intervalsColSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[][] Merge(int[][] intervals) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} intervals\n * @return {number[][]}\n */\nvar merge = function(intervals) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} intervals\r\n# @return {Integer[][]}\r\ndef merge(intervals)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func merge(_ intervals: [[Int]]) -> [[Int]] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func merge(intervals [][]int) [][]int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def merge(intervals: Array[Array[Int]]): Array[Array[Int]] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun merge(intervals: Array<IntArray>): Array<IntArray> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn merge(intervals: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $intervals\n     * @return Integer[][]\n     */\n    function merge($intervals) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"463.4K\", \"totalSubmission\": \"1.2M\", \"totalAcceptedRaw\": 463432, \"totalSubmissionRaw\": 1237354, \"acRate\": \"37.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "294",
+    "canSeeDetail": true,
+    "url": "/articles/merge-intervals/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Connected Components\n\n**Intuition**\n\nIf we draw a graph (with intervals as nodes) that contains undirected edges\nbetween all pairs of intervals that overlap, then all intervals in each\n*connected component* of the graph can be merged into a single interval.\n\n**Algorithm**\n\nWith the above intuition in mind, we can represent the graph as an adjacency\nlist, inserting directed edges in both directions to simulate undirected\nedges. Then, to determine which connected component each node is it, we\nperform graph traversals from arbitrary unvisited nodes until all nodes have\nbeen visited. To do this efficiently, we store visited nodes in a `Set`,\nallowing for constant time containment checks and insertion. Finally, we\nconsider each connected component, merging all of its intervals by\nconstructing a new `Interval` with `start` equal to the minimum start among\nthem and `end` equal to the maximum end.\n\nThis algorithm is correct simply because it is basically the brute force\nsolution. We compare every interval to every other interval, so we know\nexactly which intervals overlap. The reason for the connected component\nsearch is that two intervals may not directly overlap, but might overlap\nindirectly via a third interval. See the example below to see this more\nclearly.\n\n![Components Example](../Figures/56/component.png)\n{:align=\"center\"}\n\nAlthough (1, 5) and (6, 10) do not directly overlap, either would overlap\nwith the other if first merged with (4, 7). There are two connected\ncomponents, so if we merge their nodes, we expect to get the following two\nmerged intervals:\n\n(1, 10), (15, 20)\n\n\n<iframe src=\"https://leetcode.com/playground/FdD8vWwU/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"FdD8vWwU\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$\n\n    Building the graph costs $$O(V + E) = O(V) + O(E) = O(n) + O(n^2) = O(n^2)$$\n    time, as in the worst case all intervals are mutually overlapping.\n    Traversing the graph has the same cost (although it might appear higher\n    at first) because our `visited` set guarantees that each node will be\n    visited exactly once. Finally, because each node is part of exactly one\n    component, the merge step costs $$O(V) = O(n)$$ time. This all adds up as\n    follows:\n\n    $$\n        O(n^2) + O(n^2) + O(n) = O(n^2)\n    $$\n\n* Space complexity : $$O(n^2)$$\n\n    As previously mentioned, in the worst case, all intervals are mutually\n    overlapping, so there will be an edge for every pair of intervals.\n    Therefore, the memory footprint is quadratic in the input size.\n\n<br />\n\n---\n\n#### Approach 2: Sorting\n\n**Intuition**\n\nIf we sort the intervals by their `start` value, then each set of intervals\nthat can be merged will appear as a contiguous \"run\" in the sorted list.\n\n**Algorithm**\n\nFirst, we sort the list as described. Then, we insert the first interval into\nour `merged` list and continue considering each interval in turn as follows:\nIf the current interval begins *after* the previous interval ends, then they\ndo not overlap and we can append the current interval to `merged`. Otherwise,\nthey do overlap, and we merge them by updating the `end` of the previous\ninterval if it is less than the `end` of the current interval.\n\nA simple proof by contradiction shows that this algorithm always produces the\ncorrect answer. First, suppose that the algorithm at some point fails to\nmerge two intervals that should be merged. This would imply that there exists\nsome triple of indices $$i$$, $$j$$, and $$k$$ in a list of intervals\n$$ints$$ such that $$i < j < k$$ and ($$ints[i]$$, $$ints[k]$$) can be\nmerged, but neither ($$ints[i]$$, $$ints[j]$$) nor ($$ints[j]$$, $$ints[k]$$)\ncan be merged. From this scenario follow several inequalities:\n\n$$\n\\begin{aligned}\n    ints[i].end < ints[j].start \\\\\n    ints[j].end < ints[k].start \\\\\n    ints[i].end \\geq ints[k].start \\\\\n\\end{aligned}\n$$\n\nWe can chain these inequalities (along with the following inequality, implied\nby the well-formedness of the intervals: $$ints[j].start \\leq ints[j].end$$) to\ndemonstrate a contradiction:\n\n$$\n\\begin{aligned}\n    ints[i].end < ints[j].start \\leq ints[j].end < ints[k].start \\\\\n    ints[i].end \\geq ints[k].start\n\\end{aligned}\n$$\n\nTherefore, all mergeable intervals must occur in a contiguous run of the\nsorted list.\n\n![Sorting Example](../Figures/56/sort.png)\n{:align=\"center\"}\n\n\nConsider the example above, where the intervals are sorted, and then all\nmergeable intervals form contiguous blocks.\n\n<iframe src=\"https://leetcode.com/playground/Zum7wj5V/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Zum7wj5V\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n\\log{}n)$$\n\n    Other than the `sort` invocation, we do a simple linear scan of the list,\n    so the runtime is dominated by the $$O(nlgn)$$ complexity of sorting.\n\n* Space complexity : $$O(1)$$ (or $$O(n)$$)\n\n    If we can sort `intervals` in place, we do not need more than constant\n    additional space. Otherwise, we must allocate linear space to store a\n    copy of `intervals` and sort that.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "289",
+      "count": 67,
+      "average": 4.597,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,3],[2,6],[8,10],[15,18]]",
+  "metaData": "{\r\n  \"name\": \"merge\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"intervals\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

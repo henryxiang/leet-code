@@ -1,0 +1,115 @@
+{
+  "questionId": "517",
+  "questionFrontendId": "517",
+  "boundTopicId": null,
+  "title": "Super Washing Machines",
+  "titleSlug": "super-washing-machines",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You have <b>n</b> super washing machines on a line. Initially, each washing machine has some dresses or is empty. \r\n</p>\r\n\r\n<p>For each <b>move</b>, you could choose <b>any m</b> (1 &le; m &le; n) washing machines, and pass <b>one dress</b> of each washing machine to one of its adjacent washing machines <b> at the same time </b>.  </p>\r\n\r\n<p>Given an integer array representing the number of dresses in each washing machine from left to right on the line, you should find the <b>minimum number of moves</b> to make all the washing machines have the same number of dresses. If it is not possible to do it, return -1.</p>\r\n\r\n<p><b>Example1</b>\r\n<pre>\r\n<b>Input:</b> [1,0,5]\r\n\r\n<b>Output:</b> 3\r\n\r\n<b>Explanation:</b> \r\n1st move:    1     0 <-- 5    =>    1     1     4\r\n2nd move:    1 <-- 1 <-- 4    =>    2     1     3    \r\n3rd move:    2     1 <-- 3    =>    2     2     2   \r\n</pre>\r\n\r\n<p><b>Example2</b>\r\n<pre>\r\n<b>Input:</b> [0,3,0]\r\n\r\n<b>Output:</b> 2\r\n\r\n<b>Explanation:</b> \r\n1st move:    0 <-- 3     0    =>    1     2     0    \r\n2nd move:    1     2 --> 0    =>    1     1     1     \r\n</pre>\r\n\r\n<p><b>Example3</b>\r\n<pre>\r\n<b>Input:</b> [0,2,0]\r\n\r\n<b>Output:</b> -1\r\n\r\n<b>Explanation:</b> \r\nIt's impossible to make all the three washing machines have the same number of dresses. \r\n</pre>\r\n\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The range of n is [1, 10000].</li>\r\n<li>The range of dresses number in a super washing machine is [0, 1e5].</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 249,
+  "dislikes": 125,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findMinMoves(vector<int>& machines) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findMinMoves(int[] machines) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findMinMoves(self, machines):\n        \"\"\"\n        :type machines: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findMinMoves(self, machines: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findMinMoves(int* machines, int machinesSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindMinMoves(int[] machines) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} machines\n * @return {number}\n */\nvar findMinMoves = function(machines) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} machines\n# @return {Integer}\ndef find_min_moves(machines)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findMinMoves(_ machines: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findMinMoves(machines []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findMinMoves(machines: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findMinMoves(machines: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_min_moves(machines: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $machines\n     * @return Integer\n     */\n    function findMinMoves($machines) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.3K\", \"totalSubmission\": \"38.1K\", \"totalAcceptedRaw\": 14289, \"totalSubmissionRaw\": 38086, \"acRate\": \"37.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "734",
+    "canSeeDetail": true,
+    "url": "/articles/super-washing-machines/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Greedy.\n\n**Intuition**\n\nThis greedy problem is very similar to [Gas station problem](https://leetcode.com/articles/gas-station/),\nand could be solved in linear time as well. \n\n> First of all - could the problem be solved or not? \n\nYes, if the dresses could be divided into `N` equal parts where `N` is number \nof machines. In other words, `N` should be a divisor of the number of dresses `D`. \n\n![bla](../Figures/517/could_solve2.png)\n\nNow it's easy to compute the number of dresses that each machine should have: `D / N`.\nThe starting numbers of dresses in the machines move around this `D / N` average value. \n\n![bla](../Figures/517/distribution.png)\n\nThe standard ML trick is to normalize the data, so that the average value would be zero. \nFor that, one could replace the actual number of dresses in the machine by\n the number of dresses to be removed. This number could be negative, if one \n actually needs _to add_ the dresses into the machine. \n \n![bla](../Figures/517/to_be_removed.png)\n\nAs for the [gas station problem](https://leetcode.com/articles/gas-station), one starts from the beginning \nand checks the standard set for such problems:\nthe current element, the current sum, and \nthe maximum sum seen so far :\n\n- `m`. Number of dresses to be removed from the current machine.\n\n- `curr_sum`. Number of dresses to be passed on the right.\n\n- `max_sum`. Maximum number of dresses one had to pass on the right\nat this point or before.\n\nIt's quite obvious that the result at each point is a maximum \nbetween `max_sum` and `m`, i.e. one has to compare the cumulative and \nthe local maximums.\n\nHere are three different examples.\n\n- `[1, 0, 5]`. The cumulative maximum is equal to the local one.\n\n![bla](../Figures/517/table1.png)\n\n- `[0, 3, 0]`. The local maximum wins over the cumulative one.\n\n![bla](../Figures/517/table2.png)\n\n- `[0, 0, 3, 5]`. The cumulative maximum wins over the local one.\n\n![bla](../Figures/517/table3.png)\n\n**Algorithm**\n\nHere is the algorithm.\n\n1. Check if the problem could be solved: `len(machines)` should be\na divisor of `sum(machines)`. Otherwise the answer is `-1`.\n\n2. Compute the number of dresses each machine should finally have:\n`dresses_per_machine = sum(machines)/len(machines)`.\n\n3. [Normalize](https://en.wikipedia.org/wiki/Normalization#Technology_and_computer_science) \nthe problem by replacing the _number of dresses_ in each machine \nby the _number of dresses to be removed_ from this machine (could be negative). \n\n4. Initiate `curr_sum`, `max_sum`, and `res` as zero.\n\n5. Iterate over all machines `m in machines`:\n    \n    - Update `curr_sum` and `max_sum` at each step:\n    `curr_sum += m`, `max_sum = max(max_sum, abs(curr_sum))`. \n    \n    - Update result `res = max(res, max_sum, m)`.\n\n6. Return `res`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/vUotcaQa/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"vUotcaQa\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ since it's a three\niterations over the input array.\n \n* Space complexity : $$\\mathcal{O}(1)$$ since it's a constant \nspace solution. \n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "719",
+      "count": 8,
+      "average": 3.625,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,0,5]",
+  "metaData": "{\r\n  \"name\": \"findMinMoves\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"machines\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

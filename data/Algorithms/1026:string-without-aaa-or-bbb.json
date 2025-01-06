@@ -1,0 +1,111 @@
+{
+  "questionId": "1026",
+  "questionFrontendId": "984",
+  "boundTopicId": null,
+  "title": "String Without AAA or BBB",
+  "titleSlug": "string-without-aaa-or-bbb",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two integers <code>A</code> and <code>B</code>, return <strong>any</strong> string <code>S</code> such that:</p>\r\n\r\n<ul>\r\n\t<li><code>S</code> has length <code>A + B</code> and contains exactly <code>A</code> <code>&#39;a&#39;</code> letters, and exactly <code>B</code> <code>&#39;b&#39;</code> letters;</li>\r\n\t<li>The substring&nbsp;<code>&#39;aaa&#39;</code>&nbsp;does not occur in <code>S</code>;</li>\r\n\t<li>The substring <code>&#39;bbb&#39;</code> does not occur in <code>S</code>.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">1</span>, B = <span id=\"example-input-1-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;abb&quot;\r\n</span><strong>Explanation:</strong> &quot;abb&quot;, &quot;bab&quot; and &quot;bba&quot; are all correct answers.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">4</span>, B = <span id=\"example-input-2-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">&quot;aabaa&quot;</span></pre>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= A &lt;= 100</code></li>\r\n\t<li><code>0 &lt;= B &lt;= 100</code></li>\r\n\t<li>It is guaranteed such an <code>S</code> exists for the given <code>A</code> and <code>B</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 131,
+  "dislikes": 199,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "vishal_nagpure",
+      "profileUrl": "/vishal_nagpure/",
+      "avatarUrl": "https://assets.leetcode.com/users/vishal_nagpure/avatar_1539776268.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"zalando\", \"slug\": \"zalando\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Grab\", \"slug\": \"grab\", \"timesEncountered\": 4}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string strWithout3a3b(int A, int B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String strWithout3a3b(int A, int B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def strWithout3a3b(self, A, B):\n        \"\"\"\n        :type A: int\n        :type B: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def strWithout3a3b(self, A: int, B: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * strWithout3a3b(int A, int B){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string StrWithout3a3b(int A, int B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} A\n * @param {number} B\n * @return {string}\n */\nvar strWithout3a3b = function(A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} a\n# @param {Integer} b\n# @return {String}\ndef str_without3a3b(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func strWithout3a3b(_ A: Int, _ B: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func strWithout3a3b(A int, B int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def strWithout3a3b(A: Int, B: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun strWithout3a3b(A: Int, B: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn str_without3a3b(a: i32, b: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $A\n     * @param Integer $B\n     * @return String\n     */\n    function strWithout3a3b($A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.2K\", \"totalSubmission\": \"37.3K\", \"totalAcceptedRaw\": 13187, \"totalSubmissionRaw\": 37292, \"acRate\": \"35.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "676",
+    "canSeeDetail": true,
+    "url": "/articles/string-without-aaa-or-bbb/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Greedy\n\n**Intuition**\n\nIntuitively, we should write the most common letter first.  For example, if we have `A = 6, B = 2`, we want to write `'aabaabaa'`.  The only time we don't write the most common letter is if the last two letters we have written are also the most common letter\n\n**Algorithm**\n\nLet's maintain `A, B`: the number of `'a'` and `'b'`'s left to write.\n\nIf we have already written the most common letter twice, we'll write the other letter.  Otherwise, we'll write the most common letter.\n\n<iframe src=\"https://leetcode.com/playground/Ps9koK2t/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Ps9koK2t\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(A+B)$$.\n\n* Space Complexity:  $$O(A+B)$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "662",
+      "count": 14,
+      "average": 3.929,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "1\n2",
+  "metaData": "{\r\n  \"name\": \"strWithout3a3b\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

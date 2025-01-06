@@ -1,0 +1,97 @@
+{
+  "questionId": "248",
+  "questionFrontendId": "248",
+  "boundTopicId": null,
+  "title": "Strobogrammatic Number III",
+  "titleSlug": "strobogrammatic-number-iii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).</p>\r\n\r\n<p>Write a function to count the total strobogrammatic numbers that exist in the range of low &lt;= num &lt;= high.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> low = &quot;50&quot;, high = &quot;100&quot;\r\n<b>Output:</b> 3 \r\n<strong>Explanation: </strong>69, 88, and 96 are three strobogrammatic numbers.</pre>\r\n\r\n<p><strong>Note:</strong><br />\r\nBecause the range might be a large number, the <em>low</em> and <em>high</em> numbers are represented as string.</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 143,
+  "dislikes": 124,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Strobogrammatic Number\", \"titleSlug\": \"strobogrammatic-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Strobogrammatic Number II\", \"titleSlug\": \"strobogrammatic-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int strobogrammaticInRange(string low, string high) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int strobogrammaticInRange(String low, String high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def strobogrammaticInRange(self, low, high):\n        \"\"\"\n        :type low: str\n        :type high: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def strobogrammaticInRange(self, low: str, high: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint strobogrammaticInRange(char * low, char * high){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int StrobogrammaticInRange(string low, string high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} low\n * @param {string} high\n * @return {number}\n */\nvar strobogrammaticInRange = function(low, high) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} low\n# @param {String} high\n# @return {Integer}\ndef strobogrammatic_in_range(low, high)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func strobogrammaticInRange(_ low: String, _ high: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func strobogrammaticInRange(low string, high string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def strobogrammaticInRange(low: String, high: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun strobogrammaticInRange(low: String, high: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn strobogrammatic_in_range(low: String, high: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $low\n     * @param String $high\n     * @return Integer\n     */\n    function strobogrammaticInRange($low, $high) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"23.7K\", \"totalSubmission\": \"62.1K\", \"totalAcceptedRaw\": 23724, \"totalSubmissionRaw\": 62122, \"acRate\": \"38.2%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"50\"\n\"100\"",
+  "metaData": "{\r\n  \"name\": \"strobogrammaticInRange\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"low\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"high\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

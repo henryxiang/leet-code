@@ -1,0 +1,113 @@
+{
+  "questionId": "779",
+  "questionFrontendId": "768",
+  "boundTopicId": null,
+  "title": "Max Chunks To Make Sorted II",
+  "titleSlug": "max-chunks-to-make-sorted-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p><em>This question is the same as &quot;Max Chunks to Make Sorted&quot; except the integers of the given array are not necessarily distinct, the input array could be up to length <code>2000</code>, and the elements could be up to <code>10**8</code>.</em></p>\r\n\r\n<hr />\r\n\r\n<p>Given an array <code>arr</code> of integers (<strong>not necessarily distinct</strong>), we split the array into some number of &quot;chunks&quot; (partitions), and individually sort each chunk.&nbsp; After concatenating them,&nbsp;the result equals the sorted array.</p>\r\n\r\n<p>What is the most number of chunks we could have made?</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr = [5,4,3,2,1]\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong>\r\nSplitting into two or more chunks will not return the required result.\r\nFor example, splitting into [5, 4], [3, 2, 1] will result in [4, 5, 1, 2, 3], which isn&#39;t sorted.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr = [2,1,3,4,4]\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong>\r\nWe can split into two chunks, such as [2, 1], [3, 4, 4].\r\nHowever, splitting into [2, 1], [3], [4], [4] is the highest number of chunks possible.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>arr</code> will have length in range <code>[1, 2000]</code>.</li>\r\n\t<li><code>arr[i]</code> will be an integer in range <code>[0, 10**8]</code>.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 319,
+  "dislikes": 13,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Max Chunks To Make Sorted\", \"titleSlug\": \"max-chunks-to-make-sorted\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "yuxiang1515",
+      "profileUrl": "/yuxiang1515/",
+      "avatarUrl": "https://www.gravatar.com/avatar/01264d86c5eab1ba0c82d892cb0911f6.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxChunksToSorted(vector<int>& arr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxChunksToSorted(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxChunksToSorted(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxChunksToSorted(self, arr: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxChunksToSorted(int* arr, int arrSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxChunksToSorted(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar maxChunksToSorted = function(arr) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @return {Integer}\ndef max_chunks_to_sorted(arr)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxChunksToSorted(_ arr: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxChunksToSorted(arr []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxChunksToSorted(arr: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxChunksToSorted(arr: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_chunks_to_sorted(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Integer\n     */\n    function maxChunksToSorted($arr) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.2K\", \"totalSubmission\": \"34.2K\", \"totalAcceptedRaw\": 16222, \"totalSubmissionRaw\": 34240, \"acRate\": \"47.4%\"}",
+  "hints": [
+    "Each k for which some permutation of arr[:k] is equal to sorted(arr)[:k] is where we should cut each chunk."
+  ],
+  "solution": {
+    "id": "385",
+    "canSeeDetail": true,
+    "url": "/articles/max-chunks-to-make-sorted-ii/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Sliding Window [Accepted]\n\n**Intuition**\n\nLet's try to find the smallest left-most chunk.\n\n**Algorithm**\n\nNotice that if $$a_1, a_2, \\dots, a_m$$ is a chunk, and $$a_1, a_2, \\dots, a_n$$ is a chunk ($$m < n$$), then $$a_{m+1}, a_{m+2}, \\dots, a_n$$ is a chunk too.  This shows that a greedy approach produces the highest number of chunks.\n\nWe know the array `arr` should end up like `expect = sorted(arr)`.  If the count of the first `k` elements minus the count what those elements should be is zero everywhere, then the first `k` elements form a valid chunk.  We repeatedly perform this process.\n\nWe can use a variable `nonzero` to count the number of letters where the current count is non-zero.\n\n<iframe src=\"https://leetcode.com/playground/B8GKxQrY/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"B8GKxQrY\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N \\log N)$$, where $$N$$ is the length of `arr`\n\n* Space Complexity: $$O(N)$$.\n\n---\n#### Approach #2: Sorted Count Pairs [Accepted]\n\n**Intuition**\n\nAs in *Approach #1*, let's try to find the smallest left-most chunk, where we have some expectation `expect = sorted(arr)`\n\nIf the elements were distinct, then it is enough to find the smallest `k` with `max(arr[:k+1]) == expect[k]`, as this must mean the elements of `arr[:k+1]` are some permutation of `expect[:k+1]`.\n\nSince the elements are not distinct, this fails; but we can amend the cumulative multiplicity of each element to itself to make the elements distinct.\n\n**Algorithm**\n\nInstead of elements `x`, have counted elements `(x, count)` where `count` ranges from `1` to the total number of `x` present in `arr`.\n\nNow `cur` will be the cumulative maximum of `counted[:k+1]`, where we expect a result of `Y = expect[k]`.  We count the number of times they are equal.\n\n<iframe src=\"https://leetcode.com/playground/jLmjinpa/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"jLmjinpa\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N \\log N)$$, where $$N$$ is the length of `arr`\n\n* Space Complexity: $$O(N)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "379",
+      "count": 20,
+      "average": 3.05,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[5,4,3,2,1]",
+  "metaData": "{\r\n  \"name\": \"maxChunksToSorted\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"arr\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

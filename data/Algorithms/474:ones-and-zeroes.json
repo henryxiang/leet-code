@@ -1,0 +1,111 @@
+{
+  "questionId": "474",
+  "questionFrontendId": "474",
+  "boundTopicId": null,
+  "title": "Ones and Zeroes",
+  "titleSlug": "ones-and-zeroes",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In the computer world, use restricted resource you have to generate maximum benefit is what we always want to pursue.</p>\r\n\r\n<p>For now, suppose you are a dominator of <b>m</b> <code>0s</code> and <b>n</b> <code>1s</code> respectively. On the other hand, there is an array with strings consisting of only <code>0s</code> and <code>1s</code>.</p>\r\n\r\n<p>Now your task is to find the maximum number of strings that you can form with given <b>m</b> <code>0s</code> and <b>n</b> <code>1s</code>. Each <code>0</code> and <code>1</code> can be used at most <b>once</b>.</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>The given numbers of <code>0s</code> and <code>1s</code> will both not exceed <code>100</code></li>\r\n\t<li>The size of given string array won&#39;t exceed <code>600</code>.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> Array = {&quot;10&quot;, &quot;0001&quot;, &quot;111001&quot;, &quot;1&quot;, &quot;0&quot;}, m = 5, n = 3\r\n<b>Output:</b> 4\r\n\r\n<b>Explanation:</b> This are totally 4 strings can be formed by the using of 5 0s and 3 1s, which are &ldquo;10,&rdquo;0001&rdquo;,&rdquo;1&rdquo;,&rdquo;0&rdquo;\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> Array = {&quot;10&quot;, &quot;0&quot;, &quot;1&quot;}, m = 1, n = 1\r\n<b>Output:</b> 2\r\n\r\n<b>Explanation:</b> You could form &quot;10&quot;, but then you&#39;d have nothing left. Better form &quot;0&quot; and &quot;1&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 698,
+  "dislikes": 167,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Non-negative Integers without Consecutive Ones\", \"titleSlug\": \"non-negative-integers-without-consecutive-ones\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "piy9",
+      "profileUrl": "/piy9/",
+      "avatarUrl": "https://assets.leetcode.com/users/piy9/avatar_1525415088.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findMaxForm(vector<string>& strs, int m, int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findMaxForm(String[] strs, int m, int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findMaxForm(self, strs, m, n):\n        \"\"\"\n        :type strs: List[str]\n        :type m: int\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findMaxForm(self, strs: List[str], m: int, n: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findMaxForm(char ** strs, int strsSize, int m, int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindMaxForm(string[] strs, int m, int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} strs\n * @param {number} m\n * @param {number} n\n * @return {number}\n */\nvar findMaxForm = function(strs, m, n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} strs\n# @param {Integer} m\n# @param {Integer} n\n# @return {Integer}\ndef find_max_form(strs, m, n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findMaxForm(_ strs: [String], _ m: Int, _ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findMaxForm(strs []string, m int, n int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findMaxForm(strs: Array[String], m: Int, n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findMaxForm(strs: Array<String>, m: Int, n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_max_form(strs: Vec<String>, m: i32, n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $strs\n     * @param Integer $m\n     * @param Integer $n\n     * @return Integer\n     */\n    function findMaxForm($strs, $m, $n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"37.8K\", \"totalSubmission\": \"91.8K\", \"totalAcceptedRaw\": 37777, \"totalSubmissionRaw\": 91818, \"acRate\": \"41.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "112",
+    "canSeeDetail": true,
+    "url": "/articles/ones-and-zeroes/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\nIn the brute force approach we will consider every subset of $$strs$$ array and count the total number of zeroes and ones in that subset. The subset with zeroes less than equal to $$m$$ and ones less than equal to $$n$$ will be considered as the valid subsets. The maximum length subset among all valid subsets will be  our required subset.\n\nObviously, there are $$2^n$$ subsets possible for the list of length $$n$$ and here we are using int(32 bits) for iterating every subset. So this method will not work for the list having length greater than 32.\n\n<iframe src=\"https://leetcode.com/playground/PB4G7F5Z/shared\" frameBorder=\"0\" name=\"PB4G7F5Z\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(2^l*x)$$. $$2^l$$ possible subsets, where $$l$$ is the length of the list $$strs$$ and $$x$$ is the average string length.\n\n* Space complexity : $$O(1)$$. Constant Space required.\n\n---\n#### Approach #2 Better Brute Force [Time Limit Exceeded]\n\n**Algorithm**\n\nIn the previous approach we were considering every possible subset and then we were counting its zeroes and ones. We can limit the number of subsets by breaking the loop when total number of zeroes exceed $$m$$ or total number of ones exceed $$n$$. This will reduce little computation not the complexity.\n\n\n<iframe src=\"https://leetcode.com/playground/XyDP2sRL/shared\" frameBorder=\"0\" name=\"XyDP2sRL\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(2^l*x)$$. $$2^l$$ possible subsets, where $$l$$ is the length of the list $$strs$$ and $$x$$ is the average string length.\n\n* Space complexity : $$O(1)$$. Constant Space required.\n\n---\n\n#### Approach #3 Using Recursion [Time Limit Exceeded]\n\n**Algorithm**\n\nIn the above approaches we were considering every subset iteratively. The subset formation can also be done in a recursive manner. For this, we make use of a function `calculate(strs, i, ones, zeroes)`. This function takes the given list of strings $$strs$$ and gives the size of the largest subset with $$ones$$ 1's and $$zeroes$$  0's considering the strings lying after the $$i^{th}$$ index(including itself) in $$strs$$.\n\nNow, in every function call of `calculate(...)`, we can:\n\n1. Include the current string in the subset currently being considered. But if we include the current string, we'll need to deduct the number of 0's and 1's in the current string from the total available respective counts. Thus, we make a function call of the form $$calculate(strs,i+1,zeroes-zeroes_{current\\_string},ones-ones_{current\\_string})$$. We also need to increment the total number of strings considered so far by 1. We store the result obtained from this call(including the +1) in $$taken$$ variable.\n\n2. Not include the current string in the current subset. In this case, we need not update the count of $$ones$$ and $$zeroes$$. Thus, the new function call takes the form $$calculate(strs,i+1,zeroes,ones)$$. The result obtained from this function call is stored in $$notTaken$$ variable.\n\nThe larger value out of $$taken$$ and $$notTaken$$ represents the required result to be returned for the current function call.\n\nThus, the function call $$calculate(strs, 0, m, n)$$ gives us the required maximum number of subsets possible satisfying the given constraints.\n\n\n\n<iframe src=\"https://leetcode.com/playground/SjPQE6wg/shared\" frameBorder=\"0\" name=\"SjPQE6wg\" width=\"100%\" height=\"428\"></iframe>\n\n**Complexity Analysis**\n* Time complexity : $$O(2^l*x)$$. $$2^l$$ possible subsets, where $$l$$ is the length of the list $$strs$$ and $$x$$ is the average string length.\n\n* Space complexity : $$O(l)$$. Depth of recursion tree grows upto $$l$$.\n\n---\n#### Approach #4 Using Memoization [Accepted]\n\n**Algorithm**\n\nIn the recursive approach just discussed, a lot of redundant function calls will be made taking the same values of $$(i, zeroes, ones)$$. This redundancy in the recursive tree can be pruned off by making use of a 3-D memoization array, $$memo$$.\n\n$$memo[i][j][k]$$ is used to store the result obtained for the function call `calculate(strs, i, j, k)`. Or in other words, it stores the maximum number of subsets possible considering the strings starting from the $$i^{th}$$ index onwards, provided only $$j$$ 0's and $$k$$ 1's are available to be used.\n\nThus, whenever $$memo[i][j][k]$$ already contains a valid entry, we need not make use of the function calls again, but we can pick up the result directly from the $$memo$$ array.\n\nThe rest of the procedure remains the same as that of the recursive approach.\n\n<iframe src=\"https://leetcode.com/playground/oVimjcfS/shared\" frameBorder=\"0\" name=\"oVimjcfS\" width=\"100%\" height=\"515\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(l*m*n)$$. $$memo$$ array of size $$l*m*n$$ is filled, where $$l$$ is the length of $$strs$$, $$m$$ and $$n$$ are the number of zeroes and ones respectively.\n\n* Space complexity : $$O(l*m*n)$$. 3D array $$memo$$ is used.\n\n---\n#### Approach #5 Dynamic Programming [Accepted]\n\n**Algorithm**\n\nThis problem can be solved by using 2-D Dynamic Programming. We can make use of a $$dp$$ array, such that an entry $$dp[i][j]$$ denotes the maximum number of strings that can be included in the subset given only $$i$$ 0's and $$j$$ 1's are available.\n\nNow, let's look at the process by which we'll fill the $$dp$$ array. We traverse the given list of strings one by one. Suppose, at some point, we pick up any string $$s_k$$ consisting of $$x$$ zeroes and $$y$$ ones. Now, choosing to put this string in any of the subset possible by using the previous strings traversed so far will impact the element denoted by $$dp[i][j]$$ for $$i$$ and $$j$$ satisfying $$x &leq; i &leq; m$$, $$y &leq; j &leq; n$$. This is because for entries $$dp[i][j]$$ with $$i < x$$ or $$j < y$$, there won't be sufficient number of 1's and 0's available to accomodate the current string in any subset.\n\nThus, for every string encountered, we need to appropriately update the $$dp$$ entries within the correct range.\n\nFurther, while updating the $$dp$$ values, if we consider choosing the current string to be a part of the subset, the updated result will depend on whether it is profitable to include the current string in any subset or not. If included in the subset, the $$dp[i][j]$$ entry needs to be updated as $$dp[i][j]=1 + dp[i - zeroes_{current\\_string}][j - ones_{current\\_string}]$$, where the factor of +1 takes into account the number of elements in the current subset being increased due to a new entry.\n\nBut, it could be possible that the current string could be so long that it could be profitable not to include it in any of the subsets. Thus, the correct equation for $$dp$$ updation becomes:\n\n$$dp[i][j]= max(1+dp[i - zeroes_{current\\_string}][j - ones_{current\\_string}],dp[i][j])$$\n\nThus, after the complete list of strings has been traversed, $$dp[m][n]$$ gives the required size of the largest subset.\n\nWatch this animation for clear understanding:\n\n!?!../Documents/474_Ones_Zeroes.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/uSvKvaat/shared\" frameBorder=\"0\" name=\"uSvKvaat\" width=\"100%\" height=\"411\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(l*m*n)$$. Three nested loops are their, where $$l$$ is the length of $$strs$$, $$m$$ and $$n$$ are the number of zeroes and ones respectively.\n\n\n* Space complexity : $$O(m*n)$$. $$dp$$ array of size $$m*n$$ is used.\n\n---\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "110",
+      "count": 9,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"10\",\"0001\",\"111001\",\"1\",\"0\"]\n5\n3",
+  "metaData": "{\n  \"name\": \"findMaxForm\",\n  \"params\": [\n    {\n      \"name\": \"strs\",\n      \"type\": \"string[]\"\n    },\n    {\n        \"name\": \"m\",\n        \"type\": \"integer\"\n    },\n    {\n        \"name\": \"n\",\n        \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

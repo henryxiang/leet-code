@@ -1,0 +1,115 @@
+{
+  "questionId": "930",
+  "questionFrontendId": "894",
+  "boundTopicId": null,
+  "title": "All Possible Full Binary Trees",
+  "titleSlug": "all-possible-full-binary-trees",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A <em>full binary tree</em>&nbsp;is a binary tree where each node has exactly 0 or 2&nbsp;children.</p>\r\n\r\n<p>Return a list of all possible full binary trees with <code>N</code> nodes.&nbsp; Each element of the answer is the root node of one possible tree.</p>\r\n\r\n<p>Each <code>node</code> of each&nbsp;tree in the answer <strong>must</strong> have <code>node.val = 0</code>.</p>\r\n\r\n<p>You may return the final list of trees in any order.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">7</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]</span>\r\n<strong>Explanation:</strong>\r\n<img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/22/fivetrees.png\" style=\"width: 700px; height: 400px;\" />\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= N &lt;= 20</code></li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 599,
+  "dislikes": 61,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "drUnderwood",
+      "profileUrl": "/drunderwood/",
+      "avatarUrl": "https://www.gravatar.com/avatar/b2219710122ddb86ae0b6140044a6bf5.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    vector<TreeNode*> allPossibleFBT(int N) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public List<TreeNode> allPossibleFBT(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def allPossibleFBT(self, N):\n        \"\"\"\n        :type N: int\n        :rtype: List[TreeNode]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def allPossibleFBT(self, N: int) -> List[TreeNode]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nstruct TreeNode** allPossibleFBT(int N, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public IList<TreeNode> AllPossibleFBT(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {number} N\n * @return {TreeNode[]}\n */\nvar allPossibleFBT = function(N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {Integer} n\n# @return {TreeNode[]}\ndef all_possible_fbt(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func allPossibleFBT(_ N: Int) -> [TreeNode?] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc allPossibleFBT(N int) []*TreeNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def allPossibleFBT(N: Int): List[TreeNode] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun allPossibleFBT(N: Int): List<TreeNode?> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn all_possible_fbt(n: i32) -> Vec<Option<Rc<RefCell<TreeNode>>>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param Integer $N\n     * @return TreeNode[]\n     */\n    function allPossibleFBT($N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"26.6K\", \"totalSubmission\": \"36.7K\", \"totalAcceptedRaw\": 26643, \"totalSubmissionRaw\": 36691, \"acRate\": \"72.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "536",
+    "canSeeDetail": true,
+    "url": "/articles/all-possible-full-binary-trees/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Recursion\n\n**Intuition and Algorithm**\n\nLet $$\\text{FBT}(N)$$ be the list of all possible full binary trees with $$N$$ nodes.\n\nEvery full binary tree $$T$$ with 3 or more nodes, has 2 children at its root.  Each of those children `left` and `right` are themselves full binary trees.\n\nThus, for $$N \\geq 3$$, we can formulate the recursion: $$\\text{FBT}(N) =$$ [All trees with left child from $$\\text{FBT}(x)$$ and right child from $$\\text{FBT}(N-1-x)$$, for all $$x$$].\n\nAlso, by a simple counting argument, there are no full binary trees with a positive, even number of nodes.\n\nFinally, we should cache previous results of the function $$\\text{FBT}$$ so that we don't have to recalculate them in our recursion.\n\n<iframe src=\"https://leetcode.com/playground/MNvnRoUP/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"MNvnRoUP\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(2^N)$$.  For odd $$N$$, let $$N = 2k + 1$$.  Then, $$\\Big| \\text{FBT}(N) \\Big| = C_k$$, the $$k$$-th catalan number; and $$\\sum\\limits_{k < \\frac{N}{2}} C_k$$ (the complexity involved in computing intermediate results required) is bounded by $$O(2^N)$$.  However, the proof is beyond the scope of this article.\n\n* Space Complexity:  $$O(2^N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "530",
+      "count": 30,
+      "average": 4.2,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "7",
+  "metaData": "{\r\n  \"name\": \"allPossibleFBT\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<TreeNode>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

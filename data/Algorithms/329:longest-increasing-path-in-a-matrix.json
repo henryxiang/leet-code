@@ -1,0 +1,119 @@
+{
+  "questionId": "329",
+  "questionFrontendId": "329",
+  "boundTopicId": null,
+  "title": "Longest Increasing Path in a Matrix",
+  "titleSlug": "longest-increasing-path-in-a-matrix",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an integer matrix, find the length of the longest increasing path.</p>\r\n\r\n<p>From each cell, you can either move to four directions: left, right, up or down. You may NOT move diagonally or move outside of the boundary (i.e. wrap-around is not allowed).</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = \r\n[\r\n  [<font color=\"red\">9</font>,9,4],\r\n  [<font color=\"red\">6</font>,6,8],\r\n  [<font color=\"red\">2</font>,<font color=\"red\">1</font>,1]\r\n] \r\n<strong>Output:</strong> 4 \r\n<strong>Explanation:</strong> The longest increasing path is <code>[1, 2, 6, 9]</code>.\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = \r\n[\r\n  [<font color=\"red\">3</font>,<font color=\"red\">4</font>,<font color=\"red\">5</font>],\r\n  [3,2,<font color=\"red\">6</font>],\r\n  [2,2,1]\r\n] \r\n<strong>Output: </strong>4 \r\n<strong>Explanation: </strong>The longest increasing path is <code>[3, 4, 5, 6]</code>. Moving diagonally is not allowed.\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 1375,
+  "dislikes": 23,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "dietpepsi",
+      "profileUrl": "/dietpepsi/",
+      "avatarUrl": "https://www.gravatar.com/avatar/5db7cd8986dd0171d1682b730ce85555.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Topological Sort",
+      "slug": "topological-sort"
+    },
+    {
+      "name": "Memoization",
+      "slug": "memoization"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int longestIncreasingPath(vector<vector<int>>& matrix) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestIncreasingPath(int[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestIncreasingPath(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestIncreasingPath(self, matrix: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\r\n\r\nint longestIncreasingPath(int** matrix, int matrixSize, int* matrixColSize){\r\n\r\n}\r\n\r\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int LongestIncreasingPath(int[][] matrix) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} matrix\n * @return {number}\n */\nvar longestIncreasingPath = function(matrix) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} matrix\r\n# @return {Integer}\r\ndef longest_increasing_path(matrix)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func longestIncreasingPath(_ matrix: [[Int]]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestIncreasingPath(matrix [][]int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def longestIncreasingPath(matrix: Array[Array[Int]]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun longestIncreasingPath(matrix: Array<IntArray>): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn longest_increasing_path(matrix: Vec<Vec<i32>>) -> i32 {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @return Integer\n     */\n    function longestIncreasingPath($matrix) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"113.9K\", \"totalSubmission\": \"273.3K\", \"totalAcceptedRaw\": 113896, \"totalSubmissionRaw\": 273268, \"acRate\": \"41.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "70",
+    "canSeeDetail": true,
+    "url": "/articles/longest-increasing-path-matrix/",
+    "content": "[TOC]\n\n## Summary\n\nThis article is for advanced readers. It introduces the following ideas:\nDepth First Search (DFS), Memoization, Dynamic programming, Topological Sorting. It explains the relation between dynamic programming and topological sorting.\n\n## Solution\n---\n#### Approach #1 (Naive DFS) [Time Limit Exceeded]\n\n**Intuition**\n\nDFS can find the longest increasing path starting from any cell. We can do this for all the cells.\n\n**Algorithm**\n\nEach cell can be seen as a vertex in a graph $$G$$. If two adjacent cells have value $$a < b$$, i.e. increasing then we have a directed edge $$(a, b)$$. The problem then becomes:\n\n> Search the longest path in the directed graph $$G$$.\n\nNaively, we can use DFS or BFS to visit all the cells connected starting from a root. We update the maximum length of the path during search and find the answer when it finished.\n\nUsually, in DFS or BFS, we can employ a set `visited` to prevent the cells from duplicate visits. We will introduce a better algorithm based on this in the next section.\n\n\n<iframe src=\"https://leetcode.com/playground/fTW4zmop/shared\" frameBorder=\"0\" name=\"fTW4zmop\" width=\"100%\" height=\"515\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(2^{m+n})$$. The search is repeated for each valid increasing path. In the worst case we can have $$O(2^{m+n})$$ calls. For example:\n\n<iframe src=\"https://leetcode.com/playground/dVdd7KB8/shared\" frameBorder=\"0\" name=\"dVdd7KB8\" width=\"100%\" height=\"173\"></iframe>\n\n\n* Space complexity : $$O(mn)$$. For each DFS we need $$O(h)$$ space used by the system stack, where $$h$$ is the maximum depth of the recursion. In the worst case, $$O(h) = O(mn)$$.\n\n---\n#### Approach #2 (DFS + Memoization) [Accepted]\n\n**Intuition**\n\nCache the results for the recursion so that any subproblem will be calculated only once.\n\n**Algorithm**\n\nFrom previous analysis, we know that there are many duplicate calculations in the naive approach.\n\nOne optimization is that we can use a set to prevent the repeat visit in one DFS search. This optimization will reduce the time complexity for each DFS to $$O(mn)$$ and the total algorithm to $$O(m^2n^2)$$.\n\nHere, we will introduce more powerful optimization, Memoization.\n\n> In computing, memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.\n\nIn our problem, we recursively call `dfs(x, y)` for many times. But if we already know all the results for the four adjacent cells, we only need constant time. During our search if the result for a cell is not calculated, we calculate and cache it; otherwise, we get it from the cache directly.\n\n\n<iframe src=\"https://leetcode.com/playground/k7MmgcpJ/shared\" frameBorder=\"0\" name=\"k7MmgcpJ\" width=\"100%\" height=\"513\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(mn)$$. Each vertex/cell will be calculated once and only once, and each edge will be visited once and only once. The total time complexity is then $$O(V+E)$$. $$V$$ is the total number of vertices and $$E$$ is the total number of edges. In our problem, $$O(V) = O(mn)$$, $$O(E) = O(4V) = O(mn)$$.\n\n* Space complexity : $$O(mn)$$. The cache dominates the space complexity.\n\n---\n#### Approach #3 (Peeling Onion) [Accepted]\n\n**Intuition**\n\nThe result of each cell only related to the result of its neighbors. Can we use dynamic programming?\n\n**Algorithm**\n\nIf we define the longest increasing path starting from cell $$(i, j)$$ as a function\n\n$$\nf(i, j)\n$$\n\nthen we have the following transition function\n\n$$\nf(i, j) = max\\{f(x, y)| (x, y)~\\mathrm{is~a~neighbor~of} (i, j)~\\mathrm{and} ~\\mathrm{matrix}[x][y] \\gt \\mathrm{matrix}[i][j]\\} + 1\n$$\n\nThis formula is the same as used in the previous approaches. With such transition function, one may think that it is possible to use dynamic programming to deduce all the results without employing DFS!\n\nThat is right with one thing missing: we don't have the dependency list.\n\nFor dynamic programming to work, if problem B depends on the result of problem A, then we must make sure that problem A is calculated before problem B. Such order is natural and obvious for many problems. For example the famous Fibonacci sequence:\n\n$$\nF(0) = 1, F(1) = 1, F(n) = F(n - 1) + F(n - 2)\n$$\n\nThe subproblem $$F(n)$$ depends on its two predecessors. Therefore, the natural order from 0 to n is the correct order. The dependent is always behind the dependee.\n\nThe terminology of such dependency order is \"Topological order\" or \"Topological sorting\":\n\n> Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge $$(u, v)$$, vertex $$u$$ comes before $$v$$ in the ordering.\n\nIn our problem, the topological order is not natural. Without the value in the matrix, we couldn't know the dependency relation of any two neighbors A and B. We have to perform the topological sort explicitly  as a preprocess. After that, we can solve the problem dynamically using our transition function following the stored topological order.\n\nThere are several ways to perform the topological sorting. Here we employ one of them called \"Peeling Onion\".\n\nThe idea is that in a DAG, we will have some vertex who doesn't depend on others which we call \"leaves\". We put these leaves in a list (their internal ordering does matter), and then we remove them from the DAG. After the removal, there will be new leaves. We do the same repeatedly as if we are peeling an onion layer by layer. In the end, the list will have a valid topological ordering of our vertices.\n\nIn out problem, since we want the longest path in the DAG, which equals to the total number of layers of the \"onion\". Thus, we can count the number of layers during \"peeling\" and return the counts in the end without invoking dynamic programming.\n\n\n<iframe src=\"https://leetcode.com/playground/z5UXQnGD/shared\" frameBorder=\"0\" name=\"z5UXQnGD\" width=\"100%\" height=\"515\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(mn)$$. The the topological sort is $$O(V+E) = O(mn)$$.\nHere, $$V$$ is the total number of vertices and $$E$$ is the total number of edges. In our problem, $$O(V) = O(mn)$$, $$O(E) = O(4V) = O(mn)$$.\n\n* Space complexity : $$O(mn)$$. We need to store the out degrees and each level of leaves.\n\n---\n## Remarks\n\n* Memoization: for a problem with massive duplicate calls, cache the results.\n* Dynamic programming requires the subproblem solved in topological order. In many problems, it coincides the natural order. For those who doesn't, one need perform topological sorting first. Therefore, for those problems with complex topology (like this one), search with memorization is usually an easier and better choice.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "68",
+      "count": 37,
+      "average": 4.973,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[9,9,4],[6,6,8],[2,1,1]]",
+  "metaData": "{\r\n  \"name\": \"longestIncreasingPath\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"matrix\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,119 @@
+{
+  "questionId": "872",
+  "questionFrontendId": "842",
+  "boundTopicId": null,
+  "title": "Split Array into Fibonacci Sequence",
+  "titleSlug": "split-array-into-fibonacci-sequence",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>S</code>&nbsp;of digits, such as <code>S = &quot;123456579&quot;</code>, we can split it into a <em>Fibonacci-like sequence</em>&nbsp;<code>[123, 456, 579].</code></p>\r\n\r\n<p>Formally, a Fibonacci-like sequence is a list&nbsp;<code>F</code> of non-negative integers such that:</p>\r\n\r\n<ul>\r\n\t<li><code>0 &lt;= F[i] &lt;= 2^31 - 1</code>, (that is,&nbsp;each integer fits a 32-bit signed integer type);</li>\r\n\t<li><code>F.length &gt;= 3</code>;</li>\r\n\t<li>and<code> F[i] + F[i+1] = F[i+2] </code>for all <code>0 &lt;= i &lt; F.length - 2</code>.</li>\r\n</ul>\r\n\r\n<p>Also, note that when splitting the string into pieces, each piece must not have extra leading zeroes, except if the piece is the number 0 itself.</p>\r\n\r\n<p>Return any Fibonacci-like sequence split from <code>S</code>, or return <code>[]</code> if it cannot be done.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;123456579&quot;\r\n<strong>Output: </strong>[123,456,579]\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;11235813&quot;\r\n<strong>Output: </strong>[1,1,2,3,5,8,13]\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;112358130&quot;\r\n<strong>Output: </strong>[]\r\n<strong>Explanation: </strong>The task is impossible.\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;0123&quot;\r\n<strong>Output: </strong>[]\r\n<strong>Explanation: </strong>Leading zeroes are not allowed, so &quot;01&quot;, &quot;2&quot;, &quot;3&quot; is not valid.\r\n</pre>\r\n\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;1101111&quot;\r\n<strong>Output: </strong>[110, 1, 111]\r\n<strong>Explanation: </strong>The output [11, 0, 11, 11] would also be accepted.\r\n</pre>\r\n\r\n<p><strong>Note: </strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= S.length&nbsp;&lt;= 200</code></li>\r\n\t<li><code>S</code> contains only digits.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 339,
+  "dislikes": 116,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Additive Number\", \"titleSlug\": \"additive-number\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Fibonacci Number\", \"titleSlug\": \"fibonacci-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> splitIntoFibonacci(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> splitIntoFibonacci(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def splitIntoFibonacci(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def splitIntoFibonacci(self, S: str) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* splitIntoFibonacci(char * S, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> SplitIntoFibonacci(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {number[]}\n */\nvar splitIntoFibonacci = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer[]}\ndef split_into_fibonacci(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func splitIntoFibonacci(_ S: String) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func splitIntoFibonacci(S string) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def splitIntoFibonacci(S: String): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun splitIntoFibonacci(S: String): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn split_into_fibonacci(s: String) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return Integer[]\n     */\n    function splitIntoFibonacci($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.7K\", \"totalSubmission\": \"41.5K\", \"totalAcceptedRaw\": 14738, \"totalSubmissionRaw\": 41485, \"acRate\": \"35.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "475",
+    "canSeeDetail": true,
+    "url": "/articles/split-array-into-fibonacci-sequence/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Brute Force [Accepted]\n\n**Intuition**\n\nThe first two elements of the array uniquely determine the rest of the sequence.\n\n**Algorithm**\n\nFor each of the first two elements, assuming they have no leading zero, let's iterate through the rest of the string.  At each stage, we expect a number less than or equal to `2^31 - 1` that starts with the sum of the two previous numbers.\n\n<iframe src=\"https://leetcode.com/playground/2PpFDrmP/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"2PpFDrmP\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `S`, and with the requirement that the values of the answer are $$O(1)$$ in length.\n\n* Space Complexity:  $$O(N)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "470",
+      "count": 14,
+      "average": 4.071,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"123456579\"",
+  "metaData": "{\r\n  \"name\": \"splitIntoFibonacci\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,105 @@
+{
+  "questionId": "1118",
+  "questionFrontendId": "1121",
+  "boundTopicId": null,
+  "title": "Divide Array Into Increasing Sequences",
+  "titleSlug": "divide-array-into-increasing-sequences",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <strong>non-decreasing</strong> array of positive integers&nbsp;<code>nums</code>&nbsp;and an integer <code>K</code>, find out if this array can be divided into one or more <strong>disjoint increasing subsequences of length at least</strong> <code>K</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-1-1\">[1,2,2,3,3,4,4]</span>, K = <span id=\"example-input-1-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n<strong>Explanation: </strong>\r\nThe array can be divided into the two subsequences [1,2,3,4] and [2,3,4] with lengths at least 3 each.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-2-1\">[5,6,6,7,8]</span>, K = <span id=\"example-input-2-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">false</span>\r\n<strong>Explanation: </strong>\r\nThere is no way to divide the array using the conditions required.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= nums.length&nbsp;&lt;= 10^5</code></li>\r\n\t<li><code>1 &lt;= K &lt;= nums.length</code></li>\r\n\t<li><code>1 &lt;= nums[i] &lt;= 10^5</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 40,
+  "dislikes": 15,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "niepan",
+      "profileUrl": "/niepan/",
+      "avatarUrl": "https://www.gravatar.com/avatar/7115847afc9eb4ffc483276798929d3a.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool canDivideIntoSubsequences(vector<int>& nums, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canDivideIntoSubsequences(int[] nums, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canDivideIntoSubsequences(self, nums, K):\n        \"\"\"\n        :type nums: List[int]\n        :type K: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canDivideIntoSubsequences(self, nums: List[int], K: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool canDivideIntoSubsequences(int* nums, int numsSize, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CanDivideIntoSubsequences(int[] nums, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} K\n * @return {boolean}\n */\nvar canDivideIntoSubsequences = function(nums, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Boolean}\ndef can_divide_into_subsequences(nums, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canDivideIntoSubsequences(_ nums: [Int], _ K: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canDivideIntoSubsequences(nums []int, K int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canDivideIntoSubsequences(nums: Array[Int], K: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canDivideIntoSubsequences(nums: IntArray, K: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_divide_into_subsequences(nums: Vec<i32>, k: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $K\n     * @return Boolean\n     */\n    function canDivideIntoSubsequences($nums, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2K\", \"totalSubmission\": \"3.6K\", \"totalAcceptedRaw\": 2004, \"totalSubmissionRaw\": 3613, \"acRate\": \"55.5%\"}",
+  "hints": [
+    "Think in the frequency of the numbers and how this affects the number of sequences needed.",
+    "What is the minimum number of sequences we need to form? Considering frequency of the numbers.",
+    "Think about the least number of sequences to maximize the lengths.",
+    "The number of sequences needed is equal to the maximum frequency of an element.",
+    "How to put the other elements into sequences ? Think in a greedy approach."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2,2,3,3,4,4]\n3",
+  "metaData": "{\r\n  \"name\": \"canDivideIntoSubsequences\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n        \"name\": \"K\",\r\n        \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

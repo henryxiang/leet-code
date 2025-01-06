@@ -1,0 +1,96 @@
+{
+  "questionId": "1132",
+  "questionFrontendId": "1181",
+  "boundTopicId": null,
+  "title": "Before and After Puzzle",
+  "titleSlug": "before-and-after-puzzle",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a list of <code>phrases</code>, generate a list of&nbsp;Before and After puzzles.</p>\n\n<p>A <em>phrase</em> is a string that consists of lowercase English letters and spaces only. No space appears in the start or the end of a phrase. There are&nbsp;no consecutive spaces&nbsp;in a phrase.</p>\n\n<p><em>Before and After&nbsp;puzzles</em> are phrases that are formed by merging&nbsp;two phrases where the <strong>last&nbsp;word of the first&nbsp;phrase</strong> is the same as the <strong>first word of the second phrase</strong>.</p>\n\n<p>Return the&nbsp;Before and After&nbsp;puzzles that can be formed by every two phrases&nbsp;<code>phrases[i]</code>&nbsp;and&nbsp;<code>phrases[j]</code>&nbsp;where&nbsp;<code>i != j</code>. Note that the order of matching two phrases matters, we want to consider both orders.</p>\n\n<p>You should return a list of&nbsp;<strong>distinct</strong>&nbsp;strings <strong>sorted&nbsp;lexicographically</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> phrases = [&quot;writing code&quot;,&quot;code rocks&quot;]\n<strong>Output:</strong> [&quot;writing code rocks&quot;]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> phrases = [&quot;mission statement&quot;,\n                  &quot;a quick bite to eat&quot;,\n&nbsp;                 &quot;a chip off the old block&quot;,\n&nbsp;                 &quot;chocolate bar&quot;,\n&nbsp;                 &quot;mission impossible&quot;,\n&nbsp;                 &quot;a man on a mission&quot;,\n&nbsp;                 &quot;block party&quot;,\n&nbsp;                 &quot;eat my words&quot;,\n&nbsp;                 &quot;bar of soap&quot;]\n<strong>Output:</strong> [&quot;a chip off the old block party&quot;,\n&nbsp;        &quot;a man on a mission impossible&quot;,\n&nbsp;        &quot;a man on a mission statement&quot;,\n&nbsp;        &quot;a quick bite to eat my words&quot;,\n         &quot;chocolate bar of soap&quot;]\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> phrases = [&quot;a&quot;,&quot;b&quot;,&quot;a&quot;]\n<strong>Output:</strong> [&quot;a&quot;]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= phrases.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= phrases[i].length &lt;= 100</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 32,
+  "dislikes": 70,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"clutter\", \"slug\": \"clutter\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> beforeAndAfterPuzzles(vector<string>& phrases) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> beforeAndAfterPuzzles(String[] phrases) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def beforeAndAfterPuzzles(self, phrases):\n        \"\"\"\n        :type phrases: List[str]\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def beforeAndAfterPuzzles(self, phrases: List[str]) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** beforeAndAfterPuzzles(char ** phrases, int phrasesSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> BeforeAndAfterPuzzles(string[] phrases) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} phrases\n * @return {string[]}\n */\nvar beforeAndAfterPuzzles = function(phrases) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} phrases\n# @return {String[]}\ndef before_and_after_puzzles(phrases)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func beforeAndAfterPuzzles(_ phrases: [String]) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func beforeAndAfterPuzzles(phrases []string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def beforeAndAfterPuzzles(phrases: Array[String]): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun beforeAndAfterPuzzles(phrases: Array<String>): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn before_and_after_puzzles(phrases: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $phrases\n     * @return String[]\n     */\n    function beforeAndAfterPuzzles($phrases) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.7K\", \"totalSubmission\": \"10.6K\", \"totalAcceptedRaw\": 4651, \"totalSubmissionRaw\": 10574, \"acRate\": \"44.0%\"}",
+  "hints": [
+    "What if you check every pair of strings (bruteforce)?",
+    "For every two strings, check if they can form a puzzle by comparing their last and first words."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"writing code\",\"code rocks\"]",
+  "metaData": "{\n  \"name\": \"beforeAndAfterPuzzles\",\n  \"params\": [\n    {\n      \"name\": \"phrases\",\n      \"type\": \"string[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<string>\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

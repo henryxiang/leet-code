@@ -1,0 +1,127 @@
+{
+  "questionId": "218",
+  "questionFrontendId": "218",
+  "boundTopicId": null,
+  "title": "The Skyline Problem",
+  "titleSlug": "the-skyline-problem",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A city&#39;s skyline is the outer contour of the silhouette formed by all the buildings in that city when viewed from a distance. Now suppose you are <b>given the locations and height of all the buildings</b> as shown on a cityscape photo (Figure A), write a program to <b>output the skyline</b> formed by these buildings collectively (Figure B).</p>\r\n<a href=\"/static/images/problemset/skyline1.jpg\" target=\"_blank\"><img alt=\"Buildings\" src=\"https://assets.leetcode.com/uploads/2018/10/22/skyline1.png\" style=\"max-width: 45%; border-width: 0px; border-style: solid;\" /> </a> <a href=\"/static/images/problemset/skyline2.jpg\" target=\"_blank\"> <img alt=\"Skyline Contour\" src=\"https://assets.leetcode.com/uploads/2018/10/22/skyline2.png\" style=\"max-width: 45%; border-width: 0px; border-style: solid;\" /> </a>\r\n\r\n<p>The geometric information of each building is represented by a triplet of integers <code>[Li, Ri, Hi]</code>, where <code>Li</code> and <code>Ri</code> are the x coordinates of the left and right edge of the ith building, respectively, and <code>Hi</code> is its height. It is guaranteed that <code>0 &le; Li, Ri &le; INT_MAX</code>, <code>0 &lt; Hi &le; INT_MAX</code>, and <code>Ri - Li &gt; 0</code>. You may assume all buildings are perfect rectangles grounded on an absolutely flat surface at height 0.</p>\r\n\r\n<p>For instance, the dimensions of all buildings in Figure A are recorded as: <code>[ [2 9 10], [3 7 15], [5 12 12], [15 20 10], [19 24 8] ] </code>.</p>\r\n\r\n<p>The output is a list of &quot;<b>key points</b>&quot; (red dots in Figure B) in the format of <code>[ [x1,y1], [x2, y2], [x3, y3], ... ]</code> that uniquely defines a skyline. <b>A key point is the left endpoint of a horizontal line segment</b>. Note that the last key point, where the rightmost building ends, is merely used to mark the termination of the skyline, and always has zero height. Also, the ground in between any two adjacent buildings should be considered part of the skyline contour.</p>\r\n\r\n<p>For instance, the skyline in Figure B should be represented as:<code>[ [2 10], [3 15], [7 12], [12 0], [15 10], [20 8], [24, 0] ]</code>.</p>\r\n\r\n<p><b>Notes:</b></p>\r\n\r\n<ul>\r\n\t<li>The number of buildings in any input list is guaranteed to be in the range <code>[0, 10000]</code>.</li>\r\n\t<li>The input list is already sorted in ascending order by the left x position <code>Li</code>.</li>\r\n\t<li>The output list must be sorted by the x position.</li>\r\n\t<li>There must be no consecutive horizontal lines of equal height in the output skyline. For instance, <code>[...[2 3], [4 5], [7 5], [11 5], [12 7]...]</code> is not acceptable; the three lines of height 5 should be merged into one in the final output as such: <code>[...[2 3], [4 5], [12 7], ...]</code></li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 1561,
+  "dislikes": 79,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Falling Squares\", \"titleSlug\": \"falling-squares\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "stellari",
+      "profileUrl": "/stellari/",
+      "avatarUrl": "https://www.gravatar.com/avatar/b0d4a14eb057dcec3fd0f06001a3657c.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Heap",
+      "slug": "heap"
+    },
+    {
+      "name": "Binary Indexed Tree",
+      "slug": "binary-indexed-tree"
+    },
+    {
+      "name": "Segment Tree",
+      "slug": "segment-tree"
+    },
+    {
+      "name": "Line Sweep",
+      "slug": "line-sweep"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Databricks\", \"slug\": \"databricks\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tableau\", \"slug\": \"tableau\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Houzz\", \"slug\": \"houzz\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<vector<int>> getSkyline(vector<vector<int>>& buildings) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<List<Integer>> getSkyline(int[][] buildings) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def getSkyline(self, buildings):\n        \"\"\"\n        :type buildings: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def getSkyline(self, buildings: List[List[int]]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** getSkyline(int** buildings, int buildingsSize, int* buildingsColSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public IList<IList<int>> GetSkyline(int[][] buildings) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} buildings\n * @return {number[][]}\n */\nvar getSkyline = function(buildings) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} buildings\r\n# @return {Integer[][]}\r\ndef get_skyline(buildings)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func getSkyline(_ buildings: [[Int]]) -> [[Int]] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func getSkyline(buildings [][]int) [][]int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def getSkyline(buildings: Array[Array[Int]]): List[List[Int]] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun getSkyline(buildings: Array<IntArray>): List<List<Int>> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn get_skyline(buildings: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $buildings\n     * @return Integer[][]\n     */\n    function getSkyline($buildings) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"111.4K\", \"totalSubmission\": \"337.8K\", \"totalAcceptedRaw\": 111420, \"totalSubmissionRaw\": 337811, \"acRate\": \"33.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "715",
+    "canSeeDetail": true,
+    "url": "/articles/skyline-problem/",
+    "content": "[TOC]\n\n## Solution\n\n---\n  \n#### Approach 1: Divide and Conquer \n\n**Solution template**\n\nThe problem is a classical example of divide and conquer \napproach, and typically implemented exactly the same way as \nmerge sort algorithm.\n\nLet's follow here a solution template for divide and conquer\nproblems :\n\n- Define the base case(s).\n\n- Split the problem into subproblems and solve them recursively.\n\n- Merge the subproblems solutions into the problem solution.\n\n**Algorithm**\n\ngetSkyline for `n` buildings :\n\n- If `n == 0` : return an empty list.\n\n- If `n == 1` : return the skyline for one building (it's straightforward).\n\n- `leftSkyline` = getSkyline for the first n/2 buildings.\n\n- `rightSkyline` = getSkyline for the last n/2 buildings.\n\n- Merge `leftSkyline` and `rightSkyline`.\n\nNow let's discuss each step in more details.\n\n**Base cases**\n\nThe first base case is an empty `buildings` list.\nThen the skyline is an empty list, too.\n\nThe second base case is the only one building in the list, when \nthe skyline construction is quite straightforward.\n\n![bla](../Figures/218/base5.png)\n\n**How to split the problem**\n\nThe idea is the same as for merge sort : at each step \nsplit the list exactly in two parts : from `0` to `n/2` and\n from `n/2` to `n`, and then construct \nthe skylines recursively for each part.\n\n![bla](../Figures/218/split5.png)\n\n**How to merge two skylines**\n\nThe algorithm for merge function is quite straightforward \nand based on the same merge sort logic : the height of an output skyline is \nalways a maximum between the left and right skylines. \n\n![bla](../Figures/218/merge5.png)\n\nLet's use here two\npointers `pR` and `pL` to track the current element index in both \nskylines, and three integers `leftY`, `rightY`, and `currY` to track the current height\nfor the `left` skyline, `right` skyline and the merged skyline.\n\nmergeSkylines (left, right) :\n\n- currY = leftY = rightY = 0\n\n- While we're in the region where both skylines are present \n(`pR < nR` and `pL < nL`) :\n    \n    - Pick up the element with the smallest `x` coordinate. If it's \n    an element from the left skyline, move `pL` and update `leftY`.\n    If it's \n    an element from the right skyline, move `pR` and update `rightY`.\n\n    - Compute the largest height at the current point :\n    `maxY = max(leftY, rightY)`.\n    \n    - Update an output skyline by `(x, maxY)` point, if `maxY` is not equal to `currY`.\n    \n- While there are still elements in the left skyline (`pL < nL`), \nprocess them following the same logic as above.\n\n- While there are still elements in the right skyline (`pR < nR`), \nprocess them following the same logic as above.\n\n- Return output skyline.\n\n> Here are three usecases to illustrate the merge algorithm execution\n\n![bla](../Figures/218/merge3.png)\n\n![bla](../Figures/218/merge4.png)\n\n![bla](../Figures/218/merge7.png)\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/KffyCwen/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"KffyCwen\"></iframe>\n\n* Time complexity : $$\\mathcal{O}(N \\log N)$$, where $$N$$ is number of\nbuildings. The problem is an example of \n[Master Theorem case II](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)#Case_2_example)\n : $$T(N) = 2 T(\\frac{N}{2}) + 2N$$, that results in $$\\mathcal{O}(N \\log N)$$\n time complexity.\n* Space complexity : $$\\mathcal{O}(N)$$ to keep the output. \n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "700",
+      "count": 36,
+      "average": 4.361,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]",
+  "metaData": "{\r\n  \"name\": \"getSkyline\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"buildings\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<list<integer>>\",\r\n    \"colsize\": 2,\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

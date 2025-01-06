@@ -1,0 +1,98 @@
+{
+  "questionId": "1299",
+  "questionFrontendId": "1191",
+  "boundTopicId": null,
+  "title": "K-Concatenation Maximum Sum",
+  "titleSlug": "k-concatenation-maximum-sum",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an integer array <code>arr</code>&nbsp;and an integer <code>k</code>, modify the array by repeating it <code>k</code> times.</p>\n\n<p>For example, if <code>arr&nbsp;= [1, 2]</code> and <code>k = 3 </code>then the modified array will be <code>[1, 2, 1, 2, 1, 2]</code>.</p>\n\n<p>Return the maximum sub-array sum in the modified array. Note that the length of the sub-array can be <code>0</code>&nbsp;and its sum in that case is <code>0</code>.</p>\n\n<p>As the answer can be very large, return the answer&nbsp;<strong>modulo</strong>&nbsp;<code>10^9 + 7</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1,2], k = 3\n<strong>Output:</strong> 9\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [1,-2,1], k = 5\n<strong>Output:</strong> 2\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [-1,-2], k = 7\n<strong>Output:</strong> 0\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length &lt;= 10^5</code></li>\n\t<li><code>1 &lt;= k &lt;= 10^5</code></li>\n\t<li><code>-10^4 &lt;= arr[i] &lt;= 10^4</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 174,
+  "dislikes": 19,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int kConcatenationMaxSum(vector<int>& arr, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int kConcatenationMaxSum(int[] arr, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def kConcatenationMaxSum(self, arr, k):\n        \"\"\"\n        :type arr: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def kConcatenationMaxSum(self, arr: List[int], k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint kConcatenationMaxSum(int* arr, int arrSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int KConcatenationMaxSum(int[] arr, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @param {number} k\n * @return {number}\n */\nvar kConcatenationMaxSum = function(arr, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @param {Integer} k\n# @return {Integer}\ndef k_concatenation_max_sum(arr, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func kConcatenationMaxSum(_ arr: [Int], _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func kConcatenationMaxSum(arr []int, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def kConcatenationMaxSum(arr: Array[Int], k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun kConcatenationMaxSum(arr: IntArray, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn k_concatenation_max_sum(arr: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @param Integer $k\n     * @return Integer\n     */\n    function kConcatenationMaxSum($arr, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.3K\", \"totalSubmission\": \"28.5K\", \"totalAcceptedRaw\": 7323, \"totalSubmissionRaw\": 28542, \"acRate\": \"25.7%\"}",
+  "hints": [
+    "How to solve the problem for k=1 ?",
+    "Use Kadane's algorithm for k=1.",
+    "What are the possible cases for the answer ?",
+    "The answer is the maximum between, the answer for k=1, the sum of the whole array multiplied by k, or the maximum suffix sum plus the maximum prefix sum plus (k-2) multiplied by the whole array sum for k > 1."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2]\n3",
+  "metaData": "{\n  \"name\": \"kConcatenationMaxSum\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

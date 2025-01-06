@@ -1,0 +1,85 @@
+{
+  "questionId": "235",
+  "questionFrontendId": "235",
+  "boundTopicId": null,
+  "title": "Lowest Common Ancestor of a Binary Search Tree",
+  "titleSlug": "lowest-common-ancestor-of-a-binary-search-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.</p>\r\n\r\n<p>According to the <a href=\"https://en.wikipedia.org/wiki/Lowest_common_ancestor\" target=\"_blank\">definition of LCA on Wikipedia</a>: &ldquo;The lowest common ancestor is defined between two nodes p and q&nbsp;as the lowest node in T that has both p and q&nbsp;as descendants (where we allow <b>a node to be a descendant of itself</b>).&rdquo;</p>\r\n\r\n<p>Given binary search tree:&nbsp; root =&nbsp;[6,2,8,0,4,7,9,null,null,3,5]</p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png\" style=\"width: 200px; height: 190px;\" />\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8\r\n<strong>Output:</strong> 6\r\n<strong>Explanation: </strong>The LCA of nodes <code>2</code> and <code>8</code> is <code>6</code>.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4\r\n<strong>Output:</strong> 2\r\n<strong>Explanation: </strong>The LCA of nodes <code>2</code> and <code>4</code> is <code>2</code>, since a node can be a descendant of itself according to the LCA definition.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>All of the nodes&#39; values will be unique.</li>\r\n\t<li>p and q are different and both values will&nbsp;exist in the BST.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1462,
+  "dislikes": 91,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Lowest Common Ancestor of a Binary Tree\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Smallest Common Region\", \"titleSlug\": \"smallest-common-region\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * struct TreeNode {\r\n *     int val;\r\n *     TreeNode *left;\r\n *     TreeNode *right;\r\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\r\n * };\r\n */\r\nclass Solution {\r\npublic:\r\n    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * public class TreeNode {\r\n *     int val;\r\n *     TreeNode left;\r\n *     TreeNode right;\r\n *     TreeNode(int x) { val = x; }\r\n * }\r\n */\r\nclass Solution {\r\n    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\r\n# class TreeNode(object):\r\n#     def __init__(self, x):\r\n#         self.val = x\r\n#         self.left = None\r\n#         self.right = None\r\n\r\nclass Solution(object):\r\n    def lowestCommonAncestor(self, root, p, q):\r\n        \"\"\"\r\n        :type root: TreeNode\r\n        :type p: TreeNode\r\n        :type q: TreeNode\r\n        :rtype: TreeNode\r\n        \"\"\"\r\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\r\n# class TreeNode:\r\n#     def __init__(self, x):\r\n#         self.val = x\r\n#         self.left = None\r\n#         self.right = None\r\n\r\nclass Solution:\r\n    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':\r\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * struct TreeNode {\r\n *     int val;\r\n *     struct TreeNode *left;\r\n *     struct TreeNode *right;\r\n * };\r\n */\r\nstruct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p, struct TreeNode* q) {\r\n    \r\n}"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * public class TreeNode {\r\n *     public int val;\r\n *     public TreeNode left;\r\n *     public TreeNode right;\r\n *     public TreeNode(int x) { val = x; }\r\n * }\r\n */\r\npublic class Solution {\r\n    public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * function TreeNode(val) {\r\n *     this.val = val;\r\n *     this.left = this.right = null;\r\n * }\r\n */\r\n/**\r\n * @param {TreeNode} root\r\n * @param {TreeNode} p\r\n * @param {TreeNode} q\r\n * @return {TreeNode}\r\n */\r\nvar lowestCommonAncestor = function(root, p, q) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\r\n# class TreeNode\r\n#     attr_accessor :val, :left, :right\r\n#     def initialize(val)\r\n#         @val = val\r\n#         @left, @right = nil, nil\r\n#     end\r\n# end\r\n\r\n# @param {TreeNode} root\r\n# @param {TreeNode} p\r\n# @param {TreeNode} q\r\n# @return {TreeNode}\r\ndef lowest_common_ancestor(root, p, q)\r\n    \r\nend"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\r\n * Definition for TreeNode.\r\n * type TreeNode struct {\r\n *     Val int\r\n *     Left *ListNode\r\n *     Right *ListNode\r\n * }\r\n */\r\n func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {\r\n  \r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"340.5K\", \"totalSubmission\": \"719.1K\", \"totalAcceptedRaw\": 340456, \"totalSubmissionRaw\": 719069, \"acRate\": \"47.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "644",
+    "canSeeDetail": true,
+    "url": "/articles/lowest-common-ancestor-of-a-binary-search-tree/",
+    "content": "[TOC]\n\n## Solution\n\nWe can solve this using the approaches to find [LCA in a binary tree](https://leetcode.com/articles/lowest-common-ancestor-of-a-binary-tree/).\n\nBut, binary search tree's property could be utilized, to come up with a better algorithm.\n\nLets review properties of a BST:\n>1. Left subtree of a node N contains nodes whose values are lesser than or equal to node N's value.\n>2. Right subtree of a node N contains nodes whose values are greater than node N's value.\n>3. Both left and right subtrees are also BSTs.\n\n#### Approach 1: Recursive Approach\n\n**Intuition**\n\nLowest common ancestor for two nodes `p` and `q` would be the last ancestor node common to both of them. Here `last` is defined in terms of the depth of the node. The below diagram would help in understanding what `lowest` means.\n\n<center>\n<img src=\"../Figures/235/235_LCA_Binary_1.png\" width=\"600\"/>\n</center>\n\nNote: One of `p` or `q` would be in the left subtree and the other in the right subtree of the LCA node.\n\nFollowing cases are possible:\n<center>\n<img src=\"../Figures/235/235_LCA_Binary_2.png\" width=\"600\"/>\n</center>\n\n**Algorithm**\n\n1. Start traversing the tree from the root node.\n2. If both the nodes `p` and `q` are in the right subtree, then continue the search with right subtree starting step 1.\n3. If both the nodes `p` and `q` are in the left subtree, then continue the search with left subtree starting step 1.\n4. If both step 2 and step 3 are not true, this means we have found the node which is common to node `p`'s and `q`'s subtrees.\nand hence we return this common node as the LCA.\n\n<iframe src=\"https://leetcode.com/playground/A7ZULghS/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"A7ZULghS\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the number of nodes in the BST. In the worst case we might be visiting all the nodes of the BST.\n\n* Space Complexity: $$O(N)$$. This is because the maximum amount of space utilized by the recursion stack would be $$N$$ since the height of a skewed BST could be $$N$$.\n<br/>\n<br/>\n\n---\n\n#### Approach 2: Iterative Approach\n\n**Algorithm**\n\nThe steps taken are also similar to approach 1. The only difference is instead of recursively calling the function, we traverse down the tree iteratively. This is possible without using a stack or recursion since we don't need to backtrace to find the LCA node. In essence of it the problem is iterative, it just wants us to find the split point. The point from where `p` and `q` won't be part of the same subtree or when one is the parent of the other.\n\n<iframe src=\"https://leetcode.com/playground/PfXQUZfN/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"PfXQUZfN\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity : $$O(N)$$, where $$N$$ is the number of nodes in the BST. In the worst case we might be visiting all the nodes of the BST.\n\n* Space Complexity : $$O(1)$$.\n<br/>\n\n---\nAnalysis written by: [@godayaldivya](https://leetcode.com/godayaldivya/).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "630",
+      "count": 46,
+      "average": 4.761,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[6,2,8,0,4,7,9,null,null,3,5]\n2\n8",
+  "metaData": "{\n  \"name\": \"lowestCommonAncestor\",\n  \"params\": [\n    {\n      \"name\": \"root\",\n      \"type\": \"TreeNode\"\n    },\n    {\n      \"name\": \"p\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"q\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"TreeNode\"\n  },\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"c\",\n    \"csharp\",\n    \"javascript\",\n    \"ruby\",\n    \"golang\",\n    \"python3\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

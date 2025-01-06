@@ -1,0 +1,111 @@
+{
+  "questionId": "541",
+  "questionFrontendId": "541",
+  "boundTopicId": null,
+  "title": "Reverse String II",
+  "titleSlug": "reverse-string-ii",
+  "categoryTitle": "Algorithms",
+  "content": "</p>\r\nGiven a string and an integer k, you need to reverse the first k characters for every 2k characters counting from the start of the string. If there are less than k characters left, reverse all of them. If there are less than 2k but greater than or equal to k characters, then reverse the first k characters and left the other as original.\r\n</p>\r\n\r\n<p><b>Example:</b><br />\r\n<pre>\r\n<b>Input:</b> s = \"abcdefg\", k = 2\r\n<b>Output:</b> \"bacdfeg\"\r\n</pre>\r\n</p>\r\n\r\n<b>Restrictions:</b> </b>\r\n<ol>\r\n<li> The string consists of lower English letters only.</li>\r\n<li> Length of the given string and k will in the range [1, 10000]</li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 317,
+  "dislikes": 961,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Reverse String\", \"titleSlug\": \"reverse-string\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Reverse Words in a String III\", \"titleSlug\": \"reverse-words-in-a-string-iii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string reverseStr(string s, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String reverseStr(String s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def reverseStr(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def reverseStr(self, s: str, k: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * reverseStr(char * s, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ReverseStr(string s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {string}\n */\nvar reverseStr = function(s, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} k\n# @return {String}\ndef reverse_str(s, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func reverseStr(_ s: String, _ k: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func reverseStr(s string, k int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def reverseStr(s: String, k: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun reverseStr(s: String, k: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn reverse_str(s: String, k: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return String\n     */\n    function reverseStr($s, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"73.6K\", \"totalSubmission\": \"157.1K\", \"totalAcceptedRaw\": 73554, \"totalSubmissionRaw\": 157110, \"acRate\": \"46.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "321",
+    "canSeeDetail": true,
+    "url": "/articles/reverse-string-ii/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Direct [Accepted]\n\n**Intuition and Algorithm**\n\nWe will reverse each block of `2k` characters directly.\n\nEach block starts at a multiple of `2k`: for example, `0, 2k, 4k, 6k, ...`.  One thing to be careful about is we may not reverse each block if there aren't enough characters.\n\nTo reverse a block of characters from `i` to `j`, we can swap characters in positions `i++` and `j--`.\n\n<iframe src=\"https://leetcode.com/playground/2qnQN5xs/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"2qnQN5xs\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the size of `s`.  We build a helper array, plus reverse about half the characters in `s`.\n\n* Space Complexity: $$O(N)$$, the size of `a`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "316",
+      "count": 11,
+      "average": 4.364,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"abcdefg\"\n2",
+  "metaData": "{\r\n  \"name\": \"reverseStr\",\r\n  \"params\": [\r\n      {\r\n        \"name\": \"s\",\r\n        \"type\": \"string\"\r\n      },\r\n      \r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

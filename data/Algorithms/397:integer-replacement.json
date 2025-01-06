@@ -1,0 +1,97 @@
+{
+  "questionId": "397",
+  "questionFrontendId": "397",
+  "boundTopicId": null,
+  "title": "Integer Replacement",
+  "titleSlug": "integer-replacement",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a positive integer <i>n</i> and you can do operations as follow:\r\n</p>\r\n\r\n<p>\r\n<ol>\r\n<li>If <i>n</i> is even, replace <i>n</i> with <code><i>n</i>/2</code>.</li>\r\n<li>If <i>n</i> is odd, you can replace <i>n</i> with either <code><i>n</i> + 1</code> or <code><i>n</i> - 1</code>.</li>\r\n</ol>\r\n</p>\r\n\r\n<p>\r\nWhat is the minimum number of replacements needed for <i>n</i> to become 1?\r\n</p>\r\n\r\n</p>\r\n\r\n<p><b>Example 1:</b>\r\n<pre>\r\n<b>Input:</b>\r\n8\r\n\r\n<b>Output:</b>\r\n3\r\n\r\n<b>Explanation:</b>\r\n8 -> 4 -> 2 -> 1\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b>\r\n<pre>\r\n<b>Input:</b>\r\n7\r\n\r\n<b>Output:</b>\r\n4\r\n\r\n<b>Explanation:</b>\r\n7 -> 8 -> 4 -> 2 -> 1\r\nor\r\n7 -> 6 -> 3 -> 2 -> 1\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 271,
+  "dislikes": 273,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int integerReplacement(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int integerReplacement(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def integerReplacement(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def integerReplacement(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint integerReplacement(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int IntegerReplacement(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar integerReplacement = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef integer_replacement(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func integerReplacement(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func integerReplacement(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def integerReplacement(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun integerReplacement(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn integer_replacement(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function integerReplacement($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"47.3K\", \"totalSubmission\": \"147.1K\", \"totalAcceptedRaw\": 47348, \"totalSubmissionRaw\": 147092, \"acRate\": \"32.2%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "8",
+  "metaData": "{\r\n  \"name\": \"integerReplacement\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

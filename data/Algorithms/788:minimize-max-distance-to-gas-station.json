@@ -1,0 +1,113 @@
+{
+  "questionId": "788",
+  "questionFrontendId": "774",
+  "boundTopicId": null,
+  "title": "Minimize Max Distance to Gas Station",
+  "titleSlug": "minimize-max-distance-to-gas-station",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On a horizontal number line, we have gas stations at positions <code>stations[0], stations[1], ..., stations[N-1]</code>, where <code>N = stations.length</code>.</p>\r\n\r\n<p>Now, we add <code>K</code> more gas stations so that <strong>D</strong>, the maximum distance between adjacent gas stations, is minimized.</p>\r\n\r\n<p>Return the smallest possible value of <strong>D</strong>.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> stations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], K = 9\r\n<strong>Output:</strong> 0.500000\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>stations.length</code> will be an integer in range <code>[10, 2000]</code>.</li>\r\n\t<li><code>stations[i]</code> will be an integer in range <code>[0, 10^8]</code>.</li>\r\n\t<li><code>K</code> will be an integer in range <code>[1, 10^6]</code>.</li>\r\n\t<li>Answers within <code>10^-6</code> of the true value will be accepted as correct.</li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 280,
+  "dislikes": 40,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Koko Eating Bananas\", \"titleSlug\": \"koko-eating-bananas\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    double minmaxGasDist(vector<int>& stations, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public double minmaxGasDist(int[] stations, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minmaxGasDist(self, stations, K):\n        \"\"\"\n        :type stations: List[int]\n        :type K: int\n        :rtype: float\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minmaxGasDist(self, stations: List[int], K: int) -> float:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\ndouble minmaxGasDist(int* stations, int stationsSize, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public double MinmaxGasDist(int[] stations, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} stations\n * @param {number} K\n * @return {number}\n */\nvar minmaxGasDist = function(stations, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} stations\n# @param {Integer} k\n# @return {Float}\ndef minmax_gas_dist(stations, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minmaxGasDist(_ stations: [Int], _ K: Int) -> Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minmaxGasDist(stations []int, K int) float64 {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minmaxGasDist(stations: Array[Int], K: Int): Double = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minmaxGasDist(stations: IntArray, K: Int): Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn minmax_gas_dist(stations: Vec<i32>, k: i32) -> f64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $stations\n     * @param Integer $K\n     * @return Float\n     */\n    function minmaxGasDist($stations, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.7K\", \"totalSubmission\": \"28.6K\", \"totalAcceptedRaw\": 12708, \"totalSubmissionRaw\": 28568, \"acRate\": \"44.5%\"}",
+  "hints": [
+    "Use a binary search.  We'll binary search the monotone function \"possible(D) = can we use K or less gas stations to ensure each adjacent distance between gas stations is at most D?\""
+  ],
+  "solution": {
+    "id": "405",
+    "canSeeDetail": true,
+    "url": "/articles/minimize-max-distance-to-gas-station/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Dynamic Programming [Memory Limit Exceeded]\r\n\r\n**Intuition**\r\n\r\nLet `dp[n][k]` be the answer for adding `k` more gas stations to the first `n` intervals of stations.  We can develop a recurrence expressing `dp[n][k]` in terms of `dp[x][y]` with smaller `(x, y)`.\r\n\r\n**Algorithm**\r\n\r\nSay the `i`th interval is `deltas[i] = stations[i+1] - stations[i]`.  We want to find `dp[n+1][k]` as a recursion.  We can put `x` gas stations in the `n+1`th interval for a best distance of `deltas[n+1] / (x+1)`, then the rest of the intervals can be solved with an answer of `dp[n][k-x]`.  The answer is the minimum of these over all `x`.\r\n\r\nFrom this recursion, we can develop a dynamic programming solution.\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/gZRRVU99/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"gZRRVU99\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(N K^2)$$, where $$N$$ is the length of `stations`.\r\n\r\n* Space Complexity: $$O(N K)$$, the size of `dp`.\r\n\r\n---\r\n#### Approach #2: Brute Force [Time Limit Exceeded]\r\n\r\n**Intuition**\r\n\r\nAs in *Approach #1*, let's look at `deltas`, the distances between adjacent gas stations.\r\n\r\nLet's repeatedly add a gas station to the current largest interval, so that we add `K` of them total.  This greedy approach is correct because if we left it alone, then our answer never goes down from that point on.\r\n\r\n**Algorithm**\r\n\r\nTo find the largest current interval, we keep track of how many parts `count[i]` the `i`th (original) interval has become.  (For example, if we added 2 gas stations to it total, there will be 3 parts.)  The new largest interval on this section of road will be `deltas[i] / count[i]`.\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/tvEsVEtV/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"tvEsVEtV\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(N K)$$, where $$N$$ is the length of `stations`.\r\n\r\n* Space Complexity: $$O(N)$$, the size of `deltas` and `count`.\r\n\r\n---\r\n#### Approach #3: Heap [Time Limit Exceeded]\r\n\r\n**Intuition**\r\n\r\nFollowing the intuition of *Approach #2*, if we are taking a repeated maximum, we can replace this with a heap data structure, which performs repeated maximum more efficiently.\r\n\r\n**Algorithm**\r\n\r\nAs in *Approach #2*, let's repeatedly add a gas station to the next larget interval `K` times.  We use a heap to know which interval is largest.  In Python, we use a negative priority to simulate a max heap with a min heap.\r\n\r\n<iframe src=\"https://leetcode.com/playground/hNGB9oXj/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"hNGB9oXj\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(K \\log N)$$, where $$N$$ is the length of `stations`.\r\n\r\n* Space Complexity: $$O(N)$$, the size of `deltas` and `count`.\r\n\r\n---\r\n#### Approach #4: Binary Search [Accepted]\r\n\r\n**Intuition**\r\n\r\nLet's ask `possible(D)`: with `K` (or less) gas stations, can we make every adjacent distance between gas stations at most `D`?  This function is monotone, so we can apply a binary search to find $$D^{\\text{*}}$$.\r\n\r\n**Algorithm**\r\n\r\n More specifically, there exists some `D*` (the answer) for which `possible(d) = False` when `d < D*` and `possible(d) = True` when `d > D*`.  Binary searching a monotone function is a typical technique, so let's focus on the function `possible(D)`.\r\n\r\n When we have some interval like `X = stations[i+1] - stations[i]`, we'll need to use $$\\lfloor \\frac{X}{D} \\rfloor$$ gas stations to ensure every subinterval has size less than `D`.  This is independent of other intervals, so in total we'll need to use $$\\sum_i \\lfloor \\frac{X_i}{D} \\rfloor$$ gas stations.  If this is at most `K`, then it is possible to make every adjacent distance between gas stations at most `D`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/Cm3cbUmt/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"Cm3cbUmt\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(N \\log W)$$, where $$N$$ is the length of `stations`, and $$W = 10^{14}$$ is the range of possible answers ($$10^8$$), divided by the acceptable level of precision ($$10^{-6}$$).\r\n\r\n* Space Complexity: $$O(1)$$ in additional space complexity.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "400",
+      "count": 21,
+      "average": 4.524,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4,5,6,7,8,9,10]\n9",
+  "metaData": "{\r\n  \"name\": \"minmaxGasDist\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"stations\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"double\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

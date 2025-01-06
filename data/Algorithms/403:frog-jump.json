@@ -1,0 +1,105 @@
+{
+  "questionId": "403",
+  "questionFrontendId": "403",
+  "boundTopicId": null,
+  "title": "Frog Jump",
+  "titleSlug": "frog-jump",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A frog is crossing a river. The river is divided into x units and at each unit there may or may not exist a stone. The frog can jump on a stone, but it must not jump into the water.</p>\r\n\r\n<p>Given a list of stones' positions (in units) in sorted ascending order, determine if the frog is able to cross the river by landing on the last stone. Initially, the frog is on the first stone and assume the first jump must be 1 unit.\r\n</p>\r\n\r\n<p>If the frog's last jump was <i>k</i> units, then its next jump must be either <i>k</i> - 1, <i>k</i>, or <i>k</i> + 1 units. Note that the frog can only jump in the forward direction.</p>\r\n\r\n<p><b>Note:</b>\r\n<ul>\r\n<li>The number of stones is &ge; 2 and is < 1,100.</li>\r\n<li>Each stone's position will be a non-negative integer < 2<sup>31</sup>.</li>\r\n<li>The first stone's position is always 0.</li>\r\n</ul>\r\n</p>\r\n\r\n<p><b>Example 1:</b>\r\n<pre>\r\n<b>[0,1,3,5,6,8,12,17]</b>\r\n\r\nThere are a total of 8 stones.\r\nThe first stone at the 0th unit, second stone at the 1st unit,\r\nthird stone at the 3rd unit, and so on...\r\nThe last stone at the 17th unit.\r\n\r\n<b>Return true</b>. The frog can jump to the last stone by jumping \r\n1 unit to the 2nd stone, then 2 units to the 3rd stone, then \r\n2 units to the 4th stone, then 3 units to the 6th stone, \r\n4 units to the 7th stone, and 5 units to the 8th stone.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b>\r\n<pre>\r\n<b>[0,1,2,3,4,8,9,11]</b>\r\n\r\n<b>Return false</b>. There is no way to jump to the last stone as \r\nthe gap between the 5th and 6th stone is too large.\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 682,
+  "dislikes": 80,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool canCross(vector<int>& stones) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canCross(int[] stones) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canCross(self, stones):\n        \"\"\"\n        :type stones: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canCross(self, stones: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool canCross(int* stones, int stonesSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CanCross(int[] stones) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} stones\n * @return {boolean}\n */\nvar canCross = function(stones) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} stones\n# @return {Boolean}\ndef can_cross(stones)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canCross(_ stones: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canCross(stones []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canCross(stones: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canCross(stones: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_cross(stones: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $stones\n     * @return Boolean\n     */\n    function canCross($stones) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"66.1K\", \"totalSubmission\": \"175.1K\", \"totalAcceptedRaw\": 66143, \"totalSubmissionRaw\": 175103, \"acRate\": \"37.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "78",
+    "canSeeDetail": true,
+    "url": "/articles/frog-jump/",
+    "content": "[TOC]\n\n## Summary\n\nGiven a sorted stone array containing the positions at which there are stones in a river. We need to determine whether it is possible or not for a frog to cross the river by stepping over these stones,\nprovided that the frog starts at position 0, and at every step the frog can make a jump of size $$k-1$$, $$k$$ or $$k+1$$ if the previous jump is of size $$k$$.\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\nIn the brute force approach, we make use of a recursive function $$canCross$$ which takes the given stone array, the current position and the current $$jumpsize$$ as input\narguments. We start with $$currentPosition=0$$ and $$jumpsize=0$$. Then for every function call, we start from the $$currentPosition$$ and check if there lies a stone at $$(currentPostion + newjumpsize)$$, where, the\n$$newjumpsize$$ could be $$jumpsize$$, $$jumpsize+1$$ or $$jumpsize-1$$. In order to check whether a stone exists at the specified positions, we check the elements of the array in a linear manner.\nIf a stone exists at any of these positions, we call the recursive function again with the same stone array, the $$currentPosition$$ and\nthe $$newjumpsize$$ as the parameters. If we are able to reach the end of the stone array through any of these calls, we return $$true$$ to indicate the possibility of reaching the end.\n\n\n<iframe src=\"https://leetcode.com/playground/SLsn858o/shared\" frameBorder=\"0\" name=\"SLsn858o\" width=\"100%\" height=\"326\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(3^n)$$. Recursion tree can grow upto $$3^n$$.\n* Space complexity : $$O(n)$$. Recursion of depth $$n$$ is used.\n\n---\n#### Approach #2 Better Brute Force[Time Limit Exceeded]\n\n**Algorithm**\n\nIn the previous brute force approach, we need to find if a stone exists at $$(currentPosition + new\njumpsize)$$, where $$newjumpsize$$ could be either of $$jumpsize-1$$, $$jumpsize$$ or\n$$jumpsize+1$$. But in order to check if a stone exists at the specified location, we searched the given array in linearly. To optimize this, we can use binary search to look for the element\nin the given array since it is sorted. Rest of the method remains the same.\n\n<iframe src=\"https://leetcode.com/playground/xnG53xSp/shared\" frameBorder=\"0\" name=\"xnG53xSp\" width=\"100%\" height=\"462\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(3^n)$$. Recursion tree can grow upto $$3^n$$.\n* Space complexity : $$O(n)$$. Recursion of depth $$n$$ is used.\n\n---\n#### Approach #3 Using Memorization [Accepted]\n\n**Algorithm**\n\nAnother problem with above approaches is that we can make the same function calls coming through different paths e.g. For a given $$currentIndex$$, we can call the recursive function\n$$canCross$$ with the $$jumpsize$$, say $$n$$. This $$n$$ could be resulting from previous $$jumpsize$$ being $$n-1$$,$$n$$ or $$n+1$$. Thus, many redundant function calls could be made\nprolonging the running time. This redundancy can be removed by making use of memorization. We make use of a 2-d $$memo$$ array, initialized by $$-1$$s, to store the result returned from a function call for\na particular $$currentIndex$$ and $$jumpsize$$. If the same $$currentIndex$$ and $$jumpsize$$ happens is encountered again, we can return the result directly using the $$memo$$ array. This helps to prune the\nsearch tree to a great extent.\n\n<iframe src=\"https://leetcode.com/playground/ZauYpsEv/shared\" frameBorder=\"0\" name=\"ZauYpsEv\" width=\"100%\" height=\"479\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(n^3)$$. Memorization will reduce time complexity to $$O(n^3)$$.\n\n* Space complexity : $$O(n^2)$$. $$memo$$ matrix of size $$n^2$$ is used.\n\n---\n\n#### Approach #4 Using Memorization with Binary Search [Accepted]\n\n**Algorithm**\n\n We can optimize the above memorization approach, if we make use of Binary Search to find if a stone\nexists at $$currentPostion + newjumpsize$$ instead of searching linearly.\n\n<iframe src=\"https://leetcode.com/playground/ApwgcSaM/shared\" frameBorder=\"0\" name=\"ApwgcSaM\" width=\"100%\" height=\"515\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(n^2 log(n)\\big)$$. We traverse the complete $$dp$$ matrix once $$(O(n^2))$$. For every entry we take atmost $$n$$ numbers as pivot.\n\n* Space complexity : $$O(n^2)$$. $$dp$$ matrix of size $$n^2$$ is used.\n\n---\n\n#### Approach #5 Using Dynamic Programming[Accepted]\n\n**Algorithm**\n\nIn the DP Approach, we make use of a hashmap $$map$$ which contains $$key:value$$ pairs such that $$key$$ refers to the position at which a stone is present and $$value$$ is a\nset containing the $$jumpsize$$ which can lead to the current stone position. We start by making a hashmap whose $$key$$s are all the positions at which a stone is present and the $$value$$s are\nall empty except position 0 whose value contains 0. Then, we start traversing the elements(positions) of the given stone array in sequential order. For the $$currentPosition$$, for every possible $$jumpsize$$ in the\n$$value$$ set, we check if $$currentPosition + newjumpsize$$ exists in the $$map$$, where $$newjumpsize$$ can be either $$jumpsize-1$$, $$jumpsize$$,\n$$jumpsize+1$$. If so, we append the corresponding $$value$$ set with $$newjumpsize$$. We continue in the same manner. If at the end, the $$value$$ set corresponding to the\nlast position is non-empty, we conclude that reaching the end is possible, otherwise, it isn't.\n\nFor more understanding see this animation-\n\n<!--![Frog Jump](../Figures/135_FrogJump.gif)-->\n!?!../Documents/403_Frog.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/WkNK2fiw/shared\" frameBorder=\"0\" name=\"WkNK2fiw\" width=\"100%\" height=\"377\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. Two nested loops are there.\n\n* Space complexity : $$O(n^2)$$. $$hashmap$$ size can grow upto $$n^2$$ .\n\n---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "76",
+      "count": 13,
+      "average": 4.692,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,1,3,4,5,7,9,10,12]",
+  "metaData": "{\r\n  \"name\": \"canCross\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"stones\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

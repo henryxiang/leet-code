@@ -1,0 +1,97 @@
+{
+  "questionId": "115",
+  "questionFrontendId": "115",
+  "boundTopicId": null,
+  "title": "Distinct Subsequences",
+  "titleSlug": "distinct-subsequences",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <strong>S</strong> and a string <strong>T</strong>, count the number of distinct subsequences of <strong>S</strong> which equals <strong>T</strong>.</p>\r\n\r\n<p>A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, <code>&quot;ACE&quot;</code> is a subsequence of <code>&quot;ABCDE&quot;</code> while <code>&quot;AEC&quot;</code> is not).</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>S = <code>&quot;rabbbit&quot;</code>, T = <code>&quot;rabbit&quot;\r\n<strong>Output:</strong>&nbsp;3\r\n</code><strong>Explanation:\r\n</strong>\r\nAs shown below, there are 3 ways you can generate &quot;rabbit&quot; from S.\r\n(The caret symbol ^ means the chosen letters)\r\n\r\n<code>rabbbit</code>\r\n^^^^ ^^\r\n<code>rabbbit</code>\r\n^^ ^^^^\r\n<code>rabbbit</code>\r\n^^^ ^^^\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>S = <code>&quot;babgbag&quot;</code>, T = <code>&quot;bag&quot;\r\n<strong>Output:</strong>&nbsp;5\r\n</code><strong>Explanation:\r\n</strong>\r\nAs shown below, there are 5 ways you can generate &quot;bag&quot; from S.\r\n(The caret symbol ^ means the chosen letters)\r\n\r\n<code>babgbag</code>\r\n^^ ^\r\n<code>babgbag</code>\r\n^^    ^\r\n<code>babgbag</code>\r\n^    ^^\r\n<code>babgbag</code>\r\n  ^  ^^\r\n<code>babgbag</code>\r\n    ^^^\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 885,
+  "dislikes": 45,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Barclays\", \"slug\": \"barclays\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int numDistinct(string s, string t) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numDistinct(String s, String t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numDistinct(self, s, t):\n        \"\"\"\n        :type s: str\n        :type t: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numDistinct(self, s: str, t: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numDistinct(char * s, char * t){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int NumDistinct(string s, string t) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {string} t\n * @return {number}\n */\nvar numDistinct = function(s, t) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @param {String} t\r\n# @return {Integer}\r\ndef num_distinct(s, t)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func numDistinct(_ s: String, _ t: String) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numDistinct(s string, t string) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def numDistinct(s: String, t: String): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun numDistinct(s: String, t: String): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_distinct(s: String, t: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $t\n     * @return Integer\n     */\n    function numDistinct($s, $t) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"119.7K\", \"totalSubmission\": \"329.1K\", \"totalAcceptedRaw\": 119653, \"totalSubmissionRaw\": 329141, \"acRate\": \"36.4%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"rabbbit\"\n\"rabbit\"",
+  "metaData": "{\r\n  \"name\": \"numDistinct\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"t\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,115 @@
+{
+  "questionId": "694",
+  "questionFrontendId": "694",
+  "boundTopicId": null,
+  "title": "Number of Distinct Islands",
+  "titleSlug": "number-of-distinct-islands",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-empty 2D array <code>grid</code> of 0's and 1's, an <b>island</b> is a group of <code>1</code>'s (representing land) connected 4-directionally (horizontal or vertical.)  You may assume all four edges of the grid are surrounded by water.</p>\r\n\r\n<p>Count the number of <b>distinct</b> islands.  An island is considered to be the same as another if and only if one island can be translated (and not rotated or reflected) to equal the other.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n11000\r\n11000\r\n00011\r\n00011\r\n</pre>\r\nGiven the above grid map, return <code>1</code>.\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>11011\r\n10000\r\n00001\r\n11011</pre>\r\nGiven the above grid map, return <code>3</code>.<br /><br />\r\nNotice that:\r\n<pre>\r\n11\r\n1\r\n</pre>\r\nand\r\n<pre>\r\n 1\r\n11\r\n</pre>\r\nare considered different island shapes, because we do not consider reflection / rotation.\r\n</p>\r\n\r\n<p><b>Note:</b>\r\nThe length of each dimension in the given <code>grid</code> does not exceed 50.\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 530,
+  "dislikes": 34,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Number of Islands\", \"titleSlug\": \"number-of-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Distinct Islands II\", \"titleSlug\": \"number-of-distinct-islands-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numDistinctIslands(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numDistinctIslands(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numDistinctIslands(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numDistinctIslands(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numDistinctIslands(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumDistinctIslands(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar numDistinctIslands = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef num_distinct_islands(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numDistinctIslands(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numDistinctIslands(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numDistinctIslands(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numDistinctIslands(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_distinct_islands(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function numDistinctIslands($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"38.1K\", \"totalSubmission\": \"71.4K\", \"totalAcceptedRaw\": 38139, \"totalSubmissionRaw\": 71368, \"acRate\": \"53.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "258",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-distinct-islands/",
+    "content": "[TOC]\n\n#### Approach #1: Hash By Local Coordinates [Accepted]\n\n**Intuition and Algorithm**\n\nAt the beginning, we need to find every island, which we can do using a straightforward depth-first search.  The hard part is deciding whether two islands are the same.\n\nSince two islands are the same if one can be translated to match another, let's translate every island so the top-left corner is `(0, 0)`  For example, if an island is made from squares `[(2, 3), (2, 4), (3, 4)]`, we can think of this shape as `[(0, 0), (0, 1), (1, 1)]` when anchored at the top-left corner.\n\nFrom there, we only need to check how many unique shapes there ignoring permutations (so `[(0, 0), (0, 1)]` is the same as `[(0, 1), (1, 0)]`).  We use sets directly as we have showcased below, but we could have also sorted each list and put those sorted lists in our set structure `shapes`.\n\nIn the Java solution, we converted our tuples `(r - r0, c - c0)` to integers.  We multiplied the number of rows by `2 * grid[0].length` instead of `grid[0].length` because our local row-coordinate could be negative.\n\n<iframe src=\"https://leetcode.com/playground/nxmaQmqz/shared\" frameBorder=\"0\" name=\"nxmaQmqz\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(R*C)$$, where $$R$$ is the number of rows in the given `grid`, and $$C$$ is the number of columns.  We visit every square once.\n\n* Space complexity: $$O(R*C)$$, the space used by `seen` to keep track of visited squares, and `shapes`.\n\n---\n#### Approach #2: Hash By Path Signature [Accepted]\n\n**Intuition and Algorithm**\n\nWhen we start a depth-first search on the top-left square of some island, the path taken by our depth-first search will be the same if and only if the shape is the same.  We can exploit this by recording the path we take as our shape - keeping in mind to record both when we enter and when we exit the function.  The rest of the code remains as in *Approach #1*.\n\n<iframe src=\"https://leetcode.com/playground/XrUoq6EL/shared\" frameBorder=\"0\" name=\"XrUoq6EL\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time and Space Complexity: $$O(R*C)$$.  The analysis is the same as in *Approach #1*.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice)s",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "254",
+      "count": 16,
+      "average": 4.125,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]]",
+  "metaData": "{\r\n  \"name\": \"numDistinctIslands\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

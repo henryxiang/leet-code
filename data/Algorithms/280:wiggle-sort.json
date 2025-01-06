@@ -1,0 +1,109 @@
+{
+  "questionId": "280",
+  "questionFrontendId": "280",
+  "boundTopicId": null,
+  "title": "Wiggle Sort",
+  "titleSlug": "wiggle-sort",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an unsorted array <code>nums</code>, reorder it <b>in-place</b> such that <code>nums[0] &lt;= nums[1] &gt;= nums[2] &lt;= nums[3]...</code>.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> <code>nums = [3,5,2,1,6,4]</code>\r\n<b>Output:</b> One possible answer is [3,5,1,6,2,4]</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 496,
+  "dislikes": 51,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Sort Colors\", \"titleSlug\": \"sort-colors\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Wiggle Sort II\", \"titleSlug\": \"wiggle-sort-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    void wiggleSort(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public void wiggleSort(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def wiggleSort(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: None Do not return anything, modify nums in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def wiggleSort(self, nums: List[int]) -> None:\n        \"\"\"\n        Do not return anything, modify nums in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nvoid wiggleSort(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public void WiggleSort(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {void} Do not return anything, modify nums in-place instead.\n */\nvar wiggleSort = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Void} Do not return anything, modify nums in-place instead.\ndef wiggle_sort(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func wiggleSort(_ nums: inout [Int]) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func wiggleSort(nums []int)  {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def wiggleSort(nums: Array[Int]): Unit = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun wiggleSort(nums: IntArray): Unit {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn wiggle_sort(nums: &mut Vec<i32>) {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return NULL\n     */\n    function wiggleSort(&$nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"75.6K\", \"totalSubmission\": \"121.5K\", \"totalAcceptedRaw\": 75600, \"totalSubmissionRaw\": 121470, \"acRate\": \"62.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "12",
+    "canSeeDetail": true,
+    "url": "/articles/wiggle-sort/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n---\r\n#### Approach #1 (Sorting) [Accepted]\r\n\r\nThe obvious solution is to just sort the array first, then swap elements pair-wise starting from the second element. For example:\r\n\r\n       [1, 2, 3, 4, 5, 6]\r\n           ↑  ↑  ↑  ↑\r\n           swap  swap\r\n\r\n    => [1, 3, 2, 5, 4, 6]\r\n\r\n```java\r\npublic void wiggleSort(int[] nums) {\r\n    Arrays.sort(nums);\r\n    for (int i = 1; i < nums.length - 1; i += 2) {\r\n        swap(nums, i, i + 1);\r\n    }\r\n}\r\n\r\nprivate void swap(int[] nums, int i, int j) {\r\n    int temp = nums[i];\r\n    nums[i] = nums[j];\r\n    nums[j] = temp;\r\n}\r\n```\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(n \\log n)$$.\r\nThe entire algorithm is dominated by the sorting step, which costs $$O(n \\log n)$$ time to sort $$n$$ elements.\r\n\r\n* Space complexity : $$O(1)$$. Space depends on the sorting implementation which, usually, costs $$O(1)$$ auxiliary space if `heapsort` is used.\r\n\r\n---\r\n#### Approach #2 (One-pass Swap) [Accepted]\r\n\r\nIntuitively, we should be able to reorder it in one-pass. As we iterate through the array, we compare the current element to its next element and if the order is incorrect, we swap them.\r\n\r\n```java\r\npublic void wiggleSort(int[] nums) {\r\n    boolean less = true;\r\n    for (int i = 0; i < nums.length - 1; i++) {\r\n        if (less) {\r\n            if (nums[i] > nums[i + 1]) {\r\n                swap(nums, i, i + 1);\r\n            }\r\n        } else {\r\n            if (nums[i] < nums[i + 1]) {\r\n                swap(nums, i, i + 1);\r\n            }\r\n        }\r\n        less = !less;\r\n    }\r\n}\r\n```\r\n\r\nWe could shorten the code further by compacting the condition to a single line. Also observe the boolean value of `less` actually depends on whether the index is even or odd.\r\n\r\n```java\r\npublic void wiggleSort(int[] nums) {\r\n    for (int i = 0; i < nums.length - 1; i++) {\r\n        if (((i % 2 == 0) && nums[i] > nums[i + 1])\r\n                || ((i % 2 == 1) && nums[i] < nums[i + 1])) {\r\n            swap(nums, i, i + 1);\r\n        }\r\n    }\r\n}\r\n```\r\n\r\nHere is another amazing solution by @StefanPochmann who came up with [originally here](https://leetcode.com/discuss/57113/java-o-n-solution?show=57192#a57192).\r\n\r\n```java\r\npublic void wiggleSort(int[] nums) {\r\n    for (int i = 0; i < nums.length - 1; i++) {\r\n        if ((i % 2 == 0) == (nums[i] > nums[i + 1])) {\r\n            swap(nums, i, i + 1);\r\n        }\r\n    }\r\n}\r\n```\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(n)$$.\r\nIn the worst case we swap at most $$n \\over 2$$ times. An example input is `[2,1,3,1,4,1]`.\r\n\r\n* Space complexity : $$O(1)$$.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "14",
+      "count": 24,
+      "average": 4.458,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,5,2,1,6,4]",
+  "metaData": "{\r\n  \"name\": \"wiggleSort\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"void\"\r\n  },\r\n  \"output\": {\r\n    \"paramindex\": 0\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

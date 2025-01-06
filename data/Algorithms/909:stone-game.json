@@ -1,0 +1,119 @@
+{
+  "questionId": "909",
+  "questionFrontendId": "877",
+  "boundTopicId": null,
+  "title": "Stone Game",
+  "titleSlug": "stone-game",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Alex and Lee play a game with piles of stones.&nbsp; There are an even number of&nbsp;piles <strong>arranged in a row</strong>, and each pile has a positive integer number of stones <code>piles[i]</code>.</p>\r\n\r\n<p>The objective of the game is to end with the most&nbsp;stones.&nbsp; The total number of stones is odd, so there are no ties.</p>\r\n\r\n<p>Alex and Lee take turns, with Alex starting first.&nbsp; Each turn, a player&nbsp;takes the entire pile of stones from either the beginning or the end of the row.&nbsp; This continues until there are no more piles left, at which point the person with the most stones wins.</p>\r\n\r\n<p>Assuming Alex and Lee play optimally, return <code>True</code>&nbsp;if and only if Alex wins the game.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[5,3,4,5]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n<strong>Explanation: </strong>\r\nAlex starts first, and can only take the first 5 or the last 5.\r\nSay he takes the first 5, so that the row becomes [3, 4, 5].\r\nIf Lee takes 3, then the board is [4, 5], and Alex takes 5 to win with 10 points.\r\nIf Lee takes the last 5, then the board is [3, 4], and Alex takes 4 to win with 9 points.\r\nThis demonstrated that taking the first 5 was a winning move for Alex, so we return true.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>2 &lt;= piles.length &lt;= 500</code></li>\r\n\t<li><code>piles.length</code> is even.</li>\r\n\t<li><code>1 &lt;= piles[i] &lt;= 500</code></li>\r\n\t<li><code>sum(piles)</code> is odd.</li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 450,
+  "dislikes": 763,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "lee215",
+      "profileUrl": "/lee215/",
+      "avatarUrl": "https://assets.leetcode.com/users/lee215/avatar_1551541889.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Minimax",
+      "slug": "minimax"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool stoneGame(vector<int>& piles) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean stoneGame(int[] piles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def stoneGame(self, piles):\n        \"\"\"\n        :type piles: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def stoneGame(self, piles: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool stoneGame(int* piles, int pilesSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool StoneGame(int[] piles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} piles\n * @return {boolean}\n */\nvar stoneGame = function(piles) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} piles\n# @return {Boolean}\ndef stone_game(piles)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func stoneGame(_ piles: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func stoneGame(piles []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def stoneGame(piles: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun stoneGame(piles: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn stone_game(piles: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $piles\n     * @return Boolean\n     */\n    function stoneGame($piles) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"40.7K\", \"totalSubmission\": \"64.8K\", \"totalAcceptedRaw\": 40688, \"totalSubmissionRaw\": 64800, \"acRate\": \"62.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "521",
+    "canSeeDetail": true,
+    "url": "/articles/stone-game/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Dynamic Programming\n\n**Intuition**\n\nLet's change the game so that whenever Lee scores points, it deducts from Alex's score instead.\n\nLet `dp(i, j)` be the largest score Alex can achieve where the piles remaining are `piles[i], piles[i+1], ..., piles[j]`.  This is natural in games with scoring: we want to know what the value of each position of the game is.\n\nWe can formulate a recursion for `dp(i, j)` in terms of `dp(i+1, j)` and `dp(i, j-1)`, and we can use dynamic programming to not repeat work in this recursion.  (This approach can output the correct answer, because the states form a DAG (directed acyclic graph).)\n\n**Algorithm**\n\nWhen the piles remaining are `piles[i], piles[i+1], ..., piles[j]`, the player who's turn it is has at most 2 moves.\n\nThe person who's turn it is can be found by comparing `j-i` to `N` modulo 2.\n\nIf the player is Alex, then she either takes `piles[i]` or `piles[j]`, increasing her score by that amount.  Afterwards, the total score is either `piles[i] + dp(i+1, j)`, or `piles[j] + dp(i, j-1)`; and we want the maximum possible score.\n\nIf the player is Lee, then he either takes `piles[i]` or `piles[j]`, decreasing Alex's score by that amount.  Afterwards, the total score is either `-piles[i] + dp(i+1, j)`, or `-piles[j] + dp(i, j-1)`; and we want the *minimum* possible score.\n\n\n<iframe src=\"https://leetcode.com/playground/4azVgCpr/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"4azVgCpr\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the number of piles.\n\n* Space Complexity:  $$O(N^2)$$, the space used storing the intermediate results of each subgame.\n<br />\n<br />\n\n\n---\n#### Approach 2: Mathematical\n\n**Intuition and Algorithm**\n\nAlex clearly always wins the 2 pile game.  With some effort, we can see that she always wins the 4 pile game.\n\nIf Alex takes the first pile initially, she can always take the third pile.  If she takes the fourth pile initially, she can always take the second pile.  At least one of `first + third, second + fourth` is larger, so she can always win.\n\nWe can extend this idea to `N` piles.  Say the first, third, fifth, seventh, etc. piles are white, and the second, fourth, sixth, eighth, etc. piles are black.  Alex can always take either all white piles or all black piles, and one of the colors must have a sum number of stones larger than the other color.\n\nHence, Alex always wins the game.\n\n<iframe src=\"https://leetcode.com/playground/TdjR4pTJ/shared\" frameBorder=\"0\" width=\"100%\" height=\"157\" name=\"TdjR4pTJ\"></iframe>\n\n**Complexity Analysis**\n\n* Time and Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "514",
+      "count": 42,
+      "average": 4.286,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[5,3,4,5]",
+  "metaData": "{\r\n  \"name\": \"stoneGame\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"piles\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

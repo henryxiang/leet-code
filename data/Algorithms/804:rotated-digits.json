@@ -1,0 +1,111 @@
+{
+  "questionId": "804",
+  "questionFrontendId": "788",
+  "boundTopicId": null,
+  "title": "Rotated Digits",
+  "titleSlug": "rotated-digits",
+  "categoryTitle": "Algorithms",
+  "content": "<p>X is a good number if after rotating each digit individually by 180 degrees, we get a valid number that is different from X.&nbsp; Each digit must be rotated - we cannot choose to leave it alone.</p>\r\n\r\n<p>A number is valid if each digit remains a digit after rotation. 0, 1, and 8 rotate to themselves; 2 and 5 rotate to each other; 6 and 9 rotate to each other, and the rest of the numbers do not rotate to any other number and become invalid.</p>\r\n\r\n<p>Now&nbsp;given a positive number <code>N</code>, how many numbers X from <code>1</code> to <code>N</code> are good?</p>\r\n\r\n<pre>\r\n<strong>Example:</strong>\r\n<strong>Input:</strong> 10\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> \r\nThere are four good numbers in the range [1, 10] : 2, 5, 6, 9.\r\nNote that 1 and 10 are not good numbers, since they remain unchanged after rotating.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>N&nbsp; will be in range <code>[1, 10000]</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 262,
+  "dislikes": 875,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 8}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int rotatedDigits(int N) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int rotatedDigits(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def rotatedDigits(self, N):\n        \"\"\"\n        :type N: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def rotatedDigits(self, N: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint rotatedDigits(int N){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int RotatedDigits(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @return {number}\n */\nvar rotatedDigits = function(N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef rotated_digits(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func rotatedDigits(_ N: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func rotatedDigits(N int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def rotatedDigits(N: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun rotatedDigits(N: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn rotated_digits(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @return Integer\n     */\n    function rotatedDigits($N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"38.6K\", \"totalSubmission\": \"68.9K\", \"totalAcceptedRaw\": 38572, \"totalSubmissionRaw\": 68915, \"acRate\": \"56.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "421",
+    "canSeeDetail": true,
+    "url": "/articles/rotated-digits/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Brute Force [Accepted]\r\n\r\n**Intuition**\r\n\r\nFor each `X` from `1` to `N`, let's analyze whether `X` is good.\r\n\r\n* If `X` has a digit that does not have a valid rotation (`3`, `4`, or `7`), then it can't be good.\r\n\r\n* If `X` doesn't have a digit that rotates to a different digit (`2`, `5`, `6`, or `9`), it can't be good because `X` will be the same after rotation.\r\n\r\n* Otherwise, `X` will successfully rotate to a valid different number.\r\n\r\n**Algorithm**\r\n\r\nTo handle checking the digits of `X`, we showcase two implementations.  The most obvious way is to parse the string; another way is to recursively check the last digit of `X`.\r\n\r\nSee the comments in each implementation for more details.\r\n\r\n<iframe src=\"https://leetcode.com/playground/Xg5Ln7up/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"Xg5Ln7up\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(N \\log N)$$.  For each `X`, we check each digit.\r\n\r\n* Space Complexity:  $$O(\\log N)$$, the space stored either by the string, or the recursive call stack of the function `good`.\r\n\r\n\r\n---\r\n#### Approach #2: Dynamic Programming On Digits [Accepted]\r\n\r\n**Intuition**\r\n\r\nSay we are writing a good number digit by digit.  The necessary and sufficient conditions are: we need to write using only digits from `0125689`, write a number less than or equal to `N`, and write at least one digit from `2569`.\r\n\r\nWe can use dynamic programming to solve this efficiently.  Our state will be how many digits `i` we have written, whether we have previously written a `j`th digit lower than the `j`th digit of `N`, and whether we have previously written a digit from `2569`.  We will represent this state by three variables: `i, equality_flag, involution_flag`.\r\n\r\n`dp(i, equality_flag, involution_flag)` will represent the number of ways to write the suffix of `N` corresponding to these above conditions.  The answer we want is `dp(0, True, False)`.\r\n\r\n**Algorithm**\r\n\r\nIf `equality_flag` is true, the `i`th digit (0 indexed) will be at most the `i`th digit of `N`.  For each digit `d`, we determine if we can write `d` based on the flags that are currently set.\r\n\r\nIn the below implementations, we showcase both top-down and bottom-up approaches.  The four lines in the top-down approach (Python) from `for d in xrange(...` to before `memo[...] = ans` clearly illustrates the recursive relationship between states in our dynamic programming.\r\n\r\n<iframe src=\"https://leetcode.com/playground/5cyjP7pu/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"5cyjP7pu\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(\\log N)$$.  We do constant-time work for each digit of `N`.\r\n\r\n* Space Complexity:  $$O(\\log N)$$, the space stored by `memo`.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "416",
+      "count": 18,
+      "average": 2.333,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "10",
+  "metaData": "{\r\n  \"name\": \"rotatedDigits\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

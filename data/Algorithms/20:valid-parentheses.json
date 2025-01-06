@@ -1,0 +1,113 @@
+{
+  "questionId": "20",
+  "questionFrontendId": "20",
+  "boundTopicId": null,
+  "title": "Valid Parentheses",
+  "titleSlug": "valid-parentheses",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string containing just the characters <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code>, <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;[&#39;</code> and <code>&#39;]&#39;</code>, determine if the input string is valid.</p>\r\n\r\n<p>An input string is valid if:</p>\r\n\r\n<ol>\r\n\t<li>Open brackets must be closed by the same type of brackets.</li>\r\n\t<li>Open brackets must be closed in the correct order.</li>\r\n</ol>\r\n\r\n<p>Note that an empty string is&nbsp;also considered valid.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;()&quot;\r\n<strong>Output:</strong> true\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;()[]{}&quot;\r\n<strong>Output:</strong> true\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;(]&quot;\r\n<strong>Output:</strong> false\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;([)]&quot;\r\n<strong>Output:</strong> false\r\n</pre>\r\n\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;{[]}&quot;\r\n<strong>Output:</strong> true\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 3782,
+  "dislikes": 190,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Generate Parentheses\", \"titleSlug\": \"generate-parentheses\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Valid Parentheses\", \"titleSlug\": \"longest-valid-parentheses\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Remove Invalid Parentheses\", \"titleSlug\": \"remove-invalid-parentheses\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Check If Word Is Valid After Substitutions\", \"titleSlug\": \"check-if-word-is-valid-after-substitutions\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 67}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 31}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 14}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 12}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Barclays\", \"slug\": \"barclays\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Riot Games\", \"slug\": \"riot-games\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Audible\", \"slug\": \"audible\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Twilio\", \"slug\": \"twilio\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Cloudera\", \"slug\": \"cloudera\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Pure Storage\", \"slug\": \"pure-storage\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"TripleByte\", \"slug\": \"triplebyte\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Epic Systems\", \"slug\": \"epic-systems\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Postmates\", \"slug\": \"postmates\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Zenefits\", \"slug\": \"zenefits\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"GoDaddy\", \"slug\": \"godaddy\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Blizzard\", \"slug\": \"blizzard\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"IBM\", \"slug\": \"ibm\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Spotify\", \"slug\": \"spotify\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool isValid(string s) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isValid(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isValid(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isValid(self, s: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isValid(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool IsValid(string s) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar isValid = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @return {Boolean}\r\ndef is_valid(s)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func isValid(_ s: String) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isValid(s string) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def isValid(s: String): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun isValid(s: String): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_valid(s: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Boolean\n     */\n    function isValid($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"789.6K\", \"totalSubmission\": \"2.1M\", \"totalAcceptedRaw\": 789634, \"totalSubmissionRaw\": 2092368, \"acRate\": \"37.7%\"}",
+  "hints": [
+    "An interesting property about a valid parenthesis expression is that a sub-expression of a valid expression should also be a valid expression. (Not every sub-expression) e.g.\r\n\r\n<pre>\r\n{ { } [ ] [ [ [ ] ] ] } is VALID expression\r\n          [ [ [ ] ] ]    is VALID sub-expression\r\n  { } [ ]                is VALID sub-expression\r\n</pre>\r\n\r\nCan we exploit this recursive structure somehow?",
+    "What if whenever we encounter a matching pair of parenthesis in the expression, we simply remove it from the expression? This would keep on shortening the expression. e.g.\r\n\r\n<pre>\r\n{ { ( { } ) } }\r\n      |_|\r\n\r\n{ { (      ) } }\r\n    |______|\r\n\r\n{ {          } }\r\n  |__________|\r\n\r\n{                }\r\n|________________|\r\n\r\nVALID EXPRESSION!\r\n</pre>",
+    "The <b>stack</b> data structure can come in handy here in representing this recursive structure of the problem. We can't really process this from the inside out because we don't have an idea about the overall structure. But, the stack can help us process this recursively i.e. from outside to inwards."
+  ],
+  "solution": {
+    "id": "570",
+    "canSeeDetail": true,
+    "url": "/articles/valid-parentheses/",
+    "content": "[TOC]\n\n## Solution\n---\n<br />\n\n**Intuition**\n\nImagine you are writing a small compiler for your college project and one of the tasks (or say sub-tasks) for the compiler would be to detect if the parenthesis are in place or not.\n\nThe algorithm we will look at in this article can be then used to process all the parenthesis in the program your compiler is compiling and checking if all the parenthesis are in place. This makes checking if a given string of parenthesis is valid or not, an important programming problem.\n\nThe expressions that we will deal with in this problem can consist of three different type of parenthesis:\n\n* `()`,\n* `{}` and\n* `[]`\n\nBefore looking at how we can check if a given expression consisting of these parenthesis is valid or not, let us look at a simpler version of the problem that consists of just one type of parenthesis. So, the expressions we can encounter in this simplified version of the problem are e.g.\n\n<pre>\n(((((()))))) -- VALID\n\n()()()()     -- VALID\n\n(((((((()    -- INVALID\n\n((()(())))   -- VALID\n</pre>\n\nLet's look at a simple algorithm to deal with this problem.\n\n1. We process the expression one bracket at a time starting from the left.\n2. Suppose we encounter an opening bracket i.e. `(`, it may or may not be an invalid expression because there can be a matching ending bracket somewhere in the remaining part of the expression. Here, we simply increment the counter keeping track of left parenthesis till now. `left += 1`\n3. If we encounter a closing bracket, this has two meanings:\n    1. One, there was no matching opening bracket for this closing bracket and in that case we have an invalid expression. This is the case when `left == 0` i.e. when there are no unmatched left brackets available.\n    2. We had `some unmatched` opening bracket available to match this closing bracket. This is the case when `left > 0` i.e. we have unmatched left brackets available.\n\n4. If we encounter a closing bracket i.e. `)` when `left == 0`, then we have an invalid expression on our hands. Else, we decrement `left` thus reducing the number of unmatched left parenthesis available.\n5. Continue processing the string until all parenthesis have been processed.\n6. If in the end we still have unmatched left parenthesis available, this implies an invalid expression.\n\nThe reason we discussed this particular algorithm here is because the approach for the original problem derives its inspiration from this very solution. Have a look at the following dry run of the algorithm we discussed to have a better understanding.\n\n!?!../Documents/20_Simple.json:1000,400!?!\n\nIf we try and follow the same approach for our original problem, then it simply won't work. The reason a simple counter based approach works above is because all the parenthesis are of the same type. So when we encounter a closing bracket, we simply assume a corresponding opening matching bracket to be available i.e. if `left > 0`.\n\nBut, in our problem, if we encounter say `]`, we don't really know if there is a corresponding opening `[` available or not. You could say:\n\n> Why not maintain a separate counter for the different types of parenthesis?\n\nThis doesn't work because the relative placement of the parenthesis also matters here. e.g.:\n\n<pre>\n[{]\n</pre>\n\nIf we simply keep counters here, then as soon as we encounter the closing square bracket, we would know there is an unmatched opening square bracket available as well. But, the **closest unmatched opening bracket available is a curly bracket and not a square bracket** and hence the counting approach breaks here.\n<br/>\n<br/>\n\n---\n\n#### Approach 1: Stacks\n\nAn interesting property about a valid parenthesis expression is that a sub-expression of a valid expression should also be a valid expression. (Not every sub-expression) e.g.\n\n<center>\n<img src=\"../Figures/20/20-Valid-Parentheses-Recursive-Property.png\" width=\"700\"></center>\n\nAlso, if you look at the above structure carefully, the color coded cells mark the opening and closing pairs of parenthesis. The entire expression is valid, but sub portions of it are also valid in themselves. This lends a sort of a recursive structure to the problem. For e.g. Consider the expression enclosed within the two green parenthesis in the diagram above. The opening bracket at index `1` and the corresponding closing bracket at index `6`.\n\n> What if whenever we encounter a matching pair of parenthesis in the expression, we simply remove it from the expression?\n\nLet's have a look at this idea below where remove the smaller expressions one at a time from the overall expression and since this is a valid expression, we would be left with an empty string in the end.\n\n!?!../Documents/20_Recursive.json:1000,400!?!\n\n> The stack data structure can come in handy here in representing this recursive structure of the problem. We can't really process this from the inside out because we don't have an idea about the overall structure. But, the stack can help us process this recursively i.e. from outside to inwards.\n\nLet us have a look at the algorithm for this problem using stacks as the intermediate data structure.\n\n**Algorithm**\n\n1. Initialize a stack S.\n2. Process each bracket of the expression one at a time.\n3. If we encounter an opening bracket, we simply push it onto the stack. This means we will process it later, let us simply move onto the **sub-expression** ahead.\n4. If we encounter a closing bracket, then we check the element on top of the stack. If the element at the top of the stack is an opening bracket `of the same type`, then we pop it off the stack and continue processing. Else, this implies an invalid expression.\n5. In the end, if we are left with a stack still having elements, then this implies an invalid expression.\n\nWe'll have a look a dry run for the algorithm and then move onto the implementation.\n\n!?!../Documents/20_Stack.json:1000,560!?!\n\nLet us now have a look at the implementation for this algorithm.\n\n<iframe src=\"https://leetcode.com/playground/UfER2d7C/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"UfER2d7C\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity : $$O(n)$$ because we simply traverse the given string one character at a time and push and pop operations on a stack take $$O(1)$$ time.\n* Space complexity : $$O(n)$$ as we push all opening brackets onto the stack and in the worst case, we will end up pushing all the brackets onto the stack. e.g. `((((((((((`.\n\n\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@sachinmalhotra1993](https://leetcode.com/sachinmalhotra1993).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "558",
+      "count": 88,
+      "average": 4.796,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"()\"",
+  "metaData": "{ \r\n  \"name\": \"isValid\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

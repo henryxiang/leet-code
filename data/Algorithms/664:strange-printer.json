@@ -1,0 +1,115 @@
+{
+  "questionId": "664",
+  "questionFrontendId": "664",
+  "boundTopicId": null,
+  "title": "Strange Printer",
+  "titleSlug": "strange-printer",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nThere is a strange printer with the following two special requirements:\r\n\r\n<ol>\r\n<li>The printer can only print a sequence of the same character each time.</li>\r\n<li>At each turn, the printer can print new characters starting from and ending at any places, and will cover the original existing characters.</li>\r\n</ol>\r\n\r\n</p>\r\n\r\n<p>\r\nGiven a string consists of lower English letters only, your job is to count the minimum number of turns the printer needed in order to print it.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \"aaabbb\"\r\n<b>Output:</b> 2\r\n<b>Explanation:</b> Print \"aaa\" first and then print \"bbb\".\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> \"aba\"\r\n<b>Output:</b> 2\r\n<b>Explanation:</b> Print \"aaa\" first and then print \"b\" from the second place of the string, which will cover the existing character 'a'.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Hint</b>: Length of the given string will not exceed 100.</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 314,
+  "dislikes": 42,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Remove Boxes\", \"titleSlug\": \"remove-boxes\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "sectionzy",
+      "profileUrl": "/sectionzy/",
+      "avatarUrl": "https://www.gravatar.com/avatar/b521d9c2ff2fd4a83d457d4b06f4d01e.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"NetEase\", \"slug\": \"netease\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int strangePrinter(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int strangePrinter(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def strangePrinter(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def strangePrinter(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint strangePrinter(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int StrangePrinter(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar strangePrinter = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef strange_printer(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func strangePrinter(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func strangePrinter(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def strangePrinter(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun strangePrinter(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn strange_printer(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function strangePrinter($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11.6K\", \"totalSubmission\": \"30.1K\", \"totalAcceptedRaw\": 11595, \"totalSubmissionRaw\": 30119, \"acRate\": \"38.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "329",
+    "canSeeDetail": true,
+    "url": "/articles/strange-printer/",
+    "content": "[TOC]\n\n#### Approach #1: Dynamic Programming [Accepted]\n\n**Intuition**\n\nIt is natural to consider letting `dp(i, j)` be the answer for printing `S[i], S[i+1], ..., S[j]`, but proceeding from here is difficult.  We need the following sequence of deductions:\n\n* Whatever turn creates the final print of `S[i]` might as well be the first turn, and also there might as well only be one print, since any later prints on interval `[i, k]` could just be on `[i+1, k]`.\n\n* Say the first print is on `[i, k]`.  We can assume `S[i] == S[k]`, because if it wasn't, we could print up to the last occurrence of `S[i]` in `[i, k]` for the same result.\n\n* When correctly printing everything in `[i, k]` (with `S[i] == S[k]`), it will take the same amount of steps as correctly printing everything in `[i, k-1]`.  This is because if `S[i]` and `S[k]` get completed in separate steps, we might as well print them first in one step instead.\n\n**Algorithm**\n\nWith the above deductions, the algorithm is straightforward.\n\nTo compute a recursion for `dp(i, j)`, for every `i <= k <= j` with `S[i] == S[k]`, we have some candidate answer `dp(i, k-1) + dp(k+1, j)`, and we take the minimum of these candidates.  Of course, when `k = i`, the candidate is just `1 + dp(i+1, j)`.\n\nTo avoid repeating work, we memoize our intermediate answers `dp(i, j)`.\n\n<iframe src=\"https://leetcode.com/playground/L3mAUr9w/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"L3mAUr9w\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^3)$$ where $$N$$ is the length of `s`.  For each of $$O(N^2)$$ possible states representing a subarray of `s`, we perform $$O(N)$$ work iterating through `k`.\n\n* Space Complexity: $$O(N^2)$$, the size of our `memo`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "324",
+      "count": 21,
+      "average": 2,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"aaabbb\"",
+  "metaData": "{\r\n  \"name\": \"strangePrinter\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

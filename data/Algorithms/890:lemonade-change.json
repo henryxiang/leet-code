@@ -1,0 +1,111 @@
+{
+  "questionId": "890",
+  "questionFrontendId": "860",
+  "boundTopicId": null,
+  "title": "Lemonade Change",
+  "titleSlug": "lemonade-change",
+  "categoryTitle": "Algorithms",
+  "content": "<p>At a lemonade stand, each lemonade costs <code>$5</code>.&nbsp;</p>\r\n\r\n<p>Customers are standing in a queue to buy from you, and order one at a time (in the order specified by <code>bills</code>).</p>\r\n\r\n<p>Each customer will only buy one lemonade and&nbsp;pay with either a <code>$5</code>, <code>$10</code>, or <code>$20</code> bill.&nbsp; You must provide the correct change to each customer, so that the net transaction is that the customer pays $5.</p>\r\n\r\n<p>Note that you don&#39;t have any change&nbsp;in hand at first.</p>\r\n\r\n<p>Return <code>true</code>&nbsp;if and only if you can provide every customer with correct change.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[5,5,5,10,20]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n<strong>Explanation: </strong>\r\nFrom the first 3 customers, we collect three $5 bills in order.\r\nFrom the fourth customer, we collect a $10 bill and give back a $5.\r\nFrom the fifth customer, we give a $10 bill and a $5 bill.\r\nSince all customers got correct change, we output true.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[5,5,10]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[10,10]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">false</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">[5,5,10,10,20]</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">false</span>\r\n<strong>Explanation: </strong>\r\nFrom the first two customers in order, we collect two $5 bills.\r\nFor the next two customers in order, we collect a $10 bill and give back a $5 bill.\r\nFor the last customer, we can't give change of $15 back because we only have two $10 bills.\r\nSince not every customer received correct change, the answer is false.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><span>Note:</span></strong></p>\r\n\r\n<ul>\r\n\t<li><code>0 &lt;= bills.length &lt;= 10000</code></li>\r\n\t<li><code>bills[i]</code>&nbsp;will be either&nbsp;<code>5</code>, <code>10</code>, or <code>20</code>.</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 404,
+  "dislikes": 64,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ankit041288",
+      "profileUrl": "/ankit041288/",
+      "avatarUrl": "https://assets.leetcode.com/users/ankit041288/avatar_1529555403.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 3}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool lemonadeChange(vector<int>& bills) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean lemonadeChange(int[] bills) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def lemonadeChange(self, bills):\n        \"\"\"\n        :type bills: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def lemonadeChange(self, bills: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool lemonadeChange(int* bills, int billsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool LemonadeChange(int[] bills) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} bills\n * @return {boolean}\n */\nvar lemonadeChange = function(bills) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} bills\n# @return {Boolean}\ndef lemonade_change(bills)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func lemonadeChange(_ bills: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func lemonadeChange(bills []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def lemonadeChange(bills: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun lemonadeChange(bills: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn lemonade_change(bills: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $bills\n     * @return Boolean\n     */\n    function lemonadeChange($bills) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"38.9K\", \"totalSubmission\": \"76.3K\", \"totalAcceptedRaw\": 38899, \"totalSubmissionRaw\": 76323, \"acRate\": \"51.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "499",
+    "canSeeDetail": true,
+    "url": "/articles/lemonade-change/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Simulation\n\n**Intuition and Algorithm**\n\nLet's try to simulate giving change to each customer buying lemonade.  Initially, we start with no `five` dollar bills, and no `ten` dollar bills.\n\n* If a customer brings a $5 bill, then we take it.\n\n* If a customer brings a $10 bill, we must return a five dollar bill.  If we don't have a five dollar bill, the answer is `False`, since we can't make correct change.\n\n* If a customer brings a $20 bill, we must return $15.\n\n    * If we have a $10 and a $5, then we always prefer giving change in that, because it is strictly worse for making change than three $5 bills.\n\n    * Otherwise, if we have three $5 bills, then we'll give that.\n\n    * Otherwise, we won't be able to give $15 in change, and the answer is `False`.\n\n\n<iframe src=\"https://leetcode.com/playground/aZ5ofLyL/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"aZ5ofLyL\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `bills`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "492",
+      "count": 22,
+      "average": 3.136,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[5,5,5,10,20]",
+  "metaData": "{\r\n  \"name\": \"lemonadeChange\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"bills\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

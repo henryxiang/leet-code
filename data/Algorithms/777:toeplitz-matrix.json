@@ -1,0 +1,113 @@
+{
+  "questionId": "777",
+  "questionFrontendId": "766",
+  "boundTopicId": null,
+  "title": "Toeplitz Matrix",
+  "titleSlug": "toeplitz-matrix",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A matrix is <em>Toeplitz</em> if every diagonal from top-left to bottom-right has the same element.</p>\r\n\r\n<p>Now given an <code>M x N</code> matrix, return&nbsp;<code>True</code>&nbsp;if and only if the matrix is <em>Toeplitz</em>.<br />\r\n&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong>matrix = [\r\n&nbsp; [1,2,3,4],\r\n&nbsp; [5,1,2,3],\r\n&nbsp; [9,5,1,2]\r\n]\r\n<strong>Output:</strong> True\r\n<strong>Explanation:</strong>\r\nIn the above grid, the&nbsp;diagonals are:\r\n&quot;[9]&quot;, &quot;[5, 5]&quot;, &quot;[1, 1, 1]&quot;, &quot;[2, 2, 2]&quot;, &quot;[3, 3]&quot;, &quot;[4]&quot;.\r\nIn each diagonal all elements are the same, so the answer is True.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong>matrix = [\r\n&nbsp; [1,2],\r\n&nbsp; [2,2]\r\n]\r\n<strong>Output:</strong> False\r\n<strong>Explanation:</strong>\r\nThe diagonal &quot;[1, 2]&quot; has different elements.\r\n</pre>\r\n\r\n<p><br />\r\n<strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>matrix</code> will be a 2D array of integers.</li>\r\n\t<li><code>matrix</code> will have a number of rows and columns in range <code>[1, 20]</code>.</li>\r\n\t<li><code>matrix[i][j]</code> will be integers in range <code>[0, 99]</code>.</li>\r\n</ol>\r\n\r\n<p><br />\r\n<strong>Follow up:</strong></p>\r\n\r\n<ol>\r\n\t<li>What if the matrix is stored on disk, and the memory is limited such that you can only load at most one row of the matrix into the memory at once?</li>\r\n\t<li>What if the matrix is so large that you can only load up a partial row into the memory at once?</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 761,
+  "dislikes": 71,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Valid Word Square\", \"titleSlug\": \"valid-word-square\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "zafarella",
+      "profileUrl": "/zafarella/",
+      "avatarUrl": "https://assets.leetcode.com/users/zafarella/avatar_1516579359.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isToeplitzMatrix(vector<vector<int>>& matrix) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isToeplitzMatrix(int[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isToeplitzMatrix(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isToeplitzMatrix(int** matrix, int matrixSize, int* matrixColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsToeplitzMatrix(int[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} matrix\n * @return {boolean}\n */\nvar isToeplitzMatrix = function(matrix) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} matrix\n# @return {Boolean}\ndef is_toeplitz_matrix(matrix)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isToeplitzMatrix(_ matrix: [[Int]]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isToeplitzMatrix(matrix [][]int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isToeplitzMatrix(matrix: Array[Array[Int]]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isToeplitzMatrix(matrix: Array<IntArray>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_toeplitz_matrix(matrix: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @return Boolean\n     */\n    function isToeplitzMatrix($matrix) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"76.5K\", \"totalSubmission\": \"121.1K\", \"totalAcceptedRaw\": 76508, \"totalSubmissionRaw\": 121105, \"acRate\": \"63.2%\"}",
+  "hints": [
+    "Check whether each value is equal to the value of it's top-left neighbor."
+  ],
+  "solution": {
+    "id": "384",
+    "canSeeDetail": true,
+    "url": "/articles/toeplitz-matrix/",
+    "content": "[TOC]\n\n\n---\n#### Approach #1: Group by Category [Accepted]\n\n**Intuition and Algorithm**\n\nWe ask what feature makes two coordinates `(r1, c1)` and `(r2, c2)` belong to the same diagonal?\n\nIt turns out two coordinates are on the same diagonal if and only if `r1 - c1 == r2 - c2`.\n\nThis leads to the following idea: remember the value of that diagonal as `groups[r-c]`.  If we see a mismatch, the matrix is not Toeplitz; otherwise it is.\n\n<iframe src=\"https://leetcode.com/playground/aPydaE7r/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"aPydaE7r\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(M*N)$$.  (Recall in the problem statement that $$M, N$$ are the number of rows and columns in `matrix`.)\n\n* Space Complexity: $$O(M+N)$$.\n\n---\n#### Approach #2: Compare With Top-Left Neighbor [Accepted]\n\n**Intuition and Algorithm**\n\nFor each diagonal with elements in order $$a_1, a_2, a_3, \\dots, a_k$$, we can check $$a_1 = a_2, a_2 = a_3, \\dots, a_{k-1} = a_k$$.  The matrix is *Toeplitz* if and only if all of these conditions are true for all (top-left to bottom-right) diagonals.\n\nEvery element belongs to some diagonal, and it's previous element (if it exists) is it's top-left neighbor.  Thus, for the square `(r, c)`, we only need to check `r == 0 OR c == 0 OR matrix[r-1][c-1] == matrix[r][c]`.\n\n<iframe src=\"https://leetcode.com/playground/bfeF5wnM/shared\" frameBorder=\"0\" width=\"100%\" height=\"208\" name=\"bfeF5wnM\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(M*N)$$, as defined in the problem statement.\n\n* Space Complexity: $$O(1)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "378",
+      "count": 34,
+      "average": 4.529,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2,3,4],[5,1,2,3],[9,5,1,2]]",
+  "metaData": "{\r\n  \"name\": \"isToeplitzMatrix\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"matrix\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "906",
+  "questionFrontendId": "874",
+  "boundTopicId": null,
+  "title": "Walking Robot Simulation",
+  "titleSlug": "walking-robot-simulation",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A robot on an infinite grid starts at point (0, 0) and faces north.&nbsp; The robot can receive one of three possible types of commands:</p>\r\n\r\n<ul>\r\n\t<li><code>-2</code>: turn left 90 degrees</li>\r\n\t<li><code>-1</code>: turn right 90 degrees</li>\r\n\t<li><code>1 &lt;= x &lt;= 9</code>: move forward <code>x</code> units</li>\r\n</ul>\r\n\r\n<p>Some of the grid squares are obstacles.&nbsp;</p>\r\n\r\n<p>The <code>i</code>-th obstacle is at grid point <code>(obstacles[i][0], obstacles[i][1])</code></p>\r\n\r\n<p>If the robot would try to move onto them, the robot stays on the previous grid square instead (but still continues following the rest of the route.)</p>\r\n\r\n<p>Return the <strong>square</strong> of the maximum Euclidean distance that the robot will be from the origin.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>commands = <span id=\"example-input-1-1\">[4,-1,3]</span>, obstacles = <span id=\"example-input-1-2\">[]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">25</span>\r\n<span>Explanation: </span>robot will go to (3, 4)\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>commands = <span id=\"example-input-2-1\">[4,-1,4,-2,4]</span>, obstacles = <span id=\"example-input-2-2\">[[2,4]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">65</span>\r\n<strong>Explanation</strong>: robot will be stuck at (1, 4) before turning left and going to (1, 8)\r\n</pre>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= commands.length &lt;= 10000</code></li>\r\n\t<li><code>0 &lt;= obstacles.length &lt;= 10000</code></li>\r\n\t<li><code>-30000 &lt;= obstacle[i][0] &lt;= 30000</code></li>\r\n\t<li><code>-30000 &lt;= obstacle[i][1] &lt;= 30000</code></li>\r\n\t<li>The answer is guaranteed to be less than <code>2 ^ 31</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 103,
+  "dislikes": 591,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "theodoreyth",
+      "profileUrl": "/theodoreyth/",
+      "avatarUrl": "https://assets.leetcode.com/users/theodoreyth/avatar_1521780362.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Jane Street\", \"slug\": \"jane-street\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int robotSim(int[] commands, int[][] obstacles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def robotSim(self, commands, obstacles):\n        \"\"\"\n        :type commands: List[int]\n        :type obstacles: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint robotSim(int* commands, int commandsSize, int** obstacles, int obstaclesSize, int* obstaclesColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int RobotSim(int[] commands, int[][] obstacles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} commands\n * @param {number[][]} obstacles\n * @return {number}\n */\nvar robotSim = function(commands, obstacles) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} commands\n# @param {Integer[][]} obstacles\n# @return {Integer}\ndef robot_sim(commands, obstacles)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func robotSim(_ commands: [Int], _ obstacles: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func robotSim(commands []int, obstacles [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def robotSim(commands: Array[Int], obstacles: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun robotSim(commands: IntArray, obstacles: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn robot_sim(commands: Vec<i32>, obstacles: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $commands\n     * @param Integer[][] $obstacles\n     * @return Integer\n     */\n    function robotSim($commands, $obstacles) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.8K\", \"totalSubmission\": \"41K\", \"totalAcceptedRaw\": 13849, \"totalSubmissionRaw\": 40961, \"acRate\": \"33.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "513",
+    "canSeeDetail": true,
+    "url": "/articles/walking-robot-simulation/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Simulation\n\n**Intuition**\n\nWe simulate the path of the robot step by step.  Since there are at most 90000 steps, this is efficient enough to pass the given input limits.\n\n**Algorithm**\n\nWe store the robot's position and direction.  If we get a turning command, we update the direction; otherwise we walk the specified number of steps in the given direction.\n\nCare must be made to use a `Set` data structure for the obstacles, so that we can check efficiently if our next step is obstructed.  If we don't, our check `is point in obstacles` could be ~10,000 times slower.\n\nIn some languages, we need to encode the coordinates of each obstacle as a `long` integer so that it is a hashable key that we can put into a `Set` data structure.  Alternatively, we could also encode the coordinates as a `string`.\n\n<iframe src=\"https://leetcode.com/playground/BzLAA5NV/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"BzLAA5NV\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N + K)$$, where $$N, K$$ are the lengths of `commands` and `obstacles` respectively.\n\n* Space Complexity:  $$O(K)$$, the space used in storing the `obstacleSet`.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "505",
+      "count": 14,
+      "average": 2.857,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,-1,3]\n[]",
+  "metaData": "{\r\n  \"name\": \"robotSim\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"commands\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"obstacles\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

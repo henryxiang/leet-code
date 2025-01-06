@@ -1,0 +1,102 @@
+{
+  "questionId": "1219",
+  "questionFrontendId": "1124",
+  "boundTopicId": null,
+  "title": "Longest Well-Performing Interval",
+  "titleSlug": "longest-well-performing-interval",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We are given <code>hours</code>, a list of the number of hours&nbsp;worked per day for a given employee.</p>\n\n<p>A day is considered to be a <em>tiring day</em> if and only if the number of hours worked is (strictly) greater than <code>8</code>.</p>\n\n<p>A <em>well-performing interval</em> is an interval of days for which the number of tiring days is strictly larger than the number of non-tiring days.</p>\n\n<p>Return the length of the longest well-performing interval.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> hours = [9,9,6,0,6,6,9]\n<strong>Output:</strong> 3\n<strong>Explanation: </strong>The longest well-performing interval is [9,9,6].\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= hours.length &lt;= 10000</code></li>\n\t<li><code>0 &lt;= hours[i] &lt;= 16</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 253,
+  "dislikes": 47,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ani5ruthn",
+      "profileUrl": "/ani5ruthn/",
+      "avatarUrl": "https://assets.leetcode.com/users/ani5ruthn/avatar_1567857310.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"infosys\", \"slug\": \"infosys\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestWPI(vector<int>& hours) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestWPI(int[] hours) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestWPI(self, hours):\n        \"\"\"\n        :type hours: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestWPI(self, hours: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint longestWPI(int* hours, int hoursSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestWPI(int[] hours) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} hours\n * @return {number}\n */\nvar longestWPI = function(hours) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} hours\n# @return {Integer}\ndef longest_wpi(hours)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestWPI(_ hours: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestWPI(hours []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestWPI(hours: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestWPI(hours: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_wpi(hours: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $hours\n     * @return Integer\n     */\n    function longestWPI($hours) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.6K\", \"totalSubmission\": \"23.8K\", \"totalAcceptedRaw\": 7643, \"totalSubmissionRaw\": 23814, \"acRate\": \"32.1%\"}",
+  "hints": [
+    "Make a new array A of +1/-1s corresponding to if hours[i] is > 8 or not. The goal is to find the longest subarray with positive sum.",
+    "Using prefix sums (PrefixSum[i+1] = A[0] + A[1] + ... + A[i]), you need to find for each j, the smallest i < j with PrefixSum[i] + 1 == PrefixSum[j]."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[9,9,6,0,6,6,9]",
+  "metaData": "{\n  \"name\": \"longestWPI\",\n  \"params\": [\n    {\n      \"name\": \"hours\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

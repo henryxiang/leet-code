@@ -1,0 +1,113 @@
+{
+  "questionId": "767",
+  "questionFrontendId": "762",
+  "boundTopicId": null,
+  "title": "Prime Number of Set Bits in Binary Representation",
+  "titleSlug": "prime-number-of-set-bits-in-binary-representation",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven two integers <code>L</code> and <code>R</code>, find the count of numbers in the range <code>[L, R]</code> (inclusive) having a prime number of set bits in their binary representation.\r\n</p><p>\r\n(Recall that the number of set bits an integer has is the number of <code>1</code>s present when written in binary.  For example, <code>21</code> written in binary is <code>10101</code> which has 3 set bits.  Also, 1 is not a prime.)\r\n</p><p>\r\n\r\n<p><b>Example 1:</b><br /><pre>\r\n<b>Input:</b> L = 6, R = 10\r\n<b>Output:</b> 4\r\n<b>Explanation:</b>\r\n6 -> 110 (2 set bits, 2 is prime)\r\n7 -> 111 (3 set bits, 3 is prime)\r\n9 -> 1001 (2 set bits , 2 is prime)\r\n10->1010 (2 set bits , 2 is prime)\r\n</pre></p>\r\n\r\n<p><b>Example 2:</b><br /><pre>\r\n<b>Input:</b> L = 10, R = 15\r\n<b>Output:</b> 5\r\n<b>Explanation:</b>\r\n10 -> 1010 (2 set bits, 2 is prime)\r\n11 -> 1011 (3 set bits, 3 is prime)\r\n12 -> 1100 (2 set bits, 2 is prime)\r\n13 -> 1101 (3 set bits, 3 is prime)\r\n14 -> 1110 (3 set bits, 3 is prime)\r\n15 -> 1111 (4 set bits, 4 is not prime)\r\n</pre></p>\r\n\r\n<p><b>Note:</b><br><ol>\r\n<li><code>L, R</code> will be integers <code>L <= R</code> in the range <code>[1, 10^6]</code>.</li>\r\n<li><code>R - L</code> will be at most 10000.</li>\r\n</ol></p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 187,
+  "dislikes": 277,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Number of 1 Bits\", \"titleSlug\": \"number-of-1-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "lokendrajain1994",
+      "profileUrl": "/lokendrajain1994/",
+      "avatarUrl": "https://assets.leetcode.com/users/lokendrajain1994/avatar_1515410441.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countPrimeSetBits(int L, int R) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countPrimeSetBits(int L, int R) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countPrimeSetBits(self, L, R):\n        \"\"\"\n        :type L: int\n        :type R: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countPrimeSetBits(self, L: int, R: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint countPrimeSetBits(int L, int R){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountPrimeSetBits(int L, int R) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} L\n * @param {number} R\n * @return {number}\n */\nvar countPrimeSetBits = function(L, R) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} l\n# @param {Integer} r\n# @return {Integer}\ndef count_prime_set_bits(l, r)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countPrimeSetBits(_ L: Int, _ R: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countPrimeSetBits(L int, R int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countPrimeSetBits(L: Int, R: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countPrimeSetBits(L: Int, R: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_prime_set_bits(l: i32, r: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $L\n     * @param Integer $R\n     * @return Integer\n     */\n    function countPrimeSetBits($L, $R) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"36K\", \"totalSubmission\": \"59K\", \"totalAcceptedRaw\": 36047, \"totalSubmissionRaw\": 59000, \"acRate\": \"61.1%\"}",
+  "hints": [
+    "Write a helper function to count the number of set bits in a number, then check whether the number of set bits is 2, 3, 5, 7, 11, 13, 17 or 19."
+  ],
+  "solution": {
+    "id": "373",
+    "canSeeDetail": true,
+    "url": "/articles/prime-number-of-set-bits-in-binary-representation/",
+    "content": "[TOC]\n#### Approach #1: Direct [Accepted]\n**Intuition and Approach**\n\nFor each number from `L` to `R`, let's find out how many set bits it has.  If that number is `2, 3, 5, 7, 11, 13, 17`, or `19`, then we add one to our count.  We only need primes up to 19 because $$R \\leq 10^6 < 2^{20}$$.\n\n<iframe src=\"https://leetcode.com/playground/GCVcZ6pE/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"GCVcZ6pE\"></iframe>\n\n**Complexity Analysis**\n    \n* Time Complexity: $$O(D)$$, where $$D = R-L$$ is the number of integers considered.  In a bit complexity model, this would be $$O(D\\log D)$$ as we have to count the bits in $$O(\\log D)$$ time.\n\n* Space Complexity: $$O(1)$$.\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "368",
+      "count": 20,
+      "average": 2.85,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "842\n888",
+  "metaData": "{\r\n  \"name\": \"countPrimeSetBits\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"L\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"R\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

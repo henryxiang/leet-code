@@ -1,0 +1,60 @@
+{
+  "questionId": "1215",
+  "questionFrontendId": "1113",
+  "boundTopicId": null,
+  "title": "Reported Posts",
+  "titleSlug": "reported-posts",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Actions</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| user_id       | int     |\n| post_id       | int     |\n| action_date   | date    | \n| action        | enum    |\n| extra         | varchar |\n+---------------+---------+\nThere is no primary key for this table, it may have duplicate rows.\nThe action column is an ENUM type of (&#39;view&#39;, &#39;like&#39;, &#39;reaction&#39;, &#39;comment&#39;, &#39;report&#39;, &#39;share&#39;).\nThe extra column has optional information about the action such as a reason for report or a type of reaction. </pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query that reports the number of posts reported yesterday for each report reason. Assume today is <strong>2019-07-05</strong>.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\nActions table:\n+---------+---------+-------------+--------+--------+\n| user_id | post_id | action_date | action | extra  |\n+---------+---------+-------------+--------+--------+\n| 1       | 1       | 2019-07-01  | view   | null   |\n| 1       | 1       | 2019-07-01  | like   | null   |\n| 1       | 1       | 2019-07-01  | share  | null   |\n| 2       | 4       | 2019-07-04  | view   | null   |\n| 2       | 4       | 2019-07-04  | report | spam   |\n| 3       | 4       | 2019-07-04  | view   | null   |\n| 3       | 4       | 2019-07-04  | report | spam   |\n| 4       | 3       | 2019-07-02  | view   | null   |\n| 4       | 3       | 2019-07-02  | report | spam   |\n| 5       | 2       | 2019-07-04  | view   | null   |\n| 5       | 2       | 2019-07-04  | report | racism |\n| 5       | 5       | 2019-07-04  | view   | null   |\n| 5       | 5       | 2019-07-04  | report | racism |\n+---------+---------+-------------+--------+--------+\n\nResult table:\n+---------------+--------------+\n| report_reason | report_count |\n+---------------+--------------+\n| spam          | 1            |\n| racism        | 2            |\n+---------------+--------------+ \nNote that we only care about report reasons with non zero number of reports.</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 15,
+  "dislikes": 49,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.2K\", \"totalSubmission\": \"8.4K\", \"totalAcceptedRaw\": 5154, \"totalSubmissionRaw\": 8418, \"acRate\": \"61.2%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Actions\":[\"user_id\",\"post_id\",\"action_date\",\"action\",\"extra\"]},\"rows\":{\"Actions\":[[1,1,\"2019-07-01\",\"view\",null],[1,1,\"2019-07-01\",\"like\",null],[1,1,\"2019-07-01\",\"share\",null],[2,4,\"2019-07-04\",\"view\",null],[2,4,\"2019-07-04\",\"report\",\"spam\"],[3,4,\"2019-07-04\",\"view\",null],[3,4,\"2019-07-04\",\"report\",\"spam\"],[4,3,\"2019-07-02\",\"view\",null],[4,3,\"2019-07-02\",\"report\",\"spam\"],[5,2,\"2019-07-04\",\"view\",null],[5,2,\"2019-07-04\",\"report\",\"racism\"],[5,5,\"2019-07-04\",\"view\",null],[5,5,\"2019-07-04\",\"report\",\"racism\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Actions (user_id int, post_id int, action_date date, action ENUM('view', 'like', 'reaction', 'comment', 'report', 'share'), extra varchar(10))\"\n  ],\n  \"mssql\": [\n    \"create table Actions (user_id int, post_id int, action_date date, action VARCHAR(10) NOT NULL CHECK (action IN ('view', 'like', 'reaction', 'comment', 'report', 'share')), extra varchar(10))\"\n  ],\n  \"oraclesql\": [\n    \"create table Actions (user_id int, post_id int, action_date date, action VARCHAR(10) NOT NULL CHECK (action IN ('view', 'like', 'reaction', 'comment', 'report', 'share')), extra varchar(10))\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Actions (user_id int, post_id int, action_date date, action ENUM('view', 'like', 'reaction', 'comment', 'report', 'share'), extra varchar(10))",
+    "Truncate table Actions",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('1', '1', '2019-07-01', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('1', '1', '2019-07-01', 'like', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('1', '1', '2019-07-01', 'share', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('2', '4', '2019-07-04', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('2', '4', '2019-07-04', 'report', 'spam')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('3', '4', '2019-07-04', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('3', '4', '2019-07-04', 'report', 'spam')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('4', '3', '2019-07-02', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('4', '3', '2019-07-02', 'report', 'spam')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '2', '2019-07-04', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '2', '2019-07-04', 'report', 'racism')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '5', '2019-07-04', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '5', '2019-07-04', 'report', 'racism')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

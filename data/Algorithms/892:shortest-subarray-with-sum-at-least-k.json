@@ -1,0 +1,115 @@
+{
+  "questionId": "892",
+  "questionFrontendId": "862",
+  "boundTopicId": null,
+  "title": "Shortest Subarray with Sum at Least K",
+  "titleSlug": "shortest-subarray-with-sum-at-least-k",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Return the <strong>length</strong> of the shortest, non-empty, contiguous&nbsp;subarray of <code>A</code> with sum at least <code>K</code>.</p>\r\n\r\n<p>If there is no non-empty subarray with sum at least <code>K</code>, return <code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[1]</span>, K = <span id=\"example-input-1-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">1</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">[1,2]</span>, K = <span id=\"example-input-2-2\">4</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">-1</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-3-1\">[2,-1,2]</span>, K = <span id=\"example-input-3-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">3</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 50000</code></li>\r\n\t<li><code>-10 ^ 5&nbsp;&lt;= A[i] &lt;= 10 ^ 5</code></li>\r\n\t<li><code>1 &lt;= K &lt;= 10 ^ 9</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 680,
+  "dislikes": 19,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ywang172",
+      "profileUrl": "/ywang172/",
+      "avatarUrl": "https://www.gravatar.com/avatar/9919de609bde73f842efc58bbc05b3cf.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Queue",
+      "slug": "queue"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int shortestSubarray(vector<int>& A, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int shortestSubarray(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestSubarray(self, A, K):\n        \"\"\"\n        :type A: List[int]\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestSubarray(self, A: List[int], K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint shortestSubarray(int* A, int ASize, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ShortestSubarray(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number} K\n * @return {number}\n */\nvar shortestSubarray = function(A, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer} k\n# @return {Integer}\ndef shortest_subarray(a, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestSubarray(_ A: [Int], _ K: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestSubarray(A []int, K int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestSubarray(A: Array[Int], K: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestSubarray(A: IntArray, K: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_subarray(a: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer $K\n     * @return Integer\n     */\n    function shortestSubarray($A, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"19.1K\", \"totalSubmission\": \"83.9K\", \"totalAcceptedRaw\": 19084, \"totalSubmissionRaw\": 83859, \"acRate\": \"22.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "496",
+    "canSeeDetail": true,
+    "url": "/articles/shortest-subarray-with-sum-atleast-k/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Sliding Window\n\n**Intuition**\n\nWe can rephrase this as a problem about the prefix sums of `A`.  Let `P[i] = A[0] + A[1] + ... + A[i-1]`.  We want the smallest `y-x` such that `y > x` and `P[y] - P[x] >= K`.\n\nMotivated by that equation, let `opt(y)` be the largest `x` such that `P[x] <= P[y] - K`.  We need two key observations:\n\n* If `x1 < x2` and `P[x2] <= P[x1]`, then `opt(y)` can never be `x1`, as if `P[x1] <= P[y] - K`, then `P[x2] <= P[x1] <= P[y] - K` but `y - x2` is smaller.  This implies that our candidates `x` for `opt(y)` will have increasing values of `P[x]`.\n\n* If `opt(y1) = x`, then we do not need to consider this `x` again.  For if we find some `y2 > y1` with `opt(y2) = x`, then it represents an answer of `y2 - x` which is worse (larger) than `y1 - x`.\n\n**Algorithm**\n\nMaintain a \"monoqueue\" of indices of `P`: a deque of indices `x_0, x_1, ...` such that `P[x_0], P[x_1], ...` is increasing.\n\nWhen adding a new index `y`, we'll pop `x_i` from the end of the deque so that `P[x_0], P[x_1], ..., P[y]` will be increasing.\n\nIf `P[y] >= P[x_0] + K`, then (as previously described), we don't need to consider this `x_0` again, and we can pop it from the front of the deque.\n\n<iframe src=\"https://leetcode.com/playground/RnfeP3KD/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"RnfeP3KD\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "489",
+      "count": 60,
+      "average": 4.583,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1]\n1",
+  "metaData": "{\r\n  \"name\": \"shortestSubarray\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

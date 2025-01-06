@@ -1,0 +1,111 @@
+{
+  "questionId": "835",
+  "questionFrontendId": "817",
+  "boundTopicId": null,
+  "title": "Linked List Components",
+  "titleSlug": "linked-list-components",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We are given&nbsp;<code>head</code>,&nbsp;the head node of a linked list containing&nbsp;<strong>unique integer values</strong>.</p>\r\n\r\n<p>We are also given the list&nbsp;<code>G</code>, a subset of the values in the linked list.</p>\r\n\r\n<p>Return the number of connected components in <code>G</code>, where two values are connected if they appear consecutively in the linked list.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\nhead: 0-&gt;1-&gt;2-&gt;3\r\nG = [0, 1, 3]\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> \r\n0 and 1 are connected, so [0, 1] and [3] are the two connected components.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\nhead: 0-&gt;1-&gt;2-&gt;3-&gt;4\r\nG = [0, 3, 1, 4]\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> \r\n0 and 1 are connected, 3 and 4 are connected, so [0, 1] and [3, 4] are the two connected components.\r\n</pre>\r\n\r\n<p><strong>Note: </strong></p>\r\n\r\n<ul>\r\n\t<li>If&nbsp;<code>N</code>&nbsp;is the&nbsp;length of the linked list given by&nbsp;<code>head</code>,&nbsp;<code>1 &lt;= N &lt;= 10000</code>.</li>\r\n\t<li>The value of each node in the linked list will be in the range<code> [0, N - 1]</code>.</li>\r\n\t<li><code>1 &lt;= G.length &lt;= 10000</code>.</li>\r\n\t<li><code>G</code> is a subset of all values in the linked list.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 271,
+  "dislikes": 707,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode(int x) : val(x), next(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    int numComponents(ListNode* head, vector<int>& G) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public int numComponents(ListNode head, int[] G) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for singly-linked list.\n# class ListNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution(object):\n    def numComponents(self, head, G):\n        \"\"\"\n        :type head: ListNode\n        :type G: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution:\n    def numComponents(self, head: ListNode, G: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     struct ListNode *next;\n * };\n */\n\n\nint numComponents(struct ListNode* head, int* G, int GSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public int NumComponents(ListNode head, int[] G) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for singly-linked list.\n * function ListNode(val) {\n *     this.val = val;\n *     this.next = null;\n * }\n */\n/**\n * @param {ListNode} head\n * @param {number[]} G\n * @return {number}\n */\nvar numComponents = function(head, G) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for singly-linked list.\n# class ListNode\n#     attr_accessor :val, :next\n#     def initialize(val)\n#         @val = val\n#         @next = nil\n#     end\n# end\n\n# @param {ListNode} head\n# @param {Integer[]} g\n# @return {Integer}\ndef num_components(head, g)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public var val: Int\n *     public var next: ListNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.next = nil\n *     }\n * }\n */\nclass Solution {\n    func numComponents(_ head: ListNode?, _ G: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc numComponents(head *ListNode, G []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for singly-linked list.\n * class ListNode(var _x: Int = 0) {\n *   var next: ListNode = null\n *   var x: Int = _x\n * }\n */\nobject Solution {\n    def numComponents(head: ListNode, G: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var li = ListNode(5)\n * var v = li.`val`\n * Definition for singly-linked list.\n * class ListNode(var `val`: Int) {\n *     var next: ListNode? = null\n * }\n */\nclass Solution {\n    fun numComponents(head: ListNode?, G: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for singly-linked list.\n// #[derive(PartialEq, Eq, Clone, Debug)]\n// pub struct ListNode {\n//   pub val: i32,\n//   pub next: Option<Box<ListNode>>\n// }\n// \n// impl ListNode {\n//   #[inline]\n//   fn new(val: i32) -> Self {\n//     ListNode {\n//       next: None,\n//       val\n//     }\n//   }\n// }\nimpl Solution {\n    pub fn num_components(head: Option<Box<ListNode>>, g: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a singly-linked list.\n * class ListNode {\n *     public $val = 0;\n *     public $next = null;\n *     function __construct($val) { $this->val = $val; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param ListNode $head\n     * @param Integer[] $G\n     * @return Integer\n     */\n    function numComponents($head, $G) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"33.2K\", \"totalSubmission\": \"59.1K\", \"totalAcceptedRaw\": 33184, \"totalSubmissionRaw\": 59097, \"acRate\": \"56.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "449",
+    "canSeeDetail": true,
+    "url": "/articles/linked-list-components/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Grouping [Accepted]\n\n**Intuition**\n\nInstead of thinking about connected components in `G`, think about them in the linked list.  Connected components in `G` must occur consecutively in the linked list.\n\n**Algorithm**\n\nScanning through the list, if `node.val` is in `G` and `node.next.val` isn't (including if `node.next` is `null`), then this must be the end of a connected component.\n\nFor example, if the list is `0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7`, and `G = [0, 2, 3, 5, 7]`, then when scanning through the list, we fulfill the above condition at `0, 3, 5, 7`, for a total answer of `4`.\n\n<iframe src=\"https://leetcode.com/playground/V3u2LbFe/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"V3u2LbFe\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N + G\\text{.length})$$, where $$N$$ is the length of the linked list with root node `head`.\n\n* Space Complexity: $$O(G\\text{.length})$$, to store `Gset`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "444",
+      "count": 25,
+      "average": 2.6,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,1,2,3]\n[0,1,3]",
+  "metaData": "{\r\n  \"name\": \"numComponents\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"head\",\r\n      \"type\": \"ListNode\"\r\n    },\r\n    {\r\n      \"name\": \"G\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

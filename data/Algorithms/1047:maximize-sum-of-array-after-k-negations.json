@@ -1,0 +1,99 @@
+{
+  "questionId": "1047",
+  "questionFrontendId": "1005",
+  "boundTopicId": null,
+  "title": "Maximize Sum Of Array After K Negations",
+  "titleSlug": "maximize-sum-of-array-after-k-negations",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>A</code> of integers, we <strong>must</strong>&nbsp;modify the array in the following way: we choose an <code>i</code>&nbsp;and replace&nbsp;<code>A[i]</code> with <code>-A[i]</code>, and we repeat this process <code>K</code> times in total.&nbsp; (We may choose the same index <code>i</code> multiple times.)</p>\r\n\r\n<p>Return the largest possible sum of the array after modifying it in this way.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[4,2,3]</span>, K = <span id=\"example-input-1-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">5\r\n<strong>Explanation: </strong>Choose indices (1,) and A becomes [4,-2,3].</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">[3,-1,0,2]</span>, K = <span id=\"example-input-2-2\">3</span>\r\n<strong>Output: </strong>6\r\n<span id=\"example-output-1\"><strong>Explanation: </strong>Choose indices (1, 2, 2) and A becomes [3,1,0,2].</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-3-1\">[2,-3,-1,5,-4]</span>, K = <span id=\"example-input-3-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">13\r\n</span><span id=\"example-output-1\"><strong>Explanation: </strong>Choose indices (1, 4) and A becomes [2,3,-1,5,4].</span>\r\n</pre>\r\n</div>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 10000</code></li>\r\n\t<li><code>1 &lt;= K &lt;= 10000</code></li>\r\n\t<li><code>-100 &lt;= A[i] &lt;= 100</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 206,
+  "dislikes": 27,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "pratik_patil",
+      "profileUrl": "/pratik_patil/",
+      "avatarUrl": "https://www.gravatar.com/avatar/3aabf534b439d9d21cb9f452c0bdf847.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"druva\", \"slug\": \"druva\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int largestSumAfterKNegations(vector<int>& A, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int largestSumAfterKNegations(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def largestSumAfterKNegations(self, A, K):\n        \"\"\"\n        :type A: List[int]\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def largestSumAfterKNegations(self, A: List[int], K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint largestSumAfterKNegations(int* A, int ASize, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LargestSumAfterKNegations(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number} K\n * @return {number}\n */\nvar largestSumAfterKNegations = function(A, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer} k\n# @return {Integer}\ndef largest_sum_after_k_negations(a, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func largestSumAfterKNegations(_ A: [Int], _ K: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func largestSumAfterKNegations(A []int, K int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def largestSumAfterKNegations(A: Array[Int], K: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun largestSumAfterKNegations(A: IntArray, K: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn largest_sum_after_k_negations(a: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer $K\n     * @return Integer\n     */\n    function largestSumAfterKNegations($A, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"19K\", \"totalSubmission\": \"37.5K\", \"totalAcceptedRaw\": 18954, \"totalSubmissionRaw\": 37506, \"acRate\": \"50.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[4,2,3]\n1",
+  "metaData": "{\r\n  \"name\": \"largestSumAfterKNegations\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

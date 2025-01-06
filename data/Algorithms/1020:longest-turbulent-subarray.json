@@ -1,0 +1,119 @@
+{
+  "questionId": "1020",
+  "questionFrontendId": "978",
+  "boundTopicId": null,
+  "title": "Longest Turbulent Subarray",
+  "titleSlug": "longest-turbulent-subarray",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A subarray <code>A[i], A[i+1], ..., A[j]</code>&nbsp;of <code>A</code> is said to be <em>turbulent</em> if and only if:</p>\r\n\r\n<ul>\r\n\t<li>For <code>i &lt;= k &lt; j</code>, <code>A[k] &gt; A[k+1]</code> when <code>k</code> is odd, and <code>A[k] &lt; A[k+1]</code> when <code>k</code> is even;</li>\r\n\t<li><strong>OR</strong>, for <code>i &lt;= k &lt; j</code>, <code>A[k] &gt; A[k+1]</code> when <code>k</code> is even, and <code>A[k] &lt; A[k+1]</code> when <code>k</code> is odd.</li>\r\n</ul>\r\n\r\n<p>That is, the subarray is turbulent if the comparison sign flips between each adjacent pair of elements in the subarray.</p>\r\n\r\n<p>Return the <strong>length</strong> of a&nbsp;maximum size turbulent subarray of A.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[9,4,2,10,7,8,8,1,9]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">5</span>\r\n<strong>Explanation: </strong>(A[1] &gt; A[2] &lt; A[3] &gt; A[4] &lt; A[5])\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[4,8,12,16]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">2</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[100]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">1</span>\r\n</pre>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 40000</code></li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 10^9</code></li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 180,
+  "dislikes": 62,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Maximum Subarray\", \"titleSlug\": \"maximum-subarray\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxTurbulenceSize(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxTurbulenceSize(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxTurbulenceSize(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxTurbulenceSize(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxTurbulenceSize(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxTurbulenceSize(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar maxTurbulenceSize = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef max_turbulence_size(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxTurbulenceSize(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxTurbulenceSize(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxTurbulenceSize(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxTurbulenceSize(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_turbulence_size(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function maxTurbulenceSize($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.8K\", \"totalSubmission\": \"38.7K\", \"totalAcceptedRaw\": 17824, \"totalSubmissionRaw\": 38709, \"acRate\": \"46.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "669",
+    "canSeeDetail": true,
+    "url": "/articles/longest-turbulent-subarray/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Sliding Window\n\n**Intuition**\n\nEvidently, we only care about the comparisons between adjacent elements.  If the comparisons are represented by `-1, 0, 1` (for `<, =, >`), then we want the longest sequence of alternating `1, -1, 1, -1, ...` (starting with either `1` or `-1`).\n\nThese alternating comparisons form contiguous blocks.  We know when the next block ends: when it is the last two elements being compared, or when the sequence isn't alternating.\n\nFor example, take an array like `A = [9,4,2,10,7,8,8,1,9]`.  The comparisons are `[1,1,-1,1,-1,0,-1,1]`.  The blocks are `[1], [1,-1,1,-1], [0], [-1,1]`.\n\n**Algorithm**\n\nScan the array from left to right.  If we are at the end of a block (last elements OR it stopped alternating), then we should record the length of that block as our candidate answer, and set the start of the new block as the next element.\n\n<iframe src=\"https://leetcode.com/playground/9pQoKhee/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"9pQoKhee\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "655",
+      "count": 18,
+      "average": 4.778,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[9,4,2,10,7,8,8,1,9]",
+  "metaData": "{\r\n  \"name\": \"maxTurbulenceSize\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

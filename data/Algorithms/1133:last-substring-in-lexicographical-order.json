@@ -1,0 +1,102 @@
+{
+  "questionId": "1133",
+  "questionFrontendId": "1163",
+  "boundTopicId": null,
+  "title": "Last Substring in Lexicographical Order",
+  "titleSlug": "last-substring-in-lexicographical-order",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>s</code>, return the last substring of <code>s</code> in lexicographical order.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;abab&quot;</span>\n<strong>Output: </strong><span id=\"example-output-1\">&quot;bab&quot;</span>\n<strong>Explanation: </strong>The substrings are [&quot;a&quot;, &quot;ab&quot;, &quot;aba&quot;, &quot;abab&quot;, &quot;b&quot;, &quot;ba&quot;, &quot;bab&quot;]. The lexicographically maximum substring is &quot;bab&quot;.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-2-1\">&quot;leetcode&quot;</span>\n<strong>Output: </strong><span id=\"example-output-2\">&quot;tcode&quot;</span>\n</pre>\n\n<p>&nbsp;</p>\n\n<p><strong>Note:</strong></p>\n\n<ol>\n\t<li><code>1 &lt;= s.length &lt;= 4&nbsp;* 10^5</code></li>\n\t<li><font face=\"monospace\">s</font> contains only lowercase English letters.</li>\n</ol>\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 74,
+  "dislikes": 175,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Suffix Array",
+      "slug": "suffix-array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Roblox\", \"slug\": \"roblox\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 4}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string lastSubstring(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String lastSubstring(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def lastSubstring(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def lastSubstring(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * lastSubstring(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string LastSubstring(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar lastSubstring = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef last_substring(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func lastSubstring(_ s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func lastSubstring(s string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def lastSubstring(s: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun lastSubstring(s: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn last_substring(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function lastSubstring($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.9K\", \"totalSubmission\": \"21.8K\", \"totalAcceptedRaw\": 6868, \"totalSubmissionRaw\": 21781, \"acRate\": \"31.5%\"}",
+  "hints": [
+    "Assume that the answer is a sub-string from index i to j. If you add the character at index j+1 you get a better answer.",
+    "The answer is always a suffix of the given string.",
+    "Since the limits are high, we need an efficient data structure.",
+    "Use suffix array."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"abab\"\r",
+  "metaData": "{\n  \"name\": \"lastSubstring\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

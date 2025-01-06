@@ -1,0 +1,63 @@
+{
+  "questionId": "181",
+  "questionFrontendId": "181",
+  "boundTopicId": null,
+  "title": "Employees Earning More Than Their Managers",
+  "titleSlug": "employees-earning-more-than-their-managers",
+  "categoryTitle": "Database",
+  "content": "<p>The <code>Employee</code> table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.</p>\r\n\r\n<pre>\r\n+----+-------+--------+-----------+\r\n| Id | Name  | Salary | ManagerId |\r\n+----+-------+--------+-----------+\r\n| 1  | Joe   | 70000  | 3         |\r\n| 2  | Henry | 80000  | 4         |\r\n| 3  | Sam   | 60000  | NULL      |\r\n| 4  | Max   | 90000  | NULL      |\r\n+----+-------+--------+-----------+\r\n</pre>\r\n\r\n<p>Given the <code>Employee</code> table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is the only employee who earns more than his manager.</p>\r\n\r\n<pre>\r\n+----------+\r\n| Employee |\r\n+----------+\r\n| Joe      |\r\n+----------+\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 454,
+  "dislikes": 52,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"141.2K\", \"totalSubmission\": \"270K\", \"totalAcceptedRaw\": 141183, \"totalSubmissionRaw\": 269951, \"acRate\": \"52.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "215",
+    "canSeeDetail": true,
+    "url": "/articles/employees-earning-more-than-their-managers/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach I: Using `WHERE` clause [Accepted]\n\n**Algorithm**\n\nAs this table has the employee's manager information, we probably need to select information from it twice.\n\n```sql\nSELECT *\nFROM Employee AS a, Employee AS b\n;\n```\n>Note: The keyword 'AS' is optional.\n\n| Id | Name  | Salary | ManagerId | Id | Name  | Salary | ManagerId |\n|----|-------|--------|-----------|----|-------|--------|-----------|\n| 1  | Joe   | 70000  | 3         | 1  | Joe   | 70000  | 3         |\n| 2  | Henry | 80000  | 4         | 1  | Joe   | 70000  | 3         |\n| 3  | Sam   | 60000  |           | 1  | Joe   | 70000  | 3         |\n| 4  | Max   | 90000  |           | 1  | Joe   | 70000  | 3         |\n| 1  | Joe   | 70000  | 3         | 2  | Henry | 80000  | 4         |\n| 2  | Henry | 80000  | 4         | 2  | Henry | 80000  | 4         |\n| 3  | Sam   | 60000  |           | 2  | Henry | 80000  | 4         |\n| 4  | Max   | 90000  |           | 2  | Henry | 80000  | 4         |\n| 1  | Joe   | 70000  | 3         | 3  | Sam   | 60000  |           |\n| 2  | Henry | 80000  | 4         | 3  | Sam   | 60000  |           |\n| 3  | Sam   | 60000  |           | 3  | Sam   | 60000  |           |\n| 4  | Max   | 90000  |           | 3  | Sam   | 60000  |           |\n| 1  | Joe   | 70000  | 3         | 4  | Max   | 90000  |           |\n| 2  | Henry | 80000  | 4         | 4  | Max   | 90000  |           |\n| 3  | Sam   | 60000  |           | 4  | Max   | 90000  |           |\n| 4  | Max   | 90000  |           | 4  | Max   | 90000  |           |\n> The first 3 columns are from a and the last 3 ones are from b.\n\nSelect from two tables will get the [Cartesian product](https://en.wikipedia.org/wiki/Cartesian_product) of these two tables. In this case, the output will be 4*4 = 16 records. However, what we interest is the employee's salary higher than his/her manager. So we should add two conditions in a `WHERE` clause like below.\n\n\n```sql\nSELECT\n    *\nFROM\n    Employee AS a,\n    Employee AS b\nWHERE\n    a.ManagerId = b.Id\n        AND a.Salary > b.Salary\n;\n```\n\n| Id | Name | Salary | ManagerId | Id | Name | Salary | ManagerId |\n|----|------|--------|-----------|----|------|--------|-----------|\n| 1  | Joe  | 70000  | 3         | 3  | Sam  | 60000  |           |\n\nAs we only need to output the employee's name, so we modify the above code a little to get a solution.\n\n**MySQL**\n\n```sql\nSELECT\n    a.Name AS 'Employee'\nFROM\n    Employee AS a,\n    Employee AS b\nWHERE\n    a.ManagerId = b.Id\n        AND a.Salary > b.Salary\n;\n```\n\n#### Approach I: Using `JOIN` clause [Accepted]\n\n**Algorithm**\n\nActually, `JOIN` is a more common and efficient way to link tables together, and we can use `ON` to specify some conditions.\n\n```sql\nSELECT\n     a.NAME AS Employee\nFROM Employee AS a JOIN Employee AS b\n     ON a.ManagerId = b.Id\n     AND a.Salary > b.Salary\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "210",
+      "count": 31,
+      "average": 4.806,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"Employee\": [\"Id\", \"Name\", \"Salary\", \"ManagerId\"]}, \"rows\": {\"Employee\": [[1, \"Joe\", 70000, 3], [2, \"Henry\", 80000, 4], [3, \"Sam\", 60000, null], [4, \"Max\", 90000, null]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists Employee (Id int, Name varchar(255), Salary int, ManagerId int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"create table Employee ( Id int, Name varchar(255), Salary int, ManagerId int )\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"create table Employee ( Id int, Name varchar(255), Salary int, ManagerId int )\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Employee (Id int, Name varchar(255), Salary int, ManagerId int)",
+    "Truncate table Employee",
+    "insert into Employee (Id, Name, Salary, ManagerId) values ('1', 'Joe', '70000', '3')",
+    "insert into Employee (Id, Name, Salary, ManagerId) values ('2', 'Henry', '80000', '4')",
+    "insert into Employee (Id, Name, Salary, ManagerId) values ('3', 'Sam', '60000', 'None')",
+    "insert into Employee (Id, Name, Salary, ManagerId) values ('4', 'Max', '90000', 'None')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

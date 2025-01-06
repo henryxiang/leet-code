@@ -1,0 +1,111 @@
+{
+  "questionId": "822",
+  "questionFrontendId": "804",
+  "boundTopicId": null,
+  "title": "Unique Morse Code Words",
+  "titleSlug": "unique-morse-code-words",
+  "categoryTitle": "Algorithms",
+  "content": "<p>International Morse Code defines a standard encoding where each letter is mapped to a series of dots and dashes, as follows: <code>&quot;a&quot;</code> maps to <code>&quot;.-&quot;</code>, <code>&quot;b&quot;</code> maps to <code>&quot;-...&quot;</code>, <code>&quot;c&quot;</code> maps to <code>&quot;-.-.&quot;</code>, and so on.</p>\r\n\r\n<p>For convenience, the full table for the 26 letters of the English alphabet is given below:</p>\r\n\r\n<pre>\r\n[&quot;.-&quot;,&quot;-...&quot;,&quot;-.-.&quot;,&quot;-..&quot;,&quot;.&quot;,&quot;..-.&quot;,&quot;--.&quot;,&quot;....&quot;,&quot;..&quot;,&quot;.---&quot;,&quot;-.-&quot;,&quot;.-..&quot;,&quot;--&quot;,&quot;-.&quot;,&quot;---&quot;,&quot;.--.&quot;,&quot;--.-&quot;,&quot;.-.&quot;,&quot;...&quot;,&quot;-&quot;,&quot;..-&quot;,&quot;...-&quot;,&quot;.--&quot;,&quot;-..-&quot;,&quot;-.--&quot;,&quot;--..&quot;]</pre>\r\n\r\n<p>Now, given a list of words, each word can be written as a concatenation of the Morse code of each letter. For example, &quot;cba&quot; can be written as &quot;-.-..--...&quot;, (which is the concatenation &quot;-.-.&quot; + &quot;-...&quot; + &quot;.-&quot;). We&#39;ll call such a concatenation, the transformation&nbsp;of a word.</p>\r\n\r\n<p>Return the number of different transformations among all words we have.</p>\r\n\r\n<pre>\r\n<strong>Example:</strong>\r\n<strong>Input:</strong> words = [&quot;gin&quot;, &quot;zen&quot;, &quot;gig&quot;, &quot;msg&quot;]\r\n<strong>Output:</strong> 2\r\n<strong>Explanation: </strong>\r\nThe transformation of each word is:\r\n&quot;gin&quot; -&gt; &quot;--...-.&quot;\r\n&quot;zen&quot; -&gt; &quot;--...-.&quot;\r\n&quot;gig&quot; -&gt; &quot;--...--.&quot;\r\n&quot;msg&quot; -&gt; &quot;--...--.&quot;\r\n\r\nThere are 2 different transformations, &quot;--...-.&quot; and &quot;--...--.&quot;.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>The length of <code>words</code> will be at most <code>100</code>.</li>\r\n\t<li>Each <code>words[i]</code> will have length in range <code>[1, 12]</code>.</li>\r\n\t<li><code>words[i]</code> will only consist of lowercase letters.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 526,
+  "dislikes": 497,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int uniqueMorseRepresentations(vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int uniqueMorseRepresentations(String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def uniqueMorseRepresentations(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def uniqueMorseRepresentations(self, words: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint uniqueMorseRepresentations(char ** words, int wordsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int UniqueMorseRepresentations(string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {number}\n */\nvar uniqueMorseRepresentations = function(words) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @return {Integer}\ndef unique_morse_representations(words)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func uniqueMorseRepresentations(_ words: [String]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func uniqueMorseRepresentations(words []string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def uniqueMorseRepresentations(words: Array[String]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun uniqueMorseRepresentations(words: Array<String>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn unique_morse_representations(words: Vec<String>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return Integer\n     */\n    function uniqueMorseRepresentations($words) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"118.9K\", \"totalSubmission\": \"157.1K\", \"totalAcceptedRaw\": 118855, \"totalSubmissionRaw\": 157089, \"acRate\": \"75.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "439",
+    "canSeeDetail": true,
+    "url": "/articles/unique-morse-code-words/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Hash Set [Accepted]\n\n**Intuition and Algorithm**\n\nWe can transform each `word` into it's Morse Code representation.\n\nAfter, we put all transformations into a set `seen`, and return the size of the set.\n\n<iframe src=\"https://leetcode.com/playground/f4mHEzpq/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"f4mHEzpq\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(S)$$, where $$S$$ is the sum of the lengths of words in `words`.  We iterate through each character of each word in `words`.\n\n* Space Complexity: $$O(S)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "434",
+      "count": 24,
+      "average": 4.458,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"gin\", \"zen\", \"gig\", \"msg\"]",
+  "metaData": "{\r\n  \"name\": \"uniqueMorseRepresentations\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

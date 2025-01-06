@@ -1,0 +1,102 @@
+{
+  "questionId": "1055",
+  "questionFrontendId": "1010",
+  "boundTopicId": null,
+  "title": "Pairs of Songs With Total Durations Divisible by 60",
+  "titleSlug": "pairs-of-songs-with-total-durations-divisible-by-60",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a list of songs, the <code>i</code>-th&nbsp;song has a duration of&nbsp;<code>time[i]</code> seconds.&nbsp;</p>\r\n\r\n<p>Return the number of pairs of songs for which their total&nbsp;duration in seconds is divisible by <code>60</code>.&nbsp; Formally, we want the number of&nbsp;indices <code>i &lt; j</code> with <code>(time[i] + time[j]) % 60 == 0</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[30,20,150,100,40]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">3</span>\r\n<strong>Explanation: </strong>Three pairs have a total duration divisible by 60:\r\n(time[0] = 30, time[2] = 150): total duration 180\r\n(time[1] = 20, time[3] = 100): total duration 120\r\n(time[1] = 20, time[4] = 40): total duration 60\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[60,60,60]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">3</span>\r\n<strong>Explanation: </strong>All three pairs have a total duration of 120, which is divisible by 60.\r\n</pre>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= time.length &lt;= 60000</code></li>\r\n\t<li><code>1 &lt;= time[i] &lt;= 500</code></li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 313,
+  "dislikes": 31,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "vinay1995",
+      "profileUrl": "/vinay1995/",
+      "avatarUrl": "https://assets.leetcode.com/users/vinay1995/avatar_1546810153.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 3}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numPairsDivisibleBy60(vector<int>& time) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numPairsDivisibleBy60(int[] time) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numPairsDivisibleBy60(self, time):\n        \"\"\"\n        :type time: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numPairsDivisibleBy60(self, time: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numPairsDivisibleBy60(int* time, int timeSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int NumPairsDivisibleBy60(int[] time) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} time\n * @return {number}\n */\nvar numPairsDivisibleBy60 = function(time) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} time\r\n# @return {Integer}\r\ndef num_pairs_divisible_by60(time)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func numPairsDivisibleBy60(_ time: [Int]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numPairsDivisibleBy60(time []int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def numPairsDivisibleBy60(time: Array[Int]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun numPairsDivisibleBy60(time: IntArray): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_pairs_divisible_by60(time: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $time\n     * @return Integer\n     */\n    function numPairsDivisibleBy60($time) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"22.5K\", \"totalSubmission\": \"48.1K\", \"totalAcceptedRaw\": 22451, \"totalSubmissionRaw\": 48103, \"acRate\": \"46.7%\"}",
+  "hints": [
+    "We only need to consider each song length modulo 60.",
+    "We can count the number of songs with (length % 60) equal to r, and store that in an array of size 60."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[30,20,150,100,40]",
+  "metaData": "{\r\n  \"name\": \"numPairsDivisibleBy60\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"time\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

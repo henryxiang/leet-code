@@ -1,0 +1,99 @@
+{
+  "questionId": "455",
+  "questionFrontendId": "455",
+  "boundTopicId": null,
+  "title": "Assign Cookies",
+  "titleSlug": "assign-cookies",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nAssume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor g<sub>i</sub>, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size s<sub>j</sub>. If s<sub>j</sub> >= g<sub>i</sub>, we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.\r\n</p>\r\n\r\n<p><b>Note:</b><br />\r\nYou may assume the greed factor is always positive. <br />\r\nYou cannot assign more than one cookie to one child.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> [1,2,3], [1,1]\r\n\r\n<b>Output:</b> 1\r\n\r\n<b>Explanation:</b> You have 3 children and 2 cookies. The greed factors of 3 children are 1, 2, 3. \r\nAnd even though you have 2 cookies, since their size is both 1, you could only make the child whose greed factor is 1 content.\r\nYou need to output 1.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> [1,2], [1,2,3]\r\n\r\n<b>Output:</b> 2\r\n\r\n<b>Explanation:</b> You have 2 children and 3 cookies. The greed factors of 2 children are 1, 2. \r\nYou have 3 cookies and their sizes are big enough to gratify all of the children, \r\nYou need to output 2.\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 415,
+  "dislikes": 73,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findContentChildren(vector<int>& g, vector<int>& s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findContentChildren(int[] g, int[] s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findContentChildren(self, g, s):\n        \"\"\"\n        :type g: List[int]\n        :type s: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findContentChildren(self, g: List[int], s: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findContentChildren(int* g, int gSize, int* s, int sSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindContentChildren(int[] g, int[] s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} g\n * @param {number[]} s\n * @return {number}\n */\nvar findContentChildren = function(g, s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} g\n# @param {Integer[]} s\n# @return {Integer}\ndef find_content_children(g, s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findContentChildren(_ g: [Int], _ s: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findContentChildren(g []int, s []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findContentChildren(g: Array[Int], s: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findContentChildren(g: IntArray, s: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_content_children(g: Vec<i32>, s: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $g\n     * @param Integer[] $s\n     * @return Integer\n     */\n    function findContentChildren($g, $s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"78.3K\", \"totalSubmission\": \"160K\", \"totalAcceptedRaw\": 78315, \"totalSubmissionRaw\": 160027, \"acRate\": \"48.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2,3]\n[1,1]",
+  "metaData": "{\r\n  \"name\": \"findContentChildren\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"g\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

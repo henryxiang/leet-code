@@ -1,0 +1,96 @@
+{
+  "questionId": "38",
+  "questionFrontendId": "38",
+  "boundTopicId": null,
+  "title": "Count and Say",
+  "titleSlug": "count-and-say",
+  "categoryTitle": "Algorithms",
+  "content": "<p>The count-and-say sequence is the sequence of integers with the first five terms as following:</p>\n\n<pre>\n1.     1\n2.     11\n3.     21\n4.     1211\n5.     111221\n</pre>\n\n<p><code>1</code> is read off as <code>&quot;one 1&quot;</code> or <code>11</code>.<br />\n<code>11</code> is read off as <code>&quot;two 1s&quot;</code> or <code>21</code>.<br />\n<code>21</code> is read off as <code>&quot;one 2</code>, then <code>one 1&quot;</code> or <code>1211</code>.</p>\n\n<p>Given an integer <i>n</i>&nbsp;where 1 &le; <em>n</em> &le; 30, generate the <i>n</i><sup>th</sup> term of the count-and-say sequence. You can do so recursively, in other words from the previous member&nbsp;read off the digits, counting the number of digits in groups of the same digit.</p>\n\n<p>Note: Each term of the sequence of integers will be represented as a string.</p>\n\n<p>&nbsp;</p>\n\n<p><b>Example 1:</b></p>\n\n<pre>\n<b>Input:</b> 1\n<b>Output:</b> &quot;1&quot;\n<b>Explanation:</b> This is the base case.\n</pre>\n\n<p><b>Example 2:</b></p>\n\n<pre>\n<b>Input:</b> 4\n<b>Output:</b> &quot;1211&quot;\n<b>Explanation:</b> For n = 3 the term was &quot;21&quot; in which we have two groups &quot;2&quot; and &quot;1&quot;, &quot;2&quot; can be read as &quot;12&quot; which means frequency = 1 and value = 2, the same way &quot;1&quot; is read as &quot;11&quot;, so the answer is the concatenation of &quot;12&quot; and &quot;11&quot; which is &quot;1211&quot;.\n</pre>\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 986,
+  "dislikes": 7839,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Encode and Decode Strings\", \"titleSlug\": \"encode-and-decode-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"String Compression\", \"titleSlug\": \"string-compression\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Epic Systems\", \"slug\": \"epic-systems\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string countAndSay(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String countAndSay(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countAndSay(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countAndSay(self, n: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * countAndSay(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string CountAndSay(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {string}\n */\nvar countAndSay = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {String}\ndef count_and_say(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countAndSay(_ n: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countAndSay(n int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countAndSay(n: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countAndSay(n: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_and_say(n: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return String\n     */\n    function countAndSay($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"338.2K\", \"totalSubmission\": \"796.3K\", \"totalAcceptedRaw\": 338210, \"totalSubmissionRaw\": 796285, \"acRate\": \"42.5%\"}",
+  "hints": [
+    "The following are the terms from n=1 to n=10 of the count-and-say sequence:\r\n<pre>\r\n 1.     1\r\n 2.     11\r\n 3.     21\r\n 4.     1211\r\n 5.     111221 \r\n 6.     312211\r\n 7.     13112221\r\n 8.     1113213211\r\n 9.     31131211131221\r\n10.     13211311123113112211\r\n</pre>",
+    "To generate the <i>n</i><sup>th</sup> term, just <i>count and say</i> the <i>n</i>-1<sup>th</sup> term."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "1",
+  "metaData": "{\r\n  \"name\": \"countAndSay\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

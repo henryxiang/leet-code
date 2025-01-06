@@ -1,0 +1,113 @@
+{
+  "questionId": "749",
+  "questionFrontendId": "748",
+  "boundTopicId": null,
+  "title": "Shortest Completing Word",
+  "titleSlug": "shortest-completing-word",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nFind the minimum length word from a given dictionary <code>words</code>, which has all the letters from the string <code>licensePlate</code>.  Such a word is said to <i>complete</i> the given string <code>licensePlate</code>\r\n</p><p>\r\nHere, for letters we ignore case.  For example, <code>\"P\"</code> on the <code>licensePlate</code> still matches <code>\"p\"</code> on the word.\r\n</p><p>\r\nIt is guaranteed an answer exists.  If there are multiple answers, return the one that occurs first in the array.\r\n</p><p>\r\nThe license plate might have the same letter occurring multiple times.  For example, given a <code>licensePlate</code> of <code>\"PP\"</code>, the word <code>\"pair\"</code> does not complete the <code>licensePlate</code>, but the word <code>\"supper\"</code> does.\r\n</p><p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> licensePlate = \"1s3 PSt\", words = [\"step\", \"steps\", \"stripe\", \"stepple\"]\r\n<b>Output:</b> \"steps\"\r\n<b>Explanation:</b> The smallest length word that contains the letters \"S\", \"P\", \"S\", and \"T\".\r\nNote that the answer is not \"step\", because the letter \"s\" must occur in the word twice.\r\nAlso note that we ignored case for the purposes of comparing whether a letter exists in the word.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> licensePlate = \"1s3 456\", words = [\"looks\", \"pest\", \"stew\", \"show\"]\r\n<b>Output:</b> \"pest\"\r\n<b>Explanation:</b> There are 3 smallest length words that contains the letters \"s\".\r\nWe return the one that occurred first.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li><code>licensePlate</code> will be a string with length in range <code>[1, 7]</code>.</li>\r\n<li><code>licensePlate</code> will contain digits, spaces, or letters (uppercase or lowercase).</li>\r\n<li><code>words</code> will have a length in the range <code>[10, 1000]</code>.</li>\r\n<li>Every <code>words[i]</code> will consist of lowercase letters, and have length in range <code>[1, 15]</code>.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 145,
+  "dislikes": 518,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "TopCoder111",
+      "profileUrl": "/topcoder111/",
+      "avatarUrl": "https://www.gravatar.com/avatar/07d37cabdf9ca9925de617df3574c460.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string shortestCompletingWord(string licensePlate, vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String shortestCompletingWord(String licensePlate, String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestCompletingWord(self, licensePlate, words):\n        \"\"\"\n        :type licensePlate: str\n        :type words: List[str]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestCompletingWord(self, licensePlate: str, words: List[str]) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * shortestCompletingWord(char * licensePlate, char ** words, int wordsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ShortestCompletingWord(string licensePlate, string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} licensePlate\n * @param {string[]} words\n * @return {string}\n */\nvar shortestCompletingWord = function(licensePlate, words) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} license_plate\n# @param {String[]} words\n# @return {String}\ndef shortest_completing_word(license_plate, words)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestCompletingWord(_ licensePlate: String, _ words: [String]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestCompletingWord(licensePlate string, words []string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestCompletingWord(licensePlate: String, words: Array[String]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestCompletingWord(licensePlate: String, words: Array<String>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_completing_word(license_plate: String, words: Vec<String>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $licensePlate\n     * @param String[] $words\n     * @return String\n     */\n    function shortestCompletingWord($licensePlate, $words) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"26.9K\", \"totalSubmission\": \"48.2K\", \"totalAcceptedRaw\": 26907, \"totalSubmissionRaw\": 48218, \"acRate\": \"55.8%\"}",
+  "hints": [
+    "Count only the letters (possibly converted to lowercase) of each word.  If a word is shorter and the count of each letter is at least the count of that letter in the licensePlate, it is the best answer we've seen yet."
+  ],
+  "solution": {
+    "id": "345",
+    "canSeeDetail": true,
+    "url": "/articles/shortest-completing-word/",
+    "content": "[TOC]\r\n\r\n#### Approach #1: Compare Counts [Accepted]\r\n\r\n**Intuition and Algorithm**\r\n\r\nA natural question is, how to tell whether a `word` like `\"steps\"` completes a `licensePlate` like `\"12s pst\"`?\r\n\r\nWe count the number of letters in both `word` and `licensePlate`, converting to lowercase and ignoring non-letter characters.  If the count of each letter is greater or equal in the word, then that word completes the `licensePlate`.\r\n\r\nFrom the words that complete `licensePlate`, we should keep the one with the shortest length (with ties broken by whether it occurs first.)\r\n\r\n<iframe src=\"https://leetcode.com/playground/spVMv3Zw/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"spVMv3Zw\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(N)$$ where $$N$$ is the length of `words`, and assuming the lengths of `licensePlate` and `words[i]` are bounded by $$O(1)$$.\r\n\r\n* Space Complexity: $$O(1)$$ in additional space.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "340",
+      "count": 3,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"1s3 PSt\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+  "metaData": "{\r\n  \"name\": \"shortestCompletingWord\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"licensePlate\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

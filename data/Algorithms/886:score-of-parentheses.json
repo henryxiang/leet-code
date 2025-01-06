@@ -1,0 +1,115 @@
+{
+  "questionId": "886",
+  "questionFrontendId": "856",
+  "boundTopicId": null,
+  "title": "Score of Parentheses",
+  "titleSlug": "score-of-parentheses",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a balanced parentheses string <code>S</code>, compute the score of the string based on the following rule:</p>\r\n\r\n<ul>\r\n\t<li><code>()</code> has score 1</li>\r\n\t<li><code>AB</code> has score <code>A + B</code>, where A and B are balanced parentheses strings.</li>\r\n\t<li><code>(A)</code> has score <code>2 * A</code>, where A is a balanced parentheses string.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;()&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">1</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">&quot;(())&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">2</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">&quot;()()&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">2</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">&quot;(()(()))&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">6</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>S</code> is a balanced parentheses string, containing only <code>(</code> and <code>)</code>.</li>\r\n\t<li><code>2 &lt;= S.length &lt;= 50</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 757,
+  "dislikes": 28,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "andrewcbl",
+      "profileUrl": "/andrewcbl/",
+      "avatarUrl": "https://www.gravatar.com/avatar/baec305218f186d127ad95ead1beec70.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int scoreOfParentheses(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int scoreOfParentheses(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def scoreOfParentheses(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def scoreOfParentheses(self, S: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint scoreOfParentheses(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ScoreOfParentheses(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {number}\n */\nvar scoreOfParentheses = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef score_of_parentheses(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func scoreOfParentheses(_ S: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func scoreOfParentheses(S string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def scoreOfParentheses(S: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun scoreOfParentheses(S: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn score_of_parentheses(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return Integer\n     */\n    function scoreOfParentheses($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"26.9K\", \"totalSubmission\": \"46.1K\", \"totalAcceptedRaw\": 26927, \"totalSubmissionRaw\": 46062, \"acRate\": \"58.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "495",
+    "canSeeDetail": true,
+    "url": "/articles/score-of-parentheses/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Divide and Conquer\n\n**Intuition**\n\nSplit the string into `S = A + B` where `A` and `B` are balanced parentheses strings, and `A` is the smallest possible non-empty prefix of `S`.\n\n**Algorithm**\n\nCall a balanced string *primitive* if it cannot be partitioned into two non-empty balanced strings.\n\nBy keeping track of `balance` (the number of `(` parentheses minus the number of `)` parentheses), we can partition `S` into primitive substrings `S = P_1 + P_2 + ... + P_n`.  Then, `score(S) = score(P_1) + score(P_2) + ... + score(P_n)`, by definition.\n\nFor each primitive substring `(S[i], S[i+1], ..., S[k])`, if the string is length 2, then the score of this string is 1.  Otherwise, it's twice the score of the substring `(S[i+1], S[i+2], ..., S[k-1])`.\n\n<iframe src=\"https://leetcode.com/playground/9n8zxSrk/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"9n8zxSrk\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `S`.  An example worst case is `(((((((....)))))))`.\n\n* Space Complexity:  $$O(N)$$, the size of the implied call stack.\n<br />\n<br />\n\n\n---\n#### Approach 2: Stack\n\n**Intuition and Algorithm**\n\nEvery position in the string has a *depth* - some number of matching parentheses surrounding it.  For example, the dot in `(()(.()))` has depth 2, because of these parentheses: `(__(.__))`\n\nOur goal is to maintain the score at the current depth we are on.  When we see an opening bracket, we increase our depth, and our score at the new depth is 0.  When we see a closing bracket, we add twice the score of the previous deeper part - except when counting `()`, which has a score of 1.\n\nFor example, when counting `(()(()))`, our stack will look like this:\n\n* `[0, 0]` after parsing `(`\n* `[0, 0, 0]` after `(`\n* `[0, 1]` after `)`\n* `[0, 1, 0]` after `(`\n* `[0, 1, 0, 0]` after `(`\n* `[0, 1, 1]` after `)`\n* `[0, 3]` after `)`\n* `[6]` after `)`\n\n<iframe src=\"https://leetcode.com/playground/C2ky8oiW/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"C2ky8oiW\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.\n\n* Space Complexity:  $$O(N)$$, the size of the stack.\n<br />\n<br />\n\n\n---\n#### Approach 3: Count Cores\n\n**Intuition**\n\nThe final sum will be a sum of powers of 2, as every *core* (a substring `()`, with score 1) will have it's score multiplied by 2 for each exterior set of parentheses that contains that core.\n\n**Algorithm**\n\nKeep track of the `balance` of the string, as defined in *Approach #1*.  For every `)` that immediately follows a `(`, the answer is `1 << balance`, as `balance` is the number of exterior set of parentheses that contains this core.\n\n<iframe src=\"https://leetcode.com/playground/EUsmNAS5/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"EUsmNAS5\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "488",
+      "count": 47,
+      "average": 4.745,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"()\"",
+  "metaData": "{\r\n  \"name\": \"scoreOfParentheses\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

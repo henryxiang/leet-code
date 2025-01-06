@@ -1,0 +1,103 @@
+{
+  "questionId": "483",
+  "questionFrontendId": "483",
+  "boundTopicId": null,
+  "title": "Smallest Good Base",
+  "titleSlug": "smallest-good-base",
+  "categoryTitle": "Algorithms",
+  "content": "<p>For an integer n, we call k&gt;=2 a <i><b>good base</b></i> of n, if all digits of n base k are 1.</p>\r\n\r\n<p>Now given a string representing n, you should return the smallest good base of n in string format.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;13&quot;\r\n<b>Output:</b> &quot;3&quot;\r\n<b>Explanation:</b> 13 base 3 is 111.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;4681&quot;\r\n<b>Output:</b> &quot;8&quot;\r\n<b>Explanation:</b> 4681 base 8 is 11111.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;1000000000000000000&quot;\r\n<b>Output:</b> &quot;999999999999999999&quot;\r\n<b>Explanation:</b> 1000000000000000000 base 999999999999999999 is 11.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>The range of n is [3, 10^18].</li>\r\n\t<li>The string representing n is always valid and will not have leading zeros.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 113,
+  "dislikes": 282,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ckcz123",
+      "profileUrl": "/ckcz123/",
+      "avatarUrl": "https://www.gravatar.com/avatar/cd2cd527b2f3212ff509f7c531ebc25b.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string smallestGoodBase(string n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String smallestGoodBase(String n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestGoodBase(self, n):\n        \"\"\"\n        :type n: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestGoodBase(self, n: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * smallestGoodBase(char * n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string SmallestGoodBase(string n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} n\n * @return {string}\n */\nvar smallestGoodBase = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} n\n# @return {String}\ndef smallest_good_base(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func smallestGoodBase(_ n: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestGoodBase(n string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def smallestGoodBase(n: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun smallestGoodBase(n: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_good_base(n: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $n\n     * @return String\n     */\n    function smallestGoodBase($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11.3K\", \"totalSubmission\": \"32.5K\", \"totalAcceptedRaw\": 11309, \"totalSubmissionRaw\": 32476, \"acRate\": \"34.8%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"13\"",
+  "metaData": "{\r\n  \"name\": \"smallestGoodBase\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

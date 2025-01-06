@@ -1,0 +1,115 @@
+{
+  "questionId": "957",
+  "questionFrontendId": "921",
+  "boundTopicId": null,
+  "title": "Minimum Add to Make Parentheses Valid",
+  "titleSlug": "minimum-add-to-make-parentheses-valid",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string&nbsp;<code>S</code> of <code>&#39;(&#39;</code> and <code>&#39;)&#39;</code> parentheses, we add the minimum number of parentheses ( <code>&#39;(&#39;</code> or <code>&#39;)&#39;</code>, and in any positions ) so that the resulting parentheses string is valid.</p>\r\n\r\n<p>Formally, a parentheses string is valid if and only if:</p>\r\n\r\n<ul>\r\n\t<li>It is the empty string, or</li>\r\n\t<li>It can be written as <code>AB</code>&nbsp;(<code>A</code> concatenated with <code>B</code>), where <code>A</code> and <code>B</code> are valid strings, or</li>\r\n\t<li>It can be written as <code>(A)</code>, where <code>A</code> is a valid string.</li>\r\n</ul>\r\n\r\n<p>Given a parentheses string, return the minimum number of parentheses we must add to make the resulting string valid.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;())&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">1</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">&quot;(((&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">3</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">&quot;()&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">0</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">&quot;()))((&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">4</span></pre>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>S.length &lt;= 1000</code></li>\r\n\t<li><code>S</code> only consists of <code>&#39;(&#39;</code> and <code>&#39;)&#39;</code> characters.</li>\r\n</ol>\r\n\r\n<div>\r\n<div>\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 428,
+  "dislikes": 34,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "mockito_308",
+      "profileUrl": "/mockito_308/",
+      "avatarUrl": "https://assets.leetcode.com/users/mockito_308/avatar_1524378468.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"ServiceNow\", \"slug\": \"servicenow\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minAddToMakeValid(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minAddToMakeValid(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minAddToMakeValid(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minAddToMakeValid(self, S: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minAddToMakeValid(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinAddToMakeValid(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {number}\n */\nvar minAddToMakeValid = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef min_add_to_make_valid(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minAddToMakeValid(_ S: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minAddToMakeValid(S string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minAddToMakeValid(S: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minAddToMakeValid(S: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_add_to_make_valid(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return Integer\n     */\n    function minAddToMakeValid($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"43K\", \"totalSubmission\": \"60.3K\", \"totalAcceptedRaw\": 42958, \"totalSubmissionRaw\": 60331, \"acRate\": \"71.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "586",
+    "canSeeDetail": true,
+    "url": "/articles/minimum-add-to-make-parentheses-valid/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Balance\n\n**Intuition and Algorithm**\n\nKeep track of the *balance* of the string: the number of `'('`'s minus the number of `')'`'s.  A string is valid if its balance is 0, plus every prefix has non-negative balance.\n\nThe above idea is common with matching brackets problems, but could be difficult to find if you haven't seen it before.\n\nNow, consider the balance of every prefix of `S`.  If it is ever negative (say, -1), we must add a '(' bracket.  Also, if the balance of `S` is positive (say, `+B`), we must add `B` ')' brackets at the end.\n\n<iframe src=\"https://leetcode.com/playground/mbE7BCSV/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"mbE7BCSV\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "572",
+      "count": 13,
+      "average": 4.615,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"())\"",
+  "metaData": "{\r\n  \"name\": \"minAddToMakeValid\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

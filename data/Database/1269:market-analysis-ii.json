@@ -1,0 +1,65 @@
+{
+  "questionId": "1269",
+  "questionFrontendId": "1159",
+  "boundTopicId": null,
+  "title": "Market Analysis II",
+  "titleSlug": "market-analysis-ii",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Users</code></p>\n\n<pre>\n+----------------+---------+\n| Column Name    | Type    |\n+----------------+---------+\n| user_id        | int     |\n| join_date      | date    |\n| favorite_brand | varchar |\n+----------------+---------+\nuser_id is the primary key of this table.\nThis table has the info of the users of an online shopping website where users can sell and buy items.</pre>\n\n<p>Table: <code>Orders</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| order_id      | int     |\n| order_date    | date    |\n| item_id       | int     |\n| buyer_id      | int     |\n| seller_id     | int     |\n+---------------+---------+\norder_id is the primary key of this table.\nitem_id is a foreign key to the Items table.\nbuyer_id and seller_id are foreign keys to the Users table.\n</pre>\n\n<p>Table: <code>Items</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| item_id       | int     |\n| item_brand    | varchar |\n+---------------+---------+\nitem_id is the primary key of this table.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to find for each user, whether the brand of the second item (by date) they sold&nbsp;is&nbsp;their favorite brand. If a user sold less than two items, report the answer&nbsp;for that user as no.</p>\n\n<p>It is guaranteed that no seller sold more than one item on a day.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\nUsers table:\n+---------+------------+----------------+\n| user_id | join_date  | favorite_brand |\n+---------+------------+----------------+\n| 1       | 2019-01-01 | Lenovo         |\n| 2       | 2019-02-09 | Samsung        |\n| 3       | 2019-01-19 | LG             |\n| 4       | 2019-05-21 | HP             |\n+---------+------------+----------------+\n\nOrders table:\n+----------+------------+---------+----------+-----------+\n| order_id | order_date | item_id | buyer_id | seller_id |\n+----------+------------+---------+----------+-----------+\n| 1        | 2019-08-01 | 4       | 1        | 2         |\n| 2        | 2019-08-02 | 2       | 1        | 3         |\n| 3        | 2019-08-03 | 3       | 2        | 3         |\n| 4        | 2019-08-04 | 1       | 4        | 2         |\n| 5        | 2019-08-04 | 1       | 3        | 4         |\n| 6        | 2019-08-05 | 2       | 2        | 4         |\n+----------+------------+---------+----------+-----------+\n\nItems table:\n+---------+------------+\n| item_id | item_brand |\n+---------+------------+\n| 1       | Samsung    |\n| 2       | Lenovo     |\n| 3       | LG         |\n| 4       | HP         |\n+---------+------------+\n\nResult table:\n+-----------+--------------------+\n| seller_id | 2nd_item_fav_brand |\n+-----------+--------------------+\n| 1         | no                 |\n| 2         | yes                |\n| 3         | yes                |\n| 4         | no                 |\n+-----------+--------------------+\n\nThe answer for the user with id 1 is no because they sold nothing.\nThe answer for the users with id 2 and 3 is yes because the brands of their second sold items are their favorite brands.\nThe answer for the user with id 4 is no because the brand of their second sold item is not their favorite brand.</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 12,
+  "dislikes": 6,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Poshmark\", \"slug\": \"poshmark\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.7K\", \"totalSubmission\": \"3.3K\", \"totalAcceptedRaw\": 1659, \"totalSubmissionRaw\": 3349, \"acRate\": \"49.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Users\":[\"user_id\",\"join_date\",\"favorite_brand\"],\"Orders\":[\"order_id\",\"order_date\",\"item_id\",\"buyer_id\",\"seller_id\"],\"Items\":[\"item_id\",\"item_brand\"]},\"rows\":{\"Users\":[[1,\"2019-01-01\",\"Lenovo\"],[2,\"2019-02-09\",\"Samsung\"],[3,\"2019-01-19\",\"LG\"],[4,\"2019-05-21\",\"HP\"]],\"Orders\":[[1,\"2019-08-01\",4,1,2],[2,\"2019-08-02\",2,1,3],[3,\"2019-08-03\",3,2,3],[4,\"2019-08-04\",1,4,2],[5,\"2019-08-04\",1,3,4],[6,\"2019-08-05\",2,2,4]],\"Items\":[[1,\"Samsung\"],[2,\"Lenovo\"],[3,\"LG\"],[4,\"HP\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n     \"Create table If Not Exists Users (user_id int, join_date date, favorite_brand varchar(10))\",\n     \"create table if not exists Orders (order_id int, order_date date, item_id int, buyer_id int, seller_id int)\",\n     \"create table if not exists Items (item_id int, item_brand varchar(10))\"\n  ],\n  \"mssql\": [\n     \"Create table Users (user_id int, join_date date, favorite_brand varchar(10))\",\n     \"create table Orders (order_id int, order_date date, item_id int, buyer_id int, seller_id int)\",\n     \"create table Items (item_id int, item_brand varchar(10))\"\n  ],\n  \"oraclesql\": [\n     \"Create table Users (user_id int, join_date date, favorite_brand varchar(10))\",\n     \"create table Orders (order_id int, order_date date, item_id int, buyer_id int, seller_id int)\",\n     \"create table Items (item_id int, item_brand varchar(10))\",\n     \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Users (user_id int, join_date date, favorite_brand varchar(10))",
+    "create table if not exists Orders (order_id int, order_date date, item_id int, buyer_id int, seller_id int)",
+    "create table if not exists Items (item_id int, item_brand varchar(10))",
+    "Truncate table Users",
+    "insert into Users (user_id, join_date, favorite_brand) values ('1', '2019-01-01', 'Lenovo')",
+    "insert into Users (user_id, join_date, favorite_brand) values ('2', '2019-02-09', 'Samsung')",
+    "insert into Users (user_id, join_date, favorite_brand) values ('3', '2019-01-19', 'LG')",
+    "insert into Users (user_id, join_date, favorite_brand) values ('4', '2019-05-21', 'HP')",
+    "Truncate table Orders",
+    "insert into Orders (order_id, order_date, item_id, buyer_id, seller_id) values ('1', '2019-08-01', '4', '1', '2')",
+    "insert into Orders (order_id, order_date, item_id, buyer_id, seller_id) values ('2', '2019-08-02', '2', '1', '3')",
+    "insert into Orders (order_id, order_date, item_id, buyer_id, seller_id) values ('3', '2019-08-03', '3', '2', '3')",
+    "insert into Orders (order_id, order_date, item_id, buyer_id, seller_id) values ('4', '2019-08-04', '1', '4', '2')",
+    "insert into Orders (order_id, order_date, item_id, buyer_id, seller_id) values ('5', '2019-08-04', '1', '3', '4')",
+    "insert into Orders (order_id, order_date, item_id, buyer_id, seller_id) values ('6', '2019-08-05', '2', '2', '4')",
+    "Truncate table Items",
+    "insert into Items (item_id, item_brand) values ('1', 'Samsung')",
+    "insert into Items (item_id, item_brand) values ('2', 'Lenovo')",
+    "insert into Items (item_id, item_brand) values ('3', 'LG')",
+    "insert into Items (item_id, item_brand) values ('4', 'HP')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

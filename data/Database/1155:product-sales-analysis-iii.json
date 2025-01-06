@@ -1,0 +1,55 @@
+{
+  "questionId": "1155",
+  "questionFrontendId": "1070",
+  "boundTopicId": null,
+  "title": "Product Sales Analysis III",
+  "titleSlug": "product-sales-analysis-iii",
+  "categoryTitle": "Database",
+  "content": "<p>Table:&nbsp;<code>Sales</code></p>\r\n\r\n<pre>\r\n+-------------+-------+\r\n| Column Name | Type  |\r\n+-------------+-------+\r\n| sale_id     | int   |\r\n| product_id  | int   |\r\n| year        | int   |\r\n| quantity    | int   |\r\n| price       | int   |\r\n+-------------+-------+\r\nsale_id is the primary key of this table.\r\nproduct_id is a foreign key to <code>Product</code> table.\r\nNote that the price is per unit.\r\n</pre>\r\n\r\n<p>Table:&nbsp;<code>Product</code></p>\r\n\r\n<pre>\r\n+--------------+---------+\r\n| Column Name  | Type    |\r\n+--------------+---------+\r\n| product_id   | int     |\r\n| product_name | varchar |\r\n+--------------+---------+\r\nproduct_id is the primary key of this table.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"direction: ltr;\">Write an SQL query that selects the <strong>product id</strong>, <strong>year</strong>, <strong>quantity</strong>, and <strong>price</strong> for the <strong>first year</strong> of every product sold.</p>\r\n\r\n<p>The query result format is in the following example:</p>\r\n\r\n<pre>\r\n<code>Sales</code> table:\r\n+---------+------------+------+----------+-------+\r\n| sale_id | product_id | year | quantity | price |\r\n+---------+------------+------+----------+-------+ \r\n| 1       | 100        | 2008 | 10       | 5000  |\r\n| 2       | 100        | 2009 | 12       | 5000  |\r\n| 7       | 200        | 2011 | 15       | 9000  |\r\n+---------+------------+------+----------+-------+\r\n\r\nProduct table:\r\n+------------+--------------+\r\n| product_id | product_name |\r\n+------------+--------------+\r\n| 100        | Nokia        |\r\n| 200        | Apple        |\r\n| 300        | Samsung      |\r\n+------------+--------------+\r\n\r\nResult table:\r\n+------------+------------+----------+-------+\r\n| product_id | first_year | quantity | price |\r\n+------------+------------+----------+-------+ \r\n| 100        | 2008       | 10       | 5000  |\r\n| 200        | 2011       | 15       | 9000  |\r\n+------------+------------+----------+-------+\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 16,
+  "dislikes": 45,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Product Sales Analysis II\", \"titleSlug\": \"product-sales-analysis-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.3K\", \"totalSubmission\": \"11K\", \"totalAcceptedRaw\": 5305, \"totalSubmissionRaw\": 11028, \"acRate\": \"48.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Sales\":[\"sale_id\",\"product_id\",\"year\",\"quantity\",\"price\"],\"Product\":[\"product_id\",\"product_name\"]},\"rows\":{\"Sales\":[[1,100,2008,10,5000],[2,100,2009,12,5000],[7,200,2011,15,9000]],\"Product\":[[100,\"Nokia\"],[200,\"Apple\"],[300,\"Samsung\"]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table Sales (sale_id int, product_id int, year int, quantity int, price int)\",\r\n    \"Create table Product (product_id int, product_name varchar(10))\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table Sales (sale_id int, product_id int, year int, quantity int, price int)\",\r\n    \"Create table Product (product_id int, product_name varchar(10))\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table Sales (sale_id int, product_id int, year int, quantity int, price int)\",\r\n    \"Create table Product (product_id int, product_name varchar(10))\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table Sales (sale_id int, product_id int, year int, quantity int, price int)",
+    "Create table Product (product_id int, product_name varchar(10))",
+    "Truncate table Sales",
+    "insert into Sales (sale_id, product_id, year, quantity, price) values ('1', '100', '2008', '10', '5000')",
+    "insert into Sales (sale_id, product_id, year, quantity, price) values ('2', '100', '2009', '12', '5000')",
+    "insert into Sales (sale_id, product_id, year, quantity, price) values ('7', '200', '2011', '15', '9000')",
+    "Truncate table Product",
+    "insert into Product (product_id, product_name) values ('100', 'Nokia')",
+    "insert into Product (product_id, product_name) values ('200', 'Apple')",
+    "insert into Product (product_id, product_name) values ('300', 'Samsung')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

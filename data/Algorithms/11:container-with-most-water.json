@@ -1,0 +1,112 @@
+{
+  "questionId": "11",
+  "questionFrontendId": "11",
+  "boundTopicId": null,
+  "title": "Container With Most Water",
+  "titleSlug": "container-with-most-water",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given <i>n</i> non-negative integers <i>a<sub>1</sub></i>, <i>a<sub>2</sub></i>, ..., <i>a<sub>n&nbsp;</sub></i>, where each represents a point at coordinate (<i>i</i>, <i>a<sub>i</sub></i>). <i>n</i> vertical lines are drawn such that the two endpoints of line <i>i</i> is at (<i>i</i>, <i>a<sub>i</sub></i>) and (<i>i</i>, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.</p>\r\n\r\n<p><strong>Note:&nbsp;</strong>You may not slant the container and <i>n</i> is at least 2.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg\" style=\"width: 600px; height: 287px;\" /></p>\r\n\r\n<p><small>The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain&nbsp;is 49. </small></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [1,8,6,2,5,4,8,3,7]\r\n<strong>Output:</strong> 49</pre>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 4457,
+  "dislikes": 496,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Trapping Rain Water\", \"titleSlug\": \"trapping-rain-water\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"NetEase\", \"slug\": \"netease\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 16}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxArea(vector<int>& height) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxArea(int[] height) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxArea(self, height):\n        \"\"\"\n        :type height: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxArea(self, height: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxArea(int* height, int heightSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxArea(int[] height) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} height\n * @return {number}\n */\nvar maxArea = function(height) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} height\n# @return {Integer}\ndef max_area(height)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxArea(_ height: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxArea(height []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxArea(height: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxArea(height: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_area(height: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $height\n     * @return Integer\n     */\n    function maxArea($height) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"508.4K\", \"totalSubmission\": \"1.1M\", \"totalAcceptedRaw\": 508400, \"totalSubmissionRaw\": 1057798, \"acRate\": \"48.1%\"}",
+  "hints": [
+    "The aim is to maximize the area formed between the vertical lines. The area of any container is calculated using the shorter line as length and the distance between the lines as the width of the rectangle.\r\n\r\n<pre>\r\nArea = length of shorter vertical line * distance between lines\r\n</pre>\r\n\r\nWe can definitely get the maximum width container as the outermost lines have the maximum distance between them. However, this container <b>might not be the maximum in size</b> as one of the vertical lines of this container could be really short.\r\n\r\n<br>\r\n<img src=\"https://assets.leetcode.com/uploads/2019/10/20/hint_water_trap_1.png\" width=\"500\"/>\r\n\r\n<br>\r\n<img src=\"https://assets.leetcode.com/uploads/2019/10/20/hint_water_trap_2.png\" width=\"500\"/>",
+    "Start with the maximum width container and go to a shorter width container if there is a vertical line longer than the current containers shorter line. This way we are compromising on the width but we are looking forward to a longer length container."
+  ],
+  "solution": {
+    "id": "55",
+    "canSeeDetail": true,
+    "url": "/articles/container-with-most-water/",
+    "content": "[TOC]\n\n## Summary\nWe have to maximize the Area that can be formed between the vertical lines using the shorter line as length and the distance between the lines as the width of the rectangle forming the area.\n\n## Solution\n---\n\n#### Approach 1: Brute Force\n\n**Algorithm**\n\nIn this case, we will simply consider the area for every possible pair of the lines and find out the maximum area out of those.\n\n<iframe src=\"https://leetcode.com/playground/gL3JYnab/shared\" frameBorder=\"0\" width=\"100%\" height=\"208\" name=\"gL3JYnab\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. Calculating area for all $$\\dfrac{n(n-1)}{2}$$ height pairs.\n* Space complexity : $$O(1)$$. Constant extra space is used.\n<br />\n<br />\n---\n#### Approach 2: Two Pointer Approach\n\n**Algorithm**\n\nThe intuition behind this approach is that the area formed between the lines will always be limited by the height of the shorter line. Further, the farther the lines, the more will be the area obtained.\n\nWe take two pointers, one at the beginning and one at the end of the array constituting the length of the lines. Futher, we maintain a variable $$\\text{maxarea}$$ to store the maximum area obtained till now. At every step, we find out the area formed between them, update $$\\text{maxarea}$$ and move the pointer pointing to the shorter line towards the other end by one step.\n\nThe algorithm can be better understood by looking at the example below:\n```\n1 8 6 2 5 4 8 3 7\n```\n\n<!--![Water_Continer](https://leetcode.com/media/original_images/11_Container_Water.gif)-->\n!?!../Documents/11_Container_Water.json:1000,563!?!\n\nHow this approach works?\n\nInitially we consider the area constituting the exterior most lines. Now, to maximize the area, we need to consider the area between the lines of larger lengths. If we try to move the pointer at the longer line inwards, we won't gain any increase in area, since it is limited by the shorter line. But moving the shorter line's pointer could turn out to be beneficial, as per the same argument, despite the reduction in the width. This is done since a relatively longer line obtained by moving the shorter line's pointer might overcome the reduction in area caused by the width reduction.\n\nFor further clarification click [here](https://leetcode.com/problems/container-with-most-water/discuss/6099/yet-another-way-to-see-what-happens-in-the-on-algorithm) and for the proof click [here](https://leetcode.com/problems/container-with-most-water/discuss/6089/Anyone-who-has-a-O(N)-algorithm/7268).\n\n<iframe src=\"https://leetcode.com/playground/f9MCyxXg/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"f9MCyxXg\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. Single pass.\n\n* Space complexity : $$O(1)$$. Constant space is used.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "53",
+      "count": 242,
+      "average": 4.756,
+      "userRating": null
+    }
+  },
+  "status": "ac",
+  "sampleTestCase": "[1,8,6,2,5,4,8,3,7]",
+  "metaData": "{\r\n  \"name\": \"maxArea\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"height\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

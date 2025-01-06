@@ -1,0 +1,111 @@
+{
+  "questionId": "435",
+  "questionFrontendId": "435",
+  "boundTopicId": null,
+  "title": "Non-overlapping Intervals",
+  "titleSlug": "non-overlapping-intervals",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.</p>\n\n<ol>\n</ol>\n\n<p>&nbsp;</p>\n\n<p><b>Example 1:</b></p>\n\n<pre>\n<b>Input:</b> [[1,2],[2,3],[3,4],[1,3]]\n<b>Output:</b> 1\n<b>Explanation:</b> [1,3] can be removed and the rest of intervals are non-overlapping.\n</pre>\n\n<p><b>Example 2:</b></p>\n\n<pre>\n<b>Input:</b> [[1,2],[1,2],[1,2]]\n<b>Output:</b> 2\n<b>Explanation:</b> You need to remove two [1,2] to make the rest of intervals non-overlapping.\n</pre>\n\n<p><b>Example 3:</b></p>\n\n<pre>\n<b>Input:</b> [[1,2],[2,3]]\n<b>Output:</b> 0\n<b>Explanation:</b> You don&#39;t need to remove any of the intervals since they&#39;re already non-overlapping.\n</pre>\n\n<p>&nbsp;</p>\n\n<p><b>Note:</b></p>\n\n<ol>\n\t<li>You may assume the interval&#39;s end point is always bigger than its start point.</li>\n\t<li>Intervals like [1,2] and [2,3] have borders &quot;touching&quot; but they don&#39;t overlap each other.</li>\n</ol>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 694,
+  "dislikes": 26,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Minimum Number of Arrows to Burst Balloons\", \"titleSlug\": \"minimum-number-of-arrows-to-burst-balloons\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int eraseOverlapIntervals(vector<vector<int>>& intervals) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int eraseOverlapIntervals(int[][] intervals) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def eraseOverlapIntervals(self, intervals):\n        \"\"\"\n        :type intervals: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint eraseOverlapIntervals(int** intervals, int intervalsSize, int* intervalsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int EraseOverlapIntervals(int[][] intervals) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} intervals\n * @return {number}\n */\nvar eraseOverlapIntervals = function(intervals) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} intervals\r\n# @return {Integer}\r\ndef erase_overlap_intervals(intervals)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func eraseOverlapIntervals(_ intervals: [[Int]]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func eraseOverlapIntervals(intervals [][]int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def eraseOverlapIntervals(intervals: Array[Array[Int]]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun eraseOverlapIntervals(intervals: Array<IntArray>): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn erase_overlap_intervals(intervals: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $intervals\n     * @return Integer\n     */\n    function eraseOverlapIntervals($intervals) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"53.3K\", \"totalSubmission\": \"126.9K\", \"totalAcceptedRaw\": 53254, \"totalSubmissionRaw\": 126922, \"acRate\": \"42.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "83",
+    "canSeeDetail": true,
+    "url": "/articles/non-overlapping-intervals/",
+    "content": "[TOC]\n\n## Summary\n\nGiven a collection of intervals, we need to find the minimum number of intervals to be removed to make the rest of the intervals non-overlapping.\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\nIn the brute force approach, we try to remove the overlapping intervals in different combinations and then check which combination needs the minimum number of removals. To do this, firstly we sort the given intervals based on the starting point. Then, we make use of a recursive function `eraseOverlapIntervals` which takes the index of the previous interval $$prev$$ and the index of the current interval $$curr$$ (which we try to add to the list of intervals not removed), and returns the count of intervals that need to be removed from the current index onwards.\n\nWe start by using $$prev=-1$$ and $$curr=0$$. In each recursive call, we check if the current interval overlaps with the previous interval. If not, we need not remove the current interval from the final list and we can call the function `eraseOverlapIntervals` with $$prev=curr$$ and $$curr=curr + 1$$. The result of this function call in which we have included the current element is stored in $$taken$$ variable.\n\nWe also make another function call by removing the current interval because this could be overlapping with the upcoming intervals in the next function call and thus, its removal could eventually require lesser total number of removals. Thus, the recursive call takes the arguments $$prev=prev$$ and $$curr=curr + 1$$. Since, we have removed one interval, the result if the current interval isn't included is the sum of the value returned by the function call incremented by 1, which is stored in $$notTaken$$ variable. While returning the count of removals following a particular index, we return the minimum of $$taken$$ and $$notTaken$$.\n\n\n<iframe src=\"https://leetcode.com/playground/QtauivZC/shared\" frameBorder=\"0\" name=\"QtauivZC\" width=\"100%\" height=\"428\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(2^n)$$. Total possible number of Combinations of subsets are $$2^n$$ .\n* Space complexity : $$O(n)$$. Depth of recursion is $$n$$.\n\n---\n#### Approach #2 Using DP based on starting point [Accepted]\n\n**Algorithm**\n\nThe given problem can be simplified to a great extent if we sort the given interval list based on the starting points. Once it's done, we can make use of a $$dp$$ array, scuh that $$dp[i]$$ stores the maximum number of valid intervals that can be included in the final list if the intervals upto the $$i^{th}$$ interval only are considered, including itself. Now, while finding $$dp[i+1]$$, we can't consider the value of $$dp[i]$$ only, because it could be possible that the $$i^{th}$$ or any previous interval could be overlapping with the $$(i+1)^{th}$$ interval. Thus, we need to consider the maximum of all $$dp[j]$$'s such that $$j \\leq i$$ and $$j^{th}$$ interval and $$i^{th}$$ don't overlap, to evaluate $$dp[i+1]$$. Therefore, the equation for $$dp[i+1]$$ becomes:\n\n$$\ndp[i+1]= \\max(dp[j]) + 1,\n$$\n\nsuch that $$j^{th}$$ interval and $$i^{th}$$ don't overlap, for all $$j \\leq i$$.\n\nIn the end, to obtain the maximum number of intervals that can be included in the final list($$ans$$) we need to find the maximum value in the $$dp$$ array. The final result will be the total number of intervals given less the result just obtained($$intervals.length-ans$$).\n\nThe animation below illustrates the approach more clearly:\n\n!?!../Documents/435_Non_Overlapping_Intervalsdp1.json:866,487!?!\n\n<iframe src=\"https://leetcode.com/playground/9SpbjLHA/shared\" frameBorder=\"0\" name=\"9SpbjLHA\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. Two nested loops are required to fill $$dp$$ array.\n\n* Space complexity : $$O(n)$$. $$dp$$ array of size $$n$$ is used.\n\n---\n#### Approach #3 Using DP based on the end points [Accepted]\n\n**Algorithm**\n\nIn the DP approach just discussed above, for calculating the value of every $$dp[i]$$, we need to traverse the $$dp$$ array back till the starting index. This overhead can be removed, if we use an interval list sorted on the basis of the end points. Thus, now, again we use the same kind of $$dp$$ array, where $$dp[i]$$ is used to store the maximum number of intervals that can be included in the final list if the intervals only upto the $$i^{th}$$ index in the sorted list are considered. Thus, in order to find $$dp[i+1]$$ now, we've to consider two cases:\n\n**Case 1:**\n\n>The interval corresponding to $$(i+1)^{th}$$ interval needs to be included in the final list to obtain the minimum number of removals:\n\nIn this case, we need to traverse back in the sorted interval array form the $$(i+1)^{th}$$ index upto the starting index to find the first interval which is non-overlapping. This is because, if we are including the current interval, we need to remove all the intervals which are overlapping with the current interval. But, we need not go back till the starting index everytime. Instead we can stop the traversal as soon as we hit the first non-overlapping interval and use its $$dp[j] + 1$$ to fill in $$dp[i+1]$$, since $$dp[j]$$ will be the element storing the maximum number of intervals that can be included considering elements upto the $$j^{th}$$ index.\n\n**Case 2:**\n\n> The interval corresponding to $$(i+1)^{th}$$ interval needs to be removed from the final list to obtain the minimum number of removals:\n\nIn this case, the current element won't be included in the final list. So, the count of intervals to be included upto $$(i+1)^{th}$$ index is the same as the count of intervals upto the $$i^{th}$$ index. Thus, we can use $$dp[i]$$'s value to fill in $$dp[i+1]$$.\n\n\n\nThe value finally entered in $$dp[i+1]$$ will be the maximum of the above two values.\n\nThe final result will again be the total count of intervals less the result obtained at the end from the $$dp$$ array.\n\nThe animation below illustrates the approach more clearly:\n\n<!--![Non_overlapping_dp](../Figures/435_NonOverlapping_Intervalsdp2.gif)-->\n!?!../Documents/435_Non.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/McmA5f64/shared\" frameBorder=\"0\" name=\"McmA5f64\" width=\"100%\" height=\"515\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. Two nested loops are required to fill $$dp$$ array.\n\n* Space complexity : $$O(n)$$. $$dp$$ array of size $$n$$ is used.\n\n---\n\n#### Approach #4 Using Greedy Approach based on starting points [Accepted]\n\n**Algorithm**\n\nIf we sort the given intervals based on starting points, the greedy approach works very well. While considering the intervals in the ascending order of starting points, we make use of a pointer $$prev$$ pointer to keep track of the interval just included in the final list. While traversing, we can encounter 3 possibilities as shown in the figure:\n\n![Non_overlapping](../Figures/435_NonOverlapping_greedy1.JPG)\n\n\n**Case 1:**\n\n> The two intervals currently considered are non-overlapping:\n\nIn this case, we need not remove any interval and we can continue by simply assigning the $$prev$$ pointer to the later interval and the count of intervals removed remains unchanged.\n\n**Case 2:**\n\n> The two intervals currently considered are overlapping and the end point of the later interval falls before the end point of the previous interval:\n\nIn this case, we can simply take the later interval. The choice is obvious since choosing an interval of smaller width will lead to more available space labelled as $$A$$ and $$B$$, in which more intervals can be accommodated. Hence, the $$prev$$ pointer is updated to current interval and the count of intervals removed is incremented by 1.\n\n**Case 3:**\n\n> The two intervals currently considered are overlapping and the end point of the later interval falls after the end point of the previous interval:\n\nIn this case, we can work in a greedy manner and directly remove the later interval. To understand why this greedy approach works, we need to see the figure below, which includes all the subcases possible. It is clear from the figures that we choosing interval 1 always leads to a better solution in the future. Thus, the $$prev$$ pointer remains unchanged and the count of intervals removed is incremented by 1.\n\n![Non_overlapping](../Figures/435_NonOverlapping_greedy2.JPG)\n\n\n<iframe src=\"https://leetcode.com/playground/nv3azNFK/shared\" frameBorder=\"0\" name=\"nv3azNFK\" width=\"100%\" height=\"479\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(n \\log(n)\\big)$$. Sorting takes $$O\\big(n \\log(n)\\big)$$ time.\n\n* Space complexity : $$O(1)$$. No extra space is used.\n\n---\n\n#### Approach #5 Using Greedy Approach based on end points [Accepted]\n\n**Algorithm**\n\nThe Greedy approach just discussed was based on choosing intervals greedily based on the starting points. But in this approach, we go for choosing points greedily based on the end points. For this, firstly we sort the given intervals based on the end points. Then, we traverse over the sorted intervals. While traversing, if there is no overlapping between the previous interval and the current interval, we need not remove any interval. But, if an overlap exists between the previous interval and the current interval, we always drop the current interval.\n\nTo explain how it works, again we consider every possible arrangement of the intervals.\n\n![Non_overlapping](../Figures/435_NonOverlapping_greedy3.JPG)\n\n\n**Case 1:**\n\n> The two intervals currently considered are non-overlapping:\n\nIn this case, we need not remove any interval and for the next iteration the current interval becomes the previous interval.\n\n**Case 2:**\n\n> The two intervals currently considered are overlapping and the starting point of the later interval falls before the starting point of the previous interval:\n\nIn this case, as shown in the figure below, it is obvious that the later interval completely subsumes the previous interval. Hence, it is advantageous to remove the later interval so that we can get more range available to accommodate future intervals. Thus, previous interval remains unchanged and the current interval is updated.\n\n**Case 3:**\n\n> The two intervals currently considered are overlapping and the starting point of the later interval falls before the starting point of the previous interval:\n\nIn this case, the only opposition to remove the current interval arises because it seems that more intervals could be accommodated by removing the previous interval in the range marked by $$A$$. But that won't be possible as can be visualized with a case similar to Case 3a and 3b shown above. But, if we remove the current interval, we can save the range $$B$$ to accommodate further intervals. Thus, previous interval remains unchanged and the current interval is updated.\n\n\n\n<iframe src=\"https://leetcode.com/playground/23TqSoF7/shared\" frameBorder=\"0\" name=\"23TqSoF7\" width=\"100%\" height=\"428\"></iframe>\n\n\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(n \\log(n)\\big)$$. Sorting takes $$O\\big(n \\log(n)\\big)$$ time.\n\n* Space complexity : $$O(1)$$. No extra space is used.\n\n---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "81",
+      "count": 29,
+      "average": 4.172,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2]]",
+  "metaData": "{\r\n  \"name\": \"eraseOverlapIntervals\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"intervals\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

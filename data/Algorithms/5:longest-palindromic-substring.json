@@ -1,0 +1,113 @@
+{
+  "questionId": "5",
+  "questionFrontendId": "5",
+  "boundTopicId": null,
+  "title": "Longest Palindromic Substring",
+  "titleSlug": "longest-palindromic-substring",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <strong>s</strong>, find the longest palindromic substring in <strong>s</strong>. You may assume that the maximum length of <strong>s</strong> is 1000.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;babad&quot;\r\n<strong>Output:</strong> &quot;bab&quot;\r\n<strong>Note:</strong> &quot;aba&quot; is also a valid answer.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;cbbd&quot;\r\n<strong>Output:</strong> &quot;bb&quot;\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 4997,
+  "dislikes": 441,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Shortest Palindrome\", \"titleSlug\": \"shortest-palindrome\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Palindrome Permutation\", \"titleSlug\": \"palindrome-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Palindrome Pairs\", \"titleSlug\": \"palindrome-pairs\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Longest Palindromic Subsequence\", \"titleSlug\": \"longest-palindromic-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindromic Substrings\", \"titleSlug\": \"palindromic-substrings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 127}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 25}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 12}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 8}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"GoDaddy\", \"slug\": \"godaddy\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Roblox\", \"slug\": \"roblox\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Huawei\", \"slug\": \"huawei\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Pure Storage\", \"slug\": \"pure-storage\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ServiceNow\", \"slug\": \"servicenow\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    string longestPalindrome(string s) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String longestPalindrome(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestPalindrome(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestPalindrome(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * longestPalindrome(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string LongestPalindrome(string s) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar longestPalindrome = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @return {String}\r\ndef longest_palindrome(s)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func longestPalindrome(_ s: String) -> String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestPalindrome(s string) string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def longestPalindrome(s: String): String = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun longestPalindrome(s: String): String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_palindrome(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function longestPalindrome($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"745.9K\", \"totalSubmission\": \"2.6M\", \"totalAcceptedRaw\": 745855, \"totalSubmissionRaw\": 2621205, \"acRate\": \"28.5%\"}",
+  "hints": [
+    "How can we reuse a previously computed palindrome to compute a larger palindrome?",
+    "If “aba” is a palindrome, is “xabax” and palindrome? Similarly is “xabay” a palindrome?",
+    "Complexity based hint:</br>\r\nIf we use brute-force and check whether for every start and end position a substring is a palindrome we have O(n^2) start - end pairs and O(n) palindromic checks. Can we reduce the time for palindromic checks to O(1) by reusing some previous computation."
+  ],
+  "solution": {
+    "id": "34",
+    "canSeeDetail": true,
+    "url": "/articles/longest-palindromic-substring/",
+    "content": "[TOC]\n\n## Summary\nThis article is for intermediate readers. It introduces the following ideas:\nPalindrome, Dynamic Programming and String Manipulation. Make sure you understand what a palindrome means. A palindrome is a string which reads the same in both directions. For example, $$S$$ = \"aba\" is a palindrome, $$S$$ = \"abc\" is not.\n\n## Solution\n---\n#### Approach 1: Longest Common Substring\n\n**Common mistake**\n\nSome people will be tempted to come up with a quick solution, which is unfortunately flawed (however can be corrected easily):\n\n> Reverse $$S$$ and become $$S'$$. Find the longest common substring between $$S$$ and $$S'$$, which must also be the longest palindromic substring.\n\nThis seemed to work, let’s see some examples below.\n\nFor example, $$S$$ = \"caba\", $$S'$$ = \"abac\".\n\nThe longest common substring between $$S$$ and $$S'$$ is \"aba\", which is the answer.\n\nLet’s try another example: $$S$$ = \"abacdfgdcaba\", $$S'$$ = \"abacdgfdcaba\".\n\nThe longest common substring between $$S$$ and $$S'$$ is \"abacd\". Clearly, this is not a valid palindrome.\n\n**Algorithm**\n\nWe could see that the longest common substring method fails when there exists a reversed copy of a non-palindromic substring in some other part of $$S$$. To rectify this, each time we find a longest common substring candidate, we check if the substring’s indices are the same as the reversed substring’s original indices. If it is, then we attempt to update the longest palindrome found so far; if not, we skip this and find the next candidate.\n\nThis gives us an $$O(n^2)$$ Dynamic Programming solution which uses $$O(n^2)$$ space (could be improved to use $$O(n)$$ space). Please read more about Longest Common Substring [here](http://en.wikipedia.org/wiki/Longest_common_substring).\n<br />\n<br />\n\n---\n#### Approach 2: Brute Force\n\nThe obvious brute force solution is to pick all possible starting and ending positions for a substring, and verify if it is a palindrome.\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^3)$$.\nAssume that $$n$$ is the length of the input string, there are a total of $$\\binom{n}{2} = \\frac{n(n-1)}{2}$$ such substrings (excluding the trivial solution where a character itself is a palindrome). Since verifying each substring takes $$O(n)$$ time, the run time complexity is $$O(n^3)$$.\n\n* Space complexity : $$O(1)$$.\n<br />\n<br />\n\n---\n#### Approach 3: Dynamic Programming\n\nTo improve over the brute force solution, we first observe how we can avoid unnecessary re-computation while validating palindromes. Consider the case \"ababa\". If we already knew that \"bab\" is a palindrome, it is obvious that \"ababa\" must be a palindrome since the two left and right end letters are the same.\n\nWe define $$P(i,j)$$ as following:\n\n$$\nP(i,j) =\n     \\begin{cases}\n       \\text{true,} &\\quad\\text{if the substring } S_i \\dots S_j \\text{ is a palindrome}\\\\\n       \\text{false,} &\\quad\\text{otherwise.} \\\n     \\end{cases}\n$$\n\nTherefore,\n\n$$\nP(i, j) = ( P(i+1, j-1) \\text{ and } S_i == S_j )\n$$\n\nThe base cases are:\n\n$$\nP(i, i) = true\n$$\n\n$$\nP(i, i+1) = ( S_i == S_{i+1} )\n$$\n\nThis yields a straight forward DP solution, which we first initialize the one and two letters palindromes, and work our way up finding all three letters palindromes, and so on...\n\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$.\nThis gives us a runtime complexity of $$O(n^2)$$.\n\n* Space complexity : $$O(n^2)$$.\nIt uses $$O(n^2)$$ space to store the table.\n\n**Additional Exercise**\n\nCould you improve the above space complexity further and how?\n<br />\n<br />\n\n---\n#### Approach 4: Expand Around Center\n\nIn fact, we could solve it in $$O(n^2)$$ time using only constant space.\n\nWe observe that a palindrome mirrors around its center. Therefore, a palindrome can be expanded from its center, and there are only $$2n - 1$$ such centers.\n\nYou might be asking why there are $$2n - 1$$ but not $$n$$ centers? The reason is the center of a palindrome can be in between two letters. Such palindromes have even number of letters (such as \"abba\") and its center are between the two 'b's.\n\n<iframe src=\"https://leetcode.com/playground/5w5ZZtTd/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"5w5ZZtTd\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$.\nSince expanding a palindrome around its center could take $$O(n)$$ time, the overall complexity is $$O(n^2)$$.\n\n* Space complexity : $$O(1)$$.\n<br />\n<br />\n---\n\n#### Approach 5: Manacher's Algorithm\n\nThere is even an $$O(n)$$ algorithm called Manacher's algorithm, explained [here in detail](http://articles.leetcode.com/longest-palindromic-substring-part-ii/). However, it is a non-trivial algorithm, and no one expects you to come up with this algorithm in a 45 minutes coding session. But, please go ahead and understand it, I promise it will be a lot of fun.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "32",
+      "count": 363,
+      "average": 4.468,
+      "userRating": null
+    }
+  },
+  "status": "ac",
+  "sampleTestCase": "\"babad\"",
+  "metaData": "{ \r\n  \"name\": \"longestPalindrome\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

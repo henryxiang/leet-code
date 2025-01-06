@@ -1,0 +1,105 @@
+{
+  "questionId": "52",
+  "questionFrontendId": "52",
+  "boundTopicId": null,
+  "title": "N-Queens II",
+  "titleSlug": "n-queens-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>The <em>n</em>-queens puzzle is the problem of placing <em>n</em> queens on an <em>n</em>&times;<em>n</em> chessboard such that no two queens attack each other.</p>\r\n\r\n<p><img src=\"https://assets.leetcode.com/uploads/2018/10/12/8-queens.png\" style=\"width: 258px; height: 276px;\" /></p>\r\n\r\n<p>Given an integer&nbsp;<em>n</em>, return the number of&nbsp;distinct solutions to the&nbsp;<em>n</em>-queens puzzle.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 4\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> There are two distinct solutions to the 4-queens puzzle as shown below.\r\n[\r\n&nbsp;[&quot;.Q..&quot;, &nbsp;// Solution 1\r\n&nbsp; &quot;...Q&quot;,\r\n&nbsp; &quot;Q...&quot;,\r\n&nbsp; &quot;..Q.&quot;],\r\n\r\n&nbsp;[&quot;..Q.&quot;, &nbsp;// Solution 2\r\n&nbsp; &quot;Q...&quot;,\r\n&nbsp; &quot;...Q&quot;,\r\n&nbsp; &quot;.Q..&quot;]\r\n]\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 370,
+  "dislikes": 131,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"N-Queens\", \"titleSlug\": \"n-queens\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Zenefits\", \"slug\": \"zenefits\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int totalNQueens(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int totalNQueens(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def totalNQueens(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def totalNQueens(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint totalNQueens(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int TotalNQueens(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar totalNQueens = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef total_n_queens(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func totalNQueens(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func totalNQueens(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def totalNQueens(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun totalNQueens(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn total_n_queens(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function totalNQueens($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"115.9K\", \"totalSubmission\": \"211.3K\", \"totalAcceptedRaw\": 115868, \"totalSubmissionRaw\": 211322, \"acRate\": \"54.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "655",
+    "canSeeDetail": true,
+    "url": "/articles/n-queens-ii/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Intuition\n\nThis problem is a classical one and \nit's important to know the solution to feel classy.\n\nThe first idea is to use brute-force \nthat means to generate all possible ways to put `N` queens on the board,\nand then check them to keep only the combinations \nwith no queen under attack. \nThat means $$\\mathcal{O}(N^N)$$ time complexity\nand hence we're forced to think further how to optimize.\n\nThere are two programming conceptions here which could\nhelp.\n\n> The first one is called _constrained programming_. \n\nThat basically means\nto put restrictions after each queen placement. One puts a queen on the \nboard and that immediately excludes one column, one row and \ntwo diagonals for the further queens placement. That propagates \n_constraints_ and helps to reduce the number of combinations to consider.\n\n<img src=\"../Figures/52/52_pic.png\" width=\"500\">\n\n> The second one called _backtracking_. \n\nLet's imagine that one \nputs several queens on the board so that they don't attack each other. \nBut the combination chosen is not the optimal one and there is no place\nfor the next queen. What to do? _To backtrack_. That means to come back,\nto change the position of the previously placed queen and try \nto proceed again. If that would not work either, _backtrack_ again.\n\n<img src=\"../Figures/52/52_backtracking_.png\" width=\"500\">\n<br />\n<br />\n\n\n---\n#### Approach 1: Backtracking\n\nBefore to construct the algorithm, \nlet's figure out two tips that could\nhelp.\n\n> There could be the only one queen in a row and the only one queen\nin a column.\n\nThat means that there is no need to consider all squares on the \nboard. One could just iterate over the columns.\n\n> For all \"hill\" diagonals `row + column = const`, \nand for all \"dale\" diagonals `row - column = const`.  \n\nThat would allow us to mark the diagonals which are already under \nattack and to check if a given square `(row, column)` is under attack.\n\n<img src=\"../Figures/52/52_diagonals.png\" width=\"500\">\n\nNow everything is ready to write down the backtrack function \n`backtrack(row = 0, count = 0)`.\n\n* Start from the first `row = 0`. \n* Iterate over the columns and try to put a queen in each `column`.\n\n    * If square `(row, column)` is not under attack\n        \n        * Place the queen in `(row, column)` square.\n        * Exclude one row, one column and two diagonals from further \n        consideration.\n        * If all rows are filled up `row == N`\n            * That means that we find out one more solution `count++`.\n        * Else\n            * Proceed to place further queens `backtrack(row + 1, count)`.\n        * Now backtrack : remove the queen from `(row, column)` square.\n        \nHere is a straightforward implementation of the above algorithm.  \n\n<!--![LIS](../Figures/72/72_tr.gif)-->\n!?!../Documents/52_LIS.json:1000,705!?!\n\n<iframe src=\"https://leetcode.com/playground/ajGcnFfA/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ajGcnFfA\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N!)$$. There is `N` possibilities to put \nthe first queen, not more than `N (N - 2)` to put the second one,\nnot more than `N(N - 2)(N - 4)` for the third one etc. In total that\nresults in $$\\mathcal{O}(N!)$$ time complexity.\n* Space complexity : $$\\mathcal{O}(N)$$ to keep an information about \ndiagonals and rows. \n<br />\n<br />\n\n\n---\n#### Approach 2: Backtracking via bitmap\n\nIf you're on the interview - use the approach `1`. \n\nThe next algorithm has the same time complexity $$\\mathcal{O}(N!)$$\nbut works the way faster \nbecause of [bitwise operators usage](https://wiki.python.org/moin/BitwiseOperators). \nKudos for this algorithm go to [takaken](http://www.ic-net.or.jp/home/takaken/e/queen/).\n\nTo facilitate the understanding of the algorithm,\nhere is the code with step by step explanations.  \n\n<iframe src=\"https://leetcode.com/playground/5jqYue6a/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"5jqYue6a\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N!)$$. \n* Space complexity : $$\\mathcal{O}(N)$$.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "641",
+      "count": 7,
+      "average": 4.143,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "4",
+  "metaData": "{\r\n  \"name\": \"totalNQueens\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "853",
+  "questionFrontendId": "826",
+  "boundTopicId": null,
+  "title": "Most Profit Assigning Work",
+  "titleSlug": "most-profit-assigning-work",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We have jobs: <code>difficulty[i]</code>&nbsp;is the difficulty of the&nbsp;<code>i</code>th job, and&nbsp;<code>profit[i]</code>&nbsp;is the profit of the&nbsp;<code>i</code>th job.&nbsp;</p>\r\n\r\n<p>Now we have some workers.&nbsp;<code>worker[i]</code>&nbsp;is the ability of the&nbsp;<code>i</code>th worker, which means that this worker can only complete a job with difficulty at most&nbsp;<code>worker[i]</code>.&nbsp;</p>\r\n\r\n<p>Every worker can be assigned at most one job, but one job&nbsp;can be completed multiple times.</p>\r\n\r\n<p>For example, if 3 people attempt the same job that pays $1, then the total profit will be $3.&nbsp; If a worker cannot complete any job, his profit is $0.</p>\r\n\r\n<p>What is the most profit we can make?</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>difficulty = [2,4,6,8,10], profit = [10,20,30,40,50], worker = [4,5,6,7]\r\n<strong>Output: </strong>100 \r\n<strong>Explanation: W</strong>orkers are assigned jobs of difficulty [4,4,6,6] and they get profit of [20,20,30,30] seperately.</pre>\r\n\r\n<p><strong>Notes:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= difficulty.length = profit.length &lt;= 10000</code></li>\r\n\t<li><code>1 &lt;= worker.length &lt;= 10000</code></li>\r\n\t<li><code>difficulty[i], profit[i], worker[i]</code>&nbsp; are in range&nbsp;<code>[1, 10^5]</code></li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 274,
+  "dislikes": 46,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"NetEase\", \"slug\": \"netease\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxProfitAssignment(vector<int>& difficulty, vector<int>& profit, vector<int>& worker) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxProfitAssignment(self, difficulty, profit, worker):\n        \"\"\"\n        :type difficulty: List[int]\n        :type profit: List[int]\n        :type worker: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxProfitAssignment(self, difficulty: List[int], profit: List[int], worker: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxProfitAssignment(int* difficulty, int difficultySize, int* profit, int profitSize, int* worker, int workerSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} difficulty\n * @param {number[]} profit\n * @param {number[]} worker\n * @return {number}\n */\nvar maxProfitAssignment = function(difficulty, profit, worker) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} difficulty\n# @param {Integer[]} profit\n# @param {Integer[]} worker\n# @return {Integer}\ndef max_profit_assignment(difficulty, profit, worker)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxProfitAssignment(_ difficulty: [Int], _ profit: [Int], _ worker: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxProfitAssignment(difficulty []int, profit []int, worker []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxProfitAssignment(difficulty: Array[Int], profit: Array[Int], worker: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxProfitAssignment(difficulty: IntArray, profit: IntArray, worker: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_profit_assignment(difficulty: Vec<i32>, profit: Vec<i32>, worker: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $difficulty\n     * @param Integer[] $profit\n     * @param Integer[] $worker\n     * @return Integer\n     */\n    function maxProfitAssignment($difficulty, $profit, $worker) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"15.2K\", \"totalSubmission\": \"40.7K\", \"totalAcceptedRaw\": 15220, \"totalSubmissionRaw\": 40704, \"acRate\": \"37.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "457",
+    "canSeeDetail": true,
+    "url": "/articles/most-profit-assigning-work/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Sorting Events [Accepted]\n\n**Intuition**\n\nWe can consider the workers in any order, so let's process them in order of skill.\n\nIf we processed all jobs with lower skill first, then the profit is just the most profitable job we have seen so far.\n\n**Algorithm**\n\nWe can use a \"two pointer\" approach to process jobs in order.  We will keep track of `best`, the maximum profit seen.\n\nFor each worker with a certain `skill`, after processing all jobs with lower or equal difficulty, we add `best` to our answer.\n\n<iframe src=\"https://leetcode.com/playground/52pUn6By/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"52pUn6By\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N + Q \\log Q)$$, where $$N$$ is the number of jobs, and $$Q$$ is the number of people.\n\n* Space Complexity: $$O(N)$$, the additional space used by `jobs`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "451",
+      "count": 11,
+      "average": 4.091,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,4,6,8,10]\n[10,20,30,40,50]\n[4,5,6,7]",
+  "metaData": "{\r\n  \"name\": \"maxProfitAssignment\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"difficulty\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"profit\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"worker\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

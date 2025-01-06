@@ -1,0 +1,109 @@
+{
+  "questionId": "102",
+  "questionFrontendId": "102",
+  "boundTopicId": null,
+  "title": "Binary Tree Level Order Traversal",
+  "titleSlug": "binary-tree-level-order-traversal",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary tree, return the <i>level order</i> traversal of its nodes' values. (ie, from left to right, level by level).</p>\r\n\r\n<p>\r\nFor example:<br />\r\nGiven binary tree <code>[3,9,20,null,null,15,7]</code>,<br />\r\n<pre>\r\n    3\r\n   / \\\r\n  9  20\r\n    /  \\\r\n   15   7\r\n</pre>\r\n</p>\r\n<p>\r\nreturn its level order traversal as:<br />\r\n<pre>\r\n[\r\n  [3],\r\n  [9,20],\r\n  [15,7]\r\n]\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2050,
+  "dislikes": 55,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Binary Tree Zigzag Level Order Traversal\", \"titleSlug\": \"binary-tree-zigzag-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Level Order Traversal II\", \"titleSlug\": \"binary-tree-level-order-traversal-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Minimum Depth of Binary Tree\", \"titleSlug\": \"minimum-depth-of-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Vertical Order Traversal\", \"titleSlug\": \"binary-tree-vertical-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Average of Levels in Binary Tree\", \"titleSlug\": \"average-of-levels-in-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"N-ary Tree Level Order Traversal\", \"titleSlug\": \"n-ary-tree-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Cousins in Binary Tree\", \"titleSlug\": \"cousins-in-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 11}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    vector<vector<int>> levelOrder(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public List<List<Integer>> levelOrder(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def levelOrder(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def levelOrder(self, root: TreeNode) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public IList<IList<int>> LevelOrder(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number[][]}\n */\nvar levelOrder = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {Integer[][]}\ndef level_order(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func levelOrder(_ root: TreeNode?) -> [[Int]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc levelOrder(root *TreeNode) [][]int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def levelOrder(root: TreeNode): List[List[Int]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun levelOrder(root: TreeNode?): List<List<Int>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Integer[][]\n     */\n    function levelOrder($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"480.9K\", \"totalSubmission\": \"936.9K\", \"totalAcceptedRaw\": 480937, \"totalSubmissionRaw\": 936933, \"acRate\": \"51.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "708",
+    "canSeeDetail": true,
+    "url": "/articles/binary-tree-level-order-traversal/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### How to traverse the tree\n\nThere are two general strategies to traverse a tree:\n     \n- *Depth First Search* (`DFS`)\n\n    In this strategy, we adopt the `depth` as the priority, so that one\n    would start from a root and reach all the way down to certain leaf,\n    and then back to root to reach another branch.\n\n    The DFS strategy can further be distinguished as\n    `preorder`, `inorder`, and `postorder` depending on the relative order\n    among the root node, left node and right node.\n    \n- *Breadth First Search* (`BFS`)\n\n    We scan through the tree level by level, following the order of height,\n    from top to bottom. The nodes on higher level would be visited before\n    the ones with lower levels.\n    \nOn the following figure the nodes are numerated in the order you visit them,\nplease follow ```1-2-3-4-5``` to compare different strategies.\n\n![postorder](../Figures/145_transverse.png)\n\nHere the problem is to implement split-level BFS traversal : `[[1], [2, 3], [4, 5]]`.\n<br /> \n<br />\n\n\n---\n#### Approach 1: Recursion\n\n**Algorithm**\n\nThe simplest way to solve the problem is to use a recursion. Let's \nfirst ensure that the tree is not empty, and then call recursively the function \n`helper(node, level)`, which takes the current node and its level as the arguments.\n\nThis function does the following :\n\n- The output list here is called `levels`, and hence the current level is\njust a length of this list `len(levels)`.\nCompare the number of a current level `len(levels)` with a node level `level`.\nIf you're still on the previous level - add the new one by adding a \nnew list into `levels`.\n\n- Append the node value to the last list in `levels`.\n\n- Process recursively child nodes if they are not `None` : \n`helper(node.left / node.right, level + 1)`.\n\n**Implementation**\n\n!?!../Documents/102_LIS.json:1000,509!?!\n\n<iframe src=\"https://leetcode.com/playground/w2tACYG8/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"w2tACYG8\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ since each node is processed\nexactly once.\n \n* Space complexity : $$\\mathcal{O}(N)$$ to keep the output structure which\ncontains `N` node values.\n<br />\n<br />\n\n\n---\n#### Approach 2: Iteration\n\n**Algorithm**\n\nThe recursion above could be rewritten in the iteration form.\n\nLet's keep nodes of each tree level in the _queue_ structure,\nwhich typically orders elements in a FIFO (first-in-first-out) manner.\nIn Java one could use [`LinkedList` implementation of the `Queue` interface](https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html).\nIn Python using [`Queue` structure](https://docs.python.org/3/library/queue.html)\nwould be an overkill since it's designed for a safe exchange between multiple threads\nand hence requires locking which leads to a performance loose. \nIn Python the queue implementation with a fast atomic `append()`\nand `popleft()` is [`deque`](https://docs.python.org/3/library/collections.html#collections.deque).\n\nThe zero level contains only one node `root`. The algorithm is simple :\n\n- Initiate queue with a `root` and start from the level number `0` :\n`level = 0`.\n\n- While queue is not empty :\n\n    * Start the current level by adding an empty list into output structure `levels`.\n    \n    * Compute how many elements should be on the current level : it's a \n    queue length.\n    \n    * Pop out all these elements from the queue and add them into the current\n    level.\n    \n    * Push their child nodes into the queue for the next level.\n    \n    * Go to the next level `level++`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/pPTZzQ5V/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"pPTZzQ5V\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ since each node is processed\nexactly once.\n \n* Space complexity : $$\\mathcal{O}(N)$$ to keep the output structure which\ncontains `N` node values.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "693",
+      "count": 27,
+      "average": 4.815,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,9,20,null,null,15,7]",
+  "metaData": "{\r\n  \"name\": \"levelOrder\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<list<integer>>\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

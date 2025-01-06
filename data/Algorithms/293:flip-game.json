@@ -1,0 +1,93 @@
+{
+  "questionId": "293",
+  "questionFrontendId": "293",
+  "boundTopicId": null,
+  "title": "Flip Game",
+  "titleSlug": "flip-game",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are playing the following Flip Game with your friend: Given a string that contains only these two characters: <code>+</code> and <code>-</code>, you and your friend take turns to flip two <b>consecutive</b> <code>&quot;++&quot;</code> into <code>&quot;--&quot;</code>. The game ends when a person can no longer make a move and therefore the other person will be the winner.</p>\r\n\r\n<p>Write a function to compute all possible states of the string after one valid move.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>s = &quot;++++&quot;</code>\r\n<strong>Output:</strong> \r\n[\r\n  &quot;--++&quot;,\r\n  &quot;+--+&quot;,\r\n  &quot;++--&quot;\r\n]\r\n</pre>\r\n\r\n<p><strong>Note: </strong>If there is no valid move, return an empty list <code>[]</code>.</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 79,
+  "dislikes": 238,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Flip Game II\", \"titleSlug\": \"flip-game-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> generatePossibleNextMoves(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> generatePossibleNextMoves(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def generatePossibleNextMoves(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def generatePossibleNextMoves(self, s: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** generatePossibleNextMoves(char * s, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> GeneratePossibleNextMoves(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar generatePossibleNextMoves = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String[]}\ndef generate_possible_next_moves(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func generatePossibleNextMoves(_ s: String) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func generatePossibleNextMoves(s string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def generatePossibleNextMoves(s: String): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun generatePossibleNextMoves(s: String): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn generate_possible_next_moves(s: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String[]\n     */\n    function generatePossibleNextMoves($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"45.1K\", \"totalSubmission\": \"75.5K\", \"totalAcceptedRaw\": 45103, \"totalSubmissionRaw\": 75505, \"acRate\": \"59.7%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"++++\"",
+  "metaData": "{\r\n  \"name\": \"generatePossibleNextMoves\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

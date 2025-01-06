@@ -1,0 +1,83 @@
+{
+  "questionId": "509",
+  "questionFrontendId": "510",
+  "boundTopicId": null,
+  "title": "Inorder Successor in BST II",
+  "titleSlug": "inorder-successor-in-bst-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary search tree and a node in it, find the in-order successor of that node in the BST.</p>\r\n\r\n<p>The successor of a node <code>p</code> is the node with the smallest key greater than <code>p.val</code>.</p>\r\n\r\n<p>You will have direct access to the node but not to the root of the tree. Each node will have a reference to its parent node.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/01/23/285_example_1.PNG\" style=\"width: 122px; height: 117px;\" />\r\n<pre>\r\n<strong>Input: </strong>\r\nroot = <span id=\"example-input-1-1\">{&quot;$id&quot;:&quot;1&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;2&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;1&quot;},&quot;right&quot;:null,&quot;val&quot;:1},&quot;parent&quot;:null,&quot;right&quot;:{&quot;$id&quot;:&quot;3&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;1&quot;},&quot;right&quot;:null,&quot;val&quot;:3},&quot;val&quot;:2}</span>\r\np = <span id=\"example-input-1-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\r\n<strong>Explanation: </strong>1&#39;s in-order successor node is 2. Note that both p and the return value is of Node type.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/01/23/285_example_2.PNG\" style=\"width: 246px; height: 229px;\" />\r\n<pre>\r\n<strong>Input: </strong>\r\nroot = <span id=\"example-input-2-1\">{&quot;$id&quot;:&quot;1&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;2&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;3&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;4&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;3&quot;},&quot;right&quot;:null,&quot;val&quot;:1},&quot;parent&quot;:{&quot;$ref&quot;:&quot;2&quot;},&quot;right&quot;:null,&quot;val&quot;:2},&quot;parent&quot;:{&quot;$ref&quot;:&quot;1&quot;},&quot;right&quot;:{&quot;$id&quot;:&quot;5&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;2&quot;},&quot;right&quot;:null,&quot;val&quot;:4},&quot;val&quot;:3},&quot;parent&quot;:null,&quot;right&quot;:{&quot;$id&quot;:&quot;6&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;1&quot;},&quot;right&quot;:null,&quot;val&quot;:6},&quot;val&quot;:5}</span>\r\np = <span id=\"example-input-2-2\">6</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">null</span>\r\n<strong>Explanation: </strong>There is no in-order successor of the current node, so the answer is <code>null</code>.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/02/02/285_example_34.PNG\" style=\"width: 438px; height: 335px;\" />\r\n<pre>\r\n<strong>Input: </strong>\r\nroot = <span id=\"example-input-2-1\">{&quot;$id&quot;:&quot;1&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;2&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;3&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;4&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;3&quot;},&quot;right&quot;:null,&quot;val&quot;:2},&quot;parent&quot;:{&quot;$ref&quot;:&quot;2&quot;},&quot;right&quot;:{&quot;$id&quot;:&quot;5&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;3&quot;},&quot;right&quot;:null,&quot;val&quot;:4},&quot;val&quot;:3},&quot;parent&quot;:{&quot;$ref&quot;:&quot;1&quot;},&quot;right&quot;:{&quot;$id&quot;:&quot;6&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;2&quot;},&quot;right&quot;:{&quot;$id&quot;:&quot;7&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;8&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;7&quot;},&quot;right&quot;:null,&quot;val&quot;:9},&quot;parent&quot;:{&quot;$ref&quot;:&quot;6&quot;},&quot;right&quot;:null,&quot;val&quot;:13},&quot;val&quot;:7},&quot;val&quot;:6},&quot;parent&quot;:null,&quot;right&quot;:{&quot;$id&quot;:&quot;9&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;10&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;9&quot;},&quot;right&quot;:null,&quot;val&quot;:17},&quot;parent&quot;:{&quot;$ref&quot;:&quot;1&quot;},&quot;right&quot;:{&quot;$id&quot;:&quot;11&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;9&quot;},&quot;right&quot;:null,&quot;val&quot;:20},&quot;val&quot;:18},&quot;val&quot;:15}</span>\r\np = <span id=\"example-input-2-2\">15</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">17</span>\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/02/02/285_example_34.PNG\" style=\"width: 438px; height: 335px;\" />\r\n<pre>\r\n<strong>Input: </strong>\r\nroot = <span id=\"example-input-2-1\">{&quot;$id&quot;:&quot;1&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;2&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;3&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;4&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;3&quot;},&quot;right&quot;:null,&quot;val&quot;:2},&quot;parent&quot;:{&quot;$ref&quot;:&quot;2&quot;},&quot;right&quot;:{&quot;$id&quot;:&quot;5&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;3&quot;},&quot;right&quot;:null,&quot;val&quot;:4},&quot;val&quot;:3},&quot;parent&quot;:{&quot;$ref&quot;:&quot;1&quot;},&quot;right&quot;:{&quot;$id&quot;:&quot;6&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;2&quot;},&quot;right&quot;:{&quot;$id&quot;:&quot;7&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;8&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;7&quot;},&quot;right&quot;:null,&quot;val&quot;:9},&quot;parent&quot;:{&quot;$ref&quot;:&quot;6&quot;},&quot;right&quot;:null,&quot;val&quot;:13},&quot;val&quot;:7},&quot;val&quot;:6},&quot;parent&quot;:null,&quot;right&quot;:{&quot;$id&quot;:&quot;9&quot;,&quot;left&quot;:{&quot;$id&quot;:&quot;10&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;9&quot;},&quot;right&quot;:null,&quot;val&quot;:17},&quot;parent&quot;:{&quot;$ref&quot;:&quot;1&quot;},&quot;right&quot;:{&quot;$id&quot;:&quot;11&quot;,&quot;left&quot;:null,&quot;parent&quot;:{&quot;$ref&quot;:&quot;9&quot;},&quot;right&quot;:null,&quot;val&quot;:20},&quot;val&quot;:18},&quot;val&quot;:15}</span>\r\np = <span id=\"example-input-2-2\">13</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">15</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>If the given node has no in-order successor in the tree, return <code>null</code>.</li>\r\n\t<li>It&#39;s guaranteed that the values of the tree are unique.</li>\r\n\t<li>Remember that we are using the <code>Node</code> type instead of <code>TreeNode</code> type so their string representation are different.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Follow up:</strong></p>\r\n\r\n<p>Could you solve&nbsp;it without&nbsp;looking up any of the&nbsp;node&#39;s values?</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 149,
+  "dislikes": 21,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Inorder Successor in BST\", \"titleSlug\": \"inorder-successor-in-bst\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "olimpicux",
+      "profileUrl": "/olimpicux/",
+      "avatarUrl": "https://assets.leetcode.com/users/olimpicux/avatar_1522238961.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Quip (Salesforce)\", \"slug\": \"quip\", \"timesEncountered\": 3}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/*\r\n// Definition for a Node.\r\nclass Node {\r\npublic:\r\n    int val;\r\n    Node* left;\r\n    Node* right;\r\n    Node* parent;\r\n};\r\n*/\r\nclass Solution {\r\npublic:\r\n    Node* inorderSuccessor(Node* node) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/*\n// Definition for a Node.\nclass Node {\n    public int val;\n    public Node left;\n    public Node right;\n    public Node parent;\n};\n*/\nclass Solution {\n    public Node inorderSuccessor(Node x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "\"\"\"\r\n# Definition for a Node.\r\nclass Node(object):\r\n    def __init__(self, val, left, right, parent):\r\n        self.val = val\r\n        self.left = left\r\n        self.right = right\r\n        self.parent = parent\r\n\"\"\"\r\nclass Solution(object):\r\n    def inorderSuccessor(self, node):\r\n        \"\"\"\r\n        :type node: Node\r\n        :rtype: Node\r\n        \"\"\"\r\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "\"\"\"\r\n# Definition for a Node.\r\nclass Node:\r\n    def __init__(self, val, left, right, parent):\r\n        self.val = val\r\n        self.left = left\r\n        self.right = right\r\n        self.parent = parent\r\n\"\"\"\r\nclass Solution:\r\n    def inorderSuccessor(self, node: 'Node') -> 'Node':\r\n        "
+    },
+    {
+      "lang": "C#",
+      "code": "/*\r\n// Definition for a Node.\r\npublic class Node {\r\n    public int val;\r\n    public Node left;\r\n    public Node right;\r\n    public Node parent;\r\n}\r\n*/\r\npublic class Solution {\r\n    public Node InorderSuccessor(Node x) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * // Definition for a Node.\r\n * function Node(val,left,right,parent) {\r\n *    this.val = val;\r\n *    this.left = left;\r\n *    this.right = right;\r\n *    this.parent = parent;\r\n * };\r\n */\r\n/**\r\n * @param {Node} node\r\n * @return {Node}\r\n */\r\nvar inorderSuccessor = function(node) {\r\n    \r\n};"
+    },
+    {
+      "lang": "PHP",
+      "code": "/*\r\n// Definition for a Node.\r\nclass Node {\r\n    public $val;\r\n    public $left;\r\n    public $right;\r\n    public $parent;\r\n}\r\n*/\r\nclass Solution {\r\n\r\n    /**\r\n     * @param Node $node\r\n     * @return Node\r\n     */\r\n    function inorderSuccessor($node) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"8.9K\", \"totalSubmission\": \"15.8K\", \"totalAcceptedRaw\": 8857, \"totalSubmissionRaw\": 15836, \"acRate\": \"55.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "736",
+    "canSeeDetail": true,
+    "url": "/articles/inorder-successor-in-a-bst-ii/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Successor and Predecessor\r\n\r\n> Successor = \"after node\", i.e. the next node in the inorder traversal, \r\nor the smallest node _after_ the current one.  \r\n\r\n> Predecessor = \"before node\", i.e. the previous node in the inorder traversal, \r\nor the largest node _before_ the current one.  \r\n\r\n![img](../Figures/510/succ.png)\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Iteration\r\n\r\n**Intuition**\r\n\r\nThere are two possible situations here :\r\n\r\n- Node has a right child, and hence its successor is somewhere\r\n lower in the tree. To find the successor, go to the right once\r\nand then as many times to the left as you could.\r\n\r\n![pic](../Figures/510/right_child2.png)\r\n\r\n- Node has no right child, then its successor is somewhere\r\n upper in the tree. To find the successor, go up till the node\r\n that is _left_ child of its parent. The answer is the parent.\r\n Beware that there could be no successor (= null successor) in such a situation.\r\n\r\n![pac](../Figures/510/case.png)\r\n\r\n---\r\n\r\n![fic](../Figures/510/casenull.png)\r\n\r\n\r\n**Algorithm**\r\n\r\n1. If the node has a right child, and hence its successor is somewhere lower\r\nin the tree. Go to the right once \r\nand then as many times to the left as you could.\r\nReturn the node you end up with.\r\n\r\n2. Node has no right child, and hence its successor is somewhere\r\nupper in the tree. Go up till the node\r\nthat is _left_ child of its parent. The answer is the parent.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/TbXQ66L3/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"TbXQ66L3\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(H)$$, where $$H$$ is the height of the tree. \r\nThat means $$\\mathcal{O}(\\log N)$$ in the average case, \r\nand $$\\mathcal{O}(N)$$ in the worst case, where $$N$$ is the number of nodes in the tree.\r\n* Space complexity : $$\\mathcal{O}(1)$$, since no additional space is allocated during the calculation.\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "721",
+      "count": 8,
+      "average": 4.875,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"$id\":\"1\",\"left\":{\"$id\":\"2\",\"left\":null,\"parent\":{\"$ref\":\"1\"},\"right\":null,\"val\":1},\"parent\":null,\"right\":{\"$id\":\"3\",\"left\":null,\"parent\":{\"$ref\":\"1\"},\"right\":null,\"val\":3},\"val\":2}\n1",
+  "metaData": "{\n  \"name\": \"inorderSuccessor\",\n  \"params\": [\n    {\n      \"name\": \"node\",\n      \"type\": \"Node\"\n    },\n    {\n      \"name\": \"p\",\n      \"type\": \"Node\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"Node\"\n  },\n  \"structures\": [\n    {\n      \"name\": \"Node\",\n      \"comment\": \"Definition for a Node.\",\n      \"members\": [\n        {\n          \"name\": \"val\",\n          \"type\": \"integer\"\n        },\n        {\n          \"name\": \"left\",\n          \"type\": \"Node\"\n        },\n        {\n          \"name\": \"right\",\n          \"type\": \"Node\"\n        },\n        {\n          \"name\": \"parent\",\n          \"type\": \"Node\"\n        }\n      ]\n    }\n  ],\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"csharp\",\n    \"javascript\",\n    \"python3\",\n    \"php\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

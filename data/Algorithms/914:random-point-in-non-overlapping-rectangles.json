@@ -1,0 +1,115 @@
+{
+  "questionId": "914",
+  "questionFrontendId": "497",
+  "boundTopicId": null,
+  "title": "Random Point in Non-overlapping Rectangles",
+  "titleSlug": "random-point-in-non-overlapping-rectangles",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a list of <strong>non-overlapping</strong>&nbsp;axis-aligned rectangles <code>rects</code>, write a function <code>pick</code> which randomly and uniformily picks an <strong>integer point</strong> in the space&nbsp;covered by the rectangles.</p>\r\n\r\n<p>Note:</p>\r\n\r\n<ol>\r\n\t<li>An <strong>integer point</strong>&nbsp;is a point that has integer coordinates.&nbsp;</li>\r\n\t<li>A point&nbsp;on the perimeter&nbsp;of a rectangle is&nbsp;<strong>included</strong> in the space covered by the rectangles.&nbsp;</li>\r\n\t<li><code>i</code>th rectangle = <code>rects[i]</code> =&nbsp;<code>[x1,y1,x2,y2]</code>, where <code>[x1, y1]</code>&nbsp;are the integer coordinates of the bottom-left corner, and <code>[x2, y2]</code>&nbsp;are the integer coordinates of the top-right corner.</li>\r\n\t<li>length and width of each rectangle does not exceed <code>2000</code>.</li>\r\n\t<li><code>1 &lt;= rects.length&nbsp;&lt;= 100</code></li>\r\n\t<li><code>pick</code> return a point as an array of integer coordinates&nbsp;<code>[p_x, p_y]</code></li>\r\n\t<li><code>pick</code> is called at most <code>10000</code>&nbsp;times.</li>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: \r\n</strong><span id=\"example-input-1-1\">[&quot;Solution&quot;,&quot;pick&quot;,&quot;pick&quot;,&quot;pick&quot;]\r\n</span><span id=\"example-input-1-2\">[[[[1,1,5,5]]],[],[],[]]</span>\r\n<strong>Output: \r\n</strong><span id=\"example-output-1\">[null,[4,1],[4,1],[3,3]]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: \r\n</strong><span id=\"example-input-2-1\">[&quot;Solution&quot;,&quot;pick&quot;,&quot;pick&quot;,&quot;pick&quot;,&quot;pick&quot;,&quot;pick&quot;]\r\n</span><span id=\"example-input-2-2\">[[[[-2,-2,-1,-1],[1,0,3,0]]],[],[],[],[],[]]</span>\r\n<strong>Output: \r\n</strong><span id=\"example-output-2\">[null,[-1,-2],[2,0],[-2,-1],[3,0],[-2,-2]]</span></pre>\r\n</div>\r\n\r\n<div>\r\n<p><strong>Explanation of Input Syntax:</strong></p>\r\n\r\n<p>The input is two lists:&nbsp;the subroutines called&nbsp;and their&nbsp;arguments.&nbsp;<code>Solution</code>&#39;s&nbsp;constructor has one argument, the array of rectangles <code>rects</code>. <code>pick</code>&nbsp;has no arguments.&nbsp;Arguments&nbsp;are&nbsp;always wrapped with a list, even if there aren&#39;t any.</p>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 144,
+  "dislikes": 152,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Random Pick with Weight\", \"titleSlug\": \"random-pick-with-weight\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Generate Random Point in a Circle\", \"titleSlug\": \"generate-random-point-in-a-circle\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Random",
+      "slug": "random"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    Solution(vector<vector<int>>& rects) {\r\n        \r\n    }\r\n    \r\n    vector<int> pick() {\r\n        \r\n    }\r\n};\r\n\r\n/**\r\n * Your Solution object will be instantiated and called as such:\r\n * Solution* obj = new Solution(rects);\r\n * vector<int> param_1 = obj->pick();\r\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n\n    public Solution(int[][] rects) {\n        \n    }\n    \n    public int[] pick() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(rects);\n * int[] param_1 = obj.pick();\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n\n    def __init__(self, rects):\n        \"\"\"\n        :type rects: List[List[int]]\n        \"\"\"\n        \n\n    def pick(self):\n        \"\"\"\n        :rtype: List[int]\n        \"\"\"\n        \n\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution(rects)\n# param_1 = obj.pick()"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n\n    def __init__(self, rects: List[List[int]]):\n        \n\n    def pick(self) -> List[int]:\n        \n\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution(rects)\n# param_1 = obj.pick()"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} Solution;\n\n\nSolution* solutionCreate(int** rects, int rectsSize, int* rectsColSize) {\n    \n}\n\nint* solutionPick(Solution* obj, int* retSize) {\n  \n}\n\nvoid solutionFree(Solution* obj) {\n    \n}\n\n/**\n * Your Solution struct will be instantiated and called as such:\n * Solution* obj = solutionCreate(rects, rectsSize, rectsColSize);\n * int* param_1 = solutionPick(obj, retSize);\n \n * solutionFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n\r\n    public Solution(int[][] rects) {\r\n        \r\n    }\r\n    \r\n    public int[] Pick() {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your Solution object will be instantiated and called as such:\r\n * Solution obj = new Solution(rects);\r\n * int[] param_1 = obj.Pick();\r\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} rects\n */\nvar Solution = function(rects) {\n    \n};\n\n/**\n * @return {number[]}\n */\nSolution.prototype.pick = function() {\n    \n};\n\n/** \n * Your Solution object will be instantiated and called as such:\n * var obj = new Solution(rects)\n * var param_1 = obj.pick()\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class Solution\r\n\r\n=begin\r\n    :type rects: Integer[][]\r\n=end\r\n    def initialize(rects)\r\n        \r\n    end\r\n\r\n\r\n=begin\r\n    :rtype: Integer[]\r\n=end\r\n    def pick()\r\n        \r\n    end\r\n\r\n\r\nend\r\n\r\n# Your Solution object will be instantiated and called as such:\r\n# obj = Solution.new(rects)\r\n# param_1 = obj.pick()"
+    },
+    {
+      "lang": "Swift",
+      "code": "\r\nclass Solution {\r\n\r\n    init(_ rects: [[Int]]) {\r\n        \r\n    }\r\n    \r\n    func pick() -> [Int] {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your Solution object will be instantiated and called as such:\r\n * let obj = Solution(rects)\r\n * let ret_1: [Int] = obj.pick()\r\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type Solution struct {\r\n    \r\n}\r\n\r\n\r\nfunc Constructor(rects [][]int) Solution {\r\n    \r\n}\r\n\r\n\r\nfunc (this *Solution) Pick() []int {\r\n    \r\n}\r\n\r\n\r\n/**\r\n * Your Solution object will be instantiated and called as such:\r\n * obj := Constructor(rects);\r\n * param_1 := obj.Pick();\r\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class Solution(_rects: Array[Array[Int]]) {\r\n\r\n    def pick(): Array[Int] = {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your Solution object will be instantiated and called as such:\r\n * var obj = new Solution(rects)\r\n * var param_1 = obj.pick()\r\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution(rects: Array<IntArray>) {\r\n\r\n    fun pick(): IntArray {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your Solution object will be instantiated and called as such:\r\n * var obj = Solution(rects)\r\n * var param_1 = obj.pick()\r\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct Solution {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl Solution {\n\n    fn new(rects: Vec<Vec<i32>>) -> Self {\n        \n    }\n    \n    fn pick(&self) -> Vec<i32> {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * let obj = Solution::new(rects);\n * let ret_1: Vec<i32> = obj.pick();\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n    /**\n     * @param Integer[][] $rects\n     */\n    function __construct($rects) {\n        \n    }\n  \n    /**\n     * @return Integer[]\n     */\n    function pick() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * $obj = Solution($rects);\n * $ret_1 = $obj->pick();\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.1K\", \"totalSubmission\": \"27.2K\", \"totalAcceptedRaw\": 10064, \"totalSubmissionRaw\": 27158, \"acRate\": \"37.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "519",
+    "canSeeDetail": true,
+    "url": "/articles/random-point-in-non-overlapping-rectangles/",
+    "content": "[TOC]\n\n## Solution\n---\n\n#### Approach 1: Prefix Sum and Binary Search\n\n**Intuition**\n\nSome rectangles may be more likely to be sampled from than others, since some may contain more points than others, and each point has an equal chance of being sampled. Is there a way to select a rectangle to sample from, such that the probabilities are proportional to the number of points contained in each rectangle? Is there a way to do this using less than $$O(\\text{total number of points})$$ space?\n\n**Algorithm**\n\nCreate a weight array $$w$$, where $$w[i]$$ is the number of points in $$\\text{rects}[i]$$.\n\nLet $$\\text{tot} = \\sum_\\limits{i=0}^{N-1}w[i]$$, where $$N = \\text{len}(w)$$.\n\nCompute the prefix sum array $$p$$, where $$p[x] = \\sum_\\limits{i=0}^{x}w[i]$$.\n\nGenerate a random integer $$\\text{targ}$$ in the range $$[0, \\text{tot})$$.\n\nUse binary search to find the index $$x$$ where $$x$$ is the lowest index such that $$\\text{targ} < p[x]$$. $$\\text{rects}[x]$$ is the rectangle that we will sample from.\n\nNote that for some index $$i$$, all integers $$v$$ where $$p[i] - w[i] \\leq v < p[i]$$ map to this index. Therefore, rectangles will be sampled proportionally to the rectangle weights.\n\nThe only step remaining is to choose a random point in $$\\text{rects}[x]$$. Generating random $$x\\_coordinate$$ and $$y\\_coordinate$$ within this rectangle area will suffice, but we can also reuse $$\\text{targ}$$ by mapping it to the point\n\n$$\nx\\_coordinate = x1 + (targ-p[i]+w[i])\\ \\%\\  (x2-x1+1) \\\\\ny\\_coordinate = y1 + (targ-p[i]+w[i])\\ /\\ (x2-x1+1)\n$$\n\nThis strategy is useful when calls to the random number generator are expensive.\n\n<p align=\"center\">\n    <img src=\"../Figures/882/targToPoint.png\" alt=\"Targ_To_Point\" style=\"height: 300px;\"/>\n\n<br/>\n\nMapping from targ to x_coordinate and y_coordinate for rects = [[1, 1, 2, 4], [3, 2, 5, 4], [2, 5, 5, 6]]\n\n</p>\n\n<iframe src=\"https://leetcode.com/playground/pKGZZxdu/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"pKGZZxdu\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ preprocessing. $$O(\\log(N))$$ pick.\n* Space Complexity: $$O(N)$$",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "512",
+      "count": 5,
+      "average": 4.2,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"Solution\", \"pick\", \"pick\", \"pick\"]\n[[[[1, 1, 5, 5]]], [], [], []]",
+  "metaData": "{\r\n    \"classname\": \"Solution\",\r\n    \"maxbytesperline\": 200000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"name\": \"rects\",\r\n                \"type\": \"integer[][]\"\r\n            },\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"rectsSize\",\r\n                \"lang\": \"c\",\r\n                \"value\": \"size_1\"\r\n            }\r\n        ]\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"pick\",\r\n            \"params\": [\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer[]\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "783",
+  "questionFrontendId": "700",
+  "boundTopicId": null,
+  "title": "Search in a Binary Search Tree",
+  "titleSlug": "search-in-a-binary-search-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given the root node of a binary search tree (BST) and a value. You need to find the node in the BST that the node&#39;s value equals the given value. Return the subtree rooted with that node. If such node doesn&#39;t exist, you should return NULL.</p>\r\n\r\n<p>For example,&nbsp;</p>\r\n\r\n<pre>\r\nGiven the tree:\r\n        4\r\n       / \\\r\n      2   7\r\n     / \\\r\n    1   3\r\n\r\nAnd the value to search: 2\r\n</pre>\r\n\r\n<p>You should return this subtree:</p>\r\n\r\n<pre>\r\n      2     \r\n     / \\   \r\n    1   3\r\n</pre>\r\n\r\n<p>In the example above, if we want to search the value <code>5</code>, since there is no node with value <code>5</code>, we should return <code>NULL</code>.</p>\r\n\r\n<p>Note that an empty tree is represented by <code>NULL</code>, therefore you would see the expected output (serialized tree format) as&nbsp;<code>[]</code>, not <code>null</code>.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 455,
+  "dislikes": 104,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Closest Binary Search Tree Value\", \"titleSlug\": \"closest-binary-search-tree-value\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Insert into a Binary Search Tree\", \"titleSlug\": \"insert-into-a-binary-search-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "tinylic",
+      "profileUrl": "/tinylic/",
+      "avatarUrl": "https://www.gravatar.com/avatar/c8f3bf6706478175081358c2ced2ae2f.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"IBM\", \"slug\": \"ibm\", \"timesEncountered\": 2}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    TreeNode* searchBST(TreeNode* root, int val) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public TreeNode searchBST(TreeNode root, int val) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def searchBST(self, root, val):\n        \"\"\"\n        :type root: TreeNode\n        :type val: int\n        :rtype: TreeNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def searchBST(self, root: TreeNode, val: int) -> TreeNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nstruct TreeNode* searchBST(struct TreeNode* root, int val){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public TreeNode SearchBST(TreeNode root, int val) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @param {number} val\n * @return {TreeNode}\n */\nvar searchBST = function(root, val) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @param {Integer} val\n# @return {TreeNode}\ndef search_bst(root, val)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func searchBST(_ root: TreeNode?, _ val: Int) -> TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc searchBST(root *TreeNode, val int) *TreeNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def searchBST(root: TreeNode, `val`: Int): TreeNode = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun searchBST(root: TreeNode?, `val`: Int): TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn search_bst(root: Option<Rc<RefCell<TreeNode>>>, val: i32) -> Option<Rc<RefCell<TreeNode>>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @param Integer $val\n     * @return TreeNode\n     */\n    function searchBST($root, $val) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"97.3K\", \"totalSubmission\": \"139.1K\", \"totalAcceptedRaw\": 97321, \"totalSubmissionRaw\": 139109, \"acRate\": \"70.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "770",
+    "canSeeDetail": true,
+    "url": "/articles/search-in-a-bst/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Binary Search Tree.\r\n\r\nBinary Search Tree is a binary tree where the key in each node \r\n\r\n- is greater than any key stored in the left sub-tree, \r\n\r\n- and less than any key stored in the right sub-tree.\r\n\r\nHere is an example:\r\n\r\n![bla](../Figures/700/bst.png)\r\n\r\nSuch data structure provides the following operations in a \r\nlogarithmic time: \r\n\r\n- Search. \r\n\r\n- [Insert](https://leetcode.com/articles/insert-into-a-bst/). \r\n\r\n- [Delete](https://leetcode.com/articles/delete-node-in-a-bst/).\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Recursion\r\n\r\n**Algorithm**\r\n\r\nThe recursion implementation is very straightforward:\r\n\r\n- If the tree is empty `root == null` \r\nor the value to find is here `val == root.val` - return root.\r\n\r\n- If `val < root.val` - go to search into the left subtree `searchBST(root.left, val)`.\r\n\r\n- If `val > root.val` - go to search into the right subtree `searchBST(root.right, val)`.\r\n\r\n- Return `root`.\r\n\r\n![bla](../Figures/700/recursion.png)\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/VuAXXVvz/shared\" frameBorder=\"0\" width=\"100%\" height=\"174\" name=\"VuAXXVvz\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(H)$$, where $$H$$ is a tree height. That results in\r\n$$\\mathcal{O}(\\log N)$$ in the average case, and $$\\mathcal{O}(N)$$ in the worst case. \r\n\r\n    Let's compute time complexity with the help of \r\n    [master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) \r\n    $$T(N) = aT\\left(\\frac{N}{b}\\right) + \\Theta(N^d)$$.\r\n    The equation represents dividing the problem \r\n    up into $$a$$ subproblems of size $$\\frac{N}{b}$$ in $$\\Theta(N^d)$$ time. \r\n    Here at step there is only one subproblem `a = 1`, its size \r\n    is a half of the initial problem `b = 2`, \r\n    and all this happens in a constant time `d = 0`, as for\r\n    the binary search.\r\n    That means that $$\\log_b{a} = d$$ and hence we're dealing with \r\n    [case 2](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)#Case_2_example)\r\n    that results in $$\\mathcal{O}(n^{\\log_b{a}} \\log^{d + 1} N)$$\r\n    = $$\\mathcal{O}(\\log N)$$ time complexity.\r\n    \r\n* Space complexity : $$\\mathcal{O}(H)$$ to keep the recursion stack,\r\ni.e. $$\\mathcal{O}(\\log N)$$ in the average case, \r\nand $$\\mathcal{O}(N)$$ in the worst case.\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Iteration\r\n\r\nTo reduce the space complexity, one could convert recursive\r\napproach into the iterative one:\r\n\r\n- While the tree is not empty `root != null` \r\nand the value to find is _not_ here `val != root.val`:\r\n\r\n    - If `val < root.val` - go to search into the left subtree `root = root.left`.\r\n    \r\n    - If `val > root.val` - go to search into the right subtree `root = root.right`.\r\n\r\n- Return `root`. \r\n\r\n![bla](../Figures/700/iteration.png)\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/RKUXaqZb/shared\" frameBorder=\"0\" width=\"100%\" height=\"174\" name=\"RKUXaqZb\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(H)$$, where $$H$$ is a tree height. That results in\r\n$$\\mathcal{O}(\\log N)$$ in the average case, and $$\\mathcal{O}(N)$$ in the worst case. \r\n\r\n    Let's compute time complexity with the help of \r\n    [master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) \r\n    $$T(N) = aT\\left(\\frac{N}{b}\\right) + \\Theta(N^d)$$.\r\n    The equation represents dividing the problem \r\n    up into $$a$$ subproblems of size $$\\frac{N}{b}$$ in $$\\Theta(N^d)$$ time. \r\n    Here at step there is only one subproblem `a = 1`, its size \r\n    is a half of the initial problem `b = 2`, \r\n    and all this happens in a constant time `d = 0`, as for\r\n    the binary search.\r\n    That means that $$\\log_b{a} = d$$ and hence we're dealing with \r\n    [case 2](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)#Case_2_example)\r\n    that results in $$\\mathcal{O}(n^{\\log_b{a}} \\log^{d + 1} N)$$\r\n    = $$\\mathcal{O}(\\log N)$$ time complexity.\r\n    \r\n* Space complexity : $$\\mathcal{O}(1)$$ since it's a constant space\r\nsolution.\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "755",
+      "count": 8,
+      "average": 4.875,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,2,7,1,3]\n2",
+  "metaData": "{\r\n  \"name\": \"searchBST\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    },\r\n    {\r\n      \"name\": \"val\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"TreeNode\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

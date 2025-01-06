@@ -1,0 +1,120 @@
+{
+  "questionId": "166",
+  "questionFrontendId": "166",
+  "boundTopicId": null,
+  "title": "Fraction to Recurring Decimal",
+  "titleSlug": "fraction-to-recurring-decimal",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.</p>\r\n\r\n<p>If the fractional part is repeating, enclose the repeating part in parentheses.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> numerator = 1, denominator = 2\r\n<strong>Output:</strong> &quot;0.5&quot;\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> numerator = 2, denominator = 1\r\n<strong>Output:</strong> &quot;2&quot;</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> numerator = 2, denominator = 3\r\n<strong>Output: </strong>&quot;0.(6)&quot;\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 627,
+  "dislikes": 1358,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Shangrila",
+      "profileUrl": "/shangrila/",
+      "avatarUrl": "https://www.gravatar.com/avatar/4f391495cd5adcc2755def6a127ad508.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"IXL\", \"slug\": \"ixl\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 20}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Rubrik\", \"slug\": \"rubrik\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cohesity\", \"slug\": \"cohesity\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string fractionToDecimal(int numerator, int denominator) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String fractionToDecimal(int numerator, int denominator) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def fractionToDecimal(self, numerator, denominator):\n        \"\"\"\n        :type numerator: int\n        :type denominator: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def fractionToDecimal(self, numerator: int, denominator: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * fractionToDecimal(int numerator, int denominator){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string FractionToDecimal(int numerator, int denominator) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} numerator\n * @param {number} denominator\n * @return {string}\n */\nvar fractionToDecimal = function(numerator, denominator) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} numerator\n# @param {Integer} denominator\n# @return {String}\ndef fraction_to_decimal(numerator, denominator)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func fractionToDecimal(_ numerator: Int, _ denominator: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func fractionToDecimal(numerator int, denominator int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def fractionToDecimal(numerator: Int, denominator: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun fractionToDecimal(numerator: Int, denominator: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn fraction_to_decimal(numerator: i32, denominator: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $numerator\n     * @param Integer $denominator\n     * @return String\n     */\n    function fractionToDecimal($numerator, $denominator) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"104.3K\", \"totalSubmission\": \"510.1K\", \"totalAcceptedRaw\": 104316, \"totalSubmissionRaw\": 510130, \"acRate\": \"20.4%\"}",
+  "hints": [
+    "No scary math, just apply elementary math knowledge. Still remember how to perform a <i>long division</i>?",
+    "Try a long division on 4/9, the repeating part is obvious. Now try 4/333. Do you see a pattern?",
+    "Notice that once the remainder starts repeating, so does the divided result.",
+    "Be wary of edge cases! List out as many test cases as you can think of and test your code thoroughly."
+  ],
+  "solution": {
+    "id": "19",
+    "canSeeDetail": true,
+    "url": "/articles/fraction-to-recurring-decimal/",
+    "content": "[TOC]\n\n## Summary\n\nThis is a straight forward coding problem but with a fair amount of details to get right.\n\n## Hints\n\n1. No scary math, just apply elementary math knowledge. Still remember how to perform a <i>long division</i>?\n2. Try a long division on $$\\dfrac{4}{9}$$, the repeating part is obvious. Now try $$\\dfrac{4}{333}$$. Do you see a pattern?\n3. Be wary of edge cases! List out as many test cases as you can think of and test your code thoroughly.\n\n## Solution\n---\n#### Approach 1: Long Division\n\n**Intuition**\n\nThe key insight here is to notice that once the remainder starts repeating, so does the divided result.\n\n\\begin{array}{rll}\n    0.16 \\\\[-3pt]\n   6 \\enclose{longdiv}{1.00}\\kern-.2ex \\\\[-3pt]\n      \\underline{0\\phantom{.00}} \\\\[-3pt]\n      1\\phantom{.}0\\phantom{0} && \\hbox{$\\Leftarrow remainder=1$, mark 1 as seen at $position=0$.} \\\\[-3pt]\n      \\underline{\\phantom{0}6\\phantom{0}} \\\\[-3pt]\n      \\phantom{0}40 && \\hbox{$\\Leftarrow remainder=4$, mark 4 as seen at $position=1$.} \\\\[-3pt]\n      \\underline{\\phantom{0}36} \\\\[-3pt]\n      \\phantom{00}4 && \\hbox{$\\Leftarrow remainder=4$ was seen before at $position=1$, so the fractional part which is 16 starts repeating at $position=1$ $\\Rightarrow$ 1(6).}\n\\end{array}\n\n<br>\n**Algorithm**\n\nYou will need a hash table that maps from the remainder to its position of the fractional part. Once you found a repeating remainder, you may enclose the reoccurring fractional part with parentheses by consulting the position from the table.\n\nThe remainder could be zero while doing the division. That means there is no repeating fractional part and you should stop right away.\n\nJust like the question [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/), be wary of edge cases such as negative fractions and nasty extreme case such as $$\\dfrac{-2147483648}{-1}$$.\n\n\nHere are some good test cases:\n\n\n| Test case | Explanation |\n| ------------- | ---------------- |\n| $$\\frac{0}{1}$$ | Numerator is zero. |\n| $$\\frac{1}{0}$$ | Divisor is 0, should handle it by throwing an exception but here we ignore for simplicity sake. |\n| $$\\frac{20}{4}$$ | Answer is a whole integer, should not contain the fractional part. |\n| $$\\frac{1}{2}$$ | Answer is 0.5, no recurring decimal. |\n| $$\\frac{-1}{4}$$ or $$\\frac{1}{-4}$$ | One of the numerator or denominator is negative, fraction is negative. |\n| $$\\frac{-1}{-4}$$ | Both numerator and denominator are negative, should result in positive fraction. |\n| $$\\frac{-2147483648}{-1}$$ | Beware of overflow if you cast to positive. |\n\n<br>\n<iframe src=\"https://leetcode.com/playground/MjUygdWy/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"MjUygdWy\"></iframe>",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "17",
+      "count": 33,
+      "average": 4.273,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "1\n2",
+  "metaData": "{\n  \"name\": \"fractionToDecimal\",\n  \"params\": [\n    {\n      \"name\": \"numerator\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"denominator\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,115 @@
+{
+  "questionId": "810",
+  "questionFrontendId": "794",
+  "boundTopicId": null,
+  "title": "Valid Tic-Tac-Toe State",
+  "titleSlug": "valid-tic-tac-toe-state",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A Tic-Tac-Toe board is given as a string array <code>board</code>. Return True if and only if it is possible to reach this board position during the course of a valid tic-tac-toe game.</p>\r\n\r\n<p>The <code>board</code> is a 3 x 3 array, and consists of characters <code>&quot; &quot;</code>, <code>&quot;X&quot;</code>, and <code>&quot;O&quot;</code>.&nbsp; The &quot; &quot; character represents an empty square.</p>\r\n\r\n<p>Here are the rules of Tic-Tac-Toe:</p>\r\n\r\n<ul>\r\n\t<li>Players take turns placing characters into empty squares (&quot; &quot;).</li>\r\n\t<li>The first player always places &quot;X&quot; characters, while the second player always places &quot;O&quot; characters.</li>\r\n\t<li>&quot;X&quot; and &quot;O&quot; characters are always placed into empty squares, never filled ones.</li>\r\n\t<li>The game ends when there are 3 of the same (non-empty) character filling any row, column, or diagonal.</li>\r\n\t<li>The game also ends if all squares are non-empty.</li>\r\n\t<li>No more moves can be played if the game is over.</li>\r\n</ul>\r\n\r\n<pre>\r\n<strong>Example 1:</strong>\r\n<strong>Input:</strong> board = [&quot;O&nbsp; &quot;, &quot;&nbsp; &nbsp;&quot;, &quot;&nbsp; &nbsp;&quot;]\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> The first player always plays &quot;X&quot;.\r\n\r\n<strong>Example 2:</strong>\r\n<strong>Input:</strong> board = [&quot;XOX&quot;, &quot; X &quot;, &quot;   &quot;]\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> Players take turns making moves.\r\n\r\n<strong>Example 3:</strong>\r\n<strong>Input:</strong> board = [&quot;XXX&quot;, &quot;   &quot;, &quot;OOO&quot;]\r\n<strong>Output:</strong> false\r\n\r\n<strong>Example 4:</strong>\r\n<strong>Input:</strong> board = [&quot;XOX&quot;, &quot;O O&quot;, &quot;XOX&quot;]\r\n<strong>Output:</strong> true\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>board</code> is a length-3 array of strings, where each string <code>board[i]</code> has length 3.</li>\r\n\t<li>Each <code>board[i][j]</code> is a character in the set <code>{&quot; &quot;, &quot;X&quot;, &quot;O&quot;}</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 145,
+  "dislikes": 459,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Design Tic-Tac-Toe\", \"titleSlug\": \"design-tic-tac-toe\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "ngoc_lam",
+      "profileUrl": "/ngoc_lam/",
+      "avatarUrl": "https://assets.leetcode.com/users/ngoc_lam/avatar_1528594557.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool validTicTacToe(vector<string>& board) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean validTicTacToe(String[] board) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def validTicTacToe(self, board):\n        \"\"\"\n        :type board: List[str]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def validTicTacToe(self, board: List[str]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool validTicTacToe(char ** board, int boardSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ValidTicTacToe(string[] board) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} board\n * @return {boolean}\n */\nvar validTicTacToe = function(board) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} board\n# @return {Boolean}\ndef valid_tic_tac_toe(board)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func validTicTacToe(_ board: [String]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func validTicTacToe(board []string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def validTicTacToe(board: Array[String]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun validTicTacToe(board: Array<String>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn valid_tic_tac_toe(board: Vec<String>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $board\n     * @return Boolean\n     */\n    function validTicTacToe($board) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"19.2K\", \"totalSubmission\": \"60.3K\", \"totalAcceptedRaw\": 19178, \"totalSubmissionRaw\": 60263, \"acRate\": \"31.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "425",
+    "canSeeDetail": true,
+    "url": "/articles/valid-tic-tac-toe-state/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Ad-Hoc [Accepted]\r\n\r\n**Intuition**\r\n\r\nLet's try to think about the necessary conditions for a tic-tac-toe board to be valid.\r\n\r\n* Since players take turns, the number of `'X'`s must be equal to or one greater than the number of `'O'`s.\r\n\r\n* A player that wins has to win on the move that they make:\r\n    * If the first player wins, the number of `'X'`s is one more than the number of `'O'`s\r\n    * If the second player wins, the number of `'X'`s is equal to the number of `'O'`s.\r\n\r\n* The board can't simultaneously have three `'X'`s and three `'O'`s in a row: once one player has won (on their move), there are no subsequent moves.\r\n\r\nIt turns out these conditions are also sufficient to check the validity of all boards.  This is because we can check these conditions in reverse: in any board, either no player, one player, or both players have won.  In the first two cases, we should check the previously stated counting conditions (a relationship between `xCount` and `oCount`), and this is sufficient.  In the last case, it is not allowed to have both players win simultaneously, so our check was also sufficient.\r\n\r\n**Algorithm**\r\n\r\nWe'll count the number of `'X'`s and `'O'`s as `xCount` and `oCount`.  \r\n\r\nWe'll also use a helper function `win(player)` which checks if that player has won.  This checks the 8 horizontal, vertical, or diagonal lines of the board for if there are three in a row equal to that player.\r\n\r\nAfter, we just have to check our conditions as stated above.\r\n\r\n<iframe src=\"https://leetcode.com/playground/yDiwecx7/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"yDiwecx7\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time and Space Complexity:  $$O(1)$$.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "420",
+      "count": 8,
+      "average": 3.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"O  \",\"   \",\"   \"]",
+  "metaData": "{\r\n  \"name\": \"validTicTacToe\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"board\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

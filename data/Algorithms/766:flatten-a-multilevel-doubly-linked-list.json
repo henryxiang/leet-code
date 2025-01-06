@@ -1,0 +1,83 @@
+{
+  "questionId": "766",
+  "questionFrontendId": "430",
+  "boundTopicId": null,
+  "title": "Flatten a Multilevel Doubly Linked List",
+  "titleSlug": "flatten-a-multilevel-doubly-linked-list",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given a doubly linked list which in addition to the next and previous pointers, it could have a child pointer, which may or may not point to a separate doubly linked list. These child lists may have one or more children of their own, and so on, to produce a multilevel data structure, as shown in the example below.</p>\n\n<p>Flatten the list so that all the nodes appear in a single-level, doubly linked list. You are given the head of the first level of the list.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> head = [1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]\n<strong>Output:</strong> [1,2,3,7,8,11,12,9,10,4,5,6]\n<strong>Explanation:\n</strong>\nThe multilevel linked list in the input is as follows:\n\n<img src=\"https://assets.leetcode.com/uploads/2018/10/12/multilevellinkedlist.png\" style=\"width: 640px;\" />\n\nAfter flattening the multilevel linked list it becomes:\n\n<img src=\"https://assets.leetcode.com/uploads/2018/10/12/multilevellinkedlistflattened.png\" style=\"width: 1100px;\" />\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> head = [1,2,null,3]\n<strong>Output:</strong> [1,3,2]\n<strong>Explanation:\n\n</strong>The input multilevel linked list is as follows:\n\n  1---2---NULL\n  |\n  3---NULL\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> head = []\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n\n<p><strong>How&nbsp;multilevel linked list is represented in test case:</strong></p>\n\n<p>We use the&nbsp;multilevel linked list from <strong>Example 1</strong> above:</p>\n\n<pre>\n 1---2---3---4---5---6--NULL\n         |\n         7---8---9---10--NULL\n             |\n             11--12--NULL</pre>\n\n<p>The serialization of each level is as follows:</p>\n\n<pre>\n[1,2,3,4,5,6,null]\n[7,8,9,10,null]\n[11,12,null]\n</pre>\n\n<p>To serialize all levels together we will add nulls in each level to signify no node connects to the upper node of the previous level. The serialization becomes:</p>\n\n<pre>\n[1,2,3,4,5,6,null]\n[null,null,7,8,9,10,null]\n[null,11,12,null]\n</pre>\n\n<p>Merging the serialization of each level and removing trailing nulls we obtain:</p>\n\n<pre>\n[1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>Number of Nodes will not exceed 1000.</li>\n\t<li><code>1 &lt;= Node.val &lt;= 10^5</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 655,
+  "dislikes": 105,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Flatten Binary Tree to Linked List\", \"titleSlug\": \"flatten-binary-tree-to-linked-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 26}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 12}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/*\n// Definition for a Node.\nclass Node {\npublic:\n    int val;\n    Node* prev;\n    Node* next;\n    Node* child;\n};\n*/\nclass Solution {\npublic:\n    Node* flatten(Node* head) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/*\n// Definition for a Node.\nclass Node {\n    public int val;\n    public Node prev;\n    public Node next;\n    public Node child;\n};\n*/\nclass Solution {\n    public Node flatten(Node head) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "\"\"\"\n# Definition for a Node.\nclass Node(object):\n    def __init__(self, val, prev, next, child):\n        self.val = val\n        self.prev = prev\n        self.next = next\n        self.child = child\n\"\"\"\nclass Solution(object):\n    def flatten(self, head):\n        \"\"\"\n        :type head: Node\n        :rtype: Node\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "\"\"\"\n# Definition for a Node.\nclass Node:\n    def __init__(self, val, prev, next, child):\n        self.val = val\n        self.prev = prev\n        self.next = next\n        self.child = child\n\"\"\"\nclass Solution:\n    def flatten(self, head: 'Node') -> 'Node':\n        "
+    },
+    {
+      "lang": "C#",
+      "code": "/*\n// Definition for a Node.\npublic class Node {\n    public int val;\n    public Node prev;\n    public Node next;\n    public Node child;\n}\n*/\npublic class Solution {\n    public Node Flatten(Node head) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * // Definition for a Node.\n * function Node(val,prev,next,child) {\n *    this.val = val;\n *    this.prev = prev;\n *    this.next = next;\n *    this.child = child;\n * };\n */\n/**\n * @param {Node} head\n * @return {Node}\n */\nvar flatten = function(head) {\n    \n};"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"47.2K\", \"totalSubmission\": \"100.3K\", \"totalAcceptedRaw\": 47155, \"totalSubmissionRaw\": 100344, \"acRate\": \"47.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "827",
+    "canSeeDetail": true,
+    "url": "/articles/flatten-a-multilevel-doubly-linked-list/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: DFS by Recursion\n\n**Intuition**\n\nPeople might ask themselves in which scenario that one would use such an awkward data structure. Well, one of the scenarios could be a simplified version of git branching. By flattening the multilevel list, one can think it as merging all git branches together, though it is not at all how the git merge works.\n\nFirst of all, to clarify what is the desired result of the flatten operation, we illustrate with an example below.\n\n![pic](../Figures/430/430_list_step_1.png)\n\nIn the above example, we distinguish nodes in different levels with different colors. We could flatten the list in two steps as follows:\n\n![pic](../Figures/430/430_list_step_2.png)\n\n![pic](../Figures/430/430_list_step_3.png)\n\n>As we can see, by _flatten_, we basically **fold or embed** the sublist that is branched from the child pointer into its parent list.\n\nThis is one way to interpret the _flatten_ operation. However, as intuitive as the problem seems to be, one might stumble over the implementation. It is because the above intuition does not quite catch the true nature of the problem.\n\n>Actually, if we turn the above list in 90 degrees around the clock, then suddenly a **binary tree** appear in front of us. And the flatten operation is basically what we call _**preorder DFS traversal**_ (Depth-First Search).\n\n![pic](../Figures/430/430_dfs_tree.png)\n\nIndeed, as shown in the above graph, we could consider the `child` pointer as the `left` pointer in binary tree which points to the left sub-tree (sublist). And similarly, the `next` pointer can be considered as the `right` pointer in binary tree. Then if we traverse the tree in preorder DFS, it would generate the same visiting sequence as the flatten operation in our problem. \n\n\n**Algorithm**\n\nNow that we know the problem is basically asking us to do a _preorder DFS_ traversal over a disguised binary tree, we could use this intuition to guide the implementation.\n\nAs many of you would know that there are generally two manners to implement the DFS traversal: _recursion_ and _iteration_. We here start with the recursion, since many find it more intuitive.\n\nHere it goes with the recursive DFS algorithm:\n\n- First of all, we define our recursive function as `flatten_dfs(prev, curr)` which takes two pointers as input and returns the pointer of tail in the _flattened_ list. The `curr` pointer leads to the sub-list that we would like to flatten, and the `prev` pointer points to the element that should precede the `curr` element.\n<br/>\n- Within the recursive function `flatten_dfs(prev, curr)`, we first establish the double links between the `prev` and `curr` nodes, as in the _**preorder**_ DFS we take care of the **current state** first before looking into the children.\n<br/>\n- Further in the function `flatten_dfs(prev, curr)`, we then go ahead to flatten the **left subtree** (_i.e._ the sublist pointed by the `curr.child` pointer) with the call of `flatten_dfs(curr, curr.child)`, which returns the `tail` element to the flattened sublist. Then with the `tail` element of the previous sublist, we then further flatten the **right subtree** (_i.e._ the sublist pointed by the `curr.next` pointer), with the call of `flatten_dfs(tail, curr.next)`.\n<br/>\n- And voila, that is our core function. There are two additional important details that we should attend to, in order to obtain the correct result:\n    - We should make a copy of the `curr.next` pointer before the first recursive call of `flatten_dfs(curr, curr.child)`, since the `curr.next` pointer might be altered within the function.\n    - After we flatten the sublist pointed by the `curr.child` pointer, we should remove the child pointer since it is no longer needed in the final result.\n<br/>\n- Last by not the least, one would notice in the following implementation that we create a `pseudoHead` variable in the function. This is not absolutely necessary, but it would help us to make the solution more concise and elegant by **reducing the null pointer checks** (_e.g._ `if prev == null`). And with less branching tests, it certainly helps with the performance as well. Sometimes people might call it _**sentinel**_ node. As one might have seen before, this is a useful trick that one could apply to many problems related with linked lists (_e.g._ [LRU cache](https://leetcode.com/articles/lru-cache/)).\n\n<iframe src=\"https://leetcode.com/playground/Ma6mMwnA/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Ma6mMwnA\"></iframe>\n\n\n**Complexity**\n\n- Time Complexity: $$\\mathcal{O}(N)$$ where $$N$$ is the number of nodes in the list. The DFS algorithm traverses each node once and only once.\n<br/>\n- Space Complexity: $$\\mathcal{O}(N)$$ where $$N$$ is the number of nodes in the list. In the worst case, the binary tree might be extremely unbalanced (_i.e._ the tree leans to the left), which corresponds to the case where nodes are chained with each other only with the `child` pointers. In this case, the recursive calls would pile up, and it would take $$N$$ space in the function call stack. \n<br/>\n<br/>\n\n---\n\n#### Approach 2: DFS by Iteration\n\n**Intuition**\n\nFollowing the intuition of the above DFS preorder traversal approach, here we demonstrate how one can implement the solution via **_iteration_**. \n\n>The key is to use the data structure called _**stack**_, which is a container that follows the principle of _LIFO_ (_last in, first out_). The element that enters the stack at last would come out first, similar with the scenario of a packed elevator.\n\nThe stack data structure helps us to construct the iteration sequence as the one created by recursion. The stack here mimics the behavior of the function _call stack_, so that we could obtain the same result without resorting to recursion.\n\n**Algorithm**\n\n- First of all, we create a stack and then we push the head node to the stack. In addition, we create a variable called `prev` which would help us to track the precedent node at each step during the iteration.\n<br/>\n- Then we enter a loop to iterate the stack until the stack becomes empty.\n<br/>\n- Within the loop, at each step, we first pop out a node (named `curr`) from the stack. Then we establish the links between `prev` and `curr`. Then in the following steps, we take care of the nodes pointed by the `curr.next` and `curr.child` pointers respectively, and strictly in this order.\n    - First, if the `curr.next` does exist (_i.e._ there exists a right subtree), we then push the node into the stack for the next iteration.\n    - Secondly, if the `curr.child` does exist (_i.e._ there exists a left subtree), we then push the node into the stack. In addition, unlike the `child.next` pointer, we need to clean up the `curr.child` pointer since it should not be present in the final result.\n<br/>\n- And voila. Lastly, we also employ the `pseudoHead` node to render the algorithm more elegant, as we discussed in the previous approach.\n\nTo better illustrate how the algorithm works, we create an animation that shows the evolution of stack step by step, as follows:\n\n!?!../Documents/430_LIS.json:1000,561!?!\n\nHere are some sample implementations.\n\n<iframe src=\"https://leetcode.com/playground/DLuMpQ83/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"DLuMpQ83\"></iframe>\n\n\n\n**Complexity**\n\n- Time Complexity: $$\\mathcal{O}(N)$$. The iterative solution has the same time complexity as the recursive.\n<br/>\n- Space Complexity: $$\\mathcal{O}(N)$$. Again, the iterative solution has the same space complexity as the recursive one.\n\n\n---\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/) and @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "791",
+      "count": 7,
+      "average": 4.857,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]\r",
+  "metaData": "{\n  \"name\": \"flatten\",\n  \"params\": [\n    {\n      \"name\": \"head\",\n      \"type\": \"Node\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"Node\"\n  },\n  \"structures\": [\n    {\n      \"name\": \"Node\",\n      \"comment\": \"Definition for a Node.\",\n      \"members\": [\n        {\n          \"name\": \"val\",\n          \"type\": \"integer\"\n        },\n        {\n          \"name\": \"prev\",\n          \"type\": \"Node\"\n        },\n        {\n          \"name\": \"next\",\n          \"type\": \"Node\"\n        },\n        {\n          \"name\": \"child\",\n          \"type\": \"Node\"\n        }\n      ]\n    }\n  ],\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"csharp\",\n    \"javascript\",\n    \"python3\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

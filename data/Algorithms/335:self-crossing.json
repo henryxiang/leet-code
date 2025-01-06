@@ -1,0 +1,99 @@
+{
+  "questionId": "335",
+  "questionFrontendId": "335",
+  "boundTopicId": null,
+  "title": "Self Crossing",
+  "titleSlug": "self-crossing",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given an array <i>x</i> of <code>n</code> positive numbers. You start at point <code>(0,0)</code> and moves <code>x[0]</code> metres to the north, then <code>x[1]</code> metres to the west, <code>x[2]</code> metres to the south, <code>x[3]</code> metres to the east and so on. In other words, after each move your direction changes counter-clockwise.</p>\r\n\r\n<p>Write a one-pass algorithm with <code>O(1)</code> extra space to determine, if your path crosses itself, or not.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<strong>┌───┐\r\n│ &nbsp; │\r\n└───┼──&gt;\r\n&nbsp; &nbsp; │\r\n\r\nInput: </strong><code>[2,1,1,2]</code>\r\n<strong>Output: </strong>true\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<strong>┌──────┐\r\n│ &nbsp; &nbsp; &nbsp;│\r\n│\r\n│\r\n└────────────&gt;\r\n\r\nInput:</strong> <code>[1,2,3,4]</code>\r\n<strong>Output: </strong>false \r\n</pre>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\n<strong>┌───┐\r\n│ &nbsp; │\r\n└───┼&gt;\r\n\r\nInput:</strong> <code>[1,1,1,1]</code>\r\n<strong>Output:</strong> true \r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 106,
+  "dislikes": 296,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "dietpepsi",
+      "profileUrl": "/dietpepsi/",
+      "avatarUrl": "https://www.gravatar.com/avatar/5db7cd8986dd0171d1682b730ce85555.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isSelfCrossing(vector<int>& x) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isSelfCrossing(int[] x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isSelfCrossing(self, x):\n        \"\"\"\n        :type x: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isSelfCrossing(self, x: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isSelfCrossing(int* x, int xSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsSelfCrossing(int[] x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} x\n * @return {boolean}\n */\nvar isSelfCrossing = function(x) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} x\n# @return {Boolean}\ndef is_self_crossing(x)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isSelfCrossing(_ x: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isSelfCrossing(x []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isSelfCrossing(x: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isSelfCrossing(x: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_self_crossing(x: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $x\n     * @return Boolean\n     */\n    function isSelfCrossing($x) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"20.8K\", \"totalSubmission\": \"75.9K\", \"totalAcceptedRaw\": 20796, \"totalSubmissionRaw\": 75878, \"acRate\": \"27.4%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[2,1,1,2]",
+  "metaData": "{\r\n  \"name\": \"isSelfCrossing\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"x\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

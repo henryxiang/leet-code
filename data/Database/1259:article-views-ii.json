@@ -1,0 +1,55 @@
+{
+  "questionId": "1259",
+  "questionFrontendId": "1149",
+  "boundTopicId": null,
+  "title": "Article Views II",
+  "titleSlug": "article-views-ii",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Views</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| article_id    | int     |\n| author_id     | int     |\n| viewer_id     | int     |\n| view_date     | date    |\n+---------------+---------+\nThere is no primary key for this table, it may have duplicate rows.\nEach row of this table indicates that some viewer viewed an article (written by some author) on some date. \nNote that equal author_id and viewer_id indicate the same person.</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to find all the people who viewed more than one article on the same date, sorted in ascending order by their id.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\nViews table:\n+------------+-----------+-----------+------------+\n| article_id | author_id | viewer_id | view_date  |\n+------------+-----------+-----------+------------+\n| 1          | 3         | 5         | 2019-08-01 |\n| 3          | 4         | 5         | 2019-08-01 |\n| 1          | 3         | 6         | 2019-08-02 |\n| 2          | 7         | 7         | 2019-08-01 |\n| 2          | 7         | 6         | 2019-08-02 |\n| 4          | 7         | 1         | 2019-07-22 |\n| 3          | 4         | 4         | 2019-07-21 |\n| 3          | 4         | 4         | 2019-07-21 |\n+------------+-----------+-----------+------------+\n\nResult table:\n+------+\n| id   |\n+------+\n| 5    |\n| 6    |\n+------+</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 21,
+  "dislikes": 1,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.1K\", \"totalSubmission\": \"6.5K\", \"totalAcceptedRaw\": 3074, \"totalSubmissionRaw\": 6511, \"acRate\": \"47.2%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Views\":[\"article_id\",\"author_id\",\"viewer_id\",\"view_date\"]},\"rows\":{\"Views\":[[1,3,5,\"2019-08-01\"],[3,4,5,\"2019-08-01\"],[1,3,6,\"2019-08-02\"],[2,7,7,\"2019-08-01\"],[2,7,6,\"2019-08-02\"],[4,7,1,\"2019-07-22\"],[3,4,4,\"2019-07-21\"],[3,4,4,\"2019-07-21\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Views (article_id int, author_id int, viewer_id int, view_date date)\"\n  ],\n  \"mssql\": [\n    \"create table Views (article_id int, author_id int, viewer_id int, view_date date)\"\n  ],\n  \"oraclesql\": [\n    \"create table Views (article_id int, author_id int, viewer_id int, view_date date)\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Views (article_id int, author_id int, viewer_id int, view_date date)",
+    "Truncate table Views",
+    "insert into Views (article_id, author_id, viewer_id, view_date) values ('1', '3', '5', '2019-08-01')",
+    "insert into Views (article_id, author_id, viewer_id, view_date) values ('3', '4', '5', '2019-08-01')",
+    "insert into Views (article_id, author_id, viewer_id, view_date) values ('1', '3', '6', '2019-08-02')",
+    "insert into Views (article_id, author_id, viewer_id, view_date) values ('2', '7', '7', '2019-08-01')",
+    "insert into Views (article_id, author_id, viewer_id, view_date) values ('2', '7', '6', '2019-08-02')",
+    "insert into Views (article_id, author_id, viewer_id, view_date) values ('4', '7', '1', '2019-07-22')",
+    "insert into Views (article_id, author_id, viewer_id, view_date) values ('3', '4', '4', '2019-07-21')",
+    "insert into Views (article_id, author_id, viewer_id, view_date) values ('3', '4', '4', '2019-07-21')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

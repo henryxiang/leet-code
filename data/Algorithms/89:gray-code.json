@@ -1,0 +1,93 @@
+{
+  "questionId": "89",
+  "questionFrontendId": "89",
+  "boundTopicId": null,
+  "title": "Gray Code",
+  "titleSlug": "gray-code",
+  "categoryTitle": "Algorithms",
+  "content": "<p>The gray code is a binary numeral system where two successive values differ in only one bit.</p>\r\n\r\n<p>Given a non-negative integer <em>n</em> representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>&nbsp;2\r\n<strong>Output:</strong>&nbsp;<code>[0,1,3,2]</code>\r\n<strong>Explanation:</strong>\r\n00 - 0\r\n01 - 1\r\n11 - 3\r\n10 - 2\r\n\r\nFor a given&nbsp;<em>n</em>, a gray code sequence may not be uniquely defined.\r\nFor example, [0,2,3,1] is also a valid gray code sequence.\r\n\r\n00 - 0\r\n10 - 2\r\n11 - 3\r\n01 - 1\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>&nbsp;0\r\n<strong>Output:</strong>&nbsp;<code>[0]\r\n<strong>Explanation:</strong> We define the gray code sequence to begin with 0.\r\n&nbsp;            A gray code sequence of <em>n</em> has size = 2<sup>n</sup>, which for <em>n</em> = 0 the size is 2<sup>0</sup> = 1.\r\n&nbsp;            Therefore, for <em>n</em> = 0 the gray code sequence is [0].</code>\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 498,
+  "dislikes": 1370,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"1-bit and 2-bit Characters\", \"titleSlug\": \"1-bit-and-2-bit-characters\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> grayCode(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> grayCode(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def grayCode(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def grayCode(self, n: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* grayCode(int n, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> GrayCode(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number[]}\n */\nvar grayCode = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer[]}\ndef gray_code(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func grayCode(_ n: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func grayCode(n int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def grayCode(n: Int): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun grayCode(n: Int): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn gray_code(n: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer[]\n     */\n    function grayCode($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"148.8K\", \"totalSubmission\": \"313.9K\", \"totalAcceptedRaw\": 148838, \"totalSubmissionRaw\": 313888, \"acRate\": \"47.4%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "2",
+  "metaData": "{\r\n  \"name\": \"grayCode\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

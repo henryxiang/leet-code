@@ -1,0 +1,113 @@
+{
+  "questionId": "738",
+  "questionFrontendId": "738",
+  "boundTopicId": null,
+  "title": "Monotone Increasing Digits",
+  "titleSlug": "monotone-increasing-digits",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a non-negative integer <code>N</code>, find the largest number that is less than or equal to <code>N</code> with monotone increasing digits.\r\n</p><p>\r\n(Recall that an integer has <i>monotone increasing digits</i> if and only if each pair of adjacent digits <code>x</code> and <code>y</code> satisfy <code>x <= y</code>.)\r\n</p><p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> N = 10\r\n<b>Output:</b> 9\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> N = 1234\r\n<b>Output:</b> 1234\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b><br />\r\n<pre>\r\n<b>Input:</b> N = 332\r\n<b>Output:</b> 299\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<code>N</code> is an integer in the range <code>[0, 10^9]</code>.\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 318,
+  "dislikes": 51,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Remove K Digits\", \"titleSlug\": \"remove-k-digits\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "rahulbandari2499",
+      "profileUrl": "/rahulbandari2499/",
+      "avatarUrl": "https://www.gravatar.com/avatar/a6a8bd129e8bc32f0c947cad7ffc861a.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int monotoneIncreasingDigits(int N) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int monotoneIncreasingDigits(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def monotoneIncreasingDigits(self, N):\n        \"\"\"\n        :type N: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def monotoneIncreasingDigits(self, N: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint monotoneIncreasingDigits(int N){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MonotoneIncreasingDigits(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @return {number}\n */\nvar monotoneIncreasingDigits = function(N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef monotone_increasing_digits(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func monotoneIncreasingDigits(_ N: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func monotoneIncreasingDigits(N int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def monotoneIncreasingDigits(N: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun monotoneIncreasingDigits(N: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn monotone_increasing_digits(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @return Integer\n     */\n    function monotoneIncreasingDigits($N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.2K\", \"totalSubmission\": \"40.1K\", \"totalAcceptedRaw\": 17233, \"totalSubmissionRaw\": 40121, \"acRate\": \"43.0%\"}",
+  "hints": [
+    "Build the answer digit by digit, adding the largest possible one that would make the number still less than or equal to N."
+  ],
+  "solution": {
+    "id": "313",
+    "canSeeDetail": true,
+    "url": "/articles/monotone-increasing-digits/",
+    "content": "[TOC]\n\n#### Approach #1: Greedy [Accepted]\n\n**Intuition**\n\nLet's construct the answer digit by digit.\n\nIf the current answer is say, `123`, and the next digit is `5`, then the answer must be at least `123555...5`, since the digits in the answer must be monotonically increasing.  If this is larger than `N`, then it's impossible.\n\n**Algorithm**\n\nFor each digit of `N`, let's build the next digit of our answer `ans`.  We'll find the smallest possible digit `d` such that `ans + (d repeating) > N` when comparing by string; that means `d-1` must have satisfied `ans + (d-1 repeating) <= N`, and so we'll add `d-1` to our answer.  If we don't find such a digit, we can add a `9` instead.\n\n<iframe src=\"https://leetcode.com/playground/FBLCwPuk/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"FBLCwPuk\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(D^2)$$, where $$D \\approx \\log N$$ is the number of digits in $$N$$.  We do $$O(D)$$ work building and comparing each candidate, and we do this $$O(D)$$ times.\n\n* Space Complexity: $$O(D)$$, the size of the answer and the temporary string we are comparing.\n\n---\n#### Approach #2: Truncate After Cliff [Accepted]\n\n**Intuition**\n\nOne initial thought that comes to mind is we can always have a candidate answer of `d999...9` (a digit `0 <= d <= 9` followed by some number of nines.)  For example if `N = 432543654`, we could always have an answer of at least `399999999`.\n\nWe can do better.  For example, when the number is `123454321`, we could have a candidate of `123449999`.  It seems like a decent strategy is to take a monotone increasing prefix of `N`, then decrease the number before the \"cliff\" (the index where adjacent digits decrease for the first time) if it exists, and replace the rest of the characters with `9`s.\n\nWhen does that strategy fail?  If `N = 333222`, then our strategy would give us the candidate answer of `332999` - but this isn't monotone increasing.  However, since we are looking at all indexes before the original first occurrence of a cliff, the only place where a cliff could exist, is next to where we just decremented a digit.\n\nThus, we can repair our strategy, by successfully morphing our answer `332999 -> 329999 -> 299999` with a linear scan.\n\n**Algorithm**\n\nWe'll find the first cliff `S[i-1] > S[i]`.  Then, while the cliff exists, we'll decrement the appropriate digit and move `i` back.  Finally, we'll make the rest of the digits `9`s and return our work.\n\nWe can prove our algorithm is correct because every time we encounter a cliff, the digit we decrement has to decrease by at least 1.  Then, the largest possible selection for the rest of the digits is all nines, which is always going to be monotone increasing with respect to the other digits occurring earlier in the number.\n\n<iframe src=\"https://leetcode.com/playground/yeDAMaRm/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"yeDAMaRm\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(D)$$, where $$D \\approx \\log N$$ is the number of digits in $$N$$.  Each step in the algorithm is a linear scan of the digits.\n\n* Space Complexity: $$O(D)$$, the size of the answer.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "308",
+      "count": 15,
+      "average": 2.6,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "10",
+  "metaData": "{\r\n  \"name\": \"monotoneIncreasingDigits\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

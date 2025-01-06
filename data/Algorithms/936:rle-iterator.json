@@ -1,0 +1,105 @@
+{
+  "questionId": "936",
+  "questionFrontendId": "900",
+  "boundTopicId": null,
+  "title": "RLE Iterator",
+  "titleSlug": "rle-iterator",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Write an iterator that iterates through a run-length encoded sequence.</p>\r\n\r\n<p>The iterator is initialized by <code>RLEIterator(int[] A)</code>, where <code>A</code> is a run-length encoding of some&nbsp;sequence.&nbsp; More specifically,&nbsp;for all even <code>i</code>,&nbsp;<code>A[i]</code> tells us the number of times that the non-negative integer value <code>A[i+1]</code> is repeated in the sequence.</p>\r\n\r\n<p>The iterator supports one function:&nbsp;<code>next(int n)</code>, which exhausts the next <code>n</code> elements&nbsp;(<code>n &gt;= 1</code>) and returns the last element exhausted in this way.&nbsp; If there is no element left to exhaust, <code>next</code>&nbsp;returns <code>-1</code> instead.</p>\r\n\r\n<p>For example, we start with <code>A = [3,8,0,9,2,5]</code>, which is a run-length encoding of the sequence <code>[8,8,8,5,5]</code>.&nbsp; This is because the sequence can be read as&nbsp;&quot;three eights, zero nines, two fives&quot;.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[&quot;RLEIterator&quot;,&quot;next&quot;,&quot;next&quot;,&quot;next&quot;,&quot;next&quot;]</span>, <span id=\"example-input-1-2\">[[[3,8,0,9,2,5]],[2],[1],[1],[2]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[null,8,8,5,-1]</span>\r\n<strong>Explanation: </strong>\r\nRLEIterator is initialized with RLEIterator([3,8,0,9,2,5]).\r\nThis maps to the sequence [8,8,8,5,5].\r\nRLEIterator.next is then called 4 times:\r\n\r\n.next(2) exhausts 2 terms of the sequence, returning 8.  The remaining sequence is now [8, 5, 5].\r\n\r\n.next(1) exhausts 1 term of the sequence, returning 8.  The remaining sequence is now [5, 5].\r\n\r\n.next(1) exhausts 1 term of the sequence, returning 5.  The remaining sequence is now [5].\r\n\r\n.next(2) exhausts 2 terms, returning -1.  This is because the first term exhausted was 5,\r\nbut the second term did not exist.  Since the last term exhausted does not exist, we return -1.\r\n\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= A.length &lt;= 1000</code></li>\r\n\t<li><code>A.length</code>&nbsp;is an even integer.</li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 10^9</code></li>\r\n\t<li>There are at most <code>1000</code> calls to <code>RLEIterator.next(int n)</code> per test case.</li>\r\n\t<li>Each call to&nbsp;<code>RLEIterator.next(int n)</code>&nbsp;will have <code>1 &lt;= n &lt;= 10^9</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 165,
+  "dislikes": 63,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class RLEIterator {\npublic:\n    RLEIterator(vector<int>& A) {\n        \n    }\n    \n    int next(int n) {\n        \n    }\n};\n\n/**\n * Your RLEIterator object will be instantiated and called as such:\n * RLEIterator* obj = new RLEIterator(A);\n * int param_1 = obj->next(n);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class RLEIterator {\n\n    public RLEIterator(int[] A) {\n        \n    }\n    \n    public int next(int n) {\n        \n    }\n}\n\n/**\n * Your RLEIterator object will be instantiated and called as such:\n * RLEIterator obj = new RLEIterator(A);\n * int param_1 = obj.next(n);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class RLEIterator(object):\n\n    def __init__(self, A):\n        \"\"\"\n        :type A: List[int]\n        \"\"\"\n        \n\n    def next(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your RLEIterator object will be instantiated and called as such:\n# obj = RLEIterator(A)\n# param_1 = obj.next(n)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class RLEIterator:\n\n    def __init__(self, A: List[int]):\n        \n\n    def next(self, n: int) -> int:\n        \n\n\n# Your RLEIterator object will be instantiated and called as such:\n# obj = RLEIterator(A)\n# param_1 = obj.next(n)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} RLEIterator;\n\n\nRLEIterator* rLEIteratorCreate(int* A, int ASize) {\n    \n}\n\nint rLEIteratorNext(RLEIterator* obj, int n) {\n  \n}\n\nvoid rLEIteratorFree(RLEIterator* obj) {\n    \n}\n\n/**\n * Your RLEIterator struct will be instantiated and called as such:\n * RLEIterator* obj = rLEIteratorCreate(A, ASize);\n * int param_1 = rLEIteratorNext(obj, n);\n \n * rLEIteratorFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class RLEIterator {\n\n    public RLEIterator(int[] A) {\n        \n    }\n    \n    public int Next(int n) {\n        \n    }\n}\n\n/**\n * Your RLEIterator object will be instantiated and called as such:\n * RLEIterator obj = new RLEIterator(A);\n * int param_1 = obj.Next(n);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n */\nvar RLEIterator = function(A) {\n    \n};\n\n/** \n * @param {number} n\n * @return {number}\n */\nRLEIterator.prototype.next = function(n) {\n    \n};\n\n/** \n * Your RLEIterator object will be instantiated and called as such:\n * var obj = new RLEIterator(A)\n * var param_1 = obj.next(n)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class RLEIterator\n\n=begin\n    :type a: Integer[]\n=end\n    def initialize(a)\n        \n    end\n\n\n=begin\n    :type n: Integer\n    :rtype: Integer\n=end\n    def next(n)\n        \n    end\n\n\nend\n\n# Your RLEIterator object will be instantiated and called as such:\n# obj = RLEIterator.new(a)\n# param_1 = obj.next(n)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass RLEIterator {\n\n    init(_ A: [Int]) {\n        \n    }\n    \n    func next(_ n: Int) -> Int {\n        \n    }\n}\n\n/**\n * Your RLEIterator object will be instantiated and called as such:\n * let obj = RLEIterator(A)\n * let ret_1: Int = obj.next(n)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type RLEIterator struct {\n    \n}\n\n\nfunc Constructor(A []int) RLEIterator {\n    \n}\n\n\nfunc (this *RLEIterator) Next(n int) int {\n    \n}\n\n\n/**\n * Your RLEIterator object will be instantiated and called as such:\n * obj := Constructor(A);\n * param_1 := obj.Next(n);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class RLEIterator(_A: Array[Int]) {\n\n    def next(n: Int): Int = {\n        \n    }\n\n}\n\n/**\n * Your RLEIterator object will be instantiated and called as such:\n * var obj = new RLEIterator(A)\n * var param_1 = obj.next(n)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class RLEIterator(A: IntArray) {\n\n    fun next(n: Int): Int {\n        \n    }\n\n}\n\n/**\n * Your RLEIterator object will be instantiated and called as such:\n * var obj = RLEIterator(A)\n * var param_1 = obj.next(n)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct RLEIterator {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl RLEIterator {\n\n    fn new(A: Vec<i32>) -> Self {\n        \n    }\n    \n    fn next(&self, n: i32) -> i32 {\n        \n    }\n}\n\n/**\n * Your RLEIterator object will be instantiated and called as such:\n * let obj = RLEIterator::new(A);\n * let ret_1: i32 = obj.next(n);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class RLEIterator {\n    /**\n     * @param Integer[] $A\n     */\n    function __construct($A) {\n        \n    }\n  \n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function next($n) {\n        \n    }\n}\n\n/**\n * Your RLEIterator object will be instantiated and called as such:\n * $obj = RLEIterator($A);\n * $ret_1 = $obj->next($n);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"18.1K\", \"totalSubmission\": \"34.6K\", \"totalAcceptedRaw\": 18057, \"totalSubmissionRaw\": 34641, \"acRate\": \"52.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "552",
+    "canSeeDetail": true,
+    "url": "/articles/rle-iterator/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Store Exhausted Position and Quantity\n\n**Intuition**\n\nWe can store an index `i` and quantity `q` which represents that `q` elements of `A[i]` (repeated `A[i+1]` times) are exhausted.\n\nFor example, if we have `A = [1,2,3,4]` (mapping to the sequence `[2,4,4,4]`) then `i = 0, q = 0` represents that nothing is exhausted; `i = 0, q = 1` represents that `[2]` is exhausted, `i = 2, q = 1` will represent that we have currently exhausted `[2, 4]`, and so on.\n\n**Algorithm**\n\nSay we want to exhaust `n` more elements.  There are currently `D = A[i] - q` elements left to exhaust (of value `A[i+1]`).\n\nIf `n > D`, then we should exhaust all of them and continue: `n -= D; i += 2; q = 0`.\n\nOtherwise, we should exhaust some of them and return the current element's value: `q += D; return A[i+1]`.\n\n<iframe src=\"https://leetcode.com/playground/YThfYaPX/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"YThfYaPX\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N + Q)$$, where $$N$$ is the length of `A`, and $$Q$$ is the number of calls to `RLEIterator.next`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "543",
+      "count": 11,
+      "average": 3.727,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"RLEIterator\",\"next\",\"next\",\"next\",\"next\"]\n[[[3,8,0,9,2,5]],[2],[1],[1],[2]]",
+  "metaData": "{\r\n    \"classname\": \"RLEIterator\",\r\n    \"maxbytesperline\": 200000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n            { \"type\": \"integer[]\",\r\n              \"name\": \"A\"\r\n            }\r\n            ]\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"next\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"n\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

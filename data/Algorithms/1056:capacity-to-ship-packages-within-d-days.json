@@ -1,0 +1,105 @@
+{
+  "questionId": "1056",
+  "questionFrontendId": "1011",
+  "boundTopicId": null,
+  "title": "Capacity To Ship Packages Within D Days",
+  "titleSlug": "capacity-to-ship-packages-within-d-days",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A conveyor belt has packages that must be shipped from one port to another within <code>D</code> days.</p>\r\n\r\n<p>The <code>i</code>-th package on the conveyor belt has a weight of <code>weights[i]</code>.&nbsp; Each day, we load the ship with packages on the conveyor belt (in the order given by <code>weights</code>). We may not load more weight than the maximum weight capacity of the ship.</p>\r\n\r\n<p>Return the least weight capacity of the ship that will result in all the packages on the conveyor belt being shipped within <code>D</code> days.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>weights = <span id=\"example-input-1-1\">[1,2,3,4,5,6,7,8,9,10]</span>, D = <span id=\"example-input-1-2\">5</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">15</span>\r\n<strong>Explanation: </strong>\r\nA ship capacity of 15 is the minimum to ship all the packages in 5 days like this:\r\n1st day: 1, 2, 3, 4, 5\r\n2nd day: 6, 7\r\n3rd day: 8\r\n4th day: 9\r\n5th day: 10\r\n\r\nNote that the cargo must be shipped in the order given, so using a ship of capacity 14 and splitting the packages into parts like (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) is not allowed. \r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>weights = <span id=\"example-input-2-1\">[3,2,2,4,1,4]</span>, D = <span id=\"example-input-2-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">6</span>\r\n<strong>Explanation: </strong>\r\nA ship capacity of 6 is the minimum to ship all the packages in 3 days like this:\r\n1st day: 3, 2\r\n2nd day: 2, 4\r\n3rd day: 1, 4\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>weights = <span id=\"example-input-3-1\">[1,2,3,1,1]</span>, D = 4\r\n<strong>Output: </strong><span id=\"example-output-3\">3</span>\r\n<strong>Explanation: </strong>\r\n1st day: 1\r\n2nd day: 2\r\n3rd day: 3\r\n4th day: 1, 1\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= D &lt;= weights.length &lt;= 50000</code></li>\r\n\t<li><code>1 &lt;= weights[i] &lt;= 500</code></li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 606,
+  "dislikes": 19,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "gusmt66",
+      "profileUrl": "/gusmt66/",
+      "avatarUrl": "https://www.gravatar.com/avatar/94247aa7d66aa9156e35bbdc5b152b1f.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int shipWithinDays(vector<int>& weights, int D) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int shipWithinDays(int[] weights, int D) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shipWithinDays(self, weights, D):\n        \"\"\"\n        :type weights: List[int]\n        :type D: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shipWithinDays(self, weights: List[int], D: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint shipWithinDays(int* weights, int weightsSize, int D){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int ShipWithinDays(int[] weights, int D) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} weights\n * @param {number} D\n * @return {number}\n */\nvar shipWithinDays = function(weights, D) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} weights\r\n# @param {Integer} d\r\n# @return {Integer}\r\ndef ship_within_days(weights, d)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func shipWithinDays(_ weights: [Int], _ D: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shipWithinDays(weights []int, D int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def shipWithinDays(weights: Array[Int], D: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun shipWithinDays(weights: IntArray, D: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn ship_within_days(weights: Vec<i32>, d: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $weights\n     * @param Integer $D\n     * @return Integer\n     */\n    function shipWithinDays($weights, $D) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"23.9K\", \"totalSubmission\": \"42.8K\", \"totalAcceptedRaw\": 23923, \"totalSubmissionRaw\": 42768, \"acRate\": \"55.9%\"}",
+  "hints": [
+    "Binary search on the answer.  We need a function possible(capacity) which returns true if and only if we can do the task in D days."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2,3,4,5,6,7,8,9,10]\n5",
+  "metaData": "{\r\n  \"name\": \"shipWithinDays\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"weights\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"D\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

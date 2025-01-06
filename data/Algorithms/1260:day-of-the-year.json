@@ -1,0 +1,95 @@
+{
+  "questionId": "1260",
+  "questionFrontendId": "1154",
+  "boundTopicId": null,
+  "title": "Day of the Year",
+  "titleSlug": "day-of-the-year",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>date</code> representing a <a href=\"https://en.wikipedia.org/wiki/Gregorian_calendar\" target=\"_blank\">Gregorian&nbsp;calendar</a> date formatted as <code>YYYY-MM-DD</code>, return the day number of the year.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> date = &quot;2019-01-09&quot;\r\n<strong>Output:</strong> 9\r\n<strong>Explanation:</strong> Given date is the 9th day of the year in 2019.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> date = &quot;2019-02-10&quot;\r\n<strong>Output:</strong> 41\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> date = &quot;2003-03-01&quot;\r\n<strong>Output:</strong> 60\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> date = &quot;2004-03-01&quot;\r\n<strong>Output:</strong> 61\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>date.length == 10</code></li>\r\n\t<li><code>date[4] == date[7] == &#39;-&#39;</code>, and all other <code>date[i]</code>&#39;s are digits</li>\r\n\t<li><code>date</code> represents a calendar date between Jan 1st, 1900 and Dec 31, 2019.</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 49,
+  "dislikes": 95,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"zscaler\", \"slug\": \"zscaler\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int dayOfYear(string date) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int dayOfYear(String date) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def dayOfYear(self, date):\n        \"\"\"\n        :type date: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def dayOfYear(self, date: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint dayOfYear(char * date){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int DayOfYear(string date) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} date\n * @return {number}\n */\nvar dayOfYear = function(date) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} date\n# @return {Integer}\ndef day_of_year(date)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func dayOfYear(_ date: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func dayOfYear(date string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def dayOfYear(date: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun dayOfYear(date: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn day_of_year(date: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $date\n     * @return Integer\n     */\n    function dayOfYear($date) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11.4K\", \"totalSubmission\": \"23.4K\", \"totalAcceptedRaw\": 11444, \"totalSubmissionRaw\": 23384, \"acRate\": \"48.9%\"}",
+  "hints": [
+    "Have a integer array of how many days there are per month.  February gets one extra day if its a leap year.  Then, we can manually count the ordinal as day + (number of days in months before this one)."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"2019-01-09\"\r",
+  "metaData": "{\n  \"name\": \"dayOfYear\",\n  \"params\": [\n    {\n      \"name\": \"date\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

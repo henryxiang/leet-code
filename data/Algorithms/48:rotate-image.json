@@ -1,0 +1,105 @@
+{
+  "questionId": "48",
+  "questionFrontendId": "48",
+  "boundTopicId": null,
+  "title": "Rotate Image",
+  "titleSlug": "rotate-image",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given an <em>n</em> x <em>n</em> 2D matrix representing an image.</p>\r\n\r\n<p>Rotate the image by 90 degrees (clockwise).</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<p>You have to rotate the image <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\"><strong>in-place</strong></a>, which means you have to modify the input 2D matrix directly. <strong>DO NOT</strong> allocate another 2D matrix and do the rotation.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\nGiven <strong>input matrix</strong> = \r\n[\r\n  [1,2,3],\r\n  [4,5,6],\r\n  [7,8,9]\r\n],\r\n\r\nrotate the input matrix <strong>in-place</strong> such that it becomes:\r\n[\r\n  [7,4,1],\r\n  [8,5,2],\r\n  [9,6,3]\r\n]\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\nGiven <strong>input matrix</strong> =\r\n[\r\n  [ 5, 1, 9,11],\r\n  [ 2, 4, 8,10],\r\n  [13, 3, 6, 7],\r\n  [15,14,12,16]\r\n], \r\n\r\nrotate the input matrix <strong>in-place</strong> such that it becomes:\r\n[\r\n  [15,13, 2, 5],\r\n  [14, 3, 4, 1],\r\n  [12, 6, 8, 9],\r\n  [16, 7,10,11]\r\n]\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2173,
+  "dislikes": 186,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Houzz\", \"slug\": \"houzz\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Groupon\", \"slug\": \"groupon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Nvidia\", \"slug\": \"nvidia\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    void rotate(vector<vector<int>>& matrix) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public void rotate(int[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def rotate(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: None Do not return anything, modify matrix in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def rotate(self, matrix: List[List[int]]) -> None:\n        \"\"\"\n        Do not return anything, modify matrix in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nvoid rotate(int** matrix, int matrixSize, int* matrixColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public void Rotate(int[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} matrix\n * @return {void} Do not return anything, modify matrix in-place instead.\n */\nvar rotate = function(matrix) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} matrix\n# @return {Void} Do not return anything, modify matrix in-place instead.\ndef rotate(matrix)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func rotate(_ matrix: inout [[Int]]) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func rotate(matrix [][]int)  {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def rotate(matrix: Array[Array[Int]]): Unit = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun rotate(matrix: Array<IntArray>): Unit {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn rotate(matrix: &mut Vec<Vec<i32>>) {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @return NULL\n     */\n    function rotate(&$matrix) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"320.9K\", \"totalSubmission\": \"614.1K\", \"totalAcceptedRaw\": 320921, \"totalSubmissionRaw\": 614098, \"acRate\": \"52.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "637",
+    "canSeeDetail": true,
+    "url": "/articles/rotate-image/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1 : Transpose and then reverse\n\nThe obvious idea would be to transpose the matrix first and then\nreverse each row. This simple approach already demonstrates the best\npossible time complexity $$\\mathcal{O}(N^2)$$.\n\n<iframe src=\"https://leetcode.com/playground/wB7HAokF/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"wB7HAokF\"></iframe>\n\n* Time complexity : $$\\mathcal{O}(N^2)$$. \n* Space complexity : $$\\mathcal{O}(1)$$ since we do a rotation *in place*.\n<br />\n<br />\n\n---\n#### Approach 2 : Rotate four rectangles\n\n**Intuition**\n\nApproach 1 makes two passes through the matrix, \nthough it's possible to make a rotation in one pass.\n\nTo figure out how let's check \nhow each element in the angle moves during the rotation. \n \n![compute](../Figures/48/48_angles.png)\n\nThat gives us an idea to split a given matrix in four rectangles and\nreduce the initial problem to the rotation of these rectangles.\n\n![compute](../Figures/48/48_rectangles.png) \n\nNow the solution is quite straightforward - \none could move across the elements \nin the first rectangle and rotate them using a temp list of `4` elements.\n\n**Implementation**\n\n!?!../Documents/48_LIS.json:1000,513!?!\n\n<iframe src=\"https://leetcode.com/playground/a2U3SYax/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"a2U3SYax\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N^2)$$ is a complexity given by two inserted loops. \n* Space complexity : $$\\mathcal{O}(1)$$ since we do a rotation *in place* \nand allocate only the list of `4` elements as a temporary helper.\n<br />\n<br />\n\n---\n#### Approach 3 : Rotate four rectangles in one single loop\n\nThe idea is the same as in the approach 2,\nbut everything is done in one single loop \nand hence it's a way more elegant\n(kudos go to @[gxldragon](https://leetcode.com/gxldragon/)).\n\n<iframe src=\"https://leetcode.com/playground/jjBzANdK/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"jjBzANdK\"></iframe>\n\n* Time complexity : $$\\mathcal{O}(N^2)$$ is a complexity given by two inserted loops. \n* Space complexity : $$\\mathcal{O}(1)$$ since we do a rotation *in place*.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "623",
+      "count": 49,
+      "average": 3.061,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2,3],[4,5,6],[7,8,9]]",
+  "metaData": "{\r\n  \"name\": \"rotate\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"matrix\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"void\"\r\n  },\r\n  \"output\": {\r\n    \"paramindex\": 0\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "823",
+  "questionFrontendId": "805",
+  "boundTopicId": null,
+  "title": "Split Array With Same Average",
+  "titleSlug": "split-array-with-same-average",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a given integer array A, we must move every element of A to either list B or list C. (B and C initially start empty.)</p>\r\n\r\n<p>Return true if and only if after such a move, it is possible that the average value of B is equal to the average value of C, and B and C are both non-empty.</p>\r\n\r\n<pre>\r\n<strong>Example :</strong>\r\n<strong>Input:</strong> \r\n[1,2,3,4,5,6,7,8]\r\n<strong>Output:</strong> true\r\n<strong>Explanation: </strong>We can split the array into [1,4,5,8] and [2,3,6,7], and both of them have the average of 4.5.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>The length of <code>A</code> will be in the range&nbsp;[1, 30].</li>\r\n\t<li><code>A[i]</code> will be in the range of <code>[0, 10000]</code>.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 289,
+  "dislikes": 62,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool splitArraySameAverage(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean splitArraySameAverage(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def splitArraySameAverage(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def splitArraySameAverage(self, A: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool splitArraySameAverage(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool SplitArraySameAverage(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {boolean}\n */\nvar splitArraySameAverage = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Boolean}\ndef split_array_same_average(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func splitArraySameAverage(_ A: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func splitArraySameAverage(A []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def splitArraySameAverage(A: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun splitArraySameAverage(A: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn split_array_same_average(a: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Boolean\n     */\n    function splitArraySameAverage($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.2K\", \"totalSubmission\": \"47.4K\", \"totalAcceptedRaw\": 12157, \"totalSubmissionRaw\": 47406, \"acRate\": \"25.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "438",
+    "canSeeDetail": true,
+    "url": "/articles/split-array-with-same-average/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Meet in the Middle [Accepted]\n\n**Intuition and Algorithm**\n\nFirst, let's get a sense of the condition that `average(B) = average(C)`, where `B, C` are defined in the problem statement.\n\nSay `A` (the input array) has `N` elements which sum to `S`, and `B` (one of the splitting sets) has `K` elements which sum to `X`.  Then the equation for `average(B) = average(C)` becomes $$\\frac{X}{K} = \\frac{S-X}{N-K}$$.  This reduces to $$X(N-K) = (S-X)K$$ which is $$\\frac{X}{K} = \\frac{S}{N}$$.  That is, `average(B) = average(A)`.\n\nNow, we could delete `average(A)` from each element `A[i]` without changing our choice for `B`.  (`A[i] -= mu`, where `mu = average(A)`).  This means we just want to choose a set `B` that sums to `0`.\n\nTrying all $$2^N$$ sets is still too many choices, so we will create sets of sums `left, right` of the approximately $$2^{N/2}$$ choices on the left and on the right separately.  (That is, `left` is a set of sums of every powerset in the first half of A, and `right` is the set of sums of every powerset in the second half of A).  Then, it is true if we find $$0$$ in these powersets, or if two sums in different halves cancel out (`-x in right for x in left`), except for one minor detail below.\n\nCare must be taken that we do not specify sets that would make the original `B` or `C` empty.  If `sleft = A[0] + A[1] + ... + A[N/2 - 1]`, and `sright = A[N/2] + ... + A[N-1]`, (where `A[i]` was transformed to the new `A[i] - average(A)`) then we cannot choose both (`sleft, sright`).  This is correct because if for example `sleft` was a sum reached by a strictly smaller powerset than `{A[0], A[1], ..., A[N/2 - 1]}`, then the difference between these sets would be non-empty and have sum `0`.\n\n<iframe src=\"https://leetcode.com/playground/MCygqyNn/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"MCygqyNn\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(2^{N/2})$$, where $$N$$ is the length of `A`.\n\n* Space Complexity: $$O(2^{N/2})$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "433",
+      "count": 26,
+      "average": 2.885,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4,5,6,7,8]",
+  "metaData": "{\r\n  \"name\": \"splitArraySameAverage\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

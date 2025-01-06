@@ -1,0 +1,111 @@
+{
+  "questionId": "593",
+  "questionFrontendId": "593",
+  "boundTopicId": null,
+  "title": "Valid Square",
+  "titleSlug": "valid-square",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given the coordinates of four points in 2D space, return whether the four points could construct a square.</p>\r\n\r\n<p>The coordinate (x,y) of a point is represented by an integer array with two integers.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> p1 = [0,0], p2 = [1,1], p3 = [1,0], p4 = [0,1]\r\n<b>Output:</b> True\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Note:</p>\r\n\r\n<ol>\r\n\t<li>All the input integers are in the range [-10000, 10000].</li>\r\n\t<li>A valid square has four equal sides with positive length and four equal angles (90-degree angles).</li>\r\n\t<li>Input points have no order.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 169,
+  "dislikes": 319,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Pure Storage\", \"slug\": \"pure-storage\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool validSquare(vector<int>& p1, vector<int>& p2, vector<int>& p3, vector<int>& p4) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def validSquare(self, p1, p2, p3, p4):\n        \"\"\"\n        :type p1: List[int]\n        :type p2: List[int]\n        :type p3: List[int]\n        :type p4: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def validSquare(self, p1: List[int], p2: List[int], p3: List[int], p4: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool validSquare(int* p1, int p1Size, int* p2, int p2Size, int* p3, int p3Size, int* p4, int p4Size){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool ValidSquare(int[] p1, int[] p2, int[] p3, int[] p4) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} p1\n * @param {number[]} p2\n * @param {number[]} p3\n * @param {number[]} p4\n * @return {boolean}\n */\nvar validSquare = function(p1, p2, p3, p4) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} p1\r\n# @param {Integer[]} p2\r\n# @param {Integer[]} p3\r\n# @param {Integer[]} p4\r\n# @return {Boolean}\r\ndef valid_square(p1, p2, p3, p4)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func validSquare(_ p1: [Int], _ p2: [Int], _ p3: [Int], _ p4: [Int]) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func validSquare(p1 []int, p2 []int, p3 []int, p4 []int) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def validSquare(p1: Array[Int], p2: Array[Int], p3: Array[Int], p4: Array[Int]): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun validSquare(p1: IntArray, p2: IntArray, p3: IntArray, p4: IntArray): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn valid_square(p1: Vec<i32>, p2: Vec<i32>, p3: Vec<i32>, p4: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $p1\n     * @param Integer[] $p2\n     * @param Integer[] $p3\n     * @param Integer[] $p4\n     * @return Boolean\n     */\n    function validSquare($p1, $p2, $p3, $p4) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24.6K\", \"totalSubmission\": \"59.4K\", \"totalAcceptedRaw\": 24574, \"totalSubmissionRaw\": 59423, \"acRate\": \"41.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "139",
+    "canSeeDetail": true,
+    "url": "/articles/valid-square/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Accepted]\n\nThe idea behind determining whether 4 given set of points constitute a valid square or not is really simple. Firstly, we need to determine if the sides of the qaudrilateral formed by these 4 points are equal. But checking only this won't suffice. Since, this condition will be satisfied even in the case of a rhombus, where all the four sides are equal but the adjacent sides aren't perpendicular to each other. Thus, we also need to check if the lengths of the diagonals formed between the corners of the quadrilateral are equal. If both the conditions are satisfied, then only the given set of points can be deemed appropriate for constituting a square.\n\nNow, the problem arises in determining which pairs of points act as the adjacent points on the square boundary. So, the simplest method is to consider every possible case. For the given 4 points, $$[p_0, p_1, p_2, p_3]$$, there are a total of 4! ways in which these points can be arranged to be considered as the square's boundaries. We can generate every possible permutation and check if any permutation leads to the valid square arrangement of points.\n\n<iframe src=\"https://leetcode.com/playground/kR62YSDY/shared\" frameBorder=\"0\" name=\"kR62YSDY\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(1)$$. Constant number of permutations($$4!$$) are generated.\n\n* Space complexity : $$O(1)$$. Constant space is required.\n\n---\n#### Approach #2 Using Sorting [Accepted]\n\nInstead of considering all the permutations of arrangements possible, we can make use of maths to simplify this problem a bit. If we sort the given set of points based on their x-coordinate values, and in the case of a tie, based on their y-coordinate value, we can obtain an arrangement, which directly reflects the arrangement of points on a valid square boundary possible.\n\nConsider the only possible cases as shown in the figure below:\n\n![Valid_Square](../Figures/593_Valid_Square_1.PNG)\n\nIn each case, after sorting, we obtain the following conclusion regarding the connections of the points:\n\n1. $$p_0p_1$$, $$p_1p_3$$, $$p_3p_2$$ and $$p_2p_0$$ form the four sides of any valid square.\n\n2. $$p_0p_3$$ and $$p_1p_2$$ form the diagonals of the square.\n\nThus, once the sorting of the points is done, based on the above knowledge, we can directly compare $$p_0p_1$$, $$p_1p_3$$, $$p_3p_2$$ and $$p_2p_0$$ for equality of lengths(corresponding to the sides); and $$p_0p_3$$ and $$p_1p_2$$ for equality of lengths(corresponding to the diagonals).\n\n<iframe src=\"https://leetcode.com/playground/xp6gv2NM/shared\" frameBorder=\"0\" name=\"xp6gv2NM\" width=\"100%\" height=\"241\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(1)$$. Sorting 4 points takes constant time.\n\n* Space complexity : $$O(1)$$. Constant space is required.\n\n---\n#### Approach #3 Checking every case [Accepted]\n\n**Algorithm**\n\nIf we consider all the permutations descripting the arrangement of points as in the brute force approach, we can come up with the following set of 24 arrangements:\n\n![Valid_Square](../Figures/593_Valid_Square_2.PNG)\n\nIn this figure, the rows with the same shaded color indicate that the corresponding arrangements lead to the same set of edges and diagonals. Thus, we can see that only three unique cases exist. Thus, instead of generating all the 24 permutations, we check for the equality of edges and diagonals for only the three distinct cases.\n\n<iframe src=\"https://leetcode.com/playground/7wt6ZUJR/shared\" frameBorder=\"0\" name=\"7wt6ZUJR\" width=\"100%\" height=\"258\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(1)$$. A fixed number of comparisons are done.\n\n* Space complexity : $$O(1)$$. No extra space required.\n\n---\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "135",
+      "count": 14,
+      "average": 4.857,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,0]\n[1,1]\n[1,0]\n[0,1]",
+  "metaData": "{\r\n  \"name\": \"validSquare\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"p1\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"p2\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"p3\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"p4\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

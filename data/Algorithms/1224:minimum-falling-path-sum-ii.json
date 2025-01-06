@@ -1,0 +1,103 @@
+{
+  "questionId": "1224",
+  "questionFrontendId": "1289",
+  "boundTopicId": null,
+  "title": "Minimum Falling Path Sum II",
+  "titleSlug": "minimum-falling-path-sum-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a square grid&nbsp;of integers&nbsp;<code>arr</code>, a <em>falling path with non-zero shifts</em>&nbsp;is a choice of&nbsp;exactly one element from each row of <code>arr</code>, such that no two elements chosen in adjacent rows are in&nbsp;the same column.</p>\n\n<p>Return the&nbsp;minimum&nbsp;sum of a falling path with non-zero shifts.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [[1,2,3],[4,5,6],[7,8,9]]\n<strong>Output:</strong> 13\n<strong>Explanation: </strong>\nThe possible falling paths are:\n[1,5,9], [1,5,7], [1,6,7], [1,6,8],\n[2,4,8], [2,4,9], [2,6,7], [2,6,8],\n[3,4,8], [3,4,9], [3,5,7], [3,5,9]\nThe falling path with the smallest sum is&nbsp;[1,5,7], so the answer is&nbsp;13.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length == arr[i].length &lt;= 200</code></li>\n\t<li><code>-99 &lt;= arr[i][j] &lt;= 99</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 38,
+  "dislikes": 6,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Minimum Falling Path Sum\", \"titleSlug\": \"minimum-falling-path-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "qqzzqq",
+      "profileUrl": "/qqzzqq/",
+      "avatarUrl": "https://assets.leetcode.com/users/qqzz123/avatar_1564365042.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minFallingPathSum(vector<vector<int>>& arr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minFallingPathSum(int[][] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minFallingPathSum(self, arr):\n        \"\"\"\n        :type arr: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minFallingPathSum(self, arr: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minFallingPathSum(int** arr, int arrSize, int* arrColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinFallingPathSum(int[][] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} arr\n * @return {number}\n */\nvar minFallingPathSum = function(arr) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} arr\n# @return {Integer}\ndef min_falling_path_sum(arr)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minFallingPathSum(_ arr: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minFallingPathSum(arr [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minFallingPathSum(arr: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minFallingPathSum(arr: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_falling_path_sum(arr: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $arr\n     * @return Integer\n     */\n    function minFallingPathSum($arr) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.4K\", \"totalSubmission\": \"4.3K\", \"totalAcceptedRaw\": 2383, \"totalSubmissionRaw\": 4317, \"acRate\": \"55.2%\"}",
+  "hints": [
+    "Use dynamic programming.",
+    "Let dp[i][j] be the answer for the first i rows such that column j is chosen from row i.",
+    "Use the concept of cumulative array to optimize the complexity of the solution."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,2,3],[4,5,6],[7,8,9]]",
+  "metaData": "{\n  \"name\": \"minFallingPathSum\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

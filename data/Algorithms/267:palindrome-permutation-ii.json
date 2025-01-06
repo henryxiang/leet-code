@@ -1,0 +1,108 @@
+{
+  "questionId": "267",
+  "questionFrontendId": "267",
+  "boundTopicId": null,
+  "title": "Palindrome Permutation II",
+  "titleSlug": "palindrome-permutation-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>s</code>, return all the palindromic permutations (without duplicates) of it. Return an empty list if no palindromic permutation could be form.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>&quot;aabb&quot;</code>\r\n<strong>Output:</strong> <code>[&quot;abba&quot;, &quot;baab&quot;]</code></pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>&quot;abc&quot;</code>\r\n<strong>Output:</strong> <code>[]</code></pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 329,
+  "dislikes": 43,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Next Permutation\", \"titleSlug\": \"next-permutation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Permutations II\", \"titleSlug\": \"permutations-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindrome Permutation\", \"titleSlug\": \"palindrome-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> generatePalindromes(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> generatePalindromes(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def generatePalindromes(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def generatePalindromes(self, s: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** generatePalindromes(char * s, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> GeneratePalindromes(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar generatePalindromes = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String[]}\ndef generate_palindromes(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func generatePalindromes(_ s: String) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func generatePalindromes(s string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def generatePalindromes(s: String): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun generatePalindromes(s: String): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn generate_palindromes(s: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String[]\n     */\n    function generatePalindromes($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"31.5K\", \"totalSubmission\": \"90.1K\", \"totalAcceptedRaw\": 31484, \"totalSubmissionRaw\": 90073, \"acRate\": \"35.0%\"}",
+  "hints": [
+    "If a palindromic permutation exists, we just need to generate the first half of the string.",
+    "To generate all distinct permutations of a (half of) string, use a similar approach from: <a href=\"/problems/permutations-ii\">Permutations II</a> or <a href=\"/problems/next-permutation\">Next Permutation</a>."
+  ],
+  "solution": {
+    "id": "167",
+    "canSeeDetail": true,
+    "url": "/articles/palindrome-permutation-ii/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\nThe simplest solution is generate every possible permutation of the given string $$s$$ and check if the generated permutation is a palindrome. After this, the palindromic permuations can be added to a $$set$$ in order to eliminate the duplicates. At the end, we can return an array comprised of the elements of this $$set$$ as the resultant array.\n\nLet's look at the way these permutations are generated. We make use of a recursive function `permute` which  takes the index of the current element $$current_index$$ as one of the arguments. Then, it swaps the current element with every other element in the array, lying towards its right, so as to generate a new ordering of the array elements. After the swapping has been done, it makes another call to `permute` but this time with the index of the next element in the array. While returning back, we reverse the swapping done in the current function call. Thus, when we reach the end of the array, a new ordering of the array's elements is generated.\n\nThe animation below depicts the ways the permutations are generated.\n\n!?!../Documents/561_Array.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/6Ryph5jp/shared\" frameBorder=\"0\" name=\"6Ryph5jp\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O((n+1)!)$$. A total of $$n!$$ permutations are possible. For every permutation generated, we need to check if it is a palindrome, each of which requires $$O(n)$$ time.\n\n* Space complexity : $$O(n)$$. The depth of the recursion tree can go upto $$n$$.\n\n---\n#### Approach #2 Backtracking [Accepted]\n\n**Algorithm**\n\nIt might be possible that no palindromic permutation could be possible for the given string $$s$$. Thus, it is useless to generate the permutations in such a case. Taking this idea, firstly we check if a palindromic permutation is possible for $$s$$. If yes, then only we proceed further with generating the permutations. To check this, we make use of a hashmap $$map$$ which stores the number of occurences of each character(out of 128 ASCII characters possible). If the number of characters with odd number of occurences exceeds 1, it indicates that no palindromic permutation is possible for $$s$$. To look at this checking process in detail, look at Approach 4 of the [article](https://leetcode.com/articles/palindrome-permutation) for Palindrome Permutation.\n\nOnce we are sure that a palindromic permutation is possible for $$s$$, we go for the generation of the required permutations. But, instead of wildly generating all the permutations, we can include some smartness in the generation of permutations i.e. we can generate only those permutations which are already palindromes.\n\nOne idea to to do so is to generate only the first half of the palindromic string and to append its reverse string to itself to generate the full length palindromic string.\n\nBased on this idea, by making use of the number of occurences of the characters in $$s$$ stored in $$map$$, we create a string $$st$$  which contains all the characters of $$s$$ but with the number of occurences of these characters in $$st$$ reduced to half their original number of occurences in $$s$$.\n\nThus, now we can generate all the permutations of this string $$st$$ and append the reverse of this permuted string to itself to create the palindromic permutations of $$s$$.\n\nIn case of a string $$s$$ with odd length, whose palindromic permutations are possible, one of the characters in $$s$$ must be occuring an odd number of times. We keep a track of this character, $$ch$$, and it is kept separte from the string $$st$$. We again generate the permutations for $$st$$ similarly and append the reverse of the generated permutation to itself, but we also place the character $$ch$$ at the middle of the generated string. \n\nIn this way, only the required palindromic permutations will be generated. Even if we go with the above idea, a lot of duplicate strings will be generated.\n\nIn order to avoid generating duplicate palindromic permutations in the first place itself, as much as possible, we can make use of this idea. As discussed in the last approach, we swap the current element with all the elements lying towards its right to generate the permutations. Before swapping, we can check if the elements being swapped are equal. If so, the permutations generated even after swapping the two will be duplicates(redundant). Thus, we need not proceed further in such a case.\n\nSee this animation for a clearer understanding.\n\n!?!../Documents/267_Palindrome_Permutation_II.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/Nfi5WWm2/shared\" frameBorder=\"0\" name=\"Nfi5WWm2\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big((\\frac{n}{2}+1)!\\big)$$. Atmost $$\\frac{n}{2}!$$ permutations need to be generated in the worst case. Further, for each permutation generated, `string.reverse()` function will take $$n/4$$ time.\n\n* Space complexity : $$O(n)$$. The depth of recursion tree can go upto $$n/2$$ in the worst case.\n\n---\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "162",
+      "count": 14,
+      "average": 4.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"aabb\"",
+  "metaData": "{\r\n  \"name\": \"generatePalindromes\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

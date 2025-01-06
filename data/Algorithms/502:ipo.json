@@ -1,0 +1,115 @@
+{
+  "questionId": "502",
+  "questionFrontendId": "502",
+  "boundTopicId": null,
+  "title": "IPO",
+  "titleSlug": "ipo",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nSuppose LeetCode will start its IPO soon. In order to sell a good price of its shares to Venture Capital, LeetCode would like to work on some projects to increase its capital before the IPO. Since it has limited resources, it can only finish at most <b>k</b> distinct projects before the IPO. Help LeetCode design the best way to maximize its total capital after finishing at most <b>k</b> distinct projects. \r\n</p>\r\n\r\n<p>\r\nYou are given several projects. For each project <b>i</b>, it has a pure profit <b>P<sub>i</sub></b> and a minimum capital of <b>C<sub>i</sub></b> is needed to start the corresponding project. Initially, you have <b>W</b> capital. When you finish a project, you will obtain its pure profit and the profit will be added to your total capital.\r\n</p>\r\n\r\n<p>\r\nTo sum up, pick a list of at most <b>k</b> distinct projects from given projects to maximize your final capital, and output your final maximized capital.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> k=2, W=0, Profits=[1,2,3], Capital=[0,1,1].\r\n\r\n<b>Output:</b> 4\r\n\r\n<b>Explanation:</b> Since your initial capital is 0, you can only start the project indexed 0.\r\n             After finishing it you will obtain profit 1 and your capital becomes 1.\r\n             With capital 1, you can either start the project indexed 1 or the project indexed 2.\r\n             Since you can choose at most 2 projects, you need to finish the project indexed 2 to get the maximum capital.\r\n             Therefore, output the final maximized capital, which is 0 + 1 + 3 = 4.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>You may assume all numbers in the input are non-negative integers.</li>\r\n<li>The length of Profits array and Capital array will not exceed 50,000.</li>\r\n<li>The answer is guaranteed to fit in a 32-bit signed integer.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 250,
+  "dislikes": 29,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Heap",
+      "slug": "heap"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findMaximizedCapital(int k, int W, vector<int>& Profits, vector<int>& Capital) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findMaximizedCapital(int k, int W, int[] Profits, int[] Capital) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findMaximizedCapital(self, k, W, Profits, Capital):\n        \"\"\"\n        :type k: int\n        :type W: int\n        :type Profits: List[int]\n        :type Capital: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findMaximizedCapital(self, k: int, W: int, Profits: List[int], Capital: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findMaximizedCapital(int k, int W, int* Profits, int ProfitsSize, int* Capital, int CapitalSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindMaximizedCapital(int k, int W, int[] Profits, int[] Capital) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} k\n * @param {number} W\n * @param {number[]} Profits\n * @param {number[]} Capital\n * @return {number}\n */\nvar findMaximizedCapital = function(k, W, Profits, Capital) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} k\n# @param {Integer} w\n# @param {Integer[]} profits\n# @param {Integer[]} capital\n# @return {Integer}\ndef find_maximized_capital(k, w, profits, capital)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findMaximizedCapital(_ k: Int, _ W: Int, _ Profits: [Int], _ Capital: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findMaximizedCapital(k int, W int, Profits []int, Capital []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findMaximizedCapital(k: Int, W: Int, Profits: Array[Int], Capital: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findMaximizedCapital(k: Int, W: Int, Profits: IntArray, Capital: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_maximized_capital(k: i32, w: i32, profits: Vec<i32>, capital: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $k\n     * @param Integer $W\n     * @param Integer[] $Profits\n     * @param Integer[] $Capital\n     * @return Integer\n     */\n    function findMaximizedCapital($k, $W, $Profits, $Capital) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.2K\", \"totalSubmission\": \"36.5K\", \"totalAcceptedRaw\": 14172, \"totalSubmissionRaw\": 36549, \"acRate\": \"38.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "739",
+    "canSeeDetail": true,
+    "url": "/articles/ipo/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Approach 1: Greedy with Heap\r\n\r\n**Intuition**\r\n\r\nThis is a greedy problem, and the only hard moment here is that capital \r\nis changing and so the list of available projects.  \r\n\r\n![fig](../Figures/502/user.png)\r\n\r\nThat could be solved by using two data structures: \r\n\r\n- `projects` to track all the projects which are not realised yet.\r\n\r\n- `available` to track projects available with the current capital. \r\n\r\n![pic](../Figures/502/available.png)\r\n\r\n**Algorithm**\r\n\r\n- To speed up, first check if here is a situation when all the projects are\r\navailable with the initial capital `W >= max(Capital)`. \r\nIf so, return the sum of [kth largest elements](https://leetcode.com/articles/kth-largest-element-in-an-array/) \r\nin `Profits`.\r\n\r\n- Build structure `projects` which \r\n\r\n    - contains an information about \r\n    capital and profit from each project, \r\n\r\n    - is sorted by capitals, and\r\n\r\n    - provides pop operation to remove already taken projects. \r\n    \r\n    - That could be min heap in Java and array of sets in Python. \r\n\r\n- Iterate over k to choose k projects. At each step\r\n \r\n    - Update a list of projects available with the current capital.\r\n    One could choose max heap as a structure for available projects to\r\n    simplify the peek of the most profitable one on the next step.\r\n    \r\n    - If there are any, choose the most profitable one, update `W` and proceed further.\r\n    \r\n    - Break, if the capital isn't large enough to start any project. \r\n    \r\n- Return `W`.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/qFF5nJHG/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"qFF5nJHG\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N \\log k)$$ in the best case when all projects are \r\navailable with the initial capital. \r\nOtherwise, one needs $$\\mathcal{O}(N \\log N)$$ time to create and sort \r\nprojects, not more than $$\\mathcal{O}(k N \\log N)$$ to update the available projects, and \r\n$$\\mathcal{O}(k \\log N)$$ to compute the capital. \r\nHence, the overall time complexity is \r\n$$\\mathcal{O}(N \\log N + k N \\log N + k \\log N)$$, that for $$k < N$$ would result\r\nin $$\\mathcal{O}(k N \\log N)$$.\r\n* Space complexity : $$\\mathcal{O}(N)$$.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Greedy \r\n\r\n**Intuition**\r\n\r\nTime performance $$\\mathcal{O}(k N \\log N)$$ is not the optimal one for this\r\nproblem.\r\n\r\nOne could notice that $$\\log N$$ here is because of pop and push \r\noperations with the heap, and heap is needed only to track the \r\navailable projects and discard the ones which are already done.\r\n\r\n> The standard idea to discard some array values from consideration\r\nin constant time is to replace them by a marked values.\r\nHere one could set the capital to start as infinity for \r\nthe projects which are already done.  \r\n\r\n![fic](../Figures/502/done.png)\r\n\r\nThat would reduce the time complexity from $$\\mathcal{O}(k N \\log N)$$\r\nto $$\\mathcal{O}(k N)$$. \r\n \r\n**Algorithm**\r\n\r\n- To speed up, first check if here is a situation when all the projects are\r\navailable with the initial capital `W >= max(Capital)`. \r\nIf so, return the sum of [kth largest elements](https://leetcode.com/articles/kth-largest-element-in-an-array/) \r\nin `Profits`. \r\n\r\n- Iterate over k to choose k projects. At each step\r\n \r\n    - Choose the most profitable project.\r\n    For that, iterate over all N projects and between the ones\r\n    with `W >= Capital[j]`, choose the project with max `Profits[j]`.\r\n    \r\n    - Break, if the capital isn't large enough to start any project.\r\n    \r\n    - Update `W` to add the profit from the chosen project \r\n    `W += Profits[idx]` and then discard this project from the \r\n    further consideration `Capital[j] = Integer.MAX_VALUE`.\r\n    \r\n- Return `W`.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/beqnZeoq/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"beqnZeoq\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N \\log k)$$ in the best case when all projects are \r\navailable with the initial capital. $$\\mathcal{O}(\\min(k, N) N)$$ otherwise.\r\n* Space complexity : If all projects are available with the initial capital,\r\nthen $$\\mathcal{O}(k)$$ in Java and $$\\mathcal{O}(1)$$ in Python. Otherwise,\r\nthat's a constant space solution $$\\mathcal{O}(1)$$.\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "724",
+      "count": 2,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "2\n0\n[1,2,3]\n[0,1,1]",
+  "metaData": "{\r\n  \"name\": \"findMaximizedCapital\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }, \r\n    {\r\n      \"name\": \"W\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"Profits\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"Capital\",\r\n      \"type\": \"integer[]\"    \r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

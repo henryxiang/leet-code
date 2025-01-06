@@ -1,0 +1,111 @@
+{
+  "questionId": "667",
+  "questionFrontendId": "667",
+  "boundTopicId": null,
+  "title": "Beautiful Arrangement II",
+  "titleSlug": "beautiful-arrangement-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven two integers <code>n</code> and <code>k</code>, you need to construct a list which contains <code>n</code> different positive integers ranging from <code>1</code> to <code>n</code> and obeys the following requirement: <br/>\r\n\r\nSuppose this list is [a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ... , a<sub>n</sub>], then the list [|a<sub>1</sub> - a<sub>2</sub>|, |a<sub>2</sub> - a<sub>3</sub>|, |a<sub>3</sub> - a<sub>4</sub>|, ... , |a<sub>n-1</sub> - a<sub>n</sub>|] has exactly <code>k</code> distinct integers.\r\n</p>\r\n\r\n<p>\r\nIf there are multiple answers, print any of them.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br/>\r\n<pre>\r\n<b>Input:</b> n = 3, k = 1\r\n<b>Output:</b> [1, 2, 3]\r\n<b>Explanation:</b> The [1, 2, 3] has three different positive integers ranging from 1 to 3, and the [1, 1] has exactly 1 distinct integer: 1.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> n = 3, k = 2\r\n<b>Output:</b> [1, 3, 2]\r\n<b>Explanation:</b> The [1, 3, 2] has three different positive integers ranging from 1 to 3, and the [2, 1] has exactly 2 distinct integers: 1 and 2.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The <code>n</code> and <code>k</code> are in the range 1 <= k < n <= 10<sup>4</sup>.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 268,
+  "dislikes": 560,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Beautiful Arrangement\", \"titleSlug\": \"beautiful-arrangement\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> constructArray(int n, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] constructArray(int n, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def constructArray(self, n, k):\n        \"\"\"\n        :type n: int\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def constructArray(self, n: int, k: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* constructArray(int n, int k, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] ConstructArray(int n, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number} k\n * @return {number[]}\n */\nvar constructArray = function(n, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} k\n# @return {Integer[]}\ndef construct_array(n, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func constructArray(_ n: Int, _ k: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func constructArray(n int, k int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def constructArray(n: Int, k: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun constructArray(n: Int, k: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn construct_array(n: i32, k: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $k\n     * @return Integer[]\n     */\n    function constructArray($n, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"20.9K\", \"totalSubmission\": \"39.3K\", \"totalAcceptedRaw\": 20852, \"totalSubmissionRaw\": 39309, \"acRate\": \"53.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "240",
+    "canSeeDetail": true,
+    "url": "/articles/beautiful-arrangement-ii/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1: Brute Force [Time Limit Exceeded]\n\n**Intuition**\n\nFor each permutation of $$\\text{[1, 2, ..., n]}$$, let's look at the set of differences of the adjacent elements.\n\n**Algorithm**\n\nFor each permutation, we find the number of unique differences of adjacent elements.  If it is the desired number, we'll return that permutation.\n\nTo enumerate each permutation without using library functions, we use a recursive algorithm, where `permute` is responsible for permuting the indexes of $$\\text{nums}$$ in the interval $$\\text{[start, nums.length)}$$.\n\n<iframe src=\"https://leetcode.com/playground/JvKeuMXb/shared\" frameBorder=\"0\" name=\"JvKeuMXb\" width=\"100%\" height=\"515\"></iframe>\n**Complexity Analysis**\n\n* Time Complexity: $$O(n!)$$ to generate every permutation in the outer loop, then $$O(n)$$ work to check differences.  In total taking $$O(n* n!)$$ time.\n\n* Space Complexity:  $$O(n)$$.  We use $$\\text{seen}$$ to store whether we've seen the differences, and each generated permutation has a length equal to $$\\text{n}$$.\n\n---\n#### Approach #2: Construction [Accepted]\n\n**Intuition**\n\nWhen $$\\text{k = n-1}$$, a valid construction is $$\\text{[1, n, 2, n-1, 3, n-2, ....]}$$. One way to see this is, we need to have a difference of $$\\text{n-1}$$, which means we need $$\\text{1}$$ and $$\\text{n}$$ adjacent; then, we need a difference of $$\\text{n-2}$$, etc.\n\nAlso, when $$\\text{k = 1}$$, a valid construction is $$\\text{[1, 2, 3, ..., n]}$$. So we have a construction when $$\\text{n-k}$$ is tiny, and when it is large.  This leads to the idea that we can stitch together these two constructions:  we can put $$\\text{[1, 2, ..., n-k-1]}$$ first so that $$\\text{n}$$ is effectively $$\\text{k+1}$$, and then finish the construction with the first $$\\text{\"k = n-1\"}$$ method.\n\nFor example, when $$\\text{n = 6}$$ and $$\\text{k = 3}$$, we will construct the array as $$\\text{[1, 2, 3, 6, 4, 5]}$$.  This consists of two parts: a construction of $$\\text{[1, 2]}$$ and a construction of $$\\text{[1, 4, 2, 3]}$$ where every element had $$\\text{2}$$ added to it (i.e. $$\\text{[3, 6, 4, 5]}$$).\n\n**Algorithm**\n\nAs before, write $$\\text{[1, 2, ..., n-k-1]}$$ first.  The remaining $$\\text{k+1}$$ elements to be written are $$\\text{[n-k, n-k+1, ..., n]}$$, and we'll write them in alternating head and tail order.\n\nWhen we are writing the $$i^{th}$$ element from the remaining $$\\text{k+1}$$, every even $$i$$ is going to be chosen from the head, and will have value $$\\text{n-k + i//2}$$.  Every odd $$i$$ is going to be chosen from the tail, and will have value $$\\text{n - i//2}$$.\n\n<iframe src=\"https://leetcode.com/playground/knXdznYV/shared\" frameBorder=\"0\" name=\"knXdznYV\" width=\"100%\" height=\"275\"></iframe>\n**Complexity Analysis**\n\n* Time Complexity: $$O(n)$$.  We are making a list of size $$\\text{n}$$.\n\n* Space Complexity:  $$O(n)$$.  Our answer has a length equal to $$\\text{n}$$.\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "235",
+      "count": 5,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "3\n2",
+  "metaData": "{\r\n  \"name\": \"constructArray\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

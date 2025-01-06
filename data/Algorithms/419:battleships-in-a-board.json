@@ -1,0 +1,94 @@
+{
+  "questionId": "419",
+  "questionFrontendId": "419",
+  "boundTopicId": null,
+  "title": "Battleships in a Board",
+  "titleSlug": "battleships-in-a-board",
+  "categoryTitle": "Algorithms",
+  "content": "Given an 2D board, count how many battleships are in it. The battleships are represented with <code>'X'</code>s, empty slots are represented with <code>'.'</code>s. You may assume the following rules:\r\n\r\n<ul>\r\n<li>You receive a valid board, made of only battleships or empty slots.</li>\r\n<li>Battleships can only be placed horizontally or vertically. In other words, they can only be made of the shape <code>1xN</code> (1 row, N columns) or <code>Nx1</code> (N rows, 1 column), where N can be of any size.</li>\r\n<li>At least one horizontal or vertical cell separates between two battleships - there are no adjacent battleships.</li>\r\n</ul>\r\n\r\n<p><b>Example:</b><br />\r\n<pre>X..X\r\n...X\r\n...X\r\n</pre>\r\nIn the above board there are 2 battleships.\r\n\r\n<p><b>Invalid Example:</b><br />\r\n<pre>...X\r\nXXXX\r\n...X\r\n</pre>\r\nThis is an invalid board that you will not receive - as battleships will always have a cell separating between them.\r\n<p></p>\r\n<p><b>Follow up:</b><br>Could you do it in <b>one-pass</b>, using only <b>O(1) extra memory</b> and <b>without modifying</b> the value of the board?</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 523,
+  "dislikes": 388,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ben65",
+      "profileUrl": "/ben65/",
+      "avatarUrl": "https://www.gravatar.com/avatar/84d8aa1c37972fbdcbc698e402ba799d.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countBattleships(vector<vector<char>>& board) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countBattleships(char[][] board) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countBattleships(self, board):\n        \"\"\"\n        :type board: List[List[str]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countBattleships(self, board: List[List[str]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint countBattleships(char** board, int boardSize, int* boardColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountBattleships(char[][] board) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[][]} board\n * @return {number}\n */\nvar countBattleships = function(board) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[][]} board\n# @return {Integer}\ndef count_battleships(board)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countBattleships(_ board: [[Character]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countBattleships(board [][]byte) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countBattleships(board: Array[Array[Char]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countBattleships(board: Array<CharArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_battleships(board: Vec<Vec<char>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $board\n     * @return Integer\n     */\n    function countBattleships($board) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"74.4K\", \"totalSubmission\": \"110.5K\", \"totalAcceptedRaw\": 74402, \"totalSubmissionRaw\": 110486, \"acRate\": \"67.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[\"X\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"]]",
+  "metaData": "{\r\n  \"name\": \"countBattleships\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"board\",\r\n      \"type\": \"character[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

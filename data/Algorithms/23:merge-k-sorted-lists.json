@@ -1,0 +1,113 @@
+{
+  "questionId": "23",
+  "questionFrontendId": "23",
+  "boundTopicId": null,
+  "title": "Merge k Sorted Lists",
+  "titleSlug": "merge-k-sorted-lists",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Merge <em>k</em> sorted linked lists and return it as one sorted list. Analyze and describe its complexity.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\n[\r\n&nbsp; 1-&gt;4-&gt;5,\r\n&nbsp; 1-&gt;3-&gt;4,\r\n&nbsp; 2-&gt;6\r\n]\r\n<strong>Output:</strong> 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 3382,
+  "dislikes": 221,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Merge Two Sorted Lists\", \"titleSlug\": \"merge-two-sorted-lists\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Ugly Number II\", \"titleSlug\": \"ugly-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Heap",
+      "slug": "heap"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 36}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 35}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 11}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cruise Automation\", \"slug\": \"cruise-automation\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cohesity\", \"slug\": \"cohesity\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tableau\", \"slug\": \"tableau\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Indeed\", \"slug\": \"indeed\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"IXL\", \"slug\": \"ixl\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Box\", \"slug\": \"box\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Audible\", \"slug\": \"audible\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode(int x) : val(x), next(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode* mergeKLists(vector<ListNode*>& lists) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public ListNode mergeKLists(ListNode[] lists) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for singly-linked list.\n# class ListNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution(object):\n    def mergeKLists(self, lists):\n        \"\"\"\n        :type lists: List[ListNode]\n        :rtype: ListNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution:\n    def mergeKLists(self, lists: List[ListNode]) -> ListNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     struct ListNode *next;\n * };\n */\n\n\nstruct ListNode* mergeKLists(struct ListNode** lists, int listsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public ListNode MergeKLists(ListNode[] lists) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for singly-linked list.\n * function ListNode(val) {\n *     this.val = val;\n *     this.next = null;\n * }\n */\n/**\n * @param {ListNode[]} lists\n * @return {ListNode}\n */\nvar mergeKLists = function(lists) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for singly-linked list.\n# class ListNode\n#     attr_accessor :val, :next\n#     def initialize(val)\n#         @val = val\n#         @next = nil\n#     end\n# end\n\n# @param {ListNode[]} lists\n# @return {ListNode}\ndef merge_k_lists(lists)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public var val: Int\n *     public var next: ListNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.next = nil\n *     }\n * }\n */\nclass Solution {\n    func mergeKLists(_ lists: [ListNode?]) -> ListNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc mergeKLists(lists []*ListNode) *ListNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for singly-linked list.\n * class ListNode(var _x: Int = 0) {\n *   var next: ListNode = null\n *   var x: Int = _x\n * }\n */\nobject Solution {\n    def mergeKLists(lists: Array[ListNode]): ListNode = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var li = ListNode(5)\n * var v = li.`val`\n * Definition for singly-linked list.\n * class ListNode(var `val`: Int) {\n *     var next: ListNode? = null\n * }\n */\nclass Solution {\n    fun mergeKLists(lists: Array<ListNode?>): ListNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for singly-linked list.\n// #[derive(PartialEq, Eq, Clone, Debug)]\n// pub struct ListNode {\n//   pub val: i32,\n//   pub next: Option<Box<ListNode>>\n// }\n// \n// impl ListNode {\n//   #[inline]\n//   fn new(val: i32) -> Self {\n//     ListNode {\n//       next: None,\n//       val\n//     }\n//   }\n// }\nimpl Solution {\n    pub fn merge_k_lists(lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a singly-linked list.\n * class ListNode {\n *     public $val = 0;\n *     public $next = null;\n *     function __construct($val) { $this->val = $val; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param ListNode[] $lists\n     * @return ListNode\n     */\n    function mergeKLists($lists) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"510.9K\", \"totalSubmission\": \"1.4M\", \"totalAcceptedRaw\": 510895, \"totalSubmissionRaw\": 1366620, \"acRate\": \"37.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "237",
+    "canSeeDetail": true,
+    "url": "/articles/merge-k-sorted-list/",
+    "content": "[TOC]\n## Solution\n\n---\n#### Approach 1: Brute Force\n\n**Intuition & Algorithm**\n\n- Traverse all the linked lists and collect the values of the nodes into an array.\n- Sort and iterate over this array to get the proper value of nodes.\n- Create a new sorted linked list and extend it with the new nodes.\n\nAs for sorting, you can refer [here](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html) for more about sorting algorithms.\n\n<iframe src=\"https://leetcode.com/playground/kCxLKUfQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"kCxLKUfQ\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(N\\log N)$$ where $$N$$ is the total number of nodes.\n    - Collecting all the values costs $$O(N)$$ time.\n    - A stable sorting algorithm costs $$O(N\\log N)$$ time.\n    - Iterating for creating the linked list costs $$O(N)$$ time.\n\n\n* Space complexity : $$O(N)$$.\n    - Sorting cost $$O(N)$$ space (depends on the algorithm you choose).\n    - Creating a new linked list costs $$O(N)$$ space.\n<br />\n<br />\n---\n\n#### Approach 2: Compare one by one\n\n**Algorithm**\n\n- Compare every $$\\text{k}$$ nodes (head of every linked list) and get the node with the smallest value.\n- Extend the final sorted linked list with the selected nodes.\n\n!?!../Documents/23_Merge_lists.json:1000,563!?!\n\n**Complexity Analysis**\n\n* Time complexity : $$O(kN)$$ where $$\\text{k}$$ is the number of linked lists.\n    - Almost every selection of node in final linked costs $$O(k)$$ ($$\\text{k-1}$$ times comparison).\n    - There are $$N$$ nodes in the final linked list.\n\n\n* Space complexity :\n    - $$O(n)$$ Creating a new linked list costs $$O(n)$$ space.\n    - $$O(1)$$ It's not hard to apply in-place method - connect selected nodes instead of creating new nodes to fill the new linked list.\n<br />\n<br />\n---\n#### Approach 3: Optimize Approach 2 by Priority Queue\n\n**Algorithm**\n\nAlmost the same as the one above but optimize the **comparison process** by **priority queue**. You can refer [here](https://en.wikipedia.org/wiki/Priority_queue) for more information about it.\n\n<iframe src=\"https://leetcode.com/playground/wnXfryCD/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"wnXfryCD\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(N\\log k)$$ where $$\\text{k}$$ is the number of linked lists.\n    - The comparison cost will be reduced to $$O(\\log k)$$ for every pop and insertion to priority queue. But finding the node with the smallest value just costs $$O(1)$$ time.\n    - There are $$N$$ nodes in the final linked list.\n\n\n* Space complexity :\n    - $$O(n)$$ Creating a new linked list costs $$O(n)$$ space.\n    - $$O(k)$$ The code above present applies in-place method which cost $$O(1)$$ space. And the priority queue (often implemented with heaps) costs $$O(k)$$ space (it's far less than $$N$$ in most situations).\n<br />\n<br />\n---\n\n#### Approach 4: Merge lists one by one\n\n**Algorithm**\n\nConvert merge $$\\text{k}$$ lists problem to merge 2 lists ($$\\text{k-1}$$) times. Here is the [merge 2 lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) problem page.\n\n\n**Complexity Analysis**\n\n* Time complexity : $$O(kN)$$ where $$\\text{k}$$ is the number of linked lists.\n    - We can merge two sorted linked list in $$O(n)$$ time where $$n$$ is the total number of nodes in two lists.\n    - Sum up the merge process and we can get:  $$O(\\sum_{i=1}^{k-1} (i*(\\frac{N}{k}) + \\frac{N}{k})) = O(kN)$$.\n\n\n* Space complexity : $$O(1)$$\n    - We can merge two sorted linked list in $$O(1)$$ space.\n<br />\n<br />\n---\n\n#### Approach 5: Merge with Divide And Conquer\n\n**Intuition & Algorithm**\n\nThis approach walks alongside the one above but is improved a lot. We don't need to traverse most nodes many times repeatedly\n\n  - Pair up $$\\text{k}$$ lists and merge each pair.\n\n  - After the first pairing, $$\\text{k}$$ lists are merged into $$k/2$$ lists with average $$2N/k$$ length, then $$k/4$$, $$k/8$$ and so on.\n\n  -  Repeat this procedure until we get the final sorted linked list.\n\nThus, we'll traverse almost $$N$$ nodes per pairing and merging, and repeat this procedure about $$\\log_{2}{k}$$  times.\n\n![Divide_and_Conquer](../Figures/23/23_divide_and_conquer_new.png)\n{align = \"center\"}\n\n\n<iframe src=\"https://leetcode.com/playground/8nnKQ4tP/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"8nnKQ4tP\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(N\\log k)$$ where $$\\text{k}$$ is the number of linked lists.\n    - We can merge two sorted linked list in $$O(n)$$ time where $$n$$ is the total number of nodes in two lists.\n    - Sum up the merge process and we can get: $$O\\big(\\sum_{i=1}^{log_{2}{k}}N \\big)= O(N\\log k)$$\n\n\n* Space complexity : $$O(1)$$\n    - We can merge two sorted linked lists in $$O(1)$$ space.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "232",
+      "count": 134,
+      "average": 4.672,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,4,5],[1,3,4],[2,6]]",
+  "metaData": "{\r\n  \"name\": \"mergeKLists\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"lists\",\r\n      \"type\": \"ListNode[]\",\r\n      \"dealloc\": false\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"ListNode\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

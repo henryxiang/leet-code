@@ -1,0 +1,99 @@
+{
+  "questionId": "539",
+  "questionFrontendId": "539",
+  "boundTopicId": null,
+  "title": "Minimum Time Difference",
+  "titleSlug": "minimum-time-difference",
+  "categoryTitle": "Algorithms",
+  "content": "Given a list of 24-hour clock time points in \"Hour:Minutes\" format, find the minimum <b>minutes</b> difference between any two time points in the list. \r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> [\"23:59\",\"00:00\"]\r\n<b>Output:</b> 1\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The number of time points in the given list is at least 2 and won't exceed 20000.</li>\r\n<li>The input time is legal and ranges from 00:00 to 23:59.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 344,
+  "dislikes": 115,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 26}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findMinDifference(vector<string>& timePoints) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findMinDifference(List<String> timePoints) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findMinDifference(self, timePoints):\n        \"\"\"\n        :type timePoints: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findMinDifference(self, timePoints: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findMinDifference(char ** timePoints, int timePointsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindMinDifference(IList<string> timePoints) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} timePoints\n * @return {number}\n */\nvar findMinDifference = function(timePoints) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} time_points\n# @return {Integer}\ndef find_min_difference(time_points)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findMinDifference(_ timePoints: [String]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findMinDifference(timePoints []string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findMinDifference(timePoints: List[String]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findMinDifference(timePoints: List<String>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_min_difference(time_points: Vec<String>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $timePoints\n     * @return Integer\n     */\n    function findMinDifference($timePoints) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"39K\", \"totalSubmission\": \"77.8K\", \"totalAcceptedRaw\": 38986, \"totalSubmissionRaw\": 77778, \"acRate\": \"50.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"23:59\",\"00:00\"]",
+  "metaData": "{\r\n  \"name\": \"findMinDifference\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"timePoints\",\r\n      \"type\": \"list<string>\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

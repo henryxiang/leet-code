@@ -1,0 +1,119 @@
+{
+  "questionId": "999",
+  "questionFrontendId": "959",
+  "boundTopicId": null,
+  "title": "Regions Cut By Slashes",
+  "titleSlug": "regions-cut-by-slashes",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a N x N&nbsp;<code>grid</code> composed of 1 x 1 squares, each 1 x 1 square consists of a <code>/</code>, <code>\\</code>, or blank space.&nbsp; These characters divide the square into contiguous regions.</p>\r\n\r\n<p>(Note that backslash characters are escaped, so a <code>\\</code>&nbsp;is represented as <code>&quot;\\\\&quot;</code>.)</p>\r\n\r\n<p>Return the number of regions.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<ol>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong><span id=\"example-input-1-1\">[\r\n&nbsp; &quot; /&quot;,\r\n&nbsp; &quot;/ &quot;\r\n]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\r\n<strong>Explanation: </strong>The 2x2 grid is as follows:\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/15/1.png\" style=\"width: 82px; height: 82px;\" />\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong><span id=\"example-input-2-1\">[\r\n&nbsp; &quot; /&quot;,\r\n&nbsp; &quot;  &quot;\r\n]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">1</span>\r\n<strong>Explanation: </strong>The 2x2 grid is as follows:\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/15/2.png\" style=\"width: 82px; height: 82px;\" />\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong><span id=\"example-input-3-1\">[\r\n&nbsp; &quot;\\\\/&quot;,\r\n&nbsp; &quot;/\\\\&quot;\r\n]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">4</span>\r\n<strong>Explanation: </strong>(Recall that because \\ characters are escaped, &quot;\\\\/&quot; refers to \\/, and &quot;/\\\\&quot; refers to /\\.)\r\nThe 2x2 grid is as follows:\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/15/3.png\" style=\"width: 82px; height: 82px;\" />\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong><span id=\"example-input-4-1\">[\r\n&nbsp; &quot;/\\\\&quot;,\r\n&nbsp; &quot;\\\\/&quot;\r\n]</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">5</span>\r\n<strong>Explanation: </strong>(Recall that because \\ characters are escaped, &quot;/\\\\&quot; refers to /\\, and &quot;\\\\/&quot; refers to \\/.)\r\nThe 2x2 grid is as follows:\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/15/4.png\" style=\"width: 82px; height: 82px;\" />\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong><span id=\"example-input-5-1\">[\r\n&nbsp; &quot;//&quot;,\r\n&nbsp; &quot;/ &quot;\r\n]</span>\r\n<strong>Output: </strong><span id=\"example-output-5\">3</span>\r\n<strong>Explanation: </strong>The 2x2 grid is as follows:\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/15/5.png\" style=\"width: 82px; height: 82px;\" />\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= grid.length == grid[0].length &lt;= 30</code></li>\r\n\t<li><code>grid[i][j]</code> is either <code>&#39;/&#39;</code>, <code>&#39;\\&#39;</code>, or <code>&#39; &#39;</code>.</li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 480,
+  "dislikes": 96,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int regionsBySlashes(vector<string>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int regionsBySlashes(String[] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def regionsBySlashes(self, grid):\n        \"\"\"\n        :type grid: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def regionsBySlashes(self, grid: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint regionsBySlashes(char ** grid, int gridSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int RegionsBySlashes(string[] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} grid\n * @return {number}\n */\nvar regionsBySlashes = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} grid\n# @return {Integer}\ndef regions_by_slashes(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func regionsBySlashes(_ grid: [String]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func regionsBySlashes(grid []string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def regionsBySlashes(grid: Array[String]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun regionsBySlashes(grid: Array<String>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn regions_by_slashes(grid: Vec<String>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $grid\n     * @return Integer\n     */\n    function regionsBySlashes($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12K\", \"totalSubmission\": \"18.6K\", \"totalAcceptedRaw\": 11957, \"totalSubmissionRaw\": 18610, \"acRate\": \"64.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "640",
+    "canSeeDetail": true,
+    "url": "/articles/regions-cut-by-slashes/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Union-Find\n\n**Intuition**\n\nTo find the number of components in a graph, we can use either depth-first search or union find.  The main difficulty with this problem is in specifying the graph.\n\nOne \"brute force\" way to specify the graph is to associate each grid square with 4 nodes (north, south, west, and east), representing 4 triangles inside the square if it were to have both slashes.  Then, we can connect all 4 nodes if the grid square is `\" \"`, and connect two pairs if the grid square is `\"/\"` or `\"\\\"`.  Finally, we can connect all neighboring nodes (for example, the east node of the square at `grid[0][0]` connects with the west node of the square at `grid[0][1]`).\n\nThis is the most straightforward approach, but there are other approaches that use less nodes to represent the underlying information.\n\n**Algorithm**\n\nCreate `4*N*N` nodes, one for each grid square, and connect them as described above.  After, we use a union find structure to find the number of connected components.\n\nWe will skip the explanation of how a DSU structure is implemented.  Please refer to [https://leetcode.com/problems/redundant-connection/solution/](https://leetcode.com/problems/redundant-connection/solution/) for a tutorial on DSU.\n\n<iframe src=\"https://leetcode.com/playground/jdYrnNjc/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"jdYrnNjc\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N * N * \\alpha(N))$$, where $$N$$ is the length of the grid, and $$\\alpha$$ is the Inverse-Ackermann function (if we were to use union-find by rank.)\n\n* Space Complexity:  $$O(N * N)$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "626",
+      "count": 24,
+      "average": 3.625,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\" /\",\"/ \"]",
+  "metaData": "{\r\n  \"name\": \"regionsBySlashes\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

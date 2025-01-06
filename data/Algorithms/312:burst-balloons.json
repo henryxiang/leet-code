@@ -1,0 +1,115 @@
+{
+  "questionId": "312",
+  "questionFrontendId": "312",
+  "boundTopicId": null,
+  "title": "Burst Balloons",
+  "titleSlug": "burst-balloons",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given <code>n</code> balloons, indexed from <code>0</code> to <code>n-1</code>. Each balloon is painted with a number on it represented by array <code>nums</code>. You are asked to burst all the balloons. If the you burst balloon <code>i</code> you will get <code>nums[left] * nums[i] * nums[right]</code> coins. Here <code>left</code> and <code>right</code> are adjacent indices of <code>i</code>. After the burst, the <code>left</code> and <code>right</code> then becomes adjacent.</p>\r\n\r\n<p>Find the maximum coins you can collect by bursting the balloons wisely.</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ul>\r\n\t<li>You may imagine <code>nums[-1] = nums[n] = 1</code>. They are not real therefore you can not burst them.</li>\r\n\t<li>0 &le; <code>n</code> &le; 500, 0 &le; <code>nums[i]</code> &le; 100</li>\r\n</ul>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> <code>[3,1,5,8]</code>\r\n<b>Output:</b> <code>167 \r\n<strong>Explanation: </strong></code>nums = [3,1,5,8] --&gt; [3,5,8] --&gt;   [3,8]   --&gt;  [8]  --&gt; []\r\n&nbsp;            coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167\r\n</pre>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 1799,
+  "dislikes": 52,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Minimum Cost to Merge Stones\", \"titleSlug\": \"minimum-cost-to-merge-stones\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "dietpepsi",
+      "profileUrl": "/dietpepsi/",
+      "avatarUrl": "https://www.gravatar.com/avatar/5db7cd8986dd0171d1682b730ce85555.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxCoins(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxCoins(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxCoins(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxCoins(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxCoins(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxCoins(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxCoins = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef max_coins(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxCoins(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxCoins(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxCoins(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxCoins(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_coins(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function maxCoins($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"79.2K\", \"totalSubmission\": \"160.3K\", \"totalAcceptedRaw\": 79178, \"totalSubmissionRaw\": 160312, \"acRate\": \"49.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "740",
+    "canSeeDetail": true,
+    "url": "/articles/burst-balloons/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Intuition\n\nAt first glance, the obvious solution is to find every possible order in which balloons can be burst. Since at each step we burst one balloon, the number of possibilities we get at each step are $$N \\times (N - 1) \\times (N - 2) \\times ... \\times 1$$, giving us a time complexity of $$O(N!)$$. We can make a small improvement to this by caching the set of existing balloons. Since each balloon can be burst or not burst, and we are incurring extra time creating a set of balloons each time, we are still looking at a solution worse than $$O(2^N)$$.\n\nThere are two techniques we will use to optimize our solution:\n\n1. Divide and Conquer\n\n    * After bursting balloon `i`, we can divide the problem into the balloons to the left of `i` (`nums[0:i]`) and to the right of `i` (`nums[i+1:]`).\n\n    * To find the optimal solution we check every optimal solution after bursting each balloon.\n\n    * Since we will find the optimal solution for every range in nums, and we burst every balloon in every range to find the optimal solution, we have an $$O(N^2) * O(N) = O(N^3)$$ solution\n\n    * However, if we try to divide our problem in the order where we burst balloons first, we run into an issue. As balloons burst, the adjacency of other balloons changes. We are unable to keep track of what balloons the endpoints of our intervals are adjacent to. This is where the second technique comes in.\n\n2. Working Backwards\n\n    * Above, we start with all the balloons and try to burst them. This causes adjacency issues. Instead, we can start with no balloons and add them in reverse order of how they were popped. Each time we add a balloon, we can divide and conquer on its left and right sides, letting us add new balloons in between.\n\n    * This gets rid of adjacency issues. For the left interval, we know that the left boundary stays the same, and we know that our right boundary is the element we just added. The opposite goes for the right interval. We compute the coins added from adding balloon `i` with `nums[left] * nums[i] * nums[right]`.\n\n\n\n\n---\n#### Approach 1: Dynamic Programming (Top-Down)\n\n**Algorithm**\n\nTo deal with the edges of our array we can reframe the problem into only bursting the non-edge balloons and adding ones on the sides.\n\nWe define a function `dp` to return the maximum number of coins obtainable on the open interval (left, right). Our base case is if there are no integers on our interval (`left + 1 == right`), and therefore there are no more balloons that can be added. We add each balloon on the interval, divide and conquer the left and right sides, and find the maximum score.\n\nThe best score after adding the `i`th balloon is given by:\n\n    nums[left] * nums[i] * nums[right] + dp(left, i) + dp(i, right)\n\n`nums[left] * nums[i] * nums[right]` is the number of coins obtained from adding the `i`th balloon, and `dp(left, i) + dp(i, right)` are the maximum number of coins obtained from solving the left and right sides of that balloon respectively.\n\nAn illustration of how we divide and conquer the left and right sides:\n\n!?!../Documents/312_burst_balloons.json:960,540!?!\n\n**Implementation**\n<iframe src=\"https://leetcode.com/playground/BRBTaZWZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"BRBTaZWZ\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(N^3)$$. We determine the maximum score from all (left, right) pairs. Determining the maximum score requires adding all balloons in (left, right), giving $$O(N^2) * O(N) = O(N^3)$$\n\n* Space complexity : $$O(N^2)$$ to store our cache\n\n\n---\n#### Approach 2: Dynamic Programming (Bottom-Up)\n\n**Algorithm**\n\nInstead of caching our results in recursive calls we can build our way up to `dp(0, len(nums)-1)` in a bottom-up manner.\n\n**Implementation**\n<iframe src=\"https://leetcode.com/playground/hMZQ595V/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"hMZQ595V\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(N^3)$$. There are $$N^2$$ (left, right) pairs and it takes `O(N)` to find the value of one of them.\n\n* Space complexity : $$O(N^2)$$. This is the size of `dp`.\n\n---\n\nAnalysis written by @[alwinpeng](https://leetcode.com/alwinpeng/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "725",
+      "count": 21,
+      "average": 4.952,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,1,5,8]",
+  "metaData": "{\r\n  \"name\": \"maxCoins\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

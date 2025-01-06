@@ -1,0 +1,100 @@
+{
+  "questionId": "1307",
+  "questionFrontendId": "1201",
+  "boundTopicId": null,
+  "title": "Ugly Number III",
+  "titleSlug": "ugly-number-iii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Write a program to find the&nbsp;<code>n</code>-th ugly number.</p>\n\n<p>Ugly numbers are<strong>&nbsp;positive integers</strong>&nbsp;which are divisible by&nbsp;<code>a</code>&nbsp;<strong>or</strong>&nbsp;<code>b</code>&nbsp;<strong>or</strong> <code>c</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3, a = 2, b = 3, c = 5\n<strong>Output:</strong> 4\n<strong>Explanation: </strong>The ugly numbers are 2, 3, 4, 5, 6, 8, 9, 10... The 3rd is 4.</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 4, a = 2, b = 3, c = 4\n<strong>Output:</strong> 6\n<strong>Explanation: </strong>The ugly numbers are 2, 3, 4, 6, 8, 9, 10, 12... The 4th is 6.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 5, a = 2, b = 11, c = 13\n<strong>Output:</strong> 10\n<strong>Explanation: </strong>The ugly numbers are 2, 4, 6, 8, 10, 11, 12, 13... The 5th is 10.\n</pre>\n\n<p><strong>Example 4:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 1000000000, a = 2, b = 217983653, c = 336916467\n<strong>Output:</strong> 1999999984\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n, a, b, c &lt;= 10^9</code></li>\n\t<li><code>1 &lt;= a * b * c &lt;= 10^18</code></li>\n\t<li>It&#39;s guaranteed that the result will be in range&nbsp;<code>[1,&nbsp;2 * 10^9]</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 119,
+  "dislikes": 142,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Ugly Number II\", \"titleSlug\": \"ugly-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"American Express\", \"slug\": \"american-express\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int nthUglyNumber(int n, int a, int b, int c) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int nthUglyNumber(int n, int a, int b, int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def nthUglyNumber(self, n, a, b, c):\n        \"\"\"\n        :type n: int\n        :type a: int\n        :type b: int\n        :type c: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def nthUglyNumber(self, n: int, a: int, b: int, c: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint nthUglyNumber(int n, int a, int b, int c){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NthUglyNumber(int n, int a, int b, int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number} a\n * @param {number} b\n * @param {number} c\n * @return {number}\n */\nvar nthUglyNumber = function(n, a, b, c) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} a\n# @param {Integer} b\n# @param {Integer} c\n# @return {Integer}\ndef nth_ugly_number(n, a, b, c)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func nthUglyNumber(_ n: Int, _ a: Int, _ b: Int, _ c: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func nthUglyNumber(n int, a int, b int, c int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def nthUglyNumber(n: Int, a: Int, b: Int, c: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun nthUglyNumber(n: Int, a: Int, b: Int, c: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn nth_ugly_number(n: i32, a: i32, b: i32, c: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $a\n     * @param Integer $b\n     * @param Integer $c\n     * @return Integer\n     */\n    function nthUglyNumber($n, $a, $b, $c) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.4K\", \"totalSubmission\": \"21.7K\", \"totalAcceptedRaw\": 5418, \"totalSubmissionRaw\": 21664, \"acRate\": \"25.0%\"}",
+  "hints": [
+    "Write a function f(k) to determine how many ugly numbers smaller than k. As f(k) is non-decreasing, try binary search.",
+    "Find all ugly numbers in [1, LCM(a, b, c)] (LCM is Least Common Multiple). Use inclusion-exclusion principle to expand the result."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "3\n2\n3\n5",
+  "metaData": "{\n  \"name\": \"nthUglyNumber\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"a\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"b\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"c\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

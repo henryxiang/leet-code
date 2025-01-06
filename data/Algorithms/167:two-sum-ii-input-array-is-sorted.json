@@ -1,0 +1,113 @@
+{
+  "questionId": "167",
+  "questionFrontendId": "167",
+  "boundTopicId": null,
+  "title": "Two Sum II - Input array is sorted",
+  "titleSlug": "two-sum-ii-input-array-is-sorted",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers that is already <strong><em>sorted in ascending order</em></strong>, find two numbers such that they add up to a specific target number.</p>\r\n\r\n<p>The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2.</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>Your returned answers (both index1 and index2) are not zero-based.</li>\r\n\t<li>You may assume that each input would have <em>exactly</em> one solution and you may not use the <em>same</em> element twice.</li>\r\n</ul>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> numbers = [2,7,11,15], target = 9\r\n<strong>Output:</strong> [1,2]\r\n<strong>Explanation:</strong> The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1209,
+  "dislikes": 490,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Two Sum\", \"titleSlug\": \"two-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Two Sum IV - Input is a BST\", \"titleSlug\": \"two-sum-iv-input-is-a-bst\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Two Sum Less Than K\", \"titleSlug\": \"two-sum-less-than-k\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Pure Storage\", \"slug\": \"pure-storage\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> twoSum(vector<int>& numbers, int target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] twoSum(int[] numbers, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def twoSum(self, numbers, target):\n        \"\"\"\n        :type numbers: List[int]\n        :type target: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def twoSum(self, numbers: List[int], target: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* twoSum(int* numbers, int numbersSize, int target, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] TwoSum(int[] numbers, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} numbers\n * @param {number} target\n * @return {number[]}\n */\nvar twoSum = function(numbers, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} numbers\n# @param {Integer} target\n# @return {Integer[]}\ndef two_sum(numbers, target)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func twoSum(numbers []int, target int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def twoSum(numbers: Array[Int], target: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun twoSum(numbers: IntArray, target: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn two_sum(numbers: Vec<i32>, target: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $numbers\n     * @param Integer $target\n     * @return Integer[]\n     */\n    function twoSum($numbers, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"322.3K\", \"totalSubmission\": \"618.8K\", \"totalAcceptedRaw\": 322323, \"totalSubmissionRaw\": 618832, \"acRate\": \"52.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "20",
+    "canSeeDetail": true,
+    "url": "/articles/two-sum-ii-input-array-is-sorted/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Two Pointers\n\n**Algorithm**\n\nWe can apply [Two Sum's solutions](https://leetcode.com/articles/two-sum/) directly to get $$O(n^2)$$ time, $$O(1)$$ space using brute force and $$O(n)$$ time, $$O(n)$$ space using hash table. However, both existing solutions do not make use of the property where the input array is sorted. We can do better.\n\nWe use two indexes, initially pointing to the first and last element respectively. Compare the sum of these two elements with target. If the sum is equal to target, we found the exactly only solution. If it is less than target, we increase the smaller index by one. If it is greater than target, we decrease the larger index by one. Move the indexes and repeat the comparison until the solution is found.\n\nLet $$[... , a, b, c, ... , d, e, f, ...]$$ be the input array that is sorted in ascending order and the element $$b$$, $$e$$ be the exactly only solution. Because we are moving the smaller index from left to right, and the larger index from right to left, at some point one of the indexes must reach either one of $$b$$ or $$e$$. Without loss of generality, suppose the smaller index reaches $$b$$ first. At this time, the sum of these two elements must be greater than target. Based on our algorithm, we will keep moving the larger index to its left until we reach the solution.\n\n<iframe src=\"https://leetcode.com/playground/jg27qtb6/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"jg27qtb6\"></iframe>\n\nDo we need to consider if $$numbers[low] + numbers[high]$$ overflows? The answer is no. Even if adding two elements in the array may overflow, because there is exactly one solution, we will reach the solution first.\n\n**Complexity analysis**\n\n* Time complexity : $$O(n)$$.\nEach of the $$n$$ elements is visited at most once, thus the time complexity is $$O(n)$$.\n\n* Space complexity : $$O(1)$$.\nWe only use two indexes, the space complexity is $$O(1)$$.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "18",
+      "count": 30,
+      "average": 4.667,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,7,11,15]\n9",
+  "metaData": "{\r\n  \"name\": \"twoSum\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"numbers\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

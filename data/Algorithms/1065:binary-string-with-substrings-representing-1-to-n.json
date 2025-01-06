@@ -1,0 +1,95 @@
+{
+  "questionId": "1065",
+  "questionFrontendId": "1016",
+  "boundTopicId": null,
+  "title": "Binary String With Substrings Representing 1 To N",
+  "titleSlug": "binary-string-with-substrings-representing-1-to-n",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary string <code>S</code> (a string consisting only of &#39;0&#39; and &#39;1&#39;s) and a positive integer <code>N</code>, return true if and only if for every integer X from 1 to N, the binary representation of X is a substring of S.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>S = <span id=\"example-input-1-1\">&quot;0110&quot;</span>, N = <span id=\"example-input-1-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>S = <span id=\"example-input-2-1\">&quot;0110&quot;</span>, N = <span id=\"example-input-2-2\">4</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">false</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= S.length &lt;= 1000</code></li>\r\n\t<li><code>1 &lt;= N &lt;= 10^9</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 74,
+  "dislikes": 238,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool queryString(string S, int N) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean queryString(String S, int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def queryString(self, S, N):\n        \"\"\"\n        :type S: str\n        :type N: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def queryString(self, S: str, N: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool queryString(char * S, int N){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool QueryString(string S, int N) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @param {number} N\n * @return {boolean}\n */\nvar queryString = function(S, N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @param {Integer} n\r\n# @return {Boolean}\r\ndef query_string(s, n)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func queryString(_ S: String, _ N: Int) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func queryString(S string, N int) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def queryString(S: String, N: Int): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun queryString(S: String, N: Int): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn query_string(s: String, n: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @param Integer $N\n     * @return Boolean\n     */\n    function queryString($S, $N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.8K\", \"totalSubmission\": \"18.3K\", \"totalAcceptedRaw\": 10834, \"totalSubmissionRaw\": 18330, \"acRate\": \"59.1%\"}",
+  "hints": [
+    "We only need to check substrings of length at most 20, because 10^6 has 20 bits."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"0110\"\n3",
+  "metaData": "{\r\n  \"name\": \"queryString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

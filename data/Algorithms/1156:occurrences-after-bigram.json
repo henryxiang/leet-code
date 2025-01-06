@@ -1,0 +1,101 @@
+{
+  "questionId": "1156",
+  "questionFrontendId": "1078",
+  "boundTopicId": null,
+  "title": "Occurrences After Bigram",
+  "titleSlug": "occurrences-after-bigram",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given words <code>first</code> and <code>second</code>, consider occurrences in some&nbsp;<code>text</code> of the form &quot;<code>first second third</code>&quot;, where <code>second</code> comes immediately after <code>first</code>, and <code>third</code> comes immediately after <code>second</code>.</p>\r\n\r\n<p>For each such occurrence, add &quot;<code>third</code>&quot; to the answer, and return the answer.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>text = <span id=\"example-input-1-1\">&quot;alice is a good girl she is a good student&quot;</span>, first = <span id=\"example-input-1-2\">&quot;a&quot;</span>, second = <span id=\"example-input-1-3\">&quot;good&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[&quot;girl&quot;,&quot;student&quot;]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>text = <span id=\"example-input-2-1\">&quot;we will we will rock you&quot;</span>, first = <span id=\"example-input-2-2\">&quot;we&quot;</span>, second = <span id=\"example-input-2-3\">&quot;will&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[&quot;we&quot;,&quot;rock&quot;]</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= text.length &lt;= 1000</code></li>\r\n\t<li><code>text</code> consists of space separated words, where each word consists of lowercase English letters.</li>\r\n\t<li><code>1 &lt;= first.length, second.length &lt;= 10</code></li>\r\n\t<li><code>first</code> and <code>second</code> consist of lowercase English letters.</li>\r\n</ol>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 75,
+  "dislikes": 108,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<string> findOcurrences(string text, string first, string second) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String[] findOcurrences(String text, String first, String second) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findOcurrences(self, text, first, second):\n        \"\"\"\n        :type text: str\n        :type first: str\n        :type second: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findOcurrences(self, text: str, first: str, second: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** findOcurrences(char * text, char * first, char * second, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string[] FindOcurrences(string text, string first, string second) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} text\n * @param {string} first\n * @param {string} second\n * @return {string[]}\n */\nvar findOcurrences = function(text, first, second) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} text\r\n# @param {String} first\r\n# @param {String} second\r\n# @return {String[]}\r\ndef find_ocurrences(text, first, second)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func findOcurrences(_ text: String, _ first: String, _ second: String) -> [String] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findOcurrences(text string, first string, second string) []string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def findOcurrences(text: String, first: String, second: String): Array[String] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun findOcurrences(text: String, first: String, second: String): Array<String> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_ocurrences(text: String, first: String, second: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $text\n     * @param String $first\n     * @param String $second\n     * @return String[]\n     */\n    function findOcurrences($text, $first, $second) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"19.1K\", \"totalSubmission\": \"29.5K\", \"totalAcceptedRaw\": 19051, \"totalSubmissionRaw\": 29522, \"acRate\": \"64.5%\"}",
+  "hints": [
+    "Split the string into words, then look at adjacent triples of words."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"alice is a good girl she is a good student\"\n\"a\"\n\"good\"",
+  "metaData": "{\r\n  \"name\": \"findOcurrences\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"text\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"first\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"second\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

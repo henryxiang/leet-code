@@ -1,0 +1,111 @@
+{
+  "questionId": "649",
+  "questionFrontendId": "649",
+  "boundTopicId": null,
+  "title": "Dota2 Senate",
+  "titleSlug": "dota2-senate",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In the world of Dota2, there are two parties: the <code>Radiant</code> and the <code>Dire</code>.</p>\r\n\r\n<p>The Dota2 senate consists of senators coming from two parties. Now the senate wants to make a decision about a change in the Dota2 game. The voting for this change is a round-based procedure. In each round, each senator can exercise <code>one</code> of the two rights:</p>\r\n\r\n<ol>\r\n\t<li><code>Ban one senator&#39;s right</code>:<br />\r\n\tA senator can make another senator lose <b>all his rights</b> in this and all the following rounds.</li>\r\n\t<li><code>Announce the victory</code>:<br />\r\n\tIf this senator found the senators who still have rights to vote are all from <b>the same party</b>, he can announce the victory and make the decision about the change in the game.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Given a string representing each senator&#39;s party belonging. The character &#39;R&#39; and &#39;D&#39; represent the <code>Radiant</code> party and the <code>Dire</code> party respectively. Then if there are <code>n</code> senators, the size of the given string will be <code>n</code>.</p>\r\n\r\n<p>The round-based procedure starts from the first senator to the last senator in the given order. This procedure will last until the end of voting. All the senators who have lost their rights will be skipped during the procedure.</p>\r\n\r\n<p>Suppose every senator is smart enough and will play the best strategy for his own party, you need to predict which party will finally announce the victory and make the change in the Dota2 game. The output should be <code>Radiant</code> or <code>Dire</code>.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;RD&quot;\r\n<b>Output:</b> &quot;Radiant&quot;\r\n<b>Explanation:</b> The first senator comes from Radiant and he can just ban the next senator&#39;s right in the round 1. \r\nAnd the second senator can&#39;t exercise any rights any more since his right has been banned. \r\nAnd in the round 2, the first senator can just announce the victory since he is the only guy in the senate who can vote.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;RDD&quot;\r\n<b>Output:</b> &quot;Dire&quot;\r\n<b>Explanation:</b> \r\nThe first senator comes from Radiant and he can just ban the next senator&#39;s right in the round 1. \r\nAnd the second senator can&#39;t exercise any rights anymore since his right has been banned. \r\nAnd the third senator comes from Dire and he can ban the first senator&#39;s right in the round 1. \r\nAnd in the round 2, the third senator can just announce the victory since he is the only guy in the senate who can vote.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>The length of the given string will in the range [1, 10,000].</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 234,
+  "dislikes": 174,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Teemo Attacking\", \"titleSlug\": \"teemo-attacking\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Valve\", \"slug\": \"valve\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string predictPartyVictory(string senate) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String predictPartyVictory(String senate) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def predictPartyVictory(self, senate):\n        \"\"\"\n        :type senate: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def predictPartyVictory(self, senate: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * predictPartyVictory(char * senate){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string PredictPartyVictory(string senate) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} senate\n * @return {string}\n */\nvar predictPartyVictory = function(senate) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} senate\n# @return {String}\ndef predict_party_victory(senate)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func predictPartyVictory(_ senate: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func predictPartyVictory(senate string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def predictPartyVictory(senate: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun predictPartyVictory(senate: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn predict_party_victory(senate: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $senate\n     * @return String\n     */\n    function predictPartyVictory($senate) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.5K\", \"totalSubmission\": \"27.4K\", \"totalAcceptedRaw\": 10526, \"totalSubmissionRaw\": 27385, \"acRate\": \"38.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "333",
+    "canSeeDetail": true,
+    "url": "/articles/dota2-senate/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Simulation [Accepted]\n\n**Intuition**\n\nA senator performing a ban doesn't need to use it on another senator immediately.  We can wait to see when another team's senator will vote, then use that ban retroactively.\n\n**Algorithm**\n\nPut the senators in an integer queue: `1` for `'Radiant'` and `0` for `'Dire'`.\n\nNow process the queue: if there is a floating ban for that senator, exercise it and continue.  Otherwise, add a floating ban against the other team, and enqueue this senator again.\n\n<iframe src=\"https://leetcode.com/playground/zdvGbwLN/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"zdvGbwLN\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ where $$N$$ is the size of the senate.  Every vote removes one senator from the other team.\n\n* Space Complexity: $$O(N)$$, the space used by our queue.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "328",
+      "count": 12,
+      "average": 2.833,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"RD\"",
+  "metaData": "{\r\n  \"name\": \"predictPartyVictory\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"senate\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

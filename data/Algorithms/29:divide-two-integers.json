@@ -1,0 +1,97 @@
+{
+  "questionId": "29",
+  "questionFrontendId": "29",
+  "boundTopicId": null,
+  "title": "Divide Two Integers",
+  "titleSlug": "divide-two-integers",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two integers <code>dividend</code> and <code>divisor</code>, divide two integers without using multiplication, division and mod operator.</p>\r\n\r\n<p>Return the quotient after dividing <code>dividend</code> by <code>divisor</code>.</p>\r\n\r\n<p>The integer division should truncate toward zero.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> dividend = 10, divisor = 3\r\n<strong>Output:</strong> 3</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> dividend = 7, divisor = -3\r\n<strong>Output:</strong> -2</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>Both dividend and divisor&nbsp;will be&nbsp;32-bit&nbsp;signed integers.</li>\r\n\t<li>The divisor will never be 0.</li>\r\n\t<li>Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [&minus;2<sup>31</sup>, &nbsp;2<sup>31</sup> &minus; 1]. For the purpose of this problem, assume that your function returns 2<sup>31</sup> &minus; 1 when the division result&nbsp;overflows.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 873,
+  "dislikes": 4207,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Riot Games\", \"slug\": \"riot-games\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int divide(int dividend, int divisor) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int divide(int dividend, int divisor) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def divide(self, dividend, divisor):\n        \"\"\"\n        :type dividend: int\n        :type divisor: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def divide(self, dividend: int, divisor: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint divide(int dividend, int divisor){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int Divide(int dividend, int divisor) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} dividend\n * @param {number} divisor\n * @return {number}\n */\nvar divide = function(dividend, divisor) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} dividend\n# @param {Integer} divisor\n# @return {Integer}\ndef divide(dividend, divisor)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func divide(_ dividend: Int, _ divisor: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func divide(dividend int, divisor int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def divide(dividend: Int, divisor: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun divide(dividend: Int, divisor: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn divide(dividend: i32, divisor: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $dividend\n     * @param Integer $divisor\n     * @return Integer\n     */\n    function divide($dividend, $divisor) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"234.1K\", \"totalSubmission\": \"1.4M\", \"totalAcceptedRaw\": 234085, \"totalSubmissionRaw\": 1447397, \"acRate\": \"16.2%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "10\n3",
+  "metaData": "{\r\n  \"name\": \"divide\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"dividend\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"divisor\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

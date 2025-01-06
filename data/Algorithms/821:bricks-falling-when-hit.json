@@ -1,0 +1,111 @@
+{
+  "questionId": "821",
+  "questionFrontendId": "803",
+  "boundTopicId": null,
+  "title": "Bricks Falling When Hit",
+  "titleSlug": "bricks-falling-when-hit",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We have a grid of 1s and 0s; the 1s in a cell represent bricks.&nbsp; A brick will not drop if and only if it is directly connected to the top of the grid, or at least one of its (4-way) adjacent bricks will not drop.</p>\r\n\r\n<p>We will do some erasures&nbsp;sequentially. Each time we want to do the erasure at the location (i, j), the brick (if it exists) on that location will disappear, and then some other bricks may&nbsp;drop because of that&nbsp;erasure.</p>\r\n\r\n<p>Return an array representing the number of bricks that will drop after each erasure in sequence.</p>\r\n\r\n<pre>\r\n<strong>Example 1:</strong>\r\n<strong>Input:</strong> \r\ngrid = [[1,0,0,0],[1,1,1,0]]\r\nhits = [[1,0]]\r\n<strong>Output:</strong> [2]\r\n<strong>Explanation: </strong>\r\nIf we erase the brick at (1, 0), the brick at (1, 1) and (1, 2) will drop. So we should return 2.</pre>\r\n\r\n<pre>\r\n<strong>Example 2:</strong>\r\n<strong>Input:</strong> \r\ngrid = [[1,0,0,0],[1,1,0,0]]\r\nhits = [[1,1],[1,0]]\r\n<strong>Output:</strong> [0,0]\r\n<strong>Explanation: </strong>\r\nWhen we erase the brick at (1, 0), the brick at (1, 1) has already disappeared due to the last move. So each erasure will cause no bricks dropping.  Note that the erased brick (1, 0) will not be counted as a dropped brick.</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of rows and columns in the grid will be in the range&nbsp;[1, 200].</li>\r\n\t<li>The number of erasures will not exceed the area of the grid.</li>\r\n\t<li>It is guaranteed that each erasure will be different from any other erasure, and located inside the grid.</li>\r\n\t<li>An erasure may refer to a location with no brick - if it does, no bricks drop.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 353,
+  "dislikes": 112,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> hitBricks(vector<vector<int>>& grid, vector<vector<int>>& hits) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] hitBricks(int[][] grid, int[][] hits) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def hitBricks(self, grid, hits):\n        \"\"\"\n        :type grid: List[List[int]]\n        :type hits: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def hitBricks(self, grid: List[List[int]], hits: List[List[int]]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* hitBricks(int** grid, int gridSize, int* gridColSize, int** hits, int hitsSize, int* hitsColSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] HitBricks(int[][] grid, int[][] hits) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @param {number[][]} hits\n * @return {number[]}\n */\nvar hitBricks = function(grid, hits) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @param {Integer[][]} hits\n# @return {Integer[]}\ndef hit_bricks(grid, hits)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func hitBricks(_ grid: [[Int]], _ hits: [[Int]]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func hitBricks(grid [][]int, hits [][]int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def hitBricks(grid: Array[Array[Int]], hits: Array[Array[Int]]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun hitBricks(grid: Array<IntArray>, hits: Array<IntArray>): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn hit_bricks(grid: Vec<Vec<i32>>, hits: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @param Integer[][] $hits\n     * @return Integer[]\n     */\n    function hitBricks($grid, $hits) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.6K\", \"totalSubmission\": \"42.6K\", \"totalAcceptedRaw\": 12616, \"totalSubmissionRaw\": 42638, \"acRate\": \"29.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "433",
+    "canSeeDetail": true,
+    "url": "/articles/bricks-falling-when-hit/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Reverse Time and Union-Find [Accepted]\n\n**Intuition**\n\nThe problem is about knowing information about the connected components of a graph as we cut vertices.  In particular, we'll like to know the size of the \"roof\" (component touching the top edge) between each cut.  Here, a cut refers to the erasure of a vertex.\n\nAs we may know, a useful data structure for joining connected components is a disjoint set union structure.  The key idea in this problem is that we can use this structure if we work in reverse: instead of looking at the graph as a series of sequential cuts, we'll look at the graph after all the cuts, and reverse each cut.\n\n**Algorithm**\n\nWe'll modify our typical disjoint-set-union structure to include a `dsu.size` operation, that tells us the size of this component.  The way we do this is whenever we make a component point to a new parent, we'll also send it's size to that parent.\n\nWe'll also include `dsu.top`, which tells us the size of the \"roof\", or the component connected to the top edge.  We use an *ephemeral* \"source\" node with label `R * C` where all nodes on the top edge (with row number `0`) are connected to the source node.\n\nFor more information on DSU, please look at *Approach #2* in the [article here](https://leetcode.com/articles/redundant-connection/).\n\nNext, we'll introduce `A`, the grid after all the cuts have happened, and initialize our disjoint union structure on the graph induced by `A` (nodes are grid squares with a brick; edges between 4-directionally adjacent nodes).\n\nAfter, if we get an cut at `(r, c)` but the original `grid[r][c]` was always `0`, then we couldn't have had a meaningful cut - the number of dropped bricks is `0`.\n\nOtherwise, we'll look at the size of the new roof after adding this brick at `(r, c)`, and compare them to find the number of dropped bricks.\n\nSince we were working in reverse time order, we should reverse our working answer to arrive at our final answer.\n\n<iframe src=\"https://leetcode.com/playground/vKx7cbxE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"vKx7cbxE\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N*Q*\\alpha(N * Q))$$, where $$N = R*C$$ is the number of grid squares, $$Q$$ is the length of `hits`, and $$\\alpha$$ is the *Inverse-Ackermann function*.\n\n* Space Complexity: $$O(N)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "428",
+      "count": 30,
+      "average": 3.8,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,0,0,0],[1,1,1,0]]\n[[1,0]]",
+  "metaData": "{\r\n  \"name\": \"hitBricks\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"hits\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

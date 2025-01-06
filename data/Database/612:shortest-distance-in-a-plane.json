@@ -1,0 +1,68 @@
+{
+  "questionId": "612",
+  "questionFrontendId": "612",
+  "boundTopicId": null,
+  "title": "Shortest Distance in a Plane",
+  "titleSlug": "shortest-distance-in-a-plane",
+  "categoryTitle": "Database",
+  "content": "Table <code>point_2d</code> holds the coordinates (x,y) of some unique points (more than two) in a plane.\r\n<p>&nbsp;</p>\r\nWrite a query to find the shortest distance between these points rounded to 2 decimals.\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n| x  | y  |\r\n|----|----|\r\n| -1 | -1 |\r\n| 0  | 0  |\r\n| -1 | -2 |\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\nThe shortest distance is 1.00 from point (-1,-1) to (-1,2). So the output should be:\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n| shortest |\r\n|----------|\r\n| 1.00     |\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<b>Note:</b> The longest distance among all the points are less than 10000.\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 76,
+  "dislikes": 17,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Mr-Bin",
+      "profileUrl": "/mr-bin/",
+      "avatarUrl": "https://assets.leetcode.com/users/mr-bin/avatar_1547655304.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.9K\", \"totalSubmission\": \"19.2K\", \"totalAcceptedRaw\": 10875, \"totalSubmissionRaw\": 19190, \"acRate\": \"56.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "178",
+    "canSeeDetail": true,
+    "url": "/articles/shortest-distance-in-a-plane/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Using `SQRT`, `POW()` functions and math knowledge [Accepted]\n\n**Intuition**\n\nCalculate the distances between each two points and then display the smallest one.\n\n**Algorithm**\n\nThe [euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance) between two points P1(x1,y1) and P2(x2, y2) in two dimensions is defined as $$\\sqrt{(x1-x2)^2+(y1-y2)^2}$$. So in order to get the distances, we can join this table with itself, and then utilize the built-in function `POW()` and `SQRT()` like below.\n\n```sql\nSELECT\n    p1.x,\n    p1.y,\n    p2.x,\n    p2.y,\n    SQRT((POW(p1.x - p2.x, 2) + POW(p1.y - p2.y, 2))) AS distance\nFROM\n    point_2d p1\n        JOIN\n    point_2d p2 ON p1.x != p2.x OR p1.y != p2.y\n;\n```\n\n>Note:\n> - The condition 'p1.x != p2.x OR p2.y != p2.y' is to avoid calculating the distance of a point with itself.\n> Otherwise, the minimum distance will be always zero.\n> - The columns p1.x, p1.y, p2.x and p2.y are for demonstrating. They are not necessary for the final solution.\n\nSo the output would be as below after running this code on the sample data.\n```\n| x  | y  | x  | y  | distance           |\n|----|----|----|----|--------------------|\n| 0  | 0  | -1 | -1 | 1.4142135623730951 |\n| -1 | -2 | -1 | -1 | 1                  |\n| -1 | -1 | 0  | 0  | 1.4142135623730951 |\n| -1 | -2 | 0  | 0  | 2.23606797749979   |\n| -1 | -1 | -1 | -2 | 1                  |\n| 0  | 0  | -1 | -2 | 2.23606797749979   |\n```\n\nAt last, choose the minimum distance and round it to 2 decimals as required.\n\n**MySQL**\n\n```sql\nSELECT\n    ROUND(SQRT(MIN((POW(p1.x - p2.x, 2) + POW(p1.y - p2.y, 2)))), 2) AS shortest\nFROM\n    point_2d p1\n        JOIN\n    point_2d p2 ON p1.x != p2.x OR p1.y != p2.y\n;\n```\n>Note: To put the MIN() inside of SQRT() will slightly improve the performance.\n\n#### Approach 2: Optimize to avoid reduplicate calculations [Accepted]\n\n**Intuition**\n\nIt is unnecessary to calculate the distance between all points to all other points since some of them may already be done.\nSo how to avoid the reduplicate calculations?\n\n**Algorithm**\n\nWhen join the table with itself, we can claim to only calculate the distance between one point to another point in a certain rule such ponts with bigger x value.\nBy following this rule, we can avoid quite a lot of reduplicate calculations.\n\n```sql\nSELECT\n    t1.x,\n    t1.y,\n    t2.x,\n    t2.y,\n    SQRT((POW(t1.x - t2.x, 2) + POW(t1.y - t2.y, 2))) AS distance\nFROM\n    point_2d t1\n        JOIN\n    point_2d t2 ON (t1.x <= t2.x AND t1.y < t2.y)\n        OR (t1.x <= t2.x AND t1.y > t2.y)\n        OR (t1.x < t2.x AND t1.y = t2.y)\n;\n```\n\nThe output is as below for the sample data. You may notice that there are only 4 records, 1/3 less than the previous solution.\n\n```\n| x  | y  | x  | y  | distance           |\n|----|----|----|----|--------------------|\n| -1 | -2 | -1 | -1 | 1                  |\n| -1 | -1 | 0  | 0  | 1.4142135623730951 |\n| -1 | -2 | 0  | 0  | 2.23606797749979   |\n| -1 | -1 | -1 | -2 | 1                  |\n```\n\n>Note:\nThe best case is to compare n*(n-1)/2 times, but practically it is not always true considering two points may have same x value or y value.\nIn this case, you may notice the distance between (-1, -2) and (-1, -1) appearing twice in the first and last line in the output.\n\nHere comes the solution to select the shortest distance and round to two decimals.\n\n**MySQL**\n\n```sql\nSELECT\n    ROUND(SQRT(MIN((POW(p1.x - p2.x, 2) + POW(p1.y - p2.y, 2)))),2) AS shortest\nFROM\n    point_2d p1\n        JOIN\n    point_2d p2 ON (p1.x <= p2.x AND p1.y < p2.y)\n        OR (p1.x <= p2.x AND p1.y > p2.y)\n        OR (p1.x < p2.x AND p1.y = p2.y)\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "173",
+      "count": 7,
+      "average": 4.571,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"point_2d\":[\"x\",\"y\"]},\"rows\":{\"point_2d\":[[-1,-1],[0,0],[-1,-2]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"CREATE TABLE If Not Exists point_2d (x INT NOT NULL, y INT NOT NULL)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"CREATE TABLE point_2d (x INT NOT NULL, y INT NOT NULL)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"CREATE TABLE point_2d (x INT NOT NULL, y INT NOT NULL)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "CREATE TABLE If Not Exists point_2d (x INT NOT NULL, y INT NOT NULL)",
+    "Truncate table point_2d",
+    "insert into point_2d (x, y) values ('-1', '-1')",
+    "insert into point_2d (x, y) values ('0', '0')",
+    "insert into point_2d (x, y) values ('-1', '-2')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

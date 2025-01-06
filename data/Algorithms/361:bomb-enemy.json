@@ -1,0 +1,99 @@
+{
+  "questionId": "361",
+  "questionFrontendId": "361",
+  "boundTopicId": null,
+  "title": "Bomb Enemy",
+  "titleSlug": "bomb-enemy",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a 2D grid, each cell is either a wall <code>&#39;W&#39;</code>, an enemy <code>&#39;E&#39;</code> or empty <code>&#39;0&#39;</code> (the number zero), return the maximum enemies you can kill using one bomb.<br />\r\nThe bomb kills all the enemies in the same row and column from the planted point until it hits the wall since the wall is too strong to be destroyed.<br />\r\n<strong>Note: </strong>You can only put the bomb at an empty cell.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<div>\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[[&quot;0&quot;,&quot;E&quot;,&quot;0&quot;,&quot;0&quot;],[&quot;E&quot;,&quot;0&quot;,&quot;W&quot;,&quot;E&quot;],[&quot;0&quot;,&quot;E&quot;,&quot;0&quot;,&quot;0&quot;]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">3 \r\n<strong>Explanation: </strong></span>For the given grid,\r\n\r\n0 E 0 0 \r\nE 0 W E \r\n0 E 0 0\r\n\r\nPlacing a bomb at (1,1) kills 3 enemies.\r\n</pre>\r\n</div>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 369,
+  "dislikes": 61,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "memoryless",
+      "profileUrl": "/memoryless/",
+      "avatarUrl": "https://assets.leetcode.com/users/memoryless/avatar_1568074249.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxKilledEnemies(vector<vector<char>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxKilledEnemies(char[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxKilledEnemies(self, grid):\n        \"\"\"\n        :type grid: List[List[str]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxKilledEnemies(self, grid: List[List[str]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxKilledEnemies(char** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxKilledEnemies(char[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[][]} grid\n * @return {number}\n */\nvar maxKilledEnemies = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[][]} grid\n# @return {Integer}\ndef max_killed_enemies(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxKilledEnemies(_ grid: [[Character]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxKilledEnemies(grid [][]byte) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxKilledEnemies(grid: Array[Array[Char]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxKilledEnemies(grid: Array<CharArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_killed_enemies(grid: Vec<Vec<char>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $grid\n     * @return Integer\n     */\n    function maxKilledEnemies($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"40K\", \"totalSubmission\": \"89.3K\", \"totalAcceptedRaw\": 39995, \"totalSubmissionRaw\": 89280, \"acRate\": \"44.8%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[\"0\",\"E\",\"0\",\"0\"],[\"E\",\"0\",\"W\",\"E\"],[\"0\",\"E\",\"0\",\"0\"]]",
+  "metaData": "{\r\n  \"name\": \"maxKilledEnemies\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"character[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

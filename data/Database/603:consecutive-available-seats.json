@@ -1,0 +1,70 @@
+{
+  "questionId": "603",
+  "questionFrontendId": "603",
+  "boundTopicId": null,
+  "title": "Consecutive Available Seats",
+  "titleSlug": "consecutive-available-seats",
+  "categoryTitle": "Database",
+  "content": "Several friends at a cinema ticket office would like to reserve consecutive available seats.<br />\r\nCan you help to query all the consecutive available seats order by the seat_id using the following <code>cinema</code> table?\r\n<pre>\r\n| seat_id | free |\r\n|---------|------|\r\n| 1       | 1    |\r\n| 2       | 0    |\r\n| 3       | 1    |\r\n| 4       | 1    |\r\n| 5       | 1    |\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\nYour query should return the following result for the sample case above.\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n| seat_id |\r\n|---------|\r\n| 3       |\r\n| 4       |\r\n| 5       |\r\n</pre>\r\n<b>Note</b>:\r\n\r\n<ul>\r\n\t<li>The seat_id is an auto increment int, and free is bool (&#39;1&#39; means free, and &#39;0&#39; means occupied.).</li>\r\n\t<li>Consecutive available seats are more than 2(inclusive) seats consecutively available.</li>\r\n</ul>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 145,
+  "dislikes": 10,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Mr-Bin",
+      "profileUrl": "/mr-bin/",
+      "avatarUrl": "https://assets.leetcode.com/users/mr-bin/avatar_1547655304.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.4K\", \"totalSubmission\": \"23.7K\", \"totalAcceptedRaw\": 14449, \"totalSubmissionRaw\": 23746, \"acRate\": \"60.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "168",
+    "canSeeDetail": true,
+    "url": "/articles/consecutive-available-seats/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using self `join` and `abs()`[Accepted]\n\n**Intuition**\n\nThere is only one table in this problem, so we probably need to use **self join** for this relative complex problem.\n\n**Algorithm**\n\nFirst, let's see what we have after joining this table with itself.\n>Note: The result of join two tables is the [Cartesian product](https://en.wikipedia.org/wiki/Cartesian_product) of these two tables.\n\n```sql\nselect a.seat_id, a.free, b.seat_id, b.free\nfrom cinema a join cinema b;\n```\n\n| seat_id | free | seat_id | free |\n|---------|------|---------|------|\n| 1       | 1    | 1       | 1    |\n| 2       | 0    | 1       | 1    |\n| 3       | 1    | 1       | 1    |\n| 4       | 1    | 1       | 1    |\n| 5       | 1    | 1       | 1    |\n| 1       | 1    | 2       | 0    |\n| 2       | 0    | 2       | 0    |\n| 3       | 1    | 2       | 0    |\n| 4       | 1    | 2       | 0    |\n| 5       | 1    | 2       | 0    |\n| 1       | 1    | 3       | 1    |\n| 2       | 0    | 3       | 1    |\n| 3       | 1    | 3       | 1    |\n| 4       | 1    | 3       | 1    |\n| 5       | 1    | 3       | 1    |\n| 1       | 1    | 4       | 1    |\n| 2       | 0    | 4       | 1    |\n| 3       | 1    | 4       | 1    |\n| 4       | 1    | 4       | 1    |\n| 5       | 1    | 4       | 1    |\n| 1       | 1    | 5       | 1    |\n| 2       | 0    | 5       | 1    |\n| 3       | 1    | 5       | 1    |\n| 4       | 1    | 5       | 1    |\n| 5       | 1    | 5       | 1    |\n\n\nTo find the consecutive available seats, the value in the a.seat_id should be more(or less) than the value b.seat_id, and both of them should be free.\n\n```sql\nselect a.seat_id, a.free, b.seat_id, b.free\nfrom cinema a join cinema b\n  on abs(a.seat_id - b.seat_id) = 1\n  and a.free = true and b.free = true;\n```\n\n| seat_id | free | seat_id | free |\n|---------|------|---------|------|\n| 4       | 1    | 3       | 1    |\n| 3       | 1    | 4       | 1    |\n| 5       | 1    | 4       | 1    |\n| 4       | 1    | 5       | 1    |\n\nAt last, choose the concerned column seat_id, and display the result ordered by seat_id.\n>Note: You may notice that the seat with *seat_id* '4' appears twice in this table. This is because seat '4' next to '3' and also next to '5'. So we need to use `distinct` to filter the duplicated records.\n\n**MySQL**\n\n```sql\nselect distinct a.seat_id\nfrom cinema a join cinema b\n  on abs(a.seat_id - b.seat_id) = 1\n  and a.free = true and b.free = true\norder by a.seat_id\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "163",
+      "count": 12,
+      "average": 4.75,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"cinema\":[\"seat_id\",\"free\"]},\"rows\":{\"cinema\":[[1,1],[2,0],[3,1],[4,1],[5,1]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists cinema (seat_id int primary key auto_increment, free bool)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table cinema (seat_id int primary key, free BIT)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table cinema (seat_id int primary key, free NUMBER(1))\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists cinema (seat_id int primary key auto_increment, free bool)",
+    "Truncate table cinema",
+    "insert into cinema (seat_id, free) values ('1', '1')",
+    "insert into cinema (seat_id, free) values ('2', '0')",
+    "insert into cinema (seat_id, free) values ('3', '1')",
+    "insert into cinema (seat_id, free) values ('4', '1')",
+    "insert into cinema (seat_id, free) values ('5', '1')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

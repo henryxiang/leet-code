@@ -1,0 +1,113 @@
+{
+  "questionId": "782",
+  "questionFrontendId": "771",
+  "boundTopicId": null,
+  "title": "Jewels and Stones",
+  "titleSlug": "jewels-and-stones",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You&#39;re given strings <code>J</code> representing the types of stones that are jewels, and <code>S</code> representing the stones you have.&nbsp; Each character in <code>S</code> is a type of stone you have.&nbsp; You want to know how many of the stones you have are also jewels.</p>\r\n\r\n<p>The letters in <code>J</code> are guaranteed distinct, and all characters in <code>J</code> and <code>S</code> are letters. Letters are case sensitive, so <code>&quot;a&quot;</code> is considered a different type of stone from <code>&quot;A&quot;</code>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> J = &quot;aA&quot;, S = &quot;aAAbbbb&quot;\r\n<strong>Output:</strong> 3\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> J = &quot;z&quot;, S = &quot;ZZ&quot;\r\n<strong>Output:</strong> 0\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>S</code> and <code>J</code> will consist of letters and have length at most 50.</li>\r\n\t<li>The characters in <code>J</code> are distinct.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1712,
+  "dislikes": 316,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "lokendrajain1994",
+      "profileUrl": "/lokendrajain1994/",
+      "avatarUrl": "https://assets.leetcode.com/users/lokendrajain1994/avatar_1515410441.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 12}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numJewelsInStones(string J, string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numJewelsInStones(String J, String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numJewelsInStones(self, J, S):\n        \"\"\"\n        :type J: str\n        :type S: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numJewelsInStones(self, J: str, S: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numJewelsInStones(char * J, char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumJewelsInStones(string J, string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} J\n * @param {string} S\n * @return {number}\n */\nvar numJewelsInStones = function(J, S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} j\n# @param {String} s\n# @return {Integer}\ndef num_jewels_in_stones(j, s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numJewelsInStones(_ J: String, _ S: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numJewelsInStones(J string, S string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numJewelsInStones(J: String, S: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numJewelsInStones(J: String, S: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_jewels_in_stones(j: String, s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $J\n     * @param String $S\n     * @return Integer\n     */\n    function numJewelsInStones($J, $S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"364.1K\", \"totalSubmission\": \"432.4K\", \"totalAcceptedRaw\": 364114, \"totalSubmissionRaw\": 432385, \"acRate\": \"84.2%\"}",
+  "hints": [
+    "For each stone, check if it is a jewel."
+  ],
+  "solution": {
+    "id": "404",
+    "canSeeDetail": true,
+    "url": "/articles/jewels-and-stones/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Brute Force [Accepted]\r\n\r\n**Intuition and Algorithm**\r\n\r\nFor each stone, check whether it matches any of the jewels.  We can check with a linear scan.\r\n\r\n<iframe src=\"https://leetcode.com/playground/SYrMFQrQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"SYrMFQrQ\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(J\\text{.length} * S\\text{.length}))$$.\r\n\r\n* Space Complexity: $$O(1)$$ additional space complexity in Python.  In Java, this can be $$O(J\\text{.length} * S\\text{.length}))$$ because of the creation of new arrays.\r\n\r\n---\r\n#### Approach #2: Hash Set [Accepted]\r\n\r\n**Intuition and Algorithm**\r\n\r\nFor each stone, check whether it matches any of the jewels.  We can check efficiently with a *Hash Set*.\r\n\r\n<iframe src=\"https://leetcode.com/playground/2ybCbp2F/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"2ybCbp2F\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(J\\text{.length} + S\\text{.length}))$$.  The $$O(J\\text{.length})$$ part comes from creating `J`.  The $$O(S\\text{.length})$$ part comes from searching `S`.\r\n\r\n* Space Complexity: $$O(J\\text{.length})$$.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "399",
+      "count": 10,
+      "average": 4.3,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"aA\"\n\"aAAbbbb\"",
+  "metaData": "{\r\n  \"name\": \"numJewelsInStones\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"J\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,96 @@
+{
+  "questionId": "348",
+  "questionFrontendId": "348",
+  "boundTopicId": null,
+  "title": "Design Tic-Tac-Toe",
+  "titleSlug": "design-tic-tac-toe",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design a Tic-tac-toe game that is played between two players on a <i>n</i> x <i>n</i> grid.\r\n</p>\r\n\r\n<p>You may assume the following rules:\r\n<ol>\r\n<li>A move is guaranteed to be valid and is placed on an empty block.</li>\r\n<li>Once a winning condition is reached, no more moves is allowed.</li>\r\n<li>A player who succeeds in placing <i>n</i> of their marks in a horizontal, vertical, or diagonal row wins the game.</li>\r\n</ol>\r\n</p>\r\n\r\n<p><b>Example:</b><br />\r\n<pre>\r\nGiven <i>n</i> = 3, assume that player 1 is \"X\" and player 2 is \"O\" in the board.\r\n\r\nTicTacToe toe = new TicTacToe(3);\r\n\r\ntoe.move(0, 0, 1); -> Returns 0 (no one wins)\r\n|X| | |\r\n| | | |    // Player 1 makes a move at (0, 0).\r\n| | | |\r\n\r\ntoe.move(0, 2, 2); -> Returns 0 (no one wins)\r\n|X| |O|\r\n| | | |    // Player 2 makes a move at (0, 2).\r\n| | | |\r\n\r\ntoe.move(2, 2, 1); -> Returns 0 (no one wins)\r\n|X| |O|\r\n| | | |    // Player 1 makes a move at (2, 2).\r\n| | |X|\r\n\r\ntoe.move(1, 1, 2); -> Returns 0 (no one wins)\r\n|X| |O|\r\n| |O| |    // Player 2 makes a move at (1, 1).\r\n| | |X|\r\n\r\ntoe.move(2, 0, 1); -> Returns 0 (no one wins)\r\n|X| |O|\r\n| |O| |    // Player 1 makes a move at (2, 0).\r\n|X| |X|\r\n\r\ntoe.move(1, 0, 2); -> Returns 0 (no one wins)\r\n|X| |O|\r\n|O|O| |    // Player 2 makes a move at (1, 0).\r\n|X| |X|\r\n\r\ntoe.move(2, 1, 1); -> Returns 1 (player 1 wins)\r\n|X| |O|\r\n|O|O| |    // Player 1 makes a move at (2, 1).\r\n|X|X|X|\r\n</pre>\r\n</p>\r\n\r\n<p><b>Follow up:</b><br />\r\nCould you do better than O(<i>n</i><sup>2</sup>) per <code>move()</code> operation?\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 560,
+  "dislikes": 39,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Valid Tic-Tac-Toe State\", \"titleSlug\": \"valid-tic-tac-toe-state\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 14}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"TripleByte\", \"slug\": \"triplebyte\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"DoorDash\", \"slug\": \"doordash\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class TicTacToe {\npublic:\n    /** Initialize your data structure here. */\n    TicTacToe(int n) {\n        \n    }\n    \n    /** Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins. */\n    int move(int row, int col, int player) {\n        \n    }\n};\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * TicTacToe* obj = new TicTacToe(n);\n * int param_1 = obj->move(row,col,player);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class TicTacToe {\n\n    /** Initialize your data structure here. */\n    public TicTacToe(int n) {\n        \n    }\n    \n    /** Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins. */\n    public int move(int row, int col, int player) {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * TicTacToe obj = new TicTacToe(n);\n * int param_1 = obj.move(row,col,player);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class TicTacToe(object):\n\n    def __init__(self, n):\n        \"\"\"\n        Initialize your data structure here.\n        :type n: int\n        \"\"\"\n        \n\n    def move(self, row, col, player):\n        \"\"\"\n        Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins.\n        :type row: int\n        :type col: int\n        :type player: int\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your TicTacToe object will be instantiated and called as such:\n# obj = TicTacToe(n)\n# param_1 = obj.move(row,col,player)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class TicTacToe:\n\n    def __init__(self, n: int):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def move(self, row: int, col: int, player: int) -> int:\n        \"\"\"\n        Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins.\n        \"\"\"\n        \n\n\n# Your TicTacToe object will be instantiated and called as such:\n# obj = TicTacToe(n)\n# param_1 = obj.move(row,col,player)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} TicTacToe;\n\n/** Initialize your data structure here. */\n\nTicTacToe* ticTacToeCreate(int n) {\n    \n}\n\n/** Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins. */\nint ticTacToeMove(TicTacToe* obj, int row, int col, int player) {\n  \n}\n\nvoid ticTacToeFree(TicTacToe* obj) {\n    \n}\n\n/**\n * Your TicTacToe struct will be instantiated and called as such:\n * TicTacToe* obj = ticTacToeCreate(n);\n * int param_1 = ticTacToeMove(obj, row, col, player);\n \n * ticTacToeFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class TicTacToe {\n\n    /** Initialize your data structure here. */\n    public TicTacToe(int n) {\n        \n    }\n    \n    /** Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins. */\n    public int Move(int row, int col, int player) {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * TicTacToe obj = new TicTacToe(n);\n * int param_1 = obj.Move(row,col,player);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Initialize your data structure here.\n * @param {number} n\n */\nvar TicTacToe = function(n) {\n    \n};\n\n/**\n * Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins. \n * @param {number} row \n * @param {number} col \n * @param {number} player\n * @return {number}\n */\nTicTacToe.prototype.move = function(row, col, player) {\n    \n};\n\n/** \n * Your TicTacToe object will be instantiated and called as such:\n * var obj = new TicTacToe(n)\n * var param_1 = obj.move(row,col,player)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class TicTacToe\n\n=begin\n    Initialize your data structure here.\n    :type n: Integer\n=end\n    def initialize(n)\n        \n    end\n\n\n=begin\n    Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins.\n    :type row: Integer\n    :type col: Integer\n    :type player: Integer\n    :rtype: Integer\n=end\n    def move(row, col, player)\n        \n    end\n\n\nend\n\n# Your TicTacToe object will be instantiated and called as such:\n# obj = TicTacToe.new(n)\n# param_1 = obj.move(row, col, player)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass TicTacToe {\n\n    /** Initialize your data structure here. */\n    init(_ n: Int) {\n        \n    }\n    \n    /** Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins. */\n    func move(_ row: Int, _ col: Int, _ player: Int) -> Int {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * let obj = TicTacToe(n)\n * let ret_1: Int = obj.move(row, col, player)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type TicTacToe struct {\n    \n}\n\n\n/** Initialize your data structure here. */\nfunc Constructor(n int) TicTacToe {\n    \n}\n\n\n/** Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins. */\nfunc (this *TicTacToe) Move(row int, col int, player int) int {\n    \n}\n\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * obj := Constructor(n);\n * param_1 := obj.Move(row,col,player);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class TicTacToe(_n: Int) {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins. */\n    def move(row: Int, col: Int, player: Int): Int = {\n        \n    }\n\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * var obj = new TicTacToe(n)\n * var param_1 = obj.move(row,col,player)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class TicTacToe(n: Int) {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins. */\n    fun move(row: Int, col: Int, player: Int): Int {\n        \n    }\n\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * var obj = TicTacToe(n)\n * var param_1 = obj.move(row,col,player)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct TicTacToe {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl TicTacToe {\n\n    /** Initialize your data structure here. */\n    fn new(n: i32) -> Self {\n        \n    }\n    \n    /** Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins. */\n    fn move(&self, row: i32, col: i32, player: i32) -> i32 {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * let obj = TicTacToe::new(n);\n * let ret_1: i32 = obj.move(row, col, player);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class TicTacToe {\n    /**\n     * Initialize your data structure here.\n     * @param Integer $n\n     */\n    function __construct($n) {\n        \n    }\n  \n    /**\n     * Player {player} makes a move at ({row}, {col}).\n        @param row The row of the board.\n        @param col The column of the board.\n        @param player The player, can be either 1 or 2.\n        @return The current winning condition, can be either:\n                0: No one wins.\n                1: Player 1 wins.\n                2: Player 2 wins.\n     * @param Integer $row\n     * @param Integer $col\n     * @param Integer $player\n     * @return Integer\n     */\n    function move($row, $col, $player) {\n        \n    }\n}\n\n/**\n * Your TicTacToe object will be instantiated and called as such:\n * $obj = TicTacToe($n);\n * $ret_1 = $obj->move($row, $col, $player);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"68.2K\", \"totalSubmission\": \"130.9K\", \"totalAcceptedRaw\": 68211, \"totalSubmissionRaw\": 130947, \"acRate\": \"52.1%\"}",
+  "hints": [
+    "Could you trade extra space such that <code>move()</code> operation can be done in O(1)?",
+    "You need two arrays: int rows[n], int cols[n], plus two variables: diagonal, anti_diagonal."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"TicTacToe\",\"move\",\"move\",\"move\",\"move\",\"move\",\"move\",\"move\"]\n[[3],[0,0,1],[0,2,2],[2,2,1],[1,1,2],[2,0,1],[1,0,2],[2,1,1]]",
+  "metaData": "{\r\n    \"classname\": \"TicTacToe\",\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"n\"\r\n            }\r\n        ],\r\n        \"comment\": \"Initialize your data structure here.\"\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"move\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"row\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"col\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"player\"\r\n                }\r\n            ],\r\n            \"comment\": \"Player {player} makes a move at ({row}, {col}).\\n        @param row The row of the board.\\n        @param col The column of the board.\\n        @param player The player, can be either 1 or 2.\\n        @return The current winning condition, can be either:\\n                0: No one wins.\\n                1: Player 1 wins.\\n                2: Player 2 wins.\",\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

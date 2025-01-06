@@ -1,0 +1,72 @@
+{
+  "questionId": "1425",
+  "questionFrontendId": "1294",
+  "boundTopicId": null,
+  "title": "Weather Type in Each Country",
+  "titleSlug": "weather-type-in-each-country",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Countries</code></p>\r\n\r\n<pre>\r\n+---------------+---------+\r\n| Column Name   | Type    |\r\n+---------------+---------+\r\n| country_id    | int     |\r\n| country_name  | varchar |\r\n+---------------+---------+\r\ncountry_id is the primary key for this table.\r\nEach row of this table contains the ID and the name of one country.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Table: <code>Weather</code></p>\r\n\r\n<pre>\r\n+---------------+---------+\r\n| Column Name   | Type    |\r\n+---------------+---------+\r\n| country_id    | int     |\r\n| weather_state | varchar |\r\n| day           | date    |\r\n+---------------+---------+\r\n(country_id, day) is the primary key for this table.\r\nEach row of this table indicates the weather state in a country for one day.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Write an SQL query to find the type of weather in each country for November 2019.</p>\r\n\r\n<p>The type of weather is <strong>Cold</strong> if the average <code>weather_state</code> is less than or equal 15, <strong>Hot</strong> if the average <code>weather_state</code> is greater than or equal 25 and <strong>Warm</strong> otherwise.</p>\r\n\r\n<p>Return result table in any order.</p>\r\n\r\n<p>The query result format is in the following example:</p>\r\n\r\n<pre>\r\nCountries table:\r\n+------------+--------------+\r\n| country_id | country_name |\r\n+------------+--------------+\r\n| 2          | USA          |\r\n| 3          | Australia    |\r\n| 7          | Peru         |\r\n| 5          | China        |\r\n| 8          | Morocco      |\r\n| 9          | Spain        |\r\n+------------+--------------+\r\nWeather table:\r\n+------------+---------------+------------+\r\n| country_id | weather_state | day        |\r\n+------------+---------------+------------+\r\n| 2          | 15            | 2019-11-01 |\r\n| 2          | 12            | 2019-10-28 |\r\n| 2          | 12            | 2019-10-27 |\r\n| 3          | -2            | 2019-11-10 |\r\n| 3          | 0             | 2019-11-11 |\r\n| 3          | 3             | 2019-11-12 |\r\n| 5          | 16            | 2019-11-07 |\r\n| 5          | 18            | 2019-11-09 |\r\n| 5          | 21            | 2019-11-23 |\r\n| 7          | 25            | 2019-11-28 |\r\n| 7          | 22            | 2019-12-01 |\r\n| 7          | 20            | 2019-12-02 |\r\n| 8          | 25            | 2019-11-05 |\r\n| 8          | 27            | 2019-11-15 |\r\n| 8          | 31            | 2019-11-25 |\r\n| 9          | 7             | 2019-10-23 |\r\n| 9          | 3             | 2019-12-23 |\r\n+------------+---------------+------------+\r\nResult table:\r\n+--------------+--------------+\r\n| country_name | weather_type |\r\n+--------------+--------------+\r\n| USA          | Cold         |\r\n| Austraila    | Cold         |\r\n| Peru         | Hot          |\r\n| China        | Warm         |\r\n| Morocco      | Hot          |\r\n+--------------+--------------+\r\nAverage weather_state in USA in November is (15) / 1 = 15 so weather type is Cold.\r\nAverage weather_state in Austraila in November is (-2 + 0 + 3) / 3 = 0.333 so weather type is Cold.\r\nAverage weather_state in Peru in November is (25) / 1 = 25 so weather type is Hot.\r\nAverage weather_state in China in November is (16 + 18 + 21) / 3 = 18.333 so weather type is Warm.\r\nAverage weather_state in Morocco in November is (25 + 27 + 31) / 3 = 27.667 so weather type is Hot.\r\nWe know nothing about average weather_state in Spain in November so we don&#39;t include it in the result table. \r\n</pre>",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 4,
+  "dislikes": 0,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Point72\", \"slug\": \"point72\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"453\", \"totalSubmission\": \"679\", \"totalAcceptedRaw\": 453, \"totalSubmissionRaw\": 679, \"acRate\": \"66.7%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Countries\":[\"country_id\",\"country_name\"],\"Weather\":[\"country_id\",\"weather_state\",\"day\"]},\"rows\":{\"Countries\":[[2,\"USA\"],[3,\"Australia\"],[7,\"Peru\"],[5,\"China\"],[8,\"Morocco\"],[9,\"Spain\"]],\"Weather\":[[2,15,\"2019-11-01\"],[2,12,\"2019-10-28\"],[2,12,\"2019-10-27\"],[3,-2,\"2019-11-10\"],[3,0,\"2019-11-11\"],[3,3,\"2019-11-12\"],[5,16,\"2019-11-07\"],[5,18,\"2019-11-09\"],[5,21,\"2019-11-23\"],[7,25,\"2019-11-28\"],[7,22,\"2019-12-01\"],[7,20,\"2019-12-02\"],[8,25,\"2019-11-05\"],[8,27,\"2019-11-15\"],[8,31,\"2019-11-25\"],[9,7,\"2019-10-23\"],[9,3,\"2019-12-23\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Countries (country_id int, country_name varchar(20))\",\n    \"Create table If Not Exists Weather (country_id int, weather_state int, day date)\"\n  ],\n  \"mssql\": [\n    \"Create table Countries (country_id int, country_name varchar(20))\",\n    \"Create table Weather (country_id int, weather_state int, day date)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Countries (country_id int, country_name varchar(20))\",\n    \"Create table Weather (country_id int, weather_state int, day date)\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Countries (country_id int, country_name varchar(20))",
+    "Create table If Not Exists Weather (country_id int, weather_state int, day date)",
+    "Truncate table Countries",
+    "insert into Countries (country_id, country_name) values ('2', 'USA')",
+    "insert into Countries (country_id, country_name) values ('3', 'Australia')",
+    "insert into Countries (country_id, country_name) values ('7', 'Peru')",
+    "insert into Countries (country_id, country_name) values ('5', 'China')",
+    "insert into Countries (country_id, country_name) values ('8', 'Morocco')",
+    "insert into Countries (country_id, country_name) values ('9', 'Spain')",
+    "Truncate table Weather",
+    "insert into Weather (country_id, weather_state, day) values ('2', '15', '2019-11-01')",
+    "insert into Weather (country_id, weather_state, day) values ('2', '12', '2019-10-28')",
+    "insert into Weather (country_id, weather_state, day) values ('2', '12', '2019-10-27')",
+    "insert into Weather (country_id, weather_state, day) values ('3', '-2', '2019-11-10')",
+    "insert into Weather (country_id, weather_state, day) values ('3', '0', '2019-11-11')",
+    "insert into Weather (country_id, weather_state, day) values ('3', '3', '2019-11-12')",
+    "insert into Weather (country_id, weather_state, day) values ('5', '16', '2019-11-07')",
+    "insert into Weather (country_id, weather_state, day) values ('5', '18', '2019-11-09')",
+    "insert into Weather (country_id, weather_state, day) values ('5', '21', '2019-11-23')",
+    "insert into Weather (country_id, weather_state, day) values ('7', '25', '2019-11-28')",
+    "insert into Weather (country_id, weather_state, day) values ('7', '22', '2019-12-01')",
+    "insert into Weather (country_id, weather_state, day) values ('7', '20', '2019-12-02')",
+    "insert into Weather (country_id, weather_state, day) values ('8', '25', '2019-11-05')",
+    "insert into Weather (country_id, weather_state, day) values ('8', '27', '2019-11-15')",
+    "insert into Weather (country_id, weather_state, day) values ('8', '31', '2019-11-25')",
+    "insert into Weather (country_id, weather_state, day) values ('9', '7', '2019-10-23')",
+    "insert into Weather (country_id, weather_state, day) values ('9', '3', '2019-12-23')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

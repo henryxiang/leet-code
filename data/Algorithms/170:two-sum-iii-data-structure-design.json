@@ -1,0 +1,109 @@
+{
+  "questionId": "170",
+  "questionFrontendId": "170",
+  "boundTopicId": null,
+  "title": "Two Sum III - Data structure design",
+  "titleSlug": "two-sum-iii-data-structure-design",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design and implement a TwoSum class. It should support the following operations: <code>add</code> and <code>find</code>.</p>\r\n\r\n<p><code>add</code> - Add the number to an internal data structure.<br />\r\n<code>find</code> - Find if there exists any pair of numbers which sum is equal to the value.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\nadd(1); add(3); add(5);\r\nfind(4) -&gt; true\r\nfind(7) -&gt; false\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\nadd(3); add(1); add(2);\r\nfind(3) -&gt; true\r\nfind(6) -&gt; false</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 234,
+  "dislikes": 191,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Two Sum\", \"titleSlug\": \"two-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Unique Word Abbreviation\", \"titleSlug\": \"unique-word-abbreviation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Two Sum IV - Input is a BST\", \"titleSlug\": \"two-sum-iv-input-is-a-bst\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 4}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class TwoSum {\npublic:\n    /** Initialize your data structure here. */\n    TwoSum() {\n        \n    }\n    \n    /** Add the number to an internal data structure.. */\n    void add(int number) {\n        \n    }\n    \n    /** Find if there exists any pair of numbers which sum is equal to the value. */\n    bool find(int value) {\n        \n    }\n};\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * TwoSum* obj = new TwoSum();\n * obj->add(number);\n * bool param_2 = obj->find(value);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class TwoSum {\n\n    /** Initialize your data structure here. */\n    public TwoSum() {\n        \n    }\n    \n    /** Add the number to an internal data structure.. */\n    public void add(int number) {\n        \n    }\n    \n    /** Find if there exists any pair of numbers which sum is equal to the value. */\n    public boolean find(int value) {\n        \n    }\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * TwoSum obj = new TwoSum();\n * obj.add(number);\n * boolean param_2 = obj.find(value);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class TwoSum(object):\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def add(self, number):\n        \"\"\"\n        Add the number to an internal data structure..\n        :type number: int\n        :rtype: None\n        \"\"\"\n        \n\n    def find(self, value):\n        \"\"\"\n        Find if there exists any pair of numbers which sum is equal to the value.\n        :type value: int\n        :rtype: bool\n        \"\"\"\n        \n\n\n# Your TwoSum object will be instantiated and called as such:\n# obj = TwoSum()\n# obj.add(number)\n# param_2 = obj.find(value)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class TwoSum:\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def add(self, number: int) -> None:\n        \"\"\"\n        Add the number to an internal data structure..\n        \"\"\"\n        \n\n    def find(self, value: int) -> bool:\n        \"\"\"\n        Find if there exists any pair of numbers which sum is equal to the value.\n        \"\"\"\n        \n\n\n# Your TwoSum object will be instantiated and called as such:\n# obj = TwoSum()\n# obj.add(number)\n# param_2 = obj.find(value)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} TwoSum;\n\n/** Initialize your data structure here. */\n\nTwoSum* twoSumCreate() {\n    \n}\n\n/** Add the number to an internal data structure.. */\nvoid twoSumAdd(TwoSum* obj, int number) {\n  \n}\n\n/** Find if there exists any pair of numbers which sum is equal to the value. */\nbool twoSumFind(TwoSum* obj, int value) {\n  \n}\n\nvoid twoSumFree(TwoSum* obj) {\n    \n}\n\n/**\n * Your TwoSum struct will be instantiated and called as such:\n * TwoSum* obj = twoSumCreate();\n * twoSumAdd(obj, number);\n \n * bool param_2 = twoSumFind(obj, value);\n \n * twoSumFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class TwoSum {\n\n    /** Initialize your data structure here. */\n    public TwoSum() {\n        \n    }\n    \n    /** Add the number to an internal data structure.. */\n    public void Add(int number) {\n        \n    }\n    \n    /** Find if there exists any pair of numbers which sum is equal to the value. */\n    public bool Find(int value) {\n        \n    }\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * TwoSum obj = new TwoSum();\n * obj.Add(number);\n * bool param_2 = obj.Find(value);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Initialize your data structure here.\n */\nvar TwoSum = function() {\n    \n};\n\n/**\n * Add the number to an internal data structure.. \n * @param {number} number\n * @return {void}\n */\nTwoSum.prototype.add = function(number) {\n    \n};\n\n/**\n * Find if there exists any pair of numbers which sum is equal to the value. \n * @param {number} value\n * @return {boolean}\n */\nTwoSum.prototype.find = function(value) {\n    \n};\n\n/** \n * Your TwoSum object will be instantiated and called as such:\n * var obj = new TwoSum()\n * obj.add(number)\n * var param_2 = obj.find(value)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class TwoSum\n\n=begin\n    Initialize your data structure here.\n=end\n    def initialize()\n        \n    end\n\n\n=begin\n    Add the number to an internal data structure..\n    :type number: Integer\n    :rtype: Void\n=end\n    def add(number)\n        \n    end\n\n\n=begin\n    Find if there exists any pair of numbers which sum is equal to the value.\n    :type value: Integer\n    :rtype: Boolean\n=end\n    def find(value)\n        \n    end\n\n\nend\n\n# Your TwoSum object will be instantiated and called as such:\n# obj = TwoSum.new()\n# obj.add(number)\n# param_2 = obj.find(value)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass TwoSum {\n\n    /** Initialize your data structure here. */\n    init() {\n        \n    }\n    \n    /** Add the number to an internal data structure.. */\n    func add(_ number: Int) {\n        \n    }\n    \n    /** Find if there exists any pair of numbers which sum is equal to the value. */\n    func find(_ value: Int) -> Bool {\n        \n    }\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * let obj = TwoSum()\n * obj.add(number)\n * let ret_2: Bool = obj.find(value)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type TwoSum struct {\n    \n}\n\n\n/** Initialize your data structure here. */\nfunc Constructor() TwoSum {\n    \n}\n\n\n/** Add the number to an internal data structure.. */\nfunc (this *TwoSum) Add(number int)  {\n    \n}\n\n\n/** Find if there exists any pair of numbers which sum is equal to the value. */\nfunc (this *TwoSum) Find(value int) bool {\n    \n}\n\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * obj := Constructor();\n * obj.Add(number);\n * param_2 := obj.Find(value);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class TwoSum() {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Add the number to an internal data structure.. */\n    def add(number: Int) {\n        \n    }\n\n    /** Find if there exists any pair of numbers which sum is equal to the value. */\n    def find(value: Int): Boolean = {\n        \n    }\n\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * var obj = new TwoSum()\n * obj.add(number)\n * var param_2 = obj.find(value)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class TwoSum() {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Add the number to an internal data structure.. */\n    fun add(number: Int) {\n        \n    }\n\n    /** Find if there exists any pair of numbers which sum is equal to the value. */\n    fun find(value: Int): Boolean {\n        \n    }\n\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * var obj = TwoSum()\n * obj.add(number)\n * var param_2 = obj.find(value)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct TwoSum {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl TwoSum {\n\n    /** Initialize your data structure here. */\n    fn new() -> Self {\n        \n    }\n    \n    /** Add the number to an internal data structure.. */\n    fn add(&self, number: i32) {\n        \n    }\n    \n    /** Find if there exists any pair of numbers which sum is equal to the value. */\n    fn find(&self, value: i32) -> bool {\n        \n    }\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * let obj = TwoSum::new();\n * obj.add(number);\n * let ret_2: bool = obj.find(value);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class TwoSum {\n    /**\n     * Initialize your data structure here.\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * Add the number to an internal data structure..\n     * @param Integer $number\n     * @return NULL\n     */\n    function add($number) {\n        \n    }\n  \n    /**\n     * Find if there exists any pair of numbers which sum is equal to the value.\n     * @param Integer $value\n     * @return Boolean\n     */\n    function find($value) {\n        \n    }\n}\n\n/**\n * Your TwoSum object will be instantiated and called as such:\n * $obj = TwoSum();\n * $obj->add($number);\n * $ret_2 = $obj->find($value);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"70.5K\", \"totalSubmission\": \"218.6K\", \"totalAcceptedRaw\": 70455, \"totalSubmissionRaw\": 218604, \"acRate\": \"32.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "829",
+    "canSeeDetail": true,
+    "url": "/articles/two-sum-iii-data-structure-design/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n#### Approach 1: Sorted List\r\n\r\n**Intuition**\r\n\r\nFirst of all, the problem description is not terribly clear on the requirements of _time_ and _space_ complexity. But let us consider this as part of the challenge or a freedom of design. We could figure out the desired complexity for each function, by trial and error.\r\n\r\nThis is one of the followup problems to the first programming problem on LeetCode called [Two Sum](https://leetcode.com/problems/two-sum/), where one is asked to return the indice of two numbers from a **_list_** that could sum up to a given value.\r\n\r\n>Let us take the inspiration from the origin problem, by keeping all the incoming numbers in a _list_.\r\n\r\nGiven a list, one of the solutions to the Two Sum problem is called **_Two-Pointers Iteration_** where we iterate through the list from two directions with _two pointers_ approaching each other.\r\n\r\n![pic](../Figures/170/170_two_pointers.png)\r\n\r\n>However, one of the preconditions for the Two-Pointers Iteration solution is that the input list should be _**sorted**_. \r\n\r\nSo now, here are the questions:\r\n\r\n- Should we keep the list in order while inserting new numbers in the function `add(number)` ? \r\n<br/>\r\n- Or should we do the sorting on demand, _i.e._ at the invocation of `find(value)` ?\r\n\r\nWe will address the above two questions later in the Algorithm section.\r\n\r\n**Algorithm**\r\n\r\nLet us first give the algorithm of Two-Pointers Iteration to find the two-sum solution from a _sorted_ list:\r\n\r\n- We initialize **two pointers** `low` and `high` which point to the head and the tail elements of the list respectively.\r\n<br/>\r\n- With the two pointers, we start a **loop** to iterate the list. The loop would terminate either we find the two-sum solution or the two pointers meet each other.\r\n<br/>\r\n- Within the loop, at each step, we would move either of the pointers, according to different conditions:\r\n    - If the sum of the elements pointed by the current pointers is _**less than**_ the desired value, then we should try to increase the sum to meet the desired value, _i.e._ we should move the `low` pointer forwards to have a larger value.\r\n    <br>\r\n    - Similarly if the sum of the elements pointed by the current pointers is _**greater than**_ the desired value, we then should try to reduce the sum by moving the `high` pointer towards the `low` pointer. \r\n    <br/>\r\n    - If the sum happen to the desired value, then we could simply do an **early return** of the function.\r\n<br/>\r\n- If the loop is terminated at the case where the two pointers meet each other, then we can be sure that there is no solution to the desired value.\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/zRgKbBsL/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"zRgKbBsL\"></iframe>\r\n\r\n>The usage pattern of the desired data structure in the online judge, as we would discover, is that the `add(number)` function would be called **frequently** which might be followed a less frequent call of `find(value)` function.\r\n\r\nThe usage pattern implies that we should try to minimize the cost of `add(number)` function. As a result, we sort the list within the `find(value)` function instead of the `add(number)` function.\r\n\r\n_So to the above questions about where to place the sort operation, actually both options are valid and correct._ Due to the usage pattern of the two functions though, it is **less optimal** to sort the list at each _add_ operation.\r\n\r\nOn the other hand, we do not do sorting at each occasion of `find(value)` neither. But rather, we sort on demand, _i.e._ only when the list is updated. As a result, we **_amortize_** the cost of the sorting over the time. And this is the optimization trick for the solution to pass the online judge.\r\n\r\n**Complexity**\r\n\r\n- Time Complexity:\r\n    - For the `add(number)` function: $$\\mathcal{O}(1)$$, since we simply append the element into the list.\r\n    <br/>\r\n    - For the `find(value)` function: $$\\mathcal{O}(N \\cdot \\log(N))$$. In the worst case, we would need to sort the list first, which is of $$\\mathcal{O}(N \\cdot \\log(N))$$  time complexity normally. And later, again in the worst case we need to iterate through the entire list, which is of $$\\mathcal{O}(N)$$ time complexity. As a result, the overall time complexity of the function lies on  $$\\mathcal{O}(N \\cdot \\log(N))$$ of the sorting operation, which dominates over the later iteration part.\r\n<br/>\r\n- Space Complexity: the overall space complexity of the data structure is $$\\mathcal{O}(N)$$ where $$N$$ is the total number of _numbers_ that have been added.\r\n<br/>\r\n<br/>\r\n\r\n---\r\n#### Approach 2: HashTable\r\n\r\n**Intuition**\r\n\r\nAs an alternative solution to the original [Two Sum](https://leetcode.com/problems/two-sum/) problem, one could employ the _HashTable_ to index each number.\r\n\r\n>Given a desired sum value `S`, for each number `a`, we just need to verify if there exists a complement number (`S-a`) in the table.\r\n\r\nAs we know, the data structure of hashtable could offer us a quick _lookup_ as well as _insertion_ operations, which fits well with the above requirements.\r\n\r\n\r\n**Algorithm**\r\n- First, we initialize a _hashtable_ container in our data structure.\r\n<br/>\r\n- For the `add(number)` function, we build a frequency hashtable with the _number_ as key and the frequency of the _number_ as the value in the table.\r\n<br/>\r\n- For the `find(value)` function, we then iterate through the hashtable over the keys. For each key (`number`), we check if there exists a complement (`value - number`) in the table. If so, we could terminate the loop and return the result.\r\n<br/>\r\n- In a particular case, where the number and its complement are equal, we then need to check if there exists _at least_ **two copies** of the _number_ in the table.\r\n\r\nWe illustrate the algorithm in the following figure:\r\n\r\n![pic](../Figures/170/170_hashtable.png)\r\n\r\n<iframe src=\"https://leetcode.com/playground/pfGFHu3s/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"pfGFHu3s\"></iframe>\r\n\r\n\r\n**Complexity**\r\n\r\n- Time Complexity:\r\n    - For the `add(number)` function: $$\\mathcal{O}(1)$$, since it takes a constant time to update an entry in hashtable.\r\n    <br/>\r\n    - For the `find(value)` function: $$\\mathcal{O}(N)$$, where $$N$$ is the total number of **unique** _numbers_. In the worst case, we would iterate through the entire table.\r\n<br/> \r\n- Space Complexity: $$\\mathcal{O}(N)$$, where $$N$$ is the total number of **unique** _numbers_ that we will see during the usage of the data structure.\r\n\r\n\r\n---\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/) and @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "793",
+      "count": 3,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"TwoSum\",\"add\",\"add\",\"add\",\"find\",\"find\"]\n[[],[1],[3],[5],[4],[7]]",
+  "metaData": "{\r\n    \"classname\": \"TwoSum\",\r\n    \"maxbytesperline\": 165000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n        ],\r\n        \"comment\": \"Initialize your data structure here.\"\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"add\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"number\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            },\r\n            \"comment\": \"Add the number to an internal data structure..\"\r\n        },\r\n        {\r\n            \"name\" : \"find\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"value\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"boolean\"\r\n            },\r\n            \"comment\": \"Find if there exists any pair of numbers which sum is equal to the value.\"\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

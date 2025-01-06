@@ -1,0 +1,100 @@
+{
+  "questionId": "1189",
+  "questionFrontendId": "1256",
+  "boundTopicId": null,
+  "title": "Encode Number",
+  "titleSlug": "encode-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-negative integer <code>num</code>, Return its <em>encoding</em> string.</p>\r\n\r\n<p>The encoding is done by converting the integer to a string using a secret function that you should deduce from the following table:</p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/06/21/encode_number.png\" style=\"width: 164px; height: 360px;\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> num = 23\r\n<strong>Output:</strong> &quot;1000&quot;\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> num = 107\r\n<strong>Output:</strong> &quot;101100&quot;\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>0 &lt;= num &lt;= 10^9</code></li>\r\n</ul>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 20,
+  "dislikes": 62,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Convert to Base -2\", \"titleSlug\": \"convert-to-base-2\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string encode(int num) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String encode(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def encode(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def encode(self, num: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * encode(int num){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string Encode(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} num\n * @return {string}\n */\nvar encode = function(num) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num\n# @return {String}\ndef encode(num)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func encode(_ num: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func encode(num int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def encode(num: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun encode(num: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn encode(num: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return String\n     */\n    function encode($num) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.5K\", \"totalSubmission\": \"4K\", \"totalAcceptedRaw\": 2519, \"totalSubmissionRaw\": 3972, \"acRate\": \"63.4%\"}",
+  "hints": [
+    "Try to find the number of binary digits returned by the function.",
+    "The pattern is to start counting from zero after determining the number of binary digits."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "23",
+  "metaData": "{\n  \"name\": \"encode\",\n  \"params\": [\n    {\n      \"name\": \"num\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

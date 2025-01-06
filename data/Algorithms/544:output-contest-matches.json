@@ -1,0 +1,115 @@
+{
+  "questionId": "544",
+  "questionFrontendId": "544",
+  "boundTopicId": null,
+  "title": "Output Contest Matches",
+  "titleSlug": "output-contest-matches",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nDuring the NBA playoffs, we always arrange the rather strong team to play with the rather weak team, like make the rank 1 team play with the rank n<sub>th</sub> team, which is a good strategy to make the contest more interesting. Now, you're given <b>n</b> teams, you need to output their <b>final</b> contest matches in the form of a string.\r\n</p>\r\n\r\n<p>The <b>n</b> teams are given in the form of positive integers from 1 to n, which represents their initial rank. (Rank 1 is the strongest team and Rank n is the weakest team.) We'll use parentheses('(', ')') and commas(',') to represent the contest team pairing - parentheses('(' , ')') for pairing and commas(',') for partition. During the pairing process in each round, you always need to follow the strategy of making the rather strong one pair with the rather weak one.</p> \r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> 2\r\n<b>Output:</b> (1,2)\r\n<b>Explanation:</b> \r\nInitially, we have the team 1 and the team 2, placed like: 1,2.\r\nThen we pair the team (1,2) together with '(', ')' and ',', which is the final answer.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> 4\r\n<b>Output:</b> ((1,4),(2,3))\r\n<b>Explanation:</b> \r\nIn the first round, we pair the team 1 and 4, the team 2 and 3 together, as we need to make the strong team and weak team together.\r\nAnd we got (1,4),(2,3).\r\nIn the second round, the winners of (1,4) and (2,3) need to play again to generate the final winner, so you need to add the paratheses outside them.\r\nAnd we got the final answer ((1,4),(2,3)).\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b><br />\r\n<pre>\r\n<b>Input:</b> 8\r\n<b>Output:</b> (((1,8),(4,5)),((2,7),(3,6)))\r\n<b>Explanation:</b> \r\nFirst round: (1,8),(2,7),(3,6),(4,5)\r\nSecond round: ((1,8),(4,5)),((2,7),(3,6))\r\nThird round: (((1,8),(4,5)),((2,7),(3,6)))\r\nSince the third round will generate the final winner, you need to output the answer (((1,8),(4,5)),((2,7),(3,6))).\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The <b>n</b> is in range [2, 2<sup>12</sup>].</li>\r\n<li>We ensure that the input <b>n</b> can be converted into the form 2<sup>k</sup>, where k is a positive integer.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 241,
+  "dislikes": 76,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string findContestMatch(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String findContestMatch(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findContestMatch(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findContestMatch(self, n: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * findContestMatch(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string FindContestMatch(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {string}\n */\nvar findContestMatch = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {String}\ndef find_contest_match(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findContestMatch(_ n: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findContestMatch(n int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findContestMatch(n: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findContestMatch(n: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_contest_match(n: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return String\n     */\n    function findContestMatch($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"18K\", \"totalSubmission\": \"24.3K\", \"totalAcceptedRaw\": 17996, \"totalSubmissionRaw\": 24286, \"acRate\": \"74.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "332",
+    "canSeeDetail": true,
+    "url": "/articles/output-contest-matches/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Simulation [Accepted]\n\n**Intuition**\n\nLet `team[i]` be the correct team string of the `i`-th strongest team for that round.  We will maintain these correctly as the rounds progress.\n\n**Algorithm**\n\nIn each round, the `i`-th team becomes `\"(\" + team[i] + \",\" + team[n-1-i] + \")\"`, and then there are half as many teams.\n\n<iframe src=\"https://leetcode.com/playground/q4aFLoLB/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"q4aFLoLB\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N \\log N)$$.  Each of $$O(\\log N)$$ rounds performs $$O(N)$$ work.\n\n* Space Complexity: $$O(N \\log N)$$.\n\n---\n#### Approach #2: Linear Write [Accepted]\n\n**Intuition**\n\nLet's try to solve the problem in linear time.  We can treat this problem as two separate problems: outputting the correct sequence of parentheses and commas, and outputting the correct team number.  With a little effort, one can be convinced that a linear time solution probably exists.\n\n**Algorithm**\n\nLet's focus on the parentheses first.  We can use recursion to find the answer.  For example, when `N = 8`, let `R = log_2(N) = 3` be the number of rounds.  The parentheses and commas look like this:\n\n```python\n(((x,x),(x,x)),((x,x),(x,x)))\n```\n\nBut this is just recursively\n```python\n\"(\" + (sequence for R = 2) + \",\" + (sequence for R = 2) + \")\"\n= \"(\" + \"((x,x),(x,x))\" + \",\" + \"((x,x),(x,x))\" + \")\"\n```\n\nNow let's look at the team numbers.  For `N = 16`, the team numbers are:\n\n`team = [1, 16, 8, 9, 4, 13, 5, 12, 2, 15, 7, 10, 3, 14, 6, 11]`\n\nOne thing we might notice is that adjacent numbers sum to `17`.  More specifically, indices that are 0 and 1 (mod 2) sum to `17`.  Also, indices 0 and 2 (mod 4) sum to `9`, indices 0 and 4 (mod 8) sum to `5`, and so on.\n\nThe pattern in general is: indices `0` and `2**r` (mod `2**(r+1)`) sum to `N * 2**-r + 1`.\n\nIf we want to find the next `team[i]`, then the lowest bit of `i` will help determine it's lower neighbor.  For example, `team[12] = team[0b1100]` has lower bit `w = 4 = 0b100`, so `12` has lower neighbor `12 - w = 8`, and also those team numbers sum to `N / w + 1`.\n\n<iframe src=\"https://leetcode.com/playground/rHTkiGV4/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"rHTkiGV4\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$.  We print each of $$O(N)$$ characters in order.\n\n* Space Complexity: $$O(N)$$.  \n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "327",
+      "count": 28,
+      "average": 1.857,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "4",
+  "metaData": "{\r\n  \"name\": \"findContestMatch\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

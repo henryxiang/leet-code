@@ -1,0 +1,101 @@
+{
+  "questionId": "1069",
+  "questionFrontendId": "1056",
+  "boundTopicId": null,
+  "title": "Confusing Number",
+  "titleSlug": "confusing-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a number <code>N</code>, return <code>true</code> if and only if it is a <em>confusing number</em>, which satisfies the following condition:</p>\r\n\r\n<p>We can rotate digits by 180 degrees to form new digits. When 0, 1, 6, 8, 9 are rotated 180 degrees, they become 0, 1, 9, 8, 6 respectively. When 2, 3, 4, 5 and 7 are rotated 180 degrees, they become invalid. A <em>confusing number</em> is a number that when rotated 180 degrees becomes a <strong>different</strong> number with each digit valid.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/23/1268_1.png\" style=\"width: 180px; height: 90px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">6</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n<strong>Explanation: </strong>\r\nWe get <code>9</code> after rotating <code>6</code>, <code>9</code> is a valid number and <code>9!=6</code>.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/23/1268_2.png\" style=\"width: 180px; height: 90px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">89</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">true</span>\r\n<strong>Explanation: </strong>\r\nWe get <code>68</code> after rotating <code>89</code>, <code>86</code> is a valid number and <code>86!=89</code>.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/26/1268_3.png\" style=\"width: 301px; height: 121px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">11</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">false</span>\r\n<strong>Explanation: </strong>\r\nWe get <code>11</code> after rotating <code>11</code>, <code>11</code> is a valid number but the value remains the same, thus <code>11</code> is not a confusing number.\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/23/1268_4.png\" style=\"width: 180px; height: 90px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">25</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">false</span>\r\n<strong>Explanation: </strong>\r\nWe get an invalid number after rotating <code>25</code>.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= N &lt;= 10^9</code></li>\r\n\t<li>After the rotation we can ignore leading zeros, for example if after rotation we have <code>0008</code>&nbsp;then this number is considered as just <code>8</code>.</li>\r\n</ol>",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 42,
+  "dislikes": 35,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Strobogrammatic Number\", \"titleSlug\": \"strobogrammatic-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Confusing Number II\", \"titleSlug\": \"confusing-number-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "alices",
+      "profileUrl": "/alices/",
+      "avatarUrl": "https://www.gravatar.com/avatar/e07fc4b7d2d8fcbed1bf5d9911fe749c.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool confusingNumber(int N) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean confusingNumber(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def confusingNumber(self, N):\n        \"\"\"\n        :type N: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def confusingNumber(self, N: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool confusingNumber(int N){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool ConfusingNumber(int N) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @return {boolean}\n */\nvar confusingNumber = function(N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\r\n# @return {Boolean}\r\ndef confusing_number(n)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func confusingNumber(_ N: Int) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func confusingNumber(N int) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def confusingNumber(N: Int): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun confusingNumber(N: Int): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn confusing_number(n: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @return Boolean\n     */\n    function confusingNumber($N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.4K\", \"totalSubmission\": \"10.6K\", \"totalAcceptedRaw\": 5369, \"totalSubmissionRaw\": 10608, \"acRate\": \"50.6%\"}",
+  "hints": [
+    "Reverse each digit with their corresponding new digit if an invalid digit is found the return -1. After reversing the digits just compare the reversed number with the original number."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "6",
+  "metaData": "{\r\n  \"name\": \"confusingNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

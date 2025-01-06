@@ -1,0 +1,110 @@
+{
+  "questionId": "1228",
+  "questionFrontendId": "1130",
+  "boundTopicId": null,
+  "title": "Minimum Cost Tree From Leaf Values",
+  "titleSlug": "minimum-cost-tree-from-leaf-values",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>arr</code> of positive integers, consider all binary trees such that:</p>\r\n\r\n<ul>\r\n\t<li>Each node has either 0 or 2 children;</li>\r\n\t<li>The values of <code>arr</code> correspond to the values of each&nbsp;<strong>leaf</strong> in an in-order traversal of the tree.&nbsp; <em>(Recall that a node is a leaf if and only if it has 0 children.)</em></li>\r\n\t<li>The value&nbsp;of each non-leaf node is equal to the product of the largest leaf value in its left and right subtree respectively.</li>\r\n</ul>\r\n\r\n<p>Among all possible binary trees considered,&nbsp;return the smallest possible sum of the values of each non-leaf node.&nbsp; It is guaranteed this sum fits into a 32-bit integer.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr = [6,2,4]\r\n<strong>Output:</strong> 32\r\n<strong>Explanation:</strong>\r\nThere are two possible trees.  The first has non-leaf node sum 36, and the second has non-leaf node sum 32.\r\n\r\n    24            24\r\n   /  \\          /  \\\r\n  12   4        6    8\r\n /  \\               / \\\r\n6    2             2   4\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>2 &lt;= arr.length &lt;= 40</code></li>\r\n\t<li><code>1 &lt;= arr[i] &lt;= 15</code></li>\r\n\t<li>It is guaranteed that the answer fits into a 32-bit signed integer (ie.&nbsp;it is less than <code>2^31</code>).</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 425,
+  "dislikes": 38,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "prashant404",
+      "profileUrl": "/prashant404/",
+      "avatarUrl": "https://assets.leetcode.com/users/prashantnigam16/avatar_1521074521.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 36}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int mctFromLeafValues(vector<int>& arr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int mctFromLeafValues(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def mctFromLeafValues(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def mctFromLeafValues(self, arr: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint mctFromLeafValues(int* arr, int arrSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MctFromLeafValues(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar mctFromLeafValues = function(arr) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @return {Integer}\ndef mct_from_leaf_values(arr)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func mctFromLeafValues(_ arr: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func mctFromLeafValues(arr []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def mctFromLeafValues(arr: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun mctFromLeafValues(arr: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn mct_from_leaf_values(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Integer\n     */\n    function mctFromLeafValues($arr) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.7K\", \"totalSubmission\": \"20.1K\", \"totalAcceptedRaw\": 12735, \"totalSubmissionRaw\": 20137, \"acRate\": \"63.2%\"}",
+  "hints": [
+    "Do a DP, where dp(i, j) is the answer for the subarray arr[i]..arr[j].",
+    "For each possible way to partition the subarray i <= k < j, the answer is max(arr[i]..arr[k]) * max(arr[k+1]..arr[j]) + dp(i, k) + dp(k+1, j)."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[6,2,4]",
+  "metaData": "{\n  \"name\": \"mctFromLeafValues\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,115 @@
+{
+  "questionId": "351",
+  "questionFrontendId": "351",
+  "boundTopicId": null,
+  "title": "Android Unlock Patterns",
+  "titleSlug": "android-unlock-patterns",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an Android <b>3x3</b> key lock screen and two integers <b>m</b> and <b>n</b>, where 1 &le; m &le; n &le; 9, count the total number of unlock patterns of the Android lock screen, which consist of minimum of <b>m</b> keys and maximum <b>n</b> keys.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Rules for a valid pattern:</b></p>\r\n\r\n<ol>\r\n\t<li>Each pattern must connect at least <b>m</b> keys and at most <b>n</b> keys.</li>\r\n\t<li>All the keys must be distinct.</li>\r\n\t<li>If the line connecting two consecutive keys in the pattern passes through any other keys, the other keys must have previously selected in the pattern. No jumps through non selected key is allowed.</li>\r\n\t<li>The order of keys used matters.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n<img src=\"https://assets.leetcode.com/uploads/2018/10/12/android-unlock.png\" style=\"width: 418px; height: 128px;\" /></pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Explanation:</b></p>\r\n\r\n<pre>\r\n| 1 | 2 | 3 |\r\n| 4 | 5 | 6 |\r\n| 7 | 8 | 9 |</pre>\r\n\r\n<p><b>Invalid move:</b> <code>4 - 1 - 3 - 6 </code><br />\r\nLine 1 - 3 passes through key 2 which had not been selected in the pattern.</p>\r\n\r\n<p><b>Invalid move:</b> <code>4 - 1 - 9 - 2</code><br />\r\nLine 1 - 9 passes through key 5 which had not been selected in the pattern.</p>\r\n\r\n<p><b>Valid move:</b> <code>2 - 4 - 1 - 3 - 6</code><br />\r\nLine 1 - 3 is valid because it passes through key 2, which had been selected in the pattern</p>\r\n\r\n<p><b>Valid move:</b> <code>6 - 5 - 4 - 1 - 9 - 2</code><br />\r\nLine 1 - 9 is valid because it passes through key 5, which had been selected in the pattern.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<div>\r\n<pre>\r\n<strong>Input: </strong>m = <span id=\"example-input-1-1\">1</span>, n = <span id=\"example-input-1-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">9</span>\r\n</pre>\r\n</div>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 312,
+  "dislikes": 405,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "elmirap",
+      "profileUrl": "/elmirap/",
+      "avatarUrl": "https://www.gravatar.com/avatar/ba92194ffdce151caf7dffd9037a6997.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numberOfPatterns(int m, int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numberOfPatterns(int m, int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numberOfPatterns(self, m, n):\n        \"\"\"\n        :type m: int\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numberOfPatterns(self, m: int, n: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numberOfPatterns(int m, int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumberOfPatterns(int m, int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} m\n * @param {number} n\n * @return {number}\n */\nvar numberOfPatterns = function(m, n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} m\n# @param {Integer} n\n# @return {Integer}\ndef number_of_patterns(m, n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numberOfPatterns(_ m: Int, _ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numberOfPatterns(m int, n int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numberOfPatterns(m: Int, n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numberOfPatterns(m: Int, n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn number_of_patterns(m: i32, n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $m\n     * @param Integer $n\n     * @return Integer\n     */\n    function numberOfPatterns($m, $n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"35K\", \"totalSubmission\": \"74K\", \"totalAcceptedRaw\": 34951, \"totalSubmissionRaw\": 73971, \"acRate\": \"47.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "50",
+    "canSeeDetail": true,
+    "url": "/articles/android-unlock-patterns/",
+    "content": "[TOC]\r\n\r\n## Summary\r\n\r\nAfter Android launched its \"unlock pattern\" system to protect our smart phones from unauthorized access, the most common question that comes to one's mind is: How secure exactly are these patterns? The current article gives an answer to this question, as presenting an algorithm, which computes the number of all valid pattern combinations. It is intended for intermediate users and introduces the following ideas:\r\nBacktracking, Arrays.\r\n\r\n## Solution\r\n\r\n---\r\n#### Approach #1: (Backtracking) [Accepted]\r\n\r\n**Algorithm**\r\n\r\nThe algorithm uses backtracking technique to enumerate all possible $$k$$ combinations of numbers $$[1\\dots\\ 9]$$ where $$m \\leq k \\leq n$$. During the generation of the recursive solution tree, the algorithm cuts all the branches  which lead to patterns which doesn't satisfy the rules and counts only the valid patterns.\r\nIn order to compute a valid pattern, the algorithm performs the following steps:\r\n\r\n- Select a digit $$i$$ which is not used in the pattern till this moment. This is done with the help of a $$used$$ array which stores all available digits.\r\n\r\n- We need to keep last inserted digit $$last$$. The algorithm makes a check whether one of the following conditions is valid.\r\n\r\n    - There is a knight move (as in chess)  from $$last$$ towards $$i$$ or $$last$$ and $$i$$ are adjacent digits in a row, in a column. In this case the sum of both digits should be an odd number.\r\n\r\n    - The middle element $$mid$$ in the line which connects $$i$$ and $$last$$ was previously selected. In case $$i$$ and $$last$$ are positioned at both ends of the diagonal, digit $$mid$$ = 5 should be previously selected.\r\n  \r\n    - $$last$$ and $$i$$ are adjacent digits in a diagonal\r\n\r\nIn case one of the conditions above is satisfied, digit $$i$$ becomes part of partially generated valid pattern and the algorithm continues with the next candidate digit till the pattern is fully generated. Then it counts it.\r\nIn case none of the conditions are satisfied, the algorithm rejects the current digit $$i$$, backtracks and continues to search for other valid digits among the unused ones.\r\n\r\n![Android unlock pattern recursive solution tree](https://leetcode.com/media/original_images/351_Android.png){:width=\"80%\"}\r\n{:align=\"center\"}\r\n\r\n**Java**\r\n\r\n```java\r\n\r\npublic class Solution {\r\n\r\n    private boolean used[] = new boolean[9];\r\n\r\n    public int numberOfPatterns(int m, int n) {\t        \r\n        int res = 0;\r\n        for (int len = m; len <= n; len++) {\t            \r\n            res += calcPatterns(-1, len);\r\n            for (int i = 0; i < 9; i++) {\t                \r\n                used[i] = false;\r\n            }            \r\n        }\r\n        return res;\r\n    }\r\n\r\n    private boolean isValid(int index, int last) {\r\n        if (used[index])\r\n            return false;\r\n        // first digit of the pattern    \r\n        if (last == -1)\r\n            return true;\r\n        // knight moves or adjacent cells (in a row or in a column)\t       \r\n        if ((index + last) % 2 == 1)\r\n            return true;\r\n        // indexes are at both end of the diagonals for example 0,0, and 8,8          \r\n        int mid = (index + last)/2;\r\n        if (mid == 4)\r\n            return used[mid];\r\n        // adjacent cells on diagonal  - for example 0,0 and 1,0 or 2,0 and //1,1\r\n        if ((index%3 != last%3) && (index/3 != last/3)) {\r\n            return true;\r\n        }\r\n        // all other cells which are not adjacent\r\n        return used[mid];\r\n    }\r\n\r\n    private int calcPatterns(int last, int len) {\r\n        if (len == 0)\r\n            return 1;    \r\n        int sum = 0;\r\n        for (int i = 0; i < 9; i++) {\r\n            if (isValid(i, last)) {\r\n                used[i] = true;\r\n                sum += calcPatterns(i, len - 1);\r\n                used[i] = false;                    \r\n            }\r\n        }\r\n        return sum;\r\n    }\r\n}\r\n```\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O( n!)$$, where $$n$$ is maximum pattern length\r\n\r\n    The algorithm computes each pattern once and no element can appear in the pattern twice. The time complexity is proportional to the number of the computed patterns. One upper bound of the number of all possible combinations is :\r\n\r\n$$\r\n\\ \\sum_{i=m}^{n} {_9}P_i = \\ \\sum_{i=m}^{n} \\frac{9!}{(9 - i)!}\r\n$$\r\n\r\n\r\n* Space complexity : $$O(n)$$, where $$n$$ is maximum pattern length\r\nIn the worst case the maximum depth of recursion is $$n$$. Therefore we need $$O( n)$$ space used by the system recursive stack\r\n\r\n## Further Thoughts\r\n\r\nThe algorithm above could be optimized if we consider the symmetry property of the problem. We notice that the number of valid patterns with first digit 1, 3, 7, 9 are the same. A similar observation is true for patterns which starts with digit 2, 4, 6, 8.  Hence we only  need to calculate one among each group and multiply by 4.\r\n\r\nYou can find the optimized solution [here](https://leetcode.com/discuss/104500/java-solution-with-clear-explanations-and-optimization-81ms).\r\n\r\nAnalysis written by: @elmirap.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "48",
+      "count": 29,
+      "average": 3.034,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "1\n1",
+  "metaData": "{\r\n  \"name\": \"numberOfPatterns\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"m\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,109 @@
+{
+  "questionId": "110",
+  "questionFrontendId": "110",
+  "boundTopicId": null,
+  "title": "Balanced Binary Tree",
+  "titleSlug": "balanced-binary-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary tree, determine if it is height-balanced.</p>\n\n<p>For this problem, a height-balanced binary tree is defined as:</p>\n\n<blockquote>\n<p>a binary tree in which the left and right subtrees of <em>every</em> node differ in height by no more than 1.</p>\n</blockquote>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<p>Given the following tree <code>[3,9,20,null,null,15,7]</code>:</p>\n\n<pre>\n    3\n   / \\\n  9  20\n    /  \\\n   15   7</pre>\n\n<p>Return true.<br />\n<br />\n<strong>Example 2:</strong></p>\n\n<p>Given the following tree <code>[1,2,2,3,3,null,null,4,4]</code>:</p>\n\n<pre>\n       1\n      / \\\n     2   2\n    / \\\n   3   3\n  / \\\n 4   4\n</pre>\n\n<p>Return false.</p>\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1634,
+  "dislikes": 142,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Maximum Depth of Binary Tree\", \"titleSlug\": \"maximum-depth-of-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    bool isBalanced(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public boolean isBalanced(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def isBalanced(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def isBalanced(self, root: TreeNode) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nbool isBalanced(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public bool IsBalanced(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {boolean}\n */\nvar isBalanced = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {Boolean}\ndef is_balanced(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func isBalanced(_ root: TreeNode?) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc isBalanced(root *TreeNode) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def isBalanced(root: TreeNode): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun isBalanced(root: TreeNode?): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn is_balanced(root: Option<Rc<RefCell<TreeNode>>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Boolean\n     */\n    function isBalanced($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"381.8K\", \"totalSubmission\": \"904.1K\", \"totalAcceptedRaw\": 381801, \"totalSubmissionRaw\": 904148, \"acRate\": \"42.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "790",
+    "canSeeDetail": true,
+    "url": "/articles/balanced-binary-tree/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\nGiven the definition of a balanced tree\r\nwe know that a tree $$T$$ is *not* balanced if and only if there is some node\r\n$$p\\in T$$ such that $$|\\texttt{height}(p.left) - \\texttt{height}(p.right)| > 1$$. \r\nThe tree below has each node is labeled by its height, \r\nas well as the unbalanced subtree highlighted.\r\n\r\n<center>\r\n\r\n![pic](../Figures/110/110-unbalanced-wheight-highlighted.png)\r\n\r\n</center>\r\n\r\n> The balanced subtree definition hints at the fact that we should treat each \r\n> subtree as a subproblem. The question is: in which order should we solve the \r\n> subproblems?\r\n\r\n---\r\n\r\n#### Approach 1: Top-down recursion\r\n\r\n**Algorithm**\r\n\r\nFirst we define a function $$\\texttt{height}$$ such that  for any node\r\n$$p\\in T$$\r\n\r\n<center>\r\n$$\r\n\\texttt{height}(p) = \r\n\\begin{cases}\r\n-1 & p \\text{ is an empty subtree i.e. } \\texttt{null}\\\\\r\n1 + \\max(\\texttt{height}(p.left), \\texttt{height}(p.right)) & \\text{ otherwise}\r\n\\end{cases}\r\n$$\r\n</center>\r\n\r\nNow that we have a method for determining the height of a tree, \r\nall that remains is to compare the height of every node's children. A tree $$T$$ \r\nrooted at $$r$$ is balanced if and only if the height of its two children are within\r\n1 of each other and the subtrees at each child are also balanced. Therefore, we can \r\ncompare the two child subtrees' heights then recurse on each one. \r\n\r\n```\r\nisBalanced(root):\r\n    if (root == NULL):\r\n        return true\r\n    if (abs(height(root.left) - height(root.right)) > 1):\r\n        return false\r\n    else:\r\n        return isBalanced(root.left) && isBalanced(root.right)\r\n\r\n```\r\n\r\n<iframe src=\"https://leetcode.com/playground/BDAF9qQX/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"BDAF9qQX\"></iframe>\r\n\r\n<center>\r\n\r\n!?!../Documents/110_Balanced_Binary_Tree_topdown.json:1000,500!?!\r\n\r\n</center>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(n\\log n)$$\r\n    * For a node $$p$$ at depth $$d$$, $$\\texttt{height}(p)$$ will be called $$d$$ times.\r\n\r\n    * We first need to obtain a bound on the height of a balanced tree. Let\r\n    $$f(h)$$ represent the minimum number of nodes in a balanced tree with height $$h$$. \r\n    We have the relation\r\n\r\n    <center>\r\n    $$\r\n    f(h) = f(h - 1) + f(h - 2) + 1\r\n    $$\r\n    </center>\r\n\r\n    which looks nearly identical to the Fibonacci recurrence relation. In \r\n    fact, the complexity analysis for $$f(h)$$ is similar and we claim that the lower \r\n    bound is $$f(h) = \\Omega\\left(\\left(\\frac{3}{2}\\right)^h\\right)$$. \r\n    \r\n    <center>      \r\n    $$                                                                          \r\n     \\begin{align}                                                                   \r\n    f(h+1) &= f(h) + f(h-1) + 1 \\\\                                                  \r\n    &> f(h) + f(h-1) & \\qquad\\qquad \\text{This is the fibonacci sequence}\\\\               \r\n    &\\geq \\left(\\frac{3}{2}\\right)^{h} + \\left(\\frac{3}{2}\\right)^{h-1} & \\text{via our claim} \\\\\r\n    &= \\frac{5}{2} \\left(\\frac{3}{2}\\right)^{h-1}\\\\\r\n    &> \\frac{9}{4} \\left(\\frac{3}{2}\\right)^{h-1} & \\frac{9}{4} < \\frac{5}{2}\\\\\r\n    &> \\left(\\frac{3}{2}\\right)^{h+1}\r\n    \\end{align}                                                                     \r\n    $$                                                                              \r\n    </center>  \r\n    \r\n    Therefore, the height $$h$$ of a balanced tree\r\n    is bounded by $$\\mathcal{O}(\\log_{1.5}(n))$$. With this bound we can guarantee that \r\n    $$\\texttt{height}$$ will be called\r\n    on each node $$\\mathcal{O}(\\log n)$$ times.\r\n\r\n    * If our algorithm didn't have any early-stopping, we may end up having \r\n    $$\\mathcal{O}(n^2)$$ complexity if our tree is skewed since height is bounded by $$\\mathcal{O}(n)$$.\r\n    However, it is important to note that we stop recursion as soon as the \r\n    height of a node's children are not within 1. In fact, in the skewed-tree\r\n    case our algorithm is bounded by $$\\mathcal{O}(n)$$, as it only checks the height of \r\n    the first two subtrees.\r\n        \r\n* Space complexity : $$\\mathcal{O}(n)$$. The recursion stack may contain all nodes if the \r\n    tree is skewed.\r\n\r\n**Fun fact**: $$f(n) = f(n-1) + f(n-2) + 1$$ is known as a [Fibonacci meanders](http://oeis.org/wiki/User:Peter_Luschny/FibonacciMeanders)\r\nsequence.\r\n\r\n\r\n<br />\r\n\r\n---\r\n\r\n#### Approach 2: Bottom-up recursion\r\n\r\n**Intuition** \r\n\r\nIn approach 1, we perform redundant calculations when computing $$\\texttt{height}$$.\r\nIn each call to $$\\texttt{height}$$, we require that the subtree's heights also be\r\ncomputed. Therefore, when working top down we will compute the height of a subtree\r\nonce for every parent. We can remove the redundancy by first recursing  on the\r\nchildren  of the current node and then using their computed height to determine \r\nwhether the current node is balanced.\r\n\r\n**Algorithm**\r\n\r\nWe will use the same $$\\texttt{height}$$ defined in the first approach. The \r\nbottom-up approach is a reverse of the logic of the top-down approach\r\nsince we *first* check if the child subtrees are balanced *before*\r\ncomparing their heights. The algorithm is as follows: \r\n\r\n> Check if the child subtrees are balanced. If they are, use their\r\n> heights to determine if the current subtree is balanced as well as to calculate\r\n> the current subtree's height.\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/NpoCAWjW/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"NpoCAWjW\"></iframe>\r\n\r\n<center>\r\n\r\n!?!../Documents/110_Balanced_Binary_Tree_bottomup.json:1000,500!?!\r\n\r\n</center>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(n)$$\r\n\r\n    For every subtree, we compute its height in constant time as well as \r\n    compare the height of its children. \r\n* Space complexity : $$\\mathcal{O}(n)$$. The recursion stack may go up to $$\\mathcal{O}(n)$$ if the tree is unbalanced.\r\n\r\n\r\n<br />\r\n\r\n---\r\n\r\n\r\nAnalysis written by: @[kille2](https://leetcode.com/kille2/).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "768",
+      "count": 12,
+      "average": 4.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,9,20,null,null,15,7]",
+  "metaData": "{\r\n  \"name\": \"isBalanced\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

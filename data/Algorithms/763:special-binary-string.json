@@ -1,0 +1,117 @@
+{
+  "questionId": "763",
+  "questionFrontendId": "761",
+  "boundTopicId": null,
+  "title": "Special Binary String",
+  "titleSlug": "special-binary-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\n<i>Special</i> binary strings are binary strings with the following two properties:\r\n</p><p>\r\n<li>The number of 0's is equal to the number of 1's.</li>\r\n<li>Every prefix of the binary string has at least as many 1's as 0's.</li>\r\n</p><p>\r\nGiven a special string <code>S</code>, a <i>move</i> consists of choosing two consecutive, non-empty, special substrings of <code>S</code>, and swapping them.  <i>(Two strings are consecutive if the last character of the first string is exactly one index before the first character of the second string.)</i>\r\n</p><p>\r\nAt the end of any number of moves, what is the lexicographically largest resulting string possible?\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> S = \"11011000\"\r\n<b>Output:</b> \"11100100\"\r\n<b>Explanation:</b>\r\nThe strings \"10\" [occuring at S[1]] and \"1100\" [at S[3]] are swapped.\r\nThis is the lexicographically largest string possible after some number of swaps.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><ol>\r\n<li><code>S</code> has length at most <code>50</code>.</li>\r\n<li><code>S</code> is guaranteed to be a <i>special</i> binary string as defined above.</li>\r\n</ol></p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 223,
+  "dislikes": 80,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Valid Parenthesis String\", \"titleSlug\": \"valid-parenthesis-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "cnmnwpu",
+      "profileUrl": "/cnmnwpu/",
+      "avatarUrl": "https://www.gravatar.com/avatar/6f011e49849dfee54a779658e171d633.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Coursera\", \"slug\": \"coursera\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Quip (Salesforce)\", \"slug\": \"quip\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Citrix\", \"slug\": \"citrix\", \"timesEncountered\": 4}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string makeLargestSpecial(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String makeLargestSpecial(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def makeLargestSpecial(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def makeLargestSpecial(self, S: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * makeLargestSpecial(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string MakeLargestSpecial(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {string}\n */\nvar makeLargestSpecial = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef make_largest_special(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func makeLargestSpecial(_ S: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func makeLargestSpecial(S string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def makeLargestSpecial(S: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun makeLargestSpecial(S: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn make_largest_special(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return String\n     */\n    function makeLargestSpecial($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.4K\", \"totalSubmission\": \"11.8K\", \"totalAcceptedRaw\": 6396, \"totalSubmissionRaw\": 11845, \"acRate\": \"54.0%\"}",
+  "hints": [
+    "Draw a line from (x, y) to (x+1, y+1) if we see a \"1\", else to (x+1, y-1).\r\nA special substring is just a line that starts and ends at the same y-coordinate, and that is the lowest y-coordinate reached.\r\nCall a mountain a special substring with no special prefixes - ie. only at the beginning and end is the lowest y-coordinate reached.\r\nIf F is the answer function, and S has mountain decomposition M1,M2,M3,...,Mk,  then the answer is:\r\nreverse_sorted(F(M1), F(M2), ..., F(Mk)).\r\nHowever, you'll also need to deal with the case that S is a mountain, such as 11011000 -> 11100100."
+  ],
+  "solution": {
+    "id": "370",
+    "canSeeDetail": true,
+    "url": "/articles/special-binary-string/",
+    "content": "[TOC]\r\n\r\n#### Approach #1: Recursion [Accepted]\r\n\r\n**Intuition**\r\n\r\nWe can represent binary strings as \"up and down\" drawings, as follows:\r\n\r\n<img src=\"../Figures/761/Special_Binary_String_1.png\" width=80% height=80% />\r\n\r\nIn such a drawing, `\"1\"` is a line up one unit, and `\"0\"` is a line down one unit, where all lines are 45 degrees from horizontal.\r\n\r\nThen, a binary string is *special* if and only if its up and down drawing does not cross below the starting horizontal line.\r\n\r\nNow, say a special binary string is a *mountain* if it has no special proper prefix.  When viewed through the lens of up and down drawings, a special binary string is a mountain if it touches the starting horizontal line only at the very beginning and the very end of the drawing.  Notice that every special string can be written as consecutive mountains.\r\n\r\nWithout loss of generality, we can assume we only swap mountains.  Because if we swap special adjacent substrings A and B, and A has mountain decomposition $$A = M_1M_2\\dots M_k$$, then we could instead swap $$B$$ and $$M_k$$, then $$B$$ and $$M_{k-1}$$, and so on.\r\n\r\nAlso, if $$S$$ has mountain decomposition $$S = M_1M_2\\dots M_k$$, and we choose $$A$$ to start not at the start of some $$M_i$$, then $$A$$ has global height $$h > 0$$, and so $$A$$ cannot be special if it includes parts of another mountain $$M_{i+1}$$ as the end of mountain $$M_i$$ will cause it to dip to global height $$0 < h$$.\r\n\r\n**Algorithm**\r\n\r\nSay `F(String S)` is the desired `makeLargestSpecial` function.  If `S` has mountain decomposition $$S = M_1M_2\\dots M_k$$, the answer is $$\\text{reverse_sorted}(F(M_1), F(M_2), \\dots, F(M_k))$$, as swaps `A, B` involving multiple $$M_i$$ cannot have `A` or `B` start differently from where these $$M_i$$ start.\r\n\r\nIt remains to determine how to handle the case when $$S = S_0, S_1, \\dots , S_{N-1}$$ is a mountain.  In that case, it must start with `\"1\"` and end with `\"0\"`, so the answer is `\"1\" + F([S[1], S[2], ..., S[N-2]]) + \"0\"`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/seasLy82/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"seasLy82\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(N^2)$$, where $$N$$ is the length of $$S$$.\r\n\r\n* Space Complexity: $$O(N)$$.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "365",
+      "count": 8,
+      "average": 4.25,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"11011000\"",
+  "metaData": "{\r\n  \"name\": \"makeLargestSpecial\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,115 @@
+{
+  "questionId": "950",
+  "questionFrontendId": "914",
+  "boundTopicId": null,
+  "title": "X of a Kind in a Deck of Cards",
+  "titleSlug": "x-of-a-kind-in-a-deck-of-cards",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a deck of cards, each card has an integer written on it.</p>\r\n\r\n<p>Return <code>true</code> if and only if you can choose&nbsp;<code>X &gt;= 2</code> such that&nbsp;it is possible to split the entire deck&nbsp;into 1 or more groups of cards, where:</p>\r\n\r\n<ul>\r\n\t<li>Each group has exactly <code>X</code> cards.</li>\r\n\t<li>All the cards in each group have the same integer.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[1,2,3,4,4,3,2,1]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true\r\n<strong>Explanation</strong>: Possible partition [1,1],[2,2],[3,3],[4,4]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[1,1,1,2,2,2,3,3]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">false\r\n</span><span id=\"example-output-1\"><strong>Explanation</strong>: No possible partition.</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[1]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">false\r\n</span><span id=\"example-output-1\"><strong>Explanation</strong>: No possible partition.</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">[1,1]</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">true\r\n</span><span id=\"example-output-1\"><strong>Explanation</strong>: Possible partition [1,1]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-5-1\">[1,1,2,2,2,2]</span>\r\n<strong>Output: </strong><span id=\"example-output-5\">true\r\n</span><span id=\"example-output-1\"><strong>Explanation</strong>: Possible partition [1,1],[2,2],[2,2]</span>\r\n</pre>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<p><br />\r\n<strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= deck.length &lt;= 10000</code></li>\r\n\t<li><code>0 &lt;= deck[i] &lt;&nbsp;10000</code></li>\r\n</ol>\r\n\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 325,
+  "dislikes": 81,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "sayaan",
+      "profileUrl": "/sayaan/",
+      "avatarUrl": "https://www.gravatar.com/avatar/9711dad3fa6e529bb3391e0cef115c73.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool hasGroupsSizeX(vector<int>& deck) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean hasGroupsSizeX(int[] deck) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def hasGroupsSizeX(self, deck):\n        \"\"\"\n        :type deck: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def hasGroupsSizeX(self, deck: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool hasGroupsSizeX(int* deck, int deckSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool HasGroupsSizeX(int[] deck) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} deck\n * @return {boolean}\n */\nvar hasGroupsSizeX = function(deck) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} deck\n# @return {Boolean}\ndef has_groups_size_x(deck)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func hasGroupsSizeX(_ deck: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func hasGroupsSizeX(deck []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def hasGroupsSizeX(deck: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun hasGroupsSizeX(deck: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn has_groups_size_x(deck: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $deck\n     * @return Boolean\n     */\n    function hasGroupsSizeX($deck) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"26.8K\", \"totalSubmission\": \"78.8K\", \"totalAcceptedRaw\": 26750, \"totalSubmissionRaw\": 78839, \"acRate\": \"33.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "573",
+    "canSeeDetail": true,
+    "url": "/articles/x-of-a-kind-in-a-deck-of-cards/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Brute Force\n\n**Intuition**\n\nWe can try every possible `X`.  \n\n**Algorithm**\n\nSince we divide the deck of `N` cards into say, `K` piles of `X` cards each, we must have `N % X == 0`.\n\nThen, say the deck has `C_i` copies of cards with number `i`.  Each group with number `i` has `X` copies, so we must have `C_i % X == 0`.  These are necessary and sufficient conditions.\n\n<iframe src=\"https://leetcode.com/playground/FCdXEDEB/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"FCdXEDEB\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2 \\log \\log N)$$, where $$N$$ is the number of cards.  It is outside the scope of this article to prove that the number of divisors of $$N$$ is bounded by $$O(N \\log \\log N)$$.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Greatest Common Divisor\n\n**Intuition and Algorithm**\n\nAgain, say there are `C_i` cards of number `i`.  These must be broken down into piles of `X` cards each, ie. `C_i % X == 0` for all `i`.\n\nThus, `X` must divide the greatest common divisor of `C_i`.  If this greatest common divisor `g` is greater than `1`, then `X = g` will satisfy.  Otherwise, it won't.\n\n<iframe src=\"https://leetcode.com/playground/biA9HRs5/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"biA9HRs5\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log^2 N)$$, where $$N$$ is the number of votes.  If there are $$C_i$$ cards with number $$i$$, then each `gcd` operation is naively $$O(\\log^2 C_i)$$.  Better bounds exist, but are outside the scope of this article to develop.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "561",
+      "count": 8,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4,4,3,2,1]",
+  "metaData": "{\r\n  \"name\": \"hasGroupsSizeX\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"deck\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

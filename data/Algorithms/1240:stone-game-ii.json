@@ -1,0 +1,101 @@
+{
+  "questionId": "1240",
+  "questionFrontendId": "1140",
+  "boundTopicId": null,
+  "title": "Stone Game II",
+  "titleSlug": "stone-game-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Alex&nbsp;and Lee continue their&nbsp;games with piles of stones.&nbsp; There are a number of&nbsp;piles&nbsp;<strong>arranged in a row</strong>, and each pile has a positive integer number of stones&nbsp;<code>piles[i]</code>.&nbsp; The objective of the game is to end with the most&nbsp;stones.&nbsp;</p>\r\n\r\n<p>Alex and Lee take turns, with Alex starting first.&nbsp; Initially, <code>M = 1</code>.</p>\r\n\r\n<p>On each player&#39;s turn, that player&nbsp;can take <strong>all the stones</strong> in the <strong>first</strong> <code>X</code> remaining piles, where <code>1 &lt;= X &lt;= 2M</code>.&nbsp; Then, we set&nbsp;<code>M = max(M, X)</code>.</p>\r\n\r\n<p>The game continues until all the stones have been taken.</p>\r\n\r\n<p>Assuming Alex and Lee play optimally, return the maximum number of stones Alex can get.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> piles = [2,7,9,4,4]\r\n<strong>Output:</strong> 10\r\n<strong>Explanation:</strong>  If Alex takes one pile at the beginning, Lee takes two piles, then Alex takes 2 piles again. Alex can get 2 + 4 + 4 = 10 piles in total. If Alex takes two piles at the beginning, then Lee can take all three piles left. In this case, Alex get 2 + 7 = 9 piles in total. So we return 10 since it&#39;s larger. \r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= piles.length &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= piles[i]&nbsp;&lt;= 10 ^ 4</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 180,
+  "dislikes": 40,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "entropy714",
+      "profileUrl": "/entropy714/",
+      "avatarUrl": "https://assets.leetcode.com/users/entropy714/avatar_1564286900.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"ByteDance(Toutiao)\", \"slug\": \"bytedancetoutiao\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int stoneGameII(vector<int>& piles) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int stoneGameII(int[] piles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def stoneGameII(self, piles):\n        \"\"\"\n        :type piles: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def stoneGameII(self, piles: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint stoneGameII(int* piles, int pilesSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int StoneGameII(int[] piles) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} piles\n * @return {number}\n */\nvar stoneGameII = function(piles) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} piles\n# @return {Integer}\ndef stone_game_ii(piles)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func stoneGameII(_ piles: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func stoneGameII(piles []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def stoneGameII(piles: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun stoneGameII(piles: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn stone_game_ii(piles: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $piles\n     * @return Integer\n     */\n    function stoneGameII($piles) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.4K\", \"totalSubmission\": \"10.6K\", \"totalAcceptedRaw\": 6415, \"totalSubmissionRaw\": 10638, \"acRate\": \"60.3%\"}",
+  "hints": [
+    "Use dynamic programming: the states are (i, m) for the answer of piles[i:] and that given m."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[2,7,9,4,4]",
+  "metaData": "{\n  \"name\": \"stoneGameII\",\n  \"params\": [\n    {\n      \"name\": \"piles\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

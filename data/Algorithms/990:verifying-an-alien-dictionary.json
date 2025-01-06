@@ -1,0 +1,111 @@
+{
+  "questionId": "990",
+  "questionFrontendId": "953",
+  "boundTopicId": null,
+  "title": "Verifying an Alien Dictionary",
+  "titleSlug": "verifying-an-alien-dictionary",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In an alien language, surprisingly they also use english lowercase letters, but possibly&nbsp;in a different <code>order</code>. The&nbsp;<code>order</code> of the alphabet&nbsp;is some permutation&nbsp;of lowercase letters.</p>\n\n<p>Given a sequence of <code>words</code>&nbsp;written in the alien language,&nbsp;and the <code>order</code> of the alphabet,&nbsp;return <code>true</code> if and only if the given <code>words</code>&nbsp;are sorted lexicographicaly in this alien language.</p>\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;hello&quot;,&quot;leetcode&quot;], order = &quot;hlabcdefgijkmnopqrstuvwxyz&quot;\n<strong>Output:</strong> true\n<strong>Explanation: </strong>As &#39;h&#39; comes before &#39;l&#39; in this language, then the sequence is sorted.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;word&quot;,&quot;world&quot;,&quot;row&quot;], order = &quot;worldabcefghijkmnpqstuvxyz&quot;\n<strong>Output:</strong> false\n<strong>Explanation: </strong>As &#39;d&#39; comes after &#39;l&#39; in this language, then words[0] &gt; words[1], hence the sequence is unsorted.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> words = [&quot;apple&quot;,&quot;app&quot;], order = &quot;abcdefghijklmnopqrstuvwxyz&quot;\n<strong>Output:</strong> false\n<strong>Explanation: </strong>The first three characters &quot;app&quot; match, and the second string is shorter (in size.) According to lexicographical rules &quot;apple&quot; &gt; &quot;app&quot;, because &#39;l&#39; &gt; &#39;&empty;&#39;, where &#39;&empty;&#39; is defined as the blank character which is less than any other character (<a href=\"https://en.wikipedia.org/wiki/Lexicographical_order\" target=\"_blank\">More info</a>).\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= words.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= words[i].length &lt;= 20</code></li>\n\t<li><code>order.length == 26</code></li>\n\t<li>All characters in <code>words[i]</code> and <code>order</code> are English lowercase letters.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 390,
+  "dislikes": 156,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "hendersson",
+      "profileUrl": "/hendersson/",
+      "avatarUrl": "https://assets.leetcode.com/users/hendersson/avatar_1523199610.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 85}, {\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isAlienSorted(vector<string>& words, string order) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isAlienSorted(String[] words, String order) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isAlienSorted(self, words, order):\n        \"\"\"\n        :type words: List[str]\n        :type order: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isAlienSorted(self, words: List[str], order: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isAlienSorted(char ** words, int wordsSize, char * order){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsAlienSorted(string[] words, string order) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @param {string} order\n * @return {boolean}\n */\nvar isAlienSorted = function(words, order) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @param {String} order\n# @return {Boolean}\ndef is_alien_sorted(words, order)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isAlienSorted(_ words: [String], _ order: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isAlienSorted(words []string, order string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isAlienSorted(words: Array[String], order: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isAlienSorted(words: Array<String>, order: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_alien_sorted(words: Vec<String>, order: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @param String $order\n     * @return Boolean\n     */\n    function isAlienSorted($words, $order) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"54.4K\", \"totalSubmission\": \"98.6K\", \"totalAcceptedRaw\": 54417, \"totalSubmissionRaw\": 98571, \"acRate\": \"55.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "633",
+    "canSeeDetail": true,
+    "url": "/articles/verifying-an-alien-dictionary/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Check Adjacent Words\n\n**Intuition**\n\nThe words are sorted lexicographically if and only if adjacent words are.  This is because order is transitive: `a <= b` and `b <= c` implies `a <= c`.\n\n**Algorithm**\n\nLet's check whether all adjacent words `a` and `b` have `a <= b`.\n\nTo check whether `a <= b` for two adjacent words `a` and `b`, we can find their first difference.  For example, `\"applying\"` and `\"apples\"` have a first difference of `y` vs `e`.  After, we compare these characters to the index in `order`.\n\nCare must be taken to deal with the blank character effectively.  If for example, we are comparing `\"app\"` to `\"apply\"`, this is a first difference of `(null)` vs `\"l\"`.\n\n<iframe src=\"https://leetcode.com/playground/8bE6hgJ8/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"8bE6hgJ8\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\mathcal{C})$$, where $$\\mathcal{C}$$ is the total *content* of `words`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "619",
+      "count": 28,
+      "average": 2.393,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"hello\",\"leetcode\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+  "metaData": "{\r\n  \"name\": \"isAlienSorted\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    },\r\n    {\r\n      \"name\": \"order\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

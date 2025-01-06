@@ -1,0 +1,114 @@
+{
+  "questionId": "1046",
+  "questionFrontendId": "1004",
+  "boundTopicId": null,
+  "title": "Max Consecutive Ones III",
+  "titleSlug": "max-consecutive-ones-iii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>A</code>&nbsp;of 0s and 1s, we may change up to <code>K</code>&nbsp;values from 0 to 1.</p>\r\n\r\n<p>Return the length of the longest (contiguous) subarray that contains only 1s.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[1,1,1,0,0,0,1,1,1,1,0]</span>, K = <span id=\"example-input-1-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">6</span>\r\n<strong>Explanation: </strong>\r\n[1,1,1,0,0,<u><strong>1</strong>,1,1,1,1,<strong>1</strong></u>]\r\nBolded numbers were flipped from 0 to 1.  The longest subarray is underlined.</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">[0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1]</span>, K = <span id=\"example-input-2-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">10</span>\r\n<strong>Explanation: </strong>\r\n[0,0,<u>1,1,<b>1</b>,<strong>1</strong>,1,1,1,<strong>1</strong>,1,1</u>,0,0,0,1,1,1,1]\r\nBolded numbers were flipped from 0 to 1.  The longest subarray is underlined.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><span>Note:</span></strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 20000</code></li>\r\n\t<li><code>0 &lt;= K &lt;= A.length</code></li>\r\n\t<li><code>A[i]</code> is <code>0</code> or <code>1</code>&nbsp;</li>\r\n</ol>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 526,
+  "dislikes": 9,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Substring with At Most K Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-k-distinct-characters\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Longest Repeating Character Replacement\", \"titleSlug\": \"longest-repeating-character-replacement\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Max Consecutive Ones\", \"titleSlug\": \"max-consecutive-ones\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Max Consecutive Ones II\", \"titleSlug\": \"max-consecutive-ones-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestOnes(vector<int>& A, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestOnes(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestOnes(self, A, K):\n        \"\"\"\n        :type A: List[int]\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestOnes(self, A: List[int], K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint longestOnes(int* A, int ASize, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestOnes(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number} K\n * @return {number}\n */\nvar longestOnes = function(A, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer} k\n# @return {Integer}\ndef longest_ones(a, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestOnes(_ A: [Int], _ K: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestOnes(A []int, K int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestOnes(A: Array[Int], K: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestOnes(A: IntArray, K: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_ones(a: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer $K\n     * @return Integer\n     */\n    function longestOnes($A, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"27.4K\", \"totalSubmission\": \"49.1K\", \"totalAcceptedRaw\": 27429, \"totalSubmissionRaw\": 49103, \"acRate\": \"55.9%\"}",
+  "hints": [
+    "One thing's for sure, we will only flip a zero if it extends an existing window of 1s. Otherwise, there's no point in doing it, right? Think Sliding Window!",
+    "Since we know this problem can be solved using the sliding window construct, we might as well focus in that direction for hints. Basically, in a given window, we can never have > K zeros, right?",
+    "We don't have a fixed size window in this case. The window size can grow and shrink depending upon the number of zeros we have (we don't actually have to flip the zeros here!).",
+    "The way to shrink or expand a window would be based on the number of zeros that can still be flipped and so on."
+  ],
+  "solution": {
+    "id": "799",
+    "canSeeDetail": true,
+    "url": "/articles/max-consecutive-ones-iii/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\nThe problem has asked for longest contiguous subarray that contains only 1s. What makes this problem a little trickier is the `K` flips allowed from `0` --> `1`. This means a contiguous subarray of 1's might not just contain `1`'s but also may contain some `0`'s. The number of `0`'s allowed in a given subarray is given by `K`.\r\n\r\n  <center>\r\n  <img src=\"../Figures/1004/1004_Max_Consecutive_Ones_1.png\" width=\"500\"/>\r\n  </center>\r\n  <br>\r\nThe above diagram shows the `flip` which helped us to get the longest contiguous subarray if only one flip was allowed.\r\n\r\n#### Approach: Sliding Window\r\n\r\n**Intuition**\r\n\r\nTo find the longest subarray with contiguous `1`'s we might need to find all the subarrays first. But do we really need to do that? If we find all the subarrays we are essentially finding out so many unnecessary overlapping subarrays too.\r\n\r\nWe can use a simple sliding window approach to solve this problem.\r\n\r\nIn any sliding window based problem we have two pointers. One right pointer whose job is to expand the current window and then we have the left pointer whose job is to contract a given window. At any point in time only one of these pointers move and the other one remains fixed.\r\n\r\nThe solution is pretty intuitive. We keep expanding the window by moving the right pointer. When the window has reached the limit of `0`'s allowed, we contract (if possible) and save the longest window till now.\r\n\r\nThe answer is the longest desirable window.\r\n\r\n**Algorithm**\r\n\r\n1. Initialize two pointers. The two pointers help us to mark the left and right end of the window/subarray with contiguous `1`'s.\r\n\r\n    >left = 0, right = 0, window_size = 0\r\n\r\n2. We use the `right` pointer to expand the window until the window/subarray is desirable. i.e. number of `0`'s in the window are in the allowed range of [0, K].\r\n\r\n3. Once we have a window which has more than the allowed number of `0`'s, we can move the left pointer ahead one by one until we encounter `0` on the left too. This step ensures we are throwing out the extra zero.\r\n\r\n<center>\r\n<img src=\"../Figures/1004/1004_Max_Consecutive_Ones_2.png\" width=\"500\"/>\r\n</center>\r\n<br>\r\n\r\n> Note: As suggested in the [discussion forum](https://leetcode.com/problems/max-consecutive-ones-iii/discuss/247564/JavaC++Python-Sliding-Window). We can solve this problem a little efficiently. Since we have to find the MAXIMUM window, we never reduce the size of the window. We either increase the size of the window or remain same but never reduce the size.\r\n\r\n<center>\r\n<img src=\"../Figures/1004/1004_Max_Consecutive_Ones_3.png\" width=\"500\"/>\r\n</center>\r\n<br>\r\n\r\nObserve we don't contract the window if it's not needed and thus save on some computation.\r\n\r\n<iframe src=\"https://leetcode.com/playground/X2Z6K3vu/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"X2Z6K3vu\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(N)$$, where $$N$$ is the number of elements in the array. In worst case we might end up visiting every element of array twice, once by left pointer and once by right pointer.\r\n\r\n* Space Complexity: $$O(1)$$. We do not use any extra space.\r\n<br/>\r\n<br/>\r\n\r\n---\r\nAnalysis written by: [@godayaldivya](https://leetcode.com/godayaldivya/).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "770",
+      "count": 13,
+      "average": 4.462,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,1,1,0,0,0,1,1,1,1,0]\n2",
+  "metaData": "{\r\n  \"name\": \"longestOnes\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

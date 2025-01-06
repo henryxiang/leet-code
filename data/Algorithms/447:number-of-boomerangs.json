@@ -1,0 +1,99 @@
+{
+  "questionId": "447",
+  "questionFrontendId": "447",
+  "boundTopicId": null,
+  "title": "Number of Boomerangs",
+  "titleSlug": "number-of-boomerangs",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given <i>n</i> points in the plane that are all pairwise distinct, a &quot;boomerang&quot; is a tuple of points <code>(i, j, k)</code> such that the distance between <code>i</code> and <code>j</code> equals the distance between <code>i</code> and <code>k</code> (<b>the order of the tuple matters</b>).</p>\r\n\r\n<p>Find the number of boomerangs. You may assume that <i>n</i> will be at most <b>500</b> and coordinates of points are all in the range <b>[-10000, 10000]</b> (inclusive).</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b>\r\n[[0,0],[1,0],[2,0]]\r\n\r\n<b>Output:</b>\r\n2\r\n\r\n<b>Explanation:</b>\r\nThe two boomerangs are <b>[[1,0],[0,0],[2,0]]</b> and <b>[[1,0],[2,0],[0,0]]</b>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 339,
+  "dislikes": 538,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Line Reflection\", \"titleSlug\": \"line-reflection\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "alexander54",
+      "profileUrl": "/alexander54/",
+      "avatarUrl": "https://www.gravatar.com/avatar/7f58f8fde3c816ee4ea0c84325b204b8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int numberOfBoomerangs(vector<vector<int>>& points) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numberOfBoomerangs(int[][] points) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numberOfBoomerangs(self, points):\n        \"\"\"\n        :type points: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numberOfBoomerangs(self, points: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numberOfBoomerangs(int** points, int pointsSize, int* pointsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int NumberOfBoomerangs(int[][] points) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar numberOfBoomerangs = function(points) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} points\r\n# @return {Integer}\r\ndef number_of_boomerangs(points)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func numberOfBoomerangs(_ points: [[Int]]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numberOfBoomerangs(points [][]int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def numberOfBoomerangs(points: Array[Array[Int]]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun numberOfBoomerangs(points: Array<IntArray>): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn number_of_boomerangs(points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $points\n     * @return Integer\n     */\n    function numberOfBoomerangs($points) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"61.3K\", \"totalSubmission\": \"120.6K\", \"totalAcceptedRaw\": 61342, \"totalSubmissionRaw\": 120576, \"acRate\": \"50.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[0,0],[1,0],[2,0]]",
+  "metaData": "{\r\n  \"name\": \"numberOfBoomerangs\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"points\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

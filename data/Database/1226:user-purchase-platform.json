@@ -1,0 +1,53 @@
+{
+  "questionId": "1226",
+  "questionFrontendId": "1127",
+  "boundTopicId": null,
+  "title": "User Purchase Platform",
+  "titleSlug": "user-purchase-platform",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Spending</code></p>\n\n<pre>\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| user_id     | int     |\n| spend_date  | date    |\n| platform    | enum    | \n| amount      | int     |\n+-------------+---------+\nThe table logs the spendings history of users that make purchases from an online shopping website which has a desktop and a mobile application.\n(user_id, spend_date, platform) is the primary key of this table.\nThe platform column is an ENUM type of (&#39;desktop&#39;, &#39;mobile&#39;).\n</pre>\n\n<p>Write an SQL query to find the total number of users and the total amount spent&nbsp;using mobile <strong>only</strong>, desktop <strong>only</strong> and <strong>both</strong> mobile and desktop together for each date.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\n<code>Spending</code> table:\n+---------+------------+----------+--------+\n| user_id | spend_date | platform | amount |\n+---------+------------+----------+--------+\n| 1       | 2019-07-01 | mobile   | 100    |\n| 1       | 2019-07-01 | desktop  | 100    |\n| 2       | 2019-07-01 | mobile   | 100    |\n| 2       | 2019-07-02 | mobile   | 100    |\n| 3       | 2019-07-01 | desktop  | 100    |\n| 3       | 2019-07-02 | desktop  | 100    |\n+---------+------------+----------+--------+\n\nResult table:\n+------------+----------+--------------+-------------+\n| spend_date | platform | total_amount | total_users |\n+------------+----------+--------------+-------------+\n| 2019-07-01 | desktop  | 100          | 1           |\n| 2019-07-01 | mobile   | 100          | 1           |\n| 2019-07-01 | both     | 200          | 1           |\n| 2019-07-02 | desktop  | 100          | 1           |\n| 2019-07-02 | mobile   | 100          | 1           |\n| 2019-07-02 | both     | 0            | 0           |\n+------------+----------+--------------+-------------+ \nOn 2019-07-01, user 1 purchased using <strong>both</strong> desktop and mobile, user 2 purchased using mobile <strong>only</strong> and user 3 purchased using desktop <strong>only</strong>.\nOn 2019-07-02, user 2 purchased using mobile <strong>only</strong>, user 3 purchased using desktop <strong>only</strong> and no one purchased using <strong>both</strong> platforms.</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 28,
+  "dislikes": 16,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.6K\", \"totalSubmission\": \"3.4K\", \"totalAcceptedRaw\": 1564, \"totalSubmissionRaw\": 3371, \"acRate\": \"46.4%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Spending\":[\"user_id\",\"spend_date\",\"platform\",\"amount\"]},\"rows\":{\"Spending\":[[1,\"2019-07-01\",\"mobile\",100],[1,\"2019-07-01\",\"desktop\",100],[2,\"2019-07-01\",\"mobile\",100],[2,\"2019-07-02\",\"mobile\",100],[3,\"2019-07-01\",\"desktop\",100],[3,\"2019-07-02\",\"desktop\",100]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Spending (user_id int, spend_date date, platform ENUM('desktop', 'mobile'), amount int)\"\n  ],\n  \"mssql\": [\n    \"create table Spending (user_id int, spend_date date, platform VARCHAR(10) NOT NULL CHECK (platform IN ('desktop', 'mobile')), amount int)\"\n  ],\n  \"oraclesql\": [\n    \"create table Spending (user_id int, spend_date date, platform VARCHAR(10) NOT NULL CHECK (platform IN ('desktop', 'mobile')), amount int)\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Spending (user_id int, spend_date date, platform ENUM('desktop', 'mobile'), amount int)",
+    "Truncate table Spending",
+    "insert into Spending (user_id, spend_date, platform, amount) values ('1', '2019-07-01', 'mobile', '100')",
+    "insert into Spending (user_id, spend_date, platform, amount) values ('1', '2019-07-01', 'desktop', '100')",
+    "insert into Spending (user_id, spend_date, platform, amount) values ('2', '2019-07-01', 'mobile', '100')",
+    "insert into Spending (user_id, spend_date, platform, amount) values ('2', '2019-07-02', 'mobile', '100')",
+    "insert into Spending (user_id, spend_date, platform, amount) values ('3', '2019-07-01', 'desktop', '100')",
+    "insert into Spending (user_id, spend_date, platform, amount) values ('3', '2019-07-02', 'desktop', '100')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

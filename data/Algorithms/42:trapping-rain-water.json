@@ -1,0 +1,113 @@
+{
+  "questionId": "42",
+  "questionFrontendId": "42",
+  "boundTopicId": null,
+  "title": "Trapping Rain Water",
+  "titleSlug": "trapping-rain-water",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given <em>n</em> non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.</p>\r\n\r\n<p><img src=\"https://assets.leetcode.com/uploads/2018/10/22/rainwatertrap.png\" style=\"width: 412px; height: 161px;\" /><br />\r\n<small>The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped. <strong>Thanks Marcos</strong> for contributing this image!</small></p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [0,1,0,2,1,0,1,3,2,1,2,1]\r\n<strong>Output:</strong> 6</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 5157,
+  "dislikes": 96,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Container With Most Water\", \"titleSlug\": \"container-with-most-water\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Product of Array Except Self\", \"titleSlug\": \"product-of-array-except-self\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Trapping Rain Water II\", \"titleSlug\": \"trapping-rain-water-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Pour Water\", \"titleSlug\": \"pour-water\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 45}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 32}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 25}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 12}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 10}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Databricks\", \"slug\": \"databricks\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Affirm\", \"slug\": \"affirm\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Electronic Arts\", \"slug\": \"electronic-arts\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tableau\", \"slug\": \"tableau\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Flipkart\", \"slug\": \"flipkart\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Dataminr\", \"slug\": \"dataminr\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"HBO\", \"slug\": \"hbo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zoho\", \"slug\": \"zoho\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Grab\", \"slug\": \"grab\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Huawei\", \"slug\": \"huawei\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nvidia\", \"slug\": \"nvidia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Zenefits\", \"slug\": \"zenefits\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int trap(vector<int>& height) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int trap(int[] height) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def trap(self, height):\n        \"\"\"\n        :type height: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def trap(self, height: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint trap(int* height, int heightSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int Trap(int[] height) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} height\n * @return {number}\n */\nvar trap = function(height) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} height\n# @return {Integer}\ndef trap(height)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func trap(_ height: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func trap(height []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def trap(height: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun trap(height: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn trap(height: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $height\n     * @return Integer\n     */\n    function trap($height) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"398.5K\", \"totalSubmission\": \"865.2K\", \"totalAcceptedRaw\": 398515, \"totalSubmissionRaw\": 865243, \"acRate\": \"46.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "150",
+    "canSeeDetail": true,
+    "url": "/articles/trapping-rain-water/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Brute force\n\n**Intuition**\n\nDo as directed in question. For each element in the array, we find the maximum level of water it can trap after the rain, which is equal to the minimum of maximum height of bars on both the sides minus its own height.\n\n**Algorithm**\n\n* Initialize $$ans=0$$\n* Iterate the array from left to right:\n  + Initialize $$\\text{max\\_left}=0$$ and $$\\text{max\\_right}=0$$\n  + Iterate from the current element to the beginning of array updating:\n    * $$\\text{max\\_left}=\\max(\\text{max\\_left},\\text{height}[j])$$\n  + Iterate from the current element to the end of array updating:\n    * $$\\text{max\\_right}=\\max(\\text{max\\_right},\\text{height}[j])$$\n  + Add $$\\min(\\text{max\\_left},\\text{max\\_right}) - \\text{height}[i]$$ to $$\\text{ans}$$\n\n<iframe src=\"https://leetcode.com/playground/jHmznzhx/shared\" frameBorder=\"0\" width=\"100%\" height=\"0\" name=\"jHmznzhx\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n^2)$$. For each element of array, we iterate the left and right parts.\n\n* Space complexity: $$O(1)$$ extra space.\n<br />\n<br />\n---\n#### Approach 2: Dynamic Programming\n\n**Intuition**\n\nIn brute force, we iterate over the left and right parts again and again just to find the highest bar size upto that index. But, this could be stored. Voila, dynamic programming.\n\nThe concept is illustrated as shown:\n\n![Dynamic programming](../Figures/42/trapping_rain_water.png){:width=\"500px\"}\n{:align=\"center\"}\n\n**Algorithm**\n\n* Find maximum height of bar from the left end upto an index i in the array $$\\text{left\\_max}$$.\n* Find maximum height of bar from the right end upto an index i in the array $$\\text{right\\_max}$$.\n* Iterate over the $$\\text{height}$$ array and update ans:\n\t+ Add $$\\min(\\text{max\\_left}[i],\\text{max\\_right}[i]) - \\text{height}[i]$$ to $$ans$$\n\n<iframe src=\"https://leetcode.com/playground/QhhbiHR9/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"QhhbiHR9\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n)$$.\n\t+ We store the maximum heights upto a point using 2 iterations of $$O(n)$$ each.\n\t+ We finally update $$\\text{ans}$$ using the stored values in $$O(n)$$.\n\n* Space complexity: $$O(n)$$ extra space.\n\t+ Additional $$O(n)$$ space for $$\\text{left\\_max}$$ and $$\\text{right\\_max}$$ arrays than in [Approach 1](#approach-1-brute-force).\n<br />\n<br />\n---\n#### Approach 3: Using stacks\n\n**Intuition**\n\nInstead of storing the largest bar upto an index as in [Approach 2](#approach-2-dynamic-programming), we can use stack to keep track of the bars that are bounded by longer bars and hence, may store water. Using the stack, we can do the calculations in only one iteration.\n\nWe keep a stack and iterate over the array. We add the index of the bar to the stack if bar is smaller than or equal to the bar at top of stack, which means that the current bar is bounded by the previous bar in the stack. If we found a bar longer than that at the top, we are sure that the bar at the top of the stack is bounded by the current bar and a previous bar in the stack, hence, we can pop it and add resulting trapped water to $$\\text{ans}$$.\n\n**Algorithm**\n\n* Use stack to store the indices of the bars.\n* Iterate the array:\n\t+ While stack is not empty and $$\\text{height}[current]>\\text{height}[st.top()]$$\n\t\t* It means that the stack element can be popped. Pop the top element as $$\\text{top}$$.\n\t\t* Find the distance between the current element and the element at top of stack, which is to be filled.\n\t\t$$\\text{distance} = \\text{current} - \\text{st.top}() - 1$$\n\t\t* Find the bounded height\n\t\t$$\\text{bounded\\_height} = \\min(\\text{height[current]}, \\text{height[st.top()]}) - \\text{height[top]}$$\n\t\t* Add resulting trapped water to answer $$\\text{ans} \\mathrel{+}= \\text{distance} \\times \\text{bounded\\_height}$$\n\t+ Push current index to top of the stack\n\t+ Move $$\\text{current}$$ to the next position\n\n\n<iframe src=\"https://leetcode.com/playground/LnhnH382/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"LnhnH382\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n)$$.\n\t+ Single iteration of $$O(n)$$ in which each bar can be touched at most twice(due to  insertion and deletion from stack) and insertion and deletion from stack takes $$O(1)$$ time.\n* Space complexity: $$O(n)$$. Stack can take upto $$O(n)$$ space in case of stairs-like or flat structure.\n<br />\n<br />\n---\n#### Approach 4: Using 2 pointers\n\n**Intuition**\n\nAs in [Approach 2](#approach-2-dynamic-programming), instead of computing the left and right parts seperately, we may think of some way to do it in one iteration.\nFrom the figure in dynamic programming approach, notice that as long as $$\\text{right\\_max}[i]>\\text{left\\_max}[i]$$ (from element 0 to 6), the water trapped depends upon the left_max, and similar is the case when $$\\text{left\\_max}[i]>\\text{right\\_max}[i]$$ (from element 8 to 11).\nSo, we can say that if there is a larger bar at one end (say right), we are assured that the water trapped would be dependant on height of bar in current direction (from left to right). As soon as we find the bar at other end (right) is smaller, we start iterating in opposite direction (from right to left).\nWe must maintain $$\\text{left\\_max}$$ and $$\\text{right\\_max}$$ during the iteration, but now we can do it in one iteration using 2 pointers, switching between the two.\n\n**Algorithm**\n\n* Initialize $$\\text{left}$$ pointer to 0 and $$\\text{right}$$ pointer to size-1\n* While $$\\text{left}< \\text{right}$$, do:\n\t+ If $$\\text{height[left]}$$ is smaller than $$\\text{height[right]}$$\n\t\t* If $$\\text{height[left]} \\geq \\text{left\\_max}$$, update $$\\text{left\\_max}$$\n\t\t* Else add $$\\text{left\\_max}-\\text{height[left]}$$ to $$\\text{ans}$$\n\t\t* Add 1 to $$\\text{left}$$.\n\t+ Else\n\t\t* If $$\\text{height[right]} \\geq \\text{right\\_max}$$, update $$\\text{right\\_max}$$\n\t\t* Else add $$\\text{right\\_max}-\\text{height[right]}$$ to $$\\text{ans}$$\n\t\t* Subtract 1 from $$\\text{right}$$.\n\nRefer the example for better understanding:\n!?!../Documents/42/42_trapping_rain_water.json:1000,662!?!\n\n<iframe src=\"https://leetcode.com/playground/oPWsbm9Q/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"oPWsbm9Q\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n)$$. Single iteration of $$O(n)$$.\n* Space complexity: $$O(1)$$ extra space. Only constant space required for $$\\text{left}$$, $$\\text{right}$$, $$\\text{left\\_max}$$ and $$\\text{right\\_max}$$.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "145",
+      "count": 266,
+      "average": 4.696,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,1,0,2,1,0,1,3,2,1,2,1]",
+  "metaData": "{\r\n  \"name\": \"trap\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"height\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

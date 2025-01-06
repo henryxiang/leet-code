@@ -1,0 +1,119 @@
+{
+  "questionId": "801",
+  "questionFrontendId": "785",
+  "boundTopicId": null,
+  "title": "Is Graph Bipartite?",
+  "titleSlug": "is-graph-bipartite",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an undirected&nbsp;<code>graph</code>, return <code>true</code> if and only if it is bipartite.</p>\r\n\r\n<p>Recall that a graph is <em>bipartite</em> if we can split it&#39;s set of nodes into two independent&nbsp;subsets A and B such that every edge in the graph has one node in A and another node in B.</p>\r\n\r\n<p>The graph is given in the following form: <code>graph[i]</code> is a list of indexes <code>j</code> for which the edge between nodes <code>i</code> and <code>j</code> exists.&nbsp; Each node is an integer between <code>0</code> and <code>graph.length - 1</code>.&nbsp; There are no self edges or parallel edges: <code>graph[i]</code> does not contain <code>i</code>, and it doesn&#39;t contain any element twice.</p>\r\n\r\n<pre>\r\n<strong>Example 1:</strong>\r\n<strong>Input:</strong> [[1,3], [0,2], [1,3], [0,2]]\r\n<strong>Output:</strong> true\r\n<strong>Explanation:</strong> \r\nThe graph looks like this:\r\n0----1\r\n|    |\r\n|    |\r\n3----2\r\nWe can divide the vertices into two groups: {0, 2} and {1, 3}.\r\n</pre>\r\n\r\n<pre>\r\n<strong>Example 2:</strong>\r\n<strong>Input:</strong> [[1,2,3], [0,2], [0,1,3], [0,2]]\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> \r\nThe graph looks like this:\r\n0----1\r\n| \\  |\r\n|  \\ |\r\n3----2\r\nWe cannot find a way to divide the set of nodes into two independent subsets.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>graph</code> will have length in range <code>[1, 100]</code>.</li>\r\n\t<li><code>graph[i]</code> will contain integers in range <code>[0, graph.length - 1]</code>.</li>\r\n\t<li><code>graph[i]</code> will not contain <code>i</code> or duplicate values.</li>\r\n\t<li>The graph is undirected: if any element <code>j</code> is in <code>graph[i]</code>, then <code>i</code> will be in <code>graph[j]</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 904,
+  "dislikes": 117,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 15}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"LiveRamp\", \"slug\": \"liveramp\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isBipartite(vector<vector<int>>& graph) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isBipartite(int[][] graph) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isBipartite(self, graph):\n        \"\"\"\n        :type graph: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isBipartite(self, graph: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isBipartite(int** graph, int graphSize, int* graphColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsBipartite(int[][] graph) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} graph\n * @return {boolean}\n */\nvar isBipartite = function(graph) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} graph\n# @return {Boolean}\ndef is_bipartite(graph)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isBipartite(_ graph: [[Int]]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isBipartite(graph [][]int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isBipartite(graph: Array[Array[Int]]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isBipartite(graph: Array<IntArray>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_bipartite(graph: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $graph\n     * @return Boolean\n     */\n    function isBipartite($graph) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"72.9K\", \"totalSubmission\": \"160.1K\", \"totalAcceptedRaw\": 72879, \"totalSubmissionRaw\": 160130, \"acRate\": \"45.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "417",
+    "canSeeDetail": true,
+    "url": "/articles/is-graph-bipartite/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Coloring by Depth-First Search [Accepted]\r\n\r\n**Intuition**\r\n\r\nColor a node blue if it is part of the first set, else red.  We should be able to greedily color the graph if and only if it is bipartite: one node being blue implies all it's neighbors are red, all those neighbors are blue, and so on.\r\n\r\n<br />\r\n<center>\r\n    <img src=\"../Figures/785/color.png\" alt=\"Diagram of coloring neighbors of nodes\" width=\"350\"/>\r\n</center>\r\n<br />\r\n\r\n**Algorithm**\r\n\r\nWe'll keep an array (or hashmap) to lookup the color of each node: `color[node]`.  The colors could be `0`, `1`, or uncolored (`-1` or `null`).\r\n\r\nWe should be careful to consider disconnected components of the graph, by searching each node.  For each uncolored node, we'll start the coloring process by doing a depth-first-search on that node.  Every neighbor gets colored the opposite color from the current node.  If we find a neighbor colored the same color as the current node, then our coloring was impossible.\r\n\r\nTo perform the depth-first search, we use a `stack`.  For each uncolored neighbor in `graph[node]`, we'll color it and add it to our `stack`, which acts as a sort of \"todo list\" of nodes to visit next.  Our larger loop `for start...` ensures that we color every node.\r\n\r\n<iframe src=\"https://leetcode.com/playground/hDVJikSg/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"hDVJikSg\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(N + E)$$, where $$N$$ is the number of nodes in the graph, and $$E$$ is the number of edges.  We explore each node once when we transform it from uncolored to colored, traversing all its edges in the process.\r\n\r\n* Space Complexity:  $$O(N)$$, the space used to store the `color`.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "412",
+      "count": 18,
+      "average": 4.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,3],[0,2],[1,3],[0,2]]",
+  "metaData": "{\r\n  \"name\": \"isBipartite\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"graph\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

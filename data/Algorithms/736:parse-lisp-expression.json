@@ -1,0 +1,113 @@
+{
+  "questionId": "736",
+  "questionFrontendId": "736",
+  "boundTopicId": null,
+  "title": "Parse Lisp Expression",
+  "titleSlug": "parse-lisp-expression",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nYou are given a string <code>expression</code> representing a Lisp-like expression to return the integer value of.\r\n</p><p>\r\nThe syntax for these expressions is given as follows.\r\n</p><p>\r\n<li>An expression is either an integer, a let-expression, an add-expression, a mult-expression, or an assigned variable.  Expressions always evaluate to a single integer.</li>\r\n</p><p>\r\n<li>(An integer could be positive or negative.)</li>\r\n</p><p>\r\n<li>A let-expression takes the form <code>(let v1 e1 v2 e2 ... vn en expr)</code>, where <code>let</code> is always the string <code>\"let\"</code>, then there are 1 or more pairs of alternating variables and expressions, meaning that the first variable <code>v1</code> is assigned the value of the expression <code>e1</code>, the second variable <code>v2</code> is assigned the value of the expression <code>e2</code>, and so on <b>sequentially</b>; and then the value of this let-expression is the value of the expression <code>expr</code>.</li>\r\n</p><p>\r\n<li>An add-expression takes the form <code>(add e1 e2)</code> where <code>add</code> is always the string <code>\"add\"</code>, there are always two expressions <code>e1, e2</code>, and this expression evaluates to the addition of the evaluation of <code>e1</code> and the evaluation of <code>e2</code>.</li>\r\n</p><p>\r\n<li>A mult-expression takes the form <code>(mult e1 e2)</code> where <code>mult</code> is always the string <code>\"mult\"</code>, there are always two expressions <code>e1, e2</code>, and this expression evaluates to the multiplication of the evaluation of <code>e1</code> and the evaluation of <code>e2</code>.</li>\r\n</p><p>\r\n<li>For the purposes of this question, we will use a smaller subset of variable names.  A variable starts with a lowercase letter, then zero or more lowercase letters or digits.  Additionally for your convenience, the names \"add\", \"let\", or \"mult\" are protected and will never be used as variable names.</li>\r\n</p><p>\r\n<li>Finally, there is the concept of scope.  When an expression of a variable name is evaluated, <b>within the context of that evaluation</b>, the innermost scope (in terms of parentheses) is checked first for the value of that variable, and then outer scopes are checked sequentially.  It is guaranteed that every expression is legal.  Please see the examples for more details on scope.</li>\r\n</p>\r\n\r\n<p><b>Evaluation Examples:</b><br />\r\n<pre>\r\n<b>Input:</b> (add 1 2)\r\n<b>Output:</b> 3\r\n\r\n<b>Input:</b> (mult 3 (add 2 3))\r\n<b>Output:</b> 15\r\n\r\n<b>Input:</b> (let x 2 (mult x 5))\r\n<b>Output:</b> 10\r\n\r\n<b>Input:</b> (let x 2 (mult x (let x 3 y 4 (add x y))))\r\n<b>Output:</b> 14\r\n<b>Explanation:</b> In the expression (add x y), when checking for the value of the variable x,\r\nwe check from the innermost scope to the outermost in the context of the variable we are trying to evaluate.\r\nSince x = 3 is found first, the value of x is 3.\r\n\r\n<b>Input:</b> (let x 3 x 2 x)\r\n<b>Output:</b> 2\r\n<b>Explanation:</b> Assignment in let statements is processed sequentially.\r\n\r\n<b>Input:</b> (let x 1 y 2 x (add x y) (add x y))\r\n<b>Output:</b> 5\r\n<b>Explanation:</b> The first (add x y) evaluates as 3, and is assigned to x.\r\nThe second (add x y) evaluates as 3+2 = 5.\r\n\r\n<b>Input:</b> (let x 2 (add (let x 3 (let x 4 x)) x))\r\n<b>Output:</b> 6\r\n<b>Explanation:</b> Even though (let x 4 x) has a deeper scope, it is outside the context\r\nof the final x in the add-expression.  That final x will equal 2.\r\n\r\n<b>Input:</b> (let a1 3 b2 (add a1 1) b2) \r\n<b>Output</b> 4\r\n<b>Explanation:</b> Variable names can contain digits after the first character.\r\n\r\n</pre>\r\n\r\n<p><b>Note:</b>\r\n<li>The given string <code>expression</code> is well formatted: There are no leading or trailing spaces, there is only a single space separating different components of the string, and no space between adjacent parentheses.  The expression is guaranteed to be legal and evaluate to an integer.</li>\r\n<li>The length of <code>expression</code> is at most 2000.  (It is also non-empty, as that would not be a legal expression.)</li>\r\n<li>The answer and all intermediate calculations of that answer are guaranteed to fit in a 32-bit integer.</li>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 206,
+  "dislikes": 166,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Ternary Expression Parser\", \"titleSlug\": \"ternary-expression-parser\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Atoms\", \"titleSlug\": \"number-of-atoms\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Basic Calculator IV\", \"titleSlug\": \"basic-calculator-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Affirm\", \"slug\": \"affirm\", \"timesEncountered\": 3}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int evaluate(string expression) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int evaluate(String expression) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def evaluate(self, expression):\n        \"\"\"\n        :type expression: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def evaluate(self, expression: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint evaluate(char * expression){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int Evaluate(string expression) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} expression\n * @return {number}\n */\nvar evaluate = function(expression) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} expression\n# @return {Integer}\ndef evaluate(expression)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func evaluate(_ expression: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func evaluate(expression string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def evaluate(expression: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun evaluate(expression: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn evaluate(expression: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $expression\n     * @return Integer\n     */\n    function evaluate($expression) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"9.1K\", \"totalSubmission\": \"19.7K\", \"totalAcceptedRaw\": 9050, \"totalSubmissionRaw\": 19674, \"acRate\": \"46.0%\"}",
+  "hints": [
+    "* If the expression starts with a digit or '-', it's an integer: return it.\r\n\r\n* If the expression starts with a letter, it's a variable.  Recall it by checking the current scope in reverse order.\r\n\r\n* Otherwise, group the tokens (variables or expressions) within this expression by counting the \"balance\" `bal` of the occurrences of `'('` minus the number of occurrences of `')'`.  When the balance is zero, we have ended a token.  For example, `(add 1 (add 2 3))` should have tokens `'1'` and `'(add 2 3)'`.\r\n\r\n* For add and mult expressions, evaluate each token and return the addition or multiplication of them.\r\n\r\n* For let expressions, evaluate each expression sequentially and assign it to the variable in the current scope, then return the evaluation of the final expression."
+  ],
+  "solution": {
+    "id": "305",
+    "canSeeDetail": true,
+    "url": "/articles/parse-lisp-expression/",
+    "content": "[TOC]\n\n#### Approach #1: Recursive Parsing [Accepted]\n\n**Intuition and Algorithm**\n\nThis question is relatively straightforward in terms of the idea of the solution, but presents substantial difficulties in the implementation.\n\nExpressions may involve the evaluation of other expressions, which motivates a recursive approach.\n\nOne difficulty is managing the correct scope of the variables.  We can use a stack of hashmaps.  As we enter an inner scope defined by parentheses, we need to add that scope to our stack, and when we exit, we need to pop that scope off.\n\nOur main `evaluate` function will go through each case of what form the `expression` could take.\n\n* If the expression starts with a digit or '-', it's an integer: return it.\n\n* If the expression starts with a letter, it's a variable.  Recall it by checking the current scope in reverse order.\n\n* Otherwise, group the tokens (variables or expressions) within this expression by counting the \"balance\" `bal` of the occurrences of `'('` minus the number of occurrences of `')'`.  When the balance is zero, we have ended a token.  For example, `(add 1 (add 2 3))` should have tokens `'1'` and `'(add 2 3)'`.\n\n* For add and mult expressions, evaluate each token and return the addition or multiplication of them.\n\n* For let expressions, evaluate each expression sequentially and assign it to the variable in the current scope, then return the evaluation of the final expression.\n\n<iframe src=\"https://leetcode.com/playground/NPtxmW53/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"NPtxmW53\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$, where $$N$$ is the length of `expression`.  Each expression is evaluated once, but within that evaluation we may search the entire scope.\n\n* Space Complexity: $$O(N^2)$$.  We may pass $$O(N)$$ new strings to our `evaluate` function when making intermediate evaluations, each of length $$O(N)$$.  With effort, we could reduce the total space complexity to $$O(N)$$ with interning or passing pointers.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "300",
+      "count": 3,
+      "average": 4.333,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"(add 1 2)\"",
+  "metaData": "{\r\n  \"name\": \"evaluate\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"expression\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,103 @@
+{
+  "questionId": "531",
+  "questionFrontendId": "531",
+  "boundTopicId": null,
+  "title": "Lonely Pixel I",
+  "titleSlug": "lonely-pixel-i",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a picture consisting of black and white pixels, find the number of <b>black</b> lonely pixels.</p>\r\n\r\n<p>The picture is represented by a 2D char array consisting of 'B' and 'W', which means black and white pixels respectively. </p>\r\n\r\n<p>A black lonely pixel is character 'B' that located at a specific position where the same row and same column don't have any other black pixels.</p>\r\n\r\n<p><b>Example:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\n[['W', 'W', 'B'],\r\n ['W', 'B', 'W'],\r\n ['B', 'W', 'W']]\r\n\r\n<b>Output:</b> 3\r\n<b>Explanation:</b> All the three 'B's are black lonely pixels.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The range of width and height of the input 2D array is [1,500].</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 158,
+  "dislikes": 27,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Lonely Pixel II\", \"titleSlug\": \"lonely-pixel-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findLonelyPixel(vector<vector<char>>& picture) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findLonelyPixel(char[][] picture) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findLonelyPixel(self, picture):\n        \"\"\"\n        :type picture: List[List[str]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findLonelyPixel(self, picture: List[List[str]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findLonelyPixel(char** picture, int pictureSize, int* pictureColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindLonelyPixel(char[][] picture) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[][]} picture\n * @return {number}\n */\nvar findLonelyPixel = function(picture) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[][]} picture\n# @return {Integer}\ndef find_lonely_pixel(picture)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findLonelyPixel(_ picture: [[Character]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findLonelyPixel(picture [][]byte) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findLonelyPixel(picture: Array[Array[Char]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findLonelyPixel(picture: Array<CharArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_lonely_pixel(picture: Vec<Vec<char>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $picture\n     * @return Integer\n     */\n    function findLonelyPixel($picture) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"19.2K\", \"totalSubmission\": \"33K\", \"totalAcceptedRaw\": 19199, \"totalSubmissionRaw\": 33046, \"acRate\": \"58.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[\"W\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"W\"]]",
+  "metaData": "{\r\n  \"name\": \"findLonelyPixel\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"picture\",\r\n      \"type\": \"character[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

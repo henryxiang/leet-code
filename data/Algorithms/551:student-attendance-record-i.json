@@ -1,0 +1,111 @@
+{
+  "questionId": "551",
+  "questionFrontendId": "551",
+  "boundTopicId": null,
+  "title": "Student Attendance Record I",
+  "titleSlug": "student-attendance-record-i",
+  "categoryTitle": "Algorithms",
+  "content": "You are given a string representing an attendance record for a student. The record only contains the following three characters:\r\n\r\n<p>\r\n<ol>\r\n<li><b>'A'</b> : Absent. </li>\r\n<li><b>'L'</b> : Late.</li>\r\n<li> <b>'P'</b> : Present. </li>\r\n</ol>\r\n</p>\r\n\r\n<p>\r\nA student could be rewarded if his attendance record doesn't contain <b>more than one 'A' (absent)</b> or <b>more than two continuous 'L' (late)</b>.    </p>\r\n\r\n<p>You need to return whether the student could be rewarded according to his attendance record.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \"PPALLP\"\r\n<b>Output:</b> True\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> \"PPALLL\"\r\n<b>Output:</b> False\r\n</pre>\r\n</p>\r\n\r\n\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 190,
+  "dislikes": 706,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Student Attendance Record II\", \"titleSlug\": \"student-attendance-record-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool checkRecord(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean checkRecord(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def checkRecord(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def checkRecord(self, s: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool checkRecord(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CheckRecord(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar checkRecord = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Boolean}\ndef check_record(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func checkRecord(_ s: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func checkRecord(s string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def checkRecord(s: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun checkRecord(s: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn check_record(s: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Boolean\n     */\n    function checkRecord($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"66.3K\", \"totalSubmission\": \"143.3K\", \"totalAcceptedRaw\": 66252, \"totalSubmissionRaw\": 143301, \"acRate\": \"46.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "109",
+    "canSeeDetail": true,
+    "url": "/articles/student-attendance-record-i/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Simple Solution [Accepted]\n\nOne simple way of solving this problem is to count number of $$A's$$ in the string and check whether the string $$LLL$$ is a substring of a given string. If number of $$A's$$ is less than $$2$$ and $$LLL$$ is not a subtring of a given string then return $$true$$, otherwise return $$false$$.\n\n$$indexOf$$ method can be used to check substring in a string. It return the index within this string of the first occurrence of the specified character or -1, if the character does not occur.\n\n\n<iframe src=\"https://leetcode.com/playground/KwRnWGmW/shared\" frameBorder=\"0\" name=\"KwRnWGmW\" width=\"100%\" height=\"241\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. Single loop and indexOf method takes $$O(n)$$ time.\n* Space complexity : $$O(1)$$. Constant space is used.\n\n---\n#### Approach #2 Better Solution [Accepted]\n\n**Algorithm**\n\nOne optimization of above method is to break the loop when count of $$A's$$ becomes $$2$$.\n\n<iframe src=\"https://leetcode.com/playground/Eh3SunKt/shared\" frameBorder=\"0\" name=\"Eh3SunKt\" width=\"100%\" height=\"224\"></iframe>\n\n**Complexity Analysis**\n\n\n* Time complexity : $$O(n)$$. Single loop and indexOf method takes $$O(n)$$ time.\n* Space complexity : $$O(1)$$. Constant space is used.\n\n---\n#### Approach #3 Single pass Solution (Without indexOf method) [Accepted]\n\n**Algorithm**\n\nWe can solve this problem in a single pass without using indexOf method. In a single loop we can count number of $$A's$$ and also check the substring $$LLL$$ in a given string.\n\n<iframe src=\"https://leetcode.com/playground/sZFGNHqX/shared\" frameBorder=\"0\" name=\"sZFGNHqX\" width=\"100%\" height=\"275\"></iframe>\n**Complexity Analysis**\n\n\n* Time complexity : $$O(n)$$. Single loop upto string length is used.\n* Space complexity : $$O(1)$$. Constant space is used.\n\n---\n#### Approach #4 Using Regex [Accepted]\n\n**Algorithm**\n\nOne interesting solution is to use regex to match the string. Java provides the java.util.regex package for pattern matching with regular expressions. A regular expression is a special sequence of characters that helps you match or find other strings or sets of strings, using a specialized syntax held in a pattern.\n\nFollowing are the regex's used in this solution:\n```\n. : Matches any single character except newline.\n\n* : Matches 0 or more occurrences of the preceding expression.\n\n.* : Matches any string\n\na|b : Matches either a or b\n```\n$$matches$$ method is used to check whether or not the string matches the given regular expression.\n\nRegular Expression of the string containing two or more than two $$A's$$ will be $$.*A.*A.*$$ and the regular expression of the string containing substring $$LLL$$ will be $$.*LLL.*$$. We can merge this two regex using $$|$$ and form a regex of string containing either more than one $$A$$ or containing substring $$LLL$$. Then regex will look like:  $$.*(A.*A|LLL).*$$. We will return true only when the string doesn't matches this regex.\n\n\n<iframe src=\"https://leetcode.com/playground/5J2tfTuD/shared\" frameBorder=\"0\" name=\"5J2tfTuD\" width=\"100%\" height=\"156\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. $$matches$$ method takes $$O(n)$$ time.\n\n* Space complexity : $$O(1)$$. No Extra Space is used.\n\n---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "109",
+      "count": 11,
+      "average": 4.546,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"PPALLP\"",
+  "metaData": "{\r\n  \"name\": \"checkRecord\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,63 @@
+{
+  "questionId": "175",
+  "questionFrontendId": "175",
+  "boundTopicId": null,
+  "title": "Combine Two Tables",
+  "titleSlug": "combine-two-tables",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Person</code></p>\r\n\r\n<pre>\r\n+-------------+---------+\r\n| Column Name | Type    |\r\n+-------------+---------+\r\n| PersonId    | int     |\r\n| FirstName   | varchar |\r\n| LastName    | varchar |\r\n+-------------+---------+\r\nPersonId is the primary key column for this table.\r\n</pre>\r\n\r\n<p>Table: <code>Address</code></p>\r\n\r\n<pre>\r\n+-------------+---------+\r\n| Column Name | Type    |\r\n+-------------+---------+\r\n| AddressId   | int     |\r\n| PersonId    | int     |\r\n| City        | varchar |\r\n| State       | varchar |\r\n+-------------+---------+\r\nAddressId is the primary key column for this table.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:</p>\r\n\r\n<pre>\r\nFirstName, LastName, City, State\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 751,
+  "dislikes": 110,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Employee Bonus\", \"titleSlug\": \"employee-bonus\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"214.2K\", \"totalSubmission\": \"380.9K\", \"totalAcceptedRaw\": 214207, \"totalSubmissionRaw\": 380889, \"acRate\": \"56.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "206",
+    "canSeeDetail": true,
+    "url": "/articles/combine-two-tables/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `outer join` [Accepted]\n\n**Algorithm**\n\nSince the *PersonId* in table **Address** is the foreign key of table **Person**, we can join this two table to get the address information of a person.\n\nConsidering there might not be an address information for every person, we should use `outer join` instead of the default `inner join`.\n\n**MySQL**\n\n```sql\nselect FirstName, LastName, City, State\nfrom Person left join Address\non Person.PersonId = Address.PersonId\n;\n```\n>Note: Using `where` clause to filter the records will fail if there is no address information for a person because it will not display the name information.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "201",
+      "count": 33,
+      "average": 4.636,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"Person\": [\"PersonId\", \"LastName\", \"FirstName\"], \"Address\": [\"AddressId\", \"PersonId\", \"City\", \"State\"]}, \"rows\": {\"Person\": [[1, \"Wang\", \"Allen\"]], \"Address\": [[1, 2, \"New York City\", \"New York\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table Person (PersonId int, FirstName varchar(255), LastName varchar(255))\",\n    \"Create table Address (AddressId int, PersonId int, City varchar(255), State varchar(255))\"\n  ],\n  \"mssql\": [\n    \"create table Person ( PersonId int, FirstName varchar(255), LastName varchar(255) )\",\n    \"create table Address ( AddressId int, PersonId int, City varchar(255), State varchar(255) )\"\n  ],\n  \"oraclesql\": [\n    \"create table Person ( PersonId int, FirstName varchar(255), LastName varchar(255) )\",\n    \"create table Address ( AddressId int, PersonId int, City varchar(255), State varchar(255) )\"\n  ],\n  \"database\": true,\n  \"manual\": false\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table Person (PersonId int, FirstName varchar(255), LastName varchar(255))",
+    "Create table Address (AddressId int, PersonId int, City varchar(255), State varchar(255))",
+    "Truncate table Person",
+    "insert into Person (PersonId, LastName, FirstName) values ('1', 'Wang', 'Allen')",
+    "Truncate table Address",
+    "insert into Address (AddressId, PersonId, City, State) values ('1', '2', 'New York City', 'New York')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

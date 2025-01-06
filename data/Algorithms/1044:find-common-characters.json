@@ -1,0 +1,97 @@
+{
+  "questionId": "1044",
+  "questionFrontendId": "1002",
+  "boundTopicId": null,
+  "title": "Find Common Characters",
+  "titleSlug": "find-common-characters",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array&nbsp;<code>A</code> of strings made only from lowercase letters, return a list of all characters that show up in all strings within the list <strong>(including duplicates)</strong>.&nbsp;&nbsp;For example, if a character occurs 3 times&nbsp;in all strings but not 4 times, you need to include that character three times&nbsp;in the final answer.</p>\r\n\r\n<p>You may return the answer in any order.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[&quot;bella&quot;,&quot;label&quot;,&quot;roller&quot;]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[&quot;e&quot;,&quot;l&quot;,&quot;l&quot;]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[&quot;cool&quot;,&quot;lock&quot;,&quot;cook&quot;]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[&quot;c&quot;,&quot;o&quot;]</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><span>Note:</span></strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= A[i].length &lt;= 100</code></li>\r\n\t<li><code>A[i][j]</code> is a lowercase letter</li>\r\n</ol>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 506,
+  "dislikes": 61,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Intersection of Two Arrays II\", \"titleSlug\": \"intersection-of-two-arrays-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"TripAdvisor\", \"slug\": \"tripadvisor\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> commonChars(vector<string>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> commonChars(String[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def commonChars(self, A):\n        \"\"\"\n        :type A: List[str]\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def commonChars(self, A: List[str]) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** commonChars(char ** A, int ASize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> CommonChars(string[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} A\n * @return {string[]}\n */\nvar commonChars = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} a\n# @return {String[]}\ndef common_chars(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func commonChars(_ A: [String]) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func commonChars(A []string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def commonChars(A: Array[String]): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun commonChars(A: Array<String>): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn common_chars(a: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $A\n     * @return String[]\n     */\n    function commonChars($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"47.2K\", \"totalSubmission\": \"71.3K\", \"totalAcceptedRaw\": 47215, \"totalSubmissionRaw\": 71281, \"acRate\": \"66.2%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"bella\",\"label\",\"roller\"]",
+  "metaData": "{\r\n  \"name\": \"commonChars\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

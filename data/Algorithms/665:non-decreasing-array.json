@@ -1,0 +1,111 @@
+{
+  "questionId": "665",
+  "questionFrontendId": "665",
+  "boundTopicId": null,
+  "title": "Non-decreasing Array",
+  "titleSlug": "non-decreasing-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven an array with <code>n</code> integers, your task is to check if it could become non-decreasing by modifying <b>at most</b> <code>1</code> element.\r\n</p>\r\n\r\n<p>\r\nWe define an array is non-decreasing if <code>array[i] <= array[i + 1]</code> holds for every <code>i</code> (1 <= i < n).\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> [4,2,3]\r\n<b>Output:</b> True\r\n<b>Explanation:</b> You could modify the first <code>4</code> to <code>1</code> to get a non-decreasing array.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> [4,2,1]\r\n<b>Output:</b> False\r\n<b>Explanation:</b> You can't get a non-decreasing array by modify at most one element.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\nThe <code>n</code> belongs to [1, 10,000].\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1366,
+  "dislikes": 317,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool checkPossibility(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean checkPossibility(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def checkPossibility(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def checkPossibility(self, nums: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool checkPossibility(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CheckPossibility(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar checkPossibility = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Boolean}\ndef check_possibility(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func checkPossibility(_ nums: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func checkPossibility(nums []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def checkPossibility(nums: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun checkPossibility(nums: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn check_possibility(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Boolean\n     */\n    function checkPossibility($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"71.1K\", \"totalSubmission\": \"367.8K\", \"totalAcceptedRaw\": 71064, \"totalSubmissionRaw\": 367844, \"acRate\": \"19.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "239",
+    "canSeeDetail": true,
+    "url": "/articles/non-decreasing-array/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1: Brute Force [Time Limit Exceeded]\n\n**Intuition**\n\nFor the given array $$\\text{A}$$, if we are changing at most one element $$\\text{A[i]}$$, we should change $$\\text{A[i]}$$ to $$\\text{A[i-1]}$$, as it would be guaranteed that $$\\text{A[i-1]} &leq; \\text{A[i]}$$, and $$\\text{A[i]}$$ would be the smallest possible to try and achieve $$\\text{A[i]} &leq; \\text{A[i+1]}$$.\n\n**Algorithm**\n\nFor each possible change $$\\text{A[i]}$$, check if the sequence is monotone increasing.  We'll modify $$\\text{new}$$, a copy of the array $$\\text{A}$$.\n\n<iframe src=\"https://leetcode.com/playground/FK7JPfxR/shared\" frameBorder=\"0\" name=\"FK7JPfxR\" width=\"100%\" height=\"343\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: Let $$N$$ be the length of the given array.  For each element $$\\text{A[i]}$$, we check if some sequence is monotone increasing, which takes $$O(N)$$ steps.  In total, this is a complexity of $$O(N^2)$$.\n\n* Space Complexity: To hold our array $$\\text{new}$$, we need $$O(N)$$ space.\n\n---\n#### Approach #2: Reduce to Smaller Problem [Accepted]\n\n**Intuition**\n\nIf $$\\text{A[0]} &leq; \\text{A[1]} &leq; \\text{A[2]}$$, then we may remove $$\\text{A[0]}$$ without changing the answer.  Similarly, if $$\\text{A}\\big[\\text{len(A)-3}\\big] &leq; \\text{A}\\big[\\text{len(A)-2}\\big] &leq; \\text{A}\\big[\\text{len(A)-1}\\big]$$, we may remove $$\\text{A[len(A)-1]}$$ without changing the answer.\n\nIf the problem is solvable, then after these removals, very few numbers will remain.\n\n**Algorithm**\n\nConsider the interval $$\\text{[i, j]}$$ corresponding to the subarray $$\\big[\\text{A[i], A[i+1], ..., A[j]}\\big]$$.  When $$\\text{A[i]} &leq; \\text{A[i+1]} &leq; \\text{A[i+2]}$$, we know we do not need to modify $$\\text{A[i]}$$, and we can consider solving the problem on the interval $$\\text{[i+1, j]}$$ instead.  We use a similar approach for $$j$$.\n\nAfterwards, with the length of the interval under consideration being $$\\text{j - i + 1}$$, if the interval has size 2 or less, then we did not find any problem.  \n\nIf our interval under consideration has 5 or more elements, then there are two disjoint problems that cannot be fixed with one replacement.  \n\nOtherwise, our problem size is now at most 4 elements, which we can easily brute force.\n\n\n<iframe src=\"https://leetcode.com/playground/4ypTHUiy/shared\" frameBorder=\"0\" name=\"4ypTHUiy\" width=\"100%\" height=\"343\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: Let $$N$$ be the length of the given array.  Our pointers $$i$$ and $$j$$ move at most $$O(N)$$ times.  Our brute force is constant time as there are at most 4 elements in the array.  Hence, the complexity is $$O(N)$$.\n\n* Space Complexity:  The extra array $$\\text{A[i: j+1]}$$ only has at most 4 elements, so it is constant space, and so is the space used by our auxillary brute force algorithm.  In total, the space complexity is $$O(1)$$.\n\n---\n#### Approach #3: Locate and Analyze Problem Index [Accepted]\n\n**Intuition**\n\nConsider all indices $$p$$ for which $$\\text{A[p]} > \\text{A[p+1]}$$.  If there are zero, the answer is `True`.  If there are 2 or more, the answer is `False`, as more than one element of the array must be changed for $$\\text{A}$$ to be monotone increasing.\n\nAt the problem index $$p$$, we only care about the surrounding elements.  Thus, immediately the problem is reduced to a very small size that can be analyzed by casework.\n\n**Algorithm**\n\nAs before, let $$p$$ be the unique problem index for which $$\\text{A[p]} > \\text{A[p+1]}$$.  If this is not unique or doesn't exist, the answer is `False` or `True` respectively.  We analyze the following cases:\n\n* If $$\\text{p = 0}$$, then we could make the array good by setting $$\\text{A[p] = A[p+1]}$$.\n* If $$\\text{p = len(A) - 2}$$, then we could make the array good by setting $$\\text{A[p+1] = A[p]}$$.\n* Otherwise, $$\\text{A[p-1], A[p], A[p+1], A[p+2]}$$ all exist, and:\n    * We could change $$\\text{A[p]}$$ to be between $$\\text{A[p-1]}$$ and $$\\text{A[p+1]}$$ if possible, or;\n    * We could change $$\\text{A[p+1]}$$ to be between $$\\text{A[p]}$$ and $$\\text{A[p+2]}$$ if possible.\n\n<iframe src=\"https://leetcode.com/playground/NGHYqESJ/shared\" frameBorder=\"0\" name=\"NGHYqESJ\" width=\"100%\" height=\"241\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: Let $$N$$ be the length of the given array.  We loop through the array once, so our time complexity is $$O(N)$$.\n\n* Space Complexity:  We only use $$p$$ and $$i$$, and the answer itself as the additional space.  The additional space complexity is $$O(1)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "234",
+      "count": 88,
+      "average": 3.17,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,2,3]",
+  "metaData": "{\r\n  \"name\": \"checkPossibility\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

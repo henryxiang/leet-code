@@ -1,0 +1,87 @@
+{
+  "questionId": "758",
+  "questionFrontendId": "426",
+  "boundTopicId": null,
+  "title": "Convert Binary Search Tree to Sorted Doubly Linked List",
+  "titleSlug": "convert-binary-search-tree-to-sorted-doubly-linked-list",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Convert a <strong>Binary Search Tree</strong>&nbsp;to a sorted <strong>Circular Doubly-Linked List</strong>&nbsp;in place.</p>\n\n<p>You can think of the left and right pointers as synonymous to the predecessor and successor pointers in a doubly-linked list. For a circular doubly linked list, the predecessor of the first element is the last element, and the successor of the last element is the first element.</p>\n\n<p>We want to do the transformation <strong>in place</strong>. After the transformation, the left pointer of the tree node should point to its predecessor, and the right pointer should point to its successor. You should return the pointer to the smallest element of the linked list.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<p><img src=\"https://assets.leetcode.com/uploads/2018/10/12/bstdlloriginalbst.png\" style=\"width: 100%; max-width: 300px;\" /></p>\n\n<pre>\n<strong>Input:</strong> root = [4,2,5,1,3]\n\n<img src=\"https://assets.leetcode.com/uploads/2018/10/12/bstdllreturndll.png\" style=\"width: 100%; max-width: 450px;\" />\n<strong>Output:</strong> [1,2,3,4,5]\n\n<strong>Explanation:</strong> The figure below shows the transformed BST. The solid line indicates the successor relationship, while the dashed line means the predecessor relationship.\n<img src=\"https://assets.leetcode.com/uploads/2018/10/12/bstdllreturnbst.png\" style=\"width: 100%; max-width: 450px;\" />\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [2,1,3]\n<strong>Output:</strong> [1,2,3]\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = []\n<strong>Output:</strong> []\n<strong>Explanation:</strong> Input is an empty tree. Output is also an empty Linked List.\n</pre>\n\n<p><strong>Example 4:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1]\n<strong>Output:</strong> [1]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>\n\t<li><code>Node.left.val &lt; Node.val &lt; Node.right.val</code></li>\n\t<li>All values of <code>Node.val</code> are unique.</li>\n\t<li><code>0 &lt;= Number of Nodes &lt;= 2000</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 635,
+  "dislikes": 72,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 24}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Databricks\", \"slug\": \"databricks\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/*\n// Definition for a Node.\nclass Node {\npublic:\n    int val;\n    Node* left;\n    Node* right;\n\n    Node() {}\n\n    Node(int _val) {\n        val = _val;\n        left = NULL;\n        right = NULL;\n    }\n\n    Node(int _val, Node* _left, Node* _right) {\n        val = _val;\n        left = _left;\n        right = _right;\n    }\n};\n*/\nclass Solution {\npublic:\n    Node* treeToDoublyList(Node* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/*\n// Definition for a Node.\nclass Node {\n    public int val;\n    public Node left;\n    public Node right;\n\n    public Node() {}\n\n    public Node(int _val) {\n        val = _val;\n    }\n\n    public Node(int _val,Node _left,Node _right) {\n        val = _val;\n        left = _left;\n        right = _right;\n    }\n};\n*/\nclass Solution {\n    public Node treeToDoublyList(Node root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "\"\"\"\n# Definition for a Node.\nclass Node(object):\n    def __init__(self, val, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\"\"\"\nclass Solution(object):\n    def treeToDoublyList(self, root):\n        \"\"\"\n        :type root: Node\n        :rtype: Node\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "\"\"\"\n# Definition for a Node.\nclass Node:\n    def __init__(self, val, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\"\"\"\nclass Solution:\n    def treeToDoublyList(self, root: 'Node') -> 'Node':\n        "
+    },
+    {
+      "lang": "C#",
+      "code": "/*\n// Definition for a Node.\npublic class Node {\n    public int val;\n    public Node left;\n    public Node right;\n\n    public Node() {}\n\n    public Node(int _val) {\n        val = _val;\n        left = null;\n        right = null;\n    }\n\n    public Node(int _val,Node _left,Node _right) {\n        val = _val;\n        left = _left;\n        right = _right;\n    }\n}\n*/\npublic class Solution {\n    public Node TreeToDoublyList(Node root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * // Definition for a Node.\n * function Node(val, left, right) {\n *      this.val = val;\n *      this.left = left;\n *      this.right = right;\n *  };\n */\n/**\n * @param {Node} root\n * @return {Node}\n */\nvar treeToDoublyList = function(root) {\n    \n};"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"51.5K\", \"totalSubmission\": \"92.2K\", \"totalAcceptedRaw\": 51533, \"totalSubmissionRaw\": 92227, \"acRate\": \"55.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "711",
+    "canSeeDetail": true,
+    "url": "/articles/convert-binary-search-tree-to-sorted-doubly-linked/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### How to traverse the tree\n\nThere are two general strategies to traverse a tree:\n     \n- *Depth First Search* (`DFS`)\n\n    In this strategy, we adopt the `depth` as the priority, so that one\n    would start from a root and reach all the way down to certain leaf,\n    and then back to root to reach another branch.\n\n    The DFS strategy can further be distinguished as\n    `preorder`, `inorder`, and `postorder` depending on the relative order\n    among the root node, left node and right node.\n    \n- *Breadth First Search* (`BFS`)\n\n    We scan through the tree level by level, following the order of height,\n    from top to bottom. The nodes on higher level would be visited before\n    the ones with lower levels.\n    \nOn the following figure the nodes are numerated in the order you visit them,\nplease follow `1-2-3-4-5` to compare different strategies.\n\n![postorder](../Figures/426/dfs_bfs.png)\n\nHere the problem is to implement DFS inorder traversal\nin a textbook recursion way because of in-place\nrequirement.\n<br /> \n<br />\n\n\n---\n#### Approach 1: Recursion\n\n**Algorithm**\n\nStandard inorder recursion follows `left -> node -> right` order,\nwhere `left` and `right` parts are the recursion calls and\n`node` part is where all processing is done.\n\nProcessing here is basically to link the previous node with the \ncurrent one, and because of that one has to track the last node\nwhich is the largest node in a new doubly linked list so far. \n\n![postorder](../Figures/426/process.png)\n\nOne more detail : one has to keep the first, or the smallest, node \nas well to close the ring of doubly linked list.\n\nHere is the algorithm :\n\n- Initiate the `first` and the `last` nodes as nulls.\n\n- Call the standard inorder recursion `helper(root)` :\n\n    - If node is not null :\n        \n        - Call the recursion for the left subtree `helper(node.left)`.\n        \n        - If the `last` node is not null, link the `last` and \n        the current `node` nodes.\n        \n        - Else initiate the `first` node.\n        \n        - Mark the current node as the last one : `last = node`.\n        \n        - Call the recursion for the right subtree `helper(node.right)`.\n\n- Link the first and the last nodes to close DLL ring and then \nreturn the `first` node.\n\n**Implementation**\n\n!?!../Documents/426_LIS.json:1000,519!?!\n\n<iframe src=\"https://leetcode.com/playground/DpffFZX4/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"DpffFZX4\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ since each node is processed\nexactly once.\n \n* Space complexity : $$\\mathcal{O}(N)$$. We have to keep a \nrecursion stack of the size of the tree height, which is \n$$\\mathcal{O}(\\log N)$$ for the best case of completely balanced tree\nand $$\\mathcal{O}(N)$$ for the worst case of completely\nunbalanced tree. \n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "696",
+      "count": 20,
+      "average": 4.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,2,5,1,3]\r",
+  "metaData": "{\n  \"name\": \"treeToDoublyList\",\n  \"params\": [\n    {\n      \"name\": \"root\",\n      \"type\": \"Node\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"Node\"\n  },\n  \"structures\": [\n    {\n      \"name\": \"Node\",\n      \"comment\": \"Definition for a Node.\",\n      \"members\": [\n        {\n          \"name\": \"val\",\n          \"type\": \"integer\"\n        },\n        {\n          \"name\": \"left\",\n          \"type\": \"Node\"\n        },\n        {\n          \"name\": \"right\",\n          \"type\": \"Node\"\n        }\n      ]\n    }\n  ],\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"csharp\",\n    \"javascript\",\n    \"python3\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

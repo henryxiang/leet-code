@@ -1,0 +1,104 @@
+{
+  "questionId": "258",
+  "questionFrontendId": "258",
+  "boundTopicId": null,
+  "title": "Add Digits",
+  "titleSlug": "add-digits",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-negative integer <code>num</code>, repeatedly add all its digits until the result has only one digit.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>38</code>\r\n<strong>Output:</strong> 2 \r\n<strong>Explanation: </strong>The process is like: <code>3 + 8 = 11</code>, <code>1 + 1 = 2</code>. \r\n&nbsp;            Since <code>2</code> has only one digit, return it.\r\n</pre>\r\n\r\n<p><b>Follow up:</b><br />\r\nCould you do it without any loop/recursion in O(1) runtime?</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 566,
+  "dislikes": 899,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Happy Number\", \"titleSlug\": \"happy-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sum of Digits in the Minimum Number\", \"titleSlug\": \"sum-of-digits-in-the-minimum-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "jianchao-li",
+      "profileUrl": "/jianchao-li/",
+      "avatarUrl": "https://assets.leetcode.com/users/jianchaolifighter/avatar_1529298385.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int addDigits(int num) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int addDigits(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def addDigits(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def addDigits(self, num: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint addDigits(int num){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int AddDigits(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} num\n * @return {number}\n */\nvar addDigits = function(num) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num\n# @return {Integer}\ndef add_digits(num)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func addDigits(_ num: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func addDigits(num int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def addDigits(num: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun addDigits(num: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn add_digits(num: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return Integer\n     */\n    function addDigits($num) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"261.9K\", \"totalSubmission\": \"474.3K\", \"totalAcceptedRaw\": 261918, \"totalSubmissionRaw\": 474277, \"acRate\": \"55.2%\"}",
+  "hints": [
+    "A naive implementation of the above process is trivial. Could you come up with other methods?",
+    "What are all the possible results?",
+    "How do they occur, periodically or randomly?",
+    "You may find this <a href=\"https://en.wikipedia.org/wiki/Digital_root\" target=\"_blank\">Wikipedia article</a> useful."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "38",
+  "metaData": "{\r\n  \"name\": \"addDigits\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"num\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

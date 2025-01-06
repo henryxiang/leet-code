@@ -1,0 +1,109 @@
+{
+  "questionId": "22",
+  "questionFrontendId": "22",
+  "boundTopicId": null,
+  "title": "Generate Parentheses",
+  "titleSlug": "generate-parentheses",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven <i>n</i> pairs of parentheses, write a function to generate all combinations of well-formed parentheses.\r\n</p>\r\n\r\n<p>\r\nFor example, given <i>n</i> = 3, a solution set is:\r\n</p>\r\n<pre>\r\n[\r\n  \"((()))\",\r\n  \"(()())\",\r\n  \"(())()\",\r\n  \"()(())\",\r\n  \"()()()\"\r\n]\r\n</pre>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 3739,
+  "dislikes": 215,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Letter Combinations of a Phone Number\", \"titleSlug\": \"letter-combinations-of-a-phone-number\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Valid Parentheses\", \"titleSlug\": \"valid-parentheses\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 17}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 14}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Nvidia\", \"slug\": \"nvidia\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Zenefits\", \"slug\": \"zenefits\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Spotify\", \"slug\": \"spotify\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> generateParenthesis(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> generateParenthesis(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def generateParenthesis(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def generateParenthesis(self, n: int) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** generateParenthesis(int n, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> GenerateParenthesis(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {string[]}\n */\nvar generateParenthesis = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {String[]}\ndef generate_parenthesis(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func generateParenthesis(_ n: Int) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func generateParenthesis(n int) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def generateParenthesis(n: Int): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun generateParenthesis(n: Int): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn generate_parenthesis(n: i32) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return String[]\n     */\n    function generateParenthesis($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"437K\", \"totalSubmission\": \"745.2K\", \"totalAcceptedRaw\": 437010, \"totalSubmissionRaw\": 745235, \"acRate\": \"58.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "349",
+    "canSeeDetail": true,
+    "url": "/articles/generate-parentheses/",
+    "content": "[TOC]\n\n#### Approach 1: Brute Force\n\n**Intuition**\n\nWe can generate all $$2^{2n}$$ sequences of `'('` and `')'` characters.  Then, we will check if each one is valid.\n\n**Algorithm**\n\nTo generate all sequences, we use a recursion.  All sequences of length `n` is just `'('` plus all sequences of length `n-1`, and then `')'` plus all sequences of length `n-1`.\n\nTo check whether a sequence is valid, we keep track of `balance`, the net number of opening brackets minus closing brackets.  If it falls below zero at any time, or doesn't end in zero, the sequence is invalid - otherwise it is valid.\n\n<iframe src=\"https://leetcode.com/playground/eDRvbWjL/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"eDRvbWjL\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity : $$O(2^{2n}n)$$.  For each of $$2^{2n}$$ sequences, we need to create and validate the sequence, which takes $$O(n)$$ work.\n\n* Space Complexity : $$O(2^{2n}n)$$.  Naively, every sequence could be valid.  See [Approach 3](#approach-3-closure-number) for development of a tighter asymptotic bound.\n<br />\n<br />\n---\n#### Approach 2: Backtracking\n\n**Intuition and Algorithm**\n\nInstead of adding `'('` or `')'` every time as in [Approach 1](#approach-1-brute-force), let's only add them when we know it will remain a valid sequence.  We can do this by keeping track of the number of opening and closing brackets we have placed so far.\n\nWe can start an opening bracket if we still have one (of `n`) left to place.  And we can start a closing bracket if it would not exceed the number of opening brackets.\n\n<iframe src=\"https://leetcode.com/playground/npPa38Mh/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"npPa38Mh\"></iframe>\n\n**Complexity Analysis**\n\nOur complexity analysis rests on understanding how many elements there are in `generateParenthesis(n)`.  This analysis is outside the scope of this article, but it turns out this is the `n`-th Catalan number $$\\dfrac{1}{n+1}\\binom{2n}{n}$$, which is bounded asymptotically by $$\\dfrac{4^n}{n\\sqrt{n}}$$.\n\n* Time Complexity : $$O(\\dfrac{4^n}{\\sqrt{n}})$$.  Each valid sequence has at most `n` steps during the backtracking procedure.\n\n* Space Complexity : $$O(\\dfrac{4^n}{\\sqrt{n}})$$, as described above, and using $$O(n)$$ space to store the sequence.\n<br />\n<br />\n---\n\n#### Approach 3: Closure Number\n\n**Intuition**\n\nTo enumerate something, generally we would like to express it as a sum of disjoint subsets that are easier to count.\n\nConsider the *closure number* of a valid parentheses sequence `S`: the least `index >= 0` so that `S[0], S[1], ..., S[2*index+1]` is valid.  Clearly, every parentheses sequence has a unique *closure number*.  We can try to enumerate them individually.\n\n**Algorithm**\n\nFor each closure number `c`, we know the starting and ending brackets must be at index `0` and `2*c + 1`. Then, the `2*c` elements between must be a valid sequence, plus the rest of the elements must be a valid sequence.\n\n<iframe src=\"https://leetcode.com/playground/Z3ZYfRAo/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"Z3ZYfRAo\"></iframe>\n\n**Complexity Analysis**\n\n* Time and Space Complexity : $$O(\\dfrac{4^n}{\\sqrt{n}})$$.  The analysis is similar to [Approach 2](#approach-2-backtracking).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "344",
+      "count": 81,
+      "average": 4.395,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "3",
+  "metaData": "{\r\n  \"name\": \"generateParenthesis\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

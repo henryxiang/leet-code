@@ -1,0 +1,116 @@
+{
+  "questionId": "214",
+  "questionFrontendId": "214",
+  "boundTopicId": null,
+  "title": "Shortest Palindrome",
+  "titleSlug": "shortest-palindrome",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <em><b>s</b></em>, you are allowed to convert it to a palindrome by adding characters in front of it. Find and return the shortest palindrome you can find by performing this transformation.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><code>&quot;aacecaaa&quot;</code>\r\n<strong>Output:</strong> <code>&quot;aaacecaaa&quot;</code>\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><code>&quot;abcd&quot;</code>\r\n<strong>Output:</strong> <code>&quot;dcbabcd&quot;</code></pre>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 846,
+  "dislikes": 97,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Palindromic Substring\", \"titleSlug\": \"longest-palindromic-substring\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Implement strStr()\", \"titleSlug\": \"implement-strstr\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Palindrome Pairs\", \"titleSlug\": \"palindrome-pairs\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "ifanchu",
+      "profileUrl": "/ifanchu/",
+      "avatarUrl": "https://www.gravatar.com/avatar/afa481773143a2473a6f787a58f0086e.png?s=200"
+    },
+    {
+      "username": "Freezen",
+      "profileUrl": "/freezen/",
+      "avatarUrl": "https://www.gravatar.com/avatar/85b3caacb214788b937e9ef6242f9d23.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string shortestPalindrome(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String shortestPalindrome(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestPalindrome(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestPalindrome(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * shortestPalindrome(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ShortestPalindrome(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar shortestPalindrome = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef shortest_palindrome(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestPalindrome(_ s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestPalindrome(s string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestPalindrome(s: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestPalindrome(s: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_palindrome(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function shortestPalindrome($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"85.8K\", \"totalSubmission\": \"299.6K\", \"totalAcceptedRaw\": 85760, \"totalSubmissionRaw\": 299649, \"acRate\": \"28.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "174",
+    "canSeeDetail": true,
+    "url": "/articles/shortest-palindrome/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach #1 Brute force [Accepted]\n\n**Intuition**\n\nAccording to the question, we are allowed to insert the characters only at the beginning of the string. Hence, we can find the largest segment from the beginning that is a palindrome, and we can then easily reverse the remaining segment and append to the beginning. This must be the required answer as no shorter palindrome could be found than this by just appending at the beginning.\n\nFor example: Take the string $$\\text{\"abcbabcab\"}$$. Here, the largest palindrome segment from beginning is $$\\text{\"abcba\"}$$, and the remaining segment is $$\\text{\"bcab\"}$$. Hence the required string is reverse of $$\\text{\"bcab\"}$$( = $$\\text{\"bacb\"}$$) + original string( = $$\\text{\"abcbabcab\"}$$) = $$\\text{\"bacbabcbabcab\"}$$.\n\n**Algorithm**\n\n* Create the reverse of the original string $$s$$, say $$\\text{rev}$$. This is used for comparison to find the largest palindrome segment from the front.\n* Iterate over the variable $$i$$ from 0 to the $$\\text{size(s)}-1$$:\n    * If $$s[0:n-i] == rev[i:]$$ (i.e. substring of $$s$$ from $$0$$ to $$n-i$$ is equal to the substring of $$\\text{rev}$$ from $$i$$ to the end of string). This essentially means that that substring from $$0$$ to $$n-i$$ is a palindrome, as $$\\text{rev}$$ is the reverse of $$s$$.\n    * Since, we find the larger palindromes first, we can return reverse of largest palindrome + $$s$$ as soon as we get it.\n\n\n<iframe src=\"https://leetcode.com/playground/ofq6FrQW/shared\" frameBorder=\"0\" name=\"ofq6FrQW\" width=\"100%\" height=\"258\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n^2)$$.\n    * We iterate over the entire length of string $$s$$.\n    * In each iteration, we compare the substrings which is linear in size of substrings to be compared.\n    * Hence, the total time complexity is $$O(n*n) = O(n^2)$$.\n\n* Space complexity: $$O(n)$$ extra space for the reverse string $$\\text{rev}$$.\n\n---\n#### Approach #2 Two pointers and recursion [Accepted]\n\n**Intuition**\n\nIn Approach #1, we found the largest palindrome substring from the string using substring matching which is $$O(n)$$ in length of substring. We could make the process more efficient if we could reduce the size of string to search for the substring without checking the complete substring each time.\n\nLets take a string $$\\text{\"abcbabcaba\"}$$. Let us consider 2 pointers $$i$$ and $$j$$.\nInitialize $$i = 0$$. Iterate over $$j$$ from $$n-1$$ to $$0$$, incrementing $$i$$ each time $$\\text{s[i]==s[j]}$$. Now, we just need to search in range $$\\text[0,i)$$. This way, we have reduced the size of string to search for the largest palindrome substring from the beginning. The range $$\\text{[0,i)}$$ must always contain the largest palindrome substring. The proof of correction is that: Say the string was a perfect palindrome, $$i$$ would be incremented $$n$$ times. Had there been other characters at the end, $$i$$ would still be incremented by the size of the palindrome. Hence, even though there is a chance that the range $$\\text{[0,i)}$$ is not always tight, it is ensured that it will always contain the longest palindrome from the beginning.  \n\nThe best case for the algorithm is when the entire string is palindrome and the worst case is string like $$\\text{\"aababababababa\"}$$, wherein $$i$$ first becomes $$12$$(check by doing on paper), and we need to recheck in [0,12) corresponding to string $$\\text{\"aabababababa\"}$$. Again continuing in the same way, we get $${i=10}$$.  In such a case, the string is reduced only by as few as 2 elements at each step. Hence, the number of steps in such cases is linear($$n/2$$).\n\nThis reduction of length could be easily done with the help of a recursive routine, as shown in the algorithm section.\n\n**Algorithm**\n\nThe routine $$\\text{shortestPalindrome}$$ is recursive and takes string $$s$$ as parameter:\n\n* Initialize $$i=0$$\n* Iterate over $$j$$ from $$n-1$$ to $$0$$:\n    * If $$\\text{s[i]==s[j]}$$, increase $$i$$ by $$1$$\n* If $$i$$ equals the size of $$s$$, the entire string is palindrome, and hence return the entire string $$s$$.\n* Else:\n    * Return reverse of remaining substring after $$i$$ to the end of string + $$\\text{shortestPalindrome}$$ routine on substring from start to index $$i-1$$ + remaining substring after $$i$$ to the end of string.\n\n\n<iframe src=\"https://leetcode.com/playground/zeLz2M4w/shared\" frameBorder=\"0\" name=\"zeLz2M4w\" width=\"100%\" height=\"292\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n^2)$$.\n    * Each iteration of $$\\text{shortestPalindrome}$$ is linear in size of substring and the maximum number of recursive calls can be $$n/2$$ times as shown in the Intuition section.\n    * Let the time complexity of the algorithm be T(n). Since, at the each step for the worst case, the string can be divide into 2 parts and we require only one part for further computation. Hence, the time complexity for the worst case can be represented as : $$T(n)=T(n-2)+O(n)$$. So, $$T(n) = O(n) + O(n-2) + O(n-4) + ... + O(1)$$ which is  $$O(n^2)$$.\n\nThanks @CONOVER for the time complexity analysis.\n\n* Space complexity: $$O(n)$$ extra space for $$\\text{remain_rev}$$ string.\n\n---\n#### Approach #3 KMP [Accepted]\n\n**Intuition**\n\nWe have seen that the question boils down to  finding the largest palindrome substring from the beginning.\n\nThe people familiar with KMP(Knuth–Morris–Pratt) algorithm may wonder that the task at hand can be easily be compared with the concept of the lookup table in KMP.\n\n*KMP Overview:*\n\nKMP is a string matching algorithm that runs in $$O(n+m)$$ times, where $$n$$ and $$m$$ are sizes of the text and string to be searched respectively. The key component of KMP is the failure function lookup table,say $$f(s)$$. The purpose of the lookup table is to store the length of the proper prefix of the string $$b_{1}b_{2}...b_{s}$$ that is also a suffix of $$b_{1}b_{2}...b_{s}$$. This table is important because if we are trying to match a text string for $$b_{1}b_{2}...b_{n}$$, and we have matched the first $$s$$ positions, but when we fail, then the value of lookup table for $$s$$ is the longest prefix of $$b_{1}b_{2}...b_{n}$$ that could possibly match the text string upto the point we are at. Thus, we don't need to start all over again, and can resume searching from the matching prefix.\n\nThe algorithm to generate the lookup table is easy and inutitive, as given below:\n\n```\nf(0) = 0\nfor(i = 1; i < n; i++)\n{\n\tt = f(i-1)\n\twhile(t > 0 && b[i] != b[t])\n\t\tt = f(t-1)\n\tif(b[i] == b[t]){\n\t\t++t\n\tf(i) = t\n}\n```\n\n* Here, we first set f(0)=0 since, no proper prefix is available.\n* Next, iterate over $$i$$ from $$1$$ to $$n-1$$:\n    * Set $$t=f(i-1)$$\n    * While t>0 and char at $$i$$ doesn't match the char at $$t$$ position, set $$t=f(t)$$, which essentially means that we have problem matching and must consider a shorter prefix, which will be $$b_{f(t-1)}$$, until we find a match or t becomes 0.\n    * If $$b_{i}==b_{t}$$, add 1 to t\n    * Set $$f(i)=t$$  \n\nThe lookup table generation is as illustrated below:\n\n![KMP](../Figures/214/shortest_palindrome.png){:width=\"600px\"}\n{:align=\"center\"}\n\n*Wait! I get it!!*\n\nIn Approach #1, we reserved the original string $$s$$ and stored it as $$\\text{rev}$$. We iterate over $$i$$ from $$0$$ to $$n-1$$ and check for $$s[0:n-i] == rev[i:]$$.\nPondering over this statement, had the $$\\text{rev}$$ been concatenated to $$s$$, this statement is just finding the longest prefix that is equal to the suffix. Voila!\n\n**Algorithm**\n\n* We use the KMP lookup table generation\n* Create $$\\text{new_s}$$ as $$s + \\text{\"#\"} + \\text{reverse(s)}$$ and use the string in the lookup-generation algorithm\n  \t* The \"#\" in the middle is required, since without the #, the  2 strings could mix with each ther, producing wrong answer. For example, take the string $$\\text{\"aaaa\"}$$. Had we not inserted \"#\" in the middle, the new string would be $$\\text{\"aaaaaaaa\"}$$ and the largest prefix size would be 7 corresponding to \"aaaaaaa\" which would be obviously wrong. Hence, a delimiter is required at the middle.\n* Return reversed string after the largest palindrome from beginning length(given by $$n-\\text{f[n_new-1]}$$) + original string $$s$$\n\n\n<iframe src=\"https://leetcode.com/playground/Uu5sN23P/shared\" frameBorder=\"0\" name=\"Uu5sN23P\" width=\"100%\" height=\"360\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n)$$.\n    * In every iteration of the inner while loop, $$t$$ decreases until it reaches 0 or until it matches. After that, it is incremented by one. Therefore, in the worst case, $$t$$ can only be decreased up to $$n$$ times and increased up to $$n$$ times.\n    * Hence, the algorithm is linear with maximum $$(2 * n) * 2$$ iterations.\n\n* Space complexity: $$O(n)$$. Additional space for the reverse string and the concatenated string.\n\n---\nAnalysis written by [@abhinavbansal0](https://leetcode.com/abhinavbansal0).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "169",
+      "count": 45,
+      "average": 3.889,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"aacecaaa\"",
+  "metaData": "{\r\n  \"name\": \"shortestPalindrome\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

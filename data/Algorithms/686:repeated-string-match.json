@@ -1,0 +1,111 @@
+{
+  "questionId": "686",
+  "questionFrontendId": "686",
+  "boundTopicId": null,
+  "title": "Repeated String Match",
+  "titleSlug": "repeated-string-match",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two strings A and B, find the minimum number of times A has to be repeated such that B is a substring of it. If no such solution, return -1.</p>\r\n\r\n<p>For example, with A = &quot;abcd&quot; and B = &quot;cdabcdab&quot;.</p>\r\n\r\n<p>Return 3, because by repeating A three times (&ldquo;abcdabcdabcd&rdquo;), B is a substring of it; and B is not a substring of A repeated two times (&quot;abcdabcd&quot;).</p>\r\n\r\n<p><b>Note:</b><br />\r\nThe length of <code>A</code> and <code>B</code> will be between 1 and 10000.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 619,
+  "dislikes": 620,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Repeated Substring Pattern\", \"titleSlug\": \"repeated-substring-pattern\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int repeatedStringMatch(string A, string B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int repeatedStringMatch(String A, String B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def repeatedStringMatch(self, A, B):\n        \"\"\"\n        :type A: str\n        :type B: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def repeatedStringMatch(self, A: str, B: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint repeatedStringMatch(char * A, char * B){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int RepeatedStringMatch(string A, string B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} A\n * @param {string} B\n * @return {number}\n */\nvar repeatedStringMatch = function(A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} a\n# @param {String} b\n# @return {Integer}\ndef repeated_string_match(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func repeatedStringMatch(_ A: String, _ B: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func repeatedStringMatch(A string, B string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def repeatedStringMatch(A: String, B: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun repeatedStringMatch(A: String, B: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn repeated_string_match(a: String, b: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $A\n     * @param String $B\n     * @return Integer\n     */\n    function repeatedStringMatch($A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"80.4K\", \"totalSubmission\": \"251.8K\", \"totalAcceptedRaw\": 80416, \"totalSubmissionRaw\": 251822, \"acRate\": \"31.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "256",
+    "canSeeDetail": true,
+    "url": "/articles/repeated-string-match/",
+    "content": "[TOC]\n\n#### Approach #1: Ad-Hoc [Accepted]\n\n**Intuition**\n\nThe question can be summarized as \"What is the smallest `k` for which `B` is a substring of `A * k`?\"  We can just try every `k`.\n\n**Algorithm**\n\nImagine we wrote `S = A+A+A+...`.  If `B` is to be a substring of `S`, we only need to check whether some `S[0:], S[1:], ..., S[len(A) - 1:]` starts with `B`, as `S` is long enough to contain `B`, and `S` has period at most `len(A)`.\n\nNow, suppose `q` is the least number for which `len(B) <= len(A * q)`.  We only need to check whether `B` is a substring of `A * q` or `A * (q+1)`.  If we try `k < q`, then `B` has larger length than `A * q` and therefore can't be a substring.  When `k = q+1`, `A * k` is already big enough to try all positions for `B`; namely, `A[i:i+len(B)] == B` for `i = 0, 1, ..., len(A) - 1`.\n\n<iframe src=\"https://leetcode.com/playground/gTtmgvev/shared\" frameBorder=\"0\" name=\"gTtmgvev\" width=\"100%\" height=\"224\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N*(N+M))$$, where $$M, N$$ are the lengths of strings `A, B`.  We create two strings `A * q`, `A * (q+1)` which have length at most `O(M+N)`.  When checking whether `B` is a substring of `A`, this check takes naively the product of their lengths.\n\n* Space complexity: As justified above, we created strings that used $$O(M+N)$$ space.\n\n---\n\n#### Approach #2: Rabin-Karp (Rolling Hash) [Accepted]\n\n**Intuition**\n\nAs in *Approach #1*, we've reduced the problem to deciding whether B is a substring of some `A * k`.  Using the following technique, we can decide whether `B` is a substring in $$O(len(A) * k)$$ time.\n\n**Algorithm**\n\nFor strings $$S$$, consider each $$S[i]$$ as some integer ASCII code.  Then for some prime $$p$$, consider the following function modulo some prime modulus $$\\mathcal{M}$$:\n\n$$\\text{hash}(S) = \\sum_{0 \\leq i < len(S)} p^i * S[i]$$\n\nNotably, $$\\text{hash}(S[1:] + x) = \\frac{(\\text{hash}(S) - S[0])}{p} + p^{n-1} x$$.  This shows we can get the hash of every substring of `A * q` in time complexity linear to it's size.  (We will also use the fact that $$p^{-1} = p^{\\mathcal{M}-2} \\mod \\mathcal{M}$$.)\n\nHowever, hashes may collide haphazardly.  To be absolutely sure in theory, we should check the answer in the usual way.  The expected number of checks we make is in the order of $$1 + \\frac{s}{\\mathcal{M}}$$ where $$s$$ is the number of substrings we computed hashes for (assuming the hashes are equally distributed), which is effectively 1.\n\n<iframe src=\"https://leetcode.com/playground/DKSFgXSr/shared\" frameBorder=\"0\" name=\"DKSFgXSr\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(M+N)$$ (at these sizes), where $$M, N$$ are the lengths of strings `A, B`.  As in *Approach #1*, we justify that `A * (q+1)` will be of length $$O(M + N)$$, and computing the rolling hashes was linear work.  We will also do a linear $$O(N)$$ final check of our answer $$1 + O(M) / \\mathcal{M}$$ times.  In total, this is $$O(M+N + N(1 + \\frac{M}{\\mathcal{M}}))$$ work.  Since $$M \\leq 10000 < \\mathcal{M} = 10^9 + 7$$, we can consider this to be linear behavior.\n\n* Space complexity:  $$O(1)$$.  Only integers were stored with additional memory.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "248",
+      "count": 60,
+      "average": 2.767,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"abcd\"\n\"cdabcdab\"",
+  "metaData": "{\r\n  \"name\": \"repeatedStringMatch\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

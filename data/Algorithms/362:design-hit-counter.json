@@ -1,0 +1,99 @@
+{
+  "questionId": "362",
+  "questionFrontendId": "362",
+  "boundTopicId": null,
+  "title": "Design Hit Counter",
+  "titleSlug": "design-hit-counter",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design a hit counter which counts the number of hits received in the past 5 minutes.</p>\r\n\r\n<p>Each function accepts a timestamp parameter (in seconds granularity) and you may assume that calls are being made to the system in chronological order (ie, the timestamp is monotonically increasing). You may assume that the earliest timestamp starts at 1.</p>\r\n\r\n<p>It is possible that several hits arrive roughly at the same time.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\nHitCounter counter = new HitCounter();\r\n\r\n// hit at timestamp 1.\r\ncounter.hit(1);\r\n\r\n// hit at timestamp 2.\r\ncounter.hit(2);\r\n\r\n// hit at timestamp 3.\r\ncounter.hit(3);\r\n\r\n// get hits at timestamp 4, should return 3.\r\ncounter.getHits(4);\r\n\r\n// hit at timestamp 300.\r\ncounter.hit(300);\r\n\r\n// get hits at timestamp 300, should return 4.\r\ncounter.getHits(300);\r\n\r\n// get hits at timestamp 301, should return 3.\r\ncounter.getHits(301); \r\n</pre>\r\n\r\n<p><b>Follow up:</b><br />\r\nWhat if the number of hits per second could be very large? Does your design scale?</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 475,
+  "dislikes": 47,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Logger Rate Limiter\", \"titleSlug\": \"logger-rate-limiter\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "elmirap",
+      "profileUrl": "/elmirap/",
+      "avatarUrl": "https://www.gravatar.com/avatar/ba92194ffdce151caf7dffd9037a6997.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Quip (Salesforce)\", \"slug\": \"quip\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Booking.com\", \"slug\": \"bookingcom\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class HitCounter {\npublic:\n    /** Initialize your data structure here. */\n    HitCounter() {\n        \n    }\n    \n    /** Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    void hit(int timestamp) {\n        \n    }\n    \n    /** Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    int getHits(int timestamp) {\n        \n    }\n};\n\n/**\n * Your HitCounter object will be instantiated and called as such:\n * HitCounter* obj = new HitCounter();\n * obj->hit(timestamp);\n * int param_2 = obj->getHits(timestamp);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class HitCounter {\n\n    /** Initialize your data structure here. */\n    public HitCounter() {\n        \n    }\n    \n    /** Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    public void hit(int timestamp) {\n        \n    }\n    \n    /** Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    public int getHits(int timestamp) {\n        \n    }\n}\n\n/**\n * Your HitCounter object will be instantiated and called as such:\n * HitCounter obj = new HitCounter();\n * obj.hit(timestamp);\n * int param_2 = obj.getHits(timestamp);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class HitCounter(object):\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def hit(self, timestamp):\n        \"\"\"\n        Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity).\n        :type timestamp: int\n        :rtype: None\n        \"\"\"\n        \n\n    def getHits(self, timestamp):\n        \"\"\"\n        Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity).\n        :type timestamp: int\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your HitCounter object will be instantiated and called as such:\n# obj = HitCounter()\n# obj.hit(timestamp)\n# param_2 = obj.getHits(timestamp)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class HitCounter:\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def hit(self, timestamp: int) -> None:\n        \"\"\"\n        Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity).\n        \"\"\"\n        \n\n    def getHits(self, timestamp: int) -> int:\n        \"\"\"\n        Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity).\n        \"\"\"\n        \n\n\n# Your HitCounter object will be instantiated and called as such:\n# obj = HitCounter()\n# obj.hit(timestamp)\n# param_2 = obj.getHits(timestamp)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} HitCounter;\n\n/** Initialize your data structure here. */\n\nHitCounter* hitCounterCreate() {\n    \n}\n\n/** Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity). */\nvoid hitCounterHit(HitCounter* obj, int timestamp) {\n  \n}\n\n/** Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity). */\nint hitCounterGetHits(HitCounter* obj, int timestamp) {\n  \n}\n\nvoid hitCounterFree(HitCounter* obj) {\n    \n}\n\n/**\n * Your HitCounter struct will be instantiated and called as such:\n * HitCounter* obj = hitCounterCreate();\n * hitCounterHit(obj, timestamp);\n \n * int param_2 = hitCounterGetHits(obj, timestamp);\n \n * hitCounterFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class HitCounter {\n\n    /** Initialize your data structure here. */\n    public HitCounter() {\n        \n    }\n    \n    /** Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    public void Hit(int timestamp) {\n        \n    }\n    \n    /** Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    public int GetHits(int timestamp) {\n        \n    }\n}\n\n/**\n * Your HitCounter object will be instantiated and called as such:\n * HitCounter obj = new HitCounter();\n * obj.Hit(timestamp);\n * int param_2 = obj.GetHits(timestamp);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Initialize your data structure here.\n */\nvar HitCounter = function() {\n    \n};\n\n/**\n * Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity). \n * @param {number} timestamp\n * @return {void}\n */\nHitCounter.prototype.hit = function(timestamp) {\n    \n};\n\n/**\n * Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity). \n * @param {number} timestamp\n * @return {number}\n */\nHitCounter.prototype.getHits = function(timestamp) {\n    \n};\n\n/** \n * Your HitCounter object will be instantiated and called as such:\n * var obj = new HitCounter()\n * obj.hit(timestamp)\n * var param_2 = obj.getHits(timestamp)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class HitCounter\n\n=begin\n    Initialize your data structure here.\n=end\n    def initialize()\n        \n    end\n\n\n=begin\n    Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity).\n    :type timestamp: Integer\n    :rtype: Void\n=end\n    def hit(timestamp)\n        \n    end\n\n\n=begin\n    Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity).\n    :type timestamp: Integer\n    :rtype: Integer\n=end\n    def get_hits(timestamp)\n        \n    end\n\n\nend\n\n# Your HitCounter object will be instantiated and called as such:\n# obj = HitCounter.new()\n# obj.hit(timestamp)\n# param_2 = obj.get_hits(timestamp)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass HitCounter {\n\n    /** Initialize your data structure here. */\n    init() {\n        \n    }\n    \n    /** Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    func hit(_ timestamp: Int) {\n        \n    }\n    \n    /** Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    func getHits(_ timestamp: Int) -> Int {\n        \n    }\n}\n\n/**\n * Your HitCounter object will be instantiated and called as such:\n * let obj = HitCounter()\n * obj.hit(timestamp)\n * let ret_2: Int = obj.getHits(timestamp)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type HitCounter struct {\n    \n}\n\n\n/** Initialize your data structure here. */\nfunc Constructor() HitCounter {\n    \n}\n\n\n/** Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity). */\nfunc (this *HitCounter) Hit(timestamp int)  {\n    \n}\n\n\n/** Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity). */\nfunc (this *HitCounter) GetHits(timestamp int) int {\n    \n}\n\n\n/**\n * Your HitCounter object will be instantiated and called as such:\n * obj := Constructor();\n * obj.Hit(timestamp);\n * param_2 := obj.GetHits(timestamp);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class HitCounter() {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    def hit(timestamp: Int) {\n        \n    }\n\n    /** Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    def getHits(timestamp: Int): Int = {\n        \n    }\n\n}\n\n/**\n * Your HitCounter object will be instantiated and called as such:\n * var obj = new HitCounter()\n * obj.hit(timestamp)\n * var param_2 = obj.getHits(timestamp)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class HitCounter() {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    fun hit(timestamp: Int) {\n        \n    }\n\n    /** Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    fun getHits(timestamp: Int): Int {\n        \n    }\n\n}\n\n/**\n * Your HitCounter object will be instantiated and called as such:\n * var obj = HitCounter()\n * obj.hit(timestamp)\n * var param_2 = obj.getHits(timestamp)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct HitCounter {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl HitCounter {\n\n    /** Initialize your data structure here. */\n    fn new() -> Self {\n        \n    }\n    \n    /** Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    fn hit(&self, timestamp: i32) {\n        \n    }\n    \n    /** Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity). */\n    fn get_hits(&self, timestamp: i32) -> i32 {\n        \n    }\n}\n\n/**\n * Your HitCounter object will be instantiated and called as such:\n * let obj = HitCounter::new();\n * obj.hit(timestamp);\n * let ret_2: i32 = obj.get_hits(timestamp);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class HitCounter {\n    /**\n     * Initialize your data structure here.\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * Record a hit.\n        @param timestamp - The current timestamp (in seconds granularity).\n     * @param Integer $timestamp\n     * @return NULL\n     */\n    function hit($timestamp) {\n        \n    }\n  \n    /**\n     * Return the number of hits in the past 5 minutes.\n        @param timestamp - The current timestamp (in seconds granularity).\n     * @param Integer $timestamp\n     * @return Integer\n     */\n    function getHits($timestamp) {\n        \n    }\n}\n\n/**\n * Your HitCounter object will be instantiated and called as such:\n * $obj = HitCounter();\n * $obj->hit($timestamp);\n * $ret_2 = $obj->getHits($timestamp);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"59.4K\", \"totalSubmission\": \"96.6K\", \"totalAcceptedRaw\": 59355, \"totalSubmissionRaw\": 96605, \"acRate\": \"61.4%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"HitCounter\",\"hit\",\"hit\",\"hit\",\"getHits\",\"hit\",\"getHits\",\"getHits\"]\n[[],[1],[2],[3],[4],[300],[300],[301]]",
+  "metaData": "{\r\n    \"classname\": \"HitCounter\",\r\n    \"constructor\": {\r\n        \"params\": [\r\n        ],\r\n        \"comment\": \"Initialize your data structure here.\"\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"hit\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"timestamp\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            },\r\n            \"comment\": \"Record a hit.\\n        @param timestamp - The current timestamp (in seconds granularity).\"\r\n        },\r\n        {\r\n            \"name\" : \"getHits\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"timestamp\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            },\r\n            \"comment\": \"Return the number of hits in the past 5 minutes.\\n        @param timestamp - The current timestamp (in seconds granularity).\"\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,93 @@
+{
+  "questionId": "471",
+  "questionFrontendId": "471",
+  "boundTopicId": null,
+  "title": "Encode String with Shortest Length",
+  "titleSlug": "encode-string-with-shortest-length",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <b>non-empty</b> string, encode the string such that its encoded length is the shortest.</p>\r\n\r\n<p>The encoding rule is: <code>k[encoded_string]</code>, where the <i>encoded_string</i> inside the square brackets is being repeated exactly <i>k</i> times.</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li><i>k</i> will be a positive integer and encoded string will not be empty or have extra space.</li>\r\n\t<li>You may assume that the input string contains only lowercase English letters. The string&#39;s length is at most 160.</li>\r\n\t<li>If an encoding process does not make the string shorter, then do not encode it. If there are several solutions, return any of them is fine.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\nInput: &quot;aaa&quot;\r\nOutput: &quot;aaa&quot;\r\nExplanation: There is no way to encode it such that it is shorter than the input string, so we do not encode it.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\nInput: &quot;aaaaa&quot;\r\nOutput: &quot;5[a]&quot;\r\nExplanation: &quot;5[a]&quot; is shorter than &quot;aaaaa&quot; by 1 character.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\nInput: &quot;aaaaaaaaaa&quot;\r\nOutput: &quot;10[a]&quot;\r\nExplanation: &quot;a9[a]&quot; or &quot;9[a]a&quot; are also valid solutions, both of them have the same length = 5, which is the same as &quot;10[a]&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 4:</b></p>\r\n\r\n<pre>\r\nInput: &quot;aabcaabcd&quot;\r\nOutput: &quot;2[aabc]d&quot;\r\nExplanation: &quot;aabc&quot; occurs twice, so one answer can be &quot;2[aabc]d&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 5:</b></p>\r\n\r\n<pre>\r\nInput: &quot;abbbabbbcabbbabbbc&quot;\r\nOutput: &quot;2[2[abbb]c]&quot;\r\nExplanation: &quot;abbbabbbc&quot; occurs twice, but &quot;abbbabbbc&quot; can also be encoded to &quot;2[abbb]c&quot;, so one answer can be &quot;2[2[abbb]c]&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 275,
+  "dislikes": 17,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Decode String\", \"titleSlug\": \"decode-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Atoms\", \"titleSlug\": \"number-of-atoms\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string encode(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String encode(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def encode(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def encode(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * encode(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string Encode(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar encode = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef encode(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func encode(_ s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func encode(s string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def encode(s: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun encode(s: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn encode(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function encode($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14K\", \"totalSubmission\": \"30.4K\", \"totalAcceptedRaw\": 14015, \"totalSubmissionRaw\": 30415, \"acRate\": \"46.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"aaa\"",
+  "metaData": "{\r\n  \"name\": \"encode\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "945",
+  "questionFrontendId": "909",
+  "boundTopicId": null,
+  "title": "Snakes and Ladders",
+  "titleSlug": "snakes-and-ladders",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On an N x N <code>board</code>, the numbers from <code>1</code> to <code>N*N</code> are written&nbsp;<em>boustrophedonically</em>&nbsp;<strong>starting from the bottom&nbsp;left of the board</strong>, and alternating direction each row.&nbsp; For example, for a 6 x 6 board, the numbers are written as follows:</p>\r\n\r\n<pre>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/09/23/snakes.png\" style=\"width: 254px; height: 200px;\" />\r\n</pre>\r\n\r\n<p>You start on square <code>1</code> of the board (which is always in the last row and&nbsp;first column).&nbsp; Each move, starting from square <code>x</code>, consists of the following:</p>\r\n\r\n<ul>\r\n\t<li>You choose a destination square <code>S</code> with number&nbsp;<code>x+1</code>, <code>x+2</code>, <code>x+3</code>, <code>x+4</code>, <code>x+5</code>, or <code>x+6</code>, provided this&nbsp;number is&nbsp;<code>&lt;=&nbsp;N*N</code>.\r\n\r\n\t<ul>\r\n\t\t<li>(This choice simulates the result of a standard 6-sided die roll: ie., there are always <strong>at most 6 destinations, regardless of the size of the board</strong>.)</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>If <code>S</code>&nbsp;has a snake or ladder, you move to the destination of that snake or ladder.&nbsp; Otherwise, you move to <code>S</code>.</li>\r\n</ul>\r\n\r\n<p>A board square on row <code>r</code> and column <code>c</code>&nbsp;has a &quot;snake or ladder&quot; if <code>board[r][c] != -1</code>.&nbsp; The destination of that snake or ladder is <code>board[r][c]</code>.</p>\r\n\r\n<p>Note that you only take a snake or ladder at most once per move: if the destination to a snake or ladder is the start of another&nbsp;snake or ladder, you do <strong>not</strong> continue moving.&nbsp; (For example, if the board is `[[4,-1],[-1,3]]`, and on the first move your destination square is `2`, then you finish your first move at&nbsp;`3`, because you do <strong>not</strong> continue moving to `4`.)</p>\r\n\r\n<p>Return the least number of moves required to reach square <font face=\"monospace\">N*N</font>.&nbsp; If it is not possible, return <code>-1</code>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[\r\n[-1,-1,-1,-1,-1,-1],\r\n[-1,-1,-1,-1,-1,-1],\r\n[-1,-1,-1,-1,-1,-1],\r\n[-1,35,-1,-1,13,-1],\r\n[-1,-1,-1,-1,-1,-1],\r\n[-1,15,-1,-1,-1,-1]]\r\n<strong>Output: </strong>4\r\n<strong>Explanation: </strong>\r\nAt the beginning, you start at square 1 [at row 5, column 0].\r\nYou decide to move to square 2, and must take the ladder to square 15.\r\nYou then decide to move to square 17 (row 3, column 5), and must take the snake to square 13.\r\nYou then decide to move to square 14, and must take the ladder to square 35.\r\nYou then decide to move to square 36, ending the game.\r\nIt can be shown that you need at least 4 moves to reach the N*N-th square, so the answer is 4.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>2 &lt;= board.length = board[0].length&nbsp;&lt;= 20</code></li>\r\n\t<li><code>board[i][j]</code>&nbsp;is between <code>1</code> and <code>N*N</code> or is equal to <code>-1</code>.</li>\r\n\t<li>The board&nbsp;square with number <code>1</code> has no snake or ladder.</li>\r\n\t<li>The board square with number <code>N*N</code> has no snake or ladder.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 220,
+  "dislikes": 577,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Hulu\", \"slug\": \"hulu\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int snakesAndLadders(vector<vector<int>>& board) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int snakesAndLadders(int[][] board) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def snakesAndLadders(self, board):\n        \"\"\"\n        :type board: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def snakesAndLadders(self, board: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint snakesAndLadders(int** board, int boardSize, int* boardColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int SnakesAndLadders(int[][] board) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} board\n * @return {number}\n */\nvar snakesAndLadders = function(board) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} board\r\n# @return {Integer}\r\ndef snakes_and_ladders(board)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func snakesAndLadders(_ board: [[Int]]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func snakesAndLadders(board [][]int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def snakesAndLadders(board: Array[Array[Int]]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun snakesAndLadders(board: Array<IntArray>): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn snakes_and_ladders(board: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $board\n     * @return Integer\n     */\n    function snakesAndLadders($board) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"20K\", \"totalSubmission\": \"54.6K\", \"totalAcceptedRaw\": 19968, \"totalSubmissionRaw\": 54597, \"acRate\": \"36.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "565",
+    "canSeeDetail": true,
+    "url": "/articles/snakes-and-ladders/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Breadth-First Search\n\n**Intuition**\n\nAs we are looking for a shortest path, a breadth-first search is ideal.  The main difficulty is to handle enumerating all possible moves from each square.\n\n**Algorithm**\n\nSuppose we are on a square with number `s`.  We would like to know all final destinations with number `s2` after making one move.\n\nThis requires knowing the coordinates `get(s2)` of square `s2`.  This is a small puzzle in itself: we know that the row changes every `N` squares, and so is only based on `quot = (s2-1) / N`; also the column is only based on `rem = (s2-1) % N` and what row we are on (forwards or backwards.)\n\nFrom there, we perform a breadth first search, where the nodes are the square numbers `s`.\n\n<iframe src=\"https://leetcode.com/playground/RZ7eqY32/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RZ7eqY32\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of the `board`.\n\n* Space Complexity:  $$O(N^2)$$.\n<br />\n<br />\n\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "553",
+      "count": 32,
+      "average": 3.531,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,35,-1,-1,13,-1],[-1,-1,-1,-1,-1,-1],[-1,15,-1,-1,-1,-1]]",
+  "metaData": "{\r\n  \"name\": \"snakesAndLadders\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"board\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

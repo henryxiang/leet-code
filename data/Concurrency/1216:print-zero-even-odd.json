@@ -1,0 +1,56 @@
+{
+  "questionId": "1216",
+  "questionFrontendId": "1116",
+  "boundTopicId": null,
+  "title": "Print Zero Even Odd",
+  "titleSlug": "print-zero-even-odd",
+  "categoryTitle": "Concurrency",
+  "content": "<p>Suppose you are given the following code:</p>\n\n<pre>\nclass ZeroEvenOdd {\n&nbsp; public ZeroEvenOdd(int n) { ... }&nbsp;     // constructor\n  public void zero(printNumber) { ... }  // only output 0&#39;s\n  public void even(printNumber) { ... }  // only output even numbers\n  public void odd(printNumber) { ... }   // only output odd numbers\n}\n</pre>\n\n<p>The same instance of <code>ZeroEvenOdd</code> will be passed to three different threads:</p>\n\n<ol>\n\t<li>Thread A will call&nbsp;<code>zero()</code>&nbsp;which should only output 0&#39;s.</li>\n\t<li>Thread B will call&nbsp;<code>even()</code>&nbsp;which should only ouput even numbers.</li>\n\t<li>Thread C will call <code>odd()</code>&nbsp;which should only output odd numbers.</li>\n</ol>\n\n<p>Each of the threads is given a&nbsp;<code>printNumber</code> method to output&nbsp;an integer. Modify the given program to output the series&nbsp;<code>010203040506</code>... where the length of the series must be 2<em>n</em>.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<b>Input:</b> n = 2\n<b>Output:</b> &quot;0102&quot;\n<strong>Explanation:</strong> There are three threads being fired asynchronously. One of them calls zero(), the other calls even(), and the last one calls odd(). &quot;0102&quot; is the correct output.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<b>Input:</b> n = 5\n<b>Output:</b> &quot;0102030405&quot;\n</pre>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 99,
+  "dislikes": 61,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Print FooBar Alternately\", \"titleSlug\": \"print-foobar-alternately\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Fizz Buzz Multithreaded\", \"titleSlug\": \"fizz-buzz-multithreaded\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class ZeroEvenOdd {\nprivate:\n    int n;\n\npublic:\n    ZeroEvenOdd(int n) {\n        this->n = n;\n    }\n\n    // printNumber(x) outputs \"x\", where x is an integer.\n    void zero(function<void(int)> printNumber) {\n        \n    }\n\n    void even(function<void(int)> printNumber) {\n        \n    }\n\n    void odd(function<void(int)> printNumber) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class ZeroEvenOdd {\n    private int n;\n    \n    public ZeroEvenOdd(int n) {\n        this.n = n;\n    }\n\n    // printNumber.accept(x) outputs \"x\", where x is an integer.\n    public void zero(IntConsumer printNumber) throws InterruptedException {\n        \n    }\n\n    public void even(IntConsumer printNumber) throws InterruptedException {\n        \n    }\n\n    public void odd(IntConsumer printNumber) throws InterruptedException {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class ZeroEvenOdd(object):\n    def __init__(self, n):\n        self.n = n\n        \n        \n\t# printNumber(x) outputs \"x\", where x is an integer.\n    def zero(self, printNumber):\n        \"\"\"\n        :type printNumber: method\n        :rtype: void\n        \"\"\"\n        \n        \n        \n    def even(self, printNumber):\n        \"\"\"\n        :type printNumber: method\n        :rtype: void\n        \"\"\"\n        \n        \n        \n    def odd(self, printNumber):\n        \"\"\"\n        :type printNumber: method\n        :rtype: void\n        \"\"\"\n        \n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class ZeroEvenOdd:\n    def __init__(self, n):\n        self.n = n\n        \n        \n\t# printNumber(x) outputs \"x\", where x is an integer.\n    def zero(self, printNumber: 'Callable[[int], None]') -> None:\n        \n        \n        \n    def even(self, printNumber: 'Callable[[int], None]') -> None:\n        \n        \n        \n    def odd(self, printNumber: 'Callable[[int], None]') -> None:\n        \n        "
+    },
+    {
+      "lang": "C",
+      "code": "typedef struct {\n    int n;\n} ZeroEvenOdd;\n\nZeroEvenOdd* zeroEvenOddCreate(int n) {\n    ZeroEvenOdd* obj = (ZeroEvenOdd*) malloc(sizeof(ZeroEvenOdd));\n    obj->n = n;\n    return obj;\n}\n\n// You may call global function `void printNumber(int x)`\n// to output \"x\", where x is an integer.\n\nvoid zero(ZeroEvenOdd* obj) {\n    \n}\n\nvoid even(ZeroEvenOdd* obj) {\n    \n}\n\nvoid odd(ZeroEvenOdd* obj) {\n    \n}\n\nvoid zeroEvenOddFree(ZeroEvenOdd* obj) {\n    \n}"
+    },
+    {
+      "lang": "C#",
+      "code": "public class ZeroEvenOdd {\n    private int n;\n    \n    public ZeroEvenOdd(int n) {\n        this.n = n;\n    }\n\n    // printNumber(x) outputs \"x\", where x is an integer.\n    public void Zero(Action<int> printNumber) {\n        \n    }\n\n    public void Even(Action<int> printNumber) {\n        \n    }\n\n    public void Odd(Action<int> printNumber) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.5K\", \"totalSubmission\": \"13.9K\", \"totalAcceptedRaw\": 7483, \"totalSubmissionRaw\": 13928, \"acRate\": \"53.7%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "2",
+  "metaData": "{\n  \"name\": \"printZeroEvenOdd\",\n  \"params\": [\n    {\n      \"name\": \"limit\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"languages\": [\n    \"java\",\n    \"python\",\n    \"python3\",\n    \"cpp\",\n    \"c\",\n    \"csharp\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

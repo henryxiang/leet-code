@@ -1,0 +1,111 @@
+{
+  "questionId": "666",
+  "questionFrontendId": "666",
+  "boundTopicId": null,
+  "title": "Path Sum IV",
+  "titleSlug": "path-sum-iv",
+  "categoryTitle": "Algorithms",
+  "content": "<p>If the depth of a tree is smaller than <code>5</code>, then this tree can be represented by a list of three-digits integers.</p>\n\n<p>For each integer in this list:</p>\n\n<ol>\n\t<li>The hundreds digit represents the depth <code>D</code> of this node, <code>1 &lt;= D &lt;= 4.</code></li>\n\t<li>The tens digit represents the position <code>P</code> of this node in the level it belongs to, <code>1 &lt;= P &lt;= 8</code>. The position is the same as that in a full binary tree.</li>\n\t<li>The units digit represents the value <code>V</code> of this node, <code>0 &lt;= V &lt;= 9.</code></li>\n</ol>\n\n<p>&nbsp;</p>\n\n<p>Given a list of <code>ascending</code> three-digits integers representing a binary tree with the depth smaller than 5, you need to return the sum of all paths from the root towards the leaves.</p>\n\n<p><b>Example 1:</b></p>\n\n<pre>\n<b>Input:</b> [113, 215, 221]\n<b>Output:</b> 12\n<b>Explanation:</b> \nThe tree that the list represents is:\n    3\n   / \\\n  5   1\n\nThe path sum is (3 + 5) + (3 + 1) = 12.\n</pre>\n\n<p>&nbsp;</p>\n\n<p><b>Example 2:</b></p>\n\n<pre>\n<b>Input:</b> [113, 221]\n<b>Output:</b> 4\n<b>Explanation:</b> \nThe tree that the list represents is: \n    3\n     \\\n      1\n\nThe path sum is (3 + 1) = 4.\n</pre>\n\n<p>&nbsp;</p>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 157,
+  "dislikes": 185,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Path Sum\", \"titleSlug\": \"path-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Path Sum II\", \"titleSlug\": \"path-sum-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Maximum Path Sum\", \"titleSlug\": \"binary-tree-maximum-path-sum\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Path Sum III\", \"titleSlug\": \"path-sum-iii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "huihuii",
+      "profileUrl": "/huihuii/",
+      "avatarUrl": "https://assets.leetcode.com/users/huihuii/avatar_1575225216.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int pathSum(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int pathSum(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def pathSum(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def pathSum(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint pathSum(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int PathSum(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar pathSum = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef path_sum(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func pathSum(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func pathSum(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def pathSum(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun pathSum(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn path_sum(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function pathSum($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.3K\", \"totalSubmission\": \"19K\", \"totalAcceptedRaw\": 10265, \"totalSubmissionRaw\": 19039, \"acRate\": \"53.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "328",
+    "canSeeDetail": true,
+    "url": "/articles/path-sum-iv/",
+    "content": "[TOC]\n\n#### Approach #1: Convert to Tree [Accepted]\n\n**Intuition**\n\nConvert the given array into a tree using Node objects.  Afterwards, for each path from root to leaf, we can add the sum of that path to our answer.\n\n**Algorithm**\n\nThere are two steps, the tree construction, and the traversal.\n\nIn the tree construction, we have some depth, position, and value, and we want to know where the new node goes.  With some effort, we can see the relevant condition for whether a node should be left or right is `pos - 1 < 2**(depth - 2)`.  For example, when `depth = 4`, the positions are `1, 2, 3, 4, 5, 6, 7, 8`, and it's left when `pos <= 4`.\n\nIn the traversal, we perform a depth-first search from root to leaf, keeping track of the current sum along the path we have travelled.  Every time we reach a leaf `(node.left == null && node.right == null)`, we have to add that running sum to our answer.\n\n<iframe src=\"https://leetcode.com/playground/9DugWkyp/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9DugWkyp\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ where $$N$$ is the length of `nums`.  We construct the graph and traverse it in this time.\n\n* Space Complexity: $$O(N)$$, the size of the implicit call stack in our depth-first search.\n\n---\n#### Approach #2: Direct Traversal [Accepted]\n\n**Intuition and Algorithm**\n\nAs in *Approach #1*, we will depth-first search on the tree.  One time-saving idea is that we can use `num / 10 = 10 * depth + pos` as a unique identifier for that node.  The left child of such a node would have identifier `10 * (depth + 1) + 2 * pos - 1`, and the right child would be one greater.\n\n<iframe src=\"https://leetcode.com/playground/JG3jC7pT/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"JG3jC7pT\"></iframe>\n\n**Complexity Analysis**\n\n* Time and Space Complexity: $$O(N)$$.  The analysis is the same as in *Approach #1*.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "321",
+      "count": 7,
+      "average": 3.857,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[113,215,221]",
+  "metaData": "{\r\n  \"name\": \"pathSum\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

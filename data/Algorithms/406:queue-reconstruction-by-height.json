@@ -1,0 +1,108 @@
+{
+  "questionId": "406",
+  "questionFrontendId": "406",
+  "boundTopicId": null,
+  "title": "Queue Reconstruction by Height",
+  "titleSlug": "queue-reconstruction-by-height",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Suppose you have a random list of people standing in a queue. Each person is described by a pair of integers <code>(h, k)</code>, where <code>h</code> is the height of the person and <code>k</code> is the number of people in front of this person who have a height greater than or equal to <code>h</code>. Write an algorithm to reconstruct the queue.</p>\r\n\r\n<p><b>Note:</b><br />\r\nThe number of people is less than 1,100.</p>\r\n&nbsp;\r\n\r\n<p><b>Example</b></p>\r\n\r\n<pre>\r\nInput:\r\n[[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]]\r\n\r\nOutput:\r\n[[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1972,
+  "dislikes": 227,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Count of Smaller Numbers After Self\", \"titleSlug\": \"count-of-smaller-numbers-after-self\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[][] reconstructQueue(int[][] people) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def reconstructQueue(self, people):\n        \"\"\"\n        :type people: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def reconstructQueue(self, people: List[List[int]]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** reconstructQueue(int** people, int peopleSize, int* peopleColSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[][] ReconstructQueue(int[][] people) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} people\n * @return {number[][]}\n */\nvar reconstructQueue = function(people) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} people\r\n# @return {Integer[][]}\r\ndef reconstruct_queue(people)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func reconstructQueue(_ people: [[Int]]) -> [[Int]] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func reconstructQueue(people [][]int) [][]int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def reconstructQueue(people: Array[Array[Int]]): Array[Array[Int]] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun reconstructQueue(people: Array<IntArray>): Array<IntArray> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn reconstruct_queue(people: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $people\n     * @return Integer[][]\n     */\n    function reconstructQueue($people) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"98.8K\", \"totalSubmission\": \"159.6K\", \"totalAcceptedRaw\": 98783, \"totalSubmissionRaw\": 159557, \"acRate\": \"61.9%\"}",
+  "hints": [
+    "What can you say about the position of the shortest person? </br>\r\nIf the position of the shortest person is <i>i</i>, how many people would be in front of the shortest person?",
+    "Once you fix the position of the shortest person, what can you say about the position of the second shortest person?"
+  ],
+  "solution": {
+    "id": "754",
+    "canSeeDetail": true,
+    "url": "/articles/queue-reconstruction-by-height/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Approach 1: Greedy\r\n\r\n**Intuition**\r\n\r\nThe problem is to reconstruct the queue.\r\n\r\n![pic](../Figures/406/input.png)\r\n\r\nLet's start from the simplest case, \r\nwhen all guys (h, k) in the queue are of the same height h,\r\nand differ by their k values only (the number of people in front \r\nwho have a greater or the same height).\r\nThen the solution is simple: each guy's index is equal to his k value.\r\nThe guy with zero people in front takes the place number 0,\r\nthe guy with 1 person in front takes the place number 1, and \r\nso on and so forth.  \r\n\r\n![fig](../Figures/406/same.png)\r\n\r\nThis strategy could be used even in the case when not all people\r\nare of the same height. The smaller persons are \"invisible\" for the \r\ntaller ones, and hence one could first arrange the tallest guys as if \r\nthere was no one else.\r\n\r\nLet's now consider a queue with people of two different heights: 7 and 6.\r\nFor simplicity, let's have just one 6-height guy.\r\nFirst follow the strategy above and arrange guys of height 7. Now it's \r\ntime to find a place for the guy of height 6. \r\nSince he is \"invisible\" for the 7-height guys, he could take \r\nwhatever place without disturbing 7-height guys order. \r\nHowever, for him the others are visible, and hence he should \r\ntake the position equal to his k-value, in order to have his proper place. \r\n \r\n![fig](../Figures/406/two.png)\r\n\r\n> This idea is easy to extend for the case of numerous guys of height 6.\r\nJust sort them by k-values, as it was done before for 7-height guys,\r\nand insert them one by one on the positions equal to their k-values. \r\n\r\nThe following strategy could be continued recursively:\r\n\r\n- Sort the tallest guys in the ascending order by k-values \r\nand then insert them one by one into output queue at the \r\nindexes equal to their k-values.\r\n\r\n- Take the next height in the descending order. \r\nSort the guys of that height in the ascending order by k-values \r\nand then insert them one by one into output queue at the \r\nindexes equal to their k-values.\r\n\r\n- And so on and so forth.\r\n\r\n!?!../Documents/406_LIS.json:1000,612!?!\r\n\r\n**Algorithm**\r\n\r\n- Sort people: \r\n    - In the descending order by height. \r\n    - Among the guys of the same height, in the ascending order by k-values.\r\n\r\n- Take guys one by one, \r\nand place them in the output array at the indexes equal to their k-values.\r\n\r\n- Return output array.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/Y9CtrtEP/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"Y9CtrtEP\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N^2)$$. To sort people takes \r\n$$\\mathcal{O}(N \\log N)$$ time. Then one proceeds to n insert\r\noperations, and each takes up to $$\\mathcal{O}(k)$$ time, \r\nwhere k is a current number of elements in the list. In total,\r\none needs up to \r\n$$\\mathcal{O}\\left({\\sum\\limits_{k = 0}^{N - 1}{k}}\\right)$$ time,\r\ni.e. up to $$\\mathcal{O}(N^2)$$ time.\r\n \r\n* Space complexity : $$\\mathcal{O}(N)$$ to keep the output. \r\n\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "739",
+      "count": 22,
+      "average": 4.727,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]",
+  "metaData": "{\r\n  \"name\": \"reconstructQueue\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"people\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\",\r\n    \"colsize\": \"2\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

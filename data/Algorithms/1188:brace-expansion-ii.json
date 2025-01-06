@@ -1,0 +1,101 @@
+{
+  "questionId": "1188",
+  "questionFrontendId": "1096",
+  "boundTopicId": null,
+  "title": "Brace Expansion II",
+  "titleSlug": "brace-expansion-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Under a grammar given below, strings can represent a set of lowercase words.&nbsp; Let&#39;s&nbsp;use <code>R(expr)</code>&nbsp;to denote the <strong>set</strong> of words the expression represents.</p>\n\n<p>Grammar can best be understood through simple examples:</p>\n\n<ul>\n\t<li>Single letters represent a singleton set containing that word.\n\t<ul>\n\t\t<li><code>R(&quot;a&quot;) = {&quot;a&quot;}</code></li>\n\t\t<li><code>R(&quot;w&quot;) = {&quot;w&quot;}</code></li>\n\t</ul>\n\t</li>\n\t<li>When we take a comma delimited list of 2 or more expressions, we take the union of possibilities.\n\t<ul>\n\t\t<li><code>R(&quot;{a,b,c}&quot;) = {&quot;a&quot;,&quot;b&quot;,&quot;c&quot;}</code></li>\n\t\t<li><code>R(&quot;{{a,b},{b,c}}&quot;) = {&quot;a&quot;,&quot;b&quot;,&quot;c&quot;}</code>&nbsp;(notice the final set only contains each word at most once)</li>\n\t</ul>\n\t</li>\n\t<li>When we concatenate two expressions, we take the set of possible concatenations between two words where the first word comes from the first expression and the second word comes from the second expression.\n\t<ul>\n\t\t<li><code>R(&quot;{a,b}{c,d}&quot;) = {&quot;ac&quot;,&quot;ad&quot;,&quot;bc&quot;,&quot;bd&quot;}</code></li>\n\t\t<li><code>R(&quot;a{b,c}{d,e}f{g,h}&quot;)&nbsp;= {&quot;abdfg&quot;, &quot;abdfh&quot;, &quot;abefg&quot;, &quot;abefh&quot;, &quot;acdfg&quot;, &quot;acdfh&quot;, &quot;acefg&quot;, &quot;acefh&quot;}</code></li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>Formally, the 3 rules for our grammar:</p>\n\n<ul>\n\t<li>For every lowercase letter <code>x</code>, we have <code>R(x) = {x}</code></li>\n\t<li>For expressions <code>e_1, e_2, ... , e_k</code>&nbsp;with <code>k &gt;= 2</code>, we have <code>R({e_1,e_2,...}) = R(e_1)&nbsp;&cup; R(e_2)&nbsp;&cup; ...</code></li>\n\t<li>For&nbsp;expressions <code>e_1</code> and <code>e_2</code>, we have <code>R(e_1 + e_2) = {a + b for (a, b) in&nbsp;R(e_1)&nbsp;&times; R(e_2)}</code>, where + denotes concatenation, and &times; denotes the cartesian product.</li>\n</ul>\n\n<p>Given an <code>expression</code> representing a set of words under the given grammar, return the&nbsp;sorted list of words that the expression represents.</p>\n\n<p>&nbsp;</p>\n\n<div>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;{a,b}{c,{d,e}}&quot;</span>\n<strong>Output: </strong><span id=\"example-output-1\">[&quot;ac&quot;,&quot;ad&quot;,&quot;ae&quot;,&quot;bc&quot;,&quot;bd&quot;,&quot;be&quot;]</span>\n</pre>\n\n<div>\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input: </strong><span>&quot;{{a,z},a{b,c},{ab,z}}&quot;</span>\n<strong>Output: </strong><span>[&quot;a&quot;,&quot;ab&quot;,&quot;ac&quot;,&quot;z&quot;]</span>\n<strong>Explanation: </strong>Each distinct word is written only once in the final answer.\n</pre>\n\n<p>&nbsp;</p>\n\n<p><strong>Constraints:</strong></p>\n\n<ol>\n\t<li><code>1 &lt;= expression.length &lt;= 60</code></li>\n\t<li><code>expression[i]</code> consists of <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;,&#39;</code>or lowercase English letters.</li>\n\t<li>The given&nbsp;<code>expression</code>&nbsp;represents a set of words based on the grammar given in the description.</li>\n</ol>\n</div>\n</div>\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 137,
+  "dislikes": 93,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Brace Expansion\", \"titleSlug\": \"brace-expansion\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> braceExpansionII(string expression) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> braceExpansionII(String expression) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def braceExpansionII(self, expression):\n        \"\"\"\n        :type expression: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def braceExpansionII(self, expression: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** braceExpansionII(char * expression, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> BraceExpansionII(string expression) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} expression\n * @return {string[]}\n */\nvar braceExpansionII = function(expression) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} expression\n# @return {String[]}\ndef brace_expansion_ii(expression)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func braceExpansionII(_ expression: String) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func braceExpansionII(expression string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def braceExpansionII(expression: String): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun braceExpansionII(expression: String): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn brace_expansion_ii(expression: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $expression\n     * @return String[]\n     */\n    function braceExpansionII($expression) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.8K\", \"totalSubmission\": \"12.8K\", \"totalAcceptedRaw\": 7775, \"totalSubmissionRaw\": 12781, \"acRate\": \"60.8%\"}",
+  "hints": [
+    "You can write helper methods to parse the next \"chunk\" of the expression.  If you see eg. \"a\", the answer is just the set {a}.  If you see \"{\", you parse until you complete the \"}\" (the number of { and } seen are equal) and that becomes a chunk that you find where the appropriate commas are, and parse each individual expression between the commas."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"{a,b}{c,{d,e}}\"\r",
+  "metaData": "{\n  \"name\": \"braceExpansionII\",\n  \"params\": [\n    {\n      \"name\": \"expression\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<string>\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

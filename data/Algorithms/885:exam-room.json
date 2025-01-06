@@ -1,0 +1,111 @@
+{
+  "questionId": "885",
+  "questionFrontendId": "855",
+  "boundTopicId": null,
+  "title": "Exam Room",
+  "titleSlug": "exam-room",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In an exam room, there are <code>N</code> seats in a single row, numbered <code>0, 1, 2, ..., N-1</code>.</p>\r\n\r\n<p>When a student enters the room, they must sit in the seat that maximizes the distance to the closest person.&nbsp; If there are multiple such seats, they sit in the seat with the lowest number.&nbsp; (Also, if no one is in the room, then the student sits at seat number 0.)</p>\r\n\r\n<p>Return a class <code>ExamRoom(int N)</code>&nbsp;that exposes two functions: <code>ExamRoom.seat()</code>&nbsp;returning an <code>int</code>&nbsp;representing what seat the student sat in, and <code>ExamRoom.leave(int p)</code>&nbsp;representing that the student in seat number <code>p</code>&nbsp;now leaves the room.&nbsp; It is guaranteed that any calls to <code>ExamRoom.leave(p)</code> have a student sitting in seat <code>p</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[&quot;ExamRoom&quot;,&quot;seat&quot;,&quot;seat&quot;,&quot;seat&quot;,&quot;seat&quot;,&quot;leave&quot;,&quot;seat&quot;]</span>, <span id=\"example-input-1-2\">[[10],[],[],[],[],[4],[]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[null,0,9,4,2,null,5]</span>\r\n<span><strong>Explanation</strong>:\r\nExamRoom(10) -&gt; null\r\nseat() -&gt; 0, no one is in the room, then the student sits at seat number 0.\r\nseat() -&gt; 9, the student sits at the last seat number 9.\r\nseat() -&gt; 4, the student sits at the last seat number 4.\r\nseat() -&gt; 2, the student sits at the last seat number 2.\r\nleave(4) -&gt; null\r\nseat() -&gt; 5, the student sits at the last seat number 5.</span>\r\n</pre>\r\n\r\n<p><span>​​​​​​​</span></p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= N &lt;= 10^9</code></li>\r\n\t<li><code>ExamRoom.seat()</code> and <code>ExamRoom.leave()</code> will be called at most <code>10^4</code> times across all test cases.</li>\r\n\t<li>Calls to <code>ExamRoom.leave(p)</code> are guaranteed to have a student currently sitting in seat number <code>p</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 442,
+  "dislikes": 186,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Maximize Distance to Closest Person\", \"titleSlug\": \"maximize-distance-to-closest-person\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Ordered Map",
+      "slug": "ordered-map"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Quip (Salesforce)\", \"slug\": \"quip\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class ExamRoom {\npublic:\n    ExamRoom(int N) {\n        \n    }\n    \n    int seat() {\n        \n    }\n    \n    void leave(int p) {\n        \n    }\n};\n\n/**\n * Your ExamRoom object will be instantiated and called as such:\n * ExamRoom* obj = new ExamRoom(N);\n * int param_1 = obj->seat();\n * obj->leave(p);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class ExamRoom {\n\n    public ExamRoom(int N) {\n        \n    }\n    \n    public int seat() {\n        \n    }\n    \n    public void leave(int p) {\n        \n    }\n}\n\n/**\n * Your ExamRoom object will be instantiated and called as such:\n * ExamRoom obj = new ExamRoom(N);\n * int param_1 = obj.seat();\n * obj.leave(p);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class ExamRoom(object):\n\n    def __init__(self, N):\n        \"\"\"\n        :type N: int\n        \"\"\"\n        \n\n    def seat(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n    def leave(self, p):\n        \"\"\"\n        :type p: int\n        :rtype: None\n        \"\"\"\n        \n\n\n# Your ExamRoom object will be instantiated and called as such:\n# obj = ExamRoom(N)\n# param_1 = obj.seat()\n# obj.leave(p)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class ExamRoom:\n\n    def __init__(self, N: int):\n        \n\n    def seat(self) -> int:\n        \n\n    def leave(self, p: int) -> None:\n        \n\n\n# Your ExamRoom object will be instantiated and called as such:\n# obj = ExamRoom(N)\n# param_1 = obj.seat()\n# obj.leave(p)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} ExamRoom;\n\n\nExamRoom* examRoomCreate(int N) {\n    \n}\n\nint examRoomSeat(ExamRoom* obj) {\n  \n}\n\nvoid examRoomLeave(ExamRoom* obj, int p) {\n  \n}\n\nvoid examRoomFree(ExamRoom* obj) {\n    \n}\n\n/**\n * Your ExamRoom struct will be instantiated and called as such:\n * ExamRoom* obj = examRoomCreate(N);\n * int param_1 = examRoomSeat(obj);\n \n * examRoomLeave(obj, p);\n \n * examRoomFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class ExamRoom {\n\n    public ExamRoom(int N) {\n        \n    }\n    \n    public int Seat() {\n        \n    }\n    \n    public void Leave(int p) {\n        \n    }\n}\n\n/**\n * Your ExamRoom object will be instantiated and called as such:\n * ExamRoom obj = new ExamRoom(N);\n * int param_1 = obj.Seat();\n * obj.Leave(p);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n */\nvar ExamRoom = function(N) {\n    \n};\n\n/**\n * @return {number}\n */\nExamRoom.prototype.seat = function() {\n    \n};\n\n/** \n * @param {number} p\n * @return {void}\n */\nExamRoom.prototype.leave = function(p) {\n    \n};\n\n/** \n * Your ExamRoom object will be instantiated and called as such:\n * var obj = new ExamRoom(N)\n * var param_1 = obj.seat()\n * obj.leave(p)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class ExamRoom\n\n=begin\n    :type n: Integer\n=end\n    def initialize(n)\n        \n    end\n\n\n=begin\n    :rtype: Integer\n=end\n    def seat()\n        \n    end\n\n\n=begin\n    :type p: Integer\n    :rtype: Void\n=end\n    def leave(p)\n        \n    end\n\n\nend\n\n# Your ExamRoom object will be instantiated and called as such:\n# obj = ExamRoom.new(n)\n# param_1 = obj.seat()\n# obj.leave(p)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass ExamRoom {\n\n    init(_ N: Int) {\n        \n    }\n    \n    func seat() -> Int {\n        \n    }\n    \n    func leave(_ p: Int) {\n        \n    }\n}\n\n/**\n * Your ExamRoom object will be instantiated and called as such:\n * let obj = ExamRoom(N)\n * let ret_1: Int = obj.seat()\n * obj.leave(p)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type ExamRoom struct {\n    \n}\n\n\nfunc Constructor(N int) ExamRoom {\n    \n}\n\n\nfunc (this *ExamRoom) Seat() int {\n    \n}\n\n\nfunc (this *ExamRoom) Leave(p int)  {\n    \n}\n\n\n/**\n * Your ExamRoom object will be instantiated and called as such:\n * obj := Constructor(N);\n * param_1 := obj.Seat();\n * obj.Leave(p);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class ExamRoom(_N: Int) {\n\n    def seat(): Int = {\n        \n    }\n\n    def leave(p: Int) {\n        \n    }\n\n}\n\n/**\n * Your ExamRoom object will be instantiated and called as such:\n * var obj = new ExamRoom(N)\n * var param_1 = obj.seat()\n * obj.leave(p)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class ExamRoom(N: Int) {\n\n    fun seat(): Int {\n        \n    }\n\n    fun leave(p: Int) {\n        \n    }\n\n}\n\n/**\n * Your ExamRoom object will be instantiated and called as such:\n * var obj = ExamRoom(N)\n * var param_1 = obj.seat()\n * obj.leave(p)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct ExamRoom {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl ExamRoom {\n\n    fn new(N: i32) -> Self {\n        \n    }\n    \n    fn seat(&self) -> i32 {\n        \n    }\n    \n    fn leave(&self, p: i32) {\n        \n    }\n}\n\n/**\n * Your ExamRoom object will be instantiated and called as such:\n * let obj = ExamRoom::new(N);\n * let ret_1: i32 = obj.seat();\n * obj.leave(p);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class ExamRoom {\n    /**\n     * @param Integer $N\n     */\n    function __construct($N) {\n        \n    }\n  \n    /**\n     * @return Integer\n     */\n    function seat() {\n        \n    }\n  \n    /**\n     * @param Integer $p\n     * @return NULL\n     */\n    function leave($p) {\n        \n    }\n}\n\n/**\n * Your ExamRoom object will be instantiated and called as such:\n * $obj = ExamRoom($N);\n * $ret_1 = $obj->seat();\n * $obj->leave($p);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"22.2K\", \"totalSubmission\": \"54.4K\", \"totalAcceptedRaw\": 22229, \"totalSubmissionRaw\": 54361, \"acRate\": \"40.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "489",
+    "canSeeDetail": true,
+    "url": "/articles/exam-room/",
+    "content": "[TOC]\n\n---\n#### Approach 1: Maintain Sorted Positions\n\n**Intuition**\n\nWe'll maintain `ExamRoom.students`, a sorted `list` (or `TreeSet` in Java) of positions the students are currently seated in.\n\n**Algorithm**\n\nThe `ExamRoom.leave(p)` operation is clear - we will just `list.remove` (or `TreeSet.remove`) the student from `ExamRoom.students`.\n\nLet's focus on the `ExamRoom.seat() : int` operation.  For each pair of adjacent students `i` and `j`, the maximum distance to the closest student is `d = (j - i) / 2`, achieved in the left-most seat `i + d`.  Otherwise, we could also sit in the left-most seat, or the right-most seat.\n\nFinally, we should handle the case when there are no students separately.\n\nFor more details, please review the comments made in the implementations.\n\n<iframe src=\"https://leetcode.com/playground/9bZc2mLh/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9bZc2mLh\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  Each `seat` operation is $$O(P)$$, (where $$P$$ is the number of students sitting), as we iterate through every student.  Each `leave` operation is $$O(P)$$ ($$\\log P$$ in Java).\n\n* Space Complexity:  $$O(P)$$, the space used to store the positions of each student sitting.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "482",
+      "count": 51,
+      "average": 2.372,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"ExamRoom\",\"seat\",\"seat\",\"seat\",\"seat\",\"leave\",\"seat\"]\n[[10],[],[],[],[],[4],[]]",
+  "metaData": "{\r\n    \"classname\": \"ExamRoom\",\r\n    \"maxbytesperline\": 200000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"N\"\r\n            }\r\n        ]\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"seat\",\r\n            \"params\": [],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        },\r\n        {\r\n            \"name\" : \"leave\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"p\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

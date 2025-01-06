@@ -1,0 +1,105 @@
+{
+  "questionId": "303",
+  "questionFrontendId": "303",
+  "boundTopicId": null,
+  "title": "Range Sum Query - Immutable",
+  "titleSlug": "range-sum-query-immutable",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an integer array <i>nums</i>, find the sum of the elements between indices <i>i</i> and <i>j</i> (<i>i</i> &le; <i>j</i>), inclusive.</p>\r\n\r\n<p><b>Example:</b><br>\r\n<pre>\r\nGiven nums = [-2, 0, 3, -5, 2, -1]\r\n\r\nsumRange(0, 2) -> 1\r\nsumRange(2, 5) -> -1\r\nsumRange(0, 5) -> -3\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>You may assume that the array does not change.</li>\r\n<li>There are many calls to <i>sumRange</i> function.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 624,
+  "dislikes": 901,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Range Sum Query 2D - Immutable\", \"titleSlug\": \"range-sum-query-2d-immutable\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Range Sum Query - Mutable\", \"titleSlug\": \"range-sum-query-mutable\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Size Subarray Sum Equals k\", \"titleSlug\": \"maximum-size-subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 0}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class NumArray {\npublic:\n    NumArray(vector<int>& nums) {\n        \n    }\n    \n    int sumRange(int i, int j) {\n        \n    }\n};\n\n/**\n * Your NumArray object will be instantiated and called as such:\n * NumArray* obj = new NumArray(nums);\n * int param_1 = obj->sumRange(i,j);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class NumArray {\n\n    public NumArray(int[] nums) {\n        \n    }\n    \n    public int sumRange(int i, int j) {\n        \n    }\n}\n\n/**\n * Your NumArray object will be instantiated and called as such:\n * NumArray obj = new NumArray(nums);\n * int param_1 = obj.sumRange(i,j);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class NumArray(object):\n\n    def __init__(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        \"\"\"\n        \n\n    def sumRange(self, i, j):\n        \"\"\"\n        :type i: int\n        :type j: int\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your NumArray object will be instantiated and called as such:\n# obj = NumArray(nums)\n# param_1 = obj.sumRange(i,j)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class NumArray:\n\n    def __init__(self, nums: List[int]):\n        \n\n    def sumRange(self, i: int, j: int) -> int:\n        \n\n\n# Your NumArray object will be instantiated and called as such:\n# obj = NumArray(nums)\n# param_1 = obj.sumRange(i,j)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} NumArray;\n\n\nNumArray* numArrayCreate(int* nums, int numsSize) {\n    \n}\n\nint numArraySumRange(NumArray* obj, int i, int j) {\n  \n}\n\nvoid numArrayFree(NumArray* obj) {\n    \n}\n\n/**\n * Your NumArray struct will be instantiated and called as such:\n * NumArray* obj = numArrayCreate(nums, numsSize);\n * int param_1 = numArraySumRange(obj, i, j);\n \n * numArrayFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class NumArray {\n\n    public NumArray(int[] nums) {\n        \n    }\n    \n    public int SumRange(int i, int j) {\n        \n    }\n}\n\n/**\n * Your NumArray object will be instantiated and called as such:\n * NumArray obj = new NumArray(nums);\n * int param_1 = obj.SumRange(i,j);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n */\nvar NumArray = function(nums) {\n    \n};\n\n/** \n * @param {number} i \n * @param {number} j\n * @return {number}\n */\nNumArray.prototype.sumRange = function(i, j) {\n    \n};\n\n/** \n * Your NumArray object will be instantiated and called as such:\n * var obj = new NumArray(nums)\n * var param_1 = obj.sumRange(i,j)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class NumArray\n\n=begin\n    :type nums: Integer[]\n=end\n    def initialize(nums)\n        \n    end\n\n\n=begin\n    :type i: Integer\n    :type j: Integer\n    :rtype: Integer\n=end\n    def sum_range(i, j)\n        \n    end\n\n\nend\n\n# Your NumArray object will be instantiated and called as such:\n# obj = NumArray.new(nums)\n# param_1 = obj.sum_range(i, j)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass NumArray {\n\n    init(_ nums: [Int]) {\n        \n    }\n    \n    func sumRange(_ i: Int, _ j: Int) -> Int {\n        \n    }\n}\n\n/**\n * Your NumArray object will be instantiated and called as such:\n * let obj = NumArray(nums)\n * let ret_1: Int = obj.sumRange(i, j)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type NumArray struct {\n    \n}\n\n\nfunc Constructor(nums []int) NumArray {\n    \n}\n\n\nfunc (this *NumArray) SumRange(i int, j int) int {\n    \n}\n\n\n/**\n * Your NumArray object will be instantiated and called as such:\n * obj := Constructor(nums);\n * param_1 := obj.SumRange(i,j);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class NumArray(_nums: Array[Int]) {\n\n    def sumRange(i: Int, j: Int): Int = {\n        \n    }\n\n}\n\n/**\n * Your NumArray object will be instantiated and called as such:\n * var obj = new NumArray(nums)\n * var param_1 = obj.sumRange(i,j)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class NumArray(nums: IntArray) {\n\n    fun sumRange(i: Int, j: Int): Int {\n        \n    }\n\n}\n\n/**\n * Your NumArray object will be instantiated and called as such:\n * var obj = NumArray(nums)\n * var param_1 = obj.sumRange(i,j)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct NumArray {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl NumArray {\n\n    fn new(nums: Vec<i32>) -> Self {\n        \n    }\n    \n    fn sum_range(&self, i: i32, j: i32) -> i32 {\n        \n    }\n}\n\n/**\n * Your NumArray object will be instantiated and called as such:\n * let obj = NumArray::new(nums);\n * let ret_1: i32 = obj.sum_range(i, j);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class NumArray {\n    /**\n     * @param Integer[] $nums\n     */\n    function __construct($nums) {\n        \n    }\n  \n    /**\n     * @param Integer $i\n     * @param Integer $j\n     * @return Integer\n     */\n    function sumRange($i, $j) {\n        \n    }\n}\n\n/**\n * Your NumArray object will be instantiated and called as such:\n * $obj = NumArray($nums);\n * $ret_1 = $obj->sumRange($i, $j);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"167.4K\", \"totalSubmission\": \"407.8K\", \"totalAcceptedRaw\": 167397, \"totalSubmissionRaw\": 407788, \"acRate\": \"41.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "9",
+    "canSeeDetail": true,
+    "url": "/articles/range-sum-query-immutable/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n---\r\n#### Approach #1 (Brute Force) [Time Limit Exceeded]\r\n\r\nEach time *sumRange* is called, we use a for loop to sum each individual element from index $$i$$ to $$j$$.\r\n\r\n```java\r\nprivate int[] data;\r\n\r\npublic NumArray(int[] nums) {\r\n    data = nums;\r\n}\r\n\r\npublic int sumRange(int i, int j) {\r\n    int sum = 0;\r\n    for (int k = i; k <= j; k++) {\r\n        sum += data[k];\r\n    }\r\n    return sum;\r\n}\r\n```\r\n\r\n**Complexity analysis:**\r\n\r\n* Time complexity : $$O(n)$$ time per query.\r\nEach *sumRange* query takes $$O(n)$$ time.\r\n\r\n* Space complexity : $$O(1)$$. Note that `data` is a *reference* to `nums` and is not a copy of it.\r\n\r\n---\r\n#### Approach #2 (Caching) [Accepted]\r\n\r\nImagine that *sumRange* is called one thousand times with the exact same arguments. How could we speed that up?\r\n\r\nWe could trade in extra space for speed. By pre-computing all range sum possibilities and store its results in a hash table, we can speed up the query to constant time.\r\n\r\n```java\r\nprivate Map<Pair<Integer, Integer>, Integer> map = new HashMap<>();\r\n\r\npublic NumArray(int[] nums) {\r\n    for (int i = 0; i < nums.length; i++) {\r\n        int sum = 0;\r\n        for (int j = i; j < nums.length; j++) {\r\n            sum += nums[j];\r\n            map.put(Pair.create(i, j), sum);\r\n        }\r\n    }\r\n}\r\n\r\npublic int sumRange(int i, int j) {\r\n    return map.get(Pair.create(i, j));\r\n}\r\n```\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(1)$$ time per query, $$O(n^2)$$ time pre-computation.\r\nThe pre-computation done in the constructor takes $$O(n^2)$$ time. Each *sumRange* query's time complexity is $$O(1)$$ as the hash table's look up operation is constant time.\r\n\r\n* Space complexity : $$O(n^2)$$.\r\nThe extra space required is $$O(n^2)$$ as there are $$n$$ candidates for both $$i$$ and $$j$$.\r\n\r\n---\r\n#### Approach #3 (Caching) [Accepted]\r\n\r\nThe above approach takes a lot of space, could we optimize it?\r\n\r\nImagine that we pre-compute the cummulative sum from index $$0$$ to $$k$$. Could we use this information to derive $$Sum(i, j)$$?\r\n\r\nLet us define $$sum[k]$$ as the cumulative sum for $$nums[0 \\cdots k-1]$$ (inclusive):\r\n\r\n$$\r\nsum[k] = \\left\\{ \\begin{array}{rl} \\sum_{i=0}^{k-1}nums[i] & , k > 0 \\\\ 0 &, k = 0 \\end{array} \\right.\r\n$$\r\n\r\nNow, we can calculate *sumRange* as following:\r\n\r\n$$\r\nsumRange(i, j) = sum[j + 1] - sum[i]\r\n$$\r\n\r\n```java\r\nprivate int[] sum;\r\n\r\npublic NumArray(int[] nums) {\r\n    sum = new int[nums.length + 1];\r\n    for (int i = 0; i < nums.length; i++) {\r\n        sum[i + 1] = sum[i] + nums[i];\r\n    }\r\n}\r\n\r\npublic int sumRange(int i, int j) {\r\n    return sum[j + 1] - sum[i];\r\n}\r\n```\r\n\r\nNotice in the code above we inserted a dummy 0 as the first element in the *sum* array. This trick saves us from an extra conditional check in *sumRange* function.\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(1)$$ time per query, $$O(n)$$ time pre-computation.\r\nSince the cumulative sum is cached, each *sumRange* query can be calculated in $$O(1)$$ time.\r\n\r\n* Space complexity : $$O(n)$$.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "12",
+      "count": 85,
+      "average": 4.753,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"NumArray\",\"sumRange\",\"sumRange\",\"sumRange\"]\n[[[-2,0,3,-5,2,-1]],[0,2],[2,5],[0,5]]",
+  "metaData": "{\r\n    \"classname\": \"NumArray\",\r\n    \"maxbytesperline\": 135000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"type\": \"integer[]\",\r\n                \"name\": \"nums\"\r\n            },\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"numsSize\",\r\n                \"lang\": \"c\",\r\n                \"value\": \"size_1\"\r\n            }\r\n        ]\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"sumRange\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"i\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"j\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

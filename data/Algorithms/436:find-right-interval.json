@@ -1,0 +1,111 @@
+{
+  "questionId": "436",
+  "questionFrontendId": "436",
+  "boundTopicId": null,
+  "title": "Find Right Interval",
+  "titleSlug": "find-right-interval",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a set of intervals, for each of the interval i, check if there exists an interval j whose start point is bigger than or equal to the end point of the interval i, which can be called that j is on the &quot;right&quot; of i.</p>\r\n\r\n<p>For any interval i, you need to store the minimum interval j&#39;s index, which means that the interval j has the minimum start point to build the &quot;right&quot; relationship for interval i. If the interval j doesn&#39;t exist, store -1 for the interval i. Finally, you need output the stored value of each interval as an array.</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>You may assume the interval&#39;s end point is always bigger than its start point.</li>\r\n\t<li>You may assume none of these intervals have the same start point.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [ [1,2] ]\r\n\r\n<b>Output:</b> [-1]\r\n\r\n<b>Explanation:</b> There is only one interval in the collection, so it outputs -1.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [ [3,4], [2,3], [1,2] ]\r\n\r\n<b>Output:</b> [-1, 0, 1]\r\n\r\n<b>Explanation:</b> There is no satisfied &quot;right&quot; interval for [3,4].\r\nFor [2,3], the interval [3,4] has minimum-&quot;right&quot; start point;\r\nFor [1,2], the interval [2,3] has minimum-&quot;right&quot; start point.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [ [1,4], [2,3], [3,4] ]\r\n\r\n<b>Output:</b> [-1, 2, -1]\r\n\r\n<b>Explanation:</b> There is no satisfied &quot;right&quot; interval for [1,4] and [3,4].\r\nFor [2,3], the interval [3,4] has minimum-&quot;right&quot; start point.\r\n</pre>\r\n\r\n<p><strong>NOTE:</strong>&nbsp;input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 267,
+  "dislikes": 107,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Data Stream as Disjoint Intervals\", \"titleSlug\": \"data-stream-as-disjoint-intervals\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<int> findRightInterval(vector<vector<int>>& intervals) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] findRightInterval(int[][] intervals) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findRightInterval(self, intervals):\n        \"\"\"\n        :type intervals: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findRightInterval(self, intervals: List[List[int]]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* findRightInterval(int** intervals, int intervalsSize, int* intervalsColSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[] FindRightInterval(int[][] intervals) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} intervals\n * @return {number[]}\n */\nvar findRightInterval = function(intervals) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} intervals\r\n# @return {Integer[]}\r\ndef find_right_interval(intervals)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func findRightInterval(_ intervals: [[Int]]) -> [Int] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findRightInterval(intervals [][]int) []int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def findRightInterval(intervals: Array[Array[Int]]): Array[Int] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun findRightInterval(intervals: Array<IntArray>): IntArray {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_right_interval(intervals: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $intervals\n     * @return Integer[]\n     */\n    function findRightInterval($intervals) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"30.7K\", \"totalSubmission\": \"69.9K\", \"totalAcceptedRaw\": 30721, \"totalSubmissionRaw\": 69921, \"acRate\": \"43.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "89",
+    "canSeeDetail": true,
+    "url": "/articles/find-right-interval/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\n The simplest solution consists of picking up every interval in the set and looking for the the interval whose start point is larger(by a\n minimum difference) than\n the chosen interval's end point by scanning the complete set for every interval chosen. While scanning, we keep a track of the interval\n with the minimum start point satisfying the given criteria along with its index. The result obtained for every interval chosen is\n stored at the corresponding index in the res array which is returned at the end.\n\n \n<iframe src=\"https://leetcode.com/playground/qzN73MkH/shared\" frameBorder=\"0\" name=\"qzN73MkH\" width=\"100%\" height=\"496\"></iframe>\n\n **Complexity Analysis**\n\n * Time complexity : $$O(n^2)$$. The complete set of $$n$$ intervals is scanned for every($$n$$) interval chosen.\n * Space complexity : $$O(n)$$. $$res$$ array of size $$n$$ is used.\n\n---\n\n#### Approach #2 Using Sorting + Scanning [Time Limit Exceeded]\n\nWe make use of a hashmap $$\\text{hash}$$, which stores the data in the form of a $$(Key, Value)$$ pair. Here, the $$Key$$ corresponds to the interval chosen and the $$Value$$ corresponds to the index of the particular interval in the given $$intervals$$ array. We store every element of the $$intervals$$ array in the $$hash$$-map.\n\nNow, we sort the $$intervals$$ array based on the starting points. We needed to store the indices of the array in the hashmap, so as to be able to obtain the indices even after the sorting.\n\nNow, we pick up every interval of the sorted array, and find out the interval from the remaining ones whose start point comes just after\nthe end point of the interval chosen. How do we proceed? Say, we've picked up the $$i^{th}$$ interval right now. In order to find an\ninterval satisfying the given criteria, we need not search in the intervals behind it. This is because the $$intervals$$ array has been sorted based on the\nstarting points and the end point is always greater than the starting point for a given interval. Thus, we search in the intervals only with indices $$j$$, such that $$i+1< j < n$$. The first element encountered while scanning in the ascending order is the required result for the interval chosen, since all the intervals lying after this interval will have comparatively larger start points.\n\nThen, we can obtain the index corresponding to the corresponding interval from the hashmap, which is stored in the corresponding entry of the $$res$$ array. If no interval satifies the criteria, we put a $$\\text{-1}$$ in the corresponding entry.\n\n \n<iframe src=\"https://leetcode.com/playground/EsSkj3SC/shared\" frameBorder=\"0\" name=\"EsSkj3SC\" width=\"100%\" height=\"515\"></iframe>\n\n **Complexity Analysis**\n\n * Time complexity : $$O(n^2)$$.\n\n Sorting takes $$O\\big(nlog(n)\\big)$$ time. For the first interval we need to search among $$n-1$$ elements. For the second interval, the search is done among $$n-2$$ elements and so on leading to a total of:\n\n $$(n-1) + (n-2) + (n-3) + .... + 3 + 2 + 1 = \\frac{n.(n-1)}{2} = O(n^2)$$ calculations.\n\n * Space complexity : $$O(n)$$. $$res$$ array of size $$n$$ is used. A hashmap $$hash$$ of size $$n$$ is used.\n\n---\n\n#### Approach #3 Using Sorting + Binary Search [Accepted]\n\nWe can optimize the above approach to some extent, since we can make use of the factor of the $$intervals$$ array being sorted. Instead of searching for the required interval in a linear manner, we can make use of Binary Search to find an interval whose start point is just larger than the end point of the current interval.\n\nAgain, if such an interval is found, we obtain its index from the hashmap and store the result in the appropriate $$res$$ entry. If not, we put a $$\\text{-1}$$ at the corresponding entry.\n\n \n<iframe src=\"https://leetcode.com/playground/pn9fpMev/shared\" frameBorder=\"0\" name=\"pn9fpMev\" width=\"100%\" height=\"515\"></iframe>\n\n **Complexity Analysis**\n\n * Time complexity : $$O\\big((n.log(n)\\big)$$. Sorting takes $$O\\big(n.log(n)\\big)$$ time. Binary search takes $$O\\big(log(n)\\big) time for each of the $$n$$ intervals.\n\n * Space complexity : $$O(n)$$. $$res$$ array of size $$n$$ is used. A hashmap $$hash$$ of size $$O(n)$$ is used.\n\n---\n\n#### Approach #4 Using TreeMap [Accepted]\n\nIn this approach, instead of using a hashmap, we make use of a TreeMap $$starts$$, which is simply a Red-Black Tree(a kind of balanced Binary Search Tree) . This Treemap $$start$$ stores data in the form of $$(Key, Value)$$ pair and always remain sorted based on its keys.\nIn our case, we store the data such that the start point of an interval acts as the $$Key$$ and the index corresponding to the interval acts as the value, since we are concerned with data sorted based on the start points, as discussed in previous approaches. Every element of the $$intervals$$ array is stored in the TreeMap.\n\nNow, we choose each element of the $$intervals$$ array and make use of a function `TreeMap.ceilingEntry(end_point)` to obtain the element in the TreeMap with its $$Key$$ just larger than the $$end_point$$ of the currently chosen interval. The function `ceilingEntry(Key)` returns the element just with its $$Key$$ larger than the `Key`(passed as the argument) from amongst the elements of the TreeMap and returns `null` if no such element exists.\n\nIf non-null value is returned, we obtain the $$Value$$ from the $$(Key, Value)$$ pair obtained at the appropriate entry in the $$res$$ array. If a null value is returned, we simply store a $$\\text{-1}$$ at the corresponding $$res$$ entry.\n\n \n<iframe src=\"https://leetcode.com/playground/7wB2XEVo/shared\" frameBorder=\"0\" name=\"7wB2XEVo\" width=\"100%\" height=\"462\"></iframe>\n\n **Complexity Analysis**\n\n * Time complexity : $$O\\big((n.log(n)\\big)$$. Inserting an element into TreeMap takes $$O\\big(log(n)\\big)$$ time. $$n$$ such insertions are done. The search in TreeMap using `ceilingEntry` also takes $$O\\big((log(n)\\big)$$ time. $$n$$ such searches are done.\n\n * Space complexity : $$O(n)$$. $$res$$ array of size $$n$$ is used. TreeMap $$starts$$ of size $$O(n)$$ is used.\n\n---\n\n#### Approach #5 Using Two Arrays without Binary Search[Accepted]:\n\n**Algorithm**\n\nThe intuition behind this approach is as follows: If we maintain two arrays,\n\n1. $$\\text{intervals}$$, which is sorted based on the start points.\n\n2. $$\\text{endIntervals}$$, which is sorted based on the end points.\n\nOnce we pick up the first interval(or, say the $$i^{th}$$ interval) from the $$\\text{endIntervals}$$ array, we can determine the appropriate interval satisfying the right interval criteria by scanning the intervals in $$\\text{intervals}$$ array from left towards the right, since the $$\\text{intervals}$$ array is sorted based on the start points. Say, the index of the element chosen from the $$\\text{intervals}$$ array happens to be $$j$$.\n\nNow, when we pick up the next interval(say the $$(i+1)^{th}$$ interval) from the $$\\text{endIntervals}$$ array, we need not start scanning the $$\\text{intervals}$$ array from the first index. Rather, we can start off directly from the $$j^{th}$$ index where we left off last time in the $$\\text{intervals}$$ array. This is because end point corresponding to $$\\text{endIntervals[i+1]}$$ is larger than the one corresponding to $$\\text{endIntervals[i]}$$ and none of the intervals from $$\\text{intervals[k]}$$, such that $$0< k < j$$, satisfies the right neighbor criteria with $$\\text{endIntervals[i]}$$, and hence not with $$\\text{endIntervals[i+1]}$$ as well.\n\nIf at any moment, we reach the end of the array i.e. $$j=intervals.length$$ and no element satisfying the right interval criteria is available in the $$\\text{intervals}$$ array, we put a $$\\text{-1}$$ in the corresponding $$res$$ entry. The same holds for all the remaining elements of the $$\\text{endIntervals}$$ array, whose end points are even larger than the previous interval encountered.\n\nAlso we make use of a hashmap $$hash$$ initially to preserve the indices corresponding to the intervals even after sorting.\n\nFor more understanding see the below animation:\n\n<!--![Find_Right_Interval](../Figures/436_Find_Right_Interval.gif)-->\n!?!../Documents/436_Find.json:1000,563!?!\n\n\n<iframe src=\"https://leetcode.com/playground/YVrCA3RQ/shared\" frameBorder=\"0\" name=\"YVrCA3RQ\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(n.log(n)\\big)$$. Sorting takes $$O\\big(n.log(n)\\big)$$ time. A total of $$O(n)$$ time is spent on searching for the appropriate intervals, since the $$\\text{endIntervals}$$ and $$\\text{intervals}$$ array is scanned only once.\n\n* Space complexity : $$O(n)$$. $$\\text{endIntervals}$$, $$\\text{intervals}$$ and $$res$$ array of size $$n$$ are used. A hashmap $$hash$$ of size $$O(n)$$ is used.\n\n---\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "87",
+      "count": 13,
+      "average": 4.077,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2]]",
+  "metaData": "{\r\n  \"name\": \"findRightInterval\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"intervals\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

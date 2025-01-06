@@ -1,0 +1,74 @@
+{
+  "questionId": "596",
+  "questionFrontendId": "596",
+  "boundTopicId": null,
+  "title": "Classes More Than 5 Students",
+  "titleSlug": "classes-more-than-5-students",
+  "categoryTitle": "Database",
+  "content": "<p>There is a table <code>courses</code> with columns: <b>student</b> and <b>class</b></p>\r\n\r\n<p>Please list out all classes which have more than or equal to 5 students.</p>\r\n\r\n<p>For example, the table:</p>\r\n\r\n<pre>\r\n+---------+------------+\r\n| student | class      |\r\n+---------+------------+\r\n| A       | Math       |\r\n| B       | English    |\r\n| C       | Math       |\r\n| D       | Biology    |\r\n| E       | Math       |\r\n| F       | Computer   |\r\n| G       | Math       |\r\n| H       | Math       |\r\n| I       | Math       |\r\n+---------+------------+\r\n</pre>\r\n\r\n<p>Should output:</p>\r\n\r\n<pre>\r\n+---------+\r\n| class   |\r\n+---------+\r\n| Math    |\r\n+---------+\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b><br />\r\nThe students should not be counted duplicate in each course.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 174,
+  "dislikes": 528,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "SnowInRain",
+      "profileUrl": "/snowinrain/",
+      "avatarUrl": "https://www.gravatar.com/avatar/b59cfcd725756d7173670e732be608b9.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"61K\", \"totalSubmission\": \"165.1K\", \"totalAcceptedRaw\": 60996, \"totalSubmissionRaw\": 165103, \"acRate\": \"36.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "202",
+    "canSeeDetail": true,
+    "url": "/articles/classes-more-than-5-students/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `GROUP BY` clause and **sub-query** [Accepted]\n\n**Intuition**\n\nFirst, we can count the student number in each class. And then select the ones have more than 5 students.\n\n**Algorithm**\n\nTo get the student number in each class. We can use `GROUP BY` and `COUNT`, which is very popular used to statistic bases on some character in a table.\n\n```sql\nSELECT\n    class, COUNT(DISTINCT student)\nFROM\n    courses\nGROUP BY class\n;\n```\n>Note: We use `DISTINCT` here since the student name may duplicated in a class as it is mentioned int he problem description.\n\n```\n| class    | COUNT(student) |\n|----------|----------------|\n| Biology  | 1              |\n| Computer | 1              |\n| English  | 1              |\n| Math     | 6              |\n```\nTo continue, we can filter the classes by taking the above query as a sub-query.\n\n```sql\nSELECT\n    class\nFROM\n    (SELECT\n        class, COUNT(DISTINCT student) AS num\n    FROM\n        courses\n    GROUP BY class) AS temp_table\nWHERE\n    num >= 5\n;\n```\n>Note: Make an alias of `COUNT(student)` ('num' in this case) so that you can use in the `WHERE` clause because it cannot be used directly over there.\n\n#### Approach: Using `GROUP BY` and `HAVING` condition [Accepted]\n\n**Algorithm**\n\nUsing sub-query is one way to add some condition to a `GROUP BY` clause, however, using [`HAVING`](https://dev.mysql.com/doc/refman/5.7/en/group-by-handling.html) is another simpler and natural approach. So we can rewrite the above solution as below.\n\n**MySQL**\n```sql\nSELECT\n    class\nFROM\n    courses\nGROUP BY class\nHAVING COUNT(DISTINCT student) >= 5\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "196",
+      "count": 11,
+      "average": 4.454,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"courses\": [\"student\", \"class\"]}, \"rows\": {\"courses\": [[\"A\", \"Math\"], [\"B\", \"English\"], [\"C\", \"Math\"], [\"D\", \"Biology\"], [\"E\", \"Math\"], [\"F\", \"Computer\"], [\"G\", \"Math\"], [\"H\", \"Math\"], [\"I\", \"Math\"]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists courses (student varchar(255), class varchar(255))\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table courses (student varchar(255), class varchar(255))\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table courses (student varchar(255), class varchar(255))\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists courses (student varchar(255), class varchar(255))",
+    "Truncate table courses",
+    "insert into courses (student, class) values ('A', 'Math')",
+    "insert into courses (student, class) values ('B', 'English')",
+    "insert into courses (student, class) values ('C', 'Math')",
+    "insert into courses (student, class) values ('D', 'Biology')",
+    "insert into courses (student, class) values ('E', 'Math')",
+    "insert into courses (student, class) values ('F', 'Computer')",
+    "insert into courses (student, class) values ('G', 'Math')",
+    "insert into courses (student, class) values ('H', 'Math')",
+    "insert into courses (student, class) values ('I', 'Math')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,56 @@
+{
+  "questionId": "1186",
+  "questionFrontendId": "1117",
+  "boundTopicId": null,
+  "title": "Building H2O",
+  "titleSlug": "building-h2o",
+  "categoryTitle": "Concurrency",
+  "content": "<p>There are two kinds of threads, <code>oxygen</code> and <code>hydrogen</code>. Your goal is to group these threads to form water molecules.&nbsp;There is a barrier where each thread has to&nbsp;wait until a complete molecule can be formed. Hydrogen and oxygen threads will be given <code>releaseHydrogen</code>&nbsp;and <code>releaseOxygen</code>&nbsp;methods respectively, which will allow them to pass the barrier. These threads should pass the barrier in groups of three, and they must be able to immediately bond with each other to form a water molecule.&nbsp;You must guarantee that all the threads from one molecule bond <em>before</em> any other threads from the next molecule do.</p>\n\n<p>In other words:</p>\n\n<ul>\n\t<li>If an oxygen thread arrives at the barrier when no hydrogen threads are present, it has to wait for two hydrogen threads.</li>\n\t<li>If a hydrogen thread arrives at the barrier when no other threads are present, it has to wait for an oxygen thread and another hydrogen thread.</li>\n</ul>\n\n<p>We don&rsquo;t have to worry about matching the threads up explicitly; that is, the threads do not necessarily know which other threads they are paired up with. The key is just that threads pass the barrier in complete sets; thus, if we examine the sequence of threads that bond and divide them into groups of three, each group should contain one oxygen and two hydrogen threads.</p>\n\n<p>Write synchronization code for oxygen and hydrogen molecules that enforces these constraints.</p>\n\n<div>\n<p>&nbsp;</p>\n</div>\n\n<div>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;HOH&quot;</span>\n<strong>Output: </strong><span id=\"example-output-1\">&quot;HHO&quot;\n<strong>Explanation:</strong> &quot;HOH&quot; and &quot;OHH&quot; are also valid answers.</span>\n</pre>\n\n<div>\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;OOHHHH&quot;</span>\n<strong>Output: </strong><span id=\"example-output-1\">&quot;HHOHHO&quot;\n<strong>Explanation:</strong> &quot;HOHHHO&quot;, &quot;OHHHHO&quot;, &quot;HHOHOH&quot;, &quot;HOHHOH&quot;, &quot;OHHHOH&quot;, &quot;HHOOHH&quot;, &quot;HOHOHH&quot; and &quot;OHHOHH&quot; are also valid answers.</span>\n</pre>\n</div>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>Total length of input string will be 3<em>n</em>, where 1 &le;&nbsp;<em>n</em>&nbsp;&le; 20.</li>\n\t<li>Total number of <code>H</code> will be 2<em>n</em>&nbsp;in the input string.</li>\n\t<li>Total number of <code>O</code> will&nbsp;be <em>n</em>&nbsp;in the input&nbsp;string.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 109,
+  "dislikes": 31,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class H2O {\npublic:\n    H2O() {\n        \n    }\n\n    void hydrogen(function<void()> releaseHydrogen) {\n        \n        // releaseHydrogen() outputs \"H\". Do not change or remove this line.\n        releaseHydrogen();\n    }\n\n    void oxygen(function<void()> releaseOxygen) {\n        \n        // releaseOxygen() outputs \"O\". Do not change or remove this line.\n        releaseOxygen();\n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class H2O {\n\n    public H2O() {\n        \n    }\n\n    public void hydrogen(Runnable releaseHydrogen) throws InterruptedException {\n\t\t\n        // releaseHydrogen.run() outputs \"H\". Do not change or remove this line.\n        releaseHydrogen.run();\n    }\n\n    public void oxygen(Runnable releaseOxygen) throws InterruptedException {\n        \n        // releaseOxygen.run() outputs \"O\". Do not change or remove this line.\n\t\treleaseOxygen.run();\n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class H2O(object):\n    def __init__(self):\n        pass\n\n\n    def hydrogen(self, releaseHydrogen):\n        \"\"\"\n        :type releaseHydrogen: method\n        :rtype: void\n        \"\"\"\n        \n        # releaseHydrogen() outputs \"H\". Do not change or remove this line.\n        releaseHydrogen()\n\n\n    def oxygen(self, releaseOxygen):\n        \"\"\"\n        :type releaseOxygen: method\n        :rtype: void\n        \"\"\"\n        \n        # releaseOxygen() outputs \"O\". Do not change or remove this line.\n        releaseOxygen()"
+    },
+    {
+      "lang": "Python3",
+      "code": "class H2O:\n    def __init__(self):\n        pass\n\n\n    def hydrogen(self, releaseHydrogen: 'Callable[[], None]') -> None:\n        \n        # releaseHydrogen() outputs \"H\". Do not change or remove this line.\n        releaseHydrogen()\n\n\n    def oxygen(self, releaseOxygen: 'Callable[[], None]') -> None:\n        \n        # releaseOxygen() outputs \"O\". Do not change or remove this line.\n        releaseOxygen()"
+    },
+    {
+      "lang": "C",
+      "code": "typedef struct {\n    // User defined data may be declared here.\n    \n} H2O;\n\nH2O* h2oCreate() {\n    H2O* obj = (H2O*) malloc(sizeof(H2O));\n    \n    // Initialize user defined data here.\n    \n    return obj;\n}\n\nvoid hydrogen(H2O* obj) {\n    \n    // releaseHydrogen() outputs \"H\". Do not change or remove this line.\n    releaseHydrogen();\n}\n\nvoid oxygen(H2O* obj) {\n    \n    // releaseOxygen() outputs \"O\". Do not change or remove this line.\n    releaseOxygen();\n}\n\nvoid h2oFree(H2O* obj) {\n    // User defined data may be cleaned up here.\n    \n}"
+    },
+    {
+      "lang": "C#",
+      "code": "public class H2O {\n\n    public H2O() {\n        \n    }\n\n    public void Hydrogen(Action releaseHydrogen) {\n\t\t\n        // releaseHydrogen() outputs \"H\". Do not change or remove this line.\n        releaseHydrogen();\n    }\n\n    public void Oxygen(Action releaseOxygen) {\n        \n        // releaseOxygen() outputs \"O\". Do not change or remove this line.\n\t\treleaseOxygen();\n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7K\", \"totalSubmission\": \"14.2K\", \"totalAcceptedRaw\": 7012, \"totalSubmissionRaw\": 14214, \"acRate\": \"49.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"HOH\"",
+  "metaData": "{\n  \"name\": \"H2O\",\n  \"params\": [\n    {\n      \"name\": \"input\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  },\n  \"languages\": [\n    \"java\",\n    \"cpp\",\n    \"python\",\n    \"python3\",\n    \"csharp\",\n    \"c\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

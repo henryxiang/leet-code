@@ -1,0 +1,121 @@
+{
+  "questionId": "781",
+  "questionFrontendId": "770",
+  "boundTopicId": null,
+  "title": "Basic Calculator IV",
+  "titleSlug": "basic-calculator-iv",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an <code>expression</code>&nbsp;such as <code>expression = &quot;e + 8 - a + 5&quot;</code> and an evaluation map such as <code>{&quot;e&quot;: 1}</code> (given in terms of <code>evalvars = [&quot;e&quot;]</code> and <code>evalints = [1]</code>), return a list of tokens representing the simplified expression, such as <code>[&quot;-1*a&quot;,&quot;14&quot;]</code></p>\r\n\r\n<ul>\r\n\t<li>An expression alternates chunks and symbols, with a space separating each chunk and symbol.</li>\r\n\t<li>A chunk is either an expression in parentheses, a variable, or a non-negative integer.</li>\r\n\t<li>A variable is a string of lowercase letters (not including digits.) Note that variables can be multiple letters, and note that variables never have a leading coefficient or unary operator like <code>&quot;2x&quot;</code> or <code>&quot;-x&quot;</code>.</li>\r\n</ul>\r\n\r\n<p>Expressions are evaluated in the usual order: brackets first, then multiplication, then addition and subtraction. For example, <code>expression = &quot;1 + 2 * 3&quot;</code> has an answer of <code>[&quot;7&quot;]</code>.</p>\r\n\r\n<p>The format of the output is as follows:</p>\r\n\r\n<ul>\r\n\t<li>For each term of free variables with non-zero coefficient, we write the free variables within a term in sorted order lexicographically. For example, we would never write a term like <code>&quot;b*a*c&quot;</code>, only <code>&quot;a*b*c&quot;</code>.</li>\r\n\t<li>Terms have degree equal to the number of free variables being multiplied, counting multiplicity. (For example, <code>&quot;a*a*b*c&quot;</code> has degree 4.) We write the largest degree terms of our answer first, breaking ties by lexicographic order ignoring the leading coefficient of the term.</li>\r\n\t<li>The leading coefficient of the term is placed directly to the left with an asterisk separating it from the variables (if they exist.)&nbsp; A leading coefficient of 1 is still printed.</li>\r\n\t<li>An example of a well formatted answer is <code>[&quot;-2*a*a*a&quot;, &quot;3*a*a*b&quot;, &quot;3*b*b&quot;, &quot;4*a&quot;, &quot;5*c&quot;, &quot;-6&quot;]</code>&nbsp;</li>\r\n\t<li>Terms (including constant terms) with coefficient 0 are not included.&nbsp; For example, an expression of &quot;0&quot; has an output of [].</li>\r\n</ul>\r\n\r\n<p><strong>Examples:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> expression = &quot;e + 8 - a + 5&quot;, evalvars = [&quot;e&quot;], evalints = [1]\r\n<strong>Output:</strong> [&quot;-1*a&quot;,&quot;14&quot;]\r\n\r\n<strong>Input:</strong> expression = &quot;e - 8 + temperature - pressure&quot;,\r\nevalvars = [&quot;e&quot;, &quot;temperature&quot;], evalints = [1, 12]\r\n<strong>Output:</strong> [&quot;-1*pressure&quot;,&quot;5&quot;]\r\n\r\n<strong>Input:</strong> expression = &quot;(e + 8) * (e - 8)&quot;, evalvars = [], evalints = []\r\n<strong>Output:</strong> [&quot;1*e*e&quot;,&quot;-64&quot;]\r\n\r\n<strong>Input:</strong> expression = &quot;7 - 7&quot;, evalvars = [], evalints = []\r\n<strong>Output:</strong> []\r\n\r\n<strong>Input:</strong> expression = &quot;a * b * c + b * a * c * 4&quot;, evalvars = [], evalints = []\r\n<strong>Output:</strong> [&quot;5*a*b*c&quot;]\r\n\r\n<strong>Input:</strong> expression = &quot;((a - b) * (b - c) + (c - a)) * ((a - b) + (b - c) * (c - a))&quot;,\r\nevalvars = [], evalints = []\r\n<strong>Output:</strong> [&quot;-1*a*a*b*b&quot;,&quot;2*a*a*b*c&quot;,&quot;-1*a*a*c*c&quot;,&quot;1*a*b*b*b&quot;,&quot;-1*a*b*b*c&quot;,&quot;-1*a*b*c*c&quot;,&quot;1*a*c*c*c&quot;,&quot;-1*b*b*b*c&quot;,&quot;2*b*b*c*c&quot;,&quot;-1*b*c*c*c&quot;,&quot;2*a*a*b&quot;,&quot;-2*a*a*c&quot;,&quot;-2*a*b*b&quot;,&quot;2*a*c*c&quot;,&quot;1*b*b*b&quot;,&quot;-1*b*b*c&quot;,&quot;1*b*c*c&quot;,&quot;-1*c*c*c&quot;,&quot;-1*a*a&quot;,&quot;1*a*b&quot;,&quot;1*a*c&quot;,&quot;-1*b*c&quot;]\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>expression</code> will have length in range <code>[1, 250]</code>.</li>\r\n\t<li><code>evalvars, evalints</code> will have equal lengths in range <code>[0, 100]</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 47,
+  "dislikes": 461,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Parse Lisp Expression\", \"titleSlug\": \"parse-lisp-expression\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Basic Calculator III\", \"titleSlug\": \"basic-calculator-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> basicCalculatorIV(string expression, vector<string>& evalvars, vector<int>& evalints) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> basicCalculatorIV(String expression, String[] evalvars, int[] evalints) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def basicCalculatorIV(self, expression, evalvars, evalints):\n        \"\"\"\n        :type expression: str\n        :type evalvars: List[str]\n        :type evalints: List[int]\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def basicCalculatorIV(self, expression: str, evalvars: List[str], evalints: List[int]) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** basicCalculatorIV(char * expression, char ** evalvars, int evalvarsSize, int* evalints, int evalintsSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> BasicCalculatorIV(string expression, string[] evalvars, int[] evalints) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} expression\n * @param {string[]} evalvars\n * @param {number[]} evalints\n * @return {string[]}\n */\nvar basicCalculatorIV = function(expression, evalvars, evalints) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} expression\n# @param {String[]} evalvars\n# @param {Integer[]} evalints\n# @return {String[]}\ndef basic_calculator_iv(expression, evalvars, evalints)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func basicCalculatorIV(_ expression: String, _ evalvars: [String], _ evalints: [Int]) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func basicCalculatorIV(expression string, evalvars []string, evalints []int) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def basicCalculatorIV(expression: String, evalvars: Array[String], evalints: Array[Int]): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun basicCalculatorIV(expression: String, evalvars: Array<String>, evalints: IntArray): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn basic_calculator_iv(expression: String, evalvars: Vec<String>, evalints: Vec<i32>) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $expression\n     * @param String[] $evalvars\n     * @param Integer[] $evalints\n     * @return String[]\n     */\n    function basicCalculatorIV($expression, $evalvars, $evalints) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3K\", \"totalSubmission\": \"6.3K\", \"totalAcceptedRaw\": 2952, \"totalSubmissionRaw\": 6331, \"acRate\": \"46.6%\"}",
+  "hints": [
+    "One way is with a Polynomial class.  For example,\r\n\r\n* `Poly:add(this, that)` returns the result of `this + that`.\r\n* `Poly:sub(this, that)` returns the result of `this - that`.\r\n* `Poly:mul(this, that)` returns the result of `this * that`.\r\n* `Poly:evaluate(this, evalmap)` returns the polynomial after replacing all free variables with constants as specified by `evalmap`.\r\n* `Poly:toList(this)` returns the polynomial in the correct output format.\r\n\r\n* `Solution::combine(left, right, symbol)` returns the result of applying the binary operator represented by `symbol` to `left` and `right`.\r\n* `Solution::make(expr)` makes a new `Poly` represented by either the constant or free variable specified by `expr`.\r\n* `Solution::parse(expr)` parses an expression into a new `Poly`."
+  ],
+  "solution": {
+    "id": "386",
+    "canSeeDetail": true,
+    "url": "/articles/basic-calculator-iv/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Polynomial Class [Accepted]\n\n**Intuition**\n\nKeep a class `Poly` that knows a map from a list of free variables to a coefficient, and support operations on this class.\n\n**Algorithm**\n\nEach function is straightforward individually.  Let's list the functions we use:\n\n* `Poly:add(this, that)` returns the result of `this + that`.\n* `Poly:sub(this, that)` returns the result of `this - that`.\n* `Poly:mul(this, that)` returns the result of `this * that`.\n* `Poly:evaluate(this, evalmap)` returns the polynomial after replacing all free variables with constants as specified by `evalmap`.\n* `Poly:toList(this)` returns the polynomial in the correct output format.\n\n* `Solution::combine(left, right, symbol)` returns the result of applying the binary operator represented by `symbol` to `left` and `right`.\n* `Solution::make(expr)` makes a new `Poly` represented by either the constant or free variable specified by `expr`.\n* `Solution::parse(expr)` parses an expression into a new `Poly`.\n\n<iframe src=\"https://leetcode.com/playground/9KquDr4P/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9KquDr4P\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  Let $$N$$ is the length of `expression` and $$M$$ is the length of `evalvars` and `evalints`.  With an expression like `(a + b) * (c + d) * (e + f) * ...` the complexity is $$O(2^N + M)$$.\n\n* Space Complexity: $$O(N + M)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "381",
+      "count": 5,
+      "average": 3.4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"e + 8 - a + 5\"\n[\"e\"]\n[1]",
+  "metaData": "{\r\n  \"name\": \"basicCalculatorIV\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"expression\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"evalvars\",\r\n      \"type\": \"string[]\"\r\n    },\r\n    {\r\n      \"name\": \"evalints\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

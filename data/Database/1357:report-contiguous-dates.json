@@ -1,0 +1,65 @@
+{
+  "questionId": "1357",
+  "questionFrontendId": "1225",
+  "boundTopicId": null,
+  "title": "Report Contiguous Dates",
+  "titleSlug": "report-contiguous-dates",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Failed</code></p>\r\n\r\n<pre>\r\n+--------------+---------+\r\n| Column Name  | Type    |\r\n+--------------+---------+\r\n| fail_date    | date    |\r\n+--------------+---------+\r\nPrimary key for this table is fail_date.\r\nFailed table contains the days of failed tasks.\r\n</pre>\r\n\r\n<p>Table: <code>Succeeded</code></p>\r\n\r\n<pre>\r\n+--------------+---------+\r\n| Column Name  | Type    |\r\n+--------------+---------+\r\n| success_date | date    |\r\n+--------------+---------+\r\nPrimary key for this table is success_date.\r\nSucceeded table contains the days of succeeded tasks.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>A system is running one task <strong>every day</strong>. Every task is independent of the previous tasks. The tasks can fail or succeed.</p>\r\n\r\n<p>Write an SQL query to generate a report of&nbsp;<code>period_state</code> for each continuous interval of days in the period from&nbsp;<strong>2019-01-01</strong> to <strong>2019-12-31</strong>.</p>\r\n\r\n<p><code>period_state</code> is <em>&#39;failed&#39;&nbsp;</em>if tasks in this interval failed or <em>&#39;succeeded&#39;</em>&nbsp;if tasks in this interval succeeded. Interval of days are retrieved as <code>start_date</code> and <code>end_date.</code></p>\r\n\r\n<p>Order result by <code>start_date</code>.</p>\r\n\r\n<p>The query result format is in the following example:</p>\r\n\r\n<pre>\r\nFailed table:\r\n+-------------------+\r\n| fail_date         |\r\n+-------------------+\r\n| 2018-12-28        |\r\n| 2018-12-29        |\r\n| 2019-01-04        |\r\n| 2019-01-05        |\r\n+-------------------+\r\n\r\nSucceeded table:\r\n+-------------------+\r\n| success_date      |\r\n+-------------------+\r\n| 2018-12-30        |\r\n| 2018-12-31        |\r\n| 2019-01-01        |\r\n| 2019-01-02        |\r\n| 2019-01-03        |\r\n| 2019-01-06        |\r\n+-------------------+\r\n\r\n\r\nResult table:\r\n+--------------+--------------+--------------+\r\n| period_state | start_date   | end_date     |\r\n+--------------+--------------+--------------+\r\n| succeeded    | 2019-01-01   | 2019-01-03   |\r\n| failed       | 2019-01-04   | 2019-01-05   |\r\n| succeeded    | 2019-01-06   | 2019-01-06   |\r\n+--------------+--------------+--------------+\r\n\r\nThe report ignored the system state in 2018 as we care about the system in the period 2019-01-01 to 2019-12-31.\r\nFrom 2019-01-01 to 2019-01-03 all tasks succeeded and the system state was &quot;succeeded&quot;.\r\nFrom 2019-01-04 to 2019-01-05 all tasks failed and system state was &quot;failed&quot;.\r\nFrom 2019-01-06 to 2019-01-06 all tasks succeeded and system state was &quot;succeeded&quot;.\r\n</pre>",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 22,
+  "dislikes": 2,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Find the Start and End Number of Continuous Ranges\", \"titleSlug\": \"find-the-start-and-end-number-of-continuous-ranges\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "bhadane_vivek",
+      "profileUrl": "/bhadane_vivek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/f60c0f89a6957e257e3f4a73d35c699f.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"736\", \"totalSubmission\": \"1.2K\", \"totalAcceptedRaw\": 736, \"totalSubmissionRaw\": 1207, \"acRate\": \"61.0%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Failed\":[\"fail_date\"],\"Succeeded\":[\"success_date\"]},\"rows\":{\"Failed\":[[\"2018-12-28\"],[\"2018-12-29\"],[\"2019-01-04\"],[\"2019-01-05\"]],\"Succeeded\":[[\"2018-12-30\"],[\"2018-12-31\"],[\"2019-01-01\"],[\"2019-01-02\"],[\"2019-01-03\"],[\"2019-01-06\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Failed (fail_date date)\",\n    \"Create table If Not Exists Succeeded (success_date date)\"\n  ],\n  \"mssql\": [\n    \"Create table Failed (fail_date date)\",\n    \"Create table Succeeded (success_date date)\\n\"\n  ],\n  \"oraclesql\": [\n    \"Create table Failed (fail_date date)\",\n    \"Create table Succeeded (success_date date)\\n\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Failed (fail_date date)",
+    "Create table If Not Exists Succeeded (success_date date)",
+    "Truncate table Failed",
+    "insert into Failed (fail_date) values ('2018-12-28')",
+    "insert into Failed (fail_date) values ('2018-12-29')",
+    "insert into Failed (fail_date) values ('2019-01-04')",
+    "insert into Failed (fail_date) values ('2019-01-05')",
+    "Truncate table Succeeded",
+    "insert into Succeeded (success_date) values ('2018-12-30')",
+    "insert into Succeeded (success_date) values ('2018-12-31')",
+    "insert into Succeeded (success_date) values ('2019-01-01')",
+    "insert into Succeeded (success_date) values ('2019-01-02')",
+    "insert into Succeeded (success_date) values ('2019-01-03')",
+    "insert into Succeeded (success_date) values ('2019-01-06')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

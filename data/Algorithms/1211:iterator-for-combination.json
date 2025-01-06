@@ -1,0 +1,100 @@
+{
+  "questionId": "1211",
+  "questionFrontendId": "1286",
+  "boundTopicId": null,
+  "title": "Iterator for Combination",
+  "titleSlug": "iterator-for-combination",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design an Iterator class, which has:</p>\n\n<ul>\n\t<li>A constructor that takes a string&nbsp;<code>characters</code>&nbsp;of <strong>sorted distinct</strong> lowercase English letters and a number&nbsp;<code>combinationLength</code> as arguments.</li>\n\t<li>A function <em>next()</em>&nbsp;that returns the next combination of length <code>combinationLength</code>&nbsp;in <strong>lexicographical order</strong>.</li>\n\t<li>A function <em>hasNext()</em> that returns <code>True</code>&nbsp;if and only if&nbsp;there exists a next combination.</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<p><b>Example:</b></p>\n\n<pre>\nCombinationIterator iterator = new CombinationIterator(&quot;abc&quot;, 2); // creates the iterator.\n\niterator.next(); // returns &quot;ab&quot;\niterator.hasNext(); // returns true\niterator.next(); // returns &quot;ac&quot;\niterator.hasNext(); // returns true\niterator.next(); // returns &quot;bc&quot;\niterator.hasNext(); // returns false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= combinationLength &lt;=&nbsp;characters.length &lt;= 15</code></li>\n\t<li>There will be at most <code>10^4</code> function calls per test.</li>\n\t<li>It&#39;s guaranteed that all&nbsp;calls&nbsp;of the function <code>next</code>&nbsp;are valid.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 57,
+  "dislikes": 7,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class CombinationIterator {\npublic:\n    CombinationIterator(string characters, int combinationLength) {\n        \n    }\n    \n    string next() {\n        \n    }\n    \n    bool hasNext() {\n        \n    }\n};\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * CombinationIterator* obj = new CombinationIterator(characters, combinationLength);\n * string param_1 = obj->next();\n * bool param_2 = obj->hasNext();\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class CombinationIterator {\n\n    public CombinationIterator(String characters, int combinationLength) {\n        \n    }\n    \n    public String next() {\n        \n    }\n    \n    public boolean hasNext() {\n        \n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * CombinationIterator obj = new CombinationIterator(characters, combinationLength);\n * String param_1 = obj.next();\n * boolean param_2 = obj.hasNext();\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class CombinationIterator(object):\n\n    def __init__(self, characters, combinationLength):\n        \"\"\"\n        :type characters: str\n        :type combinationLength: int\n        \"\"\"\n        \n\n    def next(self):\n        \"\"\"\n        :rtype: str\n        \"\"\"\n        \n\n    def hasNext(self):\n        \"\"\"\n        :rtype: bool\n        \"\"\"\n        \n\n\n# Your CombinationIterator object will be instantiated and called as such:\n# obj = CombinationIterator(characters, combinationLength)\n# param_1 = obj.next()\n# param_2 = obj.hasNext()"
+    },
+    {
+      "lang": "Python3",
+      "code": "class CombinationIterator:\n\n    def __init__(self, characters: str, combinationLength: int):\n        \n\n    def next(self) -> str:\n        \n\n    def hasNext(self) -> bool:\n        \n\n\n# Your CombinationIterator object will be instantiated and called as such:\n# obj = CombinationIterator(characters, combinationLength)\n# param_1 = obj.next()\n# param_2 = obj.hasNext()"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} CombinationIterator;\n\n\nCombinationIterator* combinationIteratorCreate(char * characters, int combinationLength) {\n    \n}\n\nchar * combinationIteratorNext(CombinationIterator* obj) {\n  \n}\n\nbool combinationIteratorHasNext(CombinationIterator* obj) {\n  \n}\n\nvoid combinationIteratorFree(CombinationIterator* obj) {\n    \n}\n\n/**\n * Your CombinationIterator struct will be instantiated and called as such:\n * CombinationIterator* obj = combinationIteratorCreate(characters, combinationLength);\n * char * param_1 = combinationIteratorNext(obj);\n \n * bool param_2 = combinationIteratorHasNext(obj);\n \n * combinationIteratorFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class CombinationIterator {\n\n    public CombinationIterator(string characters, int combinationLength) {\n        \n    }\n    \n    public string Next() {\n        \n    }\n    \n    public bool HasNext() {\n        \n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * CombinationIterator obj = new CombinationIterator(characters, combinationLength);\n * string param_1 = obj.Next();\n * bool param_2 = obj.HasNext();\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} characters\n * @param {number} combinationLength\n */\nvar CombinationIterator = function(characters, combinationLength) {\n    \n};\n\n/**\n * @return {string}\n */\nCombinationIterator.prototype.next = function() {\n    \n};\n\n/**\n * @return {boolean}\n */\nCombinationIterator.prototype.hasNext = function() {\n    \n};\n\n/** \n * Your CombinationIterator object will be instantiated and called as such:\n * var obj = new CombinationIterator(characters, combinationLength)\n * var param_1 = obj.next()\n * var param_2 = obj.hasNext()\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class CombinationIterator\n\n=begin\n    :type characters: String\n    :type combination_length: Integer\n=end\n    def initialize(characters, combination_length)\n        \n    end\n\n\n=begin\n    :rtype: String\n=end\n    def next()\n        \n    end\n\n\n=begin\n    :rtype: Boolean\n=end\n    def has_next()\n        \n    end\n\n\nend\n\n# Your CombinationIterator object will be instantiated and called as such:\n# obj = CombinationIterator.new(characters, combination_length)\n# param_1 = obj.next()\n# param_2 = obj.has_next()"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass CombinationIterator {\n\n    init(_ characters: String, _ combinationLength: Int) {\n        \n    }\n    \n    func next() -> String {\n        \n    }\n    \n    func hasNext() -> Bool {\n        \n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * let obj = CombinationIterator(characters, combinationLength)\n * let ret_1: String = obj.next()\n * let ret_2: Bool = obj.hasNext()\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type CombinationIterator struct {\n    \n}\n\n\nfunc Constructor(characters string, combinationLength int) CombinationIterator {\n    \n}\n\n\nfunc (this *CombinationIterator) Next() string {\n    \n}\n\n\nfunc (this *CombinationIterator) HasNext() bool {\n    \n}\n\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * obj := Constructor(characters, combinationLength);\n * param_1 := obj.Next();\n * param_2 := obj.HasNext();\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class CombinationIterator(_characters: String, _combinationLength: Int) {\n\n    def next(): String = {\n        \n    }\n\n    def hasNext(): Boolean = {\n        \n    }\n\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * var obj = new CombinationIterator(characters, combinationLength)\n * var param_1 = obj.next()\n * var param_2 = obj.hasNext()\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class CombinationIterator(characters: String, combinationLength: Int) {\n\n    fun next(): String {\n        \n    }\n\n    fun hasNext(): Boolean {\n        \n    }\n\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * var obj = CombinationIterator(characters, combinationLength)\n * var param_1 = obj.next()\n * var param_2 = obj.hasNext()\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct CombinationIterator {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl CombinationIterator {\n\n    fn new(characters: String, combinationLength: i32) -> Self {\n        \n    }\n    \n    fn next(&self) -> String {\n        \n    }\n    \n    fn has_next(&self) -> bool {\n        \n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * let obj = CombinationIterator::new(characters, combinationLength);\n * let ret_1: String = obj.next();\n * let ret_2: bool = obj.has_next();\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class CombinationIterator {\n    /**\n     * @param String $characters\n     * @param Integer $combinationLength\n     */\n    function __construct($characters, $combinationLength) {\n        \n    }\n  \n    /**\n     * @return String\n     */\n    function next() {\n        \n    }\n  \n    /**\n     * @return Boolean\n     */\n    function hasNext() {\n        \n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * $obj = CombinationIterator($characters, $combinationLength);\n * $ret_1 = $obj->next();\n * $ret_2 = $obj->hasNext();\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.6K\", \"totalSubmission\": \"4K\", \"totalAcceptedRaw\": 2579, \"totalSubmissionRaw\": 3973, \"acRate\": \"64.9%\"}",
+  "hints": [
+    "Generate all combinations as a preprocessing.",
+    "Use bit masking to generate all the combinations."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"CombinationIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\r\n[[\"abc\",2],[],[],[],[],[],[]]\r",
+  "metaData": "{\n  \"classname\": \"CombinationIterator\",\n  \"maxbytesperline\": 200000,\n  \"constructor\": {\n    \"params\": [\n      {\n        \"type\": \"string\",\n        \"name\": \"characters\"\n      },\n      {\n        \"type\": \"integer\",\n        \"name\": \"combinationLength\"\n      }\n    ]\n  },\n  \"methods\": [\n    {\n      \"name\": \"next\",\n      \"params\": [],\n      \"return\": {\n        \"type\": \"string\"\n      }\n    },\n    {\n      \"name\": \"hasNext\",\n      \"params\": [],\n      \"return\": {\n        \"type\": \"boolean\"\n      }\n    }\n  ],\n  \"systemdesign\": true,\n  \"params\": [\n    {\n      \"name\": \"inputs\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"inputs\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<String>\",\n    \"dealloc\": true\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

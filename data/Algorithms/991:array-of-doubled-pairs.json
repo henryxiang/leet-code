@@ -1,0 +1,115 @@
+{
+  "questionId": "991",
+  "questionFrontendId": "954",
+  "boundTopicId": null,
+  "title": "Array of Doubled Pairs",
+  "titleSlug": "array-of-doubled-pairs",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers <code>A</code>&nbsp;with even length, return <code>true</code> if and only if it is possible to reorder it such that <code>A[2 * i + 1] = 2 * A[2 * i]</code> for every <code>0 &lt;=&nbsp;i &lt; len(A) / 2</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<div>\r\n<div>\r\n<ol>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[3,1,3,6]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">false</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[2,1,2,6]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">false</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[4,-2,2,-4]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">true</span>\r\n<strong>Explanation: </strong><span id=\"example-output-3\">We can take two groups, [-2,-4] and [2,4] to form [-2,-4,2,4] or [2,4,-2,-4].</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">[1,2,4,16,8,4]</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">false</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= A.length &lt;= 30000</code></li>\r\n\t<li><code>A.length</code> is even</li>\r\n\t<li><code>-100000 &lt;= A[i] &lt;= 100000</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 162,
+  "dislikes": 29,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "DCtheTall",
+      "profileUrl": "/dcthetall/",
+      "avatarUrl": "https://assets.leetcode.com/users/dcthetall/avatar_1539463494.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool canReorderDoubled(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canReorderDoubled(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canReorderDoubled(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canReorderDoubled(self, A: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool canReorderDoubled(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CanReorderDoubled(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {boolean}\n */\nvar canReorderDoubled = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Boolean}\ndef can_reorder_doubled(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canReorderDoubled(_ A: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canReorderDoubled(A []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canReorderDoubled(A: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canReorderDoubled(A: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_reorder_doubled(a: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Boolean\n     */\n    function canReorderDoubled($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.5K\", \"totalSubmission\": \"37.9K\", \"totalAcceptedRaw\": 13471, \"totalSubmissionRaw\": 37940, \"acRate\": \"35.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "636",
+    "canSeeDetail": true,
+    "url": "/articles/array-of-doubled-pairs/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Greedy\n\n**Intuition**\n\nIf `x` is currently the array element with the least absolute value, it must pair with `2*x`, as there does not exist any other `x/2` to pair with it.\n\n**Algorithm**\n\nLet's try to (virtually) \"write\" the final reordered array.\n\nLet's check elements in order of absolute value.  When we check an element `x` and it isn't used, it must pair with `2*x`.  We will attempt to write `x, 2x` - if we can't, then the answer is `false`.  If we write everything, the answer is `true`.\n\nTo keep track of what we have not yet written, we will store it in a `count`.\n\n<iframe src=\"https://leetcode.com/playground/2njGcRUM/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"2njGcRUM\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "622",
+      "count": 8,
+      "average": 3.875,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,1,3,6]",
+  "metaData": "{\r\n  \"name\": \"canReorderDoubled\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

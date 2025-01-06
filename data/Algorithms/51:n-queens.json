@@ -1,0 +1,105 @@
+{
+  "questionId": "51",
+  "questionFrontendId": "51",
+  "boundTopicId": null,
+  "title": "N-Queens",
+  "titleSlug": "n-queens",
+  "categoryTitle": "Algorithms",
+  "content": "<p>The <em>n</em>-queens puzzle is the problem of placing <em>n</em> queens on an <em>n</em>&times;<em>n</em> chessboard such that no two queens attack each other.</p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/10/12/8-queens.png\" style=\"width: 258px; height: 276px;\" /></p>\r\n\r\n<p>Given an integer <em>n</em>, return all distinct solutions to the <em>n</em>-queens puzzle.</p>\r\n\r\n<p>Each solution contains a distinct board configuration of the <em>n</em>-queens&#39; placement, where <code>&#39;Q&#39;</code> and <code>&#39;.&#39;</code> both indicate a queen and an empty space respectively.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 4\r\n<strong>Output:</strong> [\r\n [&quot;.Q..&quot;,  // Solution 1\r\n  &quot;...Q&quot;,\r\n  &quot;Q...&quot;,\r\n  &quot;..Q.&quot;],\r\n\r\n [&quot;..Q.&quot;,  // Solution 2\r\n  &quot;Q...&quot;,\r\n  &quot;...Q&quot;,\r\n  &quot;.Q..&quot;]\r\n]\r\n<strong>Explanation:</strong> There exist two distinct solutions to the 4-queens puzzle as shown above.\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 1322,
+  "dislikes": 60,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"N-Queens II\", \"titleSlug\": \"n-queens-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Grid Illumination\", \"titleSlug\": \"grid-illumination\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Tableau\", \"slug\": \"tableau\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Rubrik\", \"slug\": \"rubrik\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<string>> solveNQueens(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<List<String>> solveNQueens(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def solveNQueens(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[List[str]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def solveNQueens(self, n: int) -> List[List[str]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nchar *** solveNQueens(int n, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<IList<string>> SolveNQueens(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {string[][]}\n */\nvar solveNQueens = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {String[][]}\ndef solve_n_queens(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func solveNQueens(_ n: Int) -> [[String]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func solveNQueens(n int) [][]string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def solveNQueens(n: Int): List[List[String]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun solveNQueens(n: Int): List<List<String>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn solve_n_queens(n: i32) -> Vec<Vec<String>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return String[][]\n     */\n    function solveNQueens($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"170.9K\", \"totalSubmission\": \"399.2K\", \"totalAcceptedRaw\": 170889, \"totalSubmissionRaw\": 399245, \"acRate\": \"42.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "714",
+    "canSeeDetail": true,
+    "url": "/articles/n-queens/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Intuition\r\n\r\nThe first idea is to use brute-force \r\nthat means to generate all possible ways to put `N` queens on the board,\r\nand then check them to keep only the combinations \r\nwith no queen under attack. \r\nThat means $$\\mathcal{O}(N^N)$$ time complexity\r\nand hence we're forced to think further how to optimize.\r\n\r\nThere are two programming conceptions here which could\r\nhelp.\r\n\r\n> The first one is called _constrained programming_. \r\n\r\nThat basically means\r\nto put restrictions after each queen placement. One puts a queen on the \r\nboard and that immediately excludes one column, one row and \r\ntwo diagonals for the further queens placement. That propagates \r\n_constraints_ and helps to reduce the number of combinations to consider.\r\n\r\n<img src=\"../Figures/51/51_pic.png\" width=\"500\">\r\n\r\n> The second one called _backtracking_. \r\n\r\nLet's imagine that one \r\nputs several queens on the board so that they don't attack each other. \r\nBut the combination chosen is not the optimal one and there is no place\r\nfor the next queen. What to do? _To backtrack_. That means to come back,\r\nto change the position of the previously placed queen and try \r\nto proceed again. If that would not work either, _backtrack_ again.\r\n\r\n<img src=\"../Figures/51/51_backtracking_.png\" width=\"500\">\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Backtracking\r\n\r\nBefore to construct the algorithm, \r\nlet's figure out two tips that could\r\nhelp.\r\n\r\n> There could be the only one queen in a row and the only one queen\r\nin a column.\r\n\r\nThat means that there is no need to consider all squares on the \r\nboard. One could just iterate over the columns.\r\n\r\n> For all \"hill\" diagonals `row + column = const`, \r\nand for all \"dale\" diagonals `row - column = const`.  \r\n\r\nThat would allow us to mark the diagonals which are already under \r\nattack and to check if a given square `(row, column)` is under attack.\r\n\r\n<img src=\"../Figures/51/51_diagonals.png\" width=\"500\">\r\n\r\nNow everything is ready to write down the backtrack function \r\n`backtrack(row = 0)`.\r\n\r\n* Start from the first `row = 0`. \r\n* Iterate over the columns and try to put a queen in each `column`.\r\n\r\n    * If square `(row, column)` is not under attack\r\n        \r\n        * Place the queen in `(row, column)` square.\r\n        * Exclude one row, one column and two diagonals from further \r\n        consideration.\r\n        * If all rows are filled up `row == N`\r\n            * That means that we find out one more solution.\r\n        * Else\r\n            * Proceed to place further queens `backtrack(row + 1)`.\r\n        * Now backtrack : remove the queen from `(row, column)` square.\r\n        \r\nHere is a straightforward implementation of the above algorithm.  \r\n\r\n!?!../Documents/51_LIS.json:1000,705!?!\r\n\r\n<iframe src=\"https://leetcode.com/playground/AnwMpLqX/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"AnwMpLqX\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N!)$$. There is `N` possibilities to put \r\nthe first queen, not more than `N (N - 2)` to put the second one,\r\nnot more than `N(N - 2)(N - 4)` for the third one etc. In total that\r\nresults in $$\\mathcal{O}(N!)$$ time complexity.\r\n* Space complexity : $$\\mathcal{O}(N)$$ to keep an information about \r\ndiagonals and rows. \r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "699",
+      "count": 19,
+      "average": 3.368,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "4",
+  "metaData": "{\r\n  \"name\": \"solveNQueens\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<list<string>>\",\r\n    \"colsize\": \"param_1\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

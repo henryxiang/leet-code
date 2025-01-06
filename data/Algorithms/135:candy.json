@@ -1,0 +1,105 @@
+{
+  "questionId": "135",
+  "questionFrontendId": "135",
+  "boundTopicId": null,
+  "title": "Candy",
+  "titleSlug": "candy",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are <em>N</em> children standing in a line. Each child is assigned a rating value.</p>\r\n\r\n<p>You are giving candies to these children subjected to the following requirements:</p>\r\n\r\n<ul>\r\n\t<li>Each child must have at least one candy.</li>\r\n\t<li>Children with a higher rating get more candies than their neighbors.</li>\r\n</ul>\r\n\r\n<p>What is the minimum candies you must give?</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [1,0,2]\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> You can allocate to the first, second and third child with 2, 1, 2 candies respectively.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [1,2,2]\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> You can allocate to the first, second and third child with 1, 2, 1 candies respectively.\r\n             The third child gets 1 candy because it satisfies the above two conditions.\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 668,
+  "dislikes": 136,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Flipkart\", \"slug\": \"flipkart\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int candy(vector<int>& ratings) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int candy(int[] ratings) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def candy(self, ratings):\n        \"\"\"\n        :type ratings: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def candy(self, ratings: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint candy(int* ratings, int ratingsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int Candy(int[] ratings) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} ratings\n * @return {number}\n */\nvar candy = function(ratings) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} ratings\n# @return {Integer}\ndef candy(ratings)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func candy(_ ratings: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func candy(ratings []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def candy(ratings: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun candy(ratings: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn candy(ratings: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $ratings\n     * @return Integer\n     */\n    function candy($ratings) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"116K\", \"totalSubmission\": \"387.9K\", \"totalAcceptedRaw\": 115981, \"totalSubmissionRaw\": 387887, \"acRate\": \"29.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "90",
+    "canSeeDetail": true,
+    "url": "/articles/candy/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Brute Force\n\nThe simplest approach makes use of a 1-d array, $$candies$$ to keep a track of the candies given to the students. Firstly, we give 1 candy to each student. Then, we start scanning the\narray from left-to-right. At every element encountered, firstly, if the current element's ratings, $$ratings[i]$$, is larger than the previous element $$ratings[i-1]$$ and $$candies[i]<=candies[i-1]$$,\nthen we update $$candies[i]$$ as $$candies[i]=candies[i-1] + 1$$. Thus, now the candy distribution for these two elements $$candies[i-1]$$ and $$candies[i]$$ becomes correct for the time being(locally).\n In the same step, we also check if the current element's ratings, $$ratings[i]$$, is larger than the next element's ratings,\ni.e. $$ratings[i]>ratings[i+1]$$. If so, we again update $$candies[i]=candies[i+1] + 1$$. We continue this process for the whole $$ratings$$ array. If in any traversal,\nno updation of the $$candies$$ array occurs, it means we've reached at the final required distribution of the candies and we can stop the traversals. To keep a track of\nthis we make use of a $$flag$$ which is set to $$\\text{True}$$ if any updation occurs in a traversal.\n\nAt the end, we can sum up all the elements of the $$candies$$ array to obtain the required minimum number of candies.\n\n<iframe src=\"https://leetcode.com/playground/gpKEkWCp/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"gpKEkWCp\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. We need to traverse the array at most $$n$$ times.\n\n* Space complexity : $$O(n)$$. One $$candies$$ array of size $$n$$ is used.\n<br />\n<br />\n---\n#### Approach 2: Using two arrays\n\n**Algorithm**\n\nIn this approach, we make use of two 1-d arrays $$left2right$$ and $$right2left$$. The $$left2right$$ array is used to store the number of candies required by the\ncurrent student taking care of the distribution relative to the left neighbours only. i.e. Assuming the distribution rule is: The student with a higher ratings\nthan its left neighbour should always get more candies than its left neighbour. Similarly, the $$right2left$$ array is used to store the number of candies candies required by the\ncurrent student taking care of the distribution relative to the right neighbours only. i.e. Assuming the distribution rule to be: The student with a higher ratings\nthan its right neighbour should always get more candies than its right neighbour. To do so, firstly we assign 1 candy to each student in both $$left2right$$ and $$right2left$$ array.\n Then, we traverse the array from\nleft-to-right and whenever the current element's ratings is larger than the left neighbour we update the\ncurrent element's candies in the $$left2right$$ array as $$left2right[i] = left2right[i-1] + 1$$, since the current element's candies are always less than or equal candies than its left neighbour before updation.\nAfter the forward traversal, we traverse the array from left-to-right and\nupdate $$right2left[i]$$ as $$right2left[i] = right2left[i + 1] + 1$$, whenever the current ( $$i^{th}$$ ) element has a higher ratings than the right ( $$(i+1)^{th}$$ ) element.\n\nNow, for the $$i^{th}$$ student in the array, we need to give $$\\text{max}(left2right[i], right2left[i])$$ to it, in order to satisfy both the left and the right neighbour\nrelationship. Thus, at the end, we obtain the minimum number of candies required as:\n\n$$\n\\text{minimum_candies}=\\sum_{i=0}^{n-1} \\text{max}(left2right[i], right2left[i]), \\text{where } n = \\text{length of the ratings array.}\n$$\n\nThe following animation illustrates the method:\n\n![Candy_Two_Arrays](../Figures/135_Candy_Two_Pass.gif)\n\n<iframe src=\"https://leetcode.com/playground/ZJvLfBzc/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"ZJvLfBzc\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. $$left2right$$ and $$right2left$$ arrays are traversed thrice.\n\n* Space complexity : $$O(n)$$. Two arrays $$left2right$$ and $$right2left$$ of size $$n$$ are used.\n<br />\n<br />\n---\n#### Approach 3: Using one array\n\n**Algorithm**\n\nIn the previous approach, we used two arrays to keep track of the left neighbour and the right neighbour relation individually and later on combined these two. Instead of this, we\ncan make use of a single array $$candies$$ to keep the count of the number of candies to be allocated to the current student. In order to do so, firstly we assign 1 candy to\neach student. Then, we traverse the array from left-to-right and distribute the candies following only the left neighbour relation i.e. whenever the current element's ratings is\nlarger than the left neighbour and has less than or equal candies than its left neighbour, we update the\ncurrent element's candies in the $$candies$$ array as $$candies[i] = candies[i-1] + 1$$. While updating we need not compare $$candies[i]$$ and $$candies[i - 1]$$, since\n $$candies[i] \\leq candies[i - 1]$$ before updation. After this, we traverse the array from right-to-left. Now, we need to\nupdate the $$i^{th}$$ element's candies in order to satisfy both the left neighbour and the right neighbour relation. Now, during the backward traversal, if $$ratings[i]>ratings[i + 1]$$,\nconsidering only the right neighbour criteria, we could've updated $$candies[i]$$ as $$candies[i] = candies[i + 1] + 1$$. But, this time we need to update the $$candies[i]$$ only\nif $$candies[i] \\leq candies[i + 1]$$. This happens because, this time we've already altered the $$candies$$ array during the forward traversal and thus $$candies[i]$$ isn't\nnecessarily less than or equal to $$candies[i + 1]$$. Thus, if $$ratings[i] > ratings[i + 1]$$, we can update $$candies[i]$$ as $$candies[i] = \\text{max}(candies[i], candies[i + 1] + 1)$$, which makes\n$$candies[i]$$ satisfy both the left neighbour and the right neighbour criteria.\n\nAgain, we need sum up all the elements of the $$candies$$ array to obtain the required result.\n\n$$\n\\text{minimum_candies} = \\sum_{i=0}^{n-1} candies[i], \\text{where } n = \\text{length of the ratings array.}\n$$\n\n<iframe src=\"https://leetcode.com/playground/U4XtvyuF/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"U4XtvyuF\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. The array $$candies$$ of size $$n$$ is traversed thrice.\n\n* Space complexity : $$O(n)$$. An array $$candies$$ of size $$n$$ is used.\n<br />\n<br />\n---\n#### Approach 4: Single Pass Approach with Constant Space\n\n**Algorithm**\n\nThis approach relies on the observation(as demonstrated in the figure below as well) that in order to distribute the candies as per the given criteria using\nthe minimum number of candies, the candies are always distributed in terms of increments of 1. Further, while distributing the candies, the local minimum number of candies\ngiven to a student is 1. Thus, the sub-distributions always take the form: $$\\text{1, 2, 3, ..., n}$$ or $$\\text{n,..., 2, 1}$$, whose sum is simply given by $$n(n+1)/2$$.\n\nNow, we can view the given $$rankings$$ as some\nrising and falling slopes. Whenever the slope is rising, the distribution takes the form: $$\\text{1, 2, 3, ..., m}$$. Similarly, a falling slope takes the form:\n$$\\text{k,..., 2, 1}$$. An issue that arises now is that the local peak point can be included in only one of the slopes.\nWhether to include the local peak point($$\\text{n}$$) in the rising slope or the falling slope?\n\nIn order to decide it,\nwe can observe that in order to satisfy both the right neighbour and the left neighbour criteria, the peak point's count needs to be the max. of the counts determined\nby the rising and the falling slopes. Thus, in order to determine the number of candies required, the peak point needs to be included in the slope which contains more\nnumber of points. The local valley point can also be included in only one of the slopes, but this issue can be resolved easily, since the local valley point will\nalways be assigned a candy count of 1(which can be subtracted from the next slope's count calculations).\n\nComing to the implementation, we maintain two variables $$old\\_slope$$ and $$new\\_slope$$ to determine the occurence of a peak or a valley. We also use\n$$up$$ and $$down$$ variables to keep a track of the count of elements on the rising slope and on the falling slope respectively(without including the peak element). We always update the total count\nof $$candies$$ at the end of a falling slope following a rising slope (or a mountain). The leveling of the points in $$rankings$$ also works as the end of a mountain. At the end of the mountain, we determine whether to include the peak point in the rising slope or in the falling slope by comparing the $$up$$ and $$down$$ variables up to that point. Thus, the count assigned to the peak element becomes: $$\\text{max}(up, down) + 1$$. At this point, we can reset the $$up$$ and $$down$$ variables indicating the start of a new mountain.\n\nThe following figure shows the cases that need to be handled for this example:\n\n` rankings: [1 2 3 4 5 3 2 1 2 6 5 4 3 3 2 1 1 3 3 3 4 2] `\n\n![Candy_Two_Arrays](../Figures/135_Candy_Constant_Space.PNG)\n\n\nFrom this figure, we can see that the candy distributions in the subregions always take the form $$\\text{1, 2, ...n}$$ or $$\\text{n, ..., 2, 1}$$.\nFor the first mountain comprised by the regions $$a$$ and $$b$$, while assigning candies to the local peak point ($$pt. 5$$), it needs to be included in\n$$a$$ to satisfy the left neighbour criteria. The local valley point at the end of region $$b$$ ($$pt. 8$$) marks the end of the first mountain (region $$c$$).\n While performing the calculations, we can include this point in either the current or the following mountain. The $$pt. 13$$ marks the end of the second\n mountain due to levelling of the $$pt. 13$$ and $$pt. 14$$. Since, region $$e$$ has more points than region $$d$$, the local peak ($$pt. 10$$) needs to be\n included in region $$e$$ to satisfy the right neighbour criteria. Now, the third mountain $$f$$ can be considered as a mountian with no rising slope ($$up=0$$)\n but only a falling slope. Similarly, $$pt. 16, 18, 19$$ also act as the mountain ends due to the levelling of the points.\n\n<iframe src=\"https://leetcode.com/playground/9nSyErSr/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9nSyErSr\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. We traverse the $$rankings$$ array once only.\n\n* Space complexity : $$O(1)$$. Constant Extra Space is used.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "88",
+      "count": 31,
+      "average": 4.936,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,0,2]",
+  "metaData": "{\r\n  \"name\": \"candy\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"ratings\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

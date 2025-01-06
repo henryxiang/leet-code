@@ -1,0 +1,102 @@
+{
+  "questionId": "1130",
+  "questionFrontendId": "1049",
+  "boundTopicId": null,
+  "title": "Last Stone Weight II",
+  "titleSlug": "last-stone-weight-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We have a collection of rocks, each rock has a positive integer weight.</p>\r\n\r\n<p>Each turn, we choose <strong>any two rocks</strong>&nbsp;and smash them together.&nbsp; Suppose the stones have weights <code>x</code> and <code>y</code> with <code>x &lt;= y</code>.&nbsp; The result of this smash is:</p>\r\n\r\n<ul>\r\n\t<li>If <code>x == y</code>, both stones are totally destroyed;</li>\r\n\t<li>If <code>x != y</code>, the stone of weight <code>x</code> is totally destroyed, and the stone of weight <code>y</code> has new weight <code>y-x</code>.</li>\r\n</ul>\r\n\r\n<p>At the end, there is at most 1 stone left.&nbsp; Return the <strong>smallest possible</strong> weight of this stone (the weight is&nbsp;0 if there are no stones left.)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[2,7,4,1,8,1]\r\n<strong>Output: </strong>1\r\n<strong>Explanation: </strong>\r\nWe can combine 2 and 4 to get 2 so the array converts to [2,7,1,8,1] then,\r\nwe can combine 7 and 8 to get 1 so the array converts to [2,1,1,1] then,\r\nwe can combine 2 and 1 to get 1 so the array converts to [1,1,1] then,\r\nwe can combine 1 and 1 to get 0 so the array converts to [1] then that&#39;s the optimal value.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= stones.length &lt;= 30</code></li>\r\n\t<li><code>1 &lt;= stones[i] &lt;= 100</code></li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 284,
+  "dislikes": 13,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int lastStoneWeightII(vector<int>& stones) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int lastStoneWeightII(int[] stones) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def lastStoneWeightII(self, stones):\n        \"\"\"\n        :type stones: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def lastStoneWeightII(self, stones: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint lastStoneWeightII(int* stones, int stonesSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int LastStoneWeightII(int[] stones) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} stones\n * @return {number}\n */\nvar lastStoneWeightII = function(stones) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} stones\r\n# @return {Integer}\r\ndef last_stone_weight_ii(stones)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func lastStoneWeightII(_ stones: [Int]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func lastStoneWeightII(stones []int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def lastStoneWeightII(stones: Array[Int]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun lastStoneWeightII(stones: IntArray): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn last_stone_weight_ii(stones: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $stones\n     * @return Integer\n     */\n    function lastStoneWeightII($stones) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"8.4K\", \"totalSubmission\": \"20K\", \"totalAcceptedRaw\": 8399, \"totalSubmissionRaw\": 19964, \"acRate\": \"42.1%\"}",
+  "hints": [
+    "Think of the final answer as a sum of weights with + or - sign symbols infront of each weight.  Actually, all sums with 1 of each sign symbol are possible.",
+    "Use dynamic programming: for every possible sum with N stones, those sums +x or -x is possible with N+1 stones, where x is the value of the newest stone.  (This overcounts sums that are all positive or all negative, but those don't matter.)"
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[2,7,4,1,8,1]",
+  "metaData": "{\r\n  \"name\": \"lastStoneWeightII\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"stones\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

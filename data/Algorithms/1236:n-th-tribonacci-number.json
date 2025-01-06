@@ -1,0 +1,114 @@
+{
+  "questionId": "1236",
+  "questionFrontendId": "1137",
+  "boundTopicId": null,
+  "title": "N-th Tribonacci Number",
+  "titleSlug": "n-th-tribonacci-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>The Tribonacci sequence T<sub>n</sub> is defined as follows:&nbsp;</p>\r\n\r\n<p>T<sub>0</sub> = 0, T<sub>1</sub> = 1, T<sub>2</sub> = 1, and T<sub>n+3</sub> = T<sub>n</sub> + T<sub>n+1</sub> + T<sub>n+2</sub> for n &gt;= 0.</p>\r\n\r\n<p>Given <code>n</code>, return the value of T<sub>n</sub>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> n = 4\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong>\r\nT_3 = 0 + 1 + 1 = 2\r\nT_4 = 1 + 1 + 2 = 4\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> n = 25\r\n<strong>Output:</strong> 1389537\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>0 &lt;= n &lt;= 37</code></li>\r\n\t<li>The answer is guaranteed to fit within a 32-bit integer, ie. <code>answer &lt;= 2^31 - 1</code>.</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 117,
+  "dislikes": 21,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Climbing Stairs\", \"titleSlug\": \"climbing-stairs\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Fibonacci Number\", \"titleSlug\": \"fibonacci-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Coursera\", \"slug\": \"coursera\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int tribonacci(int n) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int tribonacci(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def tribonacci(self, n):\r\n        \"\"\"\r\n        :type n: int\r\n        :rtype: int\r\n        \"\"\""
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def tribonacci(self, n: int) -> int:"
+    },
+    {
+      "lang": "C",
+      "code": "int tribonacci(int n){\r\n\r\n}"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int Tribonacci(int n) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {number} n\r\n * @return {number}\r\n */\r\nvar tribonacci = function(n) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\r\n# @return {Integer}\r\ndef tribonacci(n)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func tribonacci(_ n: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func tribonacci(n int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def tribonacci(n: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun tribonacci(n: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn tribonacci(n: i32) -> i32 {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param Integer $n\r\n     * @return Integer\r\n     */\r\n    function tribonacci($n) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"21.1K\", \"totalSubmission\": \"36.6K\", \"totalAcceptedRaw\": 21052, \"totalSubmissionRaw\": 36648, \"acRate\": \"57.4%\"}",
+  "hints": [
+    "Make an array F of length 38, and set F[0] = 0, F[1] = F[2] = 1.",
+    "Now write a loop where you set F[n+3] = F[n] + F[n+1] + F[n+2], and return F[n]."
+  ],
+  "solution": {
+    "id": "755",
+    "canSeeDetail": true,
+    "url": "/articles/n-th-tribonacci-number/",
+    "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Possible Solutions: Space vs Performance Optimisation\n\nThere could be two approaches here. \nThe first one is to optimise the performance, and the second one is to minimize the space used.\n\n> Let's start from the performance optimisation. \n\nSince n is known to be less then 38, it's enough \nto precompute all 38 Tribonacci numbers once, \nstore them in a static variable of the class Solution, \nand then just retrieve a needed number \nin a constant time during the testcase execution. \n\n> How to make the preliminary computations?\n\nTwo ideas could work here pretty well : recursion with memoization and dynamic programming. \nThey both need N operations to compute N Tribonacci numbers. \nSimple recursion like `tribonacci(k) = tribonacci(k - 1) + tribonacci(k - 2) + tribonacci(k - 3)`\nis out of consideration here because it will result in exponential time complexity $$3^N$$.\n\n> Approach with preliminary computations has perfect O(1) \nruntime performance but\nneeds in O(N) space to keep N Tribonacci numbers. \nIn some quite rare cases it's crucial\nto optimise the space used above the performance.\n\nIn such a situation no more space-consuming static variables\nare allowed and one could use dynamic programming approach \nkeeping not more than 3 Tribonacci numbers in memory.\n\n![fig](../Figures/1137/methods.png)\n<br /> \n<br />\n\n\n---\n#### Approach 1: Space Optimisation : Dynamic Programming\n\n- If n < 3 the answer is obvious.\n\n- Otherwise initiate the first three numbers `x = 0, y = z = 1` \nand proceed to the loop of `n - 2` steps. At each step:\n\n    - Replace x by y.\n    \n    - Replace y by z.\n    \n    - Replace z by x + y + z.\n    \n- Return z.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/2g2tcvDw/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"2g2tcvDw\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$.\n\n* Space complexity : constant space to keep the last three \nFibonacci numbers.\n<br /> \n<br />\n\n\n---\n#### Approach 2: Performance Optimisation : Recursion with Memoization\n\n- Precompute 38 Tribonacci numbers:\n\n    - Initiate array of precomputed Tribonacci numbers `nums` by zeros\n    and initiate the first three numbers. \n    \n    - Return `helper(n - 1)`.\n    \n- Recursive function `helper(k)`:\n\n    - If `k == 0`, return 0.\n    \n    - If `nums[k] != 0`, return `nums[k]`.\n    \n    - Otherwise, `nums[k] = helper(k - 1) + helper(k - 2) + helper(k - 3)`. \n    Return `nums[k]`.    \n        \n- Retrieve needed Tribonacci number from the array of precomputed numbers.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/Cd5mRxSG/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"Cd5mRxSG\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(1)$$ to retrieve preliminary \ncomputed Tribonacci number, and 38 operations for the preliminary computations. \n\n* Space complexity : constant space to keep an array of \n38 Tribonacci numbers.\n<br /> \n<br />\n\n\n---\n#### Approach 3: Performance Optimisation : Dynamic Programming\n\n- Precompute 38 Tribonacci numbers:\n\n    - Initiate an array of precomputed Tribonacci numbers `nums` by zeros\n    and initiate the first three numbers. \n    \n    - Perform the loop for i in a range from 3 to 38.\n    Compute at each step the new Tribonacci number:\n    `nums[i] = helper(i - 1) + helper(i - 2) + helper(i - 3)`. \n        \n- Retrieve needed Tribonacci number from the array of precomputed numbers.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/hMpjNUuB/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"hMpjNUuB\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(1)$$ to retrieve preliminary \ncomputed Tribonacci number, and 38 operations for the preliminary computations. \n\n* Space complexity : constant space to keep an array of \n38 Tribonacci numbers.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "740",
+      "count": 12,
+      "average": 4.917,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "4",
+  "metaData": "{\n  \"name\": \"tribonacci\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

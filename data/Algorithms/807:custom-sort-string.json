@@ -1,0 +1,111 @@
+{
+  "questionId": "807",
+  "questionFrontendId": "791",
+  "boundTopicId": null,
+  "title": "Custom Sort String",
+  "titleSlug": "custom-sort-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p><code>S</code> and <code>T</code> are strings composed of lowercase letters. In <code>S</code>, no letter occurs more than once.</p>\r\n\r\n<p><code>S</code> was sorted in some custom order previously. We want to permute the characters of <code>T</code> so that they match the order that <code>S</code> was sorted. More specifically, if <code>x</code> occurs before <code>y</code> in <code>S</code>, then <code>x</code> should occur before <code>y</code> in the returned string.</p>\r\n\r\n<p>Return any permutation of <code>T</code> (as a string) that satisfies this property.</p>\r\n\r\n<pre>\r\n<strong>Example :</strong>\r\n<strong>Input:</strong> \r\nS = &quot;cba&quot;\r\nT = &quot;abcd&quot;\r\n<strong>Output:</strong> &quot;cbad&quot;\r\n<strong>Explanation:</strong> \r\n&quot;a&quot;, &quot;b&quot;, &quot;c&quot; appear in S, so the order of &quot;a&quot;, &quot;b&quot;, &quot;c&quot; should be &quot;c&quot;, &quot;b&quot;, and &quot;a&quot;. \r\nSince &quot;d&quot; does not appear in S, it can be at any position in T. &quot;dcba&quot;, &quot;cdba&quot;, &quot;cbda&quot; are also valid outputs.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>S</code> has length at most <code>26</code>, and no character is repeated in <code>S</code>.</li>\r\n\t<li><code>T</code> has length at most <code>200</code>.</li>\r\n\t<li><code>S</code> and <code>T</code> consist of lowercase letters only.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 525,
+  "dislikes": 155,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string customSortString(string S, string T) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String customSortString(String S, String T) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def customSortString(self, S, T):\n        \"\"\"\n        :type S: str\n        :type T: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def customSortString(self, S: str, T: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * customSortString(char * S, char * T){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string CustomSortString(string S, string T) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @param {string} T\n * @return {string}\n */\nvar customSortString = function(S, T) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String} t\n# @return {String}\ndef custom_sort_string(s, t)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func customSortString(_ S: String, _ T: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func customSortString(S string, T string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def customSortString(S: String, T: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun customSortString(S: String, T: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn custom_sort_string(s: String, t: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @param String $T\n     * @return String\n     */\n    function customSortString($S, $T) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"47.8K\", \"totalSubmission\": \"74.6K\", \"totalAcceptedRaw\": 47771, \"totalSubmissionRaw\": 74639, \"acRate\": \"64.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "419",
+    "canSeeDetail": true,
+    "url": "/articles/custom-sort-string/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Count and Write [Accepted]\r\n\r\n**Intuition**\r\n\r\nLet's first write to our answer the elements of `T` that occur in `S`, in order of `S`.  After, we'll write any elements of `T` we didn't write.  This obviously keeps all the ordering relationships we wanted.\r\n\r\nIn the second write, the order doesn't matter because those elements aren't in `S`, so there are no ordering relationships these elements have to satisfy.\r\n\r\n**Algorithm**\r\n\r\nThe trick is to count the elements of `T`.  After we have some `count[char] = (the number of occurrences of char in T)`, we can write these elements in the order we want.  The order is `S + (characters not in S in any order)`.\r\n\r\nFor more details on the algorithm, please see the inlined comments in each implementation.\r\n\r\n<iframe src=\"https://leetcode.com/playground/zjAJbUod/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"zjAJbUod\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(S.\\text{length} + T.\\text{length})$$, the time it takes to iterate through `S` and `T`\r\n\r\n* Space Complexity:  $$O(T.\\text{length})$$.  We count at most 26 different lowercase letters, but the final answer has the same length as `T`.\r\n\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "414",
+      "count": 10,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"cba\"\n\"abcd\"",
+  "metaData": "{\r\n  \"name\": \"customSortString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"T\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

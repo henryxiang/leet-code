@@ -1,0 +1,115 @@
+{
+  "questionId": "1049",
+  "questionFrontendId": "1007",
+  "boundTopicId": null,
+  "title": "Minimum Domino Rotations For Equal Row",
+  "titleSlug": "minimum-domino-rotations-for-equal-row",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a row of dominoes, <code>A[i]</code> and <code>B[i]</code> represent the top and bottom halves of the <code>i</code>-th domino.&nbsp; (A domino is a tile with two numbers from 1 to 6 - one on each half of the tile.)</p>\r\n\r\n<p>We may rotate the <code>i</code>-th domino, so that <code>A[i]</code> and <code>B[i]</code> swap values.</p>\r\n\r\n<p>Return the minimum number of rotations so that all the values in <code>A</code> are the same, or all the values in <code>B</code>&nbsp;are the same.</p>\r\n\r\n<p>If it cannot be done, return <code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/08/domino.png\" style=\"height: 161px; width: 200px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[2,1,2,4,2,2]</span>, B = <span id=\"example-input-1-2\">[5,2,6,2,3,2]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\r\n<strong>Explanation: </strong>\r\nThe first figure represents the dominoes as given by A and B: before we do any rotations.\r\nIf we rotate the second and fourth dominoes, we can make every value in the top row equal to 2, as indicated by the second figure.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">[3,5,1,2,3]</span>, B = <span id=\"example-input-2-2\">[3,6,3,3,4]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">-1</span>\r\n<strong>Explanation: </strong>\r\nIn this case, it is not possible to rotate the dominoes to make one row of values equal.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A[i], B[i] &lt;= 6</code></li>\r\n\t<li><code>2 &lt;= A.length == B.length &lt;= 20000</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 369,
+  "dislikes": 120,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "mourya_v",
+      "profileUrl": "/mourya_v/",
+      "avatarUrl": "https://assets.leetcode.com/users/sampreethveguru/avatar_1539707085.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 134}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minDominoRotations(vector<int>& A, vector<int>& B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minDominoRotations(int[] A, int[] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minDominoRotations(self, A, B):\n        \"\"\"\n        :type A: List[int]\n        :type B: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minDominoRotations(self, A: List[int], B: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minDominoRotations(int* A, int ASize, int* B, int BSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinDominoRotations(int[] A, int[] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number[]} B\n * @return {number}\n */\nvar minDominoRotations = function(A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer[]} b\n# @return {Integer}\ndef min_domino_rotations(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minDominoRotations(_ A: [Int], _ B: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minDominoRotations(A []int, B []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minDominoRotations(A: Array[Int], B: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minDominoRotations(A: IntArray, B: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_domino_rotations(a: Vec<i32>, b: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer[] $B\n     * @return Integer\n     */\n    function minDominoRotations($A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"45.8K\", \"totalSubmission\": \"90.5K\", \"totalAcceptedRaw\": 45822, \"totalSubmissionRaw\": 90507, \"acRate\": \"50.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "731",
+    "canSeeDetail": true,
+    "url": "/articles/minimum-domino-rotations-for-equal-row/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Approach 1: Greedy.\r\n\r\n**Intuition**\r\n\r\nLet's pick up an arbitrary `i`th domino element in the configuration. \r\nThe element has two sides, `A[i]` is an upper side \r\nand `B[i]` is a lower side.\r\n\r\n![bla](../Figures/1007/config.png)    \r\n\r\nThere could be three possible situations here\r\n\r\n1 . One could make all elements of `A` row or `B` row \r\nto be the same and equal to `A[i]` value. \r\nFor example, if one picks up the `0`th element, \r\nit's possible to make all elements of `A` row to be equal to `2`.\r\n\r\n![bla](../Figures/1007/s1.png) \r\n\r\n2 . One could make all elements of `A` row or `B` row \r\nto be the same and equal to `B[i]` value. \r\nFor example, if one picks up the `1`th element, \r\nit's possible to make all elements of `B` row to be equal to `2`.\r\n\r\n![bla](../Figures/1007/s2.png)\r\n\r\n3 . It's impossible to make all elements of `A` row or `B` row \r\nto have the same `A[i]` or `B[i]` value. \r\n\r\n![bla](../Figures/1007/s3.png) \r\n\r\n> The third situation means that it's impossible to make all\r\nelements in `A` row or `B` row to be equal. \r\n\r\nYes, the only one domino element was checked here, and still it's\r\nenough because the rotation is the only allowed operation here.\r\n\r\n**Algorithm**\r\n\r\n- Pick up the first element. It has two sides: `A[0]` and `B[0]`.\r\n\r\n- Check if one could make all elements in `A` row or `B` row \r\nto be equal to `A[0]`. \r\nIf yes, return the minimum number of rotations needed.\r\n\r\n- Check if one could make all elements in `A` row or `B` row \r\nto be equal to `B[0]`.\r\nIf yes, return the minimum number of rotations needed.\r\n\r\n- Otherwise return `-1`.\r\n\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/ufpmZwc2/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ufpmZwc2\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$ since here one iterates over the\r\narrays not more than two times.\r\n \r\n* Space complexity : $$\\mathcal{O}(1)$$ since it's a constant \r\nspace solution. \r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "716",
+      "count": 14,
+      "average": 4.571,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,1,2,4,2,2]\n[5,2,6,2,3,2]",
+  "metaData": "{\r\n  \"name\": \"minDominoRotations\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

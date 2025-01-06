@@ -1,0 +1,111 @@
+{
+  "questionId": "944",
+  "questionFrontendId": "908",
+  "boundTopicId": null,
+  "title": "Smallest Range I",
+  "titleSlug": "smallest-range-i",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>A</code> of integers, for each integer <code>A[i]</code> we may choose any <code>x</code> with <code>-K &lt;= x &lt;= K</code>, and add <code>x</code> to <code>A[i]</code>.</p>\r\n\r\n<p>After this process, we have some array <code>B</code>.</p>\r\n\r\n<p>Return the smallest possible difference between the maximum value of <code>B</code>&nbsp;and the minimum value of <code>B</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[1]</span>, K = <span id=\"example-input-1-2\">0</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">0\r\n<strong>Explanation</strong>: B = [1]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">[0,10]</span>, K = <span id=\"example-input-2-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">6\r\n</span><span id=\"example-output-1\"><strong>Explanation</strong>: B = [2,8]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-3-1\">[1,3,6]</span>, K = <span id=\"example-input-3-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">0\r\n</span><span id=\"example-output-1\"><strong>Explanation</strong>: B = [3,3,3] or B = [4,4,4]</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 10000</code></li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 10000</code></li>\r\n\t<li><code>0 &lt;= K &lt;= 10000</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 156,
+  "dislikes": 836,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "aviral935",
+      "profileUrl": "/aviral935/",
+      "avatarUrl": "https://www.gravatar.com/avatar/c649199c0b70f6db2ee4ea601abcd514.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int smallestRangeI(vector<int>& A, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int smallestRangeI(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestRangeI(self, A, K):\n        \"\"\"\n        :type A: List[int]\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestRangeI(self, A: List[int], K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint smallestRangeI(int* A, int ASize, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SmallestRangeI(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number} K\n * @return {number}\n */\nvar smallestRangeI = function(A, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer} k\n# @return {Integer}\ndef smallest_range_i(a, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func smallestRangeI(_ A: [Int], _ K: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestRangeI(A []int, K int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def smallestRangeI(A: Array[Int], K: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun smallestRangeI(A: IntArray, K: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_range_i(a: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer $K\n     * @return Integer\n     */\n    function smallestRangeI($A, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"32.1K\", \"totalSubmission\": \"49.3K\", \"totalAcceptedRaw\": 32124, \"totalSubmissionRaw\": 49330, \"acRate\": \"65.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "567",
+    "canSeeDetail": true,
+    "url": "/articles/smallest-range-i/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Mathematical\n\n**Intuition and Algorithm**\n\nLet `A` be the original array, and `B` be the array after all our modifications.  Towards trying to minimize `max(B) - min(B)`, let's try to minimize `max(B)` and maximize `min(B)` separately.\n\nThe smallest possible value of `max(B)` is `max(A) - K`, as the value `max(A)` cannot go lower.  Similarly, the largest possible value of `min(B)` is `min(A) + K`.  So the quantity `max(B) - min(B)` is at least `ans = (max(A) - K) - (min(A) + K)`.\n\nWe can attain this value (if `ans >= 0`), by the following modifications:\n\n* If $$A[i] \\leq \\min(A) + K$$, then $$B[i] = \\min(A) + K$$\n* Else, if $$A[i] \\geq \\max(A) - K$$, then $$B[i] = \\max(A) - K$$\n* Else, $$B[i] = A[i]$$.\n\nIf `ans < 0`, the best answer we could have is `ans = 0`, also using the same modification.\n\n<iframe src=\"https://leetcode.com/playground/hn3nSh7u/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"hn3nSh7u\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "555",
+      "count": 27,
+      "average": 2.518,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1]\n0",
+  "metaData": "{\r\n  \"name\": \"smallestRangeI\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

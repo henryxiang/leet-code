@@ -1,0 +1,111 @@
+{
+  "questionId": "661",
+  "questionFrontendId": "661",
+  "boundTopicId": null,
+  "title": "Image Smoother",
+  "titleSlug": "image-smoother",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a 2D integer matrix M representing the gray scale of an image, you need to design a smoother to make the gray scale of each cell becomes the average gray scale (rounding down) of all the 8 surrounding cells and itself.  If a cell has less than 8 surrounding cells, then use as many as you can.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b>\r\n[[1,1,1],\r\n [1,0,1],\r\n [1,1,1]]\r\n<b>Output:</b>\r\n[[0, 0, 0],\r\n [0, 0, 0],\r\n [0, 0, 0]]\r\n<b>Explanation:</b>\r\nFor the point (0,0), (0,2), (2,0), (2,2): floor(3/4) = floor(0.75) = 0\r\nFor the point (0,1), (1,0), (1,2), (2,1): floor(5/6) = floor(0.83333333) = 0\r\nFor the point (1,1): floor(8/9) = floor(0.88888889) = 0\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The value in the given matrix is in the range of [0, 255].</li>\r\n<li>The length and width of the given matrix are in the range of [1, 150].</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 205,
+  "dislikes": 919,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Pure Storage\", \"slug\": \"pure-storage\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<int>> imageSmoother(vector<vector<int>>& M) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[][] imageSmoother(int[][] M) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def imageSmoother(self, M):\n        \"\"\"\n        :type M: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def imageSmoother(self, M: List[List[int]]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** imageSmoother(int** M, int MSize, int* MColSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[][] ImageSmoother(int[][] M) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} M\n * @return {number[][]}\n */\nvar imageSmoother = function(M) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} m\n# @return {Integer[][]}\ndef image_smoother(m)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func imageSmoother(_ M: [[Int]]) -> [[Int]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func imageSmoother(M [][]int) [][]int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def imageSmoother(M: Array[Array[Int]]): Array[Array[Int]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun imageSmoother(M: Array<IntArray>): Array<IntArray> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn image_smoother(m: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $M\n     * @return Integer[][]\n     */\n    function imageSmoother($M) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"41.7K\", \"totalSubmission\": \"83.4K\", \"totalAcceptedRaw\": 41668, \"totalSubmissionRaw\": 83449, \"acRate\": \"49.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "327",
+    "canSeeDetail": true,
+    "url": "/articles/image-smoother/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Iterate Through Grid\n\n**Intuition and Algorithm**\n\nFor each cell in the grid, look at the immediate neighbors - up to 9 of them, including the original cell.\n\nThen, we will add the sum of the neighbors into `ans[r][c]` while recording `count`, the number of such neighbors.  The final answer is the sum divided by the count.\n\n<iframe src=\"https://leetcode.com/playground/i8A5ppzu/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"i8A5ppzu\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the number of pixels in our image.  We iterate over every pixel.\n\n* Space Complexity: $$O(N)$$, the size of our answer.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "323",
+      "count": 10,
+      "average": 3.1,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,1,1],[1,0,1],[1,1,1]]",
+  "metaData": "{\r\n  \"name\": \"imageSmoother\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"M\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

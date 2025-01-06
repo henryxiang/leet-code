@@ -1,0 +1,115 @@
+{
+  "questionId": "910",
+  "questionFrontendId": "878",
+  "boundTopicId": null,
+  "title": "Nth Magical Number",
+  "titleSlug": "nth-magical-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A positive integer&nbsp;is <em>magical</em>&nbsp;if it is divisible by either <font face=\"monospace\">A</font>&nbsp;or <font face=\"monospace\">B</font>.</p>\r\n\r\n<p>Return the <font face=\"monospace\">N</font>-th magical number.&nbsp; Since the answer may be very large, <strong>return it modulo </strong><code>10^9 + 7</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-1-1\">1</span>, A = <span id=\"example-input-1-2\">2</span>, B = <span id=\"example-input-1-3\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-2-1\">4</span>, A = <span id=\"example-input-2-2\">2</span>, B = <span id=\"example-input-2-3\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">6</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-3-1\">5</span>, A = <span id=\"example-input-3-2\">2</span>, B = <span id=\"example-input-3-3\">4</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">10</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-4-1\">3</span>, A = <span id=\"example-input-4-2\">6</span>, B = <span id=\"example-input-4-3\">4</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">8</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= N&nbsp;&lt;= 10^9</code></li>\r\n\t<li><code>2 &lt;= A&nbsp;&lt;= 40000</code></li>\r\n\t<li><code>2 &lt;= B&nbsp;&lt;= 40000</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 147,
+  "dislikes": 45,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "bhardwajb347",
+      "profileUrl": "/bhardwajb347/",
+      "avatarUrl": "https://assets.leetcode.com/users/bhardwajb347/avatar_1525776460.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int nthMagicalNumber(int N, int A, int B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int nthMagicalNumber(int N, int A, int B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def nthMagicalNumber(self, N, A, B):\n        \"\"\"\n        :type N: int\n        :type A: int\n        :type B: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def nthMagicalNumber(self, N: int, A: int, B: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint nthMagicalNumber(int N, int A, int B){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NthMagicalNumber(int N, int A, int B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @param {number} A\n * @param {number} B\n * @return {number}\n */\nvar nthMagicalNumber = function(N, A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} a\n# @param {Integer} b\n# @return {Integer}\ndef nth_magical_number(n, a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func nthMagicalNumber(_ N: Int, _ A: Int, _ B: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func nthMagicalNumber(N int, A int, B int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def nthMagicalNumber(N: Int, A: Int, B: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun nthMagicalNumber(N: Int, A: Int, B: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn nth_magical_number(n: i32, a: i32, b: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @param Integer $A\n     * @param Integer $B\n     * @return Integer\n     */\n    function nthMagicalNumber($N, $A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.2K\", \"totalSubmission\": \"26.2K\", \"totalAcceptedRaw\": 7171, \"totalSubmissionRaw\": 26155, \"acRate\": \"27.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "522",
+    "canSeeDetail": true,
+    "url": "/articles/nth-magical-number/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Mathematical\n\n**Intuition and Algorithm**\n\nLet's try to count to the $$N$$-th magical number mathematically.\n\nFirst, the pattern of magical numbers repeats.  Let $$L$$ be the least common multiple of $$A$$ and $$B$$.  If $$X \\leq L$$ is magical, then $$X + L$$ is magical, because (for example) $$A \\| X$$ and $$A \\| L$$ implies $$A \\| (X + L)$$, and similarly if $$B$$ were the divisor.\n\nThere are $$M = \\frac{L}{A} + \\frac{L}{B} - 1$$ magical numbers less than or equal to $$L$$: $$\\frac{L}{A}$$ of them are divisible by $$A$$, $$\\frac{L}{B}$$ of them are divisible by $$B$$, and $$1$$ of them is divisible by both.  So instead of counting one at a time, we can count by $$M$$ at a time.\n\nNow, suppose $$N = M*q + r$$ (with $$r < M$$).  The first $$L*q$$ numbers contain $$M*q$$ magical numbers, and within the next numbers $$(L*q + 1, L*q + 2, \\cdots)$$ we want to find $$r$$ more magical ones.\n\nFor this task, we can use brute force.  The next magical number (less $$L*q$$) will either be $$A$$ or $$B$$.  If for example it is $$A$$, then the next number will either be $$2*A$$ or $$B$$, and so on.\n\nIf the $$r$$-th such magical number is $$Y$$, then the final answer is $$L*q + Y$$.  Care must also be taken in the case that $$r$$ is $$0$$.\n\n<iframe src=\"https://leetcode.com/playground/noAa9JNU/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"noAa9JNU\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(A+B)$$, assuming a model where integer math operations are $$O(1)$$.  The calculation of `q * L` is $$O(1)$$.  The calculation of the $$r$$-th magical number after $$q*M$$ is $$O(M)$$ which is $$O(A+B)$$.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Binary Search\n\n**Intuition**\n\nThe number of magical numbers less than or equal to $$x$$ is a monotone increasing function in $$x$$, so we can binary search for the answer.\n\n**Algorithm**\n\nSay $$L = \\text{lcm}(A, B)$$, the *least common multiple* of $$A$$ and $$B$$; and let $$f(x)$$ be the number of magical numbers less than or equal to $$x$$.  A well known result says that $$L = \\frac{A * B}{\\text{gcd}(A, B)}$$, and that we can calculate the function $$\\gcd$$.  For more information on least common multiples and greatest common divisors, please visit [Wikipedia - Lowest Common Multiple](https://en.wikipedia.org/wiki/Least_common_multiple).\n\nThen $$f(x) = \\lfloor \\frac{x}{A} \\rfloor + \\lfloor \\frac{x}{B} \\rfloor - \\lfloor \\frac{x}{L} \\rfloor$$.  Why?  There are $$\\lfloor \\frac{x}{A} \\rfloor$$ numbers $$A,  2A,  3A,  \\cdots$$ that are divisible by $$A$$, there are $$\\lfloor \\frac{x}{B} \\rfloor$$ numbers divisible by $$B$$, and we need to subtract the $$\\lfloor \\frac{x}{L} \\rfloor$$ numbers divisible by $$A$$ and $$B$$ that we double counted.\n\nFinally, the answer must be between $$0$$ and $$N * \\max(A, B)$$.  Without loss of generality, suppose $$A \\geq B$$, so that it remains to show\n\n$$\n\\lfloor \\frac{N * \\max(A, B)}{A} \\rfloor + \\lfloor \\frac{N * \\max(A, B)}{B} \\rfloor - \\lfloor \\frac{N * \\max(A, B)}{\\text{lcm}(A, B)} \\rfloor \\geq N\n$$\n\n$$\n\\Leftrightarrow \\lfloor \\frac{N*A}{A} \\rfloor + \\lfloor \\frac{N*A}{B} \\rfloor - \\lfloor \\frac{N*A*\\gcd(A, B)}{A*B} \\rfloor \\geq N\n$$\n\n$$\n\\Leftrightarrow \\lfloor \\frac{N*A}{B} \\rfloor \\geq \\lfloor \\frac{N*\\gcd(A, B)}{B} \\rfloor\n$$\n\n$$\n\\Leftrightarrow A \\geq \\gcd(A, B)\n$$\n\nas desired.\n\nAfterwards, the binary search on $$f$$ is straightforward.  For more information on binary search, please visit [[LeetCode Explore - Binary Search]](https://leetcode.com/explore/learn/card/binary-search/).\n\n<iframe src=\"https://leetcode.com/playground/3erxMBCQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"3erxMBCQ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\log (N * \\max(A, B)))$$.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "515",
+      "count": 13,
+      "average": 4.077,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "1\n2\n3",
+  "metaData": "{\r\n  \"name\": \"nthMagicalNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

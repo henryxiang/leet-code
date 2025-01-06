@@ -1,0 +1,53 @@
+{
+  "questionId": "1327",
+  "questionFrontendId": "1204",
+  "boundTopicId": null,
+  "title": "Last Person to Fit in the Elevator",
+  "titleSlug": "last-person-to-fit-in-the-elevator",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Queue</code></p>\r\n\r\n<pre>\r\n+-------------+---------+\r\n| Column Name | Type    |\r\n+-------------+---------+\r\n| person_id   | int     |\r\n| person_name | varchar |\r\n| weight      | int     |\r\n| turn        | int     |\r\n+-------------+---------+\r\nperson_id is the primary key column for this table.\r\nThis table has the information about all people waiting for an elevator.\r\nThe <code>person_id</code>&nbsp;and <code>turn</code> columns will contain all numbers from 1 to n, where n is the number of rows in the table.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>The maximum weight the elevator can hold is <strong>1000</strong>.</p>\r\n\r\n<p>Write an SQL query to find the&nbsp;<code>person_name</code> of the last person who will fit in the elevator without exceeding the weight limit. It is guaranteed that the person who is&nbsp;first in the queue can fit in the elevator.</p>\r\n\r\n<p>The query result format is in the following example:</p>\r\n\r\n<pre>\r\nQueue table\r\n+-----------+-------------------+--------+------+\r\n| person_id | person_name       | weight | turn |\r\n+-----------+-------------------+--------+------+\r\n| 5         | George Washington | 250    | 1    |\r\n| 3         | John Adams        | 350    | 2    |\r\n| 6         | Thomas Jefferson  | 400    | 3    |\r\n| 2         | Will Johnliams    | 200    | 4    |\r\n| 4         | Thomas Jefferson  | 175    | 5    |\r\n| 1         | James Elephant    | 500    | 6    |\r\n+-----------+-------------------+--------+------+\r\n\r\nResult table\r\n+-------------------+\r\n| person_name       |\r\n+-------------------+\r\n| Thomas Jefferson  |\r\n+-------------------+\r\n\r\nQueue table is ordered by turn in the example for simplicity.\r\nIn the example George Washington(id 5), John Adams(id 3) and Thomas Jefferson(id 6) will enter the elevator as their weight sum is 250 + 350 + 400 = 1000.\r\nThomas Jefferson(id 6) is the last person to fit in the elevator because he has the last turn in these three people.\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 32,
+  "dislikes": 2,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\r\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\r\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\r\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.8K\", \"totalSubmission\": \"4K\", \"totalAcceptedRaw\": 2768, \"totalSubmissionRaw\": 3992, \"acRate\": \"69.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Queue\":[\"person_id\",\"person_name\",\"weight\",\"turn\"]},\"rows\":{\"Queue\":[[5,\"George Washington\",250,1],[4,\"Thomas Jefferson\",175,5],[3,\"John Adams\",350,2],[6,\"Thomas Jefferson\",400,3],[1,\"James Elephant\",500,6],[2,\"Will Johnliams\",200,4]]}}",
+  "metaData": "{\r\n  \"manual\": false,\r\n  \"mysql\": [\r\n    \"Create table If Not Exists Queue (person_id int, person_name varchar(30), weight int, turn int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"create table Queue (person_id int, person_name varchar(30), weight int, turn int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"create table Queue (person_id int, person_name varchar(30), weight int, turn int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Queue (person_id int, person_name varchar(30), weight int, turn int)",
+    "Truncate table Queue",
+    "insert into Queue (person_id, person_name, weight, turn) values ('5', 'George Washington', '250', '1')",
+    "insert into Queue (person_id, person_name, weight, turn) values ('4', 'Thomas Jefferson', '175', '5')",
+    "insert into Queue (person_id, person_name, weight, turn) values ('3', 'John Adams', '350', '2')",
+    "insert into Queue (person_id, person_name, weight, turn) values ('6', 'Thomas Jefferson', '400', '3')",
+    "insert into Queue (person_id, person_name, weight, turn) values ('1', 'James Elephant', '500', '6')",
+    "insert into Queue (person_id, person_name, weight, turn) values ('2', 'Will Johnliams', '200', '4')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

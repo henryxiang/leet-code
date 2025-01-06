@@ -1,0 +1,99 @@
+{
+  "questionId": "520",
+  "questionFrontendId": "520",
+  "boundTopicId": null,
+  "title": "Detect Capital",
+  "titleSlug": "detect-capital",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a word, you need to judge whether the usage of capitals in it is right or not.</p>\r\n\r\n<p>We define the usage of capitals in a word to be right when one of the following cases holds:</p>\r\n\r\n<ol>\r\n\t<li>All letters in this word are capitals, like &quot;USA&quot;.</li>\r\n\t<li>All letters in this word are not capitals, like &quot;leetcode&quot;.</li>\r\n\t<li>Only the first letter in this word is capital, like &quot;Google&quot;.</li>\r\n</ol>\r\nOtherwise, we define that this word doesn&#39;t use capitals in a right way.\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;USA&quot;\r\n<b>Output:</b> True\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;FlaG&quot;\r\n<b>Output:</b> False\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b> The input will be a non-empty word consisting of uppercase and lowercase latin letters.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 364,
+  "dislikes": 229,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool detectCapitalUse(string word) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean detectCapitalUse(String word) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def detectCapitalUse(self, word):\n        \"\"\"\n        :type word: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def detectCapitalUse(self, word: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool detectCapitalUse(char * word){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool DetectCapitalUse(string word) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} word\n * @return {boolean}\n */\nvar detectCapitalUse = function(word) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} word\r\n# @return {Boolean}\r\ndef detect_capital_use(word)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func detectCapitalUse(_ word: String) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func detectCapitalUse(word string) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def detectCapitalUse(word: String): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun detectCapitalUse(word: String): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn detect_capital_use(word: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $word\n     * @return Boolean\n     */\n    function detectCapitalUse($word) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"97.9K\", \"totalSubmission\": \"185.1K\", \"totalAcceptedRaw\": 97856, \"totalSubmissionRaw\": 185121, \"acRate\": \"52.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"USA\"",
+  "metaData": "{\r\n  \"name\": \"detectCapitalUse\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"word\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

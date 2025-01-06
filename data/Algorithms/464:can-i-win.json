@@ -1,0 +1,103 @@
+{
+  "questionId": "464",
+  "questionFrontendId": "464",
+  "boundTopicId": null,
+  "title": "Can I Win",
+  "titleSlug": "can-i-win",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In the \"100 game,\" two players take turns adding, to a running total, any integer from 1..10. The player who first causes the running total to reach or exceed 100 wins. </p>\r\n\r\n<p>What if we change the game so that players cannot re-use integers? </p>\r\n\r\n<p>For example, two players might take turns drawing from a common pool of numbers of 1..15 without replacement until they reach a total >= 100.</p>\r\n\r\n<p>Given an integer <code>maxChoosableInteger</code> and another integer <code>desiredTotal</code>, determine if the first player to move can force a win, assuming both players play optimally. </p>\r\n\r\n<p>You can always assume that <code>maxChoosableInteger</code> will not be larger than 20 and <code>desiredTotal</code> will not be larger than 300.\r\n</p>\r\n\r\n<p><b>Example</b>\r\n<pre>\r\n<b>Input:</b>\r\nmaxChoosableInteger = 10\r\ndesiredTotal = 11\r\n\r\n<b>Output:</b>\r\nfalse\r\n\r\n<b>Explanation:</b>\r\nNo matter which integer the first player choose, the first player will lose.\r\nThe first player can choose an integer from 1 up to 10.\r\nIf the first player choose 1, the second player can only choose integers from 2 up to 10.\r\nThe second player will win by choosing 10 and get a total = 11, which is >= desiredTotal.\r\nSame with other integers chosen by the first player, the second player will always win.\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 758,
+  "dislikes": 133,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Flip Game II\", \"titleSlug\": \"flip-game-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Guess Number Higher or Lower II\", \"titleSlug\": \"guess-number-higher-or-lower-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Predict the Winner\", \"titleSlug\": \"predict-the-winner\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "reputation21",
+      "profileUrl": "/reputation21/",
+      "avatarUrl": "https://www.gravatar.com/avatar/4dcb427b8212d141f6b4f193049a9547.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Minimax",
+      "slug": "minimax"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool canIWin(int maxChoosableInteger, int desiredTotal) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canIWin(int maxChoosableInteger, int desiredTotal) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canIWin(self, maxChoosableInteger, desiredTotal):\n        \"\"\"\n        :type maxChoosableInteger: int\n        :type desiredTotal: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canIWin(self, maxChoosableInteger: int, desiredTotal: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool canIWin(int maxChoosableInteger, int desiredTotal){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CanIWin(int maxChoosableInteger, int desiredTotal) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} maxChoosableInteger\n * @param {number} desiredTotal\n * @return {boolean}\n */\nvar canIWin = function(maxChoosableInteger, desiredTotal) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} max_choosable_integer\n# @param {Integer} desired_total\n# @return {Boolean}\ndef can_i_win(max_choosable_integer, desired_total)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canIWin(_ maxChoosableInteger: Int, _ desiredTotal: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canIWin(maxChoosableInteger int, desiredTotal int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canIWin(maxChoosableInteger: Int, desiredTotal: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canIWin(maxChoosableInteger: Int, desiredTotal: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_i_win(max_choosable_integer: i32, desired_total: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $maxChoosableInteger\n     * @param Integer $desiredTotal\n     * @return Boolean\n     */\n    function canIWin($maxChoosableInteger, $desiredTotal) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"43.9K\", \"totalSubmission\": \"154.9K\", \"totalAcceptedRaw\": 43881, \"totalSubmissionRaw\": 154945, \"acRate\": \"28.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "10\n11",
+  "metaData": "{\r\n  \"name\": \"canIWin\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"maxChoosableInteger\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"desiredTotal\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

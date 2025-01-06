@@ -1,0 +1,111 @@
+{
+  "questionId": "852",
+  "questionFrontendId": "825",
+  "boundTopicId": null,
+  "title": "Friends Of Appropriate Ages",
+  "titleSlug": "friends-of-appropriate-ages",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Some people will make friend requests. The&nbsp;list of their ages is given and&nbsp;<code>ages[i]</code>&nbsp;is the age of the&nbsp;ith person.&nbsp;</p>\r\n\r\n<p>Person A will NOT friend request person B (B != A) if any of the following conditions are true:</p>\r\n\r\n<ul>\r\n\t<li><code>age[B]&nbsp;&lt;= 0.5 * age[A]&nbsp;+ 7</code></li>\r\n\t<li><code>age[B]&nbsp;&gt; age[A]</code></li>\r\n\t<li><code>age[B]&nbsp;&gt; 100 &amp;&amp;&nbsp;age[A]&nbsp;&lt; 100</code></li>\r\n</ul>\r\n\r\n<p>Otherwise, A will friend request B.</p>\r\n\r\n<p>Note that if&nbsp;A requests B, B does not necessarily request A.&nbsp; Also, people will not friend request themselves.</p>\r\n\r\n<p>How many total friend requests are made?</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[16,16]\r\n<strong>Output: </strong>2\r\n<strong>Explanation: </strong>2 people friend request each other.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[16,17,18]\r\n<strong>Output: </strong>2\r\n<strong>Explanation: </strong>Friend requests are made 17 -&gt; 16, 18 -&gt; 17.</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[20,30,100,110,120]\r\n<strong>Output: </strong>\r\n<strong>Explanation: </strong>Friend requests are made 110 -&gt; 100, 120 -&gt; 110, 120 -&gt; 100.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Notes:</p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= ages.length&nbsp;&lt;= 20000</code>.</li>\r\n\t<li><code>1 &lt;= ages[i] &lt;= 120</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 233,
+  "dislikes": 498,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 7}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numFriendRequests(vector<int>& ages) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numFriendRequests(int[] ages) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numFriendRequests(self, ages):\n        \"\"\"\n        :type ages: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numFriendRequests(self, ages: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numFriendRequests(int* ages, int agesSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumFriendRequests(int[] ages) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} ages\n * @return {number}\n */\nvar numFriendRequests = function(ages) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} ages\n# @return {Integer}\ndef num_friend_requests(ages)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numFriendRequests(_ ages: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numFriendRequests(ages []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numFriendRequests(ages: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numFriendRequests(ages: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_friend_requests(ages: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $ages\n     * @return Integer\n     */\n    function numFriendRequests($ages) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"25.8K\", \"totalSubmission\": \"63.7K\", \"totalAcceptedRaw\": 25814, \"totalSubmissionRaw\": 63717, \"acRate\": \"40.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "458",
+    "canSeeDetail": true,
+    "url": "/articles/friends-of-appropriate-ages/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Counting [Accepted]\n\n**Intuition**\n\nInstead of processing all `20000` people, we can process pairs of `(age, count)` representing how many people are that age.  Since there are only 120 possible ages, this is a much faster loop.\n\n**Algorithm**\n\nFor each pair `(ageA, countA)`, `(ageB, countB)`, if the conditions are satisfied with respect to age, then `countA * countB` pairs of people made friend requests.\n\nIf `ageA == ageB`, then we overcounted: we should have `countA * (countA - 1)` pairs of people making friend requests instead, as you cannot friend request yourself.\n\n<iframe src=\"https://leetcode.com/playground/hhWFMLmx/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"hhWFMLmx\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\mathcal{A}^2 + N)$$, where $$N$$ is the number of people, and $$\\mathcal{A}$$ is the number of ages.\n\n* Space Complexity: $$O(\\mathcal{A})$$, the space used to store `count`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "453",
+      "count": 35,
+      "average": 1.8,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[16,16]",
+  "metaData": "{\r\n  \"name\": \"numFriendRequests\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"ages\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

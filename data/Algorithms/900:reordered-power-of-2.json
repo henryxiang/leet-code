@@ -1,0 +1,111 @@
+{
+  "questionId": "900",
+  "questionFrontendId": "869",
+  "boundTopicId": null,
+  "title": "Reordered Power of 2",
+  "titleSlug": "reordered-power-of-2",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Starting with a positive integer <code>N</code>, we reorder the digits in any order (including the original order) such that the leading digit is not zero.</p>\r\n\r\n<p>Return <code>true</code>&nbsp;if and only if we can do this in a way such that the resulting number is a power of 2.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">10</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">false</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">16</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">24</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">false</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-5-1\">46</span>\r\n<strong>Output: </strong><span id=\"example-output-5\">true</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= N &lt;= 10^9</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 161,
+  "dislikes": 76,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool reorderedPowerOf2(int N) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean reorderedPowerOf2(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def reorderedPowerOf2(self, N):\n        \"\"\"\n        :type N: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def reorderedPowerOf2(self, N: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool reorderedPowerOf2(int N){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ReorderedPowerOf2(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @return {boolean}\n */\nvar reorderedPowerOf2 = function(N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Boolean}\ndef reordered_power_of2(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func reorderedPowerOf2(_ N: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func reorderedPowerOf2(N int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def reorderedPowerOf2(N: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun reorderedPowerOf2(N: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn reordered_power_of2(n: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @return Boolean\n     */\n    function reorderedPowerOf2($N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11.7K\", \"totalSubmission\": \"22.6K\", \"totalAcceptedRaw\": 11670, \"totalSubmissionRaw\": 22562, \"acRate\": \"51.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "508",
+    "canSeeDetail": true,
+    "url": "/articles/reordered-power-of-2/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Permutations\n\n**Intuition**\n\nFor each permutation of the digits of `N`, let's check if that permutation is a power of 2.\n\n**Algorithm**\n\nThis approach has two steps: how will we generate the permutations of the digits, and how will we check that the permutation represents a power of 2?\n\nTo generate permutations of the digits, we place any digit into the first position (`start = 0`), then any of the remaining digits into the second position (`start = 1`), and so on.  In Python, we can use the builtin function `itertools.permutations`.\n\nTo check whether a permutation represents a power of 2, we check that there is no leading zero, and divide out all factors of 2.  If the result is `1` (that is, it contained no other factors besides `2`), then it was a power of 2.  In Python, we can use the check `bin(N).count('1') == 1`.\n\n\n<iframe src=\"https://leetcode.com/playground/jfG2dxr5/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"jfG2dxr5\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O((\\log N)! * \\log N)$$.  Note that $$\\log N$$ is the number of digits in the binary representation of $$N$$.  For each of $$(\\log N)!$$ permutations of the digits of $$N$$, we need to check that it is a power of 2 in $$O(\\log N)$$ time.\n\n* Space Complexity:  $$O(\\log N)$$, the space used by `A` (or `cand` in Python).\n<br />\n<br />\n\n\n---\n#### Approach 2: Counting\n\n**Intuition and Algorithm**\n\nWe can check whether two numbers have the same digits by comparing the *count* of their digits.  For example, 338 and 833 have the same digits because they both have exactly two 3's and one 8.\n\nSince $$N$$ could only be a power of 2 with 9 digits or less (namely, $$2^0, 2^1, \\cdots, 2^29$$), we can just check whether $$N$$ has the same digits as any of these possibilities.\n\n<iframe src=\"https://leetcode.com/playground/ZV2nPKdj/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"ZV2nPKdj\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\log^2 N)$$.  There are $$\\log N$$ different candidate powers of 2, and each comparison has $$O(\\log N)$$ time complexity.\n\n* Space Complexity:  $$O(\\log N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "501",
+      "count": 8,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "1",
+  "metaData": "{\r\n  \"name\": \"reorderedPowerOf2\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

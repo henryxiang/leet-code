@@ -1,0 +1,113 @@
+{
+  "questionId": "27",
+  "questionFrontendId": "27",
+  "boundTopicId": null,
+  "title": "Remove Element",
+  "titleSlug": "remove-element",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <em>nums</em> and a value <em>val</em>, remove all instances of that value <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\"><strong>in-place</strong></a> and return the new length.</p>\r\n\r\n<p>Do not allocate extra space for another array, you must do this by <strong>modifying the input array <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\">in-place</a></strong> with O(1) extra memory.</p>\r\n\r\n<p>The order of elements can be changed. It doesn&#39;t matter what you leave beyond the new length.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\nGiven <em>nums</em> = <strong>[3,2,2,3]</strong>, <em>val</em> = <strong>3</strong>,\r\n\r\nYour function should return length = <strong>2</strong>, with the first two elements of <em>nums</em> being <strong>2</strong>.\r\n\r\nIt doesn&#39;t matter what you leave beyond the returned length.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\nGiven <em>nums</em> = <strong>[0,1,2,2,3,0,4,2]</strong>, <em>val</em> = <strong>2</strong>,\r\n\r\nYour function should return length = <strong><code>5</code></strong>, with the first five elements of <em><code>nums</code></em> containing&nbsp;<strong><code>0</code></strong>, <strong><code>1</code></strong>, <strong><code>3</code></strong>, <strong><code>0</code></strong>, and&nbsp;<strong>4</strong>.\r\n\r\nNote that the order of those five elements can be arbitrary.\r\n\r\nIt doesn&#39;t matter what values are set beyond&nbsp;the returned length.</pre>\r\n\r\n<p><strong>Clarification:</strong></p>\r\n\r\n<p>Confused why the returned value is an integer but your answer is an array?</p>\r\n\r\n<p>Note that the input array is passed in by <strong>reference</strong>, which means modification to the input array will be known to the caller as well.</p>\r\n\r\n<p>Internally you can think of this:</p>\r\n\r\n<pre>\r\n// <strong>nums</strong> is passed in by reference. (i.e., without making a copy)\r\nint len = removeElement(nums, val);\r\n\r\n// any modification to <strong>nums</strong> in your function would be known by the caller.\r\n// using the length returned by your function, it prints the first <strong>len</strong> elements.\r\nfor (int i = 0; i &lt; len; i++) {\r\n&nbsp; &nbsp; print(nums[i]);\r\n}</pre>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1064,
+  "dislikes": 2226,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Remove Duplicates from Sorted Array\", \"titleSlug\": \"remove-duplicates-from-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Remove Linked List Elements\", \"titleSlug\": \"remove-linked-list-elements\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Move Zeroes\", \"titleSlug\": \"move-zeroes\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int removeElement(vector<int>& nums, int val) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int removeElement(int[] nums, int val) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def removeElement(self, nums, val):\n        \"\"\"\n        :type nums: List[int]\n        :type val: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def removeElement(self, nums: List[int], val: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint removeElement(int* nums, int numsSize, int val){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int RemoveElement(int[] nums, int val) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} val\n * @return {number}\n */\nvar removeElement = function(nums, val) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} val\n# @return {Integer}\ndef remove_element(nums, val)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func removeElement(_ nums: inout [Int], _ val: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func removeElement(nums []int, val int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def removeElement(nums: Array[Int], `val`: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun removeElement(nums: IntArray, `val`: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $val\n     * @return Integer\n     */\n    function removeElement(&$nums, $val) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"504.5K\", \"totalSubmission\": \"1.1M\", \"totalAcceptedRaw\": 504474, \"totalSubmissionRaw\": 1088530, \"acRate\": \"46.3%\"}",
+  "hints": [
+    "The problem statement clearly asks us to modify the array in-place and it also says that the element beyond the new length of the array can be anything. Given an element, we need to remove all the occurrences of it from the array. We don't technically need to <b>remove</b> that element per-say, right?",
+    "We can move all the occurrences of this element to the end of the array. Use two pointers!\r\n<br><img src=\"https://assets.leetcode.com/uploads/2019/10/20/hint_remove_element.png\" width=\"500\"/>",
+    "Yet another direction of thought is to consider the elements to be removed as non-existent. In a single pass, if we keep copying the visible elements in-place, that should also solve this problem for us."
+  ],
+  "solution": {
+    "id": "22",
+    "canSeeDetail": true,
+    "url": "/articles/remove-element/",
+    "content": "[TOC]\n\n## Summary\n\nThis is a pretty easy problem, but one may get confused by the term \"in-place\" and think it is impossible to remove an element from the array without making a copy of the array.\n\n## Hints\n\n1. Try two pointers.\n2. Did you use the fact that the order of elements can be changed?\n3. What happens when the elements to remove are rare?\n\n## Solution\n---\n#### Approach 1: Two Pointers\n\n**Intuition**\n\nSince this question is asking us to remove all elements of the given value in-place, we have to handle it with $$O(1)$$ extra space. How to solve it? We can keep two pointers $$i$$ and $$j$$, where $$i$$ is the slow-runner while $$j$$ is the fast-runner.\n\n**Algorithm**\n\nWhen $$nums[j]$$ equals to the given value, skip this element by incrementing $$j$$. As long as $$nums[j] \\neq val$$, we copy $$nums[j]$$ to $$nums[i]$$ and increment both indexes at the same time. Repeat the process until $$j$$ reaches the end of the array and the new length is $$i$$.\n\nThis solution is very similar to the solution to [Remove Duplicates from Sorted Array](https://leetcode.com/articles/remove-duplicates-from-sorted-array/).\n\n<iframe src=\"https://leetcode.com/playground/5ypGn6XG/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"5ypGn6XG\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity : $$O(n)$$.\nAssume the array has a total of $$n$$ elements, both $$i$$ and $$j$$ traverse at most $$2n$$ steps.\n\n* Space complexity : $$O(1)$$.\n<br />\n<br />\n---\n\n#### Approach 2: Two Pointers - when elements to remove are rare\n\n**Intuition**\n\nNow consider cases where the array contains few elements to remove. For example, $$nums = [1,2,3,5,4], val = 4$$. The previous algorithm will do unnecessary copy operation of the first four elements. Another example is $$nums = [4,1,2,3,5], val = 4$$. It seems unnecessary to move elements $$[1,2,3,5]$$ one step left as the problem description mentions that the order of elements could be changed.\n\n**Algorithm**\n\nWhen we encounter $$nums[i] = val$$, we can swap the current element out with the last element and dispose the last one. This essentially reduces the array's size by 1.\n\nNote that the last element that was swapped in could be the value you want to remove itself. But don't worry, in the next iteration we will still check this element.\n\n<iframe src=\"https://leetcode.com/playground/bNr9hpND/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"bNr9hpND\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity : $$O(n)$$.\nBoth $$i$$ and $$n$$ traverse at most $$n$$ steps. In this approach, the number of assignment operations is equal to the number of elements to remove. So it is more efficient if elements to remove are rare.\n\n* Space complexity : $$O(1)$$.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "20",
+      "count": 120,
+      "average": 4.542,
+      "userRating": null
+    }
+  },
+  "status": "ac",
+  "sampleTestCase": "[3,2,2,3]\n3",
+  "metaData": "{\r\n  \"name\": \"removeElement\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"val\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  },\r\n  \"output\": {\r\n    \"paramindex\": 0,\r\n    \"size\": \"ret\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

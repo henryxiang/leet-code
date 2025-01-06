@@ -1,0 +1,114 @@
+{
+  "questionId": "1060",
+  "questionFrontendId": "1062",
+  "boundTopicId": null,
+  "title": "Longest Repeating Substring",
+  "titleSlug": "longest-repeating-substring",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>S</code>, find out the length of the longest repeating substring(s). Return <code>0</code> if no repeating substring exists.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;abcd&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">0</span>\r\n<strong>Explanation: </strong>There is no repeating substring.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">&quot;abbaba&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">2</span>\r\n<strong>Explanation: </strong>The longest repeating substrings are &quot;ab&quot; and &quot;ba&quot;, each of which occurs twice.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">&quot;aabcaabdaab&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">3</span>\r\n<strong>Explanation: </strong>The longest repeating substring is &quot;aab&quot;, which occurs <code>3</code> times.\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">&quot;aaaaa&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">4</span>\r\n<strong>Explanation: </strong>The longest repeating substring is &quot;aaaa&quot;, which occurs twice.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>The string <code>S</code> consists of only lowercase English letters from <code>&#39;a&#39;</code> - <code>&#39;z&#39;</code>.</li>\r\n\t<li><code>1 &lt;= S.length &lt;= 1500</code></li>\r\n</ol>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 101,
+  "dislikes": 6,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ngoc_lam",
+      "profileUrl": "/ngoc_lam/",
+      "avatarUrl": "https://assets.leetcode.com/users/ngoc_lam/avatar_1528594557.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int longestRepeatingSubstring(string S) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestRepeatingSubstring(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestRepeatingSubstring(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestRepeatingSubstring(self, S: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint longestRepeatingSubstring(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int LongestRepeatingSubstring(string S) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {number}\n */\nvar longestRepeatingSubstring = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @return {Integer}\r\ndef longest_repeating_substring(s)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func longestRepeatingSubstring(_ S: String) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestRepeatingSubstring(S string) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def longestRepeatingSubstring(S: String): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun longestRepeatingSubstring(S: String): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_repeating_substring(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return Integer\n     */\n    function longestRepeatingSubstring($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.2K\", \"totalSubmission\": \"8K\", \"totalAcceptedRaw\": 4250, \"totalSubmissionRaw\": 7976, \"acRate\": \"53.3%\"}",
+  "hints": [
+    "Generate all substrings in O(N^2) time with hashing.",
+    "Choose those hashing of strings with the largest length."
+  ],
+  "solution": {
+    "id": "753",
+    "canSeeDetail": true,
+    "url": "/articles/longest-repeating-substring/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Split into two subtasks\r\n\r\nLet's focus here on the solutions which are performing better\r\nthan naive $$\\mathcal{O}(N^2)$$ at least in the best/average cases.  \r\n\r\nHere we have \"two in one\" problem :\r\n\r\n1. Perform a search by a substring length in the interval from 1 to N.\r\n\r\n2. Check if there is a duplicate substring of a given length L.\r\n\r\n**Subtask one : Binary search by a substring length**\r\n\r\nA naive solution would be to check all possible string length \r\none by one starting from N - 1: \r\nif there is a duplicate substring of length N - 1, then of length N - 2, etc. \r\nNote that if there is a duplicate substring of length k, that means\r\nthat there is a duplicate substring of length k - 1. \r\nHence one could use a binary search by string length here,\r\nand have the first problem solved in $$\\mathcal{O}(\\log N)$$ time. \r\n\r\n![pic](../Figures/1062/binary.png)\r\n\r\nThe binary search code is quite standard and we will use it here\r\nfor all approaches to focus on much more interesting subtask number two.\r\n\r\n<iframe src=\"https://leetcode.com/playground/mvGvtSoJ/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"mvGvtSoJ\"></iframe>\r\n\r\n**Subtask two : Check if there is a duplicate substring of length L**\r\n\r\nWe will discuss here three different ideas how to proceed.\r\nThey are all based on sliding window + hashset, \r\nthough their performance and space consumption are quite different. \r\n\r\n1. Linear-time slice + hashset of already seen strings.\r\n$$\\mathcal{O}((N - L) L)$$ time complexity and \r\nhuge space consumption in the case of large strings. \r\n\r\n2. Linear-time slice + hashset of _hashes_ of already seen strings. \r\n$$\\mathcal{O}((N - L) L)$$ time complexity and \r\nmoderate space consumption even in the case of large strings. \r\n\r\n3. Rabin-Karp = constant-time slice + \r\nhashset of _hashes_ of already seen strings.\r\nHashes are computed with the rolling hash algorithm.\r\n$$\\mathcal{O}(N - L)$$ time complexity and \r\nmoderate space consumption even in the case of large strings.\r\n\r\n![pic](../Figures/1062/algorithms.png)\r\n\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Binary Search + Hashset of Already Seen Strings\r\n\r\nThe idea is straightforward : \r\n\r\n- Move a sliding window of length L along the string of length N.\r\n \r\n- Check if the string in the sliding window\r\nis in the hashset of already seen strings. \r\n\r\n    - If yes, the duplicate substring is right here.\r\n    \r\n    - If not, save the string in the sliding window in the hashset.  \r\n\r\n!?!../Documents/1062_LIS.json:1000,411!?!\r\n\r\nObvious drawback of this approach is a huge memory consumption\r\nin the case of large strings. \r\n\r\n<iframe src=\"https://leetcode.com/playground/MSPKba8P/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"MSPKba8P\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N \\log N)$$ in the average case\r\nand $$\\mathcal{O}(N^2)$$ in the worst case. \r\nOne needs $$\\mathcal{O}((N - L)L)$$ for one duplicate check,\r\nand one does up to $$\\mathcal{O}(\\log N)$$ checks. \r\nTogether that results in $$\\mathcal{O}(\\sum\\limits_{L}{(N - L)L})$$, \r\ni.e. in $$\\mathcal{O}(N \\log N)$$ in the average \r\ncase and in $$\\mathcal{O}(N^2)$$ in the worst case of L close to $$N/2$$. \r\n\r\n* Space complexity : $$\\mathcal{O}(N^2)$$ to keep the hashset.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Binary Search + Hashset of _Hashes_ of Already Seen Strings\r\n\r\nTo reduce the memory consumption by the hashset structure,\r\none could store not the full strings, but their hashes.\r\n\r\nThe drawback of this approach is a time performance, \r\nwhich is still not always linear.  \r\n\r\n![pic](../Figures/1062/dupe.png)\r\n\r\n<iframe src=\"https://leetcode.com/playground/qkqr6mjZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"qkqr6mjZ\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N \\log N)$$ in the average case\r\nand $$\\mathcal{O}(N^2)$$ in the worst case. \r\nOne needs $$\\mathcal{O}((N - L)L)$$ for one duplicate check,\r\nand one does up to $$\\mathcal{O}(\\log N)$$ checks. \r\nTogether that results in $$\\mathcal{O}(\\sum\\limits_{L}{(N - L)L})$$, \r\ni.e. in $$\\mathcal{O}(N \\log N)$$ in the average \r\ncase and in $$\\mathcal{O}(N^2)$$ in the worst case of L close to $$N/2$$. \r\n\r\n* Space complexity : $$\\mathcal{O}(N)$$ to keep the hashset.\r\n\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 3: Binary Search + Rabin-Karp\r\n\r\nRabin-Karp algorithm is used to perform a multiple pattern search \r\nin a linear time and with a moderate memory consumption suitable \r\nfor the large strings. \r\n\r\nThe linear time implementation of this idea is a bit\r\ntricky because of two technical problems:\r\n\r\n1. [How to implement a string slice in a constant time?](https://stackoverflow.com/questions/35180377/time-complexity-of-string-slice) \r\n\r\n2. Hashset memory consumption could be huge for very long strings. \r\nOne could keep the string hash instead of string itself\r\nbut hash generation costs $$\\mathcal{O}(L)$$ for the string of length L,\r\nand the complexity of algorithm would be $$\\mathcal{O}((N - L)L)$$,\r\nN - L for the slice and L for the hash generation. \r\nOne has to think how to generate hash in a constant time here.\r\n\r\nLet's now address these problems.\r\n\r\n**String slice in a constant time**\r\n\r\nThat's a very language-dependent problem. For the moment for \r\nJava and Python there is no straightforward solution, \r\nand to move sliding window in a constant time\r\none has to convert string to another data structure. \r\n\r\nThe simplest solution both for Java and Python is to convert string to integer array of ascii-values.\r\n\r\n**Rolling hash : hash generation in a constant time**\r\n\r\nTo generate hash of array of length L, one needs $$\\mathcal{O}(L)$$ time.\r\n\r\n> How to have constant time of hash generation? Use the advantage of \r\nslice: only one integer in, and only one - out. \r\n\r\nThat's the idea of [rolling hash](https://en.wikipedia.org/wiki/Rolling_hash).\r\nHere we'll implement the simplest one, polynomial rolling hash.\r\nBeware that's polynomial rolling hash is NOT the [Rabin fingerprint](https://en.wikipedia.org/wiki/Rolling_hash#Rabin_fingerprint).\r\n\r\nSince one deals here with lowercase English letters, all values \r\nin the integer array are between 0 and 25 :\r\n`arr[i] = (int)S.charAt(i) - (int)'a'`.  \r\nSo one could consider string `abcd` -> `[0, 1, 2, 3]` as a number \r\nin a [numeral system](https://en.wikipedia.org/wiki/Numeral_system) with the base 26. \r\nHence `abcd` -> `[0, 1, 2, 3]` could be hashed as \r\n\r\n$$\r\nh_0 = 0 \\times 26^3 + 1 \\times 26^2 + 2 \\times 26^1 + 3 \\times 26^0\r\n$$\r\n\r\nLet's write the same formula in a generalised way, where $$c_i$$\r\nis an integer array element and $$a = 26$$ is a system base.\r\n\r\n$$\r\nh_0 = c_0 a^{L - 1} + c_1 a^{L - 2} + ... + c_i a^{L - 1 - i} + ... + c_{L - 1} a^1 + c_L a^0\r\n$$\r\n\r\n$$\r\nh_0 = \\sum_{i = 0}^{L - 1}{c_i a^{L - 1 - i}}\r\n$$\r\n\r\nNow let's consider the slice `abcd` -> `bcde`. For int arrays that means\r\n`[0, 1, 2, 3]` -> `[1, 2, 3, 4]`, to remove number 0 and to add number 4.\r\n\r\n$$\r\nh_1 = (h_0 - 0 \\times 26^3) \\times 26 + 4 \\times 26^0\r\n$$\r\n\r\nIn a generalised way\r\n\r\n$$\r\nh_1 = (h_0 a - c_0 a^L) + c_{L + 1}\r\n$$\r\n\r\nNow hash regeneration is perfect and fits in a constant time. \r\nThere is one more issue to address: possible overflow problem. \r\n\r\n**How to avoid overflow**\r\n\r\n$$a^L$$ could be a large number and hence\r\nthe idea is to set limits to avoid the overflow. \r\nTo set limits means to limit a hash by a given number called modulus\r\nand use everywhere not hash itself but `h % modulus`.\r\n\r\nIt's quite obvious that modulus should be large enough, but how \r\nlarge? [Here one could read more about the topic](https://en.wikipedia.org/wiki/Linear_congruential_generator#Parameters_in_common_use),\r\nfor the problem here $$2^{24}$$ is enough.\r\n\r\nIn a real life, when not all testcases are known in advance, \r\none has to check if the strings with equal hashes are truly equal.\r\nSuch false-positive strings could happen \r\nbecause of a modulus which is too small and strings which are too long.\r\nThat leads to Rabin-Karp time complexity $$\\mathcal{O}(NL)$$ \r\nin the worst case then almost all strings are false-positive. \r\nHere it's not the case because all testcases are known and \r\none could adjust the modulus. \r\n\r\nAnother one overflow issue here is purely Java related.\r\nWhile in Python the hash regeneration goes perfectly fine, \r\nin Java the same thing is better to rewrite to avoid\r\nlong overflow. \r\n\r\n<iframe src=\"https://leetcode.com/playground/Yisrakw8/shared\" frameBorder=\"0\" width=\"100%\" height=\"89\" name=\"Yisrakw8\"></iframe>\r\n\r\n**Rabin-Karp algorithm**\r\n\r\nsearch(L) :\r\n    \r\n- Compute the hash of substring `S.substring(0, L)`\r\n    and initiate the hashset of already seen substring with this value.\r\n        \r\n- Iterate over the start position of substring : from 1 to $$N - L$$.\r\n        \r\n    - Compute rolling hash based on the previous hash value.\r\n            \r\n    - Return start position if the hash is in the hashset,\r\n        because that means one met the duplicate. \r\n            \r\n    - Otherwise, add hash in the hashset.\r\n         \r\n- Return -1, that means there is no duplicate string of length L.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/uUpG6W3U/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"uUpG6W3U\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N \\log N)$$. $$\\mathcal{O}(\\log N)$$\r\nfor the binary search and $$\\mathcal{O}(N)$$ for Rabin-Karp algorithm.\r\n* Space complexity : $$\\mathcal{O}(N)$$ to keep the hashset. \r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "738",
+      "count": 29,
+      "average": 4.414,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"abcd\"",
+  "metaData": "{\r\n  \"name\": \"longestRepeatingSubstring\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

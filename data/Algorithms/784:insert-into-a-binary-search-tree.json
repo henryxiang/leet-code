@@ -1,0 +1,111 @@
+{
+  "questionId": "784",
+  "questionFrontendId": "701",
+  "boundTopicId": null,
+  "title": "Insert into a Binary Search Tree",
+  "titleSlug": "insert-into-a-binary-search-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given the root node of a binary search tree (BST) and a value to be inserted into the tree,&nbsp;insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST.</p>\r\n\r\n<p>Note that there may exist&nbsp;multiple valid ways for the&nbsp;insertion, as long as the tree remains a BST after insertion. You can return any of them.</p>\r\n\r\n<p>For example,&nbsp;</p>\r\n\r\n<pre>\r\nGiven the tree:\r\n        4\r\n       / \\\r\n      2   7\r\n     / \\\r\n    1   3\r\nAnd the value to insert: 5\r\n</pre>\r\n\r\n<p>You can return this binary search tree:</p>\r\n\r\n<pre>\r\n         4\r\n       /   \\\r\n      2     7\r\n     / \\   /\r\n    1   3 5\r\n</pre>\r\n\r\n<p>This tree is also valid:</p>\r\n\r\n<pre>\r\n         5\r\n       /   \\\r\n      2     7\r\n     / \\   \r\n    1   3\r\n         \\\r\n          4\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 542,
+  "dislikes": 59,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Search in a Binary Search Tree\", \"titleSlug\": \"search-in-a-binary-search-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "tinylic",
+      "profileUrl": "/tinylic/",
+      "avatarUrl": "https://www.gravatar.com/avatar/c8f3bf6706478175081358c2ced2ae2f.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    TreeNode* insertIntoBST(TreeNode* root, int val) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public TreeNode insertIntoBST(TreeNode root, int val) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def insertIntoBST(self, root, val):\n        \"\"\"\n        :type root: TreeNode\n        :type val: int\n        :rtype: TreeNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def insertIntoBST(self, root: TreeNode, val: int) -> TreeNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nstruct TreeNode* insertIntoBST(struct TreeNode* root, int val){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public TreeNode InsertIntoBST(TreeNode root, int val) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @param {number} val\n * @return {TreeNode}\n */\nvar insertIntoBST = function(root, val) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @param {Integer} val\n# @return {TreeNode}\ndef insert_into_bst(root, val)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func insertIntoBST(_ root: TreeNode?, _ val: Int) -> TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc insertIntoBST(root *TreeNode, val int) *TreeNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def insertIntoBST(root: TreeNode, `val`: Int): TreeNode = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun insertIntoBST(root: TreeNode?, `val`: Int): TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn insert_into_bst(root: Option<Rc<RefCell<TreeNode>>>, val: i32) -> Option<Rc<RefCell<TreeNode>>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @param Integer $val\n     * @return TreeNode\n     */\n    function insertIntoBST($root, $val) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"74.8K\", \"totalSubmission\": \"95.9K\", \"totalAcceptedRaw\": 74802, \"totalSubmissionRaw\": 95873, \"acRate\": \"78.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "720",
+    "canSeeDetail": true,
+    "url": "/articles/insert-into-a-bst/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Intuition\r\n\r\nOne of the huge BST advantages is a [search](https://leetcode.com/problems/search-in-a-binary-search-tree/) \r\nfor _arbitrary_ element in $$\\mathcal{O}(\\log N)$$ time.\r\nHere we'll see that the insert time is $$\\mathcal{O}(\\log N)$$, too, in the average case. \r\n\r\nThe problem solution is very simple - one could always insert new node as a child of the leaf.\r\nTo define which leaf to use, one could follow the standard BST logic :\r\n\r\n- If `val > node.val` - go to insert into the right subtree.\r\n\r\n- If `val < node.val` - go to insert into the left subtree.\r\n\r\n![bla](../Figures/701/insert.png)\r\n\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Recursion\r\n\r\nThe recursion implementation is very straightforward :\r\n\r\n- If `root` is null - return `TreeNode(val)`.\r\n\r\n- If `val > root.val` - go to insert into the right subtree.\r\n\r\n- If `val < root.val` - go to insert into the left subtree.\r\n\r\n- Return `root`.\r\n\r\n!?!../Documents/701_LIS.json:1000,420!?!\r\n\r\n<iframe src=\"https://leetcode.com/playground/EBD77txd/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"EBD77txd\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(H)$$, where $$H$$ is a tree height. That results in\r\n$$\\mathcal{O}(\\log N)$$ in the average case, and $$\\mathcal{O}(N)$$ in the worst case. \r\n\r\n    Let's compute time complexity with the help of \r\n    [master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) \r\n    $$T(N) = aT\\left(\\frac{N}{b}\\right) + \\Theta(N^d)$$.\r\n    The equation represents dividing the problem \r\n    up into $$a$$ subproblems of size $$\\frac{N}{b}$$ in $$\\Theta(N^d)$$ time. \r\n    Here at step there is only one subproblem `a = 1`, its size \r\n    is a half of the initial problem `b = 2`, \r\n    and all this happens in a constant time `d = 0`, as for\r\n    the binary search.\r\n    That means that $$\\log_b{a} = d$$ and hence we're dealing with \r\n    [case 2](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)#Case_2_example)\r\n    that results in $$\\mathcal{O}(n^{\\log_b{a}} \\log^{d + 1} N)$$\r\n    = $$\\mathcal{O}(\\log N)$$ time complexity.\r\n    \r\n* Space complexity : $$\\mathcal{O}(H)$$ to keep the recursion stack,\r\ni.e. $$\\mathcal{O}(\\log N)$$ in the average case, \r\nand $$\\mathcal{O}(N)$$ in the worst case.\r\n\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Iteration\r\n\r\nThe recursion above could be converted into the iteration\r\n\r\n<iframe src=\"https://leetcode.com/playground/oMRsda23/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"oMRsda23\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(H)$$, where $$H$$ is a tree height. That results in\r\n$$\\mathcal{O}(\\log N)$$ in the average case, and $$\\mathcal{O}(N)$$ in the worst case. \r\n\r\n    Let's compute time complexity with the help of \r\n    [master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) \r\n    $$T(N) = aT\\left(\\frac{N}{b}\\right) + \\Theta(N^d)$$.\r\n    The equation represents dividing the problem \r\n    up into $$a$$ subproblems of size $$\\frac{N}{b}$$ in $$\\Theta(N^d)$$ time. \r\n    Here at step there is only one subproblem `a = 1`, its size \r\n    is a half of the initial problem `b = 2`, \r\n    and all this happens in a constant time `d = 0`, as for\r\n    the binary search.\r\n    That means that $$\\log_b{a} = d$$ and hence we're dealing with \r\n    [case 2](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)#Case_2_example)\r\n    that results in $$\\mathcal{O}(n^{\\log_b{a}} \\log^{d + 1} N)$$\r\n    = $$\\mathcal{O}(\\log N)$$ time complexity.\r\n    \r\n* Space complexity : $$\\mathcal{O}(1)$$ since it's a constant space\r\nsolution.\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "705",
+      "count": 13,
+      "average": 4.769,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,2,7,1,3]\n5",
+  "metaData": "{\r\n  \"name\": \"insertIntoBST\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    },\r\n    {\r\n      \"name\": \"val\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"TreeNode\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

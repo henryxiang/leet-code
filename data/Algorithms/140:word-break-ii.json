@@ -1,0 +1,109 @@
+{
+  "questionId": "140",
+  "questionFrontendId": "140",
+  "boundTopicId": null,
+  "title": "Word Break II",
+  "titleSlug": "word-break-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <strong>non-empty</strong> string <em>s</em> and a dictionary <em>wordDict</em> containing a list of <strong>non-empty</strong> words, add spaces in <em>s</em> to construct a sentence where each word is a valid dictionary word.&nbsp;Return all such possible sentences.</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>The same word in the dictionary may be reused multiple times in the segmentation.</li>\r\n\t<li>You may assume the dictionary does not contain duplicate words.</li>\r\n</ul>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong>s = &quot;<code>catsanddog</code>&quot;\r\nwordDict = <code>[&quot;cat&quot;, &quot;cats&quot;, &quot;and&quot;, &quot;sand&quot;, &quot;dog&quot;]</code>\r\n<strong>Output:\r\n</strong><code>[\r\n&nbsp; &quot;cats and dog&quot;,\r\n&nbsp; &quot;cat sand dog&quot;\r\n]</code>\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong>s = &quot;pineapplepenapple&quot;\r\nwordDict = [&quot;apple&quot;, &quot;pen&quot;, &quot;applepen&quot;, &quot;pine&quot;, &quot;pineapple&quot;]\r\n<strong>Output:\r\n</strong>[\r\n&nbsp; &quot;pine apple pen apple&quot;,\r\n&nbsp; &quot;pineapple pen apple&quot;,\r\n&nbsp; &quot;pine applepen apple&quot;\r\n]\r\n<strong>Explanation:</strong> Note that you are allowed to reuse a dictionary word.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong>s = &quot;catsandog&quot;\r\nwordDict = [&quot;cats&quot;, &quot;dog&quot;, &quot;sand&quot;, &quot;and&quot;, &quot;cat&quot;]\r\n<strong>Output:\r\n</strong>[]</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 1346,
+  "dislikes": 300,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Word Break\", \"titleSlug\": \"word-break\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Concatenated Words\", \"titleSlug\": \"concatenated-words\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 10}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> wordBreak(string s, vector<string>& wordDict) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> wordBreak(String s, List<String> wordDict) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def wordBreak(self, s, wordDict):\n        \"\"\"\n        :type s: str\n        :type wordDict: List[str]\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** wordBreak(char * s, char ** wordDict, int wordDictSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> WordBreak(string s, IList<string> wordDict) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {string[]} wordDict\n * @return {string[]}\n */\nvar wordBreak = function(s, wordDict) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String[]} word_dict\n# @return {String[]}\ndef word_break(s, word_dict)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func wordBreak(_ s: String, _ wordDict: [String]) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func wordBreak(s string, wordDict []string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def wordBreak(s: String, wordDict: List[String]): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun wordBreak(s: String, wordDict: List<String>): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn word_break(s: String, word_dict: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String[] $wordDict\n     * @return String[]\n     */\n    function wordBreak($s, $wordDict) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"189.6K\", \"totalSubmission\": \"652.2K\", \"totalAcceptedRaw\": 189594, \"totalSubmissionRaw\": 652194, \"acRate\": \"29.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "76",
+    "canSeeDetail": true,
+    "url": "/articles/word-break-ii/",
+    "content": "[TOC]\n## Summary\n\nGiven a string $$s$$ and a dictionary of words $$dict$$, add spaces in $$s$$ to construct every possible sentence such that each word is valid as per the given dictionary.\nReturn all such possible sentences.\n\n## Solution\n\n---\n#### Approach 1: Brute Force\n\n**Algorithm**\n\nThe naive approach to solve this problem is to use recursion.\nFor finding the solution, we check every possible prefix of that string ($$s$$) in the dictionary of words, if it is found in the dictionary (say $$s1$$), then the recursive function is called for the remaining portion of that string.\nThis function returns the prefix $$s1$$ appended by the result of the recursive call using the remaining portion of the string ($$s-s1$$), if the remaining portion is a substring\nwhich can lead to the formation of a valid sentence as per the dictionary. Otherwise, empty list is returned.\n\n<iframe src=\"https://leetcode.com/playground/SPRjWZMS/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"SPRjWZMS\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^n)$$. Consider the worst case where $$s$$ = \"$$\\text{aaaaaaa}$$\" and every prefix of $$s$$ is present in the dictionary of words, then the recursion tree can grow up to $$n^n$$.\n\n* Space complexity : $$O(n^3)$$. In worst case the depth of recursion tree can go up to $$n$$ and nodes can contain $$n$$ strings each of length $$n$$.\n<br />\n<br />\n---\n#### Approach 2: Recursion with memoization\n\n**Algorithm**\n\nIn the previous approach we can see that many subproblems were redundant, i.e we were calling the recursive function multiple times for the same substring appearing through\n multiple paths.\nTo avoid this we can use memorization method, where we are making use of a hashmap to store the results in the form of a $$key:value$$ pair. In this hashmap, the $$key$$\n used is the starting index of the string currently considered and the $$value$$ contains all the sentences which can be formed using the substring from this starting\n index onwards. Thus, if we encounter the same starting index from different function calls, we can return the result directly from the hashmap rather than going\n for redundant function calls.\n\nWith memorization many redundant subproblems are avoided and recursion tree is pruned and thus it reduces the time complexity by a large factor.\n\n<iframe src=\"https://leetcode.com/playground/QPz9ZNi5/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"QPz9ZNi5\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^3)$$. Size of recursion tree can go up to $$n^2$$. The creation of list takes $$n$$ time.\n\n* Space complexity : $$O(n^3)$$.The depth of the recursion tree can go up to $$n$$ and each activation record can contains a string list of size $$n$$.\n<br />\n<br />\n---\n#### Approach 3: Using Dynamic Programming\n\n**Algorithm**\n\nThe intuition behind this approach is that the given problem ($$s$$) can be divided into subproblems $$s1$$ and $$s2$$. If these subproblems individually satisfy the required conditions, the complete problem, $$s$$ also satisfies the same. e.g. \"$$\\text{catsanddog}$$\" can be split into two substrings \"$$\\text{catsand}$$\", \"$$\\text{dog}$$\". The subproblem \"$$\\text{catsand}$$\" can be further divided into \"$$\\text{cats}$$\",\"$$\\text{and}$$\", which individually are a part of the dictionary making \"$$\\text{catsand}$$\" satisfy the condition. Going further backwards, \"$$\\text{catsand}$$\", \"$$\\text{dog}$$\" also satisfy the required criteria individually leading to the complete string \"$$\\text{catsanddog}$$\" also to satisfy the criteria.\n\nNow, we'll move onto the process of $$\\text{dp}$$ array formation.\nWe make use of $$\\text{dp}$$ array (in the form of a linked list) of size $$n+1$$, where $$n$$ is the length of the given string.\n$$\\text{dp}[k]$$ is used to store every possible sentence having all valid dictionary words using the substring $$s[0:k-1]$$.\n We also use two index pointers $$i$$ and $$j$$, where $$i$$ refers to the length of the substring ($$s'$$) considered currently starting from\nthe beginning, and $$j$$ refers to the index partitioning the current substring ($$s'$$) into smaller substrings $$s'(0,j)$$ and $$s'(j+1,i)$$.\nTo fill in the $$\\text{dp}$$ array, we initialize the element $$\\text{dp}[0]$$ as an empty string, since no sentence can be formed using a word of size 0.\nWe consider substrings of all possible lengths starting from the beginning by making use of index $$i$$.\nFor every such substring, we partition the string into two further substrings $$s1'$$ and $$s2'$$ in all possible ways using the index $$j$$ (\nNote that the $$i$$ now refers to the ending index of $$s2'$$). Now, to fill in the entry $$\\text{dp}[i]$$, we check if the $$\\text{dp}[j]$$ contains a non-empty string\n i.e. if some valid sentence can be formed using $$s1'$$. If so, we further check if $$s2'$$ is present in the dictionary. If both the conditions are satified,\n we append the substring $$s2'$$ to every possible sentence that can be formed up to the index $$j$$ (which is already stored in $$d[j]$$). These newly formed sentences\n are stored in $$\\text{dp}[i]$$. Finally the element $$\\text{dp}[n]$$ ($$n$$ refers to the length of the given string $$s$$) gives all possible valid sentences using the complete string $$s$$.\n\n <iframe src=\"https://leetcode.com/playground/XVZSnKan/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"XVZSnKan\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^3)$$. Two loops are required to fill $$\\text{dp}$$ array and one loop for appending a list .\n\n* Space complexity : $$O(n^3)$$. Length of $$\\text{dp}$$ array is $$n$$ and each value of $$\\text{dp}$$ array contains a list of string i.e. $$n^2$$ space.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "74",
+      "count": 88,
+      "average": 2.102,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"catsanddog\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+  "metaData": "{\r\n  \"name\": \"wordBreak\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"wordDict\",\r\n      \"type\": \"list<string>\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

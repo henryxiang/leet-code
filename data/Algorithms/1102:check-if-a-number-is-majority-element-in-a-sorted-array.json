@@ -1,0 +1,102 @@
+{
+  "questionId": "1102",
+  "questionFrontendId": "1150",
+  "boundTopicId": null,
+  "title": "Check If a Number Is Majority Element in a Sorted Array",
+  "titleSlug": "check-if-a-number-is-majority-element-in-a-sorted-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>nums</code> sorted in <strong>non-decreasing</strong> order, and a number <code>target</code>, return <code>True</code> if and only if <code>target</code> is a majority element.</p>\r\n\r\n<p>A <em>majority element</em> is an element that appears <strong>more than <code>N/2</code></strong> times in an array of length <code>N</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-1-1\">[2,4,5,5,5,5,5,6,6]</span>, target = <span id=\"example-input-1-2\">5</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n<strong>Explanation: </strong>\r\nThe value 5 appears 5 times and the length of the array is 9.\r\nThus, 5 is a majority element because 5 &gt; 9/2 is true.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-2-1\">[10,100,101,101]</span>, target = <span id=\"example-input-2-2\">101</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">false</span>\r\n<strong>Explanation: </strong>\r\nThe value 101 appears 2 times and the length of the array is 4.\r\nThus, 101 is not a majority element because 2 &gt; 4/2 is false.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span><strong>Note:</strong></span></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= nums.length &lt;= 1000</code></li>\r\n\t<li><code>1 &lt;= nums[i] &lt;= 10^9</code></li>\r\n\t<li><code>1 &lt;= target &lt;= 10^9</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 56,
+  "dislikes": 12,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Majority Element\", \"titleSlug\": \"majority-element\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Majority Element II\", \"titleSlug\": \"majority-element-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool isMajorityElement(vector<int>& nums, int target) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isMajorityElement(int[] nums, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isMajorityElement(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isMajorityElement(self, nums: List[int], target: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isMajorityElement(int* nums, int numsSize, int target){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool IsMajorityElement(int[] nums, int target) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {boolean}\n */\nvar isMajorityElement = function(nums, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\r\n# @param {Integer} target\r\n# @return {Boolean}\r\ndef is_majority_element(nums, target)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func isMajorityElement(_ nums: [Int], _ target: Int) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isMajorityElement(nums []int, target int) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def isMajorityElement(nums: Array[Int], target: Int): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun isMajorityElement(nums: IntArray, target: Int): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_majority_element(nums: Vec<i32>, target: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $target\n     * @return Boolean\n     */\n    function isMajorityElement($nums, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.8K\", \"totalSubmission\": \"11.2K\", \"totalAcceptedRaw\": 6834, \"totalSubmissionRaw\": 11249, \"acRate\": \"60.8%\"}",
+  "hints": [
+    "How to check if a given number target is a majority element?.",
+    "Find the frequency of target and compare it to the length of the array.",
+    "You can find the frequency of an element using Binary Search since the array is sorted.",
+    "Using Binary Search, find the first and last occurrences of A. Then just calculate the difference between the indexes of these occurrences."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[2,4,5,5,5,5,5,6,6]\n5",
+  "metaData": "{\r\n  \"name\": \"isMajorityElement\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "653",
+  "questionFrontendId": "653",
+  "boundTopicId": null,
+  "title": "Two Sum IV - Input is a BST",
+  "titleSlug": "two-sum-iv-input-is-a-bst",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> \r\n    5\r\n   / \\\r\n  3   6\r\n / \\   \\\r\n2   4   7\r\n\r\nTarget = 9\r\n\r\n<b>Output:</b> True\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> \r\n    5\r\n   / \\\r\n  3   6\r\n / \\   \\\r\n2   4   7\r\n\r\nTarget = 28\r\n\r\n<b>Output:</b> False\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1101,
+  "dislikes": 121,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Two Sum\", \"titleSlug\": \"two-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Two Sum II - Input array is sorted\", \"titleSlug\": \"two-sum-ii-input-array-is-sorted\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Two Sum III - Data structure design\", \"titleSlug\": \"two-sum-iii-data-structure-design\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Two Sum BSTs\", \"titleSlug\": \"two-sum-bsts\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "aghanta",
+      "profileUrl": "/aghanta/",
+      "avatarUrl": "https://www.gravatar.com/avatar/53f8ce83d2f5b5eb51b5c4125db1c2b9.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 7}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    bool findTarget(TreeNode* root, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public boolean findTarget(TreeNode root, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def findTarget(self, root, k):\n        \"\"\"\n        :type root: TreeNode\n        :type k: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def findTarget(self, root: TreeNode, k: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nbool findTarget(struct TreeNode* root, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public bool FindTarget(TreeNode root, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @param {number} k\n * @return {boolean}\n */\nvar findTarget = function(root, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @param {Integer} k\n# @return {Boolean}\ndef find_target(root, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func findTarget(_ root: TreeNode?, _ k: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc findTarget(root *TreeNode, k int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def findTarget(root: TreeNode, k: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun findTarget(root: TreeNode?, k: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn find_target(root: Option<Rc<RefCell<TreeNode>>>, k: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @param Integer $k\n     * @return Boolean\n     */\n    function findTarget($root, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"113.1K\", \"totalSubmission\": \"209.7K\", \"totalAcceptedRaw\": 113130, \"totalSubmissionRaw\": 209676, \"acRate\": \"54.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "226",
+    "canSeeDetail": true,
+    "url": "/articles/two-sum-iv/",
+    "content": "[TOC]\n\n\n## Solution\n\n---\n#### Approach #1 Using HashSet[Accepted]\n\nThe simplest solution will be to traverse over the whole tree and consider every possible pair of nodes to determine if they can form the required sum $$k$$. But, we can improve the process if we look at a little catch here.\n\nIf the sum of two elements $$x + y$$ equals $$k$$, and we already know that $$x$$ exists in the given tree, we only need to check if an element $$y$$ exists in the given tree, such that $$y = k - x$$. Based on this simple catch, we can traverse the tree in both the directions(left child and right child) at every step. We keep a track of the elements which have been found so far during the tree traversal, by putting them into a $$set$$. \n\nFor every current node with a value of $$p$$, we check if $$k-p$$ already exists in the array. If so, we can conclude that the sum $$k$$ can be formed by using the two elements from the given tree. Otherwise, we put this value $$p$$ into the $$set$$.\n\nIf even after the whole tree's traversal, no such element $$p$$ can be found, the sum $$k$$ can't be formed by using any two elements.\n\n<iframe src=\"https://leetcode.com/playground/NwhifNbv/shared\" frameBorder=\"0\" name=\"NwhifNbv\" width=\"100%\" height=\"309\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. The entire tree is traversed only once in the worst case. Here, $$n$$ refers to the number of nodes in the given tree.\n\n* Space complexity : $$O(n)$$. The size of the $$set$$ can grow upto $$n$$ in the worst case.\n\n---\n#### Approach #2 Using BFS and HashSet [Accepted]\n\n**Algorithm**\n\nIn this approach, the idea of using the $$set$$ is the same as in the last approach. But, we can carry on the traversal in a Breadth First Search manner, which is a very common traversal method used in Trees. The way BFS is used can be summarized as given below. We start by putting the root node into a $$queue$$. We also maintain a $$set$$ similar to the last approach. Then, at every step, we do as follows:\n\n1. Remove an element, $$p$$,  from the front of the $$queue$$. \n\n2. Check if the element $$k-p$$ already exists in the $$set$$. If so, return True.\n\n3. Otherwise, add this element, $$p$$ to the $$set$$. Further, add the right and the left child nodes of the current node to the back of the $$queue$$.\n\n4. Continue steps 1. to 3. till the $$queue$$ becomes empty. \n\n5. Return false if the $$queue$$ becomes empty.\n\nBy following this process, we traverse the tree on a level by level basis. \n\n<iframe src=\"https://leetcode.com/playground/7SgfKz2F/shared\" frameBorder=\"0\" name=\"7SgfKz2F\" width=\"100%\" height=\"377\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. We need to traverse over the whole tree once in the worst case.  Here, $$n$$ refers to the number of nodes in the given tree.\n\n* Space complexity : $$O(n)$$. The size of the $$set$$ can grow atmost upto $$n$$. \n\n---\n#### Approach #3 Using BST [Accepted]\n\n**Algorithm**\n\nIn this approach, we make use of the fact that the given tree is a Binary  Search Tree. Now, we know that the inorder traversal of a BST gives the nodes in ascending order. Thus, we do the inorder traversal of the given tree and put the results in a $$list$$ which contains the nodes sorted in ascending order.\n\nOnce this is done, we make use of two pointers $$l$$ and $$r$$ pointing to the beginning and the end of the sorted $$list$$. Then, we do as follows:\n\n1. Check if the sum of the elements pointed by $$l$$ and $$r$$ is equal to the required sum $$k$$. If so, return a True immediately.\n\n2. Otherwise, if the sum of the current two elements is lesser than the required sum $$k$$, update $$l$$ to point to the next element. This is done, because, we need to increase the sum of the current elements, which can only be done by increasing the smaller number.\n\n3. Otherwise, if the sum of the current two elements is larger than the required sum $$k$$, update $$r$$ to point to the previous element. This is done, because, we need to decrease the sum of the current elements, which can only be done by reducing the larger number. \n\n4. Continue steps 1. to 3. till the left pointer $$l$$ crosses the right pointer $$r$$.\n\n5. If the two pointers cross each other, return a False value.\n\nNote that we need not increase the larger number or reduce the smaller number in any case. This happens because, in case, a number larger than the current $$list[r]$$ is needed to form the required sum $$k$$, the right pointer could not have been reduced in the first place. The similar argument holds true for not reducing the smaller number as well.\n\n\n<iframe src=\"https://leetcode.com/playground/chZDDTAy/shared\" frameBorder=\"0\" name=\"chZDDTAy\" width=\"100%\" height=\"462\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. We need to traverse over the whole tree once to do the inorder traversal.  Here, $$n$$ refers to the number of nodes in the given tree.\n\n* Space complexity : $$O(n)$$. The sorted $$list$$ will contain $$n$$ elements.\n\n---\n\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "222",
+      "count": 32,
+      "average": 4.594,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[5,3,6,2,4,null,7]\n9",
+  "metaData": "{\r\n  \"name\": \"findTarget\",\r\n  \"params\": [\r\n      {\r\n        \"name\": \"root\",\r\n        \"type\": \"TreeNode\"\r\n      },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

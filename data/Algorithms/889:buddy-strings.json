@@ -1,0 +1,111 @@
+{
+  "questionId": "889",
+  "questionFrontendId": "859",
+  "boundTopicId": null,
+  "title": "Buddy Strings",
+  "titleSlug": "buddy-strings",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two strings <code>A</code> and <code>B</code>&nbsp;of lowercase letters, return <code>true</code> if and only if we&nbsp;can swap two letters in <code>A</code> so that the result equals <code>B</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<div>\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">&quot;ab&quot;</span>, B = <span id=\"example-input-1-2\">&quot;ba&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">&quot;ab&quot;</span>, B = <span id=\"example-input-2-2\">&quot;ab&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">false</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-3-1\">&quot;aa&quot;</span>, B = <span id=\"example-input-3-2\">&quot;aa&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-4-1\">&quot;aaaaaaabc&quot;</span>, B = <span id=\"example-input-4-2\">&quot;aaaaaaacb&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-5-1\">&quot;&quot;</span>, B = <span id=\"example-input-5-2\">&quot;aa&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-5\">false</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><span>Note:</span></strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= A.length &lt;= 20000</code></li>\r\n\t<li><code>0 &lt;= B.length &lt;= 20000</code></li>\r\n\t<li><code>A</code> and&nbsp;<code>B</code> consist only of lowercase letters.</li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 389,
+  "dislikes": 248,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool buddyStrings(string A, string B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean buddyStrings(String A, String B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def buddyStrings(self, A, B):\n        \"\"\"\n        :type A: str\n        :type B: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def buddyStrings(self, A: str, B: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool buddyStrings(char * A, char * B){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool BuddyStrings(string A, string B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} A\n * @param {string} B\n * @return {boolean}\n */\nvar buddyStrings = function(A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} a\n# @param {String} b\n# @return {Boolean}\ndef buddy_strings(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func buddyStrings(_ A: String, _ B: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func buddyStrings(A string, B string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def buddyStrings(A: String, B: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun buddyStrings(A: String, B: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn buddy_strings(a: String, b: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $A\n     * @param String $B\n     * @return Boolean\n     */\n    function buddyStrings($A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"34.5K\", \"totalSubmission\": \"124.1K\", \"totalAcceptedRaw\": 34457, \"totalSubmissionRaw\": 124090, \"acRate\": \"27.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "493",
+    "canSeeDetail": true,
+    "url": "/articles/buddy-strings/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Enumerate Cases\n\n**Intuition**\n\nLet's say `i` is *matched* if `A[i] == B[i]`, otherwise `i` is *unmatched*.  A buddy string has almost all matches, because a swap only affects two indices.\n\nIf swapping `A[i]` and `A[j]` would demonstrate that `A` and `B` are buddy strings, then `A[i] == B[j]` and `A[j] == B[i]`.  That means among the four free variables `A[i], A[j], B[i], B[j]`, there are only two cases: either `A[i] == A[j]` or not.\n\n**Algorithm**\n\nLet's work through the cases.\n\nIn the case `A[i] == A[j] == B[i] == B[j]`, then the strings `A` and `B` are equal.  So if `A == B`, we should check each index `i` for two matches with the same value.\n\nIn the case `A[i] == B[j], A[j] == B[i], (A[i] != A[j])`, the rest of the indices match.  So if `A` and `B` have only two unmatched indices (say `i` and `j`), we should check that the equalities `A[i] == B[j]` and `A[j] == B[i]` hold.\n\n<iframe src=\"https://leetcode.com/playground/3ce2yPsD/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"3ce2yPsD\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A` and `B`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "486",
+      "count": 18,
+      "average": 4.222,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"ab\"\n\"ba\"",
+  "metaData": "{\r\n  \"name\": \"buddyStrings\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

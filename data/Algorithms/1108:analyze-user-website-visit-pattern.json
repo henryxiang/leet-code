@@ -1,0 +1,106 @@
+{
+  "questionId": "1108",
+  "questionFrontendId": "1152",
+  "boundTopicId": null,
+  "title": "Analyze User Website Visit Pattern",
+  "titleSlug": "analyze-user-website-visit-pattern",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We are given some website visits: the user with name&nbsp;<code>username[i]</code> visited the website&nbsp;<code>website[i]</code> at time <code>timestamp[i]</code>.</p>\n\n<p>A <em>3-sequence</em>&nbsp;is a list of&nbsp;websites of length 3 sorted in ascending order&nbsp;by the time of their visits.&nbsp; (The websites in a 3-sequence are not necessarily distinct.)</p>\n\n<p>Find the 3-sequence visited&nbsp;by the largest number of users. If there is more than one solution, return the lexicographically smallest such 3-sequence.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong>username = <span>[&quot;joe&quot;,&quot;joe&quot;,&quot;joe&quot;,&quot;james&quot;,&quot;james&quot;,&quot;james&quot;,&quot;james&quot;,&quot;mary&quot;,&quot;mary&quot;,&quot;mary&quot;]</span>, timestamp = <span id=\"example-input-1-2\">[1,2,3,4,5,6,7,8,9,10]</span>, website = <span id=\"example-input-1-3\">[&quot;home&quot;,&quot;about&quot;,&quot;career&quot;,&quot;home&quot;,&quot;cart&quot;,&quot;maps&quot;,&quot;home&quot;,&quot;home&quot;,&quot;about&quot;,&quot;career&quot;]</span>\n<strong>Output: </strong><span id=\"example-output-1\">[&quot;home&quot;,&quot;about&quot;,&quot;career&quot;]</span>\n<strong>Explanation: </strong>\nThe tuples in this example are:\n[&quot;joe&quot;, 1, &quot;home&quot;]\n[&quot;joe&quot;, 2, &quot;about&quot;]\n[&quot;joe&quot;, 3, &quot;career&quot;]\n[&quot;james&quot;, 4, &quot;home&quot;]\n[&quot;james&quot;, 5, &quot;cart&quot;]\n[&quot;james&quot;, 6, &quot;maps&quot;]\n[&quot;james&quot;, 7, &quot;home&quot;]\n[&quot;mary&quot;, 8, &quot;home&quot;]\n[&quot;mary&quot;, 9, &quot;about&quot;]\n[&quot;mary&quot;, 10, &quot;career&quot;]\nThe 3-sequence (&quot;home&quot;, &quot;about&quot;, &quot;career&quot;) was visited at least once by <strong>2</strong> users.\nThe 3-sequence (&quot;home&quot;, &quot;cart&quot;, &quot;maps&quot;) was visited at least once by 1 user.\nThe 3-sequence (&quot;home&quot;, &quot;cart&quot;, &quot;home&quot;) was visited at least once by 1 user.\nThe 3-sequence (&quot;home&quot;, &quot;maps&quot;, &quot;home&quot;) was visited at least once by 1 user.\nThe 3-sequence (&quot;cart&quot;, &quot;maps&quot;, &quot;home&quot;) was visited at least once by 1 user.\n</pre>\n\n<p>&nbsp;</p>\n\n<p><strong>Note:</strong></p>\n\n<ol>\n\t<li><code>3 &lt;= N = username.length = timestamp.length = website.length &lt;= 50</code></li>\n\t<li><code>1 &lt;= username[i].length &lt;= 10</code></li>\n\t<li><code>0 &lt;= timestamp[i] &lt;= 10^9</code></li>\n\t<li><code>1 &lt;= website[i].length &lt;= 10</code></li>\n\t<li>Both <code>username[i]</code> and <code>website[i]</code> contain only lowercase characters.</li>\n\t<li>It is guaranteed that there is at least one user who visited at least 3 websites.</li>\n\t<li>No user visits two websites at the same time.</li>\n</ol>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 19,
+  "dislikes": 143,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> mostVisitedPattern(vector<string>& username, vector<int>& timestamp, vector<string>& website) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> mostVisitedPattern(String[] username, int[] timestamp, String[] website) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def mostVisitedPattern(self, username, timestamp, website):\n        \"\"\"\n        :type username: List[str]\n        :type timestamp: List[int]\n        :type website: List[str]\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def mostVisitedPattern(self, username: List[str], timestamp: List[int], website: List[str]) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** mostVisitedPattern(char ** username, int usernameSize, int* timestamp, int timestampSize, char ** website, int websiteSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> MostVisitedPattern(string[] username, int[] timestamp, string[] website) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} username\n * @param {number[]} timestamp\n * @param {string[]} website\n * @return {string[]}\n */\nvar mostVisitedPattern = function(username, timestamp, website) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} username\n# @param {Integer[]} timestamp\n# @param {String[]} website\n# @return {String[]}\ndef most_visited_pattern(username, timestamp, website)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func mostVisitedPattern(_ username: [String], _ timestamp: [Int], _ website: [String]) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func mostVisitedPattern(username []string, timestamp []int, website []string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def mostVisitedPattern(username: Array[String], timestamp: Array[Int], website: Array[String]): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun mostVisitedPattern(username: Array<String>, timestamp: IntArray, website: Array<String>): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn most_visited_pattern(username: Vec<String>, timestamp: Vec<i32>, website: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $username\n     * @param Integer[] $timestamp\n     * @param String[] $website\n     * @return String[]\n     */\n    function mostVisitedPattern($username, $timestamp, $website) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2K\", \"totalSubmission\": \"5K\", \"totalAcceptedRaw\": 2000, \"totalSubmissionRaw\": 4981, \"acRate\": \"40.2%\"}",
+  "hints": [
+    "Let's find for every user separately the websites he visited.",
+    "Consider all possible 3-sequences, find the number of distinct users who visited each of them.",
+    "How to check if some user visited some 3-sequence ?",
+    "Store for every user all the 3-sequence he visited."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"joe\",\"joe\",\"joe\",\"james\",\"james\",\"james\",\"james\",\"mary\",\"mary\",\"mary\"]\n[1,2,3,4,5,6,7,8,9,10]\n[\"home\",\"about\",\"career\",\"home\",\"cart\",\"maps\",\"home\",\"home\",\"about\",\"career\"]",
+  "metaData": "{\n  \"name\": \"mostVisitedPattern\",\n  \"params\": [\n    {\n      \"name\": \"username\",\n      \"type\": \"string[]\"\n    },\n    {\n      \"name\": \"timestamp\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"website\",\n      \"type\": \"string[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<string>\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

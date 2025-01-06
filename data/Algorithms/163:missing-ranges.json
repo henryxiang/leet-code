@@ -1,0 +1,93 @@
+{
+  "questionId": "163",
+  "questionFrontendId": "163",
+  "boundTopicId": null,
+  "title": "Missing Ranges",
+  "titleSlug": "missing-ranges",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a sorted integer array <strong><em>nums</em></strong>, where the range of elements are in the <strong>inclusive range</strong><b><strong> </strong>[<i>lower</i>, <i>upper</i>]</b>, return its missing ranges.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <strong><em>nums</em></strong> = <code>[0, 1, 3, 50, 75]</code>, <strong><i>lower</i></strong> = 0 and <strong><i>upper</i></strong> = 99,\r\n<strong>Output:</strong> <code>[&quot;2&quot;, &quot;4-&gt;49&quot;, &quot;51-&gt;74&quot;, &quot;76-&gt;99&quot;]</code>\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 264,
+  "dislikes": 1562,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Summary Ranges\", \"titleSlug\": \"summary-ranges\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> findMissingRanges(vector<int>& nums, int lower, int upper) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> findMissingRanges(int[] nums, int lower, int upper) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findMissingRanges(self, nums, lower, upper):\n        \"\"\"\n        :type nums: List[int]\n        :type lower: int\n        :type upper: int\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findMissingRanges(self, nums: List[int], lower: int, upper: int) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** findMissingRanges(int* nums, int numsSize, int lower, int upper, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> FindMissingRanges(int[] nums, int lower, int upper) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} lower\n * @param {number} upper\n * @return {string[]}\n */\nvar findMissingRanges = function(nums, lower, upper) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} lower\n# @param {Integer} upper\n# @return {String[]}\ndef find_missing_ranges(nums, lower, upper)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findMissingRanges(_ nums: [Int], _ lower: Int, _ upper: Int) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findMissingRanges(nums []int, lower int, upper int) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findMissingRanges(nums: Array[Int], lower: Int, upper: Int): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findMissingRanges(nums: IntArray, lower: Int, upper: Int): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_missing_ranges(nums: Vec<i32>, lower: i32, upper: i32) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $lower\n     * @param Integer $upper\n     * @return String[]\n     */\n    function findMissingRanges($nums, $lower, $upper) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"70.7K\", \"totalSubmission\": \"298.9K\", \"totalAcceptedRaw\": 70667, \"totalSubmissionRaw\": 298908, \"acRate\": \"23.6%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[0,1,3,50,75]\n0\n99",
+  "metaData": "{\r\n  \"name\": \"findMissingRanges\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"lower\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"upper\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

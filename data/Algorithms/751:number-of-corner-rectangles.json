@@ -1,0 +1,113 @@
+{
+  "questionId": "751",
+  "questionFrontendId": "750",
+  "boundTopicId": null,
+  "title": "Number Of Corner Rectangles",
+  "titleSlug": "number-of-corner-rectangles",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a grid where each entry is only 0 or 1, find the number of corner rectangles.</p>\r\n\r\n<p>A <em>corner rectangle</em> is 4 distinct 1s on the grid that form an axis-aligned rectangle. Note that only the corners need to have the value 1. Also, all four 1s used must be distinct.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> grid = \r\n[[1, 0, 0, 1, 0],\r\n [0, 0, 1, 0, 1],\r\n [0, 0, 0, 1, 0],\r\n [1, 0, 1, 0, 1]]\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> There is only one corner rectangle, with corners grid[1][2], grid[1][4], grid[3][2], grid[3][4].\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> grid = \r\n[[1, 1, 1],\r\n [1, 1, 1],\r\n [1, 1, 1]]\r\n<strong>Output:</strong> 9\r\n<strong>Explanation:</strong> There are four 2x2 rectangles, four 2x3 and 3x2 rectangles, and one 3x3 rectangle.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> grid = \r\n[[1, 1, 1, 1]]\r\n<strong>Output:</strong> 0\r\n<strong>Explanation:</strong> Rectangles must have four distinct corners.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>The number of rows and columns of <code>grid</code> will each be in the range <code>[1, 200]</code>.</li>\r\n\t<li>Each <code>grid[i][j]</code> will be either <code>0</code> or <code>1</code>.</li>\r\n\t<li>The number of <code>1</code>s in the grid will be at most <code>6000</code>.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 364,
+  "dislikes": 53,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "xinlin5",
+      "profileUrl": "/xinlin5/",
+      "avatarUrl": "https://assets.leetcode.com/users/xinlin5/avatar_1523827441.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 10}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countCornerRectangles(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countCornerRectangles(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countCornerRectangles(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countCornerRectangles(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint countCornerRectangles(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountCornerRectangles(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar countCornerRectangles = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef count_corner_rectangles(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countCornerRectangles(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countCornerRectangles(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countCornerRectangles(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countCornerRectangles(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_corner_rectangles(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function countCornerRectangles($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"23.2K\", \"totalSubmission\": \"35.1K\", \"totalAcceptedRaw\": 23195, \"totalSubmissionRaw\": 35138, \"acRate\": \"66.0%\"}",
+  "hints": [
+    "For each pair of 1s in the new row (say at `new_row[i]` and `new_row[j]`), we could create more rectangles where that pair forms the base.  The number of new rectangles is the number of times some previous row had `row[i] = row[j] = 1`."
+  ],
+  "solution": {
+    "id": "348",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-corner-rectangles/",
+    "content": "[TOC]\n\n#### Approach #1: Count Corners [Accepted]\n\n**Intuition**\n\nWe ask the question: for each additional row, how many more rectangles are added?\n\nFor each pair of 1s in the new row (say at `new_row[i]` and `new_row[j]`), we could create more rectangles where that pair forms the base.  The number of new rectangles is the number of times some previous row had `row[i] = row[j] = 1`.\n\n**Algorithm**\n\nLet's maintain a count `count[i, j]`, the number of times we saw `row[i] = row[j] = 1`.  When we process a new row, for every pair `new_row[i] = new_row[j] = 1`, we add `count[i, j]` to the answer, then we increment `count[i, j]`.\n\n<iframe src=\"https://leetcode.com/playground/zfqgJWvF/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"zfqgJWvF\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(R*C^2)$$ where $$R, C$$ is the number of rows and columns.\n\n* Space Complexity: $$O(C^2)$$ in additional space.\n\n---\n#### Approach #2: Heavy and Light Rows [Accepted]\n\n**Intuition and Algorithm**\n\nCan we improve on the ideas in *Approach #1*?  When a row is filled with $$X$$ 1s, we do $$O(X^2)$$ work to enumerate every pair of 1s.  This is okay when $$X$$ is small, but expensive when $$X$$ is big.\n\nSay the entire top row is filled with 1s.  When looking at the next row with say, `f` 1s that match the top row, the number of rectangles created is just the number of pairs of 1s, which is `f * (f-1) / 2`.  We could find each `f` quickly using a Set and a simple linear scan of each row.\n\nLet's call a row to be *heavy* if it has more than $$\\sqrt N$$ points.  The above algorithm changes the complexity of counting a heavy row from $$O(C^2)$$ to $$O(N)$$, and there are at most $$\\sqrt N$$ heavy rows.\n\n<iframe src=\"https://leetcode.com/playground/sKxbzNcq/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"sKxbzNcq\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N \\sqrt N + R*C)$$ where $$N$$ is the number of ones in the grid.\n\n* Space Complexity: $$O(N + R + C^2)$$ in additional space, for `rows`, `target`, and `count`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "343",
+      "count": 10,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,1,0],[1,0,1],[1,0,1],[0,1,0]]",
+  "metaData": "{\r\n  \"name\": \"countCornerRectangles\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

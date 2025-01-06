@@ -1,0 +1,116 @@
+{
+  "questionId": "189",
+  "questionFrontendId": "189",
+  "boundTopicId": null,
+  "title": "Rotate Array",
+  "titleSlug": "rotate-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array, rotate the array to the right by <em>k</em> steps, where&nbsp;<em>k</em>&nbsp;is non-negative.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>[1,2,3,4,5,6,7]</code> and <em>k</em> = 3\r\n<strong>Output:</strong> <code>[5,6,7,1,2,3,4]</code>\r\n<strong>Explanation:</strong>\r\nrotate 1 steps to the right: <code>[7,1,2,3,4,5,6]</code>\r\nrotate 2 steps to the right: <code>[6,7,1,2,3,4,5]\r\n</code>rotate 3 steps to the right: <code>[5,6,7,1,2,3,4]</code>\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>[-1,-100,3,99]</code> and <em>k</em> = 2\r\n<strong>Output:</strong> [3,99,-1,-100]\r\n<strong>Explanation:</strong> \r\nrotate 1 steps to the right: [99,-1,-100,3]\r\nrotate 2 steps to the right: [3,99,-1,-100]\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.</li>\r\n\t<li>Could you do it in-place with O(1) extra space?</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1918,
+  "dislikes": 703,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Rotate List\", \"titleSlug\": \"rotate-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Reverse Words in a String II\", \"titleSlug\": \"reverse-words-in-a-string-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Freezen",
+      "profileUrl": "/freezen/",
+      "avatarUrl": "https://www.gravatar.com/avatar/85b3caacb214788b937e9ef6242f9d23.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 4}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    void rotate(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public void rotate(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def rotate(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: None Do not return anything, modify nums in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def rotate(self, nums: List[int], k: int) -> None:\n        \"\"\"\n        Do not return anything, modify nums in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nvoid rotate(int* nums, int numsSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public void Rotate(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {void} Do not return anything, modify nums in-place instead.\n */\nvar rotate = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Void} Do not return anything, modify nums in-place instead.\ndef rotate(nums, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func rotate(_ nums: inout [Int], _ k: Int) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func rotate(nums []int, k int)  {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def rotate(nums: Array[Int], k: Int): Unit = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun rotate(nums: IntArray, k: Int): Unit {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn rotate(nums: &mut Vec<i32>, k: i32) {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return NULL\n     */\n    function rotate(&$nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"383K\", \"totalSubmission\": \"1.2M\", \"totalAcceptedRaw\": 382955, \"totalSubmissionRaw\": 1182112, \"acRate\": \"32.4%\"}",
+  "hints": [
+    "The easiest solution would use additional memory and that is perfectly fine.",
+    "The actual trick comes when trying to solve this problem without using any additional memory. This means you need to use the original array somehow to move the elements around. Now, we can place each element in its original location and shift all the elements around it to adjust as that would be too costly and most likely will time out on larger input arrays.",
+    "One line of thought is based on reversing the array (or parts of it) to obtain the desired result. Think about how reversal might potentially help us out by using an example.",
+    "The other line of thought is a tad bit complicated but essentially it builds on the idea of placing each element in its original position while keeping track of the element originally in that position. Basically, at every step, we place an element in its rightful position and keep track of the element already there or the one being overwritten in an additional variable. We can't do this in one linear pass and the idea here is based on <b>cyclic-dependencies</b> between elements."
+  ],
+  "solution": {
+    "id": "59",
+    "canSeeDetail": true,
+    "url": "/articles/rotate-array/",
+    "content": "[TOC]\r\n\r\n## Summary\r\n\r\nWe have to rotate the elements of the given array k times to the right.\r\n\r\n## Solution\r\n\r\n---\r\n#### Approach #1 Brute Force [Time Limit Exceeded]\r\n\r\nThe simplest approach is to rotate all the elements of the array in k steps\r\n by rotating the elements by 1 unit in each step.\r\n\r\n**Java**\r\n\r\n```java\r\npublic class Solution {\r\n    public void rotate(int[] nums, int k) {\r\n        int temp, previous;\r\n        for (int i = 0; i < k; i++) {\r\n            previous = nums[nums.length - 1];\r\n            for (int j = 0; j < nums.length; j++) {\r\n                temp = nums[j];\r\n                nums[j] = previous;\r\n                previous = temp;\r\n            }\r\n        }\r\n    }\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n*k)$$. All the numbers are shifted by one step($$O(n)$$)\r\n k times($$O(k)$$).\r\n* Space complexity : $$O(1)$$. No extra space is used.\r\n\r\n---\r\n#### Approach #2 Using Extra Array [Accepted]\r\n\r\n**Algorithm**\r\n\r\nWe use an extra array in which we place every element of the array at its correct\r\nposition i.e. the number at index $$i$$ in the original array is placed at the\r\nindex $$(i+k)%(length of array)$$. Then, we copy the new array to the original one.\r\n\r\n\r\n**Java**\r\n```java\r\npublic class Solution {\r\n    public void rotate(int[] nums, int k) {\r\n        int[] a = new int[nums.length];\r\n        for (int i = 0; i < nums.length; i++) {\r\n            a[(i + k) % nums.length] = nums[i];\r\n        }\r\n        for (int i = 0; i < nums.length; i++) {\r\n            nums[i] = a[i];\r\n        }\r\n    }\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n)$$. One pass is used to put the numbers in the new array.\r\n And another pass to copy the new array to the original one.\r\n\r\n* Space complexity : $$O(n)$$. Another array of the same size is used.\r\n\r\n---\r\n#### Approach #3 Using Cyclic Replacements [Accepted]\r\n\r\n**Algorithm**\r\n\r\nWe can directly place every number of the array at its required correct position.\r\nBut if we do that, we will destroy the original element. Thus, we need to store\r\nthe number being replaced in a $$temp$$ variable. Then, we can place the replaced\r\n number($$temp$$) at its correct position and so on, $$n$$ times, where $$n$$ is\r\n the length of array. We have chosen $$n$$ to be the number of replacements since we have \r\n to shift all the elements of the array(which is $$n$$). But, there could be a problem with this method, if $$n%k=0$$\r\n where $$k = k%n$$(since a value of $$k$$ larger than $$n$$ eventually leads to a $$k$$ equivalent to $$k%n$$). In this case, while picking up numbers to be placed at the\r\n correct position, we will eventually reach the number from which we originally started. Thus, in such a case, when\r\n we hit the original number's index again, we start the same process with the number following it.\r\n \r\nNow let's look at the proof of how the above method works. Suppose, we have $$n$$ as the number of elements in the array and\r\n $$k$$ is the number of shifts required. Further, assume $$n%k=0$$. Now, when we start placing the elements at their correct position, in the first cycle all the numbers with their index $$i$$ satisfying $$i%k=0$$ get placed at their required position. This happens because when we jump k steps every time, we will only hit the numbers k steps apart. We start with index $$i=0$$, having $$i%k=0$$. Thus, we hit all the numbers satisfying the above condition in the first cycle. When we reach back the original index, we have placed $$\\frac{n}{k}$$ elements at their correct position, since we hit only that many elements in the first cycle. Now, we increment the index for replacing the numbers. This time, we place other $$\\frac{n}{k}$$ elements at their correct position, different from the ones placed correctly in the first cycle, because this time we hit all the numbers satisfy the condition $$i%k=1$$. When we hit the starting number again, we increment the index and repeat the same process from $$i=1$$ for all the indices satisfying $$i%k==1$$. This happens till we reach the number with the index $$i%k=0$$ again, which occurs for $$i=k$$. We will reach such a number after a total of k cycles. Now, the total count of numbers exclusive numbers placed at their correct position will be $$k \\times \\frac{n}{k}=n$$. Thus, all the numbers will be placed at their correct position.\r\n\r\n Look at the following example to clarify the process:\r\n ```\r\nnums: [1, 2, 3, 4, 5, 6]\r\nk: 2\r\n ```\r\n\r\n   ![Rotate Array](https://leetcode.com/media/original_images/189_Rotate_Array.png)\r\n\r\n\r\n\r\n**java**\r\n```java\r\npublic class Solution {\r\n    public void rotate(int[] nums, int k) {\r\n        k = k % nums.length;\r\n        int count = 0;\r\n        for (int start = 0; count < nums.length; start++) {\r\n            int current = start;\r\n            int prev = nums[start];\r\n            do {\r\n                int next = (current + k) % nums.length;\r\n                int temp = nums[next];\r\n                nums[next] = prev;\r\n                prev = temp;\r\n                current = next;\r\n                count++;\r\n            } while (start != current);\r\n        }\r\n    }\r\n}\r\n```\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n)$$. Only one pass is used.\r\n\r\n* Space complexity : $$O(1)$$. Constant extra space is used.\r\n\r\n---\r\n#### Approach #4 Using Reverse [Accepted]\r\n\r\n**Algorithm**\r\n\r\nThis approach is based on the fact that when we rotate the array k times, $$k%n$$ elements from the back end of the array come to the front and the rest of the elements from the front shift backwards.\r\n\r\nIn this approach, we firstly reverse all the elements of the array. Then, reversing the first k elements followed by reversing the rest $$n-k$$ elements gives us the required result.\r\n\r\nLet $$n=7$$ and $$k=3$$.\r\n```\r\nOriginal List                   : 1 2 3 4 5 6 7\r\nAfter reversing all numbers     : 7 6 5 4 3 2 1\r\nAfter reversing first k numbers : 5 6 7 4 3 2 1\r\nAfter revering last n-k numbers : 5 6 7 1 2 3 4 --> Result\r\n```\r\n\r\n\r\n**java**\r\n```java\r\npublic class Solution {\r\n    public void rotate(int[] nums, int k) {\r\n        k %= nums.length;\r\n        reverse(nums, 0, nums.length - 1);\r\n        reverse(nums, 0, k - 1);\r\n        reverse(nums, k, nums.length - 1);\r\n    }\r\n    public void reverse(int[] nums, int start, int end) {\r\n        while (start < end) {\r\n            int temp = nums[start];\r\n            nums[start] = nums[end];\r\n            nums[end] = temp;\r\n            start++;\r\n            end--;\r\n        }\r\n    }\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n)$$. $$n$$ elements are reversed a total of three times.\r\n\r\n* Space complexity : $$O(1)$$. No extra space is used.\r\n\r\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "57",
+      "count": 136,
+      "average": 4.809,
+      "userRating": null
+    }
+  },
+  "status": "ac",
+  "sampleTestCase": "[1,2,3,4,5,6,7]\n3",
+  "metaData": "{\r\n  \"name\": \"rotate\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"void\"\r\n  },\r\n  \"output\": {\r\n    \"paramindex\": 0\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

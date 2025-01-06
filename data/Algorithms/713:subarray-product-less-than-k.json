@@ -1,0 +1,117 @@
+{
+  "questionId": "713",
+  "questionFrontendId": "713",
+  "boundTopicId": null,
+  "title": "Subarray Product Less Than K",
+  "titleSlug": "subarray-product-less-than-k",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Your are given an array of positive integers <code>nums</code>.</p>\r\n<p>Count and print the number of (contiguous) subarrays where the product of all the elements in the subarray is less than <code>k</code>.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> nums = [10, 5, 2, 6], k = 100\r\n<b>Output:</b> 8\r\n<b>Explanation:</b> The 8 subarrays that have product less than 100 are: [10], [5], [2], [6], [10, 5], [5, 2], [2, 6], [5, 2, 6].\r\nNote that [10, 5, 2] is not included as the product of 100 is not strictly less than k.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<li><code>0 < nums.length <= 50000</code>.</li>\r\n<li><code>0 < nums[i] < 1000</code>.</li>\r\n<li><code>0 <= k < 10^6</code>.</li>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 888,
+  "dislikes": 46,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Maximum Product Subarray\", \"titleSlug\": \"maximum-product-subarray\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Size Subarray Sum Equals k\", \"titleSlug\": \"maximum-size-subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Subarray Sum Equals K\", \"titleSlug\": \"subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Two Sum Less Than K\", \"titleSlug\": \"two-sum-less-than-k\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "rishabh115",
+      "profileUrl": "/rishabh115/",
+      "avatarUrl": "https://assets.leetcode.com/users/rishabh115/avatar_1516022844.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Coursera\", \"slug\": \"coursera\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Yatra\", \"slug\": \"yatra\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 10}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numSubarrayProductLessThanK(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numSubarrayProductLessThanK(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numSubarrayProductLessThanK(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numSubarrayProductLessThanK(int* nums, int numsSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumSubarrayProductLessThanK(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar numSubarrayProductLessThanK = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer}\ndef num_subarray_product_less_than_k(nums, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numSubarrayProductLessThanK(_ nums: [Int], _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numSubarrayProductLessThanK(nums []int, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numSubarrayProductLessThanK(nums: Array[Int], k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numSubarrayProductLessThanK(nums: IntArray, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_subarray_product_less_than_k(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer\n     */\n    function numSubarrayProductLessThanK($nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"43.8K\", \"totalSubmission\": \"114.6K\", \"totalAcceptedRaw\": 43767, \"totalSubmissionRaw\": 114577, \"acRate\": \"38.2%\"}",
+  "hints": [
+    "For each j, let opt(j) be the smallest i so that nums[i] * nums[i+1] * ... * nums[j] is less than k.  opt is an increasing function."
+  ],
+  "solution": {
+    "id": "267",
+    "canSeeDetail": true,
+    "url": "/articles/subarray-product-less-than-k/",
+    "content": "[TOC]\n\n\n#### Approach #1: Binary Search on Logarithms [Accepted]\n\n**Intuition**\n\nBecause $$\\log(\\prod_i x_i) = \\sum_i \\log x_i$$, we can reduce the problem to subarray *sums* instead of subarray products.  The motivation for this is that the product of some arbitrary subarray may be way too large (potentially `1000^50000`), and also dealing with sums gives us some more familiarity as it becomes similar to other problems we may have solved before.\n\n**Algorithm**\n\nAfter this transformation where every value `x` becomes `log(x)`, let us take prefix sums `prefix[i+1] = nums[0] + nums[1] + ... + nums[i]`.  Now we are left with the problem of finding, for each `i`, the largest `j` so that `nums[i] + ... + nums[j] = prefix[j] - prefix[i] < k`.\n\nBecause `prefix` is a monotone increasing array, this can be solved with binary search.  We add the width of the interval `[i, j]` to our answer, which counts all subarrays `[i, k]` with `k <= j`.\n\n**Python**\n```python\nclass Solution(object):\n    def numSubarrayProductLessThanK(self, nums, k):\n        if k == 0: return 0\n        k = math.log(k)\n\n        prefix = [0]\n        for x in nums:\n            prefix.append(prefix[-1] + math.log(x))\n\n        ans = 0\n        for i, x in enumerate(prefix):\n            j = bisect.bisect(prefix, x + k - 1e-9, i+1)\n            ans += j - i - 1\n        return ans\n```\n\n**Java**\n```java\nclass Solution {\n    public int numSubarrayProductLessThanK(int[] nums, int k) {\n        if (k == 0) return 0;\n        double logk = Math.log(k);\n        double[] prefix = new double[nums.length + 1];\n        for (int i = 0; i < nums.length; i++) {\n            prefix[i+1] = prefix[i] + Math.log(nums[i]);\n        }\n\n        int ans = 0;\n        for (int i = 0; i < prefix.length; i++) {\n            int lo = i + 1, hi = prefix.length;\n            while (lo < hi) {\n                int mi = lo + (hi - lo) / 2;\n                if (prefix[mi] < prefix[i] + logk - 1e-9) lo = mi + 1;\n                else hi = mi;\n            }\n            ans += lo - i - 1;\n        }\n        return ans;\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N\\log N)$$, where $$N$$ is the length of `nums`.  Inside our for loop, each binary search operation takes $$O(\\log N)$$ time.\n\n* Space Complexity: $$O(N)$$, the space used by `prefix`.\n\n---\n#### Approach #2: Sliding Window [Accepted]\n\n**Intuition**\n\nFor each `right`, call `opt(right)` the smallest `left` so that the product of the subarray `nums[left] * nums[left + 1] * ... * nums[right]` is less than `k`.  `opt` is a monotone increasing function, so we can use a sliding window.\n\n**Algorithm**\n\nOur loop invariant is that `left` is the smallest value so that the product in the window `prod = nums[left] * nums[left + 1] * ... * nums[right]` is less than `k`.\n\nFor every right, we update `left` and `prod` to maintain this invariant.  Then, the number of intervals with subarray product less than `k` and with right-most coordinate `right`, is `right - left + 1`.  We'll count all of these for each value of `right`.\n\n**Python**\n```python\nclass Solution(object):\n    def numSubarrayProductLessThanK(self, nums, k):\n        if k <= 1: return 0\n        prod = 1\n        ans = left = 0\n        for right, val in enumerate(nums):\n            prod *= val\n            while prod >= k:\n                prod /= nums[left]\n                left += 1\n            ans += right - left + 1\n        return ans\n```\n\n**Java**\n```java\nclass Solution {\n    public int numSubarrayProductLessThanK(int[] nums, int k) {\n        if (k <= 1) return 0;\n        int prod = 1, ans = 0, left = 0;\n        for (int right = 0; right < nums.length; right++) {\n            prod *= nums[right];\n            while (prod >= k) prod /= nums[left++];\n            ans += right - left + 1;\n        }\n        return ans;\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `nums`.  `left` can only be incremented at most `N` times.\n\n* Space Complexity: $$O(1)$$, the space used by `prod`, `left`, and `ans`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "261",
+      "count": 31,
+      "average": 3.258,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[10,5,2,6]\n100",
+  "metaData": "{\r\n  \"name\": \"numSubarrayProductLessThanK\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

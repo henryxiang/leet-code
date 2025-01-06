@@ -1,0 +1,93 @@
+{
+  "questionId": "408",
+  "questionFrontendId": "408",
+  "boundTopicId": null,
+  "title": "Valid Word Abbreviation",
+  "titleSlug": "valid-word-abbreviation",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a <b>non-empty</b> string <code>s</code> and an abbreviation <code>abbr</code>, return whether the string matches with the given abbreviation.\r\n</p>\r\n\r\n<p>A string such as <code>\"word\"</code> contains only the following valid abbreviations:</p>\r\n\r\n<pre>[\"word\", \"1ord\", \"w1rd\", \"wo1d\", \"wor1\", \"2rd\", \"w2d\", \"wo2\", \"1o1d\", \"1or1\", \"w1r1\", \"1o2\", \"2r1\", \"3d\", \"w3\", \"4\"]\r\n</pre>\r\n\r\n<p>Notice that only the above abbreviations are valid abbreviations of the string <code>\"word\"</code>. Any other string is not a valid abbreviation of <code>\"word\"</code>.</p>\r\n\r\n<p><b>Note:</b><br />\r\nAssume <code>s</code> contains only lowercase letters and <code>abbr</code> contains only lowercase letters and digits.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\nGiven <b>s</b> = \"internationalization\", <b>abbr</b> = \"i12iz4n\":\r\n\r\nReturn true.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\nGiven <b>s</b> = \"apple\", <b>abbr</b> = \"a2e\":\r\n\r\nReturn false.\r\n</pre>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 118,
+  "dislikes": 524,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Minimum Unique Word Abbreviation\", \"titleSlug\": \"minimum-unique-word-abbreviation\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Word Abbreviation\", \"titleSlug\": \"word-abbreviation\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool validWordAbbreviation(string word, string abbr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean validWordAbbreviation(String word, String abbr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def validWordAbbreviation(self, word, abbr):\n        \"\"\"\n        :type word: str\n        :type abbr: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def validWordAbbreviation(self, word: str, abbr: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool validWordAbbreviation(char * word, char * abbr){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ValidWordAbbreviation(string word, string abbr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} word\n * @param {string} abbr\n * @return {boolean}\n */\nvar validWordAbbreviation = function(word, abbr) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} word\n# @param {String} abbr\n# @return {Boolean}\ndef valid_word_abbreviation(word, abbr)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func validWordAbbreviation(_ word: String, _ abbr: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func validWordAbbreviation(word string, abbr string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def validWordAbbreviation(word: String, abbr: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun validWordAbbreviation(word: String, abbr: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn valid_word_abbreviation(word: String, abbr: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $word\n     * @param String $abbr\n     * @return Boolean\n     */\n    function validWordAbbreviation($word, $abbr) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"27.4K\", \"totalSubmission\": \"91.2K\", \"totalAcceptedRaw\": 27388, \"totalSubmissionRaw\": 91168, \"acRate\": \"30.0%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"internationalization\"\n\"i12iz4n\"",
+  "metaData": "{ \r\n  \"name\": \"validWordAbbreviation\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"word\",\r\n      \"type\": \"string\"\r\n    },\r\n    { \r\n      \"name\": \"abbr\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

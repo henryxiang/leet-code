@@ -1,0 +1,102 @@
+{
+  "questionId": "1112",
+  "questionFrontendId": "1160",
+  "boundTopicId": null,
+  "title": "Find Words That Can Be Formed by Characters",
+  "titleSlug": "find-words-that-can-be-formed-by-characters",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given an array of strings&nbsp;<code>words</code>&nbsp;and a string&nbsp;<code>chars</code>.</p>\r\n\r\n<p>A string is <em>good</em>&nbsp;if&nbsp;it can be formed by&nbsp;characters from <code>chars</code>&nbsp;(each character&nbsp;can only be used once).</p>\r\n\r\n<p>Return the sum of lengths of all good strings in <code>words</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>words = <span id=\"example-input-1-1\">[&quot;cat&quot;,&quot;bt&quot;,&quot;hat&quot;,&quot;tree&quot;]</span>, chars = <span id=\"example-input-1-2\">&quot;atach&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">6</span>\r\n<strong>Explanation: </strong>\r\nThe strings that can be formed are &quot;cat&quot; and &quot;hat&quot; so the answer is 3 + 3 = 6.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>words = <span id=\"example-input-2-1\">[&quot;hello&quot;,&quot;world&quot;,&quot;leetcode&quot;]</span>, chars = <span id=\"example-input-2-2\">&quot;welldonehoneyr&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">10</span>\r\n<strong>Explanation: </strong>\r\nThe strings that can be formed are &quot;hello&quot; and &quot;world&quot; so the answer is 5 + 5 = 10.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span><strong>Note:</strong></span></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= words.length &lt;= 1000</code></li>\r\n\t<li><code>1 &lt;= words[i].length, chars.length&nbsp;&lt;= 100</code></li>\r\n\t<li>All strings contain lowercase English letters only.</li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 155,
+  "dislikes": 37,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int countCharacters(vector<string>& words, string chars) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countCharacters(String[] words, String chars) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def countCharacters(self, words, chars):\r\n        \"\"\"\r\n        :type words: List[str]\r\n        :type chars: str\r\n        :rtype: int\r\n        \"\"\""
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def countCharacters(self, words: List[str], chars: str) -> int:"
+    },
+    {
+      "lang": "C",
+      "code": "int countCharacters(char ** words, int wordsSize, char * chars){\r\n\r\n}"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int CountCharacters(string[] words, string chars) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {string[]} words\r\n * @param {string} chars\r\n * @return {number}\r\n */\r\nvar countCharacters = function(words, chars) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\r\n# @param {String} chars\r\n# @return {Integer}\r\ndef count_characters(words, chars)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func countCharacters(_ words: [String], _ chars: String) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countCharacters(words []string, chars string) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def countCharacters(words: Array[String], chars: String): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun countCharacters(words: Array<String>, chars: String): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn count_characters(words: Vec<String>, chars: String) -> i32 {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param String[] $words\r\n     * @param String $chars\r\n     * @return Integer\r\n     */\r\n    function countCharacters($words, $chars) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"26.2K\", \"totalSubmission\": \"39.2K\", \"totalAcceptedRaw\": 26237, \"totalSubmissionRaw\": 39249, \"acRate\": \"66.8%\"}",
+  "hints": [
+    "Solve the problem for each string in <code>words</code> independently.",
+    "Now try to think in frequency of letters.",
+    "Count how many times each character occurs in string <code>chars</code>.",
+    "To form a string using characters from <code>chars</code>, the frequency of each character in <code>chars</code> must be greater than or equal the frequency of that character in the string to be formed."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"cat\",\"bt\",\"hat\",\"tree\"]\n\"atach\"",
+  "metaData": "{\n  \"name\": \"countCharacters\",\n  \"params\": [\n    {\n      \"name\": \"words\",\n      \"type\": \"string[]\"\n    },\n    {\n        \"name\": \"chars\",\n        \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

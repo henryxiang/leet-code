@@ -1,0 +1,109 @@
+{
+  "questionId": "928",
+  "questionFrontendId": "892",
+  "boundTopicId": null,
+  "title": "Surface Area of 3D Shapes",
+  "titleSlug": "surface-area-of-3d-shapes",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On a&nbsp;<code>N&nbsp;*&nbsp;N</code>&nbsp;grid, we place some&nbsp;<code>1 * 1 * 1&nbsp;</code>cubes.</p>\r\n\r\n<p>Each value&nbsp;<code>v = grid[i][j]</code>&nbsp;represents a tower of&nbsp;<code>v</code>&nbsp;cubes placed on top of grid cell&nbsp;<code>(i, j)</code>.</p>\r\n\r\n<p>Return the total surface area of the resulting shapes.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<div>\r\n<div>\r\n<ul>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[[2]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">10</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[[1,2],[3,4]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">34</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[[1,0],[0,2]]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">16</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">[[1,1,1],[1,0,1],[1,1,1]]</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">32</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-5-1\">[[2,2,2],[2,1,2],[2,2,2]]</span>\r\n<strong>Output: </strong><span id=\"example-output-5\">46</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= N &lt;= 50</code></li>\r\n\t<li><code>0 &lt;= grid[i][j] &lt;= 50</code></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 188,
+  "dislikes": 248,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Geometry",
+      "slug": "geometry"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int surfaceArea(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int surfaceArea(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def surfaceArea(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def surfaceArea(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint surfaceArea(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SurfaceArea(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar surfaceArea = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef surface_area(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func surfaceArea(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func surfaceArea(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def surfaceArea(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun surfaceArea(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn surface_area(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function surfaceArea($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.6K\", \"totalSubmission\": \"25.5K\", \"totalAcceptedRaw\": 14609, \"totalSubmissionRaw\": 25493, \"acRate\": \"57.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "538",
+    "canSeeDetail": true,
+    "url": "/articles/surface-area-of-3d-shapes/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Square by Square\n\n**Intuition**\n\nLet's try to count the surface area contributed by `v = grid[i][j]`.\n\nWhen `v > 0`, the top and bottom surface contributes an area of 2.\n\nThen, for each side (west side, north side, east side, south side) of the column at `grid[i][j]`, the neighboring cell with value `nv` means our square contributes `max(v - nv, 0)`.\n\nFor example, for `grid = [[1, 5]]`, the contribution at `grid[0][1]` is 2 + 5 + 5 + 5 + 4.  The 2 comes from the top and bottom side, the 5 comes from the north, east, and south side; and the 4 comes from the west side, of which 1 unit is covered by the adjacent column.\n\n**Algorithm**\n\nFor each `v = grid[r][c] > 0`, count `ans += 2`, plus `ans += max(v - nv, 0)` for each neighboring value `nv` adjacent to `grid[r][c]`.\n\n<iframe src=\"https://leetcode.com/playground/JqxzqTG3/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"JqxzqTG3\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the number of rows (and columns) in the `grid`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "531",
+      "count": 13,
+      "average": 3.538,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[2]]",
+  "metaData": "{\r\n  \"name\": \"surfaceArea\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

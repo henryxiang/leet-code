@@ -1,0 +1,124 @@
+{
+  "questionId": "264",
+  "questionFrontendId": "264",
+  "boundTopicId": null,
+  "title": "Ugly Number II",
+  "titleSlug": "ugly-number-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Write a program to find the <code>n</code>-th ugly number.</p>\r\n\r\n<p>Ugly numbers are<strong> positive numbers</strong> whose prime factors only include <code>2, 3, 5</code>.&nbsp;</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> n = 10\r\n<strong>Output:</strong> 12\r\n<strong>Explanation: </strong><code>1, 2, 3, 4, 5, 6, 8, 9, 10, 12</code> is the sequence of the first <code>10</code> ugly numbers.</pre>\r\n\r\n<p><strong>Note: </strong>&nbsp;</p>\r\n\r\n<ol>\r\n\t<li><code>1</code> is typically treated as an ugly number.</li>\r\n\t<li><code>n</code> <b>does not exceed 1690</b>.</li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1244,
+  "dislikes": 77,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Merge k Sorted Lists\", \"titleSlug\": \"merge-k-sorted-lists\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Count Primes\", \"titleSlug\": \"count-primes\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Ugly Number\", \"titleSlug\": \"ugly-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Perfect Squares\", \"titleSlug\": \"perfect-squares\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Super Ugly Number\", \"titleSlug\": \"super-ugly-number\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Ugly Number III\", \"titleSlug\": \"ugly-number-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "jianchao-li",
+      "profileUrl": "/jianchao-li/",
+      "avatarUrl": "https://assets.leetcode.com/users/jianchaolifighter/avatar_1529298385.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Heap",
+      "slug": "heap"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int nthUglyNumber(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int nthUglyNumber(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def nthUglyNumber(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def nthUglyNumber(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint nthUglyNumber(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NthUglyNumber(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar nthUglyNumber = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef nth_ugly_number(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func nthUglyNumber(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func nthUglyNumber(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def nthUglyNumber(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun nthUglyNumber(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn nth_ugly_number(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function nthUglyNumber($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"124.2K\", \"totalSubmission\": \"325.4K\", \"totalAcceptedRaw\": 124217, \"totalSubmissionRaw\": 325381, \"acRate\": \"38.2%\"}",
+  "hints": [
+    "The naive approach is to call <code>isUgly</code> for every number until you reach the n<sup>th</sup> one. Most numbers are <i>not</i> ugly. Try to focus your effort on generating only the ugly ones.",
+    "An ugly number must be multiplied by either 2, 3, or 5 from a smaller ugly number.",
+    "The key is how to maintain the order of the ugly numbers. Try a similar approach of merging from three sorted lists: L<sub>1</sub>, L<sub>2</sub>, and L<sub>3</sub>.",
+    "Assume you have U<sub>k</sub>, the k<sup>th</sup> ugly number. Then U<sub>k+1</sub> must be Min(L<sub>1</sub> * 2, L<sub>2</sub> * 3, L<sub>3</sub> * 5)."
+  ],
+  "solution": {
+    "id": "750",
+    "canSeeDetail": true,
+    "url": "/articles/ugly-number-ii/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Two levels of optimisation\r\n\r\nLet's imagine that the problem is solved somehow for the number n\r\nand we've put the solution directly in `nthUglyNumber` method\r\nof the `Solution` class.\r\n\r\nNow let's check the context: there are 596 test cases, \r\nfor the most of them n is larger than 50, \r\nand n is known to be smaller than 1691. \r\n\r\nHence instead of computing $$596 \\times 50 = 29800$$ ugly numbers in total, \r\none could precompute all 1690 numbers, and significantly speed up\r\nthe submission. \r\n\r\n> How to precompute? Use another class `Ugly` with all \r\ncomputations in the constructor\r\nand then declare `Ugly` instance as a static variable of `Solution` class. \r\n\r\nNow let's consider two different approaches to perform the \r\npreliminary computations. \r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Heap\r\n\r\n**Intuition**\r\n\r\nLet's start from the heap which contains just one number: 1.  \r\nTo compute next ugly numbers, pop 1 from the heap and\r\npush instead three numbers: $$1 \\times 2$$, $$1 \\times 3$$,\r\nand $$1 \\times 5$$. \r\n\r\nNow the smallest number in the heap is 2. \r\nTo compute next ugly numbers, pop 2 from the heap and\r\npush instead three numbers: $$2 \\times 2$$, $$2 \\times 3$$,\r\nand $$2 \\times 5$$. \r\n\r\n> One could continue like this to compute first 1690 ugly numbers. \r\nAt each step, pop the smallest ugly number k from the heap,\r\nand push instead three ugly numbers: $$k \\times 2$$, $$k \\times 3$$,\r\nand $$k \\times 5$$.\r\n\r\n!?!../Documents/264_SEC.json:1000,394!?!\r\n\r\n**Algorithm**\r\n\r\n- Precompute 1690 ugly numbers:\r\n\r\n    - Initiate array of precomputed ugly numbers `nums`, heap `heap`\r\n    and hashset `seen` to track all elements already pushed in the heap\r\n    in order to avoid duplicates.\r\n    \r\n    - Make a loop of 1690 steps. At each step:\r\n    \r\n        - Pop the smallest element `k` out of heap and add it into the \r\n        array of precomputed ugly numbers.\r\n        \r\n        - Push `2k`, `3k` and `5k` in the heap if they are not yet \r\n        in the hashset. Update the hashset of seen ugly numbers as well.\r\n        \r\n- Retrieve needed ugly number from the array of precomputed numbers.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/MiBdQPmc/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"MiBdQPmc\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(1)$$ to retrieve preliminary \r\ncomputed ugly number, and more than $$12 \\times 10^6$$ \r\noperations for preliminary computations. \r\nLet's estimate the number of operations needed for the preliminary \r\ncomputations. `For` loop here has 1690 steps, and each step performs\r\n1 pop, not more than 3 pushes and 3 `contains / in` operations \r\nfor the hashset. Pop and push have logarithmic time complexity \r\nand hence much cheaper than the linear search, so let's estimate only the\r\nlast term. This arithmetic progression is easy to estimate:\r\n\r\n    $$\r\n    1 + 2 + 3 + ... + 1690 \\times 3 = \\frac{(1 + 1690 \\times 3) \\times 1690 \\times 3}{2} > 4.5 \\times 1690^2\r\n    $$\r\n\r\n\r\n* Space complexity : constant space to keep an array of 1690 ugly numbers,\r\nthe heap of not more than $$1690 \\times 2$$ elements and the hashset of\r\nnot more than $$1690 \\times 3$$ elements.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Dynamic Programming\r\n\r\n**Intuition**\r\n\r\nPreliminary computations in Approach 1 are quite heavy, and could \r\nbe optimised with dynamic programming. \r\n\r\nLet's start from the array of ugly numbers which contains just one\r\nnumber - 1. Let's use three pointers $$i_2$$, $$i_3$$ and $$i_5$$,\r\nto mark the last ugly number which was multiplied by 2, 3 and 5, \r\ncorrespondingly. \r\n\r\nThe algorithm is straightforward: choose \r\nthe smallest ugly number among $$2 \\times \\textrm{nums}[i_2]$$, $$3 \\times \\textrm{nums}[i_3]$$,\r\nand $$5 \\times \\textrm{nums}[i_5]$$ and add it into the array. \r\nMove the corresponding pointer by one step. Repeat till you'll have\r\n1690 ugly numbers.\r\n\r\n!?!../Documents/264_LIS.json:1000,394!?!\r\n\r\n**Algorithm**\r\n\r\n- Precompute 1690 ugly numbers:\r\n\r\n    - Initiate array of precomputed ugly numbers `nums` and three \r\n    pointers `i2`, `i3` and `i5` to track the index of the \r\n    last ugly number used to produce the next ones. \r\n    \r\n    - Make a loop of 1690 steps. At each step:\r\n    \r\n        - Choose the smallest number among `nums[i2] * 2`, `nums[i3] * 3`,\r\n        and `nums[i5] * 5` and add it into `nums`.\r\n        \r\n        - Move by one the pointer which corresponds to the \"ancestor\" \r\n        of the added number.     \r\n        \r\n- Retrieve needed ugly number from the array of precomputed numbers.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/5bgFeQCG/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"5bgFeQCG\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(1)$$ to retrieve preliminary \r\ncomputed ugly number, and about $$1690 \\times 5 = 8450$$ \r\noperations for preliminary computations. \r\n\r\n* Space complexity : constant space to keep an array of 1690 ugly numbers.\r\n    \r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "735",
+      "count": 15,
+      "average": 4.2,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "10",
+  "metaData": "{\r\n  \"name\": \"nthUglyNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

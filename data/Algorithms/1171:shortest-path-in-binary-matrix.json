@@ -1,0 +1,101 @@
+{
+  "questionId": "1171",
+  "questionFrontendId": "1091",
+  "boundTopicId": null,
+  "title": "Shortest Path in Binary Matrix",
+  "titleSlug": "shortest-path-in-binary-matrix",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In an N by N square grid, each cell is either empty (0) or blocked (1).</p>\n\n<p>A&nbsp;<em>clear&nbsp;path from top-left to bottom-right</em>&nbsp;has length <code>k</code> if and only if it is composed of cells <code>C_1, C_2, ..., C_k</code>&nbsp;such that:</p>\n\n<ul>\n\t<li>Adjacent cells <code>C_i</code> and <code>C_{i+1}</code> are connected 8-directionally (ie., they are different and&nbsp;share an edge or corner)</li>\n\t<li><code>C_1</code> is at location <code>(0, 0)</code> (ie. has value <code>grid[0][0]</code>)</li>\n\t<li><code>C_k</code>&nbsp;is at location <code>(N-1, N-1)</code> (ie. has value <code>grid[N-1][N-1]</code>)</li>\n\t<li>If <code>C_i</code> is located at&nbsp;<code>(r, c)</code>, then <code>grid[r][c]</code> is empty (ie.&nbsp;<code>grid[r][c] ==&nbsp;0</code>).</li>\n</ul>\n\n<p>Return the length of the shortest such clear path from top-left to bottom-right.&nbsp; If such a path does not exist, return -1.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-1-1\">[[0,1],[1,0]]\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/08/04/example1_1.png\" style=\"width: 151px; height: 152px;\" />\n</span>\n<strong>Output: </strong>2\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/08/04/example1_2.png\" style=\"width: 151px; height: 152px;\" />\n</pre>\n\n<div>\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-2-1\">[[0,0,0],[1,1,0],[1,1,0]]\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/08/04/example2_1.png\" style=\"width: 151px; height: 152px;\" />\n</span>\n<strong>Output:</strong> 4\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/08/04/example2_2.png\" style=\"width: 151px; height: 152px;\" />\n</pre>\n\n<p>&nbsp;</p>\n</div>\n\n<p><strong>Note:</strong></p>\n\n<ol>\n\t<li><code>1 &lt;= grid.length == grid[0].length &lt;= 100</code></li>\n\t<li><code>grid[r][c]</code> is <code>0</code> or <code>1</code></li>\n</ol>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 190,
+  "dislikes": 29,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "nidhi_coding",
+      "profileUrl": "/nidhi_coding/",
+      "avatarUrl": "https://assets.leetcode.com/users/nidhi_coding/avatar_1562215665.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int shortestPathBinaryMatrix(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int shortestPathBinaryMatrix(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestPathBinaryMatrix(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint shortestPathBinaryMatrix(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ShortestPathBinaryMatrix(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar shortestPathBinaryMatrix = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef shortest_path_binary_matrix(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestPathBinaryMatrix(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestPathBinaryMatrix(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestPathBinaryMatrix(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestPathBinaryMatrix(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_path_binary_matrix(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function shortestPathBinaryMatrix($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"15.7K\", \"totalSubmission\": \"42.5K\", \"totalAcceptedRaw\": 15671, \"totalSubmissionRaw\": 42489, \"acRate\": \"36.9%\"}",
+  "hints": [
+    "Do a breadth first search to find the shortest path."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[0,1],[1,0]]",
+  "metaData": "{\r\n  \"name\": \"shortestPathBinaryMatrix\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

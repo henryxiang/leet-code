@@ -1,0 +1,100 @@
+{
+  "questionId": "1077",
+  "questionFrontendId": "1088",
+  "boundTopicId": null,
+  "title": "Confusing Number II",
+  "titleSlug": "confusing-number-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We can rotate digits by 180 degrees to form new digits. When 0, 1, 6, 8, 9 are rotated 180 degrees, they become 0, 1, 9, 8, 6 respectively. When 2, 3, 4, 5 and 7 are rotated 180 degrees, they become invalid.</p>\r\n\r\n<p>A <em>confusing number</em> is a number that when rotated 180 degrees becomes a <strong>different</strong> number with each digit valid.(Note that the rotated number can be greater than the original number.)</p>\r\n\r\n<p>Given a positive integer <code>N</code>, return the number of confusing numbers between <code>1</code> and <code>N</code>&nbsp;inclusive.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">20</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">6</span>\r\n<strong>Explanation: </strong>\r\nThe confusing numbers are [6,9,10,16,18,19].\r\n6 converts to 9.\r\n9 converts to 6.\r\n10 converts to 01 which is just 1.\r\n16 converts to 91.\r\n18 converts to 81.\r\n19 converts to 61.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">100</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">19</span>\r\n<strong>Explanation: </strong>\r\nThe confusing numbers are [6,9,10,16,18,19,60,61,66,68,80,81,86,89,90,91,98,99,100].\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= N &lt;= 10^9</code></li>\r\n</ol>",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 53,
+  "dislikes": 22,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Confusing Number\", \"titleSlug\": \"confusing-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 9}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int confusingNumberII(int N) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int confusingNumberII(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def confusingNumberII(self, N):\n        \"\"\"\n        :type N: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def confusingNumberII(self, N: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint confusingNumberII(int N){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int ConfusingNumberII(int N) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @return {number}\n */\nvar confusingNumberII = function(N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\r\n# @return {Integer}\r\ndef confusing_number_ii(n)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func confusingNumberII(_ N: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func confusingNumberII(N int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def confusingNumberII(N: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun confusingNumberII(N: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn confusing_number_ii(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @return Integer\n     */\n    function confusingNumberII($N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.2K\", \"totalSubmission\": \"10.5K\", \"totalAcceptedRaw\": 4152, \"totalSubmissionRaw\": 10463, \"acRate\": \"39.7%\"}",
+  "hints": [
+    "Which set of digits have the valid numbers?",
+    "Only 0, 1, 6, 8, 9 are the valid set of digits, do a backtracking to generate all the numbers containing this digits and check they are valid."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "20",
+  "metaData": "{\r\n  \"name\": \"confusingNumberII\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

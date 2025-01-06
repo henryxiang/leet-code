@@ -1,0 +1,109 @@
+{
+  "questionId": "402",
+  "questionFrontendId": "402",
+  "boundTopicId": null,
+  "title": "Remove K Digits",
+  "titleSlug": "remove-k-digits",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-negative integer <i>num</i> represented as a string, remove <i>k</i> digits from the number so that the new number is the smallest possible.\r\n</p>\r\n\r\n<p><b>Note:</b><br />\r\n<ul>\r\n<li>The length of <i>num</i> is less than 10002 and will be &ge; <i>k</i>.</li>\r\n<li>The given <i>num</i> does not contain any leading zero.</li>\r\n</ul>\r\n</b>\r\n</p>\r\n\r\n<p><b>Example 1:</b>\r\n<pre>\r\nInput: num = \"1432219\", k = 3\r\nOutput: \"1219\"\r\nExplanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b>\r\n<pre>\r\nInput: num = \"10200\", k = 1\r\nOutput: \"200\"\r\nExplanation: Remove the leading 1 and the number is 200. Note that the output must not contain leading zeroes.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b>\r\n<pre>\r\nInput: num = \"10\", k = 2\r\nOutput: \"0\"\r\nExplanation: Remove all the digits from the number and it is left with nothing which is 0.\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1253,
+  "dislikes": 72,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Create Maximum Number\", \"titleSlug\": \"create-maximum-number\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Monotone Increasing Digits\", \"titleSlug\": \"monotone-increasing-digits\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"DiDi\", \"slug\": \"didi\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 0}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string removeKdigits(string num, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String removeKdigits(String num, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def removeKdigits(self, num, k):\n        \"\"\"\n        :type num: str\n        :type k: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def removeKdigits(self, num: str, k: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * removeKdigits(char * num, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string RemoveKdigits(string num, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} num\n * @param {number} k\n * @return {string}\n */\nvar removeKdigits = function(num, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} num\n# @param {Integer} k\n# @return {String}\ndef remove_kdigits(num, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func removeKdigits(_ num: String, _ k: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func removeKdigits(num string, k int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def removeKdigits(num: String, k: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun removeKdigits(num: String, k: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn remove_kdigits(num: String, k: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $num\n     * @param Integer $k\n     * @return String\n     */\n    function removeKdigits($num, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"79.8K\", \"totalSubmission\": \"292.1K\", \"totalAcceptedRaw\": 79784, \"totalSubmissionRaw\": 292109, \"acRate\": \"27.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "768",
+    "canSeeDetail": true,
+    "url": "/articles/remove-k-digits/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Approach 1: Brute-force [Time Limit Exceeded]\r\n\r\n**Intuition**\r\n\r\nAt the first glance, one of the first intuitions that might come to one's mind is to enumerate all the possible combinations and find the minimal number among them, _i.e._ _brute-force_.\r\n\r\nThough after a small moment of reflection, we would easily rule it out. We could name a few reasons. The major caveat is that the algorithm would have an **exponential time complexity**, since we need to enumerate the combinations of selecting $$k$$ numbers out of a list of $$n$$, _i.e._ $$C_{n}^{k}$$. Even for a trial example, the algorithm could run out of the time limit.\r\n\r\nApart from the complexity issue, another technical issue that one needs to solve in the above brute-force approach, is _to compare the values of two digit strings_. As naive as it sounds, we could convert the digit string to the numerical value. Soon one would realize that this method does not scale. For an unsigned 32 bit-integer, the maximum value it can hold is a number with 10 digits (_i.e._ _4,294,967,295_). We can expect there are plenty of test cases with strings of hundreds of digits.\r\n\r\nOne would argue that for comparison, we don't need to convert the digit string to its numeric value, but simply compare the sequence of digits one by one from left to right. Indeed, it would work.\r\n\r\n_But then, if we look at the overall problem again, it seems that there should be some **deterministic way** to construct the solution, without the need of exhausting all possible solutions._\r\n<br/>\r\n<br/>\r\n\r\n\r\n--- \r\n#### Approach 2: Greedy with Stack\r\n\r\n**Intuition**\r\n\r\nWe've got a hint while entertaining the idea of brute-force, that given two sequences of digit of the same length, it is the **leftmost** **distinct** digits that determine the superior of the two numbers, _e.g._ for `A = 1axxx`, `B = 1bxxx`, if the digits `a > b`, then `A > B`.\r\n\r\nWith this insight, the first intuition we got for our problem is that _we should iterate from the left to right_, when removing the digits. The more a digit to the left-hand side, the more weight it carries. \r\n\r\nNow that we fix on the order of the iteration, it is critical to come up some **criteria** on how we eliminate digits, in order to obtain the minimum value.\r\n\r\n![pic](../Figures/402/402_example.png)\r\n\r\nLet us start from a simple example. Given a sequence of digits, _e.g._ `425`, if we are asked to remove just one digit, then from left to right, we have the candidates as `4`, `2` and `5`. And we compare each digit with its left neighbor. Starting from `2`, which is less than its left neighbor `4`. _At this very moment, we are sure that we should remove the digit `4`_. Because the consequence of not doing so is that we won't obtain the minimum number, no matter what we do subsequently.\r\n\r\nImagine if we keep the digit `4`, then all the possible solutions are lead with the digit `4` (_i.e._ 42, 45). While in one of the opposite cases, _e.g._ removing `4` and keeping `2`, we have solutions lead with `2` (_i.e._ 25), which is obviously less than any of the solutions of keeping the digit `4`.\r\n\r\nWe could summarize the above scenario of removing a digit, as a rule below:\r\n> Given a sequence of digits $$[D_1D_2D_3...D_n]$$, if the digit $$D_2$$ is less than its left neighbor $$D_1$$, then we should remove the left neighbor ($$D_1$$) in order to obtain the minimum result.\r\n\r\n**Algorithm**\r\n\r\nBelieve it or not, the above rule is the only key needed to solve the problem. It clearly defines a condition on which we can remove a digit without a doubt. By removing the digits one by one, we are steadily approaching the optimal solution step by step. Now, it might ring a bell, to one of the popular algorithmic paradigms $$-$$ **Greedy**. \r\n\r\n>Indeed, the problem could be solved with the greedy algorithm. The above rule clarifies the essential logic on how we can approach the final solution. Once we remove a digit from the sequence, the remaining digits forms a new problem where we can continue to apply the rule.\r\n\r\nOne might notice that, there could be some cases where the condition to apply the rule does not hold for any of the digits. To put it in another word, in those cases, we would have a _**monotonic increasing sequence**_, _i.e._ each digit is bigger than its previous digit. In this scenario, we simply remove the pending large digits, again, _**greedily**_. We skip the rigorous proof here, and claim that the solution obtained by the above measure is indeed the optimal one.\r\n\r\nOn the other hand, we did provide a **_proof by contradiction_**, with the simple example of `425` in the Intuition section, that by repeatedly applying the rule we would obtain the optimal solution.\r\n\r\n**Implementation**\r\n\r\nOne could implement the above algorithm with the help of the **stack** data structure. We use a stack to hold the digits that we would keep at the end.\r\n\r\nIterating the sequence of digits from left to right, the main loop can be broken down as follows: \r\n\r\n- 1). for each digit, if the digit is less than the top of the stack, _i.e._ the left neighbor of the digit, then we pop the stack, _i.e._ removing the left neighbor. At the end, we push the digit to the stack.\r\n\r\n- 2). we repeat the above step (1) until any of the conditions does not hold any more, _e.g._ the stack is empty (no more digits left). or in another case, we have already removed `k` digits, therefore mission accomplished.\r\n\r\n![pic](../Figures/402/402_algorithm.png)\r\n\r\nWe demonstrate how the algorithm works in the above graph. Given the input sequence `[1, 2, 3, 4, 5, 2, 6, 4]` and the number of digits to remove `k=4`, the rule is triggered for the first time at the digit of `5`. Once we remove the digit `5`, the rule is triggered again at the digit `4` till the digit `3`. And then later, at the digit `6`, the rule is triggered as well.\r\n\r\nOut of the above main loop, we need to handle some corner cases to make the solution more complete.\r\n\r\n- case 1). when we get out of the main loop, we removed `m` digits, which is _less than asked_, _i.e._(`m < k`). In the extreme case, we would not remove any digit for the monotonic increasing sequence in the loop, _i.e._ `m==0`. In this case, we just need to remove the additional `k-m` digits from the tail of the sequence.\r\n\r\n- case 2). once we remove all the `k` digits from the sequence, there could be some leading zeros left. To format the final number, we need to strip off those leading zeros.\r\n\r\n- case 3). we might end up removing all numbers from the sequence. In this case, we should return zero, instead of empty string.\r\n\r\nHere are some sample implementations.\r\n\r\n<iframe src=\"https://leetcode.com/playground/Fhc5jq7n/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Fhc5jq7n\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$. Although there are nested loops, the inner loop is bounded to be run at most $$k$$ times globally. Together with the outer loop, we have the exact $$(N + k)$$ number of operations. Since $$0 < k \\le N$$, the time complexity of the main loop is bounded within $$2N$$.\r\nFor the logic outside the main loop, it is clear to see that their time complexity is $$\\mathcal{O}(N)$$. As a result, the overall time complexity of the algorithm is $$\\mathcal{O}(N)$$.\r\n\r\n* Space complexity : $$\\mathcal{O}(N)$$. We have a stack which would hold all the input digits in the worst case. \r\n\r\n---\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "753",
+      "count": 16,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"1432219\"\n3",
+  "metaData": "{\r\n  \"name\": \"removeKdigits\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"num\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n        \"name\": \"k\",\r\n        \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

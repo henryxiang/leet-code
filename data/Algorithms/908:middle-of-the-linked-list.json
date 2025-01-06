@@ -1,0 +1,111 @@
+{
+  "questionId": "908",
+  "questionFrontendId": "876",
+  "boundTopicId": null,
+  "title": "Middle of the Linked List",
+  "titleSlug": "middle-of-the-linked-list",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-empty, singly&nbsp;linked list with head node <code>head</code>, return&nbsp;a&nbsp;middle node of linked list.</p>\r\n\r\n<p>If there are two middle nodes, return the second middle node.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[1,2,3,4,5]</span>\r\n<strong>Output: </strong>Node 3 from this list (Serialization: <span id=\"example-output-1\">[3,4,5]</span>)\r\nThe returned node has value 3.  (The judge&#39;s serialization of this node is [3,4,5]).\r\nNote that we returned a ListNode object ans, such that:\r\nans.val = 3, ans.next.val = 4, ans.next.next.val = 5, and ans.next.next.next = NULL.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[1,2,3,4,5,6]</span>\r\n<strong>Output: </strong>Node 4 from this list (Serialization: <span id=\"example-output-2\">[4,5,6]</span>)\r\nSince the list has two middle nodes with values 3 and 4, we return the second one.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in the given list will be between <code>1</code>&nbsp;and <code>100</code>.</li>\r\n</ul>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 746,
+  "dislikes": 46,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "sg2993",
+      "profileUrl": "/sg2993/",
+      "avatarUrl": "https://www.gravatar.com/avatar/b2d494f34ef09247a50a210b0b3a7706.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode(int x) : val(x), next(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode* middleNode(ListNode* head) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public ListNode middleNode(ListNode head) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for singly-linked list.\n# class ListNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution(object):\n    def middleNode(self, head):\n        \"\"\"\n        :type head: ListNode\n        :rtype: ListNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution:\n    def middleNode(self, head: ListNode) -> ListNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     struct ListNode *next;\n * };\n */\n\n\nstruct ListNode* middleNode(struct ListNode* head){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public ListNode MiddleNode(ListNode head) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for singly-linked list.\n * function ListNode(val) {\n *     this.val = val;\n *     this.next = null;\n * }\n */\n/**\n * @param {ListNode} head\n * @return {ListNode}\n */\nvar middleNode = function(head) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for singly-linked list.\n# class ListNode\n#     attr_accessor :val, :next\n#     def initialize(val)\n#         @val = val\n#         @next = nil\n#     end\n# end\n\n# @param {ListNode} head\n# @return {ListNode}\ndef middle_node(head)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public var val: Int\n *     public var next: ListNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.next = nil\n *     }\n * }\n */\nclass Solution {\n    func middleNode(_ head: ListNode?) -> ListNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc middleNode(head *ListNode) *ListNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for singly-linked list.\n * class ListNode(var _x: Int = 0) {\n *   var next: ListNode = null\n *   var x: Int = _x\n * }\n */\nobject Solution {\n    def middleNode(head: ListNode): ListNode = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var li = ListNode(5)\n * var v = li.`val`\n * Definition for singly-linked list.\n * class ListNode(var `val`: Int) {\n *     var next: ListNode? = null\n * }\n */\nclass Solution {\n    fun middleNode(head: ListNode?): ListNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for singly-linked list.\n// #[derive(PartialEq, Eq, Clone, Debug)]\n// pub struct ListNode {\n//   pub val: i32,\n//   pub next: Option<Box<ListNode>>\n// }\n// \n// impl ListNode {\n//   #[inline]\n//   fn new(val: i32) -> Self {\n//     ListNode {\n//       next: None,\n//       val\n//     }\n//   }\n// }\nimpl Solution {\n    pub fn middle_node(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a singly-linked list.\n * class ListNode {\n *     public $val = 0;\n *     public $next = null;\n *     function __construct($val) { $this->val = $val; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param ListNode $head\n     * @return ListNode\n     */\n    function middleNode($head) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"98.9K\", \"totalSubmission\": \"150.7K\", \"totalAcceptedRaw\": 98944, \"totalSubmissionRaw\": 150684, \"acRate\": \"65.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "520",
+    "canSeeDetail": true,
+    "url": "/articles/middle-of-the-linked-list/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Output to Array\n\n**Intuition and Algorithm**\n\nPut every node into an array `A` in order.  Then the middle node is just `A[A.length // 2]`, since we can retrieve each node by index.\n\n<iframe src=\"https://leetcode.com/playground/fsou5N8T/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"fsou5N8T\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of nodes in the given list.\n\n* Space Complexity:  $$O(N)$$, the space used by `A`.\n<br />\n<br />\n\n\n---\n#### Approach 2: Fast and Slow Pointer\n\n**Intuition and Algorithm**\n\nWhen traversing the list with a pointer `slow`, make another pointer `fast` that traverses twice as fast.  When `fast` reaches the end of the list, `slow` must be in the middle.\n\n<iframe src=\"https://leetcode.com/playground/brPhWpn3/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"brPhWpn3\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of nodes in the given list.\n\n* Space Complexity:  $$O(1)$$, the space used by `slow` and `fast`.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "513",
+      "count": 31,
+      "average": 4.581,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4,5]",
+  "metaData": "{\r\n  \"name\": \"middleNode\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"head\",\r\n      \"type\": \"ListNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"ListNode\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

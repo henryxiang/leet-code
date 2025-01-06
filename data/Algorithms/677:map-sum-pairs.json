@@ -1,0 +1,111 @@
+{
+  "questionId": "677",
+  "questionFrontendId": "677",
+  "boundTopicId": null,
+  "title": "Map Sum Pairs",
+  "titleSlug": "map-sum-pairs",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nImplement a MapSum class with <code>insert</code>, and <code>sum</code> methods.\r\n</p>\r\n\r\n<p>\r\nFor the method <code>insert</code>, you'll be given a pair of (string, integer). The string represents the key and the integer represents the value. If the key already existed, then the original key-value pair will be overridden to the new one.\r\n</p>\r\n\r\n<p>\r\nFor the method <code>sum</code>, you'll be given a string representing the prefix, and you need to return the sum of all the pairs' value whose key starts with the prefix.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\nInput: insert(\"apple\", 3), Output: Null\r\nInput: sum(\"ap\"), Output: 3\r\nInput: insert(\"app\", 2), Output: Null\r\nInput: sum(\"ap\"), Output: 5\r\n</pre>\r\n</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 376,
+  "dislikes": 68,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Trie",
+      "slug": "trie"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class MapSum {\npublic:\n    /** Initialize your data structure here. */\n    MapSum() {\n        \n    }\n    \n    void insert(string key, int val) {\n        \n    }\n    \n    int sum(string prefix) {\n        \n    }\n};\n\n/**\n * Your MapSum object will be instantiated and called as such:\n * MapSum* obj = new MapSum();\n * obj->insert(key,val);\n * int param_2 = obj->sum(prefix);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class MapSum {\n\n    /** Initialize your data structure here. */\n    public MapSum() {\n        \n    }\n    \n    public void insert(String key, int val) {\n        \n    }\n    \n    public int sum(String prefix) {\n        \n    }\n}\n\n/**\n * Your MapSum object will be instantiated and called as such:\n * MapSum obj = new MapSum();\n * obj.insert(key,val);\n * int param_2 = obj.sum(prefix);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class MapSum(object):\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def insert(self, key, val):\n        \"\"\"\n        :type key: str\n        :type val: int\n        :rtype: None\n        \"\"\"\n        \n\n    def sum(self, prefix):\n        \"\"\"\n        :type prefix: str\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your MapSum object will be instantiated and called as such:\n# obj = MapSum()\n# obj.insert(key,val)\n# param_2 = obj.sum(prefix)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class MapSum:\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def insert(self, key: str, val: int) -> None:\n        \n\n    def sum(self, prefix: str) -> int:\n        \n\n\n# Your MapSum object will be instantiated and called as such:\n# obj = MapSum()\n# obj.insert(key,val)\n# param_2 = obj.sum(prefix)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} MapSum;\n\n/** Initialize your data structure here. */\n\nMapSum* mapSumCreate() {\n    \n}\n\nvoid mapSumInsert(MapSum* obj, char * key, int val) {\n  \n}\n\nint mapSumSum(MapSum* obj, char * prefix) {\n  \n}\n\nvoid mapSumFree(MapSum* obj) {\n    \n}\n\n/**\n * Your MapSum struct will be instantiated and called as such:\n * MapSum* obj = mapSumCreate();\n * mapSumInsert(obj, key, val);\n \n * int param_2 = mapSumSum(obj, prefix);\n \n * mapSumFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class MapSum {\n\n    /** Initialize your data structure here. */\n    public MapSum() {\n        \n    }\n    \n    public void Insert(string key, int val) {\n        \n    }\n    \n    public int Sum(string prefix) {\n        \n    }\n}\n\n/**\n * Your MapSum object will be instantiated and called as such:\n * MapSum obj = new MapSum();\n * obj.Insert(key,val);\n * int param_2 = obj.Sum(prefix);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Initialize your data structure here.\n */\nvar MapSum = function() {\n    \n};\n\n/** \n * @param {string} key \n * @param {number} val\n * @return {void}\n */\nMapSum.prototype.insert = function(key, val) {\n    \n};\n\n/** \n * @param {string} prefix\n * @return {number}\n */\nMapSum.prototype.sum = function(prefix) {\n    \n};\n\n/** \n * Your MapSum object will be instantiated and called as such:\n * var obj = new MapSum()\n * obj.insert(key,val)\n * var param_2 = obj.sum(prefix)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class MapSum\n\n=begin\n    Initialize your data structure here.\n=end\n    def initialize()\n        \n    end\n\n\n=begin\n    :type key: String\n    :type val: Integer\n    :rtype: Void\n=end\n    def insert(key, val)\n        \n    end\n\n\n=begin\n    :type prefix: String\n    :rtype: Integer\n=end\n    def sum(prefix)\n        \n    end\n\n\nend\n\n# Your MapSum object will be instantiated and called as such:\n# obj = MapSum.new()\n# obj.insert(key, val)\n# param_2 = obj.sum(prefix)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass MapSum {\n\n    /** Initialize your data structure here. */\n    init() {\n        \n    }\n    \n    func insert(_ key: String, _ val: Int) {\n        \n    }\n    \n    func sum(_ prefix: String) -> Int {\n        \n    }\n}\n\n/**\n * Your MapSum object will be instantiated and called as such:\n * let obj = MapSum()\n * obj.insert(key, val)\n * let ret_2: Int = obj.sum(prefix)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type MapSum struct {\n    \n}\n\n\n/** Initialize your data structure here. */\nfunc Constructor() MapSum {\n    \n}\n\n\nfunc (this *MapSum) Insert(key string, val int)  {\n    \n}\n\n\nfunc (this *MapSum) Sum(prefix string) int {\n    \n}\n\n\n/**\n * Your MapSum object will be instantiated and called as such:\n * obj := Constructor();\n * obj.Insert(key,val);\n * param_2 := obj.Sum(prefix);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class MapSum() {\n\n    /** Initialize your data structure here. */\n    \n\n    def insert(key: String, `val`: Int) {\n        \n    }\n\n    def sum(prefix: String): Int = {\n        \n    }\n\n}\n\n/**\n * Your MapSum object will be instantiated and called as such:\n * var obj = new MapSum()\n * obj.insert(key,`val`)\n * var param_2 = obj.sum(prefix)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class MapSum() {\n\n    /** Initialize your data structure here. */\n    \n\n    fun insert(key: String, `val`: Int) {\n        \n    }\n\n    fun sum(prefix: String): Int {\n        \n    }\n\n}\n\n/**\n * Your MapSum object will be instantiated and called as such:\n * var obj = MapSum()\n * obj.insert(key,`val`)\n * var param_2 = obj.sum(prefix)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct MapSum {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl MapSum {\n\n    /** Initialize your data structure here. */\n    fn new() -> Self {\n        \n    }\n    \n    fn insert(&self, key: String, val: i32) {\n        \n    }\n    \n    fn sum(&self, prefix: String) -> i32 {\n        \n    }\n}\n\n/**\n * Your MapSum object will be instantiated and called as such:\n * let obj = MapSum::new();\n * obj.insert(key, val);\n * let ret_2: i32 = obj.sum(prefix);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class MapSum {\n    /**\n     * Initialize your data structure here.\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * @param String $key\n     * @param Integer $val\n     * @return NULL\n     */\n    function insert($key, $val) {\n        \n    }\n  \n    /**\n     * @param String $prefix\n     * @return Integer\n     */\n    function sum($prefix) {\n        \n    }\n}\n\n/**\n * Your MapSum object will be instantiated and called as such:\n * $obj = MapSum();\n * $obj->insert($key, $val);\n * $ret_2 = $obj->sum($prefix);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"32.4K\", \"totalSubmission\": \"61.7K\", \"totalAcceptedRaw\": 32408, \"totalSubmissionRaw\": 61658, \"acRate\": \"52.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "245",
+    "canSeeDetail": true,
+    "url": "/articles/map-sum-pairs/",
+    "content": "[TOC]\n\n#### Approach #1: Brute Force [Accepted]\n\n**Intuition and Algorithm**\n\nFor each key in the map, if that key starts with the given prefix, then add it to the answer.\n\n<iframe src=\"https://leetcode.com/playground/jNhyy639/shared\" frameBorder=\"0\" name=\"jNhyy639\" width=\"100%\" height=\"360\"></iframe>\n**Complexity Analysis**\n\n* Time Complexity: Every insert operation is $$O(1)$$.  Every sum operation is $$O(N * P)$$ where $$N$$ is the number of items in the map, and $$P$$ is the length of the input prefix.\n\n* Space Complexity: The space used by `map` is linear in the size of all input `key` and `val` values combined.\n\n---\n\n#### Approach #2: Prefix Hashmap [Accepted]\n\n**Intuition and Algorithm**\n\nWe can remember the answer for all possible prefixes in a HashMap `score`.  When we get a new `(key, val)` pair, we update every prefix of `key` appropriately: each prefix will be changed by `delta = val - map[key]`, where `map` is the previous associated value of `key` (zero if undefined.)\n\n\n<iframe src=\"https://leetcode.com/playground/QYzALHGM/shared\" frameBorder=\"0\" name=\"QYzALHGM\" width=\"100%\" height=\"394\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: Every insert operation is $$O(K^2)$$, where $$K$$ is the length of the key, as $$K$$ strings are made of an average length of $$K$$.  Every sum operation is $$O(1)$$.\n\n* Space Complexity: The space used by `map` and `score` is linear in the size of all input `key` and `val` values combined.\n\n---\n\n#### Approach #3: Trie [Accepted]\n\n**Intuition and Algorithm**\n\nSince we are dealing with prefixes, a Trie (prefix tree) is a natural data structure to approach this problem.  For every node of the trie corresponding to some prefix, we will remember the desired answer (score) and store it at this node.  As in *Approach #2*, this involves modifying each node by `delta = val - map[key]`.\n\n<iframe src=\"https://leetcode.com/playground/FbmbbgFJ/shared\" frameBorder=\"0\" name=\"FbmbbgFJ\" width=\"100%\" height=\"513\"></iframe>\n\n\n\n**Complexity Analysis**\n\n* Time Complexity: Every insert operation is $$O(K)$$, where $$K$$ is the length of the key.  Every sum operation is $$O(K)$$.\n\n* Space Complexity: The space used is linear in the size of the total input.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "240",
+      "count": 11,
+      "average": 4.546,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"MapSum\", \"insert\", \"sum\", \"insert\", \"sum\"]\n[[], [\"apple\",3], [\"ap\"], [\"app\",2], [\"ap\"]]",
+  "metaData": "{\r\n    \"classname\": \"MapSum\",\r\n    \"maxbytesperline\": 210000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n        ],\r\n        \"comment\": \"Initialize your data structure here.\"\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"insert\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"string\",\r\n                    \"name\": \"key\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"val\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            }\r\n        },\r\n        {\r\n            \"name\" : \"sum\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"string\",\r\n                    \"name\": \"prefix\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

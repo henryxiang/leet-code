@@ -1,0 +1,113 @@
+{
+  "questionId": "53",
+  "questionFrontendId": "53",
+  "boundTopicId": null,
+  "title": "Maximum Subarray",
+  "titleSlug": "maximum-subarray",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an integer array <code>nums</code>, find the contiguous subarray&nbsp;(containing at least one number) which has the largest sum and return its sum.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [-2,1,-3,4,-1,2,1,-5,4],\r\n<strong>Output:</strong> 6\r\n<strong>Explanation:</strong>&nbsp;[4,-1,2,1] has the largest sum = 6.\r\n</pre>\r\n\r\n<p><strong>Follow up:</strong></p>\r\n\r\n<p>If you have figured out the O(<em>n</em>) solution, try coding another solution using the divide and conquer approach, which is more subtle.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 5794,
+  "dislikes": 241,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Best Time to Buy and Sell Stock\", \"titleSlug\": \"best-time-to-buy-and-sell-stock\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Maximum Product Subarray\", \"titleSlug\": \"maximum-product-subarray\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Degree of an Array\", \"titleSlug\": \"degree-of-an-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Longest Turbulent Subarray\", \"titleSlug\": \"longest-turbulent-subarray\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 21}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 16}, {\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 13}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 13}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 11}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Asana\", \"slug\": \"asana\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intel\", \"slug\": \"intel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Capital One\", \"slug\": \"capital-one\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Morgan Stanley\", \"slug\": \"morgan-stanley\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"NetEase\", \"slug\": \"netease\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Evernote\", \"slug\": \"evernote\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nvidia\", \"slug\": \"nvidia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxSubArray(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxSubArray(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxSubArray(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxSubArray(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxSubArray(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxSubArray(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxSubArray = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef max_sub_array(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxSubArray(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxSubArray(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxSubArray(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxSubArray(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_sub_array(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function maxSubArray($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"717.5K\", \"totalSubmission\": \"1.6M\", \"totalAcceptedRaw\": 717478, \"totalSubmissionRaw\": 1585576, \"acRate\": \"45.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "735",
+    "canSeeDetail": true,
+    "url": "/articles/maximum-subarray/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Approach 1: Divide and Conquer\r\n\r\n**Intuition**\r\n\r\nThe problem is a classical example of \r\n[divide and conquer approach](https://leetcode.com/explore/learn/card/recursion-ii/470/divide-and-conquer/), \r\nand can be solved with the algorithm similar with the merge sort.\r\n\r\nLet's follow here a solution template for the divide and conquer problems :\r\n\r\n- Define the base case(s).\r\n\r\n- Split the problem into subproblems and solve them recursively.\r\n\r\n- Merge the solutions for the subproblems to obtain the solution for the original problem.\r\n\r\n**Algorithm**\r\n\r\nmaxSubArray for array with `n` numbers:\r\n\r\n- If `n == 1` : return this single element.\r\n\r\n- `left_sum` = maxSubArray for the left subarray, \r\n*i.e.* for the first `n/2` numbers (middle element \r\nat index `(left + right) / 2` always belongs to the left subarray).\r\n\r\n- `right_sum` = maxSubArray for the right subarray, \r\n_i.e._ for the last `n/2` numbers.\r\n\r\n- `cross_sum` = maximum sum of the subarray containing elements from \r\nboth left and right subarrays and hence crossing the middle element at index\r\n`(left + right) / 2`.\r\n\r\n- Merge the subproblems solutions, *i.e.* return \r\n`max(left_sum, right_sum, cross_sum)`.\r\n\r\n![pic](../Figures/53/dc.png)\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/MiAMgz4r/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"MiAMgz4r\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N \\log N)$$. \r\nLet's compute the solution with the help of \r\n[master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) \r\n$$T(N) = aT\\left(\\frac{b}{N}\\right) + \\Theta(N^d)$$.\r\nThe equation represents dividing the problem \r\nup into $$a$$ subproblems of size $$\\frac{N}{b}$$ in $$\\Theta(N^d)$$ time. \r\nHere one divides the problem in two subproblemes `a = 2`, the size of each subproblem \r\n(to compute left and right subtree) is a half of initial problem `b = 2`, \r\nand all this happens in a $$\\mathcal{O}(N)$$ time `d = 1`.\r\nThat means that $$\\log_b(a) = d$$ and hence we're dealing with \r\n[case 2](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)#Application_to_common_algorithms)\r\nthat means $$\\mathcal{O}(N^{\\log_b(a)} \\log N) = \\mathcal{O}(N \\log N)$$ time complexity.\r\n\r\n* Space complexity : $$\\mathcal{O}(\\log N)$$ to keep the recursion stack.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Greedy\r\n\r\n**Intuition**\r\n\r\nThe problem to find maximum (or minimum) element (or sum) with a single array as the input \r\nis a good candidate to be solved by the greedy approach in linear time.\r\nOne can find the examples of linear time greedy solutions in our articles of   \r\n[Super Washing Machines](https://leetcode.com/articles/super-washing-machines/), \r\nand [Gas Problem](https://leetcode.com/articles/gas-station/).\r\n\r\n> Pick the _locally_ optimal move at each step, \r\nand that will lead to the _globally_ optimal solution. \r\n\r\nThe algorithm is general and straightforward: iterate over the array and \r\nupdate at each step the standard set for such problems:\r\n\r\n- current element\r\n\r\n- current _local_ maximum sum (at this given point)\r\n\r\n- _global_ maximum sum seen so far. \r\n\r\n![bla](../Figures/53/greedy.png)\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/DiKZqXWq/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"DiKZqXWq\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$ since it's one pass along the array. \r\n\r\n* Space complexity : $$\\mathcal{O}(1)$$, since it's \r\na constant space solution. \r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 3: Dynamic Programming (Kadane's algorithm)\r\n\r\n**Intuition**\r\n\r\nThe problem to find sum or maximum or minimum in an entire array or\r\nin a fixed-size sliding window\r\ncould be solved by the dynamic programming (DP) approach in linear time.\r\n\r\nThere are two standard DP approaches suitable for arrays:\r\n\r\n- Constant space one. \r\nMove along the array and modify the array itself.\r\n\r\n- Linear space one. First move in the direction `left->right`, then\r\nin the direction `right->left`. Combine the results.\r\n[Here is an example](https://leetcode.com/articles/sliding-window-maximum/). \r\n\r\nLet's use here the first approach since one could modify the array \r\nto track the current local maximum sum at this given point.\r\n\r\nNext step is to update the _global_ maximum sum, knowing the _local_ one.\r\n\r\n![fig](../Figures/53/dp.png)\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/Uc5cp2Gx/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"Uc5cp2Gx\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$ since it's one pass along the array. \r\n\r\n* Space complexity : $$\\mathcal{O}(1)$$, since it's \r\na constant space solution.  \r\n    \r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "720",
+      "count": 32,
+      "average": 4.531,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[-2,1,-3,4,-1,2,1,-5,4]",
+  "metaData": "{\r\n  \"name\": \"maxSubArray\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

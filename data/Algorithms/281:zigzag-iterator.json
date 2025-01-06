@@ -1,0 +1,69 @@
+{
+  "questionId": "281",
+  "questionFrontendId": "281",
+  "boundTopicId": null,
+  "title": "Zigzag Iterator",
+  "titleSlug": "zigzag-iterator",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two 1d vectors, implement an iterator to return their elements alternately.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example:</strong></p>\n\n<pre>\n<strong>Input:</strong>\nv1 = [1,2]\nv2 = [3,4,5,6] \n<strong>Output:</strong> <code>[1,3,2,4,5,6]\n<strong>Explanation:</strong></code>&nbsp;By calling <i>next</i> repeatedly until <i>hasNext</i> returns <code>false</code>, the order of elements returned by <i>next</i> should be: <code>[1,3,2,4,5,6]</code>.</pre>\n\n<p>&nbsp;</p>\n\n<p><b>Follow up</b>:</p>\n\n<p>What if you are given <code>k</code> 1d vectors? How well can your code be extended to such cases?</p>\n\n<p><strong>Clarification </strong><b>for the follow up question</b><strong>:</strong><br />\nThe &quot;Zigzag&quot; order is not clearly defined and is ambiguous for <code>k &gt; 2</code> cases. If &quot;Zigzag&quot; does not look right to you, replace &quot;Zigzag&quot; with &quot;Cyclic&quot;. For example:</p>\n\n<pre>\n<strong>Input:</strong>\n[1,2,3]\n[4,5,6,7]\n[8,9]\n\n<strong>Output: </strong><code>[1,4,8,2,5,9,3,6,7]</code>.\n</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 313,
+  "dislikes": 20,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Binary Search Tree Iterator\", \"titleSlug\": \"binary-search-tree-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Flatten 2D Vector\", \"titleSlug\": \"flatten-2d-vector\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Peeking Iterator\", \"titleSlug\": \"peeking-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Flatten Nested List Iterator\", \"titleSlug\": \"flatten-nested-list-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cruise Automation\", \"slug\": \"cruise-automation\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class ZigzagIterator {\npublic:\n    ZigzagIterator(vector<int>& v1, vector<int>& v2) {\n        \n    }\n\n    int next() {\n        \n    }\n\n    bool hasNext() {\n        \n    }\n};\n\n/**\n * Your ZigzagIterator object will be instantiated and called as such:\n * ZigzagIterator i(v1, v2);\n * while (i.hasNext()) cout << i.next();\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "public class ZigzagIterator {\n\n    public ZigzagIterator(List<Integer> v1, List<Integer> v2) {\n        \n    }\n\n    public int next() {\n        \n    }\n\n    public boolean hasNext() {\n        \n    }\n}\n\n/**\n * Your ZigzagIterator object will be instantiated and called as such:\n * ZigzagIterator i = new ZigzagIterator(v1, v2);\n * while (i.hasNext()) v[f()] = i.next();\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class ZigzagIterator(object):\n\n    def __init__(self, v1, v2):\n        \"\"\"\n        Initialize your data structure here.\n        :type v1: List[int]\n        :type v2: List[int]\n        \"\"\"\n        \n\n    def next(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n    def hasNext(self):\n        \"\"\"\n        :rtype: bool\n        \"\"\"\n        \n\n# Your ZigzagIterator object will be instantiated and called as such:\n# i, v = ZigzagIterator(v1, v2), []\n# while i.hasNext(): v.append(i.next())"
+    },
+    {
+      "lang": "Python3",
+      "code": "class ZigzagIterator:\n    def __init__(self, v1: List[int], v2: List[int]):\n        \n\n    def next(self) -> int:\n        \n\n    def hasNext(self) -> bool:\n        \n\n# Your ZigzagIterator object will be instantiated and called as such:\n# i, v = ZigzagIterator(v1, v2), []\n# while i.hasNext(): v.append(i.next())"
+    },
+    {
+      "lang": "C",
+      "code": "struct ZigzagIterator {\n    \n};\n\nstruct ZigzagIterator *zigzagIteratorCreate(int* v1, int v1Size, int* v2, int v2Size) {\n    \n}\n\nbool zigzagIteratorHasNext(struct ZigzagIterator *iter) {\n    \n}\n\nint zigzagIteratorNext(struct ZigzagIterator *iter) {\n    \n}\n\n/** Deallocates memory previously allocated for the iterator */\nvoid zigzagIteratorFree(struct ZigzagIterator *iter) {\n    \n}\n\n/**\n * Your ZigzagIterator will be called like this:\n * struct ZigzagIterator *i = zigzagIteratorCreate(v1, v1Size, v2, v2Size);\n * while (zigzagIteratorHasNext(i)) printf(\"%d\\n\", zigzagIteratorNext(i));\n * zigzagIteratorFree(i);\n */"
+    },
+    {
+      "lang": "C#",
+      "code": "public class ZigzagIterator {\n\n    public ZigzagIterator(IList<int> v1, IList<int> v2) {\n        \n    }\n\n    public bool HasNext() {\n        \n    }\n\n    public int Next() {\n        \n    }\n}\n\n/**\n * Your ZigzagIterator will be called like this:\n * ZigzagIterator i = new ZigzagIterator(v1, v2);\n * while (i.HasNext()) v[f()] = i.Next();\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @constructor\n * @param {Integer[]} v1\n * @param {Integer[]} v1\n */\nvar ZigzagIterator = function ZigzagIterator(v1, v2) {\n    \n};\n\n\n/**\n * @this ZigzagIterator\n * @returns {boolean}\n */\nZigzagIterator.prototype.hasNext = function hasNext() {\n    \n};\n\n/**\n * @this ZigzagIterator\n * @returns {integer}\n */\nZigzagIterator.prototype.next = function next() {\n    \n};\n\n/**\n * Your ZigzagIterator will be called like this:\n * var i = new ZigzagIterator(v1, v2), a = [];\n * while (i.hasNext()) a.push(i.next());\n*/"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class ZigzagIterator\n    # @param {Integer[]} v1\n    # @param {Integer[]} v2\n    def initialize(v1, v2)\n        \n    end\n\n    # @return {Boolean}\n    def has_next\n        \n    end\n\n    # @return {Integer}\n    def next\n        \n    end\nend\n\n# Your ZigzagIterator will be called like this:\n# i, v = ZigzagIterator.new(v1, v2), []\n# while i.has_next()\n#    v << i.next\n# end"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"58.8K\", \"totalSubmission\": \"102.7K\", \"totalAcceptedRaw\": 58751, \"totalSubmissionRaw\": 102685, \"acRate\": \"57.2%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2]\n[3,4,5,6]",
+  "metaData": "{\n  \"name\": \"ZigzagIterator\",\n  \"params\": [\n    {\n      \"name\": \"v1\",\n      \"type\": \"list<integer>\"\n    },\n    {\n      \"name\": \"v2\",\n      \"type\": \"list<integer>\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<integer>\",\n    \"dealloc\": true\n  },\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"c\",\n    \"csharp\",\n    \"javascript\",\n    \"ruby\",\n    \"python3\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

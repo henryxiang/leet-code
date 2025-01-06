@@ -1,0 +1,109 @@
+{
+  "questionId": "954",
+  "questionFrontendId": "918",
+  "boundTopicId": null,
+  "title": "Maximum Sum Circular Subarray",
+  "titleSlug": "maximum-sum-circular-subarray",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <strong>circular&nbsp;array</strong>&nbsp;<strong>C</strong> of integers represented by&nbsp;<code>A</code>, find the maximum possible sum of a non-empty subarray of <strong>C</strong>.</p>\r\n\r\n<p>Here, a&nbsp;<em>circular&nbsp;array</em> means the end of the array connects to the beginning of the array.&nbsp; (Formally, <code>C[i] = A[i]</code> when <code>0 &lt;= i &lt; A.length</code>, and <code>C[i+A.length] = C[i]</code>&nbsp;when&nbsp;<code>i &gt;= 0</code>.)</p>\r\n\r\n<p>Also, a subarray may only include each element of the fixed buffer <code>A</code> at most once.&nbsp; (Formally, for a subarray <code>C[i], C[i+1], ..., C[j]</code>, there does not exist <code>i &lt;= k1, k2 &lt;= j</code> with <code>k1 % A.length&nbsp;= k2 % A.length</code>.)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[1,-2,3,-2]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">3\r\n<strong>Explanation: </strong>Subarray [3] has maximum sum 3</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[5,-3,5]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">10\r\n</span><span id=\"example-output-3\"><strong>Explanation:</strong>&nbsp;</span><span id=\"example-output-1\">Subarray [5,5] has maximum sum </span><span>5 + 5 = 10</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[3,-1,2,-1]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">4\r\n<strong>Explanation:</strong>&nbsp;</span><span id=\"example-output-1\">Subarray [2,-1,3] has maximum sum </span><span>2 + (-1) + 3 = 4</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">[3,-2,2,-3]</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">3\r\n</span><span id=\"example-output-3\"><strong>Explanation:</strong>&nbsp;</span><span id=\"example-output-1\">Subarray [3] and [3,-2,2] both have maximum sum </span><span>3</span>\r\n</pre>\r\n\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-5-1\">[-2,-3,-1]</span>\r\n<strong>Output: </strong><span id=\"example-output-5\">-1\r\n</span><span id=\"example-output-3\"><strong>Explanation:</strong>&nbsp;</span><span id=\"example-output-1\">Subarray [-1] has maximum sum -1</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note: </strong></p>\r\n\r\n<ol>\r\n\t<li><code>-30000 &lt;= A[i] &lt;= 30000</code></li>\r\n\t<li><code>1 &lt;= A.length &lt;= 30000</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 450,
+  "dislikes": 24,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 5}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxSubarraySumCircular(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxSubarraySumCircular(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxSubarraySumCircular(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxSubarraySumCircular(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxSubarraySumCircular(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxSubarraySumCircular(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar maxSubarraySumCircular = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef max_subarray_sum_circular(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxSubarraySumCircular(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxSubarraySumCircular(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxSubarraySumCircular(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxSubarraySumCircular(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_subarray_sum_circular(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function maxSubarraySumCircular($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"15.4K\", \"totalSubmission\": \"45.8K\", \"totalAcceptedRaw\": 15425, \"totalSubmissionRaw\": 45769, \"acRate\": \"33.7%\"}",
+  "hints": [
+    "For those of you who are familiar with the <b>Kadane's algorithm</b>, think in terms of that. For the newbies, Kadane's algorithm is used to finding the maximum sum subarray from a given array. This problem is a twist on that idea and it is advisable to read up on that algorithm first before starting this problem. Unless you already have a great algorithm brewing up in your mind in which case, go right ahead!",
+    "What is an alternate way of representing a circular array so that it appears to be a straight array?\r\nEssentially, there are two cases of this problem that we need to take care of. Let's look at the figure below to understand those two cases:\r\n\r\n<br>\r\n<img src=\"https://assets.leetcode.com/uploads/2019/10/20/circular_subarray_hint_1.png\" width=\"700\"/>",
+    "The first case can be handled by the good old Kadane's algorithm. However, is there a smarter way of going about handling the second case as well?"
+  ],
+  "solution": {
+    "id": "582",
+    "canSeeDetail": true,
+    "url": "/articles/maximum-sub-circular-subarray/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Notes and A Primer on Kadane's Algorithm\n\n**About the Approaches**\n\nIn both Approach 1 and Approach 2, \"grindy\" solutions are presented that require less insight, but may be more intuitive to those with a solid grasp of the techniques in those approaches.  Without prior experience, these approaches would be very challenging to emulate.\n\nApproaches 3 and 4 are much easier to implement, but require some insight.\n\n**Explanation of Kadane's Algorithm**\n\nTo understand the solutions in this article, we need some familiarity with Kadane's algorithm.  In this section, we will explain the core idea behind it.\n\nFor a given array `A`, Kadane's algorithm can be used to find the maximum sum of the subarrays of `A`.  Here, we only consider non-empty subarrays.\n\nKadane's algorithm is based on dynamic programming.  Let `dp[j]` be the maximum sum of a subarray that ends in `A[j]`.  That is,\n\n$$\n\\text{dp}[j] = \\max\\limits_i (A[i] + A[i+1] + \\cdots + A[j])\n$$\n\nThen, a subarray ending in `j+1` (such as `A[i], A[i+1] + ... + A[j+1]`) maximizes the `A[i] + ... + A[j]` part of the sum by being equal to `dp[j]` if it is non-empty, and `0` if it is.  Thus, we have the recurrence:\n\n$$\n\\text{dp}[j+1] = A[j+1] + \\max(\\text{dp}[j], 0)\n$$\n\nSince a subarray must end somewhere, $$\\max\\limits_j dp[j]$$ must be the desired answer.\n\nTo compute `dp` efficiently, Kadane's algorithm is usually written in the form that reduces space complexity.  We maintain two variables: `ans` as $$\\max\\limits_j dp[j]$$, and `cur` as $$dp[j]$$; and update them as $$j$$ iterates from $$0$$ to $$A\\text{.length} - 1$$.\n\nThen, Kadane's algorithm is given by the following psuedocode:\n\n```python\n#Kadane's algorithm\nans = cur = None\nfor x in A:\n    cur = x + max(cur, 0)\n    ans = max(ans, cur)\nreturn ans\n```\n\n\n---\n#### Approach 1: Next Array\n\n**Intuition and Algorithm**\n\nSubarrays of circular arrays can be classified as either as *one-interval* subarrays, or *two-interval* subarrays, depending on how many intervals of the fixed-size buffer `A` are required to represent them.\n\nFor example, if `A = [0, 1, 2, 3, 4, 5, 6]` is the underlying buffer of our circular array, we could represent the subarray `[2, 3, 4]` as one interval $$[2, 4]$$, but we would represent the subarray `[5, 6, 0, 1]` as two intervals $$[5, 6], [0, 1]$$.\n\nUsing Kadane's algorithm, we know how to get the maximum of *one-interval* subarrays, so it only remains to consider *two-interval* subarrays.\n\nLet's say the intervals are $$[0, i], [j, A\\text{.length} - 1]$$.  Let's try to compute the *i-th candidate*: the largest possible sum of a two-interval subarray for a given $$i$$.  Computing the $$[0, i]$$ part of the sum is easy.  Let's write\n\n$$\nT_j = A[j] + A[j+1] + \\cdots + A[A\\text{.length} - 1]\n$$\n\nand\n\n$$\nR_j = \\max\\limits_{k \\geq j} T_k\n$$\n\nso that the desired i-th candidate is:\n\n$$\n(A[0] + A[1] + \\cdots + A[i]) + R_{i+2}\n$$\n\nSince we can compute $$T_j$$ and $$R_j$$ in linear time, the answer is straightforward after this setup.\n\n\n<iframe src=\"https://leetcode.com/playground/N59534xu/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"N59534xu\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Prefix Sums + Monoqueue\n\n**Intuition**\n\nFirst, we can frame the problem as a problem on a fixed array.\n\nWe can consider any subarray of the circular array with buffer `A`, to be a subarray of the fixed array `A+A`.\n\nFor example, if `A = [0,1,2,3,4,5]` represents a circular array, then the subarray `[4,5,0,1]` is also a subarray of fixed array `[0,1,2,3,4,5,0,1,2,3,4,5]`.  Let `B = A+A` be this fixed array.\n\nNow say $$N = A\\text{.length}$$, and consider the prefix sums\n\n$$\nP_k = B[0] + B[1] + \\cdots + B[k-1]\n$$\n\nThen, we want the largest $$P_j - P_i$$ where $$j - i \\leq N$$.\n\nNow, consider the j-th candidate answer: the best possible $$P_j - P_i$$ for a fixed $$j$$.  We want the $$i$$ so that $$P_i$$ is smallest, with $$j - N \\leq i < j$$.  Let's call this the *optimal i for the j-th candidate answer*.  We can use a monoqueue to manage this.\n\n**Algorithm**\n\nIterate forwards through $$j$$, computing the $$j$$-th candidate answer at each step.  We'll maintain a `queue` of potentially optimal $$i$$'s.\n\nThe main idea is that if $$i_1 < i_2$$ and $$P_{i_1} \\geq P_{i_2}$$, then we don't need to remember $$i_1$$ anymore.\n\nPlease see the inline comments for more algorithmic details about managing the queue.\n\n<iframe src=\"https://leetcode.com/playground/qZ9ttQZM/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"qZ9ttQZM\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 3: Kadane's (Sign Variant)\n\n**Intuition and Algorithm**\n\nAs in Approach 1, subarrays of circular arrays can be classified as either as *one-interval* subarrays, or *two-interval* subarrays.\n\nUsing Kadane's algorithm `kadane` for finding the maximum sum of non-empty subarrays, the answer for one-interval subarrays is `kadane(A)`.\n\nNow, let $$N = A\\text{.length}$$.  For a two-interval subarray like:\n\n$$\n(A_0 + A_1 + \\cdots + A_i) + (A_j + A_{j+1} + \\cdots + A_{N - 1})\n$$\n\nwe can write this as\n\n$$\n(\\sum_{k=0}^{N-1} A_k) - (A_{i+1} + A_{i+2} + \\cdots + A_{j-1})\n$$\n\nFor two-interval subarrays, let $$B$$ be the array $$A$$ with each element multiplied by $$-1$$.  Then the answer for two-interval subarrays is $$\\text{sum}(A) + \\text{kadane}(B)$$.\n\nExcept, this isn't quite true, as if the subarray of $$B$$ we choose is the entire array, the resulting two interval subarray $$[0, i] + [j, N-1]$$ would be empty.\n\nWe can remedy this problem by doing Kadane twice: once on $$B$$ with the first element removed, and once on $$B$$ with the last element removed.\n\n<iframe src=\"https://leetcode.com/playground/pVGZH9TH/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"pVGZH9TH\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$ in additional space complexity.\n<br />\n<br />\n\n\n---\n#### Approach 4: Kadane's (Min Variant)\n\n**Intuition and Algorithm**\n\nAs in Approach 3, subarrays of circular arrays can be classified as either as *one-interval* subarrays (which we can use Kadane's algorithm), or *two-interval* subarrays.\n\nWe can modify Kadane's algorithm to use `min` instead of `max`.  All the math in our explanation of Kadane's algorithm remains the same, but the algorithm lets us find the minimum sum of a subarray instead.\n\nFor a two interval subarray written as $$(\\sum_{k=0}^{N-1} A_k) - (\\sum_{k=i+1}^{j-1} A_k)$$, we can use our `kadane-min` algorithm to minimize the \"interior\" $$(\\sum_{k=i+1}^{j-1} A_k)$$ part of the sum.\n\nAgain, because the interior $$[i+1, j-1]$$ must be non-empty, we can break up our search into a search on `A[1:]` and on `A[:-1]`.\n\n<iframe src=\"https://leetcode.com/playground/RkbHxhiP/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RkbHxhiP\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$ in additional space complexity.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "570",
+      "count": 36,
+      "average": 4.389,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,-2,3,-2]",
+  "metaData": "{\r\n  \"name\": \"maxSubarraySumCircular\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

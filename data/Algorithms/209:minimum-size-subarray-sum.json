@@ -1,0 +1,119 @@
+{
+  "questionId": "209",
+  "questionFrontendId": "209",
+  "boundTopicId": null,
+  "title": "Minimum Size Subarray Sum",
+  "titleSlug": "minimum-size-subarray-sum",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of <strong>n</strong> positive integers and a positive integer <strong>s</strong>, find the minimal length of a <b>contiguous</b> subarray of which the sum &ge; <strong>s</strong>. If there isn&#39;t one, return 0 instead.</p>\r\n\r\n<p><strong>Example:&nbsp;</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>s = 7, nums = [2,3,1,2,4,3]</code>\r\n<strong>Output:</strong> 2\r\n<strong>Explanation: </strong>the subarray <code>[4,3]</code> has the minimal length under the problem constraint.</pre>\r\n\r\n<div class=\"spoilers\"><b>Follow up:</b></div>\r\n\r\n<div class=\"spoilers\">If you have figured out the <i>O</i>(<i>n</i>) solution, try coding another solution of which the time complexity is <i>O</i>(<i>n</i> log <i>n</i>).&nbsp;</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1545,
+  "dislikes": 87,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Minimum Window Substring\", \"titleSlug\": \"minimum-window-substring\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Maximum Size Subarray Sum Equals k\", \"titleSlug\": \"maximum-size-subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Length of Repeated Subarray\", \"titleSlug\": \"maximum-length-of-repeated-subarray\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Freezen",
+      "profileUrl": "/freezen/",
+      "avatarUrl": "https://www.gravatar.com/avatar/85b3caacb214788b937e9ef6242f9d23.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 15}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minSubArrayLen(int s, vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minSubArrayLen(int s, int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minSubArrayLen(self, s, nums):\n        \"\"\"\n        :type s: int\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minSubArrayLen(self, s: int, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minSubArrayLen(int s, int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinSubArrayLen(int s, int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} s\n * @param {number[]} nums\n * @return {number}\n */\nvar minSubArrayLen = function(s, nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} s\n# @param {Integer[]} nums\n# @return {Integer}\ndef min_sub_array_len(s, nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minSubArrayLen(_ s: Int, _ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minSubArrayLen(s int, nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minSubArrayLen(s: Int, nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minSubArrayLen(s: Int, nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_sub_array_len(s: i32, nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $s\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function minSubArrayLen($s, $nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"213.9K\", \"totalSubmission\": \"590.7K\", \"totalAcceptedRaw\": 213855, \"totalSubmissionRaw\": 590699, \"acRate\": \"36.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "155",
+    "canSeeDetail": true,
+    "url": "/articles/minimum-size-subarray-sum/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach #1 Brute force [Time Limit Exceeded]\n\n**Intuition**\n\nDo as directed in question. Find the sum for all the possible subarrays and update the $$\\text{ans}$$ as and when we get a better subarray that fulfill the requirements ($$\\text{sum} \\geq \\text{s}$$).\n\n**Algorithm**\n\n* Initialize $$\\text{ans}=\\text{INT_MAX}$$\n* Iterate the array from left to right using $$i$$:\n    + Iterate from the current element to the end of vector using $$j$$:\n        - Find the $$\\text{sum}$$ of elements from index $$i$$ to $$j$$\n        - If sum is greater then $$s$$:\n            * Update $$\\text{ans} = \\min(\\text{ans}, (j - i + 1))$$\n            * Start the next $$i$$th iteration, since, we got the smallest subarray with $$\\text{sum} \\geq s$$ starting from the current index.\n\n\n<iframe src=\"https://leetcode.com/playground/VzAVPq7w/shared\" frameBorder=\"0\" name=\"VzAVPq7w\" width=\"100%\" height=\"360\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O(n^3)$$.\n    + For each element of array, we find all the subarrays starting from that index which is $$O(n^2)$$.\n    + Time complexity to find the sum of each subarray is $$O(n)$$.\n    + Thus, the total time complexity : $$O(n^2 * n) = O(n^3)$$\n\n* Space complexity: $$O(1)$$ extra space.\n\n---\n#### Approach #2 A better brute force [Accepted]\n\n**Intuition**\n\nIn Approach #1, you may notice that the sum is calculated for every surarray in $$O(n)$$ time. But, we could easily find the sum in O(1) time by storing the cumulative sum from the beginning(Memoization). After we have stored the cumulative sum in $$\\text{sums}$$, we could easily find the sum of any subarray from $$i$$ to $$j$$.\n\n**Algorithm**\n\n* The algorithm is similar to Approach #1.\n* The only difference is in the way of finding the sum of subarrays:\n    + Create a vector $$\\text{sums}$$ of size of $$\\text{nums}$$\n    + Initialize $$\\text{sums}[0]=\\text{nums}[0]$$\n    + Iterate over the $$\\text{sums}$$ vector:\n        - Update $$\\text{sums}[i] = \\text{sums}[i-1] + \\text{nums}[i]$$\n    + Sum of subarray from $$i$$ to $$j$$ is calculated as:\n    $$\\text{sum}=\\text{sums}[j] - \\text{sums}[i] +\\text{nums}[i]$$, , wherein $$\\text{sums}[j] - \\text{sums}[i]$$ is the sum from ($$i+1$$)th element to the $$j$$th element.\n\n\n<iframe src=\"https://leetcode.com/playground/zpQxiiBt/shared\" frameBorder=\"0\" name=\"zpQxiiBt\" width=\"100%\" height=\"411\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n^2)$$.\n    + Time complexity to find all the subarrays is $$O(n^2)$$.\n    + Sum of the subarrays is calculated in $$O(1)$$ time.\n    + Thus, the total time complexity: $$O(n^2 * 1) = O(n^2)$$\n\n* Space complexity: $$O(n)$$ extra space.\n    + Additional $$O(n)$$ space for $$\\text{sums}$$ vector than in Approach #1.\n\n---\n#### Approach #3 Using Binary search [Accepted]\n\n**Intuition**\n\nWe could further improve the Approach #2 using the binary search. Notice that we find the subarray with $$\\text{sum} >=\\text{s}$$ starting with an index $$i$$ in $$O(n)$$ time. But, we could reduce the time to $$O(\\log(n))$$ using binary search. Note that in Approach #2, we search for subarray starting with index $$i$$, until we find $$\\text{sum}=\\text{sums}[j] - \\text{sums}[i] +\\text{nums}[i]$$ that is greater than $$\\text{s}$$. So, instead of iterating linearly to find the sum, we could use binary search to find the index that is not lower than  $$\\text{s}-\\text{sums[i]}$$ in the $$\\text{sums}$$, which can be done using $$\\text{lower_bound}$$ function in C++ STL or could be implemented manually.\n\n**Algorithm**\n\n* Create vector $$sums$$ of size $$n+1$$ with :\n$$\\text{sums}[0]=0\\text{, }\\text{sums}[i]=\\text{sums}[i-1]+\\text{nums}[i-1]$$\n\n* Iterate from $$i=1$$ to $$n$$:\n    + Find the value $$\\text{to_find}$$ in $$\\text{sum}$$ required for minimum subarray starting from index $$i$$ to have sum greater than $$s$$, that is:\n    $$\\text{to_find}=\\text{s}+\\text{sums}[i-1]$$\n    + Find the index in $$\\text{sums}$$ such that value at that index is not lower than the $$\\text{to_find}$$ value, say $$\\text{bound}$$\n    + If we find the $$\\text{to_find}$$ in $$\\text{sums}$$, then:\n        - Size of current subarray is given by:\n          $$\\text{bound} - (\\text{sums.begin}()+i-1)$$\n        - Compare $$ans$$ with the current subarray size and store minimum in $$ans$$\n\n\n<iframe src=\"https://leetcode.com/playground/hVhQq7az/shared\" frameBorder=\"0\" name=\"hVhQq7az\" width=\"100%\" height=\"411\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n\\log(n))$$.\n    + For each element in the vector, find the subarray starting from that index, and having sum greater than $$s$$ using binary search. Hence, the time required is $$O(n)$$ for iteration over the vector and $$O(\\log(n))$$ for finding the subarray for each index using binary search.\n    + Therefore, total time complexity = $$O(n*\\log(n))$$\n* Space complexity: $$O(n)$$. Additional $$O(n)$$ space for $$\\text{sums}$$ vector\n\n---\n#### Approach #4 Using 2 pointers [Accepted]\n\n**Intuition**\n\nUntil now, we have kept the starting index of subarray fixed, and found the last position. Instead, we could move the starting index of the current subarray as soon as we know that no better could be done with this index as the starting index. We could keep 2 pointer,one for the start and another for the end of the current subarray, and make optimal moves so as to keep the $$\\text{sum}$$ greater than $$s$$ as well as maintain the lowest size possible.\n\n**Algorithm**\n\n* Initialize $$\\text{left}$$ pointer to 0 and $$\\text{sum}$$ to 0\n* Iterate over the $$\\text{nums}$$:\n    + Add $$\\text{nums}[i]$$ to $$\\text{sum}$$\n    + While $$\\text{sum}$$ is greater than or equal to $$s$$:\n        - Update $$\\text{ans}=\\min(\\text{ans},i+1-\\text{left})$$, where $$i+1-\\text{left}$$ is the size of current subarray\n        - It means that the first index can safely be incremented, since, the minimum subarray starting with this index with $$\\text{sum} \\geq s$$ has been achieved\n        - Subtract $$\\text{nums[left]}$$ from $$\\text{sum}$$ and increment $$\\text{left}$$\n\n\n<iframe src=\"https://leetcode.com/playground/TxnK5kAo/shared\" frameBorder=\"0\" name=\"TxnK5kAo\" width=\"100%\" height=\"309\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(n)$$. Single iteration of $$O(n)$$.\n    + Each element can be visited atmost twice, once by the right pointer($$i$$) and (atmost)once by the $$\\text{left}$$ pointer.\n* Space complexity: $$O(1)$$ extra space. Only constant space required for $$\\text{left}$$, $$\\text{sum}$$, $$\\text{ans}$$ and $$i$$.\n\n---\nAnalysis written by [@abhinavbansal0](https://leetcode.com/abhinavbansal0).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "150",
+      "count": 31,
+      "average": 4.161,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "7\n[2,3,1,2,4,3]",
+  "metaData": "{\r\n  \"name\": \"minSubArrayLen\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

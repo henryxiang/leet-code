@@ -1,0 +1,108 @@
+{
+  "questionId": "1212",
+  "questionFrontendId": "1291",
+  "boundTopicId": null,
+  "title": "Sequential Digits",
+  "titleSlug": "sequential-digits",
+  "categoryTitle": "Algorithms",
+  "content": "<p>An&nbsp;integer has <em>sequential digits</em> if and only if each digit in the number is one more than the previous digit.</p>\n\n<p>Return a <strong>sorted</strong> list of all the integers&nbsp;in the range <code>[low, high]</code>&nbsp;inclusive that have sequential digits.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> low = 100, high = 300\n<strong>Output:</strong> [123,234]\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> low = 1000, high = 13000\n<strong>Output:</strong> [1234,2345,3456,4567,5678,6789,12345]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>10 &lt;= low &lt;= high &lt;= 10^9</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 70,
+  "dislikes": 8,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"F5 Networks\", \"slug\": \"f5-networks\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> sequentialDigits(int low, int high) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> sequentialDigits(int low, int high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def sequentialDigits(self, low, high):\n        \"\"\"\n        :type low: int\n        :type high: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def sequentialDigits(self, low: int, high: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* sequentialDigits(int low, int high, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> SequentialDigits(int low, int high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} low\n * @param {number} high\n * @return {number[]}\n */\nvar sequentialDigits = function(low, high) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} low\n# @param {Integer} high\n# @return {Integer[]}\ndef sequential_digits(low, high)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func sequentialDigits(_ low: Int, _ high: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func sequentialDigits(low int, high int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def sequentialDigits(low: Int, high: Int): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun sequentialDigits(low: Int, high: Int): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sequential_digits(low: i32, high: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $low\n     * @param Integer $high\n     * @return Integer[]\n     */\n    function sequentialDigits($low, $high) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.4K\", \"totalSubmission\": \"10.7K\", \"totalAcceptedRaw\": 5445, \"totalSubmissionRaw\": 10698, \"acRate\": \"50.9%\"}",
+  "hints": [
+    "Generate all numbers with sequential digits and check if they are in the given range.",
+    "Fix the starting digit then do a recursion that tries to append all valid digits."
+  ],
+  "solution": {
+    "id": "844",
+    "canSeeDetail": true,
+    "url": "/articles/sequential-digits/",
+    "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Approach 1: Sliding Window\n\nOne might notice that all integers that have sequential digits\nare substrings of string \"123456789\". \nHence to generate all such integers of a given length, just move \nthe window of that length along \"123456789\" string.\n\nThe advantage of this method is that it will generate the integers that are\nalready in the sorted order. \n\n![diff](../Figures/1291/sliding.png)\n\n**Algorithm**\n\n- Initialize sample string \"123456789\". This string contains \nall integers that have sequential digits as substrings.\nLet's implement sliding window algorithm to generate them.\n\n- Iterate over all possible string lengths: from the \nlength of `low` to the length of `high`. \n\n    - For each length iterate over all possible start indexes:\n    from `0` to `10 - length`.\n    \n        - Construct the number from digits inside the sliding window\n        of current length.\n        \n        - Add this number in the output list `nums`, \n        if it's greater than `low` and less than `high`.\n        \n- Return `nums`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/sRpZmQGw/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"sRpZmQGw\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(1)$$. Length of sample string is 9, and \nlengths of low and high are between 2 and 9. Hence the nested loops are executed \nno more than $$8 \\times 8 = 64$$ times.\n\n* Space complexity: $$\\mathcal{O}(1)$$ to keep not more than 36 integers \nwith sequential digits.\n<br /> \n<br />\n\n\n---\n#### Approach 2: Precomputation \n\n\nActually, there are 36 integers with the sequential digits.\nHere is how we calculate it.\n\nStarting from 9 digits in the sample string, one could construct \n9 - 2 + 1 = 8 integers of length 2, 9 - 3 + 1 = 7 integers of length 3, \nand so on and so forth.\nIn total, it would make 8 + 7 + ... + 1 = 36 integers. \n\nAs one can see, we could precompute the results all at once and then \nselect the integers that are less than `high` and greater than `low`. \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/qoJnaFBw/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"qoJnaFBw\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(1)$$ both for precomputation and during runtime. \nPrecomputation: Length of sample string is 9, \nand the nested loops are executed $$8 \\times 8 = 64$$ times.\nRuntime: One iterates over an array of 36 integers. \n\n* Space complexity: $$\\mathcal{O}(1)$$ to keep 36 integers \nthat have sequential digits.\n<br /> \n<br />\n\n\n---\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "802",
+      "count": 10,
+      "average": 4.4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "100\n300",
+  "metaData": "{\n  \"name\": \"sequentialDigits\",\n  \"params\": [\n    {\n      \"name\": \"low\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"high\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<integer>\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

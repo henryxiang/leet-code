@@ -1,0 +1,113 @@
+{
+  "questionId": "753",
+  "questionFrontendId": "752",
+  "boundTopicId": null,
+  "title": "Open the Lock",
+  "titleSlug": "open-the-lock",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nYou have a lock in front of you with 4 circular wheels.  Each wheel has 10 slots: <code>'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'</code>.  The wheels can rotate freely and wrap around: for example we can turn <code>'9'</code> to be <code>'0'</code>, or <code>'0'</code> to be <code>'9'</code>.  Each move consists of turning one wheel one slot.\r\n</p><p>\r\nThe lock initially starts at <code>'0000'</code>, a string representing the state of the 4 wheels.\r\n</p><p>\r\nYou are given a list of <code>deadends</code> dead ends, meaning if the lock displays any of these codes, the wheels of the lock will stop turning and you will be unable to open it.\r\n</p><p>\r\nGiven a <code>target</code> representing the value of the wheels that will unlock the lock, return the minimum total number of turns required to open the lock, or -1 if it is impossible.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> deadends = [\"0201\",\"0101\",\"0102\",\"1212\",\"2002\"], target = \"0202\"\r\n<b>Output:</b> 6\r\n<b>Explanation:</b>\r\nA sequence of valid moves would be \"0000\" -> \"1000\" -> \"1100\" -> \"1200\" -> \"1201\" -> \"1202\" -> \"0202\".\r\nNote that a sequence like \"0000\" -> \"0001\" -> \"0002\" -> \"0102\" -> \"0202\" would be invalid,\r\nbecause the wheels of the lock become stuck after the display becomes the dead end \"0102\".\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> deadends = [\"8888\"], target = \"0009\"\r\n<b>Output:</b> 1\r\n<b>Explanation:</b>\r\nWe can turn the last wheel in reverse to move from \"0000\" -> \"0009\".\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b><br />\r\n<pre>\r\n<b>Input:</b> deadends = [\"8887\",\"8889\",\"8878\",\"8898\",\"8788\",\"8988\",\"7888\",\"9888\"], target = \"8888\"\r\n<b>Output:</b> -1\r\n<b>Explanation:</b>\r\nWe can't reach the target without getting stuck.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 4:</b><br />\r\n<pre>\r\n<b>Input:</b> deadends = [\"0000\"], target = \"8888\"\r\n<b>Output:</b> -1\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The length of <code>deadends</code> will be in the range <code>[1, 500]</code>.</li>\r\n<li><code>target</code> will not be in the list <code>deadends</code>.</li>\r\n<li>Every string in <code>deadends</code> and the string <code>target</code> will be a string of 4 digits from the 10,000 possibilities <code>'0000'</code> to <code>'9999'</code>.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 556,
+  "dislikes": 29,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "abhi9leetcode",
+      "profileUrl": "/abhi9leetcode/",
+      "avatarUrl": "https://assets.leetcode.com/users/abhi9leetcode/avatar_1557186075.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int openLock(vector<string>& deadends, string target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int openLock(String[] deadends, String target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def openLock(self, deadends, target):\n        \"\"\"\n        :type deadends: List[str]\n        :type target: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def openLock(self, deadends: List[str], target: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint openLock(char ** deadends, int deadendsSize, char * target){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int OpenLock(string[] deadends, string target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} deadends\n * @param {string} target\n * @return {number}\n */\nvar openLock = function(deadends, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} deadends\n# @param {String} target\n# @return {Integer}\ndef open_lock(deadends, target)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func openLock(_ deadends: [String], _ target: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func openLock(deadends []string, target string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def openLock(deadends: Array[String], target: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun openLock(deadends: Array<String>, target: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn open_lock(deadends: Vec<String>, target: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $deadends\n     * @param String $target\n     * @return Integer\n     */\n    function openLock($deadends, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"33.6K\", \"totalSubmission\": \"69.5K\", \"totalAcceptedRaw\": 33612, \"totalSubmissionRaw\": 69522, \"acRate\": \"48.3%\"}",
+  "hints": [
+    "We can think of this problem as a shortest path problem on a graph: there are `10000` nodes (strings `'0000'` to `'9999'`), and there is an edge between two nodes if they differ in one digit, that digit differs by 1 (wrapping around, so `'0'` and `'9'` differ by 1), and if *both* nodes are not in `deadends`."
+  ],
+  "solution": {
+    "id": "354",
+    "canSeeDetail": true,
+    "url": "/articles/open-the-lock/",
+    "content": "[TOC]\n\n#### Approach #1: Breadth-First Search [Accepted]\n\n**Intuition**\n\nWe can think of this problem as a shortest path problem on a graph: there are `10000` nodes (strings `'0000'` to `'9999'`), and there is an edge between two nodes if they differ in one digit, that digit differs by 1 (wrapping around, so `'0'` and `'9'` differ by 1), and if both nodes are not in `deadends`.\n\n**Algorithm**\n\nTo solve a shortest path problem, we use a breadth-first search.  The basic structure uses a Queue `queue` plus a Set `seen` that records if a node has ever been enqueued.  This pushes all the work to the `neighbors` function - in our Python implementation, all the code after `while queue:` is template code, except for `if node in dead: continue`.\n\nAs for the `neighbors` function, for each position in the lock `i = 0, 1, 2, 3`, for each of the turns `d = -1, 1`, we determine the value of the lock after the `i`-th wheel has been turned in the direction `d`.\n\nCare should be taken in our algorithm, as the graph does not have an edge unless *both* nodes are not in `deadends`.  If our `neighbors` function checks only the `target` for being in `deadends`, we also need to check whether `'0000'` is in `deadends` at the beginning.  In our implementation, we check at the visitor level so as to neatly handle this problem in all cases.\n\nIn Java, our implementation also inlines the neighbors function for convenience, and uses `null` inputs in the `queue` to represent a layer change.  When the layer changes, we `depth++` our global counter, and `queue.peek() != null` checks if there are still nodes enqueued.\n\n<iframe src=\"https://leetcode.com/playground/Hqp3CJUn/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Hqp3CJUn\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2 * \\mathcal{A}^N + D)$$ where $$\\mathcal{A}$$ is the number of digits in our alphabet, $$N$$ is the number of digits in the lock, and $$D$$ is the size of `deadends`.  We might visit every lock combination, plus we need to instantiate our set `dead`.  When we visit every lock combination, we spend $$O(N^2)$$ time enumerating through and constructing each node. \n\n* Space Complexity: $$O(\\mathcal{A}^N + D)$$, for the `queue` and the set `dead`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "349",
+      "count": 15,
+      "average": 4.667,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"0201\",\"0101\",\"0102\",\"1212\",\"2002\"]\n\"0202\"",
+  "metaData": "{\r\n  \"name\": \"openLock\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"deadends\",\r\n      \"type\": \"string[]\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

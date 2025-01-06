@@ -1,0 +1,109 @@
+{
+  "questionId": "17",
+  "questionFrontendId": "17",
+  "boundTopicId": null,
+  "title": "Letter Combinations of a Phone Number",
+  "titleSlug": "letter-combinations-of-a-phone-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string containing digits from <code>2-9</code> inclusive, return all possible letter combinations that the number could represent.</p>\r\n\r\n<p>A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.</p>\r\n\r\n<p><img src=\"http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Telephone-keypad2.svg/200px-Telephone-keypad2.svg.png\" /></p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;23&quot;\r\n<strong>Output:</strong> [&quot;ad&quot;, &quot;ae&quot;, &quot;af&quot;, &quot;bd&quot;, &quot;be&quot;, &quot;bf&quot;, &quot;cd&quot;, &quot;ce&quot;, &quot;cf&quot;].\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<p>Although the above answer is in lexicographical order, your answer could be in any order you want.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2884,
+  "dislikes": 352,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Generate Parentheses\", \"titleSlug\": \"generate-parentheses\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Combination Sum\", \"titleSlug\": \"combination-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Watch\", \"titleSlug\": \"binary-watch\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Morgan Stanley\", \"slug\": \"morgan-stanley\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 12}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 8}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 8}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Quip (Salesforce)\", \"slug\": \"quip\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Roblox\", \"slug\": \"roblox\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<string> letterCombinations(string digits) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> letterCombinations(String digits) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def letterCombinations(self, digits):\n        \"\"\"\n        :type digits: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def letterCombinations(self, digits: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** letterCombinations(char * digits, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public IList<string> LetterCombinations(string digits) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} digits\n * @return {string[]}\n */\nvar letterCombinations = function(digits) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} digits\r\n# @return {String[]}\r\ndef letter_combinations(digits)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func letterCombinations(_ digits: String) -> [String] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func letterCombinations(digits string) []string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def letterCombinations(digits: String): List[String] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun letterCombinations(digits: String): List<String> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn letter_combinations(digits: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $digits\n     * @return String[]\n     */\n    function letterCombinations($digits) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"492.7K\", \"totalSubmission\": \"1.1M\", \"totalAcceptedRaw\": 492661, \"totalSubmissionRaw\": 1117499, \"acRate\": \"44.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "674",
+    "canSeeDetail": true,
+    "url": "/articles/letter-combinations-of-a-phone-number/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Backtracking\n\n[Backtracking](https://en.wikipedia.org/wiki/Backtracking) \nis an algorithm for finding all\nsolutions by exploring all potential candidates.\nIf the solution candidate turns to be _not_ a solution \n(or at least not the _last_ one), \nbacktracking algorithm discards it by making some changes \non the previous step, *i.e.* _backtracks_ and then try again.\n\nHere is a backtrack function `backtrack(combination, next_digits)`\nwhich takes as arguments an ongoing letter combination \nand the next digits to check.\n\n* If there is no more digits to check\nthat means that the current combination is done.\n* If there are still digits to check :\n    * Iterate over the letters mapping the next available digit.\n        * Append the current letter to the current combination \n        `combination = combination + letter`.\n        * Proceed to check next digits : \n        `backtrack(combination + letter, next_digits[1:])`.\n        \n!?!../Documents/17_LIS.json:1000,592!?!\n\n<iframe src=\"https://leetcode.com/playground/26oBRSTE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"26oBRSTE\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(3^N \\times 4^M)$$\nwhere `N` is the number of digits in the input that maps to  3 letters \n(*e.g.* `2, 3, 4, 5, 6, 8`) and `M` is the number of digits in the input\nthat maps to 4 letters (*e.g.* `7, 9`),\nand `N+M` is the total number digits in the input.\n \n* Space complexity : $$\\mathcal{O}(3^N \\times 4^M)$$ since one has to keep\n$$3^N \\times 4^M$$ solutions.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "660",
+      "count": 52,
+      "average": 4.308,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"23\"",
+  "metaData": "{ \r\n  \"name\": \"letterCombinations\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"digits\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

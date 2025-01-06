@@ -1,0 +1,105 @@
+{
+  "questionId": "968",
+  "questionFrontendId": "932",
+  "boundTopicId": null,
+  "title": "Beautiful Array",
+  "titleSlug": "beautiful-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>For some fixed <code>N</code>, an array <code>A</code> is <em>beautiful</em> if it is a permutation of the integers <code>1, 2, ..., N</code>, such that:</p>\r\n\r\n<p>For every <code>i &lt; j</code>, there is <strong>no</strong>&nbsp;<code>k</code> with <code>i &lt; k &lt; j</code>&nbsp;such that <code>A[k] * 2 = A[i] + A[j]</code>.</p>\r\n\r\n<p>Given <code>N</code>, return <strong>any</strong> beautiful array <code>A</code>.&nbsp; (It is guaranteed that one exists.)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">4</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[2,1,4,3]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">5</span>\r\n<strong>Output: </strong><span>[3,1,2,5,4]</span></pre>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= N &lt;= 1000</code></li>\r\n</ul>\r\n\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 244,
+  "dislikes": 347,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> beautifulArray(int N) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] beautifulArray(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def beautifulArray(self, N):\n        \"\"\"\n        :type N: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def beautifulArray(self, N: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* beautifulArray(int N, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] BeautifulArray(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @return {number[]}\n */\nvar beautifulArray = function(N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer[]}\ndef beautiful_array(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func beautifulArray(_ N: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func beautifulArray(N int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def beautifulArray(N: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun beautifulArray(N: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn beautiful_array(n: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @return Integer[]\n     */\n    function beautifulArray($N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"8.4K\", \"totalSubmission\": \"15K\", \"totalAcceptedRaw\": 8366, \"totalSubmissionRaw\": 14972, \"acRate\": \"55.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "601",
+    "canSeeDetail": true,
+    "url": "/articles/beautiful-array/",
+    "content": "[TOC]\n\n## Solution\n---\n\n#### Approach 1: Divide and Conquer\n\n**Intuition**\n\nThis answer is quite unintuitive.\n\nFirst, notice that the condition is equivalent to saying that `A` has no arithmetic subsequence.  We'll use the term \"*arithmetic-free*\" interchangeably with \"*beautiful*\".\n\nOne way is to guess that we should divide and conquer.  One reason for this is that the condition is linear, so if the condition is satisfied by variables taking on values `(1, 2, ..., n)`, it is satisfied by those variables taking on values `(a + b, a + 2*b, a + 3*b, ..., a + (n-1)*b)` instead.\n\nIf we perform a divide and conquer, then we have two parts `left` and `right`, such that each part is arithmetic-free, and we only want that a triple from both parts is not arithmetic.  Looking at the conditions:\n\n* `2*A[k] = A[i] + A[j]`\n* `(i < k < j)`, `i` from `left`, `j` from `right`\n\nwe can guess that because the left hand side `2*A[k]` is even, we can choose `left` to have all odd elements, and `right` to have all even elements.\n\nAnother way we could arrive at this is to try to place a number in the middle, like `5`.  We will have `4` and `6` say, to the left of `5`, and `7` to the right of `6`, etc.  We see that in general, odd numbers move towards one direction and even numbers towards another direction.\n\nOne final way we could arrive at this is to inspect possible answers arrived at by brute force.  On experimentation, we see that many answers have all the odd elements to one side, and all the even elements to the other side, with only minor variation.\n\n**Algorithm**\n\nLooking at the elements `1, 2, ..., N`, there are `(N+1) / 2` odd numbers and `N / 2` even numbers.\n\nWe solve for elements `1, 2, ..., (N+1) / 2` and map these numbers onto `1, 3, 5, ...`.  Similarly, we solve for elements `1, 2, ..., N/2` and map these numbers onto `2, 4, 6, ...`.\n\nWe can compose these solutions by concatenating them, since an arithmetic sequence never starts and ends with elements of different parity.\n\nWe memoize the result to arrive at the answer quicker.\n\n<iframe src=\"https://leetcode.com/playground/3NT7Bgm6/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"3NT7Bgm6\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$.  The function `f` is called only $$O(\\log N)$$ times, and each time does $$O(N)$$ work.\n\n* Space Complexity:  $$O(N \\log N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "587",
+      "count": 23,
+      "average": 4.174,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "4",
+  "metaData": "{\r\n  \"name\": \"beautifulArray\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,97 @@
+{
+  "questionId": "411",
+  "questionFrontendId": "411",
+  "boundTopicId": null,
+  "title": "Minimum Unique Word Abbreviation",
+  "titleSlug": "minimum-unique-word-abbreviation",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A string such as <code>\"word\"</code> contains the following abbreviations:</p>\r\n\r\n<pre>[\"word\", \"1ord\", \"w1rd\", \"wo1d\", \"wor1\", \"2rd\", \"w2d\", \"wo2\", \"1o1d\", \"1or1\", \"w1r1\", \"1o2\", \"2r1\", \"3d\", \"w3\", \"4\"]\r\n</pre>\r\n\r\n<p>Given a target string and a set of strings in a dictionary, find an abbreviation of this target string with the <b><i>smallest possible</i></b> length such that it does not conflict with abbreviations of the strings in the dictionary. </p>\r\n\r\n<p>Each <b>number</b> or letter in the abbreviation is considered length = 1. For example, the abbreviation \"a32bc\" has length = 4.</p>\r\n\r\n<p><b>Note:</b><br />\r\n<ul>\r\n<li>In the case of multiple answers as shown in the second example below, you may return any one of them.</li>\r\n<li>Assume length of target string = <b>m</b>, and dictionary size = <b>n</b>. You may assume that <b>m &le; 21</b>, <b>n &le; 1000</b>, and <b>log<sub>2</sub>(n) + m</sup> &le; 20</b>.</li>\r\n</ul>\r\n</p>\r\n\r\n<p><b>Examples:</b><br />\r\n<pre>\r\n\"apple\", [\"blade\"] -> \"a4\" (because \"5\" or \"4e\" conflicts with \"blade\")\r\n\r\n\"apple\", [\"plain\", \"amber\", \"blade\"] -> \"1p3\" (other valid answers include \"ap3\", \"a3e\", \"2p2\", \"3le\", \"3l1\").\r\n</pre>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 112,
+  "dislikes": 108,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Generalized Abbreviation\", \"titleSlug\": \"generalized-abbreviation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Valid Word Abbreviation\", \"titleSlug\": \"valid-word-abbreviation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Word Abbreviation\", \"titleSlug\": \"word-abbreviation\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string minAbbreviation(string target, vector<string>& dictionary) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String minAbbreviation(String target, String[] dictionary) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minAbbreviation(self, target, dictionary):\n        \"\"\"\n        :type target: str\n        :type dictionary: List[str]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minAbbreviation(self, target: str, dictionary: List[str]) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * minAbbreviation(char * target, char ** dictionary, int dictionarySize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string MinAbbreviation(string target, string[] dictionary) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} target\n * @param {string[]} dictionary\n * @return {string}\n */\nvar minAbbreviation = function(target, dictionary) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} target\n# @param {String[]} dictionary\n# @return {String}\ndef min_abbreviation(target, dictionary)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minAbbreviation(_ target: String, _ dictionary: [String]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minAbbreviation(target string, dictionary []string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minAbbreviation(target: String, dictionary: Array[String]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minAbbreviation(target: String, dictionary: Array<String>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_abbreviation(target: String, dictionary: Vec<String>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $target\n     * @param String[] $dictionary\n     * @return String\n     */\n    function minAbbreviation($target, $dictionary) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.5K\", \"totalSubmission\": \"29.4K\", \"totalAcceptedRaw\": 10461, \"totalSubmissionRaw\": 29362, \"acRate\": \"35.6%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"apple\"\n[\"blade\"]",
+  "metaData": "{\r\n  \"name\": \"minAbbreviation\",\r\n  \"params\": [\r\n    {\r\n        \"name\": \"target\",\r\n        \"type\": \"string\"\r\n    },\r\n    {\r\n        \"name\": \"dictionary\",\r\n        \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

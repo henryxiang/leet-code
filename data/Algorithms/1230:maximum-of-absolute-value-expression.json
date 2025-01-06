@@ -1,0 +1,105 @@
+{
+  "questionId": "1230",
+  "questionFrontendId": "1131",
+  "boundTopicId": null,
+  "title": "Maximum of Absolute Value Expression",
+  "titleSlug": "maximum-of-absolute-value-expression",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two arrays of integers with equal lengths, return the maximum value of:</p>\r\n\r\n<p><code>|arr1[i] - arr1[j]| + |arr2[i] - arr2[j]| + |i - j|</code></p>\r\n\r\n<p>where the maximum is taken over all <code>0 &lt;= i, j &lt; arr1.length</code>.</p>\r\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr1 = [1,2,3,4], arr2 = [-1,4,5,6]\n<strong>Output:</strong> 13\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr1 = [1,-2,-5,0,10], arr2 = [0,-2,-1,-7,-4]\n<strong>Output:</strong> 20\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= arr1.length == arr2.length &lt;= 40000</code></li>\n\t<li><code>-10^6 &lt;= arr1[i], arr2[i] &lt;= 10^6</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 79,
+  "dislikes": 97,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "piyushbhatia993",
+      "profileUrl": "/piyushbhatia993/",
+      "avatarUrl": "https://assets.leetcode.com/users/piyushbhatia993/avatar_1559070747.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int maxAbsValExpr(vector<int>& arr1, vector<int>& arr2) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxAbsValExpr(int[] arr1, int[] arr2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def maxAbsValExpr(self, arr1, arr2):\r\n        \"\"\"\r\n        :type arr1: List[int]\r\n        :type arr2: List[int]\r\n        :rtype: int\r\n        \"\"\"\r\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def maxAbsValExpr(self, arr1: List[int], arr2: List[int]) -> int:\r\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\r\n\r\nint maxAbsValExpr(int* arr1, int arr1Size, int* arr2, int arr2Size){\r\n\r\n}\r\n\r\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int MaxAbsValExpr(int[] arr1, int[] arr2) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {number[]} arr1\r\n * @param {number[]} arr2\r\n * @return {number}\r\n */\r\nvar maxAbsValExpr = function(arr1, arr2) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr1\r\n# @param {Integer[]} arr2\r\n# @return {Integer}\r\ndef max_abs_val_expr(arr1, arr2)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func maxAbsValExpr(_ arr1: [Int], _ arr2: [Int]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxAbsValExpr(arr1 []int, arr2 []int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def maxAbsValExpr(arr1: Array[Int], arr2: Array[Int]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun maxAbsValExpr(arr1: IntArray, arr2: IntArray): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn max_abs_val_expr(arr1: Vec<i32>, arr2: Vec<i32>) -> i32 {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param Integer[] $arr1\r\n     * @param Integer[] $arr2\r\n     * @return Integer\r\n     */\r\n    function maxAbsValExpr($arr1, $arr2) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.7K\", \"totalSubmission\": \"8.9K\", \"totalAcceptedRaw\": 4743, \"totalSubmissionRaw\": 8948, \"acRate\": \"53.0%\"}",
+  "hints": [
+    "Use the idea that abs(A) + abs(B) = max(A+B, A-B, -A+B, -A-B)."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2,3,4]\n[-1,4,5,6]",
+  "metaData": "{\r\n  \"name\": \"maxAbsValExpr\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"arr1\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"type\": \"integer[]\",\r\n      \"name\": \"arr2\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

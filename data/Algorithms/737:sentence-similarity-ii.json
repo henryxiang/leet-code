@@ -1,0 +1,117 @@
+{
+  "questionId": "737",
+  "questionFrontendId": "737",
+  "boundTopicId": null,
+  "title": "Sentence Similarity II",
+  "titleSlug": "sentence-similarity-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two sentences <code>words1, words2</code> (each represented as an array of strings), and a list of similar word pairs <code>pairs</code>, determine if two sentences are similar.</p>\r\n\r\n<p>For example, <code>words1 = [&quot;great&quot;, &quot;acting&quot;, &quot;skills&quot;]</code> and <code>words2 = [&quot;fine&quot;, &quot;drama&quot;, &quot;talent&quot;]</code> are similar, if the similar word pairs are <code>pairs = [[&quot;great&quot;, &quot;good&quot;], [&quot;fine&quot;, &quot;good&quot;], [&quot;acting&quot;,&quot;drama&quot;], [&quot;skills&quot;,&quot;talent&quot;]]</code>.</p>\r\n\r\n<p>Note that the similarity relation <b>is</b> transitive. For example, if &quot;great&quot; and &quot;good&quot; are similar, and &quot;fine&quot; and &quot;good&quot; are similar, then &quot;great&quot; and &quot;fine&quot; <b>are similar</b>.</p>\r\n\r\n<p>Similarity is also symmetric. For example, &quot;great&quot; and &quot;fine&quot; being similar is the same as &quot;fine&quot; and &quot;great&quot; being similar.</p>\r\n\r\n<p>Also, a word is always similar with itself. For example, the sentences <code>words1 = [&quot;great&quot;], words2 = [&quot;great&quot;], pairs = []</code> are similar, even though there are no specified similar word pairs.</p>\r\n\r\n<p>Finally, sentences can only be similar if they have the same number of words. So a sentence like <code>words1 = [&quot;great&quot;]</code> can never be similar to <code>words2 = [&quot;doubleplus&quot;,&quot;good&quot;]</code>.</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ul>\r\n\t<li>The length of <code>words1</code> and <code>words2</code> will not exceed <code>1000</code>.</li>\r\n\t<li>The length of <code>pairs</code> will not exceed <code>2000</code>.</li>\r\n\t<li>The length of each <code>pairs[i]</code> will be <code>2</code>.</li>\r\n\t<li>The length of each <code>words[i]</code> and <code>pairs[i][j]</code> will be in the range <code>[1, 20]</code>.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 392,
+  "dislikes": 23,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Friend Circles\", \"titleSlug\": \"friend-circles\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Accounts Merge\", \"titleSlug\": \"accounts-merge\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Sentence Similarity\", \"titleSlug\": \"sentence-similarity\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool areSentencesSimilarTwo(vector<string>& words1, vector<string>& words2, vector<vector<string>>& pairs) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean areSentencesSimilarTwo(String[] words1, String[] words2, List<List<String>> pairs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def areSentencesSimilarTwo(self, words1, words2, pairs):\n        \"\"\"\n        :type words1: List[str]\n        :type words2: List[str]\n        :type pairs: List[List[str]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def areSentencesSimilarTwo(self, words1: List[str], words2: List[str], pairs: List[List[str]]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool areSentencesSimilarTwo(char ** words1, int words1Size, char ** words2, int words2Size, char *** pairs, int pairsSize, int* pairsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool AreSentencesSimilarTwo(string[] words1, string[] words2, IList<IList<string>> pairs) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words1\n * @param {string[]} words2\n * @param {string[][]} pairs\n * @return {boolean}\n */\nvar areSentencesSimilarTwo = function(words1, words2, pairs) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words1\r\n# @param {String[]} words2\r\n# @param {String[][]} pairs\r\n# @return {Boolean}\r\ndef are_sentences_similar_two(words1, words2, pairs)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func areSentencesSimilarTwo(_ words1: [String], _ words2: [String], _ pairs: [[String]]) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func areSentencesSimilarTwo(words1 []string, words2 []string, pairs [][]string) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def areSentencesSimilarTwo(words1: Array[String], words2: Array[String], pairs: List[List[String]]): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun areSentencesSimilarTwo(words1: Array<String>, words2: Array<String>, pairs: List<List<String>>): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn are_sentences_similar_two(words1: Vec<String>, words2: Vec<String>, pairs: Vec<Vec<String>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words1\n     * @param String[] $words2\n     * @param String[][] $pairs\n     * @return Boolean\n     */\n    function areSentencesSimilarTwo($words1, $words2, $pairs) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"31.8K\", \"totalSubmission\": \"71K\", \"totalAcceptedRaw\": 31755, \"totalSubmissionRaw\": 70953, \"acRate\": \"44.8%\"}",
+  "hints": [
+    "Consider the graphs where each pair in \"pairs\" is an edge.  Two words are similar if they are the same, or are in the same connected component of this graph."
+  ],
+  "solution": {
+    "id": "301",
+    "canSeeDetail": true,
+    "url": "/articles/sentence-similarity-ii/",
+    "content": "[TOC]\r\n\r\n#### Approach #1: Depth-First Search [Accepted]\r\n\r\n**Intuition**\r\n\r\nTwo words are similar if they are the same, or there is a path connecting them from edges represented by `pairs`.\r\n\r\nWe can check whether this path exists by performing a depth-first search from a word and seeing if we reach the other word.  The search is performed on the underlying graph specified by the edges in `pairs`.\r\n\r\n**Algorithm**\r\n\r\nWe start by building our `graph` from the edges in `pairs`.  \r\n\r\nThe specific algorithm we go for is an iterative depth-first search.  The implementation we go for is a typical \"visitor pattern\": when searching whether there is a path from `w1 = words1[i]` to `w2 = words2[i]`, `stack` will contain all the nodes that are queued up for processing, while `seen` will be all the nodes that have been queued for processing (whether they have been processed or not).\r\n\r\n<iframe src=\"https://leetcode.com/playground/e6oi8YFg/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"e6oi8YFg\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(NP)$$, where $$N$$ is the maximum length of `words1` and `words2`, and $$P$$ is the length of `pairs`.  Each of $$N$$ searches could search the entire graph.\r\n\r\n* Space Complexity: $$O(P)$$, the size of `pairs`.\r\n\r\n---\r\n#### Approach #2: Union-Find [Accepted]\r\n\r\n**Intuition**\r\n\r\nAs in *Approach #1*, we want to know if there is path connecting two words from edges represented by `pairs`.\r\n\r\nOur problem comes down to finding the connected components of a graph.  This is a natural fit for a *Disjoint Set Union* (DSU) structure.\r\n\r\n**Algorithm**\r\n\r\nDraw edges between words if they are similar.  For easier interoperability between our DSU template, we will map each `word` to some integer `ix = index[word]`.  Then, `dsu.find(ix)` will tell us a unique id representing what component that word is in.\r\n\r\nFor more information on DSU, please look at *Approach #2* in the [article here](https://leetcode.com/articles/redundant-connection/).  For brevity, the solutions showcased below do not use *union-by-rank*.\r\n\r\nAfter putting each word in `pairs` into our DSU template, we check successive pairs of words `w1, w2 = words1[i], words2[i]`.  We require that `w1 == w2`, or `w1` and `w2` are in the same component.  This is easily checked using `dsu.find`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/RM4pqebc/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RM4pqebc\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(N \\log P + P)$$, where $$N$$ is the maximum length of `words1` and `words2`, and $$P$$ is the length of `pairs`.  If we used union-by-rank, this complexity improves to $$O(N * \\alpha(P) + P) \\approx O(N + P)$$, where $$\\alpha$$ is the *Inverse-Ackermann* function.\r\n\r\n* Space Complexity: $$O(P)$$, the size of `pairs`.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "296",
+      "count": 7,
+      "average": 4.429,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"great\",\"acting\",\"skills\"]\n[\"fine\",\"drama\",\"talent\"]\n[[\"great\",\"good\"],[\"fine\",\"good\"],[\"drama\",\"acting\"],[\"skills\",\"talent\"]]",
+  "metaData": "{\r\n  \"name\": \"areSentencesSimilarTwo\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words1\",\r\n      \"type\": \"string[]\"\r\n    },\r\n    {\r\n      \"name\": \"words2\",\r\n      \"type\": \"string[]\"\r\n    },\r\n    {\r\n      \"name\": \"pairs\",\r\n      \"type\": \"list<list<string>>\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

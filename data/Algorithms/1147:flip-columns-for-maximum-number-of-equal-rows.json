@@ -1,0 +1,95 @@
+{
+  "questionId": "1147",
+  "questionFrontendId": "1072",
+  "boundTopicId": null,
+  "title": "Flip Columns For Maximum Number of Equal Rows",
+  "titleSlug": "flip-columns-for-maximum-number-of-equal-rows",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <code>matrix</code> consisting of 0s and 1s, we may choose any number of columns in the matrix and flip <strong>every</strong>&nbsp;cell in that column.&nbsp; Flipping a cell changes the value of that cell from 0 to 1 or from 1 to 0.</p>\r\n\r\n<p>Return the maximum number of rows that have all values equal after some number of flips.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[[0,1],[1,1]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">1</span>\r\n<strong>Explanation: </strong>After flipping no values, 1 row has all values equal.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[[0,1],[1,0]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">2</span>\r\n<strong>Explanation: </strong>After flipping values in the first column, both rows have equal values.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[[0,0,0],[0,0,1],[1,1,0]]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">2</span>\r\n<strong>Explanation: </strong>After flipping values in the first two columns, the last two rows have equal values.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= matrix.length &lt;= 300</code></li>\r\n\t<li><code>1 &lt;= matrix[i].length &lt;= 300</code></li>\r\n\t<li>All <code>matrix[i].length</code>&#39;s are equal</li>\r\n\t<li><code>matrix[i][j]</code> is&nbsp;<code>0</code> or <code>1</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 163,
+  "dislikes": 15,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int maxEqualRowsAfterFlips(vector<vector<int>>& matrix) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxEqualRowsAfterFlips(int[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxEqualRowsAfterFlips(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxEqualRowsAfterFlips(self, matrix: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxEqualRowsAfterFlips(int** matrix, int matrixSize, int* matrixColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int MaxEqualRowsAfterFlips(int[][] matrix) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} matrix\n * @return {number}\n */\nvar maxEqualRowsAfterFlips = function(matrix) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} matrix\r\n# @return {Integer}\r\ndef max_equal_rows_after_flips(matrix)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func maxEqualRowsAfterFlips(_ matrix: [[Int]]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxEqualRowsAfterFlips(matrix [][]int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def maxEqualRowsAfterFlips(matrix: Array[Array[Int]]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun maxEqualRowsAfterFlips(matrix: Array<IntArray>): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_equal_rows_after_flips(matrix: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @return Integer\n     */\n    function maxEqualRowsAfterFlips($matrix) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.5K\", \"totalSubmission\": \"12.5K\", \"totalAcceptedRaw\": 7475, \"totalSubmissionRaw\": 12525, \"acRate\": \"59.7%\"}",
+  "hints": [
+    "Flipping a subset of columns is like doing a bitwise XOR of some number K onto each row.  We want rows X with X ^ K = all 0s or all 1s.  This is the same as X = X^K ^K = (all 0s or all 1s) ^ K, so we want to count rows that have opposite bits set.  For example, if K = 1, then we count rows X = (00000...001, or 1111....110)."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[0,1],[1,1]]",
+  "metaData": "{\r\n  \"name\": \"maxEqualRowsAfterFlips\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"matrix\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

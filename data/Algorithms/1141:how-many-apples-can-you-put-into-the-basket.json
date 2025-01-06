@@ -1,0 +1,97 @@
+{
+  "questionId": "1141",
+  "questionFrontendId": "1196",
+  "boundTopicId": null,
+  "title": "How Many Apples Can You Put into the Basket",
+  "titleSlug": "how-many-apples-can-you-put-into-the-basket",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You have some apples, where <code>arr[i]</code> is the weight of the <code>i</code>-th apple.&nbsp; You also have a basket that can carry up to <code>5000</code> units of weight.</p>\n\n<p>Return the maximum number of apples you can put in the basket.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [100,200,150,1000]\n<strong>Output:</strong> 4\n<strong>Explanation: </strong>All 4 apples can be carried by the basket since their sum of weights is 1450.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> arr = [900,950,800,1000,700,800]\n<strong>Output:</strong> 5\n<strong>Explanation: </strong>The sum of weights of the 6 apples exceeds 5000 so we choose any 5 of them.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= arr.length &lt;= 10^3</code></li>\n\t<li><code>1 &lt;= arr[i] &lt;= 10^3</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 25,
+  "dislikes": 7,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Virtu Financial\", \"slug\": \"virtu\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxNumberOfApples(vector<int>& arr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxNumberOfApples(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxNumberOfApples(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxNumberOfApples(self, arr: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxNumberOfApples(int* arr, int arrSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxNumberOfApples(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar maxNumberOfApples = function(arr) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @return {Integer}\ndef max_number_of_apples(arr)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxNumberOfApples(_ arr: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxNumberOfApples(arr []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxNumberOfApples(arr: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxNumberOfApples(arr: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_number_of_apples(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Integer\n     */\n    function maxNumberOfApples($arr) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.9K\", \"totalSubmission\": \"7.2K\", \"totalAcceptedRaw\": 4861, \"totalSubmissionRaw\": 7176, \"acRate\": \"67.7%\"}",
+  "hints": [
+    "What if you think in a greedy approach?",
+    "The best apple to take in one step is the one with the smallest weight.",
+    "Sort the array and take apples with smaller weight first."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[100,200,150,1000]",
+  "metaData": "{\n  \"name\": \"maxNumberOfApples\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

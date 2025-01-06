@@ -1,0 +1,115 @@
+{
+  "questionId": "689",
+  "questionFrontendId": "689",
+  "boundTopicId": null,
+  "title": "Maximum Sum of 3 Non-Overlapping Subarrays",
+  "titleSlug": "maximum-sum-of-3-non-overlapping-subarrays",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a given array <code>nums</code> of positive integers, find three non-overlapping subarrays with maximum sum.</p>\r\n\r\n<p>Each subarray will be of size <code>k</code>, and we want to maximize the sum of all <code>3*k</code> entries.</p>\r\n\r\n<p>Return the result as a list of indices representing the starting position of each interval (0-indexed). If there are multiple answers, return the lexicographically smallest one.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [1,2,1,2,6,7,5,1], 2\r\n<b>Output:</b> [0, 3, 5]\r\n<b>Explanation:</b> Subarrays [1, 2], [2, 6], [7, 5] correspond to the starting indices [0, 3, 5].\r\nWe could have also taken [2, 1], but an answer of [1, 3, 5] would be lexicographically larger.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ul>\r\n\t<li><code>nums.length</code> will be between 1 and 20000.</li>\r\n\t<li><code>nums[i]</code> will be between 1 and 65535.</li>\r\n\t<li><code>k</code> will be between 1 and floor(nums.length / 3).</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 706,
+  "dislikes": 36,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Best Time to Buy and Sell Stock III\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<int> maxSumOfThreeSubarrays(vector<int>& nums, int k) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] maxSumOfThreeSubarrays(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxSumOfThreeSubarrays(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxSumOfThreeSubarrays(self, nums: List[int], k: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* maxSumOfThreeSubarrays(int* nums, int numsSize, int k, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[] MaxSumOfThreeSubarrays(int[] nums, int k) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number[]}\n */\nvar maxSumOfThreeSubarrays = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\r\n# @param {Integer} k\r\n# @return {Integer[]}\r\ndef max_sum_of_three_subarrays(nums, k)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func maxSumOfThreeSubarrays(_ nums: [Int], _ k: Int) -> [Int] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxSumOfThreeSubarrays(nums []int, k int) []int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def maxSumOfThreeSubarrays(nums: Array[Int], k: Int): Array[Int] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun maxSumOfThreeSubarrays(nums: IntArray, k: Int): IntArray {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_sum_of_three_subarrays(nums: Vec<i32>, k: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer[]\n     */\n    function maxSumOfThreeSubarrays($nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"31.3K\", \"totalSubmission\": \"70K\", \"totalAcceptedRaw\": 31328, \"totalSubmissionRaw\": 70014, \"acRate\": \"44.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "255",
+    "canSeeDetail": true,
+    "url": "/articles/maximum-sum-of-3-non-overlapping-intervals/",
+    "content": "[TOC]\n\n#### Approach #1: Ad-Hoc [Accepted]\n\n**Intuition**\n\nIt is natural to consider an array `W` of each interval's sum, where each interval is the given length `K`.  To create `W`, we can either use prefix sums, or manage the sum of the interval as a window slides along the array.\n\nFrom there, we approach the reduced problem: Given some array `W` and an integer `K`, what is the lexicographically smallest tuple of indices `(i, j, k)` with `i + K <= j` and `j + K <= k` that maximizes `W[i] + W[j] + W[k]`?\n\n**Algorithm**\n\nSuppose we fixed `j`.  We would like to know on the intervals $$i \\in [0, j-K]$$ and $$k \\in [j+K, \\text{len}(W)-1]$$, where the largest value of $$W[i]$$ (and respectively $$W[k]$$) occurs first.  (Here, first means the smaller index.)\n\nWe can solve these problems with dynamic programming.  For example, if we know that $$i$$ is where the largest value of $$W[i]$$ occurs first on $$[0, 5]$$, then on $$[0, 6]$$ the first occurrence of the largest $$W[i]$$ must be either $$i$$ or $$6$$.  If say, $$6$$ is better, then we set `best = 6`.\n\nAt the end, `left[z]` will be the first occurrence of the largest value of `W[i]` on the interval $$i \\in [0, z]$$, and `right[z]` will be the same but on the interval $$i \\in [z, \\text{len}(W) - 1]$$.  This means that for some choice `j`, the candidate answer must be `(left[j-K], j, right[j+K])`.  We take the candidate that produces the maximum `W[i] + W[j] + W[k]`.\n\n<iframe src=\"https://leetcode.com/playground/rcX96JEv/shared\" frameBorder=\"0\" name=\"rcX96JEv\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of the array.  Every loop is bounded in the number of steps by $$N$$, and does $$O(1)$$ work.\n\n* Space complexity:  $$O(N)$$.  `W`, `left`, and `right` all take $$O(N)$$ memory.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "249",
+      "count": 29,
+      "average": 3.69,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,1,2,6,7,5,1]\n2",
+  "metaData": "{\r\n  \"name\": \"maxSumOfThreeSubarrays\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

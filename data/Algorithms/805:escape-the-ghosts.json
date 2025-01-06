@@ -1,0 +1,111 @@
+{
+  "questionId": "805",
+  "questionFrontendId": "789",
+  "boundTopicId": null,
+  "title": "Escape The Ghosts",
+  "titleSlug": "escape-the-ghosts",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are playing a simplified Pacman game. You&nbsp;start at the point <code>(0, 0)</code>, and your destination is<code> (target[0], target[1])</code>. There are several ghosts on the map, the i-th ghost starts at<code> (ghosts[i][0], ghosts[i][1])</code>.</p>\r\n\r\n<p>Each turn, you and all ghosts simultaneously *may* move in one of 4 cardinal directions: north, east, west, or south, going from the previous point to a new point 1 unit of distance away.</p>\r\n\r\n<p>You escape if and only if you can reach the target before any ghost reaches you (for any given moves the ghosts may take.)&nbsp; If you reach any square (including the target) at the same time as a ghost, it doesn&#39;t count as an escape.</p>\r\n\r\n<p>Return True if and only if it is possible to escape.</p>\r\n\r\n<pre>\r\n<strong>Example 1:</strong>\r\n<strong>Input:</strong> \r\nghosts = [[1, 0], [0, 3]]\r\ntarget = [0, 1]\r\n<strong>Output:</strong> true\r\n<strong>Explanation:</strong> \r\nYou can directly reach the destination (0, 1) at time 1, while the ghosts located at (1, 0) or (0, 3) have no way to catch up with you.\r\n</pre>\r\n\r\n<pre>\r\n<strong>Example 2:</strong>\r\n<strong>Input:</strong> \r\nghosts = [[1, 0]]\r\ntarget = [2, 0]\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> \r\nYou need to reach the destination (2, 0), but the ghost at (1, 0) lies between you and the destination.\r\n</pre>\r\n\r\n<pre>\r\n<strong>Example 3:</strong>\r\n<strong>Input:</strong> \r\nghosts = [[2, 0]]\r\ntarget = [1, 0]\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> \r\nThe ghost can reach the target at the same time as you.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>All points have coordinates with absolute value &lt;= <code>10000</code>.</li>\r\n\t<li>The number of ghosts will not exceed <code>100</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 150,
+  "dislikes": 297,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool escapeGhosts(vector<vector<int>>& ghosts, vector<int>& target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean escapeGhosts(int[][] ghosts, int[] target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def escapeGhosts(self, ghosts, target):\n        \"\"\"\n        :type ghosts: List[List[int]]\n        :type target: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def escapeGhosts(self, ghosts: List[List[int]], target: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool escapeGhosts(int** ghosts, int ghostsSize, int* ghostsColSize, int* target, int targetSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool EscapeGhosts(int[][] ghosts, int[] target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} ghosts\n * @param {number[]} target\n * @return {boolean}\n */\nvar escapeGhosts = function(ghosts, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} ghosts\n# @param {Integer[]} target\n# @return {Boolean}\ndef escape_ghosts(ghosts, target)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func escapeGhosts(_ ghosts: [[Int]], _ target: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func escapeGhosts(ghosts [][]int, target []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def escapeGhosts(ghosts: Array[Array[Int]], target: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun escapeGhosts(ghosts: Array<IntArray>, target: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn escape_ghosts(ghosts: Vec<Vec<i32>>, target: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $ghosts\n     * @param Integer[] $target\n     * @return Boolean\n     */\n    function escapeGhosts($ghosts, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.3K\", \"totalSubmission\": \"21.9K\", \"totalAcceptedRaw\": 12338, \"totalSubmissionRaw\": 21943, \"acRate\": \"56.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "422",
+    "canSeeDetail": true,
+    "url": "/articles/escape-the-ghosts/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Taxicab Distance [Accepted]\r\n\r\n**Intuition**\r\n\r\nThe *taxicab* distance is the number of moves required to get from point `A` to point `B` in our grid.  It is calculated as `dist(A, B) = abs(A.x - B.x) + abs(A.y - B.y)`.\r\n\r\nLet's say we start at `S`, the ghost starts at `G`, the target is `T`, and the ghost first meets us at `X`.  This implies `dist(G, X) <= dist(S, X)`, as the ghost must reach `X` before or at the time that we do.\r\n\r\nNow, if the ghost travels from `G` to `X` and then to `T`, it will reach `T` at time `dist(G, T) <= dist(G, X) + dist(X, T) <= dist(S, X) + dist(X, T)`.  The first inequality is because of the *triangle inequality* that all distance metrics satisfy.\r\n\r\nThe above shows that it is at least as good for the ghost to just travel directly to the target: if it could reach us beforehand (at `X`), it will also reach us if it goes to `X` then to `T`, and then it would reach us if it just went directly to `T`.\r\n\r\nAlso, if the ghost goes directly to the target, then a necessary condition is clearly that we get to the target before the ghost.\r\n\r\nOnce we can make the assumption that all parties just go directly to the target in the shortest time possible, the problem is greatly simplified.\r\n\r\n**Algorithm**\r\n\r\nCheck that our (taxicab) distance to the target is smaller than the distance from any ghost to the target.\r\n\r\n<iframe src=\"https://leetcode.com/playground/JiWTVSzn/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"JiWTVSzn\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(\\text{ghosts}.\\text{length})$$.\r\n\r\n* Space Complexity:  $$O(1)$$.\r\n\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "417",
+      "count": 2,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,0],[0,3]]\n[0,1]",
+  "metaData": "{\r\n  \"name\": \"escapeGhosts\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"ghosts\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

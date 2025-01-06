@@ -1,0 +1,93 @@
+{
+  "questionId": "311",
+  "questionFrontendId": "311",
+  "boundTopicId": null,
+  "title": "Sparse Matrix Multiplication",
+  "titleSlug": "sparse-matrix-multiplication",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two <a href=\"https://en.wikipedia.org/wiki/Sparse_matrix\" target=\"_blank\">sparse matrices</a> <b>A</b> and <b>B</b>, return the result of <b>AB</b>.</p>\r\n\r\n<p>You may assume that <b>A</b>&#39;s column number is equal to <b>B</b>&#39;s row number.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:\r\n\r\n</b><strong>A</strong> = [\r\n  [ 1, 0, 0],\r\n  [-1, 0, 3]\r\n]\r\n\r\n<strong>B</strong> = [\r\n  [ 7, 0, 0 ],\r\n  [ 0, 0, 0 ],\r\n  [ 0, 0, 1 ]\r\n]\r\n\r\n<strong>Output:</strong>\r\n\r\n     |  1 0 0 |   | 7 0 0 |   |  7 0 0 |\r\n<b>AB</b> = | -1 0 3 | x | 0 0 0 | = | -7 0 3 |\r\n                  | 0 0 1 |\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 332,
+  "dislikes": 134,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<int>> multiply(vector<vector<int>>& A, vector<vector<int>>& B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[][] multiply(int[][] A, int[][] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def multiply(self, A, B):\n        \"\"\"\n        :type A: List[List[int]]\n        :type B: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def multiply(self, A: List[List[int]], B: List[List[int]]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** multiply(int** A, int ASize, int* AColSize, int** B, int BSize, int* BColSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[][] Multiply(int[][] A, int[][] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} A\n * @param {number[][]} B\n * @return {number[][]}\n */\nvar multiply = function(A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} a\n# @param {Integer[][]} b\n# @return {Integer[][]}\ndef multiply(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func multiply(_ A: [[Int]], _ B: [[Int]]) -> [[Int]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func multiply(A [][]int, B [][]int) [][]int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def multiply(A: Array[Array[Int]], B: Array[Array[Int]]): Array[Array[Int]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun multiply(A: Array<IntArray>, B: Array<IntArray>): Array<IntArray> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn multiply(a: Vec<Vec<i32>>, b: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $A\n     * @param Integer[][] $B\n     * @return Integer[][]\n     */\n    function multiply($A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"75.7K\", \"totalSubmission\": \"129.4K\", \"totalAcceptedRaw\": 75686, \"totalSubmissionRaw\": 129382, \"acRate\": \"58.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,0,0],[-1,0,3]]\n[[7,0,0],[0,0,0],[0,0,1]]",
+  "metaData": "{\r\n  \"name\": \"multiply\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\",\r\n    \"rowsize\": \"size_1\",\r\n    \"colsize\": \"*col_size_2\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,117 @@
+{
+  "questionId": "730",
+  "questionFrontendId": "730",
+  "boundTopicId": null,
+  "title": "Count Different Palindromic Subsequences",
+  "titleSlug": "count-different-palindromic-subsequences",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a string S, find the number of different non-empty palindromic subsequences in S, and <b>return that number modulo <code>10^9 + 7</code>.</b>\r\n</p><p>\r\nA subsequence of a string S is obtained by deleting 0 or more characters from S.\r\n</p><p>\r\nA sequence is palindromic if it is equal to the sequence reversed.\r\n</p><p>\r\nTwo sequences <code>A_1, A_2, ...</code> and <code>B_1, B_2, ...</code> are different if there is some <code>i</code> for which <code>A_i != B_i</code>.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\nS = 'bccb'\r\n<b>Output:</b> 6\r\n<b>Explanation:</b> \r\nThe 6 different non-empty palindromic subsequences are 'b', 'c', 'bb', 'cc', 'bcb', 'bccb'.\r\nNote that 'bcb' is counted only once, even though it occurs twice.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\nS = 'abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba'\r\n<b>Output:</b> 104860361\r\n<b>Explanation:</b> \r\nThere are 3104860382 different non-empty palindromic subsequences, which is 104860361 modulo 10^9 + 7.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<li>The length of <code>S</code> will be in the range <code>[1, 1000]</code>.</li>\r\n<li>Each character <code>S[i]</code> will be in the set <code>{'a', 'b', 'c', 'd'}</code>.</li>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 375,
+  "dislikes": 38,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Palindromic Subsequence\", \"titleSlug\": \"longest-palindromic-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "imsure",
+      "profileUrl": "/imsure/",
+      "avatarUrl": "https://assets.leetcode.com/users/imsure/avatar_1521747091.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Pure Storage\", \"slug\": \"pure-storage\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countPalindromicSubsequences(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countPalindromicSubsequences(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countPalindromicSubsequences(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countPalindromicSubsequences(self, S: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint countPalindromicSubsequences(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountPalindromicSubsequences(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {number}\n */\nvar countPalindromicSubsequences = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef count_palindromic_subsequences(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countPalindromicSubsequences(_ S: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countPalindromicSubsequences(S string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countPalindromicSubsequences(S: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countPalindromicSubsequences(S: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_palindromic_subsequences(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return Integer\n     */\n    function countPalindromicSubsequences($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11.6K\", \"totalSubmission\": \"28.5K\", \"totalAcceptedRaw\": 11594, \"totalSubmissionRaw\": 28535, \"acRate\": \"40.6%\"}",
+  "hints": [
+    "Let dp(i, j) be the answer for the string T = S[i:j+1] including the empty sequence. The answer is the number of unique characters in T, plus palindromes of the form \"a_a\", \"b_b\", \"c_c\", and \"d_d\", where \"_\" represents zero or more characters."
+  ],
+  "solution": {
+    "id": "298",
+    "canSeeDetail": true,
+    "url": "/articles/count-different-palindromic-subsequences/",
+    "content": "[TOC]\r\n\r\n#### Approach #1 Dynamic Programming (using 3D array) [Accepted]\r\n\r\n**Intuition and Algorithm**\r\n\r\nLet `dp[x][i][j]` be the answer for the substring `S[i...j]` where\r\n`S[i] == S[j] == 'a'+x`. Note that since we only have 4 characters `a,\r\nb, c, d`, thus `0 <= x < 4`. The DP formula goes as follows:\r\n\r\n* If `S[i] != 'a'+x`, then `dp[x][i][j] = dp[x][i+1][j]`, note that\r\n  here we leave the first character `S[i]` in the window out due to\r\n  our definition of `dp[x][i][j]`.\r\n\r\n* If `S[j] != 'a'+x`, then `dp[x][i][j] = dp[x][i][j-1]`, leaving the\r\n  last character `S[j]` out.\r\n\r\n* If `S[i] == S[j] == 'a'+x`, then `dp[x][i][j] = 2 +\r\n  dp[0][i+1][j-1] + dp[1][i+1][j-1] + dp[2][i+1][j-1] +\r\n  dp[3][i+1][j-1]`. When the first and last characters are the same, we\r\n  need to count all the distinct palindromes (for each of `a,b,c,d`) within\r\n  the sub-window `S[i+1][j-1]` plus the `2` palindromes contributed by\r\n  the first and last characters.\r\n\r\nLet `n` be the length of the input string `S`, The final answer would\r\nbe `dp[0][0][n-1] + dp[1][0][n-1] + dp[2][0][n-1] + dp[3][0][n-1]`\r\nmod `1000000007`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/4MHeaWhk/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"4MHeaWhk\"></iframe>\r\n\r\n**Example Walkthrough**\r\n\r\nIndeed this is a hard problem to solve and thoroughly understanding\r\nits solution is also challenging. Maybe the best way to understand the\r\nabove approach is to walkthrough some simple examples to help build up\r\nintuitions.\r\n\r\nLet's first look at the strategy we used to fill the DP table and then walkthrough a concrete example to see how it works.\r\n\r\n![DP Table Filling Strategy](../Figures/730/730_Table_Fill.svg){:width=\"539px\"}\r\n{:align=\"center\"}\r\n\r\n!?!../Documents/730_Example_Walkthrough.json:1280,720!?!\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(N^2)$$ where $$N$$ is the length of the input\r\n  string $$S$$. It takes quadratic time to fill up the DP table.\r\n\r\n* Space complexity : $$O(N^2)$$ where $$N$$ is the length of the input\r\n  string $$S$$. The DP table takes quadratic space.\r\n\r\nNote that we ignore the constant factor $$4$$ in the above analysis.\r\n\r\n\r\n**Conclusion**\r\n\r\nAs we look back, this problem reveals a key attribute which indicates\r\nthat dynamic programming might be a good fit: `overlapping\r\nsub-problems` as we recall the DP formula. By practicing more\r\nproblems, we can build up this kind of intuition.\r\n\r\n\r\n*Credit*: the above solution is inspired by\r\n[this post](https://discuss.leetcode.com/topic/111241/c-o-n-2-time-o-n-memory-with-explanation)\r\nwritten by [@elastico](https://discuss.leetcode.com/user/elastico). His solution is space optimized. However, I found\r\nthat my approach is relatively easy to understand for people who found\r\nthis problem hard to approach.\r\n\r\n---\r\n\r\nAnalysis written by: [@imsure](https://leetcode.com/imsure).  \r\n\r\n\r\n#### Approach #2: Dynamic Programming (using 2D array) [Accepted]\r\n\r\n**Intuition**\r\n\r\nAlmost every palindrome is going to take one of these four forms: `a_a`, `b_b`, `c_c`, or `d_d`, where `_` represents a palindrome of zero or more characters.  (The only other palindromes are `a`, `b`, `c`, `d`, and the empty string.)\r\n\r\nLet's try to count palindromes of the form `a_a` - the other types are similar.  Evidently, we should take the first and last `a`, then count all the palindromes that can be formed in between, as this provides us strictly more possibilities for `_` to be a palindrome.  This reveals an *optimal substructure* that is ideal for *dynamic programming*.\r\n\r\n**Algorithm**\r\n\r\nLet `dp(i, j)` be the number of palindromes (including the palindrome `''`) in the string `T = S[i], S[i+1], ..., S[j]`.  To count palindromes in `T` of the form `a_a`, we will need to know the first and last occurrence of `'a'` in this string.  This can be done by a precomputed dp: `next[i][0]` will be the next occurrence of `'a'` in `S[i:]`, `next[i][1]` will be the next occurrence of `'b'` in `S[i:]`, and so on.  \r\n\r\nAlso, we will need to know the number of unique letters in `T` to count the single letter palindromes.  We can use the information from `next` to deduce it: if `next[i][0]` is in the interval `[i, j]`, then `'a'` occurs in `T`, and so on.\r\n\r\nAs many states `dp(i, j)` do not need to be computed, the most natural approach is a *top-down* variation of dynamic programming.\r\n\r\n<iframe src=\"https://leetcode.com/playground/dhYtsJUH/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"dhYtsJUH\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(N^2)$$, where $$N$$ is the size of the string `S`.  Our calculation of `prv` and `nxt` happens in $$O(N)$$ time, then our evaluation of `dp` with at most $$N^2$$ states is $$O(1)$$ work per state.\r\n\r\n* Space Complexity: $$O(N^2)$$, the size of `memo`.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "293",
+      "count": 7,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"bccb\"",
+  "metaData": "{\r\n  \"name\": \"countPalindromicSubsequences\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

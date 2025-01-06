@@ -1,0 +1,111 @@
+{
+  "questionId": "496",
+  "questionFrontendId": "496",
+  "boundTopicId": null,
+  "title": "Next Greater Element I",
+  "titleSlug": "next-greater-element-i",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nYou are given two arrays <b>(without duplicates)</b> <code>nums1</code> and <code>nums2</code> where <code>nums1</code>’s elements are subset of <code>nums2</code>. Find all the next greater numbers for <code>nums1</code>'s elements in the corresponding places of <code>nums2</code>. \r\n</p>\r\n\r\n<p>\r\nThe Next Greater Number of a number <b>x</b> in <code>nums1</code> is the first greater number to its right in <code>nums2</code>. If it does not exist, output -1 for this number.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> <b>nums1</b> = [4,1,2], <b>nums2</b> = [1,3,4,2].\r\n<b>Output:</b> [-1,3,-1]\r\n<b>Explanation:</b>\r\n    For number 4 in the first array, you cannot find the next greater number for it in the second array, so output -1.\r\n    For number 1 in the first array, the next greater number for it in the second array is 3.\r\n    For number 2 in the first array, there is no next greater number for it in the second array, so output -1.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> <b>nums1</b> = [2,4], <b>nums2</b> = [1,2,3,4].\r\n<b>Output:</b> [3,-1]\r\n<b>Explanation:</b>\r\n    For number 2 in the first array, the next greater number for it in the second array is 3.\r\n    For number 4 in the first array, there is no next greater number for it in the second array, so output -1.\r\n</pre>\r\n</p>\r\n\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>All elements in <code>nums1</code> and <code>nums2</code> are unique.</li>\r\n<li>The length of both <code>nums1</code> and <code>nums2</code> would not exceed 1000.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1058,
+  "dislikes": 1655,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Next Greater Element II\", \"titleSlug\": \"next-greater-element-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Next Greater Element III\", \"titleSlug\": \"next-greater-element-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Daily Temperatures\", \"titleSlug\": \"daily-temperatures\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] nextGreaterElement(int[] nums1, int[] nums2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def nextGreaterElement(self, nums1, nums2):\n        \"\"\"\n        :type nums1: List[int]\n        :type nums2: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* nextGreaterElement(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] NextGreaterElement(int[] nums1, int[] nums2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number[]}\n */\nvar nextGreaterElement = function(nums1, nums2) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums1\n# @param {Integer[]} nums2\n# @return {Integer[]}\ndef next_greater_element(nums1, nums2)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func nextGreaterElement(_ nums1: [Int], _ nums2: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func nextGreaterElement(nums1 []int, nums2 []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def nextGreaterElement(nums1: Array[Int], nums2: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun nextGreaterElement(nums1: IntArray, nums2: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn next_greater_element(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums1\n     * @param Integer[] $nums2\n     * @return Integer[]\n     */\n    function nextGreaterElement($nums1, $nums2) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"121.8K\", \"totalSubmission\": \"198.1K\", \"totalAcceptedRaw\": 121769, \"totalSubmissionRaw\": 198071, \"acRate\": \"61.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "87",
+    "canSeeDetail": true,
+    "url": "/articles/greater-element-i/",
+    "content": "[TOC]\n\n## Summary\n\nYou are given two arrays (without duplicates) $$findNums$$ and $$nums$$ where $$findNums$$’s elements are subset of $$nums$$.Find all the\nnext greater\nnumbers for $$findNums$$'s elements in the corresponding places of $$nums$$.\n\nThe Next Greater Number of a number x in $$findNums$$ is the first greater number to its right in $$nums$$. If it does not exist, output -1 for\nthis number.\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Accepted]\n\n In this method, we pick up every element of the $$findNums$$ array(say $$findNums[i]$$) and then search for its own occurence in the $$nums$$ array(which is\n indicated by setting $$found$$ to True). After this, we look linearly for a number in $$nums$$ which is greater than $$findNums[i]$$, which\n is also added to the $$res$$ array to be returned. If no such element is found, we put a $$\\text{-1}$$ at the corresponding location.\n\n \n<iframe src=\"https://leetcode.com/playground/FEQ5JHVr/shared\" frameBorder=\"0\" name=\"FEQ5JHVr\" width=\"100%\" height=\"428\"></iframe>\n\n **Complexity Analysis**\n\n * Time complexity : $$O(m*n)$$. The complete $$nums$$ array(of size $$n$$) needs to be scanned for all the $$m$$ elements of $$findNums$$ in\n the worst case.\n * Space complexity : $$O(m)$$. $$res$$ array of size $$m$$ is used, where $$m$$ is the length of $$findNums$$ array.\n\n---\n\n#### Approach #2 Better Brute Force [Accepted]\n\nInstead of searching for the occurence of $$findNums[i]$$ linearly in the $$nums$$ array, we can make use of a hashmap $$hash$$ to store\nthe elements of $$nums$$ in the form of $$(element, index)$$. By doing this, we can find $$findNums[i]$$'s index in $$nums$$ array directly and\nthen continue to search for the next larger element in a linear fashion.\n\n \n<iframe src=\"https://leetcode.com/playground/xtBuL7iz/shared\" frameBorder=\"0\" name=\"xtBuL7iz\" width=\"100%\" height=\"445\"></iframe>\n\n **Complexity Analysis**\n\n * Time complexity : $$O(m*n)$$. The whole $$nums$$ array, of length $$n$$ needs to be scanned for all the $$m$$ elements of $$finalNums$$ in the worst case.\n\n * Space complexity : $$O(m)$$. $$res$$ array of size $$m$$ is used. A hashmap $$hash$$ of size $$m$$ is used, where $$m$$ refers to the\n length of the $$findNums$$ array.\n\n---\n\n#### Approach #3 Using Stack [Accepted]\n\nIn this approach, we make use of pre-processing first so as to make the results easily available later on.\n We make use of a stack($$stack$$) and a hashmap($$map$$). $$map$$ is used to store the result for every posssible number in $$nums$$ in\nthe form of $$(element, next\\_greater\\_element)$$. Now, we look at how to make entries in $$map$$.\n\nWe iterate over the $$nums$$ array\nfrom the left to right. We push every element $$nums[i]$$ on the stack if it is less than the previous element on the top of the stack\n($$stack[top]$$). No entry is made in $$map$$ for such $$nums[i]'s$$ right now. This happens because\nthe $$nums[i]'s$$ encountered so far are coming in a descending order.\n\nIf we encounter an element $$nums[i]$$ such that $$nums[i] > stack[top]$$, we keep on popping all the elements\nfrom $$stack[top]$$ until we encounter $$stack[k]$$ such that $$stack[k] &leq; nums[i]$$. For every element popped out of the stack\n$$stack[j]$$, we put the popped element along with its next greater number(result) into the hashmap $$map$$, in the form\n$$(stack[j], nums[i])$$ . Now, it is obvious that the\nnext greater element for all elements $$stack[j]$$, such that $$k < j &le; top$$ is $$nums[i]$$(since this larger element caused all the\n$$stack[j]$$'s to be popped out). We stop popping the elements at $$stack[k]$$ because this $$nums[i]$$ can't act as the next greater element\nfor the next elements on the stack.\n\nThus, an element is popped out of the stack whenever a next greater element is found for it. Thus, the elements remaining in the stack are the\nones for which no next greater element exists in the $$nums$$ array. Thus, at the end of the iteration over $$nums$$, we pop the remaining\nelements from the $$stack$$ and put their entries in $$hash$$ with a $$\\text{-1}$$ as their corresponding results.\n\nThen, we can simply iterate over the $$findNums$$ array to find the corresponding results from $$map$$ directlhy.\n\nThe following animation makes the method clear:\n\n!?!../Documents/496_Next_Greater_Element_I.json:1280,720!?!\n\n\n\n \n<iframe src=\"https://leetcode.com/playground/hvr7nhcH/shared\" frameBorder=\"0\" name=\"hvr7nhcH\" width=\"100%\" height=\"360\"></iframe>\n\n **Complexity Analysis**\n\n * Time complexity : $$O(m+n)$$. The entire $$nums$$ array(of size $$n$$) is scanned only once. The stack's $$n$$ elements are popped\n only once. The $$findNums$$ array is also scanned only once.\n\n * Space complexity : $$O(m+n)$$. $$stack$$ and $$map$$ of size $$n$$ is used. $$res$$ array of size $$m$$ is used, where $$n$$ refers to the\n length of the $$nums$$ array and $$m$$ refers to the length of the $$findNums$$ array.\n\n---\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "85",
+      "count": 32,
+      "average": 4.438,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,1,2]\n[1,3,4,2]",
+  "metaData": "{\r\n  \"name\": \"nextGreaterElement\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums1\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"nums2\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "668",
+  "questionFrontendId": "668",
+  "boundTopicId": null,
+  "title": "Kth Smallest Number in Multiplication Table",
+  "titleSlug": "kth-smallest-number-in-multiplication-table",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nNearly every one have used the <a href=\"https://en.wikipedia.org/wiki/Multiplication_table\">Multiplication Table</a>. But could you find out the <code>k-th</code> smallest number quickly from the multiplication table?\r\n</p>\r\n\r\n<p>\r\nGiven the height <code>m</code> and the length <code>n</code> of a <code>m * n</code> Multiplication Table, and a positive integer <code>k</code>, you need to return the <code>k-th</code> smallest number in this table.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> m = 3, n = 3, k = 5\r\n<b>Output:</b> \r\n<b>Explanation:</b> \r\nThe Multiplication Table:\r\n1\t2\t3\r\n2\t4\t6\r\n3\t6\t9\r\n\r\nThe 5-th smallest number is 3 (1, 2, 2, 3, 3).\r\n</pre>\r\n</p>\r\n\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> m = 2, n = 3, k = 6\r\n<b>Output:</b> \r\n<b>Explanation:</b> \r\nThe Multiplication Table:\r\n1\t2\t3\r\n2\t4\t6\r\n\r\nThe 6-th smallest number is 6 (1, 2, 2, 3, 4, 6).\r\n</pre>\r\n</p>\r\n\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The <code>m</code> and <code>n</code> will be in the range [1, 30000].</li>\r\n<li>The <code>k</code> will be in the range [1, m * n]</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 420,
+  "dislikes": 18,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Kth Smallest Element in a Sorted Matrix\", \"titleSlug\": \"kth-smallest-element-in-a-sorted-matrix\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find K-th Smallest Pair Distance\", \"titleSlug\": \"find-k-th-smallest-pair-distance\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"K-th Smallest Prime Fraction\", \"titleSlug\": \"k-th-smallest-prime-fraction\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findKthNumber(int m, int n, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findKthNumber(int m, int n, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findKthNumber(self, m, n, k):\n        \"\"\"\n        :type m: int\n        :type n: int\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findKthNumber(self, m: int, n: int, k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findKthNumber(int m, int n, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindKthNumber(int m, int n, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} m\n * @param {number} n\n * @param {number} k\n * @return {number}\n */\nvar findKthNumber = function(m, n, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} m\n# @param {Integer} n\n# @param {Integer} k\n# @return {Integer}\ndef find_kth_number(m, n, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findKthNumber(_ m: Int, _ n: Int, _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findKthNumber(m int, n int, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findKthNumber(m: Int, n: Int, k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findKthNumber(m: Int, n: Int, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_kth_number(m: i32, n: i32, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $m\n     * @param Integer $n\n     * @param Integer $k\n     * @return Integer\n     */\n    function findKthNumber($m, $n, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.6K\", \"totalSubmission\": \"37.8K\", \"totalAcceptedRaw\": 16592, \"totalSubmissionRaw\": 37771, \"acRate\": \"43.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "241",
+    "canSeeDetail": true,
+    "url": "/articles/kth-smallest-number-in-multiplication-table/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1: Brute Force [Memory Limit Exceeded]\n\n**Intuition and Algorithm**\n\nCreate the multiplication table and sort it, then take the $$k^{th}$$ element.\n\n<iframe src=\"https://leetcode.com/playground/JNTnTCLa/shared\" frameBorder=\"0\" name=\"JNTnTCLa\" width=\"100%\" height=\"258\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(m*n)$$ to create the table, and $$O(m*n\\log(m*n))$$ to sort it.\n\n* Space Complexity:  $$O(m*n)$$ to store the table.\n\n---\n#### Approach #2: Next Heap [Time Limit Exceeded]\n\n**Intuition**\n\nMaintain a heap of the smallest unused element of each row.  Then, finding the next element is a pop operation on the heap.\n\n**Algorithm**\n\nOur `heap` is going to consist of elements $$\\text{(val, root)}$$, where $$\\text{val}$$ is the next unused value of that row, and $$\\text{root}$$ was the starting value of that row.\n\nWe will repeatedly find the next lowest element in the table.  To do this, we pop from the heap.  Then, if there's a next lowest element in that row, we'll put that element back on the heap.\n\n<iframe src=\"https://leetcode.com/playground/Evrh9ssK/shared\" frameBorder=\"0\" name=\"Evrh9ssK\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(k * m \\log m) = O(m^2 n \\log m)$$.  Our initial heapify operation is $$O(m)$$.  Afterwards, each pop and push is $$O(m \\log m)$$, and our outer loop is $$O(k) = O(m*n)$$\n\n* Space Complexity:  $$O(m)$$.  Our heap is implemented as an array with $$m$$ elements.\n\n---\n#### Approach #3: Binary Search [Accepted]\n\n**Intuition**\n\nAs $$\\text{k}$$ and $$\\text{m*n}$$ are up to $$9 * 10^8$$, linear solutions will not work.  This motivates solutions with $$\\log$$ complexity, such as binary search.\n\n**Algorithm**\n\nLet's do the binary search for the answer $$\\text{A}$$.\n\nSay `enough(x)` is true if and only if there are $$\\text{k}$$ or more values in the multiplication table that are less than or equal to $$\\text{x}$$.  Colloquially, `enough` describes whether $$\\text{x}$$ is large enough to be the $$k^{th}$$ value in the multiplication table.\n\nThen (for our answer $$\\text{A}$$), whenever $$\\text{x &geq; A}$$, `enough(x)` is `True`; and whenever $$\\text{x < A}$$, `enough(x)` is `False`.\n\nIn our binary search, our loop invariant is `enough(hi) = True`.  At the beginning, `enough(m*n) = True`, and whenever `hi` is set, it is set to a value that is \"enough\" (`enough(mi) = True`).  That means `hi` will be the lowest such value at the end of our binary search.\n\nThis leaves us with the task of counting how many values are less than or equal to $$\\text{x}$$.  For each of $$\\text{m}$$ rows, the $$i^{th}$$ row looks like $$\\text{[i, 2*i, 3*i, ..., n*i]}$$.  The largest possible $$\\text{k*i &leq; x}$$ that could appear is $$\\text{k = x // i}$$. However, if $$\\text{x}$$ is really big, then perhaps $$\\text{k > n}$$, so in total there are $$\\text{min(k, n) = min(x // i, n)}$$ values in that row that are less than or equal to $$\\text{x}$$.\n\nAfter we have the count of how many values in the table are less than or equal to $$\\text{x}$$, by the definition of `enough(x)`, we want to know if that count is greater than or equal to $$\\text{k}$$.\n\n<iframe src=\"https://leetcode.com/playground/4ankdsg9/shared\" frameBorder=\"0\" name=\"4ankdsg9\" width=\"100%\" height=\"377\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(m * \\log (m*n))$$.  Our binary search divides the interval $$\\text{[lo, hi]}$$ into half at each step.  At each step, we call `enough` which requires $$O(m)$$ time.\n\n* Space Complexity:  $$O(1)$$.  We only keep integers in memory during our intermediate calculations.\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "236",
+      "count": 10,
+      "average": 3.9,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "3\n3\n5",
+  "metaData": "{\r\n  \"name\": \"findKthNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"m\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

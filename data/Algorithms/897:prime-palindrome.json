@@ -1,0 +1,111 @@
+{
+  "questionId": "897",
+  "questionFrontendId": "866",
+  "boundTopicId": null,
+  "title": "Prime Palindrome",
+  "titleSlug": "prime-palindrome",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Find the smallest prime palindrome greater than or equal to <code>N</code>.</p>\r\n\r\n<p>Recall that a&nbsp;number is <em>prime</em> if it&#39;s only divisors are 1 and itself, and it is greater than 1.&nbsp;</p>\r\n\r\n<p>For example, 2,3,5,7,11 and 13 are&nbsp;primes.</p>\r\n\r\n<p>Recall that a number is a <em>palindrome</em> if it reads the same from left to right as it does from right to left.&nbsp;</p>\r\n\r\n<p>For example, 12321 is a palindrome.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">6</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">7</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">8</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">11</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">13</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">101</span></pre>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= N &lt;= 10^8</code></li>\r\n\t<li>The answer is guaranteed to exist and be less than <code>2 * 10^8</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 138,
+  "dislikes": 394,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "mirosuaf",
+      "profileUrl": "/mirosuaf/",
+      "avatarUrl": "https://www.gravatar.com/avatar/9c1b438883d84372999e787876ee7318.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 9}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int primePalindrome(int N) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int primePalindrome(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def primePalindrome(self, N):\n        \"\"\"\n        :type N: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def primePalindrome(self, N: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint primePalindrome(int N){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int PrimePalindrome(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @return {number}\n */\nvar primePalindrome = function(N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef prime_palindrome(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func primePalindrome(_ N: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func primePalindrome(N int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def primePalindrome(N: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun primePalindrome(N: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn prime_palindrome(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @return Integer\n     */\n    function primePalindrome($N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.1K\", \"totalSubmission\": \"57.5K\", \"totalAcceptedRaw\": 13062, \"totalSubmissionRaw\": 57456, \"acRate\": \"22.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "504",
+    "canSeeDetail": true,
+    "url": "/articles/prime-palindrome/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach Framework\n\n**Investigation of Brute Force**\n\nLet's investigate and improve on a brute force method.\n\nWith basic methods, we can check whether an integer $$N$$ is a palindrome in $$O(\\log N)$$ time, and check whether it is prime in $$O(\\sqrt{N})$$ time.  So we would probably like to do the palindrome check first.\n\nNow, say we naively check every number $$N, N+1, \\cdots, N+K$$.  How big is $$K$$?\n\nWell, the palindromes could be approximately $$10^4$$ apart, since for example `99988999`'s next palindrome is `99999999`.  \n\nIf we assume being a palindrome and being a prime is independent, then based on the density of primes, $$K \\approx 10^4 \\log N$$, and we would do a palindrome check on approximately $$10^4 \\log^2 N$$ values, and a primality test on $$\\log N$$ values of complexity $$\\sqrt{N} \\log N$$.  This seems to work.\n\nHowever, we can't make this assumption of independence: whether a number is a palindrome or prime are *negatively correlated* events!  For example, $$22, 33, 44, \\cdots, 99$$ are clearly not prime.  Actually, all palindromes with an even number of digits are divisible by 11, and are therefore not prime!  (Except for 11.)  For example, an 8 digit palindrome can be written as:\n\n$$\\sum_{i=0}^{3} a_i(10^{7-i} + 10^i) \\equiv \\sum a_i((-1)^{7-i} + (-1)^i) \\equiv \\sum a_i(0) \\equiv 0 \\pmod{11}$$\n\nwhere the second-last equivalence follows as $$i$$ and $$7-i$$ have different parity.\n\n**Density of Palindromes**\n\nFor a palindrome of $$d$$ digits, choosing the first $$k = \\lfloor \\frac{d+1}{2} \\rfloor$$ digits uniquely determines the remaining digits.  Hence, there are $$9 * 10^{k-1}$$ of them (the first digit can't be 0.)  Thus, there are\n\n$$9(10^0 + 10^0 + 10^1 + 10^1 + 10^2 + 10^2 + 10^3 + 10^3) < 20000$$\n\npalindromes of 8 digits or less.  \n\nActually, we don't need to check the palindromes with an even number of digits, so there are under 10000 palindromes we need to check.  However, we also need to check palindromes until we encounter the first 9 digit prime palindrome, as all 8 digit numbers $$N$$ will have an answer equal to that.  Luckily, it occurs quickly: `100030001` is the 4th 9-digit value checked.  (We can verify this with brute force.)\n\nFor each palindrome, we can test whether it is prime in $$O(\\sqrt{N})$$ operations.  So in total, an approach centered around enumerating palindromes seems like it will succeed.\n<br />\n<br />\n\n\n---\n#### Approach 1: Iterate Palindromes\n\n**Intuition**\n\nSay we have a palindrome $$X$$.  What is the next palindrome?\n\nEach palindrome of $$d$$ digits has a *palindromic root*, it's first $$k = \\frac{d+1}{2}$$ digits.  The next palindrome is formed by the next root.\n\nFor example, if $$123$$ is a root for the 5 digit palindrome $$12321$$, then the next palindrome is $$12421$$ with root $$124$$.\n\nNotice that roots and palindromes are not a bijection, as palindromes $$123321$$ and $$12321$$ have the same root.\n\n**Algorithm**\n\nFor each *palindromic root*, let's find the two associated palindromes (one with an odd number of digits, and one with an even number.)  For roots with $$k$$ digits, they will generate palindromes of $$2*k - 1$$ and $$2*k$$ digits.\n\nIf we didn't know that palindromes with an even number of digits (and greater than 11) are never prime, we're still fine - we can just check both possibilities.  When checking both possibilities, we check the palindromes with $$2k - 1$$ digits first, as they are all smaller than the palindromes with $$2k$$ digits.\n\nWe'll use an idea from [[LeetCode Problem: Reverse an Integer]](https://leetcode.com/problems/reverse-integer), in order to check whether an integer is a palindrome.  We could have also converted the integer to a string, and checked the indices directly.\n\nAs for testing primes with `isPrime(N)`, we'll use the standard $$O(\\sqrt{N})$$ check: testing whether every number $$\\leq \\sqrt{N}$$ is a divisor of $$N$$.\n\n<iframe src=\"https://leetcode.com/playground/UgnkELMD/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"UgnkELMD\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  Based on our analysis above, we performed on the order of $$O(N)$$ operations (not counting log factors from dealing with integers), given we knew the existence of prime palindrome `100030001`.  \n\n  Interestingly, the time complexity is an open problem in mathematics, as it is not even known whether there are infinitely many prime palindromes, or whether palindromes behave as random integers for our purposes here - see [[\"Almost All Palindromes are Composite\"]](https://arxiv.org/pdf/math/0405056.pdf) for more.\n\n* Space Complexity:  $$O(\\log N)$$, the space used by `s` (or `sb` in Java.)\n<br />\n<br />\n\n\n---\n#### Approach 2: Brute Force with Mathematical Shortcut\n\n**Intuition**\n\nOur brute force works except when $$N$$ is 8 digits (as explained in *Approach Framework* when we established that all 8 digit palindromes are not prime), so we can skip all 8 digit numbers.\n\n**Algorithm**\n\nFor each number, check whether it is a palindrome.  If it is, check whether it is a prime.  If the number is 8 digits, skip to the 9 digit numbers.\n\n<iframe src=\"https://leetcode.com/playground/NSw4owuf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"NSw4owuf\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, with the caveats explained in *Approach #1*, and ignoring the $$\\log N$$ factor when checking an integer for palindromes.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "497",
+      "count": 13,
+      "average": 3.538,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "6",
+  "metaData": "{\r\n  \"name\": \"primePalindrome\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

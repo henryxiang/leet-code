@@ -1,0 +1,111 @@
+{
+  "questionId": "883",
+  "questionFrontendId": "853",
+  "boundTopicId": null,
+  "title": "Car Fleet",
+  "titleSlug": "car-fleet",
+  "categoryTitle": "Algorithms",
+  "content": "<p><code>N</code> cars are going to the same destination along a one lane road.&nbsp; The destination is <code>target</code>&nbsp;miles away.</p>\r\n\r\n<p>Each car <code>i</code>&nbsp;has a constant speed <code>speed[i]</code>&nbsp;(in miles per hour), and initial position <code>position[i]</code>&nbsp;miles towards the target along the road.</p>\r\n\r\n<p>A car can never pass another car ahead of it, but it can catch up to it, and drive bumper to bumper at the same speed.</p>\r\n\r\n<p>The distance between these two cars is ignored - they are assumed to have the same position.</p>\r\n\r\n<p>A <em>car fleet</em> is some non-empty set of cars driving&nbsp;at the same position and same speed.&nbsp; Note that a single car is also a car fleet.</p>\r\n\r\n<p>If a car catches up to a car fleet right at the destination point, it will&nbsp;still be&nbsp;considered as one car fleet.</p>\r\n\r\n<p><br />\r\nHow many car fleets will arrive at the destination?</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>target = <span id=\"example-input-1-1\">12</span>, position = <span id=\"example-input-1-2\">[10,8,0,5,3]</span>, speed = <span id=\"example-input-1-3\">[2,4,1,1,3]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">3</span>\r\n<strong>Explanation</strong>:\r\nThe cars starting at 10 and 8 become a fleet, meeting each other at 12.\r\nThe car starting at 0 doesn&#39;t catch up to any other car, so it is a fleet by itself.\r\nThe cars starting at 5 and 3 become a fleet, meeting each other at 6.\r\nNote that no other cars meet these fleets before the destination, so the answer is 3.\r\n</pre>\r\n\r\n<p><br />\r\n<strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= N &lt;= 10 ^ 4</code></li>\r\n\t<li><code>0 &lt; target&nbsp;&lt;= 10 ^ 6</code></li>\r\n\t<li><code>0 &lt;&nbsp;speed[i] &lt;= 10 ^ 6</code></li>\r\n\t<li><code>0 &lt;= position[i] &lt; target</code></li>\r\n\t<li>All initial positions are different.</li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 332,
+  "dislikes": 171,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "lee215",
+      "profileUrl": "/lee215/",
+      "avatarUrl": "https://assets.leetcode.com/users/lee215/avatar_1551541889.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int carFleet(int target, vector<int>& position, vector<int>& speed) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int carFleet(int target, int[] position, int[] speed) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def carFleet(self, target, position, speed):\n        \"\"\"\n        :type target: int\n        :type position: List[int]\n        :type speed: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint carFleet(int target, int* position, int positionSize, int* speed, int speedSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CarFleet(int target, int[] position, int[] speed) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} target\n * @param {number[]} position\n * @param {number[]} speed\n * @return {number}\n */\nvar carFleet = function(target, position, speed) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} target\n# @param {Integer[]} position\n# @param {Integer[]} speed\n# @return {Integer}\ndef car_fleet(target, position, speed)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func carFleet(_ target: Int, _ position: [Int], _ speed: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func carFleet(target int, position []int, speed []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def carFleet(target: Int, position: Array[Int], speed: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun carFleet(target: Int, position: IntArray, speed: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn car_fleet(target: i32, position: Vec<i32>, speed: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $target\n     * @param Integer[] $position\n     * @param Integer[] $speed\n     * @return Integer\n     */\n    function carFleet($target, $position, $speed) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"21.6K\", \"totalSubmission\": \"51.7K\", \"totalAcceptedRaw\": 21556, \"totalSubmissionRaw\": 51743, \"acRate\": \"41.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "490",
+    "canSeeDetail": true,
+    "url": "/articles/car-fleet/",
+    "content": "[TOC]\n\n---\n#### Approach 1: Sort\n\n**Intuition**\n\nCall the \"lead fleet\" the fleet furthest in position.\n\nIf the car `S` (Second) behind the lead car `F` (First) would arrive earlier, then `S` forms a fleet with the lead car `F`.  Otherwise, fleet `F` is final as no car can catch up to it - cars behind `S` would form fleets with `S`, never `F`.\n\n**Algorithm**\n\nA car is a `(position, speed)` which implies some arrival time `(target - position) / speed`.  Sort the cars by position.\n\nNow apply the above reasoning - if the lead fleet drives away, then count it and continue.  Otherwise, merge the fleets and continue.\n\n<iframe src=\"https://leetcode.com/playground/L7RDfW2A/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"L7RDfW2A\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the number of cars.  The complexity is dominated by the sorting operation.\n\n* Space Complexity:  $$O(N)$$, the space used to store information about the cars.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "483",
+      "count": 31,
+      "average": 2.806,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "12\n[10,8,0,5,3]\n[2,4,1,1,3]",
+  "metaData": "{\r\n  \"name\": \"carFleet\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"position\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"speed\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

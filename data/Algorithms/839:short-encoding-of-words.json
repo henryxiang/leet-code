@@ -1,0 +1,106 @@
+{
+  "questionId": "839",
+  "questionFrontendId": "820",
+  "boundTopicId": null,
+  "title": "Short Encoding of Words",
+  "titleSlug": "short-encoding-of-words",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a list of words, we may encode it by writing a reference string <code>S</code> and a list of indexes <code>A</code>.</p>\r\n\r\n<p>For example, if the list of words is <code>[&quot;time&quot;, &quot;me&quot;, &quot;bell&quot;]</code>, we can write it as <code>S = &quot;time#bell#&quot;</code>&nbsp;and <code>indexes = [0, 2, 5]</code>.</p>\r\n\r\n<p>Then for each index, we will recover the word by reading from the reference string from that index until we reach a <code>&quot;#&quot;</code> character.</p>\r\n\r\n<p>What is the length of the shortest reference string S possible that encodes the given words?</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> words = <code>[&quot;time&quot;, &quot;me&quot;, &quot;bell&quot;]</code>\r\n<strong>Output:</strong> 10\r\n<strong>Explanation:</strong> S = <code>&quot;time#bell#&quot; and indexes = [0, 2, 5</code>].\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= words.length&nbsp;&lt;= 2000</code>.</li>\r\n\t<li><code>1 &lt;=&nbsp;words[i].length&nbsp;&lt;= 7</code>.</li>\r\n\t<li>Each word&nbsp;has only&nbsp;lowercase letters.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 191,
+  "dislikes": 50,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minimumLengthEncoding(vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minimumLengthEncoding(String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minimumLengthEncoding(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minimumLengthEncoding(self, words: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minimumLengthEncoding(char ** words, int wordsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinimumLengthEncoding(string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {number}\n */\nvar minimumLengthEncoding = function(words) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @return {Integer}\ndef minimum_length_encoding(words)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minimumLengthEncoding(_ words: [String]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minimumLengthEncoding(words []string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minimumLengthEncoding(words: Array[String]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minimumLengthEncoding(words: Array<String>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn minimum_length_encoding(words: Vec<String>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return Integer\n     */\n    function minimumLengthEncoding($words) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.9K\", \"totalSubmission\": \"22.2K\", \"totalAcceptedRaw\": 10852, \"totalSubmissionRaw\": 22161, \"acRate\": \"49.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "454",
+    "canSeeDetail": true,
+    "url": "/articles/short-encoding-of-words/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Store Prefixes [Accepted]\n\n**Intuition**\n\nIf a word `X` is a suffix of `Y`, then it does not need to be considered, as the encoding of `Y` in the reference string will also encode `X`.  For example, if `\"me\"` and `\"time\"` is in `words`, we can throw out `\"me\"` without changing the answer.\n\nIf a word `Y` does not have any other word `X` (in the list of `words`) that is a suffix of `Y`, then `Y` must be part of the reference string.\n\nThus, the goal is to remove words from the list such that no word is a suffix of another.  The final answer would be `sum(word.length + 1 for word in words)`.\n\n**Algorithm**\n\nSince a word only has up to 7 suffixes (as `words[i].length <= 7`), let's iterate over all of them.  For each suffix, we'll try to remove it from our `words` list.  For efficiency, we'll make `words` a set.\n\n<iframe src=\"https://leetcode.com/playground/gV8UXxb3/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"gV8UXxb3\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\sum w_i^2)$$, where $$w_i$$ is the length of `words[i]`.\n\n* Space Complexity: $$O(\\sum w_i)$$, the space used in storing suffixes.\n\n---\n#### Approach #2: Trie [Accepted]\n\n**Intuition**\n\nAs in *Approach #1*, the goal is to remove words that are suffixes of another word in the list.\n\n**Algorithm**\n\nTo find whether different words have the same suffix, let's put them backwards into a trie (prefix tree).  For example, if we have `\"time\"` and `\"me\"`, we will put `\"emit\"` and `\"em\"` into our trie.\n\nAfter, the leaves of this trie (nodes with no children) represent words that have no suffix, and we will count `sum(word.length + 1 for word in words)`.\n\n<iframe src=\"https://leetcode.com/playground/whsBS94T/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"whsBS94T\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\sum w_i)$$, where $$w_i$$ is the length of `words[i]`.\n\n* Space Complexity: $$O(\\sum w_i)$$, the space used by the trie.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "447",
+      "count": 4,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"time\", \"me\", \"bell\"]",
+  "metaData": "{\r\n  \"name\": \"minimumLengthEncoding\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

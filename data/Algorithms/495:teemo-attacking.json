@@ -1,0 +1,111 @@
+{
+  "questionId": "495",
+  "questionFrontendId": "495",
+  "boundTopicId": null,
+  "title": "Teemo Attacking",
+  "titleSlug": "teemo-attacking",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In LOL world, there is a hero called Teemo and his attacking can make his enemy Ashe be in poisoned condition. Now, given the Teemo&#39;s attacking <b>ascending</b> time series towards Ashe and the poisoning time duration per Teemo&#39;s attacking, you need to output the total time that Ashe is in poisoned condition.</p>\r\n\r\n<p>You may assume that Teemo attacks at the very beginning of a specific time point, and makes Ashe be in poisoned condition immediately.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [1,4], 2\r\n<b>Output:</b> 4\r\n<b>Explanation:</b> At time point 1, Teemo starts attacking Ashe and makes Ashe be poisoned immediately. \r\nThis poisoned status will last 2 seconds until the end of time point 2. \r\nAnd at time point 4, Teemo attacks Ashe again, and causes Ashe to be in poisoned status for another 2 seconds. \r\nSo you finally need to output 4.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [1,2], 2\r\n<b>Output:</b> 3\r\n<b>Explanation:</b> At time point 1, Teemo starts attacking Ashe and makes Ashe be poisoned. \r\nThis poisoned status will last 2 seconds until the end of time point 2. \r\nHowever, at the beginning of time point 2, Teemo attacks Ashe again who is already in poisoned status. \r\nSince the poisoned status won&#39;t add up together, though the second poisoning attack will still work at time point 2, it will stop at the end of time point 3. \r\nSo you finally need to output 3.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>You may assume the length of given time series array won&#39;t exceed 10000.</li>\r\n\t<li>You may assume the numbers in the Teemo&#39;s attacking time series and his poisoning time duration per attacking are non-negative integers, which won&#39;t exceed 10,000,000.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 284,
+  "dislikes": 606,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Can Place Flowers\", \"titleSlug\": \"can-place-flowers\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Dota2 Senate\", \"titleSlug\": \"dota2-senate\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Riot Games\", \"slug\": \"riot-games\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findPoisonedDuration(vector<int>& timeSeries, int duration) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findPoisonedDuration(int[] timeSeries, int duration) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findPoisonedDuration(self, timeSeries, duration):\n        \"\"\"\n        :type timeSeries: List[int]\n        :type duration: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findPoisonedDuration(self, timeSeries: List[int], duration: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findPoisonedDuration(int* timeSeries, int timeSeriesSize, int duration){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindPoisonedDuration(int[] timeSeries, int duration) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} timeSeries\n * @param {number} duration\n * @return {number}\n */\nvar findPoisonedDuration = function(timeSeries, duration) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} time_series\n# @param {Integer} duration\n# @return {Integer}\ndef find_poisoned_duration(time_series, duration)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findPoisonedDuration(_ timeSeries: [Int], _ duration: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findPoisonedDuration(timeSeries []int, duration int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findPoisonedDuration(timeSeries: Array[Int], duration: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findPoisonedDuration(timeSeries: IntArray, duration: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_poisoned_duration(time_series: Vec<i32>, duration: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $timeSeries\n     * @param Integer $duration\n     * @return Integer\n     */\n    function findPoisonedDuration($timeSeries, $duration) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"41.9K\", \"totalSubmission\": \"79.2K\", \"totalAcceptedRaw\": 41934, \"totalSubmissionRaw\": 79206, \"acRate\": \"52.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "752",
+    "canSeeDetail": true,
+    "url": "/articles/teemo-attacking/",
+    "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Approach 1: One pass\n\n**Intuition**\n\nThe problem is an example of merge interval questions which are now [quite popular\nin Google](https://leetcode.com/discuss/interview-question/280433/Google-or-Phone-screen-or-Program-scheduling).\n\nTypically such problems could be solved in a linear time in the case\nof sorted input, like [here](https://leetcode.com/articles/insert-interval/), \nand in $$\\mathcal{O}(N \\log N)$$ time otherwise,\n[here is an example](https://leetcode.com/articles/merge-intervals/).\n\nHere one deals with a sorted input, and the problem could be solved in one pass\nwith a constant space. \nThe idea is straightforward: consider only the interval between two attacks. \nAshe spends in a poisoned condition the whole time interval\nif this interval is shorter than the poisoning time duration `duration`, \nand `duration` otherwise. \n\n**Algorithm**\n\n- Initiate total time in poisoned condition `total = 0`.\n\n- Iterate over `timeSeries` list. At each step add to the total time\nthe minimum between interval length and the poisoning time duration `duration`. \n\n- Return `total + duration` to take the last attack into account.  \n \n**Implementation**\n\n![pic](../Figures/495/ashe.png)\n\n<iframe src=\"https://leetcode.com/playground/gz6gYdPv/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"gz6gYdPv\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$, where N is the length of the input list,\nsince we iterate the entire list.\n\n* Space complexity : $$\\mathcal{O}(1)$$, it's a constant space solution.\n\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "737",
+      "count": 13,
+      "average": 4.538,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,4]\n2",
+  "metaData": "{\r\n  \"name\": \"findPoisonedDuration\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"timeSeries\",\r\n      \"type\": \"integer[]\"\r\n    }, \r\n    {\r\n      \"name\": \"duration\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

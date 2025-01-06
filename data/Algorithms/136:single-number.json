@@ -1,0 +1,109 @@
+{
+  "questionId": "136",
+  "questionFrontendId": "136",
+  "boundTopicId": null,
+  "title": "Single Number",
+  "titleSlug": "single-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <strong>non-empty</strong>&nbsp;array of integers, every element appears <em>twice</em> except for one. Find that single one.</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<p>Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [2,2,1]\r\n<strong>Output:</strong> 1\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [4,1,2,1,2]\r\n<strong>Output:</strong> 4\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 3194,
+  "dislikes": 124,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Single Number II\", \"titleSlug\": \"single-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Single Number III\", \"titleSlug\": \"single-number-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Missing Number\", \"titleSlug\": \"missing-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Find the Duplicate Number\", \"titleSlug\": \"find-the-duplicate-number\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find the Difference\", \"titleSlug\": \"find-the-difference\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int singleNumber(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int singleNumber(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def singleNumber(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def singleNumber(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint singleNumber(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SingleNumber(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar singleNumber = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef single_number(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func singleNumber(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func singleNumber(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def singleNumber(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun singleNumber(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn single_number(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function singleNumber($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"586K\", \"totalSubmission\": \"940.9K\", \"totalAcceptedRaw\": 586035, \"totalSubmissionRaw\": 940910, \"acRate\": \"62.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "234",
+    "canSeeDetail": true,
+    "url": "/articles/single-number/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: List operation\n\n**Algorithm**\n\n1. Iterate over all the elements in $$\\text{nums}$$\n2. If some number in $$\\text{nums}$$ is new to array, append it\n3. If some number is already in the array, remove it\n\n<iframe src=\"https://leetcode.com/playground/bCj3rwUg/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"bCj3rwUg\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. We iterate through $$\\text{nums}$$, taking $$O(n)$$ time. We search the whole list to find whether there is duplicate number, taking $$O(n)$$ time. Because search is in the `for` loop, so we have to multiply both time complexities which is $$O(n^2)$$.\n\n* Space complexity : $$O(n)$$.  We need a list of size $$n$$ to contain elements in $$\\text{nums}$$.\n<br />\n<br />\n---\n#### Approach 2: Hash Table\n\n**Algorithm**\n\nWe use hash table to avoid the $$O(n)$$ time required for searching the elements.\n\n1. Iterate through all elements in $$\\text{nums}$$\n2. Try if $$hash\\_table$$ has the key for `pop`\n3. If not, set up key/value pair\n4. In the end, there is only one element in $$hash\\_table$$, so use `popitem` to get it\n\n<iframe src=\"https://leetcode.com/playground/ebzkQT6R/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"ebzkQT6R\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n \\cdot 1) = O(n)$$.  Time complexity of `for` loop is $$O(n)$$. Time complexity of hash table(dictionary in python) operation `pop` is $$O(1)$$.\n\n* Space complexity : $$O(n)$$. The space required by $$hash\\_table$$ is equal to the number of elements in $$\\text{nums}$$.\n<br />\n<br />\n---\n#### Approach 3: Math\n\n**Concept**\n\n$$2 * (a + b + c) - (a + a + b + b + c) = c$$\n\n<iframe src=\"https://leetcode.com/playground/hQwrqahc/shared\" frameBorder=\"0\" width=\"100%\" height=\"174\" name=\"hQwrqahc\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n + n) = O(n)$$. `sum` will call `next` to iterate through $$\\text{nums}$$.\nWe can see it as `sum(list(i, for i in nums))` which means the time complexity is $$O(n)$$ because of the number of elements($$n$$) in $$\\text{nums}$$.\n\n* Space complexity : $$O(n + n) = O(n)$$. `set` needs space for the elements in `nums`\n<br />\n<br />\n---\n#### Approach 4: Bit Manipulation\n\n**Concept**\n\n- If we take XOR of zero and some bit, it will return that bit\n    - $$a \\oplus 0 = a$$\n- If we take XOR of two same bits, it will return 0\n    - $$a \\oplus a = 0$$\n- $$a \\oplus b \\oplus a = (a \\oplus a) \\oplus b = 0 \\oplus b = b$$\n\nSo we can XOR all bits together to find the unique number.\n\n<iframe src=\"https://leetcode.com/playground/3TAX3mmj/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"3TAX3mmj\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$.  We only iterate through $$\\text{nums}$$, so the time complexity is the number of elements in $$\\text{nums}$$.\n\n* Space complexity : $$O(1)$$.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "229",
+      "count": 137,
+      "average": 4.861,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,2,1]",
+  "metaData": "{\r\n  \"name\": \"singleNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

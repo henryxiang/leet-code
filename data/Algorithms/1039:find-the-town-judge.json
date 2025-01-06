@@ -1,0 +1,99 @@
+{
+  "questionId": "1039",
+  "questionFrontendId": "997",
+  "boundTopicId": null,
+  "title": "Find the Town Judge",
+  "titleSlug": "find-the-town-judge",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a town, there are <code>N</code> people labelled from&nbsp;<code>1</code> to <code>N</code>.&nbsp; There is a rumor that one of these people is secretly the town judge.</p>\r\n\r\n<p>If the&nbsp;town judge exists, then:</p>\r\n\r\n<ol>\r\n\t<li>The town judge trusts nobody.</li>\r\n\t<li>Everybody (except for the town judge) trusts the town judge.</li>\r\n\t<li>There is exactly one person that satisfies properties 1 and 2.</li>\r\n</ol>\r\n\r\n<p>You are given <code>trust</code>, an array of pairs <code>trust[i] = [a, b]</code> representing that the person labelled <code>a</code> trusts the person labelled <code>b</code>.</p>\r\n\r\n<p>If the town judge exists and can be identified, return the label of the town judge.&nbsp; Otherwise, return <code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-1-1\">2</span>, trust = <span id=\"example-input-1-2\">[[1,2]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-2-1\">3</span>, trust = <span id=\"example-input-2-2\">[[1,3],[2,3]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">3</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-3-1\">3</span>, trust = <span id=\"example-input-3-2\">[[1,3],[2,3],[3,1]]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">-1</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-4-1\">3</span>, trust = <span id=\"example-input-4-2\">[[1,2],[2,3]]</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">-1</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-5-1\">4</span>, trust = <span id=\"example-input-5-2\">[[1,3],[1,4],[2,3],[2,4],[4,3]]</span>\r\n<strong>Output: </strong><span id=\"example-output-5\">3</span></pre>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= N &lt;= 1000</code></li>\r\n\t<li><code>trust.length &lt;= 10000</code></li>\r\n\t<li><code>trust[i]</code> are all different</li>\r\n\t<li><code>trust[i][0] != trust[i][1]</code></li>\r\n\t<li><code>1 &lt;= trust[i][0], trust[i][1] &lt;= N</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 315,
+  "dislikes": 44,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Find the Celebrity\", \"titleSlug\": \"find-the-celebrity\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "EpicLaLaLa",
+      "profileUrl": "/epiclalala/",
+      "avatarUrl": "https://www.gravatar.com/avatar/2ab350d9962a010da7cfcf74d6b3d4ac.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Arista\", \"slug\": \"arista\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 7}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findJudge(int N, vector<vector<int>>& trust) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findJudge(int N, int[][] trust) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findJudge(self, N, trust):\n        \"\"\"\n        :type N: int\n        :type trust: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findJudge(self, N: int, trust: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findJudge(int N, int** trust, int trustSize, int* trustColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindJudge(int N, int[][] trust) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @param {number[][]} trust\n * @return {number}\n */\nvar findJudge = function(N, trust) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer[][]} trust\n# @return {Integer}\ndef find_judge(n, trust)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findJudge(_ N: Int, _ trust: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findJudge(N int, trust [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findJudge(N: Int, trust: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findJudge(N: Int, trust: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @param Integer[][] $trust\n     * @return Integer\n     */\n    function findJudge($N, $trust) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"38.1K\", \"totalSubmission\": \"77.3K\", \"totalAcceptedRaw\": 38086, \"totalSubmissionRaw\": 77269, \"acRate\": \"49.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "2\n[[1,2]]",
+  "metaData": "{\r\n  \"name\": \"findJudge\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"trust\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,106 @@
+{
+  "questionId": "1321",
+  "questionFrontendId": "1208",
+  "boundTopicId": null,
+  "title": "Get Equal Substrings Within Budget",
+  "titleSlug": "get-equal-substrings-within-budget",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given two strings <code>s</code> and <code>t</code> of the same length. You want to change <code>s</code> to <code>t</code>. Changing the <code>i</code>-th character of <code>s</code> to <code>i</code>-th character of <code>t</code> costs <code>|s[i] - t[i]|</code> that is, the absolute difference between the ASCII values of the characters.</p>\n\n<p>You are also given an integer <code>maxCost</code>.</p>\n\n<p>Return the maximum length of a substring of <code>s</code> that can be changed to be the same as the corresponding substring of <code>t</code>with a cost less than or equal to <code>maxCost</code>.</p>\n\n<p>If there is no substring from&nbsp;<code>s</code> that can be changed to its corresponding substring from <code>t</code>, return <code>0</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcd&quot;, t = &quot;bcdf&quot;, maxCost = 3\n<strong>Output:</strong> 3\n<strong>Explanation: </strong>&quot;abc&quot; of s can change to &quot;bcd&quot;. That costs 3, so the maximum length is 3.</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcd&quot;, t = &quot;cdef&quot;, maxCost = 3\n<strong>Output:</strong> 1\n<strong>Explanation: </strong>Each character in s costs 2 to change to charactor in <code>t, so the maximum length is 1.</code>\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcd&quot;, t = &quot;acde&quot;, maxCost = 0\n<strong>Output:</strong> 1\n<strong>Explanation: </strong>You can&#39;t make any change, so the maximum length is 1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length, t.length &lt;= 10^5</code></li>\n\t<li><code>0 &lt;= maxCost &lt;= 10^6</code></li>\n\t<li><code>s</code> and&nbsp;<code>t</code> only contain lower case English letters.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 141,
+  "dislikes": 12,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "TanishqSaluja",
+      "profileUrl": "/tanishqsaluja/",
+      "avatarUrl": "https://assets.leetcode.com/users/tanishqsaluja/avatar_1560692079.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Traveloka\", \"slug\": \"traveloka\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int equalSubstring(string s, string t, int maxCost) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int equalSubstring(String s, String t, int maxCost) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def equalSubstring(self, s, t, maxCost):\n        \"\"\"\n        :type s: str\n        :type t: str\n        :type maxCost: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def equalSubstring(self, s: str, t: str, maxCost: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint equalSubstring(char * s, char * t, int maxCost){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int EqualSubstring(string s, string t, int maxCost) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {string} t\n * @param {number} maxCost\n * @return {number}\n */\nvar equalSubstring = function(s, t, maxCost) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String} t\n# @param {Integer} max_cost\n# @return {Integer}\ndef equal_substring(s, t, max_cost)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func equalSubstring(_ s: String, _ t: String, _ maxCost: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func equalSubstring(s string, t string, maxCost int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def equalSubstring(s: String, t: String, maxCost: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun equalSubstring(s: String, t: String, maxCost: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn equal_substring(s: String, t: String, max_cost: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $t\n     * @param Integer $maxCost\n     * @return Integer\n     */\n    function equalSubstring($s, $t, $maxCost) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"9.1K\", \"totalSubmission\": \"24.1K\", \"totalAcceptedRaw\": 9061, \"totalSubmissionRaw\": 24078, \"acRate\": \"37.6%\"}",
+  "hints": [
+    "Calculate the differences between a[i] and b[i].",
+    "Use a sliding window to track the longest valid substring."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"abcd\"\n\"bcdf\"\n3",
+  "metaData": "{\n  \"name\": \"equalSubstring\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"t\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"maxCost\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

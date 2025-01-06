@@ -1,0 +1,101 @@
+{
+  "questionId": "1148",
+  "questionFrontendId": "1073",
+  "boundTopicId": null,
+  "title": "Adding Two Negabinary Numbers",
+  "titleSlug": "adding-two-negabinary-numbers",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two numbers <code>arr1</code> and <code>arr2</code> in base <strong>-2</strong>, return the result of adding them together.</p>\n\n<p>Each number is given in <em>array format</em>:&nbsp; as an array of 0s and 1s, from most significant bit to least significant bit.&nbsp; For example, <code>arr = [1,1,0,1]</code> represents the number <code>(-2)^3&nbsp;+ (-2)^2 + (-2)^0 = -3</code>.&nbsp; A number <code>arr</code> in <em>array format</em> is also guaranteed to have no leading zeros: either&nbsp;<code>arr == [0]</code> or <code>arr[0] == 1</code>.</p>\n\n<p>Return the result of adding <code>arr1</code> and <code>arr2</code> in the same format: as an array of 0s and 1s with no leading zeros.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong>arr1 = <span id=\"example-input-1-1\">[1,1,1,1,1]</span>, arr2 = <span id=\"example-input-1-2\">[1,0,1]</span>\n<strong>Output: </strong><span id=\"example-output-1\">[1,0,0,0,0]\n</span><strong>Explanation: </strong>arr1 represents 11, arr2 represents 5, the output represents 16.\n</pre>\n\n<p>&nbsp;</p>\n\n<p><strong>Note:</strong></p>\n\n<ol>\n\t<li><code>1 &lt;= arr1.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= arr2.length &lt;= 1000</code></li>\n\t<li><code>arr1</code> and <code>arr2</code> have no leading zeros</li>\n\t<li><code>arr1[i]</code> is <code>0</code> or <code>1</code></li>\n\t<li><code>arr2[i]</code> is <code>0</code> or <code>1</code></li>\n</ol>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 69,
+  "dislikes": 40,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "calvinchankf",
+      "profileUrl": "/calvinchankf/",
+      "avatarUrl": "https://assets.leetcode.com/users/calvinchankf/avatar_1528520759.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Grab\", \"slug\": \"grab\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<int> addNegabinary(vector<int>& arr1, vector<int>& arr2) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] addNegabinary(int[] arr1, int[] arr2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def addNegabinary(self, arr1, arr2):\n        \"\"\"\n        :type arr1: List[int]\n        :type arr2: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def addNegabinary(self, arr1: List[int], arr2: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* addNegabinary(int* arr1, int arr1Size, int* arr2, int arr2Size, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[] AddNegabinary(int[] arr1, int[] arr2) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr1\n * @param {number[]} arr2\n * @return {number[]}\n */\nvar addNegabinary = function(arr1, arr2) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr1\r\n# @param {Integer[]} arr2\r\n# @return {Integer[]}\r\ndef add_negabinary(arr1, arr2)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func addNegabinary(_ arr1: [Int], _ arr2: [Int]) -> [Int] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func addNegabinary(arr1 []int, arr2 []int) []int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def addNegabinary(arr1: Array[Int], arr2: Array[Int]): Array[Int] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun addNegabinary(arr1: IntArray, arr2: IntArray): IntArray {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn add_negabinary(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr1\n     * @param Integer[] $arr2\n     * @return Integer[]\n     */\n    function addNegabinary($arr1, $arr2) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.9K\", \"totalSubmission\": \"14.8K\", \"totalAcceptedRaw\": 4887, \"totalSubmissionRaw\": 14793, \"acRate\": \"33.0%\"}",
+  "hints": [
+    "We can try to determine the last digit of the answer, then divide everything by 2 and repeat."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,1,1,1,1]\n[1,0,1]",
+  "metaData": "{\n  \"name\": \"addNegabinary\",\n  \"params\": [\n    {\n      \"name\": \"arr1\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"arr2\",\n      \"type\": \"integer[]\"\n    }  \n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

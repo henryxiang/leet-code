@@ -1,0 +1,111 @@
+{
+  "questionId": "887",
+  "questionFrontendId": "857",
+  "boundTopicId": null,
+  "title": "Minimum Cost to Hire K Workers",
+  "titleSlug": "minimum-cost-to-hire-k-workers",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are <code>N</code> workers.&nbsp; The <code>i</code>-th worker has a <code>quality[i]</code> and a minimum wage expectation <code>wage[i]</code>.</p>\r\n\r\n<p>Now we want to hire exactly <code>K</code>&nbsp;workers to form a <em>paid group</em>.&nbsp; When hiring a group of K workers, we must pay them according to the following rules:</p>\r\n\r\n<ol>\r\n\t<li>Every worker in the paid group should be paid in the ratio of their quality compared to other workers in the paid group.</li>\r\n\t<li>Every worker in the paid group must be paid at least their minimum wage expectation.</li>\r\n</ol>\r\n\r\n<p>Return the least amount of money needed to form a paid group satisfying the above conditions.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>quality = <span id=\"example-input-1-1\">[10,20,5]</span>, wage = <span id=\"example-input-1-2\">[70,50,30]</span>, K = <span id=\"example-input-1-3\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">105.00000\r\n<strong>Explanation</strong>: </span><span>We pay 70 to 0-th worker and 35 to 2-th worker.</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>quality = <span id=\"example-input-2-1\">[3,1,10,10,1]</span>, wage = <span id=\"example-input-2-2\">[4,8,2,2,7]</span>, K = <span id=\"example-input-2-3\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">30.66667\r\n<strong>Explanation</strong>: </span><span>We pay 4 to 0-th worker, 13.33333 to 2-th and 3-th workers seperately.</span> \r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= K &lt;= N &lt;= 10000</code>, where <code>N = quality.length = wage.length</code></li>\r\n\t<li><code>1 &lt;= quality[i] &lt;= 10000</code></li>\r\n\t<li><code>1 &lt;= wage[i] &lt;= 10000</code></li>\r\n\t<li>Answers within <code>10^-5</code> of the correct answer will be considered correct.</li>\r\n</ol>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 680,
+  "dislikes": 68,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "mj_coder",
+      "profileUrl": "/mj_coder/",
+      "avatarUrl": "https://www.gravatar.com/avatar/d2c6431c1f290eb62022297f14a23f77.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Heap",
+      "slug": "heap"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    double mincostToHireWorkers(vector<int>& quality, vector<int>& wage, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public double mincostToHireWorkers(int[] quality, int[] wage, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def mincostToHireWorkers(self, quality, wage, K):\n        \"\"\"\n        :type quality: List[int]\n        :type wage: List[int]\n        :type K: int\n        :rtype: float\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def mincostToHireWorkers(self, quality: List[int], wage: List[int], K: int) -> float:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\ndouble mincostToHireWorkers(int* quality, int qualitySize, int* wage, int wageSize, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public double MincostToHireWorkers(int[] quality, int[] wage, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} quality\n * @param {number[]} wage\n * @param {number} K\n * @return {number}\n */\nvar mincostToHireWorkers = function(quality, wage, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} quality\n# @param {Integer[]} wage\n# @param {Integer} k\n# @return {Float}\ndef mincost_to_hire_workers(quality, wage, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func mincostToHireWorkers(_ quality: [Int], _ wage: [Int], _ K: Int) -> Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func mincostToHireWorkers(quality []int, wage []int, K int) float64 {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def mincostToHireWorkers(quality: Array[Int], wage: Array[Int], K: Int): Double = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun mincostToHireWorkers(quality: IntArray, wage: IntArray, K: Int): Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn mincost_to_hire_workers(quality: Vec<i32>, wage: Vec<i32>, k: i32) -> f64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $quality\n     * @param Integer[] $wage\n     * @param Integer $K\n     * @return Float\n     */\n    function mincostToHireWorkers($quality, $wage, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"23.3K\", \"totalSubmission\": \"47.8K\", \"totalAcceptedRaw\": 23302, \"totalSubmissionRaw\": 47756, \"acRate\": \"48.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "492",
+    "canSeeDetail": true,
+    "url": "/articles/minimum-cost-to-hire-k-workers/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Greedy\n\n**Intuition**\n\nAt least one worker will be paid their minimum wage expectation.  If not, we could scale all payments down by some factor and still keep everyone earning more than their wage expectation.\n\n**Algorithm**\n\nFor each `captain` worker that will be paid their minimum wage expectation, let's calculate the cost of hiring K workers where each point of quality is worth `wage[captain] / quality[captain]` dollars.  With this approach, the remaining implementation is straightforward.\n\nNote that this algorithm would not be efficient enough to pass larger test cases.\n\n<iframe src=\"https://leetcode.com/playground/6wfBasLL/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"6wfBasLL\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2 \\log N)$$, where $$N$$ is the number of workers.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Heap\n\n**Intuition**\n\nAs in *Approach #1*, at least one worker is paid their minimum wage expectation.\n\nAdditionally, every worker has some minimum `ratio` of dollars to quality that they demand.  For example, if `wage[0] = 100` and `quality[0] = 20`, then the `ratio` for worker 0 is `5.0`.\n\nThe key insight is to iterate over the ratio.  Let's say we hire workers with a ratio `R` or lower.  Then, we would want to know the `K` workers with the lowest quality, and the sum of that quality.  We can use a heap to maintain these variables.\n\n**Algorithm**\n\nMaintain a max heap of quality.  (We're using a minheap, with negative values.)  We'll also maintain `sumq`, the sum of this heap.\n\nFor each worker in order of ratio, we know all currently considered workers have lower ratio.  (This worker will be the 'captain', as described in *Approach #1*.)  We calculate the candidate answer as this ratio times the sum of the smallest K workers in quality.\n\n<iframe src=\"https://leetcode.com/playground/KRXJr8dq/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"KRXJr8dq\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the number of workers.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "485",
+      "count": 44,
+      "average": 3.841,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[10,20,5]\n[70,50,30]\n2",
+  "metaData": "{\r\n  \"name\": \"mincostToHireWorkers\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"quality\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"wage\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"double\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

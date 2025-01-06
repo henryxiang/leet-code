@@ -1,0 +1,115 @@
+{
+  "questionId": "458",
+  "questionFrontendId": "458",
+  "boundTopicId": null,
+  "title": "Poor Pigs",
+  "titleSlug": "poor-pigs",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are 1000 buckets, one and only one of them is poisonous, while the rest are filled with water. They all look identical. If a pig drinks the poison it will die within 15 minutes. What is the minimum amount of pigs you need to figure out which bucket is poisonous within one hour?</p>\r\n\r\n<p>Answer this question, and write an algorithm for the general case.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>General case: </b></p>\r\n\r\n<p>If there are <code>n</code> buckets and a pig drinking poison will die within <code>m</code> minutes, how many pigs (<code>x</code>) you need to figure out the <strong>poisonous</strong>&nbsp;bucket within <code>p</code> minutes? There is exactly one bucket with poison.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>A pig can be allowed to drink simultaneously on as many buckets as one would like, and the feeding takes no time.</li>\r\n\t<li>After a pig has instantly finished drinking buckets, there has to be a <strong>cool down time</strong> of <em>m&nbsp;</em>minutes. During this time, only observation is allowed and no feedings at all.</li>\r\n\t<li>Any given bucket can be sampled an infinite number of times (by an unlimited number of pigs).</li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 328,
+  "dislikes": 753,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "yuhaowang001",
+      "profileUrl": "/yuhaowang001/",
+      "avatarUrl": "https://www.gravatar.com/avatar/2a2bd73777f678c34f5ab37484776fe4.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int poorPigs(int buckets, int minutesToDie, int minutesToTest) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int poorPigs(int buckets, int minutesToDie, int minutesToTest) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def poorPigs(self, buckets, minutesToDie, minutesToTest):\n        \"\"\"\n        :type buckets: int\n        :type minutesToDie: int\n        :type minutesToTest: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def poorPigs(self, buckets: int, minutesToDie: int, minutesToTest: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint poorPigs(int buckets, int minutesToDie, int minutesToTest){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int PoorPigs(int buckets, int minutesToDie, int minutesToTest) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} buckets\n * @param {number} minutesToDie\n * @param {number} minutesToTest\n * @return {number}\n */\nvar poorPigs = function(buckets, minutesToDie, minutesToTest) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} buckets\n# @param {Integer} minutes_to_die\n# @param {Integer} minutes_to_test\n# @return {Integer}\ndef poor_pigs(buckets, minutes_to_die, minutes_to_test)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func poorPigs(_ buckets: Int, _ minutesToDie: Int, _ minutesToTest: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func poorPigs(buckets int, minutesToDie int, minutesToTest int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def poorPigs(buckets: Int, minutesToDie: Int, minutesToTest: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun poorPigs(buckets: Int, minutesToDie: Int, minutesToTest: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn poor_pigs(buckets: i32, minutes_to_die: i32, minutes_to_test: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $buckets\n     * @param Integer $minutesToDie\n     * @param Integer $minutesToTest\n     * @return Integer\n     */\n    function poorPigs($buckets, $minutesToDie, $minutesToTest) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.2K\", \"totalSubmission\": \"37K\", \"totalAcceptedRaw\": 17218, \"totalSubmissionRaw\": 37014, \"acRate\": \"46.5%\"}",
+  "hints": [
+    "What if you only have one shot? Eg. 4 buckets, 15 mins to die, and 15 mins to test.",
+    "How many states can we generate with x pigs and T tests?",
+    "Find minimum <code>x</code> such that <code>(T+1)^x >= N</code>"
+  ],
+  "solution": {
+    "id": "718",
+    "canSeeDetail": true,
+    "url": "/articles/poor-pigs/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n   \r\n#### Approach 1: Pig as a [qubit](https://en.wikipedia.org/wiki/Qubit) \r\n\r\n**Intuition**\r\n\r\nThese \"strange\" questions are now asked by Google, Baidu and IBM \r\nbecause of their interest in quantum computing. \r\n[Quantum bit]((https://en.wikipedia.org/wiki/Qubit)) \r\n(or _qubit_) is the basic unit of quantum information, it's \r\nthe quantum version of the classical binary bit.\r\nBinary bit has only two states : `0` and `1`, \r\nand on a very basic level the qubit has more. \r\nIn such questions we deal with an object (here is a pig) which has more than two states.\r\n\r\n**How many states does a pig have**\r\n\r\nIf there is no time to test, i.e. `minutesToTest / minutesToDie = 0`, \r\nthe pig has only one state - `alive`.\r\n\r\nIf `minutesToTest / minutesToDie = 1` then the pig has a time to die from the poison,\r\nthat means that now there are two states available for the pig : `alive` or `dead`.  \r\n\r\nOne more step. If `minutesToTest / minutesToDie = 2` then there are three available \r\nstates for the pig : `alive` / `dead after the first test` / `dead after the second test`.\r\n\r\n![bla](../Figures/458/pigs.png)\r\n\r\n> The number of available states for the pig is `states = minutesToTest / minutesToDie + 1`.\r\n        \r\n**How many buckets could test `x` pigs with 2 available states**\r\n\r\nOne pig could test 2 buckets - let's make him drink from the bucket \r\nnumber `1` and then wait `minutesToDie` time. If he is alive - the \r\npoison is in the bucket number `2`. If he is dead - the poison \r\nis in the bucket number `1`. \r\n\r\n![bla](../Figures/458/pigs_bucket.png)\r\n\r\nThe same way two pigs could test $$2^2 = 4$$ buckets\r\n\r\n![bla](../Figures/458/2_pigs.png)\r\n\r\n![bla](../Figures/458/2_pigs_results.png)\r\n\r\n> Hence if one pig has two available states, `x` pigs could\r\ntest $$2^x$$ buckets.\r\n\r\n**How many buckets could test `x` pigs with `s` available states**\r\n\r\n> After the discussion above, the answer is quite obvious : $$s^x$$ buckets.\r\n\r\nLet's consider as an example one pig with 3 states, _i.e._ \r\n`s = minutesToTest / minutesToDie + 1 = 2 + 1 = 3`, and show that\r\nhe could test `3` buckets.\r\n\r\n![bla](../Figures/458/1_pig_2_tries.png)\r\n\r\n![bla](../Figures/458/1_pig_results.png)\r\n\r\n**Solution**\r\n\r\nHence the problem is to find `x` such that $$\\textrm{states}^x \\ge \\textrm{buckets}$$,\r\nwhere `x` is a number of pigs, `states = minutesToTest / minutesToDie + 1`\r\nis a number of states available for each pig, and \r\n$$\\textrm{buckets}$$ is number of buckets.\r\n\r\n[The solution is well known](https://en.wikipedia.org/wiki/Exponential_function) :\r\n$$x \\ge \\log_{\\textrm{states}}{\\textrm{buckets}}$$. \r\nTo simplify the code let's rewrite the equation with the help of \r\n[natural logarithms](https://en.wikipedia.org/wiki/List_of_logarithmic_identities#Changing_the_base) :\r\n\r\n$$\r\nx \\ge \\frac{\\log \\textrm{buckets}}{\\log \\textrm{states}}\r\n$$\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/Uugu9xJt/shared\" frameBorder=\"0\" width=\"100%\" height=\"174\" name=\"Uugu9xJt\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(1)$$ since it's a [constant time\r\nsolution](https://stackoverflow.com/a/7317571/7775414). \r\n* Space complexity : $$\\mathcal{O}(1)$$. \r\n\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "703",
+      "count": 16,
+      "average": 4.25,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "1000\n15\n60",
+  "metaData": "{\r\n  \"name\": \"poorPigs\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"buckets\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"minutesToDie\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"minutesToTest\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

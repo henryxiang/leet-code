@@ -1,0 +1,109 @@
+{
+  "questionId": "347",
+  "questionFrontendId": "347",
+  "boundTopicId": null,
+  "title": "Top K Frequent Elements",
+  "titleSlug": "top-k-frequent-elements",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-empty array of integers, return the <b><i>k</i></b> most frequent elements.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-1-1\">[1,1,1,2,2,3]</span>, k = <span id=\"example-input-1-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[1,2]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-2-1\">[1]</span>, k = <span id=\"example-input-2-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[1]</span></pre>\r\n</div>\r\n\r\n<p><b>Note: </b></p>\r\n\r\n<ul>\r\n\t<li>You may assume <i>k</i> is always valid, 1 &le; <i>k</i> &le; number of unique elements.</li>\r\n\t<li>Your algorithm&#39;s time complexity <b>must be</b> better than O(<i>n</i> log <i>n</i>), where <i>n</i> is the array&#39;s size.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2140,
+  "dislikes": 141,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Word Frequency\", \"titleSlug\": \"word-frequency\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Kth Largest Element in an Array\", \"titleSlug\": \"kth-largest-element-in-an-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Sort Characters By Frequency\", \"titleSlug\": \"sort-characters-by-frequency\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Split Array into Consecutive Subsequences\", \"titleSlug\": \"split-array-into-consecutive-subsequences\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Top K Frequent Words\", \"titleSlug\": \"top-k-frequent-words\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"K Closest Points to Origin\", \"titleSlug\": \"k-closest-points-to-origin\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Heap",
+      "slug": "heap"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 21}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> topKFrequent(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> topKFrequent(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def topKFrequent(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def topKFrequent(self, nums: List[int], k: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* topKFrequent(int* nums, int numsSize, int k, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> TopKFrequent(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number[]}\n */\nvar topKFrequent = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer[]}\ndef top_k_frequent(nums, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func topKFrequent(nums []int, k int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def topKFrequent(nums: Array[Int], k: Int): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun topKFrequent(nums: IntArray, k: Int): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer[]\n     */\n    function topKFrequent($nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"285.6K\", \"totalSubmission\": \"492.4K\", \"totalAcceptedRaw\": 285554, \"totalSubmissionRaw\": 492350, \"acRate\": \"58.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "628",
+    "canSeeDetail": true,
+    "url": "/articles/top-k-frequent-elements/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Intuition\n\nIf `k = 1` the linear-time solution is quite simple. One could keep \nthe frequency of elements appearance in a hash map and update the maximum\nelement at each step. \n\nWhen `k > 1` we need a data structure that \nhas a fast access to the elements\nordered by their frequencies. \nThe idea here is to use the heap which is also known as priority queue.\n<br />\n<br />\n\n\n---\n#### Approach 1: Heap\n\nThe first step is to build a hash map `element -> its frequency`.\nIn Java we could use data structure `HashMap` but have to fill it manually.\nPython provides us both a dictionary structure for the hash map and\na method `Counter` in the `collections` library \nto build the hash map we need.   \nThis step takes $$\\mathcal{O}(N)$$ time where `N` is number of elements \nin the list.\n\nThe second step is to build a heap. \nThe time complexity of adding an element in a heap\nis $$\\mathcal{O}(\\log(k))$$ and we do it `N` times that means\n$$\\mathcal{O}(N \\log(k))$$ time complexity for this step.\n\nThe last step to build an output list has  \n$$\\mathcal{O}(k \\log(k))$$ time complexity.\n \nIn Python there is a method `nlargest` in `heapq` library \n([check here the source code](https://hg.python.org/cpython/file/2.7/Lib/heapq.py#l203))\nwhich has the same $$\\mathcal{O}(k \\log(k))$$ time complexity\nand combines two last steps in one line.\n\n<!--![LIS](../Figures/347/347_tr.gif)-->\n!?!../Documents/347_LIS.json:1000,498!?!\n\n<iframe src=\"https://leetcode.com/playground/nMWGBTcf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"nMWGBTcf\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N \\log(k))$$. \nThe complexity of `Counter` method is $$\\mathcal{O}(N)$$. \nTo build a heap and output list takes $$\\mathcal{O}(N \\log(k))$$.\nHence the overall complexity of the algorithm is \n$$\\mathcal{O}(N + N \\log(k)) = \\mathcal{O}(N \\log(k))$$.\n\n* Space complexity : $$\\mathcal{O}(N)$$ to store the hash map.\n\n**Side Notes**\n\nFollowing the complexity analysis, the approach is\noptimal for small `k`. In the case of large `k`, one could\nrevert the procedure by excluding the less frequent elements from\nthe output.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "614",
+      "count": 58,
+      "average": 3.121,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,1,1,2,2,3]\n2",
+  "metaData": "{ \r\n  \"name\": \"topKFrequent\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

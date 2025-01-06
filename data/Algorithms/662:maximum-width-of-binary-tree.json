@@ -1,0 +1,111 @@
+{
+  "questionId": "662",
+  "questionFrontendId": "662",
+  "boundTopicId": null,
+  "title": "Maximum Width of Binary Tree",
+  "titleSlug": "maximum-width-of-binary-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary tree, write a function to get the maximum width of the given tree. The width of a tree is the maximum width among all levels. The binary tree has the same structure as a <b>full binary tree</b>, but some nodes are null.</p>\r\n\r\n<p>The width of one level is defined as the length between the end-nodes (the leftmost and right most non-null nodes in the level, where the <code>null</code> nodes between the end-nodes are also counted into the length calculation.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> \r\n\r\n           1\r\n         /   \\\r\n        3     2\r\n       / \\     \\  \r\n      5   3     9 \r\n\r\n<b>Output:</b> 4\r\n<b>Explanation:</b> The maximum width existing in the third level with the length 4 (5,3,null,9).\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> \r\n\r\n          1\r\n         /  \r\n        3    \r\n       / \\       \r\n      5   3     \r\n\r\n<b>Output:</b> 2\r\n<b>Explanation:</b> The maximum width existing in the third level with the length 2 (5,3).\r\n</pre>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> \r\n\r\n          1\r\n         / \\\r\n        3   2 \r\n       /        \r\n      5      \r\n\r\n<b>Output:</b> 2\r\n<b>Explanation:</b> The maximum width existing in the second level with the length 2 (3,2).\r\n</pre>\r\n\r\n<p><b>Example 4:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> \r\n\r\n          1\r\n         / \\\r\n        3   2\r\n       /     \\  \r\n      5       9 \r\n     /         \\\r\n    6           7\r\n<b>Output:</b> 8\r\n<b>Explanation:</b>The maximum width existing in the fourth level with the length 8 (6,null,null,null,null,null,null,7).\r\n\r\n\r\n</pre>\r\n\r\n<p><b>Note:</b> Answer will in the range of 32-bit signed integer.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 819,
+  "dislikes": 177,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "albygthomas",
+      "profileUrl": "/albygthomas/",
+      "avatarUrl": "https://assets.leetcode.com/users/albygthomas/avatar_1521424742.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    int widthOfBinaryTree(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public int widthOfBinaryTree(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def widthOfBinaryTree(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def widthOfBinaryTree(self, root: TreeNode) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nint widthOfBinaryTree(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public int WidthOfBinaryTree(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number}\n */\nvar widthOfBinaryTree = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {Integer}\ndef width_of_binary_tree(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func widthOfBinaryTree(_ root: TreeNode?) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc widthOfBinaryTree(root *TreeNode) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def widthOfBinaryTree(root: TreeNode): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun widthOfBinaryTree(root: TreeNode?): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn width_of_binary_tree(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Integer\n     */\n    function widthOfBinaryTree($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"43.6K\", \"totalSubmission\": \"110.2K\", \"totalAcceptedRaw\": 43601, \"totalSubmissionRaw\": 110187, \"acRate\": \"39.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "330",
+    "canSeeDetail": true,
+    "url": "/articles/maximum-width-of-binary-tree/",
+    "content": "[TOC]\n\n#### Approach Framework\n\n**Explanation**\n\nAs we need to reach every node in the given tree, we will have to traverse the tree, either with a depth-first search, or with a breadth-first search.\n\nThe main idea in this question is to give each node a `position` value. If we go down the left neighbor, then `position -> position * 2`; and if we go down the right neighbor, then `position -> position * 2 + 1`. This makes it so that when we look at the position values `L` and `R` of two nodes with the same depth, the width will be `R - L + 1`.\n\n---\n#### Approach #1: Breadth-First Search [Accepted]\n\n**Intuition and Algorithm**\n\nTraverse each node in breadth-first order, keeping track of that node's position.  For each depth, the first node reached is the left-most, while the last node reached is the right-most.\n\n<iframe src=\"https://leetcode.com/playground/GsZid6zn/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"GsZid6zn\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ where $$N$$ is the number of nodes in the input tree.  We traverse every node.\n\n* Space Complexity: $$O(N)$$, the size of our `queue`.\n\n---\n#### Approach #2: Depth-First Search [Accepted]\n\n**Intuition and Algorithm**\n\nTraverse each node in depth-first order, keeping track of that node's position.  For each depth, the position of the first node reached of that depth will be kept in `left[depth]`.\n\nThen, for each node, a candidate width is `pos - left[depth] + 1`.  We take the maximum of the candidate answers.\n\n<iframe src=\"https://leetcode.com/playground/A9iKAcsQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"A9iKAcsQ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ where $$N$$ is the number of nodes in the input tree.  We traverse every node.\n\n* Space Complexity: $$O(N)$$, the size of the implicit call stack in our DFS.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "325",
+      "count": 73,
+      "average": 2.082,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,3,2,5,3,null,9]",
+  "metaData": "{\r\n  \"name\": \"widthOfBinaryTree\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

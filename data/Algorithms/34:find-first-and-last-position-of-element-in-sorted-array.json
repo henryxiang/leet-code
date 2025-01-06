@@ -1,0 +1,109 @@
+{
+  "questionId": "34",
+  "questionFrontendId": "34",
+  "boundTopicId": null,
+  "title": "Find First and Last Position of Element in Sorted Array",
+  "titleSlug": "find-first-and-last-position-of-element-in-sorted-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers <code>nums</code> sorted in ascending order, find the starting and ending position of a given <code>target</code> value.</p>\r\n\r\n<p>Your algorithm&#39;s runtime complexity must be in the order of <em>O</em>(log <em>n</em>).</p>\r\n\r\n<p>If the target is not found in the array, return <code>[-1, -1]</code>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [<code>5,7,7,8,8,10]</code>, target = 8\r\n<strong>Output:</strong> [3,4]</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [<code>5,7,7,8,8,10]</code>, target = 6\r\n<strong>Output:</strong> [-1,-1]</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2313,
+  "dislikes": 110,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"First Bad Version\", \"titleSlug\": \"first-bad-version\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 24}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> searchRange(vector<int>& nums, int target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] searchRange(int[] nums, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def searchRange(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def searchRange(self, nums: List[int], target: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* searchRange(int* nums, int numsSize, int target, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] SearchRange(int[] nums, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number[]}\n */\nvar searchRange = function(nums, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} target\n# @return {Integer[]}\ndef search_range(nums, target)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func searchRange(_ nums: [Int], _ target: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func searchRange(nums []int, target int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def searchRange(nums: Array[Int], target: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun searchRange(nums: IntArray, target: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn search_range(nums: Vec<i32>, target: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $target\n     * @return Integer[]\n     */\n    function searchRange($nums, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"391.9K\", \"totalSubmission\": \"1.1M\", \"totalAcceptedRaw\": 391942, \"totalSubmissionRaw\": 1128448, \"acRate\": \"34.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "505",
+    "canSeeDetail": true,
+    "url": "/articles/find-first-and-last-position-element-sorted-array/",
+    "content": "[TOC]\n\n#### Approach 1: Linear Scan\n\n**Intuition**\n\nChecking every index for `target` exhausts the search space, so it must work.\n\n**Algorithm**\n\nFirst, we do a linear scan of `nums` from the left, `break`ing when we find\nan instance of `target`. If we never `break`, then `target` is not present,\nso we can return the \"error code\" of `[-1, -1]` early. Given that we did find\na valid left index, we can do a second linear scan, but this time from the\nright. In this case, the first instance of `target` encountered will be the\nrightmost one (and because a leftmost one exists, there is guaranteed to also\nbe a rightmost one). We then simply return a list containing the two located\nindices.\n\n<iframe src=\"https://leetcode.com/playground/3Qq9cbHX/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"3Qq9cbHX\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$\n\n    This brute-force approach examines each of the `n` elements of `nums` exactly twice, so the overall runtime is linear.\n\n* Space complexity : $$O(1)$$\n\n    The linear scan method allocates a fixed-size array and a few integers, so it has a constant-size memory footprint.\n\n<br />\n\n---\n\n#### Approach 2: Binary Search\n\n**Intuition**\n\nBecause the array is sorted, we can use binary search to locate the left\nand rightmost indices.\n\n**Algorithm**\n\nThe overall algorithm works fairly similarly to the linear scan approach,\nexcept for the subroutine used to find the left and rightmost indices\nthemselves. Here, we use a modified binary search to search a sorted array,\nwith a few minor adjustments. First, because we are locating the leftmost (or\nrightmost) index containing `target` (rather than returning `true` iff we\nfind `target`), the algorithm does not terminate as soon as we find a match.\nInstead, we continue to search until `lo == hi` and they contain some index\nat which `target` can be found.\n\nThe other change is the introduction of the `left` parameter, which is a\nboolean indicating what to do in the event that `target == nums[mid]`; if\n`left` is `true`, then we \"recurse\" on the left subarray on ties. Otherwise,\nwe go right. To see why this is correct, consider the situation where we find\n`target` at index `i`. The leftmost `target` cannot occur at any index\ngreater than `i`, so we never need to consider the right subarray. The same\nargument applies to the rightmost index.\n\nThe first animation below shows the process for finding the leftmost index,\nand the second shows the process for finding the index right of the rightmost\nindex.\n\n!?!../Documents/34_Search_for_a_Range_left.json:1280,720!?!\n\n!?!../Documents/34_Search_for_a_Range_right.json:1280,720!?!\n\n<iframe src=\"https://leetcode.com/playground/3J9unhAP/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"3J9unhAP\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(\\log_{10}(n))$$\n\n    Because binary search cuts the search space roughly in half on each\n    iteration, there can be at most $$\\lceil \\log_{10}(n) \\rceil$$ iterations. Binary\n    search is invoked twice, so the overall complexity is logarithmic.\n\n* Space complexity : $$O(1)$$\n\n    All work is done in place, so the overall memory usage is constant.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "290",
+      "count": 57,
+      "average": 3.614,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[5,7,7,8,8,10]\n8",
+  "metaData": "{\r\n  \"name\": \"searchRange\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

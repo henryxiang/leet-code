@@ -1,0 +1,44 @@
+{
+  "questionId": "177",
+  "questionFrontendId": "177",
+  "boundTopicId": null,
+  "title": "Nth Highest Salary",
+  "titleSlug": "nth-highest-salary",
+  "categoryTitle": "Database",
+  "content": "<p>Write a SQL query to get the <em>n</em><sup>th</sup> highest salary from the <code>Employee</code> table.</p>\r\n\r\n<pre>\r\n+----+--------+\r\n| Id | Salary |\r\n+----+--------+\r\n| 1  | 100    |\r\n| 2  | 200    |\r\n| 3  | 300    |\r\n+----+--------+\r\n</pre>\r\n\r\n<p>For example, given the above Employee table, the <em>n</em><sup>th</sup> highest salary where <em>n</em> = 2 is <code>200</code>. If there is no <em>n</em><sup>th</sup> highest salary, then the query should return <code>null</code>.</p>\r\n\r\n<pre>\r\n+------------------------+\r\n| getNthHighestSalary(2) |\r\n+------------------------+\r\n| 200                    |\r\n+------------------------+\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 320,
+  "dislikes": 273,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}]}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT\r\nBEGIN\r\n  RETURN (\r\n      # Write your MySQL query statement below.\r\n      \r\n  );\r\nEND"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "CREATE FUNCTION getNthHighestSalary(@N INT) RETURNS INT AS\r\nBEGIN\r\n    RETURN (\r\n        /* Write your T-SQL query statement below. */\r\n        \r\n    );\r\nEND"
+    },
+    {
+      "lang": "Oracle",
+      "code": "CREATE FUNCTION getNthHighestSalary(N IN NUMBER) RETURN NUMBER IS\r\nresult NUMBER;\r\nBEGIN\r\n    /* Write your PL/SQL query statement below */\r\n    \r\n    RETURN result;\r\nEND;"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"87K\", \"totalSubmission\": \"301.1K\", \"totalAcceptedRaw\": 87030, \"totalSubmissionRaw\": 301096, \"acRate\": \"28.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"Employee\": [\"Id\", \"Salary\"]}, \"argument\": 2, \"rows\": {\"Employee\": [[1, 100], [2, 200], [3, 300]]}}",
+  "metaData": "{\n  \"database\": true,\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

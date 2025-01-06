@@ -1,0 +1,113 @@
+{
+  "questionId": "1128",
+  "questionFrontendId": "1047",
+  "boundTopicId": null,
+  "title": "Remove All Adjacent Duplicates In String",
+  "titleSlug": "remove-all-adjacent-duplicates-in-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>S</code> of lowercase letters, a <em>duplicate removal</em> consists of choosing two adjacent and equal letters, and removing&nbsp;them.</p>\r\n\r\n<p>We repeatedly make duplicate removals on S until we no longer can.</p>\r\n\r\n<p>Return the final string after all such duplicate removals have been made.&nbsp; It is guaranteed the answer is unique.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;abbaca&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;ca&quot;</span>\r\n<strong>Explanation: </strong>\r\nFor example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the letters are adjacent and equal, and this is the only possible move.&nbsp; The result of this move is that the string is &quot;aaca&quot;, of which only &quot;aa&quot; is possible, so the final string is &quot;ca&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= S.length &lt;= 20000</code></li>\r\n\t<li><code>S</code> consists only of English lowercase letters.</li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 383,
+  "dislikes": 34,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Remove All Adjacent Duplicates in String II\", \"titleSlug\": \"remove-all-adjacent-duplicates-in-string-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "coding4232",
+      "profileUrl": "/coding4232/",
+      "avatarUrl": "https://assets.leetcode.com/users/coding4232/avatar_1554483797.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"PayTM\", \"slug\": \"paytm\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    string removeDuplicates(string S) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String removeDuplicates(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def removeDuplicates(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def removeDuplicates(self, S: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * removeDuplicates(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string RemoveDuplicates(string S) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {string}\n */\nvar removeDuplicates = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @return {String}\r\ndef remove_duplicates(s)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func removeDuplicates(_ S: String) -> String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func removeDuplicates(S string) string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def removeDuplicates(S: String): String = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun removeDuplicates(S: String): String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn remove_duplicates(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return String\n     */\n    function removeDuplicates($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"42.1K\", \"totalSubmission\": \"64.3K\", \"totalAcceptedRaw\": 42150, \"totalSubmissionRaw\": 64266, \"acRate\": \"65.6%\"}",
+  "hints": [
+    "Use a stack to process everything greedily."
+  ],
+  "solution": {
+    "id": "743",
+    "canSeeDetail": true,
+    "url": "/articles/remove-all-adjacent-duplicates-in-string/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Approach 1: Replace\r\n\r\nOne could use here the standard replace function.\r\nString consists of English lowercase letters, and hence all 26\r\npossible duplicates are known in advance.\r\n\r\nThe idea is very simple:\r\n\r\n1. Generate hashset of all 26 possible duplicates from `aa` to `zz`.\r\n\r\n2. Iterate over that 26 duplicates and replace them all in string by empty char.\r\n\r\nNote that such a strategy could introduce some new duplicates,\r\nfor example `abbaca` -> `aaca`, and hence step number 2 sometimes\r\nshould be repeated several times. \r\nThe idea is to repeat step 2 till the string still changes after the \r\nreplacements. That could be checked by the string length.\r\n\r\n![fig](../Figures/1047/repl.png)\r\n\r\n**Algorithm**\r\n\r\n- Generate hashset of all 26 possible duplicates from `aa` to `zz`.\r\n\r\n- Initiate 'one step before' string length by `prevLength = -1`.\r\n\r\n- While previous length is still different from the current one \r\n`prevLength != S.length()`\r\n\r\n    - Set 'one step before' length to be equal to the string length\r\n    `prevLength = S.length()`.\r\n\r\n    - Iterate over all 26 duplicates and replace them in string by empty char.\r\n    \r\n- Return S.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/XBrG8jen/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"XBrG8jen\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N^2)$$, where N is a string length.\r\nHere we have an onion : while -> for -> replace. \r\n`while` is executed not more then $$N/2$$ times, \r\n`for` is always run 26 times, and `replace` has $$\\mathcal{O}(N)$$\r\nrun time in average. In total that results in \r\n$$\\mathcal{O}(\\frac{N}{2} \\times 26 \\times N)$$ = $$\\mathcal{O}(N^2)$$.\r\n\r\n* Space complexity : $$\\mathcal{O}(N)$$. The hashset of duplicates \r\nhas the constant length 26, but replace function \r\nactually creates a copy of the string and thus uses $$\\mathcal{O}(N)$$ space. \r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Stack\r\n\r\nWe could trade an extra space for speed. \r\nThe idea is to use an output stack to keep track of only\r\nnon duplicate characters. Here is how it works:\r\n\r\n- Current string character is equal to the last element in stack? \r\nPop that last element out of stack.\r\n\r\n- Current string character is _not_ equal to the last element in stack? \r\nAdd the current character into stack.\r\n\r\n> Which data structure to use as the stack here? \r\n\r\nSomething that is fast to convert to string for output, \r\nfor example list in Python and StringBuilder in Java.\r\n\r\n!?!../Documents/1047_LIS.json:1000,478!?!\r\n\r\n**Algorithm**\r\n\r\n- Initiate an empty output stack.\r\n\r\n- Iterate over all characters in the string. \r\n\r\n    - Current element is equal to the last element in stack? \r\n    Pop that last element out of stack.\r\n    \r\n    - Current element is not equal to the last element in stack? \r\n    Add the current element into stack.\r\n    \r\n- Convert stack into string and return it.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/uNqh5Nsw/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"uNqh5Nsw\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$, where N is a string length.\r\n* Space complexity : $$\\mathcal{O}(N - D)$$ where D is a total length \r\nfor all duplicates. \r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "728",
+      "count": 7,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"abbaca\"",
+  "metaData": "{\r\n  \"name\": \"removeDuplicates\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

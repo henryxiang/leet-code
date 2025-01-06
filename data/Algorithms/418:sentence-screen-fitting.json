@@ -1,0 +1,93 @@
+{
+  "questionId": "418",
+  "questionFrontendId": "418",
+  "boundTopicId": null,
+  "title": "Sentence Screen Fitting",
+  "titleSlug": "sentence-screen-fitting",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <code>rows x cols</code> screen and a sentence represented by a list of <b>non-empty</b> words, find <b>how many times</b> the given sentence can be fitted on the screen.\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<ol>\r\n<li>A word cannot be split into two lines.</li>\r\n<li>The order of words in the sentence must remain unchanged.</li>\r\n<li>Two consecutive words <b>in a line</b> must be separated by a single space.</li>\r\n<li>Total words in the sentence won't exceed 100.</li>\r\n<li>Length of each word is greater than 0 and won't exceed 10.</li>\r\n<li>1 &le; rows, cols &le; 20,000.</li>\r\n</ol>\r\n</p>\r\n\r\n<p>\r\n<b>Example 1:</b> \r\n<pre>\r\n<b>Input:</b>\r\nrows = 2, cols = 8, sentence = [\"hello\", \"world\"]\r\n\r\n<b>Output:</b> \r\n1\r\n\r\n<b>Explanation:</b>\r\nhello---\r\nworld---\r\n\r\nThe character '-' signifies an empty space on the screen.\r\n</pre>\r\n</p>\r\n\r\n<p>\r\n<b>Example 2:</b> \r\n<pre>\r\n<b>Input:</b>\r\nrows = 3, cols = 6, sentence = [\"a\", \"bcd\", \"e\"]\r\n\r\n<b>Output:</b> \r\n2\r\n\r\n<b>Explanation:</b>\r\na-bcd- \r\ne-a---\r\nbcd-e-\r\n\r\nThe character '-' signifies an empty space on the screen.\r\n</pre>\r\n</p>\r\n\r\n<p>\r\n<b>Example 3:</b> \r\n<pre>\r\n<b>Input:</b>\r\nrows = 4, cols = 5, sentence = [\"I\", \"had\", \"apple\", \"pie\"]\r\n\r\n<b>Output:</b> \r\n1\r\n\r\n<b>Explanation:</b>\r\nI-had\r\napple\r\npie-I\r\nhad--\r\n\r\nThe character '-' signifies an empty space on the screen.\r\n</pre>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 386,
+  "dislikes": 192,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Robinhood\", \"slug\": \"robinhood\", \"timesEncountered\": 4}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int wordsTyping(vector<string>& sentence, int rows, int cols) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int wordsTyping(String[] sentence, int rows, int cols) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def wordsTyping(self, sentence, rows, cols):\n        \"\"\"\n        :type sentence: List[str]\n        :type rows: int\n        :type cols: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def wordsTyping(self, sentence: List[str], rows: int, cols: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint wordsTyping(char ** sentence, int sentenceSize, int rows, int cols){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int WordsTyping(string[] sentence, int rows, int cols) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} sentence\n * @param {number} rows\n * @param {number} cols\n * @return {number}\n */\nvar wordsTyping = function(sentence, rows, cols) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} sentence\n# @param {Integer} rows\n# @param {Integer} cols\n# @return {Integer}\ndef words_typing(sentence, rows, cols)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func wordsTyping(_ sentence: [String], _ rows: Int, _ cols: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func wordsTyping(sentence []string, rows int, cols int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def wordsTyping(sentence: Array[String], rows: Int, cols: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun wordsTyping(sentence: Array<String>, rows: Int, cols: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn words_typing(sentence: Vec<String>, rows: i32, cols: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $sentence\n     * @param Integer $rows\n     * @param Integer $cols\n     * @return Integer\n     */\n    function wordsTyping($sentence, $rows, $cols) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"38.5K\", \"totalSubmission\": \"120.7K\", \"totalAcceptedRaw\": 38472, \"totalSubmissionRaw\": 120694, \"acRate\": \"31.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"hello\",\"world\"]\n2\n8",
+  "metaData": "{ \r\n  \"name\": \"wordsTyping\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"sentence\",\r\n      \"type\": \"string[]\"\r\n    },\r\n    { \r\n      \"name\": \"rows\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n        \"name\": \"cols\",\r\n        \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

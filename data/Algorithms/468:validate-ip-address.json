@@ -1,0 +1,99 @@
+{
+  "questionId": "468",
+  "questionFrontendId": "468",
+  "boundTopicId": null,
+  "title": "Validate IP Address",
+  "titleSlug": "validate-ip-address",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nWrite a function to check whether an input string is a valid IPv4 address or IPv6 address or neither.\r\n</p>\r\n\r\n<p>\r\n<b>IPv4</b> addresses are canonically represented in dot-decimal notation, which consists of four decimal numbers, each ranging from 0 to 255, separated by dots (\".\"), e.g.,<code>172.16.254.1</code>;\r\n</p>\r\n\r\n<p>\r\nBesides, leading zeros in the IPv4 is invalid. For example, the address <code>172.16.254.01</code> is invalid.\r\n</p>\r\n\r\n<p>\r\n<b>IPv6</b> addresses are represented as eight groups of four hexadecimal digits, each group representing 16 bits. The groups are separated by colons (\":\"). For example, the address <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code> is a valid one. Also, we could omit some leading zeros among four hexadecimal digits and some low-case characters in the address to upper-case ones, so <code>2001:db8:85a3:0:0:8A2E:0370:7334</code> is also a valid IPv6 address(Omit leading zeros and using upper cases).\r\n</p>\r\n\r\n\r\n<p>\r\nHowever, we don't replace a consecutive group of zero value with a single empty group using two consecutive colons (::) to pursue simplicity. For example, <code>2001:0db8:85a3::8A2E:0370:7334</code> is an invalid IPv6 address.\r\n</p>\r\n\r\n<p>\r\nBesides, extra leading zeros in the IPv6 is also invalid. For example, the address <code>02001:0db8:85a3:0000:0000:8a2e:0370:7334</code> is invalid.\r\n</p>\r\n\r\n\r\n<p><b>Note:</b>\r\nYou may assume there is no extra space or special characters in the input string.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \"172.16.254.1\"\r\n\r\n<b>Output:</b> \"IPv4\"\r\n\r\n<b>Explanation:</b> This is a valid IPv4 address, return \"IPv4\".\r\n</pre>\r\n</p>\r\n\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> \"2001:0db8:85a3:0:0:8A2E:0370:7334\"\r\n\r\n<b>Output:</b> \"IPv6\"\r\n\r\n<b>Explanation:</b> This is a valid IPv6 address, return \"IPv6\".\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b><br />\r\n<pre>\r\n<b>Input:</b> \"256.256.256.256\"\r\n\r\n<b>Output:</b> \"Neither\"\r\n\r\n<b>Explanation:</b> This is neither a IPv4 address nor a IPv6 address.\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 167,
+  "dislikes": 956,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"IP to CIDR\", \"titleSlug\": \"ip-to-cidr\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Cyber233",
+      "profileUrl": "/cyber233/",
+      "avatarUrl": "https://www.gravatar.com/avatar/9d4fc4e0972eced14b1ab1fbb5a09f8e.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string validIPAddress(string IP) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String validIPAddress(String IP) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def validIPAddress(self, IP):\n        \"\"\"\n        :type IP: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def validIPAddress(self, IP: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * validIPAddress(char * IP){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ValidIPAddress(string IP) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} IP\n * @return {string}\n */\nvar validIPAddress = function(IP) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} ip\n# @return {String}\ndef valid_ip_address(ip)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func validIPAddress(_ IP: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func validIPAddress(IP string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def validIPAddress(IP: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun validIPAddress(IP: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn valid_ip_address(ip: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $IP\n     * @return String\n     */\n    function validIPAddress($IP) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"37.4K\", \"totalSubmission\": \"170.4K\", \"totalAcceptedRaw\": 37439, \"totalSubmissionRaw\": 170449, \"acRate\": \"22.0%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"172.16.254.1\"",
+  "metaData": "{\r\n  \"name\": \"validIPAddress\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"IP\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

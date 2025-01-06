@@ -1,0 +1,106 @@
+{
+  "questionId": "518",
+  "questionFrontendId": "518",
+  "boundTopicId": null,
+  "title": "Coin Change 2",
+  "titleSlug": "coin-change-2",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin.</p>\r\n\r\n<ul>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> amount = 5, coins = [1, 2, 5]\r\n<b>Output:</b> 4\r\n<b>Explanation:</b> there are four ways to make up the amount:\r\n5=5\r\n5=2+2+1\r\n5=2+1+1+1\r\n5=1+1+1+1+1\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> amount = 3, coins = [2]\r\n<b>Output:</b> 0\r\n<b>Explanation:</b> the amount of 3 cannot be made up just with coins of 2.\r\n</pre>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> amount = 10, coins = [10] \r\n<b>Output:</b> 1\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<p>You can assume that</p>\r\n\r\n<ul>\r\n\t<li>0 &lt;= amount &lt;= 5000</li>\r\n\t<li>1 &lt;= coin &lt;= 5000</li>\r\n\t<li>the number of coins is less than 500</li>\r\n\t<li>the answer is guaranteed to fit into signed 32-bit integer</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1110,
+  "dislikes": 44,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "vchernoy",
+      "profileUrl": "/vchernoy/",
+      "avatarUrl": "https://www.gravatar.com/avatar/2169be2e38fd73f5c29f2ded79ab934f.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"IXL\", \"slug\": \"ixl\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int change(int amount, vector<int>& coins) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int change(int amount, int[] coins) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def change(self, amount, coins):\n        \"\"\"\n        :type amount: int\n        :type coins: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def change(self, amount: int, coins: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint change(int amount, int* coins, int coinsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int Change(int amount, int[] coins) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} amount\n * @param {number[]} coins\n * @return {number}\n */\nvar change = function(amount, coins) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} amount\n# @param {Integer[]} coins\n# @return {Integer}\ndef change(amount, coins)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func change(_ amount: Int, _ coins: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func change(amount int, coins []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def change(amount: Int, coins: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun change(amount: Int, coins: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn change(amount: i32, coins: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $amount\n     * @param Integer[] $coins\n     * @return Integer\n     */\n    function change($amount, $coins) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"67.4K\", \"totalSubmission\": \"148.1K\", \"totalAcceptedRaw\": 67355, \"totalSubmissionRaw\": 148097, \"acRate\": \"45.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "823",
+    "canSeeDetail": true,
+    "url": "/articles/coin-change-ii/",
+    "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Approach 1: Dynamic Programming\n\n**Template**\n\nThis is a classical dynamic programming problem. \n\nHere is a template one could use:\n\n- Define the base cases for which the answer is obvious. \n\n- Develop the strategy to compute more complex case from more simple one. \n\n- Link the answer to base cases with this strategy.\n\n**Example**\n\nLet's pic up an example: amount = 11, available coins - 2 cent,\n5 cent and 10 cent. Note, that coins are unlimited.\n\n![fig](../Figures/518/example.png)\n\n**Base Cases: No Coins or Amount = 0**\n\nIf the total amount of money is zero, there is only one combination: to take zero coins.\n\nAnother base case is no coins: zero combinations for `amount > 0` and one combination \nfor `amount == 0`.\n\n![fig](../Figures/518/base_cases.png)\n\n**2 Cent Coins**\n\nLet's do one step further and consider the situation with \none kind of available coins: 2 cent.\n\n![fig](../Figures/518/2_cents.png)\n\nIt's quite evident that there could be 1 or 0 combinations here, \n1 combination for even amount and 0 combinations for the odd one.\n\n> The same answer could be received in a recursive way, by \ncomputing the number of combinations for all amounts of money,\nfrom 0 to 11. \n\nFirst, that's quite obvious that all amounts less than 2 \nare _not_ impacted by the presence of 2 cent coins. Hence \nfor `amount = 0` and for `amount = 1` one could reuse the results\nfrom the figure 2. \n\nStarting from `amount = 2`, one could use 2 cent coins in the combinations.\nSince the amounts are considered gradually from 2 to 11, at each given\nmoment one could be sure to add not more than one coin to the previously \nknown combinations. \n\nSo let's pick up 2 cent coin, and use it \nto make up `amount = 2`. The number of combinations with \nthis 2 cent coin is a number combinations for `amount = 0`,\ni.e. 1.  \n\n![fig](../Figures/518/2_cents_amount_2_end.png)\n\nNow let's pick up 2 cent coin, and use it \nto make up `amount = 3`. The number of combinations with \nthis 2 cent coin is a number combinations for `amount = 1`,\ni.e. 0.\n\n![fig](../Figures/518/2_cents_amount_3_end.png)\n\nThat leads to DP formula for number of combinations to make up \nthe `amount = x`: `dp[x] = dp[x] + dp[x - coin]`, where `coin = 2 cents` \nis a value of coins we're currently adding.\n\n![fig](../Figures/518/2cents_amount3_total2.png)\n\n**2 Cent Coins + 5 Cent Coins + 10 Cent Coins**\n\nNow let's add 5 cent coins. The formula is the same, \nbut do not forget to add `dp[x]`, number of combinations with \n2 cent coins.\n\n![fig](../Figures/518/2_5_cents.png) \n\nThe story is the same for 10 cent coins.\n\n![fig](../Figures/518/10_cent2.png) \n\nNow the strategy is here: \n\n- Add coins one-by-one, starting from base case \"no coins\".\n\n- For each added coin, \ncompute recursively the number of combinations \nfor each amount of money from 0 to `amount`. \n\n**Algorithm**\n\n- Initiate number of combinations array with the base case \"no coins\":\n`dp[0] = 1`, and all the rest = 0.\n\n- Loop over all coins:\n\n    - For each coin, loop over all amounts from 0 to `amount`:\n    \n        - For each amount x, compute the number of combinations:\n        `dp[x] += dp[x - coin]`.\n        \n- Return `dp[amount]`. \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/y8yp4fyB/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"y8yp4fyB\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N \\times \\textrm{amount})$$, where \nN is a length of coins array. \n\n* Space complexity: $$\\mathcal{O}(\\textrm{amount})$$ to keep dp array.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "787",
+      "count": 16,
+      "average": 4.75,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "5\n[1,2,5]",
+  "metaData": "{\r\n  \"name\": \"change\",\r\n  \"params\": [\r\n    {\r\n        \"name\": \"amount\",\r\n        \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"coins\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

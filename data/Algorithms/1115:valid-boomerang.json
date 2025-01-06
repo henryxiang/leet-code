@@ -1,0 +1,101 @@
+{
+  "questionId": "1115",
+  "questionFrontendId": "1037",
+  "boundTopicId": null,
+  "title": "Valid Boomerang",
+  "titleSlug": "valid-boomerang",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A <em>boomerang</em> is a set of 3 points that are all distinct and <strong>not</strong> in a straight line.</p>\r\n\r\n<p>Given a list&nbsp;of three points in the plane, return whether these points are a boomerang.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[[1,1],[2,3],[3,2]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[[1,1],[2,2],[3,3]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">false</span></pre>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>points.length == 3</code></li>\r\n\t<li><code>points[i].length == 2</code></li>\r\n\t<li><code>0 &lt;= points[i][j] &lt;= 100</code></li>\r\n</ol>\r\n\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 64,
+  "dislikes": 178,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "bhavit_singh",
+      "profileUrl": "/bhavit_singh/",
+      "avatarUrl": "https://assets.leetcode.com/users/bhavit_singh/avatar_1524812479.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool isBoomerang(vector<vector<int>>& points) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isBoomerang(int[][] points) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isBoomerang(self, points):\n        \"\"\"\n        :type points: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isBoomerang(self, points: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isBoomerang(int** points, int pointsSize, int* pointsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool IsBoomerang(int[][] points) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} points\n * @return {boolean}\n */\nvar isBoomerang = function(points) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} points\r\n# @return {Boolean}\r\ndef is_boomerang(points)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func isBoomerang(_ points: [[Int]]) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isBoomerang(points [][]int) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def isBoomerang(points: Array[Array[Int]]): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun isBoomerang(points: Array<IntArray>): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_boomerang(points: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $points\n     * @return Boolean\n     */\n    function isBoomerang($points) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.4K\", \"totalSubmission\": \"33K\", \"totalAcceptedRaw\": 12376, \"totalSubmissionRaw\": 33044, \"acRate\": \"37.5%\"}",
+  "hints": [
+    "3 points form a boomerang if and only if the triangle formed from them has non-zero area."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,1],[2,3],[3,2]]",
+  "metaData": "{\r\n  \"name\": \"isBoomerang\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"points\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

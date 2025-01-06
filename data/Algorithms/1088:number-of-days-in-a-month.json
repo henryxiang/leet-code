@@ -1,0 +1,91 @@
+{
+  "questionId": "1088",
+  "questionFrontendId": "1118",
+  "boundTopicId": null,
+  "title": "Number of Days in a Month",
+  "titleSlug": "number-of-days-in-a-month",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a year <code>Y</code> and a month <code>M</code>, return how many days there are in that month.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>Y = <span id=\"example-input-1-1\">1992</span>, M = <span id=\"example-input-1-2\">7</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">31</span>\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>Y = <span id=\"example-input-2-1\">2000</span>, M = <span id=\"example-input-2-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">29</span>\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>Y = <span id=\"example-input-3-1\">1900</span>, M = <span id=\"example-input-3-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">28</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1583 &lt;= Y &lt;= 2100</code></li>\r\n\t<li><code>1 &lt;= M &lt;= 12</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 8,
+  "dislikes": 66,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int numberOfDays(int Y, int M) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numberOfDays(int Y, int M) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numberOfDays(self, Y, M):\n        \"\"\"\n        :type Y: int\n        :type M: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numberOfDays(self, Y: int, M: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numberOfDays(int Y, int M){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int NumberOfDays(int Y, int M) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} Y\n * @param {number} M\n * @return {number}\n */\nvar numberOfDays = function(Y, M) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} y\r\n# @param {Integer} m\r\n# @return {Integer}\r\ndef number_of_days(y, m)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func numberOfDays(_ Y: Int, _ M: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numberOfDays(Y int, M int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def numberOfDays(Y: Int, M: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun numberOfDays(Y: Int, M: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn number_of_days(y: i32, m: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $Y\n     * @param Integer $M\n     * @return Integer\n     */\n    function numberOfDays($Y, $M) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.9K\", \"totalSubmission\": \"5.2K\", \"totalAcceptedRaw\": 2941, \"totalSubmissionRaw\": 5199, \"acRate\": \"56.6%\"}",
+  "hints": [
+    "Does February have 28 days or 29 days?",
+    "Think of Leap years."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "1992\n7",
+  "metaData": "{\r\n  \"name\": \"numberOfDays\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"Y\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"M\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

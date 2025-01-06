@@ -1,0 +1,88 @@
+{
+  "questionId": "388",
+  "questionFrontendId": "388",
+  "boundTopicId": null,
+  "title": "Longest Absolute File Path",
+  "titleSlug": "longest-absolute-file-path",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Suppose we abstract our file system by a string in the following manner:</p>\r\n\r\n<p>The string <code>\"dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext\"</code> represents:</p>\r\n\r\n<pre>dir\r\n    subdir1\r\n    subdir2\r\n        file.ext\r\n</pre>\r\n\r\n<p>The directory <code>dir</code> contains an empty sub-directory <code>subdir1</code> and a sub-directory <code>subdir2</code> containing a file <code>file.ext</code>.</p>\r\n\r\n<p>The string <code>\"dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext\"</code> represents:</p>\r\n\r\n<pre>dir\r\n    subdir1\r\n        file1.ext\r\n        subsubdir1\r\n    subdir2\r\n        subsubdir2\r\n            file2.ext\r\n</pre>\r\n\r\n<p>The directory <code>dir</code> contains two sub-directories <code>subdir1</code> and <code>subdir2</code>. <code>subdir1</code> contains a file <code>file1.ext</code> and an empty second-level sub-directory <code>subsubdir1</code>. <code>subdir2</code> contains a second-level sub-directory <code>subsubdir2</code> containing a file <code>file2.ext</code>.</p>\r\n\r\n<p>We are interested in finding the longest (number of characters) absolute path to a file within our file system. For example, in the second example above, the longest absolute path is <code>\"dir/subdir2/subsubdir2/file2.ext\"</code>, and its length is <code>32</code> (not including the double quotes).</p>\r\n\r\n<p>Given a string representing the file system in the above format, return the length of the longest absolute path to file in the abstracted file system. If there is no file in the system, return <code>0</code>.</p>\r\n\r\n<p><b>Note:</b><br />\r\n<ul>\r\n<li>The name of a file contains at least a <code>.</code> and an extension.</li>\r\n<li>The name of a directory or sub-directory will not contain a <code>.</code>.</li>\r\n</ul>\r\n</p>\r\n\r\n<p>Time complexity required: <code>O(n)</code> where <code>n</code> is the size of the input string.</p>\r\n\r\n<p>Notice that <code>a/aa/aaa/file1.txt</code> is not the longest file path, if there is another path <code>aaaaaaaaaaaaaaaaaaaaa/sth.png</code>.</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 518,
+  "dislikes": 1156,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int lengthLongestPath(string input) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int lengthLongestPath(String input) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def lengthLongestPath(self, input):\n        \"\"\"\n        :type input: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def lengthLongestPath(self, input: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint lengthLongestPath(char * input){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LengthLongestPath(string input) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} input\n * @return {number}\n */\nvar lengthLongestPath = function(input) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} input\n# @return {Integer}\ndef length_longest_path(input)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func lengthLongestPath(_ input: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func lengthLongestPath(input string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def lengthLongestPath(input: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun lengthLongestPath(input: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn length_longest_path(input: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $input\n     * @return Integer\n     */\n    function lengthLongestPath($input) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"76.1K\", \"totalSubmission\": \"187.7K\", \"totalAcceptedRaw\": 76146, \"totalSubmissionRaw\": 187658, \"acRate\": \"40.6%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext\"",
+  "metaData": "{\r\n  \"name\": \"lengthLongestPath\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"input\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

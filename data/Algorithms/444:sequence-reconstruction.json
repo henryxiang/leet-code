@@ -1,0 +1,103 @@
+{
+  "questionId": "444",
+  "questionFrontendId": "444",
+  "boundTopicId": null,
+  "title": "Sequence Reconstruction",
+  "titleSlug": "sequence-reconstruction",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Check whether the original sequence <code>org</code> can be uniquely reconstructed from the sequences in <code>seqs</code>. The <code>org</code> sequence is a permutation of the integers from 1 to n, with 1 &le; n &le; 10<sup>4</sup>. Reconstruction means building a shortest common supersequence of the sequences in <code>seqs</code> (i.e., a shortest sequence so that all sequences in <code>seqs</code> are subsequences of it). Determine whether there is only one sequence that can be reconstructed from <code>seqs</code> and it is the <code>org</code> sequence.</p>\r\n\r\n<p><b>Example 1:</b>\r\n<pre>\r\n<b>Input:</b>\r\norg: [1,2,3], seqs: [[1,2],[1,3]]\r\n\r\n<b>Output:</b>\r\nfalse\r\n\r\n<b>Explanation:</b>\r\n[1,2,3] is not the only one sequence that can be reconstructed, because [1,3,2] is also a valid sequence that can be reconstructed.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b>\r\n<pre>\r\n<b>Input:</b>\r\norg: [1,2,3], seqs: [[1,2]]\r\n\r\n<b>Output:</b>\r\nfalse\r\n\r\n<b>Explanation:</b>\r\nThe reconstructed sequence can only be [1,2].\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b>\r\n<pre>\r\n<b>Input:</b>\r\norg: [1,2,3], seqs: [[1,2],[1,3],[2,3]]\r\n\r\n<b>Output:</b>\r\ntrue\r\n\r\n<b>Explanation:</b>\r\nThe sequences [1,2], [1,3], and [2,3] can uniquely reconstruct the original sequence [1,2,3].\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 4:</b>\r\n<pre>\r\n<b>Input:</b>\r\norg: [4,1,5,2,6,3], seqs: [[5,2,6,3],[4,1,5,2]]\r\n\r\n<b>Output:</b>\r\ntrue\r\n</pre>\r\n</p>\r\n\r\n<p>\r\n<b><font color=\"red\">UPDATE (2017/1/8):</font></b><br />\r\nThe <i>seqs</i> parameter had been changed to a list of list of strings (instead of a 2d array of strings). Please reload the code definition to get the latest changes.\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 197,
+  "dislikes": 681,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Course Schedule II\", \"titleSlug\": \"course-schedule-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Graph",
+      "slug": "graph"
+    },
+    {
+      "name": "Topological Sort",
+      "slug": "topological-sort"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool sequenceReconstruction(vector<int>& org, vector<vector<int>>& seqs) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean sequenceReconstruction(int[] org, List<List<Integer>> seqs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def sequenceReconstruction(self, org, seqs):\n        \"\"\"\n        :type org: List[int]\n        :type seqs: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def sequenceReconstruction(self, org: List[int], seqs: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool sequenceReconstruction(int* org, int orgSize, int** seqs, int seqsSize, int* seqsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool SequenceReconstruction(int[] org, IList<IList<int>> seqs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} org\n * @param {number[][]} seqs\n * @return {boolean}\n */\nvar sequenceReconstruction = function(org, seqs) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} org\n# @param {Integer[][]} seqs\n# @return {Boolean}\ndef sequence_reconstruction(org, seqs)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func sequenceReconstruction(_ org: [Int], _ seqs: [[Int]]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func sequenceReconstruction(org []int, seqs [][]int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def sequenceReconstruction(org: Array[Int], seqs: List[List[Int]]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun sequenceReconstruction(org: IntArray, seqs: List<List<Int>>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sequence_reconstruction(org: Vec<i32>, seqs: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $org\n     * @param Integer[][] $seqs\n     * @return Boolean\n     */\n    function sequenceReconstruction($org, $seqs) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"20.7K\", \"totalSubmission\": \"98.1K\", \"totalAcceptedRaw\": 20723, \"totalSubmissionRaw\": 98069, \"acRate\": \"21.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2,3]\n[[1,2],[1,3]]",
+  "metaData": "{\r\n  \"name\": \"sequenceReconstruction\",\r\n  \"params\": [\r\n      {\r\n          \"name\": \"org\",\r\n          \"type\": \"integer[]\"\r\n      },\r\n    {\r\n      \"name\": \"seqs\",\r\n      \"type\": \"list<list<integer>>\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,55 @@
+{
+  "questionId": "1405",
+  "questionFrontendId": "1270",
+  "boundTopicId": null,
+  "title": "All People Report to the Given Manager",
+  "titleSlug": "all-people-report-to-the-given-manager",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Employees</code></p>\r\n\r\n<pre>\r\n+---------------+---------+\r\n| Column Name   | Type    |\r\n+---------------+---------+\r\n| employee_id   | int     |\r\n| employee_name | varchar |\r\n| manager_id    | int     |\r\n+---------------+---------+\r\nemployee_id is the primary key for this table.\r\nEach row of this table indicates that the employee with ID employee_id and name employee_name reports his work to his/her direct manager with manager_id\r\nThe head of the company is the employee with employee_id = 1.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Write an SQL query to find&nbsp;<code>employee_id</code>&nbsp;of all employees that directly or indirectly report their work to the head of the company.</p>\r\n\r\n<p>The indirect relation between managers will not exceed 3 managers as the company is small.</p>\r\n\r\n<p>Return result table in any order without duplicates.</p>\r\n\r\n<p>The query result format is in the following example:</p>\r\n\r\n<pre>\r\n<code>Employees </code>table:\r\n+-------------+---------------+------------+\r\n| employee_id | employee_name | manager_id |\r\n+-------------+---------------+------------+\r\n| 1           | Boss          | 1          |\r\n| 3           | Alice         | 3          |\r\n| 2           | Bob           | 1          |\r\n| 4           | Daniel        | 2          |\r\n| 7           | Luis          | 4          |\r\n| 8           | Jhon          | 3          |\r\n| 9           | Angela        | 8          |\r\n| 77          | Robert        | 1          |\r\n+-------------+---------------+------------+\r\n\r\n<code>Result </code>table:\r\n+-------------+\r\n| employee_id |\r\n+-------------+\r\n| 2           |\r\n| 77          |\r\n| 4           |\r\n| 7           |\r\n+-------------+\r\n\r\nThe head of the company is the employee with employee_id 1.\r\nThe employees with employee_id 2 and 77 report their work directly to the head of the company.\r\nThe employee with employee_id 4 report his work indirectly to the head of the company 4 --&gt; 2 --&gt; 1. \r\nThe employee with employee_id 7 report his work indirectly to the head of the company 7 --&gt; 4 --&gt; 2 --&gt; 1.\r\nThe employees with employee_id 3, 8 and 9 don&#39;t report their work to head of company directly or indirectly. \r\n</pre>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 18,
+  "dislikes": 0,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"869\", \"totalSubmission\": \"1K\", \"totalAcceptedRaw\": 869, \"totalSubmissionRaw\": 1038, \"acRate\": \"83.7%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Employees\":[\"employee_id\",\"employee_name\",\"manager_id\"]},\"rows\":{\"Employees\":[[1,\"Boss\",1],[3,\"Alice\",3],[2,\"Bob\",1],[4,\"Daniel\",2],[7,\"Luis\",4],[8,\"John\",3],[9,\"Angela\",8],[77,\"Robert\",1]]}}\r",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Employees (employee_id int, employee_name varchar(30), manager_id int)\"\n  ],\n  \"mssql\": [\n    \"Create table Employees (employee_id int, employee_name varchar(30), manager_id int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Employees (employee_id int, employee_name varchar(30), manager_id int)\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Employees (employee_id int, employee_name varchar(30), manager_id int)",
+    "Truncate table Employees",
+    "insert into Employees (employee_id, employee_name, manager_id) values ('1', 'Boss', '1')",
+    "insert into Employees (employee_id, employee_name, manager_id) values ('3', 'Alice', '3')",
+    "insert into Employees (employee_id, employee_name, manager_id) values ('2', 'Bob', '1')",
+    "insert into Employees (employee_id, employee_name, manager_id) values ('4', 'Daniel', '2')",
+    "insert into Employees (employee_id, employee_name, manager_id) values ('7', 'Luis', '4')",
+    "insert into Employees (employee_id, employee_name, manager_id) values ('8', 'John', '3')",
+    "insert into Employees (employee_id, employee_name, manager_id) values ('9', 'Angela', '8')",
+    "insert into Employees (employee_id, employee_name, manager_id) values ('77', 'Robert', '1')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

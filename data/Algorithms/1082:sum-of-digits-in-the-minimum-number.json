@@ -1,0 +1,104 @@
+{
+  "questionId": "1082",
+  "questionFrontendId": "1085",
+  "boundTopicId": null,
+  "title": "Sum of Digits in the Minimum Number",
+  "titleSlug": "sum-of-digits-in-the-minimum-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>A</code> of positive integers, let <code>S</code> be the sum of the digits of the minimal element of <code>A</code>.</p>\r\n\r\n<p>Return 0 if <code>S</code> is odd, otherwise return 1.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[34,23,1,24,75,33,54,8]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">0</span>\r\n<strong>Explanation: </strong>\r\nThe minimal element is 1, and the sum of those digits is S = 1 which is odd, so the answer is 0.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[99,77,33,66,55]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">1</span>\r\n<strong>Explanation: </strong>\r\nThe minimal element is 33, and the sum of those digits is S = 3 + 3 = 6 which is even, so the answer is 1.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= A[i].length &lt;= 100</code></li>\r\n</ol>",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 17,
+  "dislikes": 53,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Add Digits\", \"titleSlug\": \"add-digits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "luisvasquez-Boxer",
+      "profileUrl": "/luisvasquez-boxer/",
+      "avatarUrl": "https://assets.leetcode.com/users/luisvasquez-boxer/avatar_1544845570.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int sumOfDigits(vector<int>& A) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int sumOfDigits(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def sumOfDigits(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def sumOfDigits(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint sumOfDigits(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int SumOfDigits(int[] A) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar sumOfDigits = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\r\n# @return {Integer}\r\ndef sum_of_digits(a)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func sumOfDigits(_ A: [Int]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func sumOfDigits(A []int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def sumOfDigits(A: Array[Int]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun sumOfDigits(A: IntArray): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sum_of_digits(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function sumOfDigits($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.8K\", \"totalSubmission\": \"10.5K\", \"totalAcceptedRaw\": 7781, \"totalSubmissionRaw\": 10470, \"acRate\": \"74.3%\"}",
+  "hints": [
+    "How to find the minimum number in an array?",
+    "Loop over the array and compare each one of the numbers.",
+    "How to find the sum of digits?",
+    "Divide the number consecutively and get their remainder modulus 10. Sum those remainders and return the answer as the problem asks."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[34,23,1,24,75,33,54,8]",
+  "metaData": "{\r\n  \"name\": \"sumOfDigits\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

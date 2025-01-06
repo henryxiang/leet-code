@@ -1,0 +1,104 @@
+{
+  "questionId": "432",
+  "questionFrontendId": "432",
+  "boundTopicId": null,
+  "title": "All O`one Data Structure",
+  "titleSlug": "all-oone-data-structure",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Implement a data structure supporting the following operations:</p>\r\n\r\n<p>\r\n<ol>\r\n<li>Inc(Key) - Inserts a new key <Key> with value 1. Or increments an existing key by 1. Key is guaranteed to be a <b>non-empty</b> string.</li>\r\n<li>Dec(Key) - If Key's value is 1, remove it from the data structure. Otherwise decrements an existing key by 1. If the key does not exist, this function does nothing. Key is guaranteed to be a <b>non-empty</b> string.</li>\r\n<li>GetMaxKey() - Returns one of the keys with maximal value. If no element exists, return an empty string <code>\"\"</code>.</li>\r\n<li>GetMinKey() - Returns one of the keys with minimal value. If no element exists, return an empty string <code>\"\"</code>.</li>\r\n</ol>\r\n</p>\r\n\r\n<p>\r\nChallenge: Perform all these in O(1) time complexity.\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 453,
+  "dislikes": 58,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "galster",
+      "profileUrl": "/galster/",
+      "avatarUrl": "https://www.gravatar.com/avatar/d923a0fc9bd985fc35f5e0922c6d7176.png?s=200"
+    },
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 6}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class AllOne {\npublic:\n    /** Initialize your data structure here. */\n    AllOne() {\n        \n    }\n    \n    /** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */\n    void inc(string key) {\n        \n    }\n    \n    /** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */\n    void dec(string key) {\n        \n    }\n    \n    /** Returns one of the keys with maximal value. */\n    string getMaxKey() {\n        \n    }\n    \n    /** Returns one of the keys with Minimal value. */\n    string getMinKey() {\n        \n    }\n};\n\n/**\n * Your AllOne object will be instantiated and called as such:\n * AllOne* obj = new AllOne();\n * obj->inc(key);\n * obj->dec(key);\n * string param_3 = obj->getMaxKey();\n * string param_4 = obj->getMinKey();\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class AllOne {\n\n    /** Initialize your data structure here. */\n    public AllOne() {\n        \n    }\n    \n    /** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */\n    public void inc(String key) {\n        \n    }\n    \n    /** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */\n    public void dec(String key) {\n        \n    }\n    \n    /** Returns one of the keys with maximal value. */\n    public String getMaxKey() {\n        \n    }\n    \n    /** Returns one of the keys with Minimal value. */\n    public String getMinKey() {\n        \n    }\n}\n\n/**\n * Your AllOne object will be instantiated and called as such:\n * AllOne obj = new AllOne();\n * obj.inc(key);\n * obj.dec(key);\n * String param_3 = obj.getMaxKey();\n * String param_4 = obj.getMinKey();\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class AllOne(object):\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def inc(self, key):\n        \"\"\"\n        Inserts a new key <Key> with value 1. Or increments an existing key by 1.\n        :type key: str\n        :rtype: None\n        \"\"\"\n        \n\n    def dec(self, key):\n        \"\"\"\n        Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.\n        :type key: str\n        :rtype: None\n        \"\"\"\n        \n\n    def getMaxKey(self):\n        \"\"\"\n        Returns one of the keys with maximal value.\n        :rtype: str\n        \"\"\"\n        \n\n    def getMinKey(self):\n        \"\"\"\n        Returns one of the keys with Minimal value.\n        :rtype: str\n        \"\"\"\n        \n\n\n# Your AllOne object will be instantiated and called as such:\n# obj = AllOne()\n# obj.inc(key)\n# obj.dec(key)\n# param_3 = obj.getMaxKey()\n# param_4 = obj.getMinKey()"
+    },
+    {
+      "lang": "Python3",
+      "code": "class AllOne:\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def inc(self, key: str) -> None:\n        \"\"\"\n        Inserts a new key <Key> with value 1. Or increments an existing key by 1.\n        \"\"\"\n        \n\n    def dec(self, key: str) -> None:\n        \"\"\"\n        Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.\n        \"\"\"\n        \n\n    def getMaxKey(self) -> str:\n        \"\"\"\n        Returns one of the keys with maximal value.\n        \"\"\"\n        \n\n    def getMinKey(self) -> str:\n        \"\"\"\n        Returns one of the keys with Minimal value.\n        \"\"\"\n        \n\n\n# Your AllOne object will be instantiated and called as such:\n# obj = AllOne()\n# obj.inc(key)\n# obj.dec(key)\n# param_3 = obj.getMaxKey()\n# param_4 = obj.getMinKey()"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} AllOne;\n\n/** Initialize your data structure here. */\n\nAllOne* allOneCreate() {\n    \n}\n\n/** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */\nvoid allOneInc(AllOne* obj, char * key) {\n  \n}\n\n/** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */\nvoid allOneDec(AllOne* obj, char * key) {\n  \n}\n\n/** Returns one of the keys with maximal value. */\nchar * allOneGetMaxKey(AllOne* obj) {\n  \n}\n\n/** Returns one of the keys with Minimal value. */\nchar * allOneGetMinKey(AllOne* obj) {\n  \n}\n\nvoid allOneFree(AllOne* obj) {\n    \n}\n\n/**\n * Your AllOne struct will be instantiated and called as such:\n * AllOne* obj = allOneCreate();\n * allOneInc(obj, key);\n \n * allOneDec(obj, key);\n \n * char * param_3 = allOneGetMaxKey(obj);\n \n * char * param_4 = allOneGetMinKey(obj);\n \n * allOneFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class AllOne {\n\n    /** Initialize your data structure here. */\n    public AllOne() {\n        \n    }\n    \n    /** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */\n    public void Inc(string key) {\n        \n    }\n    \n    /** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */\n    public void Dec(string key) {\n        \n    }\n    \n    /** Returns one of the keys with maximal value. */\n    public string GetMaxKey() {\n        \n    }\n    \n    /** Returns one of the keys with Minimal value. */\n    public string GetMinKey() {\n        \n    }\n}\n\n/**\n * Your AllOne object will be instantiated and called as such:\n * AllOne obj = new AllOne();\n * obj.Inc(key);\n * obj.Dec(key);\n * string param_3 = obj.GetMaxKey();\n * string param_4 = obj.GetMinKey();\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Initialize your data structure here.\n */\nvar AllOne = function() {\n    \n};\n\n/**\n * Inserts a new key <Key> with value 1. Or increments an existing key by 1. \n * @param {string} key\n * @return {void}\n */\nAllOne.prototype.inc = function(key) {\n    \n};\n\n/**\n * Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. \n * @param {string} key\n * @return {void}\n */\nAllOne.prototype.dec = function(key) {\n    \n};\n\n/**\n * Returns one of the keys with maximal value.\n * @return {string}\n */\nAllOne.prototype.getMaxKey = function() {\n    \n};\n\n/**\n * Returns one of the keys with Minimal value.\n * @return {string}\n */\nAllOne.prototype.getMinKey = function() {\n    \n};\n\n/** \n * Your AllOne object will be instantiated and called as such:\n * var obj = new AllOne()\n * obj.inc(key)\n * obj.dec(key)\n * var param_3 = obj.getMaxKey()\n * var param_4 = obj.getMinKey()\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class AllOne\n\n=begin\n    Initialize your data structure here.\n=end\n    def initialize()\n        \n    end\n\n\n=begin\n    Inserts a new key <Key> with value 1. Or increments an existing key by 1.\n    :type key: String\n    :rtype: Void\n=end\n    def inc(key)\n        \n    end\n\n\n=begin\n    Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.\n    :type key: String\n    :rtype: Void\n=end\n    def dec(key)\n        \n    end\n\n\n=begin\n    Returns one of the keys with maximal value.\n    :rtype: String\n=end\n    def get_max_key()\n        \n    end\n\n\n=begin\n    Returns one of the keys with Minimal value.\n    :rtype: String\n=end\n    def get_min_key()\n        \n    end\n\n\nend\n\n# Your AllOne object will be instantiated and called as such:\n# obj = AllOne.new()\n# obj.inc(key)\n# obj.dec(key)\n# param_3 = obj.get_max_key()\n# param_4 = obj.get_min_key()"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass AllOne {\n\n    /** Initialize your data structure here. */\n    init() {\n        \n    }\n    \n    /** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */\n    func inc(_ key: String) {\n        \n    }\n    \n    /** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */\n    func dec(_ key: String) {\n        \n    }\n    \n    /** Returns one of the keys with maximal value. */\n    func getMaxKey() -> String {\n        \n    }\n    \n    /** Returns one of the keys with Minimal value. */\n    func getMinKey() -> String {\n        \n    }\n}\n\n/**\n * Your AllOne object will be instantiated and called as such:\n * let obj = AllOne()\n * obj.inc(key)\n * obj.dec(key)\n * let ret_3: String = obj.getMaxKey()\n * let ret_4: String = obj.getMinKey()\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type AllOne struct {\n    \n}\n\n\n/** Initialize your data structure here. */\nfunc Constructor() AllOne {\n    \n}\n\n\n/** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */\nfunc (this *AllOne) Inc(key string)  {\n    \n}\n\n\n/** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */\nfunc (this *AllOne) Dec(key string)  {\n    \n}\n\n\n/** Returns one of the keys with maximal value. */\nfunc (this *AllOne) GetMaxKey() string {\n    \n}\n\n\n/** Returns one of the keys with Minimal value. */\nfunc (this *AllOne) GetMinKey() string {\n    \n}\n\n\n/**\n * Your AllOne object will be instantiated and called as such:\n * obj := Constructor();\n * obj.Inc(key);\n * obj.Dec(key);\n * param_3 := obj.GetMaxKey();\n * param_4 := obj.GetMinKey();\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class AllOne() {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */\n    def inc(key: String) {\n        \n    }\n\n    /** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */\n    def dec(key: String) {\n        \n    }\n\n    /** Returns one of the keys with maximal value. */\n    def getMaxKey(): String = {\n        \n    }\n\n    /** Returns one of the keys with Minimal value. */\n    def getMinKey(): String = {\n        \n    }\n\n}\n\n/**\n * Your AllOne object will be instantiated and called as such:\n * var obj = new AllOne()\n * obj.inc(key)\n * obj.dec(key)\n * var param_3 = obj.getMaxKey()\n * var param_4 = obj.getMinKey()\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class AllOne() {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */\n    fun inc(key: String) {\n        \n    }\n\n    /** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */\n    fun dec(key: String) {\n        \n    }\n\n    /** Returns one of the keys with maximal value. */\n    fun getMaxKey(): String {\n        \n    }\n\n    /** Returns one of the keys with Minimal value. */\n    fun getMinKey(): String {\n        \n    }\n\n}\n\n/**\n * Your AllOne object will be instantiated and called as such:\n * var obj = AllOne()\n * obj.inc(key)\n * obj.dec(key)\n * var param_3 = obj.getMaxKey()\n * var param_4 = obj.getMinKey()\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct AllOne {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl AllOne {\n\n    /** Initialize your data structure here. */\n    fn new() -> Self {\n        \n    }\n    \n    /** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */\n    fn inc(&self, key: String) {\n        \n    }\n    \n    /** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */\n    fn dec(&self, key: String) {\n        \n    }\n    \n    /** Returns one of the keys with maximal value. */\n    fn get_max_key(&self) -> String {\n        \n    }\n    \n    /** Returns one of the keys with Minimal value. */\n    fn get_min_key(&self) -> String {\n        \n    }\n}\n\n/**\n * Your AllOne object will be instantiated and called as such:\n * let obj = AllOne::new();\n * obj.inc(key);\n * obj.dec(key);\n * let ret_3: String = obj.get_max_key();\n * let ret_4: String = obj.get_min_key();\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class AllOne {\n    /**\n     * Initialize your data structure here.\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * Inserts a new key <Key> with value 1. Or increments an existing key by 1.\n     * @param String $key\n     * @return NULL\n     */\n    function inc($key) {\n        \n    }\n  \n    /**\n     * Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.\n     * @param String $key\n     * @return NULL\n     */\n    function dec($key) {\n        \n    }\n  \n    /**\n     * Returns one of the keys with maximal value.\n     * @return String\n     */\n    function getMaxKey() {\n        \n    }\n  \n    /**\n     * Returns one of the keys with Minimal value.\n     * @return String\n     */\n    function getMinKey() {\n        \n    }\n}\n\n/**\n * Your AllOne object will be instantiated and called as such:\n * $obj = AllOne();\n * $obj->inc($key);\n * $obj->dec($key);\n * $ret_3 = $obj->getMaxKey();\n * $ret_4 = $obj->getMinKey();\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24.6K\", \"totalSubmission\": \"79.4K\", \"totalAcceptedRaw\": 24648, \"totalSubmissionRaw\": 79371, \"acRate\": \"31.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"AllOne\",\"getMaxKey\",\"getMinKey\"]\n[[],[],[]]",
+  "metaData": "{\r\n    \"classname\": \"AllOne\",\r\n    \"constructor\": {\r\n        \"params\": [\r\n        ],\r\n        \"comment\": \"Initialize your data structure here.\"\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"inc\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"string\",\r\n                    \"name\": \"key\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            },\r\n            \"comment\": \"Inserts a new key <Key> with value 1. Or increments an existing key by 1.\"\r\n        },\r\n        {\r\n            \"name\" : \"dec\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"string\",\r\n                    \"name\": \"key\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            },\r\n            \"comment\": \"Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.\"\r\n        },\r\n        {\r\n            \"name\" : \"getMaxKey\",\r\n            \"params\": [\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"string\"\r\n            },\r\n            \"comment\": \"Returns one of the keys with maximal value.\"\r\n        },\r\n        {\r\n            \"name\" : \"getMinKey\",\r\n            \"params\": [\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"string\"\r\n            },\r\n            \"comment\": \"Returns one of the keys with Minimal value.\"\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

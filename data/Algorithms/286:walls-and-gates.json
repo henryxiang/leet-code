@@ -1,0 +1,105 @@
+{
+  "questionId": "286",
+  "questionFrontendId": "286",
+  "boundTopicId": null,
+  "title": "Walls and Gates",
+  "titleSlug": "walls-and-gates",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given a <i>m x n</i> 2D grid initialized with these three possible values.</p>\r\n\r\n<ol>\r\n\t<li><code>-1</code> - A wall or an obstacle.</li>\r\n\t<li><code>0</code> - A gate.</li>\r\n\t<li><code>INF</code> - Infinity means an empty room. We use the value <code>2<sup>31</sup> - 1 = 2147483647</code> to represent <code>INF</code> as you may assume that the distance to a gate is less than <code>2147483647</code>.</li>\r\n</ol>\r\n\r\n<p>Fill each empty room with the distance to its <i>nearest</i> gate. If it is impossible to reach a gate, it should be filled with <code>INF</code>.</p>\r\n\r\n<p><strong>Example:&nbsp;</strong></p>\r\n\r\n<p>Given the 2D grid:</p>\r\n\r\n<pre>\r\nINF  -1  0  INF\r\nINF INF INF  -1\r\nINF  -1 INF  -1\r\n  0  -1 INF INF\r\n</pre>\r\n\r\n<p>After running your function, the 2D grid should be:</p>\r\n\r\n<pre>\r\n  3  -1   0   1\r\n  2   2   1  -1\r\n  1  -1   2  -1\r\n  0  -1   3   4\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 821,
+  "dislikes": 13,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Surrounded Regions\", \"titleSlug\": \"surrounded-regions\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Islands\", \"titleSlug\": \"number-of-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Distance from All Buildings\", \"titleSlug\": \"shortest-distance-from-all-buildings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Robot Room Cleaner\", \"titleSlug\": \"robot-room-cleaner\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Rotting Oranges\", \"titleSlug\": \"rotting-oranges\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    void wallsAndGates(vector<vector<int>>& rooms) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public void wallsAndGates(int[][] rooms) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def wallsAndGates(self, rooms):\n        \"\"\"\n        :type rooms: List[List[int]]\n        :rtype: None Do not return anything, modify rooms in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def wallsAndGates(self, rooms: List[List[int]]) -> None:\n        \"\"\"\n        Do not return anything, modify rooms in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nvoid wallsAndGates(int** rooms, int roomsSize, int* roomsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public void WallsAndGates(int[][] rooms) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} rooms\n * @return {void} Do not return anything, modify rooms in-place instead.\n */\nvar wallsAndGates = function(rooms) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} rooms\n# @return {Void} Do not return anything, modify rooms in-place instead.\ndef walls_and_gates(rooms)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func wallsAndGates(_ rooms: inout [[Int]]) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func wallsAndGates(rooms [][]int)  {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def wallsAndGates(rooms: Array[Array[Int]]): Unit = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun wallsAndGates(rooms: Array<IntArray>): Unit {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn walls_and_gates(rooms: &mut Vec<Vec<i32>>) {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $rooms\n     * @return NULL\n     */\n    function wallsAndGates(&$rooms) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"94K\", \"totalSubmission\": \"182.2K\", \"totalAcceptedRaw\": 94006, \"totalSubmissionRaw\": 182212, \"acRate\": \"51.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "15",
+    "canSeeDetail": true,
+    "url": "/articles/walls-and-gates/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n#### Approach #1 (Brute Force) [Time Limit Exceeded]\r\n\r\nThe brute force approach is simple, we just implement a breadth-first search from each empty room to its nearest gate.\r\n\r\nWhile we are doing the search, we use a 2D array called `distance` to keep track of the distance from the starting point. It also implicitly tell us whether a position had been visited so it won't be inserted into the queue again.\r\n\r\n```java\r\nprivate static final int EMPTY = Integer.MAX_VALUE;\r\nprivate static final int GATE = 0;\r\nprivate static final int WALL = -1;\r\nprivate static final List<int[]> DIRECTIONS = Arrays.asList(\r\n        new int[] { 1,  0},\r\n        new int[] {-1,  0},\r\n        new int[] { 0,  1},\r\n        new int[] { 0, -1}\r\n);\r\n\r\npublic void wallsAndGates(int[][] rooms) {\r\n    if (rooms.length == 0) return;\r\n    for (int row = 0; row < rooms.length; row++) {\r\n        for (int col = 0; col < rooms[0].length; col++) {\r\n            if (rooms[row][col] == EMPTY) {\r\n                rooms[row][col] = distanceToNearestGate(rooms, row, col);\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\nprivate int distanceToNearestGate(int[][] rooms, int startRow, int startCol) {\r\n    int m = rooms.length;\r\n    int n = rooms[0].length;\r\n    int[][] distance = new int[m][n];\r\n    Queue<int[]> q = new LinkedList<>();\r\n    q.add(new int[] { startRow, startCol });\r\n    while (!q.isEmpty()) {\r\n        int[] point = q.poll();\r\n        int row = point[0];\r\n        int col = point[1];\r\n        for (int[] direction : DIRECTIONS) {\r\n            int r = row + direction[0];\r\n            int c = col + direction[1];\r\n            if (r < 0 || c < 0 || r >= m || c >= n || rooms[r][c] == WALL\r\n                    || distance[r][c] != 0) {\r\n                continue;\r\n            }\r\n            distance[r][c] = distance[row][col] + 1;\r\n            if (rooms[r][c] == GATE) {\r\n                return distance[r][c];\r\n            }\r\n            q.add(new int[] { r, c });\r\n        }\r\n    }\r\n    return Integer.MAX_VALUE;\r\n}\r\n```\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(m^2n^2)$$.\r\nFor each point in the $$m \\times n$$ size grid, the gate could be at most $$m \\times n$$ steps away.\r\n\r\n* Space complexity : $$O(mn)$$.\r\nThe space complexity depends on the queue's size. Since we won't insert points that have been visited before into the queue, we insert at most $$m \\times n$$ points into the queue.\r\n\r\n---\r\n#### Approach #2 (Breadth-first Search) [Accepted]\r\n\r\nInstead of searching from an empty room to the gates, how about searching the other way round? In other words, we initiate breadth-first search (BFS) from all gates at the same time. Since BFS guarantees that we search all rooms of distance *d* before searching rooms of distance *d* + 1, the distance to an empty room must be the shortest.\r\n\r\n```java\r\nprivate static final int EMPTY = Integer.MAX_VALUE;\r\nprivate static final int GATE = 0;\r\nprivate static final List<int[]> DIRECTIONS = Arrays.asList(\r\n        new int[] { 1,  0},\r\n        new int[] {-1,  0},\r\n        new int[] { 0,  1},\r\n        new int[] { 0, -1}\r\n);\r\n\r\npublic void wallsAndGates(int[][] rooms) {\r\n    int m = rooms.length;\r\n    if (m == 0) return;\r\n    int n = rooms[0].length;\r\n    Queue<int[]> q = new LinkedList<>();\r\n    for (int row = 0; row < m; row++) {\r\n        for (int col = 0; col < n; col++) {\r\n            if (rooms[row][col] == GATE) {\r\n                q.add(new int[] { row, col });\r\n            }\r\n        }\r\n    }\r\n    while (!q.isEmpty()) {\r\n        int[] point = q.poll();\r\n        int row = point[0];\r\n        int col = point[1];\r\n        for (int[] direction : DIRECTIONS) {\r\n            int r = row + direction[0];\r\n            int c = col + direction[1];\r\n            if (r < 0 || c < 0 || r >= m || c >= n || rooms[r][c] != EMPTY) {\r\n                continue;\r\n            }\r\n            rooms[r][c] = rooms[row][col] + 1;\r\n            q.add(new int[] { r, c });\r\n        }\r\n    }\r\n}\r\n```\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$O(mn)$$.\r\n\r\n    If you are having difficulty to derive the time complexity, start simple.\r\n\r\n    Let us start with the case with only one gate. The breadth-first search takes at most $$m \\times n$$ steps to reach all rooms, therefore the time complexity is $$O(mn)$$. But what if you are doing breadth-first search from $$k$$ gates?\r\n\r\n    Once we set a room's distance, we are basically marking it as visited, which means each room is visited at most once. Therefore, the time complexity does not depend on the number of gates and is $$O(mn)$$.\r\n\r\n* Space complexity : $$O(mn)$$.\r\nThe space complexity depends on the queue's size. We insert at most $$m \\times n$$ points into the queue.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "15",
+      "count": 33,
+      "average": 4.182,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-1],[2147483647,-1,2147483647,-1],[0,-1,2147483647,2147483647]]",
+  "metaData": "{\r\n  \"name\": \"wallsAndGates\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"rooms\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"void\"\r\n  },\r\n  \"output\": {\r\n    \"paramindex\": 0\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

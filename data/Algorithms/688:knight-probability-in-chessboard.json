@@ -1,0 +1,111 @@
+{
+  "questionId": "688",
+  "questionFrontendId": "688",
+  "boundTopicId": null,
+  "title": "Knight Probability in Chessboard",
+  "titleSlug": "knight-probability-in-chessboard",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On an <code>N</code>x<code>N</code> chessboard, a knight starts at the <code>r</code>-th row and <code>c</code>-th column and attempts to make exactly <code>K</code> moves. The rows and columns are 0 indexed, so the top-left square is <code>(0, 0)</code>, and the bottom-right square is <code>(N-1, N-1)</code>.</p>\r\n\r\n<p>A chess knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img src=\"https://assets.leetcode.com/uploads/2018/10/12/knight.png\" style=\"width: 200px; height: 200px;\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Each time the knight is to move, it chooses one of eight possible moves uniformly at random (even if the piece would go off the chessboard) and moves there.</p>\r\n\r\n<p>The knight continues moving until it has made exactly <code>K</code> moves or has moved off the chessboard. Return the probability that the knight remains on the board after it has stopped moving.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> 3, 2, 0, 0\r\n<b>Output:</b> 0.0625\r\n<b>Explanation:</b> There are two moves (to (1,2), (2,1)) that will keep the knight on the board.\r\nFrom each of those positions, there are also two moves that will keep the knight on the board.\r\nThe total probability the knight stays on the board is 0.0625.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ul>\r\n\t<li><code>N</code> will be between 1 and 25.</li>\r\n\t<li><code>K</code> will be between 0 and 100.</li>\r\n\t<li>The knight always initially starts on the board.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 525,
+  "dislikes": 116,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Out of Boundary Paths\", \"titleSlug\": \"out-of-boundary-paths\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    double knightProbability(int N, int K, int r, int c) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public double knightProbability(int N, int K, int r, int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def knightProbability(self, N, K, r, c):\n        \"\"\"\n        :type N: int\n        :type K: int\n        :type r: int\n        :type c: int\n        :rtype: float\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def knightProbability(self, N: int, K: int, r: int, c: int) -> float:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\ndouble knightProbability(int N, int K, int r, int c){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public double KnightProbability(int N, int K, int r, int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @param {number} K\n * @param {number} r\n * @param {number} c\n * @return {number}\n */\nvar knightProbability = function(N, K, r, c) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} k\n# @param {Integer} r\n# @param {Integer} c\n# @return {Float}\ndef knight_probability(n, k, r, c)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func knightProbability(_ N: Int, _ K: Int, _ r: Int, _ c: Int) -> Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func knightProbability(N int, K int, r int, c int) float64 {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def knightProbability(N: Int, K: Int, r: Int, c: Int): Double = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun knightProbability(N: Int, K: Int, r: Int, c: Int): Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn knight_probability(n: i32, k: i32, r: i32, c: i32) -> f64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @param Integer $K\n     * @param Integer $r\n     * @param Integer $c\n     * @return Float\n     */\n    function knightProbability($N, $K, $r, $c) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"29.9K\", \"totalSubmission\": \"64.3K\", \"totalAcceptedRaw\": 29940, \"totalSubmissionRaw\": 64301, \"acRate\": \"46.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "254",
+    "canSeeDetail": true,
+    "url": "/articles/knight-probability-in-chessboard/",
+    "content": "[TOC]\n\n#### Approach #1: Dynamic Programming [Accepted]\n\n**Intuition and Algorithm**\n\nLet `f[r][c][steps]` be the probability of being on square `(r, c)` after `steps` steps.  Based on how a knight moves, we have the following recursion:\n\n$$f[r][c][steps] = \\sum_{dr, dc} f[r+dr][c+dc][steps-1] / 8.0$$\n\nwhere the sum is taken over the eight $$(dr, dc)$$ pairs $$(2, 1),$$ $$(2, -1),$$ $$(-2, 1),$$ $$(-2, -1),$$ $$(1, 2),$$ $$(1, -2),$$ $$(-1, 2),$$ $$(-1, -2)$$.\n\nInstead of using a three-dimensional array `f`, we will use two two-dimensional ones `dp` and `dp2`, storing the result of the two most recent layers we are working on.  `dp2` will represent `f[][][steps]`, and `dp` will represent `f[][][steps-1]`.\n\n<iframe src=\"https://leetcode.com/playground/VTNPLt6H/shared\" frameBorder=\"0\" name=\"VTNPLt6H\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2 K)$$ where $$N, K$$ are defined as in the problem.  We do $$O(1)$$ work on each layer `dp` of $$N^2$$ elements, and there are $$K$$ layers considered.\n\n* Space Complexity: $$O(N^2)$$, the size of `dp` and `dp2`.\n\n---\n#### Approach #2: Matrix Exponentiation [Accepted]\n\n**Intuition**\n\nThe recurrence expressed in *Approach #1* expressed states that transitioned to a linear combination of other states.  Any time this happens, we can represent the entire transition as a matrix of those linear combinations.  Then, the $$n$$-th power of this matrix represents the transition of $$n$$ moves, and thus we can reduce the problem to a problem of matrix exponentiation.\n\n**Algorithm**\n\nFirst, there is a lot of symmetry on the board that we can exploit.  Naively, there are $$N^2$$ possible states the knight can be in (assuming it is on the board).  Because of symmetry through the horizontal, vertical, and diagonal axes, we can assume that the knight is in the top-left quadrant of the board, and that the column number is equal to or larger than the row number.  For any square, the square that is found by reflecting about these axes to satisfy these conditions will be the *canonical index* of that square.\n\nThis will reduce the number of states from $$N^2$$ to approximately $$\\frac{N^2}{8}$$, which makes the following (cubic) matrix exponentiation on this $$O(\\frac{N^2}{8}) \\times O(\\frac{N^2}{8})$$ matrix approximately $$8^3$$ times faster.\n\nNow, if we know that every state becomes some linear combination of states after one move, then let's write a transition matrix $$\\mathcal{T}$$ of them, where the $$i$$-th row of $$\\mathcal{T}$$ represents the linear combination of states that the $$i$$-th state goes to.  Then, $$\\mathcal{T}^n$$ represents a transition of $$n$$ moves, for which we want the sum of the $$i$$-th row, where $$i$$ is the index of the starting square.\n\n<iframe src=\"https://leetcode.com/playground/ARu5yUUd/shared\" frameBorder=\"0\" name=\"ARu5yUUd\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^6 \\log(K))$$ where $$N, K$$ are defined as in the problem.  There are approximately $$\\frac{N^2}{8}$$ canonical states, which makes our matrix multiplication $$O(N^6)$$.  To find the $$K$$-th power of this matrix, we make $$O(\\log(K))$$ matrix multiplications.\n\n* Space Complexity: $$O(N^4)$$.  The matrix has approximately $$\\frac{N^4}{64}$$ elements.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "251",
+      "count": 20,
+      "average": 4.65,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "3\n2\n0\n0",
+  "metaData": "{\r\n  \"name\": \"knightProbability\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"r\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"c\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"double\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

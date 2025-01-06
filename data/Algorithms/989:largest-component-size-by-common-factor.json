@@ -1,0 +1,115 @@
+{
+  "questionId": "989",
+  "questionFrontendId": "952",
+  "boundTopicId": null,
+  "title": "Largest Component Size by Common Factor",
+  "titleSlug": "largest-component-size-by-common-factor",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-empty&nbsp;array of unique positive integers <code>A</code>, consider the following graph:</p>\r\n\r\n<ul>\r\n\t<li>There are <code>A.length</code> nodes, labelled <code>A[0]</code> to <code>A[A.length - 1];</code></li>\r\n\t<li>There is an edge between <code>A[i]</code> and <code>A[j]</code>&nbsp;if and only if&nbsp;<code>A[i]</code> and <code>A[j]</code> share a common factor greater than 1.</li>\r\n</ul>\r\n\r\n<p>Return the size of the largest connected component in the graph.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[4,6,15,35]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">4</span>\r\n<span><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/01/ex1.png\" style=\"width: 257px; height: 50px;\" /></span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[20,50,9,63]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">2</span>\r\n<span><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/01/ex2.png\" style=\"width: 293px; height: 50px;\" /></span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[2,3,6,7,4,12,21,39]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">8</span>\r\n<span><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/01/ex3.png\" style=\"width: 346px; height: 180px;\" /></span>\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 20000</code></li>\r\n\t<li><code>1 &lt;= A[i] &lt;= 100000</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 147,
+  "dislikes": 34,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "safarizhou",
+      "profileUrl": "/safarizhou/",
+      "avatarUrl": "https://www.gravatar.com/avatar/f4b1dc78312451dc7b20da4110ad7625.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int largestComponentSize(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int largestComponentSize(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def largestComponentSize(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def largestComponentSize(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint largestComponentSize(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LargestComponentSize(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar largestComponentSize = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef largest_component_size(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func largestComponentSize(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func largestComponentSize(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def largestComponentSize(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun largestComponentSize(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn largest_component_size(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function largestComponentSize($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.9K\", \"totalSubmission\": \"24.1K\", \"totalAcceptedRaw\": 6863, \"totalSubmissionRaw\": 24126, \"acRate\": \"28.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "629",
+    "canSeeDetail": true,
+    "url": "/articles/largest-component-size-by-common-factor/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Union-Find\n\nWe will skip the explanation of how a DSU structure is implemented.  Please refer to [https://leetcode.com/problems/redundant-connection/solution/](https://leetcode.com/problems/redundant-connection/solution/) for a tutorial on DSU.\n\n**Intuition**\n\nLet $$W = \\max(A[i])$$, and $$R = \\sqrt{W}$$.  For each value $$A[i]$$, there is at most one prime factor $$p \\geq R$$ dividing $$A[i]$$.  Let's call $$A[i]$$'s \"big prime\" this $$p$$, if it exists.\n\nThis means that there are at most $$R + A\\text{.length}$$ unique prime divisors of elements in $$A$$:  the big primes correspond to a maximum of $$A\\text{.length}$$ values, and the small primes are all less than $$R$$, so there's at most $$R$$ of them too.\n\n**Algorithm**\n\nFactor each $$A[i]$$ into prime factors, and index every occurrence of these primes.  (To save time, we can use a sieve.  Please see this article's comments for more details.)\n\nThen, use a union-find structure to union together any prime factors that came from the same $$A[i]$$.\n\nFinally, we can count the size of each component, by inspecting and counting the id of the component each $$A[i]$$ belongs to.\n\n<iframe src=\"https://leetcode.com/playground/MAiR5RjS/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"MAiR5RjS\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N\\sqrt{W})$$ where $$N$$ is the length of `A`, and $$W = \\max(A[i])$$.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "615",
+      "count": 35,
+      "average": 2.657,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,6,15,35]",
+  "metaData": "{\r\n  \"name\": \"largestComponentSize\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

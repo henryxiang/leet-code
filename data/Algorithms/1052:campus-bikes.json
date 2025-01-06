@@ -1,0 +1,106 @@
+{
+  "questionId": "1052",
+  "questionFrontendId": "1057",
+  "boundTopicId": null,
+  "title": "Campus Bikes",
+  "titleSlug": "campus-bikes",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On a campus represented as a 2D grid, there are <code>N</code> workers and <code>M</code> bikes, with <code>N &lt;= M</code>. Each worker and bike is a 2D coordinate on this grid.</p>\r\n\r\n<p>Our goal is to assign a bike to each worker. Among the available bikes and workers, we choose the (worker, bike) pair with the shortest Manhattan distance between each other, and assign the bike to that worker. (If there are multiple (worker, bike) pairs with the same shortest Manhattan distance, we choose the pair with the smallest worker index; if there are multiple ways to do that, we choose the pair with the smallest bike index). We repeat this process until there are no available workers.</p>\r\n\r\n<p>The Manhattan distance between two points <code>p1</code> and <code>p2</code> is <code>Manhattan(p1, p2) = |p1.x - p2.x| + |p1.y - p2.y|</code>.</p>\r\n\r\n<p>Return a vector <code>ans</code> of length <code>N</code>, where <code>ans[i]</code> is the index (0-indexed) of the bike that the <code>i</code>-th worker is assigned to.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/06/1261_example_1_v2.png\" style=\"width: 264px; height: 264px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>workers = <span id=\"example-input-1-1\">[[0,0],[2,1]]</span>, bikes = <span id=\"example-input-1-2\">[[1,2],[3,3]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[1,0]</span>\r\n<strong>Explanation: </strong>\r\nWorker 1 grabs Bike 0 as they are closest (without ties), and Worker 0 is assigned Bike 1. So the output is [1, 0].\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/03/06/1261_example_2_v2.png\" style=\"width: 264px; height: 264px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>workers = <span id=\"example-input-2-1\">[[0,0],[1,1],[2,0]]</span>, bikes = <span id=\"example-input-2-2\">[[1,0],[2,2],[2,1]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[0,2,1]</span>\r\n<strong>Explanation: </strong>\r\nWorker 0 grabs Bike 0 at first. Worker 1 and Worker 2 share the same distance to Bike 2, thus Worker 1 is assigned to Bike 2, and Worker 2 will take Bike 1. So the output is [0,2,1].\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= workers[i][j], bikes[i][j] &lt; 1000</code></li>\r\n\t<li>All worker and bike locations are distinct.</li>\r\n\t<li><code>1 &lt;= workers.length &lt;= bikes.length &lt;= 1000</code></li>\r\n</ol>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 307,
+  "dislikes": 50,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Campus Bikes II\", \"titleSlug\": \"campus-bikes-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "karthikbuddha",
+      "profileUrl": "/karthikbuddha/",
+      "avatarUrl": "https://assets.leetcode.com/users/karthikbuddha/avatar_1522621566.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 17}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<int> assignBikes(vector<vector<int>>& workers, vector<vector<int>>& bikes) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] assignBikes(int[][] workers, int[][] bikes) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def assignBikes(self, workers, bikes):\n        \"\"\"\n        :type workers: List[List[int]]\n        :type bikes: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def assignBikes(self, workers: List[List[int]], bikes: List[List[int]]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* assignBikes(int** workers, int workersSize, int* workersColSize, int** bikes, int bikesSize, int* bikesColSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[] AssignBikes(int[][] workers, int[][] bikes) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} workers\n * @param {number[][]} bikes\n * @return {number[]}\n */\nvar assignBikes = function(workers, bikes) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} workers\r\n# @param {Integer[][]} bikes\r\n# @return {Integer[]}\r\ndef assign_bikes(workers, bikes)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func assignBikes(_ workers: [[Int]], _ bikes: [[Int]]) -> [Int] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func assignBikes(workers [][]int, bikes [][]int) []int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def assignBikes(workers: Array[Array[Int]], bikes: Array[Array[Int]]): Array[Int] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun assignBikes(workers: Array<IntArray>, bikes: Array<IntArray>): IntArray {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn assign_bikes(workers: Vec<Vec<i32>>, bikes: Vec<Vec<i32>>) -> Vec<i32> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $workers\n     * @param Integer[][] $bikes\n     * @return Integer[]\n     */\n    function assignBikes($workers, $bikes) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"21.5K\", \"totalSubmission\": \"36.8K\", \"totalAcceptedRaw\": 21482, \"totalSubmissionRaw\": 36801, \"acRate\": \"58.4%\"}",
+  "hints": [
+    "<p>Sort the elements by distance. In case of a tie, sort them by the index of the worker. After that, if there are still ties, sort them by the index of the bike.</p>\r\n\r\n<p>Can you do this in less than O(nlogn) time, where n is the total number of pairs between workers and bikes?</p>",
+    "Loop the sorted elements and match each pair of worker and bike if the given worker and bike where not used."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[0,0],[2,1]]\n[[1,2],[3,3]]",
+  "metaData": "{\r\n  \"name\": \"assignBikes\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"workers\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"bikes\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

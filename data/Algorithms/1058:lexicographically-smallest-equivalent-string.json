@@ -1,0 +1,101 @@
+{
+  "questionId": "1058",
+  "questionFrontendId": "1061",
+  "boundTopicId": null,
+  "title": "Lexicographically Smallest Equivalent String",
+  "titleSlug": "lexicographically-smallest-equivalent-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given strings <code>A</code> and <code>B</code> of the same length, we say A[i] and B[i] are equivalent characters. For example, if <code>A = &quot;abc&quot;</code> and <code>B = &quot;cde&quot;</code>, then we have <code>&#39;a&#39; == &#39;c&#39;, &#39;b&#39; == &#39;d&#39;, &#39;c&#39; == &#39;e&#39;</code>.</p>\r\n\r\n<p>Equivalent characters follow the usual rules of any equivalence relation:</p>\r\n\r\n<ul>\r\n\t<li>Reflexivity: &#39;a&#39; == &#39;a&#39;</li>\r\n\t<li>Symmetry: &#39;a&#39; == &#39;b&#39; implies &#39;b&#39; == &#39;a&#39;</li>\r\n\t<li>Transitivity: &#39;a&#39; == &#39;b&#39; and &#39;b&#39; == &#39;c&#39; implies &#39;a&#39; == &#39;c&#39;</li>\r\n</ul>\r\n\r\n<p>For example, given the equivalency information from <code>A</code> and <code>B</code> above, <code>S = &quot;eed&quot;</code>, <code>&quot;acd&quot;</code>, and <code>&quot;aab&quot;</code> are equivalent strings, and <code>&quot;aab&quot;</code> is the lexicographically smallest equivalent string of <code>S</code>.</p>\r\n\r\n<p>Return the lexicographically smallest equivalent string of <code>S</code> by using the equivalency information from <code>A</code> and <code>B</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">&quot;parker&quot;</span>, B = <span id=\"example-input-1-2\">&quot;morris&quot;</span>, S = <span id=\"example-input-1-3\">&quot;parser&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;makkek&quot;</span>\r\n<strong>Explanation:</strong> Based on the equivalency information in <code>A</code> and <code>B</code>, we can group their characters as <code>[m,p]</code>, <code>[a,o]</code>, <code>[k,r,s]</code>, <code>[e,i]</code>. The characters in each group are equivalent and sorted in lexicographical order. So the answer is <code>&quot;makkek&quot;</code>.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">&quot;hello&quot;</span>, B = <span id=\"example-input-2-2\">&quot;world&quot;</span>, S = <span id=\"example-input-2-3\">&quot;hold&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">&quot;hdld&quot;</span>\r\n<strong>Explanation: </strong> Based on the equivalency information in <code>A</code> and <code>B</code>, we can group their characters as <code>[h,w]</code>, <code>[d,e,o]</code>, <code>[l,r]</code>. So only the second letter <code>&#39;o&#39;</code> in <code>S</code> is changed to <code>&#39;d&#39;</code>, the answer is <code>&quot;hdld&quot;</code>.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-3-1\">&quot;leetcode&quot;</span>, B = <span id=\"example-input-3-2\">&quot;programs&quot;</span>, S = <span id=\"example-input-3-3\">&quot;sourcecode&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">&quot;aauaaaaada&quot;</span>\r\n<strong>Explanation: </strong> We group the equivalent characters in <code>A</code> and <code>B</code> as <code>[a,o,e,r,s,c]</code>, <code>[l,p]</code>, <code>[g,t]</code> and <code>[d,m]</code>, thus all letters in <code>S</code> except <code>&#39;u&#39;</code> and <code>&#39;d&#39;</code> are transformed to <code>&#39;a&#39;</code>, the answer is <code>&quot;aauaaaaada&quot;</code>.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>String <code>A</code>, <code>B</code> and <code>S</code> consist of only lowercase English letters from <code>&#39;a&#39;</code> - <code>&#39;z&#39;</code>.</li>\r\n\t<li>The lengths of string <code>A</code>, <code>B</code> and <code>S</code> are between <code>1</code> and <code>1000</code>.</li>\r\n\t<li>String <code>A</code> and <code>B</code> are of the same length.</li>\r\n</ol>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 50,
+  "dislikes": 4,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    string smallestEquivalentString(string A, string B, string S) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String smallestEquivalentString(String A, String B, String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestEquivalentString(self, A, B, S):\n        \"\"\"\n        :type A: str\n        :type B: str\n        :type S: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestEquivalentString(self, A: str, B: str, S: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * smallestEquivalentString(char * A, char * B, char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string SmallestEquivalentString(string A, string B, string S) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} A\n * @param {string} B\n * @param {string} S\n * @return {string}\n */\nvar smallestEquivalentString = function(A, B, S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} a\r\n# @param {String} b\r\n# @param {String} s\r\n# @return {String}\r\ndef smallest_equivalent_string(a, b, s)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func smallestEquivalentString(_ A: String, _ B: String, _ S: String) -> String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestEquivalentString(A string, B string, S string) string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def smallestEquivalentString(A: String, B: String, S: String): String = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun smallestEquivalentString(A: String, B: String, S: String): String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_equivalent_string(a: String, b: String, s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $A\n     * @param String $B\n     * @param String $S\n     * @return String\n     */\n    function smallestEquivalentString($A, $B, $S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.9K\", \"totalSubmission\": \"3K\", \"totalAcceptedRaw\": 1950, \"totalSubmissionRaw\": 3040, \"acRate\": \"64.1%\"}",
+  "hints": [
+    "Model these equalities as edges of a graph.",
+    "Group each connected component of the graph and assign each node of this component to the node with the lowest lexicographically character.",
+    "Finally convert the string with the precalculated information."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"parker\"\n\"morris\"\n\"parser\"",
+  "metaData": "{\r\n  \"name\": \"smallestEquivalentString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

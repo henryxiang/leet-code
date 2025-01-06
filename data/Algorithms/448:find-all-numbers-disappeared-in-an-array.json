@@ -1,0 +1,115 @@
+{
+  "questionId": "448",
+  "questionFrontendId": "448",
+  "boundTopicId": null,
+  "title": "Find All Numbers Disappeared in an Array",
+  "titleSlug": "find-all-numbers-disappeared-in-an-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers where 1 &le; a[i] &le; <i>n</i> (<i>n</i> = size of array), some elements appear twice and others appear once.</p>\r\n\r\n<p>Find all the elements of [1, <i>n</i>] inclusive that do not appear in this array.</p>\r\n\r\n<p>Could you do it without extra space and in O(<i>n</i>) runtime? You may assume the returned list does not count as extra space.</p>\r\n\r\n<p><b>Example:</b>\r\n<pre>\r\n<b>Input:</b>\r\n[4,3,2,7,8,2,3,1]\r\n\r\n<b>Output:</b>\r\n[5,6]\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 2093,
+  "dislikes": 192,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"First Missing Positive\", \"titleSlug\": \"first-missing-positive\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Find All Duplicates in an Array\", \"titleSlug\": \"find-all-duplicates-in-an-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "yuhaowang001",
+      "profileUrl": "/yuhaowang001/",
+      "avatarUrl": "https://www.gravatar.com/avatar/2a2bd73777f678c34f5ab37484776fe4.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> findDisappearedNumbers(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> findDisappearedNumbers(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findDisappearedNumbers(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* findDisappearedNumbers(int* nums, int numsSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> FindDisappearedNumbers(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar findDisappearedNumbers = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer[]}\ndef find_disappeared_numbers(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findDisappearedNumbers(_ nums: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findDisappearedNumbers(nums []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findDisappearedNumbers(nums: Array[Int]): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findDisappearedNumbers(nums: IntArray): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_disappeared_numbers(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer[]\n     */\n    function findDisappearedNumbers($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"196.6K\", \"totalSubmission\": \"359.3K\", \"totalAcceptedRaw\": 196600, \"totalSubmissionRaw\": 359272, \"acRate\": \"54.7%\"}",
+  "hints": [
+    "This is a really easy problem if you decide to use additional memory. For those trying to write an initial solution using additional memory, think <b>counters!</b>",
+    "However, the trick really is to not use any additional space than what is already available to use. Sometimes, multiple passes over the input array help find the solution. However, there's an interesting piece of information in this problem that makes it easy to re-use the input array itself for the solution.",
+    "The problem specifies that the numbers in the array will be in the range [1, n] where n is the number of elements in the array. Can we use this information and modify the array in-place somehow to find what we need?"
+  ],
+  "solution": {
+    "id": "787",
+    "canSeeDetail": true,
+    "url": "/articles/find-all-numbers-disappeared-in-an-array/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n#### Approach 1: Using Hash Map\r\n\r\n**Intuition**\r\n\r\nThe intuition behind using a hash map is pretty clear in this case. We are given that the array would be of size `N` and it should contain numbers from `1` to `N`. However, some of the numbers are missing. All we have to do is keep track of which numbers we encounter in the array and then iterate from $$1 \\cdots N$$ and check which numbers did not appear in the hash table. Those will be our missing numbers. Let's look at a formal algorithm based on this idea and then an animation explaining the same with the help of a simple example.\r\n\r\n**Algorithm**\r\n\r\n1. Initialize a hash map, `hash` to keep track of the numbers that we encounter in the array. Note that we can use a `set` data structure as well in this case since we are not concerned about the frequency counts of elements.\r\n\r\n    <center>\r\n    <img src=\"../Figures/448/anim1.png\" width=\"700\"/>\r\n    </center>\r\n    \r\n    > Note that for the purposes of illustration, we have use a hash map of size 14 and have ordered the keys of the hash map from 0 to 14. Also, we will be using a simple hash function that directly maps the array entries to their corresponding keys in the hash map. Usually, the mapping is not this simple and is dependent upon the hash function being used in the implementation of the hash map. \r\n  \r\n2. Next, iterate over the given array one element at a time and for each element, insert an entry in the hash map. Even if an entry were to exist before in the hash map, it will simply be over-written. For the above example, let's look at the final state of the hash map once we process the last element of the array.\r\n\r\n    <center>\r\n    <img src=\"../Figures/448/anim9.png\" width=\"700\"/>\r\n    </center>\r\n\r\n3. Now that we know the `unique` set of elements from the array, we can simply find out the missing elements from the range $$1 \\cdots N$$.\r\n4. Iterate over all the numbers from $$1 \\cdots N$$ and for each number, check if there's an entry in the hash map. If there is no entry, add that missing number to a result array that we will return from the function eventually. \r\n\r\n<center>\r\n\r\n!?!../Documents/448_Disappeared_Nums.json:600,413!?!\r\n\r\n</center>\r\n\r\n<iframe src=\"https://leetcode.com/playground/xcNTELpF/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"xcNTELpF\"></iframe>\r\n\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity : $$O(N)$$\r\n* Space Complexity : $$O(N)$$\r\n<br/>\r\n<br/>\r\n\r\n---\r\n\r\n#### Approach 2: O(1) Space InPlace Modification Solution\r\n\r\n**Intuition**\r\n\r\nWe definitely need to keep track of all the `unique` numbers that appear in the array. However, we don't want to use any extra space for it. This solution that we will look at in just a moment springs from the fact that\r\n\r\n> All the elements are in the range [1, N]\r\n\r\nSince we are given this information, we can make use of the input array itself to somehow `mark visited` numbers and then find our missing numbers. Now, we don't want to change the actual data in the array but who's stopping us from changing the `magnitude` of numbers in the array? That is the basic idea behind this algorithm. \r\n\r\n> We will be negating the numbers seen in the array and use the sign of each of the numbers for finding our missing numbers. We will be treating numbers in the array as indices and mark corresponding locations in the array as negative.\r\n\r\n**Algorithm**\r\n\r\n1. Iterate over the input array one element at a time.\r\n2. For each element `nums[i]`, mark the element at the corresponding location negative if it's not already marked so i.e. $$nums[\\; nums[i] \\;- 1\\;] \\times -1$$ .\r\n3. Now, loop over numbers from $$1 \\cdots N$$ and for each number check if `nums[j]` is negative. If it is negative, that means we've seen this number somewhere in the array. \r\n4. Add all the numbers to the resultant array which don't have their corresponding locations marked as negative in the original array.\r\n\r\n<center>\r\n\r\n!?!../Documents/448_Disappeared_Nums_2.json:600,302!?!\r\n\r\n</center>\r\n\r\n<iframe src=\"https://leetcode.com/playground/M7Zw9FbW/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"M7Zw9FbW\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity : $$O(N)$$\r\n* Space Complexity : $$O(1)$$ since we are reusing the input array itself as a hash table and the space occupied by the output array doesn't count toward the space complexity of the algorithm. \r\n<br/>\r\n<br/>\r\n\r\n\r\n---\r\nAnalysis written by: [@sachinmalhotra1993](https://leetcode.com/sachinmalhotra1993/).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "765",
+      "count": 11,
+      "average": 4.636,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,3,2,7,8,2,3,1]",
+  "metaData": "{\r\n  \"name\": \"findDisappearedNumbers\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

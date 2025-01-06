@@ -1,0 +1,113 @@
+{
+  "questionId": "357",
+  "questionFrontendId": "357",
+  "boundTopicId": null,
+  "title": "Count Numbers with Unique Digits",
+  "titleSlug": "count-numbers-with-unique-digits",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <b>non-negative</b> integer n, count all numbers with unique digits, x, where 0 &le; x &lt; 10<sup>n</sup>.</p>\r\n\r\n<div>\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">91 \r\n<strong>Explanation: </strong></span>The answer should be the total numbers in the range of 0 &le; x &lt; 100, \r\n&nbsp;            excluding <code>11,22,33,44,55,66,77,88,99</code>\r\n</pre>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 312,
+  "dislikes": 728,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "memoryless",
+      "profileUrl": "/memoryless/",
+      "avatarUrl": "https://assets.leetcode.com/users/memoryless/avatar_1568074249.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countNumbersWithUniqueDigits(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countNumbersWithUniqueDigits(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countNumbersWithUniqueDigits(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countNumbersWithUniqueDigits(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint countNumbersWithUniqueDigits(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountNumbersWithUniqueDigits(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar countNumbersWithUniqueDigits = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef count_numbers_with_unique_digits(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countNumbersWithUniqueDigits(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countNumbersWithUniqueDigits(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countNumbersWithUniqueDigits(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countNumbersWithUniqueDigits(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_numbers_with_unique_digits(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function countNumbersWithUniqueDigits($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"69.5K\", \"totalSubmission\": \"145.5K\", \"totalAcceptedRaw\": 69457, \"totalSubmissionRaw\": 145519, \"acRate\": \"47.7%\"}",
+  "hints": [
+    "A direct way is to use the backtracking approach.",
+    "Backtracking should contains three states which are (the current number, number of steps to get that number and a bitmask which represent which number is marked as visited so far in the current number). Start with state (0,0,0) and count all valid number till we reach number of steps equals to 10<sup>n</sup>.",
+    "This problem can also be solved using a dynamic programming approach and some knowledge of combinatorics.",
+    "Let f(k) = count of numbers with unique digits with length equals k.",
+    "f(1) = 10, ..., f(k) = 9 * 9 * 8 * ... (9 - k + 2) [The first factor is 9 because a number cannot start with 0]."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "2",
+  "metaData": "{\r\n  \"name\": \"countNumbersWithUniqueDigits\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

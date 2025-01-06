@@ -1,0 +1,121 @@
+{
+  "questionId": "726",
+  "questionFrontendId": "726",
+  "boundTopicId": null,
+  "title": "Number of Atoms",
+  "titleSlug": "number-of-atoms",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a chemical <code>formula</code> (given as a string), return the count of each atom.\r\n</p><p>\r\nAn atomic element always starts with an uppercase character, then zero or more lowercase letters, representing the name.\r\n</p><p>\r\n1 or more digits representing the count of that element may follow if the count is greater than 1.  If the count is 1, no digits will follow.  For example, H2O and H2O2 are possible, but H1O2 is impossible.\r\n</p><p>\r\nTwo formulas concatenated together produce another formula.  For example, H2O2He3Mg4 is also a formula.  \r\n</p><p>\r\nA formula placed in parentheses, and a count (optionally added) is also a formula.  For example, (H2O2) and (H2O2)3 are formulas.\r\n</p><p>\r\nGiven a formula, output the count of all elements as a string in the following form: the first name (in sorted order), followed by its count (if that count is more than 1), followed by the second name (in sorted order), followed by its count (if that count is more than 1), and so on.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\nformula = \"H2O\"\r\n<b>Output:</b> \"H2O\"\r\n<b>Explanation:</b> \r\nThe count of elements are {'H': 2, 'O': 1}.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\nformula = \"Mg(OH)2\"\r\n<b>Output:</b> \"H2MgO2\"\r\n<b>Explanation:</b> \r\nThe count of elements are {'H': 2, 'Mg': 1, 'O': 2}.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\nformula = \"K4(ON(SO3)2)2\"\r\n<b>Output:</b> \"K4N2O14S4\"\r\n<b>Explanation:</b> \r\nThe count of elements are {'K': 4, 'N': 2, 'O': 14, 'S': 4}.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<li>All atom names consist of lowercase letters, except for the first character which is uppercase.</li>\r\n<li>The length of <code>formula</code> will be in the range <code>[1, 1000]</code>.</li>\r\n<li><code>formula</code> will only consist of letters, digits, and round parentheses, and is a valid formula as defined in the problem.</li>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 291,
+  "dislikes": 95,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Decode String\", \"titleSlug\": \"decode-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Encode String with Shortest Length\", \"titleSlug\": \"encode-string-with-shortest-length\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Parse Lisp Expression\", \"titleSlug\": \"parse-lisp-expression\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string countOfAtoms(string formula) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String countOfAtoms(String formula) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countOfAtoms(self, formula):\n        \"\"\"\n        :type formula: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countOfAtoms(self, formula: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * countOfAtoms(char * formula){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string CountOfAtoms(string formula) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} formula\n * @return {string}\n */\nvar countOfAtoms = function(formula) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} formula\n# @return {String}\ndef count_of_atoms(formula)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countOfAtoms(_ formula: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countOfAtoms(formula string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countOfAtoms(formula: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countOfAtoms(formula: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_of_atoms(formula: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $formula\n     * @return String\n     */\n    function countOfAtoms($formula) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.7K\", \"totalSubmission\": \"31.7K\", \"totalAcceptedRaw\": 14744, \"totalSubmissionRaw\": 31728, \"acRate\": \"46.5%\"}",
+  "hints": [
+    "To parse formula[i:], when we see a `'('`, we will parse recursively whatever is inside the brackets (up to the correct closing ending bracket) and add it to our count, multiplying by the following multiplicity if there is one.\r\n\r\nOtherwise, we should see an uppercase character: we will parse the rest of the letters to get the name, and add that (plus the multiplicity if there is one.)"
+  ],
+  "solution": {
+    "id": "289",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-atoms/",
+    "content": "[TOC]\n\n#### Approach #1: Recursion [Accepted]\n\n**Intuition and Algorithm**\n\nWrite a function `parse` that parses the formula from index `i`, returning a map `count` from names to multiplicities (the number of times that name is recorded).\n\nWe will put `i` in global state: our `parse` function increments `i` throughout any future calls to `parse`.\n\n* When we see a `'('`, we will parse whatever is inside the brackets (up to the closing ending bracket) and add it to our count.\n\n* Otherwise, we should see an uppercase character: we will parse the rest of the letters to get the name, and add that (plus the multiplicity if there is one.)\n\n* At the end, if there is a final multiplicity (representing the multiplicity of a bracketed sequence), we'll multiply our answer by this.\n\n<iframe src=\"https://leetcode.com/playground/pdZAZ5dG/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"pdZAZ5dG\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$, where $$N$$ is the length of the formula.  It is $$O(N)$$ to parse through the formula, but each of $$O(N)$$ multiplicities after a bracket may increment the count of each name in the formula (inside those brackets), leading to an $$O(N^2)$$ complexity.\n\n* Space Complexity: $$O(N)$$.  We aren't recording more intermediate information than what is contained in the formula.\n\n---\n#### Approach #2: Stack [Accepted]\n\n**Intuition and Algorithm**\n\nInstead of recursion, we can simulate the call stack by using a stack of `count`s directly.\n\n<iframe src=\"https://leetcode.com/playground/KLEWBfKw/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"KLEWBfKw\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity $$O(N^2)$$, and Space Complexity $$O(N)$$.  The analysis is the same as *Approach #1*.\n\n---\n#### Approach #3: Regular Expressions [Accepted]\n\n**Intuition and Algorithm**\n\nWhenever parsing is involved, we can use *regular expressions*, a language for defining patterns in text.\n\nOur regular expression will be `\"([A-Z][a-z]*)(\\d*)|(\\()|(\\))(\\d*)\"`.  Breaking this down by *capture group*, this is:\n\n* `([A-Z][a-z]*)` Match an uppercase character followed by any number of lowercase characters, then (`(\\d*)`) match any number of digits.\n* OR, `(\\()` match a left bracket or `(\\))` right bracket, then `(\\d*)` match any number of digits.\n\nNow we can proceed as in *Approach #2*.\n\n* If we parsed a name and multiplicity `([A-Z][a-z]*)(\\d*)`, we will add it to our current count.\n\n* If we parsed a left bracket, we will append a new `count` to our stack, representing the nested depth of parentheses.\n\n* If we parsed a right bracket (and possibly another multiplicity), we will multiply our deepest level `count`, `top = stack.pop()`, and add those entries to our current count.\n\n<iframe src=\"https://leetcode.com/playground/rnaR7xpb/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"rnaR7xpb\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity $$O(N^2)$$, and Space Complexity $$O(N)$$.  The analysis is the same as *Approach #1*, as this regular expression did not look backwards when parsing.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).  Approaches #1 and #2 inspired by [@zestypanda](https://leetcode.com/zestypanda/).  Java solution for #3 by [@jianchao.li.fighter](https://discuss.leetcode.com/user/jianchao-li-fighter).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "284",
+      "count": 7,
+      "average": 4.429,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"H2O\"",
+  "metaData": "{\r\n  \"name\": \"countOfAtoms\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"formula\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

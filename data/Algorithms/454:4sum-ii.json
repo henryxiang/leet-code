@@ -1,0 +1,103 @@
+{
+  "questionId": "454",
+  "questionFrontendId": "454",
+  "boundTopicId": null,
+  "title": "4Sum II",
+  "titleSlug": "4sum-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given four lists A, B, C, D of integer values, compute how many tuples <code>(i, j, k, l)</code> there are such that <code>A[i] + B[j] + C[k] + D[l]</code> is zero.</p>\r\n\r\n<p>To make problem a bit easier, all A, B, C, D have same length of N where 0 &le; N &le; 500. All integers are in the range of -2<sup>28</sup> to 2<sup>28</sup> - 1 and the result is guaranteed to be at most 2<sup>31</sup> - 1.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b>\r\nA = [ 1, 2]\r\nB = [-2,-1]\r\nC = [-1, 2]\r\nD = [ 0, 2]\r\n\r\n<b>Output:</b>\r\n2\r\n\r\n<b>Explanation:</b>\r\nThe two tuples are:\r\n1. (0, 0, 0, 1) -&gt; A[0] + B[0] + C[0] + D[1] = 1 + (-2) + (-1) + 2 = 0\r\n2. (1, 1, 0, 0) -&gt; A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 866,
+  "dislikes": 62,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"4Sum\", \"titleSlug\": \"4sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Samuri",
+      "profileUrl": "/samuri/",
+      "avatarUrl": "https://assets.leetcode.com/users/samuri/avatar_1552766564.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int fourSumCount(vector<int>& A, vector<int>& B, vector<int>& C, vector<int>& D) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def fourSumCount(self, A, B, C, D):\n        \"\"\"\n        :type A: List[int]\n        :type B: List[int]\n        :type C: List[int]\n        :type D: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def fourSumCount(self, A: List[int], B: List[int], C: List[int], D: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint fourSumCount(int* A, int ASize, int* B, int BSize, int* C, int CSize, int* D, int DSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FourSumCount(int[] A, int[] B, int[] C, int[] D) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number[]} B\n * @param {number[]} C\n * @param {number[]} D\n * @return {number}\n */\nvar fourSumCount = function(A, B, C, D) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer[]} b\n# @param {Integer[]} c\n# @param {Integer[]} d\n# @return {Integer}\ndef four_sum_count(a, b, c, d)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func fourSumCount(_ A: [Int], _ B: [Int], _ C: [Int], _ D: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func fourSumCount(A []int, B []int, C []int, D []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def fourSumCount(A: Array[Int], B: Array[Int], C: Array[Int], D: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun fourSumCount(A: IntArray, B: IntArray, C: IntArray, D: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn four_sum_count(a: Vec<i32>, b: Vec<i32>, c: Vec<i32>, d: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer[] $B\n     * @param Integer[] $C\n     * @param Integer[] $D\n     * @return Integer\n     */\n    function fourSumCount($A, $B, $C, $D) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"85.7K\", \"totalSubmission\": \"164.9K\", \"totalAcceptedRaw\": 85686, \"totalSubmissionRaw\": 164871, \"acRate\": \"52.0%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2]\n[-2,-1]\n[-1,2]\n[0,2]",
+  "metaData": "{\r\n  \"name\": \"fourSumCount\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"C\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"D\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

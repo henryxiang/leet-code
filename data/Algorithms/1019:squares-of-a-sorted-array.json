@@ -1,0 +1,115 @@
+{
+  "questionId": "1019",
+  "questionFrontendId": "977",
+  "boundTopicId": null,
+  "title": "Squares of a Sorted Array",
+  "titleSlug": "squares-of-a-sorted-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers <code>A</code>&nbsp;sorted in non-decreasing order,&nbsp;return an array of the squares of each number,&nbsp;also in sorted non-decreasing order.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[-4,-1,0,3,10]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[0,1,9,16,100]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[-7,-3,2,3,11]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[4,9,9,49,121]</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><span>Note:</span></strong></p>\r\n\r\n<ol>\r\n\t<li><code><span>1 &lt;= A.length &lt;= 10000</span></code></li>\r\n\t<li><code>-10000 &lt;= A[i] &lt;= 10000</code></li>\r\n\t<li><code>A</code>&nbsp;is sorted in non-decreasing order.</li>\r\n</ol>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 630,
+  "dislikes": 60,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Merge Sorted Array\", \"titleSlug\": \"merge-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sort Transformed Array\", \"titleSlug\": \"sort-transformed-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "sam_hamza",
+      "profileUrl": "/sam_hamza/",
+      "avatarUrl": "https://www.gravatar.com/avatar/ec3014104dafbb8d8839198b6e933052.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 8}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Electronic Arts\", \"slug\": \"electronic-arts\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twitch\", \"slug\": \"twitch\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> sortedSquares(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] sortedSquares(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def sortedSquares(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def sortedSquares(self, A: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* sortedSquares(int* A, int ASize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] SortedSquares(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number[]}\n */\nvar sortedSquares = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer[]}\ndef sorted_squares(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func sortedSquares(_ A: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func sortedSquares(A []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def sortedSquares(A: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun sortedSquares(A: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sorted_squares(a: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer[]\n     */\n    function sortedSquares($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"135K\", \"totalSubmission\": \"187.7K\", \"totalAcceptedRaw\": 135024, \"totalSubmissionRaw\": 187712, \"acRate\": \"71.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "671",
+    "canSeeDetail": true,
+    "url": "/articles/squares-of-a-sorted-array/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Sort\n\n**Intuition and Algorithm**\n\nCreate an array of the squares of each element, and sort them.\n\n<iframe src=\"https://leetcode.com/playground/mVRPMKjB/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"mVRPMKjB\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Two Pointer\n\n**Intuition**\n\nSince the array `A` is sorted, loosely speaking it has some negative elements with squares in decreasing order, then some non-negative elements with squares in increasing order.\n\nFor example, with `[-3, -2, -1, 4, 5, 6]`, we have the negative part `[-3, -2, -1]` with squares `[9, 4, 1]`, and the positive part `[4, 5, 6]` with squares `[16, 25, 36]`.  Our strategy is to iterate over the negative part in reverse, and the positive part in the forward direction.\n\n**Algorithm**\n\nWe can use two pointers to read the positive and negative parts of the array - one pointer `j` in the positive direction, and another `i` in the negative direction.\n\nNow that we are reading two increasing arrays (the squares of the elements), we can merge these arrays together using a two-pointer technique.\n\n<iframe src=\"https://leetcode.com/playground/h7YnwCLs/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"h7YnwCLs\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "657",
+      "count": 29,
+      "average": 4.69,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[-4,-1,0,3,10]",
+  "metaData": "{\r\n  \"name\": \"sortedSquares\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

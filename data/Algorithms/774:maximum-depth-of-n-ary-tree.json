@@ -1,0 +1,81 @@
+{
+  "questionId": "774",
+  "questionFrontendId": "559",
+  "boundTopicId": null,
+  "title": "Maximum Depth of N-ary Tree",
+  "titleSlug": "maximum-depth-of-n-ary-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a n-ary tree, find its maximum depth.</p>\n\n<p>The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.</p>\n\n<p><em>Nary-Tree input serialization&nbsp;is represented in their level order traversal, each group of children is separated by the null value (See examples).</em></p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<p><img src=\"https://assets.leetcode.com/uploads/2018/10/12/narytreeexample.png\" style=\"width: 100%; max-width: 300px;\" /></p>\n\n<pre>\n<strong>Input:</strong> root = [1,null,3,2,4,null,5,6]\n<strong>Output:</strong> 3\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/11/08/sample_4_964.png\" style=\"width: 296px; height: 241px;\" /></p>\n\n<pre>\n<strong>Input:</strong> root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]\n<strong>Output:</strong> 5\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The depth of the n-ary tree is less than or equal to <code>1000</code>.</li>\n\t<li>The total number of nodes is between <code>[0,&nbsp;10^4]</code>.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 536,
+  "dislikes": 35,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Maximum Depth of Binary Tree\", \"titleSlug\": \"maximum-depth-of-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/*\n// Definition for a Node.\nclass Node {\npublic:\n    int val;\n    vector<Node*> children;\n\n    Node() {}\n\n    Node(int _val) {\n        val = _val;\n    }\n\n    Node(int _val, vector<Node*> _children) {\n        val = _val;\n        children = _children;\n    }\n};\n*/\nclass Solution {\npublic:\n    int maxDepth(Node* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/*\n// Definition for a Node.\nclass Node {\n    public int val;\n    public List<Node> children;\n\n    public Node() {}\n\n    public Node(int _val) {\n        val = _val;\n    }\n\n    public Node(int _val, List<Node> _children) {\n        val = _val;\n        children = _children;\n    }\n};\n*/\nclass Solution {\n    public int maxDepth(Node root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "\"\"\"\n# Definition for a Node.\nclass Node(object):\n    def __init__(self, val=None, children=None):\n        self.val = val\n        self.children = children\n\"\"\"\nclass Solution(object):\n    def maxDepth(self, root):\n        \"\"\"\n        :type root: Node\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "\"\"\"\n# Definition for a Node.\nclass Node:\n    def __init__(self, val=None, children=None):\n        self.val = val\n        self.children = children\n\"\"\"\nclass Solution:\n    def maxDepth(self, root: 'Node') -> int:\n        "
+    },
+    {
+      "lang": "C#",
+      "code": "/*\n// Definition for a Node.\npublic class Node {\n    public int val;\n    public IList<Node> children;\n\n    public Node() {}\n\n    public Node(int _val) {\n        val = _val;\n    }\n\n    public Node(int _val, IList<Node> _children) {\n        val = _val;\n        children = _children;\n    }\n}\n*/\npublic class Solution {\n    public int MaxDepth(Node root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * // Definition for a Node.\n * function Node(val,children) {\n *    this.val = val;\n *    this.children = children;\n * };\n */\n/**\n * @param {Node} root\n * @return {number}\n */\nvar maxDepth = function(root) {\n    \n};"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"79.1K\", \"totalSubmission\": \"118.6K\", \"totalAcceptedRaw\": 79146, \"totalSubmissionRaw\": 118566, \"acRate\": \"66.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "576",
+    "canSeeDetail": true,
+    "url": "/articles/maximum-depth-of-n-ary-tree/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n**Tree definition**\r\n\r\nFirst of all, please refer to [this article](https://leetcode.com/articles/maximum-depth-of-binary-tree/) \r\nfor the solution in case of binary tree.\r\nThis article offers the same ideas with a bit of generalisation. \r\n\r\nHere is the definition of the ```TreeNode``` which we would use.\r\n\r\n<iframe src=\"https://leetcode.com/playground/9zQCq6gE/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"9zQCq6gE\"></iframe>\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Recursion\r\n\r\n**Algorithm**\r\n\r\nThe intuitive approach is to solve the problem by recursion.\r\nHere we demonstrate an example with the DFS (Depth First Search) strategy. \r\n\r\n<iframe src=\"https://leetcode.com/playground/8Uo3haK5/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"8Uo3haK5\"></iframe>\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : we visit each node exactly once, \r\nthus the time complexity is $$\\mathcal{O}(N)$$,\r\nwhere $$N$$ is the number of nodes.\r\n\r\n* Space complexity : in the worst case, the tree is completely unbalanced,\r\n*e.g.* each node has only one child node, the recursion call would occur\r\n $$N$$ times (the height of the tree), therefore the storage to keep the call stack would be $$\\mathcal{O}(N)$$.\r\n But in the best case (the tree is completely balanced), the height of the tree would be $$\\log(N)$$.\r\n Therefore, the space complexity in this case would be $$\\mathcal{O}(\\log(N))$$.\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Iteration\r\n\r\nWe could also convert the above recursion into iteration, with the help of stack.\r\n\r\n>The idea is to visit each node with the DFS strategy,\r\nwhile updating the max depth at each visit.\r\n\r\nSo we start from a stack which contains the root node and the corresponding depth \r\nwhich is ```1```.\r\nThen we proceed to the iterations: pop the current node out of the stack and\r\npush the child nodes. The depth is updated at each step. \r\n\r\n<iframe src=\"https://leetcode.com/playground/669g2Lt6/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"669g2Lt6\"></iframe>  \r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$.\r\n\r\n* Space complexity : $$\\mathcal{O}(N)$$.\r\n \r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "564",
+      "count": 5,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,null,3,2,4,null,5,6]\r",
+  "metaData": "{\n  \"name\": \"maxDepth\",\n  \"params\": [\n    {\n      \"name\": \"root\",\n      \"type\": \"Node\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"structures\": [\n    {\n      \"name\": \"Node\",\n      \"comment\": \"Definition for a Node.\",\n      \"members\": [\n        {\n          \"name\": \"val\",\n          \"type\": \"integer\"\n        },\n        {\n          \"name\": \"children\",\n          \"type\": \"list<Node>\"\n        }\n      ]\n    }\n  ],\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"csharp\",\n    \"javascript\",\n    \"python3\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

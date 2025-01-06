@@ -1,0 +1,111 @@
+{
+  "questionId": "955",
+  "questionFrontendId": "919",
+  "boundTopicId": null,
+  "title": "Complete Binary Tree Inserter",
+  "titleSlug": "complete-binary-tree-inserter",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A <em>complete</em> binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.</p>\r\n\r\n<p>Write a data structure&nbsp;<code>CBTInserter</code>&nbsp;that is initialized with a complete binary tree and supports the following operations:</p>\r\n\r\n<ul>\r\n\t<li><code>CBTInserter(TreeNode root)</code> initializes the data structure on a given tree&nbsp;with head node <code>root</code>;</li>\r\n\t<li><code>CBTInserter.insert(int v)</code> will insert a <code>TreeNode</code>&nbsp;into the tree with value <code>node.val =&nbsp;v</code>&nbsp;so that the tree remains complete, <strong>and returns the value of the parent of the inserted <code>TreeNode</code></strong>;</li>\r\n\t<li><code>CBTInserter.get_root()</code> will return the head node of the tree.</li>\r\n</ul>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>inputs = <span id=\"example-input-1-1\">[&quot;CBTInserter&quot;,&quot;insert&quot;,&quot;get_root&quot;]</span>, inputs = <span id=\"example-input-1-2\">[[[1]],[2],[]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[null,1,[1,2]]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>inputs = <span id=\"example-input-2-1\">[&quot;CBTInserter&quot;,&quot;insert&quot;,&quot;insert&quot;,&quot;get_root&quot;]</span>, inputs = <span id=\"example-input-2-2\">[[[1,2,3,4,5,6]],[7],[8],[]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[null,3,4,[1,2,3,4,5,6,7,8]]</span></pre>\r\n</div>\r\n\r\n<div>\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>The initial given tree is complete and contains between <code>1</code> and <code>1000</code> nodes.</li>\r\n\t<li><code>CBTInserter.insert</code> is called at most <code>10000</code> times per test case.</li>\r\n\t<li>Every value of a given or inserted node is between <code>0</code> and <code>5000</code>.</li>\r\n</ol>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<p>&nbsp;</p>\r\n\r\n<div>&nbsp;</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 203,
+  "dislikes": 44,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "wintwelve",
+      "profileUrl": "/wintwelve/",
+      "avatarUrl": "https://www.gravatar.com/avatar/c905295f7100c82656f2e7c4f725c2ac.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass CBTInserter {\npublic:\n    CBTInserter(TreeNode* root) {\n        \n    }\n    \n    int insert(int v) {\n        \n    }\n    \n    TreeNode* get_root() {\n        \n    }\n};\n\n/**\n * Your CBTInserter object will be instantiated and called as such:\n * CBTInserter* obj = new CBTInserter(root);\n * int param_1 = obj->insert(v);\n * TreeNode* param_2 = obj->get_root();\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass CBTInserter {\n\n    public CBTInserter(TreeNode root) {\n        \n    }\n    \n    public int insert(int v) {\n        \n    }\n    \n    public TreeNode get_root() {\n        \n    }\n}\n\n/**\n * Your CBTInserter object will be instantiated and called as such:\n * CBTInserter obj = new CBTInserter(root);\n * int param_1 = obj.insert(v);\n * TreeNode param_2 = obj.get_root();\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass CBTInserter(object):\n\n    def __init__(self, root):\n        \"\"\"\n        :type root: TreeNode\n        \"\"\"\n        \n\n    def insert(self, v):\n        \"\"\"\n        :type v: int\n        :rtype: int\n        \"\"\"\n        \n\n    def get_root(self):\n        \"\"\"\n        :rtype: TreeNode\n        \"\"\"\n        \n\n\n# Your CBTInserter object will be instantiated and called as such:\n# obj = CBTInserter(root)\n# param_1 = obj.insert(v)\n# param_2 = obj.get_root()"
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass CBTInserter:\n\n    def __init__(self, root: TreeNode):\n        \n\n    def insert(self, v: int) -> int:\n        \n\n    def get_root(self) -> TreeNode:\n        \n\n\n# Your CBTInserter object will be instantiated and called as such:\n# obj = CBTInserter(root)\n# param_1 = obj.insert(v)\n# param_2 = obj.get_root()"
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\n\ntypedef struct {\n    \n} CBTInserter;\n\n\nCBTInserter* cBTInserterCreate(struct TreeNode* root) {\n    \n}\n\nint cBTInserterInsert(CBTInserter* obj, int v) {\n  \n}\n\nstruct TreeNode* cBTInserterGet_root(CBTInserter* obj) {\n  \n}\n\nvoid cBTInserterFree(CBTInserter* obj) {\n    \n}\n\n/**\n * Your CBTInserter struct will be instantiated and called as such:\n * CBTInserter* obj = cBTInserterCreate(root);\n * int param_1 = cBTInserterInsert(obj, v);\n \n * struct TreeNode* param_2 = cBTInserterGet_root(obj);\n \n * cBTInserterFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class CBTInserter {\n\n    public CBTInserter(TreeNode root) {\n        \n    }\n    \n    public int Insert(int v) {\n        \n    }\n    \n    public TreeNode Get_root() {\n        \n    }\n}\n\n/**\n * Your CBTInserter object will be instantiated and called as such:\n * CBTInserter obj = new CBTInserter(root);\n * int param_1 = obj.Insert(v);\n * TreeNode param_2 = obj.Get_root();\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n */\nvar CBTInserter = function(root) {\n    \n};\n\n/** \n * @param {number} v\n * @return {number}\n */\nCBTInserter.prototype.insert = function(v) {\n    \n};\n\n/**\n * @return {TreeNode}\n */\nCBTInserter.prototype.get_root = function() {\n    \n};\n\n/** \n * Your CBTInserter object will be instantiated and called as such:\n * var obj = new CBTInserter(root)\n * var param_1 = obj.insert(v)\n * var param_2 = obj.get_root()\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\nclass CBTInserter\n\n=begin\n    :type root: TreeNode\n=end\n    def initialize(root)\n        \n    end\n\n\n=begin\n    :type v: Integer\n    :rtype: Integer\n=end\n    def insert(v)\n        \n    end\n\n\n=begin\n    :rtype: TreeNode\n=end\n    def get_root()\n        \n    end\n\n\nend\n\n# Your CBTInserter object will be instantiated and called as such:\n# obj = CBTInserter.new(root)\n# param_1 = obj.insert(v)\n# param_2 = obj.get_root()"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\n\nclass CBTInserter {\n\n    init(_ root: TreeNode?) {\n        \n    }\n    \n    func insert(_ v: Int) -> Int {\n        \n    }\n    \n    func get_root() -> TreeNode? {\n        \n    }\n}\n\n/**\n * Your CBTInserter object will be instantiated and called as such:\n * let obj = CBTInserter(root)\n * let ret_1: Int = obj.insert(v)\n * let ret_2: TreeNode? = obj.get_root()\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\ntype CBTInserter struct {\n    \n}\n\n\nfunc Constructor(root *TreeNode) CBTInserter {\n    \n}\n\n\nfunc (this *CBTInserter) Insert(v int) int {\n    \n}\n\n\nfunc (this *CBTInserter) Get_root() *TreeNode {\n    \n}\n\n\n/**\n * Your CBTInserter object will be instantiated and called as such:\n * obj := Constructor(root);\n * param_1 := obj.Insert(v);\n * param_2 := obj.Get_root();\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nclass CBTInserter(_root: TreeNode) {\n\n    def insert(v: Int): Int = {\n        \n    }\n\n    def get_root(): TreeNode = {\n        \n    }\n\n}\n\n/**\n * Your CBTInserter object will be instantiated and called as such:\n * var obj = new CBTInserter(root)\n * var param_1 = obj.insert(v)\n * var param_2 = obj.get_root()\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass CBTInserter(root: TreeNode?) {\n\n    fun insert(v: Int): Int {\n        \n    }\n\n    fun get_root(): TreeNode? {\n        \n    }\n\n}\n\n/**\n * Your CBTInserter object will be instantiated and called as such:\n * var obj = CBTInserter(root)\n * var param_1 = obj.insert(v)\n * var param_2 = obj.get_root()\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nstruct CBTInserter {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl CBTInserter {\n\n    fn new(root: Option<Rc<RefCell<TreeNode>>>) -> Self {\n        \n    }\n    \n    fn insert(&self, v: i32) -> i32 {\n        \n    }\n    \n    fn get_root(&self) -> Option<Rc<RefCell<TreeNode>>> {\n        \n    }\n}\n\n/**\n * Your CBTInserter object will be instantiated and called as such:\n * let obj = CBTInserter::new(root);\n * let ret_1: i32 = obj.insert(v);\n * let ret_2: Option<Rc<RefCell<TreeNode>>> = obj.get_root();\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass CBTInserter {\n    /**\n     * @param TreeNode $root\n     */\n    function __construct($root) {\n        \n    }\n  \n    /**\n     * @param Integer $v\n     * @return Integer\n     */\n    function insert($v) {\n        \n    }\n  \n    /**\n     * @return TreeNode\n     */\n    function get_root() {\n        \n    }\n}\n\n/**\n * Your CBTInserter object will be instantiated and called as such:\n * $obj = CBTInserter($root);\n * $ret_1 = $obj->insert($v);\n * $ret_2 = $obj->get_root();\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.3K\", \"totalSubmission\": \"22K\", \"totalAcceptedRaw\": 12328, \"totalSubmissionRaw\": 22049, \"acRate\": \"55.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "579",
+    "canSeeDetail": true,
+    "url": "/articles/complete-binary-tree-inserter/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Deque\n\n**Intuition**\n\nConsider all the nodes numbered first by level and then left to right.  Call this the \"number order\" of the nodes.\n\nAt each insertion step, we want to insert into the node with the lowest number (that still has 0 or 1 children).\n\nBy maintaining a `deque` (double ended queue) of these nodes in number order, we can solve the problem.  After inserting a node, that node now has the highest number and no children, so it goes at the end of the deque.  To get the node with the lowest number, we pop from the beginning of the deque.\n\n**Algorithm**\n\nFirst, perform a breadth-first search to populate the `deque` with nodes that have 0 or 1 children, in number order.\n\nNow when inserting a node, the parent is the first element of `deque`, and we add this new node to our `deque`.\n\n<iframe src=\"https://leetcode.com/playground/vJC78XQe/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"vJC78XQe\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  The preprocessing is $$O(N)$$, where $$N$$ is the number of nodes in the tree.  Each insertion operation thereafter is $$O(1)$$.\n\n* Space Complexity:  $$O(N_{\\text{cur}})$$ space complexity, when the size of the tree during the current insertion operation is $$N_{\\text{cur}}$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "567",
+      "count": 7,
+      "average": 4.429,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"CBTInserter\",\"insert\",\"get_root\"]\n[[[1]],[2],[]]",
+  "metaData": "{\r\n    \"classname\": \"CBTInserter\",\r\n    \"maxbytesperline\": 200000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"name\": \"root\",\r\n                \"type\": \"TreeNode\"\r\n            }\r\n        ]\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"insert\",\r\n            \"params\": [\r\n                {\r\n                    \"name\": \"v\",\r\n                    \"type\": \"integer\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        },\r\n        {\r\n            \"name\" : \"get_root\",\r\n            \"params\": [\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"TreeNode\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

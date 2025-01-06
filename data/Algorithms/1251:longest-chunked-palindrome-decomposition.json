@@ -1,0 +1,106 @@
+{
+  "questionId": "1251",
+  "questionFrontendId": "1147",
+  "boundTopicId": null,
+  "title": "Longest Chunked Palindrome Decomposition",
+  "titleSlug": "longest-chunked-palindrome-decomposition",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Return the largest possible <code>k</code>&nbsp;such that there exists&nbsp;<code>a_1, a_2, ..., a_k</code>&nbsp;such that:</p>\r\n\r\n<ul>\r\n\t<li>Each <code>a_i</code> is a non-empty string;</li>\r\n\t<li>Their concatenation <code>a_1 + a_2 + ... + a_k</code> is equal to <code>text</code>;</li>\r\n\t<li>For all <code>1 &lt;= i &lt;= k</code>,&nbsp;&nbsp;<code>a_i = a_{k+1 - i}</code>.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> text = &quot;ghiabcdefhelloadamhelloabcdefghi&quot;\r\n<strong>Output:</strong> 7\r\n<strong>Explanation:</strong> We can split the string on &quot;(ghi)(abcdef)(hello)(adam)(hello)(abcdef)(ghi)&quot;.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> text = &quot;merchant&quot;\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> We can split the string on &quot;(merchant)&quot;.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> text = &quot;antaprezatepzapreanta&quot;\r\n<strong>Output:</strong> 11\r\n<strong>Explanation:</strong> We can split the string on &quot;(a)(nt)(a)(pre)(za)(tpe)(za)(pre)(a)(nt)(a)&quot;.\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> text = &quot;aaa&quot;\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> We can split the string on &quot;(a)(a)(a)&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>text</code> consists only of lowercase English characters.</li>\r\n\t<li><code>1 &lt;= text.length &lt;= 1000</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 117,
+  "dislikes": 10,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "richaglorified",
+      "profileUrl": "/richaglorified/",
+      "avatarUrl": "https://assets.leetcode.com/users/richaglorified/avatar_1564220212.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Rolling Hash",
+      "slug": "rolling-hash"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestDecomposition(string text) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestDecomposition(String text) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestDecomposition(self, text):\n        \"\"\"\n        :type text: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestDecomposition(self, text: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint longestDecomposition(char * text){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestDecomposition(string text) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} text\n * @return {number}\n */\nvar longestDecomposition = function(text) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} text\n# @return {Integer}\ndef longest_decomposition(text)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestDecomposition(_ text: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestDecomposition(text string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestDecomposition(text: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestDecomposition(text: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_decomposition(text: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $text\n     * @return Integer\n     */\n    function longestDecomposition($text) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.4K\", \"totalSubmission\": \"11K\", \"totalAcceptedRaw\": 6374, \"totalSubmissionRaw\": 11031, \"acRate\": \"57.8%\"}",
+  "hints": [
+    "Using a rolling hash, we can quickly check whether two strings are equal.",
+    "Use that as the basis of a dp."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"ghiabcdefhelloadamhelloabcdefghi\"",
+  "metaData": "{\n  \"name\": \"longestDecomposition\",\n  \"params\": [\n    {\n      \"name\": \"text\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

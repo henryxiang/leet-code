@@ -1,0 +1,111 @@
+{
+  "questionId": "881",
+  "questionFrontendId": "851",
+  "boundTopicId": null,
+  "title": "Loud and Rich",
+  "titleSlug": "loud-and-rich",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a group of N people (labelled <code>0, 1, 2, ..., N-1</code>), each person has different amounts of money, and different levels of quietness.</p>\r\n\r\n<p>For convenience, we&#39;ll call the person with label <code>x</code>, simply &quot;person <code>x</code>&quot;.</p>\r\n\r\n<p>We&#39;ll say that <code>richer[i] = [x, y]</code> if person <code>x</code>&nbsp;definitely has more money than person&nbsp;<code>y</code>.&nbsp; Note that <code>richer</code>&nbsp;may only be a subset of valid observations.</p>\r\n\r\n<p>Also, we&#39;ll say <code>quiet[x] = q</code> if person <font face=\"monospace\">x</font>&nbsp;has quietness <code>q</code>.</p>\r\n\r\n<p>Now, return <code>answer</code>, where <code>answer[x] = y</code> if <code>y</code> is the least quiet person (that is, the person <code>y</code> with the smallest value of <code>quiet[y]</code>), among all people&nbsp;who definitely have&nbsp;equal to or more money than person <code>x</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>richer = <span id=\"example-input-1-1\">[[1,0],[2,1],[3,1],[3,7],[4,3],[5,3],[6,3]]</span>, quiet = <span id=\"example-input-1-2\">[3,2,5,4,6,1,7,0]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[5,5,2,5,4,5,6,7]</span>\r\n<strong>Explanation: </strong>\r\nanswer[0] = 5.\r\nPerson 5 has more money than 3, which has more money than 1, which has more money than 0.\r\nThe only person who is quieter (has lower quiet[x]) is person 7, but\r\nit isn&#39;t clear if they have more money than person 0.\r\n\r\nanswer[7] = 7.\r\nAmong all people that definitely have equal to or more money than person 7\r\n(which could be persons 3, 4, 5, 6, or 7), the person who is the quietest (has lower quiet[x])\r\nis person 7.\r\n\r\nThe other answers can be filled out with similar reasoning.\r\n</pre>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= quiet.length = N &lt;= 500</code></li>\r\n\t<li><code>0 &lt;= quiet[i] &lt; N</code>, all <code>quiet[i]</code> are different.</li>\r\n\t<li><code>0 &lt;= richer.length &lt;= N * (N-1) / 2</code></li>\r\n\t<li><code>0 &lt;= richer[i][j] &lt; N</code></li>\r\n\t<li><code>richer[i][0] != richer[i][1]</code></li>\r\n\t<li><code>richer[i]</code>&#39;s are all different.</li>\r\n\t<li>The&nbsp;observations in <code>richer</code> are all logically consistent.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 208,
+  "dislikes": 234,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> loudAndRich(vector<vector<int>>& richer, vector<int>& quiet) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] loudAndRich(int[][] richer, int[] quiet) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def loudAndRich(self, richer, quiet):\n        \"\"\"\n        :type richer: List[List[int]]\n        :type quiet: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def loudAndRich(self, richer: List[List[int]], quiet: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* loudAndRich(int** richer, int richerSize, int* richerColSize, int* quiet, int quietSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] LoudAndRich(int[][] richer, int[] quiet) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} richer\n * @param {number[]} quiet\n * @return {number[]}\n */\nvar loudAndRich = function(richer, quiet) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} richer\n# @param {Integer[]} quiet\n# @return {Integer[]}\ndef loud_and_rich(richer, quiet)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func loudAndRich(_ richer: [[Int]], _ quiet: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func loudAndRich(richer [][]int, quiet []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def loudAndRich(richer: Array[Array[Int]], quiet: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun loudAndRich(richer: Array<IntArray>, quiet: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn loud_and_rich(richer: Vec<Vec<i32>>, quiet: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $richer\n     * @param Integer[] $quiet\n     * @return Integer[]\n     */\n    function loudAndRich($richer, $quiet) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.3K\", \"totalSubmission\": \"20.6K\", \"totalAcceptedRaw\": 10273, \"totalSubmissionRaw\": 20648, \"acRate\": \"49.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "483",
+    "canSeeDetail": true,
+    "url": "/articles/loud-and-rich/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Cached Depth-First Search [Accepted]\n\n**Intuition**\n\nConsider the directed graph with edge `x -> y` if `y` is richer than `x`.\n\nFor each person `x`, we want the quietest person in the subtree at `x`.\n\n**Algorithm**\n\nConstruct the graph described above, and say `dfs(person)` is the quietest person in the subtree at `person`.   Notice because the statements are logically consistent, the graph must be a DAG - a directed graph with no cycles.\n\nNow `dfs(person)` is either `person`, or `min(dfs(child) for child in person)`.  That is to say, the quietest person in the subtree is either the `person` itself, or the quietest person in some subtree of a child of `person`.\n\nWe can cache values of `dfs(person)` as `answer[person]`, when performing our *post-order traversal* of the graph.  That way, we don't repeat work.  This technique reduces a quadratic time algorithm down to linear time.\n\n<iframe src=\"https://leetcode.com/playground/uMRUYCdD/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"uMRUYCdD\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of people.\n\n* Space Complexity:  $$O(N)$$, the space used by the `answer`, and the implicit call stack of `dfs`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "478",
+      "count": 15,
+      "average": 3.933,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,0],[2,1],[3,1],[3,7],[4,3],[5,3],[6,3]]\n[3,2,5,4,6,1,7,0]",
+  "metaData": "{\r\n  \"name\": \"loudAndRich\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"richer\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"quiet\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

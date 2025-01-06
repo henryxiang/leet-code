@@ -1,0 +1,97 @@
+{
+  "questionId": "1150",
+  "questionFrontendId": "1214",
+  "boundTopicId": null,
+  "title": "Two Sum BSTs",
+  "titleSlug": "two-sum-bsts",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two binary search trees, return <code>True</code>&nbsp;if and only if there is a node in the first tree and a node in the second tree whose values&nbsp;sum up to a given integer&nbsp;<code>target</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/05/31/1368_1_a2.png\" style=\"width: 150px; height: 140px;\" /><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/05/31/1368_1_b.png\" style=\"width: 150px; height: 136px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> root1 = [2,1,4], root2 = [1,0,3], target = 5\n<strong>Output:</strong> true\n<strong>Explanation: </strong>2 and 3 sum up to 5.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/05/31/1368_2_a.png\" style=\"width: 150px; height: 137px;\" /><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/05/31/1368_2_b.png\" style=\"width: 150px; height: 168px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> root1 = [0,-10,10], root2 = [5,1,7,0,2], target = 18\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>Each tree has at most <code>5000</code> nodes.</li>\n\t<li><code>-10^9 &lt;= target, node.val &lt;= 10^9</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 86,
+  "dislikes": 6,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Two Sum IV - Input is a BST\", \"titleSlug\": \"two-sum-iv-input-is-a-bst\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Binary Search Tree",
+      "slug": "binary-search-tree"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * struct TreeNode {\r\n *     int val;\r\n *     TreeNode *left;\r\n *     TreeNode *right;\r\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\r\n * };\r\n */\r\nclass Solution {\r\npublic:\r\n    bool twoSumBSTs(TreeNode* root1, TreeNode* root2, int target) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public boolean twoSumBSTs(TreeNode root1, TreeNode root2, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def twoSumBSTs(self, root1, root2, target):\n        \"\"\"\n        :type root1: TreeNode\n        :type root2: TreeNode\n        :type target: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def twoSumBSTs(self, root1: TreeNode, root2: TreeNode, target: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nbool twoSumBSTs(struct TreeNode* root1, struct TreeNode* root2, int target){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * public class TreeNode {\r\n *     public int val;\r\n *     public TreeNode left;\r\n *     public TreeNode right;\r\n *     public TreeNode(int x) { val = x; }\r\n * }\r\n */\r\npublic class Solution {\r\n    public bool TwoSumBSTs(TreeNode root1, TreeNode root2, int target) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root1\n * @param {TreeNode} root2\n * @param {number} target\n * @return {boolean}\n */\nvar twoSumBSTs = function(root1, root2, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\r\n# class TreeNode\r\n#     attr_accessor :val, :left, :right\r\n#     def initialize(val)\r\n#         @val = val\r\n#         @left, @right = nil, nil\r\n#     end\r\n# end\r\n\r\n# @param {TreeNode} root1\r\n# @param {TreeNode} root2\r\n# @param {Integer} target\r\n# @return {Boolean}\r\ndef two_sum_bs_ts(root1, root2, target)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * public class TreeNode {\r\n *     public var val: Int\r\n *     public var left: TreeNode?\r\n *     public var right: TreeNode?\r\n *     public init(_ val: Int) {\r\n *         self.val = val\r\n *         self.left = nil\r\n *         self.right = nil\r\n *     }\r\n * }\r\n */\r\nclass Solution {\r\n    func twoSumBSTs(_ root1: TreeNode?, _ root2: TreeNode?, _ target: Int) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * type TreeNode struct {\r\n *     Val int\r\n *     Left *TreeNode\r\n *     Right *TreeNode\r\n * }\r\n */\r\nfunc twoSumBSTs(root1 *TreeNode, root2 *TreeNode, target int) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * class TreeNode(var _value: Int) {\r\n *   var value: Int = _value\r\n *   var left: TreeNode = null\r\n *   var right: TreeNode = null\r\n * }\r\n */\r\nobject Solution {\r\n    def twoSumBSTs(root1: TreeNode, root2: TreeNode, target: Int): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\r\n * Example:\r\n * var ti = TreeNode(5)\r\n * var v = ti.`val`\r\n * Definition for a binary tree node.\r\n * class TreeNode(var `val`: Int) {\r\n *     var left: TreeNode? = null\r\n *     var right: TreeNode? = null\r\n * }\r\n */\r\nclass Solution {\r\n    fun twoSumBSTs(root1: TreeNode?, root2: TreeNode?, target: Int): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn two_sum_bs_ts(root1: Option<Rc<RefCell<TreeNode>>>, root2: Option<Rc<RefCell<TreeNode>>>, target: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root1\n     * @param TreeNode $root2\n     * @param Integer $target\n     * @return Boolean\n     */\n    function twoSumBSTs($root1, $root2, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.6K\", \"totalSubmission\": \"8.6K\", \"totalAcceptedRaw\": 5610, \"totalSubmissionRaw\": 8587, \"acRate\": \"65.3%\"}",
+  "hints": [
+    "How can you reduce this problem to the classical Two Sum problem?",
+    "Do an in-order traversal of each tree to convert them to sorted arrays.",
+    "Solve the classical Two Sum problem."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[2,1,4]\n[1,0,3]\n5",
+  "metaData": "{\r\n  \"name\": \"twoSumBSTs\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root1\",\r\n      \"type\": \"TreeNode\"\r\n    },\r\n    {\r\n      \"name\": \"root2\",\r\n      \"type\": \"TreeNode\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

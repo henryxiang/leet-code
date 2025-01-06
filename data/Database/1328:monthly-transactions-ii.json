@@ -1,0 +1,57 @@
+{
+  "questionId": "1328",
+  "questionFrontendId": "1205",
+  "boundTopicId": null,
+  "title": "Monthly Transactions II",
+  "titleSlug": "monthly-transactions-ii",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Transactions</code></p>\n\n<pre>\n+----------------+---------+\n| Column Name    | Type    |\n+----------------+---------+\n| id             | int     |\n| country        | varchar |\n| state          | enum    |\n| amount         | int     |\n| trans_date     | date    |\n+----------------+---------+\nid is the primary key of this table.\nThe table has information about incoming transactions.\nThe state column is an enum of type [&quot;approved&quot;, &quot;declined&quot;].\n</pre>\n\n<p>Table: <code>Chargebacks</code></p>\n\n<pre>\n+----------------+---------+\n| Column Name    | Type    |\n+----------------+---------+\n| trans_id       | int     |\n| charge_date    | date    |\n+----------------+---------+\nChargebacks contains basic information regarding incoming chargebacks from some transactions placed in Transactions table.\ntrans_id is a foreign key to the id column of Transactions table.\nEach chargeback corresponds to a transaction made previously even if they were not approved.</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to find for each month and country, the number of approved transactions and their total amount, the number of chargebacks and their total amount.</p>\n\n<p><strong>Note</strong>: In your&nbsp;query, given the month and country, ignore&nbsp;rows with all&nbsp;zeros.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\n<code>Transactions</code> table:\n+------+---------+----------+--------+------------+\n| id   | country | state    | amount | trans_date |\n+------+---------+----------+--------+------------+\n| 101  | US      | approved | 1000   | 2019-05-18 |\n| 102  | US      | declined | 2000   | 2019-05-19 |\n| 103  | US      | approved | 3000   | 2019-06-10 |\n| 104  | US      | approved | 4000   | 2019-06-13 |\n| 105  | US      | approved | 5000   | 2019-06-15 |\n+------+---------+----------+--------+------------+\n\n<code>Chargebacks</code> table:\n+------------+------------+\n| trans_id   | trans_date |\n+------------+------------+\n| 102        | 2019-05-29 |\n| 101        | 2019-06-30 |\n| 105        | 2019-09-18 |\n+------------+------------+\n\nResult table:\n+----------+---------+----------------+-----------------+-------------------+--------------------+\n| month    | country | approved_count | approved_amount | chargeback_count  | chargeback_amount  |\n+----------+---------+----------------+-----------------+-------------------+--------------------+\n| 2019-05  | US      | 1              | 1000            | 1                 | 2000               |\n| 2019-06  | US      | 3              | 12000           | 1                 | 1000               |\n| 2019-09  | US      | 0              | 0               | 1                 | 5000               |\n+----------+---------+----------------+-----------------+-------------------+--------------------+\n</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 23,
+  "dislikes": 18,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Monthly Transactions I\", \"titleSlug\": \"monthly-transactions-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.4K\", \"totalSubmission\": \"3.1K\", \"totalAcceptedRaw\": 1413, \"totalSubmissionRaw\": 3103, \"acRate\": \"45.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Transactions\":[\"id\",\"country\",\"state\",\"amount\",\"trans_date\"],\"Chargebacks\":[\"trans_id\",\"trans_date\"]},\"rows\":{\"Transactions\":[[101,\"US\",\"approved\",1000,\"2019-05-18\"],[102,\"US\",\"declined\",2000,\"2019-05-19\"],[103,\"US\",\"approved\",3000,\"2019-06-10\"],[104,\"US\",\"declined\",4000,\"2019-06-13\"],[105,\"US\",\"approved\",5000,\"2019-06-15\"]],\"Chargebacks\":[[102,\"2019-05-29\"],[101,\"2019-06-30\"],[105,\"2019-09-18\"]]}}\r",
+  "metaData": "{\n  \"mysql\": [\n    \"create table if not exists Transactions (id int, country varchar(4), state enum('approved', 'declined'), amount int, trans_date date)\\n\",\n    \"create table if not exists Chargebacks (trans_id int, trans_date date)\\n\"\n  ],\n  \"mssql\": [\n    \"create table Transactions (id int, country varchar(4), state varchar(10) check(state in ('approved', 'declined')), amount int, trans_date date)\",\n    \"create table Chargebacks (trans_id int, trans_date date)\\n\"\n  ],\n  \"oraclesql\": [\n    \"create table Transactions (id int, country varchar(4), state varchar(10) check(state in ('approved', 'declined')), amount int, trans_date date)\\n\",\n    \"create table Chargebacks (trans_id int, trans_date date)\\n\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "create table if not exists Transactions (id int, country varchar(4), state enum('approved', 'declined'), amount int, trans_date date)\n",
+    "create table if not exists Chargebacks (trans_id int, trans_date date)\n",
+    "Truncate table Transactions",
+    "insert into Transactions (id, country, state, amount, trans_date) values ('101', 'US', 'approved', '1000', '2019-05-18')",
+    "insert into Transactions (id, country, state, amount, trans_date) values ('102', 'US', 'declined', '2000', '2019-05-19')",
+    "insert into Transactions (id, country, state, amount, trans_date) values ('103', 'US', 'approved', '3000', '2019-06-10')",
+    "insert into Transactions (id, country, state, amount, trans_date) values ('104', 'US', 'declined', '4000', '2019-06-13')",
+    "insert into Transactions (id, country, state, amount, trans_date) values ('105', 'US', 'approved', '5000', '2019-06-15')",
+    "Truncate table Chargebacks",
+    "insert into Chargebacks (trans_id, trans_date) values ('102', '2019-05-29')",
+    "insert into Chargebacks (trans_id, trans_date) values ('101', '2019-06-30')",
+    "insert into Chargebacks (trans_id, trans_date) values ('105', '2019-09-18')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

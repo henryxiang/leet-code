@@ -1,0 +1,113 @@
+{
+  "questionId": "63",
+  "questionFrontendId": "63",
+  "boundTopicId": null,
+  "title": "Unique Paths II",
+  "titleSlug": "unique-paths-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A robot is located at the top-left corner of a <em>m</em> x <em>n</em> grid (marked &#39;Start&#39; in the diagram below).</p>\r\n\r\n<p>The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked &#39;Finish&#39; in the diagram below).</p>\r\n\r\n<p>Now consider if some obstacles are added to the grids. How many unique paths would there be?</p>\r\n\r\n<p><img src=\"https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png\" style=\"width: 400px; height: 183px;\" /></p>\r\n\r\n<p>An obstacle and empty space is marked as <code>1</code> and <code>0</code> respectively in the grid.</p>\r\n\r\n<p><strong>Note:</strong> <em>m</em> and <em>n</em> will be at most 100.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong>[\r\n&nbsp; [0,0,0],\r\n&nbsp; [0,1,0],\r\n&nbsp; [0,0,0]\r\n]\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong>\r\nThere is one obstacle in the middle of the 3x3 grid above.\r\nThere are two ways to reach the bottom-right corner:\r\n1. Right -&gt; Right -&gt; Down -&gt; Down\r\n2. Down -&gt; Down -&gt; Right -&gt; Right\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1173,
+  "dislikes": 192,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Unique Paths\", \"titleSlug\": \"unique-paths\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Unique Paths III\", \"titleSlug\": \"unique-paths-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"GoDaddy\", \"slug\": \"godaddy\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int uniquePathsWithObstacles(int[][] obstacleGrid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def uniquePathsWithObstacles(self, obstacleGrid):\n        \"\"\"\n        :type obstacleGrid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint uniquePathsWithObstacles(int** obstacleGrid, int obstacleGridSize, int* obstacleGridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int UniquePathsWithObstacles(int[][] obstacleGrid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} obstacleGrid\n * @return {number}\n */\nvar uniquePathsWithObstacles = function(obstacleGrid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} obstacle_grid\n# @return {Integer}\ndef unique_paths_with_obstacles(obstacle_grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func uniquePathsWithObstacles(_ obstacleGrid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func uniquePathsWithObstacles(obstacleGrid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def uniquePathsWithObstacles(obstacleGrid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun uniquePathsWithObstacles(obstacleGrid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn unique_paths_with_obstacles(obstacle_grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $obstacleGrid\n     * @return Integer\n     */\n    function uniquePathsWithObstacles($obstacleGrid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"244.4K\", \"totalSubmission\": \"722.9K\", \"totalAcceptedRaw\": 244418, \"totalSubmissionRaw\": 722910, \"acRate\": \"33.8%\"}",
+  "hints": [
+    "The robot can only move either down or right. Hence any cell in the first row can only be reached from the cell left to it. However, if any cell has an obstacle, you don't let that cell contribute to any path. So, for the first row, the number of ways will simply be \r\n\r\n<pre>\r\nif obstacleGrid[i][j] is not an obstacle\r\n     obstacleGrid[i,j] = obstacleGrid[i,j - 1] \r\nelse\r\n     obstacleGrid[i,j] = 0\r\n</pre>\r\n\r\nYou can do a similar processing for finding out the number of ways of reaching the cells in the first column.",
+    "For any other cell, we can find out the number of ways of reaching it, by making use of the number of ways of reaching the cell directly above it and the cell to the left of it in the grid. This is because these are the only two directions from which the robot can come to the current cell.",
+    "Since we are making use of pre-computed values along the iteration, this becomes a dynamic programming problem.\r\n\r\n<pre>\r\nif obstacleGrid[i][j] is not an obstacle\r\n     obstacleGrid[i,j] = obstacleGrid[i,j - 1]  + obstacleGrid[i - 1][j]\r\nelse\r\n     obstacleGrid[i,j] = 0\r\n</pre>\r\n\r\n</pre>"
+  ],
+  "solution": {
+    "id": "597",
+    "canSeeDetail": true,
+    "url": "/articles/unique-paths-ii/",
+    "content": "[TOC]\n\n## Solution\n---\n\n#### Approach 1: Dynamic Programming\n\n**Intuition**\n\nThe robot can only move either down or right.\nHence any cell in the first row can only be reached from the cell left to it.\n\n<center>\n\n!?!../Documents/63_Unique_Paths_2_1.json:500,415!?!\n\n</center>\n\nAnd, any cell in the first column can only be reached from the cell above it.\n\n<center>\n\n!?!../Documents/63_Unique_Paths_2_2.json:500,415!?!\n\n</center>\n\nFor any other cell in the grid, we can reach it either from the cell to left of it or the cell above it.\n\nIf any cell has an obstacle, we won't let that cell contribute to any path.\n\nWe will be iterating the array from left-to-right and top-to-bottom. Thus, before reaching any cell we would have the number of ways of reaching the predecessor cells. This is what makes it a `Dynamic Programming` problem. We will be using the `obstacleGrid` array as the DP array thus not utilizing any additional space.\n\n`Note:` As per the question, cell with an obstacle has a value `1`. We would use this value to make sure if a cell needs to be included in the path or not. After that we can use the same cell to store the number of ways to reach that cell.\n\n**Algorithm**\n\n1. If the first cell i.e. `obstacleGrid[0,0]` contains `1`, this means there is an obstacle in the first cell. Hence the robot won't be able to make any move and we would return the number of ways as `0`.\n2. Otherwise, if `obstacleGrid[0,0]` has a `0` originally we set it to `1` and move ahead.\n3. Iterate the first row. If a cell originally contains a `1`, this means the current cell has an obstacle and shouldn't contribute to any path. Hence, set the value of that cell to `0`. Otherwise, set it to the value of previous cell i.e. `obstacleGrid[i,j] = obstacleGrid[i,j-1]`\n4. Iterate the first column. If a cell originally contains a `1`, this means the current cell has an obstacle and shouldn't contribute to any path. Hence, set the value of that cell to `0`. Otherwise, set it to the value of previous cell i.e. `obstacleGrid[i,j] = obstacleGrid[i-1,j]`\n5. Now, iterate through the array starting from cell `obstacleGrid[1,1]`. If a cell originally doesn't contain any obstacle then the number of ways of reaching that cell would be the sum of number of ways of reaching the cell above it and number of ways of reaching the cell to the left of it.\n    <pre>\n    obstacleGrid[i,j] = obstacleGrid[i-1,j] + obstacleGrid[i,j-1]</pre>\n6. If a cell contains an obstacle set it to `0` and continue. This is done to make sure it doesn't contribute to any other path.\n\nFollowing is the animation to explain the algorithm's steps:\n<center>\n\n!?!../Documents/63_Unique_Paths_2_3.json:500,415!?!\n\n</center>\n\n<br>\n\n<iframe src=\"https://leetcode.com/playground/bmmKXqeu/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"bmmKXqeu\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(M \\times N)$$. The rectangular grid given to us is of size $$M \\times N$$ and we process each cell just once.  \n* Space Complexity: $$O(1)$$. We are utilizing the `obstacleGrid` as the DP array. Hence, no extra space.\n\n<br /><br/>\n\n---\nAnalysis written by: [@godayaldivya](https://leetcode.com/godayaldivya/).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "583",
+      "count": 39,
+      "average": 4.615,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,0,0],[0,1,0],[0,0,0]]",
+  "metaData": "{\r\n  \"name\": \"uniquePathsWithObstacles\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"obstacleGrid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

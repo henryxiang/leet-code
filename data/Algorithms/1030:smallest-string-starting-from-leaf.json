@@ -1,0 +1,109 @@
+{
+  "questionId": "1030",
+  "questionFrontendId": "988",
+  "boundTopicId": null,
+  "title": "Smallest String Starting From Leaf",
+  "titleSlug": "smallest-string-starting-from-leaf",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given the <code>root</code> of a binary tree, each node has a value from <code>0</code> to <code>25</code> representing the letters <code>&#39;a&#39;</code> to <code>&#39;z&#39;</code>: a value of <code>0</code> represents <code>&#39;a&#39;</code>, a value of <code>1</code> represents <code>&#39;b&#39;</code>, and so on.</p>\r\n\r\n<p>Find the lexicographically smallest string that starts at a leaf of this tree and ends at the root.</p>\r\n\r\n<p><em>(As a reminder, any shorter prefix of a string is lexicographically smaller: for example, <code>&quot;ab&quot;</code> is lexicographically smaller than <code>&quot;aba&quot;</code>.&nbsp; A leaf of a node is a node that has no children.)</em></p>\r\n\r\n<div>\r\n<div>\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/01/30/tree1.png\" style=\"width: 160px; height: 107px;\" /></strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[0,1,2,3,4,3,4]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;dba&quot;</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/01/30/tree2.png\" style=\"width: 160px; height: 107px;\" /></strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[25,1,3,1,3,0,2]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">&quot;adz&quot;</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/02/01/tree3.png\" style=\"height: 170px; width: 172px;\" /></strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[2,2,1,null,1,0,null,0]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">&quot;abc&quot;</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>The number of nodes in the given tree will be between <code>1</code> and <code>8500</code>.</li>\r\n\t<li>Each node in the tree will have a value between <code>0</code> and <code>25</code>.</li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 228,
+  "dislikes": 53,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Sum Root to Leaf Numbers\", \"titleSlug\": \"sum-root-to-leaf-numbers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Paths\", \"titleSlug\": \"binary-tree-paths\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    string smallestFromLeaf(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public String smallestFromLeaf(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def smallestFromLeaf(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def smallestFromLeaf(self, root: TreeNode) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nchar * smallestFromLeaf(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public string SmallestFromLeaf(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {string}\n */\nvar smallestFromLeaf = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {String}\ndef smallest_from_leaf(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func smallestFromLeaf(_ root: TreeNode?) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc smallestFromLeaf(root *TreeNode) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def smallestFromLeaf(root: TreeNode): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun smallestFromLeaf(root: TreeNode?): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn smallest_from_leaf(root: Option<Rc<RefCell<TreeNode>>>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return String\n     */\n    function smallestFromLeaf($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.6K\", \"totalSubmission\": \"39.2K\", \"totalAcceptedRaw\": 17608, \"totalSubmissionRaw\": 39233, \"acRate\": \"44.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "682",
+    "canSeeDetail": true,
+    "url": "/articles/smallest-string-starting-from-leaf/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Brute Force\n\n**Intuition**\n\nLet's create every possible string - then we can compare them and choose the best one.\n\n**Algorithm**\n\nIn our depth first search, we will maintain `sb` (or `A` in Python), the contents of a path from the root to this node.\n\nWhen we reach a leaf, we will reverse this path to create a candidate answer.  If it is better than our current answer, we'll update our answer.\n\n<iframe src=\"https://leetcode.com/playground/ZpZvkz97/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"ZpZvkz97\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  We use $$O(N)$$ to traverse the array and maintain `A` [Python] or `sb`.  Then, our reversal and comparison with the previous answer is $$O(L)$$, where $$L$$ is the size of the string we have when at the leaf.  For example, for a perfectly balanced tree, $$L = \\log N$$ and the time complexity would be $$O(N \\log N)$$.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "667",
+      "count": 8,
+      "average": 4.375,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,1,2,3,4,3,4]",
+  "metaData": "{\r\n  \"name\": \"smallestFromLeaf\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

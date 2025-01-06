@@ -1,0 +1,67 @@
+{
+  "questionId": "1271",
+  "questionFrontendId": "1236",
+  "boundTopicId": null,
+  "title": "Web Crawler",
+  "titleSlug": "web-crawler",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a url <code>startUrl</code> and an interface <code>HtmlParser</code>, implement a web&nbsp;crawler to crawl all links that are under the&nbsp;<strong>same hostname</strong> as&nbsp;<code>startUrl</code>.&nbsp;</p>\r\n\r\n<p>Return&nbsp;all urls obtained by your web crawler in <strong>any</strong> order.</p>\r\n\r\n<p>Your crawler should:</p>\r\n\r\n<ul>\r\n\t<li>Start from the page: <code>startUrl</code></li>\r\n\t<li>Call <code>HtmlParser.getUrls(url)</code> to get all urls from a webpage of given url.</li>\r\n\t<li>Do not crawl the same link twice.</li>\r\n\t<li>Explore only the links that are under the <strong>same hostname</strong> as <code>startUrl</code>.</li>\r\n</ul>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/08/13/urlhostname.png\" style=\"width: 600px; height: 164px;\" /></p>\r\n\r\n<p>As shown in the example url above, the hostname is <code>example.org</code>. For simplicity sake, you may assume all&nbsp;urls use <strong>http protocol</strong> without any&nbsp;<strong>port</strong> specified. For example, the urls&nbsp;<code>http://leetcode.com/problems</code> and&nbsp;<code>http://leetcode.com/contest</code> are under the same hostname, while urls <code>http://example.org/test</code> and <code>http://example.com/abc</code> are not under the same hostname.</p>\r\n\r\n<p>The <code>HtmlParser</code> interface is defined as such:&nbsp;</p>\r\n\r\n<pre>\r\ninterface HtmlParser {\r\n  // Return a list of all urls from a webpage of given <em>url</em>.\r\n  public List&lt;String&gt; getUrls(String url);\r\n}</pre>\r\n\r\n<p>Below&nbsp;are two examples explaining the functionality of the problem, for custom testing purposes you&#39;ll have three&nbsp;variables&nbsp;<code data-stringify-type=\"code\">urls</code>,&nbsp;<code data-stringify-type=\"code\">edges</code>&nbsp;and&nbsp;<code data-stringify-type=\"code\">startUrl</code>. Notice that you will only have access to&nbsp;<code data-stringify-type=\"code\">startUrl</code>&nbsp;in your code, while&nbsp;<code data-stringify-type=\"code\">urls</code>&nbsp;and&nbsp;<code data-stringify-type=\"code\">edges</code>&nbsp;are not directly accessible to you in code.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/23/sample_2_1497.png\" style=\"width: 610px; height: 300px;\" /></p>\r\n\r\n<pre>\r\n<strong>Input:\r\n</strong>urls = [\r\n&nbsp; &quot;http://news.yahoo.com&quot;,\r\n&nbsp; &quot;http://news.yahoo.com/news&quot;,\r\n&nbsp; &quot;http://news.yahoo.com/news/topics/&quot;,\r\n&nbsp; &quot;http://news.google.com&quot;,\r\n&nbsp; &quot;http://news.yahoo.com/us&quot;\r\n]\r\nedges = [[2,0],[2,1],[3,2],[3,1],[0,4]]\r\nstartUrl = &quot;http://news.yahoo.com/news/topics/&quot;\r\n<strong>Output:</strong> [\r\n&nbsp; &quot;http://news.yahoo.com&quot;,\r\n&nbsp; &quot;http://news.yahoo.com/news&quot;,\r\n&nbsp; &quot;http://news.yahoo.com/news/topics/&quot;,\r\n&nbsp; &quot;http://news.yahoo.com/us&quot;\r\n]\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/23/sample_3_1497.png\" style=\"width: 540px; height: 270px;\" /></strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\nurls = [\r\n&nbsp; &quot;http://news.yahoo.com&quot;,\r\n&nbsp; &quot;http://news.yahoo.com/news&quot;,\r\n&nbsp; &quot;http://news.yahoo.com/news/topics/&quot;,\r\n&nbsp; &quot;http://news.google.com&quot;\r\n]\r\nedges = [[0,2],[2,1],[3,2],[3,1],[3,0]]\r\nstartUrl = &quot;http://news.google.com&quot;\r\n<strong>Output:</strong> [&quot;http://news.google.com&quot;]\r\n<strong>Explanation: </strong>The startUrl links to all other pages that do not share the same hostname.</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= urls.length &lt;= 1000</code></li>\r\n\t<li><code>1 &lt;= urls[i].length &lt;= 300</code></li>\r\n\t<li><code>startUrl</code>&nbsp;is one of the <code>urls</code>.</li>\r\n\t<li>Hostname label must be from 1 to 63 characters long, including the dots, may contain only the ASCII letters from &#39;a&#39; to&nbsp;&#39;z&#39;, digits&nbsp; from &#39;0&#39; to &#39;9&#39; and the&nbsp;hyphen-minus&nbsp;character (&#39;-&#39;).</li>\r\n\t<li>The hostname may not start or end with&nbsp;the hyphen-minus character (&#39;-&#39;).&nbsp;</li>\r\n\t<li>See:&nbsp;&nbsp;<a href=\"https://en.wikipedia.org/wiki/Hostname#Restrictions_on_valid_hostnames\">https://en.wikipedia.org/wiki/Hostname#Restrictions_on_valid_hostnames</a></li>\r\n\t<li>You may assume there&#39;re&nbsp;no duplicates in url library.</li>\r\n</ul>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 20,
+  "dislikes": 35,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Web Crawler Multithreaded\", \"titleSlug\": \"web-crawler-multithreaded\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\r\n * // This is the HtmlParser's API interface.\r\n * // You should not implement it, or speculate about its implementation\r\n * class HtmlParser {\r\n *   public:\r\n *     vector<string> getUrls(string url);\r\n * };\r\n */\r\nclass Solution {\r\npublic:\r\n    vector<string> crawl(string startUrl, HtmlParser htmlParser) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * // This is the HtmlParser's API interface.\n * // You should not implement it, or speculate about its implementation\n * interface HtmlParser {\n *     public List<String> getUrls(String url) {}\n * }\n */\nclass Solution {\n    public List<String> crawl(String startUrl, HtmlParser htmlParser) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# \"\"\"\r\n# This is HtmlParser's API interface.\r\n# You should not implement it, or speculate about its implementation\r\n# \"\"\"\r\n#class HtmlParser(object):\r\n#    def getUrls(self, url):\r\n#        \"\"\"\r\n#        :type url: str\r\n#        :rtype List[str]\r\n#        \"\"\"\r\n\r\nclass Solution(object):\r\n    def crawl(self, startUrl, htmlParser):\r\n        \"\"\"\r\n        :type startUrl: str\r\n        :type htmlParser: HtmlParser\r\n        :rtype: List[str]\r\n        \"\"\""
+    },
+    {
+      "lang": "Python3",
+      "code": "# \"\"\"\r\n# This is HtmlParser's API interface.\r\n# You should not implement it, or speculate about its implementation\r\n# \"\"\"\r\n#class HtmlParser(object):\r\n#    def getUrls(self, url):\r\n#        \"\"\"\r\n#        :type url: str\r\n#        :rtype List[str]\r\n#        \"\"\"\r\n\r\nclass Solution:\r\n    def crawl(self, startUrl: str, htmlParser: 'HtmlParser') -> List[str]:"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\r\n * // This is the HtmlParser's API interface.\r\n * // You should not implement it, or speculate about its implementation\r\n * class HtmlParser {\r\n *     public List<String> GetUrls(String url) {}\r\n * }\r\n */\r\nclass Solution {\r\n    public IList<string> Crawl(string startUrl, HtmlParser htmlParser) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * // This is the HtmlParser's API interface.\r\n * // You should not implement it, or speculate about its implementation\r\n * function HtmlParser() {\r\n *\r\n *\t\t@param {string} url\r\n *     \t@return {string[]}\r\n *     \tthis.getUrls = function(url) {\r\n *      \t...\r\n *     \t};\r\n * };\r\n */\r\n/**\r\n * @param {string} startUrl\r\n * @param {HtmlParser} htmlParser\r\n * @return {string[]}\r\n*/\r\nvar crawl = function(startUrl, htmlParser) {\r\n    \r\n};"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.8K\", \"totalSubmission\": \"2.9K\", \"totalAcceptedRaw\": 1839, \"totalSubmissionRaw\": 2853, \"acRate\": \"64.5%\"}",
+  "hints": [
+    "Use DFS/BFS to search start from the startURL. Remember to get rid of duplicate URLs."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"http://news.yahoo.com\",\"http://news.yahoo.com/news\",\"http://news.yahoo.com/news/topics/\",\"http://news.google.com\",\"http://news.yahoo.com/us\"]\r\n[[2,0],[2,1],[3,2],[3,1],[0,4]]\r\n\"http://news.yahoo.com/news/topics/\"\r",
+  "metaData": "{\n  \"name\": \"crawl\",\n  \"params\": [\n    {\n      \"name\": \"urls\",\n      \"type\": \"string[]\"\n    },\n    {\n      \"type\": \"integer[][]\",\n      \"name\": \"edges\"\n    },\n    {\n      \"type\": \"string\",\n      \"name\": \"startUrl\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<string>\"\n  },\n  \"manual\": true,\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"csharp\",\n    \"python3\",\n    \"javascript\"\n  ]\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

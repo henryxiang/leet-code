@@ -1,0 +1,103 @@
+{
+  "questionId": "533",
+  "questionFrontendId": "533",
+  "boundTopicId": null,
+  "title": "Lonely Pixel II",
+  "titleSlug": "lonely-pixel-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a picture consisting of black and white pixels, and a positive integer N, find the number of black pixels located at some specific row <b>R</b> and column <b>C</b> that align with all the following rules:</p>\r\n\r\n<ol>\r\n<li> Row R and column C both contain exactly N black pixels.</li>\r\n<li> For all rows that have a black pixel at column C, they should be exactly the same as row R</li>\r\n</ol>\r\n\r\n<p>The picture is represented by a 2D char array consisting of 'B' and 'W', which means black and white pixels respectively. </p>\r\n\r\n<p><b>Example:</b><br />\r\n<pre>\r\n<b>Input:</b>                                            \r\n[['W', 'B', 'W', 'B', 'B', 'W'],    \r\n ['W', 'B', 'W', 'B', 'B', 'W'],    \r\n ['W', 'B', 'W', 'B', 'B', 'W'],    \r\n ['W', 'W', 'B', 'W', 'B', 'W']] \r\n\r\nN = 3\r\n<b>Output:</b> 6\r\n<b>Explanation:</b> All the bold 'B' are the black pixels we need (all 'B's at column 1 and 3).\r\n        0    1    2    3    4    5         column index                                            \r\n0    [['W', <b>'B'</b>, 'W', <b>'B'</b>, 'B', 'W'],    \r\n1     ['W', <b>'B'</b>, 'W', <b>'B'</b>, 'B', 'W'],    \r\n2     ['W', <b>'B'</b>, 'W', <b>'B'</b>, 'B', 'W'],    \r\n3     ['W', 'W', 'B', 'W', 'B', 'W']]    \r\nrow index\r\n\r\nTake 'B' at row R = 0 and column C = 1 as an example:\r\nRule 1, row R = 0 and column C = 1 both have exactly N = 3 black pixels. \r\nRule 2, the rows have black pixel at column C = 1 are row 0, row 1 and row 2. They are exactly the same as row R = 0.\r\n\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The range of width and height of the input 2D array is [1,200].</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 41,
+  "dislikes": 491,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Lonely Pixel I\", \"titleSlug\": \"lonely-pixel-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findBlackPixel(vector<vector<char>>& picture, int N) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findBlackPixel(char[][] picture, int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findBlackPixel(self, picture, N):\n        \"\"\"\n        :type picture: List[List[str]]\n        :type N: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findBlackPixel(self, picture: List[List[str]], N: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findBlackPixel(char** picture, int pictureSize, int* pictureColSize, int N){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindBlackPixel(char[][] picture, int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[][]} picture\n * @param {number} N\n * @return {number}\n */\nvar findBlackPixel = function(picture, N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[][]} picture\n# @param {Integer} n\n# @return {Integer}\ndef find_black_pixel(picture, n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findBlackPixel(_ picture: [[Character]], _ N: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findBlackPixel(picture [][]byte, N int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findBlackPixel(picture: Array[Array[Char]], N: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findBlackPixel(picture: Array<CharArray>, N: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_black_pixel(picture: Vec<Vec<char>>, n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $picture\n     * @param Integer $N\n     * @return Integer\n     */\n    function findBlackPixel($picture, $N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"9.4K\", \"totalSubmission\": \"19.9K\", \"totalAcceptedRaw\": 9362, \"totalSubmissionRaw\": 19889, \"acRate\": \"47.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[\"W\",\"B\",\"W\",\"B\",\"B\",\"W\"],[\"W\",\"B\",\"W\",\"B\",\"B\",\"W\"],[\"W\",\"B\",\"W\",\"B\",\"B\",\"W\"],[\"W\",\"W\",\"B\",\"W\",\"B\",\"W\"]]\n3",
+  "metaData": "{\r\n  \"name\": \"findBlackPixel\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"picture\",\r\n      \"type\": \"character[][]\"\r\n    },\r\n    {\r\n        \"name\": \"N\",\r\n        \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

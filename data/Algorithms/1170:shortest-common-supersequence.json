@@ -1,0 +1,101 @@
+{
+  "questionId": "1170",
+  "questionFrontendId": "1092",
+  "boundTopicId": null,
+  "title": "Shortest Common Supersequence ",
+  "titleSlug": "shortest-common-supersequence",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two strings <code>str1</code> and <code>str2</code>,&nbsp;return the shortest string that has both <code>str1</code>&nbsp;and <code>str2</code>&nbsp;as subsequences.&nbsp;&nbsp;If multiple answers exist, you may return any of them.</p>\n\n<p><em>(A string S is a subsequence of string T if deleting some number of characters from T (possibly 0, and the characters are chosen <u>anywhere</u> from T) results in the string S.)</em></p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong>str1 = <span id=\"example-input-1-1\">&quot;abac&quot;</span>, str2 = <span id=\"example-input-1-2\">&quot;cab&quot;</span>\n<strong>Output: </strong><span id=\"example-output-1\">&quot;cabac&quot;</span>\n<strong>Explanation: </strong>\nstr1 = &quot;abac&quot; is a subsequence of &quot;cabac&quot; because we can delete the first &quot;c&quot;.\nstr2 = &quot;cab&quot; is a subsequence of &quot;cabac&quot; because we can delete the last &quot;ac&quot;.\nThe answer provided is the shortest such string that satisfies these properties.\n</pre>\n\n<p>&nbsp;</p>\n\n<p><strong>Note:</strong></p>\n\n<ol>\n\t<li><code>1 &lt;= str1.length, str2.length &lt;= 1000</code></li>\n\t<li><code>str1</code> and <code>str2</code> consist of lowercase English letters.</li>\n</ol>\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 228,
+  "dislikes": 8,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Common Subsequence\", \"titleSlug\": \"longest-common-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "coding4232",
+      "profileUrl": "/coding4232/",
+      "avatarUrl": "https://assets.leetcode.com/users/coding4232/avatar_1554483797.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string shortestCommonSupersequence(string str1, string str2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String shortestCommonSupersequence(String str1, String str2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestCommonSupersequence(self, str1, str2):\n        \"\"\"\n        :type str1: str\n        :type str2: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestCommonSupersequence(self, str1: str, str2: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * shortestCommonSupersequence(char * str1, char * str2){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ShortestCommonSupersequence(string str1, string str2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} str1\n * @param {string} str2\n * @return {string}\n */\nvar shortestCommonSupersequence = function(str1, str2) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} str1\n# @param {String} str2\n# @return {String}\ndef shortest_common_supersequence(str1, str2)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestCommonSupersequence(_ str1: String, _ str2: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestCommonSupersequence(str1 string, str2 string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestCommonSupersequence(str1: String, str2: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestCommonSupersequence(str1: String, str2: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_common_supersequence(str1: String, str2: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $str1\n     * @param String $str2\n     * @return String\n     */\n    function shortestCommonSupersequence($str1, $str2) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.3K\", \"totalSubmission\": \"12.6K\", \"totalAcceptedRaw\": 6271, \"totalSubmissionRaw\": 12575, \"acRate\": \"49.9%\"}",
+  "hints": [
+    "We can find the length of the longest common subsequence between str1[i:] and str2[j:] (for all (i, j)) by using dynamic programming.  We can use this information to recover the longest common supersequence."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"abac\"\n\"cab\"",
+  "metaData": "{\n  \"name\": \"shortestCommonSupersequence\",\n  \"params\": [\n    {\n      \"name\": \"str1\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"str2\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

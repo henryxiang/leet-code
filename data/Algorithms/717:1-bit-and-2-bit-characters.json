@@ -1,0 +1,113 @@
+{
+  "questionId": "717",
+  "questionFrontendId": "717",
+  "boundTopicId": null,
+  "title": "1-bit and 2-bit Characters",
+  "titleSlug": "1-bit-and-2-bit-characters",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We have two special characters. The first character can be represented by one bit <code>0</code>. The second character can be represented by two bits (<code>10</code> or <code>11</code>).  </p>\r\n\r\n<p>Now given a string represented by several bits. Return whether the last character must be a one-bit character or not. The given string will always end with a zero.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\nbits = [1, 0, 0]\r\n<b>Output:</b> True\r\n<b>Explanation:</b> \r\nThe only way to decode it is two-bit character and one-bit character. So the last character is one-bit character.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\nbits = [1, 1, 1, 0]\r\n<b>Output:</b> False\r\n<b>Explanation:</b> \r\nThe only way to decode it is two-bit character and two-bit character. So the last character is NOT one-bit character.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<li><code>1 <= len(bits) <= 1000</code>.</li>\r\n<li><code>bits[i]</code> is always <code>0</code> or <code>1</code>.</li>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 305,
+  "dislikes": 804,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Gray Code\", \"titleSlug\": \"gray-code\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"IXL\", \"slug\": \"ixl\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isOneBitCharacter(vector<int>& bits) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isOneBitCharacter(int[] bits) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isOneBitCharacter(self, bits):\n        \"\"\"\n        :type bits: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isOneBitCharacter(self, bits: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isOneBitCharacter(int* bits, int bitsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsOneBitCharacter(int[] bits) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} bits\n * @return {boolean}\n */\nvar isOneBitCharacter = function(bits) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} bits\n# @return {Boolean}\ndef is_one_bit_character(bits)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isOneBitCharacter(_ bits: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isOneBitCharacter(bits []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isOneBitCharacter(bits: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isOneBitCharacter(bits: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_one_bit_character(bits: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $bits\n     * @return Boolean\n     */\n    function isOneBitCharacter($bits) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"50.3K\", \"totalSubmission\": \"102.4K\", \"totalAcceptedRaw\": 50316, \"totalSubmissionRaw\": 102449, \"acRate\": \"49.1%\"}",
+  "hints": [
+    "Keep track of where the next character starts.  At the end, you want to know if you started on the last bit."
+  ],
+  "solution": {
+    "id": "271",
+    "canSeeDetail": true,
+    "url": "/articles/1-bit-and-2-bit-characters/",
+    "content": "[TOC]\n\n\n#### Approach #1: Increment Pointer [Accepted]\n\n**Intuition and Algorithm**\n\nWhen reading from the `i`-th position, if `bits[i] == 0`, the next character must have 1 bit; else if `bits[i] == 1`, the next character must have 2 bits.  We increment our read-pointer `i` to the start of the next character appropriately.  At the end, if our pointer is at `bits.length - 1`, then the last character must have a size of 1 bit.\n\n**Python**\n```python\nclass Solution(object):\n    def isOneBitCharacter(self, bits):\n        i = 0\n        while i < len(bits) - 1:\n            i += bits[i] + 1\n        return i == len(bits) - 1\n```\n\n**Java**\n```java\nclass Solution {\n    public boolean isOneBitCharacter(int[] bits) {\n        int i = 0;\n        while (i < bits.length - 1) {\n            i += bits[i] + 1;\n        }\n        return i == bits.length - 1;\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `bits`.\n\n* Space Complexity: $$O(1)$$, the space used by `i`.\n\n---\n#### Approach #2: Greedy [Accepted]\n\n**Intuition and Algorithm**\n\nThe second-last `0` must be the end of a character (or, the beginning of the array if it doesn't exist).  Looking from that position forward, the array `bits` takes the form `[1, 1, ..., 1, 0]` where there are zero or more `1`'s present in total.  It is easy to show that the answer is `true` if and only if there are an even number of ones present.\n\nIn our algorithm, we will find the second last zero by performing a linear scan from the right.  We present two slightly different approaches below.\n\n**Python**\n```python\nclass Solution(object):\n    def isOneBitCharacter(self, bits):\n        parity = bits.pop()\n        while bits and bits.pop(): parity ^= 1\n        return parity == 0\n```\n\n**Java**\n```java\nclass Solution {\n    public boolean isOneBitCharacter(int[] bits) {\n        int i = bits.length - 2;\n        while (i >= 0 && bits[i] > 0) i--;\n        return (bits.length - i) % 2 == 0;\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `bits`.\n\n* Space Complexity: $$O(1)$$, the space used by `parity` (or `i`).\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "264",
+      "count": 26,
+      "average": 3.346,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,0,0]",
+  "metaData": "{\r\n  \"name\": \"isOneBitCharacter\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"bits\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

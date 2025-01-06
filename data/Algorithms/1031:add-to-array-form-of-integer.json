@@ -1,0 +1,111 @@
+{
+  "questionId": "1031",
+  "questionFrontendId": "989",
+  "boundTopicId": null,
+  "title": "Add to Array-Form of Integer",
+  "titleSlug": "add-to-array-form-of-integer",
+  "categoryTitle": "Algorithms",
+  "content": "<p>For a non-negative integer <code>X</code>, the&nbsp;<em>array-form of <code>X</code></em>&nbsp;is an array of its digits in left to right order.&nbsp; For example, if <code>X = 1231</code>, then the array form is&nbsp;<code>[1,2,3,1]</code>.</p>\r\n\r\n<p>Given the array-form <code>A</code> of a non-negative&nbsp;integer <code>X</code>, return the array-form of the integer <code>X+K</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[1,2,0,0]</span>, K = 34\r\n<strong>Output: </strong><span id=\"example-output-1\">[1,2,3,4]</span>\r\n<strong>Explanation: </strong>1200 + 34 = 1234\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">[2,7,4]</span>, K = <span id=\"example-input-2-2\">181</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[4,5,5]</span>\r\n<strong>Explanation: </strong>274 + 181 = 455\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-3-1\">[2,1,5]</span>, K = <span id=\"example-input-3-2\">806</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">[1,0,2,1]</span>\r\n<strong>Explanation: </strong>215 + 806 = 1021\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-4-1\">[9,9,9,9,9,9,9,9,9,9]</span>, K = <span id=\"example-input-4-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">[1,0,0,0,0,0,0,0,0,0,0]</span>\r\n<strong>Explanation: </strong>9999999999 + 1 = 10000000000\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note：</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 10000</code></li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 9</code></li>\r\n\t<li><code>0 &lt;= K &lt;= 10000</code></li>\r\n\t<li>If <code>A.length &gt; 1</code>, then <code>A[0] != 0</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 213,
+  "dislikes": 41,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Add Two Numbers\", \"titleSlug\": \"add-two-numbers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Plus One\", \"titleSlug\": \"plus-one\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Add Binary\", \"titleSlug\": \"add-binary\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Add Strings\", \"titleSlug\": \"add-strings\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "theriley106",
+      "profileUrl": "/theriley106/",
+      "avatarUrl": "https://assets.leetcode.com/users/theriley106/avatar_1548359770.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> addToArrayForm(vector<int>& A, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> addToArrayForm(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def addToArrayForm(self, A, K):\n        \"\"\"\n        :type A: List[int]\n        :type K: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def addToArrayForm(self, A: List[int], K: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* addToArrayForm(int* A, int ASize, int K, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> AddToArrayForm(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number} K\n * @return {number[]}\n */\nvar addToArrayForm = function(A, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer} k\n# @return {Integer[]}\ndef add_to_array_form(a, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func addToArrayForm(_ A: [Int], _ K: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func addToArrayForm(A []int, K int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def addToArrayForm(A: Array[Int], K: Int): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun addToArrayForm(A: IntArray, K: Int): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn add_to_array_form(a: Vec<i32>, k: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer $K\n     * @return Integer[]\n     */\n    function addToArrayForm($A, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"28K\", \"totalSubmission\": \"63.5K\", \"totalAcceptedRaw\": 27976, \"totalSubmissionRaw\": 63504, \"acRate\": \"44.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "688",
+    "canSeeDetail": true,
+    "url": "/articles/add-to-array-form-of-integer/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Schoolbook Addition\n\n**Intuition**\n\nLet's add numbers in a schoolbook way, column by column.  For example, to add 123 and 912, we add 3+2, then 2+1, then 1+9.  Whenever our addition result is more than 10, we carry the 1 into the next column.  The result is 1035.\n\n**Algorithm**\n\nWe can do a variant of the above idea that is easier to implement - we put the entire addend in the first column from the right.\n\nContinuing the example of 123 + 912, we start with [1, 2, 3+912].  Then we perform the addition 3+912, leaving 915.  The 5 stays as the digit, while we 'carry' 910 into the next column which becomes 91.\n\nWe repeat this process with [1, 2+91, 5].  We have 93, where 3 stays and 90 is carried over as 9.  Again, we have [1+9, 3, 5] which transforms into [1, 0, 3, 5].\n\n<iframe src=\"https://leetcode.com/playground/sf5gg5Sj/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"sf5gg5Sj\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\max(N, \\log K))$$ where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(\\max(N, \\log K))$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "673",
+      "count": 11,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,0,0]\n34",
+  "metaData": "{\r\n  \"name\": \"addToArrayForm\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

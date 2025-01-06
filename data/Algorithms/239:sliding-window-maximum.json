@@ -1,0 +1,113 @@
+{
+  "questionId": "239",
+  "questionFrontendId": "239",
+  "boundTopicId": null,
+  "title": "Sliding Window Maximum",
+  "titleSlug": "sliding-window-maximum",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <em>nums</em>, there is a sliding window of size <em>k</em> which is moving from the very left of the array to the very right. You can only see the <em>k</em> numbers in the window. Each time the sliding window moves right by one position. Return the max sliding window.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <em>nums</em> = <code>[1,3,-1,-3,5,3,6,7]</code>, and <em>k</em> = 3\r\n<strong>Output: </strong><code>[3,3,5,5,6,7] \r\n<strong>Explanation: \r\n</strong></code>\r\nWindow position                Max\r\n---------------               -----\r\n[1  3  -1] -3  5  3  6  7       <strong>3</strong>\r\n 1 [3  -1  -3] 5  3  6  7       <strong>3</strong>\r\n 1  3 [-1  -3  5] 3  6  7      <strong> 5</strong>\r\n 1  3  -1 [-3  5  3] 6  7       <strong>5</strong>\r\n 1  3  -1  -3 [5  3  6] 7       <strong>6</strong>\r\n 1  3  -1  -3  5 [3  6  7]      <strong>7</strong>\r\n</pre>\r\n\r\n<p><strong>Note: </strong><br />\r\nYou may assume <em>k</em> is always valid, 1 &le; k &le; input array&#39;s size for non-empty array.</p>\r\n\r\n<p><strong>Follow up:</strong><br />\r\nCould you solve it in linear time?</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 2377,
+  "dislikes": 140,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Minimum Window Substring\", \"titleSlug\": \"minimum-window-substring\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Min Stack\", \"titleSlug\": \"min-stack\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Longest Substring with At Most Two Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-two-distinct-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Paint House II\", \"titleSlug\": \"paint-house-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Heap",
+      "slug": "heap"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 12}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Databricks\", \"slug\": \"databricks\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Roblox\", \"slug\": \"roblox\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Coursera\", \"slug\": \"coursera\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Zenefits\", \"slug\": \"zenefits\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> maxSlidingWindow(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] maxSlidingWindow(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxSlidingWindow(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* maxSlidingWindow(int* nums, int numsSize, int k, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] MaxSlidingWindow(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number[]}\n */\nvar maxSlidingWindow = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer[]}\ndef max_sliding_window(nums, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxSlidingWindow(_ nums: [Int], _ k: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxSlidingWindow(nums []int, k int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxSlidingWindow(nums: Array[Int], k: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxSlidingWindow(nums: IntArray, k: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_sliding_window(nums: Vec<i32>, k: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer[]\n     */\n    function maxSlidingWindow($nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"208.2K\", \"totalSubmission\": \"517.5K\", \"totalAcceptedRaw\": 208206, \"totalSubmissionRaw\": 517525, \"acRate\": \"40.2%\"}",
+  "hints": [
+    "How about using a data structure such as deque (double-ended queue)?",
+    "The queue size need not be the same as the window’s size.",
+    "Remove redundant elements and the queue should store only elements that need to be considered."
+  ],
+  "solution": {
+    "id": "705",
+    "canSeeDetail": true,
+    "url": "/articles/sliding-window-maximum/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Use a hammer \n\n**Intuition**\n\nThe straightforward solution is to iterate over all sliding windows \nand find a maximum for each window. There are `N - k + 1` sliding windows \nand there are `k` elements in each window, that results in \na quite bad time complexity $$\\mathcal{O}(N k)$$.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/DX3VvvY4/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"DX3VvvY4\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N k)$$, \nwhere `N` is number of elements in the array.\n \n* Space complexity : $$\\mathcal{O}(N - k + 1)$$ for an output array.\n<br />\n<br />\n\n\n---\n#### Approach 2: Deque \n\n**Intuition**\n\nHow one could improve the time complexity? The first idea is to \nuse a _heap_, since in a maximum heap `heap[0]` is always the largest element.\nThough to add an element in a heap of size `k` costs \n$$\\log(k)$$, that means $$\\mathcal{O}(N \\log(k))$$ time complexity\nfor the solution.\n\n> Could we figure out $$\\mathcal{O}(N)$$ solution? \n\nLet's use a _deque_ (double-ended queue), \nthe structure which pops from / pushes to either side with the same $$\\mathcal{O}(1)$$\nperformance.\n\nIt's more handy to store in the deque indexes instead of elements since\nboth are used during an array parsing.\n\n**Algorithm**\n\nThe algorithm is quite straigthforward :\n\n- Process the first `k` elements separately to initiate the deque.\n\n- Iterate over the array. At each step :\n\n    - Clean the deque :\n\n        - Keep only the indexes of elements from \n        the current sliding window.\n    \n        - Remove indexes of all elements smaller than the current one, \n        since they will not be the maximum ones.\n        \n    - Append the current element to the deque.\n    \n    - Append `deque[0]` to the output.\n\n- Return the output array.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/UENxbx8Q/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"UENxbx8Q\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$, since each element is processed \nexactly twice - it's index added and then removed from the deque.\n \n* Space complexity : $$\\mathcal{O}(N)$$, since \n$$\\mathcal{O}(N - k + 1)$$ is used for an output array and\n$$\\mathcal{O}(k)$$ for a deque.\n<br />\n<br />\n\n\n---\n#### Approach 3: Dynamic programming\n\n**Intuition**\n\nHere is another $$\\mathcal{O}(N)$$ solution. The good thing about this\nsolution is that you don't need any data structures but\n`array / list`.\n\nThe idea is to split an input array into blocks of `k` elements.\nThe last block could contain less elements if `n % k != 0`.\n\n![split](../Figures/239/split.png)\n\nThe current sliding window with the first element `i` and the last element `j`\ncould be placed inside one block, or in two different blocks. \n\n![split](../Figures/239/one_two.png)\n\nThe situation `1` is simple. \nLet's use an array `left`, where `left[j]` is a maximum element\nfrom the beginning of the block to index `j`, direction `left->right`.\n\n![split](../Figures/239/inside2.png)\n\nTo work with more complex situation `2`, let's introduce array `right`,\nwhere `right[j]` is a maximum element from the end of the block to index `j`,\ndirection `right->left`. `right` is basically the same as `left`,\nbut in the other direction.\n\n![split](../Figures/239/right_left2.png)\n\nThese two arrays together give all the information about\nwindow elements in both blocks.\nLet's consider a sliding window from index `i` to index `j`. \nBy definition, element `right[i]` is a maximum element for window elements \nin the leftside block,\nand element `left[j]` is a maximum element for window elements\nin the rightside block.\nHence the maximum element in the sliding window is \n`max(right[i], left[j])`.\n\n![split](../Figures/239/solution.png)\n\n**Algorithm**\n\nThe algorithm is quite straightforward :\n\n- Iterate along the array in the direction `left->right`\nand build an array `left`.\n\n- Iterate along the array in the direction `right->left`\nand build an array `right`.\n\n- Build an output array as `max(right[i], left[i + k - 1])` for `i`\nin range `(0, n - k + 1)`.\n\n**Implementation**\n\n!?!../Documents/239_LIS.json:1000,468!?!\n\n<iframe src=\"https://leetcode.com/playground/ZvwQJ7pT/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ZvwQJ7pT\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$, \nsince all we do is `3` passes along the array of length `N`.\n \n* Space complexity : $$\\mathcal{O}(N)$$ to keep `left` and `right` arrays\nof length `N`, and output array of length `N - k + 1`.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "690",
+      "count": 50,
+      "average": 4.54,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,3,-1,-3,5,3,6,7]\n3",
+  "metaData": "{ \r\n  \"name\": \"maxSlidingWindow\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

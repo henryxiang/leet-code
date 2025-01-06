@@ -1,0 +1,102 @@
+{
+  "questionId": "1119",
+  "questionFrontendId": "1041",
+  "boundTopicId": null,
+  "title": "Robot Bounded In Circle",
+  "titleSlug": "robot-bounded-in-circle",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On an infinite plane, a&nbsp;robot initially stands at <code>(0, 0)</code> and faces north.&nbsp;&nbsp;The robot can receive one of three instructions:</p>\n\n<ul>\n\t<li><code>&quot;G&quot;</code>: go straight 1 unit;</li>\n\t<li><code>&quot;L&quot;</code>: turn 90 degrees to the left;</li>\n\t<li><code>&quot;R&quot;</code>: turn 90 degress to the right.</li>\n</ul>\n\n<p>The robot performs the <code>instructions</code> given in order, and repeats them forever.</p>\n\n<p>Return <code>true</code> if and only if there exists a circle in the plane such that the robot never leaves the circle.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong>&quot;GGLLGG&quot;\n<strong>Output: </strong>true\n<strong>Explanation: </strong>\nThe robot moves from (0,0) to (0,2), turns 180 degrees, and then returns to (0,0).\nWhen repeating these instructions, the robot remains in the circle of radius 2 centered at the origin.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input: </strong>&quot;GG&quot;\n<strong>Output: </strong>false\n<strong>Explanation: </strong>\nThe robot moves north indefinitely.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input: </strong>&quot;GL&quot;\n<strong>Output: </strong>true\n<strong>Explanation: </strong>\nThe robot moves from (0, 0) -&gt; (0, 1) -&gt; (-1, 1) -&gt; (-1, 0) -&gt; (0, 0) -&gt; ...\n</pre>\n\n<p>&nbsp;</p>\n\n<p><strong>Note:</strong></p>\n\n<ol>\n\t<li><code>1 &lt;= instructions.length &lt;= 100</code></li>\n\t<li><code>instructions[i]</code> is in <code>{&#39;G&#39;, &#39;L&#39;, &#39;R&#39;}</code></li>\n</ol>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 161,
+  "dislikes": 91,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "lee215",
+      "profileUrl": "/lee215/",
+      "avatarUrl": "https://assets.leetcode.com/users/lee215/avatar_1551541889.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isRobotBounded(string instructions) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isRobotBounded(String instructions) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isRobotBounded(self, instructions):\n        \"\"\"\n        :type instructions: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isRobotBounded(self, instructions: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isRobotBounded(char * instructions){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsRobotBounded(string instructions) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} instructions\n * @return {boolean}\n */\nvar isRobotBounded = function(instructions) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} instructions\n# @return {Boolean}\ndef is_robot_bounded(instructions)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isRobotBounded(_ instructions: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isRobotBounded(instructions string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isRobotBounded(instructions: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isRobotBounded(instructions: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_robot_bounded(instructions: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $instructions\n     * @return Boolean\n     */\n    function isRobotBounded($instructions) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.7K\", \"totalSubmission\": \"22.7K\", \"totalAcceptedRaw\": 10700, \"totalSubmissionRaw\": 22667, \"acRate\": \"47.2%\"}",
+  "hints": [
+    "Calculate the final vector of how the robot travels after executing all instructions once - it consists of a change in position plus a change in direction.",
+    "The robot stays in the circle iff (looking at the final vector) it changes direction (ie. doesn't stay pointing north), or it moves 0."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"GGLLGG\"",
+  "metaData": "{\n  \"name\": \"isRobotBounded\",\n  \"params\": [\n    {\n      \"name\": \"instructions\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

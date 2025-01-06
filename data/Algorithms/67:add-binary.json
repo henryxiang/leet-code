@@ -1,0 +1,109 @@
+{
+  "questionId": "67",
+  "questionFrontendId": "67",
+  "boundTopicId": null,
+  "title": "Add Binary",
+  "titleSlug": "add-binary",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two binary strings, return their sum (also a binary string).</p>\r\n\r\n<p>The input strings are both <strong>non-empty</strong> and contains only characters <code>1</code> or&nbsp;<code>0</code>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> a = &quot;11&quot;, b = &quot;1&quot;\r\n<strong>Output:</strong> &quot;100&quot;</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> a = &quot;1010&quot;, b = &quot;1011&quot;\r\n<strong>Output:</strong> &quot;10101&quot;</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1298,
+  "dislikes": 235,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Add Two Numbers\", \"titleSlug\": \"add-two-numbers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Multiply Strings\", \"titleSlug\": \"multiply-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Plus One\", \"titleSlug\": \"plus-one\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Add to Array-Form of Integer\", \"titleSlug\": \"add-to-array-form-of-integer\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 51}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    string addBinary(string a, string b) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String addBinary(String a, String b) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def addBinary(self, a, b):\n        \"\"\"\n        :type a: str\n        :type b: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def addBinary(self, a: str, b: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * addBinary(char * a, char * b){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string AddBinary(string a, string b) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} a\n * @param {string} b\n * @return {string}\n */\nvar addBinary = function(a, b) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} a\r\n# @param {String} b\r\n# @return {String}\r\ndef add_binary(a, b)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func addBinary(_ a: String, _ b: String) -> String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func addBinary(a string, b string) string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def addBinary(a: String, b: String): String = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun addBinary(a: String, b: String): String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn add_binary(a: String, b: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $a\n     * @param String $b\n     * @return String\n     */\n    function addBinary($a, $b) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"369.2K\", \"totalSubmission\": \"887.6K\", \"totalAcceptedRaw\": 369250, \"totalSubmissionRaw\": 887615, \"acRate\": \"41.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "805",
+    "canSeeDetail": true,
+    "url": "/articles/add-binary/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Overview\r\n\r\nThere is a simple way using built-in functions:\r\n\r\n- Convert a and b into integers.\r\n\r\n- Compute the sum.\r\n\r\n- Convert the sum back into binary form.\r\n\r\n<iframe src=\"https://leetcode.com/playground/B5CXXqMQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"140\" name=\"B5CXXqMQ\"></iframe>\r\n\r\nThe overall algorithm has $$\\mathcal{O}(N + M)$$ time complexity \r\nand has two drawbacks which could be used against you during the interview.\r\n\r\n> 1 . In Java this approach is limited by the length of the input strings a and b.\r\nOnce the string is long enough, the result of conversion into \r\nintegers will not fit into Integer, Long or BigInteger:\r\n\r\n- 33 1-bits - and b doesn't fit into Integer.\r\n\r\n- 65 1-bits - and b doesn't fit into Long.\r\n\r\n- [500000001](https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html) 1-bits - and b doesn't fit into BigInteger.\r\n\r\nTo fix the issue, one could use standard Bit-by-Bit Computation approach\r\nwhich is suitable for quite long input strings.\r\n\r\n> 2 . This method has quite low performance in the case of large input \r\nnumbers. \r\n\r\nOne could use Bit Manipulation approach to speed up the solution. \r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Bit-by-Bit Computation\r\n\r\n**Algorithm**\r\n\r\nThat's a good old classical algorithm, and there is no\r\nconversion from binary string to decimal and back here. Let's consider the\r\nnumbers bit by bit starting from the lowest one and \r\ncompute the carry this bit will add. \r\n\r\nStart from carry = 0. \r\nIf number a has 1-bit in this lowest bit, add 1 to the carry.\r\nThe same for number b: if number b has 1-bit in the lowest bit, \r\nadd 1 to the carry. At this point the carry for the lowest bit could\r\nbe equal to $$(00)_2$$, $$(01)_2$$, or $$(10)_2$$.\r\n\r\nNow append the lowest bit of the carry to the answer, and \r\nmove the highest bit of the carry to the next order bit.  \r\n\r\nRepeat the same steps again, and again, till all bits in a and b\r\nare used up. If there is still nonzero carry to add, add it. \r\nNow reverse the answer string and the job is done.\r\n\r\n!?!../Documents/67_LIS.json:1000,387!?!\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/jdCZEp2o/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"jdCZEp2o\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity: $$\\mathcal{O}(\\max(N, M))$$, \r\nwhere $$N$$ and $$M$$ are lengths of the input strings a and b.\r\n\r\n* Space complexity: $$\\mathcal{O}(\\max(N, M))$$ to keep the answer.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Bit Manipulation\r\n \r\n**Intuition**\r\n \r\nHere the input is more adapted to push towards Approach 1,\r\nbut there is popular Facebook variation of this problem \r\nwhen interviewer provides you two numbers and \r\nasks to sum them up without using addition operation.  \r\n\r\n> No addition? OK, bit manipulation then.\r\n\r\nHow to start? There is an interview tip for bit manipulation problems:\r\nif you don't know how to start, start from computing XOR for your input data.\r\nStrangely, that helps to go out for quite a lot of problems,\r\n[Single Number II](https://leetcode.com/articles/single-number-ii/),\r\n[Single Number III](https://leetcode.com/articles/single-number-iii/),\r\n[Maximum XOR of Two Numbers in an Array](https://leetcode.com/articles/maximum-xor-of-two-numbers-in-an-array/),\r\n[Repeated DNA Sequences](https://leetcode.com/articles/repeated-dna-sequences/),\r\n[Maximum Product of Word Lengths](https://leetcode.com/articles/maximum-product-of-word-lengths/),\r\netc.\r\n\r\nHere XOR is a key as well, because it's a sum of two binaries \r\nwithout taking carry into account.\r\n\r\n![fig](../Figures/67/xor4.png) \r\n\r\nTo find current carry is quite easy as well, it's AND of two input numbers,\r\nshifted one bit to the left. \r\n\r\n![fig](../Figures/67/carry2.png)\r\n\r\nNow the problem is reduced: one has to find the sum of \r\nanswer without carry and carry. It's the same problem - to sum two numbers,\r\nand hence one could solve it in a loop with the condition statement \r\n\"while carry is not equal to zero\". \r\n\r\n**Algorithm**\r\n\r\n- Convert a and b into integers x and y, \r\nx will be used to keep an answer, and y for the carry.\r\n\r\n- While carry is nonzero: `y != 0`:\r\n\r\n    - Current answer without carry is XOR of x and y: `answer = x^y`.\r\n    \r\n    - Current carry is left-shifted AND of x and y: `carry = (x & y) << 1`.\r\n    \r\n    - Job is done, prepare the next loop: `x = answer`, `y = carry`.\r\n    \r\n- Return x in the binary form.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/GKPVHpER/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"GKPVHpER\"></iframe>\r\n\r\nThis solution could be written as 4-liner in Python\r\n\r\n<iframe src=\"https://leetcode.com/playground/68DmGsXd/shared\" frameBorder=\"0\" width=\"100%\" height=\"157\" name=\"68DmGsXd\"></iframe>\r\n\r\n**Performance Discussion**\r\n\r\nHere we deal with input numbers which are greater than $$2^{100}$$. \r\nThat forces to use slow [BigInteger](https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html) \r\nin Java, and hence the performance gain will be present for the Python solution only.\r\nProvided here Java solution could make its best with Integers or Longs, but not\r\nwith BigIntegers.\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N + M)$$, \r\nwhere $$N$$ and $$M$$ are lengths of the input strings a and b.\r\n\r\n* Space complexity : $$\\mathcal{O}(\\max(N, M))$$ to keep the answer.\r\n\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "775",
+      "count": 14,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"11\"\n\"1\"",
+  "metaData": "{\r\n  \"name\": \"addBinary\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"a\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"b\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

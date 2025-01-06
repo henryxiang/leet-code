@@ -1,0 +1,115 @@
+{
+  "questionId": "523",
+  "questionFrontendId": "523",
+  "boundTopicId": null,
+  "title": "Continuous Subarray Sum",
+  "titleSlug": "continuous-subarray-sum",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a list of <b>non-negative</b> numbers and a target <b>integer</b> k, write a function to check if the array has a continuous subarray of size at least 2 that sums up to a multiple of <b>k</b>, that is, sums up to n*k where n is also an <b>integer</b>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [23, 2, 4, 6, 7],  k=6\r\n<b>Output:</b> True\r\n<b>Explanation:</b> Because [2, 4] is a continuous subarray of size 2 and sums up to 6.\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [23, 2, 6, 4, 7],  k=6\r\n<b>Output:</b> True\r\n<b>Explanation:</b> Because [23, 2, 6, 4, 7] is an continuous subarray of size 5 and sums up to 42.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>The length of the array won&#39;t exceed 10,000.</li>\r\n\t<li>You may assume the sum of all the numbers is in the range of a signed 32-bit integer.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 906,
+  "dislikes": 1266,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Subarray Sum Equals K\", \"titleSlug\": \"subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "10000tb",
+      "profileUrl": "/10000tb/",
+      "avatarUrl": "https://assets.leetcode.com/users/xuehaohu/avatar_1523257198.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 22}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool checkSubarraySum(vector<int>& nums, int k) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean checkSubarraySum(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def checkSubarraySum(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def checkSubarraySum(self, nums: List[int], k: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool checkSubarraySum(int* nums, int numsSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool CheckSubarraySum(int[] nums, int k) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {boolean}\n */\nvar checkSubarraySum = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\r\n# @param {Integer} k\r\n# @return {Boolean}\r\ndef check_subarray_sum(nums, k)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func checkSubarraySum(_ nums: [Int], _ k: Int) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func checkSubarraySum(nums []int, k int) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def checkSubarraySum(nums: Array[Int], k: Int): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun checkSubarraySum(nums: IntArray, k: Int): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn check_subarray_sum(nums: Vec<i32>, k: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Boolean\n     */\n    function checkSubarraySum($nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"92.2K\", \"totalSubmission\": \"377.8K\", \"totalAcceptedRaw\": 92204, \"totalSubmissionRaw\": 377787, \"acRate\": \"24.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "107",
+    "canSeeDetail": true,
+    "url": "/articles/continous-subarray-sum/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\nThe brute force approach is trivial. We consider every possible subarray of size greater than or equal to 2, find out its sum by iterating over the elements of the subarray, and then we check if the sum obtained is an integer multiple of the given $$k$$.\n\n\n<iframe src=\"https://leetcode.com/playground/2FrNbepf/shared\" frameBorder=\"0\" name=\"2FrNbepf\" width=\"100%\" height=\"309\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^3)$$. Three for loops iterating over the array are used.\n* Space complexity : $$O(1)$$. Constant extra space is used.\n\n---\n#### Approach #2 Better Brute Force [Accepted]\n\n**Algorithm**\n\nWe can optimize the brute force approach to some extent, if we make use of an array $$sum$$ that stores the cumulative sum of the elements of the array, such that $$sum[i]$$ stores the sum of the elements upto the $$i^{th}$$ element of the array.\n\nThus, now as before, we consider every possible subarray for checking its sum. But, instead of iterating over a new subarray everytime to determine its sum, we make use of the cumulative sum array. Thus, to determine the sum of elements from the $$i^{th}$$ index to the $$j^{th}$$ index, including both the corners, we can use: $$sum[j] - sum[i] + nums[i]$$. \n\n\n<iframe src=\"https://leetcode.com/playground/gnCBbVgp/shared\" frameBorder=\"0\" name=\"gnCBbVgp\" width=\"100%\" height=\"326\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. Two for loops are used for considering every subarray possible.\n\n* Space complexity : $$O(n)$$. $$sum$$ array of size $$n$$ is used.\n\n---\n\n#### Approach #3 Using HashMap [Accepted]\n\n**Algorithm**\n\nIn this solution, we make use of a HashMap that is used to store the cumulative sums upto the $$i^{th}$$ index after some processing along with the index $$i$$. The processing done is taking the modulus of the the sum upto the $$i^{th}$$ index with the given $$k$$. The reasoning behind this will become clear soon. \n\nWe traverse over the given array, and keep on calculating the $$sum%k$$ values upto the current index. Whenever we find a new $$sum%k$$ value, which isn't present in the HashMap already, we make an entry in the HashMap of the form, $$(sum%k, i)$$. \n\nNow, assume that the given $$sum%k$$ value at the $$i^{th}$$ index be equal to $$rem$$. Now, if any subarray follows the $$i^{th}$$ element, which has a sum equal to the integer multiple of $$k$$, say extending upto the $$j^{th}$$ index, the sum value to be stored in the HashMap for the $$j^{th}$$ index will be: $$(rem + n*k)%k$$, where $$n$$ is some integer > 0. We can observe that $$(rem + n*k)%k = rem$$, which is the same value as stored corresponding to the $$i^{th}$$ index.\n\nFrom this observation, we come to the conclusion that whenever the same $$sum%k$$ value is obtained corresponding to two indices $$i$$ and $$j$$, it implies that sum of elements betweeen those indices is an integer multiple of $$k$$. Thus, if the same $$sum%k$$ value is encountered again during the traversal, we return a $$\\text{True}$$ directly.\n\nThe slideshow below depicts the process for the array `nums: [2, 5, 33, 6, 7, 25, 15]` and `k=13`.\n\n!?!../Documents/523_Continous_Subarray_Sum.json:640,360!?!\n\n\n<iframe src=\"https://leetcode.com/playground/RKE4GM84/shared\" frameBorder=\"0\" name=\"RKE4GM84\" width=\"100%\" height=\"360\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. Only one traversal of the array $$nums$$ is done.\n\n* Space complexity : $$O(min(n,k))$$. The HashMap can contain upto $$min(n,k)$$ different pairings.\n\n---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "105",
+      "count": 27,
+      "average": 2.704,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[23,2,4,6,7]\n6",
+  "metaData": "{\r\n  \"name\": \"checkSubarraySum\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n        \"name\": \"k\",\r\n        \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

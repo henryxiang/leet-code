@@ -1,0 +1,111 @@
+{
+  "questionId": "522",
+  "questionFrontendId": "522",
+  "boundTopicId": null,
+  "title": "Longest Uncommon Subsequence II",
+  "titleSlug": "longest-uncommon-subsequence-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a list of strings, you need to find the longest uncommon subsequence among them. The longest uncommon subsequence is defined as the longest subsequence of one of these strings and this subsequence should not be <b>any</b> subsequence of the other strings.\r\n</p>\r\n\r\n<p>\r\nA <b>subsequence</b> is a sequence that can be derived from one sequence by deleting some characters without changing the order of the remaining elements. Trivially, any string is a subsequence of itself and an empty string is a subsequence of any string.\r\n</p>\r\n\r\n<p>\r\nThe input will be a list of strings, and the output needs to be the length of the longest uncommon subsequence. If the longest uncommon subsequence doesn't exist, return -1.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \"aba\", \"cdc\", \"eae\"\r\n<b>Output:</b> 3\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<ol>\r\n<li>All the given strings' lengths will not exceed 10.</li>\r\n<li>The length of the given list will be in the range of [2, 50].</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 137,
+  "dislikes": 523,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Uncommon Subsequence I \", \"titleSlug\": \"longest-uncommon-subsequence-i\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findLUSlength(vector<string>& strs) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findLUSlength(String[] strs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findLUSlength(self, strs):\n        \"\"\"\n        :type strs: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findLUSlength(self, strs: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findLUSlength(char ** strs, int strsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindLUSlength(string[] strs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} strs\n * @return {number}\n */\nvar findLUSlength = function(strs) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} strs\n# @return {Integer}\ndef find_lu_slength(strs)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findLUSlength(_ strs: [String]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findLUSlength(strs []string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findLUSlength(strs: Array[String]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findLUSlength(strs: Array<String>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_lu_slength(strs: Vec<String>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $strs\n     * @return Integer\n     */\n    function findLUSlength($strs) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"19.2K\", \"totalSubmission\": \"57.6K\", \"totalAcceptedRaw\": 19231, \"totalSubmissionRaw\": 57566, \"acRate\": \"33.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "100",
+    "canSeeDetail": true,
+    "url": "/articles/longest-uncommon-subsequence-ii/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force[Accepted]\n\nIn the brute force approach we will generate all the possible $$2^n$$ subsequences of all the strings and store their number of occurences in a hashmap. Longest subsequence whose frequency is equal to $$1$$ will be the required subsequence. And, if it is not found we will return $$-1$$.\n\n\n<iframe src=\"https://leetcode.com/playground/HSf9Ggnx/shared\" frameBorder=\"0\" name=\"HSf9Ggnx\" width=\"100%\" height=\"479\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n*2^x)$$. where $$x$$ is the average length of the strings and $$n$$ is the total number of given strings.\n* Space complexity : $$O(n*2^x)$$. Hashmap of size $$n*2^x$$ is used.\n\n---\n#### Approach #2 Checking Subsequence [Accepted]\n\n**Algorithm**\n\nBy some analysis, we can note that if longest uncommon subsequence is there, then it will always be one of the string from the given list of strings.\nUsing this idea, we can check each string that whether it is a subsequence of any other string. If a string is not a subsequence of any other string i.e. it is uncommon , we will return maximum length string out of them. If no string found, we will return $$-1$$.\n\nTo understand the method, look at the example given below:\n\n<!--![Checking_Subsequence](../Figures/595_Longest_Uncommon_Subsequence.gif)-->\n!?!../Documents/595_Longest_Uncommon.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/8u5yUq7G/shared\" frameBorder=\"0\" name=\"8u5yUq7G\" width=\"100%\" height=\"462\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(x*n^2)$$. where $$n$$ is the number of strings and $$x$$ is the average length of the strings.\n\n* Space complexity : $$O(1)$$. Constant space required.\n\n---\n#### Approach #3 Sorting and Checking Subsequence [Accepted]\n\n**Algorithm**\n\nIn the last approach, we needed to compare all the given strings and compare them for the subsequence criteria. We can save some computations if we sort the given set of strings based on their lengths initially.\n\nIn this approach, firstly we sort the given strings in decreasing order of their lengths. Then, we start off by comparing the longest string with all the other strings. If none of the other strings happens to be the subsequence of the longest string, we return the length of the longest string as the result without any need of further comparisons. If some string happens to be a subsequence of the longest string, we continue the same process by choosing the second largest string as the first string and repeat the process, and so on.\n\n<iframe src=\"https://leetcode.com/playground/88P8AEzt/shared\" frameBorder=\"0\" name=\"88P8AEzt\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(x*n^2)$$. where $$n$$ is the number of strings and $$x$$ is the average length of the strings.\n\n* Space complexity : $$O(1)$$. Constant space required.\n\n---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "98",
+      "count": 6,
+      "average": 4.833,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"aba\",\"cdc\",\"eae\"]",
+  "metaData": "{\r\n  \"name\": \"findLUSlength\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"strs\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

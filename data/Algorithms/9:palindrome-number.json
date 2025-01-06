@@ -1,0 +1,107 @@
+{
+  "questionId": "9",
+  "questionFrontendId": "9",
+  "boundTopicId": null,
+  "title": "Palindrome Number",
+  "titleSlug": "palindrome-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Determine whether an integer is a palindrome. An integer&nbsp;is&nbsp;a&nbsp;palindrome when it&nbsp;reads the same backward as forward.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 121\r\n<strong>Output:</strong> true\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> -121\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 10\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> Reads 01 from right to left. Therefore it is not a palindrome.\r\n</pre>\r\n\r\n<p><strong>Follow up:</strong></p>\r\n\r\n<p>Coud you solve&nbsp;it without converting the integer to a string?</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1796,
+  "dislikes": 1442,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Palindrome Linked List\", \"titleSlug\": \"palindrome-linked-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isPalindrome(int x) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isPalindrome(int x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isPalindrome(self, x):\n        \"\"\"\n        :type x: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isPalindrome(self, x: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isPalindrome(int x){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsPalindrome(int x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} x\n * @return {boolean}\n */\nvar isPalindrome = function(x) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} x\n# @return {Boolean}\ndef is_palindrome(x)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isPalindrome(_ x: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isPalindrome(x int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isPalindrome(x: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isPalindrome(x: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_palindrome(x: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $x\n     * @return Boolean\n     */\n    function isPalindrome($x) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"754.9K\", \"totalSubmission\": \"1.6M\", \"totalAcceptedRaw\": 754908, \"totalSubmissionRaw\": 1641451, \"acRate\": \"46.0%\"}",
+  "hints": [
+    "Beware of overflow when you reverse the integer."
+  ],
+  "solution": {
+    "id": "233",
+    "canSeeDetail": true,
+    "url": "/articles/palindrome-number/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Revert half of the number\n\n**Intuition**\n\nThe first idea that comes to mind is to convert the number into string, and check if the string is a palindrome, but\nthis would require extra non-constant space for creating the string which is not allowed by the problem description.\n\nSecond idea would be reverting the number itself, and then compare the number with original number,\nif they are the same, then the number is a palindrome. However, if the reversed number is larger than $$\\text{int.MAX}$$,\nwe will hit integer overflow problem.\n\nFollowing the thoughts based on the second idea, to avoid the overflow issue of the reverted number, what if we only\nrevert half of the $$\\text{int}$$ number? After all, the reverse of the last half of the palindrome should be the same as the\nfirst half of the number, if the number is a palindrome.\n\nFor example, if the input is `1221`, if we can revert the last part of the number \"12**21**\" from \"**21**\" to \"**12**\",\nand compare it with the first half of the number \"12\", since 12 is the same as 12, we know that the number is a palindrome.\n\nLet's see how we could translate this idea into an algorithm.\n\n**Algorithm**\n\nFirst of all we should take care of some edge cases. All negative numbers are not palindrome, for example: -123 is\nnot a palindrome since the '-' does not equal to '3'. So we can return false for all negative numbers.\n\nNow let's think about how to revert the last half of the number. For number `1221`, if we do `1221 % 10`, we get the\nlast digit `1`, to get the second to the last digit, we need to remove the last digit from `1221`, we could do so by\ndividing it by 10, `1221 / 10 = 122`. Then we can get the last digit again by doing a modulus by 10, `122 % 10 = 2`, and if we multiply the last digit by 10 and add the second last digit, `1 * 10 + 2 = 12`, it gives us the reverted number we want. Continuing this process would give us the reverted number with more digits.\n\nNow the question is, how do we know that we've reached the half of the number?\n\nSince we divided the number by 10, and multiplied the reversed number by 10, when the original number is less than the\nreversed number, it means we've processed half of the number digits.\n\n<iframe src=\"https://leetcode.com/playground/A2cW8TnM/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"A2cW8TnM\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(\\log_{10}(n))$$.\nWe divided the input by 10 for every iteration, so the time complexity is $$O(\\log_{10}(n))$$\n\n* Space complexity : $$O(1)$$.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "228",
+      "count": 206,
+      "average": 4.233,
+      "userRating": null
+    }
+  },
+  "status": "ac",
+  "sampleTestCase": "121",
+  "metaData": "{\r\n  \"name\": \"isPalindrome\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"x\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

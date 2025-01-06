@@ -1,0 +1,119 @@
+{
+  "questionId": "647",
+  "questionFrontendId": "647",
+  "boundTopicId": null,
+  "title": "Palindromic Substrings",
+  "titleSlug": "palindromic-substrings",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string, your task is to count how many palindromic substrings in this string.</p>\r\n\r\n<p>The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;abc&quot;\r\n<b>Output:</b> 3\r\n<b>Explanation:</b> Three palindromic strings: &quot;a&quot;, &quot;b&quot;, &quot;c&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;aaa&quot;\r\n<b>Output:</b> 6\r\n<b>Explanation:</b> Six palindromic strings: &quot;a&quot;, &quot;a&quot;, &quot;a&quot;, &quot;aa&quot;, &quot;aa&quot;, &quot;aaa&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>The input string length won&#39;t exceed 1000.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1843,
+  "dislikes": 94,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Palindromic Substring\", \"titleSlug\": \"longest-palindromic-substring\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Palindromic Subsequence\", \"titleSlug\": \"longest-palindromic-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Coursera\", \"slug\": \"coursera\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Pure Storage\", \"slug\": \"pure-storage\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countSubstrings(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countSubstrings(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countSubstrings(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countSubstrings(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint countSubstrings(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountSubstrings(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar countSubstrings = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef count_substrings(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countSubstrings(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countSubstrings(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countSubstrings(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countSubstrings(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_substrings(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function countSubstrings($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"137.1K\", \"totalSubmission\": \"233.7K\", \"totalAcceptedRaw\": 137080, \"totalSubmissionRaw\": 233654, \"acRate\": \"58.7%\"}",
+  "hints": [
+    "How can we reuse a previously computed palindrome to compute a larger palindrome?",
+    "If “aba” is a palindrome, is “xabax” and palindrome? Similarly is “xabay” a palindrome?",
+    "Complexity based hint:</br>\r\nIf we use brute-force and check whether for every start and end position a substring is a palindrome we have O(n^2) start - end pairs and O(n) palindromic checks. Can we reduce the time for palindromic checks to O(1) by reusing some previous computation?"
+  ],
+  "solution": {
+    "id": "319",
+    "canSeeDetail": true,
+    "url": "/articles/palindromic-substrings/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Expand Around Center [Accepted]\n\n**Intuition**\n\nLet `N` be the length of the string.  The middle of the palindrome could be in one of `2N - 1` positions: either at letter or between two letters.\n\nFor each center, let's count all the palindromes that have this center.  Notice that if `[a, b]` is a palindromic interval (meaning `S[a], S[a+1], ..., S[b]` is a palindrome), then `[a+1, b-1]` is one too.\n\n**Algorithm**\n\nFor each possible palindrome center, let's expand our candidate palindrome on the interval `[left, right]` as long as we can.  The condition for expanding is `left >= 0 and right < N and S[left] == S[right]`.  That means we want to count a new palindrome `S[left], S[left+1], ..., S[right]`.\n\n<iframe src=\"https://leetcode.com/playground/BoR2UhKv/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"BoR2UhKv\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$ where $$N$$ is the length of `S`.  Each expansion might do $$O(N)$$ work.\n\n* Space Complexity: $$O(1)$$.\n\n---\n#### Approach #2: Manacher's Algorithm [Accepted]\n\n**Intuition**\n\nManacher's algorithm is a textbook algorithm that finds in linear time, the maximum size palindrome for any possible palindrome center.  If we had such an algorithm, finding the answer is straightforward.\n\nWhat follows is a discussion of why this algorithm works.\n\n**Algorithm**\n\nOur loop invariants will be that `center, right` is our knowledge of the palindrome with the largest right-most boundary with `center < i`, centered at `center` with right-boundary `right`.  Also, `i > center`, and we've already computed all `Z[j]`'s for `j < i`.\n\nWhen `i < right`, we reflect `i` about `center` to be at some coordinate `j = 2 * center - i`.  Then, limited to the interval with radius `right - i` and center `i`, the situation for `Z[i]` is the same as for `Z[j]`.\n\nFor example, if at some time `center = 7, right = 13, i = 10`, then for a string like `A = '@#A#B#A#A#B#A#＄'`, the `center` is at the `'#'` between the two middle `'A'`'s, the right boundary is at the last `'#'`, `i` is at the last `'B'`, and `j` is at the first `'B'`.\n\nNotice that limited to the interval `[center - (right - center), right]` (the interval with center `center` and right-boundary `right`), the situation for `i` and `j` is a reflection of something we have already computed.  Since we already know `Z[j] = 3`, we can quickly find `Z[i] = min(right - i, Z[j]) = 3`.\n\nNow, why is this algorithm linear?  The while loop only checks the condition more than once when `Z[i] = right - i`.  In that case, for each time `Z[i] += 1`, it increments `right`, and `right` can only be incremented up to `2*N+2` times.\n\nFinally, we sum up `(v+1) / 2` for each `v in Z`.  Say the longest palindrome with some given center C has radius R.  Then, the substring with center C and radius R-1, R-2, R-3, ..., 0 are also palindromes.  Example:  `abcdedcba` is a palindrome with center `e`, radius 4:  but `e`, `ded`, `cdedc`, `bcdedcb`, and `abcdedcba` are all palindromes.\n\nWe are dividing by 2 because we were using half-lengths instead of lengths.  For example we actually had the palindrome `a#b#c#d#e#d#c#b#a`, so our length is twice as big.\n\n<iframe src=\"https://leetcode.com/playground/dMCfKFBQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"dMCfKFBQ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ where $$N$$ is the length of `S`.  As discussed above, the complexity is linear.\n\n* Space Complexity: $$O(N)$$, the size of `A` and `Z`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "314",
+      "count": 187,
+      "average": 2.176,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"abc\"",
+  "metaData": "{\r\n  \"name\": \"countSubstrings\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

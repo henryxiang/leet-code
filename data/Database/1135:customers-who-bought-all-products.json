@@ -1,0 +1,56 @@
+{
+  "questionId": "1135",
+  "questionFrontendId": "1045",
+  "boundTopicId": null,
+  "title": "Customers Who Bought All Products",
+  "titleSlug": "customers-who-bought-all-products",
+  "categoryTitle": "Database",
+  "content": "<p>Table:&nbsp;<code>Customer</code></p>\r\n\r\n<pre>\r\n+-------------+---------+\r\n| Column Name | Type    |\r\n+-------------+---------+\r\n| customer_id | int     |\r\n| product_key | int     |\r\n+-------------+---------+\r\nproduct_key is a foreign key to <code>Product</code> table.\r\n</pre>\r\n\r\n<p>Table:&nbsp;<code>Product</code></p>\r\n\r\n<pre>\r\n+-------------+---------+\r\n| Column Name | Type    |\r\n+-------------+---------+\r\n| product_key | int     |\r\n+-------------+---------+\r\nproduct_key is the primary key column for this table.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Write an SQL query for a report that provides the customer ids from the&nbsp;<code>Customer</code>&nbsp;table&nbsp;that bought all the products in the <code>Product</code>&nbsp;table.</p>\r\n\r\n<p>For example:</p>\r\n\r\n<pre>\r\nCustomer table:\r\n+-------------+-------------+\r\n| customer_id | product_key |\r\n+-------------+-------------+\r\n| 1           | 5           |\r\n| 2           | 6           |\r\n| 3           | 5           |\r\n| 3           | 6           |\r\n| 1           | 6           |\r\n+-------------+-------------+\r\n\r\nProduct table:\r\n+-------------+\r\n| product_key |\r\n+-------------+\r\n| 5           |\r\n| 6           |\r\n+-------------+\r\n\r\nResult table:\r\n+-------------+\r\n| customer_id |\r\n+-------------+\r\n| 1           |\r\n| 3           |\r\n+-------------+\r\nThe customers who bought all the products (5 and 6) are customers with id 1 and 3.\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 46,
+  "dislikes": 5,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.3K\", \"totalSubmission\": \"7.7K\", \"totalAcceptedRaw\": 5291, \"totalSubmissionRaw\": 7726, \"acRate\": \"68.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Customer\":[\"customer_id\",\"product_key\"],\"Product\":[\"product_key\"]},\"rows\":{\"Customer\":[[1,5],[2,6],[3,5],[3,6],[1,6]],\"Product\":[[5],[6]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists Customer (customer_id int, product_key int)\",\r\n    \"Create table Product (product_key int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table Customer (customer_id int, product_key int)\",\r\n    \"Create table Product (product_key int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table Customer (customer_id int, product_key int)\",\r\n    \"Create table Product (product_key int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Customer (customer_id int, product_key int)",
+    "Create table Product (product_key int)",
+    "Truncate table Customer",
+    "insert into Customer (customer_id, product_key) values ('1', '5')",
+    "insert into Customer (customer_id, product_key) values ('2', '6')",
+    "insert into Customer (customer_id, product_key) values ('3', '5')",
+    "insert into Customer (customer_id, product_key) values ('3', '6')",
+    "insert into Customer (customer_id, product_key) values ('1', '6')",
+    "Truncate table Product",
+    "insert into Product (product_key) values ('5')",
+    "insert into Product (product_key) values ('6')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

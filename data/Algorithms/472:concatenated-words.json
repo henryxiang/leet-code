@@ -1,0 +1,107 @@
+{
+  "questionId": "472",
+  "questionFrontendId": "472",
+  "boundTopicId": null,
+  "title": "Concatenated Words",
+  "titleSlug": "concatenated-words",
+  "categoryTitle": "Algorithms",
+  "content": "Given a list of words (<b>without duplicates</b>), please write a program that returns all concatenated words in the given list of words.\r\n<p>A concatenated word is defined as a string that is comprised entirely of at least two shorter words in the given array.</p>\r\n\r\n<p><b>Example:</b><br />\r\n<pre>\r\n<b>Input:</b> [\"cat\",\"cats\",\"catsdogcats\",\"dog\",\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\"]\r\n\r\n<b>Output:</b> [\"catsdogcats\",\"dogcatsdog\",\"ratcatdogcat\"]\r\n\r\n<b>Explanation:</b> \"catsdogcats\" can be concatenated by \"cats\", \"dog\" and \"cats\"; <br> \"dogcatsdog\" can be concatenated by \"dog\", \"cats\" and \"dog\"; <br>\"ratcatdogcat\" can be concatenated by \"rat\", \"cat\", \"dog\" and \"cat\".\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The number of elements of the given array will not exceed <code>10,000 </code>\r\n<li>The length sum of elements in the given array will not exceed <code>600,000</code>. </li>\r\n<li>All the input string will only include lower case letters.</li>\r\n<li>The returned elements order does not matter. </li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 416,
+  "dislikes": 80,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Word Break II\", \"titleSlug\": \"word-break-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fishercoder",
+      "profileUrl": "/fishercoder/",
+      "avatarUrl": "https://assets.leetcode.com/users/fishercoder/avatar_1576991018.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 20}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> findAllConcatenatedWordsInADict(vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> findAllConcatenatedWordsInADict(String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findAllConcatenatedWordsInADict(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findAllConcatenatedWordsInADict(self, words: List[str]) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** findAllConcatenatedWordsInADict(char ** words, int wordsSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> FindAllConcatenatedWordsInADict(string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {string[]}\n */\nvar findAllConcatenatedWordsInADict = function(words) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @return {String[]}\ndef find_all_concatenated_words_in_a_dict(words)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findAllConcatenatedWordsInADict(_ words: [String]) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findAllConcatenatedWordsInADict(words []string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findAllConcatenatedWordsInADict(words: Array[String]): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findAllConcatenatedWordsInADict(words: Array<String>): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_all_concatenated_words_in_a_dict(words: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return String[]\n     */\n    function findAllConcatenatedWordsInADict($words) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"36.7K\", \"totalSubmission\": \"93.4K\", \"totalAcceptedRaw\": 36732, \"totalSubmissionRaw\": 93421, \"acRate\": \"39.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"cat\",\"cats\",\"catsdogcats\",\"dog\",\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\"]",
+  "metaData": "{\r\n  \"name\": \"findAllConcatenatedWordsInADict\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

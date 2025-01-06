@@ -1,0 +1,111 @@
+{
+  "questionId": "228",
+  "questionFrontendId": "228",
+  "boundTopicId": null,
+  "title": "Summary Ranges",
+  "titleSlug": "summary-ranges",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a sorted integer array without duplicates, return the summary of its ranges.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b>  [0,1,2,4,5,7]\r\n<b>Output:</b> [&quot;0-&gt;2&quot;,&quot;4-&gt;5&quot;,&quot;7&quot;]\r\n<strong>Explanation: </strong>0,1,2 form a continuous range;&nbsp;4,5 form a continuous range.\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b>  [0,2,3,4,6,8,9]\r\n<b>Output:</b> [&quot;0&quot;,&quot;2-&gt;4&quot;,&quot;6&quot;,&quot;8-&gt;9&quot;]\r\n<strong>Explanation: </strong>2,3,4 form a continuous range;&nbsp;8,9 form a continuous range.\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 475,
+  "dislikes": 455,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Missing Ranges\", \"titleSlug\": \"missing-ranges\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Data Stream as Disjoint Intervals\", \"titleSlug\": \"data-stream-as-disjoint-intervals\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "jianchao-li",
+      "profileUrl": "/jianchao-li/",
+      "avatarUrl": "https://assets.leetcode.com/users/jianchaolifighter/avatar_1529298385.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Capital One\", \"slug\": \"capital-one\", \"timesEncountered\": 24}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Indeed\", \"slug\": \"indeed\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> summaryRanges(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> summaryRanges(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def summaryRanges(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def summaryRanges(self, nums: List[int]) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** summaryRanges(int* nums, int numsSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> SummaryRanges(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {string[]}\n */\nvar summaryRanges = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {String[]}\ndef summary_ranges(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func summaryRanges(_ nums: [Int]) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func summaryRanges(nums []int) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def summaryRanges(nums: Array[Int]): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun summaryRanges(nums: IntArray): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn summary_ranges(nums: Vec<i32>) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return String[]\n     */\n    function summaryRanges($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"148.3K\", \"totalSubmission\": \"394.4K\", \"totalAcceptedRaw\": 148260, \"totalSubmissionRaw\": 394385, \"acRate\": \"37.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "27",
+    "canSeeDetail": true,
+    "url": "/articles/summary-ranges/",
+    "content": "## Solution\r\n\r\n**Intuition**\r\n\r\nA range covers consecutive elements. If two adjacent elements have difference larger than $$1$$, the two elements does not belong to the same range.\r\n\r\n**Algorithm**\r\n\r\nTo summarize the ranges, we need to know how to separate them. The array is sorted and without duplicates. In such array, two adjacent elements have difference either 1 or larger than 1. If the difference is 1, they should be put in the same range; otherwise, separate ranges.\r\n\r\nWe also need to know the start index of a range so that we can put it in the result list. Thus, we keep two indices, representing the two boundaries of current range. For each new element, we check if it extends the current range. If not, we put the current range into the list.\r\n\r\nDon't forget to put the last range into the list. One can do this by either a special condition in the loop or putting the last range in to the list after the loop.\r\n\r\n**Java**\r\n\r\n```java\r\npublic class Solution {\r\n    public List<String> summaryRanges(int[] nums) {\r\n        List<String> summary = new ArrayList<>();\r\n        for (int i = 0, j = 0; j < nums.length; ++j) {\r\n            // check if j + 1 extends the range [nums[i], nums[j]]\r\n            if (j + 1 < nums.length && nums[j + 1] == nums[j] + 1)\r\n                continue;\r\n            // put the range [nums[i], nums[j]] into the list\r\n            if (i == j)\r\n                summary.add(nums[i] + \"\");\r\n            else\r\n                summary.add(nums[i] + \"->\" + nums[j]);\r\n            i = j + 1;\r\n        }\r\n        return summary;\r\n    }\r\n}\r\n```\r\n\r\n**Java (Alternative)**\r\n\r\n```java\r\npublic class Solution {\r\n    public List<String> summaryRanges(int[] nums) {\r\n        List<String> summary = new ArrayList<>();\r\n        for (int i, j = 0; j < nums.length; ++j){\r\n            i = j;\r\n            // try to extend the range [nums[i], nums[j]]\r\n            while (j + 1 < nums.length && nums[j + 1] == nums[j] + 1)\r\n                ++j;\r\n            // put the range into the list\r\n            if (i == j)\r\n                summary.add(nums[i] + \"\");\r\n            else\r\n                summary.add(nums[i] + \"->\" + nums[j]);\r\n        }\r\n        return summary;\r\n    }\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n)$$. Each element is visited constant times: either in comparison with neighbor or put in the result list.\r\n\r\n* Space complexity : $$O(1)$$. All the auxiliary space we need is the two indices, if we don't count the return list.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "25",
+      "count": 11,
+      "average": 4.909,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,1,2,4,5,7]",
+  "metaData": "{\r\n  \"name\": \"summaryRanges\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

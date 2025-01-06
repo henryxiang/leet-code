@@ -1,0 +1,99 @@
+{
+  "questionId": "365",
+  "questionFrontendId": "365",
+  "boundTopicId": null,
+  "title": "Water and Jug Problem",
+  "titleSlug": "water-and-jug-problem",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given two jugs with capacities <i>x</i> and <i>y</i> litres. There is an infinite amount of water supply available. You need to determine whether it is possible to measure exactly <i>z</i> litres using these two jugs.</p>\r\n\r\n<p>If <i>z</i> liters of water is measurable, you must have <i>z</i> liters of water contained within <b>one or both buckets</b> by the end.</p>\r\n\r\n<p>Operations allowed:</p>\r\n\r\n<ul>\r\n\t<li>Fill any of the jugs completely with water.</li>\r\n\t<li>Empty any of the jugs.</li>\r\n\t<li>Pour water from one jug into another till the other jug is completely full or the first jug itself is empty.</li>\r\n</ul>\r\n\r\n<p><b>Example 1:</b> (From the famous <a href=\"https://www.youtube.com/watch?v=BVtQNK_ZUJg\" target=\"_blank\"><i>&quot;Die Hard&quot;</i> example</a>)</p>\r\n\r\n<pre>\r\nInput: x = 3, y = 5, z = 4\r\nOutput: True\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\nInput: x = 2, y = 6, z = 5\r\nOutput: False\r\n</pre>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 211,
+  "dislikes": 605,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "vinod23",
+      "profileUrl": "/vinod23/",
+      "avatarUrl": "https://assets.leetcode.com/users/vinod23/avatar_1532720423.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool canMeasureWater(int x, int y, int z) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canMeasureWater(int x, int y, int z) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canMeasureWater(self, x, y, z):\n        \"\"\"\n        :type x: int\n        :type y: int\n        :type z: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canMeasureWater(self, x: int, y: int, z: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool canMeasureWater(int x, int y, int z){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CanMeasureWater(int x, int y, int z) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} x\n * @param {number} y\n * @param {number} z\n * @return {boolean}\n */\nvar canMeasureWater = function(x, y, z) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} x\n# @param {Integer} y\n# @param {Integer} z\n# @return {Boolean}\ndef can_measure_water(x, y, z)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canMeasureWater(_ x: Int, _ y: Int, _ z: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canMeasureWater(x int, y int, z int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canMeasureWater(x: Int, y: Int, z: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canMeasureWater(x: Int, y: Int, z: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_measure_water(x: i32, y: i32, z: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $x\n     * @param Integer $y\n     * @param Integer $z\n     * @return Boolean\n     */\n    function canMeasureWater($x, $y, $z) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"33.3K\", \"totalSubmission\": \"111.7K\", \"totalAcceptedRaw\": 33332, \"totalSubmissionRaw\": 111715, \"acRate\": \"29.8%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "3\n5\n4",
+  "metaData": "{\r\n  \"name\": \"canMeasureWater\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"x\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"y\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"z\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,109 @@
+{
+  "questionId": "1145",
+  "questionFrontendId": "1074",
+  "boundTopicId": null,
+  "title": "Number of Submatrices That Sum to Target",
+  "titleSlug": "number-of-submatrices-that-sum-to-target",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <code>matrix</code>, and a <code>target</code>, return the number of non-empty submatrices that sum to <font face=\"monospace\">target</font>.</p>\r\n\r\n<p>A submatrix <code>x1, y1, x2, y2</code> is the set of all cells <code>matrix[x][y]</code> with <code>x1 &lt;= x &lt;= x2</code> and <code>y1 &lt;= y &lt;= y2</code>.</p>\r\n\r\n<p>Two submatrices <code>(x1, y1, x2, y2)</code> and <code>(x1&#39;, y1&#39;, x2&#39;, y2&#39;)</code> are different if they have some coordinate&nbsp;that is different: for example, if <code>x1 != x1&#39;</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>matrix = <span id=\"example-input-1-1\">[[0,1,0],[1,1,1],[0,1,0]]</span>, target = <span id=\"example-input-1-2\">0</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">4</span>\r\n<strong>Explanation: </strong>The four 1x1 submatrices that only contain 0.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>matrix = <span id=\"example-input-2-1\">[[1,-1],[-1,1]]</span>, target = <span id=\"example-input-2-2\">0</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">5</span>\r\n<strong>Explanation: </strong>The two 1x2 submatrices, plus the two 2x1 submatrices, plus the 2x2 submatrix.\r\n</pre>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><strong>Note:</strong></strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= matrix.length &lt;= 300</code></li>\r\n\t<li><code>1 &lt;= matrix[0].length &lt;= 300</code></li>\r\n\t<li><code>-1000 &lt;= matrix[i] &lt;= 1000</code></li>\r\n\t<li><code>-10^8 &lt;= target &lt;= 10^8</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 229,
+  "dislikes": 11,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numSubmatrixSumTarget(vector<vector<int>>& matrix, int target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numSubmatrixSumTarget(int[][] matrix, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numSubmatrixSumTarget(self, matrix, target):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numSubmatrixSumTarget(self, matrix: List[List[int]], target: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numSubmatrixSumTarget(int** matrix, int matrixSize, int* matrixColSize, int target){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumSubmatrixSumTarget(int[][] matrix, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} matrix\n * @param {number} target\n * @return {number}\n */\nvar numSubmatrixSumTarget = function(matrix, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} matrix\n# @param {Integer} target\n# @return {Integer}\ndef num_submatrix_sum_target(matrix, target)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numSubmatrixSumTarget(_ matrix: [[Int]], _ target: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numSubmatrixSumTarget(matrix [][]int, target int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numSubmatrixSumTarget(matrix: Array[Array[Int]], target: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numSubmatrixSumTarget(matrix: Array<IntArray>, target: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_submatrix_sum_target(matrix: Vec<Vec<i32>>, target: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @param Integer $target\n     * @return Integer\n     */\n    function numSubmatrixSumTarget($matrix, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.2K\", \"totalSubmission\": \"12K\", \"totalAcceptedRaw\": 7170, \"totalSubmissionRaw\": 12015, \"acRate\": \"59.7%\"}",
+  "hints": [
+    "Using a 2D prefix sum, we can query the sum of any submatrix in O(1) time.\r\nNow for each (r1, r2), we can find the largest sum of a submatrix that uses every row in [r1, r2] in linear time using a sliding window."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[0,1,0],[1,1,1],[0,1,0]]\n0",
+  "metaData": "{\n  \"name\": \"numSubmatrixSumTarget\",\n  \"params\": [\n    {\n      \"name\": \"matrix\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"name\": \"target\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

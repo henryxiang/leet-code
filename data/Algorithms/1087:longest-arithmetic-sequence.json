@@ -1,0 +1,99 @@
+{
+  "questionId": "1087",
+  "questionFrontendId": "1027",
+  "boundTopicId": null,
+  "title": "Longest Arithmetic Sequence",
+  "titleSlug": "longest-arithmetic-sequence",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>A</code> of integers, return the <strong>length</strong> of the longest arithmetic subsequence in <code>A</code>.</p>\r\n\r\n<p>Recall that a <em>subsequence</em> of <code>A</code> is a list <code>A[i_1], A[i_2], ..., A[i_k]</code> with <code>0 &lt;= i_1 &lt; i_2 &lt; ... &lt; i_k &lt;= A.length - 1</code>, and that a sequence <code>B</code>&nbsp;is <em>arithmetic</em> if <code>B[i+1] - B[i]</code> are all the same value (for <code>0 &lt;= i &lt; B.length - 1</code>).</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[3,6,9,12]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">4</span>\r\n<strong>Explanation: </strong>\r\nThe whole array is an arithmetic sequence with steps of length = 3.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[9,4,7,2,10]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">3</span>\r\n<strong>Explanation: </strong>\r\nThe longest arithmetic subsequence is [4,7,10].\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[20,1,15,3,10,5,8]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">4</span>\r\n<strong>Explanation: </strong>\r\nThe longest arithmetic subsequence is [20,15,10,5].\r\n</pre>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>2 &lt;= A.length &lt;= 2000</code></li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 10000</code></li>\r\n</ol>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 409,
+  "dislikes": 27,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "n1e2m3",
+      "profileUrl": "/n1e2m3/",
+      "avatarUrl": "https://assets.leetcode.com/users/n1e2m3/avatar_1541384517.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"snapdeal\", \"slug\": \"snapdeal\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int longestArithSeqLength(vector<int>& A) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestArithSeqLength(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestArithSeqLength(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestArithSeqLength(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint longestArithSeqLength(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int LongestArithSeqLength(int[] A) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar longestArithSeqLength = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\r\n# @return {Integer}\r\ndef longest_arith_seq_length(a)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func longestArithSeqLength(_ A: [Int]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestArithSeqLength(A []int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def longestArithSeqLength(A: Array[Int]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun longestArithSeqLength(A: IntArray): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_arith_seq_length(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function longestArithSeqLength($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"23.9K\", \"totalSubmission\": \"45.5K\", \"totalAcceptedRaw\": 23932, \"totalSubmissionRaw\": 45478, \"acRate\": \"52.6%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[3,6,9,12]",
+  "metaData": "{\r\n  \"name\": \"longestArithSeqLength\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

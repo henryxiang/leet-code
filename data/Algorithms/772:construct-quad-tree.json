@@ -1,0 +1,66 @@
+{
+  "questionId": "772",
+  "questionFrontendId": "427",
+  "boundTopicId": null,
+  "title": "Construct Quad Tree",
+  "titleSlug": "construct-quad-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We want to use quad trees to store an <code>N x N</code> boolean grid. Each cell in the grid can only be true or false. The root node represents the whole grid. For each node, it will be subdivided into four children nodes <strong>until the values in the region it represents are all the same</strong>.</p>\r\n\r\n<p>Each node has another two boolean attributes : <code>isLeaf</code> and <code>val</code>. <code>isLeaf</code> is true if and only if the node is a leaf node. The <code>val</code> attribute for a leaf node contains the value of the region it represents.</p>\r\n\r\n<p>Your task is to use a quad tree to represent a given grid. The following example may help you understand the problem better:</p>\r\n\r\n<p>Given the <code>8 x 8</code> grid below, we want to construct the corresponding quad tree:</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/02/01/962_grid.png\" style=\"height:27%; max-height:300px; max-width:299px; width:27%\" /></p>\r\n\r\n<p>It can be divided according to the definition above:</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/02/01/962_grid_divided.png\" style=\"height:100%; max-height:300px; max-width:1107px; width:100%\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>The corresponding quad tree should be as following, where each node is represented as a <code>(isLeaf, val)</code> pair.</p>\r\n\r\n<p>For the non-leaf&nbsp;nodes,&nbsp;<code>val</code> can be arbitrary, so it is represented as <code>*</code>.</p>\r\n\r\n<p><img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/02/01/962_quad_tree.png\" style=\"height:100%; max-height:300px; max-width:836px; width:100%\" /></p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>N</code> is less than <code>1000</code> and guaranteened to be a power of 2.</li>\r\n\t<li>If you want to know more about the quad tree, you can refer to its <a href=\"https://en.wikipedia.org/wiki/Quadtree\">wiki</a>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 195,
+  "dislikes": 381,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 7}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/*\n// Definition for a QuadTree node.\nclass Node {\npublic:\n    bool val;\n    bool isLeaf;\n    Node* topLeft;\n    Node* topRight;\n    Node* bottomLeft;\n    Node* bottomRight;\n\n    Node() {}\n\n    Node(bool _val, bool _isLeaf, Node* _topLeft, Node* _topRight, Node* _bottomLeft, Node* _bottomRight) {\n        val = _val;\n        isLeaf = _isLeaf;\n        topLeft = _topLeft;\n        topRight = _topRight;\n        bottomLeft = _bottomLeft;\n        bottomRight = _bottomRight;\n    }\n};\n*/\nclass Solution {\npublic:\n    Node* construct(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/*\n// Definition for a QuadTree node.\nclass Node {\n    public boolean val;\n    public boolean isLeaf;\n    public Node topLeft;\n    public Node topRight;\n    public Node bottomLeft;\n    public Node bottomRight;\n\n    public Node() {}\n\n    public Node(boolean _val,boolean _isLeaf,Node _topLeft,Node _topRight,Node _bottomLeft,Node _bottomRight) {\n        val = _val;\n        isLeaf = _isLeaf;\n        topLeft = _topLeft;\n        topRight = _topRight;\n        bottomLeft = _bottomLeft;\n        bottomRight = _bottomRight;\n    }\n};\n*/\nclass Solution {\n    public Node construct(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "\"\"\"\n# Definition for a QuadTree node.\nclass Node(object):\n    def __init__(self, val, isLeaf, topLeft, topRight, bottomLeft, bottomRight):\n        self.val = val\n        self.isLeaf = isLeaf\n        self.topLeft = topLeft\n        self.topRight = topRight\n        self.bottomLeft = bottomLeft\n        self.bottomRight = bottomRight\n\"\"\"\nclass Solution(object):\n    def construct(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: Node\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "\"\"\"\n# Definition for a QuadTree node.\nclass Node:\n    def __init__(self, val, isLeaf, topLeft, topRight, bottomLeft, bottomRight):\n        self.val = val\n        self.isLeaf = isLeaf\n        self.topLeft = topLeft\n        self.topRight = topRight\n        self.bottomLeft = bottomLeft\n        self.bottomRight = bottomRight\n\"\"\"\nclass Solution:\n    def construct(self, grid: List[List[int]]) -> 'Node':\n        "
+    },
+    {
+      "lang": "C#",
+      "code": "/*\n// Definition for a QuadTree node.\npublic class Node {\n    public bool val;\n    public bool isLeaf;\n    public Node topLeft;\n    public Node topRight;\n    public Node bottomLeft;\n    public Node bottomRight;\n\n    public Node(){}\n    public Node(bool _val,bool _isLeaf,Node _topLeft,Node _topRight,Node _bottomLeft,Node _bottomRight) {\n        val = _val;\n        isLeaf = _isLeaf;\n        topLeft = _topLeft;\n        topRight = _topRight;\n        bottomLeft = _bottomLeft;\n        bottomRight = _bottomRight;\n}\n*/\npublic class Solution {\n    public Node Construct(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * // Definition for a QuadTree node.\n * function Node(val,isLeaf,topLeft,topRight,bottomLeft,bottomRight) {\n *    this.val = val;\n *    this.isLeaf = isLeaf;\n *    this.topLeft = topLeft;\n *    this.topRight = topRight;\n *    this.bottomLeft = bottomLeft;\n *    this.bottomRight = bottomRight;\n * };\n */\n/**\n * @param {number[][]} grid\n * @return {Node}\n */\nvar construct = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "PHP",
+      "code": "/*\n// Definition for a QuadTree node.\nclass Node {\n    public $val;\n    public $isLeaf;\n    public $topLeft;\n    public $topRight;\n    public $bottomLeft;\n    public $bottomRight;\n\n    @param Boolean $val \n    @param Boolean $isLeaf \n    @param Node $topLeft \n    @param Node $topRight \n    @param Node $bottomLeft \n    @param Node $bottomRight \n    function __construct($val, $isLeaf, $topLeft, $topRight, $bottomLeft, $bottomRight) {\n        $this->val = $val;\n        $this->isLeaf = $isLeaf;\n        $this->topLeft = $topLeft;\n        $this->topRight = $topRight;\n        $this->bottomLeft = $bottomLeft;\n        $this->bottomRight = $bottomRight;\n    }\n}\n*/\nclass Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Node\n     */\n    function construct($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"18K\", \"totalSubmission\": \"30.2K\", \"totalAcceptedRaw\": 18017, \"totalSubmissionRaw\": 30183, \"acRate\": \"59.7%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0]]",
+  "metaData": "{\n    \"name\": \"construct\",\n    \"params\": [\n        {\n            \"name\": \"grid\",\n            \"type\": \"integer[][]\"\n        }\n    ],\n    \"return\": {\n        \"type\": \"Node\"\n    },\n    \"structures\": [\n        {\n            \"name\": \"Node\",\n            \"comment\": \"Definition for a QuadTree node.\",\n            \"members\": [\n                {\n                    \"name\": \"val\",\n                    \"type\": \"boolean\"\n                },\n                {\n                    \"name\": \"isLeaf\",\n                    \"type\": \"boolean\"\n                },\n                {\n                    \"name\": \"topLeft\",\n                    \"type\": \"Node\"\n                },\n                {\n                    \"name\": \"topRight\",\n                    \"type\": \"Node\"\n                },\n                {\n                    \"name\": \"bottomLeft\",\n                    \"type\": \"Node\"\n                },\n                {\n                    \"name\": \"bottomRight\",\n                    \"type\": \"Node\"\n                }\n            ]\n        }\n    ],\n    \"languages\": [\n        \"cpp\",\n        \"java\",\n        \"python\",\n        \"csharp\",\n        \"javascript\",\n        \"python3\",\n        \"php\"\n    ]\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,113 @@
+{
+  "questionId": "731",
+  "questionFrontendId": "731",
+  "boundTopicId": null,
+  "title": "My Calendar II",
+  "titleSlug": "my-calendar-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Implement a <code>MyCalendarTwo</code> class to store your events. A new event can be added if adding the event will not cause a <b>triple</b> booking.</p>\r\n\r\n<p>Your class will have one method, <code>book(int start, int end)</code>. Formally, this represents a booking on the half open interval <code>[start, end)</code>, the range of real numbers <code>x</code> such that <code>start &lt;= x &lt; end</code>.</p>\r\n\r\n<p>A <i>triple booking</i> happens when <b>three</b> events have some non-empty intersection (ie., there is some time that is common to all 3 events.)</p>\r\n\r\n<p>For each call to the method <code>MyCalendar.book</code>, return <code>true</code> if the event can be added to the calendar successfully without causing a <b>triple</b> booking. Otherwise, return <code>false</code> and do not add the event to the calendar.</p>\r\nYour class will be called like this: <code>MyCalendar cal = new MyCalendar();</code> <code>MyCalendar.book(start, end)</code>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\nMyCalendar();\r\nMyCalendar.book(10, 20); // returns true\r\nMyCalendar.book(50, 60); // returns true\r\nMyCalendar.book(10, 40); // returns true\r\nMyCalendar.book(5, 15); // returns false\r\nMyCalendar.book(5, 10); // returns true\r\nMyCalendar.book(25, 55); // returns true\r\n<b>Explanation:</b> \r\nThe first two events can be booked.  The third event can be double booked.\r\nThe fourth event (5, 15) can&#39;t be booked, because it would result in a triple booking.\r\nThe fifth event (5, 10) can be booked, as it does not use time 10 which is already double booked.\r\nThe sixth event (25, 55) can be booked, as the time in [25, 40) will be double booked with the third event;\r\nthe time [40, 50) will be single booked, and the time [50, 55) will be double booked with the second event.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ul>\r\n\t<li>The number of calls to <code>MyCalendar.book</code> per test case will be at most <code>1000</code>.</li>\r\n\t<li>In calls to <code>MyCalendar.book(start, end)</code>, <code>start</code> and <code>end</code> are integers in the range <code>[0, 10^9]</code>.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 474,
+  "dislikes": 70,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"My Calendar I\", \"titleSlug\": \"my-calendar-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"My Calendar III\", \"titleSlug\": \"my-calendar-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "ccyjoshua",
+      "profileUrl": "/ccyjoshua/",
+      "avatarUrl": "https://www.gravatar.com/avatar/23d1850eeea18a63da0415500ddc26dc.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Ordered Map",
+      "slug": "ordered-map"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class MyCalendarTwo {\r\npublic:\r\n    MyCalendarTwo() {\r\n        \r\n    }\r\n    \r\n    bool book(int start, int end) {\r\n        \r\n    }\r\n};\r\n\r\n/**\r\n * Your MyCalendarTwo object will be instantiated and called as such:\r\n * MyCalendarTwo* obj = new MyCalendarTwo();\r\n * bool param_1 = obj->book(start,end);\r\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class MyCalendarTwo {\n\n    public MyCalendarTwo() {\n        \n    }\n    \n    public boolean book(int start, int end) {\n        \n    }\n}\n\n/**\n * Your MyCalendarTwo object will be instantiated and called as such:\n * MyCalendarTwo obj = new MyCalendarTwo();\n * boolean param_1 = obj.book(start,end);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class MyCalendarTwo(object):\n\n    def __init__(self):\n        \n\n    def book(self, start, end):\n        \"\"\"\n        :type start: int\n        :type end: int\n        :rtype: bool\n        \"\"\"\n        \n\n\n# Your MyCalendarTwo object will be instantiated and called as such:\n# obj = MyCalendarTwo()\n# param_1 = obj.book(start,end)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class MyCalendarTwo:\n\n    def __init__(self):\n        \n\n    def book(self, start: int, end: int) -> bool:\n        \n\n\n# Your MyCalendarTwo object will be instantiated and called as such:\n# obj = MyCalendarTwo()\n# param_1 = obj.book(start,end)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} MyCalendarTwo;\n\n\nMyCalendarTwo* myCalendarTwoCreate() {\n    \n}\n\nbool myCalendarTwoBook(MyCalendarTwo* obj, int start, int end) {\n  \n}\n\nvoid myCalendarTwoFree(MyCalendarTwo* obj) {\n    \n}\n\n/**\n * Your MyCalendarTwo struct will be instantiated and called as such:\n * MyCalendarTwo* obj = myCalendarTwoCreate();\n * bool param_1 = myCalendarTwoBook(obj, start, end);\n \n * myCalendarTwoFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class MyCalendarTwo {\r\n\r\n    public MyCalendarTwo() {\r\n        \r\n    }\r\n    \r\n    public bool Book(int start, int end) {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your MyCalendarTwo object will be instantiated and called as such:\r\n * MyCalendarTwo obj = new MyCalendarTwo();\r\n * bool param_1 = obj.Book(start,end);\r\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "\nvar MyCalendarTwo = function() {\n    \n};\n\n/** \n * @param {number} start \n * @param {number} end\n * @return {boolean}\n */\nMyCalendarTwo.prototype.book = function(start, end) {\n    \n};\n\n/** \n * Your MyCalendarTwo object will be instantiated and called as such:\n * var obj = new MyCalendarTwo()\n * var param_1 = obj.book(start,end)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class MyCalendarTwo\r\n    def initialize()\r\n        \r\n    end\r\n\r\n\r\n=begin\r\n    :type start: Integer\r\n    :type end: Integer\r\n    :rtype: Boolean\r\n=end\r\n    def book(start, end)\r\n        \r\n    end\r\n\r\n\r\nend\r\n\r\n# Your MyCalendarTwo object will be instantiated and called as such:\r\n# obj = MyCalendarTwo.new()\r\n# param_1 = obj.book(start, end)"
+    },
+    {
+      "lang": "Swift",
+      "code": "class MyCalendarTwo {\r\n\r\n    init() {\r\n        \r\n    }\r\n    \r\n    func book(_ start: Int, _ end: Int) -> Bool {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your MyCalendarTwo object will be instantiated and called as such:\r\n * let obj = MyCalendarTwo()\r\n * let ret_1: Bool = obj.book(start, end)\r\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type MyCalendarTwo struct {\r\n    \r\n}\r\n\r\n\r\nfunc Constructor() MyCalendarTwo {\r\n    \r\n}\r\n\r\n\r\nfunc (this *MyCalendarTwo) Book(start int, end int) bool {\r\n    \r\n}\r\n\r\n\r\n/**\r\n * Your MyCalendarTwo object will be instantiated and called as such:\r\n * obj := Constructor();\r\n * param_1 := obj.Book(start,end);\r\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class MyCalendarTwo() {\r\n\r\n    def book(start: Int, end: Int): Boolean = {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your MyCalendarTwo object will be instantiated and called as such:\r\n * var obj = new MyCalendarTwo()\r\n * var param_1 = obj.book(start,end)\r\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class MyCalendarTwo() {\r\n\r\n    fun book(start: Int, end: Int): Boolean {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your MyCalendarTwo object will be instantiated and called as such:\r\n * var obj = MyCalendarTwo()\r\n * var param_1 = obj.book(start,end)\r\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct MyCalendarTwo {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl MyCalendarTwo {\n\n    fn new() -> Self {\n        \n    }\n    \n    fn book(&self, start: i32, end: i32) -> bool {\n        \n    }\n}\n\n/**\n * Your MyCalendarTwo object will be instantiated and called as such:\n * let obj = MyCalendarTwo::new();\n * let ret_1: bool = obj.book(start, end);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class MyCalendarTwo {\n    /**\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * @param Integer $start\n     * @param Integer $end\n     * @return Boolean\n     */\n    function book($start, $end) {\n        \n    }\n}\n\n/**\n * Your MyCalendarTwo object will be instantiated and called as such:\n * $obj = MyCalendarTwo();\n * $ret_1 = $obj->book($start, $end);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"32K\", \"totalSubmission\": \"68K\", \"totalAcceptedRaw\": 31960, \"totalSubmissionRaw\": 67973, \"acRate\": \"47.0%\"}",
+  "hints": [
+    "Store two sorted lists of intervals: one list will be all times that are at least single booked, and another list will be all times that are definitely double booked.  If none of the double bookings conflict, then the booking will succeed, and you should update your single and double bookings accordingly."
+  ],
+  "solution": {
+    "id": "299",
+    "canSeeDetail": true,
+    "url": "/articles/my-calendar-ii/",
+    "content": "[TOC]\n\n#### Approach #1: Brute Force [Accepted]\n\n**Intuition**\n\nMaintain a list of bookings and a list of double bookings.  When booking a new event `[start, end)`, if it conflicts with a double booking, it will have a triple booking and be invalid.  Otherwise, parts that overlap the calendar will be a double booking.\n\n**Algorithm**\n\nEvidently, two events `[s1, e1)` and `[s2, e2)` do *not* conflict if and only if one of them starts after the other one ends: either `e1 <= s2` OR `e2 <= s1`.  By De Morgan's laws, this means the events conflict when `s1 < e2` AND `s2 < e1`.\n\nIf our event conflicts with a double booking, it's invalid.  Otherwise, we add conflicts with the calendar to our double bookings, and add the event to our calendar.\n\n<iframe src=\"https://leetcode.com/playground/joRUVwzm/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"joRUVwzm\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$, where $$N$$ is the number of events booked.  For each new event, we process every previous event to decide whether the new event can be booked.  This leads to $$\\sum_k^N O(k) = O(N^2)$$ complexity.\n\n* Space Complexity: $$O(N)$$, the size of the `calendar`.\n\n---\n#### Approach #2: Boundary Count [Accepted]\n\n**Intuition and Algorithm**\n\nWhen booking a new event `[start, end)`, count `delta[start]++` and `delta[end]--`.  When processing the values of `delta` in sorted order of their keys, the running sum `active` is the number of events open at that time.  If the sum is 3 or more, that time is (at least) triple booked.\n\nA Python implementation was not included for this approach because there is no analog to *TreeMap* available.\n\n```java\nclass MyCalendarTwo {\n    TreeMap<Integer, Integer> delta;\n\n    public MyCalendarTwo() {\n        delta = new TreeMap();\n    }\n\n    public boolean book(int start, int end) {\n        delta.put(start, delta.getOrDefault(start, 0) + 1);\n        delta.put(end, delta.getOrDefault(end, 0) - 1);\n\n        int active = 0;\n        for (int d: delta.values()) {\n            active += d;\n            if (active >= 3) {\n                delta.put(start, delta.get(start) - 1);\n                delta.put(end, delta.get(end) + 1);\n                if (delta.get(start) == 0)\n                    delta.remove(start);\n                return false;\n            }\n        }\n        return true;\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$, where $$N$$ is the number of events booked.  For each new event, we traverse `delta` in $$O(N)$$ time.\n\n* Space Complexity: $$O(N)$$, the size of `delta`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).  Solution in Approach #2 inspired by [@cchao](https://discuss.leetcode.com/topic/111276/simplified-winner-s-solution).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "294",
+      "count": 26,
+      "average": 3.692,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"MyCalendarTwo\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[50,60],[10,40],[5,15],[5,10],[25,55]]",
+  "metaData": "{\r\n    \"classname\": \"MyCalendarTwo\",\r\n    \"constructor\": {\r\n        \"params\": []\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"book\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"start\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"end\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"boolean\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"starts\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"ends\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<boolean>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,70 @@
+{
+  "questionId": "626",
+  "questionFrontendId": "626",
+  "boundTopicId": null,
+  "title": "Exchange Seats",
+  "titleSlug": "exchange-seats",
+  "categoryTitle": "Database",
+  "content": "<p>Mary is a teacher in a middle school and she has a table <code>seat</code> storing students&#39; names and their corresponding seat ids.</p>\r\nThe column <b>id</b> is continuous increment.\r\n\r\n<p>&nbsp;</p>\r\nMary wants to change seats for the adjacent students.\r\n\r\n<p>&nbsp;</p>\r\nCan you write a SQL query to output the result for Mary?\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n+---------+---------+\r\n|    id   | student |\r\n+---------+---------+\r\n|    1    | Abbot   |\r\n|    2    | Doris   |\r\n|    3    | Emerson |\r\n|    4    | Green   |\r\n|    5    | Jeames  |\r\n+---------+---------+\r\n</pre>\r\nFor the sample input, the output is:\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n+---------+---------+\r\n|    id   | student |\r\n+---------+---------+\r\n|    1    | Doris   |\r\n|    2    | Abbot   |\r\n|    3    | Green   |\r\n|    4    | Emerson |\r\n|    5    | Jeames  |\r\n+---------+---------+\r\n</pre>\r\n\r\n<p><b>Note:</b><br />\r\nIf the number of students is odd, there is no need to change the last one&#39;s seat.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 239,
+  "dislikes": 202,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "artistscript",
+      "profileUrl": "/artistscript/",
+      "avatarUrl": "https://www.gravatar.com/avatar/1d186f42681a157b2cce3ebf9f9c0911.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"34.8K\", \"totalSubmission\": \"60.5K\", \"totalAcceptedRaw\": 34803, \"totalSubmissionRaw\": 60472, \"acRate\": \"57.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "195",
+    "canSeeDetail": true,
+    "url": "/articles/exchange-seats/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach I: Using flow control statement `CASE` [Accepted]\n\n**Algorithm**\n\nFor students with odd id, the new id is (id+1) after switch unless it is the last seat. And for students with even id, the new id is (id-1). In order to know how many seats in total, we can use a subquery:\n```sql\nSELECT\n    COUNT(*) AS counts\nFROM\n    seat\n```\n\nThen, we can use the `CASE` statement and `MOD()` function to alter the seat id of each student.\n\n**MySQL**\n\n```sql\nSELECT\n    (CASE\n        WHEN MOD(id, 2) != 0 AND counts != id THEN id + 1\n        WHEN MOD(id, 2) != 0 AND counts = id THEN id\n        ELSE id - 1\n    END) AS id,\n    student\nFROM\n    seat,\n    (SELECT\n        COUNT(*) AS counts\n    FROM\n        seat) AS seat_counts\nORDER BY id ASC;\n```\n\n#### Approach II: Using bit manipulation and `COALESCE()` [Accepted]\n\n**Algorithm**\n\nBit manipulation expression `(id+1)^1-1` can calculate the new id after switch.\n```sql\nSELECT id, (id+1)^1-1, student FROM seat;\n```\n\n```\n| id | (id+1)^1-1 | student |\n|----|------------|---------|\n| 1  | 2          | Abbot   |\n| 2  | 1          | Doris   |\n| 3  | 4          | Emerson |\n| 4  | 3          | Green   |\n| 5  | 6          | Jeames  |\n```\n\nThen, we can make a temp table and join seat with this table like below.\n```sql\nSELECT\n    *\nFROM\n    seat s1\n        LEFT JOIN\n    seat s2 ON (s1.id+1)^1-1 = s2.id\nORDER BY s1.id;\n```\n```\n| id | student | id | student |\n|----|---------|----|---------|\n| 1  | Abbot   | 2  | Doris   |\n| 2  | Doris   | 1  | Abbot   |\n| 3  | Emerson | 4  | Green   |\n| 4  | Green   | 3  | Emerson |\n| 5  | Jeames  |    |         |\n```\n>Note:The first two columns are from s1 and the last two are from s2.\n\nAt last, we can output s1.id and s2.student. However, the s2.student is NULL for seat id '5' but s1.student is right. Thus, we we can use function [`COALESCE()`](https://dev.mysql.com/doc/refman/5.7/en/comparison-operators.html#function_coalesce) to generate the correct output for the last record.\n\n**MySQL**\n\n```sql\nSELECT\n    s1.id, COALESCE(s2.student, s1.student) AS student\nFROM\n    seat s1\n        LEFT JOIN\n    seat s2 ON ((s1.id + 1) ^ 1) - 1 = s2.id\nORDER BY s1.id;\n```\n>Note: This solution comes from [@FANGXIAOFANG](https://discuss.leetcode.com/user/fangxiaofang).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "190",
+      "count": 13,
+      "average": 4.462,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"seat\": [\"id\",\"student\"]}, \"rows\": {\"seat\": [[1,\"Abbot\"],[2,\"Doris\"],[3,\"Emerson\"],[4,\"Green\"],[5,\"Jeames\"]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists seat(id int, student varchar(255))\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table seat(id int, student varchar(255))\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table seat(id int, student varchar(255))\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists seat(id int, student varchar(255))",
+    "Truncate table seat",
+    "insert into seat (id, student) values ('1', 'Abbot')",
+    "insert into seat (id, student) values ('2', 'Doris')",
+    "insert into seat (id, student) values ('3', 'Emerson')",
+    "insert into seat (id, student) values ('4', 'Green')",
+    "insert into seat (id, student) values ('5', 'Jeames')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

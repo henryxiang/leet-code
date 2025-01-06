@@ -1,0 +1,115 @@
+{
+  "questionId": "687",
+  "questionFrontendId": "687",
+  "boundTopicId": null,
+  "title": "Longest Univalue Path",
+  "titleSlug": "longest-univalue-path",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary tree, find the length of the longest path where each node in the path has the same value. This path may or may not pass through the root.</p>\r\n\r\n<p>The length of path between two nodes is represented by the number of edges between them.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<p><strong>Input:</strong></p>\r\n\r\n<pre>\r\n              5\r\n             / \\\r\n            4   5\r\n           / \\   \\\r\n          1   1   5\r\n</pre>\r\n\r\n<p><strong>Output:</strong>&nbsp;2</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<p><strong>Input:</strong></p>\r\n\r\n<pre>\r\n              1\r\n             / \\\r\n            4   5\r\n           / \\   \\\r\n          4   4   5\r\n</pre>\r\n\r\n<p><strong>Output:</strong>&nbsp;2</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b> The given binary tree has not more than 10000 nodes. The height of the tree is not more than 1000.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1247,
+  "dislikes": 330,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Binary Tree Maximum Path Sum\", \"titleSlug\": \"binary-tree-maximum-path-sum\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Count Univalue Subtrees\", \"titleSlug\": \"count-univalue-subtrees\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Path Sum III\", \"titleSlug\": \"path-sum-iii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * struct TreeNode {\r\n *     int val;\r\n *     TreeNode *left;\r\n *     TreeNode *right;\r\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\r\n * };\r\n */\r\nclass Solution {\r\npublic:\r\n    int longestUnivaluePath(TreeNode* root) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public int longestUnivaluePath(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def longestUnivaluePath(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def longestUnivaluePath(self, root: TreeNode) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nint longestUnivaluePath(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * public class TreeNode {\r\n *     public int val;\r\n *     public TreeNode left;\r\n *     public TreeNode right;\r\n *     public TreeNode(int x) { val = x; }\r\n * }\r\n */\r\npublic class Solution {\r\n    public int LongestUnivaluePath(TreeNode root) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number}\n */\nvar longestUnivaluePath = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\r\n# class TreeNode\r\n#     attr_accessor :val, :left, :right\r\n#     def initialize(val)\r\n#         @val = val\r\n#         @left, @right = nil, nil\r\n#     end\r\n# end\r\n\r\n# @param {TreeNode} root\r\n# @return {Integer}\r\ndef longest_univalue_path(root)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * public class TreeNode {\r\n *     public var val: Int\r\n *     public var left: TreeNode?\r\n *     public var right: TreeNode?\r\n *     public init(_ val: Int) {\r\n *         self.val = val\r\n *         self.left = nil\r\n *         self.right = nil\r\n *     }\r\n * }\r\n */\r\nclass Solution {\r\n    func longestUnivaluePath(_ root: TreeNode?) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * type TreeNode struct {\r\n *     Val int\r\n *     Left *TreeNode\r\n *     Right *TreeNode\r\n * }\r\n */\r\nfunc longestUnivaluePath(root *TreeNode) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * class TreeNode(var _value: Int) {\r\n *   var value: Int = _value\r\n *   var left: TreeNode = null\r\n *   var right: TreeNode = null\r\n * }\r\n */\r\nobject Solution {\r\n    def longestUnivaluePath(root: TreeNode): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\r\n * Example:\r\n * var ti = TreeNode(5)\r\n * var v = ti.`val`\r\n * Definition for a binary tree node.\r\n * class TreeNode(var `val`: Int) {\r\n *     var left: TreeNode? = null\r\n *     var right: TreeNode? = null\r\n * }\r\n */\r\nclass Solution {\r\n    fun longestUnivaluePath(root: TreeNode?): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn longest_univalue_path(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Integer\n     */\n    function longestUnivaluePath($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"73.7K\", \"totalSubmission\": \"211.3K\", \"totalAcceptedRaw\": 73672, \"totalSubmissionRaw\": 211334, \"acRate\": \"34.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "253",
+    "canSeeDetail": true,
+    "url": "/articles/longest-univalue-path/",
+    "content": "[TOC]\n\n#### Approach #1: Recursion [Accepted]\n\n**Intuition**\n\nWe can think of any path (of nodes with the same values) as up to two arrows extending from it's root.\n\nSpecifically, the *root* of a path will be the unique node such that the parent of that node does not appear in the path, and an *arrow* will be a path where the root only has one child node in the path.\n\nThen, for each node, we want to know what is the longest possible arrow extending left, and the longest possible arrow extending right?  We can solve this using recursion.\n\n**Algorithm**\n\nLet `arrow_length(node)` be the length of the longest arrow that extends from the `node`.  That will be `1 + arrow_length(node.left)` if `node.left` exists and has the same value as `node`.  Similarly for the `node.right` case.\n\nWhile we are computing arrow lengths, each candidate answer will be the sum of the arrows in both directions from that node.  We record these candidate answers and return the best one.\n\n<iframe src=\"https://leetcode.com/playground/DjHbgZUi/shared\" frameBorder=\"0\" name=\"DjHbgZUi\" width=\"100%\" height=\"428\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the number of nodes in the tree.  We process every node once.\n\n* Space Complexity: $$O(H)$$, where $$H$$ is the height of the tree.  Our recursive call stack could be up to $$H$$ layers deep.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "250",
+      "count": 51,
+      "average": 3.726,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[5,4,5,1,1,5]",
+  "metaData": "{\r\n  \"name\": \"longestUnivaluePath\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

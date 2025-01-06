@@ -1,0 +1,93 @@
+{
+  "questionId": "1337",
+  "questionFrontendId": "1206",
+  "boundTopicId": null,
+  "title": "Design Skiplist",
+  "titleSlug": "design-skiplist",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design a Skiplist without using any built-in libraries.</p>\r\n\r\n<p><em>A Skiplist is a data structure that takes&nbsp;O(log(n)) time&nbsp;to <code>add</code>, <code>erase</code> and <code>search</code>. Comparing with treap and red-black tree which has the same function and performance, the code length of Skiplist can be&nbsp;comparatively short and the idea behind Skiplists are just simple linked lists.</em></p>\r\n\r\n<p><em>For example:&nbsp;we have a Skiplist containing <code>[30,40,50,60,70,90]</code> and we want to add <code>80</code> and <code>45</code> into it. The&nbsp;Skiplist works this way:</em></p>\r\n\r\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/09/27/1506_skiplist.gif\" style=\"width: 960px; height: 332px;\" /><br />\r\n<small>Artyom Kalinin [CC BY-SA 3.0], via <a href=\"https://commons.wikimedia.org/wiki/File:Skip_list_add_element-en.gif\" target=\"_blank\" title=\"Artyom Kalinin [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons\">Wikimedia Commons</a></small></p>\r\n\r\n<p><em>You can see there are many layers in the Skiplist. Each layer is a sorted linked list. With the help of the top layers, <code>add</code>&nbsp;,&nbsp;<code>erase</code>&nbsp;and <code>search&nbsp;</code>can be faster than O(n).&nbsp;It can be proven&nbsp;that the average time complexity for each operation is O(log(n)) and space complexity is O(n).</em></p>\r\n\r\n<p>To be specific, your design should include these functions:</p>\r\n\r\n<ul>\r\n\t<li><code>bool search(int target)</code> : Return whether&nbsp;the <code>target</code> exists in the Skiplist&nbsp;or not.</li>\r\n\t<li><code>void add(int num)</code>:&nbsp;Insert a value into the SkipList.&nbsp;</li>\r\n\t<li><code>bool erase(int num)</code>: Remove a value in&nbsp;the Skiplist.&nbsp;If <code>num</code>&nbsp;does not exist in the Skiplist, do nothing and return false. If there exists multiple <code>num</code> values, removing&nbsp;any one of them is fine.</li>\r\n</ul>\r\n\r\n<p>See more about Skiplist :&nbsp;<a href=\"https://en.wikipedia.org/wiki/Skip_list\" target=\"_blank\">https://en.wikipedia.org/wiki/Skip_list</a></p>\r\n\r\n<p>Note that duplicates may exist in the Skiplist, your code needs to handle this situation.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\nSkiplist skiplist = new Skiplist();\r\n\r\nskiplist.add(1);\r\nskiplist.add(2);\r\nskiplist.add(3);\r\nskiplist.search(0);   // return false.\r\nskiplist.add(4);\r\nskiplist.search(1);   // return true.\r\nskiplist.erase(0);    // return false, 0 is not in skiplist.\r\nskiplist.erase(1);    // return true.\r\nskiplist.search(1);   // return false, 1 has already been erased.</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>0 &lt;= num, target&nbsp;&lt;= 20000</code></li>\r\n\t<li>At most <code>50000</code>&nbsp;calls will be made to <code>search</code>, <code>add</code>, and <code>erase</code>.</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 63,
+  "dislikes": 10,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Design HashSet\", \"titleSlug\": \"design-hashset\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Design HashMap\", \"titleSlug\": \"design-hashmap\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Design Linked List\", \"titleSlug\": \"design-linked-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Pure Storage\", \"slug\": \"pure-storage\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Skiplist {\r\npublic:\r\n    Skiplist() {\r\n        \r\n    }\r\n    \r\n    bool search(int target) {\r\n        \r\n    }\r\n    \r\n    void add(int num) {\r\n        \r\n    }\r\n    \r\n    bool erase(int num) {\r\n        \r\n    }\r\n};\r\n\r\n/**\r\n * Your Skiplist object will be instantiated and called as such:\r\n * Skiplist* obj = new Skiplist();\r\n * bool param_1 = obj->search(target);\r\n * obj->add(num);\r\n * bool param_3 = obj->erase(num);\r\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class Skiplist {\n\n    public Skiplist() {\n        \n    }\n    \n    public boolean search(int target) {\n        \n    }\n    \n    public void add(int num) {\n        \n    }\n    \n    public boolean erase(int num) {\n        \n    }\n}\n\n/**\n * Your Skiplist object will be instantiated and called as such:\n * Skiplist obj = new Skiplist();\n * boolean param_1 = obj.search(target);\n * obj.add(num);\n * boolean param_3 = obj.erase(num);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class Skiplist(object):\r\n\r\n    def __init__(self):\r\n        \r\n\r\n    def search(self, target):\r\n        \"\"\"\r\n        :type target: int\r\n        :rtype: bool\r\n        \"\"\"\r\n        \r\n\r\n    def add(self, num):\r\n        \"\"\"\r\n        :type num: int\r\n        :rtype: None\r\n        \"\"\"\r\n        \r\n\r\n    def erase(self, num):\r\n        \"\"\"\r\n        :type num: int\r\n        :rtype: bool\r\n        \"\"\"\r\n        \r\n\r\n\r\n# Your Skiplist object will be instantiated and called as such:\r\n# obj = Skiplist()\r\n# param_1 = obj.search(target)\r\n# obj.add(num)\r\n# param_3 = obj.erase(num)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Skiplist:\r\n\r\n    def __init__(self):\r\n        \r\n\r\n    def search(self, target: int) -> bool:\r\n        \r\n\r\n    def add(self, num: int) -> None:\r\n        \r\n\r\n    def erase(self, num: int) -> bool:\r\n        \r\n\r\n\r\n# Your Skiplist object will be instantiated and called as such:\r\n# obj = Skiplist()\r\n# param_1 = obj.search(target)\r\n# obj.add(num)\r\n# param_3 = obj.erase(num)"
+    },
+    {
+      "lang": "C",
+      "code": "typedef struct {\r\n    \r\n} Skiplist;\r\n\r\n\r\nSkiplist* skiplistCreate() {\r\n    \r\n}\r\n\r\nbool skiplistSearch(Skiplist* obj, int target) {\r\n  \r\n}\r\n\r\nvoid skiplistAdd(Skiplist* obj, int num) {\r\n  \r\n}\r\n\r\nbool skiplistErase(Skiplist* obj, int num) {\r\n  \r\n}\r\n\r\nvoid skiplistFree(Skiplist* obj) {\r\n    \r\n}\r\n\r\n/**\r\n * Your Skiplist struct will be instantiated and called as such:\r\n * Skiplist* obj = skiplistCreate();\r\n * bool param_1 = skiplistSearch(obj, target);\r\n \r\n * skiplistAdd(obj, num);\r\n \r\n * bool param_3 = skiplistErase(obj, num);\r\n \r\n * skiplistFree(obj);\r\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Skiplist {\r\n\r\n    public Skiplist() {\r\n        \r\n    }\r\n    \r\n    public bool Search(int target) {\r\n        \r\n    }\r\n    \r\n    public void Add(int num) {\r\n        \r\n    }\r\n    \r\n    public bool Erase(int num) {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your Skiplist object will be instantiated and called as such:\r\n * Skiplist obj = new Skiplist();\r\n * bool param_1 = obj.Search(target);\r\n * obj.Add(num);\r\n * bool param_3 = obj.Erase(num);\r\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "var Skiplist = function() {\r\n    \r\n};\r\n\r\n/** \r\n * @param {number} target\r\n * @return {boolean}\r\n */\r\nSkiplist.prototype.search = function(target) {\r\n    \r\n};\r\n\r\n/** \r\n * @param {number} num\r\n * @return {void}\r\n */\r\nSkiplist.prototype.add = function(num) {\r\n    \r\n};\r\n\r\n/** \r\n * @param {number} num\r\n * @return {boolean}\r\n */\r\nSkiplist.prototype.erase = function(num) {\r\n    \r\n};\r\n\r\n/** \r\n * Your Skiplist object will be instantiated and called as such:\r\n * var obj = new Skiplist()\r\n * var param_1 = obj.search(target)\r\n * obj.add(num)\r\n * var param_3 = obj.erase(num)\r\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class Skiplist\r\n    def initialize()\r\n        \r\n    end\r\n\r\n\r\n=begin\r\n    :type target: Integer\r\n    :rtype: Boolean\r\n=end\r\n    def search(target)\r\n        \r\n    end\r\n\r\n\r\n=begin\r\n    :type num: Integer\r\n    :rtype: Void\r\n=end\r\n    def add(num)\r\n        \r\n    end\r\n\r\n\r\n=begin\r\n    :type num: Integer\r\n    :rtype: Boolean\r\n=end\r\n    def erase(num)\r\n        \r\n    end\r\n\r\n\r\nend\r\n\r\n# Your Skiplist object will be instantiated and called as such:\r\n# obj = Skiplist.new()\r\n# param_1 = obj.search(target)\r\n# obj.add(num)\r\n# param_3 = obj.erase(num)"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Skiplist {\r\n\r\n    init() {\r\n        \r\n    }\r\n    \r\n    func search(_ target: Int) -> Bool {\r\n        \r\n    }\r\n    \r\n    func add(_ num: Int) {\r\n        \r\n    }\r\n    \r\n    func erase(_ num: Int) -> Bool {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your Skiplist object will be instantiated and called as such:\r\n * let obj = Skiplist()\r\n * let ret_1: Bool = obj.search(target)\r\n * obj.add(num)\r\n * let ret_3: Bool = obj.erase(num)\r\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type Skiplist struct {\r\n    \r\n}\r\n\r\n\r\nfunc Constructor() Skiplist {\r\n    \r\n}\r\n\r\n\r\nfunc (this *Skiplist) Search(target int) bool {\r\n    \r\n}\r\n\r\n\r\nfunc (this *Skiplist) Add(num int)  {\r\n    \r\n}\r\n\r\n\r\nfunc (this *Skiplist) Erase(num int) bool {\r\n    \r\n}\r\n\r\n\r\n/**\r\n * Your Skiplist object will be instantiated and called as such:\r\n * obj := Constructor();\r\n * param_1 := obj.Search(target);\r\n * obj.Add(num);\r\n * param_3 := obj.Erase(num);\r\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class Skiplist() {\r\n\r\n    def search(target: Int): Boolean = {\r\n        \r\n    }\r\n\r\n    def add(num: Int) {\r\n        \r\n    }\r\n\r\n    def erase(num: Int): Boolean = {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your Skiplist object will be instantiated and called as such:\r\n * var obj = new Skiplist()\r\n * var param_1 = obj.search(target)\r\n * obj.add(num)\r\n * var param_3 = obj.erase(num)\r\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Skiplist() {\r\n\r\n    fun search(target: Int): Boolean {\r\n        \r\n    }\r\n\r\n    fun add(num: Int) {\r\n        \r\n    }\r\n\r\n    fun erase(num: Int): Boolean {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your Skiplist object will be instantiated and called as such:\r\n * var obj = Skiplist()\r\n * var param_1 = obj.search(target)\r\n * obj.add(num)\r\n * var param_3 = obj.erase(num)\r\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct Skiplist {\r\n\r\n}\r\n\r\n\r\n/** \r\n * `&self` means the method takes an immutable reference.\r\n * If you need a mutable reference, change it to `&mut self` instead.\r\n */\r\nimpl Skiplist {\r\n\r\n    fn new() -> Self {\r\n        \r\n    }\r\n    \r\n    fn search(&self, target: i32) -> bool {\r\n        \r\n    }\r\n    \r\n    fn add(&self, num: i32) {\r\n        \r\n    }\r\n    \r\n    fn erase(&self, num: i32) -> bool {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your Skiplist object will be instantiated and called as such:\r\n * let obj = Skiplist::new();\r\n * let ret_1: bool = obj.search(target);\r\n * obj.add(num);\r\n * let ret_3: bool = obj.erase(num);\r\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Skiplist {\r\n    /**\r\n     */\r\n    function __construct() {\r\n        \r\n    }\r\n  \r\n    /**\r\n     * @param Integer $target\r\n     * @return Boolean\r\n     */\r\n    function search($target) {\r\n        \r\n    }\r\n  \r\n    /**\r\n     * @param Integer $num\r\n     * @return NULL\r\n     */\r\n    function add($num) {\r\n        \r\n    }\r\n  \r\n    /**\r\n     * @param Integer $num\r\n     * @return Boolean\r\n     */\r\n    function erase($num) {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your Skiplist object will be instantiated and called as such:\r\n * $obj = Skiplist();\r\n * $ret_1 = $obj->search($target);\r\n * $obj->add($num);\r\n * $ret_3 = $obj->erase($num);\r\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.8K\", \"totalSubmission\": \"3K\", \"totalAcceptedRaw\": 1770, \"totalSubmissionRaw\": 3020, \"acRate\": \"58.6%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"Skiplist\",\"add\",\"add\",\"add\",\"search\",\"add\",\"search\",\"erase\",\"erase\",\"search\"]\r\n[[],[1],[2],[3],[0],[4],[1],[0],[1],[1]]\r",
+  "metaData": "{\n  \"classname\": \"Skiplist\",\n  \"maxbytesperline\": 160000,\n  \"constructor\": {\n    \"params\": []\n  },\n  \"methods\": [\n    {\n      \"params\": [\n        {\n          \"type\": \"integer\",\n          \"name\": \"target\"\n        }\n      ],\n      \"name\": \"search\",\n      \"return\": {\n        \"type\": \"boolean\"\n      }\n    },\n    {\n      \"params\": [\n        {\n          \"type\": \"integer\",\n          \"name\": \"num\"\n        }\n      ],\n      \"name\": \"add\",\n      \"return\": {\n        \"type\": \"void\"\n      }\n    },\n    {\n      \"params\": [\n        {\n          \"type\": \"integer\",\n          \"name\": \"num\"\n        }\n      ],\n      \"name\": \"erase\",\n      \"return\": {\n        \"type\": \"boolean\"\n      }\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  },\n  \"systemdesign\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,115 @@
+{
+  "questionId": "958",
+  "questionFrontendId": "922",
+  "boundTopicId": null,
+  "title": "Sort Array By Parity II",
+  "titleSlug": "sort-array-by-parity-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>A</code>&nbsp;of non-negative integers, half of the integers in A are odd, and half of the integers are even.</p>\r\n\r\n<p>Sort the array so that whenever <code>A[i]</code> is odd, <code>i</code> is odd; and whenever <code>A[i]</code> is even, <code>i</code> is even.</p>\r\n\r\n<p>You may return any answer array that satisfies this condition.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[4,2,5,7]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[4,5,2,7]</span>\r\n<strong>Explanation: </strong>[4,7,2,5], [2,5,4,7], [2,7,4,5] would also have been accepted.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>2 &lt;= A.length &lt;= 20000</code></li>\r\n\t<li><code>A.length % 2 == 0</code></li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 1000</code></li>\r\n</ol>\r\n\r\n<div>\r\n<p>&nbsp;</p>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 413,
+  "dislikes": 39,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Wolf1986",
+      "profileUrl": "/wolf1986/",
+      "avatarUrl": "https://www.gravatar.com/avatar/406914b58ab24ca98148daacbdcc73c6.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> sortArrayByParityII(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] sortArrayByParityII(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def sortArrayByParityII(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def sortArrayByParityII(self, A: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* sortArrayByParityII(int* A, int ASize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] SortArrayByParityII(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number[]}\n */\nvar sortArrayByParityII = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer[]}\ndef sort_array_by_parity_ii(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func sortArrayByParityII(_ A: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func sortArrayByParityII(A []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def sortArrayByParityII(A: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun sortArrayByParityII(A: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sort_array_by_parity_ii(a: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer[]\n     */\n    function sortArrayByParityII($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"69.1K\", \"totalSubmission\": \"102.3K\", \"totalAcceptedRaw\": 69149, \"totalSubmissionRaw\": 102278, \"acRate\": \"67.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "589",
+    "canSeeDetail": true,
+    "url": "/articles/sort-array-by-parity-ii/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Two Pass\n\n**Intuition and Algorithm**\n\nRead all the even integers and put them into places `ans[0]`, `ans[2]`, `ans[4]`, and so on.\n\nThen, read all the odd integers and put them into places `ans[1]`, `ans[3]`, `ans[5]`, etc.\n\n<iframe src=\"https://leetcode.com/playground/sV3wKPcR/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"sV3wKPcR\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Read / Write Heads\n\n**Intuition**\n\nWe are motivated (perhaps by the interviewer) to pursue a solution where we modify the original array `A` in place.\n\nFirst, it is enough to put all even elements in the correct place, since all odd elements will be in the correct place too.  So let's only focus on `A[0], A[2], A[4], ...`\n\nIdeally, we would like to have some partition where everything to the left is already correct, and everything to the right is undecided.\n\nIndeed, this idea works if we separate it into two slices `even = A[0], A[2], A[4], ...` and `odd = A[1], A[3], A[5], ...`.  Our invariant will be that everything less than `i` in the even slice is correct, and everything less than `j` in the odd slice is correct.\n\n**Algorithm**\n\nFor each even `i`, let's make `A[i]` even.  To do it, we will draft an element from the odd slice.  We pass `j` through the odd slice until we find an even element, then swap.  Our invariant is maintained, so the algorithm is correct.\n\n<iframe src=\"https://leetcode.com/playground/aWm3c7PK/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"aWm3c7PK\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "575",
+      "count": 20,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,2,5,7]",
+  "metaData": "{\r\n  \"name\": \"sortArrayByParityII\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

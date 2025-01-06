@@ -1,0 +1,96 @@
+{
+  "questionId": "1081",
+  "questionFrontendId": "1024",
+  "boundTopicId": null,
+  "title": "Video Stitching",
+  "titleSlug": "video-stitching",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given a series of video clips from a sporting event that lasted <code>T</code> seconds.&nbsp;&nbsp;These video clips can be overlapping with each other and have varied lengths.</p>\r\n\r\n<p>Each video clip <code>clips[i]</code>&nbsp;is an interval: it starts at time <code>clips[i][0]</code> and ends at time <code>clips[i][1]</code>.&nbsp; We can cut these clips into segments freely: for example, a clip <code>[0, 7]</code> can be cut into segments&nbsp;<code>[0, 1] +&nbsp;[1, 3] + [3, 7]</code>.</p>\r\n\r\n<p>Return the minimum number of clips needed so that we can cut the clips into segments that cover the entire sporting event (<code>[0, T]</code>).&nbsp; If the task is impossible, return <code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>clips = <span id=\"example-input-1-1\">[[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]]</span>, T = <span id=\"example-input-1-2\">10</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">3</span>\r\n<strong>Explanation: </strong>\r\nWe take the clips [0,2], [8,10], [1,9]; a total of 3 clips.\r\nThen, we can reconstruct the sporting event as follows:\r\nWe cut [1,9] into segments [1,2] + [2,8] + [8,9].\r\nNow we have segments [0,2] + [2,8] + [8,10] which cover the sporting event [0, 10].\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>clips = <span id=\"example-input-2-1\">[[0,1],[1,2]]</span>, T = <span id=\"example-input-2-2\">5</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">-1</span>\r\n<strong>Explanation: </strong>\r\nWe can&#39;t cover [0,5] with only [0,1] and [0,2].\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>clips = <span id=\"example-input-3-1\">[[0,1],[6,8],[0,2],[5,6],[0,4],[0,3],[6,7],[1,3],[4,7],[1,4],[2,5],[2,6],[3,4],[4,5],[5,7],[6,9]]</span>, T = <span id=\"example-input-3-2\">9</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">3</span>\r\n<strong>Explanation: </strong>\r\nWe can take clips [0,4], [4,7], and [6,9].\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>clips = <span id=\"example-input-4-1\">[[0,4],[2,8]]</span>, T = <span id=\"example-input-4-2\">5</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">2</span>\r\n<strong>Explanation: </strong>\r\nNotice you can have extra video after the event ends.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= clips.length &lt;= 100</code></li>\r\n\t<li><code>0 &lt;= clips[i][0], clips[i][1] &lt;= 100</code></li>\r\n\t<li><code>0 &lt;= T &lt;= 100</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 280,
+  "dislikes": 16,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int videoStitching(vector<vector<int>>& clips, int T) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int videoStitching(int[][] clips, int T) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def videoStitching(self, clips, T):\n        \"\"\"\n        :type clips: List[List[int]]\n        :type T: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def videoStitching(self, clips: List[List[int]], T: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint videoStitching(int** clips, int clipsSize, int* clipsColSize, int T){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int VideoStitching(int[][] clips, int T) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} clips\n * @param {number} T\n * @return {number}\n */\nvar videoStitching = function(clips, T) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} clips\r\n# @param {Integer} t\r\n# @return {Integer}\r\ndef video_stitching(clips, t)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func videoStitching(_ clips: [[Int]], _ T: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func videoStitching(clips [][]int, T int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def videoStitching(clips: Array[Array[Int]], T: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun videoStitching(clips: Array<IntArray>, T: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn video_stitching(clips: Vec<Vec<i32>>, t: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $clips\n     * @param Integer $T\n     * @return Integer\n     */\n    function videoStitching($clips, $T) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.6K\", \"totalSubmission\": \"30.7K\", \"totalAcceptedRaw\": 14640, \"totalSubmissionRaw\": 30710, \"acRate\": \"47.7%\"}",
+  "hints": [
+    "What if we sort the intervals?  Considering the sorted intervals, how can we solve the problem with dynamic programming?",
+    "Let's consider a DP(pos, limit) where pos represents the position of the current interval we are gonna take the decision and limit is the current covered area from [0 - limit]. This DP returns the minimum number of taken intervals or infinite if it's not possible to cover the [0 - T] section."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]]\n10",
+  "metaData": "{\n  \"name\": \"videoStitching\",\n  \"params\": [\n    {\n      \"name\": \"clips\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"name\": \"T\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

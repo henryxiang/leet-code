@@ -1,0 +1,99 @@
+{
+  "questionId": "1075",
+  "questionFrontendId": "1065",
+  "boundTopicId": null,
+  "title": "Index Pairs of a String",
+  "titleSlug": "index-pairs-of-a-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <code>text</code>&nbsp;string and <code>words</code> (a list of strings), return all index pairs <code>[i, j]</code> so that the substring <code>text[i]...text[j]</code>&nbsp;is in the list of <code>words</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>text = <span id=\"example-input-1-1\">&quot;thestoryofleetcodeandme&quot;</span>, words = <span id=\"example-input-1-2\">[&quot;story&quot;,&quot;fleet&quot;,&quot;leetcode&quot;]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[[3,7],[9,13],[10,17]]</span>\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>text = <span id=\"example-input-2-1\">&quot;ababa&quot;</span>, words = <span id=\"example-input-2-2\">[&quot;aba&quot;,&quot;ab&quot;]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[[0,1],[0,2],[2,3],[2,4]]</span>\r\n<strong>Explanation: </strong>\r\nNotice that matches can overlap, see &quot;aba&quot; is found in [0,2] and [2,4].\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>All strings contains only lowercase English letters.</li>\r\n\t<li>It&#39;s guaranteed that all strings in <code>words</code> are different.</li>\r\n\t<li><code>1 &lt;= text.length &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= words.length &lt;= 20</code></li>\r\n\t<li><code>1 &lt;= words[i].length &lt;= 50</code></li>\r\n\t<li>Return the pairs <code>[i,j]</code> in sorted order (i.e. sort them by their first coordinate in case of ties sort them by their second coordinate).</li>\r\n</ol>",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 42,
+  "dislikes": 33,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<vector<int>> indexPairs(string text, vector<string>& words) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[][] indexPairs(String text, String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def indexPairs(self, text, words):\n        \"\"\"\n        :type text: str\n        :type words: List[str]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def indexPairs(self, text: str, words: List[str]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** indexPairs(char * text, char ** words, int wordsSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[][] IndexPairs(string text, string[] words) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} text\n * @param {string[]} words\n * @return {number[][]}\n */\nvar indexPairs = function(text, words) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} text\r\n# @param {String[]} words\r\n# @return {Integer[][]}\r\ndef index_pairs(text, words)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func indexPairs(_ text: String, _ words: [String]) -> [[Int]] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func indexPairs(text string, words []string) [][]int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def indexPairs(text: String, words: Array[String]): Array[Array[Int]] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun indexPairs(text: String, words: Array<String>): Array<IntArray> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn index_pairs(text: String, words: Vec<String>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $text\n     * @param String[] $words\n     * @return Integer[][]\n     */\n    function indexPairs($text, $words) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.2K\", \"totalSubmission\": \"7.2K\", \"totalAcceptedRaw\": 4154, \"totalSubmissionRaw\": 7152, \"acRate\": \"58.1%\"}",
+  "hints": [
+    "For each string of the set, look for matches and store those matches indices."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"thestoryofleetcodeandme\"\n[\"story\",\"fleet\",\"leetcode\"]",
+  "metaData": "{\r\n  \"name\": \"indexPairs\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"text\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,115 @@
+{
+  "questionId": "800",
+  "questionFrontendId": "784",
+  "boundTopicId": null,
+  "title": "Letter Case Permutation",
+  "titleSlug": "letter-case-permutation",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string S, we can transform every letter individually&nbsp;to be lowercase or uppercase to create another string.&nbsp; Return a list of all possible strings we could create.</p>\r\n\r\n<pre>\r\n<strong>Examples:</strong>\r\n<strong>Input:</strong> S = &quot;a1b2&quot;\r\n<strong>Output:</strong> [&quot;a1b2&quot;, &quot;a1B2&quot;, &quot;A1b2&quot;, &quot;A1B2&quot;]\r\n\r\n<strong>Input:</strong> S = &quot;3z4&quot;\r\n<strong>Output:</strong> [&quot;3z4&quot;, &quot;3Z4&quot;]\r\n\r\n<strong>Input:</strong> S = &quot;12345&quot;\r\n<strong>Output:</strong> [&quot;12345&quot;]\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>S</code> will be a string with length between <code>1</code> and <code>12</code>.</li>\r\n\t<li><code>S</code> will consist only of letters or digits.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 855,
+  "dislikes": 94,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Subsets\", \"titleSlug\": \"subsets\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Brace Expansion\", \"titleSlug\": \"brace-expansion\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<string> letterCasePermutation(string S) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> letterCasePermutation(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def letterCasePermutation(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def letterCasePermutation(self, S: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** letterCasePermutation(char * S, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public IList<string> LetterCasePermutation(string S) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {string[]}\n */\nvar letterCasePermutation = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @return {String[]}\r\ndef letter_case_permutation(s)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func letterCasePermutation(_ S: String) -> [String] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func letterCasePermutation(S string) []string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def letterCasePermutation(S: String): List[String] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun letterCasePermutation(S: String): List<String> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn letter_case_permutation(s: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return String[]\n     */\n    function letterCasePermutation($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"66.1K\", \"totalSubmission\": \"109K\", \"totalAcceptedRaw\": 66124, \"totalSubmissionRaw\": 108968, \"acRate\": \"60.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "416",
+    "canSeeDetail": true,
+    "url": "/articles/letter-case-permutation/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Recursion [Accepted]\r\n\r\n**Intuition**\r\n\r\nMaintain the correct answer as we increase the size of the prefix of `S` we are considering.\r\n\r\nFor example, when `S = \"abc\"`, maintain `ans = [\"\"]`, and update it to `ans = [\"a\", \"A\"]`, `ans = [\"ab\", \"Ab\", \"aB\", \"AB\"]`, `ans = [\"abc\", \"Abc\", \"aBc\", \"ABc\", \"abC\", \"AbC\", \"aBC\", \"ABC\"]` as we consider the letters `\"a\", \"b\", \"c\"`.\r\n\r\n**Algorithm**\r\n\r\nIf the next character `c` is a letter, then we will duplicate all words in our current answer, and add `lowercase(c)` to every word in the first half, and `uppercase(c)` to every word in the second half.\r\n\r\nIf instead `c` is a digit, we'll add it to every word.\r\n\r\n<iframe src=\"https://leetcode.com/playground/zpuZxnwP/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"zpuZxnwP\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(2^{N} * N)$$, where $$N$$ is the length of `S`.  This reflects the cost of writing the answer.\r\n\r\n* Space Complexity:  $$O(2^N * N)$$.\r\n\r\n---\r\n#### Approach #2: Binary Mask [Accepted]\r\n\r\n**Intuition**\r\n\r\nSay there are $$B$$ letters in the string `S`.  There will be $$2^B$$ strings in the answer, which we can represent uniquely by the bitmask `bits`.\r\n\r\nFor example, we could represent `a7b` by `00`, `a7B` by `01`, `A7b` by `10`, and `A7B` by `11`.  Note that numbers are not part of the bitmask.\r\n\r\n**Algorithm**\r\n\r\nFor every possible bitmask, construct the correct result to put in the final answer.  If the next letter in the word is a letter, write a lowercase or uppercase letter depending on the bitmask.  Otherwise, write the digit as given.\r\n\r\n<iframe src=\"https://leetcode.com/playground/BmAFgot7/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"BmAFgot7\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time and Space Complexity:  $$O(2^{N} * N)$$.  The analysis is the same as in *Approach #1*.\r\n\r\n---\r\n#### Approach #3: Built-In Library Function [Accepted]\r\n\r\n**Intuition and Algorithm**\r\n\r\nA *cartesian product* of sets is every possible combination of one choice from those sets.  For example, `{1, 2} x {a, b, c} = {1a, 1b, 1c, 2a, 2b, 2c}`.\r\n\r\nFor languages that have a built-in function to calculate a cartesian product, we can use this function to minimize our work.\r\n\r\n<iframe src=\"https://leetcode.com/playground/WSd5sDhR/shared\" frameBorder=\"0\" width=\"100%\" height=\"123\" name=\"WSd5sDhR\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time and Space Complexity:  $$O(2^{N} * N)$$.  The analysis is the same as in *Approach #1*.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "411",
+      "count": 12,
+      "average": 4.25,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"a1b2\"",
+  "metaData": "{\r\n  \"name\": \"letterCasePermutation\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

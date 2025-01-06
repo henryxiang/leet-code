@@ -1,0 +1,97 @@
+{
+  "questionId": "71",
+  "questionFrontendId": "71",
+  "boundTopicId": null,
+  "title": "Simplify Path",
+  "titleSlug": "simplify-path",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an <strong>absolute path</strong> for a file (Unix-style), simplify it. Or in other words, convert it to the <strong>canonical path</strong>.</p>\r\n\r\n<p>In a UNIX-style file system, a period <code>.</code>&nbsp;refers to the current directory. Furthermore, a double period <code>..</code>&nbsp;moves the directory up a level. For more information, see:&nbsp;<a href=\"https://www.linuxnix.com/abslute-path-vs-relative-path-in-linuxunix/\" target=\"_blank\">Absolute path&nbsp;vs&nbsp;relative&nbsp;path&nbsp;in&nbsp;Linux/Unix</a></p>\r\n\r\n<p>Note that the returned canonical path must always begin&nbsp;with a slash <code>/</code>, and there must be only a single slash <code>/</code>&nbsp;between two directory names.&nbsp;The last directory name (if it exists) <b>must not</b>&nbsp;end with a trailing <code>/</code>. Also, the canonical path must be the <strong>shortest</strong> string&nbsp;representing the absolute path.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: &quot;</strong><span id=\"example-input-1-1\">/home/&quot;</span>\r\n<strong>Output: &quot;</strong><span id=\"example-output-1\">/home&quot;\r\n<strong>Explanation:</strong> Note that there is no trailing slash after the last directory name.</span>\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: &quot;</strong><span id=\"example-input-1-1\">/../&quot;</span>\r\n<strong>Output: &quot;</strong><span id=\"example-output-1\">/&quot;</span>\r\n<strong>Explanation:</strong> Going one level up from the root directory is a no-op, as the root level is the highest level you can go.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: &quot;</strong><span id=\"example-input-1-1\">/home//foo/&quot;</span>\r\n<strong>Output: &quot;</strong><span id=\"example-output-1\">/home/foo&quot;</span>\r\n<strong>Explanation: </strong>In the canonical path, multiple consecutive slashes are replaced by a single one.\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: &quot;</strong><span id=\"example-input-1-1\">/a/./b/../../c/&quot;</span>\r\n<strong>Output: &quot;</strong><span id=\"example-output-1\">/c&quot;</span>\r\n</pre>\r\n\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: &quot;</strong><span id=\"example-input-1-1\">/a/../../b/../c//.//&quot;</span>\r\n<strong>Output: &quot;</strong><span id=\"example-output-1\">/c&quot;</span>\r\n</pre>\r\n\r\n<p><strong>Example 6:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: &quot;</strong><span id=\"example-input-1-1\">/a//b////c/d//././/..&quot;</span>\r\n<strong>Output: &quot;</strong><span id=\"example-output-1\">/a/b/c&quot;</span>\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 567,
+  "dislikes": 1458,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 14}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Docusign\", \"slug\": \"docusign\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    string simplifyPath(string path) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String simplifyPath(String path) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def simplifyPath(self, path):\n        \"\"\"\n        :type path: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def simplifyPath(self, path: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * simplifyPath(char * path){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string SimplifyPath(string path) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} path\n * @return {string}\n */\nvar simplifyPath = function(path) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} path\r\n# @return {String}\r\ndef simplify_path(path)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func simplifyPath(_ path: String) -> String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func simplifyPath(path string) string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def simplifyPath(path: String): String = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun simplifyPath(path: String): String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn simplify_path(path: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $path\n     * @return String\n     */\n    function simplifyPath($path) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"176.9K\", \"totalSubmission\": \"580.4K\", \"totalAcceptedRaw\": 176861, \"totalSubmissionRaw\": 580359, \"acRate\": \"30.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"/home/\"",
+  "metaData": "{ \r\n  \"name\": \"simplifyPath\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"path\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

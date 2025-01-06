@@ -1,0 +1,111 @@
+{
+  "questionId": "322",
+  "questionFrontendId": "322",
+  "boundTopicId": null,
+  "title": "Coin Change",
+  "titleSlug": "coin-change",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given coins of different denominations and a total amount of money <i>amount</i>. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return <code>-1</code>.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>coins = <code>[1, 2, 5]</code>, amount = <code>11</code>\r\n<strong>Output: </strong><code>3</code> \r\n<strong>Explanation:</strong> 11 = 5 + 5 + 1</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>coins = <code>[2]</code>, amount = <code>3</code>\r\n<strong>Output: </strong>-1\r\n</pre>\r\n\r\n<p><b>Note</b>:<br />\r\nYou may assume that you have an infinite number of each kind of coin.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2653,
+  "dislikes": 92,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Minimum Cost For Tickets\", \"titleSlug\": \"minimum-cost-for-tickets\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "jianchao-li",
+      "profileUrl": "/jianchao-li/",
+      "avatarUrl": "https://assets.leetcode.com/users/jianchaolifighter/avatar_1529298385.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Capital One\", \"slug\": \"capital-one\", \"timesEncountered\": 19}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 18}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"BlackRock\", \"slug\": \"blackrock\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Affirm\", \"slug\": \"affirm\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"JPMorgan\", \"slug\": \"jpmorgan\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int coinChange(vector<int>& coins, int amount) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int coinChange(int[] coins, int amount) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def coinChange(self, coins, amount):\n        \"\"\"\n        :type coins: List[int]\n        :type amount: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def coinChange(self, coins: List[int], amount: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint coinChange(int* coins, int coinsSize, int amount){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CoinChange(int[] coins, int amount) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} coins\n * @param {number} amount\n * @return {number}\n */\nvar coinChange = function(coins, amount) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} coins\n# @param {Integer} amount\n# @return {Integer}\ndef coin_change(coins, amount)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func coinChange(_ coins: [Int], _ amount: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func coinChange(coins []int, amount int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def coinChange(coins: Array[Int], amount: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun coinChange(coins: IntArray, amount: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn coin_change(coins: Vec<i32>, amount: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $coins\n     * @param Integer $amount\n     * @return Integer\n     */\n    function coinChange($coins, $amount) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"285.7K\", \"totalSubmission\": \"869.7K\", \"totalAcceptedRaw\": 285705, \"totalSubmissionRaw\": 869715, \"acRate\": \"32.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "49",
+    "canSeeDetail": true,
+    "url": "/articles/coin-change/",
+    "content": "[TOC]\n\n## Summary\n\nThis article is for intermediate users. It introduces the following ideas:\nBacktracking, Dynamic programming.\n\n## Solution\n\n---\n#### Approach #1 (Brute force) [Time Limit Exceeded]\n\n**Intuition**\n\n\nThe problem could be modeled as the following optimization problem :\n$$\n\\min_{x} \\sum_{i=0}^{n - 1} x_i \\\\\n\\text{subject to} \\sum_{i=0}^{n - 1} x_i*c_i = S\n$$\n\n, where $$S$$ is the amount,    $$c_i$$ is the coin denominations, $$x_i$$  is the number of coins with denominations $$c_i$$ used in change of amount $$S$$. We could easily see that $$x_i = [{0, \\frac{S}{c_i}}]$$.\n\nA trivial solution is to enumerate all subsets of coin frequencies $$[x_0\\dots\\ x_{n - 1}]$$  that satisfy the constraints above, compute their sums and return the minimum among them.\n\n**Algorithm**\n\nTo apply this idea, the algorithm uses backtracking technique to generate all combinations of coin frequencies $$[x_0\\dots\\ x_{n-1}]$$ in the range \\([{0, \\frac{S}{c_i}}]\\) which satisfy the constraints above. It makes a sum of the combinations and returns their minimum or $$-1$$ in case there is no acceptable combination.\n\n<iframe src=\"https://leetcode.com/playground/SbHyzNcx/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"SbHyzNcx\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(S^n)$$. In the worst case, complexity is exponential in the number of the coins $$n$$. The reason is that every coin denomination $$c_i$$ could have at most $$\\frac{S}{c_i}$$ values. Therefore the number of possible combinations is :\n\n$$\n\\frac{S}{c_1}*\\frac{S}{c_2}*\\frac{S}{c_3}\\ldots\\frac{S}{c_n} = \\frac{S^{n}}{{c_1}*{c_2}*{c_3}\\ldots{c_n}}\n$$\n\n\n\n* Space complexity : $$O(n)$$.\nIn the worst case the maximum depth of recursion is $$n$$. Therefore we need $$O( n)$$ space used by the system recursive stack.\n\n---\n#### Approach #2 (Dynamic programming - Top down) [Accepted]\n\n**Intuition**\n\nCould we improve the exponential solution above? Definitely! The problem could be solved with polynomial time using Dynamic programming technique. First, let's define:\n> $$F(S)$$ - minimum number of coins needed to make change for amount $$S$$ using coin denominations $$[{c_0\\ldots c_{n-1}}]$$\n\n\nWe note that this problem has an optimal substructure property, which is the key piece in solving any Dynamic Programming problems. In other words, the optimal solution can be constructed from optimal solutions of its subproblems.\nHow to split the problem into subproblems? Let's assume that we know $$F(S)$$ where some change $$val_1, val_2, \\ldots$$ for $$S$$ which is optimal and the last coin's denomination is $$C$$.\nThen the following equation should be true because of optimal substructure of the problem:\n\n$$\nF(S) = F(S - C) + 1\n$$\n\nBut we don't know which is the denomination of the last coin $$C$$. We compute  $$F(S - c_i)$$ for each possible denomination $$c_0, c_1, c_2 \\ldots c_{n -1}$$ and choose the minimum among them. The following recurrence relation holds:\n\n$$\nF(S) = \\min_{i=0 ... n-1} { F(S - c_i) } + 1 \\\\\n\\text{subject to} \\ \\  S-c_i \\geq 0 \\\\\n$$\n\n$$\nF(S) = 0 \\ , \\text{when} \\ S = 0 \\\\\nF(S) = -1 \\ , \\text{when} \\ n = 0\n$$\n\n![Recursion tree for finding coin change of amount 6 with coin denominations {1,2,3}.](https://leetcode.com/media/original_images/322_coin_change_tree.png){:width=\"100%\"}\n{:align=\"center\"}\n\n\nIn the recursion tree above, we could see that a lot of subproblems were calculated multiple times.  For example the problem $$F(1)$$ was calculated $$13$$ times. Therefore we should cache the solutions to the subproblems in a table and access them in constant time when necessary\n\n**Algorithm**\n\nThe idea of the algorithm is to build the solution of the problem from top to bottom. It applies the idea described above. It use backtracking and cut the partial solutions in the recursive tree, which doesn't lead to a viable solution. Тhis happens when we try to make a change of a coin with a value greater than the amount *$$S$$*. To improve  time complexity we should store the solutions of the already calculated subproblems in a table.\n\n<iframe src=\"https://leetcode.com/playground/XfwK5uaj/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"XfwK5uaj\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(S*n)$$. where S is the amount, n is denomination count.\nIn the worst case the recursive tree of the algorithm has height of $$S$$ and the algorithm  solves only $$S$$ subproblems because it caches precalculated solutions in a table. Each subproblem is computed with  $$n$$ iterations, one by coin denomination. Therefore there is $$O(S*n)$$ time complexity.\n\n* Space complexity : $$O(S)$$, where $$S$$ is the amount to change\nWe use extra space for the memoization table.\n\n---\n#### Approach #3 (Dynamic programming - Bottom up) [Accepted]\n\n**Algorithm**\n\nFor the iterative solution, we think in bottom-up manner. Before calculating *$$F(i)$$*, we have to compute all minimum counts for amounts up to $$i$$. On each iteration $$i$$ of the algorithm *$$F(i)$$* is computed as $$\\min_{j=0 \\ldots n-1}{F(i -c_j)} + 1$$\n\n\n![Bottom-up approach using a table to build up the solution to F6.](https://leetcode.com/media/original_images/322_coin_change_table.png){:width=\"539px\"}\n{:align=\"center\"}\n\nIn the example above you can see that:\n\n$$\n\\begin{align}\nF(3) &= \\min\\{{F(3- c_1), F(3-c_2), F(3-c_3)}\\} + 1 \\\\\n&= \\min\\{{F(3- 1), F(3-2), F(3-3)}\\} + 1 \\\\\n&= \\min\\{{F(2), F(1), F(0)}\\} + 1 \\\\\n&= \\min\\{{1, 1, 0}\\} + 1 \\\\\n&= 1\n\\end{align}\n$$\n\n\n<iframe src=\"https://leetcode.com/playground/i75YTXPR/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"i75YTXPR\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(S*n)$$.\nOn each step the algorithm finds the next *$$F(i)$$* in $$n$$ iterations, where $$1\\leq i \\leq S$$. Therefore in total the iterations are $$S*n$$.\n* Space complexity : $$O(S)$$.\nWe use extra space for the memoization table.\n\nAnalysis written by: @elmirap.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "47",
+      "count": 131,
+      "average": 4.679,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,5]\n11",
+  "metaData": "{\r\n  \"name\": \"coinChange\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"coins\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"amount\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

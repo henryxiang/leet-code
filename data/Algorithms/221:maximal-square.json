@@ -1,0 +1,111 @@
+{
+  "questionId": "221",
+  "questionFrontendId": "221",
+  "boundTopicId": null,
+  "title": "Maximal Square",
+  "titleSlug": "maximal-square",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a 2D binary matrix filled with 0&#39;s and 1&#39;s, find the largest square containing only 1&#39;s and return its area.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: \r\n</strong>\r\n1 0 1 0 0\r\n1 0 <font color=\"red\">1</font> <font color=\"red\">1</font> 1\r\n1 1 <font color=\"red\">1</font> <font color=\"red\">1</font> 1\r\n1 0 0 1 0\r\n\r\n<strong>Output: </strong>4\r\n</pre>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1909,
+  "dislikes": 47,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Maximal Rectangle\", \"titleSlug\": \"maximal-rectangle\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Largest Plus Sign\", \"titleSlug\": \"largest-plus-sign\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Freezen",
+      "profileUrl": "/freezen/",
+      "avatarUrl": "https://www.gravatar.com/avatar/85b3caacb214788b937e9ef6242f9d23.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Huawei\", \"slug\": \"huawei\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maximalSquare(vector<vector<char>>& matrix) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maximalSquare(char[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maximalSquare(self, matrix):\n        \"\"\"\n        :type matrix: List[List[str]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maximalSquare(self, matrix: List[List[str]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maximalSquare(char** matrix, int matrixSize, int* matrixColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaximalSquare(char[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[][]} matrix\n * @return {number}\n */\nvar maximalSquare = function(matrix) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[][]} matrix\n# @return {Integer}\ndef maximal_square(matrix)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maximalSquare(_ matrix: [[Character]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maximalSquare(matrix [][]byte) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maximalSquare(matrix: Array[Array[Char]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maximalSquare(matrix: Array<CharArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn maximal_square(matrix: Vec<Vec<char>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $matrix\n     * @return Integer\n     */\n    function maximalSquare($matrix) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"170.7K\", \"totalSubmission\": \"490.1K\", \"totalAcceptedRaw\": 170716, \"totalSubmissionRaw\": 490107, \"acRate\": \"34.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "54",
+    "canSeeDetail": true,
+    "url": "/articles/maximal-square/",
+    "content": "[TOC]\r\n\r\n## Summary\r\n\r\nWe need to find the largest square comprising of all ones in the given $$m \\times n$$ matrix. In other words we need to find the largest set of connected ones in the given matrix that forms a square.\r\n\r\n## Solution\r\n\r\n---\r\n#### Approach #1 Brute Force [Accepted]\r\n\r\nThe simplest approach consists of trying to find out every possible square of 1’s that can be formed from within the matrix. The question now is – how to go for it?\r\n\r\nWe use a variable to contain the size of the largest square found so far and another variable to store the size of the current, both initialized to 0. Starting from the left uppermost point in the matrix, we search for a 1. No operation needs to be done for a 0. Whenever a 1 is found, we try to find out the largest square that can be formed including that 1. For this, we move diagonally (right and downwards), i.e. we increment the row index and column index temporarily and then check whether all the elements of that row and column are 1 or not. If all the elements happen to be 1, we move diagonally further as previously. If even one element turns out to be 0, we stop this diagonal movement and update the size of the largest square. Now we, continue the traversal of the matrix from the element next to the initial 1 found, till all the elements of the matrix have been traversed.\r\n\r\n\r\n**Java**\r\n\r\n```java\r\npublic class Solution {\r\n    public int maximalSquare(char[][] matrix) {\r\n        int rows = matrix.length, cols = rows > 0 ? matrix[0].length : 0;\r\n        int maxsqlen = 0;\r\n        for (int i = 0; i < rows; i++) {\r\n            for (int j = 0; j < cols; j++) {\r\n                if (matrix[i][j] == '1') {\r\n                    int sqlen = 1;\r\n                    boolean flag = true;\r\n                    while (sqlen + i < rows && sqlen + j < cols && flag) {\r\n                        for (int k = j; k <= sqlen + j; k++) {\r\n                            if (matrix[i + sqlen][k] == '0') {\r\n                                flag = false;\r\n                                break;\r\n                            }\r\n                        }\r\n                        for (int k = i; k <= sqlen + i; k++) {\r\n                            if (matrix[k][j + sqlen] == '0') {\r\n                                flag = false;\r\n                                break;\r\n                            }\r\n                        }\r\n                        if (flag)\r\n                            sqlen++;\r\n                    }\r\n                    if (maxsqlen < sqlen) {\r\n                        maxsqlen = sqlen;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        return maxsqlen * maxsqlen;\r\n    }\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O\\big((mn)^2\\big)$$. In worst case, we need to traverse the complete matrix for every 1.\r\n* Space complexity : $$O(1)$$. No extra space is used.\r\n\r\n---\r\n#### Approach #2 (Dynamic Programming) [Accepted]\r\n\r\n**Algorithm**\r\n\r\nWe will explain this approach with the help of an example.\r\n```\r\n0 1 1 1 0\r\n1 1 1 1 1\r\n0 1 1 1 1\r\n0 1 1 1 1\r\n0 0 1 1 1\r\n```\r\nWe initialize another matrix (dp) with the same dimensions as the original one initialized with all 0’s.\r\n\r\ndp(i,j) represents the side length of the maximum square whose bottom right corner is the cell with index (i,j) in the original matrix. \r\n\r\nStarting from index (0,0), for every 1 found in the original matrix, we update the value of the current element as \r\n\r\n$$\r\n\\text{dp}(i,\\  j) = \\min \\big( \\text{dp}(i-1,\\  j),\\  \\text{dp}(i-1,\\  j-1),\\  \\text{dp}(i,\\  j-1) \\big) + 1.\r\n$$\r\n\r\nWe also remember the size of the largest square found so far. In this way, we traverse the original matrix once and find out the required maximum size. This gives the side length of the square (say $$maxsqlen$$). The required result is the area $$maxsqlen^2$$.\r\n\r\nTo understand how this solution works, see the figure below.\r\n\r\n![Max Square](https://leetcode.com/media/original_images/221_Maximal_Square.PNG?raw=true)\r\n\r\nAn entry 2 at $$(1, 3)$$ implies that we have a square of side 2 up to that index in the original matrix. Similarly, a 2 at $$(1, 2)$$ and $$(2, 2)$$ implies that a square of side 2 exists up to that index in the original matrix. Now to make a square of side 3, only a single entry of 1 is pending at $$(2, 3)$$. So, we enter a 3 corresponding to that position in the dp array.\r\n\r\nNow consider the case for the index $$(3, 4)$$. Here, the entries at index $$(3, 3)$$ and $$(2, 3)$$ imply that a square of side 3 is possible up to their indices. But, the entry 1 at index $$(2, 4)$$ indicates that a square of side 1 only can be formed up to its index. Therefore, while making an entry at the index $$(3, 4)$$, this element obstructs the formation of a square having a side larger than 2. Thus, the maximum sized square that can be formed up to this index is of size $$2\\times2$$.\r\n\r\n\r\n**Java**\r\n```java\r\n\r\npublic class Solution {\r\n    public int maximalSquare(char[][] matrix) {\r\n        int rows = matrix.length, cols = rows > 0 ? matrix[0].length : 0;\r\n        int[][] dp = new int[rows + 1][cols + 1];\r\n        int maxsqlen = 0;\r\n        for (int i = 1; i <= rows; i++) {\r\n            for (int j = 1; j <= cols; j++) {\r\n                if (matrix[i-1][j-1] == '1'){\r\n                    dp[i][j] = Math.min(Math.min(dp[i][j - 1], dp[i - 1][j]), dp[i - 1][j - 1]) + 1;\r\n                    maxsqlen = Math.max(maxsqlen, dp[i][j]);\r\n                }\r\n            }\r\n        }\r\n        return maxsqlen * maxsqlen;\r\n    }\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(mn)$$. Single pass.\r\n\r\n* Space complexity : $$O(mn)$$. Another matrix of same size is used for dp.\r\n\r\n---\r\n#### Approach #3 (Better Dynamic Programming) [Accepted]\r\n\r\n**Algorithm**\r\n\r\nIn the previous approach for calculating dp of $$i^{th}$$ row we are using only the previous element and the $$(i-1)^{th}$$ row. Therefore, we don't need 2D dp matrix as 1D dp array will be sufficient for this.\r\n\r\nInitially the dp array contains all 0's. As we scan the elements of the original matrix across a row, we keep on updating the dp array as per the equation $$dp[j]=min(dp[j-1],dp[j],prev)$$, where prev refers to the old $$dp[j-1]$$. For every row, we repeat the same process and update in the same dp array.\r\n\r\n\r\n![ Max Square ](https://leetcode.com/media/original_images/221_Maximal_Square1.png?raw=true)\r\n\r\n**java**\r\n```java\r\npublic class Solution {\r\n    public int maximalSquare(char[][] matrix) {\r\n        int rows = matrix.length, cols = rows > 0 ? matrix[0].length : 0;\r\n        int[] dp = new int[cols + 1];\r\n        int maxsqlen = 0, prev = 0;\r\n        for (int i = 1; i <= rows; i++) {\r\n            for (int j = 1; j <= cols; j++) {\r\n                int temp = dp[j];\r\n                if (matrix[i - 1][j - 1] == '1') {\r\n                    dp[j] = Math.min(Math.min(dp[j - 1], prev), dp[j]) + 1;\r\n                    maxsqlen = Math.max(maxsqlen, dp[j]);\r\n                } else {\r\n                    dp[j] = 0;\r\n                }\r\n                prev = temp;\r\n            }\r\n        }\r\n        return maxsqlen * maxsqlen;\r\n    }\r\n}\r\n```\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(mn)$$. Single pass.\r\n\r\n* Space complexity : $$O(n)$$. Another array which stores elements in a row is used for dp.\r\n\r\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "52",
+      "count": 102,
+      "average": 4.843,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]",
+  "metaData": "{\r\n  \"name\": \"maximalSquare\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"matrix\",\r\n      \"type\": \"character[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

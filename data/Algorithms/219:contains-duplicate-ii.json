@@ -1,0 +1,109 @@
+{
+  "questionId": "219",
+  "questionFrontendId": "219",
+  "boundTopicId": null,
+  "title": "Contains Duplicate II",
+  "titleSlug": "contains-duplicate-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers and an integer <i>k</i>, find out whether there are two distinct indices <i>i</i> and <i>j</i> in the array such that <b>nums[i] = nums[j]</b> and the <b>absolute</b> difference between <i>i</i> and <i>j</i> is at most <i>k</i>.</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-1-1\">[1,2,3,1]</span>, k = <span id=\"example-input-1-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-2-1\">[1,0,1,1]</span>, k = <span id=\"example-input-2-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-3-1\">[1,2,3,1,2,3]</span>, k = <span id=\"example-input-3-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">false</span>\r\n</pre>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 633,
+  "dislikes": 788,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Contains Duplicate\", \"titleSlug\": \"contains-duplicate\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Contains Duplicate III\", \"titleSlug\": \"contains-duplicate-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 0}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool containsNearbyDuplicate(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean containsNearbyDuplicate(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def containsNearbyDuplicate(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool containsNearbyDuplicate(int* nums, int numsSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ContainsNearbyDuplicate(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {boolean}\n */\nvar containsNearbyDuplicate = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Boolean}\ndef contains_nearby_duplicate(nums, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func containsNearbyDuplicate(nums []int, k int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def containsNearbyDuplicate(nums: Array[Int], k: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun containsNearbyDuplicate(nums: IntArray, k: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn contains_nearby_duplicate(nums: Vec<i32>, k: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Boolean\n     */\n    function containsNearbyDuplicate($nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"231.2K\", \"totalSubmission\": \"634.1K\", \"totalAcceptedRaw\": 231191, \"totalSubmissionRaw\": 634085, \"acRate\": \"36.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "24",
+    "canSeeDetail": true,
+    "url": "/articles/contains-duplicate-ii/",
+    "content": "[TOC]\r\n\r\n## Summary\r\nThis article is for beginners. It introduces the following ideas:\r\nLinear Search, Binary Search Tree and Hash Table.\r\n\r\n## Solution\r\n---\r\n#### Approach #1 (Naive Linear Search) [Time Limit Exceeded]\r\n\r\n**Intuition**\r\n\r\nLook for duplicate element in the previous $$k$$ elements.\r\n\r\n**Algorithm**\r\n\r\nThis algorithm is the same as [Approach #1 in Contains Duplicate solution](https://leetcode.com/articles/contains-duplicate/#approach-1-naive-linear-search-time-limit-exceeded), except that it looks at previous $$k$$ elements instead of all its previous elements.\r\n\r\nAnother perspective of this algorithm is to keep a virtual sliding window of the previous $$k$$ elements. We scan for the duplicate in this window.\r\n\r\n**Java**\r\n```java\r\npublic boolean containsNearbyDuplicate(int[] nums, int k) {\r\n    for (int i = 0; i < nums.length; ++i) {\r\n        for (int j = Math.max(i - k, 0); j < i; ++j) {\r\n            if (nums[i] == nums[j]) return true;\r\n        }\r\n    }\r\n    return false;\r\n}\r\n// Time Limit Exceeded.\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n \\min(k,n))$$.\r\nIt costs $$O(\\min(k, n))$$ time for each linear search. Apparently we do at most $$n$$ comparisons in one search even if $$k$$ can be larger than $$n$$.\r\n\r\n* Space complexity : $$O(1)$$.\r\n\r\n---\r\n#### Approach #2 (Binary Search Tree) [Time Limit Exceeded]\r\n\r\n**Intuition**\r\n\r\nKeep a sliding window of $$k$$ elements using self-balancing Binary Search Tree (BST).\r\n\r\n**Algorithm**\r\n\r\nThe key to improve upon [Approach #1](#approach-1-naive-linear-search-time-limit-exceeded) above is to reduce the search time of the previous $$k$$ elements. Can we use an auxiliary data structure to maintain a sliding window of $$k$$ elements with more efficient `search`, `delete`, and `insert` operations? Since elements in the sliding window are strictly First-In-First-Out (FIFO), queue is a natural data structure. A queue using a linked list implementation supports constant time `delete` and `insert` operations, however the `search` costs linear time, which is *no better* than [Approach #1](#approach-1-naive-linear-search-time-limit-exceeded).\r\n\r\nA better option is to use a self-balancing BST. A BST supports `search`, `delete` and `insert` operations all in $$O(\\log k)$$ time, where $$k$$ is the number of elements in the BST. In most interviews you are not required to implement a self-balancing BST, so you may think of it as a black box. Most programming languages provide implementations of this useful data structure in its standard library. In Java, you may use a `TreeSet` or a `TreeMap`. In C++ STL, you may use a `std::set` or a `std::map`.\r\n\r\nIf you already have such a data structure available, the pseudocode is:\r\n\r\n* Loop through the array, for each element do\r\n    * Search current element in the BST, return `true` if found\r\n    * Put current element in the BST\r\n    * If the size of the BST is larger than $$k$$, remove the oldest item.\r\n* Return `false`\r\n\r\n**Java**\r\n```java\r\npublic boolean containsNearbyDuplicate(int[] nums, int k) {\r\n    Set<Integer> set = new TreeSet<>();\r\n    for (int i = 0; i < nums.length; ++i) {\r\n        if (set.contains(nums[i])) return true;\r\n        set.add(nums[i]);\r\n        if (set.size() > k) {\r\n            set.remove(nums[i - k]);\r\n        }\r\n    }\r\n    return false;\r\n}\r\n// Time Limit Exceeded.\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n \\log (\\min(k,n)))$$. We do $$n$$ operations of `search`, `delete` and `insert`. Each operation costs logarithmic time complexity in the sliding window which size is $$\\min(k, n)$$. Note that even if $$k$$ can be greater than $$n$$, the window size can never exceed $$n$$.\r\n\r\n* Space complexity : $$O(\\min(n,k))$$.\r\nSpace is the size of the sliding window which should not exceed $$n$$ or $$k$$.\r\n\r\n**Note**\r\n\r\nThe algorithm still gets Time Limit Exceeded for large $$n$$ and $$k$$.\r\n\r\n---\r\n#### Approach #3 (Hash Table) [Accepted]\r\n\r\n**Intuition**\r\n\r\nKeep a sliding window of $$k$$ elements using Hash Table.\r\n\r\n**Algorithm**\r\n\r\nFrom the previous approaches, we know that even logarithmic performance in `search` is not enough.\r\nIn this case, we need a data structure supporting constant time `search`, `delete` and `insert` operations.\r\nHash Table is the answer. The algorithm and implementation are almost identical to [Approach #2](#approach-2-binary-search-tree-time-limit-exceeded).\r\n\r\n* Loop through the array, for each element do\r\n    * Search current element in the HashTable, return `true` if found\r\n    * Put current element in the HashTable\r\n    * If the size of the HashTable is larger than $$k$$, remove the oldest item.\r\n* Return `false`\r\n\r\n\r\n**Java**\r\n\r\n```java\r\npublic boolean containsNearbyDuplicate(int[] nums, int k) {\r\n    Set<Integer> set = new HashSet<>();\r\n    for (int i = 0; i < nums.length; ++i) {\r\n        if (set.contains(nums[i])) return true;\r\n        set.add(nums[i]);\r\n        if (set.size() > k) {\r\n            set.remove(nums[i - k]);\r\n        }\r\n    }\r\n    return false;\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n)$$.\r\nWe do $$n$$ operations of `search`, `delete` and `insert`, each with constant time complexity.\r\n\r\n* Space complexity : $$O(\\min(n,k))$$.\r\nThe extra space required depends on the number of items stored in the hash table, which is the size of the sliding window, $$\\min(n,k)$$.\r\n\r\n## See Also\r\n\r\n* [Problem 217 Contains Duplicate](https://leetcode.com/articles/contains-duplicate/)\r\n* [Problem 220 Contains Duplicate III](https://leetcode.com/articles/contains-duplicate-iii/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "22",
+      "count": 16,
+      "average": 4.25,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,1]\n3",
+  "metaData": "{\r\n  \"name\": \"containsNearbyDuplicate\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

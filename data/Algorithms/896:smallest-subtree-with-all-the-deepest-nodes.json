@@ -1,0 +1,111 @@
+{
+  "questionId": "896",
+  "questionFrontendId": "865",
+  "boundTopicId": null,
+  "title": "Smallest Subtree with all the Deepest Nodes",
+  "titleSlug": "smallest-subtree-with-all-the-deepest-nodes",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary tree rooted at <code>root</code>, the <em>depth</em> of each node is the shortest distance to the root.</p>\r\n\r\n<p>A node is <em>deepest</em> if it has the largest depth possible among&nbsp;any node in the <u>entire tree</u>.</p>\r\n\r\n<p>The subtree of a node is that node, plus the set of all descendants of that node.</p>\r\n\r\n<p>Return the node with the largest depth such that it contains all the deepest nodes in its subtree.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[3,5,1,6,2,0,8,null,null,7,4]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[2,7,4]</span>\r\n<strong>Explanation:\r\n</strong>\r\n<img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/01/sketch1.png\" style=\"width: 280px; height: 238px;\" />\r\n\r\nWe return the node with value 2, colored in yellow in the diagram.\r\nThe nodes colored in blue are the deepest nodes of the tree.\r\nThe input &quot;[3, 5, 1, 6, 2, 0, 8, null, null, 7, 4]&quot; is a serialization of the given tree.\r\nThe output &quot;[2, 7, 4]&quot; is a serialization of the subtree rooted at the node with value 2.\r\nBoth the input and output have TreeNode type.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in the tree will be between 1 and 500.</li>\r\n\t<li>The values of each node are unique.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 503,
+  "dislikes": 157,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "jintojose72",
+      "profileUrl": "/jintojose72/",
+      "avatarUrl": "https://www.gravatar.com/avatar/a7e628a44c3aa65875e9656bf246edcf.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    TreeNode* subtreeWithAllDeepest(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public TreeNode subtreeWithAllDeepest(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def subtreeWithAllDeepest(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: TreeNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def subtreeWithAllDeepest(self, root: TreeNode) -> TreeNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nstruct TreeNode* subtreeWithAllDeepest(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public TreeNode SubtreeWithAllDeepest(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {TreeNode}\n */\nvar subtreeWithAllDeepest = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {TreeNode}\ndef subtree_with_all_deepest(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func subtreeWithAllDeepest(_ root: TreeNode?) -> TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc subtreeWithAllDeepest(root *TreeNode) *TreeNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def subtreeWithAllDeepest(root: TreeNode): TreeNode = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun subtreeWithAllDeepest(root: TreeNode?): TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn subtree_with_all_deepest(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return TreeNode\n     */\n    function subtreeWithAllDeepest($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"27.6K\", \"totalSubmission\": \"47K\", \"totalAcceptedRaw\": 27560, \"totalSubmissionRaw\": 46958, \"acRate\": \"58.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "503",
+    "canSeeDetail": true,
+    "url": "/articles/smallest-subtree-with-all-the-deepest-nodes/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Paint Deepest Nodes\n\n**Intuition**\n\nWe try a straightforward approach that has two phases.\n\nThe first phase is to identify the nodes of the tree that are deepest.  To do this, we have to annotate the depth of each node.  We can do this with a depth first search.\n\nAfterwards, we will use that annotation to help us find the answer:\n\n* If the `node` in question has maximum depth, it is the answer.\n\n* If both the left and right child of a `node` have a deepest descendant, then the answer is this parent `node`.  \n\n* Otherwise, if some child has a deepest descendant, then the answer is that child.\n\n* Otherwise, the answer for this subtree doesn't exist.\n\n**Algorithm**\n\nIn the first phase, we use a depth first search `dfs` to annotate our nodes.\n\nIn the second phase, we also use a depth first search `answer(node)`, returning the answer for the subtree at that `node`, and using the rules above to build our answer from the answers of the children of `node`.\n\nNote that in this approach, the `answer` function returns answers that have the deepest nodes of the *entire* tree, not just the subtree being considered.\n\n<iframe src=\"https://leetcode.com/playground/BShzUaRJ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"BShzUaRJ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of nodes in the tree.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Recursion\n\n**Intuition**\n\nWe can combine both depth first searches in *Approach #1* into an approach that does both steps in one pass.  We will have some function `dfs(node)` that returns both the answer for this subtree, and the distance from `node` to the deepest nodes in this subtree.\n\n**Algorithm**\n\nThe `Result` (on some subtree) returned by our (depth-first search) recursion will have two parts:\n* `Result.node`: the largest depth node that is equal to or an ancestor of all the deepest nodes of this subtree.\n* `Result.dist`: the number of nodes in the path from the root of this subtree, to the deepest node in this subtree.\n\nWe can calculate these answers disjointly for `dfs(node)`:\n\n* To calculate the `Result.node` of our answer:\n\n    * If one `childResult` has deeper nodes, then `childResult.node` will be the answer.\n\n    * If they both have the same depth nodes, then `node` will be the answer.\n\n* The `Result.dist` of our answer is always 1 more than the largest `childResult.dist` we have.\n\n<iframe src=\"https://leetcode.com/playground/QAN4y6ev/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"QAN4y6ev\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of nodes in the tree.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "496",
+      "count": 15,
+      "average": 4.6,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,5,1,6,2,0,8,null,null,7,4]",
+  "metaData": "{\r\n  \"name\": \"subtreeWithAllDeepest\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"TreeNode\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

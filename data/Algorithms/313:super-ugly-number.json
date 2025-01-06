@@ -1,0 +1,103 @@
+{
+  "questionId": "313",
+  "questionFrontendId": "313",
+  "boundTopicId": null,
+  "title": "Super Ugly Number",
+  "titleSlug": "super-ugly-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Write a program to find the <code>n<sup>th</sup></code> super ugly number.</p>\r\n\r\n<p>Super ugly numbers are positive numbers whose all prime factors are in the given prime list <code>primes</code> of size <code>k</code>.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> n = 12, <code>primes</code> = <code>[2,7,13,19]</code>\r\n<b>Output:</b> 32 \r\n<strong>Explanation: </strong><code>[1,2,4,7,8,13,14,16,19,26,28,32] </code>is the sequence of the first 12 \r\n             super ugly numbers given <code>primes</code> = <code>[2,7,13,19]</code> of size 4.</pre>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ul>\r\n\t<li><code>1</code> is a super ugly number for any given <code>primes</code>.</li>\r\n\t<li>The given numbers in <code>primes</code> are in ascending order.</li>\r\n\t<li>0 &lt; <code>k</code> &le; 100, 0 &lt; <code>n</code> &le; 10<sup>6</sup>, 0 &lt; <code>primes[i]</code> &lt; 1000.</li>\r\n\t<li>The n<sup>th</sup> super ugly number is guaranteed to fit in a 32-bit signed integer.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 470,
+  "dislikes": 122,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Ugly Number II\", \"titleSlug\": \"ugly-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "dietpepsi",
+      "profileUrl": "/dietpepsi/",
+      "avatarUrl": "https://www.gravatar.com/avatar/5db7cd8986dd0171d1682b730ce85555.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Heap",
+      "slug": "heap"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int nthSuperUglyNumber(int n, vector<int>& primes) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int nthSuperUglyNumber(int n, int[] primes) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def nthSuperUglyNumber(self, n, primes):\n        \"\"\"\n        :type n: int\n        :type primes: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def nthSuperUglyNumber(self, n: int, primes: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint nthSuperUglyNumber(int n, int* primes, int primesSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NthSuperUglyNumber(int n, int[] primes) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number[]} primes\n * @return {number}\n */\nvar nthSuperUglyNumber = function(n, primes) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer[]} primes\n# @return {Integer}\ndef nth_super_ugly_number(n, primes)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func nthSuperUglyNumber(_ n: Int, _ primes: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func nthSuperUglyNumber(n int, primes []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def nthSuperUglyNumber(n: Int, primes: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun nthSuperUglyNumber(n: Int, primes: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn nth_super_ugly_number(n: i32, primes: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer[] $primes\n     * @return Integer\n     */\n    function nthSuperUglyNumber($n, $primes) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"68.6K\", \"totalSubmission\": \"158.5K\", \"totalAcceptedRaw\": 68577, \"totalSubmissionRaw\": 158489, \"acRate\": \"43.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "12\n[2,7,13,19]",
+  "metaData": "{\r\n  \"name\": \"nthSuperUglyNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"primes\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

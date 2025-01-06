@@ -1,0 +1,111 @@
+{
+  "questionId": "683",
+  "questionFrontendId": "683",
+  "boundTopicId": null,
+  "title": "K Empty Slots",
+  "titleSlug": "k-empty-slots",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You have <code>N</code> bulbs in a row numbered from <code>1</code> to <code>N</code>. Initially, all the bulbs are turned off. We turn on exactly one bulb everyday until all bulbs are on after <code>N</code> days.</p>\r\n\r\n<p>You are given an array <code>bulbs</code>&nbsp;of length <code>N</code>&nbsp;where <code>bulbs[i] = x</code> means that on the <code>(i+1)th</code> day, we will turn on the bulb at position <code>x</code>&nbsp;where&nbsp;<code>i</code>&nbsp;is&nbsp;<code>0-indexed</code>&nbsp;and&nbsp;<code>x</code>&nbsp;is&nbsp;<code>1-indexed.</code></p>\r\n\r\n<p>Given an integer <code>K</code>, find out the <strong>minimum day number</strong> such that there exists two <strong>turned on</strong> bulbs that have <strong>exactly</strong>&nbsp;<code>K</code> bulbs between them that are <strong>all turned off</strong>.</p>\r\n\r\n<p>If there isn&#39;t such day, return <code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> \r\nbulbs: [1,3,2]\r\nK: 1\r\n<b>Output:</b> 2\r\n<b>Explanation:</b>\r\nOn the first day: bulbs[0] = 1, first bulb is turned on: [1,0,0]\r\nOn the second day: bulbs[1] = 3, third bulb is turned on: [1,0,1]\r\nOn the third day: bulbs[2] = 2, second bulb is turned on: [1,1,1]\r\nWe return 2 because on the second day, there were two on bulbs with one off bulb between them.\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> \r\nbulbs: [1,2,3]\r\nK: 1\r\n<b>Output:</b> -1\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= N &lt;= 20000</code></li>\r\n\t<li><code>1 &lt;= bulbs[i] &lt;= N</code></li>\r\n\t<li><code>bulbs</code>&nbsp;is a permutation of numbers from&nbsp;<code>1</code>&nbsp;to&nbsp;<code>N</code>.</li>\r\n\t<li><code>0 &lt;= K &lt;= 20000</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 521,
+  "dislikes": 536,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Ordered Map",
+      "slug": "ordered-map"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int kEmptySlots(vector<int>& bulbs, int K) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int kEmptySlots(int[] bulbs, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def kEmptySlots(self, bulbs, K):\n        \"\"\"\n        :type bulbs: List[int]\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def kEmptySlots(self, bulbs: List[int], K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint kEmptySlots(int* bulbs, int bulbsSize, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int KEmptySlots(int[] bulbs, int K) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} bulbs\n * @param {number} K\n * @return {number}\n */\nvar kEmptySlots = function(bulbs, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} bulbs\r\n# @param {Integer} k\r\n# @return {Integer}\r\ndef k_empty_slots(bulbs, k)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func kEmptySlots(_ bulbs: [Int], _ K: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func kEmptySlots(bulbs []int, K int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def kEmptySlots(bulbs: Array[Int], K: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun kEmptySlots(bulbs: IntArray, K: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn k_empty_slots(bulbs: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $bulbs\n     * @param Integer $K\n     * @return Integer\n     */\n    function kEmptySlots($bulbs, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"42.1K\", \"totalSubmission\": \"120.4K\", \"totalAcceptedRaw\": 42063, \"totalSubmissionRaw\": 120370, \"acRate\": \"34.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "251",
+    "canSeeDetail": true,
+    "url": "/articles/k-empty-slots/",
+    "content": "#### Approach #1: Insert Into Sorted Structure [Accepted]\n\n**Intuition**\n\nLet's add flowers in the order they bloom.  When each flower blooms, we check it's neighbors to see if they can satisfy the condition with the current flower.\n\n**Algorithm**\n\nWe'll maintain `active`, a sorted data structure containing every flower that has currently bloomed.  When we add a flower to `active`, we should check it's lower and higher neighbors.  If some neighbor satisfies the condition, we know the condition occurred first on this day.\n\n<iframe src=\"https://leetcode.com/playground/cYMSzwUd/shared\" frameBorder=\"0\" name=\"cYMSzwUd\" width=\"100%\" height=\"326\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity (Java): $$O(N \\log N)$$, where $$N$$ is the length of `flowers`.  Every insertion and search is $$O(\\log N)$$.\n\n* Time Complexity (Python): $$O(N^2)$$.  As above, except `list.insert` is $$O(N)$$.\n\n* Space Complexity: $$O(N)$$, the size of `active`.\n\n---\n#### Approach #2: Min Queue [Accepted]\n\n**Intuition**\n\nFor each contiguous block (\"window\") of `k` positions in the flower bed, we know it satisfies the condition in the problem statement if the minimum blooming date of this window is larger than the blooming date of the left and right neighbors.\n\nBecause these windows overlap, we can calculate these minimum queries more efficiently using a sliding window structure.\n\n**Algorithm**\n\nLet `days[x] = i` be the time that the flower at position `x` blooms.  For each window of `k` days, let's query the minimum of this window in (amortized) constant time using a `MinQueue`, a data structure built just for this task.  If this minimum is larger than it's two neighbors, then we know this is a place where \"`k` empty slots\" occurs, and we record this candidate answer.\n\nTo operate a `MinQueue`, the key invariant is that `mins` will be an increasing list of candidate answers to the query `MinQueue.min`.  \n\nFor example, if our queue is `[1, 3, 6, 2, 4, 8]`, then `mins` will be `[1, 2, 4, 8]`.  As we `MinQueue.popleft`, `mins` will become `[2, 4, 8]`, then after 3 more `popleft`'s will become `[4, 8]`, then after 1 more `popleft` will become `[8]`.  \n\nAs we `MinQueue.append`, we should maintain this invariant.  We do it by popping any elements larger than the one we are inserting.  For example, if we appended `5` to `[1, 3, 6, 2, 4, 8]`, then `mins` which was `[1, 2, 4, 8]` becomes `[1, 2, 4, 5]`.\n\nNote that we used a simpler variant of `MinQueue` that requires every inserted element to be unique to ensure correctness.  Also, the operations are amortized constant time because every element will be inserted and removed exactly once from each queue.\n\n<iframe src=\"https://leetcode.com/playground/kJxmutAX/shared\" frameBorder=\"0\" name=\"kJxmutAX\" width=\"100%\" height=\"515\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `flowers`.  In enumerating through the $$O(N)$$ outer loop, we do constant work as `MinQueue.popleft` and `MinQueue.min` operations are (amortized) constant time.\n\n* Space Complexity: $$O(N)$$, the size of our `window`.\n\n---\n#### Approach #3: Sliding Window [Accepted]\n\n**Intuition**\n\nAs in *Approach #2*, we have `days[x] = i` for the time that the flower at position `x` blooms.  We wanted to find *candidate* intervals `[left, right]` where `days[left], days[right]` are the two smallest values in `[days[left], days[left+1], ..., days[right]]`, and `right - left = k + 1`.\n\nNotice that these candidate intervals cannot intersect: for example, if the candidate intervals are `[left1, right1]` and `[left2, right2]` with `left1 < left2 < right1 < right2`, then for the first interval to be a candidate, `days[left2] > days[right1]`; and for the second interval to be a candidate, `days[right1] > days[left2]`, a contradiction.\n\nThat means whenever whether some interval can be a candidate and it fails first at `i`, indices `j < i` can't be the start of a candidate interval.  This motivates a sliding window approach.\n\n**Algorithm**\n\nAs in *Approach #2*, we construct `days`.\n\nThen, for each interval `[left, right]` (starting with the first available one), we'll check whether it is a candidate: whether `days[i] > days[left]` and `days[i] > days[right]` for `left < i < right`.\n\nIf we fail, then we've found some new minimum `days[i]` and we should check the new interval `[i, i+k+1]`.  If we succeed, then it's a candidate answer, and we'll check the new interval `[right, right+k+1]`.\n\n<iframe src=\"https://leetcode.com/playground/YBwfZARy/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"YBwfZARy\"></iframe>\n\n**Complexity Analysis**\n\n* Time and Space Complexity: $$O(N)$$.  The analysis is the same as in Approach #2.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).  Approach #1 inspired by [@StefanPochmann](https://leetcode.com/stefanpochmann).  Approach #3 inspired by [@Vincent Cai](https://discuss.leetcode.com/topic/104771/java-c-simple-o-n-solution).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "246",
+      "count": 47,
+      "average": 2.426,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,3,2]\n1",
+  "metaData": "{\r\n  \"name\": \"kEmptySlots\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"bulbs\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

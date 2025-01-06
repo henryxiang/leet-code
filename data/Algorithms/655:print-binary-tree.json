@@ -1,0 +1,111 @@
+{
+  "questionId": "655",
+  "questionFrontendId": "655",
+  "boundTopicId": null,
+  "title": "Print Binary Tree",
+  "titleSlug": "print-binary-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Print a binary tree in an m*n 2D string array following these rules: </p>\r\n\r\n<ol>\r\n<li>The row number <code>m</code> should be equal to the height of the given binary tree.</li>\r\n<li>The column number <code>n</code> should always be an odd number.</li>\r\n<li>The root node's value (in string format) should be put in the exactly middle of the first row it can be put. The column and the row where the root node belongs will separate the rest space into two parts (<b>left-bottom part and right-bottom part</b>). You should print the left subtree in the left-bottom part and print the right subtree in the right-bottom part. The left-bottom part and the right-bottom part should have the same size. Even if one subtree is none while the other is not, you don't need to print anything for the none subtree but still need to leave the space as large as that for the other subtree. However, if two subtrees are none, then you don't need to leave space for both of them. </li>\r\n<li>Each unused space should contain an empty string <code>\"\"</code>.</li>\r\n<li>Print the subtrees following the same rules.</li>\r\n</ol>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b>\r\n     1\r\n    /\r\n   2\r\n<b>Output:</b>\r\n[[\"\", \"1\", \"\"],\r\n [\"2\", \"\", \"\"]]\r\n</pre>\r\n</p>\r\n\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b>\r\n     1\r\n    / \\\r\n   2   3\r\n    \\\r\n     4\r\n<b>Output:</b>\r\n[[\"\", \"\", \"\", \"1\", \"\", \"\", \"\"],\r\n [\"\", \"2\", \"\", \"\", \"\", \"3\", \"\"],\r\n [\"\", \"\", \"4\", \"\", \"\", \"\", \"\"]]\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b><br />\r\n<pre>\r\n<b>Input:</b>\r\n      1\r\n     / \\\r\n    2   5\r\n   / \r\n  3 \r\n / \r\n4 \r\n<b>Output:</b>\r\n\r\n[[\"\",  \"\",  \"\", \"\",  \"\", \"\", \"\", \"1\", \"\",  \"\",  \"\",  \"\",  \"\", \"\", \"\"]\r\n [\"\",  \"\",  \"\", \"2\", \"\", \"\", \"\", \"\",  \"\",  \"\",  \"\",  \"5\", \"\", \"\", \"\"]\r\n [\"\",  \"3\", \"\", \"\",  \"\", \"\", \"\", \"\",  \"\",  \"\",  \"\",  \"\",  \"\", \"\", \"\"]\r\n [\"4\", \"\",  \"\", \"\",  \"\", \"\", \"\", \"\",  \"\",  \"\",  \"\",  \"\",  \"\", \"\", \"\"]]\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\nThe height of binary tree is in the range of [1, 10].\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 278,
+  "dislikes": 660,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Poynt\", \"slug\": \"poynt\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    vector<vector<string>> printTree(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public List<List<String>> printTree(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def printTree(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: List[List[str]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def printTree(self, root: TreeNode) -> List[List[str]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nchar *** printTree(struct TreeNode* root, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public IList<IList<string>> PrintTree(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {string[][]}\n */\nvar printTree = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {String[][]}\ndef print_tree(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func printTree(_ root: TreeNode?) -> [[String]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc printTree(root *TreeNode) [][]string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def printTree(root: TreeNode): List[List[String]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun printTree(root: TreeNode?): List<List<String>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn print_tree(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<String>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return String[][]\n     */\n    function printTree($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"26.5K\", \"totalSubmission\": \"49.9K\", \"totalAcceptedRaw\": 26507, \"totalSubmissionRaw\": 49902, \"acRate\": \"53.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "225",
+    "canSeeDetail": true,
+    "url": "/articles/print-binary-tree/",
+    "content": "[TOC]\n\n\n## Solution\n\n---\n#### Approach #1 Recursive Solution[Accepted]\n\nWe start by initializing a $$res$$ array with the dimensions being $$height$$x$$2^{height}-1$$. Here, $$height$$ refers to the number of levels in the given tree. In order to fill this $$res$$ array with the required elements, initially, we fill the complete array with `\"\"` .  After this we make use of a recursive function `fill(res, root, i, l, r)` which fills the $$res$$ array such that the current element has to be filled in $$i^{th}$$ row, and the column being the middle of the indices $$l$$ and $$r$$, where $$l$$ and $$r$$ refer to the left and the right boundaries of the columns in which the current element can be filled.\n\nIn every recursive call, we do as follows:\n\n1. If we've reached the end of the tree, i.e. if root==null, return.\n\n2. Determine the column in which the current element($$root$$) needs to be filled, which is the middle of $$l$$ and $$r$$, given by say, $$j$$. The row number is same as $$i$$. Put the current element at $$res[i][j]$$.\n\n3. Make the recursive call for the left child of the $$root$$ using `fill(res, root.left, i + 1, l, (l + r) / 2)`.\n\n4. Make the recursive call for the right child of the $$root$$ using `fill(res, root.right, i + 1, (l + r + 1) / 2, r)`.\n\nNote, that in the last two recursive calls, we update the row number(level of the tree). This ensures that the child nodes fit into the correct row. We also update the column boundaries appropriately based on the $$l$$ and $$r$$ values.\n\nFurther, to determine the $$height$$ also, we make use of recursive funtion `getHeight(root)`, which returns the height of the tree starting from the $$root$$ node. We traverse into all the branches possible in the tree recursively and find the depth of the longest branch.\n\nAt the end, we convert the $$res$$ array into the required list format, before returning the results.\n\n<iframe src=\"https://leetcode.com/playground/ncTFx4nd/shared\" frameBorder=\"0\" name=\"ncTFx4nd\" width=\"100%\" height=\"479\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(h*2^h)$$. We need to fill the $$res$$ array of size $$h$$x$$2^h - 1$$. Here, $$h$$ refers to the height of the given tree.\n\n* Space complexity : $$O(h*2^h)$$.  $$res$$ array of size $$h$$x$$2^h - 1$$ is used.\n\n---\n#### Approach #2 Using queue(BFS)[Accepted]\n\n**Algorithm**\n\nWe can also solve the problem by making use of Breadth First Search's idea. For this, we make use of a class $$Params$$ which stores the parameters of a $$node$$ of  the tree, including its value, its level in the tree($$i$$), and the left($$l$$) and right($$r$$) boundaries of the columns in which this element can be filled in the result to be returned.\n\nWe start by initializing a $$res$$ array as in the previous approach. After this, we add the parametrized $$root$$ of the tree into a $$queue$$. After this, we do the following at every step.\n\n1. Remove an element, $$p$,  from the front of the $$queue$$. \n\n2. Add this element at its correct position in the $$res$$ array given by $$res[p.i][(p.l + p.r) / 2]$$. Here, the values $$i$$, $$l$$ and $$r$$ refer to the column/level number, and the left and right boundaries permissible for putting the current node into $$res$$. These are obtained from the node's parameters, which have been associated with it before putting it into the $$queue$$.\n\n3. If the left child of $$p$$ exists, put it at the back of the $$queue$$, in a parametized form, by appropriately updating the level as the next level and the boundaries permissible as well.\n\n4. If the right child of $$p$$ exists, put it at the back of the $$queue$$, in a parametized form, by appropriately updating the level as the next level and the boundaries permissible as well.\n\n5. Continue steps 1. to 4. till the $$queue$$ becomes empty. \n\nAt the end, we again convert the $$res$$ array into the required list format, before returning the results.\n\n\n<iframe src=\"https://leetcode.com/playground/jb3EALV4/shared\" frameBorder=\"0\" name=\"jb3EALV4\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(h*2^h)$$. We need to fill the $$res$$ array of size $$h$$x$$2^h - 1$$. Here, $$h$$ refers to the height of the given tree.\n\n* Space complexity : $$O(h*2^h)$$.  $$res$$ array of size $$h$$x$$2^h - 1$$ is used.\n\n---\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "220",
+      "count": 22,
+      "average": 3.091,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2]",
+  "metaData": "{\r\n  \"name\": \"printTree\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<list<string>>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

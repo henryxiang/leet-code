@@ -1,0 +1,105 @@
+{
+  "questionId": "243",
+  "questionFrontendId": "243",
+  "boundTopicId": null,
+  "title": "Shortest Word Distance",
+  "titleSlug": "shortest-word-distance",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a list of words and two words <em>word1</em> and <em>word2</em>, return the shortest distance between these two words in the list.</p>\r\n\r\n<p><strong>Example:</strong><br />\r\nAssume that words = <code>[&quot;practice&quot;, &quot;makes&quot;, &quot;perfect&quot;, &quot;coding&quot;, &quot;makes&quot;]</code>.</p>\r\n\r\n<pre>\r\n<b>Input:</b> <em>word1</em> = <code>&ldquo;coding&rdquo;</code>, <em>word2</em> = <code>&ldquo;practice&rdquo;</code>\r\n<b>Output:</b> 3\r\n</pre>\r\n\r\n<pre>\r\n<b>Input:</b> <em>word1</em> = <code>&quot;makes&quot;</code>, <em>word2</em> = <code>&quot;coding&quot;</code>\r\n<b>Output:</b> 1\r\n</pre>\r\n\r\n<p><strong>Note:</strong><br />\r\nYou may assume that <em>word1</em> <strong>does not equal to</strong> <em>word2</em>, and <em>word1</em> and <em>word2</em> are both in the list.</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 353,
+  "dislikes": 33,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Shortest Word Distance II\", \"titleSlug\": \"shortest-word-distance-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance III\", \"titleSlug\": \"shortest-word-distance-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int shortestDistance(vector<string>& words, string word1, string word2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int shortestDistance(String[] words, String word1, String word2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestDistance(self, words, word1, word2):\n        \"\"\"\n        :type words: List[str]\n        :type word1: str\n        :type word2: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestDistance(self, words: List[str], word1: str, word2: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint shortestDistance(char ** words, int wordsSize, char * word1, char * word2){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ShortestDistance(string[] words, string word1, string word2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @param {string} word1\n * @param {string} word2\n * @return {number}\n */\nvar shortestDistance = function(words, word1, word2) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @param {String} word1\n# @param {String} word2\n# @return {Integer}\ndef shortest_distance(words, word1, word2)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestDistance(_ words: [String], _ word1: String, _ word2: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestDistance(words []string, word1 string, word2 string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestDistance(words: Array[String], word1: String, word2: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestDistance(words: Array<String>, word1: String, word2: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_distance(words: Vec<String>, word1: String, word2: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @param String $word1\n     * @param String $word2\n     * @return Integer\n     */\n    function shortestDistance($words, $word1, $word2) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"82.3K\", \"totalSubmission\": \"138.6K\", \"totalAcceptedRaw\": 82281, \"totalSubmissionRaw\": 138572, \"acRate\": \"59.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "38",
+    "canSeeDetail": true,
+    "url": "/articles/shortest-word-distance/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\nThis is a straight-forward coding problem. The distance between any two positions $$i_1$$ and $$i_2$$ in an array is $$|i_1 - i_2|$$. To find the shortest distance between `````word1````` and `````word2`````, we need to traverse the input array and find all occurrences $$i_1$$ and $$i_2$$ of the two words, and check if $$|i_1 - i_2|$$ is less than the minimum distance computed so far.\r\n\r\n---\r\n#### Approach #1 (Brute Force) [Accepted]\r\n\r\n**Algorithm**\r\n\r\nA naive solution to this problem is to go through the entire array looking for the first word. Every time we find an occurrence of the first word, we search the entire array for the closest occurrence of the second word.\r\n\r\n**Java**\r\n```java\r\npublic int shortestDistance(String[] words, String word1, String word2) {\r\n    int minDistance = words.length;\r\n    for (int i = 0; i < words.length; i++) {\r\n        if (words[i].equals(word1)) {\r\n            for (int j = 0; j < words.length; j++) {\r\n                if (words[j].equals(word2)) {\r\n                    minDistance = Math.min(minDistance, Math.abs(i - j));\r\n                }\r\n            }\r\n        }\r\n    }\r\n    return minDistance;\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\nThe time complexity is $$O(n^2)$$, since for every occurrence of `word1`, we traverse the entire array in search for the closest occurrence of `word2`.\r\n\r\nSpace complexity is $$O(1)$$, since no additional space is used.\r\n\r\n---\r\n#### Approach #2 (One-pass) [Accepted]\r\n\r\n**Algorithm**\r\n\r\nWe can greatly improve on the brute-force approach by keeping two indices `i1` and `i2` where we store the *most recent* locations of `word1` and `word2`. Each time we find a new occurrence of one of the words, we do not need to search the entire array for the other word, since we already have the index of its most recent occurrence.\r\n\r\n**Java**\r\n\r\n```java\r\npublic int shortestDistance(String[] words, String word1, String word2) {\r\n    int i1 = -1, i2 = -1;\r\n    int minDistance = words.length;\r\n    int currentDistance;\r\n    for (int i = 0; i < words.length; i++) {\r\n        if (words[i].equals(word1)) {\r\n            i1 = i;\r\n        } else if (words[i].equals(word2)) {\r\n            i2 = i;\r\n        }\r\n\r\n        if (i1 != -1 && i2 != -1) {\r\n            minDistance = Math.min(minDistance, Math.abs(i1 - i2));\r\n        }\r\n    }\r\n    return minDistance;\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\nThe time complexity is $$O(n)$$. This problem is inherently linear; we cannot do better than $$O(n)$$ because at the very least, we have to read the entire input.\r\n\r\nSpace complexity is $$O(1)$$, since no additional space is allocated.\r\n\r\nAnalysis written by: @noran",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "35",
+      "count": 33,
+      "average": 4.818,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"practice\", \"makes\", \"perfect\", \"coding\", \"makes\"]\n\"coding\"\n\"practice\"",
+  "metaData": "{\r\n  \"name\": \"shortestDistance\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    },\r\n    {\r\n      \"name\": \"word1\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"word2\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

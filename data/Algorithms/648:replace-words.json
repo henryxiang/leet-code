@@ -1,0 +1,115 @@
+{
+  "questionId": "648",
+  "questionFrontendId": "648",
+  "boundTopicId": null,
+  "title": "Replace Words",
+  "titleSlug": "replace-words",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In English, we have a concept called <code>root</code>, which can be followed by some other words to form another longer word - let&#39;s call this word <code>successor</code>. For example, the root <code>an</code>, followed by <code>other</code>, which can form another word <code>another</code>.</p>\r\n\r\n<p>Now, given a dictionary consisting of many roots and a sentence. You need to replace all the <code>successor</code> in the sentence with the <code>root</code> forming it. If a <code>successor</code> has many <code>roots</code> can form it, replace it with the root with the shortest length.</p>\r\n\r\n<p>You need to output the sentence after the replacement.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> dict = [&quot;cat&quot;, &quot;bat&quot;, &quot;rat&quot;]\r\nsentence = &quot;the cattle was rattled by the battery&quot;\r\n<b>Output:</b> &quot;the cat was rat by the bat&quot;\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>The input will only have lower-case letters.</li>\r\n\t<li>1 &lt;= dict words number &lt;= 1000</li>\r\n\t<li>1 &lt;= sentence words number &lt;= 1000</li>\r\n\t<li>1 &lt;= root length &lt;= 100</li>\r\n\t<li>1 &lt;= sentence words length &lt;= 1000</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 540,
+  "dislikes": 119,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Implement Trie (Prefix Tree)\", \"titleSlug\": \"implement-trie-prefix-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "maxsteel",
+      "profileUrl": "/maxsteel/",
+      "avatarUrl": "https://assets.leetcode.com/users/maxsteel/avatar_1527890500.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string replaceWords(vector<string>& dict, string sentence) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String replaceWords(List<String> dict, String sentence) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def replaceWords(self, dict, sentence):\n        \"\"\"\n        :type dict: List[str]\n        :type sentence: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def replaceWords(self, dict: List[str], sentence: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * replaceWords(char ** dict, int dictSize, char * sentence){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ReplaceWords(IList<string> dict, string sentence) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} dict\n * @param {string} sentence\n * @return {string}\n */\nvar replaceWords = function(dict, sentence) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} dict\n# @param {String} sentence\n# @return {String}\ndef replace_words(dict, sentence)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func replaceWords(_ dict: [String], _ sentence: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func replaceWords(dict []string, sentence string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def replaceWords(dict: List[String], sentence: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun replaceWords(dict: List<String>, sentence: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn replace_words(dict: Vec<String>, sentence: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $dict\n     * @param String $sentence\n     * @return String\n     */\n    function replaceWords($dict, $sentence) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"43.5K\", \"totalSubmission\": \"80.3K\", \"totalAcceptedRaw\": 43542, \"totalSubmissionRaw\": 80338, \"acRate\": \"54.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "324",
+    "canSeeDetail": true,
+    "url": "/articles/replace-words/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Prefix Hash [Accepted]\n\n**Intuition**\n\nFor each word in the sentence, we'll look at successive prefixes and see if we saw them before.\n\n**Algorithm**\n\nStore all the `roots` in a *Set* structure.  Then for each word, look at successive prefixes of that word.  If you find a prefix that is a root, replace the word with that prefix.  Otherwise, the prefix will just be the word itself, and we should add that to the final sentence answer.\n\n<iframe src=\"https://leetcode.com/playground/tvjGGLzd/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"tvjGGLzd\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(\\sum w_i^2)$$ where $$w_i$$ is the length of the $$i$$-th word.  We might check every prefix, the $$i$$-th of which is $$O(w_i^2)$$ work.\n\n* Space Complexity: $$O(N)$$ where $$N$$ is the length of our sentence; the space used by `rootset`.\n\n---\n#### Approach #2: Trie [Accepted]\n\n**Intuition and Algorithm**\n\nPut all the roots in a trie (prefix tree).  Then for any query word, we can find the smallest root that was a prefix in linear time.\n\n<iframe src=\"https://leetcode.com/playground/5Dt2dcFU/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"5Dt2dcFU\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ where $$N$$ is the length of the `sentence`.  Every query of a word is in linear time.\n\n* Space Complexity: $$O(N)$$, the size of our trie.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "319",
+      "count": 7,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"cat\", \"bat\", \"rat\"]\n\"the cattle was rattled by the battery\"",
+  "metaData": "{\r\n  \"name\": \"replaceWords\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"dict\",\r\n      \"type\": \"list<string>\"\r\n    },\r\n    {\r\n      \"name\": \"sentence\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

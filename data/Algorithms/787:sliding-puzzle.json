@@ -1,0 +1,113 @@
+{
+  "questionId": "787",
+  "questionFrontendId": "773",
+  "boundTopicId": null,
+  "title": "Sliding Puzzle",
+  "titleSlug": "sliding-puzzle",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On a 2x3 <code>board</code>, there are 5 tiles represented by the integers 1 through 5, and an empty square represented by 0.</p>\r\n\r\n<p>A move consists of choosing <code>0</code>&nbsp;and a 4-directionally adjacent number and swapping it.</p>\r\n\r\n<p>The state of the board is <em>solved</em> if and only if the <code>board</code> is <code>[[1,2,3],[4,5,0]].</code></p>\r\n\r\n<p>Given a puzzle board, return the least number of moves required so that the state of the board is solved. If it is impossible for the state of the board to be solved, return -1.</p>\r\n\r\n<p><strong>Examples:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> board = [[1,2,3],[4,0,5]]\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> Swap the 0 and the 5 in one move.\r\n</pre>\r\n\r\n<pre>\r\n<strong>Input:</strong> board = [[1,2,3],[5,4,0]]\r\n<strong>Output:</strong> -1\r\n<strong>Explanation:</strong> No number of moves will make the board solved.\r\n</pre>\r\n\r\n<pre>\r\n<strong>Input:</strong> board = [[4,1,2],[5,0,3]]\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> 5 is the smallest number of moves that solves the board.\r\nAn example path:\r\nAfter move 0: [[4,1,2],[5,0,3]]\r\nAfter move 1: [[4,1,2],[0,5,3]]\r\nAfter move 2: [[0,1,2],[4,5,3]]\r\nAfter move 3: [[1,0,2],[4,5,3]]\r\nAfter move 4: [[1,2,0],[4,5,3]]\r\nAfter move 5: [[1,2,3],[4,5,0]]\r\n</pre>\r\n\r\n<pre>\r\n<strong>Input:</strong> board = [[3,2,4],[1,5,0]]\r\n<strong>Output:</strong> 14\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>board</code> will be a 2 x 3 array as described above.</li>\r\n\t<li><code>board[i][j]</code> will be a permutation of <code>[0, 1, 2, 3, 4, 5]</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 455,
+  "dislikes": 16,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int slidingPuzzle(vector<vector<int>>& board) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int slidingPuzzle(int[][] board) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def slidingPuzzle(self, board):\n        \"\"\"\n        :type board: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def slidingPuzzle(self, board: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint slidingPuzzle(int** board, int boardSize, int* boardColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SlidingPuzzle(int[][] board) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} board\n * @return {number}\n */\nvar slidingPuzzle = function(board) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} board\n# @return {Integer}\ndef sliding_puzzle(board)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func slidingPuzzle(_ board: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func slidingPuzzle(board [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def slidingPuzzle(board: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun slidingPuzzle(board: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sliding_puzzle(board: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $board\n     * @return Integer\n     */\n    function slidingPuzzle($board) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24.5K\", \"totalSubmission\": \"43.9K\", \"totalAcceptedRaw\": 24483, \"totalSubmissionRaw\": 43855, \"acRate\": \"55.8%\"}",
+  "hints": [
+    "Perform a breadth-first-search, where the nodes are the puzzle boards and edges are if two puzzle boards can be transformed into one another with one move."
+  ],
+  "solution": {
+    "id": "402",
+    "canSeeDetail": true,
+    "url": "/articles/sliding-puzzle/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Breadth-First Search [Accepted]\r\n\r\n**Intuition**\r\n\r\nWe can think of this problem as a shortest path problem on a graph.  Each node is a different board state, and we connect two boards by an edge if they can be transformed into one another in one move.  We can solve shortest path problems with *breadth first search*.\r\n\r\n**Algorithm**\r\n\r\nFor our breadth first search, we will need to be able to represent the nodes as something hashable, and we'll need to enumerate the neighbors of a board.  Afterwards, we can use a typical template for breadth-first search as shown below:\r\n\r\n```python\r\nqueue = collections.deque([(start, 0)])\r\nseen = {start}\r\nwhile queue:\r\n    node, depth = queue.popleft()\r\n    if node == target: return depth\r\n    for nei in neighbors(node):\r\n        if nei not in seen:\r\n            seen.add(nei)\r\n            queue.append((nei, depth+1))\r\n```\r\nTo represent the nodes as something hashable, in Python, we convert the board to 1 dimension and use a tuple; in Java we can either encode the board as an integer, or more generally use `Arrays.deepToString`.\r\n\r\nTo enumerate the neighbors of a board, we'll remember where the zero is.  Then, there are only 4 possible neighbors.  If the board is flattened to 1 dimension, these neighbors occur at distances `(1, -1, C, -C)` from the zero, where `C` is the number of columns in the board.\r\n\r\n<iframe src=\"https://leetcode.com/playground/ShXnGMHp/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ShXnGMHp\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(R * C * (R * C)!)$$, where $$R, C$$ are the number of rows and columns in `board`.  There are $$O((R * C)!)$$ possible board states.\r\n\r\n* Space Complexity: $$O(R * C * (R * C)!)$$.\r\n\r\n---\r\n#### Approach #2: A* Search [Accepted]\r\n\r\n**Intuition**\r\n\r\nAs in *Approach #1*, this is a problem about searching on a graph.\r\n\r\nWe can use the \"A* Star Search Algorithm\" to search promising nodes in our graph first, with guarantees that it will find the best answer.\r\n\r\nFor every node, we have some estimated cost `node.priority = node.depth + node.heuristic`, where `node.depth` is the actual distance travelled, and `node.heuristic` is our *heuristic* (guess) of the remaining distance to travel.  If the heuristic is *admissible* (it never overestimates the distance to the goal), then the following algorithm is guaranteed to terminate at the best answer.\r\n\r\nFor solvers familiar with *Dijkstra's Algorithm*, *A\\* Search* is a special case of *Dijkstra's* with `node.heuristic = 0` always.  On certain types of graphs and with good heuristics, this approach is substantially faster then a breadth-first search.\r\n\r\n**Algorithm**\r\n\r\nLet's keep a priority queue that sorts by `node.depth + node.heuristic`.  As before, each node represents a puzzle board.\r\n\r\nThe heuristic we use is the sum of the taxicab distance of each (non-zero) number to it's final destination.  This heuristic is admissible as we need at least this many moves.\r\n\r\nTo speed up our algorithm, we use `targetWrong`, which has a near zero heuristic distance to the target (meaning our search will aim for it quickly).  If it finds it, we don't have to search all the boards.\r\n\r\nWe could prove that the set of boards can be split in half, with one half transformable to `target`, and the other half transformable to `targetWrong`.  One way to convince yourself of this is to see that every piece except the last 2 can be placed in the correct position, but a formal proof analyzing the parity of inversions of the underlying permutation is outside the scope of this article.  For more information see [link](http://kevingong.com/Math/SixteenPuzzle.html).\r\n\r\n<iframe src=\"https://leetcode.com/playground/E8intdJD/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"E8intdJD\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(R * C * (R * C)!)$$, where $$R, C$$ are the number of rows and columns in `board`.  Tighter bounds are possible, but difficult to prove.  (*In testing with random permutations of a 3x3 board, about 50 times less nodes were searched compared to breadth-first-search.*)\r\n\r\n* Space Complexity: $$O(R * C * (R * C)!)$$.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "398",
+      "count": 5,
+      "average": 4.2,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2,3],[4,0,5]]",
+  "metaData": "{\r\n  \"name\": \"slidingPuzzle\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"board\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

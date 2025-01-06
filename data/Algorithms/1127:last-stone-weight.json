@@ -1,0 +1,105 @@
+{
+  "questionId": "1127",
+  "questionFrontendId": "1046",
+  "boundTopicId": null,
+  "title": "Last Stone Weight",
+  "titleSlug": "last-stone-weight",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We have a collection of rocks, each rock has a positive integer weight.</p>\r\n\r\n<p>Each turn, we choose the two <strong>heaviest</strong>&nbsp;rocks&nbsp;and smash them together.&nbsp; Suppose the stones have weights <code>x</code> and <code>y</code> with <code>x &lt;= y</code>.&nbsp; The result of this smash is:</p>\r\n\r\n<ul>\r\n\t<li>If <code>x == y</code>, both stones are totally destroyed;</li>\r\n\t<li>If <code>x != y</code>, the stone of weight <code>x</code> is totally destroyed, and the stone of weight <code>y</code> has new weight <code>y-x</code>.</li>\r\n</ul>\r\n\r\n<p>At the end, there is at most 1 stone left.&nbsp; Return the weight of this stone (or 0 if there are no stones left.)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[2,7,4,1,8,1]\r\n<strong>Output: </strong>1\r\n<strong>Explanation: </strong>\r\nWe combine 7 and 8 to get 1 so the array converts to [2,4,1,1,1] then,\r\nwe combine 2 and 4 to get 2 so the array converts to [2,1,1,1] then,\r\nwe combine 2 and 1 to get 1 so the array converts to [1,1,1] then,\r\nwe combine 1 and 1 to get 0 so the array converts to [1] then that&#39;s the value of last stone.</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= stones.length &lt;= 30</code></li>\r\n\t<li><code>1 &lt;= stones[i] &lt;= 1000</code></li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 293,
+  "dislikes": 15,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "mdr_009",
+      "profileUrl": "/mdr_009/",
+      "avatarUrl": "https://assets.leetcode.com/users/mdr_009/avatar_1576271966.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Heap",
+      "slug": "heap"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 9}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int lastStoneWeight(vector<int>& stones) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int lastStoneWeight(int[] stones) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def lastStoneWeight(self, stones):\n        \"\"\"\n        :type stones: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def lastStoneWeight(self, stones: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint lastStoneWeight(int* stones, int stonesSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int LastStoneWeight(int[] stones) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} stones\n * @return {number}\n */\nvar lastStoneWeight = function(stones) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} stones\r\n# @return {Integer}\r\ndef last_stone_weight(stones)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func lastStoneWeight(_ stones: [Int]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func lastStoneWeight(stones []int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def lastStoneWeight(stones: Array[Int]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun lastStoneWeight(stones: IntArray): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn last_stone_weight(stones: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $stones\n     * @return Integer\n     */\n    function lastStoneWeight($stones) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"33.4K\", \"totalSubmission\": \"53.5K\", \"totalAcceptedRaw\": 33386, \"totalSubmissionRaw\": 53456, \"acRate\": \"62.5%\"}",
+  "hints": [
+    "Simulate the process.  We can do it with a heap, or by sorting some list of stones every time we take a turn."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[2,7,4,1,8,1]",
+  "metaData": "{\r\n  \"name\": \"lastStoneWeight\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"stones\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

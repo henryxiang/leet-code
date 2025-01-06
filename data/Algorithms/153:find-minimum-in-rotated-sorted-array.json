@@ -1,0 +1,113 @@
+{
+  "questionId": "153",
+  "questionFrontendId": "153",
+  "boundTopicId": null,
+  "title": "Find Minimum in Rotated Sorted Array",
+  "titleSlug": "find-minimum-in-rotated-sorted-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.</p>\r\n\r\n<p>(i.e., &nbsp;<code>[0,1,2,4,5,6,7]</code>&nbsp;might become &nbsp;<code>[4,5,6,7,0,1,2]</code>).</p>\r\n\r\n<p>Find the minimum element.</p>\r\n\r\n<p>You may assume no duplicate exists in the array.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [3,4,5,1,2] \r\n<strong>Output:</strong> 1\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [4,5,6,7,0,1,2]\r\n<strong>Output:</strong> 0\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1431,
+  "dislikes": 192,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Search in Rotated Sorted Array\", \"titleSlug\": \"search-in-rotated-sorted-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Minimum in Rotated Sorted Array II\", \"titleSlug\": \"find-minimum-in-rotated-sorted-array-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findMin(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findMin(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findMin(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findMin(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findMin(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindMin(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar findMin = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef find_min(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findMin(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findMin(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findMin(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findMin(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_min(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function findMin($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"353K\", \"totalSubmission\": \"803.1K\", \"totalAcceptedRaw\": 352990, \"totalSubmissionRaw\": 803060, \"acRate\": \"44.0%\"}",
+  "hints": [
+    "Array was originally in ascending order. Now that the array is rotated, there would be a point in the array where there is a small deflection from the increasing sequence. eg. The array would be something like [4, 5, 6, 7, 0, 1, 2].",
+    "You can divide the search space into two and see which direction to go.\r\nCan you think of an algorithm which has O(logN) search complexity?",
+    "<ol>\r\n<li>All the elements to the left of inflection point > first element of the array.</li>\r\n<li>All the elements to the right of inflection point < first element of the array.</li>\r\n<ol>"
+  ],
+  "solution": {
+    "id": "549",
+    "canSeeDetail": true,
+    "url": "/articles/find-minimum-in-rotated-sorted-array/",
+    "content": "[TOC]\n\n## Solution\n---\n\n#### Approach 1: Binary Search\n\n**Intuition**\n\nA very brute way of solving this question is to search the entire array and find the minimum element. The time complexity for that would be $$O(N)$$ given that `N` is the size of the array.\n\nA very cool way of solving this problem is using the `Binary Search` algorithm. In binary search we find out the mid point and decide to either search on the left or right depending on some condition.\n\nSince the given array is sorted, we can make use of binary search. However, the array is rotated. So simply applying the binary search won't work here.\n\nIn this question we would essentially apply a modified version of binary search where the `condition` that decides the search direction would be different than in a standard binary search.\n\nWe want to find the smallest element in a rotated sorted array. What if the array is not rotated? How do we check that?\n\nIf the array is not rotated and the array is in ascending order, then `last element > first element`.\n\n<center>\n<img src=\"../Figures/153/153_Minimum_Rotated_Sorted_Array_1.png\" width=\"500\"/>\n</center>\n\nIn the above example `7 > 2`. This means that the array is still sorted and has no rotation.\n\n<center>\n<img src=\"../Figures/153/153_Minimum_Rotated_Sorted_Array_2.png\" width=\"500\"/>\n</center>\n\nIn the above example `3 < 4`. Hence the array is rotated. This happens because the array was initially `[2, 3 ,4 ,5 ,6 ,7]`. But after the rotation the smaller elements`[2,3]` go at the back. i.e. [4, 5, 6, 7, `2, 3]`. Because of this the first element `[4]` in the rotated array becomes greater than the last element.\n\nThis means there is a point in the array at which you would notice a change. This is the point which would help us in this question. We call this the `Inflection Point`.\n\n<center>\n<img src=\"../Figures/153/153_Minimum_Rotated_Sorted_Array_3.png\" width=\"500\"/>\n</center>\n\nIn this modified version of binary search algorithm, we are looking for this point. In the above example notice the `Inflection Point` .\n\n> All the elements to the left of inflection point > first element of the array.<br/>\nAll the elements to the right of inflection point < first element of the array.\n\n\n**Algorithm**\n\n1. Find the `mid` element of the array.\n\n2. If `mid element > first element of array` this means that we need to look for the inflection point on the right of `mid`.\n3.  If `mid element < first element of array` this that we need to look for the inflection point on the left of `mid`.\n\n<center>\n<img src=\"../Figures/153/153_Minimum_Rotated_Sorted_Array_4.png\" width=\"500\"/>\n</center>\n\nIn the above example mid element `6` is greater than first element `4`. Hence we continue our search for the inflection point to the right of mid.\n\n4 . We stop our search when we find the inflection point, when either of the two conditions is satisfied:\n\n`nums[mid] > nums[mid + 1]` Hence, **mid+1** is the smallest.\n\n`nums[mid - 1] > nums[mid]` Hence, **mid** is the smallest.\n\n<center>\n<img src=\"../Figures/153/153_Minimum_Rotated_Sorted_Array_5.png\" width=\"500\"/>\n</center>\n\nIn the above example. With the marked left and right pointers. The mid element is `2`. The element just before `2` is `7` and `7>2` i.e. `nums[mid - 1] > nums[mid]`. Thus we have found the point of inflection and `2` is the smallest element.\n\n<iframe src=\"https://leetcode.com/playground/58ro3AWf/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"58ro3AWf\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity : Same as Binary Search $$O(\\log N)$$\n* Space Complexity : $$O(1)$$\n<br /><br/>\n\n---\nAnalysis written by: [@godayaldivya](https://leetcode.com/godayaldivya/).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "540",
+      "count": 50,
+      "average": 4.58,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,4,5,1,2]",
+  "metaData": "{\r\n  \"name\": \"findMin\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,115 @@
+{
+  "questionId": "971",
+  "questionFrontendId": "934",
+  "boundTopicId": null,
+  "title": "Shortest Bridge",
+  "titleSlug": "shortest-bridge",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a given 2D binary array <code>A</code>, there are two islands.&nbsp; (An island is a 4-directionally connected group of&nbsp;<code>1</code>s not connected to any other 1s.)</p>\r\n\r\n<p>Now, we may change <code>0</code>s to <code>1</code>s so as to connect the two islands together to form 1 island.</p>\r\n\r\n<p>Return the smallest number of <code>0</code>s that must be flipped.&nbsp; (It is guaranteed that the answer is at least 1.)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[[0,1],[1,0]]</span>\r\n<strong>Output: </strong>1\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[[0,1,0],[0,0,0],[0,0,1]]</span>\r\n<strong>Output: </strong>2\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">1</span></pre>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length =&nbsp;A[0].length &lt;= 100</code></li>\r\n\t<li><code>A[i][j] == 0</code> or <code>A[i][j] == 1</code></li>\r\n</ol>\r\n\r\n<div>\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 447,
+  "dislikes": 39,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ab889977",
+      "profileUrl": "/ab889977/",
+      "avatarUrl": "https://assets.leetcode.com/users/akriti_bhat/avatar_1557735988.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"McKinsey\", \"slug\": \"mckinsey\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int shortestBridge(vector<vector<int>>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int shortestBridge(int[][] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestBridge(self, A):\n        \"\"\"\n        :type A: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestBridge(self, A: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint shortestBridge(int** A, int ASize, int* AColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ShortestBridge(int[][] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} A\n * @return {number}\n */\nvar shortestBridge = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} a\n# @return {Integer}\ndef shortest_bridge(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestBridge(_ A: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestBridge(A [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestBridge(A: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestBridge(A: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_bridge(a: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $A\n     * @return Integer\n     */\n    function shortestBridge($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.7K\", \"totalSubmission\": \"36.4K\", \"totalAcceptedRaw\": 16692, \"totalSubmissionRaw\": 36415, \"acRate\": \"45.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "607",
+    "canSeeDetail": true,
+    "url": "/articles/shortest-bridge/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Find and Grow\n\n**Intuition**\n\nConceptually, our method is very straightforward: find both islands, then for one of the islands, keep \"growing\" it by 1 until we touch the second island.\n\nWe can use a depth-first search to find the islands, and a breadth-first search to \"grow\" one of them.  This leads to a verbose but correct solution.\n\n**Algorithm**\n\nTo find both islands, look for a square with a `1` we haven't visited, and dfs to get the component of that region.  Do this twice.  After, we have two components `source` and `target`.\n\nTo find the shortest bridge, do a BFS from the nodes `source`.  When we reach any node in `target`, we will have found the shortest distance.\n\nPlease see the code for more implementation details.\n\n<iframe src=\"https://leetcode.com/playground/wfdtey9G/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"wfdtey9G\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\mathcal{A})$$, where $$\\mathcal{A}$$ is the content of `A`.\n\n* Space Complexity:  $$O(\\mathcal{A})$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "593",
+      "count": 17,
+      "average": 3.118,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,1],[1,0]]",
+  "metaData": "{\r\n  \"name\": \"shortestBridge\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

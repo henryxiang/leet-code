@@ -1,0 +1,61 @@
+{
+  "questionId": "1198",
+  "questionFrontendId": "1098",
+  "boundTopicId": null,
+  "title": "Unpopular Books",
+  "titleSlug": "unpopular-books",
+  "categoryTitle": "Database",
+  "content": "<p>Table:&nbsp;<code>Books</code></p>\n\n<pre>\n+----------------+---------+\n| Column Name    | Type    |\n+----------------+---------+\n| book_id        | int     |\n| name           | varchar |\n| available_from | date    |\n+----------------+---------+\nbook_id is the primary key of this table.\n</pre>\n\n<p>Table:&nbsp;<code>Orders</code></p>\n\n<pre>\n+----------------+---------+\n| Column Name    | Type    |\n+----------------+---------+\n| order_id       | int     |\n| book_id        | int     |\n| quantity       | int     |\n| dispatch_date  | date    |\n+----------------+---------+\norder_id is the primary key of this table.\nbook_id is a foreign key to the Books table.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query that reports the&nbsp;<strong>books</strong> that have sold <strong>less than 10</strong> copies in the last year, excluding books that have been available for less than 1 month from today. <strong>Assume today is 2019-06-23</strong>.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\nBooks table:\n+---------+--------------------+----------------+\n| book_id | name               | available_from |\n+---------+--------------------+----------------+\n| 1       | &quot;Kalila And Demna&quot; | 2010-01-01     |\n| 2       | &quot;28 Letters&quot;       | 2012-05-12     |\n| 3       | &quot;The Hobbit&quot;       | 2019-06-10     |\n| 4       | &quot;13 Reasons Why&quot;   | 2019-06-01     |\n| 5       | &quot;The Hunger Games&quot; | 2008-09-21     |\n+---------+--------------------+----------------+\n\nOrders table:\n+----------+---------+----------+---------------+\n| order_id | book_id | quantity | dispatch_date |\n+----------+---------+----------+---------------+\n| 1        | 1       | 2        | 2018-07-26    |\n| 2        | 1       | 1        | 2018-11-05    |\n| 3        | 3       | 8        | 2019-06-11    |\n| 4        | 4       | 6        | 2019-06-05    |\n| 5        | 4       | 5        | 2019-06-20    |\n| 6        | 5       | 9        | 2009-02-02    |\n| 7        | 5       | 8        | 2010-04-13    |\n+----------+---------+----------+---------------+\n\nResult table:\n+-----------+--------------------+\n| book_id   | name               |\n+-----------+--------------------+\n| 1         | &quot;Kalila And Demna&quot; |\n| 2         | &quot;28 Letters&quot;       |\n| 5         | &quot;The Hunger Games&quot; |\n+-----------+--------------------+\n</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 27,
+  "dislikes": 41,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.4K\", \"totalSubmission\": \"8K\", \"totalAcceptedRaw\": 3425, \"totalSubmissionRaw\": 7980, \"acRate\": \"42.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Books\":[\"book_id\",\"name\",\"available_from\"],\"Orders\":[\"order_id\",\"book_id\",\"quantity\",\"dispatch_date\"]},\"rows\":{\"Books\":[[1,\"Kalila And Demna\",\"2010-01-01\"],[2,\"28 Letters\",\"2012-05-12\"],[3,\"The Hobbit\",\"2019-06-10\"],[4,\"13 Reasons Why\",\"2019-06-01\"],[5,\"The Hunger Games\",\"2008-09-21\"]],\"Orders\":[[1,1,2,\"2018-07-26\"],[2,1,1,\"2018-11-05\"],[3,3,8,\"2019-06-11\"],[4,4,6,\"2019-06-05\"],[5,4,5,\"2019-06-20\"],[6,5,9,\"2009-02-02\"],[7,5,8,\"2010-04-13\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Books (book_id int, name varchar(50), available_from date)\",\n    \"Create table If Not Exists Orders (order_id int, book_id int, quantity int, dispatch_date date)\"\n  ],\n  \"mssql\": [\n    \"Create table Books (book_id int, name varchar(50), available_from date)\",\n    \"Create table Orders (order_id int, book_id int, quantity int, dispatch_date date)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Books (book_id int, name varchar(50), available_from date)\",\n    \"Create table Orders (order_id int, book_id int, quantity int, dispatch_date date)\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Books (book_id int, name varchar(50), available_from date)",
+    "Create table If Not Exists Orders (order_id int, book_id int, quantity int, dispatch_date date)",
+    "Truncate table Books",
+    "insert into Books (book_id, name, available_from) values ('1', 'Kalila And Demna', '2010-01-01')",
+    "insert into Books (book_id, name, available_from) values ('2', '28 Letters', '2012-05-12')",
+    "insert into Books (book_id, name, available_from) values ('3', 'The Hobbit', '2019-06-10')",
+    "insert into Books (book_id, name, available_from) values ('4', '13 Reasons Why', '2019-06-01')",
+    "insert into Books (book_id, name, available_from) values ('5', 'The Hunger Games', '2008-09-21')",
+    "Truncate table Orders",
+    "insert into Orders (order_id, book_id, quantity, dispatch_date) values ('1', '1', '2', '2018-07-26')",
+    "insert into Orders (order_id, book_id, quantity, dispatch_date) values ('2', '1', '1', '2018-11-05')",
+    "insert into Orders (order_id, book_id, quantity, dispatch_date) values ('3', '3', '8', '2019-06-11')",
+    "insert into Orders (order_id, book_id, quantity, dispatch_date) values ('4', '4', '6', '2019-06-05')",
+    "insert into Orders (order_id, book_id, quantity, dispatch_date) values ('5', '4', '5', '2019-06-20')",
+    "insert into Orders (order_id, book_id, quantity, dispatch_date) values ('6', '5', '9', '2009-02-02')",
+    "insert into Orders (order_id, book_id, quantity, dispatch_date) values ('7', '5', '8', '2010-04-13')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

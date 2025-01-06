@@ -1,0 +1,99 @@
+{
+  "questionId": "1042",
+  "questionFrontendId": "1000",
+  "boundTopicId": null,
+  "title": "Minimum Cost to Merge Stones",
+  "titleSlug": "minimum-cost-to-merge-stones",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are <code>N</code> piles of stones arranged in a row.&nbsp; The <code>i</code>-th pile has <code>stones[i]</code> stones.</p>\r\n\r\n<p>A <em>move</em> consists of merging <strong>exactly&nbsp;<code>K</code>&nbsp;consecutive</strong> piles into one pile, and the cost of this move is equal to the total number of stones in these <code>K</code> piles.</p>\r\n\r\n<p>Find the minimum cost to merge all piles of stones into one pile.&nbsp; If it is impossible, return <code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>stones = <span id=\"example-input-1-1\">[3,2,4,1]</span>, K = <span id=\"example-input-1-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">20</span>\r\n<strong>Explanation: </strong>\r\nWe start with [3, 2, 4, 1].\r\nWe merge [3, 2] for a cost of 5, and we are left with [5, 4, 1].\r\nWe merge [4, 1] for a cost of 5, and we are left with [5, 5].\r\nWe merge [5, 5] for a cost of 10, and we are left with [10].\r\nThe total cost was 20, and this is the minimum possible.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>stones = <span id=\"example-input-2-1\">[3,2,4,1]</span>, K = <span id=\"example-input-2-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">-1</span>\r\n<strong>Explanation: </strong>After any merge operation, there are 2 piles left, and we can&#39;t merge anymore.  So the task is impossible.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>stones = <span id=\"example-input-3-1\">[3,5,1,2,6]</span>, K = <span id=\"example-input-3-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">25</span>\r\n<strong>Explanation: </strong>\r\nWe start with [3, 5, 1, 2, 6].\r\nWe merge [5, 1, 2] for a cost of 8, and we are left with [3, 8, 6].\r\nWe merge [3, 8, 6] for a cost of 17, and we are left with [17].\r\nThe total cost was 25, and this is the minimum possible.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><span>Note:</span></strong></p>\r\n\r\n<ul>\r\n\t<li><code><span>1 &lt;= stones.length &lt;= 30</span></code></li>\r\n\t<li><code><span>2 &lt;= K &lt;= 30</span></code></li>\r\n\t<li><code><span>1 &lt;= stones[i] &lt;= 100</span></code></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 382,
+  "dislikes": 31,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Burst Balloons\", \"titleSlug\": \"burst-balloons\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Cost to Connect Sticks\", \"titleSlug\": \"minimum-cost-to-connect-sticks\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "lee215",
+      "profileUrl": "/lee215/",
+      "avatarUrl": "https://assets.leetcode.com/users/lee215/avatar_1551541889.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 9}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int mergeStones(vector<int>& stones, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int mergeStones(int[] stones, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def mergeStones(self, stones, K):\n        \"\"\"\n        :type stones: List[int]\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def mergeStones(self, stones: List[int], K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint mergeStones(int* stones, int stonesSize, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MergeStones(int[] stones, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} stones\n * @param {number} K\n * @return {number}\n */\nvar mergeStones = function(stones, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} stones\n# @param {Integer} k\n# @return {Integer}\ndef merge_stones(stones, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func mergeStones(_ stones: [Int], _ K: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func mergeStones(stones []int, K int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def mergeStones(stones: Array[Int], K: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun mergeStones(stones: IntArray, K: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn merge_stones(stones: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $stones\n     * @param Integer $K\n     * @return Integer\n     */\n    function mergeStones($stones, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"9.3K\", \"totalSubmission\": \"24.8K\", \"totalAcceptedRaw\": 9337, \"totalSubmissionRaw\": 24834, \"acRate\": \"37.6%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[3,2,4,1]\n2",
+  "metaData": "{\r\n  \"name\": \"mergeStones\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"stones\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

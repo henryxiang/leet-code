@@ -1,0 +1,97 @@
+{
+  "questionId": "249",
+  "questionFrontendId": "249",
+  "boundTopicId": null,
+  "title": "Group Shifted Strings",
+  "titleSlug": "group-shifted-strings",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string, we can &quot;shift&quot; each of its letter to its successive letter, for example: <code>&quot;abc&quot; -&gt; &quot;bcd&quot;</code>. We can keep &quot;shifting&quot; which forms the sequence:</p>\r\n\r\n<pre>\r\n&quot;abc&quot; -&gt; &quot;bcd&quot; -&gt; ... -&gt; &quot;xyz&quot;</pre>\r\n\r\n<p>Given a list of strings which contains only lowercase alphabets, group all strings that belong to the same shifting sequence.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> <code>[&quot;abc&quot;, &quot;bcd&quot;, &quot;acef&quot;, &quot;xyz&quot;, &quot;az&quot;, &quot;ba&quot;, &quot;a&quot;, &quot;z&quot;],</code>\r\n<b>Output:</b> \r\n[\r\n  [&quot;abc&quot;,&quot;bcd&quot;,&quot;xyz&quot;],\r\n  [&quot;az&quot;,&quot;ba&quot;],\r\n  [&quot;acef&quot;],\r\n  [&quot;a&quot;,&quot;z&quot;]\r\n]\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 335,
+  "dislikes": 57,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Group Anagrams\", \"titleSlug\": \"group-anagrams\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<string>> groupStrings(vector<string>& strings) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<List<String>> groupStrings(String[] strings) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def groupStrings(self, strings):\n        \"\"\"\n        :type strings: List[str]\n        :rtype: List[List[str]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def groupStrings(self, strings: List[str]) -> List[List[str]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nchar *** groupStrings(char ** strings, int stringsSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<IList<string>> GroupStrings(string[] strings) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} strings\n * @return {string[][]}\n */\nvar groupStrings = function(strings) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} strings\n# @return {String[][]}\ndef group_strings(strings)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func groupStrings(_ strings: [String]) -> [[String]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func groupStrings(strings []string) [][]string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def groupStrings(strings: Array[String]): List[List[String]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun groupStrings(strings: Array<String>): List<List<String>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn group_strings(strings: Vec<String>) -> Vec<Vec<String>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $strings\n     * @return String[][]\n     */\n    function groupStrings($strings) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"56.4K\", \"totalSubmission\": \"111.2K\", \"totalAcceptedRaw\": 56430, \"totalSubmissionRaw\": 111228, \"acRate\": \"50.7%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"abc\",\"bcd\",\"acef\",\"xyz\",\"az\",\"ba\",\"a\",\"z\"]",
+  "metaData": "{\r\n  \"name\": \"groupStrings\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"strings\",\r\n      \"type\": \"string[]\",\r\n      \"dealloc\": false\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<list<string>>\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

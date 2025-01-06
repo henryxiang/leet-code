@@ -1,0 +1,94 @@
+{
+  "questionId": "481",
+  "questionFrontendId": "481",
+  "boundTopicId": null,
+  "title": "Magical String",
+  "titleSlug": "magical-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nA magical string <b>S</b> consists of only '1' and '2' and obeys the following rules:\r\n</p>\r\n<p>\r\nThe string <b>S</b> is magical because concatenating the number of contiguous occurrences of characters '1' and '2' generates the string <b>S</b> itself.\r\n</p>\r\n\r\n<p>\r\nThe first few elements of string <b>S</b> is the following:\r\n<b>S</b> = \"1221121221221121122……\"\r\n</p>\r\n\r\n<p>\r\nIf we group the consecutive '1's and '2's in <b>S</b>, it will be:\r\n</p>\r\n<p>\r\n1   22  11  2  1  22  1  22  11  2  11  22 ......\r\n</p>\r\n<p>\r\nand the occurrences of '1's or '2's in each group are:\r\n</p>\r\n<p>\r\n1   2\t   2    1   1    2     1    2     2    1    2    2 ......\r\n</p>\r\n\r\n<p>\r\nYou can see that the occurrence sequence above is the <b>S</b> itself. \r\n</p>\r\n\r\n<p>\r\nGiven an integer N as input, return the number of '1's in the first N number in the magical string <b>S</b>.\r\n</p>\r\n\r\n<p><b>Note:</b>\r\nN will not exceed 100,000.\r\n</p>\r\n\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> 6\r\n<b>Output:</b> 3\r\n<b>Explanation:</b> The first 6 elements of magical string S is \"12211\" and it contains three 1's, so return 3.\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 93,
+  "dislikes": 598,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "DonaldTrump",
+      "profileUrl": "/donaldtrump/",
+      "avatarUrl": "https://assets.leetcode.com/users/donaldtrump/avatar_1524722350.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int magicalString(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int magicalString(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def magicalString(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def magicalString(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint magicalString(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MagicalString(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar magicalString = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef magical_string(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func magicalString(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func magicalString(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def magicalString(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun magicalString(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn magical_string(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function magicalString($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"20.4K\", \"totalSubmission\": \"43.5K\", \"totalAcceptedRaw\": 20359, \"totalSubmissionRaw\": 43537, \"acRate\": \"46.8%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "1",
+  "metaData": "{\r\n  \"name\": \"magicalString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

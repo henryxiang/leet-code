@@ -1,0 +1,105 @@
+{
+  "questionId": "252",
+  "questionFrontendId": "252",
+  "boundTopicId": null,
+  "title": "Meeting Rooms",
+  "titleSlug": "meeting-rooms",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of meeting time intervals consisting of start and end times <code>[[s1,e1],[s2,e2],...]</code> (s<sub>i</sub> &lt; e<sub>i</sub>), determine if a person could attend all meetings.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> <code>[[0,30],[5,10],[15,20]]</code>\r\n<b>Output:</b> false\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [[7,10],[2,4]]\r\n<b>Output:</b> true\r\n</pre>\r\n\r\n<p><strong>NOTE:</strong>&nbsp;input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 446,
+  "dislikes": 31,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Meeting Rooms II\", \"titleSlug\": \"meeting-rooms-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool canAttendMeetings(vector<vector<int>>& intervals) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canAttendMeetings(int[][] intervals) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canAttendMeetings(self, intervals):\n        \"\"\"\n        :type intervals: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canAttendMeetings(self, intervals: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool canAttendMeetings(int** intervals, int intervalsSize, int* intervalsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool CanAttendMeetings(int[][] intervals) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} intervals\n * @return {boolean}\n */\nvar canAttendMeetings = function(intervals) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} intervals\r\n# @return {Boolean}\r\ndef can_attend_meetings(intervals)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func canAttendMeetings(_ intervals: [[Int]]) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canAttendMeetings(intervals [][]int) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def canAttendMeetings(intervals: Array[Array[Int]]): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun canAttendMeetings(intervals: Array<IntArray>): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_attend_meetings(intervals: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $intervals\n     * @return Boolean\n     */\n    function canAttendMeetings($intervals) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"109.7K\", \"totalSubmission\": \"205.2K\", \"totalAcceptedRaw\": 109706, \"totalSubmissionRaw\": 205241, \"acRate\": \"53.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "39",
+    "canSeeDetail": true,
+    "url": "/articles/meeting-rooms/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n---\r\n\r\n#### Approach #1 (Brute Force) [Accepted]\r\nThe straight-forward solution is to compare every two meetings in the array, and see if they conflict with each other (i.e. if they overlap). Two meetings overlap if one of them starts while the other is still taking place.\r\n\r\n**Java**\r\n\r\n```java\r\npublic boolean canAttendMeetings(Interval[] intervals) {\r\n    for (int i = 0; i < intervals.length; i++) {\r\n        for (int j = i + 1; j < intervals.length; j++) {\r\n            if (overlap(intervals[i], intervals[j])) return false;\r\n        }\r\n    }\r\n    return true;\r\n}\r\n\r\nprivate boolean overlap(Interval i1, Interval i2) {\r\n    return ((i1.start >= i2.start && i1.start < i2.end)\r\n         || (i2.start >= i1.start && i2.start < i1.end));\r\n}\r\n```\r\n\r\n**Overlap Condition**\r\n\r\nThe overlap condition in the code above can be written in a more concise way. Consider two non-overlapping meetings. The earlier meeting ends before the later meeting begins. Therefore, the *minimum* end time of the two meetings (which is the end time of the earlier meeting) is smaller than or equal the *maximum* start time of the two meetings (which is the start time of the later meeting).\r\n\r\n![Two non-overlapping intervals](https://leetcode.com/media/original_images/252_NonOverlappingIntervals.png \"Odd Even Linked List\"){:width=\"300px\"}\r\n{:align=\"center\"}\r\n\r\n*Figure 1. Two non-overlapping intervals.*\r\n{:align=\"center\"}\r\n\r\n![Two overlapping intervals](https://leetcode.com/media/original_images/252_OverlappingIntervals.png \"Odd Even Linked List\"){:width=\"280px\"}\r\n{:align=\"center\"}\r\n\r\n*Figure 2. Two overlapping intervals.*\r\n{:align=\"center\"}\r\n\r\nSo the condition can be rewritten as follows.\r\n\r\n```java\r\nprivate boolean overlap(Interval i1, Interval i2) {\r\n    return (Math.min(i1.end, i2.end) >\r\n            Math.max(i1.start, i2.start));\r\n}\r\n```\r\n\r\n\r\n**Complexity Analysis**\r\n\r\nBecause we have two check every meeting with every other meeting, the total run time is $$O(n^2)$$. No additional space is used, so the space complexity is $$O(1)$$.\r\n\r\n---\r\n#### Approach #2 (Sorting) [Accepted]\r\n\r\nThe idea here is to sort the meetings by starting time. Then, go through the meetings one by one and make sure that each meeting ends before the next one starts.\r\n\r\n**Java**\r\n\r\n```java\r\npublic boolean canAttendMeetings(Interval[] intervals) {\r\n    Arrays.sort(intervals, new Comparator<Interval>() {\r\n        public int compare(Interval i1, Interval i2) {\r\n            return i1.start - i2.start;\r\n        }        \r\n    });\r\n    for (int i = 0; i < intervals.length - 1; i++) {\r\n        if (intervals[i].end > intervals[i + 1].start) return false;\r\n    }\r\n    return true;\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n \\log n)$$.\r\nThe time complexity is dominated by sorting. Once the array has been sorted, only $$O(n)$$ time is taken to go through the array and determine if there is any overlap.\r\n\r\n* Space complexity : $$O(1)$$.\r\nSince no additional space is allocated.\r\n\r\nAnalysis written by: @noran",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "36",
+      "count": 27,
+      "average": 4.963,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,30],[5,10],[15,20]]",
+  "metaData": "{\r\n  \"name\": \"canAttendMeetings\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"intervals\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "716",
+  "questionFrontendId": "716",
+  "boundTopicId": null,
+  "title": "Max Stack",
+  "titleSlug": "max-stack",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design a max stack that supports push, pop, top, peekMax and popMax.</p>\r\n\r\n<p>\r\n<ol>\r\n<li>push(x) -- Push element x onto stack.</li>\r\n<li>pop() -- Remove the element on top of the stack and return it.</li>\r\n<li>top() -- Get the element on the top.</li>\r\n<li>peekMax() -- Retrieve the maximum element in the stack.</li>\r\n<li>popMax() -- Retrieve the maximum element in the stack, and remove it. If you find more than one maximum elements, only remove the top-most one.</li>\r\n</ol>\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\nMaxStack stack = new MaxStack();\r\nstack.push(5); \r\nstack.push(1);\r\nstack.push(5);\r\nstack.top(); -> 5\r\nstack.popMax(); -> 5\r\nstack.top(); -> 1\r\nstack.peekMax(); -> 5\r\nstack.pop(); -> 1\r\nstack.top(); -> 5\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>-1e7 <= x <= 1e7</li>\r\n<li>Number of operations won't exceed 10000.</li>\r\n<li>The last four operations won't be called when stack is empty.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 517,
+  "dislikes": 95,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Min Stack\", \"titleSlug\": \"min-stack\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 14}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class MaxStack {\npublic:\n    /** initialize your data structure here. */\n    MaxStack() {\n        \n    }\n    \n    void push(int x) {\n        \n    }\n    \n    int pop() {\n        \n    }\n    \n    int top() {\n        \n    }\n    \n    int peekMax() {\n        \n    }\n    \n    int popMax() {\n        \n    }\n};\n\n/**\n * Your MaxStack object will be instantiated and called as such:\n * MaxStack* obj = new MaxStack();\n * obj->push(x);\n * int param_2 = obj->pop();\n * int param_3 = obj->top();\n * int param_4 = obj->peekMax();\n * int param_5 = obj->popMax();\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class MaxStack {\n\n    /** initialize your data structure here. */\n    public MaxStack() {\n        \n    }\n    \n    public void push(int x) {\n        \n    }\n    \n    public int pop() {\n        \n    }\n    \n    public int top() {\n        \n    }\n    \n    public int peekMax() {\n        \n    }\n    \n    public int popMax() {\n        \n    }\n}\n\n/**\n * Your MaxStack object will be instantiated and called as such:\n * MaxStack obj = new MaxStack();\n * obj.push(x);\n * int param_2 = obj.pop();\n * int param_3 = obj.top();\n * int param_4 = obj.peekMax();\n * int param_5 = obj.popMax();\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class MaxStack(object):\n\n    def __init__(self):\n        \"\"\"\n        initialize your data structure here.\n        \"\"\"\n        \n\n    def push(self, x):\n        \"\"\"\n        :type x: int\n        :rtype: None\n        \"\"\"\n        \n\n    def pop(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n    def top(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n    def peekMax(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n    def popMax(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your MaxStack object will be instantiated and called as such:\n# obj = MaxStack()\n# obj.push(x)\n# param_2 = obj.pop()\n# param_3 = obj.top()\n# param_4 = obj.peekMax()\n# param_5 = obj.popMax()"
+    },
+    {
+      "lang": "Python3",
+      "code": "class MaxStack:\n\n    def __init__(self):\n        \"\"\"\n        initialize your data structure here.\n        \"\"\"\n        \n\n    def push(self, x: int) -> None:\n        \n\n    def pop(self) -> int:\n        \n\n    def top(self) -> int:\n        \n\n    def peekMax(self) -> int:\n        \n\n    def popMax(self) -> int:\n        \n\n\n# Your MaxStack object will be instantiated and called as such:\n# obj = MaxStack()\n# obj.push(x)\n# param_2 = obj.pop()\n# param_3 = obj.top()\n# param_4 = obj.peekMax()\n# param_5 = obj.popMax()"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} MaxStack;\n\n/** initialize your data structure here. */\n\nMaxStack* maxStackCreate() {\n    \n}\n\nvoid maxStackPush(MaxStack* obj, int x) {\n  \n}\n\nint maxStackPop(MaxStack* obj) {\n  \n}\n\nint maxStackTop(MaxStack* obj) {\n  \n}\n\nint maxStackPeekMax(MaxStack* obj) {\n  \n}\n\nint maxStackPopMax(MaxStack* obj) {\n  \n}\n\nvoid maxStackFree(MaxStack* obj) {\n    \n}\n\n/**\n * Your MaxStack struct will be instantiated and called as such:\n * MaxStack* obj = maxStackCreate();\n * maxStackPush(obj, x);\n \n * int param_2 = maxStackPop(obj);\n \n * int param_3 = maxStackTop(obj);\n \n * int param_4 = maxStackPeekMax(obj);\n \n * int param_5 = maxStackPopMax(obj);\n \n * maxStackFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class MaxStack {\n\n    /** initialize your data structure here. */\n    public MaxStack() {\n        \n    }\n    \n    public void Push(int x) {\n        \n    }\n    \n    public int Pop() {\n        \n    }\n    \n    public int Top() {\n        \n    }\n    \n    public int PeekMax() {\n        \n    }\n    \n    public int PopMax() {\n        \n    }\n}\n\n/**\n * Your MaxStack object will be instantiated and called as such:\n * MaxStack obj = new MaxStack();\n * obj.Push(x);\n * int param_2 = obj.Pop();\n * int param_3 = obj.Top();\n * int param_4 = obj.PeekMax();\n * int param_5 = obj.PopMax();\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * initialize your data structure here.\n */\nvar MaxStack = function() {\n    \n};\n\n/** \n * @param {number} x\n * @return {void}\n */\nMaxStack.prototype.push = function(x) {\n    \n};\n\n/**\n * @return {number}\n */\nMaxStack.prototype.pop = function() {\n    \n};\n\n/**\n * @return {number}\n */\nMaxStack.prototype.top = function() {\n    \n};\n\n/**\n * @return {number}\n */\nMaxStack.prototype.peekMax = function() {\n    \n};\n\n/**\n * @return {number}\n */\nMaxStack.prototype.popMax = function() {\n    \n};\n\n/** \n * Your MaxStack object will be instantiated and called as such:\n * var obj = new MaxStack()\n * obj.push(x)\n * var param_2 = obj.pop()\n * var param_3 = obj.top()\n * var param_4 = obj.peekMax()\n * var param_5 = obj.popMax()\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class MaxStack\n\n=begin\n    initialize your data structure here.\n=end\n    def initialize()\n        \n    end\n\n\n=begin\n    :type x: Integer\n    :rtype: Void\n=end\n    def push(x)\n        \n    end\n\n\n=begin\n    :rtype: Integer\n=end\n    def pop()\n        \n    end\n\n\n=begin\n    :rtype: Integer\n=end\n    def top()\n        \n    end\n\n\n=begin\n    :rtype: Integer\n=end\n    def peek_max()\n        \n    end\n\n\n=begin\n    :rtype: Integer\n=end\n    def pop_max()\n        \n    end\n\n\nend\n\n# Your MaxStack object will be instantiated and called as such:\n# obj = MaxStack.new()\n# obj.push(x)\n# param_2 = obj.pop()\n# param_3 = obj.top()\n# param_4 = obj.peek_max()\n# param_5 = obj.pop_max()"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass MaxStack {\n\n    /** initialize your data structure here. */\n    init() {\n        \n    }\n    \n    func push(_ x: Int) {\n        \n    }\n    \n    func pop() -> Int {\n        \n    }\n    \n    func top() -> Int {\n        \n    }\n    \n    func peekMax() -> Int {\n        \n    }\n    \n    func popMax() -> Int {\n        \n    }\n}\n\n/**\n * Your MaxStack object will be instantiated and called as such:\n * let obj = MaxStack()\n * obj.push(x)\n * let ret_2: Int = obj.pop()\n * let ret_3: Int = obj.top()\n * let ret_4: Int = obj.peekMax()\n * let ret_5: Int = obj.popMax()\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type MaxStack struct {\n    \n}\n\n\n/** initialize your data structure here. */\nfunc Constructor() MaxStack {\n    \n}\n\n\nfunc (this *MaxStack) Push(x int)  {\n    \n}\n\n\nfunc (this *MaxStack) Pop() int {\n    \n}\n\n\nfunc (this *MaxStack) Top() int {\n    \n}\n\n\nfunc (this *MaxStack) PeekMax() int {\n    \n}\n\n\nfunc (this *MaxStack) PopMax() int {\n    \n}\n\n\n/**\n * Your MaxStack object will be instantiated and called as such:\n * obj := Constructor();\n * obj.Push(x);\n * param_2 := obj.Pop();\n * param_3 := obj.Top();\n * param_4 := obj.PeekMax();\n * param_5 := obj.PopMax();\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class MaxStack() {\n\n    /** initialize your data structure here. */\n    \n\n    def push(x: Int) {\n        \n    }\n\n    def pop(): Int = {\n        \n    }\n\n    def top(): Int = {\n        \n    }\n\n    def peekMax(): Int = {\n        \n    }\n\n    def popMax(): Int = {\n        \n    }\n\n}\n\n/**\n * Your MaxStack object will be instantiated and called as such:\n * var obj = new MaxStack()\n * obj.push(x)\n * var param_2 = obj.pop()\n * var param_3 = obj.top()\n * var param_4 = obj.peekMax()\n * var param_5 = obj.popMax()\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class MaxStack() {\n\n    /** initialize your data structure here. */\n    \n\n    fun push(x: Int) {\n        \n    }\n\n    fun pop(): Int {\n        \n    }\n\n    fun top(): Int {\n        \n    }\n\n    fun peekMax(): Int {\n        \n    }\n\n    fun popMax(): Int {\n        \n    }\n\n}\n\n/**\n * Your MaxStack object will be instantiated and called as such:\n * var obj = MaxStack()\n * obj.push(x)\n * var param_2 = obj.pop()\n * var param_3 = obj.top()\n * var param_4 = obj.peekMax()\n * var param_5 = obj.popMax()\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct MaxStack {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl MaxStack {\n\n    /** initialize your data structure here. */\n    fn new() -> Self {\n        \n    }\n    \n    fn push(&self, x: i32) {\n        \n    }\n    \n    fn pop(&self) -> i32 {\n        \n    }\n    \n    fn top(&self) -> i32 {\n        \n    }\n    \n    fn peek_max(&self) -> i32 {\n        \n    }\n    \n    fn pop_max(&self) -> i32 {\n        \n    }\n}\n\n/**\n * Your MaxStack object will be instantiated and called as such:\n * let obj = MaxStack::new();\n * obj.push(x);\n * let ret_2: i32 = obj.pop();\n * let ret_3: i32 = obj.top();\n * let ret_4: i32 = obj.peek_max();\n * let ret_5: i32 = obj.pop_max();\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class MaxStack {\n    /**\n     * initialize your data structure here.\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * @param Integer $x\n     * @return NULL\n     */\n    function push($x) {\n        \n    }\n  \n    /**\n     * @return Integer\n     */\n    function pop() {\n        \n    }\n  \n    /**\n     * @return Integer\n     */\n    function top() {\n        \n    }\n  \n    /**\n     * @return Integer\n     */\n    function peekMax() {\n        \n    }\n  \n    /**\n     * @return Integer\n     */\n    function popMax() {\n        \n    }\n}\n\n/**\n * Your MaxStack object will be instantiated and called as such:\n * $obj = MaxStack();\n * $obj->push($x);\n * $ret_2 = $obj->pop();\n * $ret_3 = $obj->top();\n * $ret_4 = $obj->peekMax();\n * $ret_5 = $obj->popMax();\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"40K\", \"totalSubmission\": \"95.9K\", \"totalAcceptedRaw\": 40006, \"totalSubmissionRaw\": 95876, \"acRate\": \"41.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "308",
+    "canSeeDetail": true,
+    "url": "/articles/max-stack/",
+    "content": "[TOC]\n\n#### Approach #1: Two Stacks [Accepted]\n\n**Intuition and Algorithm**\n\nA regular stack already supports the first 3 operations, so we focus on the last two.\n\nFor `peekMax`, we remember the largest value we've seen on the side.  For example if we add `[2, 1, 5, 3, 9]`, we'll remember `[2, 2, 5, 5, 9]`.  This works seamlessly with `pop` operations, and also it's easy to compute: it's just the maximum of the element we are adding and the previous maximum.\n\nFor `popMax`, we know what the current maximum (`peekMax`) is.  We can pop until we find that maximum, then push the popped elements back on the stack.\n\nOur implementation in Python will showcase extending the `list` class.\n\n<iframe src=\"https://leetcode.com/playground/49Y3VvUj/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"49Y3VvUj\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ for the `popMax` operation, and $$O(1)$$ for the other operations, where $$N$$ is the number of operations performed.\n\n* Space Complexity: $$O(N)$$, the maximum size of the stack.\n\n---\n#### Approach #2: Double Linked List + TreeMap [Accepted]\n\n**Intuition**\n\nUsing structures like Array or Stack will never let us `popMax` quickly.  We turn our attention to tree and linked-list structures that have a lower time complexity for removal, with the aim of making `popMax` faster than $$O(N)$$ time complexity.\n\nSay we have a double linked list as our \"stack\".  This reduces the problem to finding which node to remove, since we can remove nodes in $$O(1)$$ time.\n\nWe can use a TreeMap mapping values to a list of nodes to answer this question.  TreeMap can find the largest value, insert values, and delete values, all in $$O(\\log N)$$ time.\n\n**Algorithm**\n\nLet's store the stack as a double linked list `dll`, and store a `map` from `value` to a `List` of `Node`.\n\n* When we `MaxStack.push(x)`, we add a node to our `dll`, and add or update our entry `map.get(x).add(node)`.\n\n* When we `MaxStack.pop()`, we find the value `val = dll.pop()`, and remove the node from our `map`, deleting the entry if it was the last one.\n\n* When we `MaxStack.popMax()`, we use the `map` to find the relevant node to `unlink`, and return it's value.\n\nThe above operations are more clear given that we have a working `DoubleLinkedList` class.  The implementation provided uses `head` and `tail` *sentinels* to simplify the relevant `DoubleLinkedList` operations.\n\nA Python implementation was not included for this approach because there is no analog to *TreeMap* available.\n\n<iframe src=\"https://leetcode.com/playground/7cWp6DCL/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"7cWp6DCL\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(\\log N)$$ for all operations except `peek` which is $$O(1)$$, where $$N$$ is the number of operations performed.  Most operations involving `TreeMap` are $$O(\\log N)$$.\n\n* Space Complexity: $$O(N)$$, the size of the data structures used.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "303",
+      "count": 30,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"MaxStack\",\"push\",\"push\",\"push\",\"top\",\"popMax\",\"top\",\"peekMax\",\"pop\",\"top\"]\n[[],[5],[1],[5],[],[],[],[],[],[]]",
+  "metaData": "{\r\n  \"classname\": \"MaxStack\",\r\n  \"maxbytesperline\": 130000,\r\n  \"constructor\": {\r\n      \"params\": [\r\n        {\r\n            \"type\": \"integer\",\r\n            \"name\": \"maxSize\",\r\n            \"lang\": \"c\",\r\n            \"value\": \"64000\"\r\n        }\r\n      ],\r\n      \"comment\": \"initialize your data structure here.\"\r\n  },\r\n  \"methods\": [\r\n      { \"name\" : \"push\",\r\n        \"params\": [\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"x\"\r\n            }],\r\n        \"return\": {\r\n            \"type\": \"void\"\r\n        }\r\n      },\r\n      { \"name\": \"pop\",\r\n        \"params\": [],\r\n        \"return\": {\r\n            \"type\": \"integer\"\r\n        }\r\n      },\r\n      { \"name\": \"top\",\r\n        \"params\": [],\r\n        \"return\": {\r\n            \"type\": \"integer\"\r\n        }\r\n      },\r\n      { \"name\": \"peekMax\",\r\n        \"params\": [],\r\n        \"return\": {\r\n            \"type\": \"integer\"\r\n        }\r\n      },\r\n      { \"name\": \"popMax\",\r\n        \"params\": [],\r\n        \"return\": {\r\n            \"type\": \"integer\"\r\n        }\r\n      }\r\n  ],\r\n  \"systemdesign\": true,\r\n  \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

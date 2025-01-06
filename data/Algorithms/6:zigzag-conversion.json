@@ -1,0 +1,105 @@
+{
+  "questionId": "6",
+  "questionFrontendId": "6",
+  "boundTopicId": null,
+  "title": "ZigZag Conversion",
+  "titleSlug": "zigzag-conversion",
+  "categoryTitle": "Algorithms",
+  "content": "<p>The string <code>&quot;PAYPALISHIRING&quot;</code> is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)</p>\r\n\r\n<pre>\r\nP   A   H   N\r\nA P L S I I G\r\nY   I   R\r\n</pre>\r\n\r\n<p>And then read line by line: <code>&quot;PAHNAPLSIIGYIR&quot;</code></p>\r\n\r\n<p>Write the code that will take a string and make this conversion given a number of rows:</p>\r\n\r\n<pre>\r\nstring convert(string s, int numRows);</pre>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;PAYPALISHIRING&quot;, numRows = 3\r\n<strong>Output:</strong> &quot;PAHNAPLSIIGYIR&quot;\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;PAYPALISHIRING&quot;, numRows =&nbsp;4\r\n<strong>Output:</strong>&nbsp;&quot;PINALSIGYAHRPI&quot;\r\n<strong>Explanation:</strong>\r\n\r\nP     I    N\r\nA   L S  I G\r\nY A   H R\r\nP     I</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1306,
+  "dislikes": 3903,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Quantcast\", \"slug\": \"quantcast\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    string convert(string s, int numRows) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String convert(String s, int numRows) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def convert(self, s, numRows):\n        \"\"\"\n        :type s: str\n        :type numRows: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def convert(self, s: str, numRows: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * convert(char * s, int numRows){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string Convert(string s, int numRows) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} numRows\n * @return {string}\n */\nvar convert = function(s, numRows) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @param {Integer} num_rows\r\n# @return {String}\r\ndef convert(s, num_rows)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func convert(_ s: String, _ numRows: Int) -> String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func convert(s string, numRows int) string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def convert(s: String, numRows: Int): String = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun convert(s: String, numRows: Int): String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn convert(s: String, num_rows: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $numRows\n     * @return String\n     */\n    function convert($s, $numRows) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"391.4K\", \"totalSubmission\": \"1.1M\", \"totalAcceptedRaw\": 391382, \"totalSubmissionRaw\": 1145565, \"acRate\": \"34.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "484",
+    "canSeeDetail": true,
+    "url": "/articles/zigzag-conversion/",
+    "content": "[TOC]\n\n## Solution\n---\n\n#### Approach 1: Sort by Row\n\n**Intuition**\n\nBy iterating through the string from left to right, we can easily determine which row in the Zig-Zag pattern that a character belongs to.\n\n**Algorithm**\n\nWe can use $$\\text{min}( \\text{numRows}, \\text{len}(s))$$ lists to represent the non-empty rows of the Zig-Zag Pattern.\n\nIterate through $$s$$ from left to right, appending each character to the appropriate row. The appropriate row can be tracked using two variables: the current row and the current direction.\n\nThe current direction changes only when we moved up to the topmost row or moved down to the bottommost row.\n\n<iframe src=\"https://leetcode.com/playground/F7ATKV4h/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"F7ATKV4h\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(n)$$, where $$n == \\text{len}(s)$$\n* Space Complexity: $$O(n)$$\n\n<br/>\n\n---\n\n#### Approach 2: Visit by Row\n\n**Intuition**\n\nVisit the characters in the same order as reading the Zig-Zag pattern line by line.\n\n**Algorithm**\n\nVisit all characters in row 0 first, then row 1, then row 2, and so on...\n\nFor all whole numbers $$k$$,\n\n- Characters in row $$0$$ are located at indexes $$k \\; (2 \\cdot \\text{numRows} - 2)$$\n- Characters in row $$\\text{numRows}-1$$ are located at indexes $$k \\; (2 \\cdot \\text{numRows} - 2) + \\text{numRows} - 1$$\n- Characters in inner row $$i$$ are located at indexes $$k \\; (2 \\cdot \\text{numRows}-2)+i$$ and $$(k+1)(2 \\cdot \\text{numRows}-2)- i$$.\n\n<iframe src=\"https://leetcode.com/playground/Deg3hGi4/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"Deg3hGi4\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(n)$$, where $$n == \\text{len}(s)$$. Each index is visited once.\n* Space Complexity: $$O(n)$$. For the cpp implementation, $$O(1)$$ if return string is not considered extra space.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "479",
+      "count": 73,
+      "average": 3.794,
+      "userRating": null
+    }
+  },
+  "status": "ac",
+  "sampleTestCase": "\"PAYPALISHIRING\"\n3",
+  "metaData": "{\r\n  \"name\": \"convert\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"numRows\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

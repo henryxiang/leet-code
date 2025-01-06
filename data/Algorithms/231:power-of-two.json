@@ -1,0 +1,115 @@
+{
+  "questionId": "231",
+  "questionFrontendId": "231",
+  "boundTopicId": null,
+  "title": "Power of Two",
+  "titleSlug": "power-of-two",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an integer, write a function to determine if it is a power of two.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 1\r\n<strong>Output:</strong> true \r\n<strong>Explanation: </strong>2<sup>0</sup>&nbsp;= 1\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 16\r\n<strong>Output:</strong> true\r\n<strong>Explanation: </strong>2<sup>4</sup>&nbsp;= 16</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 218\r\n<strong>Output:</strong> false</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 562,
+  "dislikes": 149,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Number of 1 Bits\", \"titleSlug\": \"number-of-1-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Power of Three\", \"titleSlug\": \"power-of-three\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Power of Four\", \"titleSlug\": \"power-of-four\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "jianchao-li",
+      "profileUrl": "/jianchao-li/",
+      "avatarUrl": "https://assets.leetcode.com/users/jianchaolifighter/avatar_1529298385.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isPowerOfTwo(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isPowerOfTwo(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isPowerOfTwo(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isPowerOfTwo(self, n: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isPowerOfTwo(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsPowerOfTwo(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {boolean}\n */\nvar isPowerOfTwo = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Boolean}\ndef is_power_of_two(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isPowerOfTwo(_ n: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isPowerOfTwo(n int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isPowerOfTwo(n: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isPowerOfTwo(n: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_power_of_two(n: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Boolean\n     */\n    function isPowerOfTwo($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"262K\", \"totalSubmission\": \"614.4K\", \"totalAcceptedRaw\": 261976, \"totalSubmissionRaw\": 614439, \"acRate\": \"42.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "760",
+    "canSeeDetail": true,
+    "url": "/articles/power-of-two/",
+    "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\n\nWe're not going to discuss here an obvious $$\\mathcal{O}(\\log N)$$\ntime solution\n\n<iframe src=\"https://leetcode.com/playground/MbLyqs9w/shared\" frameBorder=\"0\" width=\"100%\" height=\"174\" name=\"MbLyqs9w\"></iframe>\n\nInstead, the problem will be solved in $$\\mathcal{O}(1)$$ time\nwith the help of bitwise operators. The idea \nis to discuss such bitwise tricks as \n\n- How to get / isolate the rightmost 1-bit : `x & (-x)`.\n\n- How to turn off (= set to 0) the rightmost 1-bit : `x & (x - 1)`.\n\nThese tricks are often used as something obvious in more \ncomplex bit-manipulation solutions, \nlike for [N Queens problem](https://leetcode.com/articles/n-queens-ii/),\nand it's important to recognize them to understand what is going on.\n<br /> \n<br />\n\n\n---\n#### Intuition\n\nThe idea behind both solutions will be the same: a power of two\nin binary representation is one 1-bit, followed by some zeros:\n\n$$1 = (0000 0001)_2$$\n\n$$2 = (0000 0010)_2$$\n\n$$4 = (0000 0100)_2$$\n\n$$8 = (0000 1000)_2$$\n\nA number which is not a power of two, has more than one 1-bit\nin its binary representation:\n\n$$3 = (0000 0011)_2$$\n\n$$5 = (0000 0101)_2$$\n\n$$6 = (0000 0110)_2$$\n\n$$7 = (0000 0111)_2$$\n\nThe only exception is 0, which should be treated separately.\n<br /> \n<br />\n\n\n---\n#### Approach 1: Bitwise Operators : Get the Rightmost 1-bit\n\n**Get/Isolate the Rightmost 1-bit**\n\nLet's first discuss why `x & (-x)` is a way \nto keep the rightmost 1-bit and to set all the other bits to 0.\n\nBasically, that works because of [two's complement](https://en.wikipedia.org/wiki/Two%27s_complement). \nIn two's complement notation $$-x$$ is the same as $$\\lnot x + 1$$.\nIn other words, to compute $$-x$$ one has to revert all bits in $$x$$\nand then to add 1 to the result.\n\nAdding 1 to $$\\lnot x$$ in binary representation means \nto carry that 1-bit till the rightmost 0-bit in $$\\lnot x$$\nand to set all the lower bits to zero. \nNote, that the rightmost 0-bit in $$\\lnot x$$ corresponds to the\nrightmost 1-bit in $$x$$. \n\n> In summary, $$-x$$ is the same as $$\\lnot x + 1$$. \nThis operation reverts all bits of x except the rightmost 1-bit.\n\n![fig](../Figures/231/twos.png)\n\nHence, x and -x have just one bit in common - the rightmost 1-bit.\nThat means that `x & (-x)` would keep that rightmost 1-bit and \nset all the other bits to 0.\n\n![fig](../Figures/231/rightmost.png) \n\n**Detect Power of Two**\n\nSo let's do `x & (-x)` to keep the rightmost 1-bit and to set\nall the others bits to zero. \nAs discussed above, \nfor the power of two it would result in `x` itself, since\na power of two contains just one 1-bit.\n\nOther numbers have more than 1-bit in their binary \nrepresentation and hence for them `x & (-x)` would not be\nequal to `x` itself. \n\nHence a number is a power of two if `x & (-x) == x`.\n\n![fig](../Figures/231/first2.png) \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/J6nd5R3a/shared\" frameBorder=\"0\" width=\"100%\" height=\"191\" name=\"J6nd5R3a\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(1)$$. \n\n* Space complexity : $$\\mathcal{O}(1)$$.\n<br /> \n<br />\n\n\n---\n#### Approach 2: Bitwise operators : Turn off the Rightmost 1-bit\n\n**Turn off the Rightmost 1-bit**\n\nLet's first discuss why `x & (x - 1)` is a way \nto set the rightmost 1-bit to zero.\n\nTo subtract 1 means to change the rightmost 1-bit to 0 \nand to set all the lower bits to 1.  \n\nNow AND operator: the rightmost 1-bit will be turned off\nbecause `1 & 0 = 0`, \nand all the lower bits as well. \n\n![fig](../Figures/231/turn2.png)\n\n**Detect Power of Two**\n\nThe solution is straightforward: \n\n1. Power of two has just one 1-bit.\n\n2. `x & (x - 1)` sets this 1-bit to zero, \nand hence one has to verify if the result is zero \n`x & (x - 1) == 0`.\n\n![fig](../Figures/231/second2.png)\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/5DMMtsXU/shared\" frameBorder=\"0\" width=\"100%\" height=\"174\" name=\"5DMMtsXU\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(1)$$. \n\n* Space complexity : $$\\mathcal{O}(1)$$.\n\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "745",
+      "count": 24,
+      "average": 4.833,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "1",
+  "metaData": "{ \r\n  \"name\": \"isPowerOfTwo\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

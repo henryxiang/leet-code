@@ -1,0 +1,111 @@
+{
+  "questionId": "1095",
+  "questionFrontendId": "1029",
+  "boundTopicId": null,
+  "title": "Two City Scheduling",
+  "titleSlug": "two-city-scheduling",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are <code>2N</code> people a company is planning to interview. The cost of flying the <code>i</code>-th person to city <code>A</code> is <code>costs[i][0]</code>, and the cost of flying the <code>i</code>-th person to city <code>B</code> is <code>costs[i][1]</code>.</p>\r\n\r\n<p>Return the minimum cost to fly every person to a city such that exactly <code>N</code> people arrive in each city.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[[10,20],[30,200],[400,50],[30,20]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">110</span>\r\n<strong>Explanation: </strong>\r\nThe first person goes to city A for a cost of 10.\r\nThe second person goes to city A for a cost of 30.\r\nThe third person goes to city B for a cost of 50.\r\nThe fourth person goes to city B for a cost of 20.\r\n\r\nThe total minimum cost is 10 + 30 + 50 + 20 = 110 to have half the people interviewing in each city.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= costs.length &lt;= 100</code></li>\r\n\t<li>It is guaranteed that <code>costs.length</code> is even.</li>\r\n\t<li><code>1 &lt;= costs[i][0], costs[i][1] &lt;= 1000</code></li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 497,
+  "dislikes": 65,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "jasonginus",
+      "profileUrl": "/jasonginus/",
+      "avatarUrl": "https://www.gravatar.com/avatar/40044ccfd2541a17e253925aa54eebfe.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 13}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int twoCitySchedCost(vector<vector<int>>& costs) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int twoCitySchedCost(int[][] costs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def twoCitySchedCost(self, costs):\n        \"\"\"\n        :type costs: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def twoCitySchedCost(self, costs: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint twoCitySchedCost(int** costs, int costsSize, int* costsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int TwoCitySchedCost(int[][] costs) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} costs\n * @return {number}\n */\nvar twoCitySchedCost = function(costs) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} costs\r\n# @return {Integer}\r\ndef two_city_sched_cost(costs)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func twoCitySchedCost(_ costs: [[Int]]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func twoCitySchedCost(costs [][]int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def twoCitySchedCost(costs: Array[Array[Int]]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun twoCitySchedCost(costs: Array<IntArray>): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn two_city_sched_cost(costs: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $costs\n     * @return Integer\n     */\n    function twoCitySchedCost($costs) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"21.5K\", \"totalSubmission\": \"38.9K\", \"totalAcceptedRaw\": 21526, \"totalSubmissionRaw\": 38932, \"acRate\": \"55.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "726",
+    "canSeeDetail": true,
+    "url": "/articles/two-city-scheduling/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Approach 1: Greedy.\r\n\r\n**Greedy algorithms**\r\n\r\nGreedy problems usually look like \r\n\"Find minimum number of _something_ to do _something_\" or \r\n\"Find maximum number of _something_ to fit in _some conditions_\", \r\nand typically propose an unsorted input.\r\n\r\n> The idea of greedy algorithm is to pick the _locally_\r\noptimal move at each step, that will lead to the _globally_ optimal solution.\r\n\r\nThe standard solution has $$\\mathcal{O}(N \\log N)$$ time complexity and consists of two parts:\r\n\r\n- Figure out how to sort the input data ($$\\mathcal{O}(N \\log N)$$ time).\r\nThat could be done directly by a sorting or indirectly by a heap usage. \r\nTypically sort is better than the heap usage because of gain in space.\r\n\r\n- Parse the sorted input to have a solution ($$\\mathcal{O}(N)$$ time). \r\n\r\nPlease notice that in case of well-sorted input one doesn't need the first \r\npart and the greedy solution could have $$\\mathcal{O}(N)$$ time complexity,\r\n[here is an example](https://leetcode.com/articles/gas-station/).\r\n\r\n> How to prove that your greedy algorithm provides globally optimal solution?\r\n\r\nUsually you could use the [proof by contradiction](https://en.wikipedia.org/wiki/Proof_by_contradiction). \r\n\r\n**Intuition**\r\n\r\nLet's figure out how to sort the input here.\r\nThe input should be sorted by a parameter which indicates a money\r\nlost for the company. \r\n\r\nThe company would pay anyway : `price_A` to send a person to the city\r\nA, or `price_B` to send a person to the city B.\r\nBy sending the person to the city A, the company would lose `price_A - price_B`,\r\nwhich could negative or positive. \r\n\r\n![bla](../Figures/1029/users.png)\r\n\r\nTo optimize the total costs, let's sort the persons by `price_A - price_B`\r\nand then send the first `n` persons to the city A, \r\nand the others to the city B, because this way the \r\ncompany costs are minimal.    \r\n\r\n\r\n**Algorithm**\r\n\r\nNow the algorithm is straightforward :\r\n\r\n- Sort the persons in the ascending order by `price_A - price_B` \r\nparameter, which indicates the company additional costs.\r\n\r\n- To minimise the costs, send `n` persons with the smallest `price_A - price_B`\r\nto the city A, and the others to the city B.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/qNpo8ciV/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"qNpo8ciV\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N \\log N)$$ because of sorting of\r\ninput data.\r\n \r\n* Space complexity : $$\\mathcal{O}(1)$$ since it's a constant \r\nspace solution. \r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "711",
+      "count": 21,
+      "average": 4.333,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[10,20],[30,200],[400,50],[30,20]]",
+  "metaData": "{\r\n  \"name\": \"twoCitySchedCost\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"costs\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

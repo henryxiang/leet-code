@@ -1,0 +1,111 @@
+{
+  "questionId": "446",
+  "questionFrontendId": "446",
+  "boundTopicId": null,
+  "title": "Arithmetic Slices II - Subsequence",
+  "titleSlug": "arithmetic-slices-ii-subsequence",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A sequence of numbers is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.</p>\r\n\r\n<p>For example, these are arithmetic sequences:</p>\r\n\r\n<pre>\r\n1, 3, 5, 7, 9\r\n7, 7, 7, 7\r\n3, -1, -5, -9</pre>\r\n\r\n<p>The following sequence is not arithmetic.</p>\r\n\r\n<pre>\r\n1, 1, 2, 5, 7</pre>\r\n&nbsp;\r\n\r\n<p>A zero-indexed array A consisting of N numbers is given. A <b>subsequence</b> slice of that array is any sequence of integers (P<sub>0</sub>, P<sub>1</sub>, ..., P<sub>k</sub>) such that 0 &le; P<sub>0</sub> &lt; P<sub>1</sub> &lt; ... &lt; P<sub>k</sub> &lt; N.</p>\r\n\r\n<p>A <b>subsequence</b> slice (P<sub>0</sub>, P<sub>1</sub>, ..., P<sub>k</sub>) of array A is called arithmetic if the sequence A[P<sub>0</sub>], A[P<sub>1</sub>], ..., A[P<sub>k-1</sub>], A[P<sub>k</sub>] is arithmetic. In particular, this means that k &ge; 2.</p>\r\n\r\n<p>The function should return the number of arithmetic subsequence slices in the array A.</p>\r\n\r\n<p>The input contains N integers. Every integer is in the range of -2<sup>31</sup> and 2<sup>31</sup>-1 and 0 &le; N &le; 1000. The output is guaranteed to be less than 2<sup>31</sup>-1.</p>\r\n&nbsp;\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [2, 4, 6, 8, 10]\r\n\r\n<b>Output:</b> 7\r\n\r\n<b>Explanation:</b>\r\nAll arithmetic subsequence slices are:\r\n[2,4,6]\r\n[4,6,8]\r\n[6,8,10]\r\n[2,4,6,8]\r\n[4,6,8,10]\r\n[2,4,6,8,10]\r\n[2,6,10]\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 350,
+  "dislikes": 46,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Arithmetic Slices\", \"titleSlug\": \"arithmetic-slices\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Samuri",
+      "profileUrl": "/samuri/",
+      "avatarUrl": "https://assets.leetcode.com/users/samuri/avatar_1552766564.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int numberOfArithmeticSlices(vector<int>& A) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numberOfArithmeticSlices(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numberOfArithmeticSlices(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numberOfArithmeticSlices(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numberOfArithmeticSlices(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int NumberOfArithmeticSlices(int[] A) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar numberOfArithmeticSlices = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\r\n# @return {Integer}\r\ndef number_of_arithmetic_slices(a)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func numberOfArithmeticSlices(_ A: [Int]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numberOfArithmeticSlices(A []int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def numberOfArithmeticSlices(A: Array[Int]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun numberOfArithmeticSlices(A: IntArray): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn number_of_arithmetic_slices(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function numberOfArithmeticSlices($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.6K\", \"totalSubmission\": \"55.7K\", \"totalAcceptedRaw\": 17567, \"totalSubmissionRaw\": 55722, \"acRate\": \"31.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "367",
+    "canSeeDetail": true,
+    "url": "/articles/arithmetic-slices-ii-subsequence/",
+    "content": "[TOC]\n\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\n**Intuition**\n\nEnumerate all possible subsequences to see if they are arithmetic sequences.\n\n**Algorithm**\n\nWe can use depth-first search to generate all subsequences. We can check a Subsequence is arithmetic or not by its definition.\n\n\n<iframe src=\"https://leetcode.com/playground/yNoZjyFt/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"yNoZjyFt\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(2^n)$$. For each element in the array, it can be in or outside the subsequence. So the time complexity is $$O(2^n)$$.\n\n* Space complexity : $$O(n)$$. We only need the space to store the array.\n\n---\n#### Approach #2 Dynamic Programming [Accepted]\n\n**Intuition**\n\nTo determine an arithmetic sequence, we need at least two parameters: the first (or last) element of the sequence, and the common difference.\n\n\n**Algorithm**\n\nStarting from this point, we can easily figure out that one state representation that may work:\n\n> `f[i][d]` denotes the number of arithmetic subsequences that ends with `A[i]` and its common difference is `d`.\n\nLet's try to find the state transitions based on the representation above. Assume we want to append a new element `A[i]` to existing arithmetic subsequences to form new subsequences. We can append `A[i]` to an existing arithmetic subsequence, only if the difference between the sequence's last element and `A[i]` is equal to the sequence's common difference.\n\nThus, we can define the state transitions for the element `A[i]` intuitively :\n\n> for all `j < i`, f[i][A[i] - A[j]] += f[j][A[i] - A[j]].\n\nThis demonstrates the appending process above to form new arithmetic subsequences.\n\nBut here comes the problem. Initially all `f[i][d]` are set to be `0`, but how can we form a new arithmetic subsequence if there are no existing subsequences before?\n\nIn the original definition of arithmetic subsequences, the length of the subsequence must be at least `3`. This makes it hard to form new subsequences if only two indices `i` and `j` are given. How about taking the subsequences of length `2` into account?\n\nWe can define `weak arithmetic subsequences` as follows:\n\n> **Weak arithmetic subsequences** are subsequences that  consist of at least two elements and if the difference between any two consecutive elements is the same.\n\nThere are two properties of weak arithmetic subsequences that are very useful:\n\n- For any pair `i, j (i != j)`, `A[i]` and `A[j]` can always form a weak arithmetic subsequence.\n\n- If we can append a new element to a weak arithmetic subsequence and keep it arithmetic, then the new subsequence must be an arithmetic subsequence.\n\nThe second property is quite trival, because the only difference between arithmetic subsequences and weak arithmetic subsequences is their length.\n\nThus we can change the state representations accordingly:\n\n> `f[i][d]` denotes the number of weak arithmetic subsequences that ends with `A[i]` and its common difference is `d`.\n\nNow the state transitions are quite straightforward:\n\n> for all `j < i`, f[i][A[i] - A[j]] += (f[j][A[i] - A[j]] + 1).\n\nThe `1` appears here because of the property one, we can form a new weak arithmetic subsequence for the pair `(i, j)`.\n\nNow the number of all weak arithmetic subsequences is the sum of all `f[i][d]`. But how can we get the number of arithmetic subsequences that are not `weak`?\n\nThere are two ways:\n\n- First, we can count the number of `pure weak` arithmetic subsequences directly. The `pure weak` arithmetic subsequences are the arithmetic subsequences of length `2`, so the number of `pure weak` arithmetic subsequences should be equal to the number of pairs `(i, j)`, which is $$\\binom{n}{2} = \\frac{n * (n - 1)}{2}.$$\n\n- Second, for the summation `f[i][A[i] - A[j]] += (f[j][A[i] - A[j]] + 1)`, `f[j][A[i] - A[j]]` is the number of existing weak arithmetic subsequences, while `1` is the new subsequence built with `A[i]` and `A[j]`. Based on property two, when we are appending new elements to existing weak arithmetic subsequences, we are forming arithmetic subsequences. So the first part, `f[j][A[i] - A[j]]` is the number of new formed arithmetic subsequences, and can be added to the answer.\n\nWe can use the following example to illustrate the process:\n\n> [1, 1, 2, 3, 4, 5]\n\nWe need to count the answer for the above sequence.\n\n- For the first element `1`, there is no element in front of it, the answer remains `0`.\n\n- For the second element `1`, the element itself with the previous `1` can form a pure weak arithmetic subsequence with common difference `0` : `[1, 1]`.\n\n- For the third element `2`, it cannot be appended to the only weak arithmetic subsequence `[1, 1]`, so the answer remains `0`. Similar to the second element, it can form new weak arithmetic subsequences `[1, 2]` and `[1, 2]`.\n\n- For the forth element `3`, if we append it to some arithmetic subsequences ending with `2`, these subsequences must have a common difference of `3 - 2 = 1`. Indeed there are two: `[1, 2]` and `[1, 2]`. So we can append `3` to the end of these subsequences, and the answer is added by `2`. Similar to above, it can form new weak arithmetic subsequences `[1, 3], [1, 3]` and `[2, 3]`.\n\n- The other elements are the same, we can view the process in the figure below. The red bracket indicates the weak arithmetic subsequence of length `2`, and the black bracket indicates the arithmetic subsequence. The answer should be the total number of black brackets.\n\n<img src=\"../Figures/446_Arithmetic_Slices_II_Subsequence.png\" width=80% height=80% />\n\n<iframe src=\"https://leetcode.com/playground/MVagoidb/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"MVagoidb\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n ^ 2)$$. We can use double loop to enumerate all possible states.\n\n* Space complexity : $$O(n ^ 2)$$. For each `i`, we need to store at most `n` distinct common differences, so the total space complexity is $$O(n ^ 2)$$.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "362",
+      "count": 14,
+      "average": 3.929,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,4,6,8,10]",
+  "metaData": "{\r\n  \"name\": \"numberOfArithmeticSlices\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

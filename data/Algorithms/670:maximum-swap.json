@@ -1,0 +1,115 @@
+{
+  "questionId": "670",
+  "questionFrontendId": "670",
+  "boundTopicId": null,
+  "title": "Maximum Swap",
+  "titleSlug": "maximum-swap",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a non-negative integer, you could swap two digits <b>at most</b> once to get the maximum valued number. Return the maximum valued number you could get.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> 2736\r\n<b>Output:</b> 7236\r\n<b>Explanation:</b> Swap the number 2 and the number 7.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> 9973\r\n<b>Output:</b> 9973\r\n<b>Explanation:</b> No swap.\r\n</pre>\r\n</p>\r\n\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The given number is in the range [0, 10<sup>8</sup>]</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 708,
+  "dislikes": 52,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Create Maximum Number\", \"titleSlug\": \"create-maximum-number\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "SoumyaroopRoy",
+      "profileUrl": "/soumyarooproy/",
+      "avatarUrl": "https://assets.leetcode.com/users/soumyarooproy/avatar_1520281745.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maximumSwap(int num) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maximumSwap(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maximumSwap(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maximumSwap(self, num: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maximumSwap(int num){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaximumSwap(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} num\n * @return {number}\n */\nvar maximumSwap = function(num) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num\n# @return {Integer}\ndef maximum_swap(num)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maximumSwap(_ num: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maximumSwap(num int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maximumSwap(num: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maximumSwap(num: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn maximum_swap(num: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return Integer\n     */\n    function maximumSwap($num) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"48.1K\", \"totalSubmission\": \"116.3K\", \"totalAcceptedRaw\": 48085, \"totalSubmissionRaw\": 116264, \"acRate\": \"41.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "243",
+    "canSeeDetail": true,
+    "url": "/articles/maximum-swap/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1: Brute Force [Accepted]\n\n**Intuition**\n\nThe number only has at most 8 digits, so there are only $${}^{8}\\text{C}_{2}$$ = 28 available swaps.  We can easily brute force them all.\n\n**Algorithm**\n\nWe will store the candidates as lists of length $$\\text{len(num)}$$.  For each candidate swap with positions $$\\text{(i, j)}$$, we swap the number and record if the candidate is larger than the current answer, then swap back to restore the original number.\n\nThe only detail is possibly to check that we didn't introduce a leading zero.  We don't actually need to check it, because our original number doesn't have one.\n\n<iframe src=\"https://leetcode.com/playground/9BbnzEUC/shared\" frameBorder=\"0\" name=\"9BbnzEUC\" width=\"100%\" height=\"462\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^3)$$, where $$N$$ is the total number of digits in the input number.  For each pair of digits, we spend up to $$O(N)$$ time to compare the final sequences.\n\n* Space Complexity: $$O(N)$$, the information stored in $$\\text{A}$$.\n\n---\n\n#### Approach #2: Greedy [Accepted]\n\n**Intuition**\n\nAt each digit of the input number in order, if there is a larger digit that occurs later, we know that the best swap must occur with the digit we are currently considering.\n\n**Algorithm**\n\nWe will compute $$\\text{last[d] = i}$$, the index $$\\text{i}$$ of the last occurrence of digit $$\\text{d}$$ (if it exists).\n\nAfterwards, when scanning the number from left to right, if there is a larger digit in the future, we will swap it with the largest such digit; if there are multiple such digits, we will swap it with the one that occurs the latest.\n\n<iframe src=\"https://leetcode.com/playground/c2u3L78L/shared\" frameBorder=\"0\" name=\"c2u3L78L\" width=\"100%\" height=\"411\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the total number of digits in the input number.  Every digit is considered at most once.\n\n* Space Complexity: $$O(1)$$.  The additional space used by $$\\text{last}$$ only has up to 10 values.\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "238",
+      "count": 17,
+      "average": 3.647,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "2736",
+  "metaData": "{\r\n  \"name\": \"maximumSwap\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"num\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

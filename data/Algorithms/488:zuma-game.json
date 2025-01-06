@@ -1,0 +1,99 @@
+{
+  "questionId": "488",
+  "questionFrontendId": "488",
+  "boundTopicId": null,
+  "title": "Zuma Game",
+  "titleSlug": "zuma-game",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Think about Zuma Game. You have a row of balls on the table, colored red(R), yellow(Y), blue(B), green(G), and white(W). You also have several balls in your hand.</p>\r\n<p>\r\nEach time, you may choose a ball in your hand, and insert it into the row (including the leftmost place and rightmost place). Then, if there is a group of 3 or more balls in the same color touching, remove these balls. Keep doing this until no more balls can be removed.</p>\r\n<p>\r\nFind the minimal balls you have to insert to remove all the balls on the table. If you cannot remove all the balls, output -1.\r\n</p>\r\n<pre>\r\n<p><b>Examples:</b><br />\r\n<b>Input:</b> \"WRRBBW\", \"RB\"\r\n<b>Output:</b> -1\r\n<b>Explanation:</b> WRRBBW -> WRR[R]BBW -> WBBW -> WBB[B]W -> WW\r\n\r\n<b>Input:</b> \"WWRRBBWW\", \"WRBRW\"\r\n<b>Output:</b> 2\r\n<b>Explanation:</b> WWRRBBWW -> WWRR[R]BBWW -> WWBBWW -> WWBB[B]WW -> WWWW -> empty\r\n\r\n<b>Input:</b>\"G\", \"GGGGG\"\r\n<b>Output:</b> 2\r\n<b>Explanation:</b> G -> G[G] -> GG[G] -> empty \r\n\r\n<b>Input:</b> \"RBYYBBRRB\", \"YRBGB\"\r\n<b>Output:</b> 3\r\n<b>Explanation:</b> RBYYBBRRB -> RBYY[Y]BBRRB -> RBBBRRB -> RRRB -> B -> B[B] -> BB[B] -> empty \r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>You may assume that the initial row of balls on the table won’t have any 3 or more consecutive balls with the same color.</li>\r\n<li>The number of balls on the table won't exceed 20, and the string represents these balls is called \"board\" in the input.</li>\r\n<li>The number of balls in your hand won't exceed 5, and the string represents these balls is called \"hand\" in the input.</li>\r\n<li>Both input strings will be non-empty and only contain characters 'R','Y','B','G','W'.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 161,
+  "dislikes": 155,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ckcz123",
+      "profileUrl": "/ckcz123/",
+      "avatarUrl": "https://www.gravatar.com/avatar/cd2cd527b2f3212ff509f7c531ebc25b.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findMinStep(string board, string hand) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findMinStep(String board, String hand) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findMinStep(self, board, hand):\n        \"\"\"\n        :type board: str\n        :type hand: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findMinStep(self, board: str, hand: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findMinStep(char * board, char * hand){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindMinStep(string board, string hand) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} board\n * @param {string} hand\n * @return {number}\n */\nvar findMinStep = function(board, hand) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} board\n# @param {String} hand\n# @return {Integer}\ndef find_min_step(board, hand)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findMinStep(_ board: String, _ hand: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findMinStep(board string, hand string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findMinStep(board: String, hand: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findMinStep(board: String, hand: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_min_step(board: String, hand: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $board\n     * @param String $hand\n     * @return Integer\n     */\n    function findMinStep($board, $hand) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11.9K\", \"totalSubmission\": \"29.6K\", \"totalAcceptedRaw\": 11934, \"totalSubmissionRaw\": 29581, \"acRate\": \"40.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"WRRBBW\"\n\"RB\"",
+  "metaData": "{\r\n  \"name\": \"findMinStep\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"board\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"hand\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

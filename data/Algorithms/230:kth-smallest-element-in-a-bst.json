@@ -1,0 +1,120 @@
+{
+  "questionId": "230",
+  "questionFrontendId": "230",
+  "boundTopicId": null,
+  "title": "Kth Smallest Element in a BST",
+  "titleSlug": "kth-smallest-element-in-a-bst",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary search tree, write a function <code>kthSmallest</code> to find the <b>k</b>th smallest element in it.</p>\r\n\r\n<p><b>Note: </b><br />\r\nYou may assume k is always valid, 1 &le; k &le; BST&#39;s total elements.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> root = [3,1,4,null,2], k = 1\r\n   3\r\n  / \\\r\n 1   4\r\n  \\\r\n&nbsp;  2\r\n<strong>Output:</strong> 1</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> root = [5,3,6,2,4,null,null,1], k = 3\r\n       5\r\n      / \\\r\n     3   6\r\n    / \\\r\n   2   4\r\n  /\r\n 1\r\n<strong>Output:</strong> 3\r\n</pre>\r\n\r\n<p><b>Follow up:</b><br />\r\nWhat if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1606,
+  "dislikes": 51,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Second Minimum Node In a Binary Tree\", \"titleSlug\": \"second-minimum-node-in-a-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "shtian",
+      "profileUrl": "/shtian/",
+      "avatarUrl": "https://www.gravatar.com/avatar/258979a79ee1a54a2a14ce2db5389ca1.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"TripleByte\", \"slug\": \"triplebyte\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Affirm\", \"slug\": \"affirm\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    int kthSmallest(TreeNode* root, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public int kthSmallest(TreeNode root, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def kthSmallest(self, root, k):\n        \"\"\"\n        :type root: TreeNode\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def kthSmallest(self, root: TreeNode, k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nint kthSmallest(struct TreeNode* root, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public int KthSmallest(TreeNode root, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @param {number} k\n * @return {number}\n */\nvar kthSmallest = function(root, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @param {Integer} k\n# @return {Integer}\ndef kth_smallest(root, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func kthSmallest(_ root: TreeNode?, _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc kthSmallest(root *TreeNode, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def kthSmallest(root: TreeNode, k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun kthSmallest(root: TreeNode?, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn kth_smallest(root: Option<Rc<RefCell<TreeNode>>>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @param Integer $k\n     * @return Integer\n     */\n    function kthSmallest($root, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"283.8K\", \"totalSubmission\": \"517.1K\", \"totalAcceptedRaw\": 283753, \"totalSubmissionRaw\": 517073, \"acRate\": \"54.9%\"}",
+  "hints": [
+    "Try to utilize the property of a BST.",
+    "Try in-order traversal. (Credits to @chan13)",
+    "What if you could modify the BST node's structure?",
+    "The optimal runtime complexity is O(height of BST)."
+  ],
+  "solution": {
+    "id": "723",
+    "canSeeDetail": true,
+    "url": "/articles/kth-smallest-element-in-a-bst/",
+    "content": "[TOC]\n\n## Solution\n\n--- \n\n#### How to traverse the tree\n\nThere are two general strategies to traverse a tree:\n     \n- *Depth First Search* (`DFS`)\n\n    In this strategy, we adopt the `depth` as the priority, so that one\n    would start from a root and reach all the way down to certain leaf,\n    and then back to root to reach another branch.\n\n    The DFS strategy can further be distinguished as\n    `preorder`, `inorder`, and `postorder` depending on the relative order\n    among the root node, left node and right node.\n    \n- *Breadth First Search* (`BFS`)\n\n    We scan through the tree level by level, following the order of height,\n    from top to bottom. The nodes on higher level would be visited before\n    the ones with lower levels.\n    \nOn the following figure the nodes are numerated in the order you visit them,\nplease follow `1-2-3-4-5` to compare different strategies.\n\n![postorder](../Figures/230/bfs_dfs.png)\n\n> To solve the problem, one could use the property of BST : inorder traversal of BST\nis an array sorted in the ascending order. \n\n<br /> \n<br />\n\n\n---\n#### Approach 1: Recursion\n\nIt's a very straightforward approach with $$\\mathcal{O}(N)$$ \ntime complexity.\nThe idea is to build an inorder traversal of BST which is \nan array sorted in the ascending order. \nNow the answer is the `k - 1`th element of this array. \n\n![bla](../Figures/230/inorder.png)\n\n<iframe src=\"https://leetcode.com/playground/8B2Y2ArK/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"8B2Y2ArK\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ to build a traversal. \n* Space complexity : $$\\mathcal{O}(N)$$ to keep an inorder traversal.\n<br />\n<br />\n\n\n---\n#### Approach 2: Iteration\n\nThe above recursion could be converted into iteration, \nwith the help of stack. This way one could speed up the solution \nbecause there is no need to build the entire inorder traversal,\nand one could stop after the kth element.\n\n![bla](../Figures/230/iteration.png)\n\n<iframe src=\"https://leetcode.com/playground/Z2JBGMv5/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"Z2JBGMv5\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(H + k)$$, where $$H$$ is a tree height.\nThis complexity is defined by the stack, which contains at least $$H + k$$ elements, since before\nstarting to pop out one has to go down to a leaf. This results in \n$$\\mathcal{O}(\\log N + k)$$ for the balanced tree and \n$$\\mathcal{O}(N + k)$$ for completely unbalanced tree with all\n the nodes in the left subtree. \n* Space complexity : $$\\mathcal{O}(H + k)$$, the same as for time complexity, \n$$\\mathcal{O}(N + k)$$ in the worst case,\n and $$\\mathcal{O}(\\log N + k)$$ in the average case.\n<br />\n<br />\n\n\n---\n#### Follow up\n\n> What if the BST is modified (insert/delete operations) \noften and you need to find the kth smallest frequently? \nHow would you optimize the kthSmallest routine?\n\n[Insert](https://leetcode.com/articles/insert-into-a-bst/) \nand [delete](https://leetcode.com/articles/delete-node-in-a-bst/) \nin a BST were discussed last week, the time complexity of these \noperations is $$\\mathcal{O}(H)$$, where $$H$$ is a height of binary tree,\nand $$H = \\log N$$ for the balanced tree.\n\nHence without any optimisation insert/delete + search of kth element has \n$$\\mathcal{O}(2H + k)$$ complexity. \nHow to optimise that? \n\nThat's a design question, \nbasically we're asked to implement a structure \nwhich contains a BST inside and\noptimises the following operations :\n\n- Insert\n\n- Delete\n\n- Find kth smallest\n\nSeems like a database description, isn't it? \nLet's use here the same logic as for [LRU cache](https://leetcode.com/articles/lru-cache/)\ndesign, and combine an indexing structure (we could keep BST here)\nwith a double linked list. \n\nSuch a structure would provide:\n\n- $$\\mathcal{O}(H)$$ time for the insert and delete.\n\n- $$\\mathcal{O}(k)$$ for the search of kth smallest.\n\n![bla](../Figures/230/linked_list2.png)\n\nThe overall time complexity for insert/delete + search of kth smallest\nis $$\\mathcal{O}(H + k)$$ instead of $$\\mathcal{O}(2H + k)$$. \n\n**Complexity Analysis**\n\n* Time complexity for insert/delete + search of kth smallest: \n$$\\mathcal{O}(H + k)$$, where $$H$$ is a tree height.\n$$\\mathcal{O}(\\log N + k)$$ in the average case,\n$$\\mathcal{O}(N + k)$$ in the worst case.\n\n* Space complexity : $$\\mathcal{O}(N)$$ to keep the linked list.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "708",
+      "count": 47,
+      "average": 4.553,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,1,4,null,2]\n1",
+  "metaData": "{\r\n  \"name\": \"kthSmallest\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

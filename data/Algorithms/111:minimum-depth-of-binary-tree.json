@@ -1,0 +1,113 @@
+{
+  "questionId": "111",
+  "questionFrontendId": "111",
+  "boundTopicId": null,
+  "title": "Minimum Depth of Binary Tree",
+  "titleSlug": "minimum-depth-of-binary-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary tree, find its minimum depth.</p>\r\n\r\n<p>The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.</p>\r\n\r\n<p><strong>Note:</strong>&nbsp;A leaf is a node with no children.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<p>Given binary tree <code>[3,9,20,null,null,15,7]</code>,</p>\r\n\r\n<pre>\r\n    3\r\n   / \\\r\n  9  20\r\n    /  \\\r\n   15   7</pre>\r\n\r\n<p>return its minimum&nbsp;depth = 2.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 949,
+  "dislikes": 541,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Binary Tree Level Order Traversal\", \"titleSlug\": \"binary-tree-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Depth of Binary Tree\", \"titleSlug\": \"maximum-depth-of-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 9}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    int minDepth(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public int minDepth(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def minDepth(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def minDepth(self, root: TreeNode) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nint minDepth(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public int MinDepth(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number}\n */\nvar minDepth = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {Integer}\ndef min_depth(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func minDepth(_ root: TreeNode?) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc minDepth(root *TreeNode) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def minDepth(root: TreeNode): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun minDepth(root: TreeNode?): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn min_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Integer\n     */\n    function minDepth($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"349.6K\", \"totalSubmission\": \"963.1K\", \"totalAcceptedRaw\": 349619, \"totalSubmissionRaw\": 963145, \"acRate\": \"36.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "602",
+    "canSeeDetail": true,
+    "url": "/articles/minimum-depth-of-binary-tree/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n**Tree definition**\r\n\r\nFirst of all, here is the definition of the ```TreeNode``` which we would use.\r\n\r\n<iframe src=\"https://leetcode.com/playground/42eFhXEs/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"42eFhXEs\"></iframe>\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Recursion\r\n\r\n**Algorithm**\r\n\r\nThe intuitive approach is to solve the problem by recursion.\r\nHere we demonstrate an example with the DFS (Depth First Search) strategy. \r\n\r\n<iframe src=\"https://leetcode.com/playground/RuBTnmW3/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"RuBTnmW3\"></iframe>\r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : we visit each node exactly once, \r\nthus the time complexity is $$\\mathcal{O}(N)$$,\r\nwhere $$N$$ is the number of nodes.\r\n\r\n* Space complexity : in the worst case, the tree is completely unbalanced,\r\n*e.g.* each node has only one child node, the recursion call would occur\r\n $$N$$ times (the height of the tree), therefore the storage to keep the call stack would be $$\\mathcal{O}(N)$$.\r\n But in the best case (the tree is completely balanced), the height of the tree would be $$\\log(N)$$.\r\n Therefore, the space complexity in this case would be $$\\mathcal{O}(\\log(N))$$.\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: DFS Iteration\r\n\r\nWe could also convert the above recursion into iteration, with the help of stack.\r\n\r\n>The idea is to visit each leaf with the DFS strategy,\r\nwhile updating the minimum depth when we reach the leaf node.\r\n\r\nSo we start from a stack which contains the root node and the corresponding depth \r\nwhich is ```1```.\r\nThen we proceed to the iterations: pop the current node out of the stack and\r\npush the child nodes. The minimum depth is updated at each leaf node. \r\n\r\n<iframe src=\"https://leetcode.com/playground/qGDnLgYs/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"qGDnLgYs\"></iframe>  \r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : each node is visited exactly once and time complexity is \r\n$$\\mathcal{O}(N)$$.\r\n\r\n* Space complexity : in the worst case we could keep up to the entire tree,\r\nthat results in $$\\mathcal{O}(N)$$ space complexity.\r\n<br />\r\n<br />\r\n\r\n\r\n---\r\n#### Approach 3: BFS Iteration\r\n\r\nThe drawback of the DFS approach in this case is that all nodes should be visited\r\nto ensure that the minimum depth would be found. Therefore, this results in a $$\\mathcal{O}(N)$$\r\ncomplexity.\r\nOne way to optimize the complexity is to use the BFS strategy.\r\nWe iterate the tree level by level, and the first leaf we reach\r\n corresponds to the minimum depth. As a result, we do not need to iterate all nodes.\r\n\r\n<iframe src=\"https://leetcode.com/playground/C5HyFNMJ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"C5HyFNMJ\"></iframe>  \r\n\r\n**Complexity analysis**\r\n\r\n* Time complexity : in the worst case for a balanced tree we need\r\n to visit all nodes level by level up to the tree height, \r\n that excludes the bottom level only.\r\n This way we visit $$N/2$$ nodes,\r\n and thus the time complexity is $$\\mathcal{O}(N)$$.\r\n\r\n* Space complexity : is the same as time complexity here \r\n$$\\mathcal{O}(N)$$.\r\n\r\n \r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "588",
+      "count": 18,
+      "average": 4.389,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,9,20,null,null,15,7]",
+  "metaData": "{\r\n  \"name\": \"minDepth\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

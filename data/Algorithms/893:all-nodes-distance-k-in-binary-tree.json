@@ -1,0 +1,107 @@
+{
+  "questionId": "893",
+  "questionFrontendId": "863",
+  "boundTopicId": null,
+  "title": "All Nodes Distance K in Binary Tree",
+  "titleSlug": "all-nodes-distance-k-in-binary-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We are given a binary tree (with root node&nbsp;<code>root</code>), a <code>target</code> node, and an integer value <code>K</code>.</p>\r\n\r\n<p>Return a list of the values of all&nbsp;nodes that have a distance <code>K</code> from the <code>target</code> node.&nbsp; The answer can be returned in any order.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>root = <span id=\"example-input-1-1\">[3,5,1,6,2,0,8,null,null,7,4]</span>, target = <span id=\"example-input-1-2\">5</span>, K = <span id=\"example-input-1-3\">2</span>\r\n\r\n<strong>Output: </strong><span id=\"example-output-1\">[7,4,1]</span>\r\n\r\n<strong>Explanation: </strong>\r\nThe nodes that are a distance 2 from the target node (with value 5)\r\nhave values 7, 4, and 1.\r\n\r\n<img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/06/28/sketch0.png\" style=\"width: 280px; height: 240px;\" />\r\n\r\nNote that the inputs &quot;root&quot; and &quot;target&quot; are actually TreeNodes.\r\nThe descriptions of the inputs above are just serializations of these objects.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>The given tree is non-empty.</li>\r\n\t<li>Each node in the tree has unique values&nbsp;<code>0 &lt;= node.val &lt;= 500</code>.</li>\r\n\t<li>The <code>target</code>&nbsp;node is a node in the tree.</li>\r\n\t<li><code>0 &lt;= K &lt;= 1000</code>.</li>\r\n</ol>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1267,
+  "dislikes": 29,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "tguitars",
+      "profileUrl": "/tguitars/",
+      "avatarUrl": "https://www.gravatar.com/avatar/04f71858afa061ec4a9d24e4fd465112.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 10}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Hulu\", \"slug\": \"hulu\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    vector<int> distanceK(TreeNode* root, TreeNode* target, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def distanceK(self, root, target, K):\n        \"\"\"\n        :type root: TreeNode\n        :type target: TreeNode\n        :type K: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def distanceK(self, root: TreeNode, target: TreeNode, K: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n/**\n * Return an array of size *returnSize.\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* distanceK(struct TreeNode* root, struct TreeNode* target, int K, int* returnSize) {\n    \n}"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public IList<int> DistanceK(TreeNode root, TreeNode target, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @param {TreeNode} target\n * @param {number} K\n * @return {number[]}\n */\nvar distanceK = function(root, target, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @param {TreeNode} target\n# @param {Integer} k\n# @return {Integer[]}\ndef distance_k(root, target, k)\n    \nend"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc distanceK(root *TreeNode, target *TreeNode, K int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def distanceK(root: TreeNode, target: TreeNode, K: Int): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int = 0) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun distanceK(root: TreeNode?, target: TreeNode?, K: Int): List<Int> {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"45.5K\", \"totalSubmission\": \"88.3K\", \"totalAcceptedRaw\": 45513, \"totalSubmissionRaw\": 88311, \"acRate\": \"51.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "498",
+    "canSeeDetail": true,
+    "url": "/articles/all-nodes-distance-k-in-binary-tree/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Annotate Parent\n\n**Intuition**\n\nIf we know the parent of every node `x`, we know all nodes that are distance `1` from `x`.  We can then perform a breadth first search from the `target` node to find the answer.\n\n**Algorithm**\n\nWe first do a depth first search where we annotate every node with information about it's parent.\n\nAfter, we do a breadth first search to find all nodes a distance `K` from the `target`.\n\n<iframe src=\"https://leetcode.com/playground/ySaDMJzK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ySaDMJzK\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of nodes in the given tree.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Percolate Distance\n\n**Intuition**\n\nFrom `root`, say the `target` node is at depth `3` in the left branch.  It means that any nodes that are distance `K - 3` in the right branch should be added to the answer.\n\n**Algorithm**\n\nTraverse every `node` with a depth first search `dfs`.  We'll add all nodes `x` to the answer such that `node` is the node on the path from `x` to `target` that is closest to the `root`.\n\nTo help us, `dfs(node)` will return the distance from `node` to the `target`.  Then, there are 4 cases:\n\n* If `node == target`, then we should add nodes that are distance `K` in the subtree rooted at `target`.\n\n* If `target` is in the left branch of `node`, say at distance `L+1`, then we should look for nodes that are distance `K - L - 1` in the right branch.\n\n* If `target` is in the right branch of `node`, the algorithm proceeds similarly.\n\n* If `target` isn't in either branch of `node`, then we stop.\n\nIn the above algorithm, we make use of the auxillary function `subtree_add(node, dist)` which adds the nodes in the subtree rooted at `node` that are distance `K - dist` from the given `node`.\n\n<iframe src=\"https://leetcode.com/playground/4h24GtWA/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"4h24GtWA\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of nodes in the given tree.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "491",
+      "count": 31,
+      "average": 4.129,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,5,1,6,2,0,8,null,null,7,4]\n5\n2",
+  "metaData": "{\n  \"name\": \"distanceK\",\n  \"params\": [\n    {\n      \"name\": \"root\",\n      \"type\": \"TreeNode\"\n    },\n    {\n      \"name\": \"target\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"K\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<integer>\"\n  },\n  \"manual\": true,\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"c\",\n    \"csharp\",\n    \"javascript\",\n    \"ruby\",\n    \"golang\",\n    \"python3\",\n    \"scala\",\n    \"kotlin\"\n  ]\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

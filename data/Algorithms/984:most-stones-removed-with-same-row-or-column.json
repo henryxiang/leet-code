@@ -1,0 +1,115 @@
+{
+  "questionId": "984",
+  "questionFrontendId": "947",
+  "boundTopicId": null,
+  "title": "Most Stones Removed with Same Row or Column",
+  "titleSlug": "most-stones-removed-with-same-row-or-column",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On a 2D plane, we place stones at some integer coordinate points.&nbsp; Each coordinate point may have at most one stone.</p>\r\n\r\n<p>Now, a <em>move</em> consists of removing a stone&nbsp;that shares a column or row with another stone on the grid.</p>\r\n\r\n<p>What is the largest possible number of moves we can make?</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>stones = <span id=\"example-input-1-2\">[[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]</span>\r\n<strong>Output: </strong>5\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>stones = <span id=\"example-input-2-2\">[[0,0],[0,2],[1,1],[2,0],[2,2]]</span>\r\n<strong>Output: </strong>3\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>stones = <span id=\"example-input-3-2\">[[0,0]]</span>\r\n<strong>Output: </strong>0\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><span>Note:</span></strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= stones.length &lt;= 1000</code></li>\r\n\t<li><code>0 &lt;= stones[i][j] &lt; 10000</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 687,
+  "dislikes": 216,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "lee215",
+      "profileUrl": "/lee215/",
+      "avatarUrl": "https://assets.leetcode.com/users/lee215/avatar_1551541889.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 7}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int removeStones(vector<vector<int>>& stones) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int removeStones(int[][] stones) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def removeStones(self, stones):\n        \"\"\"\n        :type stones: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def removeStones(self, stones: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint removeStones(int** stones, int stonesSize, int* stonesColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int RemoveStones(int[][] stones) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} stones\n * @return {number}\n */\nvar removeStones = function(stones) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} stones\n# @return {Integer}\ndef remove_stones(stones)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func removeStones(_ stones: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func removeStones(stones [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def removeStones(stones: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun removeStones(stones: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn remove_stones(stones: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $stones\n     * @return Integer\n     */\n    function removeStones($stones) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"37.4K\", \"totalSubmission\": \"68.1K\", \"totalAcceptedRaw\": 37430, \"totalSubmissionRaw\": 68113, \"acRate\": \"55.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "625",
+    "canSeeDetail": true,
+    "url": "/articles/most-stones-removed-with-same-row-or-column/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Depth-First Search\n\n**Intuition**\n\nLet's say two stones are connected by an edge if they share a row or column, and define a connected component in the usual way for graphs: a subset of stones so that there doesn't exist an edge from a stone in the subset to a stone not in the subset.  For convenience, we refer to a *component* as meaning a connected component.\n\nThe main insight is that we can always make moves that reduce the number of stones in each component to 1.\n\nFirstly, every stone belongs to exactly one component, and moves in one component do not affect another component.\n\nNow, consider a spanning tree of our component.  We can make moves repeatedly from the leaves of this tree until there is one stone left.\n\n**Algorithm**\n\nTo count connected components of the above graph, we will use depth-first search.\n\nFor every stone not yet visited, we will visit it and any stone in the same connected component.  Our depth-first search traverses each node in the component.\n\nFor each component, the answer changes by `-1 + component.size`.\n\n<iframe src=\"https://leetcode.com/playground/vFbGLUPW/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"vFbGLUPW\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `stones`.\n\n* Space Complexity:  $$O(N^2)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Union-Find\n\n**Intuition**\n\nAs in *Approach 1*, we will need to consider components of an underlying graph.  A \"Disjoint Set Union\" (DSU) data structure is ideal for this.\n\nWe will skip the explanation of how a DSU structure is implemented.  Please refer to [https://leetcode.com/problems/redundant-connection/solution/](https://leetcode.com/problems/redundant-connection/solution/) for a tutorial on DSU.\n\n**Algorithm**\n\nLet's connect row `i` to column `j`, which will be represented by `j+10000`.  The answer is the number of components after making all the connections.\n\nNote that for brevity, our `DSU` implementation does not use union-by-rank.  This makes the asymptotic time complexity larger.\n\n<iframe src=\"https://leetcode.com/playground/hhTCv59W/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"hhTCv59W\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the length of `stones`.  (If we used union-by-rank, this can be $$O(N * \\alpha(N))$$, where $$\\alpha$$ is the Inverse-Ackermann function.)\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "611",
+      "count": 57,
+      "average": 3.439,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]",
+  "metaData": "{\r\n  \"name\": \"removeStones\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"stones\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

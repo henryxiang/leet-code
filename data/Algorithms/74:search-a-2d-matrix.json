@@ -1,0 +1,109 @@
+{
+  "questionId": "74",
+  "questionFrontendId": "74",
+  "boundTopicId": null,
+  "title": "Search a 2D Matrix",
+  "titleSlug": "search-a-2d-matrix",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Write an efficient algorithm that searches for a value in an <em>m</em> x <em>n</em> matrix. This matrix has the following properties:</p>\r\n\r\n<ul>\r\n\t<li>Integers in each row are sorted from left to right.</li>\r\n\t<li>The first integer of each row is greater than the last integer of the previous row.</li>\r\n</ul>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\nmatrix = [\r\n  [1,   3,  5,  7],\r\n  [10, 11, 16, 20],\r\n  [23, 30, 34, 50]\r\n]\r\ntarget = 3\r\n<strong>Output:</strong> true\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\nmatrix = [\r\n  [1,   3,  5,  7],\r\n  [10, 11, 16, 20],\r\n  [23, 30, 34, 50]\r\n]\r\ntarget = 13\r\n<strong>Output:</strong> false</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1189,
+  "dislikes": 135,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Search a 2D Matrix II\", \"titleSlug\": \"search-a-2d-matrix-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 14}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool searchMatrix(vector<vector<int>>& matrix, int target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean searchMatrix(int[][] matrix, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def searchMatrix(self, matrix, target):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :type target: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool searchMatrix(int** matrix, int matrixSize, int* matrixColSize, int target){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool SearchMatrix(int[][] matrix, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} matrix\n * @param {number} target\n * @return {boolean}\n */\nvar searchMatrix = function(matrix, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} matrix\n# @param {Integer} target\n# @return {Boolean}\ndef search_matrix(matrix, target)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func searchMatrix(matrix [][]int, target int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def searchMatrix(matrix: Array[Array[Int]], target: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun searchMatrix(matrix: Array<IntArray>, target: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn search_matrix(matrix: Vec<Vec<i32>>, target: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @param Integer $target\n     * @return Boolean\n     */\n    function searchMatrix($matrix, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"271.4K\", \"totalSubmission\": \"761.6K\", \"totalAcceptedRaw\": 271424, \"totalSubmissionRaw\": 761602, \"acRate\": \"35.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "717",
+    "canSeeDetail": true,
+    "url": "/articles/search-in-2d-matrix/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n   \r\n#### Approach 1: Binary search\r\n\r\n**Intuition**\r\n\r\nOne could notice that the input matrix `m x n` could be considered \r\nas a sorted array of length `m x n`.\r\n\r\n![bla](../Figures/74/matrix2.png)\r\n\r\nSorted array is a perfect candidate for the binary search\r\nbecause the element index in this _virtual_ array (_for sure we're \r\nnot going to construct it for real_) could be easily\r\ntransformed into the row and column in the initial matrix\r\n\r\n> `row = idx // n` and `col = idx % n`.\r\n\r\n**Algorithm**\r\n\r\nThe algorithm is a standard binary search : \r\n\r\n* Initialise left and right indexes \r\n`left = 0` and `right = m x n - 1`.\r\n\r\n* While `left < right` :\r\n\r\n    * Pick up the index in the middle of the virtual array \r\n    as a pivot index : `pivot_idx = (left + right) / 2`.\r\n    \r\n    * The index corresponds to `row = pivot_idx // n` and\r\n    `col = pivot_idx % n` in the initial matrix, and hence\r\n    one could get the `pivot_element`.\r\n    This element splits the virtual array in two parts. \r\n    \r\n    * Compare `pivot_element` and `target` \r\n    to identify in which part one has to look for `target`.\r\n        \r\n**Implementation**\r\n\r\n!?!../Documents/74_LIS.json:1000,436!?!\r\n\r\n<iframe src=\"https://leetcode.com/playground/PyxxCC4q/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"PyxxCC4q\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(\\log(m n))$$ since it's a standard binary search. \r\n* Space complexity : $$\\mathcal{O}(1)$$. \r\n\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "702",
+      "count": 13,
+      "average": 4.385,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,3,5,7],[10,11,16,20],[23,30,34,50]]\n3",
+  "metaData": "{\r\n  \"name\": \"searchMatrix\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"matrix\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

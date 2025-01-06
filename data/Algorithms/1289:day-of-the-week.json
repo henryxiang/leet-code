@@ -1,0 +1,103 @@
+{
+  "questionId": "1289",
+  "questionFrontendId": "1185",
+  "boundTopicId": null,
+  "title": "Day of the Week",
+  "titleSlug": "day-of-the-week",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a date, return the corresponding day of the week for that date.</p>\r\n\r\n<p>The input is given as three integers representing the <code>day</code>, <code>month</code> and <code>year</code> respectively.</p>\r\n\r\n<p>Return the answer as one of the following values&nbsp;<code>{&quot;Sunday&quot;, &quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;, &quot;Saturday&quot;}</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> day = 31, month = 8, year = 2019\r\n<strong>Output:</strong> &quot;Saturday&quot;\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> day = 18, month = 7, year = 1999\r\n<strong>Output:</strong> &quot;Sunday&quot;\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> day = 15, month = 8, year = 1993\r\n<strong>Output:</strong> &quot;Sunday&quot;\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The given dates are valid&nbsp;dates between the years <code>1971</code> and <code>2100</code>.</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 39,
+  "dislikes": 566,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "devendrakota21",
+      "profileUrl": "/devendrakota21/",
+      "avatarUrl": "https://assets.leetcode.com/users/devendrakota21/avatar_1554025441.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"United Health Group\", \"slug\": \"united-health-group\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    string dayOfTheWeek(int day, int month, int year) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String dayOfTheWeek(int day, int month, int year) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def dayOfTheWeek(self, day, month, year):\r\n        \"\"\"\r\n        :type day: int\r\n        :type month: int\r\n        :type year: int\r\n        :rtype: str\r\n        \"\"\""
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def dayOfTheWeek(self, day: int, month: int, year: int) -> str:"
+    },
+    {
+      "lang": "C",
+      "code": "char * dayOfTheWeek(int day, int month, int year){\r\n\r\n}"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string DayOfTheWeek(int day, int month, int year) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {number} day\r\n * @param {number} month\r\n * @param {number} year\r\n * @return {string}\r\n */\r\nvar dayOfTheWeek = function(day, month, year) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} day\r\n# @param {Integer} month\r\n# @param {Integer} year\r\n# @return {String}\r\ndef day_of_the_week(day, month, year)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func dayOfTheWeek(_ day: Int, _ month: Int, _ year: Int) -> String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func dayOfTheWeek(day int, month int, year int) string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def dayOfTheWeek(day: Int, month: Int, year: Int): String = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun dayOfTheWeek(day: Int, month: Int, year: Int): String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn day_of_the_week(day: i32, month: i32, year: i32) -> String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param Integer $day\r\n     * @param Integer $month\r\n     * @param Integer $year\r\n     * @return String\r\n     */\r\n    function dayOfTheWeek($day, $month, $year) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11.9K\", \"totalSubmission\": \"18.4K\", \"totalAcceptedRaw\": 11860, \"totalSubmissionRaw\": 18449, \"acRate\": \"64.3%\"}",
+  "hints": [
+    "Sum up the number of days for the years before the given year.",
+    "Handle the case of a leap year.",
+    "Find the number of days for each month of the given year."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "31\n8\n2019",
+  "metaData": "{\n  \"name\": \"dayOfTheWeek\",\n  \"params\": [\n    {\n      \"name\": \"day\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"month\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"year\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

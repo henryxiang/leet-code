@@ -1,0 +1,97 @@
+{
+  "questionId": "269",
+  "questionFrontendId": "269",
+  "boundTopicId": null,
+  "title": "Alien Dictionary",
+  "titleSlug": "alien-dictionary",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There is a new alien language which uses the latin alphabet. However, the order among letters are unknown to you. You receive a list of <b>non-empty</b> words from the dictionary, where <b>words are sorted lexicographically by the rules of this new language</b>. Derive the order of letters in this language.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\n[\r\n  &quot;wrt&quot;,\r\n  &quot;wrf&quot;,\r\n  &quot;er&quot;,\r\n  &quot;ett&quot;,\r\n  &quot;rftt&quot;\r\n]\r\n\r\n<strong>Output: </strong><code>&quot;wertf&quot;</code>\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\n[\r\n  &quot;z&quot;,\r\n  &quot;x&quot;\r\n]\r\n\r\n<strong>Output: </strong><code>&quot;zx&quot;</code>\r\n</pre>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\n[\r\n  &quot;z&quot;,\r\n  &quot;x&quot;,\r\n  &quot;z&quot;\r\n] \r\n\r\n<strong>Output:</strong> <code>&quot;&quot;</code>&nbsp;\r\n\r\n<strong>Explanation:</strong> The order is invalid, so return <code>&quot;&quot;</code>.\r\n</pre>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>You may assume all letters are in lowercase.</li>\r\n\t<li>You may assume that if a is a prefix of b, then a must appear before b in the given dictionary.</li>\r\n\t<li>If the order is invalid, return an empty string.</li>\r\n\t<li>There may be multiple valid order of letters, return any one of them is fine.</li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 1244,
+  "dislikes": 235,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Course Schedule II\", \"titleSlug\": \"course-schedule-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Graph",
+      "slug": "graph"
+    },
+    {
+      "name": "Topological Sort",
+      "slug": "topological-sort"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 21}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 15}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Square\", \"slug\": \"square\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cohesity\", \"slug\": \"cohesity\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 0}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string alienOrder(vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String alienOrder(String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def alienOrder(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def alienOrder(self, words: List[str]) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * alienOrder(char ** words, int wordsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string AlienOrder(string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {string}\n */\nvar alienOrder = function(words) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @return {String}\ndef alien_order(words)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func alienOrder(_ words: [String]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func alienOrder(words []string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def alienOrder(words: Array[String]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun alienOrder(words: Array<String>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn alien_order(words: Vec<String>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return String\n     */\n    function alienOrder($words) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"107.4K\", \"totalSubmission\": \"320.6K\", \"totalAcceptedRaw\": 107388, \"totalSubmissionRaw\": 320606, \"acRate\": \"33.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]",
+  "metaData": "{\r\n  \"name\": \"alienOrder\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

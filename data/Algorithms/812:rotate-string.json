@@ -1,0 +1,106 @@
+{
+  "questionId": "812",
+  "questionFrontendId": "796",
+  "boundTopicId": null,
+  "title": "Rotate String",
+  "titleSlug": "rotate-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We are given two strings, <code>A</code> and <code>B</code>.</p>\r\n\r\n<p>A <em>shift on <code>A</code></em> consists of taking string <code>A</code> and moving the leftmost character to the rightmost position. For example, if <code>A = &#39;abcde&#39;</code>, then it will be <code>&#39;bcdea&#39;</code> after one shift on <code>A</code>. Return <code>True</code> if and only if <code>A</code> can become <code>B</code> after some number of shifts on <code>A</code>.</p>\r\n\r\n<pre>\r\n<strong>Example 1:</strong>\r\n<strong>Input:</strong> A = &#39;abcde&#39;, B = &#39;cdeab&#39;\r\n<strong>Output:</strong> true\r\n\r\n<strong>Example 2:</strong>\r\n<strong>Input:</strong> A = &#39;abcde&#39;, B = &#39;abced&#39;\r\n<strong>Output:</strong> false\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>A</code> and <code>B</code> will have length at most <code>100</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 509,
+  "dislikes": 41,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ngoc_lam",
+      "profileUrl": "/ngoc_lam/",
+      "avatarUrl": "https://assets.leetcode.com/users/ngoc_lam/avatar_1528594557.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool rotateString(string A, string B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean rotateString(String A, String B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def rotateString(self, A, B):\n        \"\"\"\n        :type A: str\n        :type B: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def rotateString(self, A: str, B: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool rotateString(char * A, char * B){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool RotateString(string A, string B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} A\n * @param {string} B\n * @return {boolean}\n */\nvar rotateString = function(A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} a\n# @param {String} b\n# @return {Boolean}\ndef rotate_string(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func rotateString(_ A: String, _ B: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func rotateString(A string, B string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def rotateString(A: String, B: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun rotateString(A: String, B: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn rotate_string(a: String, b: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $A\n     * @param String $B\n     * @return Boolean\n     */\n    function rotateString($A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"52.7K\", \"totalSubmission\": \"106.7K\", \"totalAcceptedRaw\": 52682, \"totalSubmissionRaw\": 106737, \"acRate\": \"49.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "429",
+    "canSeeDetail": true,
+    "url": "/articles/rotate-string/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Brute Force [Accepted]\n\n**Intuition**\n\nFor each rotation of `A`, let's check if it equals `B`.\n\n**Algorithm**\n\nMore specifically, say we rotate `A` by `s`.  Then, instead of `A[0], A[1], A[2], ...`, we have `A[s], A[s+1], A[s+2], ...`; and we should check that `A[s] == B[0]`, `A[s+1] == B[1]`, `A[s+2] == B[2]`, etc.\n\n<iframe src=\"https://leetcode.com/playground/Q9S39BXZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"Q9S39BXZ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `A`.  For each rotation `s`, we check up to $$N$$ elements in `A` and `B`.\n\n* Space Complexity: $$O(1)$$.  We only use pointers to elements of `A` and `B`.\n\n---\n#### Approach #2: Simple Check [Accepted]\n\n**Intuition and Algorithm**\n\nAll rotations of `A` are contained in `A+A`.  Thus, we can simply check whether `B` is a substring of `A+A`.  We also need to check `A.length == B.length`, otherwise we will fail cases like `A = \"a\", B = \"aa\"`.\n\n<iframe src=\"https://leetcode.com/playground/ETPY9FAY/shared\" frameBorder=\"0\" width=\"100%\" height=\"140\" name=\"ETPY9FAY\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity: $$O(N)$$, the space used building `A+A`.\n\n---\n#### Approach #3: Rolling Hash [Accepted]\n\n**Intuition**\n\nOur approach comes down to quickly checking whether want to check whether `B` is a substring of `A2 = A+A`.  Specifically, (if `N = A.length`) we should check whether `B = A2[0:N], or B = A2[1:N+1], or B = A2[2:N+2]` and so on.  To check this, we can use a rolling hash.\n\n**Algorithm**\n\nFor a string `S`, say `hash(S) = (S[0] * P**0 + S[1] * P**1 + S[2] * P**2 + ...) % MOD`, where `X**Y` represents exponentiation, and `S[i]` is the ASCII character code of the string at that index.\n\nThe idea is that `hash(S)` has output that is approximately uniformly distributed between `[0, 1, 2, ..., MOD-1]`, and so if `hash(S) == hash(T)` it is very likely that `S == T`.\n\nNow say we have a hash `hash(A)`, and we want the hash of `A[1], A[2], ..., A[N-1], A[0]`.  We can subtract `A[0]` from the hash, divide by `P`, and add `A[0] * P**(N-1)`.  (Our division is under the finite field $$\\mathbb{F}_\\text{MOD}$$ - done by multiplying by the modular inverse `Pinv = pow(P, MOD-2, MOD)`.)\n\n<iframe src=\"https://leetcode.com/playground/v8qW4q9q/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"v8qW4q9q\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity: $$O(N)$$, to perform the final check `A_rotation == B`.\n\n---\n#### Approach #4: KMP (Knuth-Morris-Pratt) [Accepted]\n\n**Intuition**\n\nAs before, we want to find whether `B` exists in `A+A`.  The KMP algorithm is a textbook algorithm that does string matching in linear time, which is faster than brute force.\n\n**Algorithm**\n\nThe algorithm is broken up into two steps, building the shifts table (or *failure table*), and using it to find whether a match exists.\n\nThe shift table tells us about the largest prefix of `B` that ends here.  More specifically, `B[:shifts[i+1]] == B[i - shifts[i+1] : i]` is the largest possible prefix of `B` ending before `B[i]`.\n\nTo build the shift table, we use a dynamic programming approach, where all previously calculated values of `shifts` are correct.  Then, `left` will be the end of the candidate prefix of `B`, and `right` will be the end of the candidate section that should match the prefix `B[0], B[1], ..., B[left]`.  Call positions `(left, right)` \"matching\" if the prefix ending at `B[left]` matches the same length string ending at `B[right]`.  The invariant in our loop will be that `(left - 1, right - 1)` is matching by the end of each for-block.\n\nIn a new for-block, if `(left, right)` is matching (ie. `(left - 1, right - 1)` is matching from before, plus `B[left] == B[right]`), then we know the shift (`right - left`) is the same number as before.  Otherwise, when `(left, right)` is not matching, we need to find a shorter prefix.\n\nOur strategy is to find a matching of `(left2, right)` where `left2 < left`, by finding matchings `(left2 - 1, right - 1)` plus checking `B[left2] == B[right]`.  Since `(left - 1, right - 1)` is a matching, by transitivity we want to find matchings `(left2 - 1, left - 1)`.  The largest such `left2` is `left2 = left - shifts[left]`.  We repeatedly check these `left2`'s in greedy order from largest to smallest.\n\nTo find a match of `B` in `A+A` with such a shift table ready, we employ a similar strategy.  We maintain a matching `(match_len - 1, i - 1)`, where these positions correspond to strings of length `match_len` that end at `B[match_len - 1]` and `(A+A)[i-1]` respectively.\n\nNow when trying to find the largest length matching for `(A+A)` at position `i`, it must be at most `(match_len - 1) + 1`, where the quantity in brackets is the largest length matching to position `i-1`.\n\nAgain, our strategy is to find a matching `(match_len2 - 1, i - 1)` plus check that `B[match_len2] == (A+A)[i]`.  Similar to before, if `B[match_len] != (A+A)[i]`, then because `(match_len - 1, i - 1)` was a matching, by transitivity `(match_len2 - 1, match_len - 1)` must be a matching, of which the largest is found by `match_len2 = match_len - shifts[match_len]`.  We also repeatedly check these `match_len`'s in order from largest to smallest.\n\nIf at any point in this algorithm our match length is `N`, we've found `B` in `A+A` successfully.\n\n<iframe src=\"https://leetcode.com/playground/PBHA9iPW/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"PBHA9iPW\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity: $$O(N)$$, to create the shift table `shifts`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "424",
+      "count": 33,
+      "average": 3.152,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"abcde\"\n\"cdeab\"",
+  "metaData": "{\r\n  \"name\": \"rotateString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

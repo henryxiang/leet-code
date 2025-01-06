@@ -1,0 +1,117 @@
+{
+  "questionId": "292",
+  "questionFrontendId": "292",
+  "boundTopicId": null,
+  "title": "Nim Game",
+  "titleSlug": "nim-game",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.</p>\r\n\r\n<p>Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>4</code>\r\n<strong>Output:</strong> false \r\n<strong>Explanation: </strong>If there are 4 stones in the heap, then you will never win the game;\r\n&nbsp;            No matter 1, 2, or 3 stones you remove, the last stone will always be \r\n&nbsp;            removed by your friend.</pre>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 453,
+  "dislikes": 1329,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Flip Game II\", \"titleSlug\": \"flip-game-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "jianchao-li",
+      "profileUrl": "/jianchao-li/",
+      "avatarUrl": "https://assets.leetcode.com/users/jianchaolifighter/avatar_1529298385.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Brainteaser",
+      "slug": "brainteaser"
+    },
+    {
+      "name": "Minimax",
+      "slug": "minimax"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool canWinNim(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canWinNim(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canWinNim(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canWinNim(self, n: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool canWinNim(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CanWinNim(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {boolean}\n */\nvar canWinNim = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Boolean}\ndef can_win_nim(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canWinNim(_ n: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canWinNim(n int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canWinNim(n: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canWinNim(n: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_win_nim(n: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Boolean\n     */\n    function canWinNim($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"197.3K\", \"totalSubmission\": \"352.6K\", \"totalAcceptedRaw\": 197316, \"totalSubmissionRaw\": 352624, \"acRate\": \"56.0%\"}",
+  "hints": [
+    "If there are 5 stones in the heap, could you figure out a way to remove the stones such that you will always be the winner?"
+  ],
+  "solution": {
+    "id": "31",
+    "canSeeDetail": true,
+    "url": "/articles/nim-game/",
+    "content": "## Solution\r\n\r\nYou can *always* win a Nim game if the number of stones $$n$$ in the pile is not divisible by $$4$$.\r\n\r\n**Reasoning**\r\n\r\nLet us think of the small cases. It is clear that if there are only one, two, or three stones in the pile, and it is your turn, you can win the game by taking all of them. Like the problem description says, if there are exactly four stones in the pile, you will lose. Because no matter how many you take, you will leave some stones behind for your opponent to take and win the game. So in order to win, you have to ensure that you never reach the situation where there are exactly four stones on the pile on your turn.\r\n\r\nSimilarly, if there are five, six, or seven stones you can win by taking just enough to leave four stones for your opponent so that they lose. But if there are eight stones on the pile, you will inevitably lose, because regardless whether you pick one, two or three stones from the pile, your opponent can pick three, two or one stone to ensure that, again, four stones will be left to you on your turn.\r\n\r\nIt is obvious that the same pattern repeats itself for $$n=4,8,12,16,\\dots$$, basically all multiples of $$4$$.\r\n\r\n\r\n**Java**\r\n\r\n\r\n```java\r\npublic boolean canWinNim(int n) {\r\n    return (n % 4 != 0);\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\nTime complexity is $$O(1)$$, since only one check is performed. No additional space is used, so space complexity is also $$O(1)$$.\r\n\r\n**References**\r\n\r\n[Lecture on Nim Games](https://www.cs.umd.edu/~gordon/ysp/nim.pdf) from University of Maryland: MATH 199: Math, Game Theory and the Theory of Games, Summer 2006.\r\n\r\nAnalysis written by: @noran",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "30",
+      "count": 129,
+      "average": 4.736,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "4",
+  "metaData": "{\r\n  \"name\": \"canWinNim\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

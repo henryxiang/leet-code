@@ -1,0 +1,108 @@
+{
+  "questionId": "1051",
+  "questionFrontendId": "1055",
+  "boundTopicId": null,
+  "title": "Shortest Way to Form String",
+  "titleSlug": "shortest-way-to-form-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>From any string, we can form a <i>subsequence</i> of that string by deleting some number of characters (possibly no deletions).</p>\r\n\r\n<p>Given two strings <code>source</code> and <code>target</code>, return the minimum number of subsequences of <code>source</code> such that their concatenation equals <code>target</code>. If the task is impossible, return <code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>source = <span id=\"example-input-1-1\">&quot;abc&quot;</span>, target = <span id=\"example-input-1-2\">&quot;abcbc&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\r\n<strong>Explanation: </strong>The target &quot;abcbc&quot; can be formed by &quot;abc&quot; and &quot;bc&quot;, which are subsequences of source &quot;abc&quot;.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>source = <span id=\"example-input-2-1\">&quot;abc&quot;</span>, target = <span id=\"example-input-2-2\">&quot;acdbc&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">-1</span>\r\n<strong>Explanation: </strong>The target string cannot be constructed from the subsequences of source string due to the character &quot;d&quot; in target string.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>source = <span id=\"example-input-3-1\">&quot;xyz&quot;</span>, target = <span id=\"example-input-3-2\">&quot;xzyxz&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">3</span>\r\n<strong>Explanation: </strong>The target string can be constructed as follows &quot;xz&quot; + &quot;y&quot; + &quot;xz&quot;.\r\n</pre>\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>Both the <code>source</code> and <code>target</code> strings consist of only lowercase English letters from &quot;a&quot;-&quot;z&quot;.</li>\r\n\t<li>The lengths of <code>source</code> and <code>target</code> string are between <code>1</code> and <code>1000</code>.</li>\r\n</ul>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 264,
+  "dislikes": 20,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Is Subsequence\", \"titleSlug\": \"is-subsequence\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Number of Matching Subsequences\", \"titleSlug\": \"number-of-matching-subsequences\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "weiyang95",
+      "profileUrl": "/weiyang95/",
+      "avatarUrl": "https://www.gravatar.com/avatar/14b6e5261d91a441788544cbad79e0b9.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 16}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int shortestWay(string source, string target) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int shortestWay(String source, String target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def shortestWay(self, source, target):\r\n        \"\"\"\r\n        :type source: str\r\n        :type target: str\r\n        :rtype: int\r\n        \"\"\""
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def shortestWay(self, source: str, target: str) -> int:"
+    },
+    {
+      "lang": "C",
+      "code": "int shortestWay(char * source, char * target){\r\n\r\n}"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int ShortestWay(string source, string target) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {string} source\r\n * @param {string} target\r\n * @return {number}\r\n */\r\nvar shortestWay = function(source, target) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} source\r\n# @param {String} target\r\n# @return {Integer}\r\ndef shortest_way(source, target)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func shortestWay(_ source: String, _ target: String) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestWay(source string, target string) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def shortestWay(source: String, target: String): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun shortestWay(source: String, target: String): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn shortest_way(source: String, target: String) -> i32 {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param String $source\r\n     * @param String $target\r\n     * @return Integer\r\n     */\r\n    function shortestWay($source, $target) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17K\", \"totalSubmission\": \"29.8K\", \"totalAcceptedRaw\": 17023, \"totalSubmissionRaw\": 29781, \"acRate\": \"57.2%\"}",
+  "hints": [
+    "Which conditions have to been met in order to be impossible to form the target string?",
+    "If there exists a character in the target string which doesn't exist in the source string then it will be impossible to form the target string.",
+    "Assuming we are in the case which is possible to form the target string, how can we assure the minimum number of used subsequences of source?",
+    "For each used subsequence try to match the leftmost character of the current subsequence with the leftmost character of the target string, if they match then erase both character otherwise erase just the subsequence character whenever the current subsequence gets empty, reset it to a new copy of subsequence and increment the count, do this until the target sequence gets empty. Finally return the count."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"abc\"\n\"abcbc\"",
+  "metaData": "{\r\n  \"name\": \"shortestWay\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"source\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

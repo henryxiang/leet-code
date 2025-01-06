@@ -1,0 +1,97 @@
+{
+  "questionId": "1191",
+  "questionFrontendId": "1258",
+  "boundTopicId": null,
+  "title": "Synonymous Sentences",
+  "titleSlug": "synonymous-sentences",
+  "categoryTitle": "Algorithms",
+  "content": "Given a list of pairs of equivalent words&nbsp;<code>synonyms</code> and a sentence <code>text</code>,&nbsp;Return all possible synonymous sentences <strong>sorted lexicographically</strong>.\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:\n</strong>synonyms = [[&quot;happy&quot;,&quot;joy&quot;],[&quot;sad&quot;,&quot;sorrow&quot;],[&quot;joy&quot;,&quot;cheerful&quot;]],\ntext = &quot;I am happy today but was sad yesterday&quot;\n<strong>Output:\n</strong>[&quot;I am cheerful today but was sad yesterday&quot;,\n​​​​​​​&quot;I am cheerful today but was sorrow yesterday&quot;,\n&quot;I am happy today but was sad yesterday&quot;,\n&quot;I am happy today but was sorrow yesterday&quot;,\n&quot;I am joy today but was sad yesterday&quot;,\n&quot;I am joy today but was sorrow yesterday&quot;]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;=&nbsp;synonyms.length &lt;= 10</code></li>\n\t<li><code>synonyms[i].length == 2</code></li>\n\t<li><code>synonyms[0] != synonyms[1]</code></li>\n\t<li>All words consist of at most <code>10</code> English letters only.</li>\n\t<li><code>text</code>&nbsp;is a single space separated sentence of at most <code>10</code> words.</li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 38,
+  "dislikes": 18,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Cruise Automation\", \"slug\": \"cruise-automation\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> generateSentences(vector<vector<string>>& synonyms, string text) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> generateSentences(List<List<String>> synonyms, String text) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def generateSentences(self, synonyms, text):\n        \"\"\"\n        :type synonyms: List[List[str]]\n        :type text: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def generateSentences(self, synonyms: List[List[str]], text: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** generateSentences(char *** synonyms, int synonymsSize, int* synonymsColSize, char * text, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> GenerateSentences(IList<IList<string>> synonyms, string text) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[][]} synonyms\n * @param {string} text\n * @return {string[]}\n */\nvar generateSentences = function(synonyms, text) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[][]} synonyms\n# @param {String} text\n# @return {String[]}\ndef generate_sentences(synonyms, text)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func generateSentences(_ synonyms: [[String]], _ text: String) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func generateSentences(synonyms [][]string, text string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def generateSentences(synonyms: List[List[String]], text: String): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun generateSentences(synonyms: List<List<String>>, text: String): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn generate_sentences(synonyms: Vec<Vec<String>>, text: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $synonyms\n     * @param String $text\n     * @return String[]\n     */\n    function generateSentences($synonyms, $text) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2K\", \"totalSubmission\": \"3.3K\", \"totalAcceptedRaw\": 1984, \"totalSubmissionRaw\": 3288, \"acRate\": \"60.3%\"}",
+  "hints": [
+    "Find all synonymous groups of words.",
+    "Use union-find data structure.",
+    "By backtracking, generate all possible statements."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[\"happy\",\"joy\"],[\"sad\",\"sorrow\"],[\"joy\",\"cheerful\"]]\n\"I am happy today but was sad yesterday\"",
+  "metaData": "{\n  \"name\": \"generateSentences\",\n  \"params\": [\n    {\n      \"name\": \"synonyms\",\n      \"type\": \"list<list<string>>\"\n    },\n    {\n      \"name\": \"text\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<string>\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

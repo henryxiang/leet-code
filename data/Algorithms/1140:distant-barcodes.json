@@ -1,0 +1,99 @@
+{
+  "questionId": "1140",
+  "questionFrontendId": "1054",
+  "boundTopicId": null,
+  "title": "Distant Barcodes",
+  "titleSlug": "distant-barcodes",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a warehouse, there is a row of barcodes, where the <code>i</code>-th barcode is&nbsp;<code>barcodes[i]</code>.</p>\r\n\r\n<p>Rearrange the barcodes so that no two adjacent barcodes are equal.&nbsp; You may return any answer, and it is guaranteed an answer exists.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[1,1,1,2,2,2]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[2,1,2,1,2,1]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[1,1,1,1,2,2,3,3]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[1,3,1,3,2,1,2,1]</span></pre>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= barcodes.length &lt;= 10000</code></li>\r\n\t<li><code>1 &lt;= barcodes[i] &lt;= 10000</code></li>\r\n</ol>\r\n\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 190,
+  "dislikes": 14,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Heap",
+      "slug": "heap"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> rearrangeBarcodes(vector<int>& barcodes) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] rearrangeBarcodes(int[] barcodes) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def rearrangeBarcodes(self, barcodes):\n        \"\"\"\n        :type barcodes: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def rearrangeBarcodes(self, barcodes: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* rearrangeBarcodes(int* barcodes, int barcodesSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] RearrangeBarcodes(int[] barcodes) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} barcodes\n * @return {number[]}\n */\nvar rearrangeBarcodes = function(barcodes) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} barcodes\n# @return {Integer[]}\ndef rearrange_barcodes(barcodes)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func rearrangeBarcodes(_ barcodes: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func rearrangeBarcodes(barcodes []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def rearrangeBarcodes(barcodes: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun rearrangeBarcodes(barcodes: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn rearrange_barcodes(barcodes: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $barcodes\n     * @return Integer[]\n     */\n    function rearrangeBarcodes($barcodes) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"9.7K\", \"totalSubmission\": \"24K\", \"totalAcceptedRaw\": 9681, \"totalSubmissionRaw\": 23990, \"acRate\": \"40.4%\"}",
+  "hints": [
+    "We want to always choose the most common or second most common element to write next.  What data structure allows us to query this effectively?"
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,1,1,2,2,2]",
+  "metaData": "{\n  \"name\": \"rearrangeBarcodes\",\n  \"params\": [\n    {\n      \"name\": \"barcodes\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

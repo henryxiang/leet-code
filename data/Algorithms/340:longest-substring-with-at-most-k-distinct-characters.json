@@ -1,0 +1,113 @@
+{
+  "questionId": "340",
+  "questionFrontendId": "340",
+  "boundTopicId": null,
+  "title": "Longest Substring with At Most K Distinct Characters",
+  "titleSlug": "longest-substring-with-at-most-k-distinct-characters",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string, find the length of the longest substring T that contains at most <i>k</i> distinct characters.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<div>\r\n<pre>\r\n<strong>Input: </strong>s = <span id=\"example-input-1-1\">&quot;eceba&quot;</span>, k = <span id=\"example-input-1-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">3</span>\r\n<strong>Explanation: </strong>T is &quot;ece&quot; which its length is 3.</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>s = <span id=\"example-input-2-1\">&quot;aa&quot;</span>, k = <span id=\"example-input-2-2\">1</span>\r\n<strong>Output: </strong>2\r\n<strong>Explanation: </strong>T is &quot;aa&quot; which its length is 2.\r\n</pre>\r\n</div>\r\n</div>",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 762,
+  "dislikes": 25,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Substring Without Repeating Characters\", \"titleSlug\": \"longest-substring-without-repeating-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Substring with At Most Two Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-two-distinct-characters\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Repeating Character Replacement\", \"titleSlug\": \"longest-repeating-character-replacement\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Subarrays with K Different Integers\", \"titleSlug\": \"subarrays-with-k-different-integers\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Max Consecutive Ones III\", \"titleSlug\": \"max-consecutive-ones-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 15}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"AppDynamics\", \"slug\": \"appdynamics\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Coupang\", \"slug\": \"coupang\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int lengthOfLongestSubstringKDistinct(string s, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int lengthOfLongestSubstringKDistinct(String s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def lengthOfLongestSubstringKDistinct(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def lengthOfLongestSubstringKDistinct(self, s: str, k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint lengthOfLongestSubstringKDistinct(char * s, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LengthOfLongestSubstringKDistinct(string s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar lengthOfLongestSubstringKDistinct = function(s, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} k\n# @return {Integer}\ndef length_of_longest_substring_k_distinct(s, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func lengthOfLongestSubstringKDistinct(_ s: String, _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func lengthOfLongestSubstringKDistinct(s string, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def lengthOfLongestSubstringKDistinct(s: String, k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun lengthOfLongestSubstringKDistinct(s: String, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn length_of_longest_substring_k_distinct(s: String, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return Integer\n     */\n    function lengthOfLongestSubstringKDistinct($s, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"100.7K\", \"totalSubmission\": \"239.4K\", \"totalAcceptedRaw\": 100668, \"totalSubmissionRaw\": 239399, \"acRate\": \"42.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "701",
+    "canSeeDetail": true,
+    "url": "/articles/longest-substring-with-at-most-k-distinct-characte/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Sliding Window + Hashmap.\n**Intuition**\n\nLet's use here the logic from the more simple \n[problem with at most two distinct\ncharacters](https://leetcode.com/articles/longest-substring-with-at-most-two-distinct-charac/).\n\n\nTo solve the problem in one pass\nlet's use here _sliding window_ approach with two set pointers\n`left` and `right` serving as the window boundaries.\n\nThe idea is to set both pointers in the position `0` and\nthen move `right` pointer to the right while the\nwindow contains not more than `k` distinct characters. \nIf at some point we've got `k + 1` distinct characters,\nlet's move `left` pointer to keep not more than `k + 1`\ndistinct characters in the window.\n\n![compute](../Figures/340/substring.png)\n\nBasically that's the algorithm : to move sliding window along the string,\nto keep not more than `k` distinct characters in the window, and\nto update max substring length at each step.\n\n> There is just one more question to reply - \nhow to move the left pointer\nto keep only `k` distinct characters in the string?\n\nLet's use for this purpose hashmap containing all characters \nin the sliding window as keys and their rightmost positions \nas values. At each moment, this hashmap could contain \nnot more than `k + 1` elements.\n\n![compute](../Figures/340/hash.png)\n\nFor example, using this hashmap one knows that the rightmost position\nof character `O` in `\"LOVELEE\"` window is `1` and so one has\nto move `left` pointer in the position `1 + 1 = 2` to\nexclude the character `O` from the sliding window.  \n\n**Algorithm**\n\nNow one could write down the algortihm.\n\n- Return `0` if the string is empty or `k` is equal to zero. \n- Set both set pointers in the beginning \n of the string `left = 0` and `right = 0` and init max substring\n length `max_len = 1`.\n- While `right` pointer is less than `N`:\n    * Add the current character `s[right]` in the hashmap and\n    move `right` pointer to the right.\n    * If hashmap contains `k + 1` distinct characters,\n    remove the leftmost character from the hashmap\n    and move the `left` pointer so that sliding window contains\n    again `k` distinct characters only.\n    * Update `max_len`.\n\n**Implementation**\n\n!?!../Documents/340_LIS.json:1000,440!?!\n\n<iframe src=\"https://leetcode.com/playground/2TNUxMjN/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"2TNUxMjN\"></iframe>\n\n**Complexity Analysis**\n\n> Do we have here the best possible time complexity\n$$\\mathcal{O}(N)$$\nas it was for more simple [problem with at most two distinct\ncharacters](https://leetcode.com/articles/longest-substring-with-at-most-two-distinct-charac/)?\n\nFor the best case when input string contains not more than \n`k` distinct characters the answer is _yes_. \nIt's the only one pass along the string with \n`N` characters and the time complexity is $$\\mathcal{O}(N)$$.\n\nFor the worst case when the input string contains \n`n` distinct characters, the answer is _no_. In that case at each \nstep one uses $$\\mathcal{O}(k)$$ time to find a minimum value\nin the hashmap with `k` elements and so the overall time \ncomplexity is $$\\mathcal{O}(N k)$$.\n\n* Time complexity : $$\\mathcal{O}(N)$$ in the best case \nof `k` distinct characters in the string and\n$$\\mathcal{O}(N k)$$ in the worst case \nof `N` distinct characters in the string.\n \n* Space complexity : $$\\mathcal{O}(k)$$ since additional \nspace is used only for a hashmap with at most `k + 1` elements.\n<br />\n<br />\n\n\n---\n#### Approach 2: Sliding Window + Ordered Dictionary.\n\n**How to achieve $$\\mathcal{O}(N)$$ time complexity**\n\nApproach 1 with a standard hashmap couldn't \nensure $$\\mathcal{O}(N)$$ time complexity. \n\nTo have $$\\mathcal{O}(N)$$ algorithm performance, \none would need a structure, which \nprovides four operations in $$\\mathcal{O}(1)$$ time :\n\n- Insert the key \n\n- Get the key / Check if the key exists \n\n- Delete the key\n\n- Return the first / or the last added key/value\n\nThe first three operations in $$\\mathcal{O}(1)$$ time are provided \nby the standard hashmap, and the forth one - by linked list.\n\n> There is a structure called _ordered dictionary_, it combines \nbehind both hashmap and linked list. In Python this structure is called\n[_OrderedDict_](https://docs.python.org/3/library/collections.html#collections.OrderedDict)\nand in Java [_LinkedHashMap_](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html).\n\nOrdered dictionary is quite popular for the interviews, for\nexample, check [to implement LRU cache](https://leetcode.com/problems/lru-cache/)\nquestion by Google. \n\n**Algorithm**\n\nLet's use ordered dictionary instead of standard hashmap to trim the \nalgorithm from the approach 1 :\n\n- Return `0` if the string is empty or `k` is equal to zero. \n- Set both set pointers in the beginning \n of the string `left = 0` and `right = 0` and init max substring\n length `max_len = 1`.\n- While `right` pointer is less than `N`:\n    * If the current character `s[right]` is already in the ordered dictionary\n    `hashmap` -- delete it, to ensure that the first key in `hashmap` is \n    the leftmost character.\n    * Add the current character `s[right]` in the ordered dictionary and\n    move `right` pointer to the right.\n    * If ordered dictionary `hashmap` contains `k + 1` distinct characters,\n    remove the leftmost one\n    and move the `left` pointer so that sliding window contains\n    again `k` distinct characters only.\n    * Update `max_len`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/dXLBwyhj/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"dXLBwyhj\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ since all operations with\nordered dictionary : `insert/get/delete/popitem` \n(`put/containsKey/remove`) are done in a constant time.\n \n* Space complexity : $$\\mathcal{O}(k)$$ since additional \nspace is used only for an ordered dictionary with at most `k + 1` elements.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "686",
+      "count": 21,
+      "average": 4.476,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"eceba\"\n2",
+  "metaData": "{\r\n  \"name\": \"lengthOfLongestSubstringKDistinct\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

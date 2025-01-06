@@ -1,0 +1,69 @@
+{
+  "questionId": "1415",
+  "questionFrontendId": "1280",
+  "boundTopicId": null,
+  "title": "Students and Examinations",
+  "titleSlug": "students-and-examinations",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Students</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| student_id    | int     |\n| student_name  | varchar |\n+---------------+---------+\nstudent_id is the primary key for this table.\nEach row of this table contains the ID and the name of one student in the school.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Table: <code>Subjects</code></p>\n\n<pre>\n+--------------+---------+\n| Column Name  | Type    |\n+--------------+---------+\n| subject_name | varchar |\n+--------------+---------+\nsubject_name is the primary key for this table.\nEach row of this table contains the name of one subject in the school.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Table: <code>Examinations</code></p>\n\n<pre>\n+--------------+---------+\n| Column Name  | Type    |\n+--------------+---------+\n| student_id   | int     |\n| subject_name | varchar |\n+--------------+---------+\nThere is no primary key for this table. It may contain duplicates.\nEach student from the Students table takes every course from Subjects table.\nEach row of this table indicates that a student with ID student_id attended the exam of subject_name.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to find the number of times each student attended each exam.</p>\n\n<p>Order the result table by <code>student_id</code> and <code>subject_name</code>.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\nStudents table:\n+------------+--------------+\n| student_id | student_name |\n+------------+--------------+\n| 1          | Alice        |\n| 2          | Bob          |\n| 13         | John         |\n| 6          | Alex         |\n+------------+--------------+\nSubjects table:\n+--------------+\n| subject_name |\n+--------------+\n| Math         |\n| Physics      |\n| Programming  |\n+--------------+\nExaminations table:\n+------------+--------------+\n| student_id | subject_name |\n+------------+--------------+\n| 1          | Math         |\n| 1          | Physics      |\n| 1          | Programming  |\n| 2          | Programming  |\n| 1          | Physics      |\n| 1          | Math         |\n| 13         | Math         |\n| 13         | Programming  |\n| 13         | Physics      |\n| 2          | Math         |\n| 1          | Math         |\n+------------+--------------+\nResult table:\n+------------+--------------+--------------+----------------+\n| student_id | student_name | subject_name | attended_exams |\n+------------+--------------+--------------+----------------+\n| 1          | Alice        | Math         | 3              |\n| 1          | Alice        | Physics      | 2              |\n| 1          | Alice        | Programming  | 1              |\n| 2          | Bob          | Math         | 1              |\n| 2          | Bob          | Physics      | 0              |\n| 2          | Bob          | Programming  | 1              |\n| 6          | Alex         | Math         | 0              |\n| 6          | Alex         | Physics      | 0              |\n| 6          | Alex         | Programming  | 0              |\n| 13         | John         | Math         | 1              |\n| 13         | John         | Physics      | 1              |\n| 13         | John         | Programming  | 1              |\n+------------+--------------+--------------+----------------+\nThe result table should contain all students and all subjects.\nAlice attended Math exam 3 times, Physics exam 2 times and Programming exam 1 time.\nBob attended Math exam 1 time, Programming exam 1 time and didn&#39;t attend the Physics exam.\nAlex didn&#39;t attend any exam.\nJohn attended Math exam 1 time, Physics exam 1 time and Programming exam 1 time.\n</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 13,
+  "dislikes": 0,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Roblox\", \"slug\": \"roblox\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"787\", \"totalSubmission\": \"1.1K\", \"totalAcceptedRaw\": 787, \"totalSubmissionRaw\": 1106, \"acRate\": \"71.2%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Students\":[\"student_id\",\"student_name\"],\"Subjects\":[\"subject_name\"],\"Examinations\":[\"student_id\",\"subject_name\"]},\"rows\":{\"Students\":[[1,\"Alice\"],[2,\"Bob\"],[13,\"John\"],[6,\"Alex\"]],\"Subjects\":[[\"Math\"],[\"Physics\"],[\"Programming\"]],\"Examinations\":[[1,\"Math\"],[1,\"Physics\"],[1,\"Programming\"],[2,\"Programming\"],[1,\"Physics\"],[1,\"Math\"],[13,\"Math\"],[13,\"Programming\"],[13,\"Physics\"],[2,\"Math\"],[1,\"Math\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Students (student_id int, student_name varchar(20))\",\n    \"Create table If Not Exists Subjects (subject_name varchar(20))\",\n    \"Create table If Not Exists Examinations (student_id int, subject_name varchar(20))\"\n  ],\n  \"mssql\": [\n    \"Create table Students (student_id int, student_name varchar(20))\",\n    \"Create table Subjects (subject_name varchar(20))\",\n    \"Create table Examinations (student_id int, subject_name varchar(20))\"\n  ],\n  \"oraclesql\": [\n    \"Create table Students (student_id int, student_name varchar(20))\\n\",\n    \"Create table Subjects (subject_name varchar(20))\\n\",\n    \"Create table Examinations (student_id int, subject_name varchar(20))\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Students (student_id int, student_name varchar(20))",
+    "Create table If Not Exists Subjects (subject_name varchar(20))",
+    "Create table If Not Exists Examinations (student_id int, subject_name varchar(20))",
+    "Truncate table Students",
+    "insert into Students (student_id, student_name) values ('1', 'Alice')",
+    "insert into Students (student_id, student_name) values ('2', 'Bob')",
+    "insert into Students (student_id, student_name) values ('13', 'John')",
+    "insert into Students (student_id, student_name) values ('6', 'Alex')",
+    "Truncate table Subjects",
+    "insert into Subjects (subject_name) values ('Math')",
+    "insert into Subjects (subject_name) values ('Physics')",
+    "insert into Subjects (subject_name) values ('Programming')",
+    "Truncate table Examinations",
+    "insert into Examinations (student_id, subject_name) values ('1', 'Math')",
+    "insert into Examinations (student_id, subject_name) values ('1', 'Physics')",
+    "insert into Examinations (student_id, subject_name) values ('1', 'Programming')",
+    "insert into Examinations (student_id, subject_name) values ('2', 'Programming')",
+    "insert into Examinations (student_id, subject_name) values ('1', 'Physics')",
+    "insert into Examinations (student_id, subject_name) values ('1', 'Math')",
+    "insert into Examinations (student_id, subject_name) values ('13', 'Math')",
+    "insert into Examinations (student_id, subject_name) values ('13', 'Programming')",
+    "insert into Examinations (student_id, subject_name) values ('13', 'Physics')",
+    "insert into Examinations (student_id, subject_name) values ('2', 'Math')",
+    "insert into Examinations (student_id, subject_name) values ('1', 'Math')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

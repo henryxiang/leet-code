@@ -1,0 +1,111 @@
+{
+  "questionId": "555",
+  "questionFrontendId": "555",
+  "boundTopicId": null,
+  "title": "Split Concatenated Strings",
+  "titleSlug": "split-concatenated-strings",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a list of strings, you could concatenate these strings together into a loop, where for each string you could choose to reverse it or not. Among all the possible loops, you need to find the lexicographically biggest string after cutting the loop, which will make the looped string into a regular one.</p>\r\n\r\n<p>Specifically, to find the lexicographically biggest string, you need to experience two phases: \r\n<ol>\r\n<li>Concatenate all the strings into a loop, where you can reverse some strings or not and connect them in the same order as given.</li>\r\n<li>Cut and make one breakpoint in any place of the loop, which will make the looped string into a regular one starting from the character at the cutpoint. </li>\r\n</ol>\r\n</p>\r\n\r\n<p>And your job is to find the lexicographically biggest one among all the possible regular strings.</p>\r\n\r\n\r\n<p><b>Example:</b><br />\r\n<pre>\r\n<b>Input:</b> \"abc\", \"xyz\"\r\n<b>Output:</b> \"zyxcba\"\r\n<b>Explanation:</b> You can get the looped string \"-abcxyz-\", \"-abczyx-\", \"-cbaxyz-\", \"-cbazyx-\", <br/>where '-' represents the looped status. <br/>The answer string came from the fourth looped one, <br/>where you could cut from the middle character 'a' and get \"zyxcba\".\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The input strings will only contain lowercase letters.</li>\r\n<li>The total length of all the strings will not over 1,000.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 40,
+  "dislikes": 172,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string splitLoopedString(vector<string>& strs) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String splitLoopedString(String[] strs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def splitLoopedString(self, strs):\n        \"\"\"\n        :type strs: List[str]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def splitLoopedString(self, strs: List[str]) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * splitLoopedString(char ** strs, int strsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string SplitLoopedString(string[] strs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} strs\n * @return {string}\n */\nvar splitLoopedString = function(strs) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} strs\n# @return {String}\ndef split_looped_string(strs)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func splitLoopedString(_ strs: [String]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func splitLoopedString(strs []string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def splitLoopedString(strs: Array[String]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun splitLoopedString(strs: Array<String>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn split_looped_string(strs: Vec<String>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $strs\n     * @return String\n     */\n    function splitLoopedString($strs) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.3K\", \"totalSubmission\": \"10.5K\", \"totalAcceptedRaw\": 4315, \"totalSubmissionRaw\": 10514, \"acRate\": \"41.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "111",
+    "canSeeDetail": true,
+    "url": "/articles/split-assembled-strings/",
+    "content": "[TOC]\n \n\n## Summary\n\nWe are given a list of strings: $$s_1, s_2, s_3,.., s_n$$. We need to concatenate all these strings in a circular fashion in the same given order, but we can reverse every individual string before concatenating. Now, we need to make a cut in the final concatenated string such that the new string formed is the largest one possible in the lexicographic sense\n\n## Solution\n\n---\n#### Approach #1 Depth First Search [Time Limit Exceeded]\n\nThe simplest solution is to try forming every possible concatenated string by making use of the given strings and then forming every possible cut in each such final concatenated string.\n\nTo do so, we can make use of a recursive function `dfs` which appends the current string to the concatenated string formed till now and calls itself with the new concatenated string.  It also appends the reversed current string to the current concatenated string and calls itself. The concatenation of strings goes in the manner of a Depth First Search.\nThus, after reaching the full depth of every branch traversal, we obtain a new concatenated string as illustrated in the animation below. We can apply all the possible cuts to these strings and find the lexicographically largest string out of all of them.\n\n!?!../Documents/555_Split_Assembled_Strings.json:1000,563!?!\n\n\n<iframe src=\"https://leetcode.com/playground/HVWgAzK8/shared\" frameBorder=\"0\" name=\"HVWgAzK8\" width=\"100%\" height=\"394\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(2^n)$$. Size of Recursion tree can grow upto $$2^n$$ where $$n$$ is the number of strings in the list.\n* Space complexity : $$O(n)$$. Depth of Recursion tree will be $$n$$\n\n---\n#### Approach #2 Breadth First Search [Memory Limit Exceeded]\n\n**Algorithm**\n\nExploring all strings can also be done using BFS method. A Queue $$queue$$ is maintained which stores the strings formed till now after concatenation of the next string and also by concatenation of reverse of next string. Every time we remove a string from the front of the queue, we add two strings to the back of the queue(one by concatenating the next string directly and another by concatenating the next string after reversing).\n\nWhen all the strings are traversed queue contains $$O(2^n)$$ strings, which correspond to every possible valid string which can be formed by doing the concatenations. We check every string into the queue after circularly rotating by placing the cuts at every possible location. While doing this, we keep a track of the lexicographically largest string.\n\nThis animation will depict the method:\n\n!?!../Documents/555_Split_Assembled_Strings1.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/5MoksFZL/shared\" frameBorder=\"0\" name=\"5MoksFZL\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(2^n)$$. $$2^n$$ possible strings will be formed where $$n$$ is the number of strings in the list.\n\n* Space complexity : $$O(2^n)$$. $$queue$$'s size can grow upto $$2^n$$.\n\n---\n#### Approach #3 Optimized Solution [Accepted]\n\n**Algorithm**\n\nIn order to understand how this solution works, firstly we'll look at some of the properties of the transformation involved. The first point to note is that the relative ordering of the strings doesn't change after applying the transformations(i.e. reversing and applying cuts).\n\nThe second property will be explained taking the help of an example. Consider the given list of strings: $$[s_1, s_2, s_3,..,s_j,..s_n]$$. Now, assume that we choose $$s_j$$ to be the string on which the current cut is placed leading to the formation of two substrings from $$s_j$$, namely, say $$s_{jpre}$$, $$s_{jpost}$$. Thus, the concatenated string formed by such a cut will be: $$[s_{jpost}, s_{j+1},..., s_n, s_{1rev}, s_{2rev},.., s_{(jpre)rev}]$$. Here, $$s_{irev}$$ means the reversed $$s_i$$ string. \n\nThe concatenated string formed follows the same pattern irrespective of where the cut is placed in $$s_j$$. But still, the relative ordering of the strings persists, even if we include the reverse operation as well. \n\nNow, if we consider only a single cut for the time being, in string $$s_j$$(not reversed) as discussed above, and allow for the reverse operation among the remaining strings, the lexicographically largest concatenated string will be given by: $$[s_{jpost}, \\text{max}(s_{j+1},s_{(j+1)rev}) ,..., \\text{max}(s_{n},s_{(n)rev}), \\text{max}(s_{1},s_{(1)rev}), ..., s_{(jpre)rev}]$$. Here, $$\\text{max}$$ refers to the lexicographic maximum operation. \n\nThus, if a particular string $$s_j$$ is finalized for the cut, the largest lexicographic concatenated string is dependent only on whether the string $$s_j$$ is reversed or not, and also on the position of the cut. This happens because the reverse/not reverse operation for the rest of the strings is fixed for a chosen $$s_j$$ as shown above and thus, doesn't impact the final result.\n\nBased on the above observations, we follow the given procedure. For every given string, we replace the string with the lexicographically larger string out of the original string and the reversed one. After this, we pick up every new string(chosen as the string on which the cuts will be applied), and apply a cut at all the positions of the currently picked string and form the full concantenated string keeping the rest of the newly formed strings intact. We also reverse the current string and follow the same process. While doing this, we keep a track of the largest lexicographic string found so far.\n\nFor a better understanding of the procedure, watch this animation:\n\n!?!../Documents/555_Split_Assembled_Strings2.json:1000,563!?!\n\n\n<iframe src=\"https://leetcode.com/playground/A2jShPos/shared\" frameBorder=\"0\" name=\"A2jShPos\" width=\"100%\" height=\"496\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. where $$n$$ is the total number of characters in a list.\n\n* Space complexity : $$O(n)$$. $$t$$ and $$res$$ of size $$n$$ are used.\n\n---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "108",
+      "count": 9,
+      "average": 2.667,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"abc\",\"xyz\"]",
+  "metaData": "{\r\n  \"name\": \"splitLoopedString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"strs\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

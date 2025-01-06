@@ -1,0 +1,111 @@
+{
+  "questionId": "637",
+  "questionFrontendId": "637",
+  "boundTopicId": null,
+  "title": "Average of Levels in Binary Tree",
+  "titleSlug": "average-of-levels-in-binary-tree",
+  "categoryTitle": "Algorithms",
+  "content": "Given a non-empty binary tree, return the average value of the nodes on each level in the form of an array.\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b>\r\n    3\r\n   / \\\r\n  9  20\r\n    /  \\\r\n   15   7\r\n<b>Output:</b> [3, 14.5, 11]\r\n<b>Explanation:</b>\r\nThe average value of nodes on level 0 is 3,  on level 1 is 14.5, and on level 2 is 11. Hence return [3, 14.5, 11].\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The range of node's value is in the range of 32-bit signed integer.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 948,
+  "dislikes": 136,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Binary Tree Level Order Traversal\", \"titleSlug\": \"binary-tree-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Level Order Traversal II\", \"titleSlug\": \"binary-tree-level-order-traversal-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "yangshun",
+      "profileUrl": "/yangshun/",
+      "avatarUrl": "https://assets.leetcode.com/users/yangshun/avatar.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    vector<double> averageOfLevels(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public List<Double> averageOfLevels(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def averageOfLevels(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: List[float]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def averageOfLevels(self, root: TreeNode) -> List[float]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\ndouble* averageOfLevels(struct TreeNode* root, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public IList<double> AverageOfLevels(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number[]}\n */\nvar averageOfLevels = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {Float[]}\ndef average_of_levels(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func averageOfLevels(_ root: TreeNode?) -> [Double] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc averageOfLevels(root *TreeNode) []float64 {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def averageOfLevels(root: TreeNode): Array[Double] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun averageOfLevels(root: TreeNode?): DoubleArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn average_of_levels(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<f64> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Float[]\n     */\n    function averageOfLevels($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"98.4K\", \"totalSubmission\": \"162.3K\", \"totalAcceptedRaw\": 98358, \"totalSubmissionRaw\": 162330, \"acRate\": \"60.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "197",
+    "canSeeDetail": true,
+    "url": "/articles/average-of-levels/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Using Depth First Search [Accepted]\n\n**Algorithm**\n\nOne of the methods to solve the given problem is to make use of Depth First Search. In DFS, we try to exhaust each branch of the given tree during the tree traversal before moving onto the next branch.\n\nTo make use of DFS to solve the given problem, we make use of two lists $$count$$ and $$res$$. Here, $$count[i]$$ refers to the total number of nodes found at the $$i^{th}$$ level(counting from root at level 0) till now, and $$res[i]$$ refers to the sum of the nodes at the $$i^{th}$$ level encountered till now during the Depth First Search.\n\nWe make use of a function `average(t, i, res, count)`, which is used to fill the $$res$$ and $$count$$ array if we start the DFS from the node $$t$$ at the $$i^{th}$$ level in the given tree. We start by making the function call `average(root, 0, res, count)`. After this, we do the following at every step:\n\n1. Add the value of the current node to the $$res$$(or $$sum$$) at the index corresponding to the current level. Also, increment the $$count$$ at the index corresponding to the current level. \n\n2. Call the same function, `average`, with the left and the right child of the current node. Also, update the current level used in making the function call.\n\n3. Repeat the above steps till all the nodes in the given tree have been considered once.\n\n4. Populate the averages in the resultant array to be returned.\n\n\nThe following animation illustrates the process.\n\n!?!../Documents/637_Avg_of_Levels_DFS.json:1000,563!?!\n\n\n<iframe src=\"https://leetcode.com/playground/eyx7WogA/shared\" frameBorder=\"0\" name=\"eyx7WogA\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. The whole tree is traversed once only. Here, $$n$$ refers to the total number of nodes in the given binary tree.\n\n* Space complexity : $$O(h)$$. $$res$$ and $$count$$ array of size $$h$$ are used. Here, $$h$$ refers to the height(maximum number of levels) of the given binary tree. Further, the depth of the recursive tree could go upto $$h$$ only.\n\n---\n#### Approach #2 Breadth First Search [Accepted]\n\n**Algorithm**\n\nAnother method to solve the given problem is to make use of a Breadth First Search. In BFS, we start by pushing the root node into a $$queue$$. Then, we remove an element(node) from the front of the $$queue$$. For every node removed from the $$queue$$, we add all its children to the back of the same $$queue$$. We keep on continuing this process till the $$queue$$ becomes empty. In this way, we can traverse the given tree on a level-by-level basis.\n\nBut, in the current implementation, we need to do a slight modification, since we need to separate the nodes on one level from that of the other. \n\nThe steps to be performed are listed below:\n\n1. Put the root node into the $$queue$$.\n\n2. Initialize $$sum$$ and $$count$$ as 0 and $$temp$$ as an empty queue.\n\n3. Pop a node from the front of the $$queue$$. Add this node's value to the $$sum$$ corresponding to the current level. Also, update the $$count$$ corresponding to the current level.\n\n4. Put the children nodes of the node last popped into the a $$temp$$ queue(instead of $$queue$$).\n\n5. Continue steps 3 and 4 till $$queue$$ becomes empty. (An empty $$queue$$ indicates that one level of the tree has been considered).\n\n6. Reinitialize $$queue$$ with its value as $$temp$$.\n\n7. Populate the $$res$$ array with the average corresponding to the current level.\n\n8. Repeat steps 2 to 7 till the $$queue$$ and $$temp$$ become empty.\n\n\nAt the end, $$res$$ is the required result.\n\nThe following animation illustrates the process.\n\n!?!../Documents/637_Average_Of_Levels.json:1000,563!?!\n\n\n<iframe src=\"https://leetcode.com/playground/92XSTJqk/shared\" frameBorder=\"0\" name=\"92XSTJqk\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. The whole tree is traversed atmost once. Here, $$n$$ refers to the number of nodes in the given binary tree.\n\n* Space complexity : $$O(m)$$. The size of $$queue$$ or $$temp$$ can grow upto atmost the maximum number of nodes at any level in the given binary tree. Here, $$m$$ refers to the maximum mumber of nodes at any level in the input tree.\n\n---\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "192",
+      "count": 18,
+      "average": 4.722,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,9,20,15,7]",
+  "metaData": "{\r\n  \"name\": \"averageOfLevels\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<double>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

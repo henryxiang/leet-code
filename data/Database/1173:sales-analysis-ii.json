@@ -1,0 +1,56 @@
+{
+  "questionId": "1173",
+  "questionFrontendId": "1083",
+  "boundTopicId": null,
+  "title": "Sales Analysis II",
+  "titleSlug": "sales-analysis-ii",
+  "categoryTitle": "Database",
+  "content": "<p>Table:&nbsp;<code>Product</code></p>\r\n\r\n<pre>\r\n+--------------+---------+\r\n| Column Name  | Type    |\r\n+--------------+---------+\r\n| product_id   | int     |\r\n| product_name | varchar |\r\n| unit_price   | int     |\r\n+--------------+---------+\r\nproduct_id is the primary key of this table.\r\n</pre>\r\n\r\n<p>Table:&nbsp;<code>Sales</code></p>\r\n\r\n<pre>\r\n+-------------+---------+\r\n| Column Name | Type    |\r\n+-------------+---------+\r\n| seller_id   | int     |\r\n| product_id  | int     |\r\n| buyer_id    | int     |\r\n| sale_date   | date    |\r\n| quantity    | int     |\r\n| price       | int     |\r\n+------ ------+---------+\r\nThis table has no primary key, it can have repeated rows.\r\nproduct_id is a foreign key to Product table.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Write an SQL query that reports the <strong>buyers</strong> who have bought <em>S8</em> but not <em>iPhone</em>. Note that <em>S8</em> and <em>iPhone</em> are products present in the <code>Product</code> table.</p>\r\n\r\n<p>The query result format is in the following example:</p>\r\n\r\n<pre>\r\nProduct table:\r\n+------------+--------------+------------+\r\n| product_id | product_name | unit_price |\r\n+------------+--------------+------------+\r\n| 1          | S8           | 1000       |\r\n| 2          | G4           | 800        |\r\n| 3          | iPhone       | 1400       |\r\n+------------+--------------+------------+\r\n\r\n<code>Sales </code>table:\r\n+-----------+------------+----------+------------+----------+-------+\r\n| seller_id | product_id | buyer_id | sale_date  | quantity | price |\r\n+-----------+------------+----------+------------+----------+-------+\r\n| 1         | 1          | 1        | 2019-01-21 | 2        | 2000  |\r\n| 1         | 2          | 2        | 2019-02-17 | 1        | 800   |\r\n| 2         | 1          | 3        | 2019-06-02 | 1        | 800   |\r\n| 3         | 3          | 3        | 2019-05-13 | 2        | 2800  |\r\n+-----------+------------+----------+------------+----------+-------+\r\n\r\nResult table:\r\n+-------------+\r\n| buyer_id    |\r\n+-------------+\r\n| 1           |\r\n+-------------+\r\nThe buyer with id 1 bought an S8 but didn&#39;t buy an iPhone. The buyer with id 3 bought both.</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 39,
+  "dislikes": 7,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Sales Analysis I\", \"titleSlug\": \"sales-analysis-i\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sales Analysis III\", \"titleSlug\": \"sales-analysis-iii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.7K\", \"totalSubmission\": \"11.1K\", \"totalAcceptedRaw\": 5712, \"totalSubmissionRaw\": 11091, \"acRate\": \"51.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Product\":[\"product_id\",\"product_name\",\"unit_price\"],\"Sales\":[\"seller_id\",\"product_id\",\"buyer_id\",\"sale_date\",\"quantity\",\"price\"]},\"rows\":{\"Product\":[[1,\"S8\",1000],[2,\"G4\",800],[3,\"iPhone\",1400]],\"Sales\":[[1,1,1,\"2019-01-21\",2,2000],[1,2,2,\"2019-02-17\",1,800],[2,1,3,\"2019-06-02\",1,800],[3,3,3,\"2019-05-13\",2,2800]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists Product (product_id int, product_name varchar(10), unit_price int)\",\r\n    \"Create table If Not Exists Sales (seller_id int, product_id int, buyer_id int, sale_date date, quantity int, price int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table Product (product_id int, product_name varchar(10), unit_price int)\",\r\n    \"Create table Sales (seller_id int, product_id int, buyer_id int, sale_date date, quantity int, price int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table Product (product_id int, product_name varchar(10), unit_price int)\",\r\n    \"Create table Sales (seller_id int, product_id int, buyer_id int, sale_date date, quantity int, price int)\",\r\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Product (product_id int, product_name varchar(10), unit_price int)",
+    "Create table If Not Exists Sales (seller_id int, product_id int, buyer_id int, sale_date date, quantity int, price int)",
+    "Truncate table Product",
+    "insert into Product (product_id, product_name, unit_price) values ('1', 'S8', '1000')",
+    "insert into Product (product_id, product_name, unit_price) values ('2', 'G4', '800')",
+    "insert into Product (product_id, product_name, unit_price) values ('3', 'iPhone', '1400')",
+    "Truncate table Sales",
+    "insert into Sales (seller_id, product_id, buyer_id, sale_date, quantity, price) values ('1', '1', '1', '2019-01-21', '2', '2000')",
+    "insert into Sales (seller_id, product_id, buyer_id, sale_date, quantity, price) values ('1', '2', '2', '2019-02-17', '1', '800')",
+    "insert into Sales (seller_id, product_id, buyer_id, sale_date, quantity, price) values ('2', '1', '3', '2019-06-02', '1', '800')",
+    "insert into Sales (seller_id, product_id, buyer_id, sale_date, quantity, price) values ('3', '3', '3', '2019-05-13', '2', '2800')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "809",
+  "questionFrontendId": "793",
+  "boundTopicId": null,
+  "title": "Preimage Size of Factorial Zeroes Function",
+  "titleSlug": "preimage-size-of-factorial-zeroes-function",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Let <code>f(x)</code> be the number of zeroes at the end of <code>x!</code>. (Recall that <code>x! = 1 * 2 * 3 * ... * x</code>, and by convention, <code>0! = 1</code>.)</p>\r\n\r\n<p>For example, <code>f(3) = 0</code> because 3! = 6 has no zeroes at the end, while <code>f(11) = 2</code> because 11! = 39916800 has 2 zeroes at the end. Given <code>K</code>, find how many non-negative integers <code>x</code> have the property that <code>f(x) = K</code>.</p>\r\n\r\n<pre>\r\n<strong>Example 1:</strong>\r\n<strong>Input:</strong> K = 0\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> 0!, 1!, 2!, 3!, and 4! end with K = 0 zeroes.\r\n\r\n<strong>Example 2:</strong>\r\n<strong>Input:</strong> K = 5\r\n<strong>Output:</strong> 0\r\n<strong>Explanation:</strong> There is no x such that x! ends in K = 5 zeroes.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>K</code> will be an integer in the range <code>[0, 10^9]</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 129,
+  "dislikes": 51,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Factorial Trailing Zeroes\", \"titleSlug\": \"factorial-trailing-zeroes\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "ngoc_lam",
+      "profileUrl": "/ngoc_lam/",
+      "avatarUrl": "https://assets.leetcode.com/users/ngoc_lam/avatar_1528594557.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int preimageSizeFZF(int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int preimageSizeFZF(int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def preimageSizeFZF(self, K):\n        \"\"\"\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def preimageSizeFZF(self, K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint preimageSizeFZF(int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int PreimageSizeFZF(int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} K\n * @return {number}\n */\nvar preimageSizeFZF = function(K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} k\n# @return {Integer}\ndef preimage_size_fzf(k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func preimageSizeFZF(_ K: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func preimageSizeFZF(K int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def preimageSizeFZF(K: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun preimageSizeFZF(K: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn preimage_size_fzf(k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $K\n     * @return Integer\n     */\n    function preimageSizeFZF($K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.7K\", \"totalSubmission\": \"16.8K\", \"totalAcceptedRaw\": 6692, \"totalSubmissionRaw\": 16848, \"acRate\": \"39.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "426",
+    "canSeeDetail": true,
+    "url": "/articles/preimage-size-of-factorial-zeroes-function/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Binary Search [Accepted]\r\n\r\n**Intuition and Algorithm**\r\n\r\nLet `zeta(x)` be the number of zeroes at the end of `x!`.  If the prime factorization of `x!` is $$(2^a * 5^b * \\cdots )$$, then the number of times that `10` divides this is `min(a, b)` which is `b`.\r\n\r\nThus, `zeta(x)` is the number of times `5` divides `x!`, which is equal to $$\\lfloor \\frac{x}{5^1} \\rfloor + \\lfloor \\frac{x}{5^2} \\rfloor + \\lfloor \\frac{x}{5^3} \\rfloor + \\lfloor \\frac{x}{5^4} \\rfloor + \\cdots$$.\r\n\r\nIndeed, `zeta` is a monotone increasing function, so we can binary search for the answer.  Our technique follows the same approaches in many other binary search problems.\r\n\r\nWe could binary search for both the largest and smallest value `x` such that `zeta(x) = K`.  However, since `zeta(5a-1) < zeta(5a) = zeta(5a+1) = zeta(5a+2) = zeta(5a+3) = zeta(5a+4) < zeta(5a+5)`, if it is possible for `zeta(x)` to equal `K` for some `x`, then the answer is `5`, else the answer is `0`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/mkYsqXzn/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"mkYsqXzn\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(\\log^2 K)$$.  Our binary search is $$O(\\log K)$$, and in each step of that binary search we do $$O(\\log K)$$ work to evaluate the function `zeta`.\r\n\r\n* Space Complexity: $$O(\\log K)$$, the size of our recursive call stack when calling `zeta`.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "421",
+      "count": 4,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "0",
+  "metaData": "{\r\n  \"name\": \"preimageSizeFZF\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

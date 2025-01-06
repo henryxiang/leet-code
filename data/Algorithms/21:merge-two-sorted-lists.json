@@ -1,0 +1,105 @@
+{
+  "questionId": "21",
+  "questionFrontendId": "21",
+  "boundTopicId": null,
+  "title": "Merge Two Sorted Lists",
+  "titleSlug": "merge-two-sorted-lists",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.</p>\r\n\r\n<p><b>Example:</b>\r\n<pre>\r\n<b>Input:</b> 1->2->4, 1->3->4\r\n<b>Output:</b> 1->1->2->3->4->4\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 3065,
+  "dislikes": 446,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Merge k Sorted Lists\", \"titleSlug\": \"merge-k-sorted-lists\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Merge Sorted Array\", \"titleSlug\": \"merge-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sort List\", \"titleSlug\": \"sort-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance II\", \"titleSlug\": \"shortest-word-distance-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Huawei\", \"slug\": \"huawei\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 90}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 14}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intel\", \"slug\": \"intel\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Arista Networks\", \"slug\": \"arista-networks\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Indeed\", \"slug\": \"indeed\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode(int x) : val(x), next(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for singly-linked list.\n# class ListNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution(object):\n    def mergeTwoLists(self, l1, l2):\n        \"\"\"\n        :type l1: ListNode\n        :type l2: ListNode\n        :rtype: ListNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution:\n    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     struct ListNode *next;\n * };\n */\n\n\nstruct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public ListNode MergeTwoLists(ListNode l1, ListNode l2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for singly-linked list.\n * function ListNode(val) {\n *     this.val = val;\n *     this.next = null;\n * }\n */\n/**\n * @param {ListNode} l1\n * @param {ListNode} l2\n * @return {ListNode}\n */\nvar mergeTwoLists = function(l1, l2) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for singly-linked list.\n# class ListNode\n#     attr_accessor :val, :next\n#     def initialize(val)\n#         @val = val\n#         @next = nil\n#     end\n# end\n\n# @param {ListNode} l1\n# @param {ListNode} l2\n# @return {ListNode}\ndef merge_two_lists(l1, l2)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public var val: Int\n *     public var next: ListNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.next = nil\n *     }\n * }\n */\nclass Solution {\n    func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for singly-linked list.\n * class ListNode(var _x: Int = 0) {\n *   var next: ListNode = null\n *   var x: Int = _x\n * }\n */\nobject Solution {\n    def mergeTwoLists(l1: ListNode, l2: ListNode): ListNode = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var li = ListNode(5)\n * var v = li.`val`\n * Definition for singly-linked list.\n * class ListNode(var `val`: Int) {\n *     var next: ListNode? = null\n * }\n */\nclass Solution {\n    fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for singly-linked list.\n// #[derive(PartialEq, Eq, Clone, Debug)]\n// pub struct ListNode {\n//   pub val: i32,\n//   pub next: Option<Box<ListNode>>\n// }\n// \n// impl ListNode {\n//   #[inline]\n//   fn new(val: i32) -> Self {\n//     ListNode {\n//       next: None,\n//       val\n//     }\n//   }\n// }\nimpl Solution {\n    pub fn merge_two_lists(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a singly-linked list.\n * class ListNode {\n *     public $val = 0;\n *     public $next = null;\n *     function __construct($val) { $this->val = $val; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param ListNode $l1\n     * @param ListNode $l2\n     * @return ListNode\n     */\n    function mergeTwoLists($l1, $l2) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"782K\", \"totalSubmission\": \"1.6M\", \"totalAcceptedRaw\": 781989, \"totalSubmissionRaw\": 1550220, \"acRate\": \"50.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "310",
+    "canSeeDetail": true,
+    "url": "/articles/merged-two-sorted-lists/",
+    "content": "[TOC]\n\n#### Approach 1: Recursion\n\n**Intuition**\n\nWe can recursively define the result of a `merge` operation on two lists as\nthe following (avoiding the corner case logic surrounding empty lists):\n\n$$\n\\left\\{\n\\begin{array}{ll}\n      list1[0] + merge(list1[1:], list2) & list1[0] < list2[0] \\\\\n      list2[0] + merge(list1, list2[1:]) & otherwise\n\\end{array}\n\\right.\n$$\n\nNamely, the smaller of the two lists' heads plus the result of a `merge` on\nthe rest of the elements.\n\n**Algorithm**\n\nWe model the above recurrence directly, first accounting for edge cases.\nSpecifically, if either of `l1` or `l2` is initially `null`, there is no\nmerge to perform, so we simply return the non-`null` list. Otherwise, we\ndetermine which of `l1` and `l2` has a smaller head, and recursively set the\n`next` value for that head to the next merge result. Given that both lists\nare `null`-terminated, the recursion will eventually terminate.\n\n<iframe src=\"https://leetcode.com/playground/S3FpZm9s/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"S3FpZm9s\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n + m)$$\n\n    Because each recursive call increments the pointer to `l1` or `l2` by one (approaching the dangling `null` at the end of each list), there will be exactly one call to `mergeTwoLists` per element in each list. Therefore, the time complexity is linear in the combined size of the lists.\n\n* Space complexity : $$O(n + m)$$\n\n    The first call to `mergeTwoLists` does not return until the ends of both `l1` and `l2` have been reached, so $$n + m$$ stack frames consume $$O(n + m)$$ space.\n\n<br />\n\n---\n\n#### Approach 2: Iteration\n\n**Intuition**\n\nWe can achieve the same idea via iteration by assuming that `l1` is entirely\nless than `l2` and processing the elements one-by-one, inserting elements of\n`l2` in the necessary places in `l1`.\n\n**Algorithm**\n\nFirst, we set up a false \"`prehead`\" node that allows us to easily return the\nhead of the merged list later. We also maintain a `prev` pointer, which\npoints to the current node for which we are considering adjusting its `next`\npointer. Then, we do the following until at least one of `l1` and `l2` points\nto `null`: if the value at `l1` is less than or equal to the value at `l2`,\nthen we connect `l1` to the previous node and increment `l1`. Otherwise, we\ndo the same, but for `l2`. Then, regardless of which list we connected, we\nincrement `prev` to keep it one step behind one of our list heads.\n\nAfter the loop terminates, at most one of `l1` and `l2` is non-`null`.\nTherefore (because the input lists were in sorted order), if either list is\nnon-`null`, it contains only elements greater than all of the\npreviously-merged elements. This means that we can simply connect the\nnon-`null` list to the merged list and return it.\n\nTo see this in action on an example, check out the animation below:\n\n!?!../Documents/21_Merge_Two_Sorted_Lists.json:1280,720!?!\n\n<iframe src=\"https://leetcode.com/playground/dssukVFP/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"dssukVFP\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n + m)$$\n\n    Because exactly one of `l1` and `l2` is incremented on each loop\n    iteration, the `while` loop runs for a number of iterations equal to the\n    sum of the lengths of the two lists. All other work is constant, so the\n    overall complexity is linear.\n\n* Space complexity : $$O(1)$$\n\n    The iterative approach only allocates a few pointers, so it has a\n    constant overall memory footprint.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "305",
+      "count": 53,
+      "average": 4.34,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,4]\n[1,3,4]",
+  "metaData": "{\r\n  \"name\": \"mergeTwoLists\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"l1\",\r\n      \"type\": \"ListNode\",\r\n      \"dealloc\": false\r\n    },\r\n    {\r\n      \"name\": \"l2\",\r\n      \"type\": \"ListNode\",\r\n      \"dealloc\": false\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"ListNode\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

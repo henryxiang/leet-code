@@ -1,0 +1,110 @@
+{
+  "questionId": "1362",
+  "questionFrontendId": "1227",
+  "boundTopicId": null,
+  "title": "Airplane Seat Assignment Probability",
+  "titleSlug": "airplane-seat-assignment-probability",
+  "categoryTitle": "Algorithms",
+  "content": "<p><code data-stringify-type=\"code\">n</code>&nbsp;passengers board an airplane with exactly&nbsp;<code data-stringify-type=\"code\">n</code>&nbsp;seats. The first passenger has lost the ticket and picks a seat randomly. But after that, the rest of passengers will:</p>\r\n\r\n<ul>\r\n\t<li>Take their own seat if it is still available,&nbsp;</li>\r\n\t<li>Pick other seats randomly when they find their seat occupied&nbsp;</li>\r\n</ul>\r\n\r\n<p>What is the probability that the n-th person can get his own seat?</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> n = 1\r\n<strong>Output:</strong> 1.00000\r\n<strong>Explanation: </strong>The first person can only get the first seat.</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> n = 2\r\n<strong>Output:</strong> 0.50000\r\n<strong>Explanation: </strong>The second person has a probability of 0.5 to get the second seat (when first person gets the first seat).\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= n &lt;= 10^5</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 83,
+  "dislikes": 113,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Flying_Jiaxinger",
+      "profileUrl": "/flying_jiaxinger/",
+      "avatarUrl": "https://assets.leetcode.com/users/flying_jiaxinger/avatar_1555398936.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Brainteaser",
+      "slug": "brainteaser"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Microstrategy\", \"slug\": \"microstrategy\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    double nthPersonGetsNthSeat(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public double nthPersonGetsNthSeat(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def nthPersonGetsNthSeat(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: float\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def nthPersonGetsNthSeat(self, n: int) -> float:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\ndouble nthPersonGetsNthSeat(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public double NthPersonGetsNthSeat(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar nthPersonGetsNthSeat = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Float}\ndef nth_person_gets_nth_seat(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func nthPersonGetsNthSeat(_ n: Int) -> Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func nthPersonGetsNthSeat(n int) float64 {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def nthPersonGetsNthSeat(n: Int): Double = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun nthPersonGetsNthSeat(n: Int): Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn nth_person_gets_nth_seat(n: i32) -> f64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Float\n     */\n    function nthPersonGetsNthSeat($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4K\", \"totalSubmission\": \"6.6K\", \"totalAcceptedRaw\": 3990, \"totalSubmissionRaw\": 6638, \"acRate\": \"60.1%\"}",
+  "hints": [
+    "Use dynamic programming, dp[i] indicates the probability that the i-th person can get his seat when there're i persons in total. It's okay to start with O(n^2) solution and then optimize it.",
+    "Try to find the regular pattern of the result."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "1",
+  "metaData": "{\n  \"name\": \"nthPersonGetsNthSeat\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"double\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

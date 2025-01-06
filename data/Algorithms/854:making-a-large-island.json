@@ -1,0 +1,111 @@
+{
+  "questionId": "854",
+  "questionFrontendId": "827",
+  "boundTopicId": null,
+  "title": "Making A Large Island",
+  "titleSlug": "making-a-large-island",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a 2D grid of <code>0</code>s and <code>1</code>s, we change at most one <code>0</code> to a <code>1</code>.</p>\r\n\r\n<p>After, what is the size of the largest island?&nbsp;(An island is a 4-directionally connected group of <code>1</code>s).</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[[1, 0], [0, 1]]\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> Change one 0 to 1 and connect two 1s, then we get an island with area = 3.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[[1, 1], [1, 0]]\r\n<strong>Output:</strong> 4\r\n<strong>Explanation: </strong>Change the 0 to 1 and make the island bigger, only one island with area = 4.</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[[1, 1], [1, 1]]\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> Can&#39;t change any 0 to 1, only one island with area = 4.</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Notes:</p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= grid.length = grid[0].length &lt;= 50</code>.</li>\r\n\t<li><code>0 &lt;= grid[i][j] &lt;= 1</code>.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 321,
+  "dislikes": 12,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int largestIsland(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int largestIsland(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def largestIsland(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def largestIsland(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint largestIsland(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LargestIsland(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar largestIsland = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef largest_island(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func largestIsland(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func largestIsland(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def largestIsland(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun largestIsland(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn largest_island(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function largestIsland($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.6K\", \"totalSubmission\": \"28.3K\", \"totalAcceptedRaw\": 12556, \"totalSubmissionRaw\": 28326, \"acRate\": \"44.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "456",
+    "canSeeDetail": true,
+    "url": "/articles/making-a-large-island/",
+    "content": "[TOC]\n\n---\n#### Approach #1: (Naive) Depth First Search [Time Limit Exceeded]\n\n**Intuition**\n\nFor each `0` in the grid, let's temporarily change it to a `1`, then count the size of the group from that square.\n\n**Algorithm**\n\nFor each `0`, change it to a `1`, then do a depth first search to find the size of that component.  The answer is the maximum size component found.\n\nOf course, if there is no `0` in the grid, then the answer is the size of the whole grid.\n\n<iframe src=\"https://leetcode.com/playground/T2PdhCGT/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"T2PdhCGT\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^4)$$, where $$N$$ is the length and width of the `grid`.\n\n* Space Complexity: $$O(N^2)$$, the additional space used in the depth first search by `stack` and `seen`.\n\n---\n#### Approach #2: Component Sizes [Accepted]\n\n**Intuition**\n\nAs in the previous solution, we check every `0`.  However, we also store the size of each group, so that we do not have to use depth-first search to repeatedly calculate the same size.\n\nHowever, this idea fails when the `0` touches the same group.  For example, consider `grid = [[0,1],[1,1]]`.  The answer is `4`, not `1 + 3 + 3`, since the right neighbor and the bottom neighbor of the `0` belong to the same group.\n\nWe can remedy this problem by keeping track of a group id (or index), that is unique for each group.  Then, we'll only add areas of neighboring groups with different ids.\n\n**Algorithm**\n\nFor each group, fill it with value `index` and remember it's size as `area[index] = dfs(...)`.\n\nThen for each `0`, look at the neighboring group ids `seen` and add the area of those groups, plus 1 for the `0` we are toggling.  This gives us a candidate answer, and we take the maximum.\n\nTo solve the issue of having potentially no `0`, we take the maximum of the previously calculated areas.\n\n<iframe src=\"https://leetcode.com/playground/ZBn4MTj4/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"ZBn4MTj4\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length and width of the `grid`.\n\n* Space Complexity: $$O(N^2)$$, the additional space used in the depth first search by `area`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).  Idea for Solution #2 by [@lee215](http://leetcode.com/lee215).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "452",
+      "count": 8,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,0],[0,1]]",
+  "metaData": "{\r\n  \"name\": \"largestIsland\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

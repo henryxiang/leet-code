@@ -1,0 +1,111 @@
+{
+  "questionId": "969",
+  "questionFrontendId": "933",
+  "boundTopicId": null,
+  "title": "Number of Recent Calls",
+  "titleSlug": "number-of-recent-calls",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Write a class <code>RecentCounter</code> to count recent requests.</p>\r\n\r\n<p>It has only one method:&nbsp;<code>ping(int t)</code>, where t represents some time in milliseconds.</p>\r\n\r\n<p>Return the number of <code>ping</code>s that have been made from 3000 milliseconds ago until now.</p>\r\n\r\n<p>Any ping with time in <code>[t - 3000, t]</code> will count, including the current ping.</p>\r\n\r\n<p>It is guaranteed that every call to <code>ping</code> uses a strictly larger value of&nbsp;<code>t</code> than before.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>inputs = <span id=\"example-input-1-1\">[&quot;RecentCounter&quot;,&quot;ping&quot;,&quot;ping&quot;,&quot;ping&quot;,&quot;ping&quot;]</span>, inputs = <span id=\"example-input-1-2\">[[],[1],[100],[3001],[3002]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[null,1,2,3,3]</span></pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>Each test case will have at most <code>10000</code> calls to <code>ping</code>.</li>\r\n\t<li>Each test case will call&nbsp;<code>ping</code> with strictly increasing values of <code>t</code>.</li>\r\n\t<li>Each call to ping will have <code>1 &lt;= t &lt;= 10^9</code>.</li>\r\n</ol>\r\n\r\n<div>\r\n<p>&nbsp;</p>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 190,
+  "dislikes": 1061,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "lcatny",
+      "profileUrl": "/lcatny/",
+      "avatarUrl": "https://assets.leetcode.com/users/lcatny/avatar_1540875602.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Queue",
+      "slug": "queue"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class RecentCounter {\npublic:\n    RecentCounter() {\n        \n    }\n    \n    int ping(int t) {\n        \n    }\n};\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * RecentCounter* obj = new RecentCounter();\n * int param_1 = obj->ping(t);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class RecentCounter {\n\n    public RecentCounter() {\n        \n    }\n    \n    public int ping(int t) {\n        \n    }\n}\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * RecentCounter obj = new RecentCounter();\n * int param_1 = obj.ping(t);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class RecentCounter(object):\n\n    def __init__(self):\n        \n\n    def ping(self, t):\n        \"\"\"\n        :type t: int\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your RecentCounter object will be instantiated and called as such:\n# obj = RecentCounter()\n# param_1 = obj.ping(t)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class RecentCounter:\n\n    def __init__(self):\n        \n\n    def ping(self, t: int) -> int:\n        \n\n\n# Your RecentCounter object will be instantiated and called as such:\n# obj = RecentCounter()\n# param_1 = obj.ping(t)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} RecentCounter;\n\n\nRecentCounter* recentCounterCreate() {\n    \n}\n\nint recentCounterPing(RecentCounter* obj, int t) {\n  \n}\n\nvoid recentCounterFree(RecentCounter* obj) {\n    \n}\n\n/**\n * Your RecentCounter struct will be instantiated and called as such:\n * RecentCounter* obj = recentCounterCreate();\n * int param_1 = recentCounterPing(obj, t);\n \n * recentCounterFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class RecentCounter {\n\n    public RecentCounter() {\n        \n    }\n    \n    public int Ping(int t) {\n        \n    }\n}\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * RecentCounter obj = new RecentCounter();\n * int param_1 = obj.Ping(t);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "\nvar RecentCounter = function() {\n    \n};\n\n/** \n * @param {number} t\n * @return {number}\n */\nRecentCounter.prototype.ping = function(t) {\n    \n};\n\n/** \n * Your RecentCounter object will be instantiated and called as such:\n * var obj = new RecentCounter()\n * var param_1 = obj.ping(t)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class RecentCounter\n    def initialize()\n        \n    end\n\n\n=begin\n    :type t: Integer\n    :rtype: Integer\n=end\n    def ping(t)\n        \n    end\n\n\nend\n\n# Your RecentCounter object will be instantiated and called as such:\n# obj = RecentCounter.new()\n# param_1 = obj.ping(t)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass RecentCounter {\n\n    init() {\n        \n    }\n    \n    func ping(_ t: Int) -> Int {\n        \n    }\n}\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * let obj = RecentCounter()\n * let ret_1: Int = obj.ping(t)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type RecentCounter struct {\n    \n}\n\n\nfunc Constructor() RecentCounter {\n    \n}\n\n\nfunc (this *RecentCounter) Ping(t int) int {\n    \n}\n\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * obj := Constructor();\n * param_1 := obj.Ping(t);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class RecentCounter() {\n\n    def ping(t: Int): Int = {\n        \n    }\n\n}\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * var obj = new RecentCounter()\n * var param_1 = obj.ping(t)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class RecentCounter() {\n\n    fun ping(t: Int): Int {\n        \n    }\n\n}\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * var obj = RecentCounter()\n * var param_1 = obj.ping(t)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct RecentCounter {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl RecentCounter {\n\n    fn new() -> Self {\n        \n    }\n    \n    fn ping(&self, t: i32) -> i32 {\n        \n    }\n}\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * let obj = RecentCounter::new();\n * let ret_1: i32 = obj.ping(t);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class RecentCounter {\n    /**\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * @param Integer $t\n     * @return Integer\n     */\n    function ping($t) {\n        \n    }\n}\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * $obj = RecentCounter();\n * $ret_1 = $obj->ping($t);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"34K\", \"totalSubmission\": \"48.6K\", \"totalAcceptedRaw\": 33955, \"totalSubmissionRaw\": 48597, \"acRate\": \"69.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "606",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-recent-calls/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Queue\n\n**Intuition**\n\nWe only care about the most recent calls in the last 3000 ms, so let's use a data structure that keeps only those.\n\n**Algorithm**\n\nKeep a queue of the most recent calls in increasing order of `t`.  When we see a new call with time `t`, remove all calls that occurred before `t - 3000`.\n\n<iframe src=\"https://leetcode.com/playground/qZ2BJSqK/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"qZ2BJSqK\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(Q)$$, where $$Q$$ is the number of queries made.\n\n* Space Complexity:  $$O(W)$$, where $$W = 3000$$ is the size of the window we should scan for recent calls.  In this problem, the complexity can be considered $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "592",
+      "count": 96,
+      "average": 1.844,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[100],[3001],[3002]]",
+  "metaData": "{\r\n    \"classname\": \"RecentCounter\",\r\n    \"maxbytesperline\": 200000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n        ]\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"ping\",\r\n            \"params\": [\r\n                {\r\n                    \"name\": \"t\",\r\n                    \"type\": \"integer\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

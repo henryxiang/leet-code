@@ -1,0 +1,112 @@
+{
+  "questionId": "220",
+  "questionFrontendId": "220",
+  "boundTopicId": null,
+  "title": "Contains Duplicate III",
+  "titleSlug": "contains-duplicate-iii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers, find out whether there are two distinct indices <i>i</i> and <i>j</i> in the array such that the <b>absolute</b> difference between <b>nums[i]</b> and <b>nums[j]</b> is at most <i>t</i> and the <b>absolute</b> difference between <i>i</i> and <i>j</i> is at most <i>k</i>.</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-1-1\">[1,2,3,1]</span>, k = <span id=\"example-input-1-2\">3</span>, t = <span id=\"example-input-1-3\">0</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-2-1\">[1,0,1,1]</span>, k = <span id=\"example-input-2-2\">1</span>, t = <span id=\"example-input-2-3\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-3-1\">[1,5,9,1,5,9]</span>, k = <span id=\"example-input-3-2\">2</span>, t = <span id=\"example-input-3-3\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">false</span>\r\n</pre>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 845,
+  "dislikes": 858,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Contains Duplicate\", \"titleSlug\": \"contains-duplicate\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Contains Duplicate II\", \"titleSlug\": \"contains-duplicate-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Sort",
+      "slug": "sort"
+    },
+    {
+      "name": "Ordered Map",
+      "slug": "ordered-map"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def containsNearbyAlmostDuplicate(self, nums, k, t):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :type t: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool containsNearbyAlmostDuplicate(int* nums, int numsSize, int k, int t){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool ContainsNearbyAlmostDuplicate(int[] nums, int k, int t) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @param {number} t\n * @return {boolean}\n */\nvar containsNearbyAlmostDuplicate = function(nums, k, t) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\r\n# @param {Integer} k\r\n# @param {Integer} t\r\n# @return {Boolean}\r\ndef contains_nearby_almost_duplicate(nums, k, t)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func containsNearbyAlmostDuplicate(_ nums: [Int], _ k: Int, _ t: Int) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func containsNearbyAlmostDuplicate(nums []int, k int, t int) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def containsNearbyAlmostDuplicate(nums: Array[Int], k: Int, t: Int): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun containsNearbyAlmostDuplicate(nums: IntArray, k: Int, t: Int): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn contains_nearby_almost_duplicate(nums: Vec<i32>, k: i32, t: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @param Integer $t\n     * @return Boolean\n     */\n    function containsNearbyAlmostDuplicate($nums, $k, $t) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"107.3K\", \"totalSubmission\": \"527.6K\", \"totalAcceptedRaw\": 107328, \"totalSubmissionRaw\": 527611, \"acRate\": \"20.3%\"}",
+  "hints": [
+    "Time complexity O(n logk)  - This will give an indication that sorting is involved for k elements.",
+    "Use already existing state to evaluate next state  -  Like, a set of k sorted numbers are only needed to be tracked. When we are processing the next number in array, then we can utilize the existing sorted state and it is not necessary to sort next overlapping set of k numbers again."
+  ],
+  "solution": {
+    "id": "25",
+    "canSeeDetail": true,
+    "url": "/articles/contains-duplicate-iii/",
+    "content": "[TOC]\r\n\r\n## Summary\r\nThis article is for intermediate readers. It introduces the following ideas:\r\nBinary Search Tree, HashMap, and Buckets.\r\n\r\n## Solutions\r\n---\r\n#### Approach #1 (Naive Linear Search) [Time Limit Exceeded]\r\n\r\n**Intuition**\r\n\r\nCompare each element with the previous $$k$$ elements and see if their difference is at most $$t$$.\r\n\r\n**Algorithm**\r\n\r\nThis problem requires us to find $$i$$ and $$j$$ such that the following conditions are satisfied:\r\n\r\n1. <a name=\"condition-1\"></a>$$\\bigl| i-j \\bigr| \\le k$$\r\n2. <a name=\"condition-2\"></a>$$\\bigl| \\mathrm{nums}[i] - \\mathrm{nums}[j] \\bigr| \\le t$$\r\n\r\nThe naive approach is the same as [Approach #1 in Contains Duplicate II solution](https://leetcode.com/articles/contains-duplicate-ii/#approach-1-naive-linear-search-time-limit-exceeded), which keeps a virtual sliding window that holds the newest $$k$$ elements. In this way, [Condition 1](#condition-1) above is always satisfied. We then check if [Condition 2](#condition-2) is also satisfied by applying linear search.\r\n\r\n\r\n**Java**\r\n\r\n```java\r\npublic boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {\r\n    for (int i = 0; i < nums.length; ++i) {\r\n        for (int j = Math.max(i - k, 0); j < i; ++j) {\r\n            if (Math.abs(nums[i] - nums[j]) <= t) return true;\r\n        }\r\n    }\r\n    return false;\r\n}\r\n// Time limit exceeded.\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n \\min(k,n))$$.\r\nIt costs $$O(\\min(k, n))$$ time for each linear search. Note that we do at most $$n$$ comparisons in one search even if $$k$$ can be larger than $$n$$.\r\n\r\n* Space complexity : $$O(1)$$.\r\nWe only used constant auxiliary space.\r\n---\r\n#### Approach #2 (Binary Search Tree) [Accepted]\r\n\r\n**Intuition**\r\n\r\n* If elements in the window are maintained in sorted order, we can apply binary search twice to check if [Condition 2](#condition-2) is satisfied.\r\n\r\n* By utilizing self-balancing Binary Search Tree, one can keep the window ordered at all times with logarithmic time `insert` and `delete`.\r\n\r\n**Algorithm**\r\n\r\nThe real bottleneck of [Approach #1](#approach-1-naive-linear-search-time-limit-exceeded) is due to all elements in the sliding window are being scanned to check if [Condition 2](#condition-2) is satisfied. Could we do better?\r\n\r\nIf elements in the window are in sorted order, we can apply Binary Search twice to search for the two boundaries $$x+t$$ and $$x-t$$ for each element $$x$$.\r\n\r\nUnfortunately, the window is unsorted. A common mistake here is attempting to maintain a sorted array. Although searching in a sorted array costs only logarithmic time, keeping the order of the elements after `insert` and `delete` operation is not as efficient. Imagine you have a sorted array with $$k$$ elements and you are adding a new item $$x$$. Even if you can find the correct position in $$O(\\log k)$$ time, you still need $$O(k)$$ time to insert $$x$$ into the sorted array. The reason is that you need to shift all elements after the insert position one step backward. The same reasoning applies to removal as well. After removing an item from position $$i$$, you need to shift all elements after $$i$$ one step forward. Thus, we gain nothing in speed compared to the [naive linear search approach](#approach-1-naive-linear-search-time-limit-exceeded) above.\r\n\r\nTo gain an actual speedup, we need a *dynamic* data structure that supports faster `insert`, `search` and `delete`. Self-balancing Binary Search Tree (BST) is the right data structure. The term *Self-balancing* means the tree automatically keeps its height small after arbitrary `insert` and `delete` operations. Why does self-balancing matter? That is because most operations on a BST take time directly proportional to the height of the tree. Take a look at the following non-balanced BST which is skewed to the left:\r\n\r\n```\r\n            6\r\n           /\r\n          5\r\n         /\r\n        4\r\n       /\r\n      3\r\n     /\r\n    2\r\n   /\r\n  1\r\n```\r\n*Figure 1. A non-balanced BST that is skewed to the left.*\r\n\r\nSearching in the above BST degrades to *linear* time, which is like searching in a linked list. Now compare to the BST below which is balanced:\r\n\r\n```\r\n          4\r\n        /   \\\r\n       2     6\r\n      / \\   /\r\n     1   3  5\r\n```\r\n\r\n*Figure 2. A balanced BST.*\r\n\r\nAssume that $$n$$ is the total number of nodes in the tree, a balanced binary tree maintains its height in the order of $$h = \\log n$$. Thus it supports $$O(h) = O(\\log n)$$ time for each of `insert`, `search` and `delete` operations.\r\n\r\nHere is the entire algorithm in pseudocode:\r\n\r\n* Initialize an empty BST `set`\r\n* Loop through the array, for each element $$x$$\r\n    * Find the *smallest* element $$s$$ in `set` that is *greater* than or equal to $$x$$, return true if $$s - x \\leq t$$\r\n    * Find the *greatest* element $$g$$ in `set` that is *smaller* than or equal to $$x$$, return true if $$x - g \\leq t$$\r\n    * Put $$x$$ in `set`\r\n    * If the size of the set is larger than $$k$$, remove the oldest item.\r\n* Return false\r\n\r\nOne may consider the smallest element $$s$$ that is greater or equal to $$x$$ as the *successor* of $$x$$ in the BST, as in: \"What is the next greater value of $$x$$?\". Similarly, we consider the greatest element $$g$$ that is smaller or equal to $$x$$ as the *predecessor* of $$x$$ in the BST, as in: \"What is the previous smaller value of $$x$$?\". These two values $$s$$ and $$g$$ are the two closest neighbors from $$x$$. Thus by checking the distance from them to $$x$$, we can conclude if [Condition 2](#condition-2) is satisfied.\r\n\r\n**Java**\r\n\r\n```java\r\npublic boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {\r\n    TreeSet<Integer> set = new TreeSet<>();\r\n    for (int i = 0; i < nums.length; ++i) {\r\n        // Find the successor of current element\r\n        Integer s = set.ceiling(nums[i]);\r\n        if (s != null && s <= nums[i] + t) return true;\r\n\r\n        // Find the predecessor of current element\r\n        Integer g = set.floor(nums[i]);\r\n        if (g != null && nums[i] <= g + t) return true;\r\n\r\n        set.add(nums[i]);\r\n        if (set.size() > k) {\r\n            set.remove(nums[i - k]);\r\n        }\r\n    }\r\n    return false;\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n \\log (\\min(n,k)))$$.\r\nWe iterate through the array of size $$n$$. For each iteration, it costs $$O(\\log \\min(k, n))$$ time (`search`, `insert` or `delete`) in the BST, since the size of the BST is upper bounded by both $$k$$ and $$n$$.\r\n\r\n* Space complexity : $$O(\\min(n,k))$$.\r\nSpace is dominated by the size of the BST, which is upper bounded by both $$k$$ and $$n$$.\r\n\r\n**Note**\r\n\r\n* When the array's elements and $$t$$'s value are large, they can cause overflow in arithmetic operation. Consider using a larger size data type instead, such as *long*.\r\n\r\n* C++'s `std::set`, `std::set::upper_bound` and `std::set::lower_bound` are equivalent to Java's `TreeSet`, `TreeSet::ceiling` and `TreeSet::floor`, respectively. Python does not provide a Self-balancing BST through its library.\r\n\r\n---\r\n#### Approach #3 (Buckets) [Accepted]\r\n\r\n**Intuition**\r\n\r\nInspired by `bucket sort`, we can achieve linear time complexity in our problem using *buckets* as window.\r\n\r\n**Algorithm**\r\n\r\nBucket sort is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, using a different sorting algorithm. Here is an illustration of buckets.\r\n\r\n![Illustration of buckets](https://leetcode.com/media/original_images/220_Buckets.png \"Illustration of buckets\"){:width=\"539px\"}\r\n{:align=\"center\"}\r\n\r\n*Figure 3. Illustration of buckets.*\r\n{:align=\"center\"}\r\n\r\nFrom the above example, we have 8 unsorted integers. We create 5 buckets covering the inclusive ranges of $$[0,9], [10,19], [20, 29], [30, 39], [40, 49]$$ individually. Each of the eight elements is in a particular bucket. For element with value $$x$$, its bucket label is $$x / w$$ and here we have $$w = 10$$. Sort each bucket using some other sorting algorithm and then collect all of them bucket by bucket.\r\n\r\nBack to our problem, the critical issue we are trying to solve is:\r\n\r\n> 1. For a given element $$x$$ is there an item in the window that is within the range of $$[x-t, x+t]$$?\r\n> 2. Could we do this in constant time?\r\n\r\nLet us consider an example where each element is a person's birthday. Your birthday, say some day in *March*, is the new element $$x$$. Suppose that each month has $$30$$ days and you want to know if anyone has a birthday within $$t = 30$$ days of yours. Immediately, we can rule out all other months except *February, March, April*.\r\n\r\nThe reason we know this is because each birthday belongs to a *bucket* we called *month*! And the range covered by the buckets are the same as distance $$t$$ which simplifies things a lot. Any two elements that are not in the same or adjacent buckets must have a distance greater than $$t$$.\r\n\r\nWe apply the above bucketing principle and design buckets covering the ranges of $$..., [0,t], [t+1, 2t+1], ...$$. We keep the window using this buckets. Then, each time, all we need to check is the bucket that $$x$$ belongs to and its two adjacent buckets. Thus, we have a constant time algorithm for searching almost duplicate in the window.\r\n\r\nOne thing worth mentioning is the difference from bucket sort – Each of our buckets contains at most one element at any time, because two elements in a bucket means \"almost duplicate\" and we can return early from the function. Therefore, a HashMap with an element associated with a bucket label is enough for our purpose.\r\n\r\n**Java**\r\n\r\n```java\r\npublic class Solution {\r\n    // Get the ID of the bucket from element value x and bucket width w\r\n    // In Java, `-3 / 5 = 0` and but we need `-3 / 5 = -1`.\r\n    private long getID(long x, long w) {\r\n        return x < 0 ? (x + 1) / w - 1 : x / w;\r\n    }\r\n\r\n    public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {\r\n        if (t < 0) return false;\r\n        Map<Long, Long> d = new HashMap<>();\r\n        long w = (long)t + 1;\r\n        for (int i = 0; i < nums.length; ++i) {\r\n            long m = getID(nums[i], w);\r\n            // check if bucket m is empty, each bucket may contain at most one element\r\n            if (d.containsKey(m))\r\n                return true;\r\n            // check the neighbor buckets for almost duplicate\r\n            if (d.containsKey(m - 1) && Math.abs(nums[i] - d.get(m - 1)) < w)\r\n                return true;\r\n            if (d.containsKey(m + 1) && Math.abs(nums[i] - d.get(m + 1)) < w)\r\n                return true;\r\n            // now bucket m is empty and no almost duplicate in neighbor buckets\r\n            d.put(m, (long)nums[i]);\r\n            if (i >= k) d.remove(getID(nums[i - k], w));\r\n        }\r\n        return false;\r\n    }\r\n}\r\n```\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n)$$.\r\nFor each of the $$n$$ elements, we do at most three searches, one insert, and one delete on the HashMap, which costs constant time on average. Thus, the entire algorithm costs $$O(n)$$ time.\r\n\r\n* Space complexity : $$O(\\min(n,k))$$.\r\nSpace is dominated by the HashMap, which is linear to the size of its elements. The size of the HashMap is upper bounded by both $$n$$ and $$k$$. Thus the space complexity is $$O(\\min(n, k))$$.\r\n\r\n## See Also\r\n\r\n* [Problem 217 Contains Duplicate](https://leetcode.com/articles/contains-duplicate/)\r\n* [Problem 219 Contains Duplicate II](https://leetcode.com/articles/contains-duplicate-ii/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "23",
+      "count": 49,
+      "average": 4.224,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,1]\n3\n0",
+  "metaData": "{\r\n  \"name\": \"containsNearbyAlmostDuplicate\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"t\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

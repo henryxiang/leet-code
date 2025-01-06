@@ -1,0 +1,76 @@
+{
+  "questionId": "577",
+  "questionFrontendId": "577",
+  "boundTopicId": null,
+  "title": "Employee Bonus",
+  "titleSlug": "employee-bonus",
+  "categoryTitle": "Database",
+  "content": "<p>Select all employee&#39;s name and bonus whose bonus is &lt; 1000.</p>\r\n\r\n<p>Table:<code>Employee </code></p>\r\n\r\n<pre>\r\n+-------+--------+-----------+--------+\r\n| empId |  name  | supervisor| salary |\r\n+-------+--------+-----------+--------+\r\n|   1   | John   |  3        | 1000   |\r\n|   2   | Dan    |  3        | 2000   |\r\n|   3   | Brad   |  null     | 4000   |\r\n|   4   | Thomas |  3        | 4000   |\r\n+-------+--------+-----------+--------+\r\nempId is the primary key column for this table.\r\n</pre>\r\n\r\n<p>Table: <code>Bonus</code></p>\r\n\r\n<pre>\r\n+-------+-------+\r\n| empId | bonus |\r\n+-------+-------+\r\n| 2     | 500   |\r\n| 4     | 2000  |\r\n+-------+-------+\r\nempId is the primary key column for this table.\r\n</pre>\r\n\r\n<p>Example ouput:</p>\r\n\r\n<pre>\r\n+-------+-------+\r\n| name  | bonus |\r\n+-------+-------+\r\n| John  | null  |\r\n| Dan   | 500   |\r\n| Brad  | null  |\r\n+-------+-------+\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 52,
+  "dislikes": 29,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Combine Two Tables\", \"titleSlug\": \"combine-two-tables\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "yrshenoy",
+      "profileUrl": "/yrshenoy/",
+      "avatarUrl": "https://assets.leetcode.com/users/yrshenoy/avatar_1525656972.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Netsuite\", \"slug\": \"netsuite\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"18.7K\", \"totalSubmission\": \"29.6K\", \"totalAcceptedRaw\": 18683, \"totalSubmissionRaw\": 29649, \"acRate\": \"63.0%\"}",
+  "hints": [
+    "If the EmpId in table Employee has no match in table Bonus, we consider that the corresponding bonus is null and null is smaller than 1000.",
+    "Inner join is the default join, we can solve the mismatching problem by using outer join."
+  ],
+  "solution": {
+    "id": "182",
+    "canSeeDetail": true,
+    "url": "/articles/employee-bonus/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `OUTER JOIN` and `WHERE` clause [Accepted]\n\n**Intuition**\n\nJoin table **Employee** with **Bonus** and then use `WHERE` clause to get the required records.\n\n**Algorithm**\n\nSince foreign key **Bonus.empId** refers to **Employee.empId** and some employees do not have bonus records, we can use `OUTER JOIN` to link these two tables as the first step.\n\n```sql\nSELECT\n    Employee.name, Bonus.bonus\nFROM\n    Employee\n        LEFT OUTER JOIN\n    Bonus ON Employee.empid = Bonus.empid\n;\n```\n>Note: \"LEFT OUTER JOIN\" could be written as \"LEFT JOIN\".\n\nThe output to run this code with the sample data is as below.\n\n```\n| name   | bonus |\n|--------|-------|\n| Dan    | 500   |\n| Thomas | 2000  |\n| Brad   |       |\n| John   |       |\n```\nThe bonus value for 'Brad' and 'John' is empty, which is actually `NULL` in the database. \"Conceptually, NULL means “a missing unknown value” and it is treated somewhat differently from other values.\" Check the [Working with NULL Values](https://dev.mysql.com/doc/refman/5.7/en/working-with-null.html) in MySQL manual for more details. In addition, we have to use `IS NULL` or `IS NOT NULL` to compare a value with `NULL`.\n\nAt last, we can add a `WHERE` clause with the proper conditions to filter these records.\n\n**MySQL**\n\n```sql\nSELECT\n    Employee.name, Bonus.bonus\nFROM\n    Employee\n        LEFT JOIN\n    Bonus ON Employee.empid = Bonus.empid\nWHERE\n    bonus < 1000 OR bonus IS NULL\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "177",
+      "count": 8,
+      "average": 4.125,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"Employee\": [\"EmpId\", \"Name\", \"Supervisor\", \"Salary\"], \"Bonus\": [\"EmpId\", \"Bonus\"]}, \"rows\": {\"Employee\": [[3, \"Brad\", null, 4000], [1, \"John\", 3, 1000], [2, \"Dan\", 3, 2000], [4, \"Thomas\", 3, 4000]], \"Bonus\": [[2, 500], [4, 2000]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists Employee (EmpId int, Name varchar(255), Supervisor int, Salary int)\",\r\n    \"Create table If Not Exists Bonus (EmpId int, Bonus int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table Employee (EmpId int, Name varchar(255), Supervisor int, Salary int)\",\r\n    \"Create table Bonus (EmpId int, Bonus int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table Employee (EmpId int, Name varchar(255), Supervisor int, Salary int)\",\r\n    \"Create table Bonus (EmpId int, Bonus int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Employee (EmpId int, Name varchar(255), Supervisor int, Salary int)",
+    "Create table If Not Exists Bonus (EmpId int, Bonus int)",
+    "Truncate table Employee",
+    "insert into Employee (EmpId, Name, Supervisor, Salary) values ('3', 'Brad', 'None', '4000')",
+    "insert into Employee (EmpId, Name, Supervisor, Salary) values ('1', 'John', '3', '1000')",
+    "insert into Employee (EmpId, Name, Supervisor, Salary) values ('2', 'Dan', '3', '2000')",
+    "insert into Employee (EmpId, Name, Supervisor, Salary) values ('4', 'Thomas', '3', '4000')",
+    "Truncate table Bonus",
+    "insert into Bonus (EmpId, Bonus) values ('2', '500')",
+    "insert into Bonus (EmpId, Bonus) values ('4', '2000')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

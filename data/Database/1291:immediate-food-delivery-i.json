@@ -1,0 +1,53 @@
+{
+  "questionId": "1291",
+  "questionFrontendId": "1173",
+  "boundTopicId": null,
+  "title": "Immediate Food Delivery I",
+  "titleSlug": "immediate-food-delivery-i",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Delivery</code></p>\n\n<pre>\n+-----------------------------+---------+\n| Column Name                 | Type    |\n+-----------------------------+---------+\n| delivery_id                 | int     |\n| customer_id                 | int     |\n| order_date                  | date    |\n| customer_pref_delivery_date | date    |\n+-----------------------------+---------+\ndelivery_id is the primary key of this table.\nThe table holds information about food delivery to customers that make orders at some date and specify a preferred delivery date (on the same order date or after it).\n</pre>\n\n<p>&nbsp;</p>\n\n<p>If the preferred delivery date of the customer is the same as the&nbsp;order date&nbsp;then the order is called <em>immediate</em>&nbsp;otherwise it&#39;s called <em>scheduled</em>.</p>\n\n<p>Write an SQL query to find the&nbsp;percentage of immediate orders in the table,&nbsp;<strong>rounded to 2 decimal places</strong>.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\nDelivery table:\n+-------------+-------------+------------+-----------------------------+\n| delivery_id | customer_id | order_date | customer_pref_delivery_date |\n+-------------+-------------+------------+-----------------------------+\n| 1           | 1           | 2019-08-01 | 2019-08-02                  |\n| 2           | 5           | 2019-08-02 | 2019-08-02                  |\n| 3           | 1           | 2019-08-11 | 2019-08-11                  |\n| 4           | 3           | 2019-08-24 | 2019-08-26                  |\n| 5           | 4           | 2019-08-21 | 2019-08-22                  |\n| 6           | 2           | 2019-08-11 | 2019-08-13                  |\n+-------------+-------------+------------+-----------------------------+\n\nResult table:\n+----------------------+\n| immediate_percentage |\n+----------------------+\n| 33.33                |\n+----------------------+\nThe orders with delivery id 2 and 3 are immediate while the others are scheduled.\n</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 23,
+  "dislikes": 1,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"DoorDash\", \"slug\": \"doordash\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.2K\", \"totalSubmission\": \"5.5K\", \"totalAcceptedRaw\": 4236, \"totalSubmissionRaw\": 5543, \"acRate\": \"76.4%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Delivery\":[\"delivery_id\",\"customer_id\",\"order_date\",\"customer_pref_delivery_date\"]},\"rows\":{\"Delivery\":[[1,1,\"2019-08-01\",\"2019-08-02\"],[2,5,\"2019-08-02\",\"2019-08-02\"],[3,1,\"2019-08-11\",\"2019-08-11\"],[4,3,\"2019-08-24\",\"2019-08-26\"],[5,4,\"2019-08-21\",\"2019-08-22\"],[6,2,\"2019-08-11\",\"2019-08-13\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Delivery (delivery_id int, customer_id int, order_date date, customer_pref_delivery_date date)\"\n  ],\n  \"mssql\": [\n    \"Create table Delivery (delivery_id int, customer_id int, order_date date, customer_pref_delivery_date date)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Delivery (delivery_id int, customer_id int, order_date date, customer_pref_delivery_date date)\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Delivery (delivery_id int, customer_id int, order_date date, customer_pref_delivery_date date)",
+    "Truncate table Delivery",
+    "insert into Delivery (delivery_id, customer_id, order_date, customer_pref_delivery_date) values ('1', '1', '2019-08-01', '2019-08-02')",
+    "insert into Delivery (delivery_id, customer_id, order_date, customer_pref_delivery_date) values ('2', '5', '2019-08-02', '2019-08-02')",
+    "insert into Delivery (delivery_id, customer_id, order_date, customer_pref_delivery_date) values ('3', '1', '2019-08-11', '2019-08-11')",
+    "insert into Delivery (delivery_id, customer_id, order_date, customer_pref_delivery_date) values ('4', '3', '2019-08-24', '2019-08-26')",
+    "insert into Delivery (delivery_id, customer_id, order_date, customer_pref_delivery_date) values ('5', '4', '2019-08-21', '2019-08-22')",
+    "insert into Delivery (delivery_id, customer_id, order_date, customer_pref_delivery_date) values ('6', '2', '2019-08-11', '2019-08-13')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

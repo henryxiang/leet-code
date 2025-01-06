@@ -1,0 +1,113 @@
+{
+  "questionId": "769",
+  "questionFrontendId": "764",
+  "boundTopicId": null,
+  "title": "Largest Plus Sign",
+  "titleSlug": "largest-plus-sign",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nIn a 2D <code>grid</code> from (0, 0) to (N-1, N-1), every cell contains a <code>1</code>, except those cells in the given list <code>mines</code> which are <code>0</code>.  What is the largest axis-aligned plus sign of <code>1</code>s contained in the grid?  Return the order of the plus sign.  If there is none, return 0.\r\n</p><p>\r\nAn \"<i>axis-aligned plus sign of <code>1</code>s</i> of order <b>k</b>\" has some center <code>grid[x][y] = 1</code> along with 4 arms of length <code>k-1</code> going up, down, left, and right, and made of <code>1</code>s.  This is demonstrated in the diagrams below.  Note that there could be <code>0</code>s or <code>1</code>s beyond the arms of the plus sign, only the relevant area of the plus sign is checked for 1s.\r\n</p><p>\r\n\r\n<p><b>Examples of Axis-Aligned Plus Signs of Order k:</b><br /><pre>\r\nOrder 1:\r\n000\r\n0<b>1</b>0\r\n000\r\n\r\nOrder 2:\r\n00000\r\n00<b>1</b>00\r\n0<b>111</b>0\r\n00<b>1</b>00\r\n00000\r\n\r\nOrder 3:\r\n0000000\r\n000<b>1</b>000\r\n000<b>1</b>000\r\n0<b>11111</b>0\r\n000<b>1</b>000\r\n000<b>1</b>000\r\n0000000\r\n</pre></p>\r\n\r\n<p><b>Example 1:</b><br /><pre>\r\n<b>Input:</b> N = 5, mines = [[4, 2]]\r\n<b>Output:</b> 2\r\n<b>Explanation:</b>\r\n11111\r\n11111\r\n1<b>1</b>111\r\n<b>111</b>11\r\n1<b>1</b>011\r\nIn the above grid, the largest plus sign can only be order 2.  One of them is marked in bold.\r\n</pre></p>\r\n\r\n<p><b>Example 2:</b><br /><pre>\r\n<b>Input:</b> N = 2, mines = []\r\n<b>Output:</b> 1\r\n<b>Explanation:</b>\r\nThere is no plus sign of order 2, but there is of order 1.\r\n</pre></p>\r\n\r\n<p><b>Example 3:</b><br /><pre>\r\n<b>Input:</b> N = 1, mines = [[0, 0]]\r\n<b>Output:</b> 0\r\n<b>Explanation:</b>\r\nThere is no plus sign, so return 0.\r\n</pre></p>\r\n\r\n<p><b>Note:</b><br><ol>\r\n<li><code>N</code> will be an integer in the range <code>[1, 500]</code>.</li>\r\n<li><code>mines</code> will have length at most <code>5000</code>.</li>\r\n<li><code>mines[i]</code> will be length 2 and consist of integers in the range <code>[0, N-1]</code>.</li>\r\n<li><i>(Additionally, programs submitted in C, C++, or C# will be judged with a slightly smaller time limit.)</i></li>\r\n</ol></p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 336,
+  "dislikes": 73,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Maximal Square\", \"titleSlug\": \"maximal-square\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int orderOfLargestPlusSign(int N, vector<vector<int>>& mines) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int orderOfLargestPlusSign(int N, int[][] mines) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def orderOfLargestPlusSign(self, N, mines):\n        \"\"\"\n        :type N: int\n        :type mines: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def orderOfLargestPlusSign(self, N: int, mines: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint orderOfLargestPlusSign(int N, int** mines, int minesSize, int* minesColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int OrderOfLargestPlusSign(int N, int[][] mines) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @param {number[][]} mines\n * @return {number}\n */\nvar orderOfLargestPlusSign = function(N, mines) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer[][]} mines\n# @return {Integer}\ndef order_of_largest_plus_sign(n, mines)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func orderOfLargestPlusSign(_ N: Int, _ mines: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func orderOfLargestPlusSign(N int, mines [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def orderOfLargestPlusSign(N: Int, mines: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun orderOfLargestPlusSign(N: Int, mines: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn order_of_largest_plus_sign(n: i32, mines: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @param Integer[][] $mines\n     * @return Integer\n     */\n    function orderOfLargestPlusSign($N, $mines) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.7K\", \"totalSubmission\": \"37.2K\", \"totalAcceptedRaw\": 16743, \"totalSubmissionRaw\": 37188, \"acRate\": \"45.0%\"}",
+  "hints": [
+    "For each direction such as \"left\", find left[r][c] = the number of 1s you will see before a zero starting at r, c and walking left.  You can find this in N^2 time with a dp.  The largest plus sign at r, c is just the minimum of left[r][c], up[r][c] etc."
+  ],
+  "solution": {
+    "id": "375",
+    "canSeeDetail": true,
+    "url": "/articles/largest-plus-sign/",
+    "content": "[TOC]\n\n#### Approach #1: Brute Force [Time Limit Exceeded]\n\n**Intuition and Algorithm**\n\nFor each possible center, find the largest plus sign that could be placed by repeatedly expanding it.\nWe expect this algorithm to be $$O(N^3)$$, and so take roughly $$500^3 = (1.25) * 10^8$$ operations.  This is a little bit too big for us to expect it to run in time.\n\n<iframe src=\"https://leetcode.com/playground/pVcrm4PA/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"pVcrm4PA\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^3)$$, as we perform two outer loops ($$O(N^2)$$), plus the inner loop involving `k` is $$O(N)$$.\n\n* Space Complexity: $$O(\\text{mines.length})$$.\n\n---\n\n#### Approach #2: Dynamic Programming [Accepted]\n\n**Intuition**\n\nHow can we improve our bruteforce?  One way is to try to speed up the inner loop involving `k`, the order of the candidate plus sign.\nIf we knew the longest possible arm length $$L_u, L_l, L_d, L_r$$ in each direction from a center, we could know the order $$\\min(L_u, L_l, L_d, L_r)$$ of a plus sign at that center.  We could find these lengths separately using dynamic programming.\n\n**Algorithm**\n\nFor each (cardinal) direction, and for each coordinate `(r, c)` let's compute the `count` of that coordinate: the longest line of `'1'`s starting from `(r, c)` and going in that direction.\nWith dynamic programming, it is either 0 if `grid[r][c]` is zero, else it is `1` plus the count of the coordinate in the same direction.\nFor example, if the direction is left and we have a row like `01110110`, the corresponding count values are `01230120`, and the integers are either 1 more than their successor, or 0.\nFor each square, we want `dp[r][c]` to end up being the minimum of the 4 possible counts.  At the end, we take the maximum value in `dp`.\n\n<iframe src=\"https://leetcode.com/playground/JxbvtwM9/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"JxbvtwM9\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$, as the work we do under two nested for loops is $$O(1)$$.\n\n* Space Complexity: $$O(N^2)$$, the size of `dp`.\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "370",
+      "count": 12,
+      "average": 3.833,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "5\n[[4,2]]",
+  "metaData": "{\r\n  \"name\": \"orderOfLargestPlusSign\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"mines\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

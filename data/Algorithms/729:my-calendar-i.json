@@ -1,0 +1,113 @@
+{
+  "questionId": "729",
+  "questionFrontendId": "729",
+  "boundTopicId": null,
+  "title": "My Calendar I",
+  "titleSlug": "my-calendar-i",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Implement a <code>MyCalendar</code> class to store your events. A new event can be added if adding the event will not cause a double booking.</p>\r\n\r\n<p>Your class will have the method, <code>book(int start, int end)</code>. Formally, this represents a booking on the half open interval <code>[start, end)</code>, the range of real numbers <code>x</code> such that <code>start &lt;= x &lt; end</code>.</p>\r\n\r\n<p>A <i>double booking</i> happens when two events have some non-empty intersection (ie., there is some time that is common to both events.)</p>\r\n\r\n<p>For each call to the method <code>MyCalendar.book</code>, return <code>true</code> if the event can be added to the calendar successfully without causing a double booking. Otherwise, return <code>false</code> and do not add the event to the calendar.</p>\r\nYour class will be called like this: <code>MyCalendar cal = new MyCalendar();</code> <code>MyCalendar.book(start, end)</code>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\nMyCalendar();\r\nMyCalendar.book(10, 20); // returns true\r\nMyCalendar.book(15, 25); // returns false\r\nMyCalendar.book(20, 30); // returns true\r\n<b>Explanation:</b> \r\nThe first event can be booked.  The second can&#39;t because time 15 is already booked by another event.\r\nThe third event can be booked, as the first event takes every time less than 20, but not including 20.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ul>\r\n\t<li>The number of calls to <code>MyCalendar.book</code> per test case will be at most <code>1000</code>.</li>\r\n\t<li>In calls to <code>MyCalendar.book(start, end)</code>, <code>start</code> and <code>end</code> are integers in the range <code>[0, 10^9]</code>.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 478,
+  "dislikes": 29,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"My Calendar II\", \"titleSlug\": \"my-calendar-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"My Calendar III\", \"titleSlug\": \"my-calendar-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "ccyjoshua",
+      "profileUrl": "/ccyjoshua/",
+      "avatarUrl": "https://www.gravatar.com/avatar/23d1850eeea18a63da0415500ddc26dc.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class MyCalendar {\r\npublic:\r\n    MyCalendar() {\r\n        \r\n    }\r\n    \r\n    bool book(int start, int end) {\r\n        \r\n    }\r\n};\r\n\r\n/**\r\n * Your MyCalendar object will be instantiated and called as such:\r\n * MyCalendar* obj = new MyCalendar();\r\n * bool param_1 = obj->book(start,end);\r\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class MyCalendar {\n\n    public MyCalendar() {\n        \n    }\n    \n    public boolean book(int start, int end) {\n        \n    }\n}\n\n/**\n * Your MyCalendar object will be instantiated and called as such:\n * MyCalendar obj = new MyCalendar();\n * boolean param_1 = obj.book(start,end);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class MyCalendar(object):\n\n    def __init__(self):\n        \n\n    def book(self, start, end):\n        \"\"\"\n        :type start: int\n        :type end: int\n        :rtype: bool\n        \"\"\"\n        \n\n\n# Your MyCalendar object will be instantiated and called as such:\n# obj = MyCalendar()\n# param_1 = obj.book(start,end)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class MyCalendar:\n\n    def __init__(self):\n        \n\n    def book(self, start: int, end: int) -> bool:\n        \n\n\n# Your MyCalendar object will be instantiated and called as such:\n# obj = MyCalendar()\n# param_1 = obj.book(start,end)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} MyCalendar;\n\n\nMyCalendar* myCalendarCreate() {\n    \n}\n\nbool myCalendarBook(MyCalendar* obj, int start, int end) {\n  \n}\n\nvoid myCalendarFree(MyCalendar* obj) {\n    \n}\n\n/**\n * Your MyCalendar struct will be instantiated and called as such:\n * MyCalendar* obj = myCalendarCreate();\n * bool param_1 = myCalendarBook(obj, start, end);\n \n * myCalendarFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class MyCalendar {\r\n\r\n    public MyCalendar() {\r\n        \r\n    }\r\n    \r\n    public bool Book(int start, int end) {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your MyCalendar object will be instantiated and called as such:\r\n * MyCalendar obj = new MyCalendar();\r\n * bool param_1 = obj.Book(start,end);\r\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "\nvar MyCalendar = function() {\n    \n};\n\n/** \n * @param {number} start \n * @param {number} end\n * @return {boolean}\n */\nMyCalendar.prototype.book = function(start, end) {\n    \n};\n\n/** \n * Your MyCalendar object will be instantiated and called as such:\n * var obj = new MyCalendar()\n * var param_1 = obj.book(start,end)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class MyCalendar\r\n    def initialize()\r\n        \r\n    end\r\n\r\n\r\n=begin\r\n    :type start: Integer\r\n    :type end: Integer\r\n    :rtype: Boolean\r\n=end\r\n    def book(start, end)\r\n        \r\n    end\r\n\r\n\r\nend\r\n\r\n# Your MyCalendar object will be instantiated and called as such:\r\n# obj = MyCalendar.new()\r\n# param_1 = obj.book(start, end)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\r\nclass MyCalendar {\r\n\r\n    init() {\r\n        \r\n    }\r\n    \r\n    func book(_ start: Int, _ end: Int) -> Bool {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your MyCalendar object will be instantiated and called as such:\r\n * let obj = MyCalendar()\r\n * let ret_1: Bool = obj.book(start, end)\r\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type MyCalendar struct {\r\n    \r\n}\r\n\r\n\r\nfunc Constructor() MyCalendar {\r\n    \r\n}\r\n\r\n\r\nfunc (this *MyCalendar) Book(start int, end int) bool {\r\n    \r\n}\r\n\r\n\r\n/**\r\n * Your MyCalendar object will be instantiated and called as such:\r\n * obj := Constructor();\r\n * param_1 := obj.Book(start,end);\r\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class MyCalendar() {\r\n\r\n    def book(start: Int, end: Int): Boolean = {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your MyCalendar object will be instantiated and called as such:\r\n * var obj = new MyCalendar()\r\n * var param_1 = obj.book(start,end)\r\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class MyCalendar() {\r\n\r\n    fun book(start: Int, end: Int): Boolean {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your MyCalendar object will be instantiated and called as such:\r\n * var obj = MyCalendar()\r\n * var param_1 = obj.book(start,end)\r\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct MyCalendar {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl MyCalendar {\n\n    fn new() -> Self {\n        \n    }\n    \n    fn book(&self, start: i32, end: i32) -> bool {\n        \n    }\n}\n\n/**\n * Your MyCalendar object will be instantiated and called as such:\n * let obj = MyCalendar::new();\n * let ret_1: bool = obj.book(start, end);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class MyCalendar {\n    /**\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * @param Integer $start\n     * @param Integer $end\n     * @return Boolean\n     */\n    function book($start, $end) {\n        \n    }\n}\n\n/**\n * Your MyCalendar object will be instantiated and called as such:\n * $obj = MyCalendar();\n * $ret_1 = $obj->book($start, $end);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"42.6K\", \"totalSubmission\": \"86K\", \"totalAcceptedRaw\": 42566, \"totalSubmissionRaw\": 86031, \"acRate\": \"49.5%\"}",
+  "hints": [
+    "Store the events as a sorted list of intervals.  If none of the events conflict, then the new event can be added."
+  ],
+  "solution": {
+    "id": "297",
+    "canSeeDetail": true,
+    "url": "/articles/my-calendar-i/",
+    "content": "[TOC]\n\n#### Approach #1: Brute Force [Accepted]\n\n**Intuition**\n\nWhen booking a new event `[start, end)`, check if every current event conflicts with the new event.  If none of them do, we can book the event.\n\n**Algorithm**\n\nWe will maintain a list of interval *events* (not necessarily sorted).  Evidently, two events `[s1, e1)` and `[s2, e2)` do *not* conflict if and only if one of them starts after the other one ends: either `e1 <= s2` OR `e2 <= s1`.  By De Morgan's laws, this means the events conflict when `s1 < e2` AND `s2 < e1`.\n\n<iframe src=\"https://leetcode.com/playground/RbxQb2Zj/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"RbxQb2Zj\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$, where $$N$$ is the number of events booked.  For each new event, we process every previous event to decide whether the new event can be booked.  This leads to $$\\sum_k^N O(k) = O(N^2)$$ complexity.\n\n* Space Complexity: $$O(N)$$, the size of the `calendar`.\n\n---\n#### Approach #2: Balanced Tree [Accepted]\n\n**Intuition**\n\nIf we maintained our events in *sorted* order, we could check whether an event could be booked in $$O(\\log N)$$ time (where $$N$$ is the number of events already booked) by binary searching for where the event should be placed.  We would also have to insert the event in our sorted structure.\n\n**Algorithm**\n\nWe need a data structure that keeps elements sorted and supports fast insertion.  In Java, a `TreeMap` is the perfect candidate.  In Python, we can build our own binary tree structure.\n\nFor Java, we will have a `TreeMap` where the keys are the start of each interval, and the values are the ends of those intervals.  When inserting the interval `[start, end)`, we check if there is a conflict on each side with neighboring intervals: we would like `calendar.get(prev)) <= start <= end <= next` for the booking to be valid (or for `prev` or `next` to be null respectively.)\n\nFor Python, we will create a binary tree.  Each node represents some interval `[self.start, self.end)` while `self.left, self.right` represents nodes that are smaller or larger than the current node.\n\n<iframe src=\"https://leetcode.com/playground/huRxLsMu/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"huRxLsMu\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity (Java): $$O(N \\log N)$$, where $$N$$ is the number of events booked.  For each new event, we search that the event is legal in $$O(\\log N)$$ time, then insert it in $$O(1)$$ time.\n\n* Time Complexity (Python): $$O(N^2)$$ worst case, with $$O(N \\log N)$$ on random data.  For each new event, we insert the event into our binary tree.  As this tree may not be balanced, it may take a linear number of steps to add each event.\n\n* Space Complexity: $$O(N)$$, the size of the data structures used.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).  Solutions in Approach #2 inspired by [@shawngao](https://discuss.leetcode.com/topic/111205/java-8-liner-treemap) and  [@persianPanda](https://discuss.leetcode.com/topic/111203/binary-search-tree-python).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "292",
+      "count": 21,
+      "average": 4.571,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"MyCalendar\",\"book\",\"book\",\"book\"]\n[[],[10,20],[15,25],[20,30]]",
+  "metaData": "{\r\n    \"classname\": \"MyCalendar\",\r\n    \"constructor\": {\r\n        \"params\": []\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"book\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"start\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"end\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"boolean\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"starts\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"ends\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<boolean>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

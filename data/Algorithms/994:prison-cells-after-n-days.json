@@ -1,0 +1,111 @@
+{
+  "questionId": "994",
+  "questionFrontendId": "957",
+  "boundTopicId": null,
+  "title": "Prison Cells After N Days",
+  "titleSlug": "prison-cells-after-n-days",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are 8 prison cells in a row, and each cell is either occupied or vacant.</p>\r\n\r\n<p>Each day, whether the cell is occupied or vacant changes according to the following rules:</p>\r\n\r\n<ul>\r\n\t<li>If a cell has two adjacent neighbors that are both occupied or both vacant,&nbsp;then the cell becomes occupied.</li>\r\n\t<li>Otherwise, it becomes vacant.</li>\r\n</ul>\r\n\r\n<p>(Note that because the prison is a row, the first and the last cells in the row can&#39;t have two adjacent neighbors.)</p>\r\n\r\n<p>We describe the current state of the prison&nbsp;in the following way:&nbsp;<code>cells[i] == 1</code> if the <code>i</code>-th cell is occupied, else <code>cells[i] == 0</code>.</p>\r\n\r\n<p>Given the initial state of the prison, return the state of the prison after <code>N</code> days (and <code>N</code> such changes described above.)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<ol>\r\n</ol>\r\n</div>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>cells = <span id=\"example-input-1-1\">[0,1,0,1,1,0,0,1]</span>, N = <span id=\"example-input-1-2\">7</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[0,0,1,1,0,0,0,0]</span>\r\n<strong>Explanation: \r\n</strong><span id=\"example-output-1\">The following table summarizes the state of the prison on each day:\r\nDay 0: [0, 1, 0, 1, 1, 0, 0, 1]\r\nDay 1: [0, 1, 1, 0, 0, 0, 0, 0]\r\nDay 2: [0, 0, 0, 0, 1, 1, 1, 0]\r\nDay 3: [0, 1, 1, 0, 0, 1, 0, 0]\r\nDay 4: [0, 0, 0, 0, 0, 1, 0, 0]\r\nDay 5: [0, 1, 1, 1, 0, 1, 0, 0]\r\nDay 6: [0, 0, 1, 0, 1, 1, 0, 0]\r\nDay 7: [0, 0, 1, 1, 0, 0, 0, 0]</span>\r\n\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>cells = <span id=\"example-input-2-1\">[1,0,0,1,0,0,1,0]</span>, N = <span id=\"example-input-2-2\">1000000000</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[0,0,1,1,1,1,1,0]</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>cells.length == 8</code></li>\r\n\t<li><code>cells[i]</code> is in <code>{0, 1}</code></li>\r\n\t<li><code>1 &lt;= N &lt;= 10^9</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 268,
+  "dislikes": 467,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 22}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> prisonAfterNDays(vector<int>& cells, int N) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] prisonAfterNDays(int[] cells, int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def prisonAfterNDays(self, cells, N):\n        \"\"\"\n        :type cells: List[int]\n        :type N: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def prisonAfterNDays(self, cells: List[int], N: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* prisonAfterNDays(int* cells, int cellsSize, int N, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] PrisonAfterNDays(int[] cells, int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} cells\n * @param {number} N\n * @return {number[]}\n */\nvar prisonAfterNDays = function(cells, N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} cells\n# @param {Integer} n\n# @return {Integer[]}\ndef prison_after_n_days(cells, n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func prisonAfterNDays(_ cells: [Int], _ N: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func prisonAfterNDays(cells []int, N int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def prisonAfterNDays(cells: Array[Int], N: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun prisonAfterNDays(cells: IntArray, N: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn prison_after_n_days(cells: Vec<i32>, n: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $cells\n     * @param Integer $N\n     * @return Integer[]\n     */\n    function prisonAfterNDays($cells, $N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"31.7K\", \"totalSubmission\": \"81.8K\", \"totalAcceptedRaw\": 31701, \"totalSubmissionRaw\": 81797, \"acRate\": \"38.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "643",
+    "canSeeDetail": true,
+    "url": "/articles/prison-cells-after-n-days/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Simulation\n\n**Intuition**\n\nWe simulate each day of the prison.\n\nBecause there are at most 256 possible states for the prison, eventually the states repeat into a cycle rather quickly.  We can keep track of when the states repeat to find the period `t` of this cycle, and skip days in multiples of `t`.\n\n**Algorithm**\n\nLet's do a naive simulation, iterating one day at a time.  For each day, we will decrement `N`, the number of days remaining, and transform the state of the prison forward (`state -> nextDay(state)`).\n\nIf we reach a state we have seen before, we know how many days ago it occurred, say `t`.  Then, because of this cycle, we can do `N %= t`.  This ensures that our algorithm only needs $$O(2**{\\text{cells.length}})$$ steps.\n\n<iframe src=\"https://leetcode.com/playground/HKcoATQ8/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"HKcoATQ8\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(2^N)$$, where $$N$$ is the number of cells in the prison.\n\n* Space Complexity:  $$O(2^N * N)$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "627",
+      "count": 104,
+      "average": 1.865,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,1,0,1,1,0,0,1]\n7",
+  "metaData": "{\r\n  \"name\": \"prisonAfterNDays\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"cells\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

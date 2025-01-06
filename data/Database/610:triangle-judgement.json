@@ -1,0 +1,67 @@
+{
+  "questionId": "610",
+  "questionFrontendId": "610",
+  "boundTopicId": null,
+  "title": "Triangle Judgement",
+  "titleSlug": "triangle-judgement",
+  "categoryTitle": "Database",
+  "content": "A pupil Tim gets homework to identify whether three line segments could possibly form a triangle.\r\n<p>&nbsp;</p>\r\nHowever, this assignment is very heavy because there are hundreds of records to calculate.\r\n\r\n<p>&nbsp;</p>\r\nCould you help Tim by writing a query to judge whether these three sides can form a triangle, assuming table <code>triangle</code> holds the length of the three sides x, y and z.\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n| x  | y  | z  |\r\n|----|----|----|\r\n| 13 | 15 | 30 |\r\n| 10 | 20 | 15 |\r\n</pre>\r\nFor the sample data above, your query should return the follow result:\r\n\r\n<pre>\r\n| x  | y  | z  | triangle |\r\n|----|----|----|----------|\r\n| 13 | 15 | 30 | No       |\r\n| 10 | 20 | 15 | Yes      |\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 69,
+  "dislikes": 15,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Mr-Bin",
+      "profileUrl": "/mr-bin/",
+      "avatarUrl": "https://assets.leetcode.com/users/mr-bin/avatar_1547655304.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"15K\", \"totalSubmission\": \"23.8K\", \"totalAcceptedRaw\": 14952, \"totalSubmissionRaw\": 23750, \"acRate\": \"63.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "180",
+    "canSeeDetail": true,
+    "url": "/articles/triangle-judgement/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `case...when...` [Accepted]\n\n**Algorithm**\n\nIn Math, three segments can form a triangle only if the sum of any of the two segments is larger than the third one.\n(In other words, the subtraction of any of the two segments are smaller than the third one.)\n\nSo, we can use this knowledge to judge with the help of the MySQL control statements [`case...when...`](https://dev.mysql.com/doc/refman/5.7/en/case.html).\n\n**MySQL**\n\n```sql\nSELECT \n    x,\n    y,\n    z,\n    CASE\n        WHEN x + y > z AND x + z > y AND y + z > x THEN 'Yes'\n        ELSE 'No'\n    END AS 'triangle'\nFROM\n    triangle\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "174",
+      "count": 13,
+      "average": 4.308,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"triangle\":[\"x\",\"y\",\"z\"]},\"rows\":{\"triangle\":[[13,15,30],[10,20,15]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists triangle (x int, y int, z int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table triangle (x int, y int, z int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table triangle (x int, y int, z int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists triangle (x int, y int, z int)",
+    "Truncate table triangle",
+    "insert into triangle (x, y, z) values ('13', '15', '30')",
+    "insert into triangle (x, y, z) values ('10', '20', '15')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,104 @@
+{
+  "questionId": "1085",
+  "questionFrontendId": "1101",
+  "boundTopicId": null,
+  "title": "The Earliest Moment When Everyone Become Friends",
+  "titleSlug": "the-earliest-moment-when-everyone-become-friends",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a social group, there are <code>N</code> people, with unique integer ids from <code>0</code> to <code>N-1</code>.</p>\n\n<p>We have a list of <code>logs</code>, where each <code>logs[i] = [timestamp, id_A, id_B]</code> contains a non-negative&nbsp;integer timestamp, and the ids of two different people.</p>\n\n<p>Each log represents the time in which two different people became friends. &nbsp;Friendship is symmetric: if A is friends with B, then B is friends with A.</p>\n\n<p>Let&#39;s say that person A is acquainted with person B if A is friends with B, or A is a friend of someone acquainted with B.</p>\n\n<p>Return the earliest time for which every person became acquainted with every other person. Return -1 if there is no&nbsp;such&nbsp;earliest time.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong>logs = <span id=\"example-input-1-1\">[[20190101,0,1],[20190104,3,4],[20190107,2,3],[20190211,1,5],[20190224,2,4],[20190301,0,3],[20190312,1,2],[20190322,4,5]]</span>, N = <span id=\"example-input-1-2\">6</span>\n<strong>Output: </strong><span id=\"example-output-1\">20190301</span>\n<strong>Explanation: </strong>\nThe first event occurs at timestamp = 20190101 and after 0 and 1 become friends we have the following friendship groups [0,1], [2], [3], [4], [5].\nThe second event occurs at timestamp = 20190104 and after 3 and 4 become friends we have the following friendship groups [0,1], [2], [3,4], [5].\nThe third event occurs at timestamp = 20190107 and after 2 and 3 become friends we have the following friendship groups [0,1], [2,3,4], [5].\nThe fourth event occurs at timestamp = 20190211 and after 1 and 5 become friends we have the following friendship groups [0,1,5], [2,3,4].\nThe fifth event occurs at timestamp = 20190224 and as 2 and 4 are already friend anything happens.\nThe sixth event occurs at timestamp = 20190301 and after 0 and 3 become friends we have that all become friends.\n</pre>\n\n<p>&nbsp;</p>\n\n<p><strong>Note:</strong></p>\n\n<ol>\n\t<li><code>2 &lt;= N &lt;= 100</code></li>\n\t<li><code>1 &lt;= logs.length &lt;= 10^4</code></li>\n\t<li><code>0 &lt;= logs[i][0] &lt;= 10^9</code></li>\n\t<li><code>0 &lt;= logs[i][1], logs[i][2] &lt;= N - 1</code></li>\n\t<li>It&#39;s guaranteed that all timestamps in <code>logs[i][0]</code> are different.</li>\n\t<li><code>logs </code>are not necessarily ordered by some criteria.</li>\n\t<li><code>logs[i][1] != logs[i][2]</code></li>\n</ol>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 59,
+  "dislikes": 3,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Friend Circles\", \"titleSlug\": \"friend-circles\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "luisvasquez-Boxer",
+      "profileUrl": "/luisvasquez-boxer/",
+      "avatarUrl": "https://assets.leetcode.com/users/luisvasquez-boxer/avatar_1544845570.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int earliestAcq(vector<vector<int>>& logs, int N) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int earliestAcq(int[][] logs, int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def earliestAcq(self, logs, N):\n        \"\"\"\n        :type logs: List[List[int]]\n        :type N: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def earliestAcq(self, logs: List[List[int]], N: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint earliestAcq(int** logs, int logsSize, int* logsColSize, int N){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int EarliestAcq(int[][] logs, int N) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} logs\n * @param {number} N\n * @return {number}\n */\nvar earliestAcq = function(logs, N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} logs\r\n# @param {Integer} n\r\n# @return {Integer}\r\ndef earliest_acq(logs, n)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func earliestAcq(_ logs: [[Int]], _ N: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func earliestAcq(logs [][]int, N int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def earliestAcq(logs: Array[Array[Int]], N: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun earliestAcq(logs: Array<IntArray>, N: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn earliest_acq(logs: Vec<Vec<i32>>, n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $logs\n     * @param Integer $N\n     * @return Integer\n     */\n    function earliestAcq($logs, $N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.2K\", \"totalSubmission\": \"4.9K\", \"totalAcceptedRaw\": 3162, \"totalSubmissionRaw\": 4922, \"acRate\": \"64.2%\"}",
+  "hints": [
+    "Sort the log items by their timestamp.",
+    "How can we model this problem as a graph problem?",
+    "Let's use a union-find data structure. At the beginning we have a graph with N nodes but no edges.",
+    "Then we loop through the events and if unite each node until the number of connected components reach to 1. Notice that each time two different connected components are united the number of connected components decreases by 1."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[20190101,0,1],[20190104,3,4],[20190107,2,3],[20190211,1,5],[20190224,2,4],[20190301,0,3],[20190312,1,2],[20190322,4,5]]\n6",
+  "metaData": "{\r\n  \"name\": \"earliestAcq\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"logs\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n    \r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

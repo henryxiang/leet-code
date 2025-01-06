@@ -1,0 +1,52 @@
+{
+  "questionId": "1301",
+  "questionFrontendId": "1179",
+  "boundTopicId": null,
+  "title": "Reformat Department Table",
+  "titleSlug": "reformat-department-table",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Department</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| id            | int     |\n| revenue       | int     |\n| month         | varchar |\n+---------------+---------+\n(id, month) is the primary key of this table.\nThe table has information about the revenue of each department per month.\nThe month has values in [&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;].\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to reformat the table such that there is a department id column&nbsp;and a revenue column <strong>for each month</strong>.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\nDepartment table:\n+------+---------+-------+\n| id   | revenue | month |\n+------+---------+-------+\n| 1    | 8000    | Jan   |\n| 2    | 9000    | Jan   |\n| 3    | 10000   | Feb   |\n| 1    | 7000    | Feb   |\n| 1    | 6000    | Mar   |\n+------+---------+-------+\n\nResult table:\n+------+-------------+-------------+-------------+-----+-------------+\n| id   | Jan_Revenue | Feb_Revenue | Mar_Revenue | ... | Dec_Revenue |\n+------+-------------+-------------+-------------+-----+-------------+\n| 1    | 8000        | 7000        | 6000        | ... | null        |\n| 2    | 9000        | null        | null        | ... | null        |\n| 3    | null        | 10000       | null        | ... | null        |\n+------+-------------+-------------+-------------+-----+-------------+\n\nNote that the result table has 13 columns (1 for the department id + 12 for the months).\n</pre>\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 51,
+  "dislikes": 39,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.2K\", \"totalSubmission\": \"9.5K\", \"totalAcceptedRaw\": 7160, \"totalSubmissionRaw\": 9487, \"acRate\": \"75.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Department\":[\"id\",\"revenue\",\"month\"]},\"rows\":{\"Department\":[[1,8000,\"Jan\"],[2,9000,\"Jan\"],[3,10000,\"Feb\"],[1,7000,\"Feb\"],[1,6000,\"Mar\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Department (id int, revenue int, month varchar(5))\"\n  ],\n  \"mssql\": [\n    \"Create table Department (id int, revenue int, month varchar(5))\"\n  ],\n  \"oraclesql\": [\n    \"Create table Department (id int, revenue int, month varchar(5))\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Department (id int, revenue int, month varchar(5))",
+    "Truncate table Department",
+    "insert into Department (id, revenue, month) values ('1', '8000', 'Jan')",
+    "insert into Department (id, revenue, month) values ('2', '9000', 'Jan')",
+    "insert into Department (id, revenue, month) values ('3', '10000', 'Feb')",
+    "insert into Department (id, revenue, month) values ('1', '7000', 'Feb')",
+    "insert into Department (id, revenue, month) values ('1', '6000', 'Mar')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

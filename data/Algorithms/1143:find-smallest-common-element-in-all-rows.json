@@ -1,0 +1,120 @@
+{
+  "questionId": "1143",
+  "questionFrontendId": "1198",
+  "boundTopicId": null,
+  "title": "Find Smallest Common Element in All Rows",
+  "titleSlug": "find-smallest-common-element-in-all-rows",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a matrix <code>mat</code>&nbsp;where every row is sorted in <strong>increasing</strong> order, return&nbsp;the <strong>smallest common element</strong> in all rows.</p>\n\n<p>If there is no common element, return&nbsp;<code>-1</code>.</p>\n\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> mat = [[1,2,3,4,5],[2,4,5,8,10],[3,5,7,9,11],[1,3,5,7,9]]\n<strong>Output:</strong> 5\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= mat.length, mat[i].length &lt;= 500</code></li>\n\t<li><code>1 &lt;= mat[i][j] &lt;= 10^4</code></li>\n\t<li><code>mat[i]</code> is sorted in increasing order.</li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 59,
+  "dislikes": 6,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "coding4232",
+      "profileUrl": "/coding4232/",
+      "avatarUrl": "https://assets.leetcode.com/users/coding4232/avatar_1554483797.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int smallestCommonElement(vector<vector<int>>& mat) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int smallestCommonElement(int[][] mat) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestCommonElement(self, mat):\n        \"\"\"\n        :type mat: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestCommonElement(self, mat: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint smallestCommonElement(int** mat, int matSize, int* matColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SmallestCommonElement(int[][] mat) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} mat\n * @return {number}\n */\nvar smallestCommonElement = function(mat) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} mat\n# @return {Integer}\ndef smallest_common_element(mat)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func smallestCommonElement(_ mat: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestCommonElement(mat [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def smallestCommonElement(mat: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun smallestCommonElement(mat: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_common_element(mat: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $mat\n     * @return Integer\n     */\n    function smallestCommonElement($mat) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.2K\", \"totalSubmission\": \"7K\", \"totalAcceptedRaw\": 5191, \"totalSubmissionRaw\": 7016, \"acRate\": \"74.0%\"}",
+  "hints": [
+    "Notice that each row has no duplicates.",
+    "Is counting the frequency of elements enough to find the answer?",
+    "Use a data structure to count the frequency of elements.",
+    "Find an element whose frequency equals the number of rows."
+  ],
+  "solution": {
+    "id": "804",
+    "canSeeDetail": true,
+    "url": "/articles/find-smallest-common-element-in-all-rows/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\nThe fact that every row is sorted in the *increasing* order tells us that there are no duplicates within a single row. So, if an element appears in all rows, it will appear exactly `n` times (where `n` is the number of rows).\r\n\r\nWe can count all elements, and then pick the smallest one that appears `n` times. This approach has a linear time complexity - at the cost of additional memory for storing counts.\r\n\r\nAlso, we can use a binary search to look elements up directly in the matrix. We won't need any additional memory, though this approach will be a bit slower.\r\n\r\nFinally, we can track positions for each row. We will then repeatedly advance positions for smaller elements until all positions point to the common element - if there is one. The time complexity will be linear, and it will require less memory than when storing counts.\r\n\r\n---\r\n\r\n#### Approach 1: Count Elements\r\n\r\nIterate through all elements row-by-row and count each element. Since elements are constrained to `[1...10000]`, we'll use an array of that size to store counts.\r\n\r\nThen, iterate through the array left-to-right, and return the first element that appears `n` times. This is, by the way, how the counting sort works.\r\n\r\n> For an unconstrained problem, we'll need to use an ordered map to store counts.\r\n\r\n![Count Elements Illustration](../Figures/1198/1198_approach1.png)\r\n\r\n**Algorithm**\r\n\r\n1. Iterate `i` through each row.\r\n\r\n    - Iterate `j` through each column.\r\n\r\n        - Increment `count` for element `mat[i][j]`.\r\n\r\n2. Iterate `k` from `1` to `10000`.\r\n\r\n    - If `count[k]` equals `n`, return `k`.\r\n\r\n3. Return `-1`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/RNsmGCSC/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"RNsmGCSC\"></iframe>\r\n\r\n**Improved Solution**\r\n\r\nWe can improve the average time complexity if we count elements column-by-column. This way, smaller elements will be counted first, and we can exit as soon as we get to an element that repeats `n` times.\r\n\r\n> For an unconstrained problem, we can use an unordered map (which should be faster than the ordered map as for the initial solution) if we count elements column-by-column.\r\n\r\n<iframe src=\"https://leetcode.com/playground/LAjJXeZh/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"LAjJXeZh\"></iframe>\r\n\r\n**Handling Duplicates**\r\n\r\nIf elements are in non-decreasing order, we'll need to modify these solutions to properly handle duplicates. For example, we return ```4``` (initial solution) and ```7``` (improved solution) instead of ```5``` for this test case:\r\n\r\n`[[1,2,3,4,5],[5,7,7,7,7],[5,7,7,7,7],[1,2,4,4,5],[1,2,4,4,5]]`\r\n\r\nIt's easy to modify these solutions to handle duplicates. Since elements in a row are sorted, we can skip the current element if it's equal to the previous one.\r\n\r\n**Complexity Analysis**\r\n\r\n- Time complexity: $$\\mathcal{O}(nm)$$, where $$n$$ and $$m$$ are the number of rows and columns.\r\n\r\n- Space complexity:\r\n\r\n    - Constrained problem: $$\\mathcal{O}(10000)=\\mathcal{O}(1)$$.\r\n\r\n    - Unconstrained problem: $$\\mathcal{O}(k)$$, where $$k$$ is the number of unique elements.\r\n\r\n---\r\n\r\n#### Approach 2: Binary Search\r\n\r\nWe can go through each element in the first row, and then use binary search to check if that element exists in all other rows.\r\n\r\n!?!../Documents/1198_approach2.json:1000,475!?!\r\n\r\n**Algorithm**\r\n\r\n1. Iterate through each element in the first row.\r\n\r\n    - Initialize `found` to true.\r\n\r\n    - For each row:\r\n\r\n        - Use binary search to check if the element exists.\r\n\r\n        - If it does not, set `found` to false and exit the loop.\r\n\r\n    - If `found` is true, return the element.\r\n\r\n2. Return `-1`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/gRpC3eHr/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"gRpC3eHr\"></iframe>\r\n\r\n**Improved Solution** <a name=\"approach2_improved\"></a>\r\n\r\nIn the solution above, we always search the entire row. We can improve the average time complexity if we start the next search from the position returned by the previous search. We can also return `-1` if all elements in the row are smaller than value we searched for.\r\n\r\n> Note that `lower_bound` in C++ returns the position of first element that is equal (if exists) or greater than the searched value. In Java, `binarySearch` returns a positive index if the element exists, or `(-insertion_point - 1)`, where `insertion_point` is also the position of the next greater element. In both cases, it points past the last element if all elements are smaller than the value being searched for.\r\n\r\n<iframe src=\"https://leetcode.com/playground/WPEtvyXU/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"WPEtvyXU\"></iframe>\r\n\r\n**Handling Duplicates**\r\n\r\nSince we search for an element in each row, this approach works correctly if there are duplicates.\r\n\r\n**Complexity Analysis**\r\n\r\n- Time complexity: $$\\mathcal{O}(mn\\log{m})$$\r\n\r\n    - We iterate through $$m$$ elements in the first row.\r\n\r\n    - For each element, we perform the binary search $$n$$ times over $$m$$ elements.\r\n\r\n- Space complexity:\r\n\r\n    - Original solution: $$\\mathcal{O}(1)$$.    \r\n\r\n    - Improved solution: $$\\mathcal{O}(n)$$ to store search positions for all rows.\r\n\r\n---\r\n\r\n#### Approach 3: Row Positions\r\n\r\nWe can enumerate elements in all rows in the sorted order, as described in approach 2 for the [23. Merge k Sorted List](https://leetcode.com/problems/merge-k-sorted-lists/solution/) problem.\r\n\r\nFor each row, we track the position of the current element starting from zero. Then, we find the smallest element among all positions, and advance the position for the corresponding row. We find our answer when all positions point to elements with the same value.\r\n\r\nFor this problem, however, we do not need to enumerate elements in the perfectly sorted order. We can determine the largest element among all positions and skip smaller elements in all other rows. Even better, we can use a binary search to advance positions, like in [Improved Solution for Approach 2](#approach2_improved).\r\n\r\n!?!../Documents/1198_approach3.json:1000,475!?!\r\n\r\n**Algorithm**\r\n\r\n1. Initialize row positions, current max and counter with zeros.\r\n\r\n2. For each row:\r\n\r\n    - Use binary search to find the position of current max, starting from the row position.\r\n\r\n        - Update the row position to the value returned by the search.\r\n\r\n    - If we reach the end of the row, return `-1`.\r\n\r\n    - If current max was found, increase the counter.\r\n\r\n        - Otherwise, reset the counter to `1`.\r\n\r\n    - If the counter is equal to `n`, return the max element.\r\n\r\n    - Update current max to the value at the row index.\r\n\r\n        - It will be either the same or a larger value.\r\n\r\n3. Repeat step 2.\r\n\r\n<iframe src=\"https://leetcode.com/playground/pgKc7FQh/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"pgKc7FQh\"></iframe>\r\n\r\n**Handling Duplicates**\r\n\r\nSince we take one element from each row, this approach works correctly if there are duplicates.\r\n\r\n**Complexity Analysis**\r\n\r\n- Time complexity: $$\\mathcal{O}(nm)$$; we iterate through all $$nm$$ elements in the matrix in the worst case.\r\n\r\n- Space complexity: $$\\mathcal{O}(n)$$ to store row indices.\r\n\r\n---\r\n\r\nAnalysis written by: @[votrubac](https://leetcode.com/votrubac/).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "774",
+      "count": 7,
+      "average": 4.857,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2,3,4,5],[2,4,5,8,10],[3,5,7,9,11],[1,3,5,7,9]]",
+  "metaData": "{\n  \"name\": \"smallestCommonElement\",\n  \"params\": [\n    {\n      \"name\": \"mat\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

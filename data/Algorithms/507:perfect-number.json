@@ -1,0 +1,111 @@
+{
+  "questionId": "507",
+  "questionFrontendId": "507",
+  "boundTopicId": null,
+  "title": "Perfect Number",
+  "titleSlug": "perfect-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We define the Perfect Number is a <b>positive</b> integer that is equal to the sum of all its <b>positive</b> divisors except itself. \r\n</p>\r\nNow, given an <b>integer</b> n, write a function that returns true when it is a perfect number and false when it is not.\r\n</p>\r\n\r\n<p><b>Example:</b><br />\r\n<pre>\r\n<b>Input:</b> 28\r\n<b>Output:</b> True\r\n<b>Explanation:</b> 28 = 1 + 2 + 4 + 7 + 14\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\nThe input number <b>n</b> will not exceed 100,000,000. (1e8)\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 192,
+  "dislikes": 525,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Self Dividing Numbers\", \"titleSlug\": \"self-dividing-numbers\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "wallflower",
+      "profileUrl": "/wallflower/",
+      "avatarUrl": "https://www.gravatar.com/avatar/741b93a2e2ea0d4ff1fa47d2ad761d27.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Fallible\", \"slug\": \"fallible\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool checkPerfectNumber(int num) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean checkPerfectNumber(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def checkPerfectNumber(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def checkPerfectNumber(self, num: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool checkPerfectNumber(int num){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CheckPerfectNumber(int num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} num\n * @return {boolean}\n */\nvar checkPerfectNumber = function(num) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num\n# @return {Boolean}\ndef check_perfect_number(num)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func checkPerfectNumber(_ num: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func checkPerfectNumber(num int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def checkPerfectNumber(num: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun checkPerfectNumber(num: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn check_perfect_number(num: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return Boolean\n     */\n    function checkPerfectNumber($num) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"51.6K\", \"totalSubmission\": \"146.7K\", \"totalAcceptedRaw\": 51574, \"totalSubmissionRaw\": 146742, \"acRate\": \"35.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "95",
+    "canSeeDetail": true,
+    "url": "/articles/perfect-number/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\n**Algorithm**\n\nIn brute force approach, we consider every possible number to be a divisor of the given number $$num$$, by iterating over all the numbers lesser than $$num$$. Then, we add up all the factors to check if the given number satisfies the Perfect Number property. This approach obviously fails if the number $$num$$ is very large.\n\n<iframe src=\"https://leetcode.com/playground/6Nzf7w9h/shared\" frameBorder=\"0\" name=\"6Nzf7w9h\" width=\"100%\" height=\"343\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. We iterate over all the numbers lesser than $$n$$.\n\n* Space complexity : $$O(1)$$. Constant extra space is used.\n\n---\n\n#### Approach #2 Better Brute Force [Time Limit Exceeded]\n\n**Algorithm**\n\nWe can little optimize the brute force by breaking the loop when the value of $$sum$$ increase the value of $$num$$. In that case, we can directly return $$false$$.\n\n<iframe src=\"https://leetcode.com/playground/bGGFxpmt/shared\" frameBorder=\"0\" name=\"bGGFxpmt\" width=\"100%\" height=\"377\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. In worst case, we iterate over all the numbers lesser than $$n$$.\n\n* Space complexity : $$O(1)$$. Constant extra space is used.\n\n---\n\n#### Approach #3 Optimal Solution [Accepted]\n\n**Algorithm**\n\nIn this method, instead of iterating over all the integers to find the factors of $$num$$, we only iterate upto the $$\\sqrt{n}$$. The reasoning behind this can be understood as follows.\n\nConsider the given number $$num$$ which can have $$m$$ distinct factors, namely $$n_1, n_2,..., n_m$$. Now, since the number $$num$$ is divisible by $$n_i$$, it is also divisible by $$n_j=num/n_1$$ i.e. $$n_i*n_j=num$$. Also, the largest number in such a pair can only be up to $$\\sqrt{num}$$ (because $$\\sqrt{num} \\times \\sqrt{num}=num$$). Thus, we can get a significant reduction in the run-time by iterating only upto $$\\sqrt{num}$$ and considering such $$n_i$$'s and $$n_j$$'s in a single pass directly.\n\nFurther, if $$\\sqrt{num}$$ is also a factor, we have to consider the factor only once while checking for the perfect number property.\n\nWe sum up all such factors and check if the given number is a Perfect Number or not. Another point to be observed is that while considering 1 as such a factor, $$num$$ will also be considered as the other factor. Thus, we need to subtract $$num$$ from the $$sum$$.\n\n<iframe src=\"https://leetcode.com/playground/ZpHuGfHj/shared\" frameBorder=\"0\" name=\"ZpHuGfHj\" width=\"100%\" height=\"377\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(\\sqrt{n})$$. We iterate only over the range $$1 < i &leq; \\sqrt{num}$$.\n* Space complexity : $$O(1)$$. Constant extra space is used.\n\n---\n\n#### Approach #4 Euclid-Euler Theorem [Accepted]\n\n**Algorithm**\n\nEuclid proved that $$2^{p−1}(2^p − 1)$$ is an even perfect number whenever $$2^p − 1$$ is prime, where $$p$$ is prime.\n\nFor example, the first four perfect numbers are generated by the formula $$2^{p−1}(2^p − 1)$$, with $$p$$ a prime number, as follows:\n\n```\nfor p = 2:   21(22 − 1) = 6\nfor p = 3:   22(23 − 1) = 28\nfor p = 5:   24(25 − 1) = 496\nfor p = 7:   26(27 − 1) = 8128.\n```\nPrime numbers of the form $$2^p − 1$$ are known as Mersenne primes. For $$2^p − 1$$ to be prime, it is necessary that $$p$$ itself be prime. However, not all numbers of the form $$2^p − 1$$ with a prime $$p$$ are prime; for example, $$2^{11} − 1 = 2047 = 23 × 89$$ is not a prime number.\n\nYou can see that for small value of $$p$$, its related perfect number goes very high. So, we need to evaluate perfect numbers for some primes $$(2, 3, 5, 7, 13, 17, 19, 31)$$ only, as for bigger prime its perfect number will not fit in 64 bits.\n\n\n<iframe src=\"https://leetcode.com/playground/kBfJ6TtU/shared\" frameBorder=\"0\" name=\"kBfJ6TtU\" width=\"100%\" height=\"292\"></iframe>\n\n**Complexity Analysis**\n\n\n* Time complexity : $$O(\\log{n})$$. Number of primes will be in order $$\\log{num}$$.\n\n* Space complexity : $$O(\\log{n})$$. Space used to store primes.\n\n\n ---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "94",
+      "count": 19,
+      "average": 3.842,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "28",
+  "metaData": "{\r\n  \"name\": \"checkPerfectNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"num\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

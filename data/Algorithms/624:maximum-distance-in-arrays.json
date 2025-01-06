@@ -1,0 +1,115 @@
+{
+  "questionId": "624",
+  "questionFrontendId": "624",
+  "boundTopicId": null,
+  "title": "Maximum Distance in Arrays",
+  "titleSlug": "maximum-distance-in-arrays",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven <code>m</code> arrays, and each array is sorted in ascending order. Now you can pick up two integers from two different arrays (each array picks one) and calculate the distance. We define the distance between two integers <code>a</code> and <code>b</code> to be their absolute difference <code>|a-b|</code>. Your task is to find the maximum distance.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \r\n[[1,2,3],\r\n [4,5],\r\n [1,2,3]]\r\n<b>Output:</b> 4\r\n<b>Explanation:</b> \r\nOne way to reach the maximum distance 4 is to pick 1 in the first or third array and pick 5 in the second array.\r\n</pre>\r\n</p>\r\n\t\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>Each given array will have at least 1 number. There will be at least two non-empty arrays.</li>\r\n<li>The total number of the integers in <b>all</b> the <code>m</code> arrays will be in the range of [2, 10000].</li>\r\n<li>The integers in the <code>m</code> arrays will be in the range of [-10000, 10000].</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 294,
+  "dislikes": 45,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxDistance(vector<vector<int>>& arrays) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxDistance(List<List<Integer>> arrays) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxDistance(self, arrays):\n        \"\"\"\n        :type arrays: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxDistance(self, arrays: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxDistance(int** arrays, int arraysSize, int* arraysColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxDistance(IList<IList<int>> arrays) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} arrays\n * @return {number}\n */\nvar maxDistance = function(arrays) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} arrays\n# @return {Integer}\ndef max_distance(arrays)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxDistance(_ arrays: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxDistance(arrays [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxDistance(arrays: List[List[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxDistance(arrays: List<List<Int>>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_distance(arrays: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $arrays\n     * @return Integer\n     */\n    function maxDistance($arrays) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.1K\", \"totalSubmission\": \"44.7K\", \"totalAcceptedRaw\": 17098, \"totalSubmissionRaw\": 44683, \"acRate\": \"38.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "171",
+    "canSeeDetail": true,
+    "url": "/articles/maximum-distance-in-array/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\nThe simplest solution is to pick up every element of every array from the $$list$$ and find its distance from every element in all the other arrays except itself and find the largest distance from out of those.\n\n<iframe src=\"https://leetcode.com/playground/rge5K69S/shared\" frameBorder=\"0\" name=\"rge5K69S\" width=\"100%\" height=\"326\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O((n*x)^2)$$. We traverse over all the arrays in $$list$$ for every element of every array considered. Here, $$n$$ refers to the number of arrays in the $$list$$ and $$x$$ refers to the average number of elements in each array in the $$list$$.\n\n* Space complexity : $$O(1)$$. Constant extra space is used.\n\n---\n#### Approach #2 Better Brute Force [Time Limit Exceeded]\n\n**Algorithm**\n\nIn the last approach, we didn't make use of the fact that every array in the $$list$$ is sorted. Thus, instead of considering the distances among all the elements of all the arrays(except intra-array elements), we can consider only the distances between the first(minimum element) element of an array and the last(maximum element) element of the other arrays and find out the maximum distance from among all such distances. \n\n\n<iframe src=\"https://leetcode.com/playground/QdXWERJK/shared\" frameBorder=\"0\" name=\"QdXWERJK\" width=\"100%\" height=\"275\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. We consider only max and min values directly for every array currenty considered. Here, $$n$$ refers to the number of arrays in the $$list$$.\n\n* Space complexity : $$O(1)$$. Constant extra space is used.\n\n---\n#### Approach #3 Single Scan [Accepted]\n\n**Algorithm**\n\nAs discussed already, in order to find out the maximum distance between any two arrays, we need not compare every element of the arrays, since the arrays are already sorted. Thus, we can consider only the extreme points in the arrays to do the distance calculations.\n\nFurther, the two points being considered for the distance calculation should not both belong to the same array. Thus, for arrays $$a$$ and $$b$$ currently chosen, we can just find the maximum out of $$a[n-1]-b[0]$$ and $$b[m-1]-a[0]$$ to find the larger distance. Here, $$n$$ and $$m$$ refer to the lengths of arrays $$a$$ and $$b$$ respectively. \n\nBut, we need not compare all the array pairs possible to find the maximum distance. Instead, we can keep on traversing over the arrays in the $$list$$ and keep a track of the maximum distance found so far. \n\nTo do so, we keep a track of the element with minimum value($$min\\_val$$) and the one with maximum value($$max\\_val$$) found so far. Thus, now these extreme values can be treated as if they represent the extreme points of a cumulative array of all the arrays that have been considered till now. \n\nFor every new array, $$a$$ considered, we find the distance $$a[n-1]-min\\_val$$ and $$max\\_val - a[0]$$ to compete with the maximum distance found so far. Here, $$n$$ refers to the number of elements in the current array, $$a$$. Further, we need to note that the maximum distance found till now needs not always be contributed by the end points of the distance being $$max\\_val$$ and $$min\\_val$$. \n\nBut, such points could help in maximizing the distance in the future. Thus, we need to keep track of these maximum and minimum values along with the maximum distance found so far for future calculations. But, in general, the final maximum distance found will always be determined by one of these extreme values, $$max\\_val$$ and $$min\\_val$$, or in some cases, by both of them.\n\nThe following animation illustrates the process.\n\n!?!../Documents/624_Maximum_Distance.json:1000,563!?!\n\nFrom the above illustration, we can clearly see that although the $$max\\_val$$ or $$min\\_val$$ could not contribute to the local maximum distance values, they could later on contribute to the maximum distance.\n\n<iframe src=\"https://leetcode.com/playground/tiaZo26H/shared\" frameBorder=\"0\" name=\"tiaZo26H\" width=\"100%\" height=\"241\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. We traverse over the $$list$$ of length $$n$$ once only.\n\n* Space complexity : $$O(1)$$. Constant extra space is used.\n\n---\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "167",
+      "count": 23,
+      "average": 4.913,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2,3],[4,5],[1,2,3]]",
+  "metaData": "{\r\n  \"name\": \"maxDistance\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"arrays\",\r\n      \"type\": \"list<list<integer>>\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

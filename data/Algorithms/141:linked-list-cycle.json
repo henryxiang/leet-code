@@ -1,0 +1,85 @@
+{
+  "questionId": "141",
+  "questionFrontendId": "141",
+  "boundTopicId": null,
+  "title": "Linked List Cycle",
+  "titleSlug": "linked-list-cycle",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a linked list, determine if it has a cycle in it.</p>\r\n\r\n<p>To represent a cycle in the given linked list, we use an integer <code>pos</code> which represents the position (0-indexed)&nbsp;in the linked list where tail connects to. If <code>pos</code> is <code>-1</code>, then there is no cycle in the linked list.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>head = <span id=\"example-input-1-1\">[3,2,0,-4]</span>, pos = <span id=\"example-input-1-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true\r\n<strong>Explanation:</strong> There is a cycle in the linked list, where tail connects to the second node.</span>\r\n</pre>\r\n</div>\r\n\r\n<div>\r\n<p><span><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png\" style=\"width: 300px; height: 97px; margin-top: 8px; margin-bottom: 8px;\" /></span></p>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>head = <span id=\"example-input-1-1\">[1,2]</span>, pos = <span id=\"example-input-1-2\">0</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true\r\n<strong>Explanation:</strong> There is a cycle in the linked list, where tail connects to the first node.</span>\r\n</pre>\r\n</div>\r\n\r\n<div>\r\n<p><span><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png\" style=\"width: 141px; height: 74px;\" /></span></p>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>head = <span id=\"example-input-1-1\">[1]</span>, pos = <span id=\"example-input-1-2\">-1</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">false\r\n<strong>Explanation:</strong> There is no cycle in the linked list.</span>\r\n</pre>\r\n</div>\r\n\r\n<p><span><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png\" style=\"width: 45px; height: 45px;\" /></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Follow up:</strong></p>\r\n\r\n<p>Can you solve it using <em>O(1)</em> (i.e. constant) memory?</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 2069,
+  "dislikes": 305,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Linked List Cycle II\", \"titleSlug\": \"linked-list-cycle-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Happy Number\", \"titleSlug\": \"happy-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Samsung\", \"slug\": \"samsung\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode(int x) : val(x), next(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    bool hasCycle(ListNode *head) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for singly-linked list.\n * class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode(int x) {\n *         val = x;\n *         next = null;\n *     }\n * }\n */\npublic class Solution {\n    public boolean hasCycle(ListNode head) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for singly-linked list.\n# class ListNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution(object):\n    def hasCycle(self, head):\n        \"\"\"\n        :type head: ListNode\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution:\n    def hasCycle(self, head: ListNode) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     struct ListNode *next;\n * };\n */\nbool hasCycle(struct ListNode *head) {\n    \n}"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int x) {\n *         val = x;\n *         next = null;\n *     }\n * }\n */\npublic class Solution {\n    public bool HasCycle(ListNode head) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for singly-linked list.\n * function ListNode(val) {\n *     this.val = val;\n *     this.next = null;\n * }\n */\n\n/**\n * @param {ListNode} head\n * @return {boolean}\n */\nvar hasCycle = function(head) {\n    \n};"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc hasCycle(head *ListNode) bool {\n    \n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"505.4K\", \"totalSubmission\": \"1.3M\", \"totalAcceptedRaw\": 505379, \"totalSubmissionRaw\": 1295087, \"acRate\": \"39.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "21",
+    "canSeeDetail": true,
+    "url": "/articles/linked-list-cycle/",
+    "content": "[TOC]\n\n## Summary\n\nThis article is for beginners. It introduces the following ideas: Linked List, Hash Table and Two Pointers.\n\n## Solution\n---\n#### Approach 1: Hash Table\n\n**Intuition**\n\nTo detect if a list is cyclic, we can check whether a node had been visited before. A natural way is to use a hash table.\n\n**Algorithm**\n\nWe go through each node one by one and record each node's reference (or memory address) in a hash table. If the current node is `null`, we have reached the end of the list and it must not be cyclic. If current node’s reference is in the hash table, then return true.\n\n<iframe src=\"https://leetcode.com/playground/3tqYc6gz/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"3tqYc6gz\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity : $$O(n)$$.\nWe visit each of the $$n$$ elements in the list at most once. Adding a node to the hash table costs only $$O(1)$$ time.\n\n* Space complexity: $$O(n)$$.\nThe space depends on the number of elements added to the hash table, which contains at most $$n$$ elements.\n<br />\n<br />\n---\n#### Approach 2: Two Pointers\n\n**Intuition**\n\nImagine two runners running on a track at different speed. What happens when the track is actually a circle?\n\n**Algorithm**\n\nThe space complexity can be reduced to $$O(1)$$ by considering two pointers at **different speed** - a slow pointer and a fast pointer. The slow pointer moves one step at a time while the fast pointer moves two steps at a time.\n\nIf there is no cycle in the list, the fast pointer will eventually reach the end and we can return false in this case.\n\nNow consider a cyclic list and imagine the slow and fast pointers are two runners racing around a circle track. The fast runner will eventually meet the slow runner. Why? Consider this case (we name it case A) - The fast runner is just one step behind the slow runner. In the next iteration, they both increment one and two steps respectively and meet each other.\n\nHow about other cases? For example, we have not considered cases where the fast runner is two or three steps behind the slow runner yet. This is simple, because in the next or next's next iteration, this case will be reduced to case A mentioned above.\n\n<iframe src=\"https://leetcode.com/playground/B6ffJ2Xk/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"B6ffJ2Xk\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity : $$O(n)$$.\nLet us denote $$n$$ as the total number of nodes in the linked list. To analyze its time complexity, we consider the following two cases separately.\n\n    - ***List has no cycle:***  \n    The fast pointer reaches the end first and the run time depends on the list's length, which is $$O(n)$$.\n\n    - ***List has a cycle:***  \n    We break down the movement of the slow pointer into two steps, the non-cyclic part and the cyclic part:\n\n        1. The slow pointer takes \"non-cyclic length\" steps to enter the cycle. At this point, the fast pointer has already reached the cycle. $$\\text{Number of iterations} = \\text{non-cyclic length} = N$$\n\n        2. Both pointers are now in the cycle. Consider two runners running in a cycle - the fast runner moves 2 steps while the slow runner moves 1 steps at a time. Since the speed difference is 1, it takes $$\\dfrac{\\text{distance between the 2 runners}}{\\text{difference of speed}}$$ loops for the fast runner to catch up with the slow runner. As the distance is at most \"$$\\text{cyclic length K}$$\" and the speed difference is 1, we conclude that      \n        $$\\text{Number of iterations} = \\text{almost}$$ \"$$\\text{cyclic length K}$$\".\n\n    Therefore, the worst case time complexity is $$O(N+K)$$, which is $$O(n)$$.\n\n* Space complexity : $$O(1)$$.\nWe only use two nodes (slow and fast) so the space complexity is $$O(1)$$.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "19",
+      "count": 128,
+      "average": 4.844,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,2,0,-4]\n1",
+  "metaData": "{\n  \"name\": \"hasCycle\",\n  \"params\": [\n    {\n      \"name\": \"head\",\n      \"type\": \"ListNode\"\n    },\n    {\n      \"name\": \"pos\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  },\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"c\",\n    \"csharp\",\n    \"javascript\",\n    \"golang\",\n    \"python3\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

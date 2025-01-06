@@ -1,0 +1,111 @@
+{
+  "questionId": "796",
+  "questionFrontendId": "780",
+  "boundTopicId": null,
+  "title": "Reaching Points",
+  "titleSlug": "reaching-points",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A move consists of taking a point <code>(x, y)</code> and transforming it to either <code>(x, x+y)</code> or <code>(x+y, y)</code>.</p>\r\n\r\n<p>Given a starting point <code>(sx, sy)</code> and a target point <code>(tx, ty)</code>, return <code>True</code> if and only if a sequence of moves exists to transform the point <code>(sx, sy)</code> to <code>(tx, ty)</code>. Otherwise, return <code>False</code>.</p>\r\n\r\n<pre>\r\n<strong>Examples:</strong>\r\n<strong>Input:</strong> sx = 1, sy = 1, tx = 3, ty = 5\r\n<strong>Output:</strong> True\r\n<strong>Explanation:</strong>\r\nOne series of moves that transforms the starting point to the target is:\r\n(1, 1) -&gt; (1, 2)\r\n(1, 2) -&gt; (3, 2)\r\n(3, 2) -&gt; (3, 5)\r\n\r\n<strong>Input:</strong> sx = 1, sy = 1, tx = 2, ty = 2\r\n<strong>Output:</strong> False\r\n\r\n<strong>Input:</strong> sx = 1, sy = 1, tx = 1, ty = 1\r\n<strong>Output:</strong> True\r\n\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>sx, sy, tx, ty</code> will all be integers in the range <code>[1, 10^9]</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 337,
+  "dislikes": 71,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Coursera\", \"slug\": \"coursera\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 12}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool reachingPoints(int sx, int sy, int tx, int ty) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean reachingPoints(int sx, int sy, int tx, int ty) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def reachingPoints(self, sx, sy, tx, ty):\n        \"\"\"\n        :type sx: int\n        :type sy: int\n        :type tx: int\n        :type ty: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def reachingPoints(self, sx: int, sy: int, tx: int, ty: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool reachingPoints(int sx, int sy, int tx, int ty){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ReachingPoints(int sx, int sy, int tx, int ty) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} sx\n * @param {number} sy\n * @param {number} tx\n * @param {number} ty\n * @return {boolean}\n */\nvar reachingPoints = function(sx, sy, tx, ty) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} sx\n# @param {Integer} sy\n# @param {Integer} tx\n# @param {Integer} ty\n# @return {Boolean}\ndef reaching_points(sx, sy, tx, ty)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func reachingPoints(_ sx: Int, _ sy: Int, _ tx: Int, _ ty: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func reachingPoints(sx int, sy int, tx int, ty int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def reachingPoints(sx: Int, sy: Int, tx: Int, ty: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun reachingPoints(sx: Int, sy: Int, tx: Int, ty: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn reaching_points(sx: i32, sy: i32, tx: i32, ty: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $sx\n     * @param Integer $sy\n     * @param Integer $tx\n     * @param Integer $ty\n     * @return Boolean\n     */\n    function reachingPoints($sx, $sy, $tx, $ty) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.9K\", \"totalSubmission\": \"48.4K\", \"totalAcceptedRaw\": 13880, \"totalSubmissionRaw\": 48431, \"acRate\": \"28.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "413",
+    "canSeeDetail": true,
+    "url": "/articles/reaching-points/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Exhaustive Search [Time Limit Exceeded]\r\n\r\n**Intuition and Algorithm**\r\n\r\nEach point has two children as specified in the problem.  We try all such points recursively.\r\n\r\n<iframe src=\"https://leetcode.com/playground/8ikGGd9P/shared\" frameBorder=\"0\" width=\"100%\" height=\"174\" name=\"8ikGGd9P\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(2^{tx + ty})$$, a loose bound found by considering every move as `(x, y) -> (x+1, y)` or `(x, y) -> (x, y+1)` instead.\r\n\r\n* Space Complexity:  $$O(tx * ty)$$, the size of the implicit call stack.\r\n\r\n---\r\n#### Approach #2: Dynamic Programming [Time Limit Exceeded]\r\n\r\n**Intuition and Algorithm**\r\n\r\nAs in *Approach #1*, we search the children of every point recursively, except we use a set `seen` so that we don't repeat work.\r\n\r\n<iframe src=\"https://leetcode.com/playground/vDiw26EB/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"vDiw26EB\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(tx * ty)$$, as at most `tx * ty` points are searched once per point.\r\n\r\n* Space Complexity:  $$O(tx * ty)$$, the size of the implicit call stack.\r\n\r\n---\r\n#### Approach #3: Work Backwards (Naive Variant) [Time Limit Exceeded]\r\n\r\n**Intuition**\r\n\r\nEvery parent point `(x, y)` has two children, `(x, x+y)` and `(x+y, y)`.  However, every point `(x, y)` only has one parent candidate `(x-y, y)` if `x >= y`, else `(x, y-x)`.  This is because we never have points with negative coordinates.\r\n\r\n<br />\r\n<center>\r\n    <img src=\"../Figures/780/tree.png\" alt=\"Diagram of successive parents of the target point\" width=\"350\"/>\r\n</center>\r\n<br />\r\n\r\nLooking at previous successive parents of the target point, we can find whether the starting point was an ancestor.  For example, if the target point is `(19, 12)`, the successive parents must have been `(7, 12)`, `(7, 5)`, and `(2, 5)`; so `(2, 5)` is a starting point of `(19, 12)`.\r\n\r\n**Algorithm**\r\n\r\nRepeatedly subtract the smaller of `{tx, ty}` from the larger of `{tx, ty}`.  The answer is true if and only if we eventually reach `sx, sy`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/dwMQjHXL/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"dwMQjHXL\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(\\max(tx, ty))$$.  If say `ty = 1`, we could be subtracting `tx` times.\r\n\r\n* Space Complexity:  $$O(1)$$.\r\n\r\n---\r\n#### Approach #4: Work Backwards (Modulo Variant) [Accepted]\r\n\r\n**Intuition**\r\n\r\nAs in *Approach #3*, we work backwards to find the answer, trying to transform the target point to the starting point via applying the parent operation `(x, y) -> (x-y, y) or (x, y-x)` [depending on which one doesn't have negative coordinates.]\r\n\r\nWe can speed up this transformation by bundling together parent operations.  \r\n\r\n**Algorithm**\r\n\r\nSay `tx > ty`.  We know that the next parent operations will be to subtract `ty` from `tx`, until such time that `tx = tx % ty`.  When both `tx > ty` and `ty > sy`, we can perform all these parent operations in one step, replacing `while tx > ty: tx -= ty` with `tx %= ty`.\r\n\r\nOtherwise, if say `tx > ty and ty <= sy`, then we know `ty` will not be changing (it can only decrease).  Thus, only `tx` will change, and it can only change by subtracting by `ty`.  Hence, `(tx - sx) % ty == 0` is a necessary and sufficient condition for the problem's answer to be True.\r\n\r\nThe analysis above was for the case `tx > ty`, but the case `ty > tx` is similar.  When `tx == ty`, no more moves can be made.\r\n\r\n<iframe src=\"https://leetcode.com/playground/2N6WN4zi/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"2N6WN4zi\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(\\log(\\max{(tx, ty)}))$$.  The analysis is similar to the analysis of the Euclidean algorithm, and we assume that the modulo operation can be done in $$O(1)$$ time.\r\n\r\n* Space Complexity:  $$O(1)$$.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "408",
+      "count": 21,
+      "average": 4.333,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "9\n5\n12\n8",
+  "metaData": "{\r\n  \"name\": \"reachingPoints\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"sx\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"sy\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"tx\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"ty\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

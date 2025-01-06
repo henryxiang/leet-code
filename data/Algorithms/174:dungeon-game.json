@@ -1,0 +1,103 @@
+{
+  "questionId": "174",
+  "questionFrontendId": "174",
+  "boundTopicId": null,
+  "title": "Dungeon Game",
+  "titleSlug": "dungeon-game",
+  "categoryTitle": "Algorithms",
+  "content": "<style type=\"text/css\">table.dungeon, .dungeon th, .dungeon td {\r\n  border:3px solid black;\r\n}\r\n\r\n .dungeon th, .dungeon td {\r\n    text-align: center;\r\n    height: 70px;\r\n    width: 70px;\r\n}\r\n</style>\r\n<p>The demons had captured the princess (<strong>P</strong>) and imprisoned her in the bottom-right corner of a dungeon. The dungeon consists of M x N rooms laid out in a 2D grid. Our valiant knight (<strong>K</strong>) was initially positioned in the top-left room and must fight his way through the dungeon to rescue the princess.</p>\r\n\r\n<p>The knight has an initial health point represented by a positive integer. If at any point his health point drops to 0 or below, he dies immediately.</p>\r\n\r\n<p>Some of the rooms are guarded by demons, so the knight loses health (<em>negative</em> integers) upon entering these rooms; other rooms are either empty (<em>0&#39;s</em>) or contain magic orbs that increase the knight&#39;s health (<em>positive</em> integers).</p>\r\n\r\n<p>In order to reach the princess as quickly as possible, the knight decides to move only rightward or downward in each step.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Write a function to determine the knight&#39;s minimum initial health so that he is able to rescue the princess.</strong></p>\r\n\r\n<p>For example, given the dungeon below, the initial health of the knight must be at least <strong>7</strong> if he follows the optimal path <code>RIGHT-&gt; RIGHT -&gt; DOWN -&gt; DOWN</code>.</p>\r\n\r\n<table class=\"dungeon\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>-2 (K)</td>\r\n\t\t\t<td>-3</td>\r\n\t\t\t<td>3</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>-5</td>\r\n\t\t\t<td>-10</td>\r\n\t\t\t<td>1</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>10</td>\r\n\t\t\t<td>30</td>\r\n\t\t\t<td>-5 (P)</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>The knight&#39;s health has no upper bound.</li>\r\n\t<li>Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 916,
+  "dislikes": 24,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Unique Paths\", \"titleSlug\": \"unique-paths\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Path Sum\", \"titleSlug\": \"minimum-path-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Cherry Pickup\", \"titleSlug\": \"cherry-pickup\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "stellari",
+      "profileUrl": "/stellari/",
+      "avatarUrl": "https://www.gravatar.com/avatar/b0d4a14eb057dcec3fd0f06001a3657c.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int calculateMinimumHP(vector<vector<int>>& dungeon) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int calculateMinimumHP(int[][] dungeon) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def calculateMinimumHP(self, dungeon):\n        \"\"\"\n        :type dungeon: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def calculateMinimumHP(self, dungeon: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint calculateMinimumHP(int** dungeon, int dungeonSize, int* dungeonColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CalculateMinimumHP(int[][] dungeon) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} dungeon\n * @return {number}\n */\nvar calculateMinimumHP = function(dungeon) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} dungeon\n# @return {Integer}\ndef calculate_minimum_hp(dungeon)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func calculateMinimumHP(_ dungeon: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func calculateMinimumHP(dungeon [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def calculateMinimumHP(dungeon: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun calculateMinimumHP(dungeon: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn calculate_minimum_hp(dungeon: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $dungeon\n     * @return Integer\n     */\n    function calculateMinimumHP($dungeon) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"75.8K\", \"totalSubmission\": \"265.8K\", \"totalAcceptedRaw\": 75812, \"totalSubmissionRaw\": 265762, \"acRate\": \"28.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[-2,-3,3],[-5,-10,1],[10,30,-5]]",
+  "metaData": "{\r\n  \"name\": \"calculateMinimumHP\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"dungeon\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

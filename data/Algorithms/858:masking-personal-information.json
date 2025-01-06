@@ -1,0 +1,111 @@
+{
+  "questionId": "858",
+  "questionFrontendId": "831",
+  "boundTopicId": null,
+  "title": "Masking Personal Information",
+  "titleSlug": "masking-personal-information",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We are given a&nbsp;personal information string <code>S</code>, which may represent&nbsp;either <strong>an email address</strong> or <strong>a phone number.</strong></p>\r\n\r\n<p>We would like to mask this&nbsp;personal information according to the&nbsp;following rules:</p>\r\n\r\n<p><br />\r\n<u><strong>1. Email address:</strong></u></p>\r\n\r\n<p>We define a&nbsp;<strong>name</strong> to be a string of <code>length &ge; 2</code> consisting&nbsp;of only lowercase letters&nbsp;<code>a-z</code> or uppercase&nbsp;letters&nbsp;<code>A-Z</code>.</p>\r\n\r\n<p>An email address starts with a name, followed by the&nbsp;symbol <code>&#39;@&#39;</code>, followed by a name, followed by the&nbsp;dot&nbsp;<code>&#39;.&#39;</code>&nbsp;and&nbsp;followed by a name.&nbsp;</p>\r\n\r\n<p>All email addresses are&nbsp;guaranteed to be valid and in the format of&nbsp;<code>&quot;name1@name2.name3&quot;.</code></p>\r\n\r\n<p>To mask an email, <strong>all names must be converted to lowercase</strong> and <strong>all letters between the first and last letter of the first name</strong> must be replaced by 5 asterisks <code>&#39;*&#39;</code>.</p>\r\n\r\n<p><br />\r\n<u><strong>2. Phone number:</strong></u></p>\r\n\r\n<p>A phone number is a string consisting of&nbsp;only the digits <code>0-9</code> or the characters from the set <code>{&#39;+&#39;, &#39;-&#39;, &#39;(&#39;, &#39;)&#39;, &#39;&nbsp;&#39;}.</code>&nbsp;You may assume a phone&nbsp;number contains&nbsp;10 to 13 digits.</p>\r\n\r\n<p>The last 10 digits make up the local&nbsp;number, while the digits before those make up the country code. Note that&nbsp;the country code is optional. We want to expose only the last 4 digits&nbsp;and mask all other&nbsp;digits.</p>\r\n\r\n<p>The local&nbsp;number&nbsp;should be formatted and masked as <code>&quot;***-***-1111&quot;,&nbsp;</code>where <code>1</code> represents the exposed digits.</p>\r\n\r\n<p>To mask a phone number with country code like <code>&quot;+111 111 111 1111&quot;</code>, we write it in the form <code>&quot;+***-***-***-1111&quot;.</code>&nbsp; The <code>&#39;+&#39;</code>&nbsp;sign and the first <code>&#39;-&#39;</code>&nbsp;sign before the local number should only exist if there is a country code.&nbsp; For example, a 12 digit phone number mask&nbsp;should start&nbsp;with <code>&quot;+**-&quot;</code>.</p>\r\n\r\n<p>Note that extraneous characters like <code>&quot;(&quot;, &quot;)&quot;, &quot; &quot;</code>, as well as&nbsp;extra dashes or plus signs not part of the above formatting scheme should be removed.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Return the correct &quot;mask&quot; of the information provided.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;LeetCode@LeetCode.com&quot;\r\n<strong>Output: </strong>&quot;l*****e@leetcode.com&quot;\r\n<strong>Explanation:&nbsp;</strong>All names are converted to lowercase, and the letters between the\r\n&nbsp;            first and last letter of the first name is replaced by 5 asterisks.\r\n&nbsp;            Therefore, &quot;leetcode&quot; -&gt; &quot;l*****e&quot;.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;AB@qq.com&quot;\r\n<strong>Output: </strong>&quot;a*****b@qq.com&quot;\r\n<strong>Explanation:&nbsp;</strong>There must be 5 asterisks between the first and last letter \r\n&nbsp;            of the first name &quot;ab&quot;. Therefore, &quot;ab&quot; -&gt; &quot;a*****b&quot;.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;1(234)567-890&quot;\r\n<strong>Output: </strong>&quot;***-***-7890&quot;\r\n<strong>Explanation:</strong>&nbsp;10 digits in the phone number, which means all digits make up the local number.\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;86-(10)12345678&quot;\r\n<strong>Output: </strong>&quot;+**-***-***-5678&quot;\r\n<strong>Explanation:</strong>&nbsp;12 digits, 2 digits for country code and 10 digits for local number. \r\n</pre>\r\n\r\n<p><strong>Notes:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>S.length&nbsp;&lt;=&nbsp;40</code>.</li>\r\n\t<li>Emails have length at least 8.</li>\r\n\t<li>Phone numbers have length at least 10.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 58,
+  "dislikes": 256,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string maskPII(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String maskPII(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maskPII(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maskPII(self, S: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * maskPII(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string MaskPII(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {string}\n */\nvar maskPII = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef mask_pii(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maskPII(_ S: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maskPII(S string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maskPII(S: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maskPII(S: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn mask_pii(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return String\n     */\n    function maskPII($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"8.3K\", \"totalSubmission\": \"19.4K\", \"totalAcceptedRaw\": 8324, \"totalSubmissionRaw\": 19412, \"acRate\": \"42.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "462",
+    "canSeeDetail": true,
+    "url": "/articles/masking-personal-information/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Direct [Accepted]\n\n**Intuition and Algorithm**\n\nWe perform the algorithm as described.\n\nFirst, to check if information is an email, we check whether it contains a `'@'`.  (There are many different tests: we could check for letters versus digits, for example.)\n\nIf we have an email, we should replace the first name with the first letter of that name, followed by 5 asterisks, followed by the last letter of that name.\n\nIf we have a phone number, we should collect all the digits and then format it according to the description.\n\n<iframe src=\"https://leetcode.com/playground/9iWWL6yp/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"9iWWL6yp\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(1)$$, if we consider the length of `S` as bounded by a constant.\n\n* Space Complexity: $$O(1)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "457",
+      "count": 15,
+      "average": 1.933,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"LeetCode@LeetCode.com\"",
+  "metaData": "{\r\n  \"name\": \"maskPII\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

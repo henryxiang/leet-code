@@ -1,0 +1,105 @@
+{
+  "questionId": "1113",
+  "questionFrontendId": "1040",
+  "boundTopicId": null,
+  "title": "Moving Stones Until Consecutive II",
+  "titleSlug": "moving-stones-until-consecutive-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On an <strong>infinite</strong> number line, the position of the i-th stone is given by&nbsp;<code>stones[i]</code>.&nbsp; Call a stone an <em>endpoint stone</em> if it has the smallest or largest position.</p>\r\n\r\n<p>Each turn, you pick up an endpoint stone and move it to an unoccupied position so that it is no longer an endpoint stone.</p>\r\n\r\n<p>In particular,&nbsp;if the stones are at say, <code>stones = [1,2,5]</code>, you <strong>cannot</strong> move the endpoint stone at position 5, since moving it to any position (such as 0, or 3) will still keep that stone as an endpoint stone.</p>\r\n\r\n<p>The game ends when you cannot make any more moves, ie. the stones are in consecutive positions.</p>\r\n\r\n<p>When the game ends, what is the minimum and maximum number of moves that you could have made?&nbsp; Return the answer as an length 2 array:&nbsp;<code>answer = [minimum_moves, maximum_moves]</code></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[7,4,9]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[1,2]</span>\r\n<strong>Explanation: </strong>\r\nWe can move 4 -&gt; 8 for one move to finish the game.\r\nOr, we can move 9 -&gt; 5, 4 -&gt; 6 for two moves to finish the game.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[6,5,4,3,10]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[2,3]</span>\r\nWe can move 3 -&gt; 8 then 10 -&gt; 7 to finish the game.\r\nOr, we can move 3 -&gt; 7, 4 -&gt; 8, 5 -&gt; 9 to finish the game.\r\nNotice we cannot move 10 -&gt; 2 to finish the game, because that would be an illegal move.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[100,101,104,102,103]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">[0,0]</span></pre>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>3 &lt;= stones.length &lt;= 10^4</code></li>\r\n\t<li><code>1 &lt;= stones[i] &lt;= 10^9</code></li>\r\n\t<li><code>stones[i]</code> have distinct values.</li>\r\n</ol>\r\n\r\n<div>\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 93,
+  "dislikes": 150,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "SolaAoi",
+      "profileUrl": "/solaaoi/",
+      "avatarUrl": "https://assets.leetcode.com/users/solaaoi/avatar_1550477424.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<int> numMovesStonesII(vector<int>& stones) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] numMovesStonesII(int[] stones) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numMovesStonesII(self, stones):\n        \"\"\"\n        :type stones: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numMovesStonesII(self, stones: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* numMovesStonesII(int* stones, int stonesSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[] NumMovesStonesII(int[] stones) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} stones\n * @return {number[]}\n */\nvar numMovesStonesII = function(stones) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} stones\r\n# @return {Integer[]}\r\ndef num_moves_stones_ii(stones)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func numMovesStonesII(_ stones: [Int]) -> [Int] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numMovesStonesII(stones []int) []int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def numMovesStonesII(stones: Array[Int]): Array[Int] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun numMovesStonesII(stones: IntArray): IntArray {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_moves_stones_ii(stones: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $stones\n     * @return Integer[]\n     */\n    function numMovesStonesII($stones) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.3K\", \"totalSubmission\": \"6.4K\", \"totalAcceptedRaw\": 3272, \"totalSubmissionRaw\": 6420, \"acRate\": \"51.0%\"}",
+  "hints": [
+    "For the minimum, how many cows are already in place?\r\nFor the maximum, we have to lose either the gap A[1] - A[0] or A[N-1] - A[N-2]  (where N = A.length), but every other space can be occupied."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[7,4,9]",
+  "metaData": "{\r\n  \"name\": \"numMovesStonesII\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"stones\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

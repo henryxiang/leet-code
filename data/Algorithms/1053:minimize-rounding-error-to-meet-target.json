@@ -1,0 +1,111 @@
+{
+  "questionId": "1053",
+  "questionFrontendId": "1058",
+  "boundTopicId": null,
+  "title": "Minimize Rounding Error to Meet Target",
+  "titleSlug": "minimize-rounding-error-to-meet-target",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of prices <code>[p<sub>1</sub>,p<sub>2</sub>...,p<sub>n</sub>]</code> and a <code>target</code>, round each price <code>p<sub>i</sub></code> to <code>Round<sub>i</sub>(p<sub>i</sub>)</code> so that the rounded array <code>[Round<sub>1</sub>(p<sub>1</sub>),Round<sub>2</sub>(p<sub>2</sub>)...,Round<sub>n</sub>(p<sub>n</sub>)]</code> sums to the given <code>target</code>. Each operation <code>Round<sub>i</sub>(p<sub>i</sub>)</code> could be either <code>Floor(p<sub>i</sub>)</code> or <code>Ceil(p<sub>i</sub>)</code>.</p>\r\n\r\n<p>Return the string <code>&quot;-1&quot;</code> if the rounded array is impossible to sum to <code>target</code>. Otherwise, return the smallest rounding error, which is defined as &Sigma; |Round<sub>i</sub>(p<sub>i</sub>) - (p<sub>i</sub>)| for <italic>i</italic> from 1 to <italic>n</italic>, as a string with three places after the decimal.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>prices = <span id=\"example-input-1-1\">[&quot;0.700&quot;,&quot;2.800&quot;,&quot;4.900&quot;]</span>, target = <span id=\"example-input-1-2\">8</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;1.000&quot;</span>\r\n<strong>Explanation: </strong>\r\nUse Floor, Ceil and Ceil operations to get (0.7 - 0) + (3 - 2.8) + (5 - 4.9) = 0.7 + 0.2 + 0.1 = 1.0 .\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>prices = <span id=\"example-input-2-1\">[&quot;1.500&quot;,&quot;2.500&quot;,&quot;3.500&quot;]</span>, target = <span id=\"example-input-2-2\">10</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">&quot;-1&quot;</span>\r\n<strong>Explanation: </strong>\r\nIt is impossible to meet the target.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= prices.length &lt;= 500</code>.</li>\r\n\t<li>Each string of prices <code>prices[i]</code> represents a real number which is between 0 and 1000 and has exactly 3 decimal places.</li>\r\n\t<li><code>target</code> is between 0 and 1000000.</li>\r\n</ol>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 38,
+  "dislikes": 39,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "nihanthd",
+      "profileUrl": "/nihanthd/",
+      "avatarUrl": "https://assets.leetcode.com/users/nihanthd/avatar_1537038381.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    string minimizeError(vector<string>& prices, int target) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String minimizeError(String[] prices, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minimizeError(self, prices, target):\n        \"\"\"\n        :type prices: List[str]\n        :type target: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minimizeError(self, prices: List[str], target: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * minimizeError(char ** prices, int pricesSize, int target){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string MinimizeError(string[] prices, int target) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} prices\n * @param {number} target\n * @return {string}\n */\nvar minimizeError = function(prices, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} prices\r\n# @param {Integer} target\r\n# @return {String}\r\ndef minimize_error(prices, target)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func minimizeError(_ prices: [String], _ target: Int) -> String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minimizeError(prices []string, target int) string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def minimizeError(prices: Array[String], target: Int): String = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun minimizeError(prices: Array<String>, target: Int): String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn minimize_error(prices: Vec<String>, target: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $prices\n     * @param Integer $target\n     * @return String\n     */\n    function minimizeError($prices, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.9K\", \"totalSubmission\": \"4.7K\", \"totalAcceptedRaw\": 1896, \"totalSubmissionRaw\": 4677, \"acRate\": \"40.5%\"}",
+  "hints": [
+    "If we have integer values in the array then we just need to subtract the target those integer values, so we reduced the problem.",
+    "Similarly if we have non integer values we have two options to put them flor(value) or ceil(value) = floor(value) + 1, so the idea is to just subtract floor(value).",
+    "Now the problem is different for each position we can sum just add 0 or 1 in order to sum the target, minimizing the deltas. This can be solved with DP."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"0.700\",\"2.800\",\"4.900\"]\n8",
+  "metaData": "{\r\n  \"name\": \"minimizeError\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"prices\",\r\n      \"type\": \"string[]\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

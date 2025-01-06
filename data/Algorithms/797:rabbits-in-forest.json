@@ -1,0 +1,115 @@
+{
+  "questionId": "797",
+  "questionFrontendId": "781",
+  "boundTopicId": null,
+  "title": "Rabbits in Forest",
+  "titleSlug": "rabbits-in-forest",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a forest, each rabbit has some color. Some subset of rabbits (possibly all of them) tell you how many other rabbits have the same color as them. Those <code>answers</code> are placed in an array.</p>\r\n\r\n<p>Return the minimum number of rabbits that could be in the forest.</p>\r\n\r\n<pre>\r\n<strong>Examples:</strong>\r\n<strong>Input:</strong> answers = [1, 1, 2]\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong>\r\nThe two rabbits that answered &quot;1&quot; could both be the same color, say red.\r\nThe rabbit than answered &quot;2&quot; can&#39;t be red or the answers would be inconsistent.\r\nSay the rabbit that answered &quot;2&quot; was blue.\r\nThen there should be 2 other blue rabbits in the forest that didn&#39;t answer into the array.\r\nThe smallest possible number of rabbits in the forest is therefore 5: 3 that answered plus 2 that didn&#39;t.\r\n\r\n<strong>Input:</strong> answers = [10, 10, 10]\r\n<strong>Output:</strong> 11\r\n\r\n<strong>Input:</strong> answers = []\r\n<strong>Output:</strong> 0\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>answers</code> will have length at most <code>1000</code>.</li>\r\n\t<li>Each <code>answers[i]</code> will be an integer in the range <code>[0, 999]</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 200,
+  "dislikes": 242,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numRabbits(vector<int>& answers) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numRabbits(int[] answers) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numRabbits(self, answers):\n        \"\"\"\n        :type answers: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numRabbits(self, answers: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numRabbits(int* answers, int answersSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumRabbits(int[] answers) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} answers\n * @return {number}\n */\nvar numRabbits = function(answers) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} answers\n# @return {Integer}\ndef num_rabbits(answers)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numRabbits(_ answers: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numRabbits(answers []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numRabbits(answers: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numRabbits(answers: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_rabbits(answers: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $answers\n     * @return Integer\n     */\n    function numRabbits($answers) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.5K\", \"totalSubmission\": \"31.1K\", \"totalAcceptedRaw\": 16452, \"totalSubmissionRaw\": 31053, \"acRate\": \"53.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "414",
+    "canSeeDetail": true,
+    "url": "/articles/rabbits-in-forest/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Count [Accepted]\r\n\r\n**Intuition**\r\n\r\nEach rabbit that says a different number must be a different color, and a rabbit only tells us information about rabbits of its color.  We can count the number of rabbits of each color separately.\r\n\r\nNow, say `13` rabbits answer `5`.  What does this imply?  Say one of the rabbits is red.  We could have 5 other red rabbits in this group answering `5`, but not more.  So, say another rabbit in this group is a different color (blue).  We could have 5 other blue rabbits in this group answering `5`, but not more.  Finally, another rabbit must be a different color (green), and there are 5 other green rabbits (in the forest).\r\n\r\nNotice there must be a minimum of 18 rabbits saying 5 (answering or in the forest), since there must be at least 3 unique colors among rabbits that answered or would have answered `5`, so it didn't matter that we chose the rabbits to be grouped by color or not when answering.\r\n\r\n**Algorithm**\r\n\r\nIn general, if `v = count[k]` rabbits answered `k`, there must be at least `a` rabbits that answered or would have answered `k`, where `a` is the smallest multiple of `k+1` such that `a >= count[k]`.\r\n\r\nWe add all these `a`s together.\r\n\r\n<iframe src=\"https://leetcode.com/playground/vyx4a4Ey/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"vyx4a4Ey\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(N)$$, where $$N$$ is the number of rabbits that answered.  In Java, our implementation using `int[]` instead of a `Map` would be $$O(N + W)$$, where $$W$$ is the number of possible different answers that rabbits could say.\r\n\r\n* Space Complexity:  $$O(N)$$.  In Java, our implementation is $$O(W)$$.\r\n\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "409",
+      "count": 8,
+      "average": 3.625,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,0,1,0,0]",
+  "metaData": "{\r\n  \"name\": \"numRabbits\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"answers\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

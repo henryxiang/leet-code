@@ -1,0 +1,105 @@
+{
+  "questionId": "24",
+  "questionFrontendId": "24",
+  "boundTopicId": null,
+  "title": "Swap Nodes in Pairs",
+  "titleSlug": "swap-nodes-in-pairs",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a&nbsp;linked list, swap every two adjacent nodes and return its head.</p>\r\n\r\n<p>You may <strong>not</strong> modify the values in the list&#39;s nodes, only nodes itself may be changed.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\nGiven <code>1-&gt;2-&gt;3-&gt;4</code>, you should return the list as <code>2-&gt;1-&gt;4-&gt;3</code>.\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1625,
+  "dislikes": 139,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Reverse Nodes in k-Group\", \"titleSlug\": \"reverse-nodes-in-k-group\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode(int x) : val(x), next(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode* swapPairs(ListNode* head) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public ListNode swapPairs(ListNode head) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for singly-linked list.\n# class ListNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution(object):\n    def swapPairs(self, head):\n        \"\"\"\n        :type head: ListNode\n        :rtype: ListNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution:\n    def swapPairs(self, head: ListNode) -> ListNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     struct ListNode *next;\n * };\n */\n\n\nstruct ListNode* swapPairs(struct ListNode* head){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public ListNode SwapPairs(ListNode head) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for singly-linked list.\n * function ListNode(val) {\n *     this.val = val;\n *     this.next = null;\n * }\n */\n/**\n * @param {ListNode} head\n * @return {ListNode}\n */\nvar swapPairs = function(head) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for singly-linked list.\n# class ListNode\n#     attr_accessor :val, :next\n#     def initialize(val)\n#         @val = val\n#         @next = nil\n#     end\n# end\n\n# @param {ListNode} head\n# @return {ListNode}\ndef swap_pairs(head)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public var val: Int\n *     public var next: ListNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.next = nil\n *     }\n * }\n */\nclass Solution {\n    func swapPairs(_ head: ListNode?) -> ListNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc swapPairs(head *ListNode) *ListNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for singly-linked list.\n * class ListNode(var _x: Int = 0) {\n *   var next: ListNode = null\n *   var x: Int = _x\n * }\n */\nobject Solution {\n    def swapPairs(head: ListNode): ListNode = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var li = ListNode(5)\n * var v = li.`val`\n * Definition for singly-linked list.\n * class ListNode(var `val`: Int) {\n *     var next: ListNode? = null\n * }\n */\nclass Solution {\n    fun swapPairs(head: ListNode?): ListNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for singly-linked list.\n// #[derive(PartialEq, Eq, Clone, Debug)]\n// pub struct ListNode {\n//   pub val: i32,\n//   pub next: Option<Box<ListNode>>\n// }\n// \n// impl ListNode {\n//   #[inline]\n//   fn new(val: i32) -> Self {\n//     ListNode {\n//       next: None,\n//       val\n//     }\n//   }\n// }\nimpl Solution {\n    pub fn swap_pairs(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a singly-linked list.\n * class ListNode {\n *     public $val = 0;\n *     public $next = null;\n *     function __construct($val) { $this->val = $val; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param ListNode $head\n     * @return ListNode\n     */\n    function swapPairs($head) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"387.6K\", \"totalSubmission\": \"815.7K\", \"totalAcceptedRaw\": 387591, \"totalSubmissionRaw\": 815706, \"acRate\": \"47.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "831",
+    "canSeeDetail": true,
+    "url": "/articles/swap-nodes-in-pairs/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n---\r\n\r\n#### Approach 1: Recursive Approach\r\n\r\n**Intuition**\r\n\r\nThe problem doesn't ask for entire reversal of linked list. It's rather asking us to swap every two adjacent nodes of a linked list starting at the very first node.\r\n\r\n<center>\r\n<img src=\"../Figures/24/24_Swap_Nodes_0.png\" width=\"500\"/>\r\n</center>\r\n\r\nThe basic intuition is to reach to the end of the linked list in steps of two using recursion.\r\n\r\n<center>\r\n<img src=\"../Figures/24/24_Swap_Nodes_1.png\" width=\"500\"/>\r\n</center>\r\n\r\nand while back tracking the nodes can be swapped.\r\n\r\n<center>\r\n<img src=\"../Figures/24/24_Swap_Nodes_2.png\" width=\"500\"/>\r\n</center>\r\n\r\nIn every function call we take out two nodes which would be swapped and the remaining nodes are passed to the next recursive call. The reason we are adopting a recursive approach here is because a sub-list of the original list would still be a linked list and hence, it would adapt to our recursive strategy. Assuming the recursion would return the swapped `remaining` list of nodes, we just swap the current two nodes and attach the remaining list we get from recursion to these two swapped pairs.\r\n\r\n<center>\r\n<img src=\"../Figures/24/24_Swap_Nodes_3.png\" width=\"500\"/>\r\n</center>\r\n\r\n**Algorithm**\r\n\r\n1. Start the recursion with `head` node of the original linked list.\r\n\r\n2. Every recursion call is responsible for swapping a pair of nodes. Let's represent the two nodes to be swapped by `firstNode` and `secondNode`.\r\n\r\n3. Next recursion is made by calling the function with head of the next pair of nodes. This call would swap the next two nodes and make further recursive calls if there are nodes left in the linked list.\r\n\r\n4. Once we get the pointer to the remaining swapped list from the recursion call, we can swap the `firstNode` and `secondNode` i.e. the nodes in the current recursive call and then return the pointer to the `secondNode` since it will be the new head after swapping.\r\n\r\n    <center>\r\n    <img src=\"../Figures/24/24_Swap_Nodes_4.png\" width=\"600\"/>\r\n    </center>\r\n\r\n5. Once all the pairs are swapped in the backtracking step, we would eventually be returning the pointer to the head of the now `swapped` list. This head will essentially be the second node in the original linked list.\r\n<br>\r\n\r\n<iframe src=\"https://leetcode.com/playground/HoyymETM/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"HoyymETM\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(N)$$ where $$N$$ is the size of the linked list.\r\n* Space Complexity: $$O(N)$$ stack space utilized for recursion.\r\n<br/>\r\n<br/>\r\n\r\n---\r\n\r\n#### Approach 2: Iterative Approach\r\n\r\n**Intuition**\r\n\r\nThe concept here is similar to the recursive approach. We break the linked list into pairs by jumping in steps of two. The only difference is, unlike recursion, we swap the nodes on the go. After swapping a pair of nodes, say `A` and `B`, we need to link the node `B` to the node that was right before `A`. To establish this linkage we save the previous node of node `A` in `prevNode`.\r\n\r\n<center>\r\n<img src=\"../Figures/24/24_Swap_Nodes_5.png\" width=\"500\"/>\r\n</center>\r\n\r\n**Algorithm**\r\n\r\n1. We iterate the linked list with jumps in steps of two.\r\n\r\n2. Swap the pair of nodes as we go, before we jump to the next pair. Let's represent the two nodes to be swapped by `firstNode` and `secondNode`.\r\n\r\n    <center>\r\n    <img src=\"../Figures/24/24_Swap_Nodes_6.png\" width=\"500\"/>\r\n    </center>\r\n\r\n3. Swap the two nodes. The swap step is\r\n\r\n    <pre>\r\n      firstNode.next = secondNode.next\r\n      secondNode.next = firstNode\r\n    </pre>\r\n\r\n    <center>\r\n    <img src=\"../Figures/24/24_Swap_Nodes_7.png\" width=\"500\"/>\r\n    </center>\r\n\r\n4. We also need to assign the `prevNode`'s next to the head of the swapped pair. This step would ensure the currently *swapped* pair is linked correctly to the end of the previously *swapped* list.\r\n\r\n    <pre>\r\n      prevNode.next = secondNode\r\n    </pre>\r\n\r\n    <center>\r\n    <img src=\"../Figures/24/24_Swap_Nodes_8.png\" width=\"500\"/>\r\n    </center>\r\n\r\n    This is an iterative step, so the nodes are swapped on the go and attached to the previously swapped list. And in the end we get the final swapped list.\r\n\r\n<iframe src=\"https://leetcode.com/playground/sNmKnnUH/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"sNmKnnUH\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity : $$O(N)$$ where N is the size of the linked list.\r\n\r\n* Space Complexity : $$O(1)$$.\r\n<br/>\r\n\r\n---\r\nAnalysis written by: [@godayaldivya](https://leetcode.com/godayaldivya/).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "795",
+      "count": 7,
+      "average": 4.714,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4]",
+  "metaData": "{\r\n  \"name\": \"swapPairs\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"head\",\r\n      \"type\": \"ListNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"ListNode\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

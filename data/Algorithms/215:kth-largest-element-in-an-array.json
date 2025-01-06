@@ -1,0 +1,115 @@
+{
+  "questionId": "215",
+  "questionFrontendId": "215",
+  "boundTopicId": null,
+  "title": "Kth Largest Element in an Array",
+  "titleSlug": "kth-largest-element-in-an-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Find the <strong>k</strong>th largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>[3,2,1,5,6,4] </code>and k = 2\r\n<strong>Output:</strong> 5\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>[3,2,3,1,2,4,5,5,6] </code>and k = 4\r\n<strong>Output:</strong> 4</pre>\r\n\r\n<p><strong>Note: </strong><br />\r\nYou may assume k is always valid, 1 &le; k &le; array&#39;s length.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2708,
+  "dislikes": 204,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Wiggle Sort II\", \"titleSlug\": \"wiggle-sort-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Top K Frequent Elements\", \"titleSlug\": \"top-k-frequent-elements\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Third Maximum Number\", \"titleSlug\": \"third-maximum-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Kth Largest Element in a Stream\", \"titleSlug\": \"kth-largest-element-in-a-stream\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"K Closest Points to Origin\", \"titleSlug\": \"k-closest-points-to-origin\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "mithmatt",
+      "profileUrl": "/mithmatt/",
+      "avatarUrl": "https://assets.leetcode.com/users/mithmatt/avatar_1538278871.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    },
+    {
+      "name": "Heap",
+      "slug": "heap"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 21}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 12}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findKthLargest(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findKthLargest(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findKthLargest(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findKthLargest(self, nums: List[int], k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findKthLargest(int* nums, int numsSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindKthLargest(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar findKthLargest = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer}\ndef find_kth_largest(nums, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findKthLargest(_ nums: [Int], _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findKthLargest(nums []int, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findKthLargest(nums: Array[Int], k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findKthLargest(nums: IntArray, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_kth_largest(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer\n     */\n    function findKthLargest($nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"489.8K\", \"totalSubmission\": \"953.2K\", \"totalAcceptedRaw\": 489783, \"totalSubmissionRaw\": 953221, \"acRate\": \"51.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "660",
+    "canSeeDetail": true,
+    "url": "/articles/kth-largest-element-in-an-array/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 0: Sort\n\nThe naive solution would be to sort an array first and then return kth \nelement from the end, something like `sorted(nums)[-k]` on Python. \nThat would be an algorithm of $$\\mathcal{O}(N \\log N)$$ time complexity\nand $$\\mathcal{O}(1)$$ space complexity.\nThis time complexity is not really exciting so \nlet's check how to improve it by using some additional space.\n<br />\n<br />\n\n\n---     \n#### Approach 1: Heap\n\nThe idea is to init a heap \"the smallest element first\",\nand add all elements from the array into this heap one by one\nkeeping the size of the heap always less or equal to `k`. \nThat would results in a heap containing `k` largest elements of the array.\n\nThe head of this heap is the answer, \ni.e. the kth largest element of the array. \n\nThe time complexity of adding an element in a heap of size `k`\nis $$\\mathcal{O}(\\log k)$$, and we do it `N` times that means \n$$\\mathcal{O}(N \\log k)$$ time complexity for the algorithm.\n\nIn Python there is a method `nlargest` in `heapq` library \nwhich has the same $$\\mathcal{O}(N \\log k)$$\ntime complexity and reduces the code to one line.\n\nThis algorithm improves time complexity, but one pays with \n$$\\mathcal{O}(k)$$ space complexity.\n        \n<!--![LIS](../Figures/72/72_tr.gif)-->\n!?!../Documents/215_LIS.json:1000,530!?!\n\n<iframe src=\"https://leetcode.com/playground/mgY4KWVh/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"mgY4KWVh\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N \\log k)$$. \n* Space complexity : $$\\mathcal{O}(k)$$ to store the heap elements. \n<br />\n<br />\n\n\n---\n#### Approach 2: Quickselect \n\nThis [textbook algorthm](https://en.wikipedia.org/wiki/Quickselect) \nhas $$\\mathcal{O}(N)$$ average time complexity.\nLike quicksort, it was developed by Tony Hoare, \nand is also known as _Hoare's selection algorithm_.\n\nThe approach is basically the same as for quicksort. \nFor simplicity let's notice that `k`th largest element is the same as\n`N - k`th smallest element, hence one could implement \n`k`th smallest algorithm for this problem.\n\nFirst one chooses a pivot, \nand defines its position in a sorted array in a linear time.\nThis could be done with the help of _partition algorithm_.\n\n> To implement partition one moves along an array,\ncompares each element with a pivot, \nand moves all elements smaller than pivot to the left of the pivot.\n \nAs an output we have an array where pivot is on its perfect position\nin the ascending sorted array, \nall elements on the left of the pivot are smaller than pivot,\nand all elements on the right of the pivot are larger or equal to pivot.\n\nHence the array is now split into two parts.\nIf that would be a quicksort algorithm, one would proceed recursively \nto use quicksort for the both parts that would result in \n$$\\mathcal{O}(N \\log N)$$ time complexity.\nHere there is no need to deal with both parts since now one knows \nin which part to search for `N - k`th smallest element, and that\nreduces average time complexity to $$\\mathcal{O}(N)$$.\n\nFinally the overall algorithm is quite straightforward :\n\n* Choose a random pivot.\n\n* Use a partition algorithm to place the pivot \ninto its perfect position `pos` in the sorted array,\nmove smaller elements to the left of pivot, and larger or equal ones - to the right.\n\n* Compare `pos` and `N - k` to choose the side of array to proceed recursively.\n\n> ! Please notice that this algorithm works well even for arrays with duplicates.\n\n![quickselect](../Figures/215/215_quickselect.png)\n\n<iframe src=\"https://leetcode.com/playground/f2LZDmjX/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"f2LZDmjX\"></iframe>\n\n* Time complexity : $$\\mathcal{O}(N)$$ in the average case, $$\\mathcal{O}(N^2)$$ in the worst case. \n* Space complexity : $$\\mathcal{O}(1)$$. \n\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "646",
+      "count": 39,
+      "average": 4.256,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,2,1,5,6,4]\n2",
+  "metaData": "{\r\n  \"name\": \"findKthLargest\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

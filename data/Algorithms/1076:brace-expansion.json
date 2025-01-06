@@ -1,0 +1,96 @@
+{
+  "questionId": "1076",
+  "questionFrontendId": "1087",
+  "boundTopicId": null,
+  "title": "Brace Expansion",
+  "titleSlug": "brace-expansion",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A string <code>S</code>&nbsp;represents a list of words.</p>\r\n\r\n<p>Each letter in the word has 1 or more options.&nbsp; If there is one option, the letter is represented as is.&nbsp; If there is more than one option, then curly braces delimit the options.&nbsp; For example, <code>&quot;{a,b,c}&quot;</code> represents options <code>[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</code>.</p>\r\n\r\n<p>For example, <code>&quot;{a,b,c}d{e,f}&quot;</code> represents the list <code>[&quot;ade&quot;, &quot;adf&quot;, &quot;bde&quot;, &quot;bdf&quot;, &quot;cde&quot;, &quot;cdf&quot;]</code>.</p>\r\n\r\n<p>Return all words that can be formed in this manner, in lexicographical order.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;{a,b}c{d,e}f&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[&quot;acdf&quot;,&quot;acef&quot;,&quot;bcdf&quot;,&quot;bcef&quot;]</span>\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">&quot;abcd&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[&quot;abcd&quot;]</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= S.length &lt;= 50</code></li>\r\n\t<li>There are no&nbsp;nested curly brackets.</li>\r\n\t<li>All characters inside a pair of&nbsp;consecutive opening and ending curly brackets are different.</li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 162,
+  "dislikes": 17,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Decode String\", \"titleSlug\": \"decode-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Letter Case Permutation\", \"titleSlug\": \"letter-case-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Brace Expansion II\", \"titleSlug\": \"brace-expansion-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 7}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<string> expand(string S) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String[] expand(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def expand(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def expand(self, S: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** expand(char * S, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string[] Expand(string S) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {string[]}\n */\nvar expand = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @return {String[]}\r\ndef expand(s)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func expand(_ S: String) -> [String] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func expand(S string) []string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def expand(S: String): Array[String] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun expand(S: String): Array<String> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn expand(s: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return String[]\n     */\n    function expand($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.8K\", \"totalSubmission\": \"20.9K\", \"totalAcceptedRaw\": 12792, \"totalSubmissionRaw\": 20917, \"acRate\": \"61.2%\"}",
+  "hints": [
+    "All generated strings are of the same size. How can we generate all of these strings?",
+    "Do a backtracking on which each level of it has to choose one single (e.g. 'a') character or any character of the given parenthesized group (e.g. \"{a,b,c}\")"
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"{a,b}c{d,e}f\"",
+  "metaData": "{\r\n  \"name\": \"expand\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,114 @@
+{
+  "questionId": "1320",
+  "questionFrontendId": "1209",
+  "boundTopicId": null,
+  "title": "Remove All Adjacent Duplicates in String II",
+  "titleSlug": "remove-all-adjacent-duplicates-in-string-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string&nbsp;<code>s</code>, a <em>k</em>&nbsp;<em>duplicate removal</em>&nbsp;consists of choosing <code>k</code>&nbsp;adjacent and equal letters from&nbsp;<code>s</code> and removing&nbsp;them causing the left and the right side of the deleted substring to concatenate together.</p>\n\n<p>We repeatedly make <code>k</code> duplicate removals on <code>s</code> until we no longer can.</p>\n\n<p>Return the final string after all such duplicate removals have been made.</p>\n\n<p>It is guaranteed that the answer is unique.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcd&quot;, k = 2\n<strong>Output:</strong> &quot;abcd&quot;\n<strong>Explanation: </strong>There&#39;s nothing to delete.</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;deeedbbcccbdaa&quot;, k = 3\n<strong>Output:</strong> &quot;aa&quot;\n<strong>Explanation: \n</strong>First delete &quot;eee&quot; and &quot;ccc&quot;, get &quot;ddbbbdaa&quot;\nThen delete &quot;bbb&quot;, get &quot;dddaa&quot;\nFinally delete &quot;ddd&quot;, get &quot;aa&quot;</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;pbbcggttciiippooaais&quot;, k = 2\n<strong>Output:</strong> &quot;ps&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10^5</code></li>\n\t<li><code>2 &lt;= k &lt;= 10^4</code></li>\n\t<li><code>s</code> only contains lower case English letters.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 216,
+  "dislikes": 7,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Remove All Adjacent Duplicates In String\", \"titleSlug\": \"remove-all-adjacent-duplicates-in-string\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "devendrakota21",
+      "profileUrl": "/devendrakota21/",
+      "avatarUrl": "https://assets.leetcode.com/users/devendrakota21/avatar_1554025441.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"FactSet\", \"slug\": \"factset\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string removeDuplicates(string s, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String removeDuplicates(String s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def removeDuplicates(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def removeDuplicates(self, s: str, k: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * removeDuplicates(char * s, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string RemoveDuplicates(string s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {string}\n */\nvar removeDuplicates = function(s, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} k\n# @return {String}\ndef remove_duplicates(s, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func removeDuplicates(_ s: String, _ k: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func removeDuplicates(s string, k int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def removeDuplicates(s: String, k: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun removeDuplicates(s: String, k: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn remove_duplicates(s: String, k: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return String\n     */\n    function removeDuplicates($s, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.9K\", \"totalSubmission\": \"22.7K\", \"totalAcceptedRaw\": 12880, \"totalSubmissionRaw\": 22748, \"acRate\": \"56.6%\"}",
+  "hints": [
+    "Use a stack to store the characters, when there are k same characters, delete them.",
+    "To make it more efficient, use a pair to store the value and the count of each character."
+  ],
+  "solution": {
+    "id": "789",
+    "canSeeDetail": true,
+    "url": "/articles/remove-all-adjacent-duplicates-in-string-ii/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Approach 1: Brute Force\r\n\r\nWe can do exactly what the problem asks: count repeating adjacent letters and remove them when the count reaches `k`. Then, we do it again until there is nothing to remove.\r\n\r\n![Brute Force Illustration](../Figures/1209/1209_approach1.png)\r\n\r\n**Algorithm**\r\n\r\n1. Remember the length of the string.\r\n\r\n2. Iterate through the string:\r\n\r\n    - If the current character is the same as the one before, increase the count.\r\n\r\n        - Otherwise, reset the count to `1`.\r\n\r\n    - If the count equals `k`,  erase last `k` characters.\r\n\r\n3. If the length of the string was changed, repeat starting from the first step.\r\n\r\n<iframe src=\"https://leetcode.com/playground/kxgWEfuQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"kxgWEfuQ\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n- Time complexity: $$\\mathcal{O}(n^2 / k)$$, where $$n$$ is a string length. We scan the string no more than $$n / k$$ times.\r\n\r\n- Space complexity: $$\\mathcal{O}(1)$$. A copy of a string may be created in some languages, however, the algorithm itself only uses the current string.\r\n\r\n---\r\n\r\n#### Approach 2: Memoise Count\r\n\r\nIf you observe how the count changes in the approach above, you may have an idea to store it for each character. That way, we do not have to start from the beginning each time we remove a substring. This approach will give us linear time complexity, and the trade-off is the extra memory to store counts.\r\n\r\n**Algorithm**\r\n\r\n1. Initialize `counts` array of size `n`.\r\n\r\n2. Iterate through the string:\r\n\r\n    - If the current character is the same as the one before, set `counts[i]` to `counts[i - 1] + 1`.\r\n\r\n        - Otherwise, set `counts[i]` to `1`.\r\n\r\n    - If `counts[i]` equals `k`,  erase last `k` characters and decrease `i` by `k`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/4adfTnuq/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"4adfTnuq\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n- Time complexity: $$\\mathcal{O}(n)$$, where $$n$$ is a string length. We process each character in the string once.\r\n\r\n- Space complexity: $$\\mathcal{O}(n)$$ to store the count for each character.\r\n\r\n---\r\n\r\n#### Approach 3: Stack\r\n\r\nInstead of storing counts for each character, we can use a stack. When a character does not match the previous one, we push `1` to the stack. Otherwise, we increment the count on the top of the stack.\r\n\r\n![Stack Illustration](../Figures/1209/1209_approach3.png)\r\n\r\n**Algorithm**\r\n\r\n1. Iterate through the string:\r\n\r\n    - If the current character is the same as the one before, increment the count on the top of the stack.\r\n\r\n        - Otherwise, push `1` to the stack.\r\n\r\n    - If the count on the top of the stack equals `k`, erase last `k` characters and pop from the stack.\r\n\r\n> Note that, since `Integer` is immutable in Java, we need to pop the value first, increment it, and then push it back (if it's less than `k`).\r\n\r\n<iframe src=\"https://leetcode.com/playground/3SDgRU9d/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"3SDgRU9d\"></iframe>\r\n\r\n**Complexity Analysis** <a name=\"approach3complexity\"></a>\r\n\r\n- Time complexity: $$\\mathcal{O}(n)$$, where $$n$$ is a string length. We process each character in the string once.\r\n\r\n- Space complexity: $$\\mathcal{O}(n)$$ for the stack.\r\n\r\n---\r\n#### Approach 4: Stack with Reconstruction\r\n\r\nIf we store both the count and the character in the stack, we do not have to modify the string. Instead, we can reconstruct the result from characters and counts in the stack.\r\n\r\n**Algorithm**\r\n\r\n1. Iterate through the string:\r\n\r\n    - If the current character is the same as on the top of the stack, increment the count.\r\n\r\n        - Otherwise, push `1` and the current character to the stack.\r\n\r\n    - If the count on the top of the stack equals `k`, pop from the stack.\r\n\r\n2. Build the result string using characters and counts in the stack.\r\n\r\n<iframe src=\"https://leetcode.com/playground/unHg7ikk/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"unHg7ikk\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n- Same as for [approach 3](#approach3complexity) above.\r\n\r\n---\r\n\r\n#### Approach 5: Two Pointers\r\n\r\nThis method was proposed by @[lee215](https://leetcode.com/lee215/), and we can use it to optimize string operations in approaches 2 and 3. Here, we copy characters within the same string using the fast and slow pointers. Each time we need to erase `k` characters, we just move the slow pointer `k` positions back.\r\n\r\n![Two Pointers Illustration](../Figures/1209/1209_approach5.png)\r\n\r\n**Algorithm**\r\n\r\n1. Initialize the slow pointer (`j`) with zero.\r\n\r\n2. Move the fast pointer (`i`) through the string:\r\n\r\n    - Copy s[i] into s[j].\r\n\r\n    - If `s[j]` is the same as `s[j - 1]`, increment the count on the top of the stack.\r\n\r\n        - Otherwise, push `1` to the stack.\r\n\r\n    - If the count equals `k`,  decrease `j` by `k` and pop from the stack.\r\n\r\n3. Return `j` first characters of the string.\r\n\r\n<iframe src=\"https://leetcode.com/playground/qm5La6Sp/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"qm5La6Sp\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n- Same as for [approach 3](#approach3complexity) above.\r\n\r\n---\r\n\r\nAnalysis written by: @[votrubac](https://leetcode.com/votrubac/).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "767",
+      "count": 11,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"abcd\"\n2",
+  "metaData": "{\n  \"name\": \"removeDuplicates\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

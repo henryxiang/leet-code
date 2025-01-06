@@ -1,0 +1,112 @@
+{
+  "questionId": "212",
+  "questionFrontendId": "212",
+  "boundTopicId": null,
+  "title": "Word Search II",
+  "titleSlug": "word-search-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a 2D board and a list of words from the dictionary, find all words in the board.</p>\r\n\r\n<p>Each word must be constructed from letters of sequentially adjacent cell, where &quot;adjacent&quot; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\n<b>board </b>= [\r\n  [&#39;<span style=\"color:#d70\">o</span>&#39;,&#39;<span style=\"color:#d70\">a</span>&#39;,&#39;a&#39;,&#39;n&#39;],\r\n  [&#39;e&#39;,&#39;<span style=\"color:#d30\">t</span>&#39;,&#39;<span style=\"color:#d00\">a</span>&#39;,&#39;<span style=\"color:#d00\">e</span>&#39;],\r\n  [&#39;i&#39;,&#39;<span style=\"color:#d70\">h</span>&#39;,&#39;k&#39;,&#39;r&#39;],\r\n  [&#39;i&#39;,&#39;f&#39;,&#39;l&#39;,&#39;v&#39;]\r\n]\r\n<b>words</b> = <code>[&quot;oath&quot;,&quot;pea&quot;,&quot;eat&quot;,&quot;rain&quot;]</code>\r\n\r\n<strong>Output:&nbsp;</strong><code>[&quot;eat&quot;,&quot;oath&quot;]</code>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>All inputs are consist of lowercase letters <code>a-z</code>.</li>\r\n\t<li>The values of&nbsp;<code>words</code> are distinct.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 1633,
+  "dislikes": 85,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Word Search\", \"titleSlug\": \"word-search\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Unique Paths III\", \"titleSlug\": \"unique-paths-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 19}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Houzz\", \"slug\": \"houzz\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> findWords(char[][] board, String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findWords(self, board, words):\n        \"\"\"\n        :type board: List[List[str]]\n        :type words: List[str]\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** findWords(char** board, int boardSize, int* boardColSize, char ** words, int wordsSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public IList<string> FindWords(char[][] board, string[] words) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[][]} board\n * @param {string[]} words\n * @return {string[]}\n */\nvar findWords = function(board, words) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[][]} board\r\n# @param {String[]} words\r\n# @return {String[]}\r\ndef find_words(board, words)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func findWords(_ board: [[Character]], _ words: [String]) -> [String] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findWords(board [][]byte, words []string) []string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def findWords(board: Array[Array[Char]], words: Array[String]): List[String] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun findWords(board: Array<CharArray>, words: Array<String>): List<String> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_words(board: Vec<Vec<char>>, words: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[][] $board\n     * @param String[] $words\n     * @return String[]\n     */\n    function findWords($board, $words) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"151.2K\", \"totalSubmission\": \"483K\", \"totalAcceptedRaw\": 151223, \"totalSubmissionRaw\": 482972, \"acRate\": \"31.3%\"}",
+  "hints": [
+    "You would need to optimize your backtracking to pass the larger test. Could you stop backtracking earlier?",
+    "If the current candidate does not exist in all words&#39; prefix, you could stop backtracking immediately. What kind of data structure could answer such query efficiently? Does a hash table work? Why or why not? How about a Trie? If you would like to learn how to implement a basic trie, please work on this problem: <a href=\"https://leetcode.com/problems/implement-trie-prefix-tree/\">Implement Trie (Prefix Tree)</a> first."
+  ],
+  "solution": {
+    "id": "772",
+    "canSeeDetail": true,
+    "url": "/articles/word-search-ii/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Backtracking with Trie\n\n**Intuition**\n\nThe problem is actually a simplified crossword puzzle game, where the word solutions have been given on the board embedded with some noise letters. All we need to to do is to *cross* them out.\n\n>Intuitively, in order to cross out all potential words, the overall strategy would be to iterate the cell one by one, and from each cell we walk along its neighbors in four potential directions to find matched words.\nWhile wandering around the board, we would stop the exploration when we know it would not lead to the discovery of new words.\n\nOne might have guessed the paradigm that we would use for this problem. Yes, it is **backtracking**, which would be the backbone of the solution. It is fairly simply to construct a solution of backtracking. One could even follow a template given in our [Explore card of Recursion II](https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/2793/).\n\nThe key of the solution lies on _how we find the matches of word from the dictionary_. Intuitively, one might resort to the hashset data structure (_e.g._ `set()` in Python). This could work.\n\nHowever, during the backtracking process, one would encounter more often the need to tell if there exists any word that contains certain prefix, rather than if a string exists as a word in the dictionary. Because if we know that there does not exist any match of word in the dictionary for a given prefix, then we would not need to further explore certain direction. And this, would greatly reduce the exploration space, therefore improve the performance of the backtracking algorithm.\n\nThe capability of finding matching prefix is where the data structure called [Trie](https://leetcode.com/explore/learn/card/trie/) would shine, comparing the hashset data structure. Not only can Trie tell the membership of a word, but also it can instantly find the words that share a given prefix. As it turns out, the choice of data structure (`Trie` _VS._ `hashset`), which could end with a solution that ranks either the top $$5\\%$$ or the bottom $$5\\%$$.\n\nHere we show an example of Trie that is built from a list of words. As one can see from the following graph, at the node denoted `d`, we would know there are at least two words with the prefix `d` from the dictionary.\n\n![pic](../Figures/212/212_trie_example.png)\n\nWe have a problem about [implementing a Trie data structure](https://leetcode.com/problems/implement-trie-prefix-tree/). One can start with the Trie problem as warm up, and come back this problem later.\n\n\n**Algorithm**\n\nThe overall workflow of the algorithm is intuitive, which consists of a loop over each cell in the board and a recursive function call starting from the cell. Here is the skeleton of the algorithm.\n\n- We build a Trie out of the words in the dictionary, which would be used for the matching process later.\n\n- Starting from each cell, we start the backtracking exploration (_i.e._ `backtracking(cell)`), if there exists any word in the dictionary that starts with the letter in the cell.\n\n- During the recursive function call `backtracking(cell)`, we explore the neighbor cells (_i.e._ `neighborCell`) around the current cell for the next recursive call `backtracking(neighborCell)`. At each call, we check if the sequence of letters that we traverse so far matches any word in the dictionary, with the help of the Trie data structure that we built at the beginning.\n\nHere is an overall impression how the algorithm works. We give some sample implementation based on the rough idea above. And later, we detail some optimization that one could further apply to the algorithm. \n\n![pic](../Figures/212/212_trie_algo.png)\n\n<iframe src=\"https://leetcode.com/playground/WpZ8KziK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"WpZ8KziK\"></iframe>\n\nTo better understand the backtracking process, we demonstrate how we find the match of `dog` along the Trie in the following animation.\n\n!?!../Documents/212_LIS.json:1000,474!?!\n\n##### Optimization\n\nIn the above implementation, we applied a few tricks to further speed up the running time, in addition to the application of the Trie data structure. In particular, the Python implementation could run faster than `98%` of the submissions. We detail the tricks as follows, ordered by their significance.\n\n>_Backtrack along the nodes in Trie._\n\n- One could use Trie simply as a dictionary to quickly find the match of words and prefixes, _i.e._ at _each step_ of backtracking, we start all over from the root of the Trie. This could work.\n- However, a more efficient way would be to traverse the Trie together with the progress of backtracking, _i.e._ at each step of `backtracking(TrieNode)`, the depth of the `TrieNode` corresponds to the length of the prefix that we've matched so far. This measure could lift your solution out of the bottom $$5\\%$$ of submissions.\n\n>_Gradually **prune** the nodes in Trie during the backtracking._\n\n- The idea is motivated by the fact that the time complexity of the overall algorithm sort of depends on the size of the Trie. For a leaf node in Trie, once we traverse it (_i.e._find a matched word), we would not need to traverse it again. As a result, we could prune it out from the Trie.\n\n- Gradually, those non-leaf nodes could become leaf nodes later, since we trim their children leaf nodes. In the extreme case, the Trie would become empty, once we find a match for all the words in the dictionary. This pruning measure could reduce up to $$50\\%$$ of the running time for the test cases of the online judge.\n\n![pic](../Figures/212/212_trie_prune.png)\n\n> _Keep words in the Trie_.\n\n- One might use a flag in the Trie node to indicate if the path to the current code match any word in the dictionary. It is not necessary to keep the words in the Trie.\n- However, doing so could improve the performance of the algorithm a bit. One benefit is that one would not need to pass the prefix as the parameter in the `backtracking()` call. And this could speed up a bit the recursive call. Similarly, one does not need to reconstruct the matched word from the prefix, if we keep the words in Trie.\n\n>_Remove the matched words from the Trie._\n\n- In the problem, we are asked to return all the matched words, rather than the number of potential matches. Therefore, once we reach certain Trie node that contains a match of word, we could simply remove the match from the Trie.\n- As a _side_ benefit, we do not need to check if there is any duplicate in the result set. As a result, we could simply use a list instead of set to keep the results, which could speed up the solution a bit.\n<br/>\n\n\n**Complexity**\n\n- Time complexity: $$\\mathcal{O}(M(4\\cdot3^{L-1}))$$, where $$M$$ is the number of cells in the board and $$L$$ is the maximum length of words.\n  \n    - It is tricky is calculate the exact number of steps that a backtracking algorithm would perform. We provide a upper bound of steps for the worst scenario for this problem. The algorithm loops over all the cells in the board, therefore we have $$M$$ as a factor in the complexity formula. It then boils down to the _maximum_ number of steps we would need for each starting cell (_i.e._$$4\\cdot3^{L-1}$$).\n  \n    - Assume the maximum length of word is $$L$$, starting from a cell, initially we would have at most 4 directions to explore. Assume each direction is valid (_i.e._ worst case), during the following exploration, we have at most 3 neighbor cells (excluding the cell where we come from) to explore. As a result, we would traverse at most $$4\\cdot3^{L-1}$$ cells during the backtracking exploration.\n\n    - One might wonder what the worst case scenario looks like. Well, here is an example. Imagine, each of the cells in the board contains the letter `a`, and the word dictionary contains a single word `['aaaa']`. Voila. This is one of the worst scenarios that the algorithm would encounter.\n![pic](../Figures/212/212_complexity_example.png)\n  \n    - Note that, the above time complexity is estimated under the assumption that the Trie data structure would not change once built. If we apply the optimization trick to gradually remove the nodes in Trie, we could greatly improve the time complexity, since the cost of backtracking would reduced to zero once we match all the words in the dictionary, _i.e._ the Trie becomes empty.\n\n<br/>\n\n- Space Complexity: $$\\mathcal{O}(N)$$, where $$N$$ is the total number of letters in the dictionary.\n\n    - The main space consumed by the algorithm is the Trie data structure we build. In the worst case where there is no overlapping of prefixes among the words, the Trie would have as many nodes as the letters of all words. And optionally, one might keep a copy of words in the Trie as well. As a result, we might need $$2N$$ space for the Trie. \n\n\n---\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "757",
+      "count": 24,
+      "average": 4.917,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]]\n[\"oath\",\"pea\",\"eat\",\"rain\"]",
+  "metaData": "{\r\n  \"name\": \"findWords\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"board\",\r\n      \"type\": \"character[][]\"\r\n    },\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

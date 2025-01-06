@@ -1,0 +1,99 @@
+{
+  "questionId": "516",
+  "questionFrontendId": "516",
+  "boundTopicId": null,
+  "title": "Longest Palindromic Subsequence",
+  "titleSlug": "longest-palindromic-subsequence",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a string s, find the longest palindromic subsequence's length in s. You may assume that the maximum length of s is 1000.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br>\r\nInput: \r\n<pre>\r\n\"bbbab\"\r\n</pre>\r\nOutput: \r\n<pre>\r\n4\r\n</pre>\r\nOne possible longest palindromic subsequence is \"bbbb\".\r\n</p>\r\n\r\n<p><b>Example 2:</b><br>\r\nInput:\r\n<pre>\r\n\"cbbd\"\r\n</pre>\r\nOutput:\r\n<pre>\r\n2\r\n</pre>\r\nOne possible longest palindromic subsequence is \"bb\".\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1271,
+  "dislikes": 155,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Palindromic Substring\", \"titleSlug\": \"longest-palindromic-substring\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindromic Substrings\", \"titleSlug\": \"palindromic-substrings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count Different Palindromic Subsequences\", \"titleSlug\": \"count-different-palindromic-subsequences\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Longest Common Subsequence\", \"titleSlug\": \"longest-common-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 0}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestPalindromeSubseq(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestPalindromeSubseq(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestPalindromeSubseq(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestPalindromeSubseq(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint longestPalindromeSubseq(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestPalindromeSubseq(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar longestPalindromeSubseq = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef longest_palindrome_subseq(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestPalindromeSubseq(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestPalindromeSubseq(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestPalindromeSubseq(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestPalindromeSubseq(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_palindrome_subseq(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function longestPalindromeSubseq($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"84.8K\", \"totalSubmission\": \"170.6K\", \"totalAcceptedRaw\": 84810, \"totalSubmissionRaw\": 170640, \"acRate\": \"49.7%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"bbbab\"",
+  "metaData": "{\r\n  \"name\": \"longestPalindromeSubseq\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

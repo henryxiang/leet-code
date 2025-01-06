@@ -1,0 +1,106 @@
+{
+  "questionId": "360",
+  "questionFrontendId": "360",
+  "boundTopicId": null,
+  "title": "Sort Transformed Array",
+  "titleSlug": "sort-transformed-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <b>sorted</b> array of integers <i>nums</i> and integer values <i>a</i>, <i>b</i> and <i>c</i>. Apply a quadratic function of the form f(<i>x</i>) = <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> to each element <i>x</i> in the array.</p>\r\n\r\n<p>The returned array must be in <b>sorted order</b>.</p>\r\n\r\n<p>Expected time complexity: <b>O(<i>n</i>)</b></p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-1-1\">[-4,-2,2,4]</span>, a = <span id=\"example-input-1-2\">1</span>, b = <span id=\"example-input-1-3\">3</span>, c = <span id=\"example-input-1-4\">5</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[3,9,15,33]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>nums = <span id=\"example-input-2-1\">[-4,-2,2,4]</span>, a = <span id=\"example-input-2-2\">-1</span>, b = <span id=\"example-input-2-3\">3</span>, c = <span id=\"example-input-2-4\">5</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[-23,-5,1,7]</span>\r\n</pre>\r\n</div>\r\n</div>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 266,
+  "dislikes": 76,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Squares of a Sorted Array\", \"titleSlug\": \"squares-of-a-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "elmirap",
+      "profileUrl": "/elmirap/",
+      "avatarUrl": "https://www.gravatar.com/avatar/ba92194ffdce151caf7dffd9037a6997.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> sortTransformedArray(vector<int>& nums, int a, int b, int c) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] sortTransformedArray(int[] nums, int a, int b, int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def sortTransformedArray(self, nums, a, b, c):\n        \"\"\"\n        :type nums: List[int]\n        :type a: int\n        :type b: int\n        :type c: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def sortTransformedArray(self, nums: List[int], a: int, b: int, c: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* sortTransformedArray(int* nums, int numsSize, int a, int b, int c, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] SortTransformedArray(int[] nums, int a, int b, int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} a\n * @param {number} b\n * @param {number} c\n * @return {number[]}\n */\nvar sortTransformedArray = function(nums, a, b, c) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} a\n# @param {Integer} b\n# @param {Integer} c\n# @return {Integer[]}\ndef sort_transformed_array(nums, a, b, c)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func sortTransformedArray(_ nums: [Int], _ a: Int, _ b: Int, _ c: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func sortTransformedArray(nums []int, a int, b int, c int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def sortTransformedArray(nums: Array[Int], a: Int, b: Int, c: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun sortTransformedArray(nums: IntArray, a: Int, b: Int, c: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sort_transformed_array(nums: Vec<i32>, a: i32, b: i32, c: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $a\n     * @param Integer $b\n     * @param Integer $c\n     * @return Integer[]\n     */\n    function sortTransformedArray($nums, $a, $b, $c) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"30.7K\", \"totalSubmission\": \"64.4K\", \"totalAcceptedRaw\": 30703, \"totalSubmissionRaw\": 64426, \"acRate\": \"47.7%\"}",
+  "hints": [
+    "x^2 + x  will form a parabola.",
+    "Parameter A in:  A * x^2 + B * x + C dictates the shape of the parabola.</br>\r\nPositive A means the parabola remains concave (high-low-high), but negative A inverts the parabola to be convex (low-high-low)."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[-4,-2,2,4]\n1\n3\n5",
+  "metaData": "{\r\n  \"name\": \"sortTransformedArray\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"a\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"b\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"c\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

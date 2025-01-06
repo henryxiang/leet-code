@@ -1,0 +1,105 @@
+{
+  "questionId": "959",
+  "questionFrontendId": "923",
+  "boundTopicId": null,
+  "title": "3Sum With Multiplicity",
+  "titleSlug": "3sum-with-multiplicity",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an integer array <code>A</code>, and an integer <code>target</code>, return the number of&nbsp;tuples&nbsp;<code>i, j, k</code>&nbsp; such that <code>i &lt; j &lt; k</code> and&nbsp;<code>A[i] + A[j] + A[k] == target</code>.</p>\r\n\r\n<p><strong>As the answer can be very large, return it modulo&nbsp;<code>10^9 + 7</code></strong>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[1,1,2,2,3,3,4,4,5,5]</span>, target = <span id=\"example-input-1-2\">8</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">20</span>\r\n<strong>Explanation: </strong>\r\nEnumerating by the values (A[i], A[j], A[k]):\r\n(1, 2, 5) occurs 8 times;\r\n(1, 3, 4) occurs 8 times;\r\n(2, 2, 4) occurs 2 times;\r\n(2, 3, 3) occurs 2 times.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">[1,1,2,2,2,2]</span>, target = <span id=\"example-input-2-2\">5</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">12</span>\r\n<strong>Explanation: </strong>\r\nA[i] = 1, A[j] = A[k] = 2 occurs 12 times:\r\nWe choose one 1 from [1,1] in 2 ways,\r\nand two 2s from [2,2,2,2] in 6 ways.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>3 &lt;= A.length &lt;= 3000</code></li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 100</code></li>\r\n\t<li><code>0 &lt;= target &lt;= 300</code></li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 260,
+  "dislikes": 50,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 10}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int threeSumMulti(vector<int>& A, int target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int threeSumMulti(int[] A, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def threeSumMulti(self, A, target):\n        \"\"\"\n        :type A: List[int]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def threeSumMulti(self, A: List[int], target: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint threeSumMulti(int* A, int ASize, int target){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ThreeSumMulti(int[] A, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number} target\n * @return {number}\n */\nvar threeSumMulti = function(A, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer} target\n# @return {Integer}\ndef three_sum_multi(a, target)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func threeSumMulti(_ A: [Int], _ target: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func threeSumMulti(A []int, target int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def threeSumMulti(A: Array[Int], target: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun threeSumMulti(A: IntArray, target: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn three_sum_multi(a: Vec<i32>, target: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer $target\n     * @return Integer\n     */\n    function threeSumMulti($A, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"15.2K\", \"totalSubmission\": \"43.3K\", \"totalAcceptedRaw\": 15211, \"totalSubmissionRaw\": 43316, \"acRate\": \"35.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "587",
+    "canSeeDetail": true,
+    "url": "/articles/3sum-with-multiplicity/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach Notes\n\nThe approaches described below assume some familiarity with the two pointer technique that can be used to solve the LeetCode problem \"Two Sum\".\n\nIn the problem, we have a sorted array `A` of unique elements, and want to know how many `i < j` with `A[i] + A[j] == target`.\n\nThe idea that does it in linear time, is that for each `i` in increasing order, the `j`'s that satisfy the equation `A[i] + A[j] == target` are decreasing.\n\n```python\ndef solve(A, target):\n    # Assume A already sorted\n    i, j = 0, len(A) - 1\n    ans = 0\n    while i < j:\n        if A[i] + A[j] < target:\n            i += 1\n        elif A[i] + A[j] > target:\n            j -= 1\n        else:\n            ans += 1\n            i += 1\n            j -= 1\n    return ans\n```\n\nThis is not a complete explanation.  For more on this problem, please review the LeetCode problem \"Two Sum\".\n\n---\n#### Approach 1: Three Pointer\n\n**Intuition and Algorithm**\n\nSort the array.  For each `i`, set `T = target - A[i]`, the remaining target.  We can try using a two-pointer technique to find `A[j] + A[k] == T`.  This approach is the natural continuation of trying to make the two-pointer technique we know from previous problems, work on this problem.\n\nBecause some elements are duplicated, we have to be careful.  In a typical case, the target is say, `8`, and we have a remaining array (`A[i+1:]`) of `[2,2,2,2,3,3,4,4,4,5,5,5,6,6]`.  We can analyze this situation with cases.\n\nWhenever `A[j] + A[k] == T`, we should count the multiplicity of `A[j]` and `A[k]`.  In this example, if `A[j] == 2` and `A[k] == 6`, the multiplicities are `4` and `2`, and the total number of pairs is `4 * 2 = 8`.  We then move to the remaining window `A[j:k+1]` of `[3,3,4,4,4,5,5,5]`.\n\nAs a special case, if `A[j] == A[k]`, then our manner of counting would be incorrect.  If for example the remaining window is `[4,4,4]`, there are only 3 such pairs.  In general, when `A[j] == A[k]`, we have $$\\binom{M}{2} = \\frac{M*(M-1)}{2}$$ pairs `(j,k)` (with `j < k`) that satisfy `A[j] + A[k] == T`, where $$M$$ is the multiplicity of `A[j]` (in this case $$M=3$$).\n\nFor more details, please see the inline comments.\n\n<iframe src=\"https://leetcode.com/playground/TCrTgDfK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"TCrTgDfK\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Counting with Cases\n\n**Intuition and Algorithm**\n\nLet `count[x]` be the number of times that `x` occurs in `A`.  For every `x+y+z == target`, we can try to count the correct contribution to the answer.  There are a few cases:\n\n* If `x`, `y`, and `z` are all different, then the contribution is `count[x] * count[y] * count[z]`.\n\n* If `x == y != z`, the contribution is $$\\binom{\\text{count[x]}}{2} * \\text{count[z]}$$.\n\n* If `x != y == z`, the contribution is $$\\text{count[x]} * \\binom{\\text{count[y]}}{2}$$.\n\n* If `x == y == z`, the contribution is $$\\binom{\\text{count[x]}}{3}$$.\n\n(*Here, $$\\binom{n}{k}$$ denotes the binomial coefficient $$\\frac{n!}{(n-k)!k!}$$.*)\n\nEach case is commented in the implementations below.\n\n<iframe src=\"https://leetcode.com/playground/9nU5mTcv/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9nU5mTcv\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N + W^2)$$, where $$N$$ is the length of `A`, and $$W$$ is the maximum possible value of `A[i]`.  (Note that this solution can be adapted to be $$O(N^2)$$ even in the case that $$W$$ is very large.)\n\n* Space Complexity:  $$O(W)$$.\n<br />\n<br />\n\n\n---\n#### Approach 3: Adapt from Three Sum\n\n**Intuition and Algorithm**\n\nAs in *Approach 2*, let `count[x]` be the number of times that `x` occurs in `A`.  Also, let `keys` be a sorted list of unique values of `A`.  We will try to adapt a 3Sum algorithm to work on `keys`, but add the correct answer contributions.\n\nFor example, if `A = [1,1,2,2,3,3,4,4,5,5]` and `target = 8`, then `keys = [1,2,3,4,5]`.  When doing 3Sum on `keys` (with `i <= j <= k`), we will encounter some tuples that sum to the target, like `(x,y,z) = (1,2,5), (1,3,4), (2,2,4), (2,3,3)`.  We can then use `count` to calculate how many such tuples there are in each case.\n\nThis approach assumes familiarity with *3Sum*.  For more, please visit the associated LeetCode problem here [https://leetcode.com/problems/3sum](https://leetcode.com/problems/3sum).\n\n<iframe src=\"https://leetcode.com/playground/Ph3ok9qb/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Ph3ok9qb\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "573",
+      "count": 10,
+      "average": 4.3,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,1,2,2,3,3,4,4,5,5]\n8",
+  "metaData": "{\r\n  \"name\": \"threeSumMulti\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

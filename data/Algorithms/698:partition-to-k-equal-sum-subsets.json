@@ -1,0 +1,117 @@
+{
+  "questionId": "698",
+  "questionFrontendId": "698",
+  "boundTopicId": null,
+  "title": "Partition to K Equal Sum Subsets",
+  "titleSlug": "partition-to-k-equal-sum-subsets",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers <code>nums</code> and a positive integer <code>k</code>, find whether it&#39;s possible to divide this array into <code>k</code> non-empty subsets whose sums are all equal.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> nums = [4, 3, 2, 3, 5, 2, 1], k = 4\r\n<b>Output:</b> True\r\n<b>Explanation:</b> It&#39;s possible to divide it into 4 subsets (5), (1, 4), (2,3), (2,3) with equal sums.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= k &lt;= len(nums) &lt;= 16</code>.</li>\r\n\t<li><code>0 &lt; nums[i] &lt; 10000</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1179,
+  "dislikes": 66,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Partition Equal Subset Sum\", \"titleSlug\": \"partition-equal-subset-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fishercoder",
+      "profileUrl": "/fishercoder/",
+      "avatarUrl": "https://assets.leetcode.com/users/fishercoder/avatar_1576991018.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool canPartitionKSubsets(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canPartitionKSubsets(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canPartitionKSubsets(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool canPartitionKSubsets(int* nums, int numsSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CanPartitionKSubsets(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {boolean}\n */\nvar canPartitionKSubsets = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Boolean}\ndef can_partition_k_subsets(nums, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canPartitionKSubsets(_ nums: [Int], _ k: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canPartitionKSubsets(nums []int, k int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canPartitionKSubsets(nums: Array[Int], k: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canPartitionKSubsets(nums: IntArray, k: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_partition_k_subsets(nums: Vec<i32>, k: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Boolean\n     */\n    function canPartitionKSubsets($nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"62.2K\", \"totalSubmission\": \"140.7K\", \"totalAcceptedRaw\": 62246, \"totalSubmissionRaw\": 140745, \"acRate\": \"44.2%\"}",
+  "hints": [
+    "We can figure out what target each subset must sum to.  Then, let's recursively search, where at each call to our function, we choose which of k subsets the next value will join."
+  ],
+  "solution": {
+    "id": "262",
+    "canSeeDetail": true,
+    "url": "/articles/partition-to-k-equal-sum-subsets/",
+    "content": "[TOC]\n\n#### Approach #1: Search by Constructing Subset Sums [Accepted]\n\n**Intuition**\n\nAs even when `k = 2`, the problem is a \"Subset Sum\" problem which is known to be NP-hard, (and because the given input limits are low,) our solution will focus on exhaustive search.\n\nA natural approach is to simulate the `k` groups (disjoint subsets of nums).  For each number in `nums`, we'll check whether putting it in the `i`-th group solves the problem.  We can check those possibilities by recursively searching.\n\n**Algorithm**\n\nFirstly, we know that each of the `k` group-sums must be equal to `target = sum(nums) / k`.  (If this quantity is not an integer, the task is impossible.)\n\nFor each number in `nums`, we could add it into one of `k` group-sums, as long as the group's sum would not exceed the `target`.  For each of these choices, we recursively search with one less number to consider in `nums`.  If we placed every number successfully, then our search was successful.\n\nOne important speedup is that we can ensure all the 0 values of each group occur at the end of the array `groups`, by enforcing `if (groups[i] == 0) break;`.  This greatly reduces repeated work - for example, in the first run of search, we will make only 1 recursive call, instead of `k`.  Actually, we could do better by skipping any repeated values of groups[i], but it isn't necessary.\n\nAnother speedup is we could sort the array `nums`, so that we try to place the largest elements first.  When the answer is true and involves subsets with a low size, this method of placing elements will consider these lower size subsets sooner.  We can also handle elements `nums[i] >= target` appropriately.  These tricks are not necessary to solve the problem, but they are presented in the solutions below.\n\n**Python**\n```python\nclass Solution(object):\n    def canPartitionKSubsets(self, nums, k):\n        target, rem = divmod(sum(nums), k)\n        if rem: return False\n\n        def search(groups):\n            if not nums: return True\n            v = nums.pop()\n            for i, group in enumerate(groups):\n                if group + v <= target:\n                    groups[i] += v\n                    if search(groups): return True\n                    groups[i] -= v\n                if not group: break\n            nums.append(v)\n            return False\n\n        nums.sort()\n        if nums[-1] > target: return False\n        while nums and nums[-1] == target:\n            nums.pop()\n            k -= 1\n\n        return search([0] * k)\n```\n\n**Java**\n```java\nclass Solution {\n    public boolean search(int[] groups, int row, int[] nums, int target) {\n        if (row < 0) return true;\n        int v = nums[row--];\n        for (int i = 0; i < groups.length; i++) {\n            if (groups[i] + v <= target) {\n                groups[i] += v;\n                if (search(groups, row, nums, target)) return true;\n                groups[i] -= v;\n            }\n            if (groups[i] == 0) break;\n        }\n        return false;\n    }\n\n    public boolean canPartitionKSubsets(int[] nums, int k) {\n        int sum = Arrays.stream(nums).sum();\n        if (sum % k > 0) return false;\n        int target = sum / k;\n\n        Arrays.sort(nums);\n        int row = nums.length - 1;\n        if (nums[row] > target) return false;\n        while (row >= 0 && nums[row] == target) {\n            row--;\n            k--;\n        }\n        return search(new int[k], row, nums, target);\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(k^{N-k} k!)$$, where $$N$$ is the length of `nums`, and $$k$$ is as given.  As we skip additional zeroes in `groups`, naively we will make $$O(k!)$$ calls to `search`, then an additional $$O(k^{N-k})$$ calls after every element of `groups` is nonzero.\n\n* Space Complexity: $$O(N)$$, the space used by recursive calls to `search` in our call stack.\n\n---\n#### Approach #2: Dynamic Programming on Subsets of Input [Accepted]\n\n**Intuition and Algorithm**\n\nAs in *Approach #1*, we investigate methods of exhaustive search, and find `target = sum(nums) / k` in the same way.\n\nLet `used` have the `i`-th bit set if and only if `nums[i]` has already been used.  Our goal is to use `nums` in some order so that placing them into groups in that order will be valid. `search(used, ...)` will answer the question: can we partition unused elements of `nums[i]` appropriately?\n\nThis will depend on `todo`, the sum of the remaining unused elements, not crossing multiples of `target` within one number.  If for example our target is `10`, and our elements to be placed in order are `[6, 5, 5, 4]`, this would not work as `6 + 5` \"crosses\" `10` prematurely.\n\nIf we could choose the order, then after placing `5`, our unused elements are `[4, 5, 6]`.  Using `6` would make `todo` go from `15` to `9`, which crosses `10` - something unwanted.  However, we could use `5` since `todo` goes from `15` to `10`; then later we could use `4` and `6` as those placements do not cross.\n\nIt turns out the maximum value that can be chosen so as to not cross a multiple of `target`, is `targ = (todo - 1) % target + 1`.  This is essentially `todo % target`, plus `target` if that would be zero.\n\nNow for each unused number that doesn't cross, we'll search on that state, and we'll return `true` if any of those searches are `true`.\n\nNotice that the state `todo` depends only on the state `used`, so when memoizing our search, we only need to make lookups by `used`.\n\nIn the solutions below, we present both a top-down dynamic programming solution, and a bottom-up one.  The bottom-up solution uses a different notion of state.\n\n**Python**\n```python\nclass Solution(object):\n    def canPartitionKSubsets(self, nums, k):\n        target, rem = divmod(sum(nums), k)\n        if rem or max(nums) > target: return False\n\n        memo = [None] * (1 << len(nums))\n        memo[-1] = True\n        def search(used, todo):\n            if memo[used] is None:\n                targ = (todo - 1) % target + 1\n                memo[used] = any(search(used | (1<<i), todo - num)\n                                 for i, num in enumerate(nums)\n                                 if (used >> i) & 1 == 0 and num <= targ)\n            return memo[used]\n\n        return search(0, target * k)\n```\n\n**Java**\n```java\nenum Result { TRUE, FALSE }\n\nclass Solution {\n    boolean search(int used, int todo, Result[] memo, int[] nums, int target) {\n        if (memo[used] == null) {\n            memo[used] = Result.FALSE;\n            int targ = (todo - 1) % target + 1;\n            for (int i = 0; i < nums.length; i++) {\n                if ((((used >> i) & 1) == 0) && nums[i] <= targ) {\n                    if (search(used | (1<<i), todo - nums[i], memo, nums, target)) {\n                        memo[used] = Result.TRUE;\n                        break;\n                    }\n                }\n            }\n        }\n        return memo[used] == Result.TRUE;\n    }\n    public boolean canPartitionKSubsets(int[] nums, int k) {\n        int sum = Arrays.stream(nums).sum();\n        if (sum % k > 0) return false;\n\n        Result[] memo = new Result[1 << nums.length];\n        memo[(1 << nums.length) - 1] = Result.TRUE;\n        return search(0, sum, memo, nums, sum / k);\n    }\n}\n```\n\n*Bottom-Up Variation*\n\n**Python**\n\n```python\nclass Solution(object):\n    def canPartitionKSubsets(self, nums, k):\n        nums.sort()\n        target, rem = divmod(sum(nums), k)\n        if rem or nums[-1] > target: return False\n\n        dp = [False] * (1 << len(nums))\n        dp[0] = True\n        total = [0] * (1 << len(nums))\n\n        for state in xrange(1 << len(nums)):\n            if not dp[state]: continue\n            for i, num in enumerate(nums):\n                future = state | (1 << i)\n                if state != future and not dp[future]:\n                    if (num <= target - (total[state] % target)):\n                        dp[future] = True\n                        total[future] = total[state] + num\n                    else:\n                        break\n        return dp[-1]\n```\n\n**Java**\n```java\nclass Solution {\n    public boolean canPartitionKSubsets(int[] nums, int k) {\n        int N = nums.length;\n        Arrays.sort(nums);\n        int sum = Arrays.stream(nums).sum();\n        int target = sum / k;\n        if (sum % k > 0 || nums[N - 1] > target) return false;\n\n        boolean[] dp = new boolean[1 << N];\n        dp[0] = true;\n        int[] total = new int[1 << N];\n\n        for (int state = 0; state < (1 << N); state++) {\n            if (!dp[state]) continue;\n            for (int i = 0; i < N; i++) {\n                int future = state | (1 << i);\n                if (state != future && !dp[future]) {\n                    if (nums[i] <= target - (total[state] % target)) {\n                        dp[future] = true;\n                        total[future] = total[state] + nums[i];\n                    } else {\n                        break;\n                    }\n                }\n            }\n        }\n        return dp[(1 << N) - 1];\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N * 2^N)$$, where $$N$$ is the length of `nums`.  There are $$2^N$$ states of `used` (or `state` in our bottom-up variant), and each state performs `O(N)` work searching through `nums`.\n\n* Space Complexity: $$O(2^N)$$, the space used by `memo` (or `dp`, `total` in our bottom-up variant).\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "259",
+      "count": 55,
+      "average": 3.218,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,3,2,3,5,2,1]\n4",
+  "metaData": "{\r\n  \"name\": \"canPartitionKSubsets\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

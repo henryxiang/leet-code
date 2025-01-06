@@ -1,0 +1,52 @@
+{
+  "questionId": "1181",
+  "questionFrontendId": "534",
+  "boundTopicId": null,
+  "title": "Game Play Analysis III",
+  "titleSlug": "game-play-analysis-iii",
+  "categoryTitle": "Database",
+  "content": "<p>Table:&nbsp;<code>Activity</code></p>\n\n<pre>\n+--------------+---------+\n| Column Name  | Type    |\n+--------------+---------+\n| player_id    | int     |\n| device_id    | int     |\n| event_date   | date    |\n| games_played | int     |\n+--------------+---------+\n(player_id, event_date) is the primary key of this table.\nThis table shows the activity of players of some game.\nEach row is a record of a player who logged in and played a number of games (possibly 0) before logging out on some day using some device.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query that reports for each player and date, how many games played&nbsp;<strong>so far</strong>&nbsp;by the player. That is, the total number of games played by the player until that date. Check the example for clarity.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\nActivity table:\n+-----------+-----------+------------+--------------+\n| player_id | device_id | event_date | games_played |\n+-----------+-----------+------------+--------------+\n| 1         | 2         | 2016-03-01 | 5            |\n| 1         | 2         | 2016-05-02 | 6            |\n| 1         | 3         | 2017-06-25 | 1            |\n| 3         | 1         | 2016-03-02 | 0            |\n| 3         | 4         | 2018-07-03 | 5            |\n+-----------+-----------+------------+--------------+\n\nResult table:\n+-----------+------------+---------------------+\n| player_id | event_date | games_played_so_far |\n+-----------+------------+---------------------+\n| 1         | 2016-03-01 | 5                   |\n| 1         | 2016-05-02 | 11                  |\n| 1         | 2017-06-25 | 12                  |\n| 3         | 2016-03-02 | 0                   |\n| 3         | 2018-07-03 | 5                   |\n+-----------+------------+---------------------+\nFor the player with id 1, 5 + 6 = 11 games played by 2016-05-02, and 5 + 6 + 1 = 12 games played by 2017-06-25.\nFor the player with id 3, 0 + 5 = 5 games played by 2018-07-03.\nNote that for each player we only care about the days when the player logged in.\n</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 57,
+  "dislikes": 2,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Game Play Analysis II\", \"titleSlug\": \"game-play-analysis-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Game Play Analysis IV\", \"titleSlug\": \"game-play-analysis-iv\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"GSN Games\", \"slug\": \"gsn-games\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.6K\", \"totalSubmission\": \"8K\", \"totalAcceptedRaw\": 5574, \"totalSubmissionRaw\": 7958, \"acRate\": \"70.0%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Activity\":[\"player_id\",\"device_id\",\"event_date\",\"games_played\"]},\"rows\":{\"Activity\":[[1,2,\"2016-03-01\",5],[1,2,\"2016-05-02\",6],[1,3,\"2017-06-25\",1],[3,1,\"2016-03-02\",0],[3,4,\"2018-07-03\",5]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Activity (player_id int, device_id int, event_date date, games_played int)\"\n  ],\n  \"mssql\": [\n    \"Create table Activity (player_id int, device_id int, event_date date, games_played int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Activity (player_id int, device_id int, event_date date, games_played int)\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Activity (player_id int, device_id int, event_date date, games_played int)",
+    "Truncate table Activity",
+    "insert into Activity (player_id, device_id, event_date, games_played) values ('1', '2', '2016-03-01', '5')",
+    "insert into Activity (player_id, device_id, event_date, games_played) values ('1', '2', '2016-05-02', '6')",
+    "insert into Activity (player_id, device_id, event_date, games_played) values ('1', '3', '2017-06-25', '1')",
+    "insert into Activity (player_id, device_id, event_date, games_played) values ('3', '1', '2016-03-02', '0')",
+    "insert into Activity (player_id, device_id, event_date, games_played) values ('3', '4', '2018-07-03', '5')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

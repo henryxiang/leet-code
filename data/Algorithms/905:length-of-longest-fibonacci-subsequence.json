@@ -1,0 +1,115 @@
+{
+  "questionId": "905",
+  "questionFrontendId": "873",
+  "boundTopicId": null,
+  "title": "Length of Longest Fibonacci Subsequence",
+  "titleSlug": "length-of-longest-fibonacci-subsequence",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A sequence <code>X_1, X_2, ..., X_n</code>&nbsp;is <em>fibonacci-like</em> if:</p>\r\n\r\n<ul>\r\n\t<li><code>n &gt;= 3</code></li>\r\n\t<li><code>X_i + X_{i+1} = X_{i+2}</code>&nbsp;for all&nbsp;<code>i + 2 &lt;= n</code></li>\r\n</ul>\r\n\r\n<p>Given a <b>strictly increasing</b>&nbsp;array&nbsp;<code>A</code> of positive integers forming a sequence, find the <strong>length</strong> of the longest fibonacci-like subsequence of <code>A</code>.&nbsp; If one does not exist, return 0.</p>\r\n\r\n<p>(<em>Recall that a subsequence is derived from another sequence <code>A</code> by&nbsp;deleting any number of&nbsp;elements (including none)&nbsp;from <code>A</code>, without changing the order of the remaining elements.&nbsp; For example, <code>[3, 5, 8]</code> is a subsequence of <code>[3, 4, 5, 6, 7, 8]</code>.</em>)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ul>\r\n</ul>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[1,2,3,4,5,6,7,8]\r\n<strong>Output: </strong>5\r\n<strong>Explanation:\r\n</strong>The longest subsequence that is fibonacci-like: [1,2,3,5,8].\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[1,3,7,11,12,14,18]\r\n<strong>Output: </strong>3\r\n<strong>Explanation</strong>:\r\nThe longest subsequence that is fibonacci-like:\r\n[1,11,12], [3,11,14] or [7,11,18].\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>3 &lt;= A.length &lt;= 1000</code></li>\r\n\t<li><code>1 &lt;= A[0] &lt; A[1] &lt; ... &lt; A[A.length - 1] &lt;= 10^9</code></li>\r\n\t<li><em>(The time limit has been reduced by 50% for submissions in Java, C, and C++.)</em></li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 514,
+  "dislikes": 23,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Fibonacci Number\", \"titleSlug\": \"fibonacci-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int lenLongestFibSubseq(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int lenLongestFibSubseq(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def lenLongestFibSubseq(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def lenLongestFibSubseq(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint lenLongestFibSubseq(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LenLongestFibSubseq(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar lenLongestFibSubseq = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef len_longest_fib_subseq(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func lenLongestFibSubseq(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func lenLongestFibSubseq(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def lenLongestFibSubseq(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun lenLongestFibSubseq(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn len_longest_fib_subseq(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function lenLongestFibSubseq($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"22K\", \"totalSubmission\": \"46.4K\", \"totalAcceptedRaw\": 21998, \"totalSubmissionRaw\": 46362, \"acRate\": \"47.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "512",
+    "canSeeDetail": true,
+    "url": "/articles/length-of-longest-fibonacci-subsequence/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Brute Force with Set\n\n**Intuition**\n\nEvery Fibonacci-like subsequence has each two adjacent terms determine the next expected term.  For example, with `2, 5`, we expect that the sequence must continue `7, 12, 19, 31`, etc.\n\nWe can use a `Set` structure to determine quickly whether the next term is in the array `A` or not.  Because of the exponential growth of these terms, there are at most 43 terms in any Fibonacci-like subsequence that has maximum value $$\\leq 10^9$$.\n\n**Algorithm**\n\nFor each starting pair `A[i], A[j]`, we maintain the next expected value `y = A[i] + A[j]` and the previously seen largest value `x = A[j]`.  If `y` is in the array, then we can then update these values `(x, y) -> (y, x+y)`.\n\nAlso, because subsequences are only fibonacci-like if they have length 3 or more, we must perform the check `ans >= 3 ? ans : 0` at the end.\n\n<iframe src=\"https://leetcode.com/playground/HWTGNbV2/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"HWTGNbV2\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2 \\log M)$$, where $$N$$ is the length of `A`, and $$M$$ is the maximum value of `A`.\n\n* Space Complexity:  $$O(N)$$, the space used by the set `S`.\n<br />\n<br />\n\n\n---\n#### Approach 2: Dynamic Programming\n\n**Intuition**\n\nThink of two consecutive terms `A[i], A[j]` in a fibonacci-like subsequence as a single node `(i, j)`, and the entire subsequence is a path between these consecutive nodes.  For example, with the fibonacci-like subsequence `(A[1] = 2, A[2] = 3, A[4] = 5, A[7] = 8, A[10] = 13)`, we have the path between nodes `(1, 2) <-> (2, 4) <-> (4, 7) <-> (7, 10)`.\n\nThe motivation for this is that two nodes `(i, j)` and `(j, k)` are connected if and only if `A[i] + A[j] == A[k]`, and we needed this amount of information to know about this connection.  Now we have a problem similar to *Longest Increasing Subsequence*.\n\n**Algorithm**\n\nLet `longest[i, j]` be the longest path ending in `[i, j]`.  Then `longest[j, k] = longest[i, j] + 1` if `(i, j)` and `(j, k)` are connected.  Since `i` is uniquely determined as `A.index(A[k] - A[j])`, this is efficient: we check for each `j < k` what `i` is potentially, and update `longest[j, k]` accordingly.\n\n<iframe src=\"https://leetcode.com/playground/vEtztLgc/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"vEtztLgc\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N \\log M)$$, where $$M$$ is the largest element of `A`.  We can show that the number of elements in a subsequence is bounded by $$O(\\log \\frac{M}{a})$$ where $$a$$ is the minimum element in the subsequence.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "504",
+      "count": 17,
+      "average": 3.471,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4,5,6,7,8]",
+  "metaData": "{\r\n  \"name\": \"lenLongestFibSubseq\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

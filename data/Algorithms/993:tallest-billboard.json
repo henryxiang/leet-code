@@ -1,0 +1,111 @@
+{
+  "questionId": "993",
+  "questionFrontendId": "956",
+  "boundTopicId": null,
+  "title": "Tallest Billboard",
+  "titleSlug": "tallest-billboard",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are installing a billboard and want it to have the largest height.&nbsp; The billboard will have two steel supports, one on each side.&nbsp; Each steel support must be an equal height.</p>\r\n\r\n<p>You have a collection of <code>rods</code> which can be welded together.&nbsp; For example, if you have rods of lengths 1, 2, and 3, you can weld them together to make a support of length 6.</p>\r\n\r\n<p>Return the largest possible height of your billboard installation.&nbsp; If you cannot support the billboard, return 0.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[1,2,3,6]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">6</span>\r\n<strong>Explanation:</strong> We have two disjoint subsets {1,2,3} and {6}, which have the same sum = 6.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[1,2,3,4,5,6]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">10</span>\r\n<strong>Explanation:</strong> We have two disjoint subsets {2,3,5} and {4,6}, which have the same sum = 10.\r\n</pre>\r\n</div>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[1,2]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">0</span>\r\n<strong>Explanation: </strong>The billboard cannot be supported, so we return 0.\r\n</pre>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= rods.length &lt;= 20</code></li>\r\n\t<li><code>1 &lt;= rods[i] &lt;= 1000</code></li>\r\n\t<li><code>The sum of rods is at most 5000.</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 241,
+  "dislikes": 11,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int tallestBillboard(vector<int>& rods) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int tallestBillboard(int[] rods) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def tallestBillboard(self, rods):\n        \"\"\"\n        :type rods: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def tallestBillboard(self, rods: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint tallestBillboard(int* rods, int rodsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int TallestBillboard(int[] rods) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} rods\n * @return {number}\n */\nvar tallestBillboard = function(rods) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} rods\n# @return {Integer}\ndef tallest_billboard(rods)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func tallestBillboard(_ rods: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func tallestBillboard(rods []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def tallestBillboard(rods: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun tallestBillboard(rods: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn tallest_billboard(rods: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $rods\n     * @return Integer\n     */\n    function tallestBillboard($rods) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.5K\", \"totalSubmission\": \"14.1K\", \"totalAcceptedRaw\": 5478, \"totalSubmissionRaw\": 14149, \"acRate\": \"38.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "635",
+    "canSeeDetail": true,
+    "url": "/articles/tallest-billboard/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Dynamic Programming\n\n**Intuition**\n\nFor each rod `x`, we can write `+x`, `-x`, or `0`.  Our goal is to write `0` using the largest sum of positive terms.  For writings that have a sum of `0`, let's call the sum of the positive terms written the *score*.  For example, `+1 +2 +3 -6` has a score of `6`.\n\nSince `sum(rods)` is bounded, it suggests to us to use that fact it in some way.  Indeed, if we already wrote some sum in the first few terms, it doesn't matter how we got it.  For example, with `rods = [1,2,2,3]`, we could arrive at a sum of `3` in 3 different ways, but the effective score is `3`.  This upper-bounds the number of states we have to consider to `10001`, as there are only this many possible sums in the interval `[-5000, 5000]`.\n\n**Algorithm**\n\nLet `dp[i][s]` be the largest score we can get using `rods[j]` `(j >= i)`, after previously writing a sum of `s` (that isn't included in the score).  For example, with `rods = [1,2,3,6]`, we might have `dp[1][1] = 5`, as after writing `1`, we could write `+2 +3 -6` with the remaining `rods[i:]` for a score of `5`.\n\nIn the base case, `dp[rods.length][s]` is `0` when `s == 0`, and `-infinity` everywhere else.  The recursion is `dp[i][s] = max(dp[i+1][s], dp[i+1][s-rods[i]], rods[i] + dp[i+1][s+rods[i]])`.\n\n\n<iframe src=\"https://leetcode.com/playground/w65ZpeRa/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"w65ZpeRa\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(NS)$$, where $$N$$ is the length of `rods`, and $$S$$ is the maximum of $$\\sum \\text{rods}[i]$$.\n\n* Space Complexity:  $$O(NS)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Meet in the Middle\n\n**Intuition**\n\nTypically, the complexity of brute force can be reduced with a \"meet in the middle\" technique.  As applied to this problem, we have $$3^N$$ possible states, from writing either `+x`, `-x`, or `0` for each rod `x`, and we want to make this brute force faster.\n\nWhat we can do is write the first and last $$3^{N/2}$$ states separately, and attempt to combine them.  For example, if we have rods `[1, 3, 5, 7]`, then the first two rods create up to nine states: `[0+0, 0+3, 0-3, 1+0, 1+3, 1-3, -1+0, -1+3, -1-3]`, and the last two rods also create nine states.\n\nWe will store each state as the sum of positive terms, and the sum of absolute values of the negative terms.  For example, `+1 +2 -3 -4` becomes `(3, 7)`.  Let's also call the difference `3 - 7` to be the *delta* of this state, so this state has a delta of `-4`.\n\nOur high level goal is to combine states with deltas that sum to `0`.  The score of a state will be the sum of the positive terms, and we want the highest score.  Note that for each delta, we only care about the state that has the highest score.\n\n**Algorithm**\n\nSplit the rods into two halves: left and right.\n\nFor each half, use brute force to compute the reachable states as defined above.  Then, for each state, record the delta and the maximum score.\n\nNow, we have a left and right halves with `[(delta, score)]` information.  We'll find the largest total score, with total delta `0`.\n\n<iframe src=\"https://leetcode.com/playground/b3NRJoz4/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"b3NRJoz4\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(3^{N/2})$$, where $$N$$ is the length of `rods`.\n\n* Space Complexity:  $$O(3^{N/2})$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "621",
+      "count": 39,
+      "average": 2.41,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,6]",
+  "metaData": "{\r\n  \"name\": \"tallestBillboard\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"rods\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

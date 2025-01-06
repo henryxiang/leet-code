@@ -1,0 +1,101 @@
+{
+  "questionId": "1395",
+  "questionFrontendId": "1266",
+  "boundTopicId": null,
+  "title": "Minimum Time Visiting All Points",
+  "titleSlug": "minimum-time-visiting-all-points",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On a plane there are <code>n</code> points with integer coordinates <code>points[i] = [xi, yi]</code>. Your task is to find the minimum time in seconds to visit all points.</p>\n\n<p>You can move according to the next rules:</p>\n\n<ul>\n\t<li>In one second always you can either move vertically, horizontally by one unit or diagonally (it means to move one unit vertically and one unit horizontally in one second).</li>\n\t<li>You have to visit the points in the same order as they appear in the array.</li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/11/14/1626_example_1.PNG\" style=\"width: 500px; height: 428px;\" />\n<pre>\n<strong>Input:</strong> points = [[1,1],[3,4],[-1,0]]\n<strong>Output:</strong> 7\n<strong>Explanation: </strong>One optimal path is <strong>[1,1]</strong> -&gt; [2,2] -&gt; [3,3] -&gt; <strong>[3,4] </strong>-&gt; [2,3] -&gt; [1,2] -&gt; [0,1] -&gt; <strong>[-1,0]</strong>   \nTime from [1,1] to [3,4] = 3 seconds \nTime from [3,4] to [-1,0] = 4 seconds\nTotal time = 7 seconds</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> points = [[3,2],[-2,2]]\n<strong>Output:</strong> 5\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>points.length == n</code></li>\n\t<li><code>1 &lt;= n&nbsp;&lt;= 100</code></li>\n\t<li><code>points[i].length == 2</code></li>\n\t<li><code>-1000&nbsp;&lt;= points[i][0], points[i][1]&nbsp;&lt;= 1000</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 96,
+  "dislikes": 25,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Geometry",
+      "slug": "geometry"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Media.net\", \"slug\": \"medianet\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minTimeToVisitAllPoints(vector<vector<int>>& points) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minTimeToVisitAllPoints(int[][] points) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minTimeToVisitAllPoints(self, points):\n        \"\"\"\n        :type points: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minTimeToVisitAllPoints(self, points: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minTimeToVisitAllPoints(int** points, int pointsSize, int* pointsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinTimeToVisitAllPoints(int[][] points) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar minTimeToVisitAllPoints = function(points) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} points\n# @return {Integer}\ndef min_time_to_visit_all_points(points)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minTimeToVisitAllPoints(_ points: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minTimeToVisitAllPoints(points [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minTimeToVisitAllPoints(points: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minTimeToVisitAllPoints(points: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_time_to_visit_all_points(points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $points\n     * @return Integer\n     */\n    function minTimeToVisitAllPoints($points) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.5K\", \"totalSubmission\": \"18.3K\", \"totalAcceptedRaw\": 14488, \"totalSubmissionRaw\": 18345, \"acRate\": \"79.0%\"}",
+  "hints": [
+    "To walk from point A to point B there will be an optimal strategy to walk ?",
+    "Advance in diagonal as possible then after that go in straight line.",
+    "Repeat the process until visiting all the points."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,1],[3,4],[-1,0]]",
+  "metaData": "{\n  \"name\": \"minTimeToVisitAllPoints\",\n  \"params\": [\n    {\n      \"name\": \"points\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

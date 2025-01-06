@@ -1,0 +1,111 @@
+{
+  "questionId": "652",
+  "questionFrontendId": "652",
+  "boundTopicId": null,
+  "title": "Find Duplicate Subtrees",
+  "titleSlug": "find-duplicate-subtrees",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary tree, return all duplicate subtrees. For each kind of duplicate subtrees, you only need to return the root node of any <b>one</b> of them.</p>\r\n\r\n<p>Two trees are duplicate if they have the same structure with same node values.</p>\r\n\r\n<p><b>Example 1: </b></p>\r\n\r\n<pre>\r\n        1\r\n       / \\\r\n      2   3\r\n     /   / \\\r\n    4   2   4\r\n       /\r\n      4\r\n</pre>\r\n\r\n<p>The following are two duplicate subtrees:</p>\r\n\r\n<pre>\r\n      2\r\n     /\r\n    4\r\n</pre>\r\n\r\n<p>and</p>\r\n\r\n<pre>\r\n    4\r\n</pre>\r\nTherefore, you need to return above trees&#39; root in the form of a list.",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 968,
+  "dislikes": 177,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Serialize and Deserialize Binary Tree\", \"titleSlug\": \"serialize-and-deserialize-binary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Serialize and Deserialize BST\", \"titleSlug\": \"serialize-and-deserialize-bst\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Construct String from Binary Tree\", \"titleSlug\": \"construct-string-from-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    vector<TreeNode*> findDuplicateSubtrees(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public List<TreeNode> findDuplicateSubtrees(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def findDuplicateSubtrees(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: List[TreeNode]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def findDuplicateSubtrees(self, root: TreeNode) -> List[TreeNode]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nstruct TreeNode** findDuplicateSubtrees(struct TreeNode* root, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public IList<TreeNode> FindDuplicateSubtrees(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {TreeNode[]}\n */\nvar findDuplicateSubtrees = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {TreeNode[]}\ndef find_duplicate_subtrees(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func findDuplicateSubtrees(_ root: TreeNode?) -> [TreeNode?] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc findDuplicateSubtrees(root *TreeNode) []*TreeNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def findDuplicateSubtrees(root: TreeNode): List[TreeNode] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun findDuplicateSubtrees(root: TreeNode?): List<TreeNode?> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn find_duplicate_subtrees(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Option<Rc<RefCell<TreeNode>>>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return TreeNode[]\n     */\n    function findDuplicateSubtrees($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"48.7K\", \"totalSubmission\": \"101.4K\", \"totalAcceptedRaw\": 48675, \"totalSubmissionRaw\": 101411, \"acRate\": \"48.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "326",
+    "canSeeDetail": true,
+    "url": "/articles/find-duplicate-subtrees/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Depth-First Search [Accepted]\n\n**Intuition**\n\nWe can serialize each subtree.  For example, the tree\n```python\n   1\n  / \\\n 2   3\n    / \\\n   4   5\n```\n\ncan be represented as the serialization `1,2,#,#,3,4,#,#,5,#,#`, which is a unique representation of the tree.\n\n**Algorithm**\n\nPerform a depth-first search, where the recursive function returns the serialization of the tree.  At each node, record the result in a map, and analyze the map after to determine duplicate subtrees.\n\n<iframe src=\"https://leetcode.com/playground/4UyWd7Zu/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"4UyWd7Zu\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$, where $$N$$ is the number of nodes in the tree.  We visit each node once, but each creation of `serial` may take $$O(N)$$ work.\n\n* Space Complexity: $$O(N^2)$$, the size of `count`.\n\n---\n#### Approach #2: Unique Identifier [Accepted]\n\n**Intuition**\n\nSuppose we have a unique identifier for subtrees: two subtrees are the same if and only if they have the same id.\n\nThen, for a node with left child id of `x` and right child id of `y`, `(node.val, x, y)` uniquely determines the tree.\n\n**Algorithm**\n\nIf we have seen the triple `(node.val, x, y)` before, we can use the identifier we've remembered.  Otherwise, we'll create a new one.\n\n<iframe src=\"https://leetcode.com/playground/sgdon7Zu/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"sgdon7Zu\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the number of nodes in the tree.  We visit each node once.\n\n* Space Complexity: $$O(N)$$.  Every structure we use is using $$O(1)$$ storage per node.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).  Approach #2 inspired by [@StefanPochmann](https://discuss.leetcode.com/topic/97625/o-n-time-and-space-lots-of-analysis).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "322",
+      "count": 31,
+      "average": 3.387,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4,null,2,4,null,null,4]",
+  "metaData": "{\r\n  \"name\": \"findDuplicateSubtrees\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<TreeNode>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

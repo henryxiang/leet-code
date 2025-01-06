@@ -1,0 +1,125 @@
+{
+  "questionId": "794",
+  "questionFrontendId": "778",
+  "boundTopicId": null,
+  "title": "Swim in Rising Water",
+  "titleSlug": "swim-in-rising-water",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On an N x N <code>grid</code>, each square <code>grid[i][j]</code> represents the elevation at that point <code>(i,j)</code>.</p>\r\n\r\n<p>Now rain starts to fall. At time <code>t</code>, the depth of the water everywhere is <code>t</code>. You can swim from a square to another 4-directionally adjacent square if and only if the elevation of both squares individually are&nbsp;at most&nbsp;<code>t</code>. You can swim infinite distance in zero time. Of course, you must stay within the boundaries of the grid during your swim.</p>\r\n\r\n<p>You start at the top left square <code>(0, 0)</code>. What is the least time until you can reach the bottom right square <code>(N-1, N-1)</code>?</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [[0,2],[1,3]]\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong>\r\nAt time <code>0</code>, you are in grid location <code>(0, 0)</code>.\r\nYou cannot go anywhere else because 4-directionally adjacent neighbors have a higher elevation than t = 0.\r\n\r\nYou cannot reach point <code>(1, 1)</code> until time <code>3</code>.\r\nWhen the depth of water is <code>3</code>, we can swim anywhere inside the grid.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [[0,1,2,3,4],[24,23,22,21,5],[12,13,14,15,16],[11,17,18,19,20],[10,9,8,7,6]]\r\n<strong>Output:</strong> 16\r\n<strong>Explanation:</strong>\r\n<strong> 0  1  2  3  4</strong>\r\n24 23 22 21  <strong>5</strong>\r\n<strong>12 13 14 15 16</strong>\r\n<strong>11</strong> 17 18 19 20\r\n<strong>10  9  8  7  6</strong>\r\n\r\nThe final route is marked in bold.\r\nWe need to wait until time 16 so that (0, 0) and (4, 4) are connected.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>2 &lt;= N &lt;= 50</code>.</li>\r\n\t<li>grid[i][j] is a permutation of [0, ..., N*N - 1].</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 405,
+  "dislikes": 35,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Heap",
+      "slug": "heap"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int swimInWater(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int swimInWater(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def swimInWater(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def swimInWater(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint swimInWater(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SwimInWater(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar swimInWater = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef swim_in_water(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func swimInWater(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func swimInWater(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def swimInWater(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun swimInWater(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn swim_in_water(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function swimInWater($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.1K\", \"totalSubmission\": \"34.3K\", \"totalAcceptedRaw\": 17137, \"totalSubmissionRaw\": 34282, \"acRate\": \"50.0%\"}",
+  "hints": [
+    "Use either Dijkstra's, or binary search for the best time T for which you can reach the end if you only step on squares at most T."
+  ],
+  "solution": {
+    "id": "408",
+    "canSeeDetail": true,
+    "url": "/articles/swim-in-rising-water/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Heap [Accepted]\r\n\r\n**Intuition and Algorithm**\r\n\r\nLet's keep a priority queue of which square we can walk in next.  We always walk in the smallest one that is 4-directionally adjacent to ones we've visited.\r\n\r\nWhen we reach the target, the largest number we've visited so far is the answer.\r\n\r\n<iframe src=\"https://leetcode.com/playground/mCYPK8TS/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"mCYPK8TS\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(N^2 \\log N)$$.  We may expand $$O(N^2)$$ nodes, and each one requires $$O(\\log N)$$ time to perform the heap operations.\r\n\r\n* Space Complexity:  $$O(N^2)$$, the maximum size of the heap.\r\n\r\n\r\n---\r\n#### Approach #2: Binary Search and DFS [Accepted]\r\n\r\n**Intuition and Algorithm**\r\n\r\nWhether the swim is possible is a monotone function with respect to time, so we can binary search this function for the correct time: the smallest `T` for which the swim is possible.\r\n\r\nSay we guess that the correct time is `T`.  To check whether it is possible, we perform a simple depth-first search where we can only walk in squares that are at most `T`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/DcJsvsi6/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"DcJsvsi6\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(N^2 \\log N)$$.  Our depth-first search during a call to `possible` is $$O(N^2)$$, and we make up to $$O(\\log N)$$ of them.\r\n\r\n* Space Complexity:  $$O(N^2)$$, the maximum size of the stack.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "403",
+      "count": 5,
+      "average": 3.4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,2],[1,3]]",
+  "metaData": "{\r\n  \"name\": \"swimInWater\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

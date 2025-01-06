@@ -1,0 +1,111 @@
+{
+  "questionId": "660",
+  "questionFrontendId": "660",
+  "boundTopicId": null,
+  "title": "Remove 9",
+  "titleSlug": "remove-9",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Start from integer 1, remove any integer that contains 9 such as 9, 19, 29... </p>\r\n\r\n<p>So now, you will have a new integer sequence: 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, ...</p>\r\n\r\n<p>Given a positive integer <code>n</code>, you need to return the n-th integer after removing. Note that 1 will be the first integer.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> 9\r\n<b>Output:</b> 10\r\n</pre>\r\n</p>\r\n\r\n<p>\r\n<b> Hint</b>: n will not exceed <code>9 x 10^8</code>.\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 87,
+  "dislikes": 127,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Houzz\", \"slug\": \"houzz\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int newInteger(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int newInteger(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def newInteger(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def newInteger(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint newInteger(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NewInteger(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {number}\n */\nvar newInteger = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef new_integer(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func newInteger(_ n: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func newInteger(n int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def newInteger(n: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun newInteger(n: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn new_integer(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return Integer\n     */\n    function newInteger($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.2K\", \"totalSubmission\": \"11.8K\", \"totalAcceptedRaw\": 6238, \"totalSubmissionRaw\": 11764, \"acRate\": \"53.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "322",
+    "canSeeDetail": true,
+    "url": "/articles/remove-9/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Mathematical\n\n**Intuition**\n\nLet's write the first numbers and try to notice a pattern.  Those numbers are:\n\n```python\n1, 2, 3, 4, 5, 6, 7, 8,\n10, 11, 12, 13, 14, 15, 16, 17, 18,\n20, 21, 22, 23, 24, 25, 26, 27, 28,\n...\n80, 81, 82, 83, 84, 85, 86, 87, 88,\n100, 101, 102, ...\n```\n\nThese numbers look exactly like all base-9 numbers!\n\nIndeed, every base-9 number is a number in this sequence, and every number in this sequence is a base-9 number.  Both this sequence and the sequence of all base-9 numbers are in increasing order.  The answer is therefore just the n-th base-9 number.\n\n<iframe src=\"https://leetcode.com/playground/tGRiLEQb/shared\" frameBorder=\"0\" width=\"100%\" height=\"174\" name=\"tGRiLEQb\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(1)$$, since $$N$$ has at most 9 digits.\n\n* Space Complexity: $$O(1)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "317",
+      "count": 5,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "10",
+  "metaData": "{\r\n  \"name\": \"newInteger\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

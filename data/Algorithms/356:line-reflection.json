@@ -1,0 +1,107 @@
+{
+  "questionId": "356",
+  "questionFrontendId": "356",
+  "boundTopicId": null,
+  "title": "Line Reflection",
+  "titleSlug": "line-reflection",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given n points on a 2D plane, find if there is such a line parallel to y-axis that reflect the given points.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[[1,1],[-1,1]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[[1,1],[-1,-1]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">false</span></pre>\r\n</div>\r\n\r\n<p><b>Follow up:</b><br />\r\nCould you do better than O(<i>n</i><sup>2</sup>) ?</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 106,
+  "dislikes": 286,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Max Points on a Line\", \"titleSlug\": \"max-points-on-a-line\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Number of Boomerangs\", \"titleSlug\": \"number-of-boomerangs\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "memoryless",
+      "profileUrl": "/memoryless/",
+      "avatarUrl": "https://assets.leetcode.com/users/memoryless/avatar_1568074249.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isReflected(vector<vector<int>>& points) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isReflected(int[][] points) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isReflected(self, points):\n        \"\"\"\n        :type points: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isReflected(self, points: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isReflected(int** points, int pointsSize, int* pointsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsReflected(int[][] points) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} points\n * @return {boolean}\n */\nvar isReflected = function(points) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} points\n# @return {Boolean}\ndef is_reflected(points)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isReflected(_ points: [[Int]]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isReflected(points [][]int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isReflected(points: Array[Array[Int]]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isReflected(points: Array<IntArray>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_reflected(points: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $points\n     * @return Boolean\n     */\n    function isReflected($points) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"20.5K\", \"totalSubmission\": \"65.7K\", \"totalAcceptedRaw\": 20539, \"totalSubmissionRaw\": 65696, \"acRate\": \"31.3%\"}",
+  "hints": [
+    "Find the smallest and largest x-value for all points.",
+    "If there is a line then it should be at y = (minX + maxX) / 2.",
+    "For each point, make sure that it has a reflected point in the opposite side."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,1],[-1,1]]",
+  "metaData": "{\r\n  \"name\": \"isReflected\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"points\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

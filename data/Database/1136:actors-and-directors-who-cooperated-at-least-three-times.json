@@ -1,0 +1,54 @@
+{
+  "questionId": "1136",
+  "questionFrontendId": "1050",
+  "boundTopicId": null,
+  "title": "Actors and Directors Who Cooperated At Least Three Times",
+  "titleSlug": "actors-and-directors-who-cooperated-at-least-three-times",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>ActorDirector</code></p>\r\n\r\n<pre>\r\n+-------------+---------+\r\n| Column Name | Type    |\r\n+-------------+---------+\r\n| actor_id    | int     |\r\n| director_id | int     |\r\n| timestamp   | int     |\r\n+-------------+---------+\r\ntimestamp is the primary key column for this table.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Write a SQL query for a report that provides the pairs <code>(actor_id, director_id)</code> where the actor have cooperated with the director at least 3 times.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\nActorDirector table:\r\n+-------------+-------------+-------------+\r\n| actor_id    | director_id | timestamp   |\r\n+-------------+-------------+-------------+\r\n| 1           | 1           | 0           |\r\n| 1           | 1           | 1           |\r\n| 1           | 1           | 2           |\r\n| 1           | 2           | 3           |\r\n| 1           | 2           | 4           |\r\n| 2           | 1           | 5           |\r\n| 2           | 1           | 6           |\r\n+-------------+-------------+-------------+\r\n\r\nResult table:\r\n+-------------+-------------+\r\n| actor_id    | director_id |\r\n+-------------+-------------+\r\n| 1           | 1           |\r\n+-------------+-------------+\r\nThe only pair is (1, 1) where they cooperated exactly 3 times.\r\n</pre>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 22,
+  "dislikes": 10,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.1K\", \"totalSubmission\": \"9.8K\", \"totalAcceptedRaw\": 7089, \"totalSubmissionRaw\": 9837, \"acRate\": \"72.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"ActorDirector\":[\"actor_id\",\"director_id\",\"timestamp\"]},\"rows\":{\"ActorDirector\":[[1,1,0],[1,1,1],[1,1,2],[1,2,3],[1,2,4],[2,1,5],[2,1,6]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists ActorDirector (actor_id int, director_id int, timestamp int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table ActorDirector (actor_id int, director_id int, timestamp int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table ActorDirector (actor_id int, director_id int, timestamp int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists ActorDirector (actor_id int, director_id int, timestamp int)",
+    "Truncate table ActorDirector",
+    "insert into ActorDirector (actor_id, director_id, timestamp) values ('1', '1', '0')",
+    "insert into ActorDirector (actor_id, director_id, timestamp) values ('1', '1', '1')",
+    "insert into ActorDirector (actor_id, director_id, timestamp) values ('1', '1', '2')",
+    "insert into ActorDirector (actor_id, director_id, timestamp) values ('1', '2', '3')",
+    "insert into ActorDirector (actor_id, director_id, timestamp) values ('1', '2', '4')",
+    "insert into ActorDirector (actor_id, director_id, timestamp) values ('2', '1', '5')",
+    "insert into ActorDirector (actor_id, director_id, timestamp) values ('2', '1', '6')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

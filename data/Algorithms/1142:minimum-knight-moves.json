@@ -1,0 +1,97 @@
+{
+  "questionId": "1142",
+  "questionFrontendId": "1197",
+  "boundTopicId": null,
+  "title": "Minimum Knight Moves",
+  "titleSlug": "minimum-knight-moves",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In an <strong>infinite</strong> chess board with coordinates from <code>-infinity</code>&nbsp;to <code>+infinity</code>, you have a <strong>knight</strong> at square&nbsp;<code>[0, 0]</code>.</p>\n\n<p>A&nbsp;knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction.</p>\n\n<p><img src=\"https://assets.leetcode.com/uploads/2018/10/12/knight.png\" style=\"height: 200px; width: 200px;\" /></p>\n\n<p>Return the&nbsp;minimum number of steps needed to move the knight to the square <code>[x, y]</code>.&nbsp; It is guaranteed the answer exists.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 2, y = 1\n<strong>Output:</strong> 1\n<strong>Explanation: </strong>[0, 0] &rarr; [2, 1]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 5, y = 5\n<strong>Output:</strong> 4\n<strong>Explanation: </strong>[0, 0] &rarr; [2, 1] &rarr; [4, 2] &rarr; [3, 4] &rarr; [5, 5]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>|x| + |y| &lt;= 300</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 80,
+  "dislikes": 33,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minKnightMoves(int x, int y) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minKnightMoves(int x, int y) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minKnightMoves(self, x, y):\n        \"\"\"\n        :type x: int\n        :type y: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minKnightMoves(self, x: int, y: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minKnightMoves(int x, int y){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinKnightMoves(int x, int y) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} x\n * @param {number} y\n * @return {number}\n */\nvar minKnightMoves = function(x, y) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} x\n# @param {Integer} y\n# @return {Integer}\ndef min_knight_moves(x, y)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minKnightMoves(_ x: Int, _ y: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minKnightMoves(x int, y int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minKnightMoves(x: Int, y: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minKnightMoves(x: Int, y: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_knight_moves(x: i32, y: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $x\n     * @param Integer $y\n     * @return Integer\n     */\n    function minKnightMoves($x, $y) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7K\", \"totalSubmission\": \"22.2K\", \"totalAcceptedRaw\": 7031, \"totalSubmissionRaw\": 22172, \"acRate\": \"31.7%\"}",
+  "hints": [
+    "You can simulate the movements since the limits are low.",
+    "Is there a search algorithm applicable to this problem?",
+    "Since we want the minimum number of moves, we can use Breadth First Search."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "2\n1",
+  "metaData": "{\n  \"name\": \"minKnightMoves\",\n  \"params\": [\n    {\n      \"name\": \"x\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"y\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

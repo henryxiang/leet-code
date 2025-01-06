@@ -1,0 +1,103 @@
+{
+  "questionId": "499",
+  "questionFrontendId": "499",
+  "boundTopicId": null,
+  "title": "The Maze III",
+  "titleSlug": "the-maze-iii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There is a <b>ball</b> in a maze with empty spaces and walls. The ball can go through empty spaces by rolling <b>up</b> (u), <b>down</b> (d), <b>left</b> (l) or <b>right</b> (r), but it won&#39;t stop rolling until hitting a wall. When the ball stops, it could choose the next direction. There is also a <b>hole</b> in this maze. The ball will drop into the hole if it rolls on to the hole.</p>\r\n\r\n<p>Given the <b>ball position</b>, the <b>hole position</b> and the <b>maze</b>, find out how the ball could drop into the hole by moving the <b>shortest distance</b>. The distance is defined by the number of <b>empty spaces</b> traveled by the ball from the start position (excluded) to the hole (included). Output the moving <b>directions</b> by using &#39;u&#39;, &#39;d&#39;, &#39;l&#39; and &#39;r&#39;. Since there could be several different shortest ways, you should output the <b>lexicographically smallest</b> way. If the ball cannot reach the hole, output &quot;impossible&quot;.</p>\r\n\r\n<p>The maze is represented by a binary 2D array. 1 means the wall and 0 means the empty space. You may assume that the borders of the maze are all walls. The ball and the hole coordinates are represented by row and column indexes.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input 1:</b> a maze represented by a 2D array\r\n\r\n0 0 0 0 0\r\n1 1 0 0 1\r\n0 0 0 0 0\r\n0 1 0 0 1\r\n0 1 0 0 0\r\n\r\n<b>Input 2:</b> ball coordinate (rowBall, colBall) = (4, 3)\r\n<b>Input 3:</b> hole coordinate (rowHole, colHole) = (0, 1)\r\n\r\n<b>Output:</b> &quot;lul&quot;\r\n\r\n<b>Explanation:</b> There are two shortest ways for the ball to drop into the hole.\r\nThe first way is left -&gt; up -&gt; left, represented by &quot;lul&quot;.\r\nThe second way is up -&gt; left, represented by &#39;ul&#39;.\r\nBoth ways have shortest distance 6, but the first way is lexicographically smaller because &#39;l&#39; &lt; &#39;u&#39;. So the output is &quot;lul&quot;.\r\n<img src=\"https://assets.leetcode.com/uploads/2018/10/13/maze_2_example_1.png\" style=\"width: 100%; max-width: 350px\" />\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input 1:</b> a maze represented by a 2D array\r\n\r\n0 0 0 0 0\r\n1 1 0 0 1\r\n0 0 0 0 0\r\n0 1 0 0 1\r\n0 1 0 0 0\r\n\r\n<b>Input 2:</b> ball coordinate (rowBall, colBall) = (4, 3)\r\n<b>Input 3:</b> hole coordinate (rowHole, colHole) = (3, 0)\r\n\r\n<b>Output:</b> &quot;impossible&quot;\r\n\r\n<b>Explanation:</b> The ball cannot reach the hole.\r\n<img src=\"https://assets.leetcode.com/uploads/2018/10/13/maze_2_example_2.png\" style=\"width: 100%; max-width: 350px\" />\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>There is only one ball and one hole in the maze.</li>\r\n\t<li>Both the ball and hole exist on an empty space, and they will not be at the same position initially.</li>\r\n\t<li>The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.</li>\r\n\t<li>The maze contains at least 2 empty spaces, and the width and the height of the maze won&#39;t exceed 30.</li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 146,
+  "dislikes": 37,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"The Maze\", \"titleSlug\": \"the-maze\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"The Maze II\", \"titleSlug\": \"the-maze-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string findShortestWay(vector<vector<int>>& maze, vector<int>& ball, vector<int>& hole) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String findShortestWay(int[][] maze, int[] ball, int[] hole) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findShortestWay(self, maze, ball, hole):\n        \"\"\"\n        :type maze: List[List[int]]\n        :type ball: List[int]\n        :type hole: List[int]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findShortestWay(self, maze: List[List[int]], ball: List[int], hole: List[int]) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * findShortestWay(int** maze, int mazeSize, int* mazeColSize, int* ball, int ballSize, int* hole, int holeSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string FindShortestWay(int[][] maze, int[] ball, int[] hole) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} maze\n * @param {number[]} ball\n * @param {number[]} hole\n * @return {string}\n */\nvar findShortestWay = function(maze, ball, hole) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} maze\n# @param {Integer[]} ball\n# @param {Integer[]} hole\n# @return {String}\ndef find_shortest_way(maze, ball, hole)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findShortestWay(_ maze: [[Int]], _ ball: [Int], _ hole: [Int]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findShortestWay(maze [][]int, ball []int, hole []int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findShortestWay(maze: Array[Array[Int]], ball: Array[Int], hole: Array[Int]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findShortestWay(maze: Array<IntArray>, ball: IntArray, hole: IntArray): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_shortest_way(maze: Vec<Vec<i32>>, ball: Vec<i32>, hole: Vec<i32>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $maze\n     * @param Integer[] $ball\n     * @param Integer[] $hole\n     * @return String\n     */\n    function findShortestWay($maze, $ball, $hole) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.4K\", \"totalSubmission\": \"31.6K\", \"totalAcceptedRaw\": 12440, \"totalSubmissionRaw\": 31622, \"acRate\": \"39.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]]\n[4,3]\n[0,1]",
+  "metaData": "{\r\n  \"name\": \"findShortestWay\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"maze\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"ball\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"hole\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

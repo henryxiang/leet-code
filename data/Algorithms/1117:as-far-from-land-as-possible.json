@@ -1,0 +1,102 @@
+{
+  "questionId": "1117",
+  "questionFrontendId": "1162",
+  "boundTopicId": null,
+  "title": "As Far from Land as Possible",
+  "titleSlug": "as-far-from-land-as-possible",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an N x N <code>grid</code>&nbsp;containing only values <code>0</code> and <code>1</code>, where&nbsp;<code>0</code> represents water&nbsp;and <code>1</code> represents land, find a water cell such that its distance to the nearest land cell is maximized and return the distance.</p>\n\n<p>The distance used in this problem is the <em>Manhattan distance</em>:&nbsp;the distance between two cells <code>(x0, y0)</code> and <code>(x1, y1)</code> is <code>|x0 - x1| + |y0 - y1|</code>.</p>\n\n<p>If no land or water exists in the grid, return <code>-1</code>.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/05/03/1336_ex1.JPG\" style=\"width: 185px; height: 87px;\" /></strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-1-1\">[[1,0,1],[0,0,0],[1,0,1]]</span>\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\n<strong>Explanation: </strong>\nThe cell (1, 1) is as far as possible from all the land with distance 2.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/05/03/1336_ex2.JPG\" style=\"width: 184px; height: 87px;\" /></strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-2-1\">[[1,0,0],[0,0,0],[0,0,0]]</span>\n<strong>Output: </strong><span id=\"example-output-2\">4</span>\n<strong>Explanation: </strong>\nThe cell (2, 2) is as far as possible from all the land with distance 4.\n</pre>\n\n<p>&nbsp;</p>\n\n<p><span><strong>Note:</strong></span></p>\n\n<ol>\n\t<li><span><code>1 &lt;= grid.length == grid[0].length&nbsp;&lt;= 100</code></span></li>\n\t<li><span><code>grid[i][j]</code>&nbsp;is <code>0</code> or <code>1</code></span></li>\n</ol>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 181,
+  "dislikes": 13,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Shortest Distance from All Buildings\", \"titleSlug\": \"shortest-distance-from-all-buildings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Uipath\", \"slug\": \"uipath\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxDistance(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxDistance(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxDistance(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxDistance(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxDistance(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxDistance(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar maxDistance = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef max_distance(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxDistance(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxDistance(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxDistance(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxDistance(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_distance(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function maxDistance($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"9.3K\", \"totalSubmission\": \"22.8K\", \"totalAcceptedRaw\": 9337, \"totalSubmissionRaw\": 22823, \"acRate\": \"40.9%\"}",
+  "hints": [
+    "Can you think of this problem in a backwards way ?",
+    "Imagine expanding outward from each land cell. What kind of search does that ?",
+    "Use BFS starting from all land cells in the same time.",
+    "When do you reach the furthest water cell?"
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,0,1],[0,0,0],[1,0,1]]",
+  "metaData": "{\r\n  \"name\": \"maxDistance\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

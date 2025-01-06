@@ -1,0 +1,115 @@
+{
+  "questionId": "676",
+  "questionFrontendId": "676",
+  "boundTopicId": null,
+  "title": "Implement Magic Dictionary",
+  "titleSlug": "implement-magic-dictionary",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nImplement a magic directory with <code>buildDict</code>, and <code>search</code> methods.\r\n</p>\r\n\r\n<p>\r\nFor the method <code>buildDict</code>, you'll be given a list of non-repetitive words to build a dictionary.\r\n</p>\r\n\r\n<p>\r\nFor the method <code>search</code>, you'll be given a word, and judge whether if you modify <b>exactly</b> one character into <b>another</b> character in this word, the modified word is in the dictionary you just built.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\nInput: buildDict([\"hello\", \"leetcode\"]), Output: Null\r\nInput: search(\"hello\"), Output: False\r\nInput: search(\"hhllo\"), Output: True\r\nInput: search(\"hell\"), Output: False\r\nInput: search(\"leetcoded\"), Output: False\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>You may assume that all the inputs are consist of lowercase letters <code>a-z</code>.</li>\r\n<li>For contest purpose, the test data is rather small by now. You could think about highly efficient algorithm after the contest.</li>\r\n<li>Please remember to <b>RESET</b> your class variables declared in class MagicDictionary, as static/class variables are <b>persisted across multiple test cases</b>. Please see <a href=\"https://leetcode.com/faq/#different-output\">here</a> for more details.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 447,
+  "dislikes": 109,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Implement Trie (Prefix Tree)\", \"titleSlug\": \"implement-trie-prefix-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Word in Dictionary\", \"titleSlug\": \"longest-word-in-dictionary\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class MagicDictionary {\npublic:\n    /** Initialize your data structure here. */\n    MagicDictionary() {\n        \n    }\n    \n    /** Build a dictionary through a list of words */\n    void buildDict(vector<string> dict) {\n        \n    }\n    \n    /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */\n    bool search(string word) {\n        \n    }\n};\n\n/**\n * Your MagicDictionary object will be instantiated and called as such:\n * MagicDictionary* obj = new MagicDictionary();\n * obj->buildDict(dict);\n * bool param_2 = obj->search(word);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class MagicDictionary {\n\n    /** Initialize your data structure here. */\n    public MagicDictionary() {\n        \n    }\n    \n    /** Build a dictionary through a list of words */\n    public void buildDict(String[] dict) {\n        \n    }\n    \n    /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */\n    public boolean search(String word) {\n        \n    }\n}\n\n/**\n * Your MagicDictionary object will be instantiated and called as such:\n * MagicDictionary obj = new MagicDictionary();\n * obj.buildDict(dict);\n * boolean param_2 = obj.search(word);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class MagicDictionary(object):\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def buildDict(self, dict):\n        \"\"\"\n        Build a dictionary through a list of words\n        :type dict: List[str]\n        :rtype: None\n        \"\"\"\n        \n\n    def search(self, word):\n        \"\"\"\n        Returns if there is any word in the trie that equals to the given word after modifying exactly one character\n        :type word: str\n        :rtype: bool\n        \"\"\"\n        \n\n\n# Your MagicDictionary object will be instantiated and called as such:\n# obj = MagicDictionary()\n# obj.buildDict(dict)\n# param_2 = obj.search(word)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class MagicDictionary:\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def buildDict(self, dict: List[str]) -> None:\n        \"\"\"\n        Build a dictionary through a list of words\n        \"\"\"\n        \n\n    def search(self, word: str) -> bool:\n        \"\"\"\n        Returns if there is any word in the trie that equals to the given word after modifying exactly one character\n        \"\"\"\n        \n\n\n# Your MagicDictionary object will be instantiated and called as such:\n# obj = MagicDictionary()\n# obj.buildDict(dict)\n# param_2 = obj.search(word)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} MagicDictionary;\n\n/** Initialize your data structure here. */\n\nMagicDictionary* magicDictionaryCreate() {\n    \n}\n\n/** Build a dictionary through a list of words */\nvoid magicDictionaryBuildDict(MagicDictionary* obj, char ** dict, int dictSize) {\n  \n}\n\n/** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */\nbool magicDictionarySearch(MagicDictionary* obj, char * word) {\n  \n}\n\nvoid magicDictionaryFree(MagicDictionary* obj) {\n    \n}\n\n/**\n * Your MagicDictionary struct will be instantiated and called as such:\n * MagicDictionary* obj = magicDictionaryCreate();\n * magicDictionaryBuildDict(obj, dict, dictSize);\n \n * bool param_2 = magicDictionarySearch(obj, word);\n \n * magicDictionaryFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class MagicDictionary {\n\n    /** Initialize your data structure here. */\n    public MagicDictionary() {\n        \n    }\n    \n    /** Build a dictionary through a list of words */\n    public void BuildDict(string[] dict) {\n        \n    }\n    \n    /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */\n    public bool Search(string word) {\n        \n    }\n}\n\n/**\n * Your MagicDictionary object will be instantiated and called as such:\n * MagicDictionary obj = new MagicDictionary();\n * obj.BuildDict(dict);\n * bool param_2 = obj.Search(word);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Initialize your data structure here.\n */\nvar MagicDictionary = function() {\n    \n};\n\n/**\n * Build a dictionary through a list of words \n * @param {string[]} dict\n * @return {void}\n */\nMagicDictionary.prototype.buildDict = function(dict) {\n    \n};\n\n/**\n * Returns if there is any word in the trie that equals to the given word after modifying exactly one character \n * @param {string} word\n * @return {boolean}\n */\nMagicDictionary.prototype.search = function(word) {\n    \n};\n\n/** \n * Your MagicDictionary object will be instantiated and called as such:\n * var obj = new MagicDictionary()\n * obj.buildDict(dict)\n * var param_2 = obj.search(word)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class MagicDictionary\n\n=begin\n    Initialize your data structure here.\n=end\n    def initialize()\n        \n    end\n\n\n=begin\n    Build a dictionary through a list of words\n    :type dict: String[]\n    :rtype: Void\n=end\n    def build_dict(dict)\n        \n    end\n\n\n=begin\n    Returns if there is any word in the trie that equals to the given word after modifying exactly one character\n    :type word: String\n    :rtype: Boolean\n=end\n    def search(word)\n        \n    end\n\n\nend\n\n# Your MagicDictionary object will be instantiated and called as such:\n# obj = MagicDictionary.new()\n# obj.build_dict(dict)\n# param_2 = obj.search(word)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass MagicDictionary {\n\n    /** Initialize your data structure here. */\n    init() {\n        \n    }\n    \n    /** Build a dictionary through a list of words */\n    func buildDict(_ dict: [String]) {\n        \n    }\n    \n    /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */\n    func search(_ word: String) -> Bool {\n        \n    }\n}\n\n/**\n * Your MagicDictionary object will be instantiated and called as such:\n * let obj = MagicDictionary()\n * obj.buildDict(dict)\n * let ret_2: Bool = obj.search(word)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type MagicDictionary struct {\n    \n}\n\n\n/** Initialize your data structure here. */\nfunc Constructor() MagicDictionary {\n    \n}\n\n\n/** Build a dictionary through a list of words */\nfunc (this *MagicDictionary) BuildDict(dict []string)  {\n    \n}\n\n\n/** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */\nfunc (this *MagicDictionary) Search(word string) bool {\n    \n}\n\n\n/**\n * Your MagicDictionary object will be instantiated and called as such:\n * obj := Constructor();\n * obj.BuildDict(dict);\n * param_2 := obj.Search(word);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class MagicDictionary() {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Build a dictionary through a list of words */\n    def buildDict(dict: Array[String]) {\n        \n    }\n\n    /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */\n    def search(word: String): Boolean = {\n        \n    }\n\n}\n\n/**\n * Your MagicDictionary object will be instantiated and called as such:\n * var obj = new MagicDictionary()\n * obj.buildDict(dict)\n * var param_2 = obj.search(word)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class MagicDictionary() {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Build a dictionary through a list of words */\n    fun buildDict(dict: Array<String>) {\n        \n    }\n\n    /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */\n    fun search(word: String): Boolean {\n        \n    }\n\n}\n\n/**\n * Your MagicDictionary object will be instantiated and called as such:\n * var obj = MagicDictionary()\n * obj.buildDict(dict)\n * var param_2 = obj.search(word)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct MagicDictionary {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl MagicDictionary {\n\n    /** Initialize your data structure here. */\n    fn new() -> Self {\n        \n    }\n    \n    /** Build a dictionary through a list of words */\n    fn build_dict(&self, dict: Vec<String>) {\n        \n    }\n    \n    /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */\n    fn search(&self, word: String) -> bool {\n        \n    }\n}\n\n/**\n * Your MagicDictionary object will be instantiated and called as such:\n * let obj = MagicDictionary::new();\n * obj.build_dict(dict);\n * let ret_2: bool = obj.search(word);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class MagicDictionary {\n    /**\n     * Initialize your data structure here.\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * Build a dictionary through a list of words\n     * @param String[] $dict\n     * @return NULL\n     */\n    function buildDict($dict) {\n        \n    }\n  \n    /**\n     * Returns if there is any word in the trie that equals to the given word after modifying exactly one character\n     * @param String $word\n     * @return Boolean\n     */\n    function search($word) {\n        \n    }\n}\n\n/**\n * Your MagicDictionary object will be instantiated and called as such:\n * $obj = MagicDictionary();\n * $obj->buildDict($dict);\n * $ret_2 = $obj->search($word);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"31.2K\", \"totalSubmission\": \"59.2K\", \"totalAcceptedRaw\": 31233, \"totalSubmissionRaw\": 59247, \"acRate\": \"52.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "276",
+    "canSeeDetail": true,
+    "url": "/articles/implement-magic-dictionary/",
+    "content": "[TOC]\n\n\n#### Approach #1: Brute Force with Bucket-By-Length [Accepted]\n\n**Intuition and Algorithm**\n\nCall two strings neighbors if exactly one character can be changed in one to make the strings equal (ie. their hamming distance is 1.)\n\nStrings can only be neighbors if their lengths are equal.  When `search`ing a new word, let's check only the words that are the same length.\n\n**Python**\n```python\nclass MagicDictionary(object):\n    def __init__(self):\n        self.buckets = collections.defaultdict(list)\n\n    def buildDict(self, words):\n        for word in words:\n            self.buckets[len(word)].append(word)\n\n    def search(self, word):\n        return any(sum(a!=b for a,b in zip(word, candidate)) == 1\n                   for candidate in self.buckets[len(word)])\n```\n\n**Java**\n```java\nclass MagicDictionary {\n    Map<Integer, ArrayList<String>> buckets;\n    public MagicDictionary() {\n        buckets = new HashMap();\n    }\n\n    public void buildDict(String[] words) {\n        for (String word: words) {\n            buckets.computeIfAbsent(word.length(), x -> new ArrayList()).add(word);\n        }\n    }\n\n    public boolean search(String word) {\n        if (!buckets.containsKey(word.length())) return false;\n        for (String candidate: buckets.get(word.length())) {\n            int mismatch = 0;\n            for (int i = 0; i < word.length(); ++i) {\n                if (word.charAt(i) != candidate.charAt(i)) {\n                    if (++mismatch > 1) break;\n                }\n            }\n            if (mismatch == 1) return true;\n        }\n        return false;\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(S)$$ to build and $$O(NK)$$ to search, where $$N$$ is the number of `words` in our magic dictionary, $$S$$ is the total number of letters in it, and $$K$$ is the length of the search word.\n\n* Space Complexity: $$O(S)$$, the space used by `buckets`.\n\n---\n#### Approach #2: Generalized Neighbors [Accepted]\n\n**Intuition**\n\nRecall in *Approach #1* that two words are *neighbors* if exactly one character can be changed in one word to make the strings equal.\n\nLet's say a word 'apple' has *generalized neighbors* '\\*pple', 'a\\*ple', 'ap\\*le', 'app\\*e', and 'appl\\*'. When searching for whether a word like 'apply' has a neighbor like 'apple', we only need to know whether they have a common *generalized neighbor*.\n\n**Algorithm**\n\nContinuing the above thinking, one issue is that 'apply' is not a neighbor with itself, yet it has the same generalized neighbor '\\*pply'.  To remedy this, we'll count how many sources generated '\\*pply'.  If there are 2 or more, then one of them won't be 'apply'.  If there is exactly one, we should check that it wasn't 'apply'.  In either case, we can be sure that there was some magic word generating '\\*pply' that *wasn't* 'apply'.\n\n```python\nclass MagicDictionary(object):\n    def _genneighbors(self, word):\n        for i in xrange(len(word)):\n            yield word[:i] + '*' + word[i+1:]\n\n    def buildDict(self, words):\n        self.words = set(words)\n        self.count = collections.Counter(nei for word in words\n                                        for nei in self._genneighbors(word))\n\n    def search(self, word):\n        return any(self.count[nei] > 1 or\n                   self.count[nei] == 1 and word not in self.words\n                   for nei in self._genneighbors(word))\n```\n\n```java\npublic class MagicDictionary {\n    Set<String> words;\n    Map<String, Integer> count;\n\n    public MagicDictionary() {\n        words = new HashSet();\n        count = new HashMap();\n    }\n\n    private ArrayList<String> generalizedNeighbors(String word) {\n        ArrayList<String> ans = new ArrayList();\n        char[] ca = word.toCharArray();\n        for (int i = 0; i < word.length(); ++i) {\n            char letter = ca[i];\n            ca[i] = '*';\n            String magic = new String(ca);\n            ans.add(magic);\n            ca[i] = letter;\n        }\n        return ans;\n    }\n\n    public void buildDict(String[] words) {\n        for (String word: words) {\n            this.words.add(word);\n            for (String nei: generalizedNeighbors(word)) {\n                count.put(nei, count.getOrDefault(nei, 0) + 1);\n            }\n        }\n    }\n\n    public boolean search(String word) {\n        for (String nei: generalizedNeighbors(word)) {\n            int c = count.getOrDefault(nei, 0);\n            if (c > 1 || c == 1 && !words.contains(word)) return true;\n        }\n        return false;\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(\\sum w_i^2)$$ to build and $$O(K^2)$$ to search, where $$w_i$$ is the length of `words[i]`, and $$K$$ is the length of our search word.\n\n* Space Complexity: $$O(\\sum w_i^2)$$, the space used by `count`.  We also use $$O(K^2)$$ space when generating neighbors to search.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "271",
+      "count": 13,
+      "average": 3.154,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"MagicDictionary\", \"buildDict\", \"search\", \"search\", \"search\", \"search\"]\n[[], [[\"hello\",\"leetcode\"]], [\"hello\"], [\"hhllo\"], [\"hell\"], [\"leetcoded\"]]",
+  "metaData": "{\r\n    \"classname\": \"MagicDictionary\",\r\n    \"maxbytesperline\": 210000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n        ],\r\n        \"comment\": \"Initialize your data structure here.\"\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"buildDict\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"string[]\",\r\n                    \"name\": \"dict\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            },\r\n            \"comment\": \"Build a dictionary through a list of words\"\r\n        },\r\n        {\r\n            \"name\" : \"search\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"string\",\r\n                    \"name\": \"word\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"boolean\"\r\n            },\r\n            \"comment\": \"Returns if there is any word in the trie that equals to the given word after modifying exactly one character\"\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

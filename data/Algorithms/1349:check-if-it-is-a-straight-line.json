@@ -1,0 +1,111 @@
+{
+  "questionId": "1349",
+  "questionFrontendId": "1232",
+  "boundTopicId": null,
+  "title": "Check If It Is a Straight Line",
+  "titleSlug": "check-if-it-is-a-straight-line",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given an array&nbsp;<code>coordinates</code>, <code>coordinates[i] = [x, y]</code>, where <code>[x, y]</code> represents the coordinate of a point. Check if these points&nbsp;make a straight line in the XY plane.</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/15/untitled-diagram-2.jpg\" style=\"width: 336px; height: 336px;\" /></p>\n\n<pre>\n<strong>Input:</strong> coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]\n<strong>Output:</strong> true\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/09/untitled-diagram-1.jpg\" style=\"width: 348px; height: 336px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;=&nbsp;coordinates.length &lt;= 1000</code></li>\n\t<li><code>coordinates[i].length == 2</code></li>\n\t<li><code>-10^4 &lt;=&nbsp;coordinates[i][0],&nbsp;coordinates[i][1] &lt;= 10^4</code></li>\n\t<li><code>coordinates</code>&nbsp;contains no duplicate point.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 104,
+  "dislikes": 8,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "xX__harambe__xX",
+      "profileUrl": "/xx__harambe__xx/",
+      "avatarUrl": "https://www.gravatar.com/avatar/ae7372e1bc4933eeba8acb830f1bc668.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Geometry",
+      "slug": "geometry"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Palantir\", \"slug\": \"palantir\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool checkStraightLine(vector<vector<int>>& coordinates) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean checkStraightLine(int[][] coordinates) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def checkStraightLine(self, coordinates):\n        \"\"\"\n        :type coordinates: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def checkStraightLine(self, coordinates: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool checkStraightLine(int** coordinates, int coordinatesSize, int* coordinatesColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CheckStraightLine(int[][] coordinates) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} coordinates\n * @return {boolean}\n */\nvar checkStraightLine = function(coordinates) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} coordinates\n# @return {Boolean}\ndef check_straight_line(coordinates)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func checkStraightLine(_ coordinates: [[Int]]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func checkStraightLine(coordinates [][]int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def checkStraightLine(coordinates: Array[Array[Int]]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun checkStraightLine(coordinates: Array<IntArray>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn check_straight_line(coordinates: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $coordinates\n     * @return Boolean\n     */\n    function checkStraightLine($coordinates) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.5K\", \"totalSubmission\": \"26.7K\", \"totalAcceptedRaw\": 12525, \"totalSubmissionRaw\": 26669, \"acRate\": \"47.0%\"}",
+  "hints": [
+    "If there're only 2 points, return true.",
+    "Check if all other points lie on the line defined by the first 2 points.",
+    "Use cross product to check collinearity."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]",
+  "metaData": "{\n  \"name\": \"checkStraightLine\",\n  \"params\": [\n    {\n      \"name\": \"coordinates\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

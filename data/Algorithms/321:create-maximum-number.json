@@ -1,0 +1,103 @@
+{
+  "questionId": "321",
+  "questionFrontendId": "321",
+  "boundTopicId": null,
+  "title": "Create Maximum Number",
+  "titleSlug": "create-maximum-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two arrays of length <code>m</code> and <code>n</code> with digits <code>0-9</code> representing two numbers. Create the maximum number of length <code>k &lt;= m + n</code> from digits of the two. The relative order of the digits from the same array must be preserved. Return an array of the <code>k</code> digits.</p>\r\n\r\n<p><strong>Note: </strong>You should try to optimize your time and space complexity.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\nnums1 = <code>[3, 4, 6, 5]</code>\r\nnums2 = <code>[9, 1, 2, 5, 8, 3]</code>\r\nk = <code>5</code>\r\n<strong>Output:</strong>\r\n<code>[9, 8, 6, 5, 3]</code></pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\nnums1 = <code>[6, 7]</code>\r\nnums2 = <code>[6, 0, 4]</code>\r\nk = <code>5</code>\r\n<strong>Output:</strong>\r\n<code>[6, 7, 6, 0, 4]</code></pre>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\nnums1 = <code>[3, 9]</code>\r\nnums2 = <code>[8, 9]</code>\r\nk = <code>3</code>\r\n<strong>Output:</strong>\r\n<code>[9, 8, 9]</code>\r\n</pre>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 506,
+  "dislikes": 180,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Remove K Digits\", \"titleSlug\": \"remove-k-digits\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Swap\", \"titleSlug\": \"maximum-swap\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "dietpepsi",
+      "profileUrl": "/dietpepsi/",
+      "avatarUrl": "https://www.gravatar.com/avatar/5db7cd8986dd0171d1682b730ce85555.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> maxNumber(vector<int>& nums1, vector<int>& nums2, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] maxNumber(int[] nums1, int[] nums2, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxNumber(self, nums1, nums2, k):\n        \"\"\"\n        :type nums1: List[int]\n        :type nums2: List[int]\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxNumber(self, nums1: List[int], nums2: List[int], k: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* maxNumber(int* nums1, int nums1Size, int* nums2, int nums2Size, int k, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] MaxNumber(int[] nums1, int[] nums2, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @param {number} k\n * @return {number[]}\n */\nvar maxNumber = function(nums1, nums2, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums1\n# @param {Integer[]} nums2\n# @param {Integer} k\n# @return {Integer[]}\ndef max_number(nums1, nums2, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxNumber(_ nums1: [Int], _ nums2: [Int], _ k: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxNumber(nums1 []int, nums2 []int, k int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxNumber(nums1: Array[Int], nums2: Array[Int], k: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxNumber(nums1: IntArray, nums2: IntArray, k: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_number(nums1: Vec<i32>, nums2: Vec<i32>, k: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums1\n     * @param Integer[] $nums2\n     * @param Integer $k\n     * @return Integer[]\n     */\n    function maxNumber($nums1, $nums2, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"34.4K\", \"totalSubmission\": \"131.8K\", \"totalAcceptedRaw\": 34381, \"totalSubmissionRaw\": 131794, \"acRate\": \"26.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[3,4,6,5]\n[9,1,2,5,8,3]\n5",
+  "metaData": "{\r\n  \"name\": \"maxNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums1\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"nums2\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n        \"name\": \"k\",\r\n        \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

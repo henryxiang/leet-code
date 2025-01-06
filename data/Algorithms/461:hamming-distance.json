@@ -1,0 +1,99 @@
+{
+  "questionId": "461",
+  "questionFrontendId": "461",
+  "boundTopicId": null,
+  "title": "Hamming Distance",
+  "titleSlug": "hamming-distance",
+  "categoryTitle": "Algorithms",
+  "content": "<p>The <a href=\"https://en.wikipedia.org/wiki/Hamming_distance\" target=\"_blank\">Hamming distance</a> between two integers is the number of positions at which the corresponding bits are different.</p>\r\n\r\n<p>Given two integers <code>x</code> and <code>y</code>, calculate the Hamming distance.</p>\r\n\r\n<p><b>Note:</b><br />\r\n0 &le; <code>x</code>, <code>y</code> &lt; 2<sup>31</sup>.\r\n</p>\r\n\r\n<p><b>Example:</b>\r\n<pre>\r\n<b>Input:</b> x = 1, y = 4\r\n\r\n<b>Output:</b> 2\r\n\r\n<b>Explanation:</b>\r\n1   (0 0 0 1)\r\n4   (0 1 0 0)\r\n       &uarr;   &uarr;\r\n\r\nThe above arrows point to positions where the corresponding bits are different.\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1472,
+  "dislikes": 143,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Number of 1 Bits\", \"titleSlug\": \"number-of-1-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Total Hamming Distance\", \"titleSlug\": \"total-hamming-distance\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Samuri",
+      "profileUrl": "/samuri/",
+      "avatarUrl": "https://assets.leetcode.com/users/samuri/avatar_1552766564.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int hammingDistance(int x, int y) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int hammingDistance(int x, int y) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def hammingDistance(self, x, y):\n        \"\"\"\n        :type x: int\n        :type y: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def hammingDistance(self, x: int, y: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint hammingDistance(int x, int y){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int HammingDistance(int x, int y) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} x\n * @param {number} y\n * @return {number}\n */\nvar hammingDistance = function(x, y) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} x\n# @param {Integer} y\n# @return {Integer}\ndef hamming_distance(x, y)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func hammingDistance(_ x: Int, _ y: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func hammingDistance(x int, y int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def hammingDistance(x: Int, y: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun hammingDistance(x: Int, y: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn hamming_distance(x: i32, y: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $x\n     * @param Integer $y\n     * @return Integer\n     */\n    function hammingDistance($x, $y) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"272.4K\", \"totalSubmission\": \"384.3K\", \"totalAcceptedRaw\": 272408, \"totalSubmissionRaw\": 384328, \"acRate\": \"70.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "1\n4",
+  "metaData": "{\r\n  \"name\": \"hammingDistance\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"x\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"y\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

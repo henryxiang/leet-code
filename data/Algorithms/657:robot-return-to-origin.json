@@ -1,0 +1,111 @@
+{
+  "questionId": "657",
+  "questionFrontendId": "657",
+  "boundTopicId": null,
+  "title": "Robot Return to Origin",
+  "titleSlug": "robot-return-to-origin",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There is a robot starting at position (0, 0), the origin, on a 2D plane. Given a sequence of its moves, judge if this robot <strong>ends up at (0, 0)</strong> after it completes its moves.</p>\r\n\r\n<p>The move sequence is represented by a string, and the character moves[i] represents its ith move. Valid moves are R (right), L (left), U (up), and D (down). If the robot returns to the origin after it finishes all of its moves, return true. Otherwise, return false.</p>\r\n\r\n<p><strong>Note</strong>: The way that the robot is &quot;facing&quot; is irrelevant. &quot;R&quot; will always make the robot move to the right once, &quot;L&quot; will always make it move left, etc. Also, assume that the magnitude of the robot&#39;s movement is the same for each move.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;UD&quot;\r\n<b>Output:</b> true \r\n<strong>Explanation</strong>: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> &quot;LL&quot;\r\n<b>Output:</b> false\r\n<strong>Explanation</strong>: The robot moves left twice. It ends up two &quot;moves&quot; to the left of the origin. We return false because it is not at the origin at the end of its moves.\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 807,
+  "dislikes": 605,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Friend Circles\", \"titleSlug\": \"friend-circles\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "maxsteel",
+      "profileUrl": "/maxsteel/",
+      "avatarUrl": "https://assets.leetcode.com/users/maxsteel/avatar_1527890500.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"LiveRamp\", \"slug\": \"liveramp\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool judgeCircle(string moves) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean judgeCircle(String moves) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def judgeCircle(self, moves):\n        \"\"\"\n        :type moves: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def judgeCircle(self, moves: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool judgeCircle(char * moves){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool JudgeCircle(string moves) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} moves\n * @return {boolean}\n */\nvar judgeCircle = function(moves) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} moves\n# @return {Boolean}\ndef judge_circle(moves)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func judgeCircle(_ moves: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func judgeCircle(moves string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def judgeCircle(moves: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun judgeCircle(moves: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn judge_circle(moves: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $moves\n     * @return Boolean\n     */\n    function judgeCircle($moves) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"203.1K\", \"totalSubmission\": \"279.7K\", \"totalAcceptedRaw\": 203114, \"totalSubmissionRaw\": 279729, \"acRate\": \"72.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "331",
+    "canSeeDetail": true,
+    "url": "/articles/judge-route-circle/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Simulation [Accepted]\n\n**Intuition**\n\nWe can simulate the position of the robot after each command.\n\n**Algorithm**\n\nInitially, the robot is at `(x, y) = (0, 0)`.  If the move is `'U'`, the robot goes to `(x, y-1)`; if the move is `'R'`, the robot goes to `(x, y) = (x+1, y)`, and so on.\n\n<iframe src=\"https://leetcode.com/playground/9w36FnNS/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"9w36FnNS\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `moves`.  We iterate through the string.\n\n* Space Complexity: $$O(1)$$.  In Java, our character array is $$O(N)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "326",
+      "count": 16,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"UD\"",
+  "metaData": "{\r\n  \"name\": \"judgeCircle\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"moves\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

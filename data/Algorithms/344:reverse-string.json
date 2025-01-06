@@ -1,0 +1,111 @@
+{
+  "questionId": "344",
+  "questionFrontendId": "344",
+  "boundTopicId": null,
+  "title": "Reverse String",
+  "titleSlug": "reverse-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Write a function that reverses a string. The input string is given as an array of characters <code>char[]</code>.</p>\r\n\r\n<p>Do not allocate extra space for another array, you must do this by <strong>modifying the input array&nbsp;<a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\">in-place</a></strong> with O(1) extra memory.</p>\r\n\r\n<p>You may assume all the characters consist of <a href=\"https://en.wikipedia.org/wiki/ASCII#Printable_characters\" target=\"_blank\">printable ascii characters</a>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[&quot;h&quot;,&quot;e&quot;,&quot;l&quot;,&quot;l&quot;,&quot;o&quot;]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[&quot;o&quot;,&quot;l&quot;,&quot;l&quot;,&quot;e&quot;,&quot;h&quot;]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[&quot;H&quot;,&quot;a&quot;,&quot;n&quot;,&quot;n&quot;,&quot;a&quot;,&quot;h&quot;]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[&quot;h&quot;,&quot;a&quot;,&quot;n&quot;,&quot;n&quot;,&quot;a&quot;,&quot;H&quot;]</span>\r\n</pre>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 986,
+  "dislikes": 603,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Reverse Vowels of a String\", \"titleSlug\": \"reverse-vowels-of-a-string\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Reverse String II\", \"titleSlug\": \"reverse-string-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"GoDaddy\", \"slug\": \"godaddy\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    void reverseString(vector<char>& s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public void reverseString(char[] s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def reverseString(self, s):\n        \"\"\"\n        :type s: List[str]\n        :rtype: None Do not return anything, modify s in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def reverseString(self, s: List[str]) -> None:\n        \"\"\"\n        Do not return anything, modify s in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nvoid reverseString(char* s, int sSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public void ReverseString(char[] s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[]} s\n * @return {void} Do not return anything, modify s in-place instead.\n */\nvar reverseString = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[]} s\n# @return {Void} Do not return anything, modify s in-place instead.\ndef reverse_string(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func reverseString(_ s: inout [Character]) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func reverseString(s []byte)  {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def reverseString(s: Array[Char]): Unit = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun reverseString(s: CharArray): Unit {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn reverse_string(s: &mut Vec<char>) {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $s\n     * @return NULL\n     */\n    function reverseString(&$s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"557.1K\", \"totalSubmission\": \"857.3K\", \"totalAcceptedRaw\": 557102, \"totalSubmissionRaw\": 857261, \"acRate\": \"65.0%\"}",
+  "hints": [
+    "The entire logic for reversing a string is based on using the opposite directional two-pointer approach!"
+  ],
+  "solution": {
+    "id": "781",
+    "canSeeDetail": true,
+    "url": "/articles/reverse-string/",
+    "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\n\n_Life is short, use Python._ (c) \n\n<iframe src=\"https://leetcode.com/playground/yafHboF7/shared\" frameBorder=\"0\" width=\"100%\" height=\"106\" name=\"yafHboF7\"></iframe>\n\nSpeaking seriously, let's use this problem to discuss two things:\n\n- Does _in-place_ mean constant space complexity?\n\n- Two pointers approach. \n<br /> \n<br />\n\n\n---\n#### Approach 1: Recursion, In-Place, $$\\mathcal{O}(N)$$ Space\n\n**Does _in-place_ mean constant space complexity?**\n\nNo. [By definition](https://en.wikipedia.org/wiki/In-place_algorithm), \nan in-place algorithm is an algorithm \nwhich transforms input using no auxiliary data structure. \n\nThe tricky part is that space is used by many actors, not only by \ndata structures. The classical example is to use recursive function without\nany auxiliary data structures. \n\nIs it in-place? Yes. \n\nIs it constant space? No, because of recursion stack.\n\n![fig](../Figures/344/stack2.png) \n\n**Algorithm**\n\nHere is an example. Let's implement recursive function `helper` which \nreceives two pointers, left and right, as arguments. \n\n- Base case: if `left >= right`, do nothing.\n\n- Otherwise, swap `s[left]` and `s[right]` and call `helper(left + 1, right - 1)`.\n\nTo solve the problem, call helper function passing the head and tail indexes as \narguments: `return helper(0, len(s) - 1)`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/Qsni8sWx/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"Qsni8sWx\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ time to perform $$N/2$$ swaps. \n\n* Space complexity : $$\\mathcal{O}(N)$$ to keep the recursion stack.\n<br /> \n<br />\n\n\n---\n#### Approach 2: Two Pointers, Iteration, $$\\mathcal{O}(1)$$ Space\n\n**Two Pointers Approach**\n\nIn this approach, two pointers are used to process two array elements\nat the same time. Usual implementation is to set one pointer in the \nbeginning and one at the end and then to move them until they both meet.  \n\nSometimes one needs to generalize this approach in order to use three pointers, \nlike for classical [Sort Colors problem](https://leetcode.com/articles/sort-colors/).\n\n**Algorithm**\n\n- Set pointer left at index 0, and pointer right at index `n - 1`,\nwhere n is a number of elements in the array.\n\n- While left < right:\n\n    - Swap `s[left]` and `s[right]`.\n    \n    - Move left pointer one step right, and right pointer one step left.\n    \n![fig](../Figures/344/two.png)    \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/U8UwAwng/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"U8UwAwng\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ to swap $$N/2$$ element. \n\n* Space complexity : $$\\mathcal{O}(1)$$, it's a constant space solution.\n\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "764",
+      "count": 29,
+      "average": 4.621,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"h\",\"e\",\"l\",\"l\",\"o\"]",
+  "metaData": "{\r\n  \"name\": \"reverseString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"character[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"void\"\r\n  },\r\n  \"output\": {\r\n    \"paramindex\": 0\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

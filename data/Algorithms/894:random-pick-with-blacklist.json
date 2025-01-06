@@ -1,0 +1,123 @@
+{
+  "questionId": "894",
+  "questionFrontendId": "710",
+  "boundTopicId": null,
+  "title": "Random Pick with Blacklist",
+  "titleSlug": "random-pick-with-blacklist",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a blacklist&nbsp;<code>B</code> containing unique integers&nbsp;from <code>[0, N)</code>, write a function to return a uniform random integer from <code>[0, N)</code> which is <strong>NOT</strong>&nbsp;in <code>B</code>.</p>\r\n\r\n<p>Optimize it such that it minimizes the call to system&rsquo;s <code>Math.random()</code>.</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= N &lt;= 1000000000</code></li>\r\n\t<li><code>0 &lt;= B.length &lt; min(100000, N)</code></li>\r\n\t<li><code>[0, N)</code>&nbsp;does NOT include N. See <a href=\"https://en.wikipedia.org/wiki/Interval_(mathematics)\" target=\"_blank\">interval notation</a>.</li>\r\n</ol>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: \r\n</strong><span id=\"example-input-1-1\">[&quot;Solution&quot;,&quot;pick&quot;,&quot;pick&quot;,&quot;pick&quot;]\r\n</span><span id=\"example-input-1-2\">[[1,[]],[],[],[]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[null,0,0,0]</span>\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: \r\n</strong><span id=\"example-input-2-1\">[&quot;Solution&quot;,&quot;pick&quot;,&quot;pick&quot;,&quot;pick&quot;]\r\n</span><span id=\"example-input-2-2\">[[2,[]],[],[],[]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[null,1,1,1]</span>\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: \r\n</strong><span id=\"example-input-3-1\">[&quot;Solution&quot;,&quot;pick&quot;,&quot;pick&quot;,&quot;pick&quot;]\r\n</span><span id=\"example-input-3-2\">[[3,[1]],[],[],[]]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">[null,0,0,2]</span>\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: \r\n</strong><span id=\"example-input-4-1\">[&quot;Solution&quot;,&quot;pick&quot;,&quot;pick&quot;,&quot;pick&quot;]\r\n</span><span id=\"example-input-4-2\">[[4,[2]],[],[],[]]</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">[null,1,3,1]</span>\r\n</pre>\r\n\r\n<p><strong>Explanation of Input Syntax:</strong></p>\r\n\r\n<p>The input is two lists:&nbsp;the subroutines called&nbsp;and their&nbsp;arguments.&nbsp;<code>Solution</code>&#39;s&nbsp;constructor has two arguments,&nbsp;<code>N</code> and the blacklist <code>B</code>. <code>pick</code> has no arguments.&nbsp;Arguments&nbsp;are&nbsp;always wrapped with a list, even if there aren&#39;t any.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 230,
+  "dislikes": 50,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Random Pick Index\", \"titleSlug\": \"random-pick-index\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Random Pick with Weight\", \"titleSlug\": \"random-pick-with-weight\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    },
+    {
+      "name": "Random",
+      "slug": "random"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 0}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    Solution(int N, vector<int>& blacklist) {\n        \n    }\n    \n    int pick() {\n        \n    }\n};\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution* obj = new Solution(N, blacklist);\n * int param_1 = obj->pick();\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n\n    public Solution(int N, int[] blacklist) {\n        \n    }\n    \n    public int pick() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(N, blacklist);\n * int param_1 = obj.pick();\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n\n    def __init__(self, N, blacklist):\n        \"\"\"\n        :type N: int\n        :type blacklist: List[int]\n        \"\"\"\n        \n\n    def pick(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution(N, blacklist)\n# param_1 = obj.pick()"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n\n    def __init__(self, N: int, blacklist: List[int]):\n        \n\n    def pick(self) -> int:\n        \n\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution(N, blacklist)\n# param_1 = obj.pick()"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} Solution;\n\n\nSolution* solutionCreate(int N, int* blacklist, int blacklistSize) {\n    \n}\n\nint solutionPick(Solution* obj) {\n  \n}\n\nvoid solutionFree(Solution* obj) {\n    \n}\n\n/**\n * Your Solution struct will be instantiated and called as such:\n * Solution* obj = solutionCreate(N, blacklist, blacklistSize);\n * int param_1 = solutionPick(obj);\n \n * solutionFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n\n    public Solution(int N, int[] blacklist) {\n        \n    }\n    \n    public int Pick() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(N, blacklist);\n * int param_1 = obj.Pick();\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @param {number[]} blacklist\n */\nvar Solution = function(N, blacklist) {\n    \n};\n\n/**\n * @return {number}\n */\nSolution.prototype.pick = function() {\n    \n};\n\n/** \n * Your Solution object will be instantiated and called as such:\n * var obj = new Solution(N, blacklist)\n * var param_1 = obj.pick()\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class Solution\n\n=begin\n    :type n: Integer\n    :type blacklist: Integer[]\n=end\n    def initialize(n, blacklist)\n        \n    end\n\n\n=begin\n    :rtype: Integer\n=end\n    def pick()\n        \n    end\n\n\nend\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution.new(n, blacklist)\n# param_1 = obj.pick()"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass Solution {\n\n    init(_ N: Int, _ blacklist: [Int]) {\n        \n    }\n    \n    func pick() -> Int {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * let obj = Solution(N, blacklist)\n * let ret_1: Int = obj.pick()\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type Solution struct {\n    \n}\n\n\nfunc Constructor(N int, blacklist []int) Solution {\n    \n}\n\n\nfunc (this *Solution) Pick() int {\n    \n}\n\n\n/**\n * Your Solution object will be instantiated and called as such:\n * obj := Constructor(N, blacklist);\n * param_1 := obj.Pick();\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class Solution(_N: Int, _blacklist: Array[Int]) {\n\n    def pick(): Int = {\n        \n    }\n\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * var obj = new Solution(N, blacklist)\n * var param_1 = obj.pick()\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution(N: Int, blacklist: IntArray) {\n\n    fun pick(): Int {\n        \n    }\n\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * var obj = Solution(N, blacklist)\n * var param_1 = obj.pick()\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct Solution {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl Solution {\n\n    fn new(N: i32, blacklist: Vec<i32>) -> Self {\n        \n    }\n    \n    fn pick(&self) -> i32 {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * let obj = Solution::new(N, blacklist);\n * let ret_1: i32 = obj.pick();\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n    /**\n     * @param Integer $N\n     * @param Integer[] $blacklist\n     */\n    function __construct($N, $blacklist) {\n        \n    }\n  \n    /**\n     * @return Integer\n     */\n    function pick() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * $obj = Solution($N, $blacklist);\n * $ret_1 = $obj->pick();\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"9.6K\", \"totalSubmission\": \"29.5K\", \"totalAcceptedRaw\": 9566, \"totalSubmissionRaw\": 29507, \"acRate\": \"32.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "500",
+    "canSeeDetail": true,
+    "url": "/articles/random-pick-with-blacklist/",
+    "content": "[TOC]\n\n## Solution\n---\n\n#### Approach 1: Whitelist\n\n**Intuition**\n\nThe problem is trivial if we have a whitelist.\n\n**Algorithm**\n\nCreate a whitelist by initializing a HashSet with all numbers $$[0, N)$$, removing all blacklisted numbers, and then storing the remaining numbers into a list.\n\n<iframe src=\"https://leetcode.com/playground/ks2H3G2k/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"ks2H3G2k\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ preprocessing. $$O(1)$$ pick. Preprocessing is too slow to pass the time limit.\n* Space Complexity: $$O(N)$$. <code>MLE</code> (Memory Limit Exceeded) will occur.\n\n<br/>\n\n---\n\n#### Approach 2: Binary Search over Blacklist\n\n**Intuition**\n\nGiven a sorted blacklist, we can quickly find the gap between the blacklist numbers where the k-th largest whitelist number would be located. This makes it easy to compute the k-th largest whitelist number.\n\n**Algorithm**\n\nLets say that we are given a non-empty blacklist $$B$$ and need to figure out what the k-th [zero-based](https://en.wikipedia.org/wiki/Zero-based_numbering) largest whitelist number, hereafter called $$W[k]$$, is.\n\nFirst, sort the blacklist.\n\nThen, use binary search to find the largest blacklist number which is smaller than $$W[k]$$.\n\nInitially, the search space is the entire blacklist, so $$\\text{lo} = 0$$ and $$\\text{hi} = \\text{len}(B)-1$$.\n\nLoop while $$\\text{lo} \\neq \\text{hi}$$:\n\n* 　$$\\text{mid} = \\frac{\\text{lo} + \\text{hi} + 1}{2}$$\n* 　$$c = B[\\text{mid}]-\\text{mid}$$, the number of whitelist numbers less than $$B[\\text{mid}]$$.\n* If $$c > k$$, then $$B[\\text{mid}]$$ is larger than $$W[k]$$. $$B[\\text{mid}]$$ and larger blacklist numbers are no longer candidates, so $$\\text{hi} = \\text{mid}-1$$.\n* If $$c \\leq k$$, then $$B[\\text{mid}]$$ is smaller than $$W[k]$$. Blacklist numbers smaller than $$B[\\text{mid}]$$ are no longer candidates, so $$\\text{lo} = \\text{mid}$$.\n\nAt termination, the search space will narrow down to one blacklist number. If it is smaller than $$W[k]$$, it is the largest blacklist number smaller than $$W[k]$$. In this case, the equation for $$W[k]$$ is $$k + \\text{lo} + 1$$. If it is larger than $$W[k]$$, no blacklist number is smaller than $$W[k]$$, so $$W[k]$$ is simply $$k$$.\n\nLastly, to get random whitelist number, randomly pick $$k$$ in $$[0, N-\\text{len}(B))$$.\n\n<iframe src=\"https://leetcode.com/playground/8EWTFwKE/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"8EWTFwKE\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(B\\text{log}B)$$ preprocessing. $$O(\\text{log}B)$$ pick.\n* Space Complexity: $$O(B)$$. Or $$O(1)$$ if in-place sort is used and input array is not considered extra space.\n\n<br/>\n\n---\n\n#### Approach 3: Virtual Whitelist\n\n**Intuition**\n\nRe-map all blacklist numbers in $$[0, N-\\text{len}(B))$$ to whitelist numbers such that when we randomly pick a number from $$[0, N-\\text{len}(B))$$, we actually randomly pick amongst all whitelist numbers.\n\nFor example, for $$N = 6$$ and $$B = [0, 2, 3]$$ a remapping could look like this:\n\n<center>\n    <img src=\"../Figures/864/864_Virtual_Whitelist.png\" alt=\"864_Virtual_Whitelist\" style=\"height: 300px;\"/>\n</center>\n\n**Algorithm**\n\nSplit $$B$$ into two blacklists, $$X$$ and $$Y$$, such that $$X$$ contains all blacklist numbers less than $$N-\\text{len}(B)$$ and $$Y$$ contains the rest.\n\nUse $$Y$$ to create $$W$$, a list of all whitelist numbers in $$[N-\\text{len(B)}, N)$$. Approach 1 describes an efficient way to create this whitelist.\n\nDefine a HashMap $$M$$, where $$M[i] = i$$ by default (when there is nothing assigned to $$M[i]$$ yet), but $$M[i]$$ can also be assigned some other value.\n\nNow, iterate through all numbers in $$X$$, assigning $$M[X[i]] = W[i]$$. Note that $$\\text{len}(X) == \\text{len}(W)$$.\n\n　$$M[0] ... M[N-\\text{len}(B)-1]$$ now maps to all whitelist numbers, so we can randomly pick in $$[0, N-\\text{len}(B))$$ to get a random whitelist number.\n\n\n\nThe implementation below optimizes this algorithm in various ways, but the overall idea remains the same.\n\n<iframe src=\"https://leetcode.com/playground/ezdrcp8a/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"ezdrcp8a\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(B)$$ preprocessing. $$O(1)$$ pick.\n* Space Complexity: $$O(B)$$.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "493",
+      "count": 13,
+      "average": 4.538,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"Solution\", \"pick\", \"pick\", \"pick\"]\n[[1, []], [], [], []]",
+  "metaData": "{\r\n    \"classname\": \"Solution\",\r\n    \"maxbytesperline\": 200000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"name\": \"N\",\r\n                \"type\": \"integer\"\r\n            },\r\n            {\r\n                \"name\": \"blacklist\",\r\n                \"type\": \"integer[]\"\r\n            },\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"blacklistSize\",\r\n                \"lang\": \"c\",\r\n                \"value\": \"size_2\"\r\n            }\r\n        ]\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"pick\",\r\n            \"params\": [\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

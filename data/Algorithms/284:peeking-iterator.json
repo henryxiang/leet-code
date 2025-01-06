@@ -1,0 +1,64 @@
+{
+  "questionId": "284",
+  "questionFrontendId": "284",
+  "boundTopicId": null,
+  "title": "Peeking Iterator",
+  "titleSlug": "peeking-iterator",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an Iterator class interface with methods: <code>next()</code> and <code>hasNext()</code>, design and implement a PeekingIterator that support the <code>peek()</code> operation -- it essentially peek() at the element that will be returned by the next call to next().</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\nAssume that the iterator is initialized to the beginning of the list: <strong><code>[1,2,3]</code></strong>.\r\n\r\nCall <strong><code>next()</code></strong> gets you <strong>1</strong>, the first element in the list.\r\nNow you call <strong><code>peek()</code></strong> and it returns <strong>2</strong>, the next element. Calling <strong><code>next()</code></strong> after that <i><b>still</b></i> return <strong>2</strong>. \r\nYou call <strong><code>next()</code></strong> the final time and it returns <strong>3</strong>, the last element. \r\nCalling <strong><code>hasNext()</code></strong> after that should return <strong>false</strong>.\r\n</pre>\r\n\r\n<p><b>Follow up</b>: How would you extend your design to be generic and work with all types, not just integer?</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 359,
+  "dislikes": 242,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Binary Search Tree Iterator\", \"titleSlug\": \"binary-search-tree-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Flatten 2D Vector\", \"titleSlug\": \"flatten-2d-vector\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Zigzag Iterator\", \"titleSlug\": \"zigzag-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "porker2008",
+      "profileUrl": "/porker2008/",
+      "avatarUrl": "https://assets.leetcode.com/users/porker2008/avatar_1569641470.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "// Below is the interface for Iterator, which is already defined for you.\n// **DO NOT** modify the interface for Iterator.\n\nclass Iterator {\n    struct Data;\n\tData* data;\npublic:\n\tIterator(const vector<int>& nums);\n\tIterator(const Iterator& iter);\n\tvirtual ~Iterator();\n\t// Returns the next element in the iteration.\n\tint next();\n\t// Returns true if the iteration has more elements.\n\tbool hasNext() const;\n};\n\n\nclass PeekingIterator : public Iterator {\npublic:\n\tPeekingIterator(const vector<int>& nums) : Iterator(nums) {\n\t    // Initialize any member here.\n\t    // **DO NOT** save a copy of nums and manipulate it directly.\n\t    // You should only use the Iterator interface methods.\n\t    \n\t}\n\n    // Returns the next element in the iteration without advancing the iterator.\n\tint peek() {\n        \n\t}\n\n\t// hasNext() and next() should behave the same as in the Iterator interface.\n\t// Override them if needed.\n\tint next() {\n\t    \n\t}\n\n\tbool hasNext() const {\n\t    \n\t}\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "// Java Iterator interface reference:\n// https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html\nclass PeekingIterator implements Iterator<Integer> {\n\n\tpublic PeekingIterator(Iterator<Integer> iterator) {\n\t    // initialize any member here.\n\t    \n\t}\n\n    // Returns the next element in the iteration without advancing the iterator.\n\tpublic Integer peek() {\n        \n\t}\n\n\t// hasNext() and next() should behave the same as in the Iterator interface.\n\t// Override them if needed.\n\t@Override\n\tpublic Integer next() {\n\t    \n\t}\n\n\t@Override\n\tpublic boolean hasNext() {\n\t    \n\t}\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Below is the interface for Iterator, which is already defined for you.\n#\n# class Iterator(object):\n#     def __init__(self, nums):\n#         \"\"\"\n#         Initializes an iterator object to the beginning of a list.\n#         :type nums: List[int]\n#         \"\"\"\n#\n#     def hasNext(self):\n#         \"\"\"\n#         Returns true if the iteration has more elements.\n#         :rtype: bool\n#         \"\"\"\n#\n#     def next(self):\n#         \"\"\"\n#         Returns the next element in the iteration.\n#         :rtype: int\n#         \"\"\"\n\nclass PeekingIterator(object):\n    def __init__(self, iterator):\n        \"\"\"\n        Initialize your data structure here.\n        :type iterator: Iterator\n        \"\"\"\n        \n\n    def peek(self):\n        \"\"\"\n        Returns the next element in the iteration without advancing the iterator.\n        :rtype: int\n        \"\"\"\n        \n\n    def next(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n    def hasNext(self):\n        \"\"\"\n        :rtype: bool\n        \"\"\"\n        \n\n# Your PeekingIterator object will be instantiated and called as such:\n# iter = PeekingIterator(Iterator(nums))\n# while iter.hasNext():\n#     val = iter.peek()   # Get the next element but not advance the iterator.\n#     iter.next()         # Should return the same value as [val]."
+    },
+    {
+      "lang": "Python3",
+      "code": "# Below is the interface for Iterator, which is already defined for you.\n#\n# class Iterator:\n#     def __init__(self, nums):\n#         \"\"\"\n#         Initializes an iterator object to the beginning of a list.\n#         :type nums: List[int]\n#         \"\"\"\n#\n#     def hasNext(self):\n#         \"\"\"\n#         Returns true if the iteration has more elements.\n#         :rtype: bool\n#         \"\"\"\n#\n#     def next(self):\n#         \"\"\"\n#         Returns the next element in the iteration.\n#         :rtype: int\n#         \"\"\"\n\nclass PeekingIterator:\n    def __init__(self, iterator):\n        \"\"\"\n        Initialize your data structure here.\n        :type iterator: Iterator\n        \"\"\"\n        \n\n    def peek(self):\n        \"\"\"\n        Returns the next element in the iteration without advancing the iterator.\n        :rtype: int\n        \"\"\"\n        \n\n    def next(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n    def hasNext(self):\n        \"\"\"\n        :rtype: bool\n        \"\"\"\n        \n\n# Your PeekingIterator object will be instantiated and called as such:\n# iter = PeekingIterator(Iterator(nums))\n# while iter.hasNext():\n#     val = iter.peek()   # Get the next element but not advance the iterator.\n#     iter.next()         # Should return the same value as [val]."
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"84.9K\", \"totalSubmission\": \"198.7K\", \"totalAcceptedRaw\": 84947, \"totalSubmissionRaw\": 198714, \"acRate\": \"42.7%\"}",
+  "hints": [
+    "Think of \"looking ahead\". You want to cache the next element.",
+    "Is one variable sufficient? Why or why not?",
+    "Test your design with call order of <code>peek()</code> before <code>next()</code> vs <code>next()</code> before <code>peek()</code>.",
+    "For a clean implementation, check out <a href=\"https://github.com/google/guava/blob/703ef758b8621cfbab16814f01ddcc5324bdea33/guava-gwt/src-super/com/google/common/collect/super/com/google/common/collect/Iterators.java#L1125\" target=\"_blank\">Google's guava library source code</a>."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"PeekingIterator\",\"next\",\"peek\",\"next\",\"next\",\"hasNext\"]\n[[[1,2,3]],[],[],[],[],[]]",
+  "metaData": "{\n  \"name\": \"PeekingIterator\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"list<integer>\"\n    },\n    {\n      \"name\": \"commands\",\n      \"type\": \"list<integer>\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<string>\",\n    \"dealloc\": true\n  },\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"python3\",\n    \"rust\",\n    \"php\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

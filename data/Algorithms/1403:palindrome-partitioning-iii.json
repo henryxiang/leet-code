@@ -1,0 +1,102 @@
+{
+  "questionId": "1403",
+  "questionFrontendId": "1278",
+  "boundTopicId": null,
+  "title": "Palindrome Partitioning III",
+  "titleSlug": "palindrome-partitioning-iii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given a string&nbsp;<code>s</code> containing lowercase letters and an integer <code>k</code>. You need to :</p>\r\n\r\n<ul>\r\n\t<li>First, change some characters of <code>s</code>&nbsp;to other lowercase English letters.</li>\r\n\t<li>Then divide <code>s</code>&nbsp;into <code>k</code> non-empty disjoint substrings such that each substring is palindrome.</li>\r\n</ul>\r\n\r\n<p>Return the minimal number of characters that you need to change&nbsp;to divide the string.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;abc&quot;, k = 2\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong>&nbsp;You can split the string into &quot;ab&quot; and &quot;c&quot;, and change 1 character in &quot;ab&quot; to make it palindrome.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;aabbc&quot;, k = 3\r\n<strong>Output:</strong> 0\r\n<strong>Explanation:</strong>&nbsp;You can split the string into &quot;aa&quot;, &quot;bb&quot; and &quot;c&quot;, all of them are palindrome.</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;leetcode&quot;, k = 8\r\n<strong>Output:</strong> 0\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= k &lt;= s.length &lt;= 100</code>.</li>\r\n\t<li><code>s</code>&nbsp;only contains lowercase English letters.</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 113,
+  "dislikes": 2,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "lm010",
+      "profileUrl": "/lm010/",
+      "avatarUrl": "https://assets.leetcode.com/users/lm010/avatar_1575373647.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int palindromePartition(string s, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int palindromePartition(String s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def palindromePartition(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def palindromePartition(self, s: str, k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint palindromePartition(char * s, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int PalindromePartition(string s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar palindromePartition = function(s, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} k\n# @return {Integer}\ndef palindrome_partition(s, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func palindromePartition(_ s: String, _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func palindromePartition(s string, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def palindromePartition(s: String, k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun palindromePartition(s: String, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn palindrome_partition(s: String, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return Integer\n     */\n    function palindromePartition($s, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.4K\", \"totalSubmission\": \"6.1K\", \"totalAcceptedRaw\": 3436, \"totalSubmissionRaw\": 6059, \"acRate\": \"56.7%\"}",
+  "hints": [
+    "For each substring calculate the minimum number of steps to make it palindrome and store it in a table.",
+    "Create a dp(pos, cnt) which means the minimum number of characters changed for the suffix of s starting on pos splitting the suffix on cnt chunks."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"abc\"\n2",
+  "metaData": "{\n  \"name\": \"palindromePartition\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"k\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,97 @@
+{
+  "questionId": "379",
+  "questionFrontendId": "379",
+  "boundTopicId": null,
+  "title": "Design Phone Directory",
+  "titleSlug": "design-phone-directory",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design a Phone Directory which supports the following operations:</p>\r\n\r\n<p>\r\n<ol>\r\n<li><code>get</code>: Provide a number which is not assigned to anyone.</li>\r\n<li><code>check</code>: Check if a number is available or not.</li>\r\n<li><code>release</code>: Recycle or release a number.</li>\r\n</ol>\r\n</p>\r\n\r\n<p><b>Example:</b>\r\n<pre>\r\n// Init a phone directory containing a total of 3 numbers: 0, 1, and 2.\r\nPhoneDirectory directory = new PhoneDirectory(3);\r\n\r\n// It can return any available phone number. Here we assume it returns 0.\r\ndirectory.get();\r\n\r\n// Assume it returns 1.\r\ndirectory.get();\r\n\r\n// The number 2 is available, so return true.\r\ndirectory.check(2);\r\n\r\n// It returns 2, the only number that is left.\r\ndirectory.get();\r\n\r\n// The number 2 is no longer available, so return false.\r\ndirectory.check(2);\r\n\r\n// Release number 2 back to the pool.\r\ndirectory.release(2);\r\n\r\n// Number 2 is available again, return true.\r\ndirectory.check(2);\r\n</pre>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 136,
+  "dislikes": 218,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 9}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class PhoneDirectory {\npublic:\n    /** Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory. */\n    PhoneDirectory(int maxNumbers) {\n        \n    }\n    \n    /** Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available. */\n    int get() {\n        \n    }\n    \n    /** Check if a number is available or not. */\n    bool check(int number) {\n        \n    }\n    \n    /** Recycle or release a number. */\n    void release(int number) {\n        \n    }\n};\n\n/**\n * Your PhoneDirectory object will be instantiated and called as such:\n * PhoneDirectory* obj = new PhoneDirectory(maxNumbers);\n * int param_1 = obj->get();\n * bool param_2 = obj->check(number);\n * obj->release(number);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class PhoneDirectory {\n\n    /** Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory. */\n    public PhoneDirectory(int maxNumbers) {\n        \n    }\n    \n    /** Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available. */\n    public int get() {\n        \n    }\n    \n    /** Check if a number is available or not. */\n    public boolean check(int number) {\n        \n    }\n    \n    /** Recycle or release a number. */\n    public void release(int number) {\n        \n    }\n}\n\n/**\n * Your PhoneDirectory object will be instantiated and called as such:\n * PhoneDirectory obj = new PhoneDirectory(maxNumbers);\n * int param_1 = obj.get();\n * boolean param_2 = obj.check(number);\n * obj.release(number);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class PhoneDirectory(object):\n\n    def __init__(self, maxNumbers):\n        \"\"\"\n        Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory.\n        :type maxNumbers: int\n        \"\"\"\n        \n\n    def get(self):\n        \"\"\"\n        Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available.\n        :rtype: int\n        \"\"\"\n        \n\n    def check(self, number):\n        \"\"\"\n        Check if a number is available or not.\n        :type number: int\n        :rtype: bool\n        \"\"\"\n        \n\n    def release(self, number):\n        \"\"\"\n        Recycle or release a number.\n        :type number: int\n        :rtype: None\n        \"\"\"\n        \n\n\n# Your PhoneDirectory object will be instantiated and called as such:\n# obj = PhoneDirectory(maxNumbers)\n# param_1 = obj.get()\n# param_2 = obj.check(number)\n# obj.release(number)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class PhoneDirectory:\n\n    def __init__(self, maxNumbers: int):\n        \"\"\"\n        Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory.\n        \"\"\"\n        \n\n    def get(self) -> int:\n        \"\"\"\n        Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available.\n        \"\"\"\n        \n\n    def check(self, number: int) -> bool:\n        \"\"\"\n        Check if a number is available or not.\n        \"\"\"\n        \n\n    def release(self, number: int) -> None:\n        \"\"\"\n        Recycle or release a number.\n        \"\"\"\n        \n\n\n# Your PhoneDirectory object will be instantiated and called as such:\n# obj = PhoneDirectory(maxNumbers)\n# param_1 = obj.get()\n# param_2 = obj.check(number)\n# obj.release(number)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} PhoneDirectory;\n\n/** Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory. */\n\nPhoneDirectory* phoneDirectoryCreate(int maxNumbers) {\n    \n}\n\n/** Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available. */\nint phoneDirectoryGet(PhoneDirectory* obj) {\n  \n}\n\n/** Check if a number is available or not. */\nbool phoneDirectoryCheck(PhoneDirectory* obj, int number) {\n  \n}\n\n/** Recycle or release a number. */\nvoid phoneDirectoryRelease(PhoneDirectory* obj, int number) {\n  \n}\n\nvoid phoneDirectoryFree(PhoneDirectory* obj) {\n    \n}\n\n/**\n * Your PhoneDirectory struct will be instantiated and called as such:\n * PhoneDirectory* obj = phoneDirectoryCreate(maxNumbers);\n * int param_1 = phoneDirectoryGet(obj);\n \n * bool param_2 = phoneDirectoryCheck(obj, number);\n \n * phoneDirectoryRelease(obj, number);\n \n * phoneDirectoryFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class PhoneDirectory {\n\n    /** Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory. */\n    public PhoneDirectory(int maxNumbers) {\n        \n    }\n    \n    /** Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available. */\n    public int Get() {\n        \n    }\n    \n    /** Check if a number is available or not. */\n    public bool Check(int number) {\n        \n    }\n    \n    /** Recycle or release a number. */\n    public void Release(int number) {\n        \n    }\n}\n\n/**\n * Your PhoneDirectory object will be instantiated and called as such:\n * PhoneDirectory obj = new PhoneDirectory(maxNumbers);\n * int param_1 = obj.Get();\n * bool param_2 = obj.Check(number);\n * obj.Release(number);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory.\n * @param {number} maxNumbers\n */\nvar PhoneDirectory = function(maxNumbers) {\n    \n};\n\n/**\n * Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available.\n * @return {number}\n */\nPhoneDirectory.prototype.get = function() {\n    \n};\n\n/**\n * Check if a number is available or not. \n * @param {number} number\n * @return {boolean}\n */\nPhoneDirectory.prototype.check = function(number) {\n    \n};\n\n/**\n * Recycle or release a number. \n * @param {number} number\n * @return {void}\n */\nPhoneDirectory.prototype.release = function(number) {\n    \n};\n\n/** \n * Your PhoneDirectory object will be instantiated and called as such:\n * var obj = new PhoneDirectory(maxNumbers)\n * var param_1 = obj.get()\n * var param_2 = obj.check(number)\n * obj.release(number)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class PhoneDirectory\n\n=begin\n    Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory.\n    :type max_numbers: Integer\n=end\n    def initialize(max_numbers)\n        \n    end\n\n\n=begin\n    Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available.\n    :rtype: Integer\n=end\n    def get()\n        \n    end\n\n\n=begin\n    Check if a number is available or not.\n    :type number: Integer\n    :rtype: Boolean\n=end\n    def check(number)\n        \n    end\n\n\n=begin\n    Recycle or release a number.\n    :type number: Integer\n    :rtype: Void\n=end\n    def release(number)\n        \n    end\n\n\nend\n\n# Your PhoneDirectory object will be instantiated and called as such:\n# obj = PhoneDirectory.new(max_numbers)\n# param_1 = obj.get()\n# param_2 = obj.check(number)\n# obj.release(number)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass PhoneDirectory {\n\n    /** Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory. */\n    init(_ maxNumbers: Int) {\n        \n    }\n    \n    /** Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available. */\n    func get() -> Int {\n        \n    }\n    \n    /** Check if a number is available or not. */\n    func check(_ number: Int) -> Bool {\n        \n    }\n    \n    /** Recycle or release a number. */\n    func release(_ number: Int) {\n        \n    }\n}\n\n/**\n * Your PhoneDirectory object will be instantiated and called as such:\n * let obj = PhoneDirectory(maxNumbers)\n * let ret_1: Int = obj.get()\n * let ret_2: Bool = obj.check(number)\n * obj.release(number)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type PhoneDirectory struct {\n    \n}\n\n\n/** Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory. */\nfunc Constructor(maxNumbers int) PhoneDirectory {\n    \n}\n\n\n/** Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available. */\nfunc (this *PhoneDirectory) Get() int {\n    \n}\n\n\n/** Check if a number is available or not. */\nfunc (this *PhoneDirectory) Check(number int) bool {\n    \n}\n\n\n/** Recycle or release a number. */\nfunc (this *PhoneDirectory) Release(number int)  {\n    \n}\n\n\n/**\n * Your PhoneDirectory object will be instantiated and called as such:\n * obj := Constructor(maxNumbers);\n * param_1 := obj.Get();\n * param_2 := obj.Check(number);\n * obj.Release(number);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class PhoneDirectory(_maxNumbers: Int) {\n\n    /** Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory. */\n    \n\n    /** Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available. */\n    def get(): Int = {\n        \n    }\n\n    /** Check if a number is available or not. */\n    def check(number: Int): Boolean = {\n        \n    }\n\n    /** Recycle or release a number. */\n    def release(number: Int) {\n        \n    }\n\n}\n\n/**\n * Your PhoneDirectory object will be instantiated and called as such:\n * var obj = new PhoneDirectory(maxNumbers)\n * var param_1 = obj.get()\n * var param_2 = obj.check(number)\n * obj.release(number)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class PhoneDirectory(maxNumbers: Int) {\n\n    /** Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory. */\n    \n\n    /** Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available. */\n    fun get(): Int {\n        \n    }\n\n    /** Check if a number is available or not. */\n    fun check(number: Int): Boolean {\n        \n    }\n\n    /** Recycle or release a number. */\n    fun release(number: Int) {\n        \n    }\n\n}\n\n/**\n * Your PhoneDirectory object will be instantiated and called as such:\n * var obj = PhoneDirectory(maxNumbers)\n * var param_1 = obj.get()\n * var param_2 = obj.check(number)\n * obj.release(number)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct PhoneDirectory {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl PhoneDirectory {\n\n    /** Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory. */\n    fn new(maxNumbers: i32) -> Self {\n        \n    }\n    \n    /** Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available. */\n    fn get(&self) -> i32 {\n        \n    }\n    \n    /** Check if a number is available or not. */\n    fn check(&self, number: i32) -> bool {\n        \n    }\n    \n    /** Recycle or release a number. */\n    fn release(&self, number: i32) {\n        \n    }\n}\n\n/**\n * Your PhoneDirectory object will be instantiated and called as such:\n * let obj = PhoneDirectory::new(maxNumbers);\n * let ret_1: i32 = obj.get();\n * let ret_2: bool = obj.check(number);\n * obj.release(number);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class PhoneDirectory {\n    /**\n     * Initialize your data structure here\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory.\n     * @param Integer $maxNumbers\n     */\n    function __construct($maxNumbers) {\n        \n    }\n  \n    /**\n     * Provide a number which is not assigned to anyone.\n        @return - Return an available number. Return -1 if none is available.\n     * @return Integer\n     */\n    function get() {\n        \n    }\n  \n    /**\n     * Check if a number is available or not.\n     * @param Integer $number\n     * @return Boolean\n     */\n    function check($number) {\n        \n    }\n  \n    /**\n     * Recycle or release a number.\n     * @param Integer $number\n     * @return NULL\n     */\n    function release($number) {\n        \n    }\n}\n\n/**\n * Your PhoneDirectory object will be instantiated and called as such:\n * $obj = PhoneDirectory($maxNumbers);\n * $ret_1 = $obj->get();\n * $ret_2 = $obj->check($number);\n * $obj->release($number);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"30.4K\", \"totalSubmission\": \"68K\", \"totalAcceptedRaw\": 30402, \"totalSubmissionRaw\": 67983, \"acRate\": \"44.7%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"PhoneDirectory\",\"get\",\"get\",\"check\",\"get\",\"check\",\"release\",\"check\"]\n[[3],[],[],[2],[],[2],[2],[2]]",
+  "metaData": "{\r\n    \"classname\": \"PhoneDirectory\",\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"maxNumbers\"\r\n            }\r\n        ],\r\n        \"comment\": \"Initialize your data structure here\\n        @param maxNumbers - The maximum numbers that can be stored in the phone directory.\"\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"get\",\r\n            \"params\": [\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            },\r\n            \"comment\": \"Provide a number which is not assigned to anyone.\\n        @return - Return an available number. Return -1 if none is available.\"\r\n        },\r\n        {\r\n            \"name\" : \"check\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"number\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"boolean\"\r\n            },\r\n            \"comment\": \"Check if a number is available or not.\"\r\n        },\r\n        {\r\n            \"name\" : \"release\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"number\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            },\r\n            \"comment\": \"Recycle or release a number.\"\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

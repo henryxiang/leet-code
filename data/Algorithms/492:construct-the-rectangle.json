@@ -1,0 +1,94 @@
+{
+  "questionId": "492",
+  "questionFrontendId": "492",
+  "boundTopicId": null,
+  "title": "Construct the Rectangle",
+  "titleSlug": "construct-the-rectangle",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nFor a web developer, it is very important to know how to design a web page's size. So, given a specific rectangular web page’s area, your job by now is to design a rectangular web page, whose length L and width W satisfy the following requirements:<pre>\r\n1. The area of the rectangular web page you designed must equal to the given target area.\r\n<br>2. The width W should not be larger than the length L, which means L >= W.\r\n<br>3. The difference between length L and width W should be as small as possible.\r\n</pre>\r\nYou need to output the length L and the width W of the web page you designed in sequence.\r\n</p>\r\n\r\n\r\n<p><b>Example:</b><br />\r\n<pre>\r\n<b>Input:</b> 4\r\n<b>Output:</b> [2, 2]\r\n<b>Explanation:</b> The target area is 4, and all the possible ways to construct it are [1,4], [2,2], [4,1]. \r\nBut according to requirement 2, [1,4] is illegal; according to requirement 3,  [4,1] is not optimal compared to [2,2]. So the length L is 2, and the width W is 2.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The given area won't exceed 10,000,000 and is a positive integer</li>\r\n<li>The web page's width and length you designed must be positive integers.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 154,
+  "dislikes": 234,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> constructRectangle(int area) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] constructRectangle(int area) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def constructRectangle(self, area):\n        \"\"\"\n        :type area: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def constructRectangle(self, area: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* constructRectangle(int area, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] ConstructRectangle(int area) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} area\n * @return {number[]}\n */\nvar constructRectangle = function(area) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} area\n# @return {Integer[]}\ndef construct_rectangle(area)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func constructRectangle(_ area: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func constructRectangle(area int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def constructRectangle(area: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun constructRectangle(area: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn construct_rectangle(area: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $area\n     * @return Integer[]\n     */\n    function constructRectangle($area) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"50.5K\", \"totalSubmission\": \"103.1K\", \"totalAcceptedRaw\": 50546, \"totalSubmissionRaw\": 103053, \"acRate\": \"49.0%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "1",
+  "metaData": "{\r\n  \"name\": \"constructRectangle\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"area\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

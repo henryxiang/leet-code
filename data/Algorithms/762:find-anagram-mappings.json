@@ -1,0 +1,113 @@
+{
+  "questionId": "762",
+  "questionFrontendId": "760",
+  "boundTopicId": null,
+  "title": "Find Anagram Mappings",
+  "titleSlug": "find-anagram-mappings",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven two lists <code>A</code>and <code>B</code>, and <code>B</code> is an anagram of <code>A</code>. <code>B</code> is an anagram of <code>A</code> means <code>B</code> is made by randomizing the order of the elements in <code>A</code>.\r\n</p><p>\r\nWe want to find an <i>index mapping</i> <code>P</code>, from <code>A</code> to <code>B</code>. A mapping <code>P[i] = j</code> means the <code>i</code>th element in <code>A</code> appears in <code>B</code> at index <code>j</code>.\r\n</p><p>\r\nThese lists <code>A</code> and <code>B</code> may contain duplicates.  If there are multiple answers, output any of them.\r\n</p>\r\n\r\n<p>\r\nFor example, given\r\n<pre>\r\nA = [12, 28, 46, 32, 50]\r\nB = [50, 12, 32, 46, 28]\r\n</pre>\r\n</p>\r\nWe should return\r\n<pre>\r\n[1, 4, 3, 2, 0]\r\n</pre>\r\nas <code>P[0] = 1</code> because the <code>0</code>th element of <code>A</code> appears at <code>B[1]</code>,\r\nand <code>P[1] = 4</code> because the <code>1</code>st element of <code>A</code> appears at <code>B[4]</code>,\r\nand so on.\r\n</p>\r\n\r\n<p><b>Note:</b><ol>\r\n<li><code>A, B</code> have equal lengths in range <code>[1, 100]</code>.</li>\r\n<li><code>A[i], B[i]</code> are integers in range <code>[0, 10^5]</code>.</li>\r\n</ol></p>",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 314,
+  "dislikes": 153,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "tinylic",
+      "profileUrl": "/tinylic/",
+      "avatarUrl": "https://www.gravatar.com/avatar/c8f3bf6706478175081358c2ced2ae2f.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> anagramMappings(vector<int>& A, vector<int>& B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] anagramMappings(int[] A, int[] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def anagramMappings(self, A, B):\n        \"\"\"\n        :type A: List[int]\n        :type B: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def anagramMappings(self, A: List[int], B: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* anagramMappings(int* A, int ASize, int* B, int BSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] AnagramMappings(int[] A, int[] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number[]} B\n * @return {number[]}\n */\nvar anagramMappings = function(A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer[]} b\n# @return {Integer[]}\ndef anagram_mappings(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func anagramMappings(_ A: [Int], _ B: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func anagramMappings(A []int, B []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def anagramMappings(A: Array[Int], B: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun anagramMappings(A: IntArray, B: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn anagram_mappings(a: Vec<i32>, b: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer[] $B\n     * @return Integer[]\n     */\n    function anagramMappings($A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"52.8K\", \"totalSubmission\": \"65.9K\", \"totalAcceptedRaw\": 52833, \"totalSubmissionRaw\": 65894, \"acRate\": \"80.2%\"}",
+  "hints": [
+    "Create a hashmap so that D[x] = i  whenever B[i] = x.  Then, the answer is [D[x] for x in A]."
+  ],
+  "solution": {
+    "id": "368",
+    "canSeeDetail": true,
+    "url": "/articles/find-anagram-mappings/",
+    "content": "[TOC]\r\n\r\n#### Approach #1: Hash Table [Accepted]\r\n\r\n**Intuition**\r\n\r\nTake the example `A = [12, 28, 46]`, `B = [46, 12, 28]`.  We want to know where the `12` occurs in `B`, say at position `1`; then where the `28` occurs in `B`, which is position `2`; then where the `46` occurs in `B`, which is position `0`.\r\n\r\nIf we had a dictionary (hash table) `D = {46: 0, 12: 1, 28: 2}`, then this question could be handled easily.\r\n\r\n**Algorithm**\r\n\r\nCreate the hash table `D` as described above.  Then, the answer is a list of `D[A[i]]` for `i = 0, 1, ...`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/iGtg87vW/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"iGtg87vW\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of $$A$$.\r\n\r\n* Space Complexity: $$O(N)$$.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "363",
+      "count": 16,
+      "average": 4.312,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[12,28,46,32,50]\n[50,12,32,46,28]",
+  "metaData": "{\r\n  \"name\": \"anagramMappings\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

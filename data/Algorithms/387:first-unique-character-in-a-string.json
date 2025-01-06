@@ -1,0 +1,109 @@
+{
+  "questionId": "387",
+  "questionFrontendId": "387",
+  "boundTopicId": null,
+  "title": "First Unique Character in a String",
+  "titleSlug": "first-unique-character-in-a-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.\r\n</p>\r\n<p><b>Examples:</b>\r\n<pre>\r\ns = \"leetcode\"\r\nreturn 0.\r\n\r\ns = \"loveleetcode\",\r\nreturn 2.\r\n</pre>\r\n</p>\r\n\r\n<p>\r\n<b>Note:</b> You may assume the string contain only lowercase letters.\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1341,
+  "dislikes": 93,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Sort Characters By Frequency\", \"titleSlug\": \"sort-characters-by-frequency\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 11}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int firstUniqChar(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int firstUniqChar(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def firstUniqChar(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def firstUniqChar(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint firstUniqChar(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FirstUniqChar(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar firstUniqChar = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef first_uniq_char(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func firstUniqChar(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func firstUniqChar(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def firstUniqChar(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun firstUniqChar(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn first_uniq_char(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function firstUniqChar($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"361K\", \"totalSubmission\": \"705.7K\", \"totalAcceptedRaw\": 360996, \"totalSubmissionRaw\": 705726, \"acRate\": \"51.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "638",
+    "canSeeDetail": true,
+    "url": "/articles/first-unique-character-in-a-string/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Linear time solution\n\nThe best possible solution here could be of a linear time \nbecause to ensure \nthat the character is unique \nyou have to check the whole string anyway. \n\nThe idea is to go through the string and \nsave in a hash map the number of times \neach character appears in the string. \nThat would take $$\\mathcal{O}(N)$$ time, \nwhere `N` is a number of characters in the string.\n \nAnd then we go through the string the second time, this time \nwe use the hash map as a reference to check if a character \nis unique or not.   \nIf the character is unique, one could just return its index. \nThe complexity of the second iteration is $$\\mathcal{O}(N)$$ as well.\n\n<!--![LIS](../Figures/387/387_tr.gif)-->\n!?!../Documents/387_LIS.json:1000,621!?!\n\n<iframe src=\"https://leetcode.com/playground/Joed7Ar7/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"Joed7Ar7\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ since we go \nthrough the string of length `N` two times. \n* Space complexity : $$\\mathcal{O}(N)$$ since we have to keep a hash map \nwith `N` elements.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "624",
+      "count": 33,
+      "average": 4.273,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"leetcode\"",
+  "metaData": "{\r\n  \"name\": \"firstUniqChar\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

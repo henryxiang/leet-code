@@ -1,0 +1,101 @@
+{
+  "questionId": "1098",
+  "questionFrontendId": "1133",
+  "boundTopicId": null,
+  "title": "Largest Unique Number",
+  "titleSlug": "largest-unique-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers <code>A</code>, return the largest integer that only occurs once.</p>\r\n\r\n<p>If no integer occurs once, return -1.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[5,7,3,9,4,9,8,3,1]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">8</span>\r\n<strong>Explanation: </strong>\r\nThe maximum integer in the array is 9 but it is repeated. The number 8 occurs only once, so it&#39;s the answer.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[9,9,8,8]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">-1</span>\r\n<strong>Explanation: </strong>\r\nThere is no number that occurs only once.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 2000</code></li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 1000</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 46,
+  "dislikes": 4,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int largestUniqueNumber(vector<int>& A) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int largestUniqueNumber(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def largestUniqueNumber(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def largestUniqueNumber(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint largestUniqueNumber(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int LargestUniqueNumber(int[] A) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar largestUniqueNumber = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\r\n# @return {Integer}\r\ndef largest_unique_number(a)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func largestUniqueNumber(_ A: [Int]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func largestUniqueNumber(A []int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def largestUniqueNumber(A: Array[Int]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun largestUniqueNumber(A: IntArray): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn largest_unique_number(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function largestUniqueNumber($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.3K\", \"totalSubmission\": \"9.5K\", \"totalAcceptedRaw\": 6319, \"totalSubmissionRaw\": 9479, \"acRate\": \"66.7%\"}",
+  "hints": [
+    "Find the number of occurrences of each value.",
+    "Use an array or a hash table to do that.",
+    "Look for the largest value with number of occurrences = 1."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[5,7,3,9,4,9,8,3,1]",
+  "metaData": "{\r\n  \"name\": \"largestUniqueNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

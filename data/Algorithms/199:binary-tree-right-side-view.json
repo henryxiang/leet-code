@@ -1,0 +1,119 @@
+{
+  "questionId": "199",
+  "questionFrontendId": "199",
+  "boundTopicId": null,
+  "title": "Binary Tree Right Side View",
+  "titleSlug": "binary-tree-right-side-view",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a binary tree, imagine yourself standing on the <em>right</em> side of it, return the values of the nodes you can see ordered from top to bottom.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>&nbsp;[1,2,3,null,5,null,4]\r\n<strong>Output:</strong>&nbsp;[1, 3, 4]\r\n<strong>Explanation:\r\n</strong>\r\n   1            &lt;---\r\n /   \\\r\n2     3         &lt;---\r\n \\     \\\r\n  5     4       &lt;---\r\n</pre>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1494,
+  "dislikes": 78,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Populating Next Right Pointers in Each Node\", \"titleSlug\": \"populating-next-right-pointers-in-each-node\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Boundary of Binary Tree\", \"titleSlug\": \"boundary-of-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "amrsaqr",
+      "profileUrl": "/amrsaqr/",
+      "avatarUrl": "https://www.gravatar.com/avatar/91a28f7e213b78c901eb28b56a665225.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Mathworks\", \"slug\": \"mathworks\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 28}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    vector<int> rightSideView(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public List<Integer> rightSideView(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def rightSideView(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def rightSideView(self, root: TreeNode) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* rightSideView(struct TreeNode* root, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public IList<int> RightSideView(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number[]}\n */\nvar rightSideView = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {Integer[]}\ndef right_side_view(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func rightSideView(_ root: TreeNode?) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc rightSideView(root *TreeNode) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def rightSideView(root: TreeNode): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun rightSideView(root: TreeNode?): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn right_side_view(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Integer[]\n     */\n    function rightSideView($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"216.9K\", \"totalSubmission\": \"427.2K\", \"totalAcceptedRaw\": 216912, \"totalSubmissionRaw\": 427220, \"acRate\": \"50.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "274",
+    "canSeeDetail": true,
+    "url": "/articles/binary-tree-right-side-view/",
+    "content": "[TOC]\n\n#### Initial Thoughts\n\nBecause the tree topography is unknown ahead of time, it is not possible to\ndesign an algorithm that visits asymptotically fewer than $$n$$ nodes.\nTherefore, we should try to aim for a linear time solution. With that in\nmind, let's consider a few equally-efficient solutions.\n\n#### Approach #1 Depth-First Search [Accepted]\n\n**Intuition**\n\nWe can efficiently obtain the right-hand view of the binary tree if we visit\neach node in the proper order.\n\n**Algorithm**\n\nOne of the aforementioned orderings is defined by a depth-first search in\nwhich we always visit the right subtree first. This guarantees that the first\ntime we visit a particular depth of the tree, the node that we are visiting\nis the rightmost node at that depth. Therefore, we can store the value of the\nfirst node that we visit at each depth, ultimately generating a final array\nof values once we know exactly how many layers are in the tree.\n\n![Depth-First Search](../Figures/199/199_depth_first.png)\n{:align=\"center\"}\n\nThe figure above illustrates one instance of the problem. The red nodes\ncompose the solution from top to bottom, and the edges are labelled in order\nof visitation.\n\n<iframe src=\"https://leetcode.com/playground/U8377M7P/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"U8377M7P\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$.\n\n    Because a binary tree with only child pointers is _directed acyclic graph_\n    with only one source node, a traversal of the tree from the root will visit\n    each node exactly once (plus a sublinear amount of leaves, represented as\n    `None`). Each visitation requires only $$O(1)$$ work, so the while loop\n    runs in linear time. Finally, building the array of rightmost values is\n    $$O($$height of the tree$$) = O(n)$$ because it is not possible for a\n    right-hand view of the tree to contain more nodes than the tree itself.\n\n* Space complexity : $$O(n)$$.\n\n    At worst, our stack will contain a number of nodes close to the height of\n    the tree. Because we are exploring the tree in a depth-first order, there\n    are never two nodes from different subtrees of the same parent node on the\n    stack at once. Said another way, the entire right subtree of a node will be\n    visited before any nodes of the left subtree are pushed onto the stack. If\n    this logic is applied recursively down the tree, it follows that the stack\n    will be largest when we have reached the end of the tree's longest path\n    (the height of the tree). However, because we know nothing about the tree's\n    topography, the height of the tree may be equivalent to $$n$$, causing the\n    space complexity to degrade to $$O(n)$$.\n\n---\n\n#### Approach #2 Breadth-First Search [Accepted]\n\n**Intuition**\n\nMuch like depth-first search can guarantee that we visit a depth's rightmost\nnode first, breadth-first search can guarantee that we visit it _last_.\n\n**Algorithm**\n\nBy performing a breadth-first search that enqueues the left child before the\nright child, we visit each node in each layer from left to right. Therefore,\nby retaining only the most recently visited node per depth, we will have\nthe rightmost node for each depth once we finish the tree traversal. The\nalgorithm is unchanged, other than swapping out the stack for a\n`deque`[^1] and removing the containment check before assigning into\n`rightmost_value_at_depth`.\n\n![Breadth-first Search Example](../Figures/199/199_breadth_first.png)\n{:align=\"center\"}\n\nThe figure above illustrates the same instance as before, but solved via\nbreadth-first search. The red nodes compose the solution from top to bottom,\nand the edges are labelled in order of visitation.\n\n<iframe src=\"https://leetcode.com/playground/9Aia2BUi/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"9Aia2BUi\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$.\n\n    The differences itemized in the **Algorithm** section do not admit\n    differences in the time complexity analysis between the bread-first and\n    depth-first search approaches.\n\n* Space complexity : $$O(n)$$.\n\n    Because breadth-first search visits the tree layer-by-layer, the queue\n    will be at its largest immediately before visiting the largest layer. The\n    size of this layer is $$0.5n = O(n)$$ in the worst case (a complete binary\n    tree).\n\n---\n\n**Footnotes**\n\n[^1]: The\n[`deque`](https://docs.python.org/3/library/collections.html#collections.deque)\ndatatype from the\n[`collections`](https://docs.python.org/3/library/collections.html) module\nsupports constant time append/pop from both the head and the tail. If we were\nto use a Python `list`, it would cost us $$O(n)$$ time to remove its head via\n`list.pop(0)`.\n\n---\n\nAnalysis written by: [@emptyset](https://leetcode.com/emptyset)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "269",
+      "count": 150,
+      "average": 1.847,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,null,5,null,4]",
+  "metaData": "{\r\n  \"name\": \"rightSideView\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

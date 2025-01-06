@@ -1,0 +1,105 @@
+{
+  "questionId": "134",
+  "questionFrontendId": "134",
+  "boundTopicId": null,
+  "title": "Gas Station",
+  "titleSlug": "gas-station",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are <em>N</em> gas stations along a circular route, where the amount of gas at station <em>i</em> is <code>gas[i]</code>.</p>\r\n\r\n<p>You have a car with an unlimited gas tank and it costs <code>cost[i]</code> of gas to travel from station <em>i</em> to its next station (<em>i</em>+1). You begin the journey with an empty tank at one of the gas stations.</p>\r\n\r\n<p>Return the starting gas station&#39;s index if you can travel around the circuit once in the clockwise direction, otherwise return -1.</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>If there exists a&nbsp;solution, it is guaranteed to be unique.</li>\r\n\t<li>Both input arrays are non-empty and have the same length.</li>\r\n\t<li>Each element in the input arrays is a non-negative integer.</li>\r\n</ul>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\ngas  = [1,2,3,4,5]\r\ncost = [3,4,5,1,2]\r\n\r\n<strong>Output:</strong> 3\r\n\r\n<strong>Explanation:\r\n</strong>Start at station 3 (index 3) and fill up with 4 unit of gas. Your tank = 0 + 4 = 4\r\nTravel to station 4. Your tank = 4 - 1 + 5 = 8\r\nTravel to station 0. Your tank = 8 - 2 + 1 = 7\r\nTravel to station 1. Your tank = 7 - 3 + 2 = 6\r\nTravel to station 2. Your tank = 6 - 4 + 3 = 5\r\nTravel to station 3. The cost is 5. Your gas is just enough to travel back to station 3.\r\nTherefore, return 3 as the starting index.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\ngas  = [2,3,4]\r\ncost = [3,4,3]\r\n\r\n<strong>Output:</strong> -1\r\n\r\n<strong>Explanation:\r\n</strong>You can&#39;t start at station 0 or 1, as there is not enough gas to travel to the next station.\r\nLet&#39;s start at station 2 and fill up with 4 unit of gas. Your tank = 0 + 4 = 4\r\nTravel to station 0. Your tank = 4 - 3 + 2 = 3\r\nTravel to station 1. Your tank = 3 - 3 + 3 = 3\r\nYou cannot travel back to station 2, as it requires 4 unit of gas but you only have 3.\r\nTherefore, you can&#39;t travel around the circuit once no matter where you start.\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1081,
+  "dislikes": 332,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Paypal\", \"slug\": \"paypal\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"IBM\", \"slug\": \"ibm\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int canCompleteCircuit(int[] gas, int[] cost) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canCompleteCircuit(self, gas, cost):\n        \"\"\"\n        :type gas: List[int]\n        :type cost: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint canCompleteCircuit(int* gas, int gasSize, int* cost, int costSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CanCompleteCircuit(int[] gas, int[] cost) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} gas\n * @param {number[]} cost\n * @return {number}\n */\nvar canCompleteCircuit = function(gas, cost) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} gas\n# @param {Integer[]} cost\n# @return {Integer}\ndef can_complete_circuit(gas, cost)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canCompleteCircuit(_ gas: [Int], _ cost: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canCompleteCircuit(gas []int, cost []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canCompleteCircuit(gas: Array[Int], cost: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canCompleteCircuit(gas: IntArray, cost: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_complete_circuit(gas: Vec<i32>, cost: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $gas\n     * @param Integer[] $cost\n     * @return Integer\n     */\n    function canCompleteCircuit($gas, $cost) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"172.5K\", \"totalSubmission\": \"480.4K\", \"totalAcceptedRaw\": 172455, \"totalSubmissionRaw\": 480382, \"acRate\": \"35.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "707",
+    "canSeeDetail": true,
+    "url": "/articles/gas-station/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: One pass.\n\n**Intuition**\n\nThe first idea is to check every single station :\n\n- Choose the station as starting point.\n\n- Perform the road trip and check how much gas we have in tank\nat each station.\n\nThat means $$\\mathcal{O}(N^2)$$ time complexity, and for sure one could\ndo better.\n\nLet's notice two things.\n\n> It's impossible to perform the road trip if `sum(gas) < sum(cost)`. \nIn this situation the answer is `-1`. \n\n<img src=\"../Figures/134/round_trip.png\" width=\"500\">\n\nOne could compute total amount of gas in the tank \n`total_tank = sum(gas) - sum(cost)` \nduring the round trip, \nand then return `-1` if `total_tank < 0`.\n\n> It's impossible to start at a station `i` if `gas[i] - cost[i] < 0`,\nbecause then there is not enough gas in the tank to travel to \n`i + 1` station.\n \n<img src=\"../Figures/134/no_start1.png\" width=\"500\">\n\nThe second fact could be generalized. Let's introduce\n`curr_tank` variable to track the current amount of gas \nin the tank. If at some station `curr_tank` is less\nthan `0`, that means that one couldn't reach this station.\n\nNext step is to mark this station as a new starting point,\nand reset `curr_tank` to zero since one starts with \nno gas in the tank.\n\n**Algorithm**\n\nNow the algorithm is straightforward :\n\n1. Initiate `total_tank` and `curr_tank` as zero, and\nchoose station `0` as a starting station.\n\n2. Iterate over all stations :\n    \n    - Update `total_tank` and `curr_tank` at each step,\n    by adding `gas[i]` and subtracting `cost[i]`. \n    \n    - If `curr_tank < 0` at `i + 1` station,\n    make `i + 1` station a new starting point and\n    reset `curr_tank = 0` to start with an empty tank.\n\n3. Return `-1` if `total_tank < 0` and `starting station`\notherwise.\n\n**Why this works**\n\nLet's imagine the situation when `total_tank >= 0` and\nthe above algorithm returns $$N_s$$ as a starting station.\n\nAlgorithm directly ensures \nthat it's possible to go from $$N_s$$ to the station $$0$$.\nBut what about the last part of the round trip\nfrom the station $$0$$ to the station $$N_s$$ ?\n\n> How one could ensure that it's possible to loop around to $$N_s$$ ?\n\nLet's use here the [proof by contradiction](https://en.wikipedia.org/wiki/Proof_by_contradiction)\nand assume that there is a station $$0 < k < N_s$$ such that \none couldn't reach this station starting from $$N_s$$. \n \nThe condition `total_tank >= 0` could be written as\n\n$$\n\\sum_{i = 0}^{i = N}{\\alpha_i} \\ge 0    \\qquad (1)\n$$\nwhere $$\\alpha_i = \\textrm{gas[i]} - \\textrm{cost[i]}$$.\n\nLet's split the sum on the right side \nby the starting station $$N_s$$\nand unreachable station `k` : \n\n$$\n\\sum_{i = 0}^{i = k}{\\alpha_i} + \n\\sum_{i = k + 1}^{i = N_s - 1}{\\alpha_i} +\n\\sum_{i = N_s}^{i = N}{\\alpha_i} \\ge 0  \\qquad (2)\n$$\n\nThe second term is negative by the algorithm definition - \notherwise the starting station would be before $$N_s$$.\nIt could be equal to zero only in the case of $$k = N_s - 1$$.\n\n$$\n\\sum_{i = k + 1}^{i = N_s - 1}{\\alpha_i} \\le 0  \\qquad (3)\n$$\n\nEquations `(2)` and `(3)` together results in \n\n$$\n\\sum_{i = 0}^{i = k}{\\alpha_i} +\n\\sum_{i = N_s}^{i = N}{\\alpha_i} \\ge 0  \\qquad (4)\n$$\n\nAt the same time the station $$k$$ is supposed to be unreachable\nfrom $$N_s$$ that means \n\n$$\n\\sum_{i = N_s}^{i = N}{\\alpha_i} +\n\\sum_{i = 0}^{i = k}{\\alpha_i} < 0  \\qquad (5)\n$$\n\nEqs. `(4)` and `(5)` together result in a contradiction. \nTherefore, the initial assumption — \nthat there is a station $$0 < k < N_s$$ such that \none couldn't reach this station starting from $$N_s$$\n— must be false.\n\nHence, one could do a round trip starting from $$N_s$$,\nthat makes $$N_s$$ to be an answer. \nThe answer is unique according to the problem definition.\n\n**Implementation**\n\n!?!../Documents/134_LIS.json:1000,746!?!\n\n<iframe src=\"https://leetcode.com/playground/LCWxgUN9/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"LCWxgUN9\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ since there is only\none loop over all stations here.\n \n* Space complexity : $$\\mathcal{O}(1)$$ since it's a constant \nspace solution. \n\n**Further reading**\n\nThere are numerous variations of gas problem, here are some examples :\n\n[Find the cheapest path between two stations \nif at most Δ stops are allowed.](https://www.sciencedirect.com/science/article/pii/S002001901730203X) \n\n[Find the cheapest path between two stations \nif the vehicle has a given tank capacity.](https://link.springer.com/chapter/10.1007/978-3-540-75520-3_48)\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "692",
+      "count": 26,
+      "average": 4.769,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4,5]\n[3,4,5,1,2]",
+  "metaData": "{\r\n  \"name\": \"canCompleteCircuit\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"gas\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"cost\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

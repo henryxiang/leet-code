@@ -1,0 +1,93 @@
+{
+  "questionId": "291",
+  "questionFrontendId": "291",
+  "boundTopicId": null,
+  "title": "Word Pattern II",
+  "titleSlug": "word-pattern-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <code>pattern</code> and a string <code>str</code>, find if <code>str</code> follows the same pattern.</p>\r\n\r\n<p>Here <b>follow</b> means a full match, such that there is a bijection between a letter in <code>pattern</code> and a <b>non-empty</b> substring in <code>str</code>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>pattern = <code>&quot;abab&quot;</code>, str = <code>&quot;redblueredblue&quot;</code>\r\n<strong>Output:</strong> true</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>pattern = pattern = <code>&quot;aaaa&quot;</code>, str = <code>&quot;asdasdasdasd&quot;</code>\r\n<strong>Output:</strong> true</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> pattern = <code>&quot;aabb&quot;</code>, str = <code>&quot;xyzabcxzyabc&quot;</code>\r\n<strong>Output:</strong> false\r\n</pre>\r\n\r\n<p><b>Notes:</b><br />\r\nYou may assume both <code>pattern</code> and <code>str</code> contains only lowercase letters.</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 358,
+  "dislikes": 23,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Word Pattern\", \"titleSlug\": \"word-pattern\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Pony.ai\", \"slug\": \"ponyai\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool wordPatternMatch(string pattern, string str) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean wordPatternMatch(String pattern, String str) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def wordPatternMatch(self, pattern, str):\n        \"\"\"\n        :type pattern: str\n        :type str: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def wordPatternMatch(self, pattern: str, str: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool wordPatternMatch(char * pattern, char * str){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool WordPatternMatch(string pattern, string str) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} pattern\n * @param {string} str\n * @return {boolean}\n */\nvar wordPatternMatch = function(pattern, str) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} pattern\n# @param {String} str\n# @return {Boolean}\ndef word_pattern_match(pattern, str)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func wordPatternMatch(_ pattern: String, _ str: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func wordPatternMatch(pattern string, str string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def wordPatternMatch(pattern: String, str: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun wordPatternMatch(pattern: String, str: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn word_pattern_match(pattern: String, str: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $pattern\n     * @param String $str\n     * @return Boolean\n     */\n    function wordPatternMatch($pattern, $str) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"39.7K\", \"totalSubmission\": \"93.3K\", \"totalAcceptedRaw\": 39664, \"totalSubmissionRaw\": 93300, \"acRate\": \"42.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"abab\"\n\"redblueredblue\"",
+  "metaData": "{\r\n  \"name\": \"wordPatternMatch\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"pattern\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"str\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

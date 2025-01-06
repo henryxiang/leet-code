@@ -1,0 +1,100 @@
+{
+  "questionId": "1341",
+  "questionFrontendId": "1221",
+  "boundTopicId": null,
+  "title": "Split a String in Balanced Strings",
+  "titleSlug": "split-a-string-in-balanced-strings",
+  "categoryTitle": "Algorithms",
+  "content": "<p><i data-stringify-type=\"italic\">Balanced</i>&nbsp;strings are those who have equal quantity of &#39;L&#39; and &#39;R&#39; characters.</p>\n\n<p>Given a balanced string&nbsp;<code data-stringify-type=\"code\">s</code>&nbsp;split it in the maximum amount of balanced strings.</p>\n\n<p>Return the maximum amount of splitted balanced strings.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;RLRRLLRLRL&quot;\n<strong>Output:</strong> 4\n<strong>Explanation: </strong>s can be split into &quot;RL&quot;, &quot;RRLL&quot;, &quot;RL&quot;, &quot;RL&quot;, each substring contains same number of &#39;L&#39; and &#39;R&#39;.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;RLLLLRRRLR&quot;\n<strong>Output:</strong> 3\n<strong>Explanation: </strong>s can be split into &quot;RL&quot;, &quot;LLLRRR&quot;, &quot;LR&quot;, each substring contains same number of &#39;L&#39; and &#39;R&#39;.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;LLLLRRRR&quot;\n<strong>Output:</strong> 1\n<strong>Explanation: </strong>s can be split into &quot;LLLLRRRR&quot;.\n</pre>\n\n<p><strong>Example 4:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;RLRRRLLRLL&quot;\n<strong>Output:</strong> 2\n<strong>Explanation: </strong>s can be split into &quot;RL&quot;, &quot;RRRLLRLL&quot;, since each substring contains an equal number of &#39;L&#39; and &#39;R&#39;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\n\t<li><code>s[i] = &#39;L&#39; or &#39;R&#39;</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 173,
+  "dislikes": 105,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int balancedStringSplit(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int balancedStringSplit(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def balancedStringSplit(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def balancedStringSplit(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint balancedStringSplit(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int BalancedStringSplit(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar balancedStringSplit = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef balanced_string_split(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func balancedStringSplit(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func balancedStringSplit(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def balancedStringSplit(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun balancedStringSplit(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn balanced_string_split(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function balancedStringSplit($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"30.5K\", \"totalSubmission\": \"38.1K\", \"totalAcceptedRaw\": 30522, \"totalSubmissionRaw\": 38115, \"acRate\": \"80.1%\"}",
+  "hints": [
+    "Loop from left to right maintaining a balance variable when it gets an L increase it by one otherwise decrease it by one.",
+    "Whenever the balance variable reaches zero then we increase the answer by one."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"RLRRLLRLRL\"",
+  "metaData": "{\n  \"name\": \"balancedStringSplit\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

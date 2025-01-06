@@ -1,0 +1,109 @@
+{
+  "questionId": "109",
+  "questionFrontendId": "109",
+  "boundTopicId": null,
+  "title": "Convert Sorted List to Binary Search Tree",
+  "titleSlug": "convert-sorted-list-to-binary-search-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.</p>\r\n\r\n<p>For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of <em>every</em> node never differ by more than 1.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\nGiven the sorted linked list: [-10,-3,0,5,9],\r\n\r\nOne possible answer is: [0,-3,9,-10,null,5], which represents the following height balanced BST:\r\n\r\n      0\r\n     / \\\r\n   -3   9\r\n   /   /\r\n -10  5\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1427,
+  "dislikes": 78,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Convert Sorted Array to Binary Search Tree\", \"titleSlug\": \"convert-sorted-array-to-binary-search-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Zenefits\", \"slug\": \"zenefits\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode(int x) : val(x), next(NULL) {}\n * };\n */\n/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    TreeNode* sortedListToBST(ListNode* head) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode(int x) { val = x; }\n * }\n */\n/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public TreeNode sortedListToBST(ListNode head) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for singly-linked list.\n# class ListNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\n# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def sortedListToBST(self, head):\n        \"\"\"\n        :type head: ListNode\n        :rtype: TreeNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\n# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def sortedListToBST(self, head: ListNode) -> TreeNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     struct ListNode *next;\n * };\n */\n/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nstruct TreeNode* sortedListToBST(struct ListNode* head){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int x) { val = x; }\n * }\n */\n/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public TreeNode SortedListToBST(ListNode head) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for singly-linked list.\n * function ListNode(val) {\n *     this.val = val;\n *     this.next = null;\n * }\n */\n/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {ListNode} head\n * @return {TreeNode}\n */\nvar sortedListToBST = function(head) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for singly-linked list.\n# class ListNode\n#     attr_accessor :val, :next\n#     def initialize(val)\n#         @val = val\n#         @next = nil\n#     end\n# end\n\n# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {ListNode} head\n# @return {TreeNode}\ndef sorted_list_to_bst(head)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public var val: Int\n *     public var next: ListNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.next = nil\n *     }\n * }\n */\n/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func sortedListToBST(_ head: ListNode?) -> TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\n/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc sortedListToBST(head *ListNode) *TreeNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for singly-linked list.\n * class ListNode(var _x: Int = 0) {\n *   var next: ListNode = null\n *   var x: Int = _x\n * }\n */\n/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def sortedListToBST(head: ListNode): TreeNode = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var li = ListNode(5)\n * var v = li.`val`\n * Definition for singly-linked list.\n * class ListNode(var `val`: Int) {\n *     var next: ListNode? = null\n * }\n */\n/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun sortedListToBST(head: ListNode?): TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for singly-linked list.\n// #[derive(PartialEq, Eq, Clone, Debug)]\n// pub struct ListNode {\n//   pub val: i32,\n//   pub next: Option<Box<ListNode>>\n// }\n// \n// impl ListNode {\n//   #[inline]\n//   fn new(val: i32) -> Self {\n//     ListNode {\n//       next: None,\n//       val\n//     }\n//   }\n// }\n// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn sorted_list_to_bst(head: Option<Box<ListNode>>) -> Option<Rc<RefCell<TreeNode>>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a singly-linked list.\n * class ListNode {\n *     public $val = 0;\n *     public $next = null;\n *     function __construct($val) { $this->val = $val; }\n * }\n */\n/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param ListNode $head\n     * @return TreeNode\n     */\n    function sortedListToBST($head) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"207.2K\", \"totalSubmission\": \"471.6K\", \"totalAcceptedRaw\": 207189, \"totalSubmissionRaw\": 471632, \"acRate\": \"43.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "614",
+    "canSeeDetail": true,
+    "url": "/articles/convert-sorted-list-to-binary-search-tree/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Recursion\n\n**Intuition**\n\nThe important condition that we have to adhere to in this problem is that we have to create a `height balanced` binary search tree using the set of nodes given to us in the form of a linked list. The good thing is that the nodes in the linked list are sorted in ascending order.\n\nAs we know, a binary search tree is essentially a rooted binary tree with a very special property or relationship amongst its nodes. For a given node of the binary search tree, it's value must be $$\\ge$$ the value of `all` the nodes in the left subtree and $$\\le$$ the value of `all` the nodes in the right subtree. Since a binary tree has a recursive substructure, so does a BST i.e. all the subtrees are binary search trees in themselves.\n\nThe main idea in this approach and the next is that:\n\n> the middle element of the given list would form the root of the binary search tree. All the elements to the left of the middle element would form the left subtree recursively. Similarly, all the elements to the right of the middle element will form the right subtree of the binary search tree. This would ensure the height balance required in the resulting binary search tree.\n\n**Algorithm**\n\n1. Since we are given a linked list and not an array, we don't really have access to the elements of the list using indexes. We want to know the middle element of the linked list.\n2. We can use the two pointer approach for finding out the middle element of a linked list. Essentially, we have two pointers called `slow_ptr` and `fast_ptr`. The `slow_ptr` moves one node at a time whereas the `fast_ptr` moves two nodes at a time. By the time the `fast_ptr` reaches the end of the linked list, the `slow_ptr` would have reached the middle element of the linked list. For an even sized list, any of the two middle elements can act as the root of the BST.\n3. Once we have the middle element of the linked list, we disconnect the portion of the list to the left of the middle element. The way we do this is by keeping a `prev_ptr` as well which points to one node before the `slow_ptr` i.e. `prev_ptr.next` = `slow_ptr`. For disconnecting the left portion we simply do `prev_ptr.next = None`\n4. We only need to pass the head of the linked list to the function that converts it to a height balances BST. So, we recurse on the left half of the linked list by passing the original head of the list and on the right half by passing `slow_ptr.next` as the head.\n\nLet's look at this algorithm in action on a sample linked list.\n\n<div>\n<center>\n<video width=\"100%\" poster=\"../Figures/109/A1.png\" controls>\n<source src=\"../Figures/109/Animation2.mp4\" type=\"video/mp4\">\n</video>\n</center>\n</div>\n\n<br>\n\n<iframe src=\"https://leetcode.com/playground/xhGFXBfU/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"xhGFXBfU\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N\\log N)$$. Suppose our linked list consists of $$N$$ elements. For every list we pass to our recursive function, we have to calculate the middle element for that list. For a list of size $$N$$, it takes $$N / 2$$ steps to find the middle element i.e. $$O(N)$$ to find the mid. We do this for **every** half of the original linked list. From the looks of it, this seems to be an $$O(N^2)$$ algorithm. However, on closer analysis, it turns out to be a bit more efficient than $$O(N^2)$$.\n\n\n    Let's look at the number of operations that we have to perform on each of the halves of the linked list. As we mentioned earlier, it takes $$N/2$$ steps to find the middle of a linked list with $$N$$ elements. After finding the middle element, we are left with two halves of size $$N / 2$$ each. Then, we find the middle element for `both` of these halves and it would take a total of $$2 \\times N / 4$$ steps for that. And similarly for the smaller sublists that keep forming recursively. This would give us the following series of operations for a list of size $$N$$.\n\n    $$\n    \\begin{aligned}\n    \\frac{N}{2} + 2 \\cdot \\frac{N}{4} + 4 \\cdot \\frac{N}{8} + 8 \\cdot \\frac{N}{16} \\; \\ldots\n    \\end{aligned}\n    $$\n\n    Essentially, this is done $$\\log N$$ times since we split the linked list in half every time. Hence, the above equation becomes:\n\n    $$\n    \\begin{aligned}\n    &\\sum_{i = 1}^{\\log N} 2^{i - 1} \\cdot \\frac{N}{2^i} \\\\\n    = \\; &\\sum_{i = 1}^{\\log N}\\frac{N}{2} \\\\\n    = \\; &\\frac{N}{2} \\; \\log N \\\\\n    = \\; &O(N\\log N)\n    \\end{aligned}\n    $$\n\n* Space Complexity: $$O(\\log N)$$. Since we are resorting to recursion, there is always the added space complexity of the recursion stack that comes into picture. This could have been $$O(N)$$ for a skewed tree, but the question clearly states that we need to maintain the height balanced property. This ensures the height of the tree to be bounded by $$O(\\log N)$$. Hence, the space complexity is $$O(\\log N)$$.\n\nThe main problem with the above solution seems to be the middle element computation. That takes up a lot of unnecessary time and this is due to the nature of the linked list data structure. Let's look at the next solution which tries to overcome this.\n<br>\n<br>\n\n---\n#### Approach 2: Recursion + Conversion to Array\n\nThis approach is a classic example of the time-space tradeoff.\n\n> You can get the time complexity down by using more space.\n\nThat's exactly what we're going to do in this approach. Essentially, we will convert the given linked list into an array and then use that array to form our binary search tree. In an array fetching the middle element is a $$O(1)$$ operation and this will bring down the overall time complexity.\n\n**Algorithm**\n\n1. Convert the given linked list into an array. Let's call the beginning and the end of the array as `left` and `right`\n2. Find the middle element as `(left + right) / 2`. Let's call this element as `mid`. This is a $$O(1)$$ time operation and is the only major improvement over the previous algorithm.\n3. The middle element forms the root of the BST.\n4. Recursively form binary search trees on the two halves of the array represented by `(left, mid - 1)` and `(mid + 1, right)` respectively.\n\nLet's look at the implementation for this algorithm and then we will get to the complexity analysis.\n\n<iframe src=\"https://leetcode.com/playground/c8hTLmwD/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"c8hTLmwD\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: The time complexity comes down to just $$O(N)$$ now since we convert the linked list to an array initially and then we convert the array into a BST. Accessing the middle element now takes $$O(1)$$ time and hence the time complexity comes down.\n* Space Complexity: Since we used extra space to bring down the time complexity, the space complexity now goes up to $$O(N)$$ as opposed to just $$O(\\log N)$$ in the previous solution. This is due to the array we construct initially.\n<br>\n<br>\n\n---\n#### Approach 3: Inorder Simulation\n\n**Intuition**\n\nAs we know, there are three different types of traversals for a binary tree:\n\n* Inorder\n* Preorder and\n* Postorder traversals.\n\nThe inorder traversal on a binary search tree leads to a very interesting outcome.\n\n> Elements processed in the inorder fashion on a binary search tree turn out to be sorted in ascending order.\n\nThe approach listed here make use of this idea to formulate the construction of a binary search tree. The reason we are able to use this idea in this problem is because we are given a `sorted` linked list initially.\n\nBefore looking at the algorithm, let us look at how the inorder traversal actually leads to a sorted order of nodes' values.\n\n<div>\n<center>\n<video width=\"100%\" poster=\"../Figures/109/Inorder_Traversal_1.png\" controls>\n<source src=\"../Figures/109/Animation1.mp4\" type=\"video/mp4\">\n</video>\n</center>\n</div>\n\nThe critical idea based on the inorder traversal that we will exploit to solve this problem, is:\n\n> We know that the leftmost element in the inorder traversal has to be the head of our given linked list. Similarly, the next element in the inorder traversal will be the second element in the linked list and so on. This is made possible because the initial list given to us is sorted in ascending order.\n\nNow that we have an idea about the relationship between the inorder traversal of a binary search tree and the numbers being sorted in ascending order, let's get to the algorithm.\n\n**Algorithm**\n\nLet's quickly look at a pseudo-code to make the algorithm simple to understand.\n\n<pre>\n➔ function formBst(start, end)\n➔      mid = (start + end) / 2\n➔      formBst(start, mid - 1)\n➔\n➔      TreeNode(head.val)\n➔      head = head.next\n➔       \n➔      formBst(mid + 1, end)\n➔\n</pre>\n\n1. Iterate over the linked list to find out it's length. We will make use of two different pointer variables here to mark the beginning and the end of the list. Let's call them `start` and `end` with their initial values being `0` and `length - 1` respectively.\n2. Remember, we have to simulate the inorder traversal here. We can find out the middle element by using `(start + end) / 2`. Note that we don't really find out the middle node of the linked list. We just have a variable telling us the index of the middle element. We simply need this to make recursive calls on the two halves.\n3. Recurse on the left half by using `start, mid - 1` as the starting and ending points.\n4. The invariance that we maintain in this algorithm is that whenever we are done building the left half of the BST, the head pointer in the linked list will point to the root node or the middle node (which becomes the root). So, we simply use the current value pointed to by `head` as the root node and progress the head node by once i.e. `head = head.next`\n5. We recurse on the right hand side using `mid + 1, end` as the starting and ending points.\n\nLet's look at an animation to make things even clearer.\n\n<div>\n<center>\n<video width=\"100%\" poster=\"../Figures/109/B1.png\" controls>\n<source src=\"../Figures/109/Animation3.mp4\" type=\"video/mp4\">\n</video>\n</center>\n</div>\n\n<br>\n\n<iframe src=\"https://leetcode.com/playground/V2CBnnrM/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"V2CBnnrM\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time Complexity: The time complexity is still $$O(N)$$ since we still have to process each of the nodes in the linked list once and form corresponding BST nodes.\n* Space Complexity: $$O(\\log N)$$ since now the only extra space is used by the recursion stack and since we are building a height balanced BST, the height is bounded by $$\\log N$$.\n\n\n<br /><br/>\n\n---\n\nAnalysis written by: [@sachinmalhotra1993](https://leetcode.com/sachinmalhotra1993).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "600",
+      "count": 63,
+      "average": 4.921,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[-10,-3,0,5,9]",
+  "metaData": "{\r\n  \"name\": \"sortedListToBST\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"head\",\r\n      \"type\": \"ListNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"TreeNode\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "907",
+  "questionFrontendId": "875",
+  "boundTopicId": null,
+  "title": "Koko Eating Bananas",
+  "titleSlug": "koko-eating-bananas",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Koko loves to eat bananas.&nbsp; There are <code>N</code>&nbsp;piles of bananas, the <code>i</code>-th&nbsp;pile has <code>piles[i]</code> bananas.&nbsp; The guards have gone and will come back in <code>H</code> hours.</p>\r\n\r\n<p>Koko can decide her bananas-per-hour eating speed of <code>K</code>.&nbsp; Each hour, she chooses some pile of bananas, and eats K bananas from that pile.&nbsp; If the pile has less than <code>K</code> bananas, she eats all of them instead, and won&#39;t eat any more bananas during this hour.</p>\r\n\r\n<p>Koko likes to eat slowly, but still wants to finish eating all the bananas before the guards come back.</p>\r\n\r\n<p>Return the minimum integer <code>K</code> such that she can eat all the bananas within <code>H</code> hours.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ul>\r\n</ul>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>piles = <span id=\"example-input-1-1\">[3,6,7,11]</span>, H = <span id=\"example-input-1-2\">8</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">4</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>piles = <span id=\"example-input-2-1\">[30,11,23,4,20]</span>, H = <span id=\"example-input-2-2\">5</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">30</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>piles = <span id=\"example-input-3-1\">[30,11,23,4,20]</span>, H = <span id=\"example-input-3-2\">6</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">23</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= piles.length &lt;= 10^4</code></li>\r\n\t<li><code>piles.length &lt;= H &lt;= 10^9</code></li>\r\n\t<li><code>1 &lt;= piles[i] &lt;= 10^9</code></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 446,
+  "dislikes": 48,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Minimize Max Distance to Gas Station\", \"titleSlug\": \"minimize-max-distance-to-gas-station\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "ankush23",
+      "profileUrl": "/ankush23/",
+      "avatarUrl": "https://www.gravatar.com/avatar/cc08ee0df1b73af8d410aacc2348361c.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 12}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minEatingSpeed(vector<int>& piles, int H) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minEatingSpeed(int[] piles, int H) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minEatingSpeed(self, piles, H):\n        \"\"\"\n        :type piles: List[int]\n        :type H: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minEatingSpeed(self, piles: List[int], H: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minEatingSpeed(int* piles, int pilesSize, int H){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinEatingSpeed(int[] piles, int H) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} piles\n * @param {number} H\n * @return {number}\n */\nvar minEatingSpeed = function(piles, H) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} piles\n# @param {Integer} h\n# @return {Integer}\ndef min_eating_speed(piles, h)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minEatingSpeed(_ piles: [Int], _ H: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minEatingSpeed(piles []int, H int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minEatingSpeed(piles: Array[Int], H: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minEatingSpeed(piles: IntArray, H: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_eating_speed(piles: Vec<i32>, h: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $piles\n     * @param Integer $H\n     * @return Integer\n     */\n    function minEatingSpeed($piles, $H) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"23.4K\", \"totalSubmission\": \"48K\", \"totalAcceptedRaw\": 23371, \"totalSubmissionRaw\": 48002, \"acRate\": \"48.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "514",
+    "canSeeDetail": true,
+    "url": "/articles/koko-eating-bananas/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Binary Search\n\n**Intuition**\n\nIf Koko can finish eating all the bananas (within `H` hours) with an eating speed of `K`, she can finish with a larger speed too.\n\nIf we let `possible(K)` be `true` if and only if Koko can finish with an eating speed of `K`, then there is some `X` such that `possible(K) = True` if and only if `K >= X`.\n\nFor example, with `piles = [3, 6, 7, 11]` and `H = 8`, there is some `X = 4` so that `possible(1) = possible(2) = possible(3) = False`, and `possible(4) = possible(5) = ... = True`.\n\n**Algorithm**\n\nWe can binary search on the values of `possible(K)` to find the first `X` such that `possible(X)` is `True`: that will be our answer.  Our loop invariant will be that `possible(hi)` is always `True`, and `lo` is always less than or equal to the answer.  For more information on binary search, please visit [[LeetCode Explore - Binary Search]](https://leetcode.com/explore/learn/card/binary-search/).\n\nTo find the value of `possible(K)`, (ie. whether `Koko` with an eating speed of `K` can eat all bananas in `H` hours), we simulate it.  For each pile of size `p > 0`, we can deduce that Koko finishes it in `Math.ceil(p / K) = ((p-1) // K) + 1` hours, and we add these times across all piles and compare it to `H`.\n\n\n<iframe src=\"https://leetcode.com/playground/r7NHTXn2/shared\" frameBorder=\"0\" width=\"100%\" height=\"446\" name=\"r7NHTXn2\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log W)$$, where $$N$$ is the number of piles, and $$W$$ is the maximum size of a pile.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "507",
+      "count": 16,
+      "average": 4.625,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,6,7,11]\n8",
+  "metaData": "{\r\n  \"name\": \"minEatingSpeed\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"piles\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"H\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,112 @@
+{
+  "questionId": "1200",
+  "questionFrontendId": "1272",
+  "boundTopicId": null,
+  "title": "Remove Interval",
+  "titleSlug": "remove-interval",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <strong>sorted</strong> list of disjoint <code>intervals</code>, each interval <code>intervals[i] = [a, b]</code> represents the set of real numbers&nbsp;<code>x</code> such that&nbsp;<code>a &lt;= x &lt; b</code>.</p>\n\n<p>We remove the intersections between any interval in <code>intervals</code> and the interval <code>toBeRemoved</code>.</p>\n\n<p>Return a <strong>sorted</strong>&nbsp;list of <code>intervals</code> after all such removals.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> intervals = [[0,2],[3,4],[5,7]], toBeRemoved = [1,6]\n<strong>Output:</strong> [[0,1],[6,7]]\n</pre><p><strong>Example 2:</strong></p>\n<pre><strong>Input:</strong> intervals = [[0,5]], toBeRemoved = [2,3]\n<strong>Output:</strong> [[0,2],[3,5]]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= intervals.length &lt;= 10^4</code></li>\n\t<li><code>-10^9 &lt;= intervals[i][0] &lt; intervals[i][1] &lt;= 10^9</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 43,
+  "dislikes": 5,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Line Sweep",
+      "slug": "line-sweep"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<vector<int>> removeInterval(vector<vector<int>>& intervals, vector<int>& toBeRemoved) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<List<Integer>> removeInterval(int[][] intervals, int[] toBeRemoved) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def removeInterval(self, intervals, toBeRemoved):\n        \"\"\"\n        :type intervals: List[List[int]]\n        :type toBeRemoved: List[int]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def removeInterval(self, intervals: List[List[int]], toBeRemoved: List[int]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** removeInterval(int** intervals, int intervalsSize, int* intervalsColSize, int* toBeRemoved, int toBeRemovedSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<IList<int>> RemoveInterval(int[][] intervals, int[] toBeRemoved) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} intervals\n * @param {number[]} toBeRemoved\n * @return {number[][]}\n */\nvar removeInterval = function(intervals, toBeRemoved) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} intervals\n# @param {Integer[]} to_be_removed\n# @return {Integer[][]}\ndef remove_interval(intervals, to_be_removed)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func removeInterval(_ intervals: [[Int]], _ toBeRemoved: [Int]) -> [[Int]] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func removeInterval(intervals [][]int, toBeRemoved []int) [][]int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def removeInterval(intervals: Array[Array[Int]], toBeRemoved: Array[Int]): List[List[Int]] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun removeInterval(intervals: Array<IntArray>, toBeRemoved: IntArray): List<List<Int>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn remove_interval(intervals: Vec<Vec<i32>>, to_be_removed: Vec<i32>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $intervals\n     * @param Integer[] $toBeRemoved\n     * @return Integer[][]\n     */\n    function removeInterval($intervals, $toBeRemoved) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.8K\", \"totalSubmission\": \"5K\", \"totalAcceptedRaw\": 2762, \"totalSubmissionRaw\": 5037, \"acRate\": \"54.8%\"}",
+  "hints": [
+    "Solve the problem for every interval alone.",
+    "Divide the problem into cases according to the position of the two intervals."
+  ],
+  "solution": {
+    "id": "841",
+    "canSeeDetail": true,
+    "url": "/articles/remove-interval/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Approach 1: Sweep Line, One Pass.\r\n\r\n**Best Possible Time Complexity**\r\n\r\n> What is the best possible time complexity here?\r\n\r\nThe input is sorted, that usually means _at least_ linear time complexity.\r\nIs it possible to do $$\\mathcal{O}(\\log N)$$? \r\nNo, because to copy input elements into output \r\nstill requires $$\\mathcal{O}(N)$$ time.\r\n\r\n**Sweep Line**\r\n\r\n[Sweep Line algorithm](https://en.wikipedia.org/wiki/Sweep_line_algorithm) \r\nis a sort of geometrical visualisation. \r\nLet's imagine a vertical line which is swept across the plane, \r\nstopping at some points. \r\nThat could create various situations, \r\nand the decision to make depends on the stop point.\r\n\r\n![line](../Figures/1272/sweep2.png)\r\n\r\n**Algorithm**\r\n\r\nLet's sweep the line by iterating over input intervals \r\nand consider what it could bring to us.\r\n\r\n- Current interval has no overlaps with toBeRemoved one.\r\nThat means there is nothing to take care about, \r\njust update the output.\r\n\r\n![line](../Figures/1272/no_overlaps.png)\r\n\r\n- Second situation is when toBeRemoved interval is inside of the current\r\ninterval. Then one has to add two non-overlapping parts of the \r\ncurrent interval in the output.\r\n\r\n![line](../Figures/1272/inside2.png)\r\n\r\n- \"Left\" overlap.\r\n\r\n![line](../Figures/1272/left_overlap.png)\r\n\r\n- \"Right\" overlap.\r\n\r\n![line](../Figures/1272/right_overlap.png)\r\n\r\nAnd here we are, all situations are covered, the job is done. \r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/YR4nKZHz/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"YR4nKZHz\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$ since it's one pass along\r\nthe input array.\r\n \r\n* Space complexity : $$\\mathcal{O}(N)$$ to keep the output. \r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "799",
+      "count": 2,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,2],[3,4],[5,7]]\n[1,6]",
+  "metaData": "{\n  \"name\": \"removeInterval\",\n  \"params\": [\n    {\n      \"name\": \"intervals\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"toBeRemoved\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<list<integer>>\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

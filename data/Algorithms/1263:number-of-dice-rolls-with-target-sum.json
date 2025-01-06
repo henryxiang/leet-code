@@ -1,0 +1,101 @@
+{
+  "questionId": "1263",
+  "questionFrontendId": "1155",
+  "boundTopicId": null,
+  "title": "Number of Dice Rolls With Target Sum",
+  "titleSlug": "number-of-dice-rolls-with-target-sum",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You have <code>d</code> dice, and each die has <code>f</code> faces numbered <code>1, 2, ..., f</code>.</p>\r\n\r\n<p>Return the number of possible ways (out of <code>f<sup>d</sup></code>&nbsp;total ways) <strong>modulo <code>10^9 + 7</code></strong> to roll the dice so the sum of the face up numbers equals <code>target</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> d = 1, f = 6, target = 3\r\n<strong>Output:</strong> 1\r\n<strong>Explanation: </strong>\r\nYou throw one die with 6 faces.  There is only one way to get a sum of 3.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> d = 2, f = 6, target = 7\r\n<strong>Output:</strong> 6\r\n<strong>Explanation: </strong>\r\nYou throw two dice, each with 6 faces.  There are 6 ways to get a sum of 7:\r\n1+6, 2+5, 3+4, 4+3, 5+2, 6+1.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> d = 2, f = 5, target = 10\r\n<strong>Output:</strong> 1\r\n<strong>Explanation: </strong>\r\nYou throw two dice, each with 5 faces.  There is only one way to get a sum of 10: 5+5.\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> d = 1, f = 2, target = 3\r\n<strong>Output:</strong> 0\r\n<strong>Explanation: </strong>\r\nYou throw one die with 2 faces.  There is no way to get a sum of 3.\r\n</pre>\r\n\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> d = 30, f = 30, target = 500\r\n<strong>Output:</strong> 222616187\r\n<strong>Explanation: </strong>\r\nThe answer must be returned modulo 10^9 + 7.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= d, f &lt;= 30</code></li>\r\n\t<li><code>1 &lt;= target &lt;= 1000</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 258,
+  "dislikes": 19,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "pmanvi123",
+      "profileUrl": "/pmanvi123/",
+      "avatarUrl": "https://www.gravatar.com/avatar/75026c204fc0b2d291cfa058232e0500.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numRollsToTarget(int d, int f, int target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numRollsToTarget(int d, int f, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numRollsToTarget(self, d, f, target):\n        \"\"\"\n        :type d: int\n        :type f: int\n        :type target: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numRollsToTarget(self, d: int, f: int, target: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numRollsToTarget(int d, int f, int target){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumRollsToTarget(int d, int f, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} d\n * @param {number} f\n * @param {number} target\n * @return {number}\n */\nvar numRollsToTarget = function(d, f, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} d\n# @param {Integer} f\n# @param {Integer} target\n# @return {Integer}\ndef num_rolls_to_target(d, f, target)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numRollsToTarget(_ d: Int, _ f: Int, _ target: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numRollsToTarget(d int, f int, target int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numRollsToTarget(d: Int, f: Int, target: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numRollsToTarget(d: Int, f: Int, target: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_rolls_to_target(d: i32, f: i32, target: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $d\n     * @param Integer $f\n     * @param Integer $target\n     * @return Integer\n     */\n    function numRollsToTarget($d, $f, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.1K\", \"totalSubmission\": \"33K\", \"totalAcceptedRaw\": 16088, \"totalSubmissionRaw\": 32970, \"acRate\": \"48.8%\"}",
+  "hints": [
+    "Use dynamic programming.  The states are how many dice are remaining, and what sum total you have rolled so far."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "1\n6\n3",
+  "metaData": "{\n  \"name\": \"numRollsToTarget\",\n  \"params\": [\n    {\n      \"name\": \"d\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"f\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"target\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

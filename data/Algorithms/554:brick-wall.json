@@ -1,0 +1,111 @@
+{
+  "questionId": "554",
+  "questionFrontendId": "554",
+  "boundTopicId": null,
+  "title": "Brick Wall",
+  "titleSlug": "brick-wall",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There is a brick wall in front of you. The wall is rectangular and has several rows of bricks. The bricks have the same height but different width. You want to draw a vertical line from the <b>top</b> to the <b>bottom</b> and cross the <b>least</b> bricks.</p>\r\n\r\n<p>The brick wall is represented by a list of rows. Each row is a list of integers representing the width of each brick in this row from left to right.</p>\r\n\r\n<p>If your line go through the edge of a brick, then the brick is not considered as crossed. You need to find out how to draw the line to cross the least bricks and return the number of crossed bricks.</p>\r\n\r\n<p><b>You cannot draw a line just along one of the two vertical edges of the wall, in which case the line will obviously cross no bricks. </b></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [[1,2,2,1],\r\n        [3,1,2],\r\n        [1,3,2],\r\n        [2,4],\r\n        [3,1,2],\r\n        [1,3,1,1]]\r\n\r\n<b>Output:</b> 2\r\n\r\n<b>Explanation:</b> \r\n<img src=\"https://assets.leetcode.com/uploads/2018/10/12/brick_wall.png\" style=\"width: 100%; max-width: 350px\" />\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>The width sum of bricks in different rows are the same and won&#39;t exceed INT_MAX.</li>\r\n\t<li>The number of bricks in each row is in range [1,10,000]. The height of wall is in range [1,10,000]. Total number of bricks of the wall won&#39;t exceed 20,000.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 669,
+  "dislikes": 35,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 8}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int leastBricks(vector<vector<int>>& wall) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int leastBricks(List<List<Integer>> wall) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def leastBricks(self, wall):\n        \"\"\"\n        :type wall: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def leastBricks(self, wall: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint leastBricks(int** wall, int wallSize, int* wallColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LeastBricks(IList<IList<int>> wall) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} wall\n * @return {number}\n */\nvar leastBricks = function(wall) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} wall\n# @return {Integer}\ndef least_bricks(wall)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func leastBricks(_ wall: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func leastBricks(wall [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def leastBricks(wall: List[List[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun leastBricks(wall: List<List<Int>>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn least_bricks(wall: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $wall\n     * @return Integer\n     */\n    function leastBricks($wall) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"45.8K\", \"totalSubmission\": \"94.1K\", \"totalAcceptedRaw\": 45811, \"totalSubmissionRaw\": 94107, \"acRate\": \"48.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "105",
+    "canSeeDetail": true,
+    "url": "/articles/brick-wall/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\nIn this approach, we consider the given wall as being made up of virtual bricks each of width 1. We traverse over the width of the wall only in terms of these virtual bricks.\n\nFirstly, we need to determine the total number of virtual bricks. For this, we determine the width of the given wall by summing up the widths of the bricks in the first row. This width is stored in $$sum$$. Thus, we need to traverse over the widthe $$sum$$ times now in terms of 1 unit in each iteration.\n\nWe traverse over the virtual bricks in a column by column fashion. For keeping a track of the actual position at which we are currently in any row, we make use of a $$pos$$ array. $$pos[i]$$ refers to the index of the brick in the $$i^{th}$$ row, which is being treated as the virtual brick in the current column's traversal. Further, we maintain a $$count$$ variable to keep a track of the number of bricks cut if we draw a line down at the current position.\n\nFor every row considered during the column-by-column traversal, we need to check if we've hit an actual brick boundary. This is done by updating the brick's width after the traversal. If we don't hit an actual brick boundary, we need to increment $$count$$ to reflect that drawing a line at this point leads to cutting off 1 more brick. But, if we hit an actual brick boundary, we increment the value of $$pos[i]$$, with $$i$$ referring to the current row's index. But, now if we draw a line down through this boundary, we need not increment the $$count$$.\n\nWe repeat the same process for every column of width equal to a virtual brick, and determine the minimum value of $$count$$ obtained from all such traversals.\n\nThe following animation makes the process clearer:\n\n<!--![Brick_Wall](../Figures/554_Brick_Wall_1.gif)-->\n!?!../Documents/554_Brick_Wall1.json:866,487!?!\n\n\n\n<iframe src=\"https://leetcode.com/playground/fruhzBr8/shared\" frameBorder=\"0\" name=\"fruhzBr8\" width=\"100%\" height=\"428\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n*m)$$. We traverse over the width($$n$$) of the wall $$m$$ times, where $$m$$ is the height of the wall.\n\n* Space complexity : $$O(m)$$. $$pos$$ array of size $$m$$ is used, where $$m$$ is the height of the wall.\n\n---\n#### Approach #2 Better Brute Force[Time LImit Exceeded]\n\n**Algorithm**\n\nIn this approach, instead of traversing over the columns in terms of 1 unit each time, we traverse over the columns in terms of the width of the smallest brick encountered while traversing the current column. Thus, we update $$pos$$ array and $$sums$$ appropriately depending on the width of the smallest brick. Rest of the process remains the same as the first approach.\n\nThe optimization achieved can be viewed by considering this example:\n\n```\n\n[[100, 50, 50],\n[50, 100],\n[150]]\n\n```\n\nIn this case, we directly jump over the columns in terms of widths of 50 units each time, rather than making traversals over widths incrementing by 1 unit each time.\n\n\n<iframe src=\"https://leetcode.com/playground/e58vTtJR/shared\" frameBorder=\"0\" name=\"e58vTtJR\" width=\"100%\" height=\"496\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n*m)$$. In worst case, we traverse over the length($$n$$) of the wall $$m$$ times, where $$m$$ is the height of the wall.\n\n* Space complexity : $$O(m)$$. $$pos$$ array of size $$m$$ is used, where $$m$$ is the height of the wall.\n\n---\n\n#### Approach #3 Using HashMap [Accepted]\n\n**Algorithm**\n\nIn this approach, we make use of a HashMap $$map$$ which is used to store entries in the form: $$(sum, count)$$. Here, $$sum$$ refers to the cumulative sum of the bricks' widths encountered in the current row, and $$count$$ refers to the number of times the corresponding sum is obtained. Thus, $$sum$$ in a way, represents the positions of the bricks's boundaries relative to the leftmost boundary.\n\nLet's look at the process first. We traverse over every row of the given wall. For every brick considered, we find the $$sum$$ corresponding to the sum of the bricks' widths encountered so far in the current row. If this $$sum$$'s entry doesn't exist in the $$map$$, we create a corresponding entry with an initial $$count$$ of 1. If the $$sum$$ already exists as a key, we increment its corresponding $$count$$ value.\n\nThis is done based on the following observation. We will never obtain the same value of $$sum$$ twice while traversing over a particular row. Thus, if the $$sum$$ value is repeated while traversing over the rows, it means some row's brick boundary coincides with some previous row's brick boundary. This fact is accounted for by incrementing the corresponding $$count$$ value.\n\nBut, for every row, we consider the sum only upto the second last brick, since the last boundary isn't a valid boundary for the solution.\n\nAt the end, we can obtain the maximum $$count$$ value to determine the minimum number of bricks that need to be cut to draw a vetical line through them.\n\nThe following animation makes the process clear:\n\n<!-- ![Brick_Wall](../Figures/554_Brick_Wall_2.gif) -->\n!?!../Documents/554_Brick_Wall2.json:866,487!?!\n\n<iframe src=\"https://leetcode.com/playground/miHSNYBN/shared\" frameBorder=\"0\" name=\"miHSNYBN\" width=\"100%\" height=\"377\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. We traverse over the complete bricks only once. $$n$$ is the total number of bricks in a wall.\n\n* Space complexity : $$O(m)$$. $$map$$ will contain atmost $$m$$ entries, where $$m$$ refers to the width of the wall.\n\n---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "101",
+      "count": 12,
+      "average": 4.917,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]",
+  "metaData": "{\r\n  \"name\": \"leastBricks\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"wall\",\r\n      \"type\": \"list<list<integer>>\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

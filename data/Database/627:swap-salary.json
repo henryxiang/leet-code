@@ -1,0 +1,69 @@
+{
+  "questionId": "627",
+  "questionFrontendId": "627",
+  "boundTopicId": null,
+  "title": "Swap Salary",
+  "titleSlug": "swap-salary",
+  "categoryTitle": "Database",
+  "content": "<p>Given a table <code>salary</code>, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a <strong>single update statement</strong> and no intermediate temp table.</p>\r\n\r\n<p>Note that you must write a single update statement, <strong>DO NOT</strong> write any select statement for this problem.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n| id | name | sex | salary |\r\n|----|------|-----|--------|\r\n| 1  | A    | m   | 2500   |\r\n| 2  | B    | f   | 1500   |\r\n| 3  | C    | m   | 5500   |\r\n| 4  | D    | f   | 500    |\r\n</pre>\r\nAfter running your <strong>update</strong> statement, the above salary table should have the following rows:\r\n\r\n<pre>\r\n| id | name | sex | salary |\r\n|----|------|-----|--------|\r\n| 1  | A    | f   | 2500   |\r\n| 2  | B    | m   | 1500   |\r\n| 3  | C    | f   | 5500   |\r\n| 4  | D    | m   | 500    |\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 371,
+  "dislikes": 262,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Mr-Bin",
+      "profileUrl": "/mr-bin/",
+      "avatarUrl": "https://assets.leetcode.com/users/mr-bin/avatar_1547655304.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\r\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\r\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\r\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"87.7K\", \"totalSubmission\": \"121.6K\", \"totalAcceptedRaw\": 87660, \"totalSubmissionRaw\": 121584, \"acRate\": \"72.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "177",
+    "canSeeDetail": true,
+    "url": "/articles/swap-salary/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `UPDATE` and `CASE...WHEN` [Accepted]\n\n**Algorithm**\n\nTo dynamically set a value to a column, we can use [`UPDATE`](https://dev.mysql.com/doc/refman/5.7/en/update.html) statement together when [`CASE...WHEN...`](https://dev.mysql.com/doc/refman/5.7/en/case.html) flow control statement.\n\n**MySQL**\n\n```sql\nUPDATE salary\nSET\n    sex = CASE sex\n        WHEN 'm' THEN 'f'\n        ELSE 'm'\n    END;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "172",
+      "count": 33,
+      "average": 4.485,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"salary\":[\"id\",\"name\",\"sex\",\"salary\"]},\"rows\":{\"salary\":[[1,\"A\",\"m\",2500],[2,\"B\",\"f\",1500],[3,\"C\",\"m\",5500],[4,\"D\",\"f\",500]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"create table if not exists salary(id int, name varchar(100), sex char(1), salary int)\"\n  ],\n  \"mssql\": [\n    \"create table salary(id int, name varchar(100), sex char(1), salary int)\"\n  ],\n  \"oraclesql\": [\n    \"create table salary(id int, name varchar(100), sex char(1), salary int)\"\n  ],\n  \"database\": true,\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "create table if not exists salary(id int, name varchar(100), sex char(1), salary int)",
+    "Truncate table salary",
+    "insert into salary (id, name, sex, salary) values ('1', 'A', 'm', '2500')",
+    "insert into salary (id, name, sex, salary) values ('2', 'B', 'f', '1500')",
+    "insert into salary (id, name, sex, salary) values ('3', 'C', 'm', '5500')",
+    "insert into salary (id, name, sex, salary) values ('4', 'D', 'f', '500')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

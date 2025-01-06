@@ -1,0 +1,112 @@
+{
+  "questionId": "69",
+  "questionFrontendId": "69",
+  "boundTopicId": null,
+  "title": "Sqrt(x)",
+  "titleSlug": "sqrtx",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Implement <code>int sqrt(int x)</code>.</p>\r\n\r\n<p>Compute and return the square root of <em>x</em>, where&nbsp;<em>x</em>&nbsp;is guaranteed to be a non-negative integer.</p>\r\n\r\n<p>Since the return type&nbsp;is an integer, the decimal digits are truncated and only the integer part of the result&nbsp;is returned.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 4\r\n<strong>Output:</strong> 2\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 8\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> The square root of 8 is 2.82842..., and since \r\n&nbsp;            the decimal part is truncated, 2 is returned.\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 980,
+  "dislikes": 1621,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Pow(x, n)\", \"titleSlug\": \"powx-n\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Valid Perfect Square\", \"titleSlug\": \"valid-perfect-square\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int mySqrt(int x) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int mySqrt(int x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def mySqrt(self, x):\n        \"\"\"\n        :type x: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def mySqrt(self, x: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint mySqrt(int x){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MySqrt(int x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} x\n * @return {number}\n */\nvar mySqrt = function(x) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} x\n# @return {Integer}\ndef my_sqrt(x)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func mySqrt(_ x: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func mySqrt(x int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def mySqrt(x: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun mySqrt(x: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn my_sqrt(x: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $x\n     * @return Integer\n     */\n    function mySqrt($x) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"454.2K\", \"totalSubmission\": \"1.4M\", \"totalAcceptedRaw\": 454175, \"totalSubmissionRaw\": 1395414, \"acRate\": \"32.5%\"}",
+  "hints": [
+    "Try exploring all integers. (Credits: @annujoshi)",
+    "Use the sorted property of integers to reduced the search space. (Credits: @annujoshi)"
+  ],
+  "solution": {
+    "id": "757",
+    "canSeeDetail": true,
+    "url": "/articles/sqrtx/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Integer Square Root\r\n\r\nThe value $$a$$ we're supposed to compute could be defined \r\nas $$a^2 \\le x < (a + 1)^2$$.\r\nIt is called _integer square root_.\r\nFrom geometrical points of view, it's the side of the \r\nlargest integer-side square with a surface less than x. \r\n\r\n ![fig](../Figures/69/cop.png) \r\n\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Pocket Calculator Algorithm\r\n\r\nBefore going to the serious stuff, \r\nlet's first have some fun and implement \r\nthe [algorithm used by the pocket calculators](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Exponential_identity).\r\n\r\nUsually a pocket calculator computes well exponential functions and natural logarithms\r\nby having logarithm tables hardcoded or by the other means. \r\nHence the idea is to reduce the square root computation to these two algorithms as well \r\n\r\n$$\r\n\\sqrt{x} = e^{\\frac{1}{2} \\log x} \r\n$$\r\n\r\nThat's some sort of cheat because of non-elementary function usage\r\nbut it's how that actually works in a real life.\r\n\r\n![fig](../Figures/69/leet.png) \r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/UXzJkN8D/shared\" frameBorder=\"0\" width=\"100%\" height=\"208\" name=\"UXzJkN8D\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(1)$$. \r\n\r\n* Space complexity : $$\\mathcal{O}(1)$$.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Binary Search\r\n\r\n**Intuition**\r\n\r\nLet's go back to the interview context.\r\nFor $$x \\ge 2$$ the square root is always smaller \r\nthan $$x / 2$$ and larger than 0 : $$0 < a < x / 2$$.   \r\nSince $$a$$ is an integer, \r\nthe problem goes down to the iteration over the \r\nsorted set of integer numbers.\r\nHere the binary search enters the scene. \r\n\r\n![fig](../Figures/69/binary.png)\r\n\r\n**Algorithm**\r\n\r\n- If x < 2, return x.\r\n\r\n- Set the left boundary to 2, and the right boundary to x / 2.\r\n\r\n- While left <= right:\r\n\r\n    - Take num = (left + right) / 2 as a guess. \r\n    Compute num * num and compare it with x:\r\n    \r\n        - If num * num > x, move the right boundary right = pivot -1\r\n        \r\n        - Else, if num * num < x, move the left boundary left = pivot + 1\r\n        \r\n        - Otherwise num * num == x, \r\n        the integer square root is here, let's return it\r\n\r\n- Return right\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/zAXW8N53/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"zAXW8N53\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(\\log N)$$. \r\n\r\n    Let's compute time complexity with the help of \r\n    [master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) \r\n    $$T(N) = aT\\left(\\frac{N}{b}\\right) + \\Theta(N^d)$$.\r\n    The equation represents dividing the problem \r\n    up into $$a$$ subproblems of size $$\\frac{N}{b}$$ in $$\\Theta(N^d)$$ time. \r\n    Here at step there is only one subproblem `a = 1`, its size \r\n    is a half of the initial problem `b = 2`, \r\n    and all this happens in a constant time `d = 0`.\r\n    That means that $$\\log_b{a} = d$$ and hence we're dealing with \r\n    [case 2](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)#Case_2_example)\r\n    that results in $$\\mathcal{O}(n^{\\log_b{a}} \\log^{d + 1} N)$$\r\n    = $$\\mathcal{O}(\\log N)$$ time complexity.\r\n\r\n* Space complexity : $$\\mathcal{O}(1)$$.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 3: Recursion + Bit Shifts\r\n\r\n**Intuition**\r\n\r\nLet's use recursion. Bases cases are $$\\sqrt{x} = x$$ for $$x < 2$$.\r\nNow the idea is to decrease $$x$$ recursively at each step to\r\ngo down to the base cases. \r\n\r\n> How to go down? \r\n\r\nFor example, let's notice that $$\\sqrt{x} = 2 \\times \\sqrt{\\frac{x}{4}}$$, \r\nand hence square root could be computed recursively as \r\n\r\n$$\r\n\\textrm{mySqrt}(x) = 2 \\times \\textrm{mySqrt}\\left(\\frac{x}{4}\\right)\r\n$$ \r\n\r\nOne could already stop here, but let's use \r\n[left and right shifts](https://wiki.python.org/moin/BitwiseOperators),\r\nwhich are quite fast manipulations with bits\r\n\r\n$$\r\nx << y \\qquad \\textrm{that means} \\qquad x \\times 2^y \r\n$$\r\n\r\n$$\r\nx >> y \\qquad \\textrm{that means} \\qquad \\frac{x}{2^y} \r\n$$\r\n\r\n\r\nThat means one could rewrite the recursion above as \r\n\r\n$$\r\n\\textrm{mySqrt}(x) = \\textrm{mySqrt}(x >> 2) << 1\r\n$$ \r\n\r\nin order to fasten up the computations. \r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/26iZKoYU/shared\" frameBorder=\"0\" width=\"100%\" height=\"208\" name=\"26iZKoYU\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(\\log N)$$. \r\n\r\n    Let's compute time complexity with the help of \r\n    [master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) \r\n    $$T(N) = aT\\left(\\frac{N}{b}\\right) + \\Theta(N^d)$$.\r\n    The equation represents dividing the problem \r\n    up into $$a$$ subproblems of size $$\\frac{N}{b}$$ in $$\\Theta(N^d)$$ time. \r\n    Here at step there is only one subproblem `a = 1`, its size \r\n    is a half of the initial problem `b = 2`, \r\n    and all this happens in a constant time `d = 0`.\r\n    That means that $$\\log_b{a} = d$$ and hence we're dealing with \r\n    [case 2](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)#Case_2_example)\r\n    that results in $$\\mathcal{O}(n^{\\log_b{a}} \\log^{d + 1} N)$$\r\n    = $$\\mathcal{O}(\\log N)$$ time complexity.\r\n\r\n* Space complexity : $$\\mathcal{O}(\\log N)$$ to keep the recursion stack.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 4: Newton's Method\r\n\r\n**Intuition**\r\n\r\nOne of the best and widely used methods to compute sqrt is \r\n[Newton's Method](https://en.wikipedia.org/wiki/Newton%27s_method). \r\nHere we'll implement the version without the\r\nseed trimming to keep things simple.\r\nHowever, seed trimming is a bit of math and lot of fun,\r\nso [here is a link](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Rough_estimation) \r\nif you'd like to dive in. \r\n\r\nLet's keep the [mathematical proofs](https://en.wikipedia.org/wiki/Newton%27s_method)\r\noutside of the article and just use the textbook fact that the set \r\n\r\n$$\r\nx_{k + 1} = \\frac{1}{2}\\left[x_k + \\frac{x}{x_k}\\right]\r\n$$ \r\n\r\nconverges to $$\\sqrt{x}$$ if $$x_0 = x$$. \r\nThen the things are straightforward: \r\ndefine that error should be less than 1 and proceed\r\niteratively.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/T4GzwPXW/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"T4GzwPXW\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(\\log N)$$ since the set\r\nconverges quadratically. \r\n\r\n* Space complexity : $$\\mathcal{O}(1)$$.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Compare Approaches 2, 3 and 4\r\n\r\nHere we have three algorithms with a time performance $$\\mathcal{O}(\\log N)$$,\r\nand it's a bit confusing. \r\n\r\n> Which one is performing less iterations?\r\n\r\nLet's run tests for the range of x in order to check that. \r\nHere are the results. The best one is Newton's method.\r\n\r\n![fig](../Figures/69/cp.png)\r\n\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "742",
+      "count": 23,
+      "average": 4.609,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "4",
+  "metaData": "{\r\n  \"name\": \"mySqrt\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"x\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

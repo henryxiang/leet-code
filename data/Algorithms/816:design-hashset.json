@@ -1,0 +1,103 @@
+{
+  "questionId": "816",
+  "questionFrontendId": "705",
+  "boundTopicId": null,
+  "title": "Design HashSet",
+  "titleSlug": "design-hashset",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design a HashSet&nbsp;without using any built-in hash table libraries.</p>\r\n\r\n<p>To be specific, your design should include these functions:</p>\r\n\r\n<ul>\r\n\t<li><code>add(value)</code>:&nbsp;Insert a value into the HashSet.&nbsp;</li>\r\n\t<li><code>contains(value)</code> : Return whether the value exists in the HashSet or not.</li>\r\n\t<li><code>remove(value)</code>: Remove a value in&nbsp;the HashSet. If the value does not exist in the HashSet, do nothing.</li>\r\n</ul>\r\n\r\n<p><br />\r\n<strong>Example:</strong></p>\r\n\r\n<pre>\r\nMyHashSet hashSet = new MyHashSet();\r\nhashSet.add(1); &nbsp; &nbsp; &nbsp; &nbsp; \r\nhashSet.add(2); &nbsp; &nbsp; &nbsp; &nbsp; \r\nhashSet.contains(1); &nbsp;&nbsp;&nbsp;// returns true\r\nhashSet.contains(3); &nbsp;&nbsp;&nbsp;// returns false (not found)\r\nhashSet.add(2); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\r\nhashSet.contains(2); &nbsp;&nbsp;&nbsp;// returns true\r\nhashSet.remove(2); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\r\nhashSet.contains(2); &nbsp;&nbsp;&nbsp;// returns false (already removed)\r\n</pre>\r\n\r\n<p><br />\r\n<strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>All values will be in the range of <code>[0, 1000000]</code>.</li>\r\n\t<li>The number of operations will be in the range of&nbsp;<code>[1, 10000]</code>.</li>\r\n\t<li>Please do not use the built-in HashSet library.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 206,
+  "dislikes": 51,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Design HashMap\", \"titleSlug\": \"design-hashmap\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Design Skiplist\", \"titleSlug\": \"design-skiplist\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class MyHashSet {\npublic:\n    /** Initialize your data structure here. */\n    MyHashSet() {\n        \n    }\n    \n    void add(int key) {\n        \n    }\n    \n    void remove(int key) {\n        \n    }\n    \n    /** Returns true if this set contains the specified element */\n    bool contains(int key) {\n        \n    }\n};\n\n/**\n * Your MyHashSet object will be instantiated and called as such:\n * MyHashSet* obj = new MyHashSet();\n * obj->add(key);\n * obj->remove(key);\n * bool param_3 = obj->contains(key);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class MyHashSet {\n\n    /** Initialize your data structure here. */\n    public MyHashSet() {\n        \n    }\n    \n    public void add(int key) {\n        \n    }\n    \n    public void remove(int key) {\n        \n    }\n    \n    /** Returns true if this set contains the specified element */\n    public boolean contains(int key) {\n        \n    }\n}\n\n/**\n * Your MyHashSet object will be instantiated and called as such:\n * MyHashSet obj = new MyHashSet();\n * obj.add(key);\n * obj.remove(key);\n * boolean param_3 = obj.contains(key);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class MyHashSet(object):\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def add(self, key):\n        \"\"\"\n        :type key: int\n        :rtype: None\n        \"\"\"\n        \n\n    def remove(self, key):\n        \"\"\"\n        :type key: int\n        :rtype: None\n        \"\"\"\n        \n\n    def contains(self, key):\n        \"\"\"\n        Returns true if this set contains the specified element\n        :type key: int\n        :rtype: bool\n        \"\"\"\n        \n\n\n# Your MyHashSet object will be instantiated and called as such:\n# obj = MyHashSet()\n# obj.add(key)\n# obj.remove(key)\n# param_3 = obj.contains(key)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class MyHashSet:\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def add(self, key: int) -> None:\n        \n\n    def remove(self, key: int) -> None:\n        \n\n    def contains(self, key: int) -> bool:\n        \"\"\"\n        Returns true if this set contains the specified element\n        \"\"\"\n        \n\n\n# Your MyHashSet object will be instantiated and called as such:\n# obj = MyHashSet()\n# obj.add(key)\n# obj.remove(key)\n# param_3 = obj.contains(key)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} MyHashSet;\n\n/** Initialize your data structure here. */\n\nMyHashSet* myHashSetCreate() {\n    \n}\n\nvoid myHashSetAdd(MyHashSet* obj, int key) {\n  \n}\n\nvoid myHashSetRemove(MyHashSet* obj, int key) {\n  \n}\n\n/** Returns true if this set contains the specified element */\nbool myHashSetContains(MyHashSet* obj, int key) {\n  \n}\n\nvoid myHashSetFree(MyHashSet* obj) {\n    \n}\n\n/**\n * Your MyHashSet struct will be instantiated and called as such:\n * MyHashSet* obj = myHashSetCreate();\n * myHashSetAdd(obj, key);\n \n * myHashSetRemove(obj, key);\n \n * bool param_3 = myHashSetContains(obj, key);\n \n * myHashSetFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class MyHashSet {\n\n    /** Initialize your data structure here. */\n    public MyHashSet() {\n        \n    }\n    \n    public void Add(int key) {\n        \n    }\n    \n    public void Remove(int key) {\n        \n    }\n    \n    /** Returns true if this set contains the specified element */\n    public bool Contains(int key) {\n        \n    }\n}\n\n/**\n * Your MyHashSet object will be instantiated and called as such:\n * MyHashSet obj = new MyHashSet();\n * obj.Add(key);\n * obj.Remove(key);\n * bool param_3 = obj.Contains(key);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Initialize your data structure here.\n */\nvar MyHashSet = function() {\n    \n};\n\n/** \n * @param {number} key\n * @return {void}\n */\nMyHashSet.prototype.add = function(key) {\n    \n};\n\n/** \n * @param {number} key\n * @return {void}\n */\nMyHashSet.prototype.remove = function(key) {\n    \n};\n\n/**\n * Returns true if this set contains the specified element \n * @param {number} key\n * @return {boolean}\n */\nMyHashSet.prototype.contains = function(key) {\n    \n};\n\n/** \n * Your MyHashSet object will be instantiated and called as such:\n * var obj = new MyHashSet()\n * obj.add(key)\n * obj.remove(key)\n * var param_3 = obj.contains(key)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class MyHashSet\n\n=begin\n    Initialize your data structure here.\n=end\n    def initialize()\n        \n    end\n\n\n=begin\n    :type key: Integer\n    :rtype: Void\n=end\n    def add(key)\n        \n    end\n\n\n=begin\n    :type key: Integer\n    :rtype: Void\n=end\n    def remove(key)\n        \n    end\n\n\n=begin\n    Returns true if this set contains the specified element\n    :type key: Integer\n    :rtype: Boolean\n=end\n    def contains(key)\n        \n    end\n\n\nend\n\n# Your MyHashSet object will be instantiated and called as such:\n# obj = MyHashSet.new()\n# obj.add(key)\n# obj.remove(key)\n# param_3 = obj.contains(key)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass MyHashSet {\n\n    /** Initialize your data structure here. */\n    init() {\n        \n    }\n    \n    func add(_ key: Int) {\n        \n    }\n    \n    func remove(_ key: Int) {\n        \n    }\n    \n    /** Returns true if this set contains the specified element */\n    func contains(_ key: Int) -> Bool {\n        \n    }\n}\n\n/**\n * Your MyHashSet object will be instantiated and called as such:\n * let obj = MyHashSet()\n * obj.add(key)\n * obj.remove(key)\n * let ret_3: Bool = obj.contains(key)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type MyHashSet struct {\n    \n}\n\n\n/** Initialize your data structure here. */\nfunc Constructor() MyHashSet {\n    \n}\n\n\nfunc (this *MyHashSet) Add(key int)  {\n    \n}\n\n\nfunc (this *MyHashSet) Remove(key int)  {\n    \n}\n\n\n/** Returns true if this set contains the specified element */\nfunc (this *MyHashSet) Contains(key int) bool {\n    \n}\n\n\n/**\n * Your MyHashSet object will be instantiated and called as such:\n * obj := Constructor();\n * obj.Add(key);\n * obj.Remove(key);\n * param_3 := obj.Contains(key);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class MyHashSet() {\n\n    /** Initialize your data structure here. */\n    \n\n    def add(key: Int) {\n        \n    }\n\n    def remove(key: Int) {\n        \n    }\n\n    /** Returns true if this set contains the specified element */\n    def contains(key: Int): Boolean = {\n        \n    }\n\n}\n\n/**\n * Your MyHashSet object will be instantiated and called as such:\n * var obj = new MyHashSet()\n * obj.add(key)\n * obj.remove(key)\n * var param_3 = obj.contains(key)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class MyHashSet() {\n\n    /** Initialize your data structure here. */\n    \n\n    fun add(key: Int) {\n        \n    }\n\n    fun remove(key: Int) {\n        \n    }\n\n    /** Returns true if this set contains the specified element */\n    fun contains(key: Int): Boolean {\n        \n    }\n\n}\n\n/**\n * Your MyHashSet object will be instantiated and called as such:\n * var obj = MyHashSet()\n * obj.add(key)\n * obj.remove(key)\n * var param_3 = obj.contains(key)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct MyHashSet {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl MyHashSet {\n\n    /** Initialize your data structure here. */\n    fn new() -> Self {\n        \n    }\n    \n    fn add(&self, key: i32) {\n        \n    }\n    \n    fn remove(&self, key: i32) {\n        \n    }\n    \n    /** Returns true if this set contains the specified element */\n    fn contains(&self, key: i32) -> bool {\n        \n    }\n}\n\n/**\n * Your MyHashSet object will be instantiated and called as such:\n * let obj = MyHashSet::new();\n * obj.add(key);\n * obj.remove(key);\n * let ret_3: bool = obj.contains(key);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class MyHashSet {\n    /**\n     * Initialize your data structure here.\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * @param Integer $key\n     * @return NULL\n     */\n    function add($key) {\n        \n    }\n  \n    /**\n     * @param Integer $key\n     * @return NULL\n     */\n    function remove($key) {\n        \n    }\n  \n    /**\n     * Returns true if this set contains the specified element\n     * @param Integer $key\n     * @return Boolean\n     */\n    function contains($key) {\n        \n    }\n}\n\n/**\n * Your MyHashSet object will be instantiated and called as such:\n * $obj = MyHashSet();\n * $obj->add($key);\n * $obj->remove($key);\n * $ret_3 = $obj->contains($key);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"34.1K\", \"totalSubmission\": \"59.6K\", \"totalAcceptedRaw\": 34150, \"totalSubmissionRaw\": 59634, \"acRate\": \"57.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"MyHashSet\",\"add\",\"add\",\"contains\",\"contains\",\"add\",\"contains\",\"remove\",\"contains\"]\n[[],[1],[2],[1],[3],[2],[2],[2],[2]]",
+  "metaData": "{\r\n    \"classname\": \"MyHashSet\",\r\n    \"maxbytesperline\": 400000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n        ],\r\n        \"comment\": \"Initialize your data structure here.\"\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"add\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"key\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            }\r\n        },\r\n        {\r\n            \"name\" : \"remove\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"key\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            }\r\n        },\r\n        {\r\n            \"name\" : \"contains\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"key\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"boolean\"\r\n            },\r\n            \"comment\": \"Returns true if this set contains the specified element\"\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

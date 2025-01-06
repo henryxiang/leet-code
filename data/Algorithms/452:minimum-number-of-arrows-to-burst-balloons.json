@@ -1,0 +1,111 @@
+{
+  "questionId": "452",
+  "questionFrontendId": "452",
+  "boundTopicId": null,
+  "title": "Minimum Number of Arrows to Burst Balloons",
+  "titleSlug": "minimum-number-of-arrows-to-burst-balloons",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are a number of spherical balloons spread in two-dimensional space. For each balloon, provided input is the start and end coordinates of the horizontal diameter. Since it&#39;s horizontal, y-coordinates don&#39;t matter and hence the x-coordinates of start and end of the diameter suffice. Start is always smaller than end. There will be at most 10<sup>4</sup> balloons.</p>\r\n\r\n<p>An arrow can be shot up exactly vertically from different points along the x-axis. A balloon with x<sub>start</sub> and x<sub>end</sub> bursts by an arrow shot at x if x<sub>start</sub> &le; x &le; x<sub>end</sub>. There is no limit to the number of arrows that can be shot. An arrow once shot keeps travelling up infinitely. The problem is to find the minimum number of arrows that must be shot to burst all balloons.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b>\r\n[[10,16], [2,8], [1,6], [7,12]]\r\n\r\n<b>Output:</b>\r\n2\r\n\r\n<b>Explanation:</b>\r\nOne way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8] and [1,6]) and another arrow at x = 11 (bursting the other two balloons).\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 649,
+  "dislikes": 34,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Meeting Rooms II\", \"titleSlug\": \"meeting-rooms-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Non-overlapping Intervals\", \"titleSlug\": \"non-overlapping-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Leets4Eternity",
+      "profileUrl": "/leets4eternity/",
+      "avatarUrl": "https://www.gravatar.com/avatar/0f60fc33e6ec05ca2283fb6ac0330820.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int findMinArrowShots(vector<vector<int>>& points) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findMinArrowShots(int[][] points) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findMinArrowShots(self, points):\n        \"\"\"\n        :type points: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findMinArrowShots(self, points: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findMinArrowShots(int** points, int pointsSize, int* pointsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int FindMinArrowShots(int[][] points) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} points\n * @return {number}\n */\nvar findMinArrowShots = function(points) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} points\r\n# @return {Integer}\r\ndef find_min_arrow_shots(points)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func findMinArrowShots(_ points: [[Int]]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findMinArrowShots(points [][]int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def findMinArrowShots(points: Array[Array[Int]]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun findMinArrowShots(points: Array<IntArray>): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_min_arrow_shots(points: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $points\n     * @return Integer\n     */\n    function findMinArrowShots($points) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"49.5K\", \"totalSubmission\": \"103.6K\", \"totalAcceptedRaw\": 49490, \"totalSubmissionRaw\": 103611, \"acRate\": \"47.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "725",
+    "canSeeDetail": true,
+    "url": "/articles/minimum-number-of-arrows-to-burst-balloons/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Approach 1: Greedy.\r\n\r\n**Greedy algorithms**\r\n\r\nGreedy problems usually look like \r\n\"Find minimum number of _something_ to do _something_\" or \r\n\"Find maximum number of _something_ to fit in _some conditions_\", \r\nand typically propose an unsorted input.\r\n\r\n> The idea of greedy algorithm is to pick the _locally_\r\noptimal move at each step, that will lead to the _globally_ optimal solution.\r\n\r\nThe standard solution has $$\\mathcal{O}(N \\log N)$$ time complexity and consists of two parts:\r\n\r\n- Figure out how to sort the input data ($$\\mathcal{O}(N \\log N)$$ time).\r\nThat could be done directly by a sorting or indirectly by a heap usage. \r\nTypically sort is better than the heap usage because of gain in space.\r\n\r\n- Parse the sorted input to have a solution ($$\\mathcal{O}(N)$$ time). \r\n\r\nPlease notice that in case of well-sorted input one doesn't need the first \r\npart and the greedy solution could have $$\\mathcal{O}(N)$$ time complexity,\r\n[here is an example](https://leetcode.com/articles/gas-station/).\r\n\r\n> How to prove that your greedy algorithm provides globally optimal solution?\r\n\r\nUsually you could use the [proof by contradiction](https://en.wikipedia.org/wiki/Proof_by_contradiction). \r\n\r\n**Intuition**\r\n\r\nLet's consider the following combinations of the balloons.\r\n\r\n![bla](../Figures/452/balloons.png)\r\n\r\nThat's quite obvious that two arrows is enough to burst them all, let's figure out\r\nhow to compute this result with the help of greedy algorithm.\r\n\r\n![bla](../Figures/452/arrows.png)\r\n\r\nLet's sort the balloons by the end coordinate, and then check them \r\none by one. The first balloon is a green one number `0`, \r\nit ends at coordinate `6`, and there is no balloons \r\nending before it because of sorting.\r\n\r\nThe other balloons have two possibilities :\r\n\r\n- To have a start coordinate smaller than `6`, like a red balloon.\r\nThese ones could be burst together with the balloon `0` by one arrow.\r\n\r\n- To have a start coordinate larger than `6`, like a yellow balloon.\r\nThese ones couldn't be burst together with the balloon `0` by one arrow,\r\nand hence one needs to increase the number of arrows here.\r\n\r\n![bla](../Figures/452/sorted.png)\r\n\r\n> That means that one could always track the end of the current balloon,\r\nand ignore all the balloons which end before it. Once the current balloon\r\nis ended (= the next balloon starts after the current balloon),\r\none has to increase the number of arrows by one and start to track \r\nthe end of the next balloon.\r\n\r\n**Algorithm**\r\n\r\nNow the algorithm is straightforward :\r\n\r\n- Sort the balloons by end coordinate `x_end`.\r\n\r\n- Initiate the end coordinate of a balloon which ends first : \r\n`first_end = points[0][1]`.\r\n \r\n- Initiate number of arrows: `arrows = 1`.\r\n\r\n- Iterate over all balloons:\r\n\r\n    - If the balloon starts after `first_end`:\r\n        \r\n        - Increase  the number of arrows by one.\r\n        \r\n        - Set `first_end` to be equal to the end of the current\r\n        balloon.\r\n        \r\n- Return arrows.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/qmsaiL6e/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"qmsaiL6e\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N \\log N)$$ because of sorting of\r\ninput data.\r\n \r\n* Space complexity : $$\\mathcal{O}(1)$$ since it's a constant \r\nspace solution. \r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "710",
+      "count": 10,
+      "average": 4.7,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[10,16],[2,8],[1,6],[7,12]]",
+  "metaData": "{\r\n  \"name\": \"findMinArrowShots\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"points\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

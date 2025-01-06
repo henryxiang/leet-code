@@ -1,0 +1,111 @@
+{
+  "questionId": "673",
+  "questionFrontendId": "673",
+  "boundTopicId": null,
+  "title": "Number of Longest Increasing Subsequence",
+  "titleSlug": "number-of-longest-increasing-subsequence",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven an unsorted array of integers, find the number of longest increasing subsequence.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> [1,3,5,4,7]\r\n<b>Output:</b> 2\r\n<b>Explanation:</b> The two longest increasing subsequence are [1, 3, 4, 7] and [1, 3, 5, 7].\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> [2,2,2,2,2]\r\n<b>Output:</b> 5\r\n<b>Explanation:</b> The length of longest continuous increasing subsequence is 1, and there are 5 subsequences' length is 1, so output 5.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\nLength of the given array will be not exceed 2000 and the answer is guaranteed to be fit in 32-bit signed int.\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1009,
+  "dislikes": 71,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Increasing Subsequence\", \"titleSlug\": \"longest-increasing-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Continuous Increasing Subsequence\", \"titleSlug\": \"longest-continuous-increasing-subsequence\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findNumberOfLIS(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findNumberOfLIS(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findNumberOfLIS(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findNumberOfLIS(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findNumberOfLIS(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindNumberOfLIS(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar findNumberOfLIS = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef find_number_of_lis(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findNumberOfLIS(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findNumberOfLIS(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findNumberOfLIS(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findNumberOfLIS(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_number_of_lis(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function findNumberOfLIS($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"39K\", \"totalSubmission\": \"112.6K\", \"totalAcceptedRaw\": 38952, \"totalSubmissionRaw\": 112625, \"acRate\": \"34.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "279",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-longest-increasing-subsequence/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Dynamic Programming\n\n**Intuition and Algorithm**\n\nSuppose for sequences ending at `nums[i]`, we knew the length `length[i]` of the longest sequence, and the number `count[i]` of such sequences with that length.\n\nFor every `i < j` with `A[i] < A[j]`, we might append `A[j]` to a longest subsequence ending at `A[i]`.  It means that we have demonstrated `count[i]` subsequences of length `length[i] + 1`.  \n\nNow, if those sequences are longer than `length[j]`, then we know we have `count[i]` sequences of this length.  If these sequences are equal in length to `length[j]`, then we know that there are now `count[i]` additional sequences to be counted of that length (ie. `count[j] += count[i]`).\n\n<iframe src=\"https://leetcode.com/playground/NY6NUMPF/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"NY6NUMPF\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$ where $$N$$ is the length of `nums`.  There are two for-loops and the work inside is $$O(1)$$.\n\n* Space Complexity: $$O(N)$$, the space used by `lengths` and `counts`.\n<br>\n<br>\n\n---\n#### Approach 2: Segment Tree\n\n**Intuition**\n\nSuppose we knew for each length `L`, the number of sequences with length `L` ending in `x`.  Then when considering the next element of `nums`, updating our knowledge hinges on knowing the number of sequences with length `L-1` ending in `y < x`.  This type of query over an interval is a natural fit for using some sort of tree.\n\nWe could try using Fenwick trees, but we would have to store $$N$$ of them, which naively might be $$O(N^2)$$ space.  Here, we focus on an implementation of a Segment Tree.\n\n**Algorithm**\n\nImplementing Segment Trees is discussed in more detail [here](https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/).  In this approach, we will attempt a variant of segment tree that doesn't use lazy propagation.\n\nFirst, let us call the \"value\" of an interval, the longest length of an increasing subsequence, and the number of such subsequences in that interval.\n\nEach node knows about the interval of `nums` values it is considering `[node.range_left, node.range_right]`, and it knows about `node.val`, which contains information on the value of interval.  Nodes also have `node.left` and `node.right` children that represents the left and right half of the interval `node` considers.  These child nodes are created on demand as appropriate.\n\nNow, `query(node, key)` will tell us the value of the interval specified by `node`, except we'll exclude anything above `key`.  When key is outside the interval specified by `node`, we return the answer.  Otherwise, we'll divide the interval into two and query both intervals, then `merge` the result.\n\nWhat does `merge(v1, v2)` do?  Suppose two nodes specify adjacent intervals, and have corresponding values `v1 = node1.val, v2 = node2.val`.  What should the aggregate value, `v = merge(v1, v2)` be?  If there are longer subsequences in one node, then `v` will just be that.  If both nodes have longest subsequences of equal length, then we should count subsequences in both nodes.  Note that we did not have to consider cases where larger subsequences were made, since these were handled by `insert`.\n\nWhat does `insert(node, key, val)` do?  We repeatedly insert the `key` into the correct half of the interval that `node` specifies (possibly a point), and after such insertion this node's value could change, so we merge the values together again.\n\nFinally, in our main algorithm, for each `num in nums` we `query` for the value `length, count` of the interval below `num`, and we know it will lead to `count` additional sequences of length `length + 1`.  We then update our tree with that knowledge.\n\n<iframe src=\"https://leetcode.com/playground/JqcEDf3A/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"JqcEDf3A\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N\\log {N})$$ where $$N$$ is the length of `nums`.  In our main for loop, we do $$O(\\log{N})$$ work to `query` and `insert`.\n\n* Space Complexity: $$O(N)$$, the space used by the segment tree.\n<br>\n<br>\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).  Approach 2 inspired by [@dut200901102](https://leetcode.com/problems/number-of-longest-increasing-subsequence/discuss/107307/python-dp-segment_tree-onlogn).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "274",
+      "count": 30,
+      "average": 3.467,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,3,5,4,7]",
+  "metaData": "{\r\n  \"name\": \"findNumberOfLIS\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

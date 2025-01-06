@@ -1,0 +1,97 @@
+{
+  "questionId": "325",
+  "questionFrontendId": "325",
+  "boundTopicId": null,
+  "title": "Maximum Size Subarray Sum Equals k",
+  "titleSlug": "maximum-size-subarray-sum-equals-k",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <i>nums</i> and a target value <i>k</i>, find the maximum length of a subarray that sums to <i>k</i>. If there isn&#39;t one, return 0 instead.</p>\r\n\r\n<p><b>Note:</b><br />\r\nThe sum of the entire <i>nums</i> array is guaranteed to fit within the 32-bit signed integer range.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><i>nums</i> = <code>[1, -1, 5, -2, 3]</code>, <i>k</i> = <code>3</code>\r\n<strong>Output: </strong>4 \r\n<strong>Explanation: </strong>The subarray <code>[1, -1, 5, -2]</code> sums to 3 and is the longest.\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><i>nums</i> = <code>[-2, -1, 2, 1]</code>, <i>k</i> = <code>1</code>\r\n<strong>Output: </strong>2 <strong>\r\nExplanation: </strong>The subarray <code>[-1, 2]</code> sums to 1 and is the longest.</pre>\r\n\r\n<p><b>Follow Up:</b><br />\r\nCan you do it in O(<i>n</i>) time?</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 730,
+  "dislikes": 28,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Minimum Size Subarray Sum\", \"titleSlug\": \"minimum-size-subarray-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Range Sum Query - Immutable\", \"titleSlug\": \"range-sum-query-immutable\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Contiguous Array\", \"titleSlug\": \"contiguous-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Subarray Product Less Than K\", \"titleSlug\": \"subarray-product-less-than-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxSubArrayLen(vector<int>& nums, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxSubArrayLen(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxSubArrayLen(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxSubArrayLen(self, nums: List[int], k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxSubArrayLen(int* nums, int numsSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxSubArrayLen(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar maxSubArrayLen = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer}\ndef max_sub_array_len(nums, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxSubArrayLen(_ nums: [Int], _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxSubArrayLen(nums []int, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxSubArrayLen(nums: Array[Int], k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxSubArrayLen(nums: IntArray, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_sub_array_len(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer\n     */\n    function maxSubArrayLen($nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"89.9K\", \"totalSubmission\": \"195.8K\", \"totalAcceptedRaw\": 89873, \"totalSubmissionRaw\": 195827, \"acRate\": \"45.9%\"}",
+  "hints": [
+    "Try to compute a sum of a subsequence very fast, i.e in <i>O(1)</i> … Think of prefix sum array.",
+    "Given <i>S[i]</i> a partial sum that starts at position <i>0</i> and ends at <i>i</i>, what can <i>S[i - k]</i> tell you ?",
+    "Use HashMap + prefix sum array."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,-1,5,-2,3]\n3",
+  "metaData": "{\r\n  \"name\": \"maxSubArrayLen\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

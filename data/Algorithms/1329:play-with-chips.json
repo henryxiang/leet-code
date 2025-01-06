@@ -1,0 +1,106 @@
+{
+  "questionId": "1329",
+  "questionFrontendId": "1217",
+  "boundTopicId": null,
+  "title": "Play with Chips",
+  "titleSlug": "play-with-chips",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are some chips, and the i-th chip is at position <code>chips[i]</code>.</p>\n\n<p>You can perform any of the two following types of moves <strong>any number of times</strong> (possibly&nbsp;zero) <strong>on any chip</strong>:</p>\n\n<ul>\n\t<li>Move the <code>i</code>-th chip&nbsp;by&nbsp;2 units to the left or to the right with a cost of <strong>0</strong>.</li>\n\t<li>Move&nbsp;the <code>i</code>-th chip&nbsp;by&nbsp;1 unit to the left or to the right with a cost of&nbsp;<strong>1</strong>.</li>\n</ul>\n\n<p>There can be two or more chips&nbsp;at the same position initially.</p>\n\n<p>Return the&nbsp;minimum cost needed to move all the chips to the same position (any position).</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> chips = [1,2,3]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> Second chip will be moved to positon 3 with cost 1. First chip will be moved to position 3 with cost 0. Total cost is 1.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> chips = [2,2,2,3,3]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> Both fourth and fifth chip will be moved to position two with cost 1. Total minimum cost will be 2.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= chips.length &lt;= 100</code></li>\n\t<li><code>1 &lt;= chips[i] &lt;= 10^9</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 75,
+  "dislikes": 380,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Morgan Stanley\", \"slug\": \"morgan-stanley\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minCostToMoveChips(vector<int>& chips) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minCostToMoveChips(int[] chips) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minCostToMoveChips(self, chips):\n        \"\"\"\n        :type chips: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minCostToMoveChips(self, chips: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minCostToMoveChips(int* chips, int chipsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinCostToMoveChips(int[] chips) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} chips\n * @return {number}\n */\nvar minCostToMoveChips = function(chips) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} chips\n# @return {Integer}\ndef min_cost_to_move_chips(chips)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minCostToMoveChips(_ chips: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minCostToMoveChips(chips []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minCostToMoveChips(chips: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minCostToMoveChips(chips: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_cost_to_move_chips(chips: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $chips\n     * @return Integer\n     */\n    function minCostToMoveChips($chips) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"10.5K\", \"totalSubmission\": \"16.4K\", \"totalAcceptedRaw\": 10507, \"totalSubmissionRaw\": 16429, \"acRate\": \"64.0%\"}",
+  "hints": [
+    "The first move keeps the parity of the element as it is.",
+    "The second move changes the parity of the element.",
+    "Since the first move is free, if all the numbers have the same parity, the answer would be zero.",
+    "Find the minimum cost to make all the numbers have the same parity."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2,3]",
+  "metaData": "{\n  \"name\": \"minCostToMoveChips\",\n  \"params\": [\n    {\n      \"name\": \"chips\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,105 @@
+{
+  "questionId": "987",
+  "questionFrontendId": "950",
+  "boundTopicId": null,
+  "title": "Reveal Cards In Increasing Order",
+  "titleSlug": "reveal-cards-in-increasing-order",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a deck of cards, every card has a unique integer.&nbsp; You can order the deck in&nbsp;any order you want.</p>\r\n\r\n<p>Initially, all the cards start face down (unrevealed) in one deck.</p>\r\n\r\n<p>Now, you do the following steps repeatedly, until all cards are revealed:</p>\r\n\r\n<ol>\r\n\t<li>Take the top card of the deck, reveal it, and take it out of the deck.</li>\r\n\t<li>If there are still cards in the deck, put the next top card of the deck at&nbsp;the bottom of the deck.</li>\r\n\t<li>If there are still unrevealed cards, go back to step 1.&nbsp; Otherwise, stop.</li>\r\n</ol>\r\n\r\n<p>Return an ordering of the deck that would reveal the cards&nbsp;in <strong>increasing order.</strong></p>\r\n\r\n<p>The first entry in the answer is considered to be the top of the deck.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[17,13,11,2,3,5,7]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[2,13,3,11,5,17,7]</span>\r\n<strong>Explanation: </strong>\r\nWe get the deck in the order [17,13,11,2,3,5,7] (this order doesn't matter), and reorder it.\r\nAfter reordering, the deck starts as [2,13,3,11,5,17,7], where 2 is the top of the deck.\r\nWe reveal 2, and move 13 to the bottom.  The deck is now [3,11,5,17,7,13].\r\nWe reveal 3, and move 11 to the bottom.  The deck is now [5,17,7,13,11].\r\nWe reveal 5, and move 17 to the bottom.  The deck is now [7,13,11,17].\r\nWe reveal 7, and move 13 to the bottom.  The deck is now [11,17,13].\r\nWe reveal 11, and move 17 to the bottom.  The deck is now [13,17].\r\nWe reveal 13, and move 17 to the bottom.  The deck is now [17].\r\nWe reveal 17.\r\nSince all the cards revealed are in increasing order, the answer is correct.\r\n</pre>\r\n\r\n<div>\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 1000</code></li>\r\n\t<li><code>1 &lt;= A[i] &lt;= 10^6</code></li>\r\n\t<li><code>A[i] != A[j]</code>&nbsp;for all&nbsp;<code>i != j</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 548,
+  "dislikes": 111,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> deckRevealedIncreasing(vector<int>& deck) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] deckRevealedIncreasing(int[] deck) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def deckRevealedIncreasing(self, deck):\n        \"\"\"\n        :type deck: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def deckRevealedIncreasing(self, deck: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* deckRevealedIncreasing(int* deck, int deckSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] DeckRevealedIncreasing(int[] deck) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} deck\n * @return {number[]}\n */\nvar deckRevealedIncreasing = function(deck) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} deck\n# @return {Integer[]}\ndef deck_revealed_increasing(deck)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func deckRevealedIncreasing(_ deck: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func deckRevealedIncreasing(deck []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def deckRevealedIncreasing(deck: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun deckRevealedIncreasing(deck: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn deck_revealed_increasing(deck: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $deck\n     * @return Integer[]\n     */\n    function deckRevealedIncreasing($deck) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"25.8K\", \"totalSubmission\": \"35.4K\", \"totalAcceptedRaw\": 25812, \"totalSubmissionRaw\": 35417, \"acRate\": \"72.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "632",
+    "canSeeDetail": true,
+    "url": "/articles/reveal-cards-in-increasing-order/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Simulation\n\n**Intuition and Algorithm**\n\nSimulate the revealing process with a deck set to `[0, 1, 2, ...]`.  If for example this deck is revealed in the order `[0, 2, 4, ...]` then we know we need to put the smallest card in index `0`, the second smallest card in index `2`, the third smallest card in index `4`, etc.\n\n<iframe src=\"https://leetcode.com/playground/mzU2amGq/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"mzU2amGq\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the length of `deck`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "618",
+      "count": 49,
+      "average": 3.776,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[17,13,11,2,3,5,7]",
+  "metaData": "{\r\n  \"name\": \"deckRevealedIncreasing\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"deck\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

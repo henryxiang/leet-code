@@ -1,0 +1,99 @@
+{
+  "questionId": "168",
+  "questionFrontendId": "168",
+  "boundTopicId": null,
+  "title": "Excel Sheet Column Title",
+  "titleSlug": "excel-sheet-column-title",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a positive integer, return its corresponding column title as appear in an Excel sheet.</p>\r\n\r\n<p>For example:</p>\r\n\r\n<pre>\r\n    1 -&gt; A\r\n    2 -&gt; B\r\n    3 -&gt; C\r\n    ...\r\n    26 -&gt; Z\r\n    27 -&gt; AA\r\n    28 -&gt; AB \r\n    ...\r\n</pre>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 1\r\n<strong>Output:</strong> &quot;A&quot;\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 28\r\n<strong>Output:</strong> &quot;AB&quot;\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 701\r\n<strong>Output:</strong> &quot;ZY&quot;\r\n</pre>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 904,
+  "dislikes": 189,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Excel Sheet Column Number\", \"titleSlug\": \"excel-sheet-column-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "ifanchu",
+      "profileUrl": "/ifanchu/",
+      "avatarUrl": "https://www.gravatar.com/avatar/afa481773143a2473a6f787a58f0086e.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"FactSet\", \"slug\": \"factset\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Alation\", \"slug\": \"alation\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Zenefits\", \"slug\": \"zenefits\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string convertToTitle(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String convertToTitle(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def convertToTitle(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def convertToTitle(self, n: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * convertToTitle(int n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ConvertToTitle(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @return {string}\n */\nvar convertToTitle = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {String}\ndef convert_to_title(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func convertToTitle(_ n: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func convertToTitle(n int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def convertToTitle(n: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun convertToTitle(n: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn convert_to_title(n: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return String\n     */\n    function convertToTitle($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"193.9K\", \"totalSubmission\": \"647.6K\", \"totalAcceptedRaw\": 193885, \"totalSubmissionRaw\": 647600, \"acRate\": \"29.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "1",
+  "metaData": "{\r\n  \"name\": \"convertToTitle\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

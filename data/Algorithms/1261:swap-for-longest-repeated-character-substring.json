@@ -1,0 +1,101 @@
+{
+  "questionId": "1261",
+  "questionFrontendId": "1156",
+  "boundTopicId": null,
+  "title": "Swap For Longest Repeated Character Substring",
+  "titleSlug": "swap-for-longest-repeated-character-substring",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>text</code>, we are allowed to swap two of the characters in the string. Find the length of the longest substring with repeated characters.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> text = &quot;ababa&quot;\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> We can swap the first &#39;b&#39; with the last &#39;a&#39;, or the last &#39;b&#39; with the first &#39;a&#39;. Then, the longest repeated character substring is &quot;aaa&quot;, which its length is 3.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> text = &quot;aaabaaa&quot;\r\n<strong>Output:</strong> 6\r\n<strong>Explanation:</strong> Swap &#39;b&#39; with the last &#39;a&#39; (or the first &#39;a&#39;), and we get longest repeated character substring &quot;aaaaaa&quot;, which its length is 6.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> text = &quot;aaabbaaa&quot;\r\n<strong>Output:</strong> 4\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> text = &quot;aaaaa&quot;\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> No need to swap, longest repeated character substring is &quot;aaaaa&quot;, length is 5.\r\n</pre>\r\n\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> text = &quot;abcdef&quot;\r\n<strong>Output:</strong> 1\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= text.length &lt;= 20000</code></li>\r\n\t<li><code>text</code> consist of lowercase English characters only.</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 173,
+  "dislikes": 10,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxRepOpt1(string text) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxRepOpt1(String text) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxRepOpt1(self, text):\n        \"\"\"\n        :type text: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxRepOpt1(self, text: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxRepOpt1(char * text){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxRepOpt1(string text) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} text\n * @return {number}\n */\nvar maxRepOpt1 = function(text) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} text\n# @return {Integer}\ndef max_rep_opt1(text)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxRepOpt1(_ text: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxRepOpt1(text string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxRepOpt1(text: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxRepOpt1(text: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_rep_opt1(text: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $text\n     * @return Integer\n     */\n    function maxRepOpt1($text) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.9K\", \"totalSubmission\": \"12.4K\", \"totalAcceptedRaw\": 5863, \"totalSubmissionRaw\": 12436, \"acRate\": \"47.1%\"}",
+  "hints": [
+    "There are two cases:  a block of characters, or two blocks of characters between one different character. \r\n By keeping a run-length encoded version of the string, we can easily check these cases."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"ababa\"",
+  "metaData": "{\n  \"name\": \"maxRepOpt1\",\n  \"params\": [\n    {\n      \"name\": \"text\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

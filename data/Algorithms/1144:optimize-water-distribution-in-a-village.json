@@ -1,0 +1,103 @@
+{
+  "questionId": "1144",
+  "questionFrontendId": "1168",
+  "boundTopicId": null,
+  "title": "Optimize Water Distribution in a Village",
+  "titleSlug": "optimize-water-distribution-in-a-village",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are <code><font face=\"monospace\">n</font></code>&nbsp;houses in a village. We want to supply water for all the houses by building wells and laying pipes.</p>\n\n<p>For each house <code>i</code>, we can either build a well inside it directly with cost <code>wells[i]</code>, or pipe in water from another well to it. The costs to lay pipes between houses are given by the array <code>pipes</code>, where each&nbsp;<code>pipes[i] = [house1, house2, cost]</code>&nbsp;represents the cost to connect&nbsp;<code>house1</code>&nbsp;and <code>house2</code>&nbsp;together using a pipe.&nbsp;Connections are bidirectional.</p>\n\n<p>Find the minimum total cost to supply water to all houses.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/05/22/1359_ex1.png\" style=\"width: 189px; height: 196px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> n = 3, wells = [1,2,2], pipes = [[1,2,1],[2,3,1]]\n<strong>Output:</strong> 3\n<strong>Explanation: </strong>\nThe image shows the costs of connecting houses using pipes.\nThe best strategy is to build a well in the first house with cost 1 and connect the other houses to it with cost 2 so the total cost is 3.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n&nbsp;&lt;= 10000</code></li>\n\t<li><code>wells.length == n</code></li>\n\t<li><code>0 &lt;= wells[i] &lt;= 10^5</code></li>\n\t<li><code>1 &lt;= pipes.length &lt;= 10000</code></li>\n\t<li><code>1 &lt;= pipes[i][0], pipes[i][1] &lt;= n</code></li>\n\t<li><code>0 &lt;= pipes[i][2] &lt;= 10^5</code></li>\n\t<li><code>pipes[i][0] != pipes[i][1]</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 167,
+  "dislikes": 4,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minCostToSupplyWater(int n, vector<int>& wells, vector<vector<int>>& pipes) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minCostToSupplyWater(int n, int[] wells, int[][] pipes) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minCostToSupplyWater(self, n, wells, pipes):\n        \"\"\"\n        :type n: int\n        :type wells: List[int]\n        :type pipes: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minCostToSupplyWater(self, n: int, wells: List[int], pipes: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minCostToSupplyWater(int n, int* wells, int wellsSize, int** pipes, int pipesSize, int* pipesColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinCostToSupplyWater(int n, int[] wells, int[][] pipes) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number[]} wells\n * @param {number[][]} pipes\n * @return {number}\n */\nvar minCostToSupplyWater = function(n, wells, pipes) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer[]} wells\n# @param {Integer[][]} pipes\n# @return {Integer}\ndef min_cost_to_supply_water(n, wells, pipes)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minCostToSupplyWater(_ n: Int, _ wells: [Int], _ pipes: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minCostToSupplyWater(n int, wells []int, pipes [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minCostToSupplyWater(n: Int, wells: Array[Int], pipes: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minCostToSupplyWater(n: Int, wells: IntArray, pipes: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_cost_to_supply_water(n: i32, wells: Vec<i32>, pipes: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer[] $wells\n     * @param Integer[][] $pipes\n     * @return Integer\n     */\n    function minCostToSupplyWater($n, $wells, $pipes) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.2K\", \"totalSubmission\": \"7.3K\", \"totalAcceptedRaw\": 4242, \"totalSubmissionRaw\": 7277, \"acRate\": \"58.3%\"}",
+  "hints": [
+    "What if we model this problem as a graph problem?",
+    "A house is a node and a pipe is a weighted edge.",
+    "How to represent building wells in the graph model?",
+    "Add a virtual node, connect it to houses with edges weighted by the costs to build wells in these houses.",
+    "The problem is now reduced to a Minimum Spanning Tree problem."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "3\n[1,2,2]\n[[1,2,1],[2,3,1]]",
+  "metaData": "{\n  \"name\": \"minCostToSupplyWater\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"wells\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"pipes\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

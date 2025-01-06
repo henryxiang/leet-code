@@ -1,0 +1,111 @@
+{
+  "questionId": "980",
+  "questionFrontendId": "943",
+  "boundTopicId": null,
+  "title": "Find the Shortest Superstring",
+  "titleSlug": "find-the-shortest-superstring",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array A of strings, find any&nbsp;smallest string that contains each string in <code>A</code> as a&nbsp;substring.</p>\r\n\r\n<p>We may assume that no string in <code>A</code> is substring of another string in <code>A</code>.</p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[&quot;alex&quot;,&quot;loves&quot;,&quot;leetcode&quot;]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;alexlovesleetcode&quot;</span>\r\n<strong>Explanation: </strong>All permutations of &quot;alex&quot;,&quot;loves&quot;,&quot;leetcode&quot; would also be accepted.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[&quot;catg&quot;,&quot;ctaagt&quot;,&quot;gcta&quot;,&quot;ttca&quot;,&quot;atgcatc&quot;]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">&quot;gctaagttcatgcatc&quot;</span></pre>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 12</code></li>\r\n\t<li><code>1 &lt;= A[i].length &lt;= 20</code></li>\r\n</ol>\r\n\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 245,
+  "dislikes": 61,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "rahulbandari2499",
+      "profileUrl": "/rahulbandari2499/",
+      "avatarUrl": "https://www.gravatar.com/avatar/a6a8bd129e8bc32f0c947cad7ffc861a.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string shortestSuperstring(vector<string>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String shortestSuperstring(String[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestSuperstring(self, A):\n        \"\"\"\n        :type A: List[str]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestSuperstring(self, A: List[str]) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * shortestSuperstring(char ** A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ShortestSuperstring(string[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} A\n * @return {string}\n */\nvar shortestSuperstring = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} a\n# @return {String}\ndef shortest_superstring(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestSuperstring(_ A: [String]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestSuperstring(A []string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestSuperstring(A: Array[String]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestSuperstring(A: Array<String>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_superstring(a: Vec<String>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $A\n     * @return String\n     */\n    function shortestSuperstring($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.7K\", \"totalSubmission\": \"18.9K\", \"totalAcceptedRaw\": 7725, \"totalSubmissionRaw\": 18857, \"acRate\": \"41.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "619",
+    "canSeeDetail": true,
+    "url": "/articles/find-the-shortest-superstring/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Dynamic Programming\n\n**Intuition**\n\nWe have to put the words into a row, where each word may overlap the previous word.  This is because no word is contained in any word.\n\nAlso, it is sufficient to try to maximize the total overlap of the words.\n\nSay we have put some words down in our row, ending with word `A[i]`.  Now say we put down word `A[j]` as the next word, where word `j` hasn't been put down yet.  The overlap increases by `overlap(A[i], A[j])`.\n\nWe can use dynamic programming to leverage this recursion.  Let `dp(mask, i)` be the total overlap after putting some words down (represented by a bitmask `mask`), for which `A[i]` was the last word put down.  Then, the key recursion is `dp(mask ^ (1<<j), j) = max(overlap(A[i], A[j]) + dp(mask, i))`, where the `j`th bit is not set in mask, and `i` ranges over all bits set in `mask`.\n\nOf course, this only tells us what the maximum overlap is for each set of words.  We also need to remember each choice along the way (ie. the specific `i` that made `dp(mask ^ (1<<j), j)` achieve a minimum) so that we can reconstruct the answer.\n\n**Algorithm**\n\nOur algorithm has 3 main components:\n\n* Precompute `overlap(A[i], A[j])` for all possible `i, j`.\n* Calculate `dp[mask][i]`, keeping track of the \"`parent`\" `i` for each `j` as described above.\n* Reconstruct the answer using `parent` information.\n\nPlease see the implementation for more details about each section.\n\n<iframe src=\"https://leetcode.com/playground/bMRiuMrv/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"bMRiuMrv\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2 (2^N + W))$$, where $$N$$ is the number of words, and $$W$$ is the maximum length of each word.\n\n* Space Complexity:  $$O(N (2^N + W))$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "605",
+      "count": 30,
+      "average": 4.733,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"alex\",\"loves\",\"leetcode\"]",
+  "metaData": "{\r\n  \"name\": \"shortestSuperstring\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

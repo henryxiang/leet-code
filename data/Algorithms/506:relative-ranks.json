@@ -1,0 +1,94 @@
+{
+  "questionId": "506",
+  "questionFrontendId": "506",
+  "boundTopicId": null,
+  "title": "Relative Ranks",
+  "titleSlug": "relative-ranks",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven scores of <b>N</b> athletes, find their relative ranks and the people with the top three highest scores, who will be awarded medals: \"Gold Medal\", \"Silver Medal\" and \"Bronze Medal\".</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> [5, 4, 3, 2, 1]\r\n<b>Output:</b> [\"Gold Medal\", \"Silver Medal\", \"Bronze Medal\", \"4\", \"5\"]\r\n<b>Explanation:</b> The first three athletes got the top three highest scores, so they got \"Gold Medal\", \"Silver Medal\" and \"Bronze Medal\". <br/>For the left two athletes, you just need to output their relative ranks according to their scores.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>N is a positive integer and won't exceed 10,000.</li>\r\n<li>All the scores of athletes are guaranteed to be unique.</li>\r\n</ol>\r\n</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 211,
+  "dislikes": 436,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "reputation21",
+      "profileUrl": "/reputation21/",
+      "avatarUrl": "https://www.gravatar.com/avatar/4dcb427b8212d141f6b4f193049a9547.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> findRelativeRanks(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String[] findRelativeRanks(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findRelativeRanks(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findRelativeRanks(self, nums: List[int]) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** findRelativeRanks(int* nums, int numsSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string[] FindRelativeRanks(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {string[]}\n */\nvar findRelativeRanks = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {String[]}\ndef find_relative_ranks(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findRelativeRanks(_ nums: [Int]) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findRelativeRanks(nums []int) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findRelativeRanks(nums: Array[Int]): Array[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findRelativeRanks(nums: IntArray): Array<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_relative_ranks(nums: Vec<i32>) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return String[]\n     */\n    function findRelativeRanks($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"48.5K\", \"totalSubmission\": \"98.3K\", \"totalAcceptedRaw\": 48505, \"totalSubmissionRaw\": 98297, \"acRate\": \"49.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[5,4,3,2,1]",
+  "metaData": "{\r\n  \"name\": \"findRelativeRanks\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

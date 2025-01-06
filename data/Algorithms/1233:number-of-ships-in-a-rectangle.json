@@ -1,0 +1,65 @@
+{
+  "questionId": "1233",
+  "questionFrontendId": "1274",
+  "boundTopicId": null,
+  "title": "Number of Ships in a Rectangle",
+  "titleSlug": "number-of-ships-in-a-rectangle",
+  "categoryTitle": "Algorithms",
+  "content": "<p><em>(This problem is an&nbsp;<strong>interactive problem</strong>.)</em></p>\n\n<p>On the sea represented by a cartesian plane, each ship is located at an integer point, and each integer point may contain at most 1 ship.</p>\n\n<p>You have a function <code>Sea.hasShips(topRight, bottomLeft)</code> which takes two points&nbsp;as arguments and returns <code>true</code>&nbsp;if and only if there is at least one ship in the rectangle represented by the two points, including on the boundary.</p>\n\n<p>Given two points, which are the top right and bottom left corners of a rectangle, return the number of ships present in that rectangle.&nbsp;&nbsp;It is guaranteed that there are <strong>at most 10 ships</strong> in that rectangle.</p>\n\n<p>Submissions making <strong>more than 400 calls</strong> to&nbsp;<code>hasShips</code>&nbsp;will be judged <em>Wrong Answer</em>.&nbsp; Also, any solutions that attempt to circumvent the judge&nbsp;will result in disqualification.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example :</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/07/26/1445_example_1.PNG\" style=\"width: 400px; height: 404px;\" /></p>\n\n<pre>\n<strong>Input:</strong> \nships = [[1,1],[2,2],[3,3],[5,5]], topRight = [4,4], bottomLeft = [0,0]\n<strong>Output:</strong> 3\n<strong>Explanation:</strong> From [0,0] to [4,4] we can count 3 ships within the range.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>On the input <code>ships</code> is only given to initialize the map internally.&nbsp;You must solve this problem &quot;blindfolded&quot;. In other words, you must find the answer using the given <code>hasShips</code> API, without knowing the <code>ships</code>&nbsp;position.</li>\n\t<li><code>0 &lt;=&nbsp;bottomLeft[0]&nbsp;&lt;= topRight[0]&nbsp;&lt;= 1000</code></li>\n\t<li><code>0 &lt;=&nbsp;bottomLeft[1]&nbsp;&lt;= topRight[1]&nbsp;&lt;= 1000</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 48,
+  "dislikes": 4,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Sea {\n *   public:\n *     bool hasShips(vector<int> topRight, vector<int> bottomLeft);\n * };\n */\n\nclass Solution {\npublic:\n    int countShips(Sea sea, vector<int> topRight, vector<int> bottomLeft) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Sea {\n *     public boolean hasShips(int[] topRight, int[] bottomLeft);\n * }\n */\n\nclass Solution {\n    public int countShips(Sea sea, int[] topRight, int[] bottomLeft) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# \"\"\"\n# This is Sea's API interface.\n# You should not implement it, or speculate about its implementation\n# \"\"\"\n#class Sea(object):\n#    def hasShips(self, topRight, bottomLeft):\n#        \"\"\"\n#        :type topRight: Point\n#\t\t :type bottomLeft: Point\n#        :rtype bool\n#        \"\"\"\n#\n#class Point(object):\n#\tdef __init__(self, x, y):\n#\t\tself.x = x\n#\t\tself.y = y\n\nclass Solution(object):\n    def countShips(self, sea, topRight, bottomLeft):\n        \"\"\"\n        :type sea: Sea\n        :type topRight: Point\n        :type bottomLeft: Point\n        :rtype: integer\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# \"\"\"\n# This is Sea's API interface.\n# You should not implement it, or speculate about its implementation\n# \"\"\"\n#class Sea(object):\n#    def hasShips(self, topRight: 'Point', bottomLeft: 'Point') -> bool:\n#\n#class Point(object):\n#\tdef __init__(self, x: int, y: int):\n#\t\tself.x = x\n#\t\tself.y = y\n\nclass Solution(object):\n    def countShips(self, sea: 'Sea', topRight: 'Point', bottomLeft: 'Point') -> int:"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Sea {\n *     public bool HasShips(int[] topRight, int[] bottomLeft);\n * }\n */\n\nclass Solution {\n    public int CountShips(Sea sea, int[] topRight, int[] bottomLeft) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * // This is Sea's API interface.\n * // You should not implement it, or speculate about its implementation\n * function Sea() {\n *\n *     @param {integer[]} topRight\n *     @param {integer[]} bottomLeft \n *     @return {boolean}\n *     this.hasShips = function(topRight, bottomLeft) {\n *         ...\n *     };\n *\n * };\n */\n/**\n * @param {Sea} sea\n * @param {integer[]} topRight\n * @param {integer[]} bottomLeft\n * @return {integer}\n */\nvar countShips = function(sea, topRight, bottomLeft) {\n    \n};"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.6K\", \"totalSubmission\": \"2.5K\", \"totalAcceptedRaw\": 1587, \"totalSubmissionRaw\": 2472, \"acRate\": \"64.2%\"}",
+  "hints": [
+    "Use divide and conquer technique.",
+    "Divide the query rectangle into 4 rectangles.",
+    "Use recursion to continue with the rectangles that has ships only."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,1],[2,2],[3,3],[5,5]]\n[4,4]\n[0,0]",
+  "metaData": "{\n  \"name\": \"countShips\",\n  \"params\": [\n     {\n      \"name\": \"ans\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"name\": \"topRight\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"bottomLeft\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"languages\": [\n    \"java\",\n    \"python\",\n    \"python3\",\n    \"csharp\",\n    \"javascript\",\n    \"cpp\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

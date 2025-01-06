@@ -1,0 +1,106 @@
+{
+  "questionId": "843",
+  "questionFrontendId": "823",
+  "boundTopicId": null,
+  "title": "Binary Trees With Factors",
+  "titleSlug": "binary-trees-with-factors",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of unique integers, each integer is strictly greater than 1.</p>\r\n\r\n<p>We make a binary tree using these integers&nbsp;and each number may be used for any number of times.</p>\r\n\r\n<p>Each non-leaf node&#39;s&nbsp;value should be equal to the product of the values of it&#39;s children.</p>\r\n\r\n<p>How many binary trees can we make?&nbsp; Return the answer <strong>modulo 10 ** 9 + 7</strong>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>A = [2, 4]</code>\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> We can make these trees: <code>[2], [4], [4, 2, 2]</code></pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>A = [2, 4, 5, 10]</code>\r\n<strong>Output:</strong> <code>7</code>\r\n<strong>Explanation:</strong> We can make these trees: <code>[2], [4], [5], [10], [4, 2, 2], [10, 2, 5], [10, 5, 2]</code>.</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;=&nbsp;1000</code>.</li>\r\n\t<li><code>2 &lt;=&nbsp;A[i]&nbsp;&lt;=&nbsp;10 ^ 9</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 233,
+  "dislikes": 30,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ngoc_lam",
+      "profileUrl": "/ngoc_lam/",
+      "avatarUrl": "https://assets.leetcode.com/users/ngoc_lam/avatar_1528594557.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numFactoredBinaryTrees(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numFactoredBinaryTrees(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numFactoredBinaryTrees(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numFactoredBinaryTrees(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numFactoredBinaryTrees(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumFactoredBinaryTrees(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar numFactoredBinaryTrees = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef num_factored_binary_trees(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numFactoredBinaryTrees(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numFactoredBinaryTrees(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numFactoredBinaryTrees(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numFactoredBinaryTrees(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_factored_binary_trees(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function numFactoredBinaryTrees($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"9.3K\", \"totalSubmission\": \"27K\", \"totalAcceptedRaw\": 9262, \"totalSubmissionRaw\": 26990, \"acRate\": \"34.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "453",
+    "canSeeDetail": true,
+    "url": "/articles/binary-trees-with-factors/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Dynamic Programming [Accepted]\n\n**Intuition**\n\nThe largest value `v` used must be the root node in the tree.  Say `dp(v)` is the number of ways to make a tree with root node `v`.\n\nIf the root node of the tree (with value `v`) has children with values `x` and `y` (and `x * y == v`), then there are `dp(x) * dp(y)` ways to make this tree.\n\nIn total, there are $$\\sum_{\\substack{x * y = v}} \\text{dp}(x) * \\text{dp}(y)$$ ways to make a tree with root node `v`.\n\n**Algorithm**\n\nActually, let `dp[i]` be the number of ways to have a root node with value `A[i]`.\n\nSince in the above example we always have `x < v` and `y < v`, we can calculate the values of `dp[i]` in increasing order using dynamic programming.\n\nFor some root value `A[i]`, let's try to find candidates for the children with values `A[j]` and `A[i] / A[j]` (so that evidently `A[j] * (A[i] / A[j]) = A[i]`).  To do this quickly, we will need `index` which looks up this value: if `A[k] = A[i] / A[j]`, then index[A[i] / A[j]] = k`.\n\nAfter, we'll add all possible `dp[j] * dp[k]` (with `j < i, k < i`) to our answer `dp[i]`.  In our Java implementation, we carefully used `long` so avoid overflow issues.\n\n```java\nclass Solution {\n    public int numFactoredBinaryTrees(int[] A) {\n        int MOD = 1_000_000_007;\n        int N = A.length;\n        Arrays.sort(A);\n        long[] dp = new long[N];\n        Arrays.fill(dp, 1);\n\n        Map<Integer, Integer> index = new HashMap();\n        for (int i = 0; i < N; ++i)\n            index.put(A[i], i);\n\n        for (int i = 0; i < N; ++i)\n            for (int j = 0; j < i; ++j) {\n                if (A[i] % A[j] == 0) { // A[j] is left child\n                    int right = A[i] / A[j];\n                    if (index.containsKey(right)) {\n                        dp[i] = (dp[i] + dp[j] * dp[index.get(right)]) % MOD;\n                    }\n                }\n            }\n\n        long ans = 0;\n        for (long x: dp) ans += x;\n        return (int) (ans % MOD);\n    }\n}\n```\n\n```python\nclass Solution(object):\n    def numFactoredBinaryTrees(self, A):\n        MOD = 10 ** 9 + 7\n        N = len(A)\n        A.sort()\n        dp = [1] * N\n        index = {x: i for i, x in enumerate(A)}\n        for i, x in enumerate(A):\n            for j in xrange(i):\n                if x % A[j] == 0: #A[j] will be left child\n                    right = x / A[j]\n                    if right in index:\n                        dp[i] += dp[j] * dp[index[right]]\n                        dp[i] %= MOD\n\n        return sum(dp) % MOD\n```\n\n</playground>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `A`.  This comes from the two for-loops iterating `i` and `j`.\n\n* Space Complexity: $$O(N)$$, the space used by `dp` and `index`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "449",
+      "count": 10,
+      "average": 4.9,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,4]",
+  "metaData": "{\r\n  \"name\": \"numFactoredBinaryTrees\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

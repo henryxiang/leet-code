@@ -1,0 +1,99 @@
+{
+  "questionId": "487",
+  "questionFrontendId": "487",
+  "boundTopicId": null,
+  "title": "Max Consecutive Ones II",
+  "titleSlug": "max-consecutive-ones-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a binary array, find the maximum number of consecutive 1s in this array if you can flip at most one 0.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> [1,0,1,1,0]\r\n<b>Output:</b> 4\r\n<b>Explanation:</b> Flip the first zero will get the the maximum number of consecutive 1s.\r\n    After flipping, the maximum number of consecutive 1s is 4.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<ul>\r\n<li>The input array will only contain <code>0</code> and <code>1</code>.</li>\r\n<li>The length of input array is a positive integer and will not exceed 10,000</li>\r\n</ul>\r\n</p>\r\n\r\n<p><b>Follow up:</b><br />\r\nWhat if the input numbers come in one by one as an <b>infinite stream</b>? In other words, you can't store all numbers coming from the stream as it's too large to hold in memory. Could you solve it efficiently?\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 433,
+  "dislikes": 6,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Max Consecutive Ones\", \"titleSlug\": \"max-consecutive-ones\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Max Consecutive Ones III\", \"titleSlug\": \"max-consecutive-ones-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findMaxConsecutiveOnes(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findMaxConsecutiveOnes(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findMaxConsecutiveOnes(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findMaxConsecutiveOnes(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindMaxConsecutiveOnes(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar findMaxConsecutiveOnes = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef find_max_consecutive_ones(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findMaxConsecutiveOnes(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findMaxConsecutiveOnes(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findMaxConsecutiveOnes(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findMaxConsecutiveOnes(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_max_consecutive_ones(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function findMaxConsecutiveOnes($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"29.9K\", \"totalSubmission\": \"62.4K\", \"totalAcceptedRaw\": 29878, \"totalSubmissionRaw\": 62392, \"acRate\": \"47.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,0,1,1,0,1]",
+  "metaData": "{\r\n  \"name\": \"findMaxConsecutiveOnes\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

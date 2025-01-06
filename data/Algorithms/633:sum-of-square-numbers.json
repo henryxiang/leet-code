@@ -1,0 +1,111 @@
+{
+  "questionId": "633",
+  "questionFrontendId": "633",
+  "boundTopicId": null,
+  "title": "Sum of Square Numbers",
+  "titleSlug": "sum-of-square-numbers",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-negative integer <code>c</code>, your task is to decide whether there&#39;re two integers <code>a</code> and <code>b</code> such that a<sup>2</sup> + b<sup>2</sup> = c.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> 5\r\n<b>Output:</b> True\r\n<b>Explanation:</b> 1 * 1 + 2 * 2 = 5\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> 3\r\n<b>Output:</b> False\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 402,
+  "dislikes": 268,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Valid Perfect Square\", \"titleSlug\": \"valid-perfect-square\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool judgeSquareSum(int c) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean judgeSquareSum(int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def judgeSquareSum(self, c):\n        \"\"\"\n        :type c: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def judgeSquareSum(self, c: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool judgeSquareSum(int c){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool JudgeSquareSum(int c) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} c\n * @return {boolean}\n */\nvar judgeSquareSum = function(c) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} c\n# @return {Boolean}\ndef judge_square_sum(c)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func judgeSquareSum(_ c: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func judgeSquareSum(c int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def judgeSquareSum(c: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun judgeSquareSum(c: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn judge_square_sum(c: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $c\n     * @return Boolean\n     */\n    function judgeSquareSum($c) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"54.9K\", \"totalSubmission\": \"168.8K\", \"totalAcceptedRaw\": 54857, \"totalSubmissionRaw\": 168761, \"acRate\": \"32.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "192",
+    "canSeeDetail": true,
+    "url": "/articles/sum-of-square-numbers/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Brute Force\n\nThe simplest solution would be to consider every possible combination of integers $$a$$ and $$b$$ and check if the sum of their squares equals $$c$$. Now, both $$a$$ and $$b$$ can lie within the range $$(0,\\sqrt{c})$$. Thus, we need to check for the values of $$a$$ and $$b$$ in this range only.\n\n<iframe src=\"https://leetcode.com/playground/jHjno8MG/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"jHjno8MG\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(c)$$. Two loops upto $$\\sqrt{c}$$. Here, $$c$$ refers to the given integer(sum of squares).\n\n* Space complexity : $$O(1)$$. Constant extra space is used.\n<br>\n<br>\n\n---\n#### Approach 2: Better Brute Force\n\nWe can improve the last solution, if we make the following observation. For any particular $$a$$ chosen, the value of $$b$$ required to satisfy the equation $$a^2 + b^2 = c$$ will be such that $$b^2 = c - a^2$$. Thus, we need to traverse over the range $$(0, \\sqrt{c})$$ only for considering the various values of $$a$$. For every current value of $$a$$ chosen, we can determine the corresponding $$b^2$$ value and check if it is a perfect square or not. If it happens to be a perfect square, $$c$$ is a sum of squares of two integers, otherwise not.\n\nNow, to determine, if the number $$c - a^2$$ is a perfect square or not, we can make use of the following theorem:\n\n>The square of $$n^{th}$$ positive integer can be represented as a sum of first $$n$$ odd positive integers.\n \nOr in mathematical terms:\n\n$$\nn^2 = 1 + 3 + 5 + ... + (2 \\cdot n-1) = \\sum_{i=1}^{n} (2 \\cdot i - 1)\n$$\n\nTo look at the proof of this statement, look at the L.H.S. of the above statement.\n\n$$\n\\begin{aligned}\n&1 + 3 + 5 + \\ldots + (2 \\cdot n-1) \\\\\n= \\; &(2 \\cdot 1-1) + (2 \\cdot 2-1) + (2 \\cdot 3-1) + \\ldots + (2 \\cdot n-1) \\\\\n= \\; &2 \\cdot (1+2+3+....+n) - (\\underbrace{1+1+ \\ldots +1}_{n\\text{ times}}) \\\\\n= \\; &2 \\cdot \\frac{n\\;(n+1)}{2} - n \\\\\n= \\; &n\\;(n+1) - n \\\\\n= \\; &n^2 + n - n \\\\\n= \\; &n^2\n\\end{aligned}\n$$\n\nThis completes the proof of the above statement.\n\n<iframe src=\"https://leetcode.com/playground/U2tJwtas/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"U2tJwtas\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(c)$$. The total number of times the $$sum$$ is updated is: $$1 + 2 + 3 + \\ldots + \\sqrt{c} = \\frac{\\sqrt{c}\\;(\\sqrt{c}+1)}{2} = O(c)$$.\n\n* Space complexity : $$O(1)$$. Constant extra space is used.\n<br>\n<br>\n\n---\n#### Approach 3: Using Sqrt Function\n\n**Algorithm**\n\nInstead of finding if $$c - a^2$$ is a perfect square using sum of odd numbers, as done in the last approach, we can make use of the inbuilt $$sqrt$$ function and check if $$\\sqrt{c - a^2}$$ turns out to be an integer. If it happens for any value of $$a$$ in the range $$[0, \\sqrt{c}]$$, we can return a True value immediately.\n\n<iframe src=\"https://leetcode.com/playground/XxfAG3pm/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"XxfAG3pm\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(\\sqrt{c}\\log c\\big)$$. We iterate over $$\\sqrt{c}$$ values for choosing $$a$$. For every $$a$$ chosen, finding square root of $$c - a^2$$ takes $$O\\big(\\log c\\big)$$ time in the worst case.\n\n* Space complexity : $$O(1)$$. Constant extra space is used.\n<br>\n<br>\n\n---\n#### Approach 4: Binary Search\n\n**Algorithm**\n\nAnother method to check if $$c - a^2$$ is a perfect square, is by making use of Binary Search. The method remains same as that of a typical Binary Search to find a number.\nThe only difference lies in that we need to find an integer, $$mid$$ in the range $$[0, c - a^2]$$, such that this number is the square root of $$c - a^2$$.\nOr in other words, we need to find an integer, $$mid$$, in the range $$[0, c - a^2]$$, such that $$mid \\times mid = c - a^2$$.\n\nThe following animation illustrates the search process for a particular value of $$c - a^2 = 36$$.\n\n!?!../Documents/633_Sum_of_Squares.json:1000,563!?!\n\n\n<iframe src=\"https://leetcode.com/playground/rjrUuXxS/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"rjrUuXxS\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(\\sqrt{c}\\log c\\big)$$. Binary search taking $$O\\big(\\log c\\big)$$ in the worst case is done for $$\\sqrt{c}$$ values of $$a$$.\n\n* Space complexity : $$O(\\log c)$$. Binary Search will take $$O(\\log c)$$ space.\n<br>\n<br>\n\n---\n#### Approach 5: Fermat Theorem\n\n**Algorithm**\n\nThis approach is based on the following statement, which is based on Fermat's Theorem:\n\n>Any positive number $$n$$ is expressible as a sum of two squares if and only if the prime factorization of $$n$$, every prime of the form $$(4k+3)$$ occurs an even number of times.\n\nBy making use of the above theorem, we can directly find out if the given number $$c$$ can be expressed as a sum of two squares.\n\nTo do so we simply find all the prime factors of the given number $$c$$, which could range from $$[2,\\sqrt{c}]$$ along with the count of those factors, by repeated division. \nIf at any step, we find out that the number of occurences of any prime factor of the form $$(4k+3)$$ occurs an odd number of times, we can return a False value.\n\nIn case, $$c$$ itself is a prime number, it won't be divisible by any of the primes in the $$[2,\\sqrt{c}]$$. Thus, we need to check if $$c$$ can be expressed in the form of\n$$4k+3$$. If so, we need to return a False value, indicating that this prime occurs an odd number(1) of times. \n\nOtherwise, we can return a True value.\n\nThe proof of this theorem includes the knowledge of advanced mathematics and is beyond the scope of this article. However, interested reader can refer to [this](http://wstein.org/edu/124/lectures/lecture21/lecture21/node2.html) documentation.\n\n<iframe src=\"https://leetcode.com/playground/fRuxZSWf/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"fRuxZSWf\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(\\sqrt{c}\\log c\\big)$$. We find the factors of $$c$$ and their count using repeated division. We check for the factors in the range $$[0, \\sqrt{c}]$$.\nThe maximum number of times a factor can occur(repeated division can be done) is $$\\log n$$(considering 2 as the only factor, $$c=2^x$$. Thus, $$x=\\log c$$).\n\n* Space complexity : $$O(1)$$. Constant space is used.\n<br>\n<br>\n\n---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "186",
+      "count": 18,
+      "average": 4.556,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "5",
+  "metaData": "{\r\n  \"name\": \"judgeSquareSum\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"c\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

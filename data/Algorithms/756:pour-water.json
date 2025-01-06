@@ -1,0 +1,111 @@
+{
+  "questionId": "756",
+  "questionFrontendId": "755",
+  "boundTopicId": null,
+  "title": "Pour Water",
+  "titleSlug": "pour-water",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nWe are given an elevation map, <code>heights[i]</code> representing the height of the terrain at that index.  The width at each index is 1.  After <code>V</code> units of water fall at index <code>K</code>, how much water is at each index?\r\n</p><p>\r\nWater first drops at index <code>K</code> and rests on top of the highest terrain or water at that index.  Then, it flows according to the following rules:\r\n<li>If the droplet would eventually fall by moving left, then move left.</li>\r\n<li>Otherwise, if the droplet would eventually fall by moving right, then move right.</li>\r\n<li>Otherwise, rise at it's current position.</li>\r\nHere, \"eventually fall\" means that the droplet will eventually be at a lower level if it moves in that direction.\r\nAlso, \"level\" means the height of the terrain plus any water in that column.\r\n</p><p>\r\nWe can assume there's infinitely high terrain on the two sides out of bounds of the array.  Also, there could not be partial water being spread out evenly on more than 1 grid block - each unit of water has to be in exactly one block.\r\n<p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> heights = [2,1,1,2,1,2,2], V = 4, K = 3\r\n<b>Output:</b> [2,2,2,3,2,2,2]\r\n<b>Explanation:</b>\r\n#       #\r\n#       #\r\n##  # ###\r\n#########\r\n 0123456    <- index\r\n\r\nThe first drop of water lands at index K = 3:\r\n\r\n#       #\r\n#   w   #\r\n##  # ###\r\n#########\r\n 0123456    \r\n\r\nWhen moving left or right, the water can only move to the same level or a lower level.\r\n(By level, we mean the total height of the terrain plus any water in that column.)\r\nSince moving left will eventually make it fall, it moves left.\r\n(A droplet \"made to fall\" means go to a lower height than it was at previously.)\r\n\r\n#       #\r\n#       #\r\n## w# ###\r\n#########\r\n 0123456    \r\n\r\nSince moving left will not make it fall, it stays in place.  The next droplet falls:\r\n\r\n#       #\r\n#   w   #\r\n## w# ###\r\n#########\r\n 0123456  \r\n\r\nSince the new droplet moving left will eventually make it fall, it moves left.\r\nNotice that the droplet still preferred to move left,\r\neven though it could move right (and moving right makes it fall quicker.)\r\n\r\n#       #\r\n#  w    #\r\n## w# ###\r\n#########\r\n 0123456  \r\n\r\n#       #\r\n#       #\r\n##ww# ###\r\n#########\r\n 0123456  \r\n\r\nAfter those steps, the third droplet falls.\r\nSince moving left would not eventually make it fall, it tries to move right.\r\nSince moving right would eventually make it fall, it moves right.\r\n\r\n#       #\r\n#   w   #\r\n##ww# ###\r\n#########\r\n 0123456  \r\n\r\n#       #\r\n#       #\r\n##ww#w###\r\n#########\r\n 0123456  \r\n\r\nFinally, the fourth droplet falls.\r\nSince moving left would not eventually make it fall, it tries to move right.\r\nSince moving right would not eventually make it fall, it stays in place:\r\n\r\n#       #\r\n#   w   #\r\n##ww#w###\r\n#########\r\n 0123456  \r\n\r\nThe final answer is [2,2,2,3,2,2,2]:\r\n\r\n    #    \r\n ####### \r\n ####### \r\n 0123456 \r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> heights = [1,2,3,4], V = 2, K = 2\r\n<b>Output:</b> [2,3,3,4]\r\n<b>Explanation:</b>\r\nThe last droplet settles at index 1, since moving further left would not cause it to eventually fall to a lower height.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b><br />\r\n<pre>\r\n<b>Input:</b> heights = [3,1,3], V = 5, K = 1\r\n<b>Output:</b> [4,4,4]\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br><ol>\r\n<li><code>heights</code> will have length in <code>[1, 100]</code> and contain integers in <code>[0, 99]</code>.</li>\r\n<li><code>V</code> will be in range <code>[0, 2000]</code>.</li>\r\n<li><code>K</code> will be in range <code>[0, heights.length - 1]</code>.</li>\r\n</ol></p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 169,
+  "dislikes": 318,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Trapping Rain Water\", \"titleSlug\": \"trapping-rain-water\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 11}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> pourWater(vector<int>& heights, int V, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] pourWater(int[] heights, int V, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def pourWater(self, heights, V, K):\n        \"\"\"\n        :type heights: List[int]\n        :type V: int\n        :type K: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def pourWater(self, heights: List[int], V: int, K: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* pourWater(int* heights, int heightsSize, int V, int K, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] PourWater(int[] heights, int V, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} heights\n * @param {number} V\n * @param {number} K\n * @return {number[]}\n */\nvar pourWater = function(heights, V, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} heights\n# @param {Integer} v\n# @param {Integer} k\n# @return {Integer[]}\ndef pour_water(heights, v, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func pourWater(_ heights: [Int], _ V: Int, _ K: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func pourWater(heights []int, V int, K int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def pourWater(heights: Array[Int], V: Int, K: Int): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun pourWater(heights: IntArray, V: Int, K: Int): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn pour_water(heights: Vec<i32>, v: i32, k: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $heights\n     * @param Integer $V\n     * @param Integer $K\n     * @return Integer[]\n     */\n    function pourWater($heights, $V, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"18.2K\", \"totalSubmission\": \"42.6K\", \"totalAcceptedRaw\": 18173, \"totalSubmissionRaw\": 42565, \"acRate\": \"42.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "362",
+    "canSeeDetail": true,
+    "url": "/articles/pour-water/",
+    "content": "[TOC]\r\n\r\n#### Approach #1: Simulation [Accepted]\r\n\r\n**Intuition and Algorithm**\r\n\r\nWe attempt to perform the steps directly as described.\r\n\r\nFirst, notice that an index with terrain or with water is indistinguishable with respect to the flow of water.  Thus, we can model `heights` as the total level of terrain and water directly as we perform our simulation.\r\n\r\nWhen a droplet falls, we should check if it is possible for it to fall left.  For our left pointer `i = K`, if `i - 1` is in bounds and `heights[i - 1] <= heights[i]`, the water will fall to a candidate block in that direction.  We keep track of every time we actually fall at index `best`.  If we \"eventually fall\" (`best != K`) as described in the problem statement, then we will drop the water there.\r\n\r\nOtherwise, (if moving left will not cause the droplet to eventually fall), we can perform a similar check for `i = K` going right, and otherwise the droplet stays in place.\r\n\r\nFor convenience, we will name the initial array `H = heights`.\r\n\r\n<iframe src=\"https://leetcode.com/playground/zuFhiDKG/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"zuFhiDKG\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(V * N)$$, where $$N$$ is the length of `heights`.  For each of $$V$$ droplets, our while loop might iterate $$N$$ times.\r\n\r\n* Space Complexity: $$O(1)$$ in additional space complexity.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "358",
+      "count": 32,
+      "average": 2.094,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,1,1,2,1,2,2]\n4\n3",
+  "metaData": "{\r\n  \"name\": \"pourWater\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"heights\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"V\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,103 @@
+{
+  "questionId": "1151",
+  "questionFrontendId": "1215",
+  "boundTopicId": null,
+  "title": "Stepping Numbers",
+  "titleSlug": "stepping-numbers",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A <em>Stepping Number</em> is&nbsp;an integer&nbsp;such that&nbsp;all of its adjacent digits have an absolute difference of exactly <code>1</code>. For example, <code>321</code> is a Stepping Number while <code>421</code> is not.</p>\n\n<p>Given two integers <code>low</code> and <code>high</code>, find and return a <strong>sorted</strong> list of all the Stepping Numbers in the range <code>[low, high]</code>&nbsp;inclusive.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<pre><strong>Input:</strong> low = 0, high = 21\n<strong>Output:</strong> [0,1,2,3,4,5,6,7,8,9,10,12,21]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= low &lt;= high &lt;= 2 * 10^9</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 64,
+  "dislikes": 4,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "deadmans144",
+      "profileUrl": "/deadmans144/",
+      "avatarUrl": "https://assets.leetcode.com/users/deadmans144/avatar_1534770714.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Epic Systems\", \"slug\": \"epic-systems\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> countSteppingNumbers(int low, int high) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> countSteppingNumbers(int low, int high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countSteppingNumbers(self, low, high):\n        \"\"\"\n        :type low: int\n        :type high: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countSteppingNumbers(self, low: int, high: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* countSteppingNumbers(int low, int high, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> CountSteppingNumbers(int low, int high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} low\n * @param {number} high\n * @return {number[]}\n */\nvar countSteppingNumbers = function(low, high) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} low\n# @param {Integer} high\n# @return {Integer[]}\ndef count_stepping_numbers(low, high)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countSteppingNumbers(_ low: Int, _ high: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countSteppingNumbers(low int, high int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countSteppingNumbers(low: Int, high: Int): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countSteppingNumbers(low: Int, high: Int): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_stepping_numbers(low: i32, high: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $low\n     * @param Integer $high\n     * @return Integer[]\n     */\n    function countSteppingNumbers($low, $high) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.1K\", \"totalSubmission\": \"8.4K\", \"totalAcceptedRaw\": 3146, \"totalSubmissionRaw\": 8428, \"acRate\": \"37.3%\"}",
+  "hints": [
+    "Try to generate the numbers using recursion.",
+    "In one step in the recursion, add a valid digit to the right of the current number.",
+    "Save the number if it's in the range between low and high."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "0\n21",
+  "metaData": "{\n  \"name\": \"countSteppingNumbers\",\n  \"params\": [\n    {\n      \"name\": \"low\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"high\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<integer>\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

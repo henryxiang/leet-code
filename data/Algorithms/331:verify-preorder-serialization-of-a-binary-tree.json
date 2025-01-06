@@ -1,0 +1,111 @@
+{
+  "questionId": "331",
+  "questionFrontendId": "331",
+  "boundTopicId": null,
+  "title": "Verify Preorder Serialization of a Binary Tree",
+  "titleSlug": "verify-preorder-serialization-of-a-binary-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>One way to serialize a binary tree is to use pre-order traversal. When we encounter a non-null node, we record the node&#39;s value. If it is a null node, we record using a sentinel value such as <code>#</code>.</p>\r\n\r\n<pre>\r\n     _9_\r\n    /   \\\r\n   3     2\r\n  / \\   / \\\r\n 4   1  #  6\r\n/ \\ / \\   / \\\r\n# # # #   # #\r\n</pre>\r\n\r\n<p>For example, the above binary tree can be serialized to the string <code>&quot;9,3,4,#,#,1,#,#,2,#,6,#,#&quot;</code>, where <code>#</code> represents a null node.</p>\r\n\r\n<p>Given a string of comma separated values, verify whether it is a correct preorder traversal serialization of a binary tree. Find an algorithm without reconstructing the tree.</p>\r\n\r\n<p>Each comma separated value in the string must be either an integer or a character <code>&#39;#&#39;</code> representing <code>null</code> pointer.</p>\r\n\r\n<p>You may assume that the input format is always valid, for example it could never contain two consecutive commas such as <code>&quot;1,,3&quot;</code>.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><code>&quot;9,3,4,#,#,1,#,#,2,#,6,#,#&quot;</code>\r\n<strong>Output: </strong><code>true</code></pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><code>&quot;1,#&quot;</code>\r\n<strong>Output: </strong><code>false</code>\r\n</pre>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><code>&quot;9,#,#,1&quot;</code>\r\n<strong>Output: </strong><code>false</code></pre>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 613,
+  "dislikes": 37,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "dietpepsi",
+      "profileUrl": "/dietpepsi/",
+      "avatarUrl": "https://www.gravatar.com/avatar/5db7cd8986dd0171d1682b730ce85555.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isValidSerialization(string preorder) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isValidSerialization(String preorder) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isValidSerialization(self, preorder):\n        \"\"\"\n        :type preorder: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isValidSerialization(self, preorder: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isValidSerialization(char * preorder){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsValidSerialization(string preorder) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} preorder\n * @return {boolean}\n */\nvar isValidSerialization = function(preorder) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} preorder\n# @return {Boolean}\ndef is_valid_serialization(preorder)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isValidSerialization(_ preorder: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isValidSerialization(preorder string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isValidSerialization(preorder: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isValidSerialization(preorder: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_valid_serialization(preorder: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $preorder\n     * @return Boolean\n     */\n    function isValidSerialization($preorder) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"65K\", \"totalSubmission\": \"164.7K\", \"totalAcceptedRaw\": 64977, \"totalSubmissionRaw\": 164732, \"acRate\": \"39.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "756",
+    "canSeeDetail": true,
+    "url": "/articles/verify-preorder-serialization-of-a-binary-tree/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Approach 1: Iteration\r\n\r\n**Intuition**\r\n\r\nLet's start from the simplest but not optimal solution to discuss the idea.\r\n\r\nBinary tree could be considered as a number of slots to fulfill.\r\nAt the start there is just one slot available for a number \r\nor null node. \r\nBoth number and null node take one slot to be placed.\r\nFor the null node the story ends up here, \r\nwhereas the number will add into the tree two slots \r\nfor the child nodes. Each child node could be,\r\nagain, a number or a null.  \r\n \r\n> The idea is straightforward : \r\ntake the nodes one by one from preorder traversal, \r\nand compute the number of available slots.\r\nIf at the end all available slots are used up, the preorder\r\ntraversal represents the valid serialization. \r\n\r\n- In the beginning there is one available slot.   \r\n\r\n- Each number or null consumes one slot.\r\n\r\n- Null node adds no slots, whereas each number adds two slots for the\r\nchild nodes.\r\n\r\n![fig](../Figures/331/rules.png)\r\n\r\n**Algorithm**\r\n\r\n- Initiate the number of available slots: `slots = 1`.\r\n\r\n- Split preorder traversal by comma, and iterate over the resulting array. \r\nAt each step :\r\n\r\n    - Both a number or a null node take one slot : `slots = slot - 1`.\r\n    \r\n    - If the number of available slots is negative, the \r\n    preorder traversal is invalid, return False.\r\n    \r\n    - Non-empty node `node != '#'` creates two more available slots:\r\n    `slots = slots + 2`.\r\n    \r\n- Preorder traversal is valid if all available slots are used up : \r\nreturn `slots == 0`.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/rZRx4was/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"rZRx4was\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$ to iterate over the \r\nstring of length N. \r\n\r\n* Space complexity : $$\\mathcal{O}(N)$$ to keep split array in memory. \r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: One pass\r\n\r\n**Intuition**\r\n\r\nApproach 1 uses $$\\mathcal{O}(N)$$ space to keep split array in memory,\r\nand for sure that should be optimised. The idea is to \r\niterate over the string itself and not over the array of nodes.\r\n\r\nDuring the iteration, one has to update the number of\r\navailable slots at each comma character. \r\nFirst, one should decrease the number of slots by one, because \r\nboth empty and non-empty node take one slot.\r\nSecond, if the node is a non-empty one, i.e. \r\nthe character just before the comma is not equal to `#`, one\r\nshould add two more slots for the child nodes. \r\n\r\nThe last node should be considered separately, since there is \r\nno comma after it.\r\n\r\n!?!../Documents/331_LIS.json:1000,520!?!\r\n\r\n**Algorithm**\r\n\r\n- Initiate the number of available slots: `slots = 1`.\r\n\r\n- Iterate over the string. At each comma :\r\n\r\n    - Both a number or a null node take one slot : `slots = slot - 1`.\r\n    \r\n    - If the number of available slots is negative, the \r\n    preorder traversal is invalid, return False.\r\n    \r\n    - Non-empty node, detected by non-`#` character before comma,\r\n    creates two more available slots: `slots = slots + 2`.\r\n    \r\n- The last node should be considered separately, since there is \r\nno comma after it. \r\n    \r\n- Preorder traversal is valid if all available slots are used up : \r\nreturn `slots == 0`.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/ne4v46LG/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"ne4v46LG\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N)$$ to iterate over the \r\nstring of length N. \r\n\r\n* Space complexity : $$\\mathcal{O}(1)$$, it's a constant space \r\nsolution.\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "741",
+      "count": 11,
+      "average": 3.818,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"9,3,4,#,#,1,#,#,2,#,6,#,#\"",
+  "metaData": "{\r\n  \"name\": \"isValidSerialization\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"preorder\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

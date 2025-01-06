@@ -1,0 +1,68 @@
+{
+  "questionId": "613",
+  "questionFrontendId": "613",
+  "boundTopicId": null,
+  "title": "Shortest Distance in a Line",
+  "titleSlug": "shortest-distance-in-a-line",
+  "categoryTitle": "Database",
+  "content": "Table <code>point</code> holds the x coordinate of some points on x-axis in a plane, which are all integers.\r\n<p>&nbsp;</p>\r\nWrite a query to find the shortest distance between two points in these points.\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n| x   |\r\n|-----|\r\n| -1  |\r\n| 0   |\r\n| 2   |\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\nThe shortest distance is &#39;1&#39; obviously, which is from point &#39;-1&#39; to &#39;0&#39;. So the output is as below:\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n| shortest|\r\n|---------|\r\n| 1       |\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<b>Note:</b> Every point is unique, which means there is no duplicates in table <code>point</code>.\r\n\r\n<p>&nbsp;</p>\r\n<b>Follow-up:</b> What if all these points have an id and are arranged from the left most to the right most of x axis?\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 118,
+  "dislikes": 16,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Mr-Bin",
+      "profileUrl": "/mr-bin/",
+      "avatarUrl": "https://assets.leetcode.com/users/mr-bin/avatar_1547655304.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"18.6K\", \"totalSubmission\": \"24.9K\", \"totalAcceptedRaw\": 18612, \"totalSubmissionRaw\": 24858, \"acRate\": \"74.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "179",
+    "canSeeDetail": true,
+    "url": "/articles/shortest-distance-in-a-line/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `ABS()` and `MIN()` functions [Accepted]\n\n**Intuition**\n\nCalculate the distances between each two points first, and then display the minimum one.\n\n**Algorithm**\n\nTo get the distances of each two points, we need to join this table with itself and use `ABS()` function since the distance is nonnegative.\nOne trick here is to add the condition in the join to avoid calculating the distance between a point with itself.\n\n```sql\nSELECT\n    p1.x, p2.x, ABS(p1.x - p2.x) AS distance\nFROM\n    point p1\n        JOIN\n    point p2 ON p1.x != p2.x\n;\n```\n>Note: The columns p1.x, p2.x are only for demonstrating purpose, so they are not actually needed in the end.\n\nTaking the sample data for example, the output would be as below.\n```\n| x  | x  | distance |\n|----|----|----------|\n| 0  | -1 | 1        |\n| 2  | -1 | 3        |\n| -1 | 0  | 1        |\n| 2  | 0  | 2        |\n| -1 | 2  | 3        |\n| 0  | 2  | 2        |\n```\n\nAt last, use `MIN()` to select the smallest value in the *distance* column.\n\n**MySQL**\n\n```sql\nSELECT\n    MIN(ABS(p1.x - p2.x)) AS shortest\nFROM\n    point p1\n        JOIN\n    point p2 ON p1.x != p2.x\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "175",
+      "count": 13,
+      "average": 4.692,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"point\":[\"x\"]},\"rows\":{\"point\":[[-1],[0],[2]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"CREATE TABLE If Not Exists point (x INT NOT NULL, UNIQUE INDEX x_UNIQUE (x ASC))\"\r\n  ],\r\n  \"mssql\": [\r\n    \"CREATE TABLE point (x INT NOT NULL)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"CREATE TABLE point (x INT NOT NULL)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "CREATE TABLE If Not Exists point (x INT NOT NULL, UNIQUE INDEX x_UNIQUE (x ASC))",
+    "Truncate table point",
+    "insert into point (x) values ('-1')",
+    "insert into point (x) values ('0')",
+    "insert into point (x) values ('2')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

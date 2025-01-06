@@ -1,0 +1,111 @@
+{
+  "questionId": "808",
+  "questionFrontendId": "792",
+  "boundTopicId": null,
+  "title": "Number of Matching Subsequences",
+  "titleSlug": "number-of-matching-subsequences",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given string <code>S</code> and a&nbsp;dictionary of words <code>words</code>, find the number of <code>words[i]</code> that is a subsequence of <code>S</code>.</p>\r\n\r\n<pre>\r\n<strong>Example :</strong>\r\n<strong>Input:</strong> \r\nS = &quot;abcde&quot;\r\nwords = [&quot;a&quot;, &quot;bb&quot;, &quot;acd&quot;, &quot;ace&quot;]\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> There are three words in <code>words</code> that are a subsequence of <code>S</code>: &quot;a&quot;, &quot;acd&quot;, &quot;ace&quot;.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>All words in <code>words</code> and <code>S</code> will only consists of lowercase letters.</li>\r\n\t<li>The length of <code>S</code> will be in the range of <code>[1, 50000]</code>.</li>\r\n\t<li>The length of <code>words</code> will be in the range of&nbsp;<code>[1, 5000]</code>.</li>\r\n\t<li>The length of <code>words[i]</code> will be in the range of <code>[1, 50]</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 636,
+  "dislikes": 46,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Is Subsequence\", \"titleSlug\": \"is-subsequence\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Shortest Way to Form String\", \"titleSlug\": \"shortest-way-to-form-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numMatchingSubseq(string S, vector<string>& words) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numMatchingSubseq(String S, String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numMatchingSubseq(self, S, words):\n        \"\"\"\n        :type S: str\n        :type words: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numMatchingSubseq(self, S: str, words: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numMatchingSubseq(char * S, char ** words, int wordsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumMatchingSubseq(string S, string[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @param {string[]} words\n * @return {number}\n */\nvar numMatchingSubseq = function(S, words) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {String[]} words\n# @return {Integer}\ndef num_matching_subseq(s, words)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numMatchingSubseq(_ S: String, _ words: [String]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numMatchingSubseq(S string, words []string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numMatchingSubseq(S: String, words: Array[String]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numMatchingSubseq(S: String, words: Array<String>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_matching_subseq(s: String, words: Vec<String>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @param String[] $words\n     * @return Integer\n     */\n    function numMatchingSubseq($S, $words) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"29.6K\", \"totalSubmission\": \"64.5K\", \"totalAcceptedRaw\": 29640, \"totalSubmissionRaw\": 64457, \"acRate\": \"46.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "423",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-matching-subsequences/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Brute Force [Time Limit Exceeded]\r\n\r\n**Intuition and Algorithm**\r\n\r\nLet's try to check separately whether each word `words[i]` is a subsequence of `S`.\r\n\r\nFor every such `word`, we try to find the first occurrence of `word[0]` in `S`, then from that point on try to find the first occurrence of `word[1]`, and so on.\r\n\r\n<iframe src=\"https://leetcode.com/playground/jyaV2ahd/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"jyaV2ahd\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(\\text{words.length} * S\\text{.length} + \\sum_i \\text{words[i].length})$$.  For each word, our `subseq` check on word `words[i]` may take time complexity $$O(S\\text{.length} + \\text{words[i].length})$$.\r\n\r\n* Space Complexity: $$O(1)$$.  (In Java, our space complexity is $$O(S\\text{.length} + \\text{max(words[i].length)})$$, but can be made to be $$O(1)$$ with a pointer based implementation.)\r\n\r\n---\r\n#### Approach #2: Next Letter Pointers [Accepted]\r\n\r\n**Intuition**\r\n\r\nSince the length of `S` is large, let's think about ways to iterate through `S` only once, instead of many times as in the brute force solution.\r\n\r\nWe can put words into buckets by starting character.  If for example we have `words = ['dog', 'cat', 'cop']`, then we can group them `'c' : ('cat', 'cop'), 'd' : ('dog',)`.  This groups words by what letter they are currently waiting for.  Then, while iterating through letters of `S`, we will move our words through different buckets.\r\n\r\nFor example, if we have a string like `S = 'dcaog'`:\r\n\r\n* `heads = 'c' : ('cat', 'cop'), 'd' : ('dog',)` at beginning;\r\n* `heads = 'c' : ('cat', 'cop'), 'o' : ('og',)` after `S[0] = 'd'`;\r\n* `heads = 'a' : ('at',), 'o' : ('og', 'op')` after `S[0] = 'c'`;\r\n* `heads = 'o' : ('og', 'op'), 't': ('t',)` after `S[0] = 'a'`;\r\n* `heads = 'g' : ('g',), 'p': ('p',), 't': ('t',)` after `S[0] = 'o'`;\r\n* `heads = 'p': ('p',), 't': ('t',)` after `S[0] = 'g'`;\r\n\r\n**Algorithm**\r\n\r\nInstead of a dictionary, we'll use an array `heads` of length `26`, one entry for each letter of the alphabet.  For each letter in `S`, we'll take all the words waiting for that letter, and have them wait for the next letter in that word.  If we use the last letter of some word, it adds 1 to the answer.\r\n\r\nFor another description of this algorithm and a more concise implementation, please see @StefanPochmann's excellent forum post [here]( https://leetcode.com/problems/number-of-matching-subsequences/discuss/117634/Efficient-and-simple-go-through-words-in-parallel-with-explanation/).\r\n\r\n<iframe src=\"https://leetcode.com/playground/wBDe2xdv/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"wBDe2xdv\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(S\\text{.length} + \\sum_i \\text{words[i].length})$$.\r\n\r\n* Space Complexity: $$O(\\text{words.length})$$.  (In Java, our additional space complexity is $$O(\\sum_i \\text{words[i].length})$$, but can be made to be $$O(\\text{words.length})$$ with a pointer based implementation.)\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "418",
+      "count": 13,
+      "average": 4.462,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"abcde\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+  "metaData": "{\r\n  \"name\": \"numMatchingSubseq\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

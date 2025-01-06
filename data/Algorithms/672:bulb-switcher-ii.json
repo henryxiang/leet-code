@@ -1,0 +1,111 @@
+{
+  "questionId": "672",
+  "questionFrontendId": "672",
+  "boundTopicId": null,
+  "title": "Bulb Switcher II",
+  "titleSlug": "bulb-switcher-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There is a room with <code>n</code> lights which are turned on initially and 4 buttons on the wall. After performing exactly <code>m</code> unknown operations towards buttons, you need to return how many different kinds of status of the <code>n</code> lights could be.</p>\r\n\r\n<p>Suppose <code>n</code> lights are labeled as number [1, 2, 3 ..., n], function of these 4 buttons are given below:</p>\r\n\r\n<ol>\r\n\t<li>Flip all the lights.</li>\r\n\t<li>Flip lights with even numbers.</li>\r\n\t<li>Flip lights with odd numbers.</li>\r\n\t<li>Flip lights with (3k + 1) numbers, k = 0, 1, 2, ...</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> n = 1, m = 1.\r\n<b>Output:</b> 2\r\n<b>Explanation:</b> Status can be: [on], [off]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> n = 2, m = 1.\r\n<b>Output:</b> 3\r\n<b>Explanation:</b> Status can be: [on, off], [off, on], [off, off]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> n = 3, m = 1.\r\n<b>Output:</b> 4\r\n<b>Explanation:</b> Status can be: [off, on, off], [on, off, on], [off, off, off], [off, on, on].\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b> <code>n</code> and <code>m</code> both fit in range [0, 1000].</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 109,
+  "dislikes": 770,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Bulb Switcher\", \"titleSlug\": \"bulb-switcher\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int flipLights(int n, int m) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int flipLights(int n, int m) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def flipLights(self, n, m):\n        \"\"\"\n        :type n: int\n        :type m: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def flipLights(self, n: int, m: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint flipLights(int n, int m){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FlipLights(int n, int m) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number} m\n * @return {number}\n */\nvar flipLights = function(n, m) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} m\n# @return {Integer}\ndef flip_lights(n, m)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func flipLights(_ n: Int, _ m: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func flipLights(n int, m int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def flipLights(n: Int, m: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun flipLights(n: Int, m: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn flip_lights(n: i32, m: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $m\n     * @return Integer\n     */\n    function flipLights($n, $m) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"11K\", \"totalSubmission\": \"21.8K\", \"totalAcceptedRaw\": 10965, \"totalSubmissionRaw\": 21775, \"acRate\": \"50.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "302",
+    "canSeeDetail": true,
+    "url": "/articles/bulb-switcher-ii/",
+    "content": "[TOC]\n\n#### Approach #1: Reduce Search Space [Accepted]\n\n**Intuition**\n\nAs the search space is very large ($$2^N$$ states of lights, naively $$4^M$$ operation sequences), let us try to reduce it.\n\nThe first 6 lights uniquely determine the rest of the lights.  This is because every operation that modifies the $$x$$-th light also modifies the $$(x+6)$$-th light.\n\nAlso, operations commute: doing operation A followed by B is the same as doing operation B followed by A.  So we can assume we do all the operations in order.\n\nFinally, doing the same operation twice in a row is the same as doing nothing.  So we only need to consider whether each operation was done 0 or 1 times.\n\n**Algorithm**\n\nSay we do the $$i$$-th operation $$f_i$$ times.  Let's first figure out what sets of residues are possible: that is, what sets $$c_i = f_i$$ ($$\\mod 2$$ ) are possible.\n\nBecause $$c_i \\equiv f_i$$ and $$c_i \\leq f_i$$, if $$\\sum f_i \\not\\equiv \\sum c_i$$, or if $$\\sum f_i < \\sum c_i$$, it isn't possible.  Otherwise, it is possible by a simple construction: do the operations specified by $$c_i$$, then do operation number 1 with the even number of operations you have left.\n\nFor each possible set of residues, let's simulate and remember what the first 6 lights will look like, storing it in a *Set* structure `seen`.  At the end, we'll return the size of this set.\n\nIn Java, we make use of bit manipulations to manage the state of lights, where in Python we simulate it directly.\n\n<iframe src=\"https://leetcode.com/playground/pHeNoQ3Q/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"pHeNoQ3Q\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(1)$$.  Our checks are bounded by a constant.\n\n* Space Complexity: $$O(1)$$, the size of the data structures used.\n\n---\n#### Approach #2: Mathematical [Accepted]\n\n**Intuition and Algorithm**\n\nAs before, the first 6 lights uniquely determine the rest of the lights.  This is because every operation that modifies the $$x$$-th light also modifies the $$(x+6)$$-th light, so the $$x$$-th light is always equal to the $$(x+6)$$-th light.\n\nActually, the first 3 lights uniquely determine the rest of the sequence, as shown by the table below for performing the operations a, b, c, d:\n\n* Light 1 = 1 + a + c + d\n* Light 2 = 1 + a + b\n* Light 3 = 1 + a + c\n* Light 4 = 1 + a + b + d\n* Light 5 = 1 + a + c\n* Light 6 = 1 + a + b\n\nSo that (modulo 2):\n\n* Light 4 = (Light 1) + (Light 2) + (Light 3)\n* Light 5 = Light 3\n* Light 6 = Light 2\n\nThe above justifies taking $$n = min(n, 3)$$ without loss of generality.  The rest is now casework.\n\nLet's denote the state of lights by the tuple $$(a, b, c)$$.  The transitions are to XOR by $$(1, 1, 1), (0, 1, 0), (1, 0, 1),$$ or $$(1, 0, 0)$$.\n\nWhen $$m = 0$$, all the lights are on, and there is only one state $$(1, 1, 1)$$.  The answer in this case is always 1.\n\nWhen $$m = 1$$, we could get states $$(0, 0, 0)$$, $$(1, 0, 1)$$, $$(0, 1, 0)$$, or $$(0, 1, 1)$$.  The answer in this case is either $$2, 3, 4$$ for $$n = 1, 2, 3$$ respectively.\n\nWhen $$m = 2$$, we can manually check that we can get 7 states: all of them except for $$(0, 1, 1)$$.  The answer in this case is either $$2, 4, 7$$ for $$n = 1, 2, 3$$ respectively.\n\nWhen $$m = 3$$, we can get all 8 states.  The answer in this case is either $$2, 4, 8$$ for $$n = 1, 2, 3$$ respectively.\n\n<iframe src=\"https://leetcode.com/playground/yn2rvFzw/shared\" frameBorder=\"0\" width=\"100%\" height=\"208\" name=\"yn2rvFzw\"></iframe>\n\n**Complexity Analysis**\n\n* Time and Space Complexity: $$O(1)$$.  The entire program uses constants.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "297",
+      "count": 20,
+      "average": 2,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "1\n1",
+  "metaData": "{\r\n  \"name\": \"flipLights\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n        \"name\": \"m\",\r\n        \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

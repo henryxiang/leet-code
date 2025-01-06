@@ -1,0 +1,64 @@
+{
+  "questionId": "1237",
+  "questionFrontendId": "1132",
+  "boundTopicId": null,
+  "title": "Reported Posts II",
+  "titleSlug": "reported-posts-ii",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Actions</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| user_id       | int     |\n| post_id       | int     |\n| action_date   | date    |\n| action        | enum    |\n| extra         | varchar |\n+---------------+---------+\nThere is no primary key for this table, it may have duplicate rows.\nThe action column is an ENUM type of (&#39;view&#39;, &#39;like&#39;, &#39;reaction&#39;, &#39;comment&#39;, &#39;report&#39;, &#39;share&#39;).\nThe extra column has optional information about the action such as a reason for report or a type of reaction. </pre>\n\n<p>Table: <code>Removals</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| post_id       | int     |\n| remove_date   | date    | \n+---------------+---------+\npost_id is the primary key of this table.\nEach row in this table indicates that some post was removed as a result of being reported or as a result of an admin review.\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to find the average for daily percentage&nbsp;of posts that got removed after being reported as spam,&nbsp;<strong>rounded to 2 decimal places</strong>.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\nActions table:\n+---------+---------+-------------+--------+--------+\n| user_id | post_id | action_date | action | extra  |\n+---------+---------+-------------+--------+--------+\n| 1       | 1       | 2019-07-01  | view   | null   |\n| 1       | 1       | 2019-07-01  | like   | null   |\n| 1       | 1       | 2019-07-01  | share  | null   |\n| 2       | 2       | 2019-07-04  | view   | null   |\n| 2       | 2       | 2019-07-04  | report | spam   |\n| 3       | 4       | 2019-07-04  | view   | null   |\n| 3       | 4       | 2019-07-04  | report | spam   |\n| 4       | 3       | 2019-07-02  | view   | null   |\n| 4       | 3       | 2019-07-02  | report | spam   |\n| 5       | 2       | 2019-07-03  | view   | null   |\n| 5       | 2       | 2019-07-03  | report | racism |\n| 5       | 5       | 2019-07-03  | view   | null   |\n| 5       | 5       | 2019-07-03  | report | racism |\n+---------+---------+-------------+--------+--------+\n\nRemovals table:\n+---------+-------------+\n| post_id | remove_date |\n+---------+-------------+\n| 2       | 2019-07-20  |\n| 3       | 2019-07-18  |\n+---------+-------------+\n\nResult table:\n+-----------------------+\n| average_daily_percent |\n+-----------------------+\n| 75.00                 |\n+-----------------------+\nThe percentage for 2019-07-04 is 50% because only one post of two spam reported posts was removed.\nThe percentage for 2019-07-02 is 100% because one post was reported as spam and it was removed.\nThe other days had no spam reports so the average is (50 + 100) / 2 = 75%\nNote that the output is only one number and that we do not care about the remove dates.</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 22,
+  "dislikes": 44,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.9K\", \"totalSubmission\": \"8.4K\", \"totalAcceptedRaw\": 2894, \"totalSubmissionRaw\": 8370, \"acRate\": \"34.6%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Actions\":[\"user_id\",\"post_id\",\"action_date\",\"action\",\"extra\"],\"Removals\":[\"post_id\",\"remove_date\"]},\"rows\":{\"Actions\":[[1,1,\"2019-07-01\",\"view\",null],[1,1,\"2019-07-01\",\"like\",null],[1,1,\"2019-07-01\",\"share\",null],[2,2,\"2019-07-04\",\"view\",null],[2,2,\"2019-07-04\",\"report\",\"spam\"],[3,4,\"2019-07-04\",\"view\",null],[3,4,\"2019-07-04\",\"report\",\"spam\"],[4,3,\"2019-07-02\",\"view\",null],[4,3,\"2019-07-02\",\"report\",\"spam\"],[5,2,\"2019-07-03\",\"view\",null],[5,2,\"2019-07-03\",\"report\",\"racism\"],[5,5,\"2019-07-03\",\"view\",null],[5,5,\"2019-07-03\",\"report\",\"racism\"]],\"Removals\":[[2,\"2019-07-20\"],[3,\"2019-07-18\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Actions (user_id int, post_id int, action_date date, action ENUM('view', 'like', 'reaction', 'comment', 'report', 'share'), extra varchar(10))\",\n      \"create table if not exists Removals (post_id int, remove_date date)\"\n  ],\n  \"mssql\": [\n    \"create table Actions (user_id int, post_id int, action_date date, action VARCHAR(10) NOT NULL CHECK (action IN ('view', 'like', 'reaction', 'comment', 'report', 'share')), extra varchar(10))\",\n      \"create table Removals (post_id int, remove_date date)\"\n  ],\n  \"oraclesql\": [\n    \"create table Actions (user_id int, post_id int, action_date date, action VARCHAR(10) NOT NULL CHECK (action IN ('view', 'like', 'reaction', 'comment', 'report', 'share')), extra varchar(10))\",\n      \"create table Removals (post_id int, remove_date date)\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Actions (user_id int, post_id int, action_date date, action ENUM('view', 'like', 'reaction', 'comment', 'report', 'share'), extra varchar(10))",
+    "create table if not exists Removals (post_id int, remove_date date)",
+    "Truncate table Actions",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('1', '1', '2019-07-01', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('1', '1', '2019-07-01', 'like', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('1', '1', '2019-07-01', 'share', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('2', '2', '2019-07-04', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('2', '2', '2019-07-04', 'report', 'spam')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('3', '4', '2019-07-04', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('3', '4', '2019-07-04', 'report', 'spam')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('4', '3', '2019-07-02', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('4', '3', '2019-07-02', 'report', 'spam')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '2', '2019-07-03', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '2', '2019-07-03', 'report', 'racism')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '5', '2019-07-03', 'view', 'None')",
+    "insert into Actions (user_id, post_id, action_date, action, extra) values ('5', '5', '2019-07-03', 'report', 'racism')",
+    "Truncate table Removals",
+    "insert into Removals (post_id, remove_date) values ('2', '2019-07-20')",
+    "insert into Removals (post_id, remove_date) values ('3', '2019-07-18')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

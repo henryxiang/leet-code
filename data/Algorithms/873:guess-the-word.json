@@ -1,0 +1,103 @@
+{
+  "questionId": "873",
+  "questionFrontendId": "843",
+  "boundTopicId": null,
+  "title": "Guess the Word",
+  "titleSlug": "guess-the-word",
+  "categoryTitle": "Algorithms",
+  "content": "<p>This problem is an&nbsp;<strong><em>interactive problem</em></strong>&nbsp;new to the LeetCode platform.</p>\r\n\r\n<p>We are given a word list of unique words, each word is 6 letters long, and one word in this list is chosen as <strong>secret</strong>.</p>\r\n\r\n<p>You may call <code>master.guess(word)</code>&nbsp;to guess a word.&nbsp; The guessed word should have&nbsp;type <code>string</code>&nbsp;and must be from the original list&nbsp;with 6 lowercase letters.</p>\r\n\r\n<p>This function returns an&nbsp;<code>integer</code>&nbsp;type, representing&nbsp;the number of exact matches (value and position) of your guess to the <strong>secret word</strong>.&nbsp; Also, if your guess is not in the given wordlist, it will return <code>-1</code> instead.</p>\r\n\r\n<p>For each test case, you have 10 guesses to guess the word. At the end of any number of calls, if you have made 10 or less calls to <code>master.guess</code>&nbsp;and at least one of these guesses was the <strong>secret</strong>, you pass the testcase.</p>\r\n\r\n<p>Besides the example test case below, there will be 5&nbsp;additional test cases, each with 100 words in the word list.&nbsp; The letters of each word in those testcases were chosen&nbsp;independently at random from <code>&#39;a&#39;</code> to <code>&#39;z&#39;</code>, such that every word in the given word lists is unique.</p>\r\n\r\n<pre>\r\n<strong>Example 1:</strong>\r\n<strong>Input:</strong>&nbsp;secret = &quot;acckzz&quot;, wordlist = [&quot;acckzz&quot;,&quot;ccbazz&quot;,&quot;eiowzz&quot;,&quot;abcczz&quot;]\r\n\r\n<strong>Explanation:</strong>\r\n\r\n<code>master.guess(&quot;aaaaaa&quot;)</code> returns -1, because&nbsp;<code>&quot;aaaaaa&quot;</code>&nbsp;is not in wordlist.\r\n<code>master.guess(&quot;acckzz&quot;) </code>returns 6, because&nbsp;<code>&quot;acckzz&quot;</code> is secret and has all 6&nbsp;matches.\r\n<code>master.guess(&quot;ccbazz&quot;)</code> returns 3, because<code>&nbsp;&quot;ccbazz&quot;</code>&nbsp;has 3 matches.\r\n<code>master.guess(&quot;eiowzz&quot;)</code> returns 2, because&nbsp;<code>&quot;eiowzz&quot;</code>&nbsp;has 2&nbsp;matches.\r\n<code>master.guess(&quot;abcczz&quot;)</code> returns 4, because&nbsp;<code>&quot;abcczz&quot;</code> has 4 matches.\r\n\r\nWe made 5 calls to&nbsp;master.guess and one of them was the secret, so we pass the test case.\r\n</pre>\r\n\r\n<p><strong>Note:</strong>&nbsp; Any solutions that attempt to circumvent the judge&nbsp;will result in disqualification.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 382,
+  "dislikes": 419,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Minimax",
+      "slug": "minimax"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 17}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * // This is the Master's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Master {\n *   public:\n *     int guess(string word);\n * };\n */\nclass Solution {\npublic:\n    void findSecretWord(vector<string>& wordlist, Master& master) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * // This is the Master's API interface.\n * // You should not implement it, or speculate about its implementation\n * interface Master {\n *     public int guess(String word) {}\n * }\n */\nclass Solution {\n    public void findSecretWord(String[] wordlist, Master master) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# \"\"\"\n# This is Master's API interface.\n# You should not implement it, or speculate about its implementation\n# \"\"\"\n#class Master(object):\n#    def guess(self, word):\n#        \"\"\"\n#        :type word: str\n#        :rtype int\n#        \"\"\"\n\nclass Solution(object):\n    def findSecretWord(self, wordlist, master):\n        \"\"\"\n        :type wordlist: List[Str]\n        :type master: Master\n        :rtype: None\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# \"\"\"\n# This is Master's API interface.\n# You should not implement it, or speculate about its implementation\n# \"\"\"\n# class Master:\n#     def guess(self, word: str) -> int:\n\nclass Solution:\n    def findSecretWord(self, wordlist: List[str], master: 'Master') -> None:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * *********************************************************************\n * // This is the Master's API interface.\n * // You should not implement it, or speculate about its implementation\n * *********************************************************************\n *\n * int guess(Master *, char *word);\n */\nvoid findSecretWord(char** wordlist, int wordlistSize, Master* master) {\n    \n}"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * // This is the Master's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Master {\n *     public int Guess(string word);\n * }\n */\nclass Solution {\n    public void FindSecretWord(string[] wordlist, Master master) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * // This is the master's API interface.\n * // You should not implement it, or speculate about its implementation\n * function Master() {\n *\n *     @param {string[]} wordlist\n *     @param {Master} master\n *     @return {integer}\n *     this.guess = function(word) {\n *         ...\n *     };\n * };\n */\n/**\n * @param {string[]} wordlist\n * @param {Master} master\n * @return {void}\n */\nvar findSecretWord = function(wordlist, master) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "#    This is Master's API interface.\n#    You should not implement it, or speculate about its implementation\n#\n# class Master\n# =begin\n#     :type word: String\n#     :rtype: Integer\n# =end\n#     def guess(word)\n#         ...\n#     end\n# end\n#\n\n# @param {String[]} wordlist\n# @param {Master} master\n# @return {Void}\ndef find_secret_word(wordlist, master)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * // This is the Master's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Master {\n *     public func guess(word: String) -> Int {}\n * }\n */\nclass Solution {\n    func findSecretWord(_ wordlist: [String], _ master: Master) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * // This is the Master's API interface.\n * // You should not implement it, or speculate about its implementation\n * type Master struct {\n * }\n *\n * func (this *Master) Guess(word string) int {}\n */\nfunc findSecretWord(wordlist []string, master *Master) {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * // This is the Master's API interface.\n * // You should not implement it, or speculate about its implementation\n * class Master {\n *\n *   def guess(word: String): Int = {}\n *\n * }\n */\nobject Solution {\n    def findSecretWord(wordlist: Array[String], master: Master): Unit = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * // This is the Master's API interface.\n * // You should not implement it, or speculate about its implementation\n * interface Master {\n *     fun guess(word: String): Int {}\n * }\n */\nclass Solution {\n    fun findSecretWord(wordlist: Array<String>, master: Master) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"32.7K\", \"totalSubmission\": \"72.2K\", \"totalAcceptedRaw\": 32748, \"totalSubmissionRaw\": 72247, \"acRate\": \"45.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "473",
+    "canSeeDetail": true,
+    "url": "/articles/guess-the-word/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Minimax with Heuristic [Accepted]\n\n**Intuition**\n\nWe can guess that having less words in the word list is generally better.  If the data is random, we can reason this is often the case.\n\nNow let's use the strategy of making the guess that minimizes the maximum possible size of the resulting word list.  If we started with $$N$$ words in our word list, we can iterate through all possibilities for what the secret could be.\n\n**Algorithm**\n\nStore `H[i][j]` as the number of matches of `wordlist[i]` and `wordlist[j]`.  For each guess that hasn't been guessed before, do a minimax as described above, taking the guess that gives us the smallest group that might occur.\n\n<iframe src=\"https://leetcode.com/playground/XyZRWsin/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"XyZRWsin\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2 \\log N)$$, where $$N$$ is the number of words, and assuming their length is $$O(1)$$.  Each call to `solve` is $$O(N^2)$$, and the number of calls is bounded by $$O(\\log N)$$.\n\n* Space Complexity:  $$O(N^2)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "467",
+      "count": 97,
+      "average": 1.773,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"acckzz\"\n[\"acckzz\",\"ccbazz\",\"eiowzz\",\"abcczz\"]\n10",
+  "metaData": "{\n  \"name\": \"findSecretWord\",\n  \"params\": [\n    {\n      \"name\": \"secret\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"wordlist\",\n      \"type\": \"string[]\"\n    },\n    {\n      \"name\": \"numguesses\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"void\"\n  },\n  \"manual\": true,\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"c\",\n    \"csharp\",\n    \"javascript\",\n    \"ruby\",\n    \"swift\",\n    \"golang\",\n    \"python3\",\n    \"scala\",\n    \"kotlin\"\n  ]\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

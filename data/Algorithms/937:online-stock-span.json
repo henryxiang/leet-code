@@ -1,0 +1,111 @@
+{
+  "questionId": "937",
+  "questionFrontendId": "901",
+  "boundTopicId": null,
+  "title": "Online Stock Span",
+  "titleSlug": "online-stock-span",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Write a class <code>StockSpanner</code> which collects daily price quotes for some stock, and returns the <em>span</em>&nbsp;of that stock&#39;s price for the current day.</p>\r\n\r\n<p>The span of the stock&#39;s price today&nbsp;is defined as the maximum number of consecutive days (starting from today and going backwards)&nbsp;for which the price of the stock was less than or equal to today&#39;s price.</p>\r\n\r\n<p>For example, if the price of a stock over the next 7 days were <code>[100, 80, 60, 70, 60, 75, 85]</code>, then the stock spans would be <code>[1, 1, 1, 2, 1, 4, 6]</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[&quot;StockSpanner&quot;,&quot;next&quot;,&quot;next&quot;,&quot;next&quot;,&quot;next&quot;,&quot;next&quot;,&quot;next&quot;,&quot;next&quot;]</span>, <span id=\"example-input-1-2\">[[],[100],[80],[60],[70],[60],[75],[85]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[null,1,1,1,2,1,4,6]</span>\r\n<strong>Explanation: </strong>\r\nFirst, S = StockSpanner() is initialized.  Then:\r\nS.next(100) is called and returns 1,\r\nS.next(80) is called and returns 1,\r\nS.next(60) is called and returns 1,\r\nS.next(70) is called and returns 2,\r\nS.next(60) is called and returns 1,\r\nS.next(75) is called and returns 4,\r\nS.next(85) is called and returns 6.\r\n\r\nNote that (for example) S.next(75) returned 4, because the last 4 prices\r\n(including today&#39;s price of 75) were less than or equal to today&#39;s price.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>Calls to <code>StockSpanner.next(int price)</code> will have <code>1 &lt;= price &lt;= 10^5</code>.</li>\r\n\t<li>There will be at most <code>10000</code> calls to <code>StockSpanner.next</code>&nbsp;per test case.</li>\r\n\t<li>There will be at most <code>150000</code> calls to <code>StockSpanner.next</code> across all test cases.</li>\r\n\t<li>The total&nbsp;time limit for this problem has been reduced by 75% for&nbsp;C++, and 50% for all other languages.</li>\r\n</ol>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 309,
+  "dislikes": 59,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "mvarshne",
+      "profileUrl": "/mvarshne/",
+      "avatarUrl": "https://assets.leetcode.com/users/mvarshne/avatar_1563548996.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class StockSpanner {\npublic:\n    StockSpanner() {\n        \n    }\n    \n    int next(int price) {\n        \n    }\n};\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * StockSpanner* obj = new StockSpanner();\n * int param_1 = obj->next(price);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class StockSpanner {\n\n    public StockSpanner() {\n        \n    }\n    \n    public int next(int price) {\n        \n    }\n}\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * StockSpanner obj = new StockSpanner();\n * int param_1 = obj.next(price);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class StockSpanner(object):\n\n    def __init__(self):\n        \n\n    def next(self, price):\n        \"\"\"\n        :type price: int\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your StockSpanner object will be instantiated and called as such:\n# obj = StockSpanner()\n# param_1 = obj.next(price)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class StockSpanner:\n\n    def __init__(self):\n        \n\n    def next(self, price: int) -> int:\n        \n\n\n# Your StockSpanner object will be instantiated and called as such:\n# obj = StockSpanner()\n# param_1 = obj.next(price)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} StockSpanner;\n\n\nStockSpanner* stockSpannerCreate() {\n    \n}\n\nint stockSpannerNext(StockSpanner* obj, int price) {\n  \n}\n\nvoid stockSpannerFree(StockSpanner* obj) {\n    \n}\n\n/**\n * Your StockSpanner struct will be instantiated and called as such:\n * StockSpanner* obj = stockSpannerCreate();\n * int param_1 = stockSpannerNext(obj, price);\n \n * stockSpannerFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class StockSpanner {\n\n    public StockSpanner() {\n        \n    }\n    \n    public int Next(int price) {\n        \n    }\n}\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * StockSpanner obj = new StockSpanner();\n * int param_1 = obj.Next(price);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "\nvar StockSpanner = function() {\n    \n};\n\n/** \n * @param {number} price\n * @return {number}\n */\nStockSpanner.prototype.next = function(price) {\n    \n};\n\n/** \n * Your StockSpanner object will be instantiated and called as such:\n * var obj = new StockSpanner()\n * var param_1 = obj.next(price)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class StockSpanner\n    def initialize()\n        \n    end\n\n\n=begin\n    :type price: Integer\n    :rtype: Integer\n=end\n    def next(price)\n        \n    end\n\n\nend\n\n# Your StockSpanner object will be instantiated and called as such:\n# obj = StockSpanner.new()\n# param_1 = obj.next(price)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass StockSpanner {\n\n    init() {\n        \n    }\n    \n    func next(_ price: Int) -> Int {\n        \n    }\n}\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * let obj = StockSpanner()\n * let ret_1: Int = obj.next(price)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type StockSpanner struct {\n    \n}\n\n\nfunc Constructor() StockSpanner {\n    \n}\n\n\nfunc (this *StockSpanner) Next(price int) int {\n    \n}\n\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * obj := Constructor();\n * param_1 := obj.Next(price);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class StockSpanner() {\n\n    def next(price: Int): Int = {\n        \n    }\n\n}\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * var obj = new StockSpanner()\n * var param_1 = obj.next(price)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class StockSpanner() {\n\n    fun next(price: Int): Int {\n        \n    }\n\n}\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * var obj = StockSpanner()\n * var param_1 = obj.next(price)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct StockSpanner {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl StockSpanner {\n\n    fn new() -> Self {\n        \n    }\n    \n    fn next(&self, price: i32) -> i32 {\n        \n    }\n}\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * let obj = StockSpanner::new();\n * let ret_1: i32 = obj.next(price);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class StockSpanner {\n    /**\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * @param Integer $price\n     * @return Integer\n     */\n    function next($price) {\n        \n    }\n}\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * $obj = StockSpanner();\n * $ret_1 = $obj->next($price);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"15.6K\", \"totalSubmission\": \"29.8K\", \"totalAcceptedRaw\": 15565, \"totalSubmissionRaw\": 29767, \"acRate\": \"52.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "550",
+    "canSeeDetail": true,
+    "url": "/articles/online-stock-span/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Stack\n\n**Intuition**\n\nClearly, we need to focus on how to make each query faster than a linear scan.  In a typical case, we get a new element like `7`, and there are some previous elements like `11, 3, 9, 5, 6, 4`.  Let's try to create some relationship between this query and the next query.\n\nIf (after getting `7`) we get an element like `2`, then the answer is `1`.  So in general, whenever we get a smaller element, the answer is 1.\n\nIf we get an element like `8`, the answer is 1 plus the previous answer (for `7`), as the `8` \"stops\" on the same value that `7` does (namely, `9`).\n\nIf we get an element like `10`, the answer is 1 plus the previous answer, plus the answer for `9`.\n\nNotice throughout this evaluation, we only care about elements that occur in increasing order - we \"shortcut\" to them.  That is, from adding an element like `10`, we cut to `7` [with \"weight\" 4], then to `9` [with weight 2], then cut to `11` [with weight 1].\n\nA stack is the ideal data structure to maintain what we care about efficiently.\n\n**Algorithm**\n\nLet's maintain a weighted stack of decreasing elements.  The size of the weight will be the total number of elements skipped.  For example, `11, 3, 9, 5, 6, 4, 7` will be `(11, weight=1), (9, weight=2), (7, weight=4)`.\n\nWhen we get a new element like `10`, this helps us count the previous values faster by popping weighted elements off the stack.  The new stack at the end will look like `(11, weight=1), (10, weight=7)`.\n\n<iframe src=\"https://leetcode.com/playground/5aJytT6D/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"5aJytT6D\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(Q)$$, where $$Q$$ is the number of calls to `StockSpanner.next`.  In total, there are $$Q$$ pushes to the stack, and at most $$Q$$ pops.\n\n* Space Complexity:  $$O(Q)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "541",
+      "count": 10,
+      "average": 3.6,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\n[[],[100],[80],[60],[70],[60],[75],[85]]",
+  "metaData": "{\r\n    \"classname\": \"StockSpanner\",\r\n    \"maxbytesperline\": 200000,\r\n    \"constructor\": {\r\n        \"params\": []\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"next\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"price\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

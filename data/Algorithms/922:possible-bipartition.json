@@ -1,0 +1,105 @@
+{
+  "questionId": "922",
+  "questionFrontendId": "886",
+  "boundTopicId": null,
+  "title": "Possible Bipartition",
+  "titleSlug": "possible-bipartition",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a set of <code>N</code>&nbsp;people (numbered <code>1, 2, ..., N</code>), we would like to split everyone into two groups of <strong>any</strong> size.</p>\r\n\r\n<p>Each person may dislike some other people, and they should not go into the same group.&nbsp;</p>\r\n\r\n<p>Formally, if <code>dislikes[i] = [a, b]</code>, it means it is not allowed to put the people numbered <code>a</code> and <code>b</code> into the same group.</p>\r\n\r\n<p>Return <code>true</code>&nbsp;if and only if it is possible to split everyone into two groups in this way.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<div>\r\n<ol>\r\n</ol>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-1-1\">4</span>, dislikes = <span id=\"example-input-1-2\">[[1,2],[1,3],[2,4]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\r\n<strong>Explanation</strong>: group1 [1,4], group2 [2,3]\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-2-1\">3</span>, dislikes = <span id=\"example-input-2-2\">[[1,2],[1,3],[2,3]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">false</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-3-1\">5</span>, dislikes = <span id=\"example-input-3-2\">[[1,2],[2,3],[3,4],[4,5],[1,5]]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">false</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= N &lt;= 2000</code></li>\r\n\t<li><code>0 &lt;= dislikes.length &lt;= 10000</code></li>\r\n\t<li><code>1 &lt;= dislikes[i][j] &lt;= N</code></li>\r\n\t<li><code>dislikes[i][0] &lt; dislikes[i][1]</code></li>\r\n\t<li>There does not exist <code>i != j</code> for which <code>dislikes[i] == dislikes[j]</code>.</li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 371,
+  "dislikes": 16,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool possibleBipartition(int N, vector<vector<int>>& dislikes) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean possibleBipartition(int N, int[][] dislikes) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def possibleBipartition(self, N, dislikes):\n        \"\"\"\n        :type N: int\n        :type dislikes: List[List[int]]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def possibleBipartition(self, N: int, dislikes: List[List[int]]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool possibleBipartition(int N, int** dislikes, int dislikesSize, int* dislikesColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool PossibleBipartition(int N, int[][] dislikes) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @param {number[][]} dislikes\n * @return {boolean}\n */\nvar possibleBipartition = function(N, dislikes) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer[][]} dislikes\n# @return {Boolean}\ndef possible_bipartition(n, dislikes)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func possibleBipartition(_ N: Int, _ dislikes: [[Int]]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func possibleBipartition(N int, dislikes [][]int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def possibleBipartition(N: Int, dislikes: Array[Array[Int]]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun possibleBipartition(N: Int, dislikes: Array<IntArray>): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn possible_bipartition(n: i32, dislikes: Vec<Vec<i32>>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @param Integer[][] $dislikes\n     * @return Boolean\n     */\n    function possibleBipartition($N, $dislikes) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.5K\", \"totalSubmission\": \"41.7K\", \"totalAcceptedRaw\": 17464, \"totalSubmissionRaw\": 41746, \"acRate\": \"41.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "529",
+    "canSeeDetail": true,
+    "url": "/articles/possible-bipartition/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Depth-First Search\n\n**Intuition**\n\nIt's natural to try to assign everyone to a group.  Let's say people in the first group are red, and people in the second group are blue.\n\nIf the first person is red, anyone disliked by this person must be blue.  Then, anyone disliked by a blue person is red, then anyone disliked by a red person is blue, and so on.\n\nIf at any point there is a conflict, the task is impossible, as every step logically follows from the first step.  If there isn't a conflict, then the coloring was valid, so the answer would be `true`.\n\n**Algorithm**\n\nConsider the graph on `N` people formed by the given \"dislike\" edges.  We want to check that each connected component of this graph is bipartite.\n\nFor each connected component, we can check whether it is bipartite by just trying to coloring it with two colors.  How to do this is as follows: color any node red, then all of it's neighbors blue, then all of those neighbors red, and so on.  If we ever color a red node blue (or a blue node red), then we've reached a conflict.\n\n<iframe src=\"https://leetcode.com/playground/aD5rzLRZ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"aD5rzLRZ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N + E)$$, where $$E$$ is the length of `dislikes`.\n\n* Space Complexity:  $$O(N + E)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "522",
+      "count": 12,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "4\n[[1,2],[1,3],[2,4]]",
+  "metaData": "{\r\n  \"name\": \"possibleBipartition\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"dislikes\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

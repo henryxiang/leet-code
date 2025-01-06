@@ -1,0 +1,111 @@
+{
+  "questionId": "1002",
+  "questionFrontendId": "962",
+  "boundTopicId": null,
+  "title": "Maximum Width Ramp",
+  "titleSlug": "maximum-width-ramp",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>A</code> of integers, a <em>ramp</em>&nbsp;is a tuple <code>(i, j)</code> for which <code>i &lt; j</code>&nbsp;and&nbsp;<code>A[i] &lt;= A[j]</code>.&nbsp; The width of such a&nbsp;ramp is <code>j - i</code>.</p>\r\n\r\n<p>Find the maximum width of a ramp in <code>A</code>.&nbsp; If one doesn&#39;t exist, return 0.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[6,0,8,2,1,5]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">4</span>\r\n<strong>Explanation: </strong>\r\nThe maximum width ramp is achieved at (i, j) = (1, 5): A[1] = 0 and A[5] = 5.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[9,8,1,0,1,9,4,0,4,1]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">7</span>\r\n<strong>Explanation: </strong>\r\nThe maximum width ramp is achieved at (i, j) = (2, 9): A[2] = 1 and A[9] = 1.\r\n</pre>\r\n</div>\r\n\r\n<div>\r\n<div>\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>2 &lt;= A.length &lt;= 50000</code></li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 50000</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 387,
+  "dislikes": 11,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ngoc_lam",
+      "profileUrl": "/ngoc_lam/",
+      "avatarUrl": "https://assets.leetcode.com/users/ngoc_lam/avatar_1528594557.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxWidthRamp(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxWidthRamp(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxWidthRamp(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxWidthRamp(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxWidthRamp(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxWidthRamp(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar maxWidthRamp = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef max_width_ramp(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxWidthRamp(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxWidthRamp(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxWidthRamp(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxWidthRamp(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_width_ramp(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function maxWidthRamp($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.3K\", \"totalSubmission\": \"30.7K\", \"totalAcceptedRaw\": 13343, \"totalSubmissionRaw\": 30672, \"acRate\": \"43.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "646",
+    "canSeeDetail": true,
+    "url": "/articles/maximum-width-ramp/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Sort\n\n**Intuition and Algorithm**\n\nFor all elements like `A[i] = v`, let's write the indices `i` in sorted order of their values `v`.  For example with `A[0] = 7, A[1] = 2, A[2] = 5, A[3] = 4`, we can write the order of indices `i=1, i=3, i=2, i=0`.\n\nThen, whenever we write an index `i`, we know there was a ramp of width `i - min(indexes_previously_written)` (if this quantity is positive).  We can keep track of the minimum of all indexes previously written as `m`.\n\n<iframe src=\"https://leetcode.com/playground/cTgKu5cw/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"cTgKu5cw\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$, depending on the implementation of the sorting function.\n<br />\n<br />\n\n\n---\n#### Approach 2: Binary Search Candidates\n\n**Intuition**\n\nConsider `i` in decreasing order.  We want to find the largest `j` with `A[j] >= A[i]` if it exists.\n\nThus, the candidates for `j` are decreasing: if there is `j1 < j2` and `A[j1] <= A[j2]` then we strictly prefer `j2`.\n\n**Algorithm**\n\nLet's keep a list of these candidates `j`.  For example, with `A = [0,8,2,7,5]`, the candidates for `i = 0` would be `candidates = [(v=5, i=4), (v=7, i=3), (v=8, i=1)]`.  We keep the list of `candidates` in decreasing order of `i` and increasing order of `v`.\n\nNow we can binary search to find the largest `j` with `A[j] >= A[i]`: it's the first one in this list of candidates with `v >= A[i]`.\n\n<iframe src=\"https://leetcode.com/playground/jtYswxPE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"jtYswxPE\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "632",
+      "count": 21,
+      "average": 3.857,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[6,0,8,2,1,5]",
+  "metaData": "{\r\n  \"name\": \"maxWidthRamp\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,99 @@
+{
+  "questionId": "1138",
+  "questionFrontendId": "1052",
+  "boundTopicId": null,
+  "title": "Grumpy Bookstore Owner",
+  "titleSlug": "grumpy-bookstore-owner",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Today, the bookstore owner has a store open for <code>customers.length</code> minutes.&nbsp; Every minute, some number of customers (<code>customers[i]</code>) enter the store, and all those customers leave after the end of that minute.</p>\r\n\r\n<p>On some minutes, the bookstore owner is grumpy.&nbsp; If the bookstore owner is grumpy on the i-th minute, <code>grumpy[i] = 1</code>, otherwise <code>grumpy[i] = 0</code>.&nbsp; When the bookstore owner is grumpy, the customers of that minute are not satisfied, otherwise they are satisfied.</p>\r\n\r\n<p>The bookstore owner knows a secret technique to keep themselves&nbsp;not grumpy for <code>X</code>&nbsp;minutes straight, but can only use it once.</p>\r\n\r\n<p>Return the maximum number of customers that can be satisfied throughout the day.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>customers = [1,0,1,2,1,1,7,5], grumpy = [0,1,0,1,0,1,0,1], X = 3\r\n<strong>Output: </strong>16\r\n<strong>Explanation:</strong>&nbsp;The bookstore owner keeps themselves&nbsp;not grumpy for the last 3 minutes. \r\nThe maximum number of customers that can be satisfied = 1 + 1 + 1 + 1 + 7 + 5 = 16.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= X &lt;=&nbsp;customers.length ==&nbsp;grumpy.length &lt;= 20000</code></li>\r\n\t<li><code>0 &lt;=&nbsp;customers[i] &lt;= 1000</code></li>\r\n\t<li><code>0 &lt;=&nbsp;grumpy[i] &lt;= 1</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 210,
+  "dislikes": 20,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 17}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int X) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxSatisfied(int[] customers, int[] grumpy, int X) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxSatisfied(self, customers, grumpy, X):\n        \"\"\"\n        :type customers: List[int]\n        :type grumpy: List[int]\n        :type X: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxSatisfied(self, customers: List[int], grumpy: List[int], X: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxSatisfied(int* customers, int customersSize, int* grumpy, int grumpySize, int X){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxSatisfied(int[] customers, int[] grumpy, int X) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} customers\n * @param {number[]} grumpy\n * @param {number} X\n * @return {number}\n */\nvar maxSatisfied = function(customers, grumpy, X) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} customers\n# @param {Integer[]} grumpy\n# @param {Integer} x\n# @return {Integer}\ndef max_satisfied(customers, grumpy, x)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxSatisfied(_ customers: [Int], _ grumpy: [Int], _ X: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxSatisfied(customers []int, grumpy []int, X int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxSatisfied(customers: Array[Int], grumpy: Array[Int], X: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxSatisfied(customers: IntArray, grumpy: IntArray, X: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_satisfied(customers: Vec<i32>, grumpy: Vec<i32>, x: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $customers\n     * @param Integer[] $grumpy\n     * @param Integer $X\n     * @return Integer\n     */\n    function maxSatisfied($customers, $grumpy, $X) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.6K\", \"totalSubmission\": \"25.3K\", \"totalAcceptedRaw\": 13601, \"totalSubmissionRaw\": 25313, \"acRate\": \"53.7%\"}",
+  "hints": [
+    "Say the store owner uses their power in minute 1 to X and we have some answer A.  If they instead use their power from minute 2 to X+1, we only have to use data from minutes 1, 2, X and X+1 to update our answer A."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,0,1,2,1,1,7,5]\n[0,1,0,1,0,1,0,1]\n3",
+  "metaData": "{\r\n  \"name\": \"maxSatisfied\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"customers\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"grumpy\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"X\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

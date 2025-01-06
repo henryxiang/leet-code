@@ -1,0 +1,109 @@
+{
+  "questionId": "244",
+  "questionFrontendId": "244",
+  "boundTopicId": null,
+  "title": "Shortest Word Distance II",
+  "titleSlug": "shortest-word-distance-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design a class which receives a list of words in the constructor, and implements a method that takes two words <em>word1</em> and <em>word2</em> and return the shortest distance between these two words in the list. Your method will be called <em>repeatedly</em> many times with different parameters.&nbsp;</p>\r\n\r\n<p><strong>Example:</strong><br />\r\nAssume that words = <code>[&quot;practice&quot;, &quot;makes&quot;, &quot;perfect&quot;, &quot;coding&quot;, &quot;makes&quot;]</code>.</p>\r\n\r\n<pre>\r\n<b>Input:</b> <em>word1</em> = <code>&ldquo;coding&rdquo;</code>, <em>word2</em> = <code>&ldquo;practice&rdquo;</code>\r\n<b>Output:</b> 3\r\n</pre>\r\n\r\n<pre>\r\n<b>Input:</b> <em>word1</em> = <code>&quot;makes&quot;</code>, <em>word2</em> = <code>&quot;coding&quot;</code>\r\n<b>Output:</b> 1</pre>\r\n\r\n<p><strong>Note:</strong><br />\r\nYou may assume that <em>word1</em> <strong>does not equal to</strong> <em>word2</em>, and <em>word1</em> and <em>word2</em> are both in the list.</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 278,
+  "dislikes": 98,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Merge Two Sorted Lists\", \"titleSlug\": \"merge-two-sorted-lists\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance\", \"titleSlug\": \"shortest-word-distance\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance III\", \"titleSlug\": \"shortest-word-distance-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 18}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class WordDistance {\npublic:\n    WordDistance(vector<string>& words) {\n        \n    }\n    \n    int shortest(string word1, string word2) {\n        \n    }\n};\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * WordDistance* obj = new WordDistance(words);\n * int param_1 = obj->shortest(word1,word2);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class WordDistance {\n\n    public WordDistance(String[] words) {\n        \n    }\n    \n    public int shortest(String word1, String word2) {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * WordDistance obj = new WordDistance(words);\n * int param_1 = obj.shortest(word1,word2);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class WordDistance(object):\n\n    def __init__(self, words):\n        \"\"\"\n        :type words: List[str]\n        \"\"\"\n        \n\n    def shortest(self, word1, word2):\n        \"\"\"\n        :type word1: str\n        :type word2: str\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your WordDistance object will be instantiated and called as such:\n# obj = WordDistance(words)\n# param_1 = obj.shortest(word1,word2)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class WordDistance:\n\n    def __init__(self, words: List[str]):\n        \n\n    def shortest(self, word1: str, word2: str) -> int:\n        \n\n\n# Your WordDistance object will be instantiated and called as such:\n# obj = WordDistance(words)\n# param_1 = obj.shortest(word1,word2)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} WordDistance;\n\n\nWordDistance* wordDistanceCreate(char ** words, int wordsSize) {\n    \n}\n\nint wordDistanceShortest(WordDistance* obj, char * word1, char * word2) {\n  \n}\n\nvoid wordDistanceFree(WordDistance* obj) {\n    \n}\n\n/**\n * Your WordDistance struct will be instantiated and called as such:\n * WordDistance* obj = wordDistanceCreate(words, wordsSize);\n * int param_1 = wordDistanceShortest(obj, word1, word2);\n \n * wordDistanceFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class WordDistance {\n\n    public WordDistance(string[] words) {\n        \n    }\n    \n    public int Shortest(string word1, string word2) {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * WordDistance obj = new WordDistance(words);\n * int param_1 = obj.Shortest(word1,word2);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n */\nvar WordDistance = function(words) {\n    \n};\n\n/** \n * @param {string} word1 \n * @param {string} word2\n * @return {number}\n */\nWordDistance.prototype.shortest = function(word1, word2) {\n    \n};\n\n/** \n * Your WordDistance object will be instantiated and called as such:\n * var obj = new WordDistance(words)\n * var param_1 = obj.shortest(word1,word2)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class WordDistance\n\n=begin\n    :type words: String[]\n=end\n    def initialize(words)\n        \n    end\n\n\n=begin\n    :type word1: String\n    :type word2: String\n    :rtype: Integer\n=end\n    def shortest(word1, word2)\n        \n    end\n\n\nend\n\n# Your WordDistance object will be instantiated and called as such:\n# obj = WordDistance.new(words)\n# param_1 = obj.shortest(word1, word2)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass WordDistance {\n\n    init(_ words: [String]) {\n        \n    }\n    \n    func shortest(_ word1: String, _ word2: String) -> Int {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * let obj = WordDistance(words)\n * let ret_1: Int = obj.shortest(word1, word2)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type WordDistance struct {\n    \n}\n\n\nfunc Constructor(words []string) WordDistance {\n    \n}\n\n\nfunc (this *WordDistance) Shortest(word1 string, word2 string) int {\n    \n}\n\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * obj := Constructor(words);\n * param_1 := obj.Shortest(word1,word2);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class WordDistance(_words: Array[String]) {\n\n    def shortest(word1: String, word2: String): Int = {\n        \n    }\n\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * var obj = new WordDistance(words)\n * var param_1 = obj.shortest(word1,word2)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class WordDistance(words: Array<String>) {\n\n    fun shortest(word1: String, word2: String): Int {\n        \n    }\n\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * var obj = WordDistance(words)\n * var param_1 = obj.shortest(word1,word2)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct WordDistance {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl WordDistance {\n\n    fn new(words: Vec<String>) -> Self {\n        \n    }\n    \n    fn shortest(&self, word1: String, word2: String) -> i32 {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * let obj = WordDistance::new(words);\n * let ret_1: i32 = obj.shortest(word1, word2);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class WordDistance {\n    /**\n     * @param String[] $words\n     */\n    function __construct($words) {\n        \n    }\n  \n    /**\n     * @param String $word1\n     * @param String $word2\n     * @return Integer\n     */\n    function shortest($word1, $word2) {\n        \n    }\n}\n\n/**\n * Your WordDistance object will be instantiated and called as such:\n * $obj = WordDistance($words);\n * $ret_1 = $obj->shortest($word1, $word2);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"60.9K\", \"totalSubmission\": \"121.1K\", \"totalAcceptedRaw\": 60939, \"totalSubmissionRaw\": 121056, \"acRate\": \"50.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "692",
+    "canSeeDetail": true,
+    "url": "/articles/shortest-word-distance-ii/",
+    "content": "[TOC]\n\n## Solution\n\nBefore looking at the solution for this problem, let's look at what the problem asks us to do in simpler terms. We have to design a class which receives a list of words as input in the constructor. The class has a function which we need to implement and that function is `shortest` which takes two words as input and returns the minimum distance between the two as the output.\n\nWhen the problem talks about the distance between two words, it essentially means the absolute gap between the indices of the two words in the list. For e.g. if the first word occurs at a location `i` and the second word occurs at the location `j`, then the distance between the two would be `abs(i - j)`.\n\nThe question asks us to find the `minimum` such different between words which clearly indicates that the words can occur at multiple locations. If we have `K` occurrences for the `word1` and `L` occurrences for the `word2`, then iteratively checking every pair of indices will give us a $$O(N^2)$$ algorithm which won't be optimal at all. We won't discuss that algorithm here since it is very straightforward.\n\nThe brute-force algorithm would simple consider all possible pairs of indices for (`word1_location`, `word2_location`) and see which one produces the minimum distance. Let's try and build on this idea and see if some pre-processing can help us out reduce the complexity of the brute-force algorithm.\n<br>\n<br>\n\n---\n\n#### Approach 1: Using Preprocessed Sorted Indices\n\n**Intuition**\n\nA given word can occur multiple times in the original word list. Let's suppose the first word, `word1` in the input to the function `shortest` occurs at the indices `[i1, i2, i3, i4]` in the original list. Similarly, let's assume that the second word, `word2`, appears at the following locations inside the word list `[j1, j2, j3]`.\n\nNow, given these list of indices, we are to simply find the pair of indices `(i, j)` such that their absolute difference is minimum.\n\n> The main idea for this approach is that if the list of these indices is in sorted order, we can find such a pair in linear time.\n\nThe idea is to use a two pointer approach. Let's say we have a pointer `i` for the sorted list of indices of `word1` and `j` for the sorted list of indices of `word2`. At every iteration, we record the difference of indices i.e. `abs(word1[i] - word2[j])`. Once we've done that, we have two possible choices for progressing the two pointers.\n\n<pre>\nword1[i] < word2[j]\n</pre>\n\nIf this is the case, that means there is no point in moving the `j` pointer forward. The location indices for the words are in a sorted order. We know that `word2[j + 1] > word2[j]` because these indices are sorted. So, if we move `j` forward, then the difference `abs(word1[i] - word2[j + 1])` would be even greater than `abs(word1[i] - word2[j])`. That doesn't help us since we want to find the minimum possible distance (difference) overall.\n\n> So, if we have (word1[i] < word2[j]), we move the pointer 'i' one step forward i.e. (i + 1) in the hopes that abs(word1[i + 1] - word2[j]) would give us a lower distance than abs(word1[i] - word2[j]). We say \"hopes\" because it is not certain this improvement would happen.\n\nLet's look at two different examples. In the first example we will see that moving `i` forward gave us the best difference overall (0). In the second example we see that moving `i` forward leads us to our second case (yet to discuss) but doesn't lead to any improvement in the difference.\n\n**Example-1**\n\n```\nword1_locations = [2,4,5,9]\nword2_locations = [4,10,11]\n\ni, j = 0, 0\nmin_diff = 2 (abs(2 - 4))\nword1[i] < word2[j] i.e. 2 < 4\n  move i one step forward\n\ni, j = 1, 0 (abs(4 - 4))\nmin_diff = 0 (We hit the jackpot!)  \n```\n\n**Example-2**\n\n```\nword1_locations = [2,7,15,16]\nword2_locations = [4,10,11]\n\ni, j = 0, 0\nmin_diff = 2 (abs(2 - 4))\nword1[i] < word2[j] i.e. 2 < 4\n  move i one step forward\n\ni, j = 1, 0\nmin_diff = 2 (2 < abs(7 - 4))\n\nHere, we did not update out global minimum difference.\nThat is why we said earlier, moving 'i' forward may or\nmay not give a lower difference. But moving 'j' forward in\nour case would definitely worsen the difference (or keep it same!).\n```\nLet's move onto our second scenario.\n\n<pre>\nword1[i] > word2[j]\n</pre>\n\nIf this is the case, that means there is no point in moving the `i` pointer forward. We know that `word1[i + 1] > word2[j]` because these indices are sorted. So, if we move `i` forward, then the difference `abs(word1[i + 1] - word2[j])` would be even greater than `abs(word1[i] - word2[j])`. That doesn't help us since we want to find the minimum possible distance (difference) overall.\n\n> So, along the similar lines of thought as the previous case, if we have (word1[i] > word2[j]), we move the pointer 'j' one step forward i.e. (j + 1) in the hopes that abs(word1[i] - word2[j + 1]) would give us a lower distance than abs(word1[i] - word2[j]). We say \"hopes\" because as showcased in the previous scenario, it is not certain this improvement would happen.\n\nNow let's formally look at the algorithm for solving this problem.\n\n**Algorithm**\n\n1. In the `constructor` of the class, we simply iterate over the given list of words and prepare a dictionary, mapping a word to all it's locations in the array.\n2. Since we process all the words from left to right, we will get all the indices in a sorted order by default for all the words. So, we don't have to sort the indices ourselves.\n3. Let's call the dictionary that we build, `locations`.\n4. For a given pair of words, obtain the list of indices (appearances inside the original list/array of words). Let's call the two arrays `loc1` and `loc2`.\n5. Initialize two pointer variables `l1 = 0` and `l2 = 0`.\n6. For a given `l1` and `l2`, we first update (if possible) the minimum difference (distance) till now i.e. `dist = min(dist, abs(loc1[l1] - loc2[l2]))`. Then, we check if `loc1[l1] < loc2[l2]` and if this is the case, we move `l1` one step forward i.e. `l1 = l1 + 1`. Otherwise, we move `l2` one step forward i.e. `l2 = l2 + 1`.\n7. We keep doing this until all the elements in the smaller of the two location arrays are processed.\n8. Return the global minimum distance between the words.\n\n<center>\n<img src=\"../Figures/244/postings_list.png\" width=\"500\">\n</center>\n\nThis represents the locations dictionary that we should build given the original words list in the constructor. The key represents the word and the value is a list containing indices in ascending order of occurrences throughout the array. Let's look at the minimum distance between the words `apple` and `football` in the array. So, we will be considering the two *sorted* lists of indices: `[3, 6, 8, 12]` and `[2, 7, 9]`.\n\n<center>\n\n!?!../Documents/244_Anim.json!?!\n\n</center>\n\n<iframe src=\"https://leetcode.com/playground/3NZPaL8b/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"3NZPaL8b\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity : The time complexity of the constructor of our class is $$O(N)$$ considering there were $$N$$ words in the original list. We iterate over them and prepare a mapping from key to list of indices as described before. Then, for the function that finds the minimum distance between the two words, the complexity would be $$O(max(K, L))$$ where $$K$$ and $$L$$ represent the number of occurrences of the two words. However, $$K = O(N)$$ and also $$L = O(N)$$. Therefore, the overall time complexity would also be $$O(N)$$. The reason the complexity is $$O(max(K, L))$$ and not $$O(min(K, L))$$ is because of the scenario where the minimum element of the smaller list is larger than `all` the elements of the larger list. In that scenario, the pointer for the smaller list will not progress at all and the one for the longer list will reach to the very end.\n* Space complexity: $$O(N)$$ for the dictionary that we prepare in the constructor. The keys represent all the unique words in the input and the values represent all of the indices from $$0 ... N$$.\n<br />\n\n---\n\nAnalysis written by: [@sachinmalhotra1993](https://leetcode.com/sachinmalhotra1993).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "677",
+      "count": 18,
+      "average": 4.333,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"WordDistance\",\"shortest\",\"shortest\"]\n[[[\"practice\",\"makes\",\"perfect\",\"coding\",\"makes\"]],[\"coding\",\"practice\"],[\"makes\",\"coding\"]]",
+  "metaData": "{\r\n  \"classname\": \"WordDistance\",\r\n  \"maxbytesperline\": 300000,\r\n  \"constructor\": {\r\n      \"params\": [\r\n        {\r\n            \"type\": \"string[]\",\r\n            \"name\": \"words\"\r\n        },\r\n        {\r\n            \"type\": \"integer\",\r\n            \"name\": \"wordsSize\",\r\n            \"lang\": \"c\",\r\n            \"value\": \"size_1\"\r\n        }\r\n      ]\r\n  },\r\n  \"methods\": [\r\n      { \"name\" : \"shortest\",\r\n        \"params\": [\r\n            {\r\n                \"type\": \"string\",\r\n                \"name\": \"word1\"\r\n            },\r\n            {\r\n                \"type\": \"string\",\r\n                \"name\": \"word2\"\r\n            }\r\n        ],\r\n        \"return\": {\r\n            \"type\": \"integer\"\r\n        }\r\n      }\r\n  ],\r\n  \"systemdesign\": true,\r\n  \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

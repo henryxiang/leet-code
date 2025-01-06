@@ -1,0 +1,109 @@
+{
+  "questionId": "222",
+  "questionFrontendId": "222",
+  "boundTopicId": null,
+  "title": "Count Complete Tree Nodes",
+  "titleSlug": "count-complete-tree-nodes",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <b>complete</b> binary tree, count the number of nodes.</p>\r\n\r\n<p><b>Note: </b></p>\r\n\r\n<p><b><u>Definition of a complete binary tree from <a href=\"http://en.wikipedia.org/wiki/Binary_tree#Types_of_binary_trees\" target=\"_blank\">Wikipedia</a>:</u></b><br />\r\nIn a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2<sup>h</sup> nodes inclusive at the last level h.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> \r\n    1\r\n   / \\\r\n  2   3\r\n / \\  /\r\n4  5 6\r\n\r\n<strong>Output:</strong> 6</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1438,
+  "dislikes": 162,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Closest Binary Search Tree Value\", \"titleSlug\": \"closest-binary-search-tree-value\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 22}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    int countNodes(TreeNode* root) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public int countNodes(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def countNodes(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def countNodes(self, root: TreeNode) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nint countNodes(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public int CountNodes(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number}\n */\nvar countNodes = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @return {Integer}\ndef count_nodes(root)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func countNodes(_ root: TreeNode?) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc countNodes(root *TreeNode) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def countNodes(root: TreeNode): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun countNodes(root: TreeNode?): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn count_nodes(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Integer\n     */\n    function countNodes($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"166.4K\", \"totalSubmission\": \"421.5K\", \"totalAcceptedRaw\": 166385, \"totalSubmissionRaw\": 421546, \"acRate\": \"39.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "741",
+    "canSeeDetail": true,
+    "url": "/articles/count-complete-tree-nodes/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: Linear Time\n\n**Intuition**\n\nThis problem is quite popular at Google during the last year.\nThe naive solution here is a linear time one-liner which counts nodes\nrecursively one by one.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/4dnajsLH/shared\" frameBorder=\"0\" width=\"100%\" height=\"140\" name=\"4dnajsLH\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$.\n* Space complexity : $$\\mathcal{O}(d) = \\mathcal{O}(\\log N)$$ to keep\nthe recursion stack, where d is a tree depth.\n<br /> \n<br />\n\n\n---\n#### Approach 2: Binary search\n\n**Intuition**\n\nApproach 1 doesn't profit from the fact that the tree is a complete one.\n\n> In a complete binary tree every level, \nexcept possibly the last, is completely filled, \nand all nodes in the last level are as far left as possible.\n\nThat means that complete tree has $$2^k$$ nodes in the kth level \nif the kth level is not the last one. \nThe last level may be not filled completely,\nand hence in the last level the number of nodes \ncould vary from 1 to $$2^d$$, where d is a tree\ndepth.\n\n![fig](../Figures/222/tree.png)\n\nNow one could compute the number of nodes in all levels\nbut the last one: $$\\sum_{k = 0}^{k = d - 1}{2^k} = 2^d - 1$$. \nThat reduces the problem to the simple check of how many nodes \nthe tree has in the last level.\n\n![fic](../Figures/222/level.png)\n\nNow there are two questions:\n\n1. How many nodes in the last level have to be checked?\n\n2. What is the best time performance for such a check?\n\nLet's start from the first question. It's a complete tree, and hence\nall nodes in the last level are _as far left as possible_.\nThat means that instead of checking the existence of all \n$$2^d$$ possible leafs, one could use binary search and check \n$$\\log(2^d) = d$$ leafs only.\n\n![pic](../Figures/222/exist.png) \n\nLet's move to the second question, and enumerate potential nodes\nin the last level from 0 to $$2^d - 1$$. \nHow to check if the node number idx exists?\nLet's use binary search again to reconstruct the sequence of moves \nfrom root to idx node. For example, idx = 4. idx is in the \nsecond half of nodes `0,1,2,3,4,5,6,7` and hence the first move is to the\nright. Then idx is in the first half of nodes `4,5,6,7` and hence \nthe second move is to the left. The idx is in the first half of nodes\n`4,5` and hence the next move is to the left. The time complexity\nfor one check is $$\\mathcal{O}(d)$$.\n\n![pif](../Figures/222/check.png)\n\n1 and 2 together result in $$\\mathcal{O}(d)$$ checks, each check at\na price of $$\\mathcal{O}(d)$$. That means that the overall time complexity\nwould be $$\\mathcal{O}(d^2)$$.\n \n**Algorithm**\n\n- Return 0 if the tree is empty.\n\n- Compute the tree depth `d`.\n\n- Return 1 if `d == 0`.\n\n- The number of nodes in all levels but the last one is $$2^d - 1$$.\nThe number of nodes in the last level could vary from 1 to $$2^d$$.\nEnumerate potential nodes from 0 to $$2^d - 1$$ \nand perform the binary search by the node index to check how many \nnodes are in the last level. Use the function `exists(idx, d, root)` to\ncheck if the node with index idx exists.\n\n- Use binary search to implement `exists(idx, d, root)` as well.\n\n- Return $$2^d - 1$$ + the number of nodes in the last level.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/JeCPtA6R/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"JeCPtA6R\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(d^2) = \\mathcal{O}(\\log^2 N)$$,\nwhere $$d$$ is a tree depth.\n* Space complexity : $$\\mathcal{O}(1)$$.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "726",
+      "count": 29,
+      "average": 4.621,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4,5,6]",
+  "metaData": "{\r\n  \"name\": \"countNodes\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

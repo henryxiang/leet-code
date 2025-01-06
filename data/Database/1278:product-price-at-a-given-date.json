@@ -1,0 +1,53 @@
+{
+  "questionId": "1278",
+  "questionFrontendId": "1164",
+  "boundTopicId": null,
+  "title": "Product Price at a Given Date",
+  "titleSlug": "product-price-at-a-given-date",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Products</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| product_id    | int     |\n| new_price     | int     |\n| change_date   | date    |\n+---------------+---------+\n(product_id, change_date) is the primary key of this table.\nEach row of this table indicates that the price of some product was changed to a new price at some date.</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to find the prices of all products on <strong>2019-08-16</strong>. Assume the price of all products before any change is <strong>10</strong>.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\n<code>Products</code> table:\n+------------+-----------+-------------+\n| product_id | new_price | change_date |\n+------------+-----------+-------------+\n| 1          | 20        | 2019-08-14  |\n| 2          | 50        | 2019-08-14  |\n| 1          | 30        | 2019-08-15  |\n| 1          | 35        | 2019-08-16  |\n| 2          | 65        | 2019-08-17  |\n| 3          | 20        | 2019-08-18  |\n+------------+-----------+-------------+\n\nResult table:\n+------------+-------+\n| product_id | price |\n+------------+-------+\n| 2          | 50    |\n| 1          | 35    |\n| 3          | 10    |\n+------------+-------+\n</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 33,
+  "dislikes": 5,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.7K\", \"totalSubmission\": \"4.4K\", \"totalAcceptedRaw\": 2717, \"totalSubmissionRaw\": 4445, \"acRate\": \"61.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Products\":[\"product_id\",\"new_price\",\"change_date\"]},\"rows\":{\"Products\":[[1,20,\"2019-08-14\"],[2,50,\"2019-08-14\"],[1,30,\"2019-08-15\"],[1,35,\"2019-08-16\"],[2,65,\"2019-08-17\"],[3,20,\"2019-08-18\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Products (product_id int, new_price int, change_date date)\"\n  ],\n  \"mssql\": [\n    \"create table Products (product_id int, new_price int, change_date date)\"\n  ],\n  \"oraclesql\": [\n    \"create table Products (product_id int, new_price int, change_date date)\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Products (product_id int, new_price int, change_date date)",
+    "Truncate table Products",
+    "insert into Products (product_id, new_price, change_date) values ('1', '20', '2019-08-14')",
+    "insert into Products (product_id, new_price, change_date) values ('2', '50', '2019-08-14')",
+    "insert into Products (product_id, new_price, change_date) values ('1', '30', '2019-08-15')",
+    "insert into Products (product_id, new_price, change_date) values ('1', '35', '2019-08-16')",
+    "insert into Products (product_id, new_price, change_date) values ('2', '65', '2019-08-17')",
+    "insert into Products (product_id, new_price, change_date) values ('3', '20', '2019-08-18')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

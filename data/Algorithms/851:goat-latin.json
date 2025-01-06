@@ -1,0 +1,111 @@
+{
+  "questionId": "851",
+  "questionFrontendId": "824",
+  "boundTopicId": null,
+  "title": "Goat Latin",
+  "titleSlug": "goat-latin",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A sentence <code>S</code> is given, composed of words separated by spaces. Each word consists of lowercase and uppercase letters only.</p>\r\n\r\n<p>We would like to convert the sentence to &quot;<em>Goat Latin&quot;</em>&nbsp;(a made-up language similar to Pig Latin.)</p>\r\n\r\n<p>The rules of Goat Latin are as follows:</p>\r\n\r\n<ul>\r\n\t<li>If a word begins with a vowel (a, e, i, o, or u), append <code>&quot;ma&quot;</code>&nbsp;to the end of the word.<br />\r\n\tFor example, the word &#39;apple&#39; becomes &#39;applema&#39;.<br />\r\n\t&nbsp;</li>\r\n\t<li>If a word begins with a consonant (i.e. not a vowel), remove the first letter and append it to the end, then add <code>&quot;ma&quot;</code>.<br />\r\n\tFor example, the word <code>&quot;goat&quot;</code>&nbsp;becomes <code>&quot;oatgma&quot;</code>.<br />\r\n\t&nbsp;</li>\r\n\t<li>Add one letter <code>&#39;a&#39;</code>&nbsp;to the end of each word per its word index in the sentence, starting with 1.<br />\r\n\tFor example,&nbsp;the first word gets <code>&quot;a&quot;</code> added to the end, the second word gets <code>&quot;aa&quot;</code> added to the end and so on.</li>\r\n</ul>\r\n\r\n<p>Return the&nbsp;final sentence representing the conversion from <code>S</code>&nbsp;to Goat&nbsp;Latin.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;I speak Goat Latin&quot;\r\n<strong>Output: </strong>&quot;Imaa peaksmaaa oatGmaaaa atinLmaaaaa&quot;\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>&quot;The quick brown fox jumped over the lazy dog&quot;\r\n<strong>Output: </strong>&quot;heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa&quot;\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Notes:</p>\r\n\r\n<ul>\r\n\t<li><code>S</code> contains only uppercase, lowercase and spaces.&nbsp;Exactly one space between each word.</li>\r\n\t<li><code>1 &lt;= S.length &lt;= 150</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 201,
+  "dislikes": 497,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 9}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string toGoatLatin(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String toGoatLatin(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def toGoatLatin(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def toGoatLatin(self, S: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * toGoatLatin(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ToGoatLatin(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {string}\n */\nvar toGoatLatin = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef to_goat_latin(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func toGoatLatin(_ S: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func toGoatLatin(S string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def toGoatLatin(S: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun toGoatLatin(S: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn to_goat_latin(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return String\n     */\n    function toGoatLatin($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"45.7K\", \"totalSubmission\": \"76K\", \"totalAcceptedRaw\": 45668, \"totalSubmissionRaw\": 75978, \"acRate\": \"60.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "459",
+    "canSeeDetail": true,
+    "url": "/articles/goat-latin/",
+    "content": "[TOC]\n\n---\n#### Approach #1: String [Accepted]\n\n**Intuition**\n\nWe apply the steps given in the problem in a straightforward manner.  The difficulty lies in the implementation.\n\n**Algorithm**\n\nFor each `word` in the sentence split, if it is a vowel we consider the word, otherwise we consider the rotation of the word (either `word[1:] + word[:1]` in Python, otherwise `word.substring(1) + word.substring(0, 1)` in Java).\n\nAfterwards, we add `\"ma\"`, the desired number of `\"a\"`'s, and a space character.\n\n<iframe src=\"https://leetcode.com/playground/oPStDbDq/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"oPStDbDq\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `S`.  This represents the complexity of rotating the word and adding extra `\"a\"` characters.\n\n* Space Complexity: $$O(N^2)$$, the space added to the answer by adding extra `\"a\"` characters.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "454",
+      "count": 26,
+      "average": 2.308,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"I speak Goat Latin\"",
+  "metaData": "{\r\n  \"name\": \"toGoatLatin\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

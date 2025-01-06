@@ -1,0 +1,100 @@
+{
+  "questionId": "1129",
+  "questionFrontendId": "1048",
+  "boundTopicId": null,
+  "title": "Longest String Chain",
+  "titleSlug": "longest-string-chain",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a list of words, each word consists of English lowercase letters.</p>\r\n\r\n<p>Let&#39;s say <code>word1</code> is a predecessor of <code>word2</code>&nbsp;if and only if we can add exactly one letter anywhere in <code>word1</code> to make it equal to <code>word2</code>.&nbsp; For example,&nbsp;<code>&quot;abc&quot;</code>&nbsp;is a predecessor of <code>&quot;abac&quot;</code>.</p>\r\n\r\n<p>A <em>word chain&nbsp;</em>is a sequence of words <code>[word_1, word_2, ..., word_k]</code>&nbsp;with <code>k &gt;= 1</code>,&nbsp;where <code>word_1</code> is a predecessor of <code>word_2</code>, <code>word_2</code> is a predecessor of <code>word_3</code>, and so on.</p>\r\n\r\n<p>Return the longest possible length of a word chain with words chosen from the given list of <code>words</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[&quot;a&quot;,&quot;b&quot;,&quot;ba&quot;,&quot;bca&quot;,&quot;bda&quot;,&quot;bdca&quot;]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">4\r\n<strong>Explanation</strong>: one of </span>the longest word chain is &quot;a&quot;,&quot;ba&quot;,&quot;bda&quot;,&quot;bdca&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= words.length &lt;= 1000</code></li>\r\n\t<li><code>1 &lt;= words[i].length &lt;= 16</code></li>\r\n\t<li><code>words[i]</code> only consists of English lowercase letters.</li>\r\n</ol>\r\n\r\n<div>\r\n<p>&nbsp;</p>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 367,
+  "dislikes": 28,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 21}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 7}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int longestStrChain(vector<string>& words) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestStrChain(String[] words) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestStrChain(self, words):\n        \"\"\"\n        :type words: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestStrChain(self, words: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint longestStrChain(char ** words, int wordsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int LongestStrChain(string[] words) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @return {number}\n */\nvar longestStrChain = function(words) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\r\n# @return {Integer}\r\ndef longest_str_chain(words)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func longestStrChain(_ words: [String]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestStrChain(words []string) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def longestStrChain(words: Array[String]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun longestStrChain(words: Array<String>): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_str_chain(words: Vec<String>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @return Integer\n     */\n    function longestStrChain($words) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24.9K\", \"totalSubmission\": \"48.1K\", \"totalAcceptedRaw\": 24935, \"totalSubmissionRaw\": 48077, \"acRate\": \"51.9%\"}",
+  "hints": [
+    "Instead of adding a character, try deleting a character to form a chain in reverse.",
+    "For each word in order of length, for each word2 which is word with one character removed, length[word2] = max(length[word2], length[word] + 1)."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]",
+  "metaData": "{\r\n  \"name\": \"longestStrChain\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,115 @@
+{
+  "questionId": "542",
+  "questionFrontendId": "542",
+  "boundTopicId": null,
+  "title": "01 Matrix",
+  "titleSlug": "01-matrix",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell.</p>\r\n\r\n<p>The distance between two adjacent cells is 1.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1: </b></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>\r\n[[0,0,0],\r\n [0,1,0],\r\n [0,0,0]]\r\n\r\n<strong>Output:</strong>\r\n[[0,0,0],\r\n&nbsp;[0,1,0],\r\n&nbsp;[0,0,0]]\r\n</pre>\r\n\r\n<p><b>Example 2: </b></p>\r\n\r\n<pre>\r\n<b>Input:</b>\r\n[[0,0,0],\r\n [0,1,0],\r\n [1,1,1]]\r\n\r\n<strong>Output:</strong>\r\n[[0,0,0],\r\n [0,1,0],\r\n [1,2,1]]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>The number of elements of the given matrix will not exceed 10,000.</li>\r\n\t<li>There are at least one 0 in the given matrix.</li>\r\n\t<li>The cells are adjacent in only four directions: up, down, left and right.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 940,
+  "dislikes": 93,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 7}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<vector<int>> updateMatrix(vector<vector<int>>& matrix) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[][] updateMatrix(int[][] matrix) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def updateMatrix(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def updateMatrix(self, matrix: List[List[int]]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** updateMatrix(int** matrix, int matrixSize, int* matrixColSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[][] UpdateMatrix(int[][] matrix) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} matrix\n * @return {number[][]}\n */\nvar updateMatrix = function(matrix) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} matrix\r\n# @return {Integer[][]}\r\ndef update_matrix(matrix)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func updateMatrix(_ matrix: [[Int]]) -> [[Int]] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func updateMatrix(matrix [][]int) [][]int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def updateMatrix(matrix: Array[Array[Int]]): Array[Array[Int]] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun updateMatrix(matrix: Array<IntArray>): Array<IntArray> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn update_matrix(matrix: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @return Integer[][]\n     */\n    function updateMatrix($matrix) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"62.2K\", \"totalSubmission\": \"164.8K\", \"totalAcceptedRaw\": 62232, \"totalSubmissionRaw\": 164767, \"acRate\": \"37.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "113",
+    "canSeeDetail": true,
+    "url": "/articles/01-matrix/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach #1 Brute force [Time Limit Exceeded]\n\n**Intuition**\n\nDo what the question says.\n\n**Algorithm**\n\n* Initialize `dist[i][j]=INT_MAX` for all `{i,j}` cells.\n* Iterate over the matrix.\n  + If cell is `0`, `dist[i][j]=0`,\n  + Else, for each `1` cell,\n    - Iterate over the entire matrix\n    - If the cell is `0`, calculate its distance from current cell as `abs(k-i)+abs(l-j)`.\n    - If the distance is smaller than the current distance, update it.\n\n\n<iframe src=\"https://leetcode.com/playground/WrxDXrW3/shared\" frameBorder=\"0\" name=\"WrxDXrW3\" width=\"100%\" height=\"445\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$O((r \\cdot c)^2)$$.\nIterating over the entire matrix for each `1` in the matrix.\n\n* Space complexity: $$O(r \\cdot c)$$.\nNo extra space required than the `vector<vector<int> > dist`\n\n---\n#### Approach #2 Using BFS [Accepted]\n\n**Intuition**\n\n*A better brute force*:\nLooking over the entire matrix appears wasteful and hence, we can use Breadth First Search(BFS) to limit the search to the nearest `0` found for each `1`. As soon as a `0` appears during the BFS, we know that the `0` is nearest, and hence, we move to the next `1`.\n\n*Think again*:\nBut, in this approach, we will only be able to update the distance of one `1` using one BFS, which could in fact, result in slightly higher complexity than the Approach #1 brute force.\nBut hey,this could be optimised if we start the BFS from `0`s and thereby, updating the distances of all the `1`s in the path.\n\n**Algorithm**\n\n* For our BFS routine, we keep a queue, `q` to maintain the queue of cells to be examined next.\n* We start by adding all the cells with `0`s to `q`.\n* Intially, distance for each `0` cell is `0` and distance for each `1` is `INT_MAX`, which is updated during the BFS.\n* Pop the cell from queue, and examine its neighbours. If the new calculated distance for neighbour `{i,j}` is smaller, we add `{i,j}` to `q` and update `dist[i][j]`.\n\n\n<iframe src=\"https://leetcode.com/playground/abTJGHUf/shared\" frameBorder=\"0\" name=\"abTJGHUf\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(r \\cdot c)$$.\n  + Since, the new cells are added to the queue only if their current distance is greater than the calculated distance, cells are not likely to be added multiple times.\n\n* Space complexity: $$O(r \\cdot c)$$. Additional $$O(r \\cdot c)$$ for queue than in Approach #1\n\n---\n#### Approach #3 DP Approach [Accepted]\n\n**Intuition**\n\nThe distance of a cell from `0` can be calculated if we know the nearest distance for all the neighbours, in which case the distance is minimum distance of any neightbour + 1. And, instantly, the word come to mind DP!!  \nFor each `1`, the minimum path to `0` can be in any direction. So, we need to check all the 4 direction. In one iteration from top to bottom, we can check left and top directions, and we need another iteration from bottom to top to check for right and bottom direction.\n\n**Algorithm**\n\n* Iterate the matrix from top to bottom-left to right:\n  + Update\n  $$\\text{dist}[i][j]=\\min(\\text{dist}[i][j],\\min(\\text{dist}[i][j-1],\\text{dist}[i-1][j])+1)$$\n  i.e., minimum of the current dist and distance from top or left neighbour +1, that would have been already calculated previously in the current iteration.\n* Now, we need to do the back iteration in the similar manner: from bottom to top-right to left:\n  + Update\n  $$\\text{dist}[i][j]=\\min(\\text{dist}[i][j],\\min(\\text{dist}[i][j+1],\\text{dist}[i+1][j])+1)$$\n  i.e. minimum of current dist and distances calculated from bottom and right neighbours, that would be already available in current iteration.\n\n\n<iframe src=\"https://leetcode.com/playground/ZLQD7VF7/shared\" frameBorder=\"0\" name=\"ZLQD7VF7\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity: $$O(r \\cdot c)$$. 2 passes of $$r \\cdot c$$ each\n* Space complexity: $$O(r \\cdot c)$$. No additional space required than `dist vector<vector<int> >`\n\n---\nAnalysis written by [@abhinavbansal0](https://leetcode.com/abhinavbansal0).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "111",
+      "count": 28,
+      "average": 4.571,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,0,0],[0,1,0],[0,0,0]]",
+  "metaData": "{\r\n  \"name\": \"updateMatrix\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"matrix\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

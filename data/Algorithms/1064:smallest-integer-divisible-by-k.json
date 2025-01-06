@@ -1,0 +1,102 @@
+{
+  "questionId": "1064",
+  "questionFrontendId": "1015",
+  "boundTopicId": null,
+  "title": "Smallest Integer Divisible by K",
+  "titleSlug": "smallest-integer-divisible-by-k",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a positive integer <code>K</code>, you need find the <strong>smallest</strong>&nbsp;positive integer <code>N</code> such that <code>N</code> is divisible by <code>K</code>, and <code>N</code> only contains the digit <strong>1</strong>.</p>\r\n\r\n<p>Return the&nbsp;length of <code>N</code>.&nbsp; If there is no such <code>N</code>,&nbsp;return -1.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 1\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> The smallest answer is N = 1, which has length 1.</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 2\r\n<strong>Output:</strong> -1\r\n<strong>Explanation:</strong> There is no such positive integer N divisible by 2.</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> 3\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> The smallest answer is N = 111, which has length 3.</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= K &lt;= 10^5</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 72,
+  "dislikes": 203,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "dustinzhang",
+      "profileUrl": "/dustinzhang/",
+      "avatarUrl": "https://www.gravatar.com/avatar/68e05bc5f811e9b15d2a95b1fa2dd19d.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int smallestRepunitDivByK(int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int smallestRepunitDivByK(int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestRepunitDivByK(self, K):\n        \"\"\"\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestRepunitDivByK(self, K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint smallestRepunitDivByK(int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int SmallestRepunitDivByK(int K) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} K\n * @return {number}\n */\nvar smallestRepunitDivByK = function(K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} k\r\n# @return {Integer}\r\ndef smallest_repunit_div_by_k(k)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func smallestRepunitDivByK(_ K: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestRepunitDivByK(K int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def smallestRepunitDivByK(K: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun smallestRepunitDivByK(K: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_repunit_div_by_k(k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $K\n     * @return Integer\n     */\n    function smallestRepunitDivByK($K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"8K\", \"totalSubmission\": \"26K\", \"totalAcceptedRaw\": 7950, \"totalSubmissionRaw\": 26040, \"acRate\": \"30.5%\"}",
+  "hints": [
+    "11111 = 1111 * 10 + 1\r\nWe only need to store remainders modulo K.",
+    "If we never get a remainder of 0, why would that happen, and how would we know that?"
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "1",
+  "metaData": "{\r\n  \"name\": \"smallestRepunitDivByK\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

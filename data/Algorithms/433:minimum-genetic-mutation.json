@@ -1,0 +1,94 @@
+{
+  "questionId": "433",
+  "questionFrontendId": "433",
+  "boundTopicId": null,
+  "title": "Minimum Genetic Mutation",
+  "titleSlug": "minimum-genetic-mutation",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A gene string can be represented by an 8-character long string, with choices from <code>&quot;A&quot;</code>, <code>&quot;C&quot;</code>, <code>&quot;G&quot;</code>, <code>&quot;T&quot;</code>.</p>\r\n\r\n<p>Suppose we need to investigate about a mutation (mutation from &quot;start&quot; to &quot;end&quot;), where ONE mutation is defined as ONE single character changed in the gene string.</p>\r\n\r\n<p>For example, <code>&quot;AACCGGTT&quot;</code> -&gt; <code>&quot;AACCGGTA&quot;</code> is 1 mutation.</p>\r\n\r\n<p>Also, there is a given gene &quot;bank&quot;, which records all the valid gene mutations. A gene must be in the bank to make it a valid gene string.</p>\r\n\r\n<p>Now, given 3 things - start, end, bank, your task is to determine what is the minimum number of mutations needed to mutate from &quot;start&quot; to &quot;end&quot;. If there is no such a mutation, return -1.</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>Starting point is assumed to be valid, so it might not be included in the bank.</li>\r\n\t<li>If multiple mutations are needed, all mutations during in the sequence must be valid.</li>\r\n\t<li>You may assume start and end string is not the same.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\nstart: &quot;AACCGGTT&quot;\r\nend:   &quot;AACCGGTA&quot;\r\nbank: [&quot;AACCGGTA&quot;]\r\n\r\nreturn: 1\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\nstart: &quot;AACCGGTT&quot;\r\nend:   &quot;AAACGGTA&quot;\r\nbank: [&quot;AACCGGTA&quot;, &quot;AACCGCTA&quot;, &quot;AAACGGTA&quot;]\r\n\r\nreturn: 2\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\nstart: &quot;AAAAACCC&quot;\r\nend:   &quot;AACCCCCC&quot;\r\nbank: [&quot;AAAACCCC&quot;, &quot;AAACCCCC&quot;, &quot;AACCCCCC&quot;]\r\n\r\nreturn: 3\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 318,
+  "dislikes": 40,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Word Ladder\", \"titleSlug\": \"word-ladder\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "DickHunter",
+      "profileUrl": "/dickhunter/",
+      "avatarUrl": "https://assets.leetcode.com/users/dickhunter/avatar_1564281151.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minMutation(string start, string end, vector<string>& bank) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minMutation(String start, String end, String[] bank) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minMutation(self, start, end, bank):\n        \"\"\"\n        :type start: str\n        :type end: str\n        :type bank: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minMutation(self, start: str, end: str, bank: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minMutation(char * start, char * end, char ** bank, int bankSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinMutation(string start, string end, string[] bank) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} start\n * @param {string} end\n * @param {string[]} bank\n * @return {number}\n */\nvar minMutation = function(start, end, bank) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} start\n# @param {String} end\n# @param {String[]} bank\n# @return {Integer}\ndef min_mutation(start, end, bank)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minMutation(_ start: String, _ end: String, _ bank: [String]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minMutation(start string, end string, bank []string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minMutation(start: String, end: String, bank: Array[String]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minMutation(start: String, end: String, bank: Array<String>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_mutation(start: String, end: String, bank: Vec<String>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $start\n     * @param String $end\n     * @param String[] $bank\n     * @return Integer\n     */\n    function minMutation($start, $end, $bank) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"25.7K\", \"totalSubmission\": \"64.6K\", \"totalAcceptedRaw\": 25735, \"totalSubmissionRaw\": 64552, \"acRate\": \"39.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"AACCGGTT\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+  "metaData": "{\r\n  \"name\": \"minMutation\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"start\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"end\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"bank\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

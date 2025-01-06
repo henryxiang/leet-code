@@ -1,0 +1,115 @@
+{
+  "questionId": "912",
+  "questionFrontendId": "528",
+  "boundTopicId": null,
+  "title": "Random Pick with Weight",
+  "titleSlug": "random-pick-with-weight",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>w</code> of positive integers, where <code>w[i]</code> describes the weight of index <code>i</code>,&nbsp;write a function <code>pickIndex</code>&nbsp;which randomly&nbsp;picks an index&nbsp;in proportion&nbsp;to its weight.</p>\r\n\r\n<p>Note:</p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= w.length &lt;= 10000</code></li>\r\n\t<li><code>1 &lt;= w[i] &lt;= 10^5</code></li>\r\n\t<li><code>pickIndex</code>&nbsp;will be called at most <code>10000</code> times.</li>\r\n</ol>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: \r\n</strong><span id=\"example-input-1-1\">[&quot;Solution&quot;,&quot;pickIndex&quot;]\r\n</span><span id=\"example-input-1-2\">[[[1]],[]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[null,0]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: \r\n</strong><span id=\"example-input-2-1\">[&quot;Solution&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;,&quot;pickIndex&quot;]\r\n</span><span id=\"example-input-2-2\">[[[1,3]],[],[],[],[],[]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[null,0,1,1,1,0]</span></pre>\r\n</div>\r\n\r\n<p><strong>Explanation of Input Syntax:</strong></p>\r\n\r\n<p>The input is two lists:&nbsp;the subroutines called&nbsp;and their&nbsp;arguments.&nbsp;<code>Solution</code>&#39;s&nbsp;constructor has one argument, the&nbsp;array <code>w</code>. <code>pickIndex</code> has no arguments.&nbsp;Arguments&nbsp;are&nbsp;always wrapped with a list, even if there aren&#39;t any.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 418,
+  "dislikes": 785,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Random Pick Index\", \"titleSlug\": \"random-pick-index\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Random Pick with Blacklist\", \"titleSlug\": \"random-pick-with-blacklist\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Random Point in Non-overlapping Rectangles\", \"titleSlug\": \"random-point-in-non-overlapping-rectangles\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Random",
+      "slug": "random"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"TripAdvisor\", \"slug\": \"tripadvisor\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Two Sigma\", \"slug\": \"two-sigma\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"DoorDash\", \"slug\": \"doordash\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Rubrik\", \"slug\": \"rubrik\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    Solution(vector<int>& w) {\n        \n    }\n    \n    int pickIndex() {\n        \n    }\n};\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution* obj = new Solution(w);\n * int param_1 = obj->pickIndex();\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n\n    public Solution(int[] w) {\n        \n    }\n    \n    public int pickIndex() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(w);\n * int param_1 = obj.pickIndex();\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n\n    def __init__(self, w):\n        \"\"\"\n        :type w: List[int]\n        \"\"\"\n        \n\n    def pickIndex(self):\n        \"\"\"\n        :rtype: int\n        \"\"\"\n        \n\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution(w)\n# param_1 = obj.pickIndex()"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n\n    def __init__(self, w: List[int]):\n        \n\n    def pickIndex(self) -> int:\n        \n\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution(w)\n# param_1 = obj.pickIndex()"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} Solution;\n\n\nSolution* solutionCreate(int* w, int wSize) {\n    \n}\n\nint solutionPickIndex(Solution* obj) {\n  \n}\n\nvoid solutionFree(Solution* obj) {\n    \n}\n\n/**\n * Your Solution struct will be instantiated and called as such:\n * Solution* obj = solutionCreate(w, wSize);\n * int param_1 = solutionPickIndex(obj);\n \n * solutionFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n\n    public Solution(int[] w) {\n        \n    }\n    \n    public int PickIndex() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(w);\n * int param_1 = obj.PickIndex();\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} w\n */\nvar Solution = function(w) {\n    \n};\n\n/**\n * @return {number}\n */\nSolution.prototype.pickIndex = function() {\n    \n};\n\n/** \n * Your Solution object will be instantiated and called as such:\n * var obj = new Solution(w)\n * var param_1 = obj.pickIndex()\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class Solution\n\n=begin\n    :type w: Integer[]\n=end\n    def initialize(w)\n        \n    end\n\n\n=begin\n    :rtype: Integer\n=end\n    def pick_index()\n        \n    end\n\n\nend\n\n# Your Solution object will be instantiated and called as such:\n# obj = Solution.new(w)\n# param_1 = obj.pick_index()"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass Solution {\n\n    init(_ w: [Int]) {\n        \n    }\n    \n    func pickIndex() -> Int {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * let obj = Solution(w)\n * let ret_1: Int = obj.pickIndex()\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type Solution struct {\n    \n}\n\n\nfunc Constructor(w []int) Solution {\n    \n}\n\n\nfunc (this *Solution) PickIndex() int {\n    \n}\n\n\n/**\n * Your Solution object will be instantiated and called as such:\n * obj := Constructor(w);\n * param_1 := obj.PickIndex();\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class Solution(_w: Array[Int]) {\n\n    def pickIndex(): Int = {\n        \n    }\n\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * var obj = new Solution(w)\n * var param_1 = obj.pickIndex()\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution(w: IntArray) {\n\n    fun pickIndex(): Int {\n        \n    }\n\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * var obj = Solution(w)\n * var param_1 = obj.pickIndex()\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct Solution {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl Solution {\n\n    fn new(w: Vec<i32>) -> Self {\n        \n    }\n    \n    fn pick_index(&self) -> i32 {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * let obj = Solution::new(w);\n * let ret_1: i32 = obj.pick_index();\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n    /**\n     * @param Integer[] $w\n     */\n    function __construct($w) {\n        \n    }\n  \n    /**\n     * @return Integer\n     */\n    function pickIndex() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * $obj = Solution($w);\n * $ret_1 = $obj->pickIndex();\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"46.1K\", \"totalSubmission\": \"106.3K\", \"totalAcceptedRaw\": 46060, \"totalSubmissionRaw\": 106277, \"acRate\": \"43.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "517",
+    "canSeeDetail": true,
+    "url": "/articles/random-pick-with-weight/",
+    "content": "[TOC]\n\n## Solution\n---\n\n#### Approach 1: Prefix Sum and Binary Search\n\n**Intuition**\n\nLet $$\\text{tot} = \\sum_\\limits{i=0}^{N-1}w[i]$$, where $$N = \\text{len}(w)$$.\n\nWhat if we randomly picked an integer in the [half-closed range](http://mathworld.wolfram.com/Half-ClosedInterval.html) $$[0,\\text{tot})$$?\n\nIs there a way to map each possible integer to an index in $$w$$, such that the number of integers that map to each index is proportional to the index weights?\n\nIs there a way to do this using less than $$O(\\text{tot})$$ space?\n\n**Algorithm**\n\nCompute the prefix sum array $$p$$, where $$p[x] = \\sum_\\limits{i=0}^{x}w[i]$$.\n\nGenerate a random integer $$\\text{targ}$$ in the range $$[0, \\text{tot})$$.\n\nUse binary search to find the index $$x$$ where $$x$$ is the lowest index such that $$\\text{targ} < p[x]$$.\n\nFor some index $$i$$, all integers $$v$$ where $$p[i] - w[i] \\leq v < p[i]$$ map to this index. Therefore, indexes will be sampled proportionally to the index weights.\n\n\n<iframe src=\"https://leetcode.com/playground/hHSkKrxu/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"hHSkKrxu\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ preprocessing. $$O(\\log(N))$$ $$\\text{pickIndex}$$.\n* Space Complexity: $$O(N)$$",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "510",
+      "count": 75,
+      "average": 1.693,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"Solution\", \"pickIndex\"]\n[[[1]], []]",
+  "metaData": "{\r\n    \"classname\": \"Solution\",\r\n    \"maxbytesperline\": 200000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"name\": \"w\",\r\n                \"type\": \"integer[]\"\r\n            },\r\n            {\r\n                \"name\": \"wSize\",\r\n                \"type\": \"integer\",\r\n                \"lang\": \"c\",\r\n                \"value\": \"size_1\"\r\n            }\r\n        ]\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"pickIndex\",\r\n            \"params\": [\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

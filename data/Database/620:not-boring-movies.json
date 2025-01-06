@@ -1,0 +1,70 @@
+{
+  "questionId": "620",
+  "questionFrontendId": "620",
+  "boundTopicId": null,
+  "title": "Not Boring Movies",
+  "titleSlug": "not-boring-movies",
+  "categoryTitle": "Database",
+  "content": "X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies&rsquo; ratings and descriptions.\r\n<p>Please write a SQL query to output movies with an odd numbered ID and a description that is not &#39;boring&#39;. Order the result by rating.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>For example, table <code>cinema</code>:</p>\r\n\r\n<pre>\r\n+---------+-----------+--------------+-----------+\r\n|   id    | movie     |  description |  rating   |\r\n+---------+-----------+--------------+-----------+\r\n|   1     | War       |   great 3D   |   8.9     |\r\n|   2     | Science   |   fiction    |   8.5     |\r\n|   3     | irish     |   boring     |   6.2     |\r\n|   4     | Ice song  |   Fantacy    |   8.6     |\r\n|   5     | House card|   Interesting|   9.1     |\r\n+---------+-----------+--------------+-----------+\r\n</pre>\r\nFor the example above, the output should be:\r\n\r\n<pre>\r\n+---------+-----------+--------------+-----------+\r\n|   id    | movie     |  description |  rating   |\r\n+---------+-----------+--------------+-----------+\r\n|   5     | House card|   Interesting|   9.1     |\r\n|   1     | War       |   great 3D   |   8.9     |\r\n+---------+-----------+--------------+-----------+\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 208,
+  "dislikes": 245,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Douglas1612",
+      "profileUrl": "/douglas1612/",
+      "avatarUrl": "https://www.gravatar.com/avatar/8e60a4b596b7a8ba118c776bac2a0b04.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"83.2K\", \"totalSubmission\": \"129.6K\", \"totalAcceptedRaw\": 83212, \"totalSubmissionRaw\": 129600, \"acRate\": \"64.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "204",
+    "canSeeDetail": true,
+    "url": "/articles/not-boring-movies/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `MOD()` function [Accepted]\n\n**Algorithm**\n\nWe can use the `mod(id,2)=1` to determine the odd id, and then add a `description != 'boring'` should address this problem.\n\n**MySQL**\n\n```sql\nselect *\nfrom cinema\nwhere mod(id, 2) = 1 and description != 'boring'\norder by rating DESC\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "199",
+      "count": 10,
+      "average": 4.8,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"cinema\":[\"id\", \"movie\", \"description\", \"rating\"]},\"rows\":{\"cinema\":[[1, \"War\", \"great 3D\", 8.9], [2, \"Science\", \"fiction\", 8.5], [3, \"irish\", \"boring\", 6.2], [4, \"Ice song\", \"Fantacy\", 8.6], [5, \"House card\", \"Interesting\", 9.1]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists cinema (id int, movie varchar(255), description varchar(255), rating float(2, 1))\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table cinema (id int, movie varchar(255), description varchar(255), rating decimal(2, 1))\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table cinema (id int, movie varchar(255), description varchar(255), rating number(2, 1))\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists cinema (id int, movie varchar(255), description varchar(255), rating float(2, 1))",
+    "Truncate table cinema",
+    "insert into cinema (id, movie, description, rating) values ('1', 'War', 'great 3D', '8.9')",
+    "insert into cinema (id, movie, description, rating) values ('2', 'Science', 'fiction', '8.5')",
+    "insert into cinema (id, movie, description, rating) values ('3', 'irish', 'boring', '6.2')",
+    "insert into cinema (id, movie, description, rating) values ('4', 'Ice song', 'Fantacy', '8.6')",
+    "insert into cinema (id, movie, description, rating) values ('5', 'House card', 'Interesting', '9.1')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

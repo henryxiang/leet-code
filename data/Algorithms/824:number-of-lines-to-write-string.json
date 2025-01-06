@@ -1,0 +1,106 @@
+{
+  "questionId": "824",
+  "questionFrontendId": "806",
+  "boundTopicId": null,
+  "title": "Number of Lines To Write String",
+  "titleSlug": "number-of-lines-to-write-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We are to write the letters of a given string <code>S</code>, from left to right into lines. Each line has maximum width 100 units, and if writing a letter would cause the width of the line to exceed 100 units, it is written on the next line. We are given an array&nbsp;<code>widths</code>, an array where widths[0] is the width of &#39;a&#39;, widths[1] is the width of &#39;b&#39;, ..., and widths[25] is the width of &#39;z&#39;.</p>\r\n\r\n<p>Now answer two questions: how many lines have at least one character from <code>S</code>, and what is the width used by the last such line? Return your answer as an integer list of length 2.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n<strong>Example :</strong>\r\n<strong>Input:</strong> \r\nwidths = [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]\r\nS = &quot;abcdefghijklmnopqrstuvwxyz&quot;\r\n<strong>Output:</strong> [3, 60]\r\n<strong>Explanation: </strong>\r\nAll letters have the same length of 10. To write all 26 letters,\r\nwe need two full lines and one line with 60 units.\r\n</pre>\r\n\r\n<pre>\r\n<strong>Example :</strong>\r\n<strong>Input:</strong> \r\nwidths = [4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]\r\nS = &quot;bbbcccdddaaa&quot;\r\n<strong>Output:</strong> [2, 4]\r\n<strong>Explanation: </strong>\r\nAll letters except &#39;a&#39; have the same length of 10, and \r\n&quot;bbbcccdddaa&quot; will cover 9 * 10 + 2 * 4 = 98 units.\r\nFor the last &#39;a&#39;, it is written on the second line because\r\nthere is only 2 units left in the first line.\r\nSo the answer is 2 lines, plus 4 units in the second line.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>The length of <code>S</code> will be in the range&nbsp;[1, 1000].</li>\r\n\t<li><code>S</code> will only contain lowercase letters.</li>\r\n\t<li><code>widths</code> is&nbsp;an array of length <code>26</code>.</li>\r\n\t<li><code>widths[i]</code> will be in the range of <code>[2, 10]</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 194,
+  "dislikes": 746,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> numberOfLines(vector<int>& widths, string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] numberOfLines(int[] widths, String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numberOfLines(self, widths, S):\n        \"\"\"\n        :type widths: List[int]\n        :type S: str\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numberOfLines(self, widths: List[int], S: str) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* numberOfLines(int* widths, int widthsSize, char * S, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] NumberOfLines(int[] widths, string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} widths\n * @param {string} S\n * @return {number[]}\n */\nvar numberOfLines = function(widths, S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} widths\n# @param {String} s\n# @return {Integer[]}\ndef number_of_lines(widths, s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numberOfLines(_ widths: [Int], _ S: String) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numberOfLines(widths []int, S string) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numberOfLines(widths: Array[Int], S: String): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numberOfLines(widths: IntArray, S: String): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn number_of_lines(widths: Vec<i32>, s: String) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $widths\n     * @param String $S\n     * @return Integer[]\n     */\n    function numberOfLines($widths, $S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"32.9K\", \"totalSubmission\": \"51.6K\", \"totalAcceptedRaw\": 32895, \"totalSubmissionRaw\": 51554, \"acRate\": \"63.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "437",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-lines-to-write-string/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Insert Each Character [Accepted]\n\n**Intuition**\n\nWe can write out each character in the string `S` one by one.\n\nAs we write characters, we can update `(lines, width)` that keeps track of how many lines we have used, and what is the length of the used space in the last line.\n\n**Algorithm**\n\nIf the space `w` of the next character in `S` fits our current line, we will add it.  Otherwise, we will start a new line, and use `w` space to put that character on the next line.\n\n<iframe src=\"https://leetcode.com/playground/QNF9BsvY/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"QNF9BsvY\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(S\\text{.length})$$, as we iterate through `S`.\n\n* Space Complexity: $$O(1)$$ additional space, as we only use `lines` and `width`.  (In Java, our `toCharArray` method makes this $$O(S\\text{.length})$$, but we could use `.charAt` instead).\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "432",
+      "count": 8,
+      "average": 3.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]\n\"abcdefghijklmnopqrstuvwxyz\"",
+  "metaData": "{\r\n  \"name\": \"numberOfLines\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"widths\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n        \"name\": \"S\",\r\n        \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

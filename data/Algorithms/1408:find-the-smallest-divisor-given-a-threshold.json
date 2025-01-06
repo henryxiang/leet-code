@@ -1,0 +1,96 @@
+{
+  "questionId": "1408",
+  "questionFrontendId": "1283",
+  "boundTopicId": null,
+  "title": "Find the Smallest Divisor Given a Threshold",
+  "titleSlug": "find-the-smallest-divisor-given-a-threshold",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers <code>nums</code> and an integer <code>threshold</code>, we will choose a positive integer divisor and&nbsp;divide&nbsp;all the array by it and sum the result of the division. Find the <strong>smallest</strong> divisor such that the result mentioned above is less than&nbsp;or equal to <code>threshold</code>.</p>\r\n\r\n<p>Each&nbsp;result of&nbsp;division is rounded&nbsp;to the nearest integer greater than or equal to that element.&nbsp;(For example: 7/3 = 3 and 10/2 = 5).</p>\r\n\r\n<p>It is guaranteed that there will be an answer.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,2,5,9], threshold = 6\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> We can get a sum to 17 (1+2+5+9) if the divisor is 1. \r\nIf the divisor is 4 we can get a sum to 7 (1+1+2+3) and if the divisor is 5 the sum will be 5 (1+1+1+2). \r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [2,3,5,7,11], threshold = 11\r\n<strong>Output:</strong> 3\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [19], threshold = 5\r\n<strong>Output:</strong> 4\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= nums.length &lt;= 5 * 10^4</code></li>\r\n\t<li><code>1 &lt;= nums[i] &lt;= 10^6</code></li>\r\n\t<li><code>nums.length &lt;=&nbsp;threshold &lt;= 10^6</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 64,
+  "dislikes": 21,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int smallestDivisor(vector<int>& nums, int threshold) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int smallestDivisor(int[] nums, int threshold) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestDivisor(self, nums, threshold):\n        \"\"\"\n        :type nums: List[int]\n        :type threshold: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestDivisor(self, nums: List[int], threshold: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint smallestDivisor(int* nums, int numsSize, int threshold){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SmallestDivisor(int[] nums, int threshold) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} threshold\n * @return {number}\n */\nvar smallestDivisor = function(nums, threshold) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} threshold\n# @return {Integer}\ndef smallest_divisor(nums, threshold)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func smallestDivisor(_ nums: [Int], _ threshold: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestDivisor(nums []int, threshold int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def smallestDivisor(nums: Array[Int], threshold: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun smallestDivisor(nums: IntArray, threshold: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $threshold\n     * @return Integer\n     */\n    function smallestDivisor($nums, $threshold) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.5K\", \"totalSubmission\": \"14.3K\", \"totalAcceptedRaw\": 5508, \"totalSubmissionRaw\": 14291, \"acRate\": \"38.5%\"}",
+  "hints": [
+    "Examine every possible number for solution. Choose the largest of them.",
+    "Use binary search to reduce the time complexity."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2,5,9]\n6",
+  "metaData": "{\n  \"name\": \"smallestDivisor\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"threshold\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

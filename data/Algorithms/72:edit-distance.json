@@ -1,0 +1,109 @@
+{
+  "questionId": "72",
+  "questionFrontendId": "72",
+  "boundTopicId": null,
+  "title": "Edit Distance",
+  "titleSlug": "edit-distance",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two words <em>word1</em> and <em>word2</em>, find the minimum number of operations required to convert <em>word1</em> to <em>word2</em>.</p>\r\n\r\n<p>You have the following 3 operations permitted on a word:</p>\r\n\r\n<ol>\r\n\t<li>Insert a character</li>\r\n\t<li>Delete a character</li>\r\n\t<li>Replace a character</li>\r\n</ol>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> word1 = &quot;horse&quot;, word2 = &quot;ros&quot;\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> \r\nhorse -&gt; rorse (replace &#39;h&#39; with &#39;r&#39;)\r\nrorse -&gt; rose (remove &#39;r&#39;)\r\nrose -&gt; ros (remove &#39;e&#39;)\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> word1 = &quot;intention&quot;, word2 = &quot;execution&quot;\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> \r\nintention -&gt; inention (remove &#39;t&#39;)\r\ninention -&gt; enention (replace &#39;i&#39; with &#39;e&#39;)\r\nenention -&gt; exention (replace &#39;n&#39; with &#39;x&#39;)\r\nexention -&gt; exection (replace &#39;n&#39; with &#39;c&#39;)\r\nexection -&gt; execution (insert &#39;u&#39;)\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 2793,
+  "dislikes": 44,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"One Edit Distance\", \"titleSlug\": \"one-edit-distance\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Delete Operation for Two Strings\", \"titleSlug\": \"delete-operation-for-two-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum ASCII Delete Sum for Two Strings\", \"titleSlug\": \"minimum-ascii-delete-sum-for-two-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Uncrossed Lines\", \"titleSlug\": \"uncrossed-lines\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Square\", \"slug\": \"square\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int minDistance(string word1, string word2) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minDistance(String word1, String word2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minDistance(self, word1, word2):\n        \"\"\"\n        :type word1: str\n        :type word2: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minDistance(self, word1: str, word2: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minDistance(char * word1, char * word2){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int MinDistance(string word1, string word2) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} word1\n * @param {string} word2\n * @return {number}\n */\nvar minDistance = function(word1, word2) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} word1\r\n# @param {String} word2\r\n# @return {Integer}\r\ndef min_distance(word1, word2)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func minDistance(_ word1: String, _ word2: String) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minDistance(word1 string, word2 string) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def minDistance(word1: String, word2: String): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun minDistance(word1: String, word2: String): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_distance(word1: String, word2: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $word1\n     * @param String $word2\n     * @return Integer\n     */\n    function minDistance($word1, $word2) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"213.2K\", \"totalSubmission\": \"526.1K\", \"totalAcceptedRaw\": 213222, \"totalSubmissionRaw\": 526053, \"acRate\": \"40.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "622",
+    "canSeeDetail": true,
+    "url": "/articles/edit-distance/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Intuition\n\nThe edit distance algorithm is very popular among \nthe data scientists. It's one of the basic algorithms\nused for evaluation of machine translation and speech \nrecognition. \n\nThe naive approach would be to check for all possible edit \nsequences and choose the shortest one in-between.\nThat would result in an exponential complexity and it's an overkill\nsince we actually don't need to have all possible edit sequences \nbut just the shortest one. \n<br />\n<br />\n\n\n---\n#### Approach 1: Dynamic Programming\n\nThe idea would be to reduce the problem to simple ones.\nFor example, there are two words, `horse` and `ros` and we want to compute\nan edit distance `D` for them. One could notice that it seems to be\nmore simple for short words and so it would be logical to relate\nan edit distance `D[n][m]` with the lengths `n` and `m` of input words.\n\nLet's go further and introduce an edit distance `D[i][j]` which is\nan edit distance between the first `i` characters of `word1` and \nthe first `j` characters of `word2`.\n\n![edit_distance](../Figures/72/72_edit.png)\n\nIt turns out that one could compute `D[i][j]`, knowing \n`D[i - 1][j]`, `D[i][j - 1]` and `D[i - 1][j - 1]`.\n\n> There is just one more character to add into one or both strings \nand the formula is quite obvious.\n\nIf the last character is the same, *i.e.* `word1[i] = word2[j]` then\n\n$$\nD[i][j] = 1 + \\min(D[i - 1][j], D[i][j - 1], D[i - 1][j - 1] - 1)\n$$\n\nand if not, *i.e.* `word1[i] != word2[j]` we have to\ntake into account the replacement of the last character \nduring the conversion.\n\n$$\nD[i][j] = 1 + \\min(D[i - 1][j], D[i][j - 1], D[i - 1][j - 1])\n$$\n\nSo each step of the computation would be done based on the previous computation,\nas follows: \n\n![compute](../Figures/72/72_compute.png)\n\nThe obvious base case is an edit distance between the empty string and \nnon-empty string that means `D[i][0] = i` and `D[0][j] = j`.\n\nNow we have everything to actually proceed to the computations \n\n<!--![LIS](../Figures/72/72_tr.gif)-->\n!?!../Documents/72_LIS.json:1000,513!?!\n\n<iframe src=\"https://leetcode.com/playground/7c9xvWnM/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"7c9xvWnM\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(m n)$$ as \nit follows quite straightforward for the inserted loops. \n* Space complexity : $$\\mathcal{O}(m n)$$ since at each step we\nkeep the results of all previous computations.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "608",
+      "count": 37,
+      "average": 4.595,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"horse\"\n\"ros\"",
+  "metaData": "{ \r\n  \"name\": \"minDistance\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"word1\",\r\n      \"type\": \"string\"\r\n    },\r\n    { \r\n      \"name\": \"word2\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

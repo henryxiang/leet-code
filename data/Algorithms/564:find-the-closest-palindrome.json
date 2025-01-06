@@ -1,0 +1,116 @@
+{
+  "questionId": "564",
+  "questionFrontendId": "564",
+  "boundTopicId": null,
+  "title": "Find the Closest Palindrome",
+  "titleSlug": "find-the-closest-palindrome",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an integer n, find the closest integer (not including itself), which is a palindrome. </p>\r\n\r\n<p>The 'closest' is defined as absolute difference minimized between two integers.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \"123\"\r\n<b>Output:</b> \"121\"\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The input <b>n</b> is a positive integer represented by string, whose length will not exceed 18.</li>\r\n<li>If there is a tie, return the smaller one as answer.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 191,
+  "dislikes": 710,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "anvesh2",
+      "profileUrl": "/anvesh2/",
+      "avatarUrl": "https://assets.leetcode.com/users/anvesh2/avatar_1529121379.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string nearestPalindromic(string n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String nearestPalindromic(String n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def nearestPalindromic(self, n):\n        \"\"\"\n        :type n: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def nearestPalindromic(self, n: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * nearestPalindromic(char * n){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string NearestPalindromic(string n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} n\n * @return {string}\n */\nvar nearestPalindromic = function(n) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} n\n# @return {String}\ndef nearest_palindromic(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func nearestPalindromic(_ n: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func nearestPalindromic(n string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def nearestPalindromic(n: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun nearestPalindromic(n: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn nearest_palindromic(n: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $n\n     * @return String\n     */\n    function nearestPalindromic($n) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.2K\", \"totalSubmission\": \"89.2K\", \"totalAcceptedRaw\": 17164, \"totalSubmissionRaw\": 89244, \"acRate\": \"19.2%\"}",
+  "hints": [
+    "Will brute force work for this problem? Think of something else.",
+    "Take some examples like 1234, 999,1000, etc and check their closest palindromes. How many different cases are possible?",
+    "Do we have to consider only left half or right half of the string or both?",
+    "Try to find the closest palindrome of these numbers- 12932, 99800, 12120. Did you observe something?"
+  ],
+  "solution": {
+    "id": "116",
+    "canSeeDetail": true,
+    "url": "/articles/find-the-closest-palindrome/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force[Time Limit Exceeded]\n\nThe simplest solution is to consider every possible number smaller than the given number $$n$$, starting by decrementing 1 from the given number and go on in descending order. Similarly, we can consider every possible number greater than $$n$$ starting by incrementing 1 from the given number and going in ascending order. We can continue doing so in an alternate manner till we find a number which is a palindrome.\n\n<iframe src=\"https://leetcode.com/playground/DvreVK8V/shared\" frameBorder=\"0\" name=\"DvreVK8V\" width=\"100%\" height=\"377\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(\\sqrt{n})$$. Upto $$2*\\sqrt{n}$$ numbers could be generated in the worst case.\n\n* Space complexity : $$O(1)$$. Constant space is used.\n\n---\n\n#### Approach #2 Using Math[Accepted]\n\n**Algorithm**\n\nTo understand this method, let's start with a simple illustration. Assume that the number given to us is \"abcxy\". One way to convert this number into a palindrome is to replicate one half of the string to the other half. If we try replicating the second half to the first half, the new palindrome obtained will be \"yxcxy\" which lies at an absolute of $$\\left|10000(a-y) + 1000(b-x)\\right|$$ from the original number. But, if we replicate the first half to the second half of the string, we obtain \"abcba\", which lies at an absolute difference of $$\\left|10(x-b) + (y-a)\\right|$$. Trying to change $$c$$ additionaly in either case would incur an additional value of atleast 100 in the absolute difference.\n\nFrom the above illustration, we can conclude that if replication is used to generate the palindromic number, we should always replicate the first half to the second half. In this implementation, we've stored such a number in $$a$$ at a difference of $$diff1$$ from $$n$$.\n\nBut, there exists another case as well, where the digit at the middle index is incremented or decremented. In such cases, it could be profitable to make changes to the central digit only since such changes could lead to a palindrome formation nearer to the original digit. e.g. 10987. Using the above criteria, the palindrome obtained will be 10901 which is at a more difference from 10987 than 11011. A similar situation occurs if a 0 occurs at the middle digit. But, again as discussed previously, we need to consider only the first half digits to obtain the new palindrome. This special effect occurs with 0 or 9 at the middle digit since, only decrementing 0 and incrementing 9 at that digit place can lead to the change in the rest of the digits towards their left. In any other case, the situation boils down to the one discussed in the first paragraph.\n\nNow, whenever we find a 0 near the middle index, in order to consider the palindromes which are lesser than $$n$$, we subtract a 1 from the first half of the number to obtain a new palindromic half e.g. If the given number $$n$$ is 20001, we subtract a 1 from 200 creating a number of the form 199xx. To obtain the new palindrome, we replicate the first half to obtain 19991. Taking another example of  10000, (with a 1 at the MSB), we subtract a 1 from 100 creating 099xx as the new number transforming to a 9999 as the new palindrome. This number is stored in $$b$$ having a difference of $$diff2$$ from $$n$$\n\nSimilar treatment needs to be done with a 9 at the middle digit, except that this time we need to consider the numbers larger than the current number. For this, we add a 1 to the first half. e.g. Taking the number 10987, we add a 1 to 109 creating a number of the form 110xx(11011 is the new palindrome). This palindrome is stored in $$c$$ having a difference of $$diff3$$ from $$n$$.\n\nOut of these three palindromes, we can choose the one with a minimum difference from $$n$$. Further, in case of a tie, we need to return the smallest palindrome obtained. For resolving this tie's conflict, we can observe that a tie is possible only if one number is larger than $$n$$ and another is lesser than $$n$$. Further, we know that the number $$b$$ is obtained by decreasing $$n$$. Thus, in case of conflict between $$b$$ and any other number, we need to choose $$b$$. Similarly, $$c$$ is obtained by increasing $$n$$. Thus, in case of a tie between $$c$$ and any other number, we need to choose the number other than $$c$$.\n\n\n\n<iframe src=\"https://leetcode.com/playground/Y6G9NDDf/shared\" frameBorder=\"0\" name=\"Y6G9NDDf\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(l)$$. Scanning, insertion, deletion,, mirroring takes $$O(l)$$, where $$l$$ is the length of the string.\n\n* Space complexity : $$O(l)$$. Temporary variables are used to store the strings.\n\n---\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "114",
+      "count": 27,
+      "average": 3.259,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"1\"",
+  "metaData": "{\r\n  \"name\": \"nearestPalindromic\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"n\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

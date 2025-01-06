@@ -1,0 +1,111 @@
+{
+  "questionId": "682",
+  "questionFrontendId": "682",
+  "boundTopicId": null,
+  "title": "Baseball Game",
+  "titleSlug": "baseball-game",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nYou're now a baseball game point recorder.\r\n</p>\r\n\r\n<p>\r\nGiven a list of strings, each string can be one of the 4 following types:\r\n<ol>\r\n<li><code>Integer</code> (one round's score): Directly represents the number of points you get in this round.</li>\r\n<li><code>\"+\"</code> (one round's score): Represents that the points you get in this round are the sum of the last two <code>valid</code> round's points.</li>\r\n<li><code>\"D\"</code> (one round's score): Represents that the points you get in this round are the doubled data of the last <code>valid</code> round's points.</li>\r\n<li><code>\"C\"</code> (an operation, which isn't a round's score): Represents the last <code>valid</code> round's points you get were invalid and should be removed.</li>\r\n</ol>\r\n</p>\r\n\r\n<p>\r\nEach round's operation is permanent and could have an impact on the round before and the round after.\r\n</p>\r\n\r\n<p>\r\nYou need to return the sum of the points you could get in all the rounds.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> [\"5\",\"2\",\"C\",\"D\",\"+\"]\r\n<b>Output:</b> 30\r\n<b>Explanation:</b> \r\nRound 1: You could get 5 points. The sum is: 5.\r\nRound 2: You could get 2 points. The sum is: 7.\r\nOperation 1: The round 2's data was invalid. The sum is: 5.  \r\nRound 3: You could get 10 points (the round 2's data has been removed). The sum is: 15.\r\nRound 4: You could get 5 + 10 = 15 points. The sum is: 30.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> [\"5\",\"-2\",\"4\",\"C\",\"D\",\"9\",\"+\",\"+\"]\r\n<b>Output:</b> 27\r\n<b>Explanation:</b> \r\nRound 1: You could get 5 points. The sum is: 5.\r\nRound 2: You could get -2 points. The sum is: 3.\r\nRound 3: You could get 4 points. The sum is: 7.\r\nOperation 1: The round 3's data is invalid. The sum is: 3.  \r\nRound 4: You could get -4 points (the round 3's data has been removed). The sum is: -1.\r\nRound 5: You could get 9 points. The sum is: 8.\r\nRound 6: You could get -4 + 9 = 5 points. The sum is 13.\r\nRound 7: You could get 9 + 5 = 14 points. The sum is 27.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br />\r\n<li>The size of the input list will be between 1 and 1000.</li>\r\n<li>Every integer represented in the list will be between -30000 and 30000.</li>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 364,
+  "dislikes": 881,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int calPoints(vector<string>& ops) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int calPoints(String[] ops) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def calPoints(self, ops):\n        \"\"\"\n        :type ops: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def calPoints(self, ops: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint calPoints(char ** ops, int opsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CalPoints(string[] ops) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} ops\n * @return {number}\n */\nvar calPoints = function(ops) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} ops\n# @return {Integer}\ndef cal_points(ops)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func calPoints(_ ops: [String]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func calPoints(ops []string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def calPoints(ops: Array[String]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun calPoints(ops: Array<String>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn cal_points(ops: Vec<String>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $ops\n     * @return Integer\n     */\n    function calPoints($ops) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"64.1K\", \"totalSubmission\": \"103.3K\", \"totalAcceptedRaw\": 64143, \"totalSubmissionRaw\": 103336, \"acRate\": \"62.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "252",
+    "canSeeDetail": true,
+    "url": "/articles/baseball-game/",
+    "content": "#### Approach #1: Stack [Accepted]\n\n**Intuition and Algorithm**\n\nLet's maintain the value of each valid round on a stack as we process the data.  A stack is ideal since we only deal with operations involving the last or second-last valid round.\n\n<iframe src=\"https://leetcode.com/playground/FRAbgcgJ/shared\" frameBorder=\"0\" name=\"FRAbgcgJ\" width=\"100%\" height=\"462\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `ops`.  We parse through every element in the given array once, and do $$O(1)$$ work for each element.\n\n* Space Complexity: $$O(N)$$, the space used to store our `stack`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "247",
+      "count": 9,
+      "average": 4.444,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"5\",\"2\",\"C\",\"D\",\"+\"]",
+  "metaData": "{\r\n  \"name\": \"calPoints\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"ops\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

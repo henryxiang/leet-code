@@ -1,0 +1,105 @@
+{
+  "questionId": "1229",
+  "questionFrontendId": "1129",
+  "boundTopicId": null,
+  "title": "Shortest Path with Alternating Colors",
+  "titleSlug": "shortest-path-with-alternating-colors",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Consider a directed graph, with nodes labelled <code>0, 1, ..., n-1</code>.&nbsp; In this graph, each edge is either red or blue, and there could&nbsp;be self-edges or parallel edges.</p>\r\n\r\n<p>Each <code>[i, j]</code> in <code>red_edges</code> denotes a red directed edge from node <code>i</code> to node <code>j</code>.&nbsp; Similarly, each <code>[i, j]</code> in <code>blue_edges</code> denotes a blue directed edge from node <code>i</code> to node <code>j</code>.</p>\r\n\r\n<p>Return an array <code>answer</code>&nbsp;of length <code>n</code>,&nbsp;where each&nbsp;<code>answer[X]</code>&nbsp;is&nbsp;the length of the shortest path from node <code>0</code>&nbsp;to node <code>X</code>&nbsp;such that the edge colors alternate along the path (or <code>-1</code> if such a path doesn&#39;t exist).</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n<pre><strong>Input:</strong> n = 3, red_edges = [[0,1],[1,2]], blue_edges = []\r\n<strong>Output:</strong> [0,1,-1]\r\n</pre><p><strong>Example 2:</strong></p>\r\n<pre><strong>Input:</strong> n = 3, red_edges = [[0,1]], blue_edges = [[2,1]]\r\n<strong>Output:</strong> [0,1,-1]\r\n</pre><p><strong>Example 3:</strong></p>\r\n<pre><strong>Input:</strong> n = 3, red_edges = [[1,0]], blue_edges = [[2,1]]\r\n<strong>Output:</strong> [0,-1,-1]\r\n</pre><p><strong>Example 4:</strong></p>\r\n<pre><strong>Input:</strong> n = 3, red_edges = [[0,1]], blue_edges = [[1,2]]\r\n<strong>Output:</strong> [0,1,2]\r\n</pre><p><strong>Example 5:</strong></p>\r\n<pre><strong>Input:</strong> n = 3, red_edges = [[0,1],[0,2]], blue_edges = [[1,0]]\r\n<strong>Output:</strong> [0,1,1]\r\n</pre>\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= n &lt;= 100</code></li>\r\n\t<li><code>red_edges.length &lt;= 400</code></li>\r\n\t<li><code>blue_edges.length &lt;= 400</code></li>\r\n\t<li><code>red_edges[i].length == blue_edges[i].length == 2</code></li>\r\n\t<li><code>0 &lt;= red_edges[i][j], blue_edges[i][j] &lt; n</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 187,
+  "dislikes": 10,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "the_enigma",
+      "profileUrl": "/the_enigma/",
+      "avatarUrl": "https://assets.leetcode.com/users/the_enigma/avatar_1543163639.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& red_edges, vector<vector<int>>& blue_edges) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] shortestAlternatingPaths(int n, int[][] red_edges, int[][] blue_edges) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestAlternatingPaths(self, n, red_edges, blue_edges):\n        \"\"\"\n        :type n: int\n        :type red_edges: List[List[int]]\n        :type blue_edges: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestAlternatingPaths(self, n: int, red_edges: List[List[int]], blue_edges: List[List[int]]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* shortestAlternatingPaths(int n, int** red_edges, int red_edgesSize, int* red_edgesColSize, int** blue_edges, int blue_edgesSize, int* blue_edgesColSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] ShortestAlternatingPaths(int n, int[][] red_edges, int[][] blue_edges) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number[][]} red_edges\n * @param {number[][]} blue_edges\n * @return {number[]}\n */\nvar shortestAlternatingPaths = function(n, red_edges, blue_edges) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer[][]} red_edges\n# @param {Integer[][]} blue_edges\n# @return {Integer[]}\ndef shortest_alternating_paths(n, red_edges, blue_edges)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestAlternatingPaths(_ n: Int, _ red_edges: [[Int]], _ blue_edges: [[Int]]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestAlternatingPaths(n int, red_edges [][]int, blue_edges [][]int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestAlternatingPaths(n: Int, red_edges: Array[Array[Int]], blue_edges: Array[Array[Int]]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestAlternatingPaths(n: Int, red_edges: Array<IntArray>, blue_edges: Array<IntArray>): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_alternating_paths(n: i32, red_edges: Vec<Vec<i32>>, blue_edges: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer[][] $red_edges\n     * @param Integer[][] $blue_edges\n     * @return Integer[]\n     */\n    function shortestAlternatingPaths($n, $red_edges, $blue_edges) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.6K\", \"totalSubmission\": \"20.5K\", \"totalAcceptedRaw\": 7623, \"totalSubmissionRaw\": 20482, \"acRate\": \"37.2%\"}",
+  "hints": [
+    "Do a breadth-first search, where the \"nodes\" are actually (Node, color of last edge taken)."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "3\n[[0,1],[1,2]]\n[]",
+  "metaData": "{\n  \"name\": \"shortestAlternatingPaths\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer[][]\",\n      \"name\": \"red_edges\"\n    },\n    {\n      \"type\": \"integer[][]\",\n      \"name\": \"blue_edges\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

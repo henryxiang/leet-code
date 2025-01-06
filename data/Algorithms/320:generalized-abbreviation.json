@@ -1,0 +1,109 @@
+{
+  "questionId": "320",
+  "questionFrontendId": "320",
+  "boundTopicId": null,
+  "title": "Generalized Abbreviation",
+  "titleSlug": "generalized-abbreviation",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Write a function to generate the generalized abbreviations of a word.&nbsp;</p>\r\n\r\n<p><strong>Note:&nbsp;</strong>The order of the output does not matter.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>&quot;word&quot;</code>\r\n<strong>Output:</strong>\r\n[&quot;word&quot;, &quot;1ord&quot;, &quot;w1rd&quot;, &quot;wo1d&quot;, &quot;wor1&quot;, &quot;2rd&quot;, &quot;w2d&quot;, &quot;wo2&quot;, &quot;1o1d&quot;, &quot;1or1&quot;, &quot;w1r1&quot;, &quot;1o2&quot;, &quot;2r1&quot;, &quot;3d&quot;, &quot;w3&quot;, &quot;4&quot;]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 342,
+  "dislikes": 40,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Subsets\", \"titleSlug\": \"subsets\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Unique Word Abbreviation\", \"titleSlug\": \"unique-word-abbreviation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Unique Word Abbreviation\", \"titleSlug\": \"minimum-unique-word-abbreviation\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Bit Manipulation",
+      "slug": "bit-manipulation"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> generateAbbreviations(string word) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> generateAbbreviations(String word) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def generateAbbreviations(self, word):\n        \"\"\"\n        :type word: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def generateAbbreviations(self, word: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** generateAbbreviations(char * word, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> GenerateAbbreviations(string word) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} word\n * @return {string[]}\n */\nvar generateAbbreviations = function(word) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} word\n# @return {String[]}\ndef generate_abbreviations(word)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func generateAbbreviations(_ word: String) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func generateAbbreviations(word string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def generateAbbreviations(word: String): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun generateAbbreviations(word: String): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn generate_abbreviations(word: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $word\n     * @return String[]\n     */\n    function generateAbbreviations($word) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"41.8K\", \"totalSubmission\": \"83.4K\", \"totalAcceptedRaw\": 41825, \"totalSubmissionRaw\": 83422, \"acRate\": \"50.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "69",
+    "canSeeDetail": true,
+    "url": "/articles/generalized-abbreviation/",
+    "content": "[TOC]\n\n## Summary\nThis article is for intermediate readers. It introduces the following ideas:\nBacktracking and Bit Manipulation\n\n## Solution\n---\n#### Approach #1 (Backtracking) [Accepted]\n\n**Intuition**\n\nHow many abbreviations are there for a word of length $$n$$? The answer is $$2^n$$ because each character can either be abbreviated or not, resulting in different abbreviations.\n\n**Algorithm**\n\nThe backtracking algorithm enumerates a set of partial candidates that, in principle, could be completed in several choices to give all the possible solutions to the problem. The completion is done incrementally, by extending the candidate in many steps. Abstractly, the partial candidates can be seen as nodes of a tree, the potential search tree. Each partial candidate is the parent of the candidates that derives from it by an extension step; the leaves of the tree are the partial candidates that cannot be extended any further.\n\nIn our problem, the partial candidates are incomplete abbreviations that can be extended by one of the two choices:\n\n1. keep the next character;\n2. abbreviate the next character.\n\nWe extend the potential candidate in a depth-first manner. We backtrack when we reach a leaf node in the search tree. All the leaves in the search tree are valid abbreviations and shall be put into a shared list which will be returned at the end.\n\n\n\n<iframe src=\"https://leetcode.com/playground/DZ7F6eEQ/shared\" frameBorder=\"0\" name=\"DZ7F6eEQ\" width=\"100%\" height=\"496\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n 2^n)$$. For each call to `backtrack`, it either returns without branching, or it branches into two recursive calls. All these recursive calls form a complete binary recursion tree with $$2^n$$ leaves and $$2^n - 1$$ inner nodes. For each leaf node, it needs $$O(n)$$ time for converting builder to String; for each internal node, it needs only constant time. Thus, the total time complexity is dominated by the leaves. In total that is $$O(n2^n)$$.\n\n* Space complexity : $$O(n)$$. If the return list doesn't count, we only need $$O(n)$$ auxiliary space to store the characters in `StringBuilder` and the $$O(n)$$ space used by system stack. In a recursive program, the space of system stack is linear to the maximum recursion depth which is $$n$$ in our problem.\n\n---\n#### Approach #2 (Bit Manipulation) [Accepted]\n\n**Intuition**\n\nIf we use $$0$$ to represent a character that is not abbreviated and $$1$$ to represent one that is. Then each abbreviation is mapped to an $$n$$ bit binary number and vice versa.\n\n**Algorithm**\n\nTo generate all the $$2^n$$ abbreviation with non-repetition and non-omission, we need to follow rules. In approach #1, the rules are coded in the backtracking process.\nHere we introduce another way.\n\nFrom the intuition section, each abbreviation has a one to one relationship to a $$n$$ bit binary number $$x$$. We can use these numbers as blueprints to build the corresponding abbreviations.\n\nFor example:\n\nGiven word = `\"word\"` and x = `0b0011`\n\nWhich means `'w'` and `'o'` are kept, `'r'` and `'d'` are abbreviated. Therefore, the result is \"wo2\".\n\nThus, for a number $$x$$, we just need to scan it bit by bit as if it is an array so that we know which character should be kept and which should be abbreviated.\n\nTo scan a number $$x$$ bit by bit, one could extract its last bit by `b = x & 1` and shift $$x$$ one bit to the right, i.e. `x >>= 1`.\nDoing this repeatedly, one will get all the $$n$$ bits of $$x$$ from last bit to first bit.\n\n\n<iframe src=\"https://leetcode.com/playground/s3sJrrGq/shared\" frameBorder=\"0\" name=\"s3sJrrGq\" width=\"100%\" height=\"513\"></iframe>\n**Complexity Analysis**\n\n* Time complexity : $$O(n 2^n)$$. Building one abbreviation from the number $$x$$, we need scan all the $$n$$ bits. Besides the `StringBuilder::toString` function is also linear. Thus, to generate all the $$2^n$$, it costs $$O(n 2^n)$$ time.\n\n* Space complexity : $$O(n)$$. If the return list doesn't count, we only need $$O(n)$$ auxiliary space to store the characters in `StringBuilder`.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "67",
+      "count": 11,
+      "average": 3.909,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"word\"",
+  "metaData": "{\r\n  \"name\": \"generateAbbreviations\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"word\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

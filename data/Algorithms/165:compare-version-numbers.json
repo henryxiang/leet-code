@@ -1,0 +1,93 @@
+{
+  "questionId": "165",
+  "questionFrontendId": "165",
+  "boundTopicId": null,
+  "title": "Compare Version Numbers",
+  "titleSlug": "compare-version-numbers",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Compare two version numbers <em>version1</em> and <em>version2</em>.<br />\r\nIf <code><em>version1</em> &gt; <em>version2</em></code> return <code>1;</code>&nbsp;if <code><em>version1</em> &lt; <em>version2</em></code> return <code>-1;</code>otherwise return <code>0</code>.</p>\r\n\r\n<p>You may assume that the version strings are non-empty and contain only digits and the <code>.</code> character.</p>\r\n<p>The <code>.</code> character does not represent a decimal point and is used to separate number sequences.</p>\r\n<p>For instance, <code>2.5</code> is not &quot;two and a half&quot; or &quot;half way to version three&quot;, it is the fifth second-level revision of the second first-level revision.</p>\r\n<p>You may assume the default revision number for each level of a version number to be <code>0</code>. For example, version number <code>3.4</code> has a revision number of <code>3</code> and <code>4</code> for its first and second level revision number. Its third and fourth level revision number are both <code>0</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n<pre>\r\n<strong>Input:</strong> <code><em>version1</em></code> = &quot;0.1&quot;, <code><em>version2</em></code> = &quot;1.1&quot;\r\n<strong>Output:</strong> -1</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n<pre>\r\n<strong>Input: </strong><code><em>version1</em></code> = &quot;1.0.1&quot;, <code><em>version2</em></code> = &quot;1&quot;\r\n<strong>Output:</strong> 1</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n<pre>\r\n<strong>Input:</strong> <code><em>version1</em></code> = &quot;7.5.2.4&quot;, <code><em>version2</em></code> = &quot;7.5.3&quot;\r\n<strong>Output:</strong> -1</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n<pre>\r\n<strong>Input:</strong> <code><em>version1</em></code> = &quot;1.01&quot;, <code><em>version2</em></code> = &quot;1.001&quot;\r\n<strong>Output:</strong> 0\r\n<strong>Explanation:</strong> Ignoring leading zeroes, both “01” and “001\" represent the same number “1”</pre>\r\n\r\n<p><strong>Example 5:</strong></p>\r\n<pre>\r\n<strong>Input:</strong> <code><em>version1</em></code> = &quot;1.0&quot;, <code><em>version2</em></code> = &quot;1.0.0&quot;\r\n<strong>Output:</strong> 0\r\n<strong>Explanation:</strong> The first version number does not have a third level revision number, which means its third level revision number is default to \"0\"</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n<ol>\r\n<li>Version strings are composed of numeric strings separated by dots <code>.</code> and this numeric strings <strong>may</strong> have leading zeroes. </li>\r\n<li>Version strings do not start or end with dots, and they will not be two consecutive dots.</li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 373,
+  "dislikes": 1267,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Square\", \"slug\": \"square\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Arista Networks\", \"slug\": \"arista-networks\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int compareVersion(string version1, string version2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int compareVersion(String version1, String version2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def compareVersion(self, version1, version2):\n        \"\"\"\n        :type version1: str\n        :type version2: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def compareVersion(self, version1: str, version2: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint compareVersion(char * version1, char * version2){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CompareVersion(string version1, string version2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} version1\n * @param {string} version2\n * @return {number}\n */\nvar compareVersion = function(version1, version2) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} version1\n# @param {String} version2\n# @return {Integer}\ndef compare_version(version1, version2)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func compareVersion(_ version1: String, _ version2: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func compareVersion(version1 string, version2 string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def compareVersion(version1: String, version2: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun compareVersion(version1: String, version2: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn compare_version(version1: String, version2: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $version1\n     * @param String $version2\n     * @return Integer\n     */\n    function compareVersion($version1, $version2) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"159.9K\", \"totalSubmission\": \"628.7K\", \"totalAcceptedRaw\": 159923, \"totalSubmissionRaw\": 628693, \"acRate\": \"25.4%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"0.1\"\n\"1.1\"",
+  "metaData": "{\r\n  \"name\": \"compareVersion\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"version1\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"version2\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

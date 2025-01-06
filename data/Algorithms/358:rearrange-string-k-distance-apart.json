@@ -1,0 +1,107 @@
+{
+  "questionId": "358",
+  "questionFrontendId": "358",
+  "boundTopicId": null,
+  "title": "Rearrange String k Distance Apart",
+  "titleSlug": "rearrange-string-k-distance-apart",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-empty string <b>s</b> and an integer <b>k</b>, rearrange the string such that the same characters are at least distance <b>k</b> from each other.</p>\r\n\r\n<p>All input strings are given in lowercase letters. If it is not possible to rearrange the string, return an empty string <code>&quot;&quot;</code>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<div>\r\n<pre>\r\n<strong>Input: </strong>s = <span id=\"example-input-1-1\">&quot;aabbcc&quot;</span>, k = <span id=\"example-input-1-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;abcabc&quot; \r\n<strong>Explanation: </strong></span>The same letters are at least distance 3 from each other.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>s = <span id=\"example-input-2-1\">&quot;aaabc&quot;</span>, k = <span id=\"example-input-2-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">&quot;&quot; \r\n<strong>Explanation:</strong> </span>It is not possible to rearrange the string.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>s = <span id=\"example-input-3-1\">&quot;aaadbbcc&quot;</span>, k = <span id=\"example-input-3-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">&quot;abacabcd&quot;\r\n</span><span id=\"example-output-2\"><strong>Explanation:</strong> </span>The same letters are at least distance 2 from each other.\r\n</pre>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 351,
+  "dislikes": 16,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Task Scheduler\", \"titleSlug\": \"task-scheduler\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Reorganize String\", \"titleSlug\": \"reorganize-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "elmirap",
+      "profileUrl": "/elmirap/",
+      "avatarUrl": "https://www.gravatar.com/avatar/ba92194ffdce151caf7dffd9037a6997.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Heap",
+      "slug": "heap"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string rearrangeString(string s, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String rearrangeString(String s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def rearrangeString(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def rearrangeString(self, s: str, k: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * rearrangeString(char * s, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string RearrangeString(string s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number} k\n * @return {string}\n */\nvar rearrangeString = function(s, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} k\n# @return {String}\ndef rearrange_string(s, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func rearrangeString(_ s: String, _ k: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func rearrangeString(s string, k int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def rearrangeString(s: String, k: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun rearrangeString(s: String, k: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn rearrange_string(s: String, k: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return String\n     */\n    function rearrangeString($s, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"28.4K\", \"totalSubmission\": \"83.5K\", \"totalAcceptedRaw\": 28407, \"totalSubmissionRaw\": 83504, \"acRate\": \"34.0%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"aabbcc\"\n3",
+  "metaData": "{ \r\n  \"name\": \"rearrangeString\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,101 @@
+{
+  "questionId": "1080",
+  "questionFrontendId": "1023",
+  "boundTopicId": null,
+  "title": "Camelcase Matching",
+  "titleSlug": "camelcase-matching",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A query word matches a given <code>pattern</code> if we can insert <strong>lowercase</strong> letters to the pattern word so that it equals the <code>query</code>. (We may insert each character at any position, and may insert 0 characters.)</p>\r\n\r\n<p>Given a list of <code>queries</code>, and a <code>pattern</code>, return an <code>answer</code> list of booleans, where <code>answer[i]</code> is true if and only if <code>queries[i]</code> matches the <code>pattern</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>queries = <span id=\"example-input-1-1\">[&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;]</span>, pattern = <span id=\"example-input-1-2\">&quot;FB&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[true,false,true,true,false]</span>\r\n<strong>Explanation: </strong>\r\n&quot;FooBar&quot; can be generated like this &quot;F&quot; + &quot;oo&quot; + &quot;B&quot; + &quot;ar&quot;.\r\n&quot;FootBall&quot; can be generated like this &quot;F&quot; + &quot;oot&quot; + &quot;B&quot; + &quot;all&quot;.\r\n&quot;FrameBuffer&quot; can be generated like this &quot;F&quot; + &quot;rame&quot; + &quot;B&quot; + &quot;uffer&quot;.</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>queries = <span id=\"example-input-2-1\">[&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;]</span>, pattern = <span id=\"example-input-2-2\">&quot;FoBa&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[true,false,true,false,false]</span>\r\n<strong>Explanation: </strong>\r\n&quot;FooBar&quot; can be generated like this &quot;Fo&quot; + &quot;o&quot; + &quot;Ba&quot; + &quot;r&quot;.\r\n&quot;FootBall&quot; can be generated like this &quot;Fo&quot; + &quot;ot&quot; + &quot;Ba&quot; + &quot;ll&quot;.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>queries = <span id=\"example-input-3-1\">[&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;]</span>, pattern = <span id=\"example-input-3-2\">&quot;FoBaT&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">[false,true,false,false,false]</span>\r\n<strong>Explanation: </strong>\r\n&quot;FooBarTest&quot; can be generated like this &quot;Fo&quot; + &quot;o&quot; + &quot;Ba&quot; + &quot;r&quot; + &quot;T&quot; + &quot;est&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= queries.length &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= queries[i].length &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= pattern.length &lt;= 100</code></li>\r\n\t<li>All strings consists only of lower and upper case English letters.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 120,
+  "dislikes": 98,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<bool> camelMatch(vector<string>& queries, string pattern) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Boolean> camelMatch(String[] queries, String pattern) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def camelMatch(self, queries, pattern):\n        \"\"\"\n        :type queries: List[str]\n        :type pattern: str\n        :rtype: List[bool]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def camelMatch(self, queries: List[str], pattern: str) -> List[bool]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nbool* camelMatch(char ** queries, int queriesSize, char * pattern, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<bool> CamelMatch(string[] queries, string pattern) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} queries\n * @param {string} pattern\n * @return {boolean[]}\n */\nvar camelMatch = function(queries, pattern) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} queries\n# @param {String} pattern\n# @return {Boolean[]}\ndef camel_match(queries, pattern)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func camelMatch(_ queries: [String], _ pattern: String) -> [Bool] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func camelMatch(queries []string, pattern string) []bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def camelMatch(queries: Array[String], pattern: String): Array[Boolean] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun camelMatch(queries: Array<String>, pattern: String): BooleanArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn camel_match(queries: Vec<String>, pattern: String) -> Vec<bool> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $queries\n     * @param String $pattern\n     * @return Boolean[]\n     */\n    function camelMatch($queries, $pattern) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.2K\", \"totalSubmission\": \"22.1K\", \"totalAcceptedRaw\": 12224, \"totalSubmissionRaw\": 22084, \"acRate\": \"55.4%\"}",
+  "hints": [
+    "Given a single pattern and word, how can we solve it?",
+    "One way to do it is using a DP (pos1, pos2) where pos1 is a pointer to the word and pos2 to the pattern and returns true if we can match the pattern with the given word.",
+    "We have two scenarios: The first one is when `word[pos1] == pattern[pos2]`, then the transition will be just DP(pos1 + 1, pos2 + 1). The second scenario is when `word[pos1]` is lowercase then we can add this character to the pattern so that the transition is just DP(pos1 + 1, pos2)\r\nThe case base is `if (pos1 == n && pos2 == m) return true;` Where n and m are the sizes of the strings word and pattern respectively."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FB\"",
+  "metaData": "{\n  \"name\": \"camelMatch\",\n  \"params\": [\n    {\n      \"name\": \"queries\",\n      \"type\": \"string[]\"\n    },\n    {\n      \"name\": \"pattern\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<boolean>\"\n  }\n}\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

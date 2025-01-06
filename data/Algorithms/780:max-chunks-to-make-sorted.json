@@ -1,0 +1,113 @@
+{
+  "questionId": "780",
+  "questionFrontendId": "769",
+  "boundTopicId": null,
+  "title": "Max Chunks To Make Sorted",
+  "titleSlug": "max-chunks-to-make-sorted",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>arr</code> that is a permutation of <code>[0, 1, ..., arr.length - 1]</code>, we split the array into some number of &quot;chunks&quot; (partitions), and individually sort each chunk.&nbsp; After concatenating them,&nbsp;the result equals the sorted array.</p>\r\n\r\n<p>What is the most number of chunks we could have made?</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr = [4,3,2,1,0]\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong>\r\nSplitting into two or more chunks will not return the required result.\r\nFor example, splitting into [4, 3], [2, 1, 0] will result in [3, 4, 0, 1, 2], which isn&#39;t sorted.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr = [1,0,2,3,4]\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong>\r\nWe can split into two chunks, such as [1, 0], [2, 3, 4].\r\nHowever, splitting into [1, 0], [2], [3], [4] is the highest number of chunks possible.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>arr</code> will have length in range <code>[1, 10]</code>.</li>\r\n\t<li><code>arr[i]</code> will be a permutation of <code>[0, 1, ..., arr.length - 1]</code>.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 594,
+  "dislikes": 97,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Max Chunks To Make Sorted II\", \"titleSlug\": \"max-chunks-to-make-sorted-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxChunksToSorted(vector<int>& arr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxChunksToSorted(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxChunksToSorted(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxChunksToSorted(self, arr: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxChunksToSorted(int* arr, int arrSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxChunksToSorted(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar maxChunksToSorted = function(arr) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @return {Integer}\ndef max_chunks_to_sorted(arr)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxChunksToSorted(_ arr: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxChunksToSorted(arr []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxChunksToSorted(arr: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxChunksToSorted(arr: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_chunks_to_sorted(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Integer\n     */\n    function maxChunksToSorted($arr) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"30.1K\", \"totalSubmission\": \"56.4K\", \"totalAcceptedRaw\": 30102, \"totalSubmissionRaw\": 56430, \"acRate\": \"53.3%\"}",
+  "hints": [
+    "The first chunk can be found as the smallest k for which A[:k+1] == [0, 1, 2, ...k]; then we repeat this process."
+  ],
+  "solution": {
+    "id": "387",
+    "canSeeDetail": true,
+    "url": "/articles/max-chunks-to-make-sorted-i/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Brute Force [Accepted]\n\n**Intuition and Algorithm**\n\nLet's try to find the smallest left-most chunk.  If the first `k` elements are `[0, 1, ..., k-1]`, then it can be broken into a chunk, and we have a smaller instance of the same problem.\n\nWe can check whether `k+1` elements chosen from `[0, 1, ..., n-1]` are `[0, 1, ..., k]` by checking whether the maximum of that choice is `k`.\n\n<iframe src=\"https://leetcode.com/playground/62RMHZZv/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"62RMHZZv\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `arr`\n\n* Space Complexity: $$O(1)$$.\n\n---\n\nFor more approaches, please visit the article for the companion problem [Max Chunks To Make Sorted II](https://leetcode.com/articles/max-chunks-to-make-sorted-ii/).\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "382",
+      "count": 30,
+      "average": 3.433,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,3,2,1,0]",
+  "metaData": "{\r\n  \"name\": \"maxChunksToSorted\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"arr\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

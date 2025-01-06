@@ -1,0 +1,48 @@
+{
+  "questionId": "196",
+  "questionFrontendId": "196",
+  "boundTopicId": null,
+  "title": "Delete Duplicate Emails",
+  "titleSlug": "delete-duplicate-emails",
+  "categoryTitle": "Database",
+  "content": "<p>Write a SQL query to <strong>delete</strong> all duplicate email entries in a table named <code>Person</code>, keeping only unique emails based on its <i>smallest</i> <b>Id</b>.</p>\r\n\r\n<pre>\r\n+----+------------------+\r\n| Id | Email            |\r\n+----+------------------+\r\n| 1  | john@example.com |\r\n| 2  | bob@example.com  |\r\n| 3  | john@example.com |\r\n+----+------------------+\r\nId is the primary key column for this table.\r\n</pre>\r\n\r\n<p>For example, after running your query, the above <code>Person</code> table should have the following rows:</p>\r\n\r\n<pre>\r\n+----+------------------+\r\n| Id | Email            |\r\n+----+------------------+\r\n| 1  | john@example.com |\r\n| 2  | bob@example.com  |\r\n+----+------------------+\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<p>Your output is the whole <code>Person</code>&nbsp;table after executing your sql. Use <code>delete</code> statement.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 343,
+  "dislikes": 448,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\r\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"90.3K\", \"totalSubmission\": \"246.2K\", \"totalAcceptedRaw\": 90349, \"totalSubmissionRaw\": 246153, \"acRate\": \"36.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "210",
+    "canSeeDetail": true,
+    "url": "/articles/delete-duplicate-emails/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `DELETE` and `WHERE` clause [Accepted]\n\n**Algorithm**\n\nBy joining this table with itself on the *Email* column, we can get the following code.\n```sql\nSELECT p1.*\nFROM Person p1,\n    Person p2\nWHERE\n    p1.Email = p2.Email\n;\n```\n\nThen we need to find the bigger id having same email address with other records. So we can add a new condition to the `WHERE` clause like this.\n\n```sql\nSELECT p1.*\nFROM Person p1,\n    Person p2\nWHERE\n    p1.Email = p2.Email AND p1.Id > p2.Id\n;\n```\n\nAs we already get the records to be deleted, we can alter this statement to `DELETE` in the end.\n\n**MySQL**\n\n```sql\nDELETE p1 FROM Person p1,\n    Person p2\nWHERE\n    p1.Email = p2.Email AND p1.Id > p2.Id\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "205",
+      "count": 25,
+      "average": 3.68,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"Person\": [\"Id\", \"Email\"]}, \"rows\": {\"Person\": [[1, \"john@example.com\"], [2, \"bob@example.com\"], [3, \"john@example.com\"]]}}",
+  "metaData": "{\n  \"languages\": [\n    \"mysql\",\n    \"mssql\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

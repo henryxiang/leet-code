@@ -1,0 +1,109 @@
+{
+  "questionId": "122",
+  "questionFrontendId": "122",
+  "boundTopicId": null,
+  "title": "Best Time to Buy and Sell Stock II",
+  "titleSlug": "best-time-to-buy-and-sell-stock-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Say you have an array for which the <em>i</em><sup>th</sup> element is the price of a given stock on day <em>i</em>.</p>\r\n\r\n<p>Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).</p>\r\n\r\n<p><strong>Note:</strong> You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [7,1,5,3,6,4]\r\n<strong>Output:</strong> 7\r\n<strong>Explanation:</strong> Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.\r\n&nbsp;            Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [1,2,3,4,5]\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.\r\n&nbsp;            Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are\r\n&nbsp;            engaging multiple transactions at the same time. You must sell before buying again.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [7,6,4,3,1]\r\n<strong>Output:</strong> 0\r\n<strong>Explanation:</strong> In this case, no transaction is done, i.e. max profit = 0.</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1461,
+  "dislikes": 1484,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Best Time to Buy and Sell Stock\", \"titleSlug\": \"best-time-to-buy-and-sell-stock\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock III\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock IV\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock with Cooldown\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-with-cooldown\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock with Transaction Fee\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-with-transaction-fee\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxProfit(vector<int>& prices) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxProfit(int[] prices) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxProfit(self, prices):\n        \"\"\"\n        :type prices: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxProfit(self, prices: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxProfit(int* prices, int pricesSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxProfit(int[] prices) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} prices\n * @return {number}\n */\nvar maxProfit = function(prices) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} prices\n# @return {Integer}\ndef max_profit(prices)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxProfit(_ prices: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxProfit(prices []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxProfit(prices: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxProfit(prices: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_profit(prices: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $prices\n     * @return Integer\n     */\n    function maxProfit($prices) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"412.5K\", \"totalSubmission\": \"766K\", \"totalAcceptedRaw\": 412506, \"totalSubmissionRaw\": 766024, \"acRate\": \"53.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "53",
+    "canSeeDetail": true,
+    "url": "/articles/best-time-to-buy-and-sell-stock-ii/",
+    "content": "[TOC]\n\n## Summary\n\nWe have to determine the maximum profit that can be obtained by making the transactions (no limit on the number of transactions done). For this we need to find out those sets of buying and selling prices which together lead to the maximization of profit.\n\n## Solution\n---\n\n#### Approach 1: Brute Force\n\nIn this case, we simply calculate the profit corresponding to all the possible sets of transactions and find out the maximum profit out of them.\n\n<iframe src=\"https://leetcode.com/playground/DQfAGPiL/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"DQfAGPiL\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^n)$$. Recursive function is called $$n^n$$ times.\n\n* Space complexity : $$O(n)$$. Depth of recursion is $$n$$.\n<br />\n<br />\n---\n#### Approach 2: Peak Valley Approach\n\n**Algorithm**\n\nSay the given array is:\n\n[7, 1, 5, 3, 6, 4].\n\nIf we plot the numbers of the given array on a graph, we get:\n\n![Profit Graph](https://leetcode.com/media/original_images/122_maxprofit_1.PNG){:width=\"539px\"}\n{:align=\"center\"}\n\n\nIf we analyze the graph, we notice that the points of interest are the consecutive valleys and peaks.\n\nMathematically speaking:\n$$\nTotal Profit= \\sum_{i}(height(peak_i)-height(valley_i))\n$$\n\nThe key point is we need to consider every peak immediately following a valley to maximize the profit. In case we skip one of the peaks (trying to obtain more profit), we will end up losing the profit over one of the transactions leading to an overall lesser profit.\n\nFor example, in the above case, if we skip $$peak_i$$ and $$valley_j$$ trying to obtain more profit by considering points with more difference in heights, the net profit obtained will always be lesser than the one obtained by including them, since $$C$$ will always be lesser than $$A+B$$.\n\n\n<iframe src=\"https://leetcode.com/playground/Yrs8F9na/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"Yrs8F9na\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. Single pass.\n\n* Space complexity : $$O(1)$$. Constant space required.\n<br />\n<br />\n---\n#### Approach 3: Simple One Pass\n\n**Algorithm**\n\nThis solution follows the logic used in [Approach 2](#approach-2-peak-valley-approach) itself, but with only a slight variation. In this case, instead of looking for every peak following a valley, we can simply go on crawling over the slope and keep on adding the profit obtained from every consecutive transaction. In the end,we will be using the peaks and valleys effectively, but we need not track the costs corresponding to the peaks and valleys along with the maximum profit, but we can directly keep on adding the difference between the consecutive numbers of the array if the second number is larger than the first one, and at the total sum we obtain will be the maximum profit. This approach will simplify the solution.\nThis can be made clearer by taking this example:\n\n[1, 7, 2, 3, 6, 7, 6, 7]\n\n\nThe graph corresponding to this array is:\n\n![Profit Graph](https://leetcode.com/media/original_images/122_maxprofit_2.PNG){:width=\"539px\"}\n{:align=\"center\"}\n\n\nFrom the above graph, we can observe that the sum $$A+B+C$$ is equal to the difference $$D$$ corresponding to the difference between the heights of the consecutive peak and valley.\n\n<iframe src=\"https://leetcode.com/playground/ppWUGTaj/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"ppWUGTaj\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$. Single pass.\n\n* Space complexity: $$O(1)$$. Constant space needed.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "51",
+      "count": 131,
+      "average": 4.878,
+      "userRating": null
+    }
+  },
+  "status": "ac",
+  "sampleTestCase": "[7,1,5,3,6,4]",
+  "metaData": "{\r\n  \"name\": \"maxProfit\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"prices\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

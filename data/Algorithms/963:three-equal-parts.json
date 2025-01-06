@@ -1,0 +1,113 @@
+{
+  "questionId": "963",
+  "questionFrontendId": "927",
+  "boundTopicId": null,
+  "title": "Three Equal Parts",
+  "titleSlug": "three-equal-parts",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>A</code> of <code>0</code>s and <code>1</code>s, divide the array into 3 non-empty parts such that all of these parts represent the same binary value.</p>\r\n\r\n<p>If it is possible, return <strong>any</strong> <code>[i, j]</code>&nbsp;with <code>i+1 &lt; j</code>, such that:</p>\r\n\r\n<ul>\r\n\t<li><code>A[0], A[1], ..., A[i]</code> is the first part;</li>\r\n\t<li><code>A[i+1], A[i+2], ..., A[j-1]</code> is the second part, and</li>\r\n\t<li><code>A[j], A[j+1], ..., A[A.length - 1]</code> is the third part.</li>\r\n\t<li>All three parts have equal binary value.</li>\r\n</ul>\r\n\r\n<p>If it is not possible, return <code>[-1, -1]</code>.</p>\r\n\r\n<p>Note that the entire part is used when considering what binary value it represents.&nbsp; For example, <code>[1,1,0]</code>&nbsp;represents <code>6</code>&nbsp;in decimal,&nbsp;not <code>3</code>.&nbsp; Also, leading zeros are allowed, so&nbsp;<code>[0,1,1]</code> and <code>[1,1]</code> represent the same value.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[1,0,1,0,1]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[0,3]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[1,1,0,1,1]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[-1,-1]</span></pre>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>3 &lt;= A.length &lt;= 30000</code></li>\r\n\t<li><code>A[i] == 0</code>&nbsp;or <code>A[i] == 1</code></li>\r\n</ol>\r\n\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 132,
+  "dislikes": 42,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Hotstar\", \"slug\": \"hotstar\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> threeEqualParts(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] threeEqualParts(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def threeEqualParts(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def threeEqualParts(self, A: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* threeEqualParts(int* A, int ASize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] ThreeEqualParts(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number[]}\n */\nvar threeEqualParts = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer[]}\ndef three_equal_parts(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func threeEqualParts(_ A: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func threeEqualParts(A []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def threeEqualParts(A: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun threeEqualParts(A: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn three_equal_parts(a: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer[]\n     */\n    function threeEqualParts($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.4K\", \"totalSubmission\": \"17K\", \"totalAcceptedRaw\": 5386, \"totalSubmissionRaw\": 16994, \"acRate\": \"31.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "590",
+    "canSeeDetail": true,
+    "url": "/articles/three-equal-parts/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Equal Ones\n\n**Intuition**\n\nEach part has to have the same number of ones in their representation.  The algorithm given below is the natural continuation of this idea.\n\n**Algorithm**\n\nSay `S` is the number of ones in `A`.  Since every part has the same number of ones, they all should have `T = S / 3` ones.\n\nIf `S` isn't divisible by 3, the task is impossible.\n\nWe can find the position of the 1st, T-th, T+1-th, 2T-th, 2T+1-th, and 3T-th one.  The positions of these ones form 3 intervals: `[i1, j1], [i2, j2], [i3, j3]`.  (If there are only 3 ones, then the intervals are each length 1.)\n\nBetween them, there may be some number of zeros.  The zeros after `j3` must be included in each part: say there are `z` of them `(z = S.length - j3)`.\n\nSo the first part, `[i1, j1]`, is now `[i1, j1+z]`.  Similarly, the second part, `[i2, j2]`, is now `[i2, j2+z]`.\n\nIf all this is actually possible, then the final answer is `[j1+z, j2+z+1]`.\n\n<iframe src=\"https://leetcode.com/playground/svqa2QF7/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"svqa2QF7\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "576",
+      "count": 17,
+      "average": 4.412,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,0,1,0,1]",
+  "metaData": "{\r\n  \"name\": \"threeEqualParts\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

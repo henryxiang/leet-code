@@ -1,0 +1,73 @@
+{
+  "questionId": "619",
+  "questionFrontendId": "619",
+  "boundTopicId": null,
+  "title": "Biggest Single Number",
+  "titleSlug": "biggest-single-number",
+  "categoryTitle": "Database",
+  "content": "<p>Table <code>my_numbers</code> contains many numbers in column <b>num</b> including duplicated ones.<br />\r\nCan you write a SQL query to find the biggest number, which only appears once.</p>\r\n\r\n<pre>\r\n+---+\r\n|num|\r\n+---+\r\n| 8 |\r\n| 8 |\r\n| 3 |\r\n| 3 |\r\n| 1 |\r\n| 4 |\r\n| 5 |\r\n| 6 | \r\n</pre>\r\nFor the sample data above, your query should return the following result:\r\n\r\n<pre>\r\n+---+\r\n|num|\r\n+---+\r\n| 6 |\r\n</pre>\r\n<b>Note:</b><br />\r\nIf there is no such number, just output <b>null</b>.\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 42,
+  "dislikes": 47,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "artistscript",
+      "profileUrl": "/artistscript/",
+      "avatarUrl": "https://www.gravatar.com/avatar/1d186f42681a157b2cce3ebf9f9c0911.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"15.7K\", \"totalSubmission\": \"38.6K\", \"totalAcceptedRaw\": 15714, \"totalSubmissionRaw\": 38636, \"acRate\": \"40.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "188",
+    "canSeeDetail": true,
+    "url": "/articles/biggest-single-number/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using **subquery** and `MAX()` function [Accepted]\n\n**Algorithm**\n\nUse subquery to select all the numbers appearing just one time.\n\n<iframe src=\"https://leetcode.com/playground/gCbEq9kC/shared\" frameBorder=\"0\" name=\"gCbEq9kC\" width=\"100%\" height=\"156\"></iframe>\n\nThen choose the biggest one using `MAX()`.\n<iframe src=\"https://leetcode.com/playground/rYpoAo97/shared\" frameBorder=\"0\" name=\"rYpoAo97\" width=\"100%\" height=\"224\"></iframe>",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "183",
+      "count": 11,
+      "average": 4.273,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"my_numbers\": [\"num\"]}, \"rows\": {\"my_numbers\": [[8],[8],[3],[3],[1],[4],[5],[6]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists my_numbers (num int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table my_numbers (num int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table my_numbers (num int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists my_numbers (num int)",
+    "Truncate table my_numbers",
+    "insert into my_numbers (num) values ('8')",
+    "insert into my_numbers (num) values ('8')",
+    "insert into my_numbers (num) values ('3')",
+    "insert into my_numbers (num) values ('3')",
+    "insert into my_numbers (num) values ('1')",
+    "insert into my_numbers (num) values ('4')",
+    "insert into my_numbers (num) values ('5')",
+    "insert into my_numbers (num) values ('6')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

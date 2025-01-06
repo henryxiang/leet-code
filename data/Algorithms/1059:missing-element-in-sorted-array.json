@@ -1,0 +1,114 @@
+{
+  "questionId": "1059",
+  "questionFrontendId": "1060",
+  "boundTopicId": null,
+  "title": "Missing Element in Sorted Array",
+  "titleSlug": "missing-element-in-sorted-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a sorted array <code>A</code> of <strong>unique</strong> numbers, find the <code><em>K</em>-th</code> missing number starting from the leftmost number of the array.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[4,7,9,10]</span>, K = 1\r\n<strong>Output: </strong><span id=\"example-output-1\">5</span>\r\n<strong>Explanation: </strong>\r\nThe first missing number is 5.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">[4,7,9,10]</span>, K = 3\r\n<strong>Output: </strong><span id=\"example-output-2\">8</span>\r\n<strong>Explanation: </strong>\r\nThe missing numbers are [5,6,8,...], hence the third missing number is 8.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-3-1\">[1,2,4]</span>, K = 3\r\n<strong>Output: </strong><span id=\"example-output-3\">6</span>\r\n<strong>Explanation: </strong>\r\nThe missing numbers are [3,5,6,7,...], hence the third missing number is 6.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 50000</code></li>\r\n\t<li><code>1 &lt;= A[i] &lt;= 1e7</code></li>\r\n\t<li><code>1 &lt;= K &lt;= 1e8</code></li>\r\n</ol>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 167,
+  "dislikes": 3,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ctrlcctrlv555",
+      "profileUrl": "/ctrlcctrlv555/",
+      "avatarUrl": "https://assets.leetcode.com/users/ctrlcctrlv555/avatar_1521090614.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int missingElement(vector<int>& nums, int k) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int missingElement(int[] nums, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def missingElement(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def missingElement(self, nums: List[int], k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint missingElement(int* nums, int numsSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int MissingElement(int[] nums, int k) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar missingElement = function(nums, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\r\n# @param {Integer} k\r\n# @return {Integer}\r\ndef missing_element(nums, k)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func missingElement(_ nums: [Int], _ k: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func missingElement(nums []int, k int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def missingElement(nums: Array[Int], k: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun missingElement(nums: IntArray, k: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn missing_element(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer\n     */\n    function missingElement($nums, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.6K\", \"totalSubmission\": \"12.4K\", \"totalAcceptedRaw\": 6639, \"totalSubmissionRaw\": 12383, \"acRate\": \"53.6%\"}",
+  "hints": [
+    "First define a function f(x) that counts the number of missing elements until x.",
+    "Then use binary search with the given function f(x) to find the kth missing element."
+  ],
+  "solution": {
+    "id": "738",
+    "canSeeDetail": true,
+    "url": "/articles/missing-element-in-sorted-array/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Approach 1: One Pass\r\n\r\n**Intuition**\r\n\r\nThe problem is similar to [First Missing Positive](https://leetcode.com/articles/first-missing-positive/)\r\nand the naive idea would be to solve it in a similar way \r\nby one pass approach.\r\n\r\nLet's first assume that one has a function `missing(idx)`\r\nthat returns how many numbers are missing until the element\r\nat index `idx`. \r\n\r\n![fig](../Figures/1060/function.png)\r\n\r\nWith the help of such a function the solution is\r\nstraightforward :\r\n\r\n- Find an index such that `missing(idx - 1) < k <= missing(idx)`.\r\nIn other words, that means that kth missing number is in-between\r\n`nums[idx - 1]` and `nums[idx]`. \r\n\r\n    One even could \r\n    compute a difference between kth missing number and \r\n    `nums[idx - 1]`. First, there are `missing(idx - 1)`\r\n    missing numbers until `nums[idx - 1]`. \r\n    Second, all `k - missing(idx - 1)` missing numbers from\r\n    `nums[idx - 1]` to kth missing are _consecutive ones_,\r\n    because all of them are smaller than `nums[idx]` and hence\r\n    there is nothing to separate them.\r\n    Together that means that kth smallest is\r\n    larger than `nums[idx - 1]` by `k - missing(idx - 1)`.\r\n\r\n- Return kth smallest `nums[idx - 1] + k - missing(idx - 1)`.\r\n\r\n![fic](../Figures/1060/algor.png)\r\n\r\n> The last thing to discuss is how to implement `missing(idx)` function.\r\n\r\nLet's consider an array element at index `idx`. If there is no numbers\r\nmissing, the element should be equal to `nums[idx] = nums[0] + idx`.\r\nIf k numbers are missing, the element should be equal to\r\n`nums[idx] = nums[0] + idx + k`. \r\nHence the number of missing elements is equal to\r\n`nums[idx] - nums[0] - idx`.\r\n\r\n![pic](../Figures/1060/missing.png)\r\n\r\n**Algorithm**\r\n\r\n- Implement `missing(idx)` function that returns how many numbers\r\nare missing until array element with index `idx`.\r\nFunction returns `nums[idx] - nums[0] - idx`.\r\n\r\n- Find an index such that `missing(idx - 1) < k <= missing(idx)`\r\nby a linear search.\r\n\r\n- Return kth smallest `nums[idx - 1] + k - missing(idx - 1)`.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/SvBNW3yR/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"SvBNW3yR\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(1)$$ if the missing\r\nnumber is larger than the last element of the array. \r\n$$\\mathcal{O}(N)$$ otherwise, since it's not more than\r\none pass along the array.\r\n* Space complexity : $$\\mathcal{O}(1)$$ since it's a constant space solution.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Binary Search\r\n\r\n**Intuition**\r\n\r\nApproach 1 uses the linear search and \r\ndoesn't profit from the fact that array is _sorted_.\r\nOne could replace the linear search by a [binary one](https://leetcode.com/articles/binary-search/) \r\nand \r\nreduce the time complexity from $$\\mathcal{O}(N)$$ \r\ndown to $$\\mathcal{O}(\\log N)$$.\r\n\r\n> The idea is to find the leftmost element such that \r\nthe number of missing numbers until this element \r\nis smaller or equal to k.\r\n\r\n![fif](../Figures/1060/inary.png)\r\n\r\n**Algorithm**\r\n\r\n- Implement `missing(idx)` function that returns how many numbers\r\nare missing until array element with index `idx`.\r\nFunction returns `nums[idx] - nums[0] - idx`.\r\n\r\n- Find an index such that `missing(idx - 1) < k <= missing(idx)`\r\nby a _binary search_.\r\n\r\n- Return kth smallest `nums[idx - 1] + k - missing(idx - 1)`.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/YAXem9Jb/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"YAXem9Jb\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(1)$$ if the missing\r\nnumber is larger than the last element of the array. \r\n$$\\mathcal{O}(\\log N)$$ otherwise, since it's a binary search algorithm.\r\n* Space complexity : $$\\mathcal{O}(1)$$ since it's a constant space solution.\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "723",
+      "count": 7,
+      "average": 4.429,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[4,7,9,10]\n1",
+  "metaData": "{\r\n  \"name\": \"missingElement\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

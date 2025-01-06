@@ -1,0 +1,113 @@
+{
+  "questionId": "760",
+  "questionFrontendId": "758",
+  "boundTopicId": null,
+  "title": "Bold Words in String",
+  "titleSlug": "bold-words-in-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a set of keywords <code>words</code> and a string <code>S</code>, make all appearances of all keywords in <code>S</code> bold.  Any letters between <code>&lt;b&gt;</code> and <code>&lt;/b&gt;</code> tags become bold.\r\n</p><p>\r\nThe returned string should use the least number of tags possible, and of course the tags should form a valid combination.\r\n</p>\r\n<p>\r\nFor example, given that <code>words = [\"ab\", \"bc\"]</code> and  <code>S = \"aabcd\"</code>, we should return <code>\"a&lt;b&gt;abc&lt;/b&gt;d\"</code>.  Note that returning <code>\"a&lt;b&gt;a&lt;b&gt;b&lt;/b&gt;c&lt;/b&gt;d\"</code> would use more tags, so it is incorrect.\r\n</p>\r\n\r\n<p><b>Note:</b><ol>\r\n<li><code>words</code> has length in range <code>[0, 50]</code>.</li>\r\n<li><code>words[i]</code> has length in range <code>[1, 10]</code>.</li>\r\n<li><code>S</code> has length in range <code>[0, 500]</code>.</li>\r\n<li>All characters in <code>words[i]</code> and <code>S</code> are lowercase letters.</li>\r\n</ol></p>",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 115,
+  "dislikes": 63,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "tinylic",
+      "profileUrl": "/tinylic/",
+      "avatarUrl": "https://www.gravatar.com/avatar/c8f3bf6706478175081358c2ced2ae2f.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string boldWords(vector<string>& words, string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String boldWords(String[] words, String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def boldWords(self, words, S):\n        \"\"\"\n        :type words: List[str]\n        :type S: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def boldWords(self, words: List[str], S: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * boldWords(char ** words, int wordsSize, char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string BoldWords(string[] words, string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} words\n * @param {string} S\n * @return {string}\n */\nvar boldWords = function(words, S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} words\n# @param {String} s\n# @return {String}\ndef bold_words(words, s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func boldWords(_ words: [String], _ S: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func boldWords(words []string, S string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def boldWords(words: Array[String], S: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun boldWords(words: Array<String>, S: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn bold_words(words: Vec<String>, s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @param String $S\n     * @return String\n     */\n    function boldWords($words, $S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"9.1K\", \"totalSubmission\": \"20.6K\", \"totalAcceptedRaw\": 9066, \"totalSubmissionRaw\": 20624, \"acRate\": \"44.0%\"}",
+  "hints": [
+    "First, determine which letters are bold and store that information in mask[i] = if i-th character is bold.\r\nThen, insert the tags at the beginning and end of groups.  The start of a group is if and only if (mask[i] and (i == 0 or not mask[i-1])), and the end of a group is similar."
+  ],
+  "solution": {
+    "id": "369",
+    "canSeeDetail": true,
+    "url": "/articles/bold-words-in-string/",
+    "content": "[TOC]\r\n\r\n#### Approach #1: Brute Force [Accepted]\r\n\r\n**Intuition**\r\n\r\nLet's try to learn which letters end up bold, since the resulting answer will just be the canonical one - we put bold tags around each group of bold letters.\r\n\r\nTo do this, we'll check for all occurrences of each word and mark the corresponding letters bold.\r\n\r\n**Algorithm**\r\n\r\nLet's work on first setting `mask[i] = true` if and only if the `i`-th letter is bold.  For each starting position `i` in `S`, for each `word`, if `S[i]` starts with `word`, we'll set the appropriate letters bold.\r\n\r\nNow armed with the correct `mask`, let's try to output the answer.  A letter in position `i` is the first bold letter of the group if `mask[i] && (i == 0 || !mask[i-1])`, and is the last bold letter if `mask[i] && (i == N-1 || !mask[i+1])`.  Alternatively, we could use `itertools.groupby` in Python.\r\n\r\nOnce we know which letters are the first and last bold letters of a group, we know where to put the `\"<b>\"` and `\"</b>\"` tags.\r\n\r\n<iframe src=\"https://leetcode.com/playground/Eg4ivU8y/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Eg4ivU8y\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity: $$O(N\\sum w_i)$$, where $$N$$ is the length of `S` and $$w_i$$ is the sum of `W`.\r\n\r\n* Space Complexity: $$O(N)$$.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "364",
+      "count": 7,
+      "average": 3.714,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"ab\",\"bc\"]\n\"aabcd\"",
+  "metaData": "{\r\n  \"name\": \"boldWords\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"words\",\r\n      \"type\": \"string[]\"\r\n    },\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

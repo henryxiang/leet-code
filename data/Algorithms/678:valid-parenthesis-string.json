@@ -1,0 +1,111 @@
+{
+  "questionId": "678",
+  "questionFrontendId": "678",
+  "boundTopicId": null,
+  "title": "Valid Parenthesis String",
+  "titleSlug": "valid-parenthesis-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a string containing only three types of characters: '(', ')' and '*', write a function to check whether this string is valid. We define the validity of a string by these rules:\r\n<ol>\r\n<li>Any left parenthesis <code>'('</code> must have a corresponding right parenthesis <code>')'</code>.</li>\r\n<li>Any right parenthesis <code>')'</code> must have a corresponding left parenthesis <code>'('</code>.</li>\r\n<li>Left parenthesis <code>'('</code> must go before the corresponding right parenthesis <code>')'</code>.</li>\r\n<li><code>'*'</code> could be treated as a single right parenthesis <code>')'</code> or a single left parenthesis <code>'('</code> or an empty string.</li>\r\n<li>An empty string is also valid.</li>\r\n</ol>\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \"()\"\r\n<b>Output:</b> True\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> \"(*)\"\r\n<b>Output:</b> True\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 3:</b><br />\r\n<pre>\r\n<b>Input:</b> \"(*))\"\r\n<b>Output:</b> True\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The string size will be in the range [1, 100].</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 831,
+  "dislikes": 29,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Special Binary String\", \"titleSlug\": \"special-binary-string\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fishercoder",
+      "profileUrl": "/fishercoder/",
+      "avatarUrl": "https://assets.leetcode.com/users/fishercoder/avatar_1576991018.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool checkValidString(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean checkValidString(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def checkValidString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def checkValidString(self, s: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool checkValidString(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CheckValidString(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar checkValidString = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Boolean}\ndef check_valid_string(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func checkValidString(_ s: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func checkValidString(s string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def checkValidString(s: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun checkValidString(s: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn check_valid_string(s: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Boolean\n     */\n    function checkValidString($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"37K\", \"totalSubmission\": \"110K\", \"totalAcceptedRaw\": 37012, \"totalSubmissionRaw\": 109979, \"acRate\": \"33.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "246",
+    "canSeeDetail": true,
+    "url": "/articles/valid-parenthesis-string/",
+    "content": "[TOC]\n\n#### Approach #1: Brute Force [Time Limit Exceeded]\n\n**Intuition and Algorithm**\n\nFor each asterisk, let's try both possibilities.\n\n<iframe src=\"https://leetcode.com/playground/HHVFGh2C/shared\" frameBorder=\"0\" name=\"HHVFGh2C\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N * 3^{N})$$, where $$N$$ is the length of the string.  For each asterisk we try 3 different values.  Thus, we could be checking the validity of up to $$3^N$$ strings.  Then, each check of validity is $$O(N)$$.\n\n* Space Complexity:  $$O(N)$$, the space used by our character array.\n\n---\n#### Approach #2: Dynamic Programming [Accepted]\n\n**Intuition and Algorithm**\n\nLet `dp[i][j]` be `true` if and only if the interval `s[i], s[i+1], ..., s[j]` can be made valid.  Then `dp[i][j]` is true only if:\n\n* `s[i]` is `'*'`, and the interval `s[i+1], s[i+2], ..., s[j]` can be made valid;\n\n* or, `s[i]` can be made to be `'('`, and there is some `k` in `[i+1, j]` such that `s[k]` can be made to be `')'`, plus the two intervals cut by `s[k]` (`s[i+1: k]` and `s[k+1: j+1]`) can be made valid;\n\n<iframe src=\"https://leetcode.com/playground/c2qhBzko/shared\" frameBorder=\"0\" name=\"c2qhBzko\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^3)$$, where $$N$$ is the length of the string.  There are $$O(N^2)$$ states corresponding to entries of `dp`, and we do an average of $$O(N)$$ work on each state.\n\n* Space Complexity:  $$O(N^2)$$, the space used to store intermediate results in `dp`.\n\n---\n#### Approach #3: Greedy [Accepted]\n\n**Intuition**\n\nWhen checking whether the string is valid, we only cared about the \"`balance`\": the number of extra, open left brackets as we parsed through the string.  For example, when checking whether '(()())' is valid, we had a balance of `1, 2, 1, 2, 1, 0` as we parse through the string: `'('` has 1 left bracket, `'(('` has 2, `'(()'` has 1, and so on.  This means that after parsing the first `i` symbols, (which may include asterisks,) we only need to keep track of what the `balance` could be.\n\nFor example, if we have string `'(***)'`, then as we parse each symbol, the set of possible values for the `balance` is `[1]` for `'('`; `[0, 1, 2]` for `'(*'`; `[0, 1, 2, 3]` for `'(**'`; `[0, 1, 2, 3, 4]` for `'(***'`, and `[0, 1, 2, 3]` for `'(***)'`.\n\nFurthermore, we can prove these states always form a contiguous interval.  Thus, we only need to know the left and right bounds of this interval.  That is, we would keep those intermediate states described above as `[lo, hi] = [1, 1], [0, 2], [0, 3], [0, 4], [0, 3]`.\n\n**Algorithm**\n\nLet `lo, hi` respectively be the smallest and largest possible number of open left brackets after processing the current character in the string.\n\nIf we encounter a left bracket (`c == '('`), then `lo++`, otherwise we could write a right bracket, so `lo--`.  If we encounter what can be a left bracket (`c != ')'`), then `hi++`, otherwise we must write a right bracket, so `hi--`.  If `hi < 0`, then the current prefix can't be made valid no matter what our choices are.  Also, we can never have less than `0` open left brackets.  At the end, we should check that we can have exactly 0 open left brackets.\n\n\n\n<iframe src=\"https://leetcode.com/playground/AP7MmhXJ/shared\" frameBorder=\"0\" name=\"AP7MmhXJ\" width=\"100%\" height=\"258\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of the string.  We iterate through the string once.\n\n* Space Complexity:  $$O(1)$$, the space used by our `lo` and `hi` pointers.  However, creating a new character array will take $$O(N)$$ space.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "243",
+      "count": 21,
+      "average": 4.381,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"()\"",
+  "metaData": "{\r\n  \"name\": \"checkValidString\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

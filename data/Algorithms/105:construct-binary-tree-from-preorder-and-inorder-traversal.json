@@ -1,0 +1,113 @@
+{
+  "questionId": "105",
+  "questionFrontendId": "105",
+  "boundTopicId": null,
+  "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+  "titleSlug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given preorder and inorder traversal of a tree, construct the binary tree.</p>\r\n\r\n<p><strong>Note:</strong><br />\r\nYou may assume that duplicates do not exist in the tree.</p>\r\n\r\n<p>For example, given</p>\r\n\r\n<pre>\r\npreorder =&nbsp;[3,9,20,15,7]\r\ninorder = [9,3,15,20,7]</pre>\r\n\r\n<p>Return the following binary tree:</p>\r\n\r\n<pre>\r\n    3\r\n   / \\\r\n  9  20\r\n    /  \\\r\n   15   7</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2350,
+  "dislikes": 63,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Construct Binary Tree from Inorder and Postorder Traversal\", \"titleSlug\": \"construct-binary-tree-from-inorder-and-postorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Tree",
+      "slug": "tree"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Square\", \"slug\": \"square\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public TreeNode buildTree(int[] preorder, int[] inorder) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def buildTree(self, preorder, inorder):\n        \"\"\"\n        :type preorder: List[int]\n        :type inorder: List[int]\n        :rtype: TreeNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nstruct TreeNode* buildTree(int* preorder, int preorderSize, int* inorder, int inorderSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public TreeNode BuildTree(int[] preorder, int[] inorder) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {number[]} preorder\n * @param {number[]} inorder\n * @return {TreeNode}\n */\nvar buildTree = function(preorder, inorder) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {Integer[]} preorder\n# @param {Integer[]} inorder\n# @return {TreeNode}\ndef build_tree(preorder, inorder)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\nclass Solution {\n    func buildTree(_ preorder: [Int], _ inorder: [Int]) -> TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc buildTree(preorder []int, inorder []int) *TreeNode {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\nobject Solution {\n    def buildTree(preorder: Array[Int], inorder: Array[Int]): TreeNode = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\n * Example:\n * var ti = TreeNode(5)\n * var v = ti.`val`\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\nclass Solution {\n    fun buildTree(preorder: IntArray, inorder: IntArray): TreeNode? {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn build_tree(preorder: Vec<i32>, inorder: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param Integer[] $preorder\n     * @param Integer[] $inorder\n     * @return TreeNode\n     */\n    function buildTree($preorder, $inorder) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"282.8K\", \"totalSubmission\": \"632.6K\", \"totalAcceptedRaw\": 282805, \"totalSubmissionRaw\": 632584, \"acRate\": \"44.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "605",
+    "canSeeDetail": true,
+    "url": "/articles/construct-binary-tree-from-preorder-and-inorder-tr/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### How to traverse the tree\n\nThere are two general strategies to traverse a tree:\n\n- *Breadth First Search* (`BFS`)\n\n    We scan through the tree level by level, following the order of height,\n    from top to bottom. The nodes on higher level would be visited before\n    the ones with lower levels.\n     \n- *Depth First Search* (`DFS`)\n\n    In this strategy, we adopt the `depth` as the priority, so that one\n    would start from a root and reach all the way down to certain leaf,\n    and then back to root to reach another branch.\n\n    The DFS strategy can further be distinguished as\n    `preorder`, `inorder`, and `postorder` depending on the relative order\n    among the root node, left node and right node.\n    \nOn the following figure the nodes are numerated in the order you visit them,\nplease follow ```1-2-3-4-5``` to compare different strategies.\n\n![postorder](../Figures/145_transverse.png)\n\nHere the problem is to construct a binary tree from its preorder and\ninorder traversal.\n<br />\n<br />\n\n\n---\n#### Approach 1: Recursion\n\n**Tree definition**\n\nFirst of all, here is the definition of the ```TreeNode``` which we would use.\n\n<iframe src=\"https://leetcode.com/playground/JCbagVqr/shared\" frameBorder=\"0\" width=\"100%\" height=\"225\" name=\"JCbagVqr\"></iframe>\n \n**Algorithm**\n\nAs discussed above the preorder traversal follows `Root -> Left -> Right` order,\nthat makes it very convenient to construct the tree from its root.\n\nLet's do it. The first element in the *preorder* list is a root. \nThis root splits *inorder* list into left and right subtrees.\nNow one have to pop up the root from preorder list since \nit's already used as a tree node and then repeat the step above for the\nleft and right subtrees. \n\n<!--![LIS](../Figures/105/105_tr.gif)-->\n!?!../Documents/105_LIS.json:1008,542!?!\n\n<iframe src=\"https://leetcode.com/playground/NPnbfyKz/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"NPnbfyKz\"></iframe>\n\n**Complexity analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$. Let's compute the solution with the help of \n[master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) \n$$T(N) = aT\\left(\\frac{b}{N}\\right) + \\Theta(N^d)$$.\nThe equation represents dividing the problem \nup into $$a$$ subproblems of size $$\\frac{N}{b}$$ in $$\\Theta(N^d)$$ time. \nHere one divides the problem in two subproblemes `a = 2`, the size of each subproblem \n(to compute left and right subtree) is a half of initial problem `b = 2`, \nand all this happens in a constant time `d = 0`.\nThat means that $$\\log_b(a) > d$$ and hence we're dealing with \n[case 1](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)#Case_1_example)\nthat means $$\\mathcal{O}(N^{\\log_b(a)}) = \\mathcal{O}(N)$$ time complexity.\n\n* Space complexity : $$\\mathcal{O}(N)$$, since we store the entire tree.\n \nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "591",
+      "count": 48,
+      "average": 3.708,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[3,9,20,15,7]\n[9,3,15,20,7]",
+  "metaData": "{\r\n  \"name\": \"buildTree\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"preorder\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"inorder\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"TreeNode\",\r\n    \"dealloc\": true\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

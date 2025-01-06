@@ -1,0 +1,102 @@
+{
+  "questionId": "1178",
+  "questionFrontendId": "1216",
+  "boundTopicId": null,
+  "title": "Valid Palindrome III",
+  "titleSlug": "valid-palindrome-iii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>s</code>&nbsp;and an integer&nbsp;<code>k</code>, find out if the given string is&nbsp;a&nbsp;<em>K-Palindrome</em> or not.</p>\n\n<p>A string is K-Palindrome if it can be&nbsp;transformed&nbsp;into a palindrome by removing at most <code>k</code> characters from it.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcdeca&quot;, k = 2\n<strong>Output:</strong> true\n<strong>Explanation: </strong>Remove &#39;b&#39; and &#39;e&#39; characters.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\n\t<li><code>s</code>&nbsp;has only lowercase English letters.</li>\n\t<li><code>1 &lt;= k&nbsp;&lt;= s.length</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 84,
+  "dislikes": 3,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    bool isValidPalindrome(string s, int k) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isValidPalindrome(String s, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def isValidPalindrome(self, s, k):\r\n        \"\"\"\r\n        :type s: str\r\n        :type k: int\r\n        :rtype: bool\r\n        \"\"\"\r\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def isValidPalindrome(self, s: str, k: int) -> bool:\r\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\r\n\r\nbool isValidPalindrome(char * s, int k){\r\n\r\n}\r\n\r\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool IsValidPalindrome(string s, int k) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {string} s\r\n * @param {number} k\r\n * @return {boolean}\r\n */\r\nvar isValidPalindrome = function(s, k) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @param {Integer} k\r\n# @return {Boolean}\r\ndef is_valid_palindrome(s, k)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func isValidPalindrome(_ s: String, _ k: Int) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isValidPalindrome(s string, k int) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def isValidPalindrome(s: String, k: Int): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun isValidPalindrome(s: String, k: Int): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn is_valid_palindrome(s: String, k: i32) -> bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param String $s\r\n     * @param Integer $k\r\n     * @return Boolean\r\n     */\r\n    function isValidPalindrome($s, $k) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.9K\", \"totalSubmission\": \"8.8K\", \"totalAcceptedRaw\": 3867, \"totalSubmissionRaw\": 8826, \"acRate\": \"43.8%\"}",
+  "hints": [
+    "Can you reduce this problem to a classic problem?",
+    "The problem is equivalent to finding any palindromic subsequence of length at least N-K where N is the length of the string.",
+    "Try to find the longest palindromic subsequence.",
+    "Use DP to do that."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"abcdeca\"\n2",
+  "metaData": "{\r\n  \"name\": \"isValidPalindrome\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

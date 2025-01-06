@@ -1,0 +1,99 @@
+{
+  "questionId": "475",
+  "questionFrontendId": "475",
+  "boundTopicId": null,
+  "title": "Heaters",
+  "titleSlug": "heaters",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Winter is coming! Your first job during the contest is to design a standard heater with fixed warm radius to warm all the houses.</p>\r\n\r\n<p>Now, you are given positions of houses and heaters on a horizontal line, find out minimum radius of heaters so that all houses could be covered by those heaters.</p>\r\n\r\n<p>So, your input will be the positions of houses and heaters seperately, and your expected output will be the minimum radius standard of heaters.</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>Numbers of houses and heaters you are given are non-negative and will not exceed 25000.</li>\r\n\t<li>Positions of houses and heaters you are given are non-negative and will not exceed 10^9.</li>\r\n\t<li>As long as a house is in the heaters&#39; warm radius range, it can be warmed.</li>\r\n\t<li>All the heaters follow your radius standard and the warm radius will the same.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [1,2,3],[2]\r\n<b>Output:</b> 1\r\n<b>Explanation:</b> The only heater was placed in the position 2, and if we use the radius 1 standard, then all the houses can be warmed.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> [1,2,3,4],[1,4]\r\n<b>Output:</b> 1\r\n<b>Explanation:</b> The two heater was placed in the position 1 and 4. We need to use radius 1 standard, then all the houses can be warmed.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 579,
+  "dislikes": 633,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "neelamgehlot",
+      "profileUrl": "/neelamgehlot/",
+      "avatarUrl": "https://www.gravatar.com/avatar/2afadc2c8f5291c0c2c9d4ae49f63c89.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findRadius(vector<int>& houses, vector<int>& heaters) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findRadius(int[] houses, int[] heaters) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findRadius(self, houses, heaters):\n        \"\"\"\n        :type houses: List[int]\n        :type heaters: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findRadius(self, houses: List[int], heaters: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findRadius(int* houses, int housesSize, int* heaters, int heatersSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindRadius(int[] houses, int[] heaters) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} houses\n * @param {number[]} heaters\n * @return {number}\n */\nvar findRadius = function(houses, heaters) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} houses\n# @param {Integer[]} heaters\n# @return {Integer}\ndef find_radius(houses, heaters)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findRadius(_ houses: [Int], _ heaters: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findRadius(houses []int, heaters []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findRadius(houses: Array[Int], heaters: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findRadius(houses: IntArray, heaters: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_radius(houses: Vec<i32>, heaters: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $houses\n     * @param Integer[] $heaters\n     * @return Integer\n     */\n    function findRadius($houses, $heaters) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"56.1K\", \"totalSubmission\": \"172.6K\", \"totalAcceptedRaw\": 56053, \"totalSubmissionRaw\": 172573, \"acRate\": \"32.5%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2,3]\n[2]",
+  "metaData": "{\r\n  \"name\": \"findRadius\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"houses\",\r\n      \"type\": \"integer[]\"\r\n  \r\n    }, \r\n    {\r\n            \"name\": \"heaters\",\r\n            \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

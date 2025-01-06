@@ -1,0 +1,113 @@
+{
+  "questionId": "722",
+  "questionFrontendId": "722",
+  "boundTopicId": null,
+  "title": "Remove Comments",
+  "titleSlug": "remove-comments",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a C++ program, remove comments from it. The program <code>source</code> is an array where <code>source[i]</code> is the <code>i</code>-th line of the source code.  This represents the result of splitting the original source code string by the newline character <code>\\n</code>.</p>\r\n\r\n<p>In C++, there are two types of comments, line comments, and block comments.</p>\r\n<p>\r\nThe string <code>//</code> denotes a line comment, which represents that it and rest of the characters to the right of it in the same line should be ignored.\r\n</p><p>\r\nThe string <code>/*</code> denotes a block comment, which represents that all characters until the next (non-overlapping) occurrence of <code>*/</code> should be ignored.  (Here, occurrences happen in reading order: line by line from left to right.)  To be clear, the string <code>/*/</code> does not yet end the block comment, as the ending would be overlapping the beginning.\r\n</p><p>\r\nThe first effective comment takes precedence over others: if the string <code>//</code> occurs in a block comment, it is ignored. Similarly, if the string <code>/*</code> occurs in a line or block comment, it is also ignored.\r\n</p><p>\r\nIf a certain line of code is empty after removing comments, you must not output that line: each string in the answer list will be non-empty.\r\n</p><p>\r\nThere will be no control characters, single quote, or double quote characters.  For example, <code>source = \"string s = \"/* Not a comment. */\";\"</code> will not be a test case.  (Also, nothing else such as defines or macros will interfere with the comments.)\r\n</p><p>\r\nIt is guaranteed that every open block comment will eventually be closed, so <code>/*</code> outside of a line or block comment always starts a new comment.\r\n</p><p>\r\nFinally, implicit newline characters can be deleted by block comments.  Please see the examples below for details.\r\n</p>\r\n\r\n<p>After removing the comments from the source code, return the source code in the same format.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre style=\"white-space: pre-wrap\">\r\n<b>Input:</b> \r\nsource = [\"/*Test program */\", \"int main()\", \"{ \", \"  // variable declaration \", \"int a, b, c;\", \"/* This is a test\", \"   multiline  \", \"   comment for \", \"   testing */\", \"a = b + c;\", \"}\"]\r\n\r\nThe line by line code is visualized as below:\r\n/*Test program */\r\nint main()\r\n{ \r\n  // variable declaration \r\nint a, b, c;\r\n/* This is a test\r\n   multiline  \r\n   comment for \r\n   testing */\r\na = b + c;\r\n}\r\n\r\n<b>Output:</b> [\"int main()\",\"{ \",\"  \",\"int a, b, c;\",\"a = b + c;\",\"}\"]\r\n\r\nThe line by line code is visualized as below:\r\nint main()\r\n{ \r\n  \r\nint a, b, c;\r\na = b + c;\r\n}\r\n\r\n<b>Explanation:</b> \r\nThe string <code>/*</code> denotes a block comment, including line 1 and lines 6-9. The string <code>//</code> denotes line 4 as comments.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre style=\"white-space: pre-wrap\">\r\n<b>Input:</b> \r\nsource = [\"a/*comment\", \"line\", \"more_comment*/b\"]\r\n<b>Output:</b> [\"ab\"]\r\n<b>Explanation:</b> The original source string is \"a/*comment<b>\\n</b>line<b>\\n</b>more_comment*/b\", where we have bolded the newline characters.  After deletion, the <i>implicit</i> newline characters are deleted, leaving the string \"ab\", which when delimited by newline characters becomes [\"ab\"].\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<li>The length of <code>source</code> is in the range <code>[1, 100]</code>.</li>\r\n<li>The length of <code>source[i]</code> is in the range <code>[0, 80]</code>.</li>\r\n<li>Every open block comment is eventually closed.</li>\r\n<li>There are no single-quote, double-quote, or control characters in the source code.</li>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 212,
+  "dislikes": 664,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Mini Parser\", \"titleSlug\": \"mini-parser\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Ternary Expression Parser\", \"titleSlug\": \"ternary-expression-parser\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"HBO\", \"slug\": \"hbo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Qualtrics\", \"slug\": \"qualtrics\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 15}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<string> removeComments(vector<string>& source) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> removeComments(String[] source) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def removeComments(self, source):\n        \"\"\"\n        :type source: List[str]\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def removeComments(self, source: List[str]) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** removeComments(char ** source, int sourceSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<string> RemoveComments(string[] source) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string[]} source\n * @return {string[]}\n */\nvar removeComments = function(source) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String[]} source\n# @return {String[]}\ndef remove_comments(source)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func removeComments(_ source: [String]) -> [String] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func removeComments(source []string) []string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def removeComments(source: Array[String]): List[String] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun removeComments(source: Array<String>): List<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn remove_comments(source: Vec<String>) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $source\n     * @return String[]\n     */\n    function removeComments($source) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"20.2K\", \"totalSubmission\": \"61.9K\", \"totalAcceptedRaw\": 20250, \"totalSubmissionRaw\": 61923, \"acRate\": \"32.7%\"}",
+  "hints": [
+    "Carefully parse each line according to the following rules:\r\n\r\n* If we start a block comment and we aren't in a block, then we will skip over the next two characters and change our state to be in a block.\r\n\r\n* If we end a block comment and we are in a block, then we will skip over the next two characters and change our state to be *not* in a block.\r\n\r\n* If we start a line comment and we aren't in a block, then we will ignore the rest of the line.\r\n\r\n* If we aren't in a block comment (and it wasn't the start of a comment), we will record the character we are at.\r\n\r\n* At the end of each line, if we aren't in a block, we will record the line."
+  ],
+  "solution": {
+    "id": "285",
+    "canSeeDetail": true,
+    "url": "/articles/remove-comments/",
+    "content": "[TOC]\n\n#### Approach #1: Parsing [Accepted]\n\n**Intuition and Algorithm**\n\nWe need to parse the `source` line by line.  Our state is that we either are in a block comment or not.\n\n* If we start a block comment and we aren't in a block, then we will skip over the next two characters and change our state to be in a block.\n\n* If we end a block comment and we are in a block, then we will skip over the next two characters and change our state to be *not* in a block.\n\n* If we start a line comment and we aren't in a block, then we will ignore the rest of the line.\n\n* If we aren't in a block comment (and it wasn't the start of a comment), we will record the character we are at.\n\n* At the end of each line, if we aren't in a block, we will record the line.\n\n**Python**\n```python\nclass Solution(object):\n    def removeComments(self, source):\n        in_block = False\n        ans = []\n        for line in source:\n            i = 0\n            if not in_block:\n                newline = []\n            while i < len(line):\n                if line[i:i+2] == '/*' and not in_block:\n                    in_block = True\n                    i += 1\n                elif line[i:i+2] == '*/' and in_block:\n                    in_block = False\n                    i += 1\n                elif not in_block and line[i:i+2] == '//':\n                    break\n                elif not in_block:\n                    newline.append(line[i])\n                i += 1\n            if newline and not in_block:\n                ans.append(\"\".join(newline))\n\n        return ans\n```\n\n**Java**\n```java\nclass Solution {\n    public List<String> removeComments(String[] source) {\n        boolean inBlock = false;\n        StringBuilder newline = new StringBuilder();\n        List<String> ans = new ArrayList();\n        for (String line: source) {\n            int i = 0;\n            char[] chars = line.toCharArray();\n            if (!inBlock) newline = new StringBuilder();\n            while (i < line.length()) {\n                if (!inBlock && i+1 < line.length() && chars[i] == '/' && chars[i+1] == '*') {\n                    inBlock = true;\n                    i++;\n                } else if (inBlock && i+1 < line.length() && chars[i] == '*' && chars[i+1] == '/') {\n                    inBlock = false;\n                    i++;\n                } else if (!inBlock && i+1 < line.length() && chars[i] == '/' && chars[i+1] == '/') {\n                    break;\n                } else if (!inBlock) {\n                    newline.append(chars[i]);\n                }\n                i++;\n            }\n            if (!inBlock && newline.length() > 0) {\n                ans.add(new String(newline));\n            }\n        }\n        return ans;\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(S)$$, where $$S$$ is the total length of the source code.\n\n* Space Complexity: $$O(S)$$, the space used by recording the source code into `ans`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "281",
+      "count": 18,
+      "average": 2.611,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"/*Test program */\", \"int main()\", \"{ \", \"  // variable declaration \", \"int a, b, c;\", \"/* This is a test\", \"   multiline  \", \"   comment for \", \"   testing */\", \"a = b + c;\", \"}\"]",
+  "metaData": "{\r\n  \"name\": \"removeComments\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"source\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "small",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

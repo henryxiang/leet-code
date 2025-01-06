@@ -1,0 +1,70 @@
+{
+  "questionId": "185",
+  "questionFrontendId": "185",
+  "boundTopicId": null,
+  "title": "Department Top Three Salaries",
+  "titleSlug": "department-top-three-salaries",
+  "categoryTitle": "Database",
+  "content": "<p>The <code>Employee</code> table holds all employees. Every employee has an Id, and there is also a column for the department Id.</p>\r\n\r\n<pre>\r\n+----+-------+--------+--------------+\r\n| Id | Name  | Salary | DepartmentId |\r\n+----+-------+--------+--------------+\r\n| 1  | Joe   | 85000  | 1            |\r\n| 2  | Henry | 80000  | 2            |\r\n| 3  | Sam   | 60000  | 2            |\r\n| 4  | Max   | 90000  | 1            |\r\n| 5  | Janet | 69000  | 1            |\r\n| 6  | Randy | 85000  | 1            |\r\n| 7  | Will  | 70000  | 1            |\r\n+----+-------+--------+--------------+\r\n</pre>\r\n\r\n<p>The <code>Department</code> table holds all departments of the company.</p>\r\n\r\n<pre>\r\n+----+----------+\r\n| Id | Name     |\r\n+----+----------+\r\n| 1  | IT       |\r\n| 2  | Sales    |\r\n+----+----------+\r\n</pre>\r\n\r\n<p>Write a SQL query to find employees who earn the top three salaries in each of the department. For the above tables, your SQL query should return the following rows (order of rows does not matter).</p>\r\n\r\n<pre>\r\n+------------+----------+--------+\r\n| Department | Employee | Salary |\r\n+------------+----------+--------+\r\n| IT         | Max      | 90000  |\r\n| IT         | Randy    | 85000  |\r\n| IT         | Joe      | 85000  |\r\n| IT         | Will     | 70000  |\r\n| Sales      | Henry    | 80000  |\r\n| Sales      | Sam      | 60000  |\r\n+------------+----------+--------+\r\n</pre>\r\n\r\n<p><strong>Explanation:</strong></p>\r\n\r\n<p>In IT department, Max earns the highest salary, both Randy and Joe earn the second highest salary, and Will earns the third highest salary. There are only two employees in the Sales department, Henry earns the highest salary while Sam earns the second highest salary.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 444,
+  "dislikes": 91,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Netflix\", \"slug\": \"netflix\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"58.6K\", \"totalSubmission\": \"194.6K\", \"totalAcceptedRaw\": 58578, \"totalSubmissionRaw\": 194602, \"acRate\": \"30.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "212",
+    "canSeeDetail": true,
+    "url": "/articles/department-top-three-salaries/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `JOIN` and sub-query [Accepted]\n\n**Algorithm**\n\nA top 3 salary in this company means there is no more than 3 salary bigger than itself in the company.\n\n```sql\nselect e1.Name as 'Employee', e1.Salary\nfrom Employee e1\nwhere 3 >\n(\n    select count(distinct e2.Salary)\n    from Employee e2\n    where e2.Salary > e1.Salary\n)\n;\n```\n\nIn this code, we count the salary number of which is bigger than e1.Salary. So the output is as below for the sample data.\n```\n| Employee | Salary |\n|----------|--------|\n| Henry    | 80000  |\n| Max      | 90000  |\n| Randy    | 85000  |\n```\n\nThen, we need to join the **Employee** table with **Department** in order to retrieve the department information.\n\n**MySQL**\n\n```sql\nSELECT\n    d.Name AS 'Department', e1.Name AS 'Employee', e1.Salary\nFROM\n    Employee e1\n        JOIN\n    Department d ON e1.DepartmentId = d.Id\nWHERE\n    3 > (SELECT\n            COUNT(DISTINCT e2.Salary)\n        FROM\n            Employee e2\n        WHERE\n            e2.Salary > e1.Salary\n                AND e1.DepartmentId = e2.DepartmentId\n        )\n;\n```\n\n```\n| Department | Employee | Salary |\n|------------|----------|--------|\n| IT         | Joe      | 70000  |\n| Sales      | Henry    | 80000  |\n| Sales      | Sam      | 60000  |\n| IT         | Max      | 90000  |\n| IT         | Randy    | 85000  |\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "207",
+      "count": 34,
+      "average": 4.176,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"Employee\": [\"Id\", \"Name\", \"Salary\", \"DepartmentId\"], \"Department\": [\"Id\", \"Name\"]}, \"rows\": {\"Employee\": [[1, \"Joe\", 85000, 1], [2, \"Henry\", 80000, 2], [3, \"Sam\", 60000, 2], [4, \"Max\", 90000, 1], [5, \"Janet\", 69000, 1], [6, \"Randy\", 85000, 1], [7, \"Will\", 70000, 1]], \"Department\": [[1, \"IT\"], [2, \"Sales\"]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists Employee (Id int, Name varchar(255), Salary int, DepartmentId int)\",\r\n    \"Create table If Not Exists Department (Id int, Name varchar(255))\"\r\n  ],\r\n  \"mssql\": [\r\n    \"create table Employee ( Id int, Name varchar(255), Salary int, DepartmentId int )\",\r\n    \"Create table Department (Id int, Name varchar(255))\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"create table Employee ( Id int, Name varchar(255), Salary int, DepartmentId int )\",\r\n    \"Create table Department (Id int, Name varchar(255))\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Employee (Id int, Name varchar(255), Salary int, DepartmentId int)",
+    "Create table If Not Exists Department (Id int, Name varchar(255))",
+    "Truncate table Employee",
+    "insert into Employee (Id, Name, Salary, DepartmentId) values ('1', 'Joe', '85000', '1')",
+    "insert into Employee (Id, Name, Salary, DepartmentId) values ('2', 'Henry', '80000', '2')",
+    "insert into Employee (Id, Name, Salary, DepartmentId) values ('3', 'Sam', '60000', '2')",
+    "insert into Employee (Id, Name, Salary, DepartmentId) values ('4', 'Max', '90000', '1')",
+    "insert into Employee (Id, Name, Salary, DepartmentId) values ('5', 'Janet', '69000', '1')",
+    "insert into Employee (Id, Name, Salary, DepartmentId) values ('6', 'Randy', '85000', '1')",
+    "insert into Employee (Id, Name, Salary, DepartmentId) values ('7', 'Will', '70000', '1')",
+    "Truncate table Department",
+    "insert into Department (Id, Name) values ('1', 'IT')",
+    "insert into Department (Id, Name) values ('2', 'Sales')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

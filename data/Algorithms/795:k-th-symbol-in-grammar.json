@@ -1,0 +1,113 @@
+{
+  "questionId": "795",
+  "questionFrontendId": "779",
+  "boundTopicId": null,
+  "title": "K-th Symbol in Grammar",
+  "titleSlug": "k-th-symbol-in-grammar",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On the first row, we write a <code>0</code>. Now in every subsequent row, we look at the previous row and replace each occurrence of <code>0</code> with <code>01</code>, and each occurrence of <code>1</code> with <code>10</code>.</p>\r\n\r\n<p>Given row <code>N</code> and index <code>K</code>, return the <code>K</code>-th indexed symbol in row <code>N</code>. (The values of <code>K</code> are 1-indexed.) (1 indexed).</p>\r\n\r\n<pre>\r\n<strong>Examples:</strong>\r\n<strong>Input:</strong> N = 1, K = 1\r\n<strong>Output:</strong> 0\r\n\r\n<strong>Input:</strong> N = 2, K = 1\r\n<strong>Output:</strong> 0\r\n\r\n<strong>Input:</strong> N = 2, K = 2\r\n<strong>Output:</strong> 1\r\n\r\n<strong>Input:</strong> N = 4, K = 5\r\n<strong>Output:</strong> 1\r\n\r\n<strong>Explanation:</strong>\r\nrow 1: 0\r\nrow 2: 01\r\nrow 3: 0110\r\nrow 4: 01101001\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>N</code> will be an integer in the range <code>[1, 30]</code>.</li>\r\n\t<li><code>K</code> will be an integer in the range <code>[1, 2^(N-1)]</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 296,
+  "dislikes": 99,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Recursion",
+      "slug": "recursion"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int kthGrammar(int N, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int kthGrammar(int N, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def kthGrammar(self, N, K):\n        \"\"\"\n        :type N: int\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def kthGrammar(self, N: int, K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint kthGrammar(int N, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int KthGrammar(int N, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @param {number} K\n * @return {number}\n */\nvar kthGrammar = function(N, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} k\n# @return {Integer}\ndef kth_grammar(n, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func kthGrammar(_ N: Int, _ K: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func kthGrammar(N int, K int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def kthGrammar(N: Int, K: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun kthGrammar(N: Int, K: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn kth_grammar(n: i32, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @param Integer $K\n     * @return Integer\n     */\n    function kthGrammar($N, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"21.6K\", \"totalSubmission\": \"57.9K\", \"totalAcceptedRaw\": 21615, \"totalSubmissionRaw\": 57881, \"acRate\": \"37.3%\"}",
+  "hints": [
+    "Try to represent the current (N, K) in terms of some (N-1, prevK).  What is prevK ?"
+  ],
+  "solution": {
+    "id": "409",
+    "canSeeDetail": true,
+    "url": "/articles/k-th-symbol-in-grammar/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Brute Force\n\n**Intuition and Algorithm**\n\nWe'll make each row exactly as directed in the problem statement.  We only need to remember the last row.\n\nUnfortunately, the strings could have length around 1 billion, as they double on each row, so this approach is not efficient enough.\n\n<iframe src=\"https://leetcode.com/playground/XuSR5GZn/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"XuSR5GZn\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(2^N)$$.  We parse rows with lengths $$2^0 + 2^1 + \\cdots + 2^{N-1}$$.\n\n* Space Complexity:  $$O(2^N)$$, the length of the `lastrow`.\n<br />\n<br />\n\n\n---\n#### Approach 2: Recursion (Parent Variant)\n\n**Intuition and Algorithm**\n\nSince each row is made only using information from the previous row, let's try to write the answer in terms of bits from the previous row.\n\n<br />\n<center>\n    <img src=\"../Figures/779/parent.png\" alt=\"Diagram of digits with relationship to their parent\" width=\"350\"/>\n</center>\n<br />\n\nIn particular, if we write say `\"0110\"` which generates `\"01101001\"`, then the first `\"0\"` generates the first `\"01\"` in the next row; the next digit `\"1\"` generates the next `\"10\"`, the next `\"1\"` generates the next `\"10\"`, and the last `\"0\"` generates the last `\"01\"`.\n\n<br />\n<center>\n    <img src=\"../Figures/779/link.png\" alt=\"Diagram of digits through repeated function calls\" width=\"350\"/>\n</center>\n<br />\n\nIn general, the `K`th digit's parent is going to be `(K+1) / 2`.  If the parent is `0`, then the digit will be the same as `1 - (K%2)`.  If the parent is `1`, the digit will be the opposite, ie. `K%2`.\n\n<iframe src=\"https://leetcode.com/playground/j7P9oBHx/shared\" frameBorder=\"0\" width=\"100%\" height=\"157\" name=\"j7P9oBHx\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$.  It takes $$N-1$$ steps to find the answer.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n#### Approach 3: Recursion (Flip Variant)\n\n**Intuition and Algorithm**\n\nAs in *Approach #2*, we could try to write the bit in terms of it's previous bit.\n\nWhen writing a few rows of the sequence, we notice a pattern: the second half is always the first half \"flipped\": namely, that `'0'` becomes `'1'` and `'1'` becomes `'0'`.\n\nWe can prove this assertion by induction.  The key idea is if a string $$X$$ generates $$Y$$, then a flipped string $$X'$$ generates $$Y'$$.\n\nThis leads to the following algorithm idea: if `K` is in the second half, then we could put `K -= (1 << N-2)` so that it is in the first half, and flip the final answer.\n\n<iframe src=\"https://leetcode.com/playground/dHkVtsnM/shared\" frameBorder=\"0\" width=\"100%\" height=\"191\" name=\"dHkVtsnM\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$.  It takes $$N-1$$ steps to find the answer.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n#### Approach 4: Binary Count\n\n**Intuition and Algorithm**\n\nAs in *Approach #3*, the second half of every row is the first half flipped.\n\nWhen the indexes `K` are written in binary (now indexing from zero), indexes of the second half of a row are ones with the first bit set to 1.\n\nThis means when applying the algorithm in *Approach #3* virtually, the number of times we will flip the final answer is just the number of `1`s in the binary representation of `K-1`.\n\n<iframe src=\"https://leetcode.com/playground/vy9wrQ6w/shared\" frameBorder=\"0\" width=\"100%\" height=\"140\" name=\"vy9wrQ6w\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\log N)$$, the number of binary bits in `N`.  If $$\\log N$$ is taken to be bounded, this can be considered to be $$O(1)$$.\n\n* Space Complexity:  $$O(1)$$.  (In Python, `bin(X)` creates a string of length $$O(\\log X)$$, which could be avoided.)\n<br />\n<br />\n\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "404",
+      "count": 6,
+      "average": 3.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "1\n1",
+  "metaData": "{\r\n  \"name\": \"kthGrammar\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

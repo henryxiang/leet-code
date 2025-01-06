@@ -1,0 +1,99 @@
+{
+  "questionId": "241",
+  "questionFrontendId": "241",
+  "boundTopicId": null,
+  "title": "Different Ways to Add Parentheses",
+  "titleSlug": "different-ways-to-add-parentheses",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. The valid operators are <code>+</code>, <code>-</code> and <code>*</code>.</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b> <code>&quot;2-1-1&quot;</code>\r\n<b>Output:</b> <code>[0, 2]</code>\r\n<strong>Explanation: </strong>\r\n((2-1)-1) = 0 \r\n(2-(1-1)) = 2</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input: </b><code>&quot;2*3-4*5&quot;</code>\r\n<b>Output:</b> <code>[-34, -14, -10, -10, 10]</code>\r\n<strong>Explanation: \r\n</strong>(2*(3-(4*5))) = -34 \r\n((2*3)-(4*5)) = -14 \r\n((2*(3-4))*5) = -10 \r\n(2*((3-4)*5)) = -10 \r\n(((2*3)-4)*5) = 10<strong>\r\n</strong></pre>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1251,
+  "dislikes": 64,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Unique Binary Search Trees II\", \"titleSlug\": \"unique-binary-search-trees-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Basic Calculator\", \"titleSlug\": \"basic-calculator\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Expression Add Operators\", \"titleSlug\": \"expression-add-operators\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "mithmatt",
+      "profileUrl": "/mithmatt/",
+      "avatarUrl": "https://assets.leetcode.com/users/mithmatt/avatar_1538278871.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Divide and Conquer",
+      "slug": "divide-and-conquer"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> diffWaysToCompute(string input) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> diffWaysToCompute(String input) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def diffWaysToCompute(self, input):\n        \"\"\"\n        :type input: str\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def diffWaysToCompute(self, input: str) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* diffWaysToCompute(char * input, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> DiffWaysToCompute(string input) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} input\n * @return {number[]}\n */\nvar diffWaysToCompute = function(input) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} input\n# @return {Integer[]}\ndef diff_ways_to_compute(input)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func diffWaysToCompute(_ input: String) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func diffWaysToCompute(input string) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def diffWaysToCompute(input: String): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun diffWaysToCompute(input: String): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn diff_ways_to_compute(input: String) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $input\n     * @return Integer[]\n     */\n    function diffWaysToCompute($input) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"87.6K\", \"totalSubmission\": \"166.5K\", \"totalAcceptedRaw\": 87610, \"totalSubmissionRaw\": 166535, \"acRate\": \"52.6%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"2-1-1\"",
+  "metaData": "{\r\n  \"name\": \"diffWaysToCompute\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"input\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

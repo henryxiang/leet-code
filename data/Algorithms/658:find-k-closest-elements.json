@@ -1,0 +1,111 @@
+{
+  "questionId": "658",
+  "questionFrontendId": "658",
+  "boundTopicId": null,
+  "title": "Find K Closest Elements",
+  "titleSlug": "find-k-closest-elements",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a sorted array, two integers <code>k</code> and <code>x</code>, find the <code>k</code> closest elements to <code>x</code> in the array.  The result should also be sorted in ascending order.\r\nIf there is a tie,  the smaller elements are always preferred.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> [1,2,3,4,5], k=4, x=3\r\n<b>Output:</b> [1,2,3,4]\r\n</pre>\r\n</p>\r\n\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> [1,2,3,4,5], k=4, x=-1\r\n<b>Output:</b> [1,2,3,4]\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The value k is positive and will always be smaller than the length of the sorted array.</li>\r\n<li> Length of the given array is positive and will not exceed 10<sup>4</sup></li>\r\n<li> Absolute value of elements in the array and x will not exceed 10<sup>4</sup></li>\r\n</ol>\r\n</p>\r\n\r\n<hr />\r\n\r\n<p>\r\n<b><font color=\"red\">UPDATE (2017/9/19):</font></b><br />\r\nThe <i>arr</i> parameter had been changed to an <b>array of integers</b> (instead of a list of integers). <b><i>Please reload the code definition to get the latest changes</i></b>.\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 888,
+  "dislikes": 184,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Guess Number Higher or Lower\", \"titleSlug\": \"guess-number-higher-or-lower\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Guess Number Higher or Lower II\", \"titleSlug\": \"guess-number-higher-or-lower-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find K-th Smallest Pair Distance\", \"titleSlug\": \"find-k-th-smallest-pair-distance\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> findClosestElements(vector<int>& arr, int k, int x) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> findClosestElements(int[] arr, int k, int x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findClosestElements(self, arr, k, x):\n        \"\"\"\n        :type arr: List[int]\n        :type k: int\n        :type x: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* findClosestElements(int* arr, int arrSize, int k, int x, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> FindClosestElements(int[] arr, int k, int x) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @param {number} k\n * @param {number} x\n * @return {number[]}\n */\nvar findClosestElements = function(arr, k, x) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @param {Integer} k\n# @param {Integer} x\n# @return {Integer[]}\ndef find_closest_elements(arr, k, x)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findClosestElements(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findClosestElements(arr []int, k int, x int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findClosestElements(arr: Array[Int], k: Int, x: Int): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findClosestElements(arr: IntArray, k: Int, x: Int): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_closest_elements(arr: Vec<i32>, k: i32, x: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @param Integer $k\n     * @param Integer $x\n     * @return Integer[]\n     */\n    function findClosestElements($arr, $k, $x) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"73.4K\", \"totalSubmission\": \"186.6K\", \"totalAcceptedRaw\": 73388, \"totalSubmissionRaw\": 186592, \"acRate\": \"39.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "229",
+    "canSeeDetail": true,
+    "url": "/articles/find-k-closest-elements/",
+    "content": "[TOC]\n\n\n## Solution\n\n---\n#### Approach 1: Using Collection.sort()\n\n**Algorithm**\n\nIntuitively, we can sort the elements in list `arr` by their absolute difference values to the target `x`. Then the sublist of the first k elements is the result after sorting the elements by the natural order.\n\n<iframe src=\"https://leetcode.com/playground/pPUrT4oY/shared\" frameBorder=\"0\" width=\"100%\" height=\"157\" name=\"pPUrT4oY\"></iframe>\n\nNote: This solution is inspired by [@compton_scatter](https://discuss.leetcode.com/user/compton_scatter).\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n\\log n)$$. Collections.sort() uses binary sort so it has a $$O(n\\log n)$$ complexity.\n\n* Space complexity : $$O(k)$$. The in-place sorting does not consume any extra space. However, generating a k length sublist will take some space.\n<br>\n<br>\n\n---\n#### Approach 2: Binary Search and Two Pointers\n\n**Algorithm**\n\nThe original array has been sorted so we can take this advantage by the following steps.\n1. If the target `x` is less or equal than the first element in the sorted array, the first `k` elements are the result.\n2. Similarly, if the target `x` is more or equal than the last element in the sorted array, the last `k` elements are the result.\n3. Otherwise, we can use binary search to find the `index` of the element, which is equal (when this list has `x`) or a little bit larger than `x` (when this list does not have it). Then set `low` to its left `k-1` position, and `high` to the right `k-1` position of this `index` as a start. The desired k numbers must in this rang [index-k-1, index+k-1]. So we can shrink this range to get the result using the following rules.\n    * If `low` reaches the lowest index `0` or the `low` element is closer to `x` than the `high` element, decrease the `high` index.\n    * If `high` reaches to the highest index `arr.size()-1` or it is nearer to `x` than the `low` element, increase the `low` index.\n    * The looping ends when there are exactly k elements in [low, high], the subList of which is the result.\n\n<iframe src=\"https://leetcode.com/playground/kS5bGpg6/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"kS5bGpg6\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(\\log n +k)$$. $$O(\\log n)$$ is for the time of binary search, while $$O(k)$$ is for shrinking the index range to k elements.\n\n* Space complexity : $$O(k)$$. It is to generate the required sublist.\n\n\nAnalysis written by: [@Mr.Bin](https://discuss.leetcode.com/user/mr-bin)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "224",
+      "count": 25,
+      "average": 3.44,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4,5]\n4\n3",
+  "metaData": "{\r\n  \"name\": \"findClosestElements\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"arr\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"       \r\n    },\r\n    {\r\n      \"name\": \"x\",\r\n      \"type\": \"integer\"       \r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

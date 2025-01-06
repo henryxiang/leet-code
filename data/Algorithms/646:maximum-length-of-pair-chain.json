@@ -1,0 +1,111 @@
+{
+  "questionId": "646",
+  "questionFrontendId": "646",
+  "boundTopicId": null,
+  "title": "Maximum Length of Pair Chain",
+  "titleSlug": "maximum-length-of-pair-chain",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nYou are given <code>n</code> pairs of numbers. In every pair, the first number is always smaller than the second number.\r\n</p>\r\n\r\n<p>\r\nNow, we define a pair <code>(c, d)</code> can follow another pair <code>(a, b)</code> if and only if <code>b < c</code>. Chain of pairs can be formed in this fashion. \r\n</p>\r\n\r\n<p>\r\nGiven a set of pairs, find the length longest chain which can be formed. You needn't use up all the given pairs. You can select pairs in any order.\r\n</p>\r\n\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> [[1,2], [2,3], [3,4]]\r\n<b>Output:</b> 2\r\n<b>Explanation:</b> The longest chain is [1,2] -> [3,4]\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The number of given pairs will be in the range [1, 1000].</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 669,
+  "dislikes": 59,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Longest Increasing Subsequence\", \"titleSlug\": \"longest-increasing-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Increasing Subsequences\", \"titleSlug\": \"increasing-subsequences\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "ashishmadaan6",
+      "profileUrl": "/ashishmadaan6/",
+      "avatarUrl": "https://assets.leetcode.com/users/ashishmadaan6/avatar_1524299083.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findLongestChain(vector<vector<int>>& pairs) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findLongestChain(int[][] pairs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findLongestChain(self, pairs):\n        \"\"\"\n        :type pairs: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findLongestChain(self, pairs: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findLongestChain(int** pairs, int pairsSize, int* pairsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindLongestChain(int[][] pairs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} pairs\n * @return {number}\n */\nvar findLongestChain = function(pairs) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} pairs\n# @return {Integer}\ndef find_longest_chain(pairs)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findLongestChain(_ pairs: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findLongestChain(pairs [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findLongestChain(pairs: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findLongestChain(pairs: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_longest_chain(pairs: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $pairs\n     * @return Integer\n     */\n    function findLongestChain($pairs) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"45K\", \"totalSubmission\": \"89.6K\", \"totalAcceptedRaw\": 44993, \"totalSubmissionRaw\": 89616, \"acRate\": \"50.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "317",
+    "canSeeDetail": true,
+    "url": "/articles/maximum-length-of-pair-chain/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Dynamic Programming [Accepted]\n\n**Intuition**\n\nIf a chain of length `k` ends at some `pairs[i]`, and `pairs[i][1] < pairs[j][0]`, we can extend this chain to a chain of length `k+1`.\n\n**Algorithm**\n\nSort the pairs by first coordinate, and let `dp[i]` be the length of the longest chain ending at `pairs[i]`.  When `i < j` and `pairs[i][1] < pairs[j][0]`, we can extend the chain, and so we have the candidate answer `dp[j] = max(dp[j], dp[i] + 1)`.\n\n<iframe src=\"https://leetcode.com/playground/5RAj49MD/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"5RAj49MD\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$ where $$N$$ is the length of `pairs`.  There are two for loops, and $$N^2$$ dominates the sorting step.\n\n* Space Complexity: $$O(N)$$ for sorting and to store `dp`.\n\n---\n#### Approach #2: Greedy [Accepted]\n\n**Intuition**\n\nWe can greedily add to our chain.  Choosing the next addition to be the one with the lowest second coordinate is at least better than a choice with a larger second coordinate.\n\n**Algorithm**\n\nConsider the pairs in increasing order of their *second* coordinate.  We'll try to add them to our chain.  If we can, by the above argument we know that it is correct to do so.\n\n<iframe src=\"https://leetcode.com/playground/imd3oEYD/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"imd3oEYD\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N \\log N)$$ where $$N$$ is the length of `S`.  The complexity comes from the sorting step, but the rest of the solution does linear work.\n\n* Space Complexity: $$O(N)$$.  The additional space complexity of storing `cur` and `ans`, but sorting uses $$O(N)$$ space.  Depending on the implementation of the language used, sorting can sometimes use less space.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "312",
+      "count": 30,
+      "average": 2.933,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2], [2,3], [3,4]]",
+  "metaData": "{\r\n  \"name\": \"findLongestChain\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"pairs\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

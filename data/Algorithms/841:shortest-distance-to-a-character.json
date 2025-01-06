@@ -1,0 +1,106 @@
+{
+  "questionId": "841",
+  "questionFrontendId": "821",
+  "boundTopicId": null,
+  "title": "Shortest Distance to a Character",
+  "titleSlug": "shortest-distance-to-a-character",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>S</code>&nbsp;and a character <code>C</code>, return an array of integers representing the shortest distance from the character <code>C</code> in the string.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> S = &quot;loveleetcode&quot;, C = &#39;e&#39;\r\n<strong>Output:</strong> [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>S</code> string length is&nbsp;in&nbsp;<code>[1, 10000].</code></li>\r\n\t<li><code>C</code>&nbsp;is a single character, and guaranteed to be in string <code>S</code>.</li>\r\n\t<li>All letters in <code>S</code> and <code>C</code> are lowercase.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 770,
+  "dislikes": 64,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "milu",
+      "profileUrl": "/milu/",
+      "avatarUrl": "https://www.gravatar.com/avatar/c2cab4764833a0e3eb38a6966a7b3d3f.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 4}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> shortestToChar(string S, char C) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] shortestToChar(String S, char C) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def shortestToChar(self, S, C):\n        \"\"\"\n        :type S: str\n        :type C: str\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def shortestToChar(self, S: str, C: str) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* shortestToChar(char * S, char C, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] ShortestToChar(string S, char C) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @param {character} C\n * @return {number[]}\n */\nvar shortestToChar = function(S, C) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Character} c\n# @return {Integer[]}\ndef shortest_to_char(s, c)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func shortestToChar(_ S: String, _ C: Character) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func shortestToChar(S string, C byte) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def shortestToChar(S: String, C: Char): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun shortestToChar(S: String, C: Char): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn shortest_to_char(s: String, c: char) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @param String $C\n     * @return Integer[]\n     */\n    function shortestToChar($S, $C) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"49.9K\", \"totalSubmission\": \"76.7K\", \"totalAcceptedRaw\": 49907, \"totalSubmissionRaw\": 76650, \"acRate\": \"65.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "455",
+    "canSeeDetail": true,
+    "url": "/articles/shortest-distance-to-a-character/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Min Array [Accepted]\n\n**Intuition**\n\nFor each index `S[i]`, let's try to find the distance to the next character `C` going left, and going right.  The answer is the minimum of these two values.\n\n**Algorithm**\n\nWhen going left to right, we'll remember the index `prev` of the last character `C` we've seen.  Then the answer is `i - prev`.\n\nWhen going right to left, we'll remember the index `prev` of the last character `C` we've seen.  Then the answer is `prev - i`.\n\nWe take the minimum of these two answers to create our final answer.\n\n<iframe src=\"https://leetcode.com/playground/oPmtNjJL/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"oPmtNjJL\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.  We scan through the string twice.\n\n* Space Complexity: $$O(N)$$, the size of `ans`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "450",
+      "count": 17,
+      "average": 4.765,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"loveleetcode\"\n\"e\"",
+  "metaData": "{\r\n  \"name\": \"shortestToChar\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"C\",\r\n      \"type\": \"character\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,105 @@
+{
+  "questionId": "409",
+  "questionFrontendId": "409",
+  "boundTopicId": null,
+  "title": "Longest Palindrome",
+  "titleSlug": "longest-palindrome",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.</p>\r\n\r\n<p>This is case sensitive, for example <code>\"Aa\"</code> is not considered a palindrome here.</p>\r\n\r\n<p><b>Note:</b><br />\r\nAssume the length of given string will not exceed 1,010.\r\n</p>\r\n\r\n<p><b>Example: </b>\r\n<pre>\r\nInput:\r\n\"abccccdd\"\r\n\r\nOutput:\r\n7\r\n\r\nExplanation:\r\nOne longest palindrome that can be built is \"dccaccd\", whose length is 7.\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 700,
+  "dislikes": 68,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Palindrome Permutation\", \"titleSlug\": \"palindrome-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Intuit\", \"slug\": \"intuit\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestPalindrome(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestPalindrome(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestPalindrome(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestPalindrome(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint longestPalindrome(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestPalindrome(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar longestPalindrome = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef longest_palindrome(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestPalindrome(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestPalindrome(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestPalindrome(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestPalindrome(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_palindrome(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function longestPalindrome($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"118.5K\", \"totalSubmission\": \"241.1K\", \"totalAcceptedRaw\": 118527, \"totalSubmissionRaw\": 241087, \"acRate\": \"49.2%\"}",
+  "hints": [],
+  "solution": {
+    "id": "361",
+    "canSeeDetail": true,
+    "url": "/articles/longest-palindrome/",
+    "content": "[TOC]\n\n#### Approach #1: Greedy [Accepted]\n\n**Intuition**\n\nA palindrome consists of letters with equal partners, plus possibly a unique center (without a partner).  The letter `i` from the left has its partner `i` from the right.  For example in `'abcba'`, `'aa'` and `'bb'` are partners, and `'c'` is a unique center.\n\nImagine we built our palindrome.  It consists of as many partnered letters as possible, plus a unique center if possible.  This motivates a greedy approach.\n\n**Algorithm**\n\nFor each letter, say it occurs `v` times.  We know we have `v // 2 * 2` letters that can be partnered for sure.  For example, if we have `'aaaaa'`, then we could have `'aaaa'` partnered, which is `5 // 2 * 2 = 4` letters partnered.\n\nAt the end, if there was any `v % 2 == 1`, then that letter could have been a unique center.  Otherwise, every letter was partnered.  To perform this check, we will check for `v % 2 == 1` and `ans % 2 == 0`, the latter meaning we haven't yet added a unique center to the answer.\n\n<iframe src=\"https://leetcode.com/playground/ZnPVAdHR/shared\" frameBorder=\"0\" width=\"100%\" height=\"310\" name=\"ZnPVAdHR\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `s`.  We need to count each letter.\n\n* Space Complexity: $$O(1)$$, the space for our count, as the alphabet size of `s` is fixed.  We should also consider that in a bit complexity model, technically we need $$O(\\log N)$$ bits to store the count values.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "356",
+      "count": 18,
+      "average": 4.111,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"abccccdd\"",
+  "metaData": "{ \r\n  \"name\": \"longestPalindrome\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

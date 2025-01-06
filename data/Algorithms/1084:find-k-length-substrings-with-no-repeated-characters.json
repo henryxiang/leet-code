@@ -1,0 +1,107 @@
+{
+  "questionId": "1084",
+  "questionFrontendId": "1100",
+  "boundTopicId": null,
+  "title": "Find K-Length Substrings With No Repeated Characters",
+  "titleSlug": "find-k-length-substrings-with-no-repeated-characters",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>S</code>, return the number of substrings of length <code>K</code> with no repeated characters.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>S = <span id=\"example-input-1-1\">&quot;havefunonleetcode&quot;</span>, K = <span id=\"example-input-1-2\">5</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">6</span>\r\n<strong>Explanation: </strong>\r\nThere are 6 substrings they are : &#39;havef&#39;,&#39;avefu&#39;,&#39;vefun&#39;,&#39;efuno&#39;,&#39;etcod&#39;,&#39;tcode&#39;.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>S = <span id=\"example-input-2-1\">&quot;home&quot;</span>, K = <span id=\"example-input-2-2\">5</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">0</span>\r\n<strong>Explanation: </strong>\r\nNotice K can be larger than the length of S. In this case is not possible to find any substring.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= S.length &lt;= 10^4</code></li>\r\n\t<li>All characters of S are lowercase English letters.</li>\r\n\t<li><code>1 &lt;= K &lt;= 10^4</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 76,
+  "dislikes": 5,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "luisvasquez-Boxer",
+      "profileUrl": "/luisvasquez-boxer/",
+      "avatarUrl": "https://assets.leetcode.com/users/luisvasquez-boxer/avatar_1544845570.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int numKLenSubstrNoRepeats(string S, int K) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numKLenSubstrNoRepeats(String S, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numKLenSubstrNoRepeats(self, S, K):\n        \"\"\"\n        :type S: str\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numKLenSubstrNoRepeats(self, S: str, K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numKLenSubstrNoRepeats(char * S, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int NumKLenSubstrNoRepeats(string S, int K) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @param {number} K\n * @return {number}\n */\nvar numKLenSubstrNoRepeats = function(S, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @param {Integer} k\r\n# @return {Integer}\r\ndef num_k_len_substr_no_repeats(s, k)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func numKLenSubstrNoRepeats(_ S: String, _ K: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numKLenSubstrNoRepeats(S string, K int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def numKLenSubstrNoRepeats(S: String, K: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun numKLenSubstrNoRepeats(S: String, K: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_k_len_substr_no_repeats(s: String, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @param Integer $K\n     * @return Integer\n     */\n    function numKLenSubstrNoRepeats($S, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.5K\", \"totalSubmission\": \"7.7K\", \"totalAcceptedRaw\": 5474, \"totalSubmissionRaw\": 7675, \"acRate\": \"71.3%\"}",
+  "hints": [
+    "How to check efficiently each K-length substring?",
+    "First store the first leftmost K-length substring in a hashTable or array of frequencies.",
+    "Then iterate through the rest of characters and erase the first element and add the next element from the right. If in the hashTable we have K different character we add 1 to the counter. After that return as answer the counter."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"havefunonleetcode\"\n5",
+  "metaData": "{\r\n  \"name\": \"numKLenSubstrNoRepeats\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

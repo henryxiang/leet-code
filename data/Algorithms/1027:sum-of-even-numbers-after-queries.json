@@ -1,0 +1,111 @@
+{
+  "questionId": "1027",
+  "questionFrontendId": "985",
+  "boundTopicId": null,
+  "title": "Sum of Even Numbers After Queries",
+  "titleSlug": "sum-of-even-numbers-after-queries",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We have an array <code>A</code> of integers, and an array <code>queries</code>&nbsp;of queries.</p>\r\n\r\n<p>For the <code>i</code>-th&nbsp;query <code>val =&nbsp;queries[i][0], index&nbsp;= queries[i][1]</code>, we add <font face=\"monospace\">val</font>&nbsp;to <code>A[index]</code>.&nbsp; Then, the answer to the <code>i</code>-th query is the sum of the even values of <code>A</code>.</p>\r\n\r\n<p><em>(Here, the given <code>index = queries[i][1]</code> is a 0-based index, and each query permanently modifies the array <code>A</code>.)</em></p>\r\n\r\n<p>Return the answer to all queries.&nbsp; Your <code>answer</code> array should have&nbsp;<code>answer[i]</code>&nbsp;as&nbsp;the answer to the <code>i</code>-th query.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[1,2,3,4]</span>, queries = <span id=\"example-input-1-2\">[[1,0],[-3,1],[-4,0],[2,3]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[8,6,2,4]</span>\r\n<strong>Explanation: </strong>\r\nAt the beginning, the array is [1,2,3,4].\r\nAfter adding 1 to A[0], the array is [2,2,3,4], and the sum of even values is 2 + 2 + 4 = 8.\r\nAfter adding -3 to A[1], the array is [2,-1,3,4], and the sum of even values is 2 + 4 = 6.\r\nAfter adding -4 to A[0], the array is [-2,-1,3,4], and the sum of even values is -2 + 4 = 2.\r\nAfter adding 2 to A[3], the array is [-2,-1,3,6], and the sum of even values is -2 + 6 = 4.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 10000</code></li>\r\n\t<li><code>-10000 &lt;= A[i] &lt;= 10000</code></li>\r\n\t<li><code>1 &lt;= queries.length &lt;= 10000</code></li>\r\n\t<li><code>-10000 &lt;= queries[i][0] &lt;= 10000</code></li>\r\n\t<li><code>0 &lt;= queries[i][1] &lt; A.length</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 234,
+  "dislikes": 103,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "weiyang95",
+      "profileUrl": "/weiyang95/",
+      "avatarUrl": "https://www.gravatar.com/avatar/14b6e5261d91a441788544cbad79e0b9.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Indeed\", \"slug\": \"indeed\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> sumEvenAfterQueries(vector<int>& A, vector<vector<int>>& queries) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] sumEvenAfterQueries(int[] A, int[][] queries) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def sumEvenAfterQueries(self, A, queries):\n        \"\"\"\n        :type A: List[int]\n        :type queries: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def sumEvenAfterQueries(self, A: List[int], queries: List[List[int]]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* sumEvenAfterQueries(int* A, int ASize, int** queries, int queriesSize, int* queriesColSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] SumEvenAfterQueries(int[] A, int[][] queries) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar sumEvenAfterQueries = function(A, queries) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer[][]} queries\n# @return {Integer[]}\ndef sum_even_after_queries(a, queries)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func sumEvenAfterQueries(_ A: [Int], _ queries: [[Int]]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func sumEvenAfterQueries(A []int, queries [][]int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def sumEvenAfterQueries(A: Array[Int], queries: Array[Array[Int]]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun sumEvenAfterQueries(A: IntArray, queries: Array<IntArray>): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sum_even_after_queries(a: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer[][] $queries\n     * @return Integer[]\n     */\n    function sumEvenAfterQueries($A, $queries) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"32.2K\", \"totalSubmission\": \"51.7K\", \"totalAcceptedRaw\": 32223, \"totalSubmissionRaw\": 51659, \"acRate\": \"62.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "683",
+    "canSeeDetail": true,
+    "url": "/articles/sum-of-even-numbers-after-queries/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Maintain Array Sum\n\n**Intuition and Algorithm**\n\nLet's try to maintain `S`, the sum of the array throughout one query operation.\n\nWhen acting on an array element `A[index]`, the rest of the values of `A` remain the same.  Let's remove `A[index]` from `S` if it is even, then add `A[index] + val` back (if it is even.)\n\nHere are some examples:\n\n* If we have `A = [2,2,2,2,2]`, `S = 10`, and we do `A[0] += 4`: we will update `S -= 2`, then `S += 6`.  At the end, we will have `A = [6,2,2,2,2]` and `S = 14`.\n\n* If we have `A = [1,2,2,2,2]`, `S = 8`, and we do `A[0] += 3`: we will skip updating `S` (since `A[0]` is odd), then `S += 4`.  At the end, we will have `A = [4,2,2,2,2]` and `S = 12`.\n\n* If we have `A = [2,2,2,2,2]`, `S = 10` and we do `A[0] += 1`: we will update `S -= 2`, then skip updating `S` (since `A[0] + 1` is odd.)  At the end, we will have `A = [3,2,2,2,2]` and `S = 8`.\n\n* If we have `A = [1,2,2,2,2]`, `S = 8` and we do `A[0] += 2`: we will skip updating `S` (since `A[0]` is odd), then skip updating `S` again (since `A[0] + 2` is odd.)  At the end, we will have `A = [3,2,2,2,2]` and `S = 8`.\n\nThese examples help illustrate that our algorithm actually maintains the value of `S` throughout each query operation.\n\n<iframe src=\"https://leetcode.com/playground/cYwLoifs/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"cYwLoifs\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N+Q)$$, where $$N$$ is the length of `A` and $$Q$$ is the number of `queries`.\n\n* Space Complexity:  $$O(Q)$$, though we only allocate $$O(1)$$ additional space.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "668",
+      "count": 19,
+      "average": 4.316,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,4]\n[[1,0],[-3,1],[-4,0],[2,3]]",
+  "metaData": "{\r\n  \"name\": \"sumEvenAfterQueries\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"queries\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

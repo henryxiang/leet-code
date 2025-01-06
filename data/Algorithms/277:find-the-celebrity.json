@@ -1,0 +1,76 @@
+{
+  "questionId": "277",
+  "questionFrontendId": "277",
+  "boundTopicId": null,
+  "title": "Find the Celebrity",
+  "titleSlug": "find-the-celebrity",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Suppose you are at a party with <code>n</code> people (labeled from <code>0</code> to <code>n - 1</code>) and among them, there may exist one celebrity. The definition of a celebrity is that all the other <code>n - 1</code> people know him/her but he/she does not know any of them.</p>\r\n\r\n<p>Now you want to find out who the celebrity is or verify that there is not one. The only thing you are allowed to do is to ask questions like: &quot;Hi, A. Do you know B?&quot; to get information of whether A knows B. You need to find out the celebrity (or verify there is not one) by asking as few questions as possible (in the asymptotic sense).</p>\r\n\r\n<p>You are given a helper function <code>bool knows(a, b)</code> which tells you whether A knows B. Implement a function <code>int findCelebrity(n)</code>.&nbsp;There will be exactly one celebrity if he/she is in the party. Return the celebrity&#39;s label if there is a celebrity in the party. If there is no celebrity, return <code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/02/02/277_example_1_bold.PNG\" style=\"width: 186px; height: 181px;\" />\r\n<pre>\r\n<strong>Input: </strong>graph = <span id=\"example-input-1-1\">[\r\n&nbsp; [1,1,0],\r\n&nbsp; [0,1,0],\r\n&nbsp; [1,1,1]\r\n]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">1</span>\r\n<strong>Explanation: </strong>There are three persons labeled with 0, 1 and 2. graph[i][j] = 1 means person i knows person j, otherwise graph[i][j] = 0 means person i does not know person j. The celebrity is the person labeled as 1 because both 0 and 2 know him but 1 does not know anybody.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/02/02/277_example_2.PNG\" style=\"width: 193px; height: 192px;\" />\r\n<pre>\r\n<strong>Input: </strong>graph = <span id=\"example-input-2-1\">[\r\n&nbsp; [1,0,1],\r\n&nbsp; [1,1,0],\r\n&nbsp; [0,1,1]\r\n]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">-1</span>\r\n<strong>Explanation: </strong>There is no celebrity.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>The directed graph is represented as an adjacency matrix, which is an&nbsp;<code>n x n</code> matrix where <code>a[i][j] = 1</code> means person&nbsp;<code>i</code> knows person&nbsp;<code>j</code> while&nbsp;<code>a[i][j] = 0</code> means the contrary.</li>\r\n\t<li>Remember that you won&#39;t have direct access to the adjacency matrix.</li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 829,
+  "dislikes": 110,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Find the Town Judge\", \"titleSlug\": \"find-the-town-judge\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Palantir Technologies\", \"slug\": \"palantir-technologies\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "// Forward declaration of the knows API.\nbool knows(int a, int b);\n\nclass Solution {\npublic:\n    int findCelebrity(int n) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/* The knows API is defined in the parent class Relation.\n      boolean knows(int a, int b); */\n\npublic class Solution extends Relation {\n    public int findCelebrity(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# The knows API is already defined for you.\n# @param a, person a\n# @param b, person b\n# @return a boolean, whether a knows b\n# def knows(a, b):\n\nclass Solution(object):\n    def findCelebrity(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# The knows API is already defined for you.\n# return a bool, whether a knows b\n# def knows(a: int, b: int) -> bool:\n\nclass Solution:\n    def findCelebrity(self, n: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "// Forward declaration of the knows API.\nbool knows(int a, int b);\n\nint findCelebrity(int n) {\n    \n}"
+    },
+    {
+      "lang": "C#",
+      "code": "/* The Knows API is defined in the parent class Relation.\n      bool Knows(int a, int b); */\n\npublic class Solution : Relation {\n    public int FindCelebrity(int n) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for knows()\n * \n * @param {integer} person a\n * @param {integer} person b\n * @return {boolean} whether a knows b\n * knows = function(a, b) {\n *     ...\n * };\n */\n\n/**\n * @param {function} knows()\n * @return {function}\n */\nvar solution = function(knows) {\n    /**\n     * @param {integer} n Total people\n     * @return {integer} The celebrity\n     */\n    return function(n) {\n        \n    };\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# The knows API is already defined for you.\n# @param {Integer} person a\n# @param {Integer} person b\n# @return {Boolean} whether a knows b\n# def knows(a, b)\n\n# @param {Integer} n\n# @return {Integer}\ndef find_celebrity(n)\n    \nend"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * The knows API is already defined for you.\n *     knows := func(a int, b int) bool\n */\nfunc solution(knows func(a int, b int) bool) func(n int) int {\n    return func(n int) int {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"102.2K\", \"totalSubmission\": \"259.7K\", \"totalAcceptedRaw\": 102155, \"totalSubmissionRaw\": 259677, \"acRate\": \"39.3%\"}",
+  "hints": [
+    "The best hint for this problem can be provided by the following figure:\r\n\r\n<br>\r\n<img src=\"https://assets.leetcode.com/uploads/2019/10/20/hint_find_celebrity.png\" width=\"700\"/>",
+    "Well, if you understood the gist of the above idea, you can extend it to find a candidate that can possibly be a celebrity. Why do we say a \"candidate\"? That is for you to think. This is clearly a greedy approach to find the answer. However, there is some information that would still remain to be verified without which we can't obtain an answer with certainty. To get that stake in the ground, we would need some more calls to the knows API."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,1,0],[0,1,0],[1,1,1]]",
+  "metaData": "{\n  \"name\": \"findCelebrity\",\n  \"params\": [\n    {\n      \"name\": \"know2d\",\n      \"type\": \"integer[][]\",\n      \"internal\": true\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"c\",\n    \"csharp\",\n    \"javascript\",\n    \"ruby\",\n    \"golang\",\n    \"python3\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

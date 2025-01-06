@@ -1,0 +1,84 @@
+{
+  "questionId": "607",
+  "questionFrontendId": "607",
+  "boundTopicId": null,
+  "title": "Sales Person",
+  "titleSlug": "sales-person",
+  "categoryTitle": "Database",
+  "content": "<p><b>Description</b></p>\r\n\r\n<p>Given three tables: <code>salesperson</code>, <code>company</code>, <code>orders</code>.<br />\r\nOutput all the <b>names</b> in the table <code>salesperson</code>, who didn&rsquo;t have sales to company &#39;RED&#39;.</p>\r\n\r\n<p><b>Example</b><br />\r\n<b>Input</b></p>\r\n\r\n<p>Table: <code>salesperson</code></p>\r\n\r\n<pre>\r\n+----------+------+--------+-----------------+-----------+\r\n| sales_id | name | salary | commission_rate | hire_date |\r\n+----------+------+--------+-----------------+-----------+\r\n|   1      | John | 100000 |     6           | 4/1/2006  |\r\n|   2      | Amy  | 120000 |     5           | 5/1/2010  |\r\n|   3      | Mark | 65000  |     12          | 12/25/2008|\r\n|   4      | Pam  | 25000  |     25          | 1/1/2005  |\r\n|   5      | Alex | 50000  |     10          | 2/3/2007  |\r\n+----------+------+--------+-----------------+-----------+\r\n</pre>\r\nThe table <code>salesperson</code> holds the salesperson information. Every salesperson has a <b>sales_id</b> and a <b>name</b>.\r\n\r\n<p>Table: <code>company</code></p>\r\n\r\n<pre>\r\n+---------+--------+------------+\r\n| com_id  |  name  |    city    |\r\n+---------+--------+------------+\r\n|   1     |  RED   |   Boston   |\r\n|   2     | ORANGE |   New York |\r\n|   3     | YELLOW |   Boston   |\r\n|   4     | GREEN  |   Austin   |\r\n+---------+--------+------------+\r\n</pre>\r\nThe table <code>company</code> holds the company information. Every company has a <b>com_id</b> and a <b>name</b>.\r\n\r\n<p>Table: <code>orders</code></p>\r\n\r\n<pre>\r\n+----------+------------+---------+----------+--------+\r\n| order_id | order_date | com_id  | sales_id | amount |\r\n+----------+------------+---------+----------+--------+\r\n| 1        |   1/1/2014 |    3    |    4     | 100000 |\r\n| 2        |   2/1/2014 |    4    |    5     | 5000   |\r\n| 3        |   3/1/2014 |    1    |    1     | 50000  |\r\n| 4        |   4/1/2014 |    1    |    4     | 25000  |\r\n+----------+----------+---------+----------+--------+\r\n</pre>\r\nThe table <code>orders</code> holds the sales record information, salesperson and customer company are represented by <b>sales_id</b> and <b>com_id</b>.\r\n\r\n<p><b>output</b></p>\r\n\r\n<pre>\r\n+------+\r\n| name | \r\n+------+\r\n| Amy  | \r\n| Mark | \r\n| Alex |\r\n+------+\r\n</pre>\r\n\r\n<p><b>Explanation</b></p>\r\n\r\n<p>According to order &#39;3&#39; and &#39;4&#39; in table <code>orders</code>, it is easy to tell only salesperson &#39;John&#39; and &#39;Alex&#39; have sales to company &#39;RED&#39;,<br />\r\nso we need to output all the other <b>names</b> in table <code>salesperson</code>.</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 88,
+  "dislikes": 20,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "artistscript",
+      "profileUrl": "/artistscript/",
+      "avatarUrl": "https://www.gravatar.com/avatar/1d186f42681a157b2cce3ebf9f9c0911.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.9K\", \"totalSubmission\": \"25K\", \"totalAcceptedRaw\": 14939, \"totalSubmissionRaw\": 24957, \"acRate\": \"59.9%\"}",
+  "hints": [
+    "You need to query who sold to company 'RED' first, then output the sales person who is not in the first query result."
+  ],
+  "solution": {
+    "id": "181",
+    "canSeeDetail": true,
+    "url": "/articles/sales-person/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `OUTER JOIN` and `NOT IN` [Accepted]\n\n**Intuition**\n\nIf we know all the persons who have sales in this company 'RED', it will be fairly easy to know who do not have.\n\n**Algorithm**\n\nTo start, we can query the information of sales in company 'RED' as a temporary table. And then try to build a connection between this table and the **salesperson** table since it has the name information.\n\n```sql\nSELECT\n    *\nFROM\n    orders o\n        LEFT JOIN\n    company c ON o.com_id = c.com_id\nWHERE\n    c.name = 'RED'\n;\n```\n>Note: \"LEFT OUTER JOIN\" could be written as \"LEFT JOIN\".\n\n```\n| order_id | date     | com_id | sales_id | amount | com_id | name | city   |\n|----------|----------|--------|----------|--------|--------|------|--------|\n| 3        | 3/1/2014 | 1      | 1        | 50000  | 1      | RED  | Boston |\n| 4        | 4/1/2014 | 1      | 4        | 25000  | 1      | RED  | Boston |\n```\n\nObviously, the column *sales_id* exists in table **salesperson** so we may use it as a subquery, and then utilize the [`NOT IN`](https://dev.mysql.com/doc/refman/5.7/en/any-in-some-subqueries.html) to get the target data.\n\n\n**MySQL**\n\n```sql\nSELECT\n    s.name\nFROM\n    salesperson s\nWHERE\n    s.sales_id NOT IN (SELECT\n            o.sales_id\n        FROM\n            orders o\n                LEFT JOIN\n            company c ON o.com_id = c.com_id\n        WHERE\n            c.name = 'RED')\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "176",
+      "count": 9,
+      "average": 4.444,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"salesperson\": [\"sales_id\", \"name\", \"salary\", \"commission_rate\",\"hire_date\"], \"company\": [\"com_id\", \"name\",\"city\"],\"orders\":[\"order_id\",\"order_date\",\"com_id\",\"sales_id\",\"amount\"]}, \"rows\": {\"salesperson\": [[1, \"John\", 100000, 6, \"4/1/2006\"], [2, \"Amy\", 12000, 5,\"5/1/2010\"], [3, \"Mark\", 65000, 12, \"12/25/2008\"], [4, \"Pam\", 25000, 25,\"1/1/2005\"],[5,\"Alex\",5000,10,\"2/3/2007\"]], \"company\": [[1, \"RED\",\"Boston\"], [2, \"ORANGE\", \"New York\"],[3, \"YELLOW\", \"Boston\"],[4, \"GREEN\", \"Austin\"]],\"orders\":[[1,\"1/1/2014\",3,4,10000],[2, \"2/1/2014\", 4, 5, 5000],[3, \"3/1/2014\", 1, 1, 50000],[4, \"4/1/2014\", 1, 4, 25000]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists salesperson (sales_id int, name varchar(255), salary int,commission_rate int, hire_date varchar(255))\",\r\n    \"Create table If Not Exists company (com_id int, name varchar(255), city varchar(255))\",\r\n    \"Create table If Not Exists orders (order_id int, order_date varchar(255), com_id int, sales_id int, amount int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table salesperson (sales_id int, name varchar(255), salary int,commission_rate int, hire_date varchar(255))\",\r\n    \"Create table company (com_id int, name varchar(255), city varchar(255))\",\r\n    \"Create table orders (order_id int, order_date varchar(255), com_id int, sales_id int, amount int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table salesperson (sales_id int, name varchar(255), salary int,commission_rate int, hire_date varchar(255))\",\r\n    \"Create table company (com_id int, name varchar(255), city varchar(255))\",\r\n    \"Create table orders (order_id int, order_date varchar(255), com_id int, sales_id int, amount int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists salesperson (sales_id int, name varchar(255), salary int,commission_rate int, hire_date varchar(255))",
+    "Create table If Not Exists company (com_id int, name varchar(255), city varchar(255))",
+    "Create table If Not Exists orders (order_id int, order_date varchar(255), com_id int, sales_id int, amount int)",
+    "Truncate table salesperson",
+    "insert into salesperson (sales_id, name, salary, commission_rate, hire_date) values ('1', 'John', '100000', '6', '4/1/2006')",
+    "insert into salesperson (sales_id, name, salary, commission_rate, hire_date) values ('2', 'Amy', '12000', '5', '5/1/2010')",
+    "insert into salesperson (sales_id, name, salary, commission_rate, hire_date) values ('3', 'Mark', '65000', '12', '12/25/2008')",
+    "insert into salesperson (sales_id, name, salary, commission_rate, hire_date) values ('4', 'Pam', '25000', '25', '1/1/2005')",
+    "insert into salesperson (sales_id, name, salary, commission_rate, hire_date) values ('5', 'Alex', '5000', '10', '2/3/2007')",
+    "Truncate table company",
+    "insert into company (com_id, name, city) values ('1', 'RED', 'Boston')",
+    "insert into company (com_id, name, city) values ('2', 'ORANGE', 'New York')",
+    "insert into company (com_id, name, city) values ('3', 'YELLOW', 'Boston')",
+    "insert into company (com_id, name, city) values ('4', 'GREEN', 'Austin')",
+    "Truncate table orders",
+    "insert into orders (order_id, order_date, com_id, sales_id, amount) values ('1', '1/1/2014', '3', '4', '10000')",
+    "insert into orders (order_id, order_date, com_id, sales_id, amount) values ('2', '2/1/2014', '4', '5', '5000')",
+    "insert into orders (order_id, order_date, com_id, sales_id, amount) values ('3', '3/1/2014', '1', '1', '50000')",
+    "insert into orders (order_id, order_date, com_id, sales_id, amount) values ('4', '4/1/2014', '1', '4', '25000')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,99 @@
+{
+  "questionId": "290",
+  "questionFrontendId": "290",
+  "boundTopicId": null,
+  "title": "Word Pattern",
+  "titleSlug": "word-pattern",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a <code>pattern</code> and a string <code>str</code>, find if <code>str</code> follows the same pattern.</p>\r\n\r\n<p>Here <b>follow</b> means a full match, such that there is a bijection between a letter in <code>pattern</code> and a <b>non-empty</b> word in <code>str</code>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> pattern = <code>&quot;abba&quot;</code>, str = <code>&quot;dog cat cat dog&quot;</code>\r\n<strong>Output:</strong> true</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>pattern = <code>&quot;abba&quot;</code>, str = <code>&quot;dog cat cat fish&quot;</code>\r\n<strong>Output:</strong> false</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> pattern = <code>&quot;aaaa&quot;</code>, str = <code>&quot;dog cat cat dog&quot;</code>\r\n<strong>Output:</strong> false</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> pattern = <code>&quot;abba&quot;</code>, str = <code>&quot;dog dog dog dog&quot;</code>\r\n<strong>Output:</strong> false</pre>\r\n\r\n<p><b>Notes:</b><br />\r\nYou may assume <code>pattern</code> contains only lowercase letters, and <code>str</code> contains lowercase letters that may be separated by a single space.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 836,
+  "dislikes": 113,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Isomorphic Strings\", \"titleSlug\": \"isomorphic-strings\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Word Pattern II\", \"titleSlug\": \"word-pattern-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "minglotus6",
+      "profileUrl": "/minglotus6/",
+      "avatarUrl": "https://assets.leetcode.com/users/minglotus6/avatar_1526364353.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Capital One\", \"slug\": \"capital-one\", \"timesEncountered\": 8}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool wordPattern(string pattern, string str) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean wordPattern(String pattern, String str) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def wordPattern(self, pattern, str):\n        \"\"\"\n        :type pattern: str\n        :type str: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def wordPattern(self, pattern: str, str: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool wordPattern(char * pattern, char * str){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public bool WordPattern(string pattern, string str) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} pattern\n * @param {string} str\n * @return {boolean}\n */\nvar wordPattern = function(pattern, str) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} pattern\r\n# @param {String} str\r\n# @return {Boolean}\r\ndef word_pattern(pattern, str)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func wordPattern(_ pattern: String, _ str: String) -> Bool {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func wordPattern(pattern string, str string) bool {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def wordPattern(pattern: String, str: String): Boolean = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun wordPattern(pattern: String, str: String): Boolean {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn word_pattern(pattern: String, str: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $pattern\n     * @param String $str\n     * @return Boolean\n     */\n    function wordPattern($pattern, $str) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"165K\", \"totalSubmission\": \"458.1K\", \"totalAcceptedRaw\": 164953, \"totalSubmissionRaw\": 458076, \"acRate\": \"36.0%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"abba\"\n\"dog cat cat dog\"",
+  "metaData": "{\r\n  \"name\": \"wordPattern\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"pattern\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"str\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

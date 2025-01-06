@@ -1,0 +1,101 @@
+{
+  "questionId": "1201",
+  "questionFrontendId": "1273",
+  "boundTopicId": null,
+  "title": "Delete Tree Nodes",
+  "titleSlug": "delete-tree-nodes",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A tree rooted at node 0 is given as follows:</p>\n\n<ul>\n\t<li>The number of nodes is <code>nodes</code>;</li>\n\t<li>The value of the <code>i</code>-th node is <code>value[i]</code>;</li>\n\t<li>The parent of the <code>i</code>-th node is <code>parent[i]</code>.</li>\n</ul>\n\n<p>Remove every subtree whose sum of values of nodes is zero.</p>\n\n<p>After doing so, return the number of nodes remaining in the tree.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/07/02/1421_sample_1.PNG\" style=\"width: 403px; height: 347px;\" /></p>\n\n<pre>\n<strong>Input:</strong> nodes = 7, parent = [-1,0,0,1,2,2,2], value = [1,-2,4,0,-2,-1,-1]\n<strong>Output:</strong> 2\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nodes &lt;= 10^4</code></li>\n\t<li><code>-10^5 &lt;= value[i] &lt;= 10^5</code></li>\n\t<li><code>parent.length == nodes</code></li>\n\t<li><code>parent[0] == -1</code>&nbsp;which indicates that <code>0</code> is the root.</li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 45,
+  "dislikes": 19,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int deleteTreeNodes(int nodes, vector<int>& parent, vector<int>& value) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int deleteTreeNodes(int nodes, int[] parent, int[] value) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def deleteTreeNodes(self, nodes, parent, value):\n        \"\"\"\n        :type nodes: int\n        :type parent: List[int]\n        :type value: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def deleteTreeNodes(self, nodes: int, parent: List[int], value: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint deleteTreeNodes(int nodes, int* parent, int parentSize, int* value, int valueSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int DeleteTreeNodes(int nodes, int[] parent, int[] value) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} nodes\n * @param {number[]} parent\n * @param {number[]} value\n * @return {number}\n */\nvar deleteTreeNodes = function(nodes, parent, value) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} nodes\n# @param {Integer[]} parent\n# @param {Integer[]} value\n# @return {Integer}\ndef delete_tree_nodes(nodes, parent, value)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func deleteTreeNodes(_ nodes: Int, _ parent: [Int], _ value: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func deleteTreeNodes(nodes int, parent []int, value []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def deleteTreeNodes(nodes: Int, parent: Array[Int], value: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun deleteTreeNodes(nodes: Int, parent: IntArray, value: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn delete_tree_nodes(nodes: i32, parent: Vec<i32>, value: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $nodes\n     * @param Integer[] $parent\n     * @param Integer[] $value\n     * @return Integer\n     */\n    function deleteTreeNodes($nodes, $parent, $value) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.5K\", \"totalSubmission\": \"4K\", \"totalAcceptedRaw\": 2479, \"totalSubmissionRaw\": 4024, \"acRate\": \"61.6%\"}",
+  "hints": [
+    "Traverse the tree using depth first search.",
+    "Find for every node the sum of values of its sub-tree.",
+    "Traverse the tree again from the root and return once you reach a node with zero sum of values in its sub-tree."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "7\n[-1,0,0,1,2,2,2]\n[1,-2,4,0,-2,-1,-1]",
+  "metaData": "{\n  \"name\": \"deleteTreeNodes\",\n  \"params\": [\n    {\n      \"name\": \"nodes\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"parent\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"value\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

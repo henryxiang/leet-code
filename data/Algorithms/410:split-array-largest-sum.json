@@ -1,0 +1,109 @@
+{
+  "questionId": "410",
+  "questionFrontendId": "410",
+  "boundTopicId": null,
+  "title": "Split Array Largest Sum",
+  "titleSlug": "split-array-largest-sum",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array which consists of non-negative integers and an integer <i>m</i>, you can split the array into <i>m</i> non-empty continuous subarrays. Write an algorithm to minimize the largest sum among these <i>m</i> subarrays.\r\n</p>\r\n\r\n<p><b>Note:</b><br />\r\nIf <i>n</i> is the length of array, assume the following constraints are satisfied:\r\n<ul>\r\n<li>1 &le; <i>n</i> &le; 1000</li>\r\n<li>1 &le; <i>m</i> &le; min(50, <i>n</i>)</li>\r\n</ul>\r\n</p>\r\n\r\n<p><b>Examples: </b>\r\n<pre>\r\nInput:\r\n<b>nums</b> = [7,2,5,10,8]\r\n<b>m</b> = 2\r\n\r\nOutput:\r\n18\r\n\r\nExplanation:\r\nThere are four ways to split <b>nums</b> into two subarrays.\r\nThe best way is to split it into <b>[7,2,5]</b> and <b>[10,8]</b>,\r\nwhere the largest sum among the two subarrays is only 18.\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 1221,
+  "dislikes": 71,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"DiDi\", \"slug\": \"didi\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Baidu\", \"slug\": \"baidu\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 25}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int splitArray(vector<int>& nums, int m) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int splitArray(int[] nums, int m) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def splitArray(self, nums, m):\n        \"\"\"\n        :type nums: List[int]\n        :type m: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def splitArray(self, nums: List[int], m: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint splitArray(int* nums, int numsSize, int m){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int SplitArray(int[] nums, int m) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} m\n * @return {number}\n */\nvar splitArray = function(nums, m) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} m\n# @return {Integer}\ndef split_array(nums, m)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func splitArray(_ nums: [Int], _ m: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func splitArray(nums []int, m int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def splitArray(nums: Array[Int], m: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun splitArray(nums: IntArray, m: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn split_array(nums: Vec<i32>, m: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $m\n     * @return Integer\n     */\n    function splitArray($nums, $m) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"67.3K\", \"totalSubmission\": \"155.1K\", \"totalAcceptedRaw\": 67303, \"totalSubmissionRaw\": 155088, \"acRate\": \"43.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "343",
+    "canSeeDetail": true,
+    "url": "/articles/split-array-largest-sum/",
+    "content": "[TOC]\r\n\r\n#### Approach #1 Brute Force [Time Limit Exceeded]\r\n\r\n**Intuition**\r\n\r\nCheck all possible splitting plans to find the minimum largest value for subarrays.\r\n\r\n**Algorithm**\r\n\r\nWe can use depth-first search to generate all possible splitting plan. For each element in the array, we can choose to append it to the previous subarray or start a new subarray starting with that element (if the number of subarrays does not exceed `m`). The sum of the current subarray can be updated at the same time.\r\n\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/2C8sEFce/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"2C8sEFce\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n^m)$$. To split `n` elements into `m` parts, we can have $$\\binom{n - 1}{m - 1}$$ different solutions. This is equivalent to $$ n ^ m$$.\r\n\r\n* Space complexity : $$O(n)$$. We only need the space to store the array.\r\n\r\n---\r\n#### Approach #2 Dynamic Programming [Accepted]\r\n\r\n**Intuition**\r\n\r\nThe problem satisfies the non-aftereffect property. We can try to use dynamic programming to solve it.\r\n\r\nThe non-aftereffect property means, once the state of a certain stage is determined, it is not affected by the state in the future. In this problem, if we get the largest subarray sum for splitting `nums[0..i]` into `j` parts, this value will not be affected by how we split the remaining part of `nums`.\r\n\r\nTo know more about non-aftereffect property, this link may be helpful : <http://www.programering.com/a/MDOzUzMwATM.html>\r\n\r\n**Algorithm**\r\n\r\nLet's define `f[i][j]` to be the minimum largest subarray sum for splitting `nums[0..i]` into `j` parts.\r\n\r\nConsider the `j`th subarray. We can split the array from a smaller index `k` to `i` to form it. Thus `f[i][j]` can be derived from `max(f[k][j - 1], nums[k + 1] +  ... + nums[i])`. For all valid index `k`, `f[i][j]` should choose the minimum value of the above formula.\r\n\r\nThe final answer should be `f[n][m]`, where `n` is the size of the array.\r\n\r\nFor corner situations, all the invalid `f[i][j]` should be assigned with `INFINITY`, and `f[0][0]` should be initialized with `0`.\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/hwfoZm6N/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"hwfoZm6N\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n^2 * m)$$. The total number of states is $$O(n * m)$$. To compute each state `f[i][j]`, we need to go through the whole array to find the optimum `k`. This requires another $$O(n)$$ loop. So the total time complexity is $$O(n ^ 2 * m)$$.\r\n\r\n* Space complexity : $$O(n * m)$$. The space complexity is equivalent to the number of states, which is $$O(n * m)$$.\r\n\r\n---\r\n#### Approach #3 Binary Search + Greedy [Accepted]\r\n\r\n**Intuition**\r\n\r\nWe can easily find a property for the answer:\r\n> If we can find a splitting method that ensures the maximum largest subarray sum will not exceed a value  `x`, then we can also find a splitting method that ensures the maximum largest subarray sum will not exceed any value `y` that is greater than `x`.\r\n\r\nLets define this property as `F(x)` for the value `x`. `F(x)` is true means we can find a splitting method that ensures the maximum largest subarray sum will not exceed `x`.\r\n\r\nFrom the discussion above, we can find out that for `x` ranging from `-INFINITY` to `INFINITY`, `F(x)` will start with false, then from a specific value `x0`, `F(x)` will turn to true and stay true forever.\r\n\r\n Obviously, the specific value `x0` is our answer.\r\n\r\n**Algorithm**\r\n\r\nWe can use Binary search to find the value `x0`. Keeping a value `mid = (left + right) / 2`. If `F(mid)` is false, then we will search the range `[mid + 1, right]`; If `F(mid)` is true, then we will search `[left, mid - 1]`.\r\n\r\nFor a given `x`, we can get the answer of `F(x)` using a greedy approach. Using an accumulator `sum` to store the sum of the current processing subarray and a counter `cnt` to count the number of existing subarrays. We will process the elements in the array one by one. For each element `num`, if `sum + num <= x`, it means we can add `num` to the current subarray without exceeding the limit. Otherwise, we need to make a cut here, start a new subarray with the current element `num`. This leads to an increment in the number of subarrays.\r\n\r\nAfter we have finished the whole process, we need to compare the value `cnt` to the size limit of subarrays `m`. If `cnt <= m`, it means we can find a splitting method that ensures the maximum largest subarray sum will not exceed `x`. Otherwise, `F(x)` should be false.\r\n\r\n<iframe src=\"https://leetcode.com/playground/Q43EfjVB/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"Q43EfjVB\"></iframe>\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(n * log(sum \\ of \\ array))$$. The binary search costs $$O(log(sum \\ of \\ array))$$, where `sum of array` is the sum of elements in `nums`. For each computation of `F(x)`, the time complexity is $$O(n)$$ since we only need to go through the whole array.\r\n\r\n* Space complexity : $$O(n)$$. Same as the Brute Force approach.  We only need the space to store the array.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "338",
+      "count": 56,
+      "average": 4.125,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[7,2,5,10,8]\n2",
+  "metaData": "{\r\n  \"name\": \"splitArray\",\r\n  \"params\": [\r\n\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n          {\r\n       \"name\": \"m\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

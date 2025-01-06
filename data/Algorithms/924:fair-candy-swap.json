@@ -1,0 +1,111 @@
+{
+  "questionId": "924",
+  "questionFrontendId": "888",
+  "boundTopicId": null,
+  "title": "Fair Candy Swap",
+  "titleSlug": "fair-candy-swap",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Alice and Bob have candy bars of different sizes: <code>A[i]</code> is the size of the <code>i</code>-th bar of candy that Alice has, and <code>B[j]</code> is the size of the <code>j</code>-th bar of candy that Bob has.</p>\r\n\r\n<p>Since they are friends, they would like to exchange one candy bar each so that after the exchange, they both have the same total&nbsp;amount of candy.&nbsp; (<em>The total amount of candy&nbsp;a person has is the sum of the sizes of candy&nbsp;bars they have.</em>)</p>\r\n\r\n<p>Return an integer array <code>ans</code>&nbsp;where <code>ans[0]</code> is the size of the candy bar that Alice must exchange, and <code>ans[1]</code> is the size of the candy bar that Bob must exchange.</p>\r\n\r\n<p>If there are multiple answers, you may return any one of them.&nbsp; It is guaranteed an answer exists.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[1,1]</span>, B = <span id=\"example-input-1-2\">[2,2]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[1,2]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">[1,2]</span>, B = <span id=\"example-input-2-2\">[2,3]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[1,2]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-3-1\">[2]</span>, B = <span id=\"example-input-3-2\">[1,3]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">[2,3]</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-4-1\">[1,2,5]</span>, B = <span id=\"example-input-4-2\">[2,4]</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">[5,4]</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><span>Note:</span></strong></p>\r\n\r\n<ul>\r\n\t<li><span><code>1 &lt;= A.length &lt;= 10000</code></span></li>\r\n\t<li><span><code>1 &lt;= B.length &lt;= 10000</code></span></li>\r\n\t<li><code><span>1 &lt;= A[i] &lt;= 100000</span></code></li>\r\n\t<li><code><span>1 &lt;= B[i] &lt;= 100000</span></code></li>\r\n\t<li>It is guaranteed that Alice and Bob have different total amounts of&nbsp;candy.</li>\r\n\t<li>It is guaranteed there exists an&nbsp;answer.</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 390,
+  "dislikes": 99,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "krishnv",
+      "profileUrl": "/krishnv/",
+      "avatarUrl": "https://assets.leetcode.com/users/krishnv/avatar.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Fidessa\", \"slug\": \"fidessa\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> fairCandySwap(vector<int>& A, vector<int>& B) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] fairCandySwap(int[] A, int[] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def fairCandySwap(self, A, B):\n        \"\"\"\n        :type A: List[int]\n        :type B: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def fairCandySwap(self, A: List[int], B: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* fairCandySwap(int* A, int ASize, int* B, int BSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] FairCandySwap(int[] A, int[] B) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number[]} B\n * @return {number[]}\n */\nvar fairCandySwap = function(A, B) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer[]} b\n# @return {Integer[]}\ndef fair_candy_swap(a, b)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func fairCandySwap(_ A: [Int], _ B: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func fairCandySwap(A []int, B []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def fairCandySwap(A: Array[Int], B: Array[Int]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun fairCandySwap(A: IntArray, B: IntArray): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn fair_candy_swap(a: Vec<i32>, b: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer[] $B\n     * @return Integer[]\n     */\n    function fairCandySwap($A, $B) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"37.9K\", \"totalSubmission\": \"66.5K\", \"totalAcceptedRaw\": 37931, \"totalSubmissionRaw\": 66530, \"acRate\": \"57.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "532",
+    "canSeeDetail": true,
+    "url": "/articles/fair-candy-swap/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Solve the Equation\n\n**Intuition**\n\nIf Alice swaps candy `x`, she expects some specific quantity of candy `y` back.\n\n**Algorithm**\n\nSay Alice and Bob have total candy $$S_A, S_B$$ respectively.\n\nIf Alice gives candy $$x$$, and receives candy $$y$$, then Bob receives candy $$x$$ and gives candy $$y$$.  Then, we must have\n\n$$\nS_A - x + y = S_B - y + x\n$$\n\nfor a fair candy swap.  This implies\n\n$$\ny = x + \\frac{S_B - S_A}{2}\n$$\n\nOur strategy is simple.  For every candy $$x$$ that Alice has, if Bob has candy $$y = x + \\frac{S_B - S_A}{2}$$, we return $$[x, y]$$.  We use a `Set` structure to check whether Bob has the desired candy $$y$$ in constant time.\n\n<iframe src=\"https://leetcode.com/playground/WryKmFvR/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"WryKmFvR\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(A\\text{.length} + B\\text{.length})$$.\n\n* Space Complexity:  $$O(B\\text{.length})$$, the space used by `setB`.  (We can improve this to $$\\min(A\\text{.length}, B\\text{.length})$$ by using an if statement.)\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "525",
+      "count": 22,
+      "average": 4.409,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,1]\n[2,2]",
+  "metaData": "{\r\n  \"name\": \"fairCandySwap\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"B\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

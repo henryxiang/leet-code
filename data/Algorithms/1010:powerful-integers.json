@@ -1,0 +1,115 @@
+{
+  "questionId": "1010",
+  "questionFrontendId": "970",
+  "boundTopicId": null,
+  "title": "Powerful Integers",
+  "titleSlug": "powerful-integers",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two positive integers <code>x</code> and <code>y</code>, an integer is <em>powerful</em>&nbsp;if it is equal to <code>x^i + y^j</code>&nbsp;for&nbsp;some integers <code>i &gt;= 0</code> and <code>j &gt;= 0</code>.</p>\r\n\r\n<p>Return a list of all <em>powerful</em> integers that have value less than or equal to <code>bound</code>.</p>\r\n\r\n<p>You may return the answer in any order.&nbsp; In your answer, each value should occur at most once.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>x = <span id=\"example-input-1-1\">2</span>, y = <span id=\"example-input-1-2\">3</span>, bound = <span id=\"example-input-1-3\">10</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[2,3,4,5,7,9,10]</span>\r\n<strong>Explanation: </strong>\r\n2 = 2^0 + 3^0\r\n3 = 2^1 + 3^0\r\n4 = 2^0 + 3^1\r\n5 = 2^1 + 3^1\r\n7 = 2^2 + 3^1\r\n9 = 2^3 + 3^0\r\n10 = 2^0 + 3^2\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>x = <span id=\"example-input-2-1\">3</span>, y = <span id=\"example-input-2-2\">5</span>, bound = <span id=\"example-input-2-3\">15</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[2,4,6,8,10,14]</span>\r\n</pre>\r\n</div>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= x &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= y&nbsp;&lt;= 100</code></li>\r\n\t<li><code>0 &lt;= bound&nbsp;&lt;= 10^6</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 98,
+  "dislikes": 204,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "chenhao511132",
+      "profileUrl": "/chenhao511132/",
+      "avatarUrl": "https://www.gravatar.com/avatar/a93b984c2051d0bc9979cfb11758f3b8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> powerfulIntegers(int x, int y, int bound) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> powerfulIntegers(int x, int y, int bound) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def powerfulIntegers(self, x, y, bound):\n        \"\"\"\n        :type x: int\n        :type y: int\n        :type bound: int\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def powerfulIntegers(self, x: int, y: int, bound: int) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* powerfulIntegers(int x, int y, int bound, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> PowerfulIntegers(int x, int y, int bound) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} x\n * @param {number} y\n * @param {number} bound\n * @return {number[]}\n */\nvar powerfulIntegers = function(x, y, bound) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} x\n# @param {Integer} y\n# @param {Integer} bound\n# @return {Integer[]}\ndef powerful_integers(x, y, bound)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func powerfulIntegers(_ x: Int, _ y: Int, _ bound: Int) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func powerfulIntegers(x int, y int, bound int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def powerfulIntegers(x: Int, y: Int, bound: Int): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun powerfulIntegers(x: Int, y: Int, bound: Int): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn powerful_integers(x: i32, y: i32, bound: i32) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $x\n     * @param Integer $y\n     * @param Integer $bound\n     * @return Integer[]\n     */\n    function powerfulIntegers($x, $y, $bound) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.3K\", \"totalSubmission\": \"41.1K\", \"totalAcceptedRaw\": 16300, \"totalSubmissionRaw\": 41126, \"acRate\": \"39.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "659",
+    "canSeeDetail": true,
+    "url": "/articles/powerful-integers/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Brute Force\n\n**Intuition**\n\nIf $$x^i > \\text{bound}$$, the sum $$x^i + y^j$$ can't be less than or equal to the bound.  Similarly for $$y^j$$.\n\nThus, we only have to check for $$0 \\leq i, j \\leq \\log_x(\\text{bound}) < 18$$.\n\nWe can use a `HashSet` to store all the different values.\n\n<iframe src=\"https://leetcode.com/playground/tmg2tZvM/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"tmg2tZvM\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\log^2{\\text{bound}})$$.\n\n* Space Complexity:  $$O(\\log^2{\\text{bound}})$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "645",
+      "count": 46,
+      "average": 1.435,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "2\n3\n10",
+  "metaData": "{\r\n  \"name\": \"powerfulIntegers\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"x\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"y\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"bound\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

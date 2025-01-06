@@ -1,0 +1,105 @@
+{
+  "questionId": "1074",
+  "questionFrontendId": "1086",
+  "boundTopicId": null,
+  "title": "High Five",
+  "titleSlug": "high-five",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a list of scores of different students, return the average score of each student&#39;s <strong>top five scores</strong> in<strong> the order of each student&#39;s id</strong>.</p>\r\n\r\n<p>Each entry <code>items[i]</code>&nbsp;has <code>items[i][0]</code> the student&#39;s id, and <code>items[i][1]</code> the student&#39;s score.&nbsp; The average score is calculated using integer division.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[[1,91],[1,92],[2,93],[2,97],[1,60],[2,77],[1,65],[1,87],[1,100],[2,100],[2,76]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[[1,87],[2,88]]</span>\r\n<strong>Explanation: </strong>\r\nThe average of the student with id = 1 is 87.\r\nThe average of the student with id = 2 is 88.6. But with integer division their average converts to 88.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= items.length &lt;= 1000</code></li>\r\n\t<li><code>items[i].length == 2</code></li>\r\n\t<li>The IDs of the students is between <code>1</code> to <code>1000</code></li>\r\n\t<li>The score of the students is between <code>1</code> to <code>100</code></li>\r\n\t<li>For each student,&nbsp;there are at least 5 scores</li>\r\n</ol>",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 108,
+  "dislikes": 26,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 8}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<vector<int>> highFive(vector<vector<int>>& items) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[][] highFive(int[][] items) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def highFive(self, items):\n        \"\"\"\n        :type items: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def highFive(self, items: List[List[int]]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** highFive(int** items, int itemsSize, int* itemsColSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int[][] HighFive(int[][] items) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} items\n * @return {number[][]}\n */\nvar highFive = function(items) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} items\r\n# @return {Integer[][]}\r\ndef high_five(items)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func highFive(_ items: [[Int]]) -> [[Int]] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func highFive(items [][]int) [][]int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def highFive(items: Array[Array[Int]]): Array[Array[Int]] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun highFive(items: Array<IntArray>): Array<IntArray> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn high_five(items: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $items\n     * @return Integer[][]\n     */\n    function highFive($items) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.9K\", \"totalSubmission\": \"18.2K\", \"totalAcceptedRaw\": 13856, \"totalSubmissionRaw\": 18190, \"acRate\": \"76.2%\"}",
+  "hints": [
+    "How can we solve the problem if we have just one student?",
+    "Given an student sort their grades and get the top 5 average.",
+    "Generalize the idea to do it for many students."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,91],[1,92],[2,93],[2,97],[1,60],[2,77],[1,65],[1,87],[1,100],[2,100],[2,76]]",
+  "metaData": "{\r\n  \"name\": \"highFive\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"items\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[][]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,115 @@
+{
+  "questionId": "711",
+  "questionFrontendId": "711",
+  "boundTopicId": null,
+  "title": "Number of Distinct Islands II",
+  "titleSlug": "number-of-distinct-islands-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-empty 2D array <code>grid</code> of 0's and 1's, an <b>island</b> is a group of <code>1</code>'s (representing land) connected 4-directionally (horizontal or vertical.)  You may assume all four edges of the grid are surrounded by water.</p>\r\n\r\n<p>Count the number of <b>distinct</b> islands.  An island is considered to be the same as another if they have the same shape, or have the same shape after <b>rotation</b> (90, 180, or 270 degrees only) or <b>reflection</b> (left/right direction or up/down direction).</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n11000\r\n10000\r\n00001\r\n00011\r\n</pre>\r\nGiven the above grid map, return <code>1</code>.\r\n<br><br>\r\nNotice that:\r\n<pre>\r\n11\r\n1\r\n</pre>\r\nand\r\n<pre>\r\n 1\r\n11\r\n</pre>\r\nare considered <b>same</b> island shapes. Because if we make a 180 degrees clockwise rotation on the first island, then two islands will have the same shapes.\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n11100\r\n10001\r\n01001\r\n01110</pre>\r\nGiven the above grid map, return <code>2</code>.<br />\r\n<br>\r\nHere are the two distinct islands:\r\n<pre>\r\n111\r\n1\r\n</pre>\r\nand\r\n<pre>\r\n1\r\n1\r\n</pre>\r\n<br />\r\nNotice that:\r\n<pre>\r\n111\r\n1\r\n</pre>\r\nand\r\n<pre>\r\n1\r\n111\r\n</pre>\r\nare considered <b>same</b> island shapes. Because if we flip the first array in the up/down direction, then they have the same shapes.\r\n</p>\r\n\r\n<p><b>Note:</b>\r\nThe length of each dimension in the given <code>grid</code> does not exceed 50.\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 119,
+  "dislikes": 130,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Number of Distinct Islands\", \"titleSlug\": \"number-of-distinct-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numDistinctIslands2(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numDistinctIslands2(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numDistinctIslands2(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numDistinctIslands2(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numDistinctIslands2(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumDistinctIslands2(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar numDistinctIslands2 = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef num_distinct_islands2(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numDistinctIslands2(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numDistinctIslands2(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numDistinctIslands2(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numDistinctIslands2(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_distinct_islands2(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function numDistinctIslands2($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.8K\", \"totalSubmission\": \"9.9K\", \"totalAcceptedRaw\": 4797, \"totalSubmissionRaw\": 9918, \"acRate\": \"48.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "273",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-distinct-islands-ii/",
+    "content": "[TOC]\n\n#### Approach #1: Canonical Hash [Accepted]\n\n**Intuition**\n\nAs in *Approach #1* to the sister problem [Number of Distinct Islands](https://leetcode.com/articles/number-of-distinct-islands/), we determine local coordinates for each island.\n\nAfterwards, we will rotate and reflect the coordinates about the origin and translate the shape so that the bottom-left-most coordinate is (0, 0).  At the end, the smallest of these lists coordinates will be the *canonical representation* of the shape.\n\n**Algorithm**\n\nWe feature two different implementations, but the core idea is the same.  We start with the code from the previous problem, *Number of Distinct Islands*.\n\nFor each of 8 possible rotations and reflections of the shape, we will perform the transformation and then translate the shape so that the bottom-left-most coordinate is (0, 0).  Afterwards, we will consider the canonical hash of the shape to be the maximum of these 8 intermediate hashes.\n\nIn Python, the motivation to use complex numbers is that rotation by 90 degrees is the same as multiplying by the imaginary unit, `1j`.  In Java, we manipulate the coordinates directly.  The 8 rotations and reflections of each point are `(x, y), (-x, y), (x, -y), (-x, -y), (y, x), (-y, x), (y, -x), (-y, -x)`.\n\n**Python**\n```python\nclass Solution(object):\n    def numDistinctIslands2(self, grid):\n        seen = set()\n        def explore(r, c):\n            if (0 <= r < len(grid) and 0 <= c < len(grid[0]) and\n                    grid[r][c] and (r, c) not in seen):\n                seen.add((r, c))\n                shape.add(complex(r, c))\n                explore(r+1, c)\n                explore(r-1, c)\n                explore(r, c+1)\n                explore(r, c-1)\n\n        def canonical(shape):\n            def translate(shape):\n                w = complex(min(z.real for z in shape),\n                            min(z.imag for z in shape))\n                return sorted(str(z-w) for z in shape)\n\n            ans = None\n            for k in xrange(4):\n                ans = max(ans, translate([z * (1j)**k for z in shape]))\n                ans = max(ans,  translate([complex(z.imag, z.real) * (1j)**k\n                                           for z in shape]))\n            return tuple(ans)\n\n        shapes = set()\n        for r in range(len(grid)):\n            for c in range(len(grid[0])):\n                shape = set()\n                explore(r, c)\n                if shape:\n                    shapes.add(canonical(shape))\n\n        return len(shapes)\n```\n\n**Java**\n\n```java\nclass Solution {\n    int[][] grid;\n    boolean[][] seen;\n    ArrayList<Integer> shape;\n\n    public void explore(int r, int c) {\n        if (0 <= r && r < grid.length && 0 <= c && c < grid[0].length &&\n                grid[r][c] == 1 && !seen[r][c]) {\n            seen[r][c] = true;\n            shape.add(r * grid[0].length + c);\n            explore(r+1, c);\n            explore(r-1, c);\n            explore(r, c+1);\n            explore(r, c-1);\n        }\n    }\n\n    public String canonical(ArrayList<Integer> shape) {\n        String ans = \"\";\n        int lift = grid.length + grid[0].length;\n        int[] out = new int[shape.size()];\n        int[] xs = new int[shape.size()];\n        int[] ys = new int[shape.size()];\n\n        for (int c = 0; c < 8; ++c) {\n            int t = 0;\n            for (int z: shape) {\n                int x = z / grid[0].length;\n                int y = z % grid[0].length;\n                //x y, x -y, -x y, -x -y\n                //y x, y -x, -y x, -y -x\n                xs[t] = c<=1 ? x : c<=3 ? -x : c<=5 ? y : -y;\n                ys[t++] = c<=3 ? (c%2==0 ? y : -y) : (c%2==0 ? x : -x);\n            }\n\n            int mx = xs[0], my = ys[0];\n            for (int x: xs) mx = Math.min(mx, x);\n            for (int y: ys) my = Math.min(my, y);\n\n            for (int j = 0; j < shape.size(); ++j) {\n                out[j] = (xs[j] - mx) * lift + (ys[j] - my);\n            }\n            Arrays.sort(out);\n            String candidate = Arrays.toString(out);\n            if (ans.compareTo(candidate) < 0) ans = candidate;\n        }\n        return ans;\n    }\n\n    public int numDistinctIslands2(int[][] grid) {\n        this.grid = grid;\n        seen = new boolean[grid.length][grid[0].length];\n        Set shapes = new HashSet<String>();\n\n        for (int r = 0; r < grid.length; ++r) {\n            for (int c = 0; c < grid[0].length; ++c) {\n                shape = new ArrayList();\n                explore(r, c);\n                if (!shape.isEmpty()) {\n                    shapes.add(canonical(shape));\n                }\n            }\n        }\n\n        return shapes.size();\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(R*C \\log{(R*C)})$$, where $$R$$ is the number of rows in the given `grid`, and $$C$$ is the number of columns.  We visit every square once, and each square belongs to at most one shape.  The log factor comes from sorting the shapes.\n\n* Space complexity: $$O(R*C)$$, the space used to keep track of the shapes.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "268",
+      "count": 2,
+      "average": 3.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,1,0,0,0],[1,0,0,0,0],[0,0,0,0,1],[0,0,0,1,1]]",
+  "metaData": "{\r\n  \"name\": \"numDistinctIslands2\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

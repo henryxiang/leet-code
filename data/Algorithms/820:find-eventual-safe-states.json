@@ -1,0 +1,115 @@
+{
+  "questionId": "820",
+  "questionFrontendId": "802",
+  "boundTopicId": null,
+  "title": "Find Eventual Safe States",
+  "titleSlug": "find-eventual-safe-states",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a directed graph, we start at some node and every turn, walk along a directed edge of the graph.&nbsp; If we reach a node that is terminal (that is, it has no outgoing directed edges), we stop.</p>\r\n\r\n<p>Now, say our starting node is <em>eventually safe&nbsp;</em>if and only if we must eventually walk to a terminal node.&nbsp; More specifically, there exists a natural number <code>K</code> so that for any choice of where to walk, we must have stopped at a terminal node in less than <code>K</code> steps.</p>\r\n\r\n<p>Which nodes are eventually safe?&nbsp; Return them as an array in sorted order.</p>\r\n\r\n<p>The directed graph has <code>N</code> nodes with labels <code>0, 1, ..., N-1</code>, where <code>N</code> is the length of <code>graph</code>.&nbsp; The&nbsp;graph is given in the following form: <code>graph[i]</code> is a list of labels <code>j</code> such that <code>(i, j)</code> is a directed edge of the graph.</p>\r\n\r\n<pre>\r\n<strong>Example:</strong>\r\n<strong>Input:</strong> graph = [[1,2],[2,3],[5],[0],[5],[],[]]\r\n<strong>Output:</strong> [2,4,5,6]\r\nHere is a diagram of the above graph.\r\n\r\n</pre>\r\n\r\n<p><img alt=\"Illustration of graph\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/03/17/picture1.png\" style=\"height:86px; width:300px\" /></p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>graph</code> will have length at most <code>10000</code>.</li>\r\n\t<li>The number of edges in the graph will not exceed <code>32000</code>.</li>\r\n\t<li>Each <code>graph[i]</code> will be a sorted list of different integers, chosen within the range <code>[0, graph.length - 1]</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 508,
+  "dislikes": 80,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> eventualSafeNodes(int[][] graph) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def eventualSafeNodes(self, graph):\n        \"\"\"\n        :type graph: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* eventualSafeNodes(int** graph, int graphSize, int* graphColSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> EventualSafeNodes(int[][] graph) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} graph\n * @return {number[]}\n */\nvar eventualSafeNodes = function(graph) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} graph\n# @return {Integer[]}\ndef eventual_safe_nodes(graph)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func eventualSafeNodes(_ graph: [[Int]]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func eventualSafeNodes(graph [][]int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def eventualSafeNodes(graph: Array[Array[Int]]): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun eventualSafeNodes(graph: Array<IntArray>): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn eventual_safe_nodes(graph: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $graph\n     * @return Integer[]\n     */\n    function eventualSafeNodes($graph) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"26.7K\", \"totalSubmission\": \"57.3K\", \"totalAcceptedRaw\": 26651, \"totalSubmissionRaw\": 57275, \"acRate\": \"46.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "434",
+    "canSeeDetail": true,
+    "url": "/articles/find-eventual-safe-states/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Reverse Edges [Accepted]\n\n**Intuition**\n\nThe crux of the problem is whether you can reach a cycle from the node you start in.  If you can, then there is a way to avoid stopping indefinitely; and if you can't, then after some finite number of steps you'll stop.\n\nThinking about this property more, a node is eventually safe if all it's outgoing edges are to nodes that are eventually safe.\n\nThis gives us the following idea: we start with nodes that have no outgoing edges - those are eventually safe.  Now, we can update any nodes which only point to eventually safe nodes - those are also eventually safe.  Then, we can update again, and so on.\n\nHowever, we'll need a good algorithm to make sure our updates are efficient.\n\n**Algorithm**\n\nWe'll keep track of `graph`, a way to know for some node `i`, what the outgoing edges `(i, j)` are.  We'll also keep track of `rgraph`, a way to know for some node `j`, what the incoming edges `(i, j)` are.\n\nNow for every node `j` which was declared eventually safe, we'll process them in a queue.  We'll look at all parents `i = rgraph[j]` and remove the edge `(i, j)` from the graph (from `graph`).  If this causes the `graph` to have no outgoing edges `graph[i]`, then we'll declare it eventually safe and add it to our queue.\n\nAlso, we'll keep track of everything we ever added to the queue, so we can read off the answer in sorted order later.\n\n<iframe src=\"https://leetcode.com/playground/x49F98kC/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"x49F98kC\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N + E)$$, where $$N$$ is the number of nodes in the given graph, and $$E$$ is the total number of edges.\n\n* Space Complexity: $$O(N)$$ in additional space complexity.\n\n\n---\n#### Approach #2: Depth-First Search [Accepted]\n\n**Intuition**\n\nAs in *Approach #1*, the crux of the problem is whether you reach a cycle or not.\n\nLet us perform a \"brute force\": a cycle-finding DFS algorithm on each node individually.  This is a classic \"white-gray-black\" DFS algorithm that would be part of any textbook on DFS.  We mark a node gray on entry, and black on exit.  If we see a gray node during our DFS, it must be part of a cycle.  In a naive view, we'll clear the colors between each search.\n\n**Algorithm**\n\nWe can improve this approach, by noticing that we don't need to clear the colors between each search.\n\nWhen we visit a node, the only possibilities are that we've marked the entire subtree black (which must be eventually safe), or it has a cycle and we have only marked the members of that cycle gray.  So indeed, the invariant that gray nodes are always part of a cycle, and black nodes are always eventually safe is maintained.\n\nIn order to exit our search quickly when we find a cycle (and not paint other nodes erroneously), we'll say the result of visiting a node is `true` if it is eventually safe, otherwise `false`.  This allows information that we've reached a cycle to propagate up the call stack so that we can terminate our search early.\n\n<iframe src=\"https://leetcode.com/playground/VxkXPWTw/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"VxkXPWTw\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N + E)$$, where $$N$$ is the number of nodes in the given graph, and $$E$$ is the total number of edges.\n\n* Space Complexity: $$O(N)$$ in additional space complexity.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "429",
+      "count": 28,
+      "average": 3.821,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2],[2,3],[5],[0],[5],[],[]]",
+  "metaData": "{\r\n  \"name\": \"eventualSafeNodes\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"graph\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

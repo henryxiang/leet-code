@@ -1,0 +1,119 @@
+{
+  "questionId": "632",
+  "questionFrontendId": "632",
+  "boundTopicId": null,
+  "title": "Smallest Range Covering Elements from K Lists",
+  "titleSlug": "smallest-range-covering-elements-from-k-lists",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You have <code>k</code> lists of sorted integers in ascending order. Find the <b>smallest</b> range that includes at least one number from each of the <code>k</code> lists.</p>\n\n<p>We define the range [a,b] is smaller than range [c,d] if <code>b-a &lt; d-c</code> or <code>a &lt; c</code> if <code>b-a == d-c</code>.</p>\n\n<p>&nbsp;</p>\n\n<p><b>Example 1:</b></p>\n\n<pre>\n<b>Input: </b>[[4,10,15,24,26], [0,9,12,20], [5,18,22,30]]\n<b>Output:</b> [20,24]\n<b>Explanation:</b> \nList 1: [4, 10, 15, 24,26], 24 is in range [20,24].\nList 2: [0, 9, 12, 20], 20 is in range [20,24].\nList 3: [5, 18, 22, 30], 22 is in range [20,24].\n</pre>\n\n<p>&nbsp;</p>\n\n<p><b>Note:</b></p>\n\n<ol>\n\t<li>The given list may contain duplicates, so ascending order means &gt;= here.</li>\n\t<li>1 &lt;= <code>k</code> &lt;= 3500</li>\n\t<li>-10<sup>5</sup> &lt;= <code>value of elements</code> &lt;= 10<sup>5</sup>.</li>\n</ol>\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 845,
+  "dislikes": 24,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Minimum Window Substring\", \"titleSlug\": \"minimum-window-substring\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Pinterest\", \"slug\": \"pinterest\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> smallestRange(vector<vector<int>>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] smallestRange(List<List<Integer>> nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestRange(self, nums):\n        \"\"\"\n        :type nums: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestRange(self, nums: List[List[int]]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* smallestRange(int** nums, int numsSize, int* numsColSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] SmallestRange(IList<IList<int>> nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} nums\n * @return {number[]}\n */\nvar smallestRange = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} nums\n# @return {Integer[]}\ndef smallest_range(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func smallestRange(_ nums: [[Int]]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestRange(nums [][]int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def smallestRange(nums: List[List[Int]]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun smallestRange(nums: List<List<Int>>): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_range(nums: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $nums\n     * @return Integer[]\n     */\n    function smallestRange($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"30.6K\", \"totalSubmission\": \"61.1K\", \"totalAcceptedRaw\": 30616, \"totalSubmissionRaw\": 61131, \"acRate\": \"50.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "191",
+    "canSeeDetail": true,
+    "url": "/articles/smallest-range/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Time Limit Exceeded]\n\nThe naive approach is to consider every pair of elements, $$nums[i][j]$$ and $$nums[k][l]$$ from amongst the given \nlists and consider the range formed by these elements. For every range currently considered, we can traverse over all the \nlists to find if atleast one element from these lists can be included in the current range. If so, we store the end-points of the current range \nand compare it with the previous minimum range found, if any, satisfying the required criteria, to find the smaller range from among them.\n\nOnce all the element pairs have been considered as the ranges, we can obtain the required minimum range.\n\n<iframe src=\"https://leetcode.com/playground/SMprvqVp/shared\" frameBorder=\"0\" name=\"SMprvqVp\" width=\"100%\" height=\"515\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^3)$$. Considering every possible range(element pair) requires $$O(n^2)$$ time. For each range considered, \nwe need to traverse over all the elements of the given lists in the worst case requiring another $$O(n)$$ time. Here, $$n$$ refers to the \ntotal number of elements in the given lists.\n\n* Space complexity : $$O(1)$$. Constant extra space is used.\n\n---\n#### Approach #2 Better Brute Force [Time Limit Exceeded]\n\n**Algorithm**\n\nIn the last approach, we consider every possible range and then traverse over every list to check if atleast one of the \nelements from these lists lies in the required range. Instead of doing this traversal for every range, we can make use \nof Binary Search to find the index of the element just larger than(or equal to) the lower limit of the range currently \nconsidered. \n\nIf all the elements in the current list are lesser than this lower limit, we'll get the index as $$nums[k].length$$\n for the $$k^{th}$$ list being currently checked. In this case, none of the elements of the current list lies in the\ncurrent range.\n\n On the other hand, if all the elements in this list are larger than this lower limit, we'll get the index of the first element(minimum) in the current list. If this element happens to be larger than the upper limit  of the range currently considered, then also, none of the elements of the current list lies within the current range.\n \n Whenever a range is found which satisfies the required criteria, we can compare it with the minimum range found so far \n to determine the required minimum range.\n\n<iframe src=\"https://leetcode.com/playground/uXxKqhkz/shared\" frameBorder=\"0\" name=\"uXxKqhkz\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(n^2log(k)\\big)$$. The time required to consider every possible range is $$O(n^2)$$. For every range currently considered, \na Binary Search requiring $$O\\big(log(k)\\big)$$ time is required. Here, $$n$$ refers to the total number of elements in the given \nlists and $$k$$ refers to the average length of each list.\n\n* Space complexity : $$O(1)$$. Constant extra space is used.\n\n---\n#### Approach #3  Using Pointers [Time Limit Exceeded]\n\n**Algorithm**\n\nWe'll discuss about the implementation used in the current approach along with the idea behind it. \n\nThis approach makes use of an array of pointers, $$next$$, whose length is equal to the number of given lists. In this \narray, $$next[i]$$ refers to the element which needs to be considered next in the $$(i-1)^{th}$$ list. The meaning of this will become \nmore clearer when we look at the process.\n\nWe start by initializing all the elements of $$next$$ to 0. Thus, currently, we are considering the first(minimum) element \namong all the lists. Now, we find out the index of the list containing the maximum($$max_i$$) and minimum($$min_i$$) \nelements from amongst the elements currently pointed by $$next$$. The range formed by these maximum and minimum elements surely  \ncontains atleast one element from each list. \n\nBut, now our objective is to minimize this range. To do so, there are two options: Either decrease the maximum value or increase the \nminimum value. \n\nNow, the maximum value can't be reduced any further, since it already corresponds to the minimum value in one of the lists. \nReducing it any further will lead to the exclusion of all the elements of this list(containing the last maximum value) \nfrom the new range. \n\nThus, the only option left in our hand is to try to increase the minimum value. To do so, we now need to consider the\n next element in the list containing the last minimum value. Thus, we increment the entry at the corresponding index\n  in $$next$$, to indicate that the next element in this list now needs to be considered. \n  \n  Thus, at every step, we find the maximum and minimum values being pointed currently, update the $$next$$ values \n  appropriately, and also find out the range formed by these maximum and minimum values to find out the smallest range \n satisfying the given criteria. \n \n While doing this process, if any of the lists gets completely exhausted, it means that the minimum value being increased for \n minimizing the range being considered can't be increased any further, without causing the exclusion of all the elements in atleast \n one of the lists. Thus, we can stop the search process whenever any list gets completely exhausted.\n \n We can also stop the process, when all the elements of the given lists have been exhausted.\n \n Summarizing the statements above, the process becomes:\n \n 1. Initialize $$next$$ array(pointers) with all 0's.\n \n 2. Find the indices of the lists containing the minimum($$min_i$$) and the maximum($$max_i$$) elements amongst the elements pointed by the $$next$$ array.\n \n 3. If the range formed by the maximum and minimum elements found above is larger than the previous maximum range, update the boundary values used for the maximum range.\n \n 4. Increment the pointer $$nums[min_i]$$.\n \n 5. Repeat steps 2 to 4 till any of the lists gets exhausted.\n \n The animation below illustrates the process for a visual understanding of the process.\n \n !?!../Documents/632_Smallest_Range.json:1000,563!?!\n\n\n<iframe src=\"https://leetcode.com/playground/rnPo3vGZ/shared\" frameBorder=\"0\" name=\"rnPo3vGZ\" width=\"100%\" height=\"513\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n*m)$$. In the worst case, we need to traverse over $$next$$ array(of length $$m$$) for all the elements of the given lists.\nHere, $$n$$ refers to the total number of elements in all the lists. $$m$$ refers to the total number of lists.\n\n* Space complexity : $$O(m)$$. $$next$$ array of size $$m$$ is used.\n\n---\n#### Approach #4 Using Priority Queue [Accepted]:\n\n**Algorithm**\n\nIn the last approach, at each step, we update the pointer corresponding to the current minimum element and traverse over the whole\n$$next$$ array to determine the new maximum and minimum values. We can do some optimization here, by making use of a simple observation.\n\nWhenever we update a single entry of $$next$$ to consider the new maximum and minimum values(if we already know the last maximum \nand minimum values), all the elements to be considered for finding the maximum and minimum values remain the same except the new element \nbeing pointed by a single updated entry in $$next$$.  This new entry is certainly larger than the last minimum value(since that was the \nreasoning behind the updation). \n\nThus, we can't be sure whether this is the new minimum element or not. But, since it is larger than the last \nvalue being considered, it could be a potential competitor for the new maximum value. Thus, we can directly compare it with the last \nmaximum value to determine the current maximum value.\n\nNow, we're left with finding the minimum value iteratively at every step. To avoid this iterative process, a better idea \nis to make use of a Min-Heap, which stores the values being pointed currently by the $$next$$ array. Thus, the minimum value always \nlies at the top of this heap, and we need not do the iterative search process. \n\nAt every step, we remove the minimum element from this heap and find out the range formed by the current maximum and minimum values, and \ncompare it with the minimum range found so far to determine the required minimum range. We also update the increment the index in $$next$$ \ncorresponding to the list containing this minimum entry and add this element to the heap as well.\n\nThe rest of the process remains the same as the last approach.\n\n<iframe src=\"https://leetcode.com/playground/kBqfu7ju/shared\" frameBorder=\"0\" name=\"kBqfu7ju\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O\\big(n*log(m)\\big)$$. Heapification of $$m$$ elements requires $$O\\big(log(m)\\big)$$ time. This step could be done \nfor all the elements of the given lists in the worst case. Here, $$n$$ refers to the total number of elements in \nall the lists. $$m$$ refers to the total number of lists.\n\n\n* Space complexity : $$O(m)$$. $$next$$ array of size $$m$$ is used. A Min-Heap with $$m$$ elements is also used.\n\n---\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "187",
+      "count": 28,
+      "average": 4.429,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[4,10,15,24,26],[0,9,12,20],[5,18,22,30]]",
+  "metaData": "{\r\n  \"name\": \"smallestRange\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"list<list<integer>>\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

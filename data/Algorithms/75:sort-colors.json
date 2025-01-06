@@ -1,0 +1,113 @@
+{
+  "questionId": "75",
+  "questionFrontendId": "75",
+  "boundTopicId": null,
+  "title": "Sort Colors",
+  "titleSlug": "sort-colors",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array with <em>n</em> objects colored red, white or blue, sort them <strong><a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\">in-place</a>&nbsp;</strong>so that objects of the same color are adjacent, with the colors in the order red, white and blue.</p>\r\n\r\n<p>Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.</p>\r\n\r\n<p><strong>Note:</strong>&nbsp;You are not suppose to use the library&#39;s sort function for this problem.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> [2,0,2,1,1,0]\r\n<strong>Output:</strong> [0,0,1,1,2,2]</pre>\r\n\r\n<p><strong>Follow up:</strong></p>\r\n\r\n<ul>\r\n\t<li>A rather straight forward solution is a two-pass algorithm using counting sort.<br />\r\n\tFirst, iterate the array counting number of 0&#39;s, 1&#39;s, and 2&#39;s, then overwrite array with total number of 0&#39;s, then 1&#39;s and followed by 2&#39;s.</li>\r\n\t<li>Could you come up with a&nbsp;one-pass algorithm using only constant space?</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 2253,
+  "dislikes": 183,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Sort List\", \"titleSlug\": \"sort-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Wiggle Sort\", \"titleSlug\": \"wiggle-sort\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Wiggle Sort II\", \"titleSlug\": \"wiggle-sort-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 6}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Pure Storage\", \"slug\": \"pure-storage\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    void sortColors(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public void sortColors(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def sortColors(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: None Do not return anything, modify nums in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def sortColors(self, nums: List[int]) -> None:\n        \"\"\"\n        Do not return anything, modify nums in-place instead.\n        \"\"\"\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nvoid sortColors(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public void SortColors(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {void} Do not return anything, modify nums in-place instead.\n */\nvar sortColors = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Void} Do not return anything, modify nums in-place instead.\ndef sort_colors(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func sortColors(_ nums: inout [Int]) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func sortColors(nums []int)  {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def sortColors(nums: Array[Int]): Unit = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun sortColors(nums: IntArray): Unit {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sort_colors(nums: &mut Vec<i32>) {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return NULL\n     */\n    function sortColors(&$nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"388.3K\", \"totalSubmission\": \"881.1K\", \"totalAcceptedRaw\": 388264, \"totalSubmissionRaw\": 881143, \"acRate\": \"44.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "716",
+    "canSeeDetail": true,
+    "url": "/articles/sort-colors/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Approach 1: One Pass \n\n**Intuition**\n\nThe problem is known as [Dutch National Flag Problem](https://en.wikipedia.org/wiki/Dutch_national_flag_problem)\nand first was proposed by [Edsger W. Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra).\nThe idea is to attribute a color to each number and then to\narrange them following the order of colors on the Dutch flag.\n\n![bla](../Figures/75/first_pic2.png)\n\nLet's use here three pointers to track the \nrightmost boundary of zeros, the leftmost boundary of twos\nand the current element under the consideration.\n\n![bla](../Figures/75/idx.png) \n\nThe idea of solution is to move `curr` pointer along the\narray, if `nums[curr] = 0` - swap it with `nums[p0]`,\nif `nums[curr] = 2` - swap it with `nums[p2]`.\n\n**Algorithm**\n\n- Initialise the rightmost boundary of zeros : `p0 = 0`.\nDuring the algorithm execution `nums[idx < p0] = 0`.\n\n- Initialise the leftmost boundary of twos : `p2 = n - 1`.\nDuring the algorithm execution `nums[idx > p2] = 2`.\n\n- Initialise the index of current element to consider : `curr = 0`.\n\n- While `curr <= p2` :\n\n    - If `nums[curr] = 0` : swap `curr`th and `p0`th elements and \n    move both pointers to the right.\n    \n    - If `nums[curr] = 2` : swap `curr`th and `p2`th elements. Move\n    pointer `p2` to the left. \n    \n    - If `nums[curr] = 1` : move pointer `curr` to the right. \n\n**Implementation**\n\n!?!../Documents/75_LIS.json:1000,511!?!\n\n<iframe src=\"https://leetcode.com/playground/jdgSWD5U/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"jdgSWD5U\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$ since it's one pass\nalong the array of length $$N$$.\n \n* Space complexity : $$\\mathcal{O}(1)$$ since it's a constant space\nsolution.\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "701",
+      "count": 23,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,0,2,1,1,0]",
+  "metaData": "{\r\n  \"name\": \"sortColors\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"void\"\r\n  },\r\n  \"output\": {\r\n    \"paramindex\": 0\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

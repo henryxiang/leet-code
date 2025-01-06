@@ -1,0 +1,115 @@
+{
+  "questionId": "659",
+  "questionFrontendId": "659",
+  "boundTopicId": null,
+  "title": "Split Array into Consecutive Subsequences",
+  "titleSlug": "split-array-into-consecutive-subsequences",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>nums</code>&nbsp;sorted in ascending order, return <code>true</code> if and only if you can split it into 1 or more subsequences such that each subsequence consists of consecutive integers&nbsp;and has length at least 3.</p>\n\n<p>&nbsp;</p>\n\n<p><b>Example 1:</b></p>\n\n<pre>\n<b>Input:</b> [1,2,3,3,4,5]\n<b>Output:</b> True\n<b>Explanation:</b>\nYou can split them into two consecutive subsequences : \n1, 2, 3\n3, 4, 5\n\n</pre>\n\n<p><b>Example 2:</b></p>\n\n<pre>\n<b>Input:</b> [1,2,3,3,4,4,5,5]\n<b>Output:</b> True\n<b>Explanation:</b>\nYou can split them into two consecutive subsequences : \n1, 2, 3, 4, 5\n3, 4, 5\n\n</pre>\n\n<p><b>Example 3:</b></p>\n\n<pre>\n<b>Input:</b> [1,2,3,4,4,5]\n<b>Output:</b> False\n</pre>\n\n<p>&nbsp;</p>\n\n<p><b>Constraints:</b></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10000</code></li>\n</ul>\n\n<p>&nbsp;</p>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 721,
+  "dislikes": 278,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Top K Frequent Elements\", \"titleSlug\": \"top-k-frequent-elements\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Divide Array in Sets of K Consecutive Numbers\", \"titleSlug\": \"divide-array-in-sets-of-k-consecutive-numbers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Heap",
+      "slug": "heap"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 10}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool isPossible(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean isPossible(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def isPossible(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def isPossible(self, nums: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool isPossible(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool IsPossible(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar isPossible = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Boolean}\ndef is_possible(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func isPossible(_ nums: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func isPossible(nums []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def isPossible(nums: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun isPossible(nums: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn is_possible(nums: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Boolean\n     */\n    function isPossible($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"28.9K\", \"totalSubmission\": \"67.9K\", \"totalAcceptedRaw\": 28908, \"totalSubmissionRaw\": 67923, \"acRate\": \"42.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "323",
+    "canSeeDetail": true,
+    "url": "/articles/split-array-into-consecutive-subsequences/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Opening and Closing Events [Accepted]\n\n**Intuition**\n\nWe can think of the problem as drawing intervals on a number line.  This gives us the idea of opening and closing events.\n\nTo illustrate this concept, say we have `nums = [10, 10, 11, 11, 11, 11, 12, 12, 12, 12, 13]`, with no `9`s and no `14`s.  We must have two sequences start at 10, two sequences start at 11, and 3 sequences end at 12.\n\nIn general, when considering a chain of consecutive integers `x`, we must have `C = count[x+1] - count[x]` sequences start at `x+1` when `C > 0`, and `-C` sequences end at `x` if `C < 0`.  Even if there are more endpoints on the intervals we draw, there must be at least this many endpoints.\n\nWith the above example, `count[11] - count[10] = 2` and `count[13] - count[12] = -3` show that two sequences start at `11`, and three sequences end at `12`.\n\nAlso, if for example we know some sequences must start at time `1` and `4` and some sequences end at `5` and `7`, to maximize the smallest length sequence, we should pair the events together in the order they occur: ie., `1` with `5` and `4` with `7`.\n\n**Algorithm**\n\nFor each group of numbers, say the number is `x` and there are `count` of them.  Furthermore, say `prev, prev_count` is the previous integer encountered and it's count.\n\nThen, in general there are `abs(count - prev_count)` events that will happen: if `count > prev_count` then we will add this many `t`'s to `starts`; and if `count < prev_count` then we will attempt to pair `starts.popleft()` with `t-1`.\n\nMore specifically, when we have finished a consecutive group, we will have `prev_count` endings; and when we are in a consecutive group, we may have `count - prev_count` starts or `prev_count - count` endings.\n\nFor example, when `nums = [1,2,3,3,4,5]`, then the starts are at `[1, 3]` and the endings are at `[3, 5]`.  As our algorithm progresses:\n\n* When `t = 1, count = 1`: `starts = [1]`\n* When `t = 2, count = 1`: `starts = [1]`\n* When `t = 3, count = 2`: `starts = [1, 3]`\n* When `t = 4, count = 1`: `starts = [3]`, since `prev_count - count = 1` we process one closing event, which is accepted as `t-1 >= starts.popleft() + 2`.\n* When `t = 5, count = 1`: `starts = [3]`\n\nAnd at the end, we process `prev_count` more closing events `nums[-1]`.\n\n\n<iframe src=\"https://leetcode.com/playground/aPKnzzAo/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"aPKnzzAo\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `nums`.  We iterate over the array and every event is added or popped to `starts` at most once.\n\n* Space Complexity: $$O(N)$$, the size of `starts`.\n\n---\n#### Approach #2: Greedy [Accepted]\n\n**Intuition**\n\nCall a *chain* a sequence of 3 or more consecutive numbers.\n\nConsidering numbers `x` from left to right, if `x` can be added to a current chain, it's at least as good to add `x` to that chain first, rather than to start a new chain.\n\nWhy?  If we started with numbers `x` and greater from the beginning, the shorter chains starting from `x` could be concatenated with the chains ending before `x`, possibly helping us if there was a \"chain\" from `x` that was only length 1 or 2.\n\n**Algorithm**\n\nSay we have a count of each number, and let `tails[x]` be the number of chains ending right before `x`.\n\nNow let's process each number.  If there's a chain ending before `x`, then add it to that chain.  Otherwise, if we can start a new chain, do so.\n\nIt's worth noting that our solution can be amended to take only $$O(1)$$ additional space, since we could do our counts similar to *Approach #1*, and we only need to know the last 3 counts at a time.\n\n<iframe src=\"https://leetcode.com/playground/RErfKTGx/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RErfKTGx\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `nums`.  We iterate over the array.\n\n* Space Complexity: $$O(N)$$, the size of `count` and `tails`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).  Approach #2 inspired by [@compton_scatter](https://discuss.leetcode.com/topic/99187/java-o-n-time-o-n-space).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "318",
+      "count": 71,
+      "average": 1.761,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3,3,4,5]",
+  "metaData": "{\r\n  \"name\": \"isPossible\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

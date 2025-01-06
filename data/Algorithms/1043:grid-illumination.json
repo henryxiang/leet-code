@@ -1,0 +1,93 @@
+{
+  "questionId": "1043",
+  "questionFrontendId": "1001",
+  "boundTopicId": null,
+  "title": "Grid Illumination",
+  "titleSlug": "grid-illumination",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On a <code>N x N</code> grid of cells, each cell <code>(x, y)</code> with <code>0 &lt;= x &lt; N</code> and <code>0 &lt;= y &lt; N</code> has a lamp.</p>\r\n\r\n<p>Initially, some number of lamps are on.&nbsp; <code>lamps[i]</code> tells us the location of the <code>i</code>-th lamp that is on.&nbsp; Each lamp that is on illuminates every square on its x-axis, y-axis, and both diagonals (similar to a Queen in chess).</p>\r\n\r\n<p>For the i-th query&nbsp;<code>queries[i] = (x, y)</code>, the answer to the query is 1 if the cell (x, y) is illuminated, else 0.</p>\r\n\r\n<p>After each query <code>(x, y)</code> [in the order given by <code>queries</code>], we turn off any&nbsp;lamps that are at cell <code>(x, y)</code>&nbsp;or are adjacent 8-directionally (ie., share a corner or edge with cell <code>(x, y)</code>.)</p>\r\n\r\n<p>Return an array of answers.&nbsp; Each&nbsp;value <code>answer[i]</code> should be equal to the answer of the <code>i</code>-th query <code>queries[i]</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = <span id=\"example-input-1-1\">5</span>, lamps = <span id=\"example-input-1-2\">[[0,0],[4,4]]</span>, queries = <span id=\"example-input-1-3\">[[1,1],[1,0]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[1,0]</span>\r\n<strong>Explanation: </strong>\r\nBefore performing the first query we have both lamps [0,0] and [4,4] on.\r\nThe grid representing which cells are lit looks like this, where [0,0] is the top left corner, and [4,4] is the bottom right corner:\r\n1 1 1 1 1\r\n1 1 0 0 1\r\n1 0 1 0 1\r\n1 0 0 1 1\r\n1 1 1 1 1\r\nThen the query at [1, 1] returns 1 because the cell is lit.  After this query, the lamp at [0, 0] turns off, and the grid now looks like this:\r\n1 0 0 0 1\r\n0 1 0 0 1\r\n0 0 1 0 1\r\n0 0 0 1 1\r\n1 1 1 1 1\r\nBefore performing the second query we have only the lamp [4,4] on.  Now the query at [1,0] returns 0, because the cell is no longer lit.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= N &lt;= 10^9</code></li>\r\n\t<li><code>0 &lt;= lamps.length &lt;= 20000</code></li>\r\n\t<li><code>0 &lt;= queries.length &lt;= 20000</code></li>\r\n\t<li><code>lamps[i].length == queries[i].length == 2</code></li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 127,
+  "dislikes": 49,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"N-Queens\", \"titleSlug\": \"n-queens\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> gridIllumination(int N, vector<vector<int>>& lamps, vector<vector<int>>& queries) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] gridIllumination(int N, int[][] lamps, int[][] queries) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def gridIllumination(self, N, lamps, queries):\n        \"\"\"\n        :type N: int\n        :type lamps: List[List[int]]\n        :type queries: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def gridIllumination(self, N: int, lamps: List[List[int]], queries: List[List[int]]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* gridIllumination(int N, int** lamps, int lampsSize, int* lampsColSize, int** queries, int queriesSize, int* queriesColSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] GridIllumination(int N, int[][] lamps, int[][] queries) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @param {number[][]} lamps\n * @param {number[][]} queries\n * @return {number[]}\n */\nvar gridIllumination = function(N, lamps, queries) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer[][]} lamps\n# @param {Integer[][]} queries\n# @return {Integer[]}\ndef grid_illumination(n, lamps, queries)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func gridIllumination(_ N: Int, _ lamps: [[Int]], _ queries: [[Int]]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func gridIllumination(N int, lamps [][]int, queries [][]int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def gridIllumination(N: Int, lamps: Array[Array[Int]], queries: Array[Array[Int]]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun gridIllumination(N: Int, lamps: Array<IntArray>, queries: Array<IntArray>): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn grid_illumination(n: i32, lamps: Vec<Vec<i32>>, queries: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @param Integer[][] $lamps\n     * @param Integer[][] $queries\n     * @return Integer[]\n     */\n    function gridIllumination($N, $lamps, $queries) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.5K\", \"totalSubmission\": \"18.5K\", \"totalAcceptedRaw\": 6458, \"totalSubmissionRaw\": 18474, \"acRate\": \"35.0%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "5\n[[0,0],[4,4]]\n[[1,1],[1,0]]",
+  "metaData": "{\r\n  \"name\": \"gridIllumination\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"lamps\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"queries\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer[]\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

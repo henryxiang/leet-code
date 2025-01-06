@@ -1,0 +1,73 @@
+{
+  "questionId": "578",
+  "questionFrontendId": "578",
+  "boundTopicId": null,
+  "title": "Get Highest Answer Rate Question",
+  "titleSlug": "get-highest-answer-rate-question",
+  "categoryTitle": "Database",
+  "content": "<p>Get the highest answer rate question from a table <code>survey_log</code> with these columns: <b>uid</b>, <b>action</b>, <b>question_id</b>, <b>answer_id</b>, <b>q_num</b>, <b>timestamp</b>.</p>\r\n\r\n<p>uid means user id; action has these kind of values: &quot;show&quot;, &quot;answer&quot;, &quot;skip&quot;; answer_id is not null when action column is &quot;answer&quot;, while is null for &quot;show&quot; and &quot;skip&quot;; q_num is the numeral order of the question in current session.</p>\r\n\r\n<p>Write a sql query to identify the question which has the highest answer rate.</p>\r\n\r\n<p><b>Example:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b>\r\n+------+-----------+--------------+------------+-----------+------------+\r\n| uid  | action    | question_id  | answer_id  | q_num     | timestamp  |\r\n+------+-----------+--------------+------------+-----------+------------+\r\n| 5    | show      | 285          | null       | 1         | 123        |\r\n| 5    | answer    | 285          | 124124     | 1         | 124        |\r\n| 5    | show      | 369          | null       | 2         | 125        |\r\n| 5    | skip      | 369          | null       | 2         | 126        |\r\n+------+-----------+--------------+------------+-----------+------------+\r\n<b>Output:</b>\r\n+-------------+\r\n| survey_log  |\r\n+-------------+\r\n|    285      |\r\n+-------------+\r\n<b>Explanation:</b>\r\nquestion 285 has answer rate 1/1, while question 369 has 0/1 answer rate, so output 285.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b> The highest answer rate meaning is: answer number&#39;s ratio in show number in the same question.</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 23,
+  "dislikes": 310,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Douglas1612",
+      "profileUrl": "/douglas1612/",
+      "avatarUrl": "https://www.gravatar.com/avatar/8e60a4b596b7a8ba118c776bac2a0b04.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.2K\", \"totalSubmission\": \"33.8K\", \"totalAcceptedRaw\": 12218, \"totalSubmissionRaw\": 33830, \"acRate\": \"36.1%\"}",
+  "hints": [
+    "Try to find all question ids by group",
+    "Try to find each group answer number and show number.",
+    "Rank all the rates (answer/(answer+show)) and return the max one"
+  ],
+  "solution": {
+    "id": "205",
+    "canSeeDetail": true,
+    "url": "/articles/get-highest-answer-rate-question/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach I: Using sub-query and `SUM()` function [Accepted]\n\n**Intuition**\n\nCalculate the answered times / show times for each question.\n\n**Algorithm**\n\nFirst, we can use `SUM()` to get the total number of answered times as well as the show times for each question using a sub-query as below.\n\n```sql\nSELECT\n    question_id,\n    SUM(CASE\n        WHEN action = 'answer' THEN 1\n        ELSE 0\n    END) AS num_answer,\n    SUM(CASE\n        WHEN action = 'show' THEN 1\n        ELSE 0\n    END) AS num_show\nFROM\n    survey_log\nGROUP BY question_id\n;\n```\n\n```\n| question_id | num_answer | num_show |\n|-------------|------------|----------|\n| 285         | 1          | 1        |\n| 369         | 0          | 1        |\n```\n\nThen we can calculate the answer rate by its definition.\n\n**MySQL**\n\n```sql\nSELECT question_id as survey_log\nFROM\n(\n\tSELECT question_id,\n         SUM(case when action=\"answer\" THEN 1 ELSE 0 END) as num_answer,\n        SUM(case when action=\"show\" THEN 1 ELSE 0 END) as num_show,    \n\tFROM survey_log\n\tGROUP BY question_id\n) as tbl\nORDER BY (num_answer / num_show) DESC\nLIMIT 1\n```\n\n#### Approach II: Using sub-query and `COUNT(IF...)` function [Accepted]\n\n**Algorithm**\n\nThis solution is very straight forward: use the `COUNT()` function to sum the answer and show time combining with the `IF()` function.\n\n**MySQL**\n```sql\nSELECT \n    question_id AS 'survey_log'\nFROM\n    survey_log\nGROUP BY question_id\nORDER BY COUNT(answer_id) / COUNT(IF(action = 'show', 1, 0)) DESC\nLIMIT 1;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "200",
+      "count": 8,
+      "average": 3.625,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"survey_log\": [\"uid\", \"action\", \"question_id\", \"answer_id\", \"q_num\", \"timestamp\"]},\"rows\": {\"survey_log\": [[5, \"show\", 285, null, 1, 123], [5, \"answer\", 285, 124124, 1, 124], [5, \"show\", 369, null, 2, 125], [5, \"skip\", 369, null, 2, 126]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists survey_log (uid int, action varchar(255), question_id int, answer_id int, q_num int, timestamp int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table survey_log (uid int, action varchar(255), question_id int, answer_id int, q_num int, timestamp int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table survey_log (uid int, action varchar(255), question_id int, answer_id int, q_num int, timestamp int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists survey_log (uid int, action varchar(255), question_id int, answer_id int, q_num int, timestamp int)",
+    "Truncate table survey_log",
+    "insert into survey_log (uid, action, question_id, answer_id, q_num, timestamp) values ('5', 'show', '285', 'None', '1', '123')",
+    "insert into survey_log (uid, action, question_id, answer_id, q_num, timestamp) values ('5', 'answer', '285', '124124', '1', '124')",
+    "insert into survey_log (uid, action, question_id, answer_id, q_num, timestamp) values ('5', 'show', '369', 'None', '2', '125')",
+    "insert into survey_log (uid, action, question_id, answer_id, q_num, timestamp) values ('5', 'skip', '369', 'None', '2', '126')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

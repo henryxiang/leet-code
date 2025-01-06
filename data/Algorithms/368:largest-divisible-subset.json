@@ -1,0 +1,115 @@
+{
+  "questionId": "368",
+  "questionFrontendId": "368",
+  "boundTopicId": null,
+  "title": "Largest Divisible Subset",
+  "titleSlug": "largest-divisible-subset",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a set of <b>distinct</b> positive integers, find the largest subset such that every pair (S<sub>i</sub>, S<sub>j</sub>) of elements in this subset satisfies:</p>\r\n\r\n<p>S<sub>i</sub> % S<sub>j</sub> = 0 or S<sub>j</sub> % S<sub>i</sub> = 0.</p>\r\n\r\n<p>If there are multiple solutions, return any subset is fine.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<div>\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[1,2,3]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">[1,2] </span>(of course, [1,3] will also be ok)\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[1,2,4,8]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">[1,2,4,8]</span>\r\n</pre>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 697,
+  "dislikes": 36,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Stomach_ache",
+      "profileUrl": "/stomach_ache/",
+      "avatarUrl": "https://assets.leetcode.com/users/stomach_ache/avatar_1550751028.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> largestDivisibleSubset(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Integer> largestDivisibleSubset(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def largestDivisibleSubset(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def largestDivisibleSubset(self, nums: List[int]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* largestDivisibleSubset(int* nums, int numsSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<int> LargestDivisibleSubset(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nvar largestDivisibleSubset = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer[]}\ndef largest_divisible_subset(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func largestDivisibleSubset(_ nums: [Int]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func largestDivisibleSubset(nums []int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def largestDivisibleSubset(nums: Array[Int]): List[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun largestDivisibleSubset(nums: IntArray): List<Int> {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn largest_divisible_subset(nums: Vec<i32>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer[]\n     */\n    function largestDivisibleSubset($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"53.8K\", \"totalSubmission\": \"150.5K\", \"totalAcceptedRaw\": 53753, \"totalSubmissionRaw\": 150495, \"acRate\": \"35.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "766",
+    "canSeeDetail": true,
+    "url": "/articles/largest-divisible-subset/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n#### Mathematics \r\nBefore elaborating the solutions, we give some corollaries that one can derive from the property of modulo operation, which would prove useful later to solve the problem.\r\n\r\nGiven a list of values `[E, F, G]` sorted in ascending order (_i.e._ `E < F < G`), and the list itself forms a divisible subset as described in the problem, then we could extend the subset without _**enumerating**_ all numbers in the subset, in the following two cases:\r\n\r\n- **Corollary I:** For any value that can be divided by the *largest* element in the divisible subset, by adding the new value into the subset, one can form another divisible subset, _i.e._ for all `h`, if `h % G == 0`, then `[E, F, G, h]` forms a new divisible subset.\r\n<br/>\r\n- **Corollary II:** For all value that can divide the *smallest* element in the subset, by adding the new value into the subset, one can form another divisible subset, _i.e._ for all `d`, if `E % d == 0`, then `[d, E, F, G]` forms a new divisible subset.\r\n\r\nThe above two corollaries could help us to structure an efficient solution, since it suffices to have just one comparison in order to extend the subset.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 1: Dynamic Programming\r\n\r\n**Intuition**\r\n\r\nAt the first glance, the problem might seem to be similar with those combination problems such as [two sum](https://leetcode.com/problems/two-sum/) and [3sum](https://leetcode.com/problems/3sum/). Indeed, like those combinations problems, it turned out to be rather helpful to _**sort**_ the original list first, which would help us to reduce the number of enumerations at the end.\r\n\r\nAs another benefit of sorting the original list, we would be able to apply the mathematical corollaries explained at the beginning of the article.  \r\n\r\nSo first of all, we sort the original list. And as it turns out, this is another dynamic programming problem. The key of solving a dynamic programming problem is to formulate the problem in a _recursive_ and _sound_ way.\r\n\r\nHere is our attempt, which you would see some theoretical supports later.\r\n>For an ordered list $$[X_1, X_2, ... X_n]$$, we claim that the *largest* divisible subset from this list is the largest subset among all possible divisible subsets that **end with** each of the number in the list.\r\n\r\nLet us define a function named $$\\text{EDS}(X_i)$$, which gives the largest divisible subset that ends with the number $$X_i$$. By \"_ends with_\", we mean that the number $$X_i$$ should be the largest number in the subset. For example, given the list $$[2, 4, 7, 8]$$, let us calculate $$\\text{EDS}(4)$$ by enumeration. First, we list all divisible subsets that ends with $$4$$, which should be $$\\{4\\}$$ and $$\\{2, 4\\}$$. Then by definition, we have $$\\text{EDS}(4) = \\{2, 4\\}$$. Similarly, one can obtain that $$\\text{EDS}(2) = \\{2\\}$$ and $$\\text{EDS}(7) = \\{7\\}$$.\r\n\r\n**Note:** a single number itself forms a divisible subset as well, though it might not be clearly stated in the problem statement. \r\n\r\nFinally let us define our target function that gives the largest divisible subset from an order list $$[X_1, X_2, ... X_n]$$, as $$\\text{LDS}([X_1, X_2, ... X_n])$$. Now, without further due, we claim that the following equation should hold:\r\n$$\r\n    \\text{LDS}([X_1, X_2,...X_n]) = \\max{ ( \\forall \\space \\text{EDS}(X_i) )} \\space, \\space 1 \\le i \\le n   \\quad \\quad (1)\r\n$$\r\n\r\nWe could prove the above formula literally _by definition_. First of all, $$\\forall \\space \\text{EDS}(X_i)$$ cover the divisible subsets in all cases (_i.e._ subsets ends with $$X_i$$). And then we pick the largest one among the largest subsets.\r\n\r\n>Furthermore, we could calculate the function $$\\text{EDS}(X_i)$$ recursively, with the corollaries we defined at the beginning of the article.\r\n\r\n\r\n**Algorithm**\r\n\r\nLet us explain the algorithm on how to calculate $$\\text{EDS}(X_i)$$, following the above example with the list of $$[2, 4, 7, 8]$$. As a reminder, previously we have obtained the $$\\text{EDS}(X_i)$$ value for all elements less than 8, _i.e._:\r\n$$\r\n\\text{EDS}(2) = \\{2\\} \\quad \\text{EDS}(4) = \\{2, 4\\} \\quad \\text{EDS}(7) = \\{7\\}\r\n$$\r\nTo obtain $$\\text{EDS}(8)$$, we simply enumerate all elements before $$8$$ and their $$\\text{EDS}(X_i)$$ values respectively, with the following procedure:\r\n\r\n![pic](../Figures/368/368_dp.png)\r\n\r\n- If the number $$8$$ can be divided by the element $$X_i$$, then by appending the number $$8$$ to $$\\text{EDS}(X_i)$$ we obtain another divisible subset that ends with $$8$$, according to our **Corollary I**. And this new subset stands as a potential value for $$\\text{EDS}(8)$$. For example, since $$8 \\bmod 2 == 0$$, therefore $$\\{2, 8\\}$$ could be the final value for $$\\text{EDS}(8)$$, and similarly with the subset $$\\{2, 4, 8\\}$$ obtained from $$\\text{EDS}(4)$$\r\n<br/>\r\n- If the number $$8$$ can NOT be divided by the element $$X_i$$, then we could be sure that the value of $$\\text{EDS}(X_i)$$ would not contribute to $$\\text{EDS}(8)$$, according to the definition of divisible subset. For example, the subset $$\\text{EDS}(7) = \\{7\\}$$ has no impact for $$\\text{EDS}(8)$$. \r\n<br/>\r\n- We then pick the largest new subsets that we form with the help of $$\\text{EDS}(X_i)$$. Particularly, the subset $$\\{8\\}$$ stands for a valid candidate for $$\\text{EDS}(8)$$. And in a hypothetical case where $$8$$ cannot be divided by any of its previous elements, we would have $$\\text{EDS}(8) = \\{8\\}$$.\r\n\r\nHere we give some sample implementation based on the above idea. _Note:_ for the Python implementation, we showcase the one from [StefanPochmann](https://leetcode.com/problems/largest-divisible-subset/discuss/84002/4-lines-in-Python) for its conciseness and efficiency.\r\n<iframe src=\"https://leetcode.com/playground/iFL5xfLK/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"iFL5xfLK\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N^2)$$. In the major loop of the algorithm, we need to calculate the $$\\text{EDS}(X_i)$$ for each element in the input list. And for each $$\\text{EDS}(X_i)$$ calculation, we need to enumerate all elements before $$X_i$$. As a result, we end up with the $$\\mathcal{O}(N^2)$$ time complexity. \r\n<br/>\r\n* Space complexity : $$\\mathcal{O}(N^2)$$. We maintain a container to keep track of $$\\text{EDS}(X_i)$$ value for each element in the list. And in the worst case where the entire list is a divisible set, the value of $$\\text{EDS}(X_i)$$ would be the sublist of $$[X_1, X_2...X_i]$$. As a result, we end up with the $$\\mathcal{O}(N^2)$$ space complexity.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Dynamic Programming with Less Space\r\n\r\n**Intuition**\r\n\r\nFollowing the same intuition of dynamic programming, however we could do a bit better on the *space complexity*.\r\n\r\nInstead of keeping the largest divisible subset for each of the input elements, _i.e._ $$\\text{EDS}(X_i)$$, we could simply record its size, namely $$\\text{size}(\\text{EDS}(X_i))$$. As a result, we reduce the space complexity from $$\\mathcal{O}(N^2)$$ to $$\\mathcal{O}(N)$$.\r\n\r\nIn exchange, we need to reconstruct the largest divisible subset at the end, which is a tradeoff between time and space.\r\n\r\n**Algorithm**\r\n\r\nThe main algorithm remains almost the same as the Approach #1, which includes calculating **the size** of the largest divisible subset that ends with each element $$X_i$$. We denote this resulting vector as `dp[i]`. \r\n\r\nThe difference is that we need some additional logic to extract the resulting subset from `dp[i]`. Here we elaborate the procedure with a concrete example shown in the graph below.\r\n\r\n![pic](../Figures/368/368_dp_less_space.png)\r\n\r\nIn the upper part of the graph, we have a list of elements ($$X_i$$) sorted in ascending order. And in the lower part of the graph, we have the size value of the largest divisible subset that ends with each element $$X_i$$.\r\n\r\nTo facilitate the reading, we draw a link between each element $$X_i$$ with its neighbor element in its largest divisible subset. For example, for the element $$X_i = 8$$, the resulting largest divisible subset that ends with $$8$$ would be $$\\{2, 4, 8\\}$$, and we see a link between $$8$$ and its neighbor $$4$$.\r\n\r\n- The reconstruction of the resulting subset begins with finding the largest size (_i.e._ $$4$$) and its index in `dp[i]`. The resulting largest divisible subset would end with the element who has the max value of `dp[i]`.\r\n<br/>\r\n- Then starting from the index of the largest size, we run a loop to go backwards (from $$X_i$$ to $$X_1$$) to find the next element that should be included in the resulting subset.\r\n<br/>\r\n- We have two criteria to determine this next element: (1). the element should be able to divide the previous tail element in the resulting subset, _e.g._ $$ 16 \\bmod 8 == 0$$. (2). The value of `dp[i]` should correspond to the current size of the divisible subset, _e.g._ the element 7 would NOT be the next neighbor element after the element 8, since their `dp[i]` values do not match up.\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/zHSHxzMN/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"zHSHxzMN\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N^2)$$. The additional logic to reconstruct the resulting subset would take us an extra $$\\mathcal{O}(N)$$ time complexity which is inferior to the main loop that takes $$\\mathcal{O}(N^2)$$. \r\n<br/>\r\n* Space complexity : $$\\mathcal{O}(N)$$. The vector `dp[i]` that keeps tracks of the size of the largest divisible subset which ends with each of the elements, would take $$\\mathcal{O}(N)$$ space in all cases.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 3: Recursion with Memoization\r\n\r\n**Intuition**\r\n\r\nA typical code pattern for dynamic programming problems is to maintain a matrix or vector of intermediate solutions, and having one or two loops that traverse the matrix or vector. During the loop, we reuse the intermediate solutions instead of recalculating them at each occasion.\r\n\r\nAs one might notice, the above code pattern reminds us the techniques of recursion with memoization. Indeed, there is more than one way to implement the solution with the methodology of dynamic programming. \r\n\r\n**Algorithm**\r\n\r\nOnce we figure out the essence of the problem, as summarized in the **Formula (1)**, it might be more intuitive to implement it via recursion with memoization.\r\n\r\nHere we highlight the importance of applying **memoization** together with the recursion, in this case. \r\n\r\nFollowing the same example in Approach #1, we draw the call graph below for the calculation of $$\\text{EDS}(8)$$, where each node represents the invocation of the function $$\\text{EDS}(X_i)$$ and on the edge we indicate the sequence of the invocations. \r\n\r\n![pic](../Figures/368/368_recursion_memoization.png)\r\n\r\nAs one can see, if we do not keep the intermediate results, the number of calculation would grow exponentially with the length of the list.\r\n\r\n<iframe src=\"https://leetcode.com/playground/HZadA2Pa/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"HZadA2Pa\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(N^2)$$. In the above implementation, we adopt the bottom-up strategy where we first calculate the $$\\text{EDS}(X_i)$$ for elements with lower index. Through the memoization technique, the latter $$\\text{EDS}(X_i)$$ calculation could reuse the intermediate ones. As a result, we reach the same time complexity as in the Approach #1.\r\n<br/>\r\n* Space complexity : $$\\mathcal{O}(N^2)$$. In this implementation, we decide to keep the subset instead of its size, as the intermediate solutions. As we discussed in previous approaches, this would lead to the $$\\mathcal{O}(N^2)$$ space complexity, with the worst scenario where the entire input list being a divisible set.\r\nIn addition, due to the use of recursion, the program would incur a maximum $$\\mathcal{O}(N)$$ space for the call stacks, during the invocation of $$\\text{EDS}(X_n)$$ for the last element in the ordered list. Though, overall the space complexity remains as $$\\mathcal{O}(N^2)$$.\r\n\r\n<br/>\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/) and @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "751",
+      "count": 5,
+      "average": 5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,2,3]",
+  "metaData": "{\r\n  \"name\": \"largestDivisibleSubset\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<integer>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

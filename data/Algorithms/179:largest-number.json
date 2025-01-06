@@ -1,0 +1,111 @@
+{
+  "questionId": "179",
+  "questionFrontendId": "179",
+  "boundTopicId": null,
+  "title": "Largest Number",
+  "titleSlug": "largest-number",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a list of non negative integers, arrange them such that they form the largest number.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>[10,2]</code>\r\n<strong>Output:</strong> &quot;<code>210&quot;</code></pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>[3,30,34,5,9]</code>\r\n<strong>Output:</strong> &quot;<code>9534330&quot;</code>\r\n</pre>\r\n\r\n<p><strong>Note:</strong> The result may be very large, so you need to return a string instead of an integer.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1364,
+  "dislikes": 168,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "shtian",
+      "profileUrl": "/shtian/",
+      "avatarUrl": "https://www.gravatar.com/avatar/258979a79ee1a54a2a14ce2db5389ca1.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Sort",
+      "slug": "sort"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Works Applications\", \"slug\": \"works-applications\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string largestNumber(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String largestNumber(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def largestNumber(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def largestNumber(self, nums: List[int]) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * largestNumber(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string LargestNumber(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {string}\n */\nvar largestNumber = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {String}\ndef largest_number(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func largestNumber(_ nums: [Int]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func largestNumber(nums []int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def largestNumber(nums: Array[Int]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun largestNumber(nums: IntArray): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn largest_number(nums: Vec<i32>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return String\n     */\n    function largestNumber($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"152K\", \"totalSubmission\": \"562.1K\", \"totalAcceptedRaw\": 151989, \"totalSubmissionRaw\": 562087, \"acRate\": \"27.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "339",
+    "canSeeDetail": true,
+    "url": "/articles/largest-number/",
+    "content": "[TOC]\n\n#### Approach #1 Sorting via Custom Comparator [Accepted]\n\n**Intuition**\n\nTo construct the largest number, we want to ensure that the most significant\ndigits are occupied by the largest digits.\n\n**Algorithm**\n\nFirst, we convert each integer to a string. Then, we sort the array of strings.\n\nWhile it might be tempting to simply sort the numbers in descending order,\nthis causes problems for sets of numbers with the same leading digit. For\nexample, sorting the problem example in descending order would produce the\nnumber $$9534303$$, while the correct answer can be achieved by transposing\nthe $$3$$ and the $$30$$. Therefore, for each pairwise comparison during the\nsort, we compare the numbers achieved by concatenating the pair in both\norders. We can prove that this sorts into the proper order as follows: \n\nAssume that (without loss of generality), for some pair of integers $$a$$ and\n$$b$$, our comparator dictates that $$a$$ should precede $$b$$ in sorted\norder. This means that $$a\\frown b > b\\frown a$$ (where $$\\frown$$ represents\nconcatenation). For the sort to produce an incorrect ordering, there must be\nsome $$c$$ for which $$b$$ precedes $$c$$ and $$c$$ precedes $$a$$. This is a\ncontradiction because $$a\\frown b > b\\frown a$$ and $$b\\frown c > c\\frown b$$\nimplies $$a\\frown c > c\\frown a$$. In other words, our custom comparator\npreserves transitivity, so the sort is correct.\n\nOnce the array is sorted, the most \"signficant\" number will be at the front.\nThere is a minor edge case that comes up when the array consists of only\nzeroes, so if the most significant number is $$0$$, we can simply return\n$$0$$. Otherwise, we build a string out of the sorted array and return it.\n\n<iframe src=\"https://leetcode.com/playground/wVZb2DmS/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"wVZb2DmS\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(nlgn)$$\n\n    Although we are doing extra work in our comparator, it is only by a\n    constant factor. Therefore, the overall runtime is dominated by the\n    complexity of `sort`, which is $$\\mathcal{O}(nlgn)$$ in Python and Java.\n\n* Space complexity : $$\\mathcal{O}(n)$$\n\n    Here, we allocate $$\\mathcal{O}(n)$$ additional space to store the copy of `nums`.\n    Although we could do that work in place (if we decide that it is okay to\n    modify `nums`), we must allocate $$\\mathcal{O}(n)$$ space for the final return\n    string. Therefore, the overall memory footprint is linear in the length\n    of `nums`.\n\n---\n\nAnalysis and solutions written by: [@emptyset](https://leetcode.com/emptyset)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "334",
+      "count": 41,
+      "average": 3.878,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[10,2]",
+  "metaData": "{\r\n  \"name\": \"largestNumber\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

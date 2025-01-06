@@ -1,0 +1,109 @@
+{
+  "questionId": "93",
+  "questionFrontendId": "93",
+  "boundTopicId": null,
+  "title": "Restore IP Addresses",
+  "titleSlug": "restore-ip-addresses",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string containing only digits, restore it by returning all possible valid IP address combinations.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;25525511135&quot;\r\n<strong>Output:</strong> <code>[&quot;255.255.11.135&quot;, &quot;255.255.111.35&quot;]\r\n</code></pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 888,
+  "dislikes": 385,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"IP to CIDR\", \"titleSlug\": \"ip-to-cidr\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<string> restoreIpAddresses(string s) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<String> restoreIpAddresses(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def restoreIpAddresses(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[str]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def restoreIpAddresses(self, s: str) -> List[str]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** restoreIpAddresses(char * s, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public IList<string> RestoreIpAddresses(string s) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar restoreIpAddresses = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\r\n# @return {String[]}\r\ndef restore_ip_addresses(s)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func restoreIpAddresses(_ s: String) -> [String] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func restoreIpAddresses(s string) []string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def restoreIpAddresses(s: String): List[String] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun restoreIpAddresses(s: String): List<String> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn restore_ip_addresses(s: String) -> Vec<String> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String[]\n     */\n    function restoreIpAddresses($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"162.1K\", \"totalSubmission\": \"489.4K\", \"totalAcceptedRaw\": 162091, \"totalSubmissionRaw\": 489375, \"acRate\": \"33.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "673",
+    "canSeeDetail": true,
+    "url": "/articles/restore-ip-addresses/",
+    "content": "[TOC]\n\n## Solution\n\n---\n\n#### Intuition\n\nThe naive solution would be to brute-force, \n_i.e._ to check all possible positions for the dots \nand keep only the valid ones. In the worst case that \nmeans `11` possible positions and hence $$11 \\times 10 \\times 9\n= 990$$ validations.\n\nThat could be optimized with the help of two conceptions.\n\n> The first one is called _constrained programming_. \n\nThat basically means\nto put restrictions after each dot placement. \n\nIf one already put a dot that leaves only `3` possibilities\nfor the next dot to be placed : after one digit, \nafter two digits, or after three digits. The first dot has \nonly `3` available slots as well.\n\nThat propagates _constraints_ \nand helps to reduce a number of combinations to consider.\nInstead of $$990$$ combinations it's enough to \ncheck just $$3 \\times 3 \\times 3 = 27$$.\n\n> The second one called _backtracking_. \n\nLet's imagine that one put one or two dots already and that left\nno way to place the others to create a valid IP address. \nWhat to do? _To backtrack_. That means to come back,\nto change the position of the previously placed dot and try \nto proceed again. If that would not work either, _backtrack_ again.\n<br />\n<br />\n\n\n---\n#### Approach 1: Backtracking (DFS)\n\nHere is an algorithm for the backtrack function\n`backtrack(prev_pos = -1, dots = 3)` which takes \nposition of the previously placed dot `prev_pos`\nand number of dots to place `dots` as arguments :\n\n* Iterate over three available slots `curr_pos` to place a dot. \n   * Check if the segment from the previous dot to the current one is valid :\n      * Yes :\n        * Place the dot.\n        * Check if all `3` dots are placed :\n            * Yes :\n                * Add the solution into the output list.\n            * No :\n                * Proceed to place next dots `backtrack(curr_pos, dots - 1)`.\n        * Remove the last dot to backtrack. \n\n!?!../Documents/93_LIS.json:1000,612!?!\n\n<iframe src=\"https://leetcode.com/playground/QUjCX8BE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"QUjCX8BE\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : as discussed above, there is not more than `27`\ncombinations to check. \n* Space complexity : constant space to keep the solutions, not more \nthan `19` valid IP addresses. \n\n<img src=\"../Figures/93/93_max_number.png\" width=\"500\">\n\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "659",
+      "count": 19,
+      "average": 4.316,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"25525511135\"",
+  "metaData": "{ \r\n  \"name\": \"restoreIpAddresses\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

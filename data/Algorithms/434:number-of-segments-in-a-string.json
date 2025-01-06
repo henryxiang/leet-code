@@ -1,0 +1,111 @@
+{
+  "questionId": "434",
+  "questionFrontendId": "434",
+  "boundTopicId": null,
+  "title": "Number of Segments in a String",
+  "titleSlug": "number-of-segments-in-a-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Count the number of segments in a string, where a segment is defined to be a contiguous sequence of non-space characters.</p>\r\n\r\n<p>Please note that the string does not contain any <b>non-printable</b> characters.</p>\r\n\r\n<p><b>Example:</b></p>\r\n<pre>\r\n<b>Input:</b> \"Hello, my name is John\"\r\n<b>Output:</b> 5\r\n</pre>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 169,
+  "dislikes": 639,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countSegments(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countSegments(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countSegments(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countSegments(self, s: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint countSegments(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountSegments(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar countSegments = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Integer}\ndef count_segments(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countSegments(_ s: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countSegments(s string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countSegments(s: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countSegments(s: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_segments(s: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function countSegments($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"65.8K\", \"totalSubmission\": \"175.9K\", \"totalAcceptedRaw\": 65787, \"totalSubmissionRaw\": 175931, \"acRate\": \"37.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "282",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-segments-in-a-string/",
+    "content": "[TOC]\n\n#### Approach #1 Using Language Builtins [Accepted]\n\n**Intuition**\n\nIn a situation where raw efficiency is less important than code legibility,\nit is likely better to use language-idiomatic builtin functions to solve this\nproblem.\n\n**Algorithm**\n\nThere are a few corner cases that you can get snagged on in this problem, at\nleast in Java. First, one or more leading spaces will cause `split` to deduce\nan erroneous `\"\"` token at the beginning of the string, so we use the builtin\n`trim` method to remove leading and trailing spaces. Then, if the resulting\nstring is the empty string, then we can simply output `0`. This is necessary due\nto the following behavior of the `split` method:\n\n```java\nString[] tokens = \"\".split(\"\\\\s++\");\ntokens.length; // 1\ntokens[0]; // \"\"\n```\n\nIf we reach the final return statement, we `split` the trimmed string on\nsequences of one or more whitespace characters (`split` can take a regular\nexpression) and return the length of the resulting array.\n\nThe Python solution is trivially short because Python's `split` has a lot of\ndefault behavior that makes it perfect for this sort of problem. Notably, it\nreturns an empty list when `split`ting an empty string, it splits on\nwhitespace by default, and it implicitly `trim`s (`strip`s, in Python lingo)\nthe string beforehand.\n\n<iframe src=\"https://leetcode.com/playground/FdCZomTr/shared\" frameBorder=\"0\" width=\"100%\" height=\"208\" name=\"FdCZomTr\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$\n\n    All builtin language functionality used here (in both the Java and Python\n    examples) runs in either $$O(n)$$ or $$O(1)$$ time, so the entire algorithm\n    runs in linear time.\n\n* Space complexity : $$O(n)$$\n\n    `split` (in both languages) returns an array/list of $$O(n)$$ length, so\n    the algorithm uses linear additional space.\n\n---\n\n#### Approach #2 In-place [Accepted]\n\n**Intuition**\n\nIf we cannot afford to allocate linear additional space, a fairly simple\nalgorithm can deduce the number of segments in linear time and constant\nspace.\n\n**Algorithm**\n\nTo count the number of segments, it is equivalent to count the number of\nstring indices at which a segment begins. Therefore, by formally defining the\ncharacteristics of such an index, we can simply iterate over the string and\ntest each index in turn. Such a definition is as follows: a string index\nbegins a segment if it is preceded by whitespace (or is the first index) and\nis not whitespace itself, which can be checked in constant time. Finally, we\nsimply return the number of indices for which the condition is satisfied.\n\n<iframe src=\"https://leetcode.com/playground/XX7WFxaA/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"XX7WFxaA\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$\n\n    We do a constant time check for each of the string's $$n$$ indices, so the\n    runtime is overall linear.\n\n* Space complexity : $$O(1)$$\n\n    There are only a few integers allocated, so the memory footprint is\n    constant.\n\n---\n\nAnalysis written by: [@emptyset](https://leetcode.com/emptyset)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "277",
+      "count": 7,
+      "average": 4.429,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"Hello, my name is John\"",
+  "metaData": "{\r\n  \"name\": \"countSegments\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

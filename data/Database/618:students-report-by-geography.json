@@ -1,0 +1,69 @@
+{
+  "questionId": "618",
+  "questionFrontendId": "618",
+  "boundTopicId": null,
+  "title": "Students Report By Geography",
+  "titleSlug": "students-report-by-geography",
+  "categoryTitle": "Database",
+  "content": "A U.S graduate school has students from Asia, Europe and America. The students&#39; location information are stored in table <code>student</code> as below.\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n| name   | continent |\r\n|--------|-----------|\r\n| Jack   | America   |\r\n| Pascal | Europe    |\r\n| Xi     | Asia      |\r\n| Jane   | America   |\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<a href=\"https://en.wikipedia.org/wiki/Pivot_table\"> Pivot</a> the continent column in this table so that each name is sorted alphabetically and displayed underneath its corresponding continent. The output headers should be America, Asia and Europe respectively. It is guaranteed that the student number from America is no less than either Asia or Europe.\r\n\r\n<p>&nbsp;</p>\r\nFor the sample input, the output is:\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n| America | Asia | Europe |\r\n|---------|------|--------|\r\n| Jack    | Xi   | Pascal |\r\n| Jane    |      |        |\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<b>Follow-up:</b> If it is unknown which continent has the most students, can you write a query to generate the student report?\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 27,
+  "dislikes": 66,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Mr-Bin",
+      "profileUrl": "/mr-bin/",
+      "avatarUrl": "https://assets.leetcode.com/users/mr-bin/avatar_1547655304.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4K\", \"totalSubmission\": \"8.6K\", \"totalAcceptedRaw\": 3994, \"totalSubmissionRaw\": 8571, \"acRate\": \"46.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "175",
+    "canSeeDetail": true,
+    "url": "/articles/students-report-by-geography/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using \"session variables\" and `join` [Accepted]\n\n**Intuition**\n\nAssign a separate auto increment row id to each of the continent, and then join them together.\n\n**Algorithm**\n\nTo set the row id for each continent, we need to use session variables.\nFor example, we can use the following statement to assign a auto increment row number for students in America.\n\n```sql\nSELECT \n    row_id, America\nFROM\n    (SELECT @am:=0) t,\n    (SELECT \n        @am:=@am + 1 AS row_id, name AS America\n    FROM\n        student\n    WHERE\n        continent = 'America'\n    ORDER BY America) AS t2\n;\n```\n\n    | row_id | America |\n    |--------|---------|\n    | 1      | Jack    |\n    | 2      | Jane    |\n\nSimilarly, we can assign other dedicated row id for other continents as the following result.\n\n    | row_id | Asia |\n    |--------|------|\n    | 1      | Xi   |\n\n    | row_id | Europe |\n    |--------|--------|\n    | 1      | Jesper |\n\n\nThen if we join these 3 temp tables together and using the same row_id as the condition, we can have the following table.\n\n    | row_id | America | Asia | Europe |\n    |--------|---------|------|--------|\n    | 1      | Jack    | Xi   | Pascal |\n    | 2      | Jane    |      |        |\n\nOne issue you may encounter is the student list for America is not complete if you use regular inner join since there are more records in this list comparing with the other two. So you may have a solution to use the `outer join`. Correct! But how to arrange the 3 tables? The trick is to put the America list in the middle so that we can use `right (outer) join` and `right (outer) join` to connect with other two tables.\n\n**MySQL**\n\n```sql\nSELECT \n    America, Asia, Europe\nFROM\n    (SELECT @as:=0, @am:=0, @eu:=0) t,\n    (SELECT \n        @as:=@as + 1 AS asid, name AS Asia\n    FROM\n        student\n    WHERE\n        continent = 'Asia'\n    ORDER BY Asia) AS t1\n        RIGHT JOIN\n    (SELECT \n        @am:=@am + 1 AS amid, name AS America\n    FROM\n        student\n    WHERE\n        continent = 'America'\n    ORDER BY America) AS t2 ON asid = amid\n        LEFT JOIN\n    (SELECT \n        @eu:=@eu + 1 AS euid, name AS Europe\n    FROM\n        student\n    WHERE\n        continent = 'Europe'\n    ORDER BY Europe) AS t3 ON amid = euid\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "170",
+      "count": 12,
+      "average": 4.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"student\":[\"name\",\"continent\"]},\"rows\":{\"student\":[[\"Jane\",\"America\"],[\"Pascal\",\"Europe\"],[\"Xi\",\"Asia\"],[\"Jack\",\"America\"]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists student (name varchar(50), continent varchar(7))\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table student (name varchar(50), continent varchar(7))\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table student (name varchar(50), continent varchar(7))\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists student (name varchar(50), continent varchar(7))",
+    "Truncate table student",
+    "insert into student (name, continent) values ('Jane', 'America')",
+    "insert into student (name, continent) values ('Pascal', 'Europe')",
+    "insert into student (name, continent) values ('Xi', 'Asia')",
+    "insert into student (name, continent) values ('Jack', 'America')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

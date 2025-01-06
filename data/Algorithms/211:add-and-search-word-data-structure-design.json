@@ -1,0 +1,103 @@
+{
+  "questionId": "211",
+  "questionFrontendId": "211",
+  "boundTopicId": null,
+  "title": "Add and Search Word - Data structure design",
+  "titleSlug": "add-and-search-word-data-structure-design",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design a data structure that supports the following two operations:</p>\r\n\r\n<pre>\r\nvoid addWord(word)\r\nbool search(word)\r\n</pre>\r\n\r\n<p>search(word) can search a literal word or a regular expression string containing only letters <code>a-z</code> or <code>.</code>. A <code>.</code> means it can represent any one letter.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\naddWord(&quot;bad&quot;)\r\naddWord(&quot;dad&quot;)\r\naddWord(&quot;mad&quot;)\r\nsearch(&quot;pad&quot;) -&gt; false\r\nsearch(&quot;bad&quot;) -&gt; true\r\nsearch(&quot;.ad&quot;) -&gt; true\r\nsearch(&quot;b..&quot;) -&gt; true\r\n</pre>\r\n\r\n<p><b>Note:</b><br />\r\nYou may assume that all words are consist of lowercase letters <code>a-z</code>.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1174,
+  "dislikes": 65,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Implement Trie (Prefix Tree)\", \"titleSlug\": \"implement-trie-prefix-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Prefix and Suffix Search\", \"titleSlug\": \"prefix-and-suffix-search\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Trie",
+      "slug": "trie"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 18}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Salesforce\", \"slug\": \"salesforce\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class WordDictionary {\npublic:\n    /** Initialize your data structure here. */\n    WordDictionary() {\n        \n    }\n    \n    /** Adds a word into the data structure. */\n    void addWord(string word) {\n        \n    }\n    \n    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */\n    bool search(string word) {\n        \n    }\n};\n\n/**\n * Your WordDictionary object will be instantiated and called as such:\n * WordDictionary* obj = new WordDictionary();\n * obj->addWord(word);\n * bool param_2 = obj->search(word);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class WordDictionary {\n\n    /** Initialize your data structure here. */\n    public WordDictionary() {\n        \n    }\n    \n    /** Adds a word into the data structure. */\n    public void addWord(String word) {\n        \n    }\n    \n    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */\n    public boolean search(String word) {\n        \n    }\n}\n\n/**\n * Your WordDictionary object will be instantiated and called as such:\n * WordDictionary obj = new WordDictionary();\n * obj.addWord(word);\n * boolean param_2 = obj.search(word);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class WordDictionary(object):\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def addWord(self, word):\n        \"\"\"\n        Adds a word into the data structure.\n        :type word: str\n        :rtype: None\n        \"\"\"\n        \n\n    def search(self, word):\n        \"\"\"\n        Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.\n        :type word: str\n        :rtype: bool\n        \"\"\"\n        \n\n\n# Your WordDictionary object will be instantiated and called as such:\n# obj = WordDictionary()\n# obj.addWord(word)\n# param_2 = obj.search(word)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class WordDictionary:\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def addWord(self, word: str) -> None:\n        \"\"\"\n        Adds a word into the data structure.\n        \"\"\"\n        \n\n    def search(self, word: str) -> bool:\n        \"\"\"\n        Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.\n        \"\"\"\n        \n\n\n# Your WordDictionary object will be instantiated and called as such:\n# obj = WordDictionary()\n# obj.addWord(word)\n# param_2 = obj.search(word)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} WordDictionary;\n\n/** Initialize your data structure here. */\n\nWordDictionary* wordDictionaryCreate() {\n    \n}\n\n/** Adds a word into the data structure. */\nvoid wordDictionaryAddWord(WordDictionary* obj, char * word) {\n  \n}\n\n/** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */\nbool wordDictionarySearch(WordDictionary* obj, char * word) {\n  \n}\n\nvoid wordDictionaryFree(WordDictionary* obj) {\n    \n}\n\n/**\n * Your WordDictionary struct will be instantiated and called as such:\n * WordDictionary* obj = wordDictionaryCreate();\n * wordDictionaryAddWord(obj, word);\n \n * bool param_2 = wordDictionarySearch(obj, word);\n \n * wordDictionaryFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class WordDictionary {\n\n    /** Initialize your data structure here. */\n    public WordDictionary() {\n        \n    }\n    \n    /** Adds a word into the data structure. */\n    public void AddWord(string word) {\n        \n    }\n    \n    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */\n    public bool Search(string word) {\n        \n    }\n}\n\n/**\n * Your WordDictionary object will be instantiated and called as such:\n * WordDictionary obj = new WordDictionary();\n * obj.AddWord(word);\n * bool param_2 = obj.Search(word);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Initialize your data structure here.\n */\nvar WordDictionary = function() {\n    \n};\n\n/**\n * Adds a word into the data structure. \n * @param {string} word\n * @return {void}\n */\nWordDictionary.prototype.addWord = function(word) {\n    \n};\n\n/**\n * Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. \n * @param {string} word\n * @return {boolean}\n */\nWordDictionary.prototype.search = function(word) {\n    \n};\n\n/** \n * Your WordDictionary object will be instantiated and called as such:\n * var obj = new WordDictionary()\n * obj.addWord(word)\n * var param_2 = obj.search(word)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class WordDictionary\n\n=begin\n    Initialize your data structure here.\n=end\n    def initialize()\n        \n    end\n\n\n=begin\n    Adds a word into the data structure.\n    :type word: String\n    :rtype: Void\n=end\n    def add_word(word)\n        \n    end\n\n\n=begin\n    Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.\n    :type word: String\n    :rtype: Boolean\n=end\n    def search(word)\n        \n    end\n\n\nend\n\n# Your WordDictionary object will be instantiated and called as such:\n# obj = WordDictionary.new()\n# obj.add_word(word)\n# param_2 = obj.search(word)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass WordDictionary {\n\n    /** Initialize your data structure here. */\n    init() {\n        \n    }\n    \n    /** Adds a word into the data structure. */\n    func addWord(_ word: String) {\n        \n    }\n    \n    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */\n    func search(_ word: String) -> Bool {\n        \n    }\n}\n\n/**\n * Your WordDictionary object will be instantiated and called as such:\n * let obj = WordDictionary()\n * obj.addWord(word)\n * let ret_2: Bool = obj.search(word)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type WordDictionary struct {\n    \n}\n\n\n/** Initialize your data structure here. */\nfunc Constructor() WordDictionary {\n    \n}\n\n\n/** Adds a word into the data structure. */\nfunc (this *WordDictionary) AddWord(word string)  {\n    \n}\n\n\n/** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */\nfunc (this *WordDictionary) Search(word string) bool {\n    \n}\n\n\n/**\n * Your WordDictionary object will be instantiated and called as such:\n * obj := Constructor();\n * obj.AddWord(word);\n * param_2 := obj.Search(word);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class WordDictionary() {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Adds a word into the data structure. */\n    def addWord(word: String) {\n        \n    }\n\n    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */\n    def search(word: String): Boolean = {\n        \n    }\n\n}\n\n/**\n * Your WordDictionary object will be instantiated and called as such:\n * var obj = new WordDictionary()\n * obj.addWord(word)\n * var param_2 = obj.search(word)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class WordDictionary() {\n\n    /** Initialize your data structure here. */\n    \n\n    /** Adds a word into the data structure. */\n    fun addWord(word: String) {\n        \n    }\n\n    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */\n    fun search(word: String): Boolean {\n        \n    }\n\n}\n\n/**\n * Your WordDictionary object will be instantiated and called as such:\n * var obj = WordDictionary()\n * obj.addWord(word)\n * var param_2 = obj.search(word)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct WordDictionary {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl WordDictionary {\n\n    /** Initialize your data structure here. */\n    fn new() -> Self {\n        \n    }\n    \n    /** Adds a word into the data structure. */\n    fn add_word(&self, word: String) {\n        \n    }\n    \n    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */\n    fn search(&self, word: String) -> bool {\n        \n    }\n}\n\n/**\n * Your WordDictionary object will be instantiated and called as such:\n * let obj = WordDictionary::new();\n * obj.add_word(word);\n * let ret_2: bool = obj.search(word);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class WordDictionary {\n    /**\n     * Initialize your data structure here.\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * Adds a word into the data structure.\n     * @param String $word\n     * @return NULL\n     */\n    function addWord($word) {\n        \n    }\n  \n    /**\n     * Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.\n     * @param String $word\n     * @return Boolean\n     */\n    function search($word) {\n        \n    }\n}\n\n/**\n * Your WordDictionary object will be instantiated and called as such:\n * $obj = WordDictionary();\n * $obj->addWord($word);\n * $ret_2 = $obj->search($word);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"142.8K\", \"totalSubmission\": \"430.4K\", \"totalAcceptedRaw\": 142787, \"totalSubmissionRaw\": 430379, \"acRate\": \"33.2%\"}",
+  "hints": [
+    "You should be familiar with how a Trie works. If not, please work on this problem: <a href=\"https://leetcode.com/problems/implement-trie-prefix-tree/\">Implement Trie (Prefix Tree)</a> first."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]\n[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]",
+  "metaData": "{\r\n    \"classname\": \"WordDictionary\",\r\n    \"maxbytesperline\": 400000,\r\n    \"constructor\": {\r\n        \"params\": [\r\n        ],\r\n        \"comment\": \"Initialize your data structure here.\"\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"addWord\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"string\",\r\n                    \"name\": \"word\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            },\r\n            \"comment\": \"Adds a word into the data structure.\"\r\n        },\r\n        {\r\n            \"name\" : \"search\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"string\",\r\n                    \"name\": \"word\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"boolean\"\r\n            },\r\n            \"comment\": \"Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.\"\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

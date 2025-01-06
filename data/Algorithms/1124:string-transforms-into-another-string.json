@@ -1,0 +1,100 @@
+{
+  "questionId": "1124",
+  "questionFrontendId": "1153",
+  "boundTopicId": null,
+  "title": "String Transforms Into Another String",
+  "titleSlug": "string-transforms-into-another-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two strings <code>str1</code> and <code>str2</code>&nbsp;of the same length, determine whether you can transform <code>str1</code>&nbsp;into <code>str2</code> by doing <strong>zero or more</strong>&nbsp;<em>conversions</em>.</p>\n\n<p>In one conversion you can convert&nbsp;<strong>all</strong> occurrences of one character in <code>str1</code> to&nbsp;<strong>any</strong> other lowercase English character.</p>\n\n<p>Return <code>true</code>&nbsp;if and only if you can transform <code>str1</code> into <code>str2</code>.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong>str1 = <span id=\"example-input-1-1\">&quot;aabcc&quot;</span>, str2 = <span id=\"example-input-1-2\">&quot;ccdee&quot;</span>\n<strong>Output: </strong><span id=\"example-output-1\">true</span>\n<strong>Explanation: </strong>Convert &#39;c&#39; to &#39;e&#39; then &#39;b&#39; to &#39;d&#39; then &#39;a&#39; to &#39;c&#39;. Note that the order of conversions matter.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input: </strong>str1 = <span id=\"example-input-2-1\">&quot;leetcode&quot;</span>, str2 = <span id=\"example-input-2-2\">&quot;codeleet&quot;</span>\n<strong>Output: </strong><span id=\"example-output-2\">false</span>\n<strong>Explanation: </strong>There is no way to transform str1 to str2.\n</pre>\n\n<p>&nbsp;</p>\n\n<p><strong>Note:</strong></p>\n\n<ol>\n\t<li><code>1 &lt;= str1.length == str2.length &lt;= 10^4</code></li>\n\t<li>Both <code>str1</code> and <code>str2</code> contain only lowercase English letters.</li>\n</ol>\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 139,
+  "dislikes": 35,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 13}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool canConvert(string str1, string str2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canConvert(String str1, String str2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canConvert(self, str1, str2):\n        \"\"\"\n        :type str1: str\n        :type str2: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canConvert(self, str1: str, str2: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool canConvert(char * str1, char * str2){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CanConvert(string str1, string str2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} str1\n * @param {string} str2\n * @return {boolean}\n */\nvar canConvert = function(str1, str2) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} str1\n# @param {String} str2\n# @return {Boolean}\ndef can_convert(str1, str2)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canConvert(_ str1: String, _ str2: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canConvert(str1 string, str2 string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canConvert(str1: String, str2: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canConvert(str1: String, str2: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_convert(str1: String, str2: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $str1\n     * @param String $str2\n     * @return Boolean\n     */\n    function canConvert($str1, $str2) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.4K\", \"totalSubmission\": \"18.6K\", \"totalAcceptedRaw\": 6368, \"totalSubmissionRaw\": 18605, \"acRate\": \"34.2%\"}",
+  "hints": [
+    "Model the problem as a graph problem. Add an edge from one character to another if you need to convert between them.",
+    "What if one character needs to be converted into more than one character?",
+    "There would be no solution. Thus, every node can have at most one outgoing edge.",
+    "How to process a linked list?",
+    "How to process a cycle?",
+    "What if there is a character with no outgoing edge? You can use it to break all cycles!"
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"aabcc\"\n\"ccdee\"",
+  "metaData": "{\n  \"name\": \"canConvert\",\n  \"params\": [\n    {\n      \"name\": \"str1\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"str2\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"boolean\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

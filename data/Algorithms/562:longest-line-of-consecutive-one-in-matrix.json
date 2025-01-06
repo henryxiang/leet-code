@@ -1,0 +1,116 @@
+{
+  "questionId": "562",
+  "questionFrontendId": "562",
+  "boundTopicId": null,
+  "title": "Longest Line of Consecutive One in Matrix",
+  "titleSlug": "longest-line-of-consecutive-one-in-matrix",
+  "categoryTitle": "Algorithms",
+  "content": "Given a 01 matrix <b>M</b>, find the longest line of consecutive one in the matrix. The line could be horizontal, vertical, diagonal or anti-diagonal.\r\n\r\n<p><b>Example:</b><br />\r\n<pre>\r\n<b>Input:</b>\r\n[[0,1,1,0],\r\n [0,1,1,0],\r\n [0,0,0,1]]\r\n<b>Output:</b> 3\r\n</pre>\r\n</p>\r\n\r\n<p>\r\n<b>Hint:</b>\r\nThe number of elements in the given matrix will not exceed 10,000.\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 230,
+  "dislikes": 62,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestLine(vector<vector<int>>& M) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestLine(int[][] M) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestLine(self, M):\n        \"\"\"\n        :type M: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestLine(self, M: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint longestLine(int** M, int MSize, int* MColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestLine(int[][] M) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} M\n * @return {number}\n */\nvar longestLine = function(M) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} m\n# @return {Integer}\ndef longest_line(m)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestLine(_ M: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestLine(M [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestLine(M: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestLine(M: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_line(m: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $M\n     * @return Integer\n     */\n    function longestLine($M) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"19.6K\", \"totalSubmission\": \"43.8K\", \"totalAcceptedRaw\": 19618, \"totalSubmissionRaw\": 43802, \"acRate\": \"44.8%\"}",
+  "hints": [
+    "One solution is to count ones in each direction separately and find the longest line. Don't you think  it will take too much lines of code?",
+    "Is it possible to use some extra space to make the solution simple?",
+    "Can we use dynamic programming to make use of intermediate results?",
+    "Think of a 3D array which can be used to store the longest line obtained so far for each direction."
+  ],
+  "solution": {
+    "id": "114",
+    "canSeeDetail": true,
+    "url": "/articles/longest-line-of-consecutive-one-in-a-matrix/",
+    "content": "[TOC]\n\n\n## Solution\n\n---\n#### Approach #1 Brute Force [Accepted]\n\n**Algorithm**\n\nThe brute force approach is really simple. We directly traverse along every valid line in the given matrix: i.e. Horizontal, Vertical, Diagonal aline above and below the middle diagonal, Anti-diagonal line above and below the middle anti-diagonal. Each time during the traversal, we keep on incrementing the $$count$$ if we encounter continuous 1's. We reset the $$count$$ for any discontinuity encountered. While doing this, we also keep a track of the maximum $$count$$ found so far.\n\n\n<iframe src=\"https://leetcode.com/playground/eyvFH9Kd/shared\" frameBorder=\"0\" name=\"eyvFH9Kd\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^2)$$. We traverse along the entire matrix 4 times.\n* Space complexity : $$O(1)$$. Constant space is used.\n\n---\n#### Approach #2 Using 3D Dynamic Programming [Accepted]\n\n**Algorithm**\n\nInstead of traversing over the same matrix multiple times, we can keep a track of the 1' along all the lines possible while traversing the matrix once only. In order to do so, we make use of a $$m x n x 4$$$ sized $$dp$$ array. Here, $$dp[0]$$, $$dp[1]$$, $$dp[2]$$ ,$$dp[3]$$ are used to store the maximum number of continuous 1's found so far along the Horizontal, Vertical, Diagonal and Anti-diagonal lines respectively. e.g. $$dp[i][j][0]$$ is used to store the number of continuous 1's found so far(till we reach the element $$M[i][j]$$), along the horizontal lines only.\n\nThus, we traverse the matrix $$M$$ in a row-wise fashion only but, keep updating the entries for every $$dp$$ appropriately. \n\nThe following image shows the filled $$dp$$ values for this matrix:\n```\n 0 1 1 0\n\n 0 1 1 0\n   \n 0 0 1 1\n   \n```\n\n![Longest_Line](../Figures/562_Longest_Line.PNG)\n\nWhile filling up the $$dp$$, we can keep a track of the length of the longest consecutive line of 1's.\n\nWatch this animation for complete process:\n\n!?!../Documents/562_Longest_Line.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/piAseSco/shared\" frameBorder=\"0\" name=\"piAseSco\" width=\"100%\" height=\"411\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(m*n)$$. We traverse the entire matrix once only.\n\n* Space complexity : $$O(m*n)$$. $$dp$$ array of size $$4*m*n$$ is used, where $$m$$ and $$n$$ are the number of rows ans coloumns of the matrix.\n\n---\n\n#### Approach #3 Using 2D Dynamic Programming [Accepted]\n\n**Algorithm**\n\nIn the previous approach, we can observe that the current $$dp$$ entry is dependent only on the entries of the just previous corresponding $$dp$$ row. Thus, instead of maintaining a 2-D $$dp$$ matrix for each kind of line of 1's possible, we can use a 1-d array for each one of them, and update the corresponding entries in the same row during each row's traversal. Taking this into account, the previous 3-D $$dp$$ matrix shrinks to a 2-D $$dp$$ matrix now. The rest of the procedure remains same as the previous approach.\n\n\n<iframe src=\"https://leetcode.com/playground/4Wj5XMZ9/shared\" frameBorder=\"0\" name=\"4Wj5XMZ9\" width=\"100%\" height=\"496\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(m*n)$$. The entire matrix is traversed once only.\n\n* Space complexity : $$O(n)$$. $$dp$$ array of size $$4*n$$ is used, where $$n$$ is the number of columns of the matrix.\n\n---\n\n\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "113",
+      "count": 8,
+      "average": 4.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,1,1,0],[0,1,1,0],[0,0,0,1]]",
+  "metaData": "{\r\n  \"name\": \"longestLine\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"M\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,97 @@
+{
+  "questionId": "1221",
+  "questionFrontendId": "1287",
+  "boundTopicId": null,
+  "title": "Element Appearing More Than 25% In Sorted Array",
+  "titleSlug": "element-appearing-more-than-25-in-sorted-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an&nbsp;integer array&nbsp;<strong>sorted</strong> in non-decreasing order, there is exactly one integer in the array that occurs more than 25% of the time.</p>\r\n\r\n<p>Return that integer.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n<pre><strong>Input:</strong> arr = [1,2,2,6,6,6,6,7,10]\r\n<strong>Output:</strong> 6\r\n</pre>\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= arr.length &lt;= 10^4</code></li>\r\n\t<li><code>0 &lt;= arr[i] &lt;= 10^5</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 48,
+  "dislikes": 5,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int findSpecialInteger(vector<int>& arr) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int findSpecialInteger(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def findSpecialInteger(self, arr):\n        \"\"\"\n        :type arr: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def findSpecialInteger(self, arr: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint findSpecialInteger(int* arr, int arrSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int FindSpecialInteger(int[] arr) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} arr\n * @return {number}\n */\nvar findSpecialInteger = function(arr) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr\n# @return {Integer}\ndef find_special_integer(arr)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func findSpecialInteger(_ arr: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findSpecialInteger(arr []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def findSpecialInteger(arr: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun findSpecialInteger(arr: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn find_special_integer(arr: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $arr\n     * @return Integer\n     */\n    function findSpecialInteger($arr) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"4.7K\", \"totalSubmission\": \"7.7K\", \"totalAcceptedRaw\": 4654, \"totalSubmissionRaw\": 7680, \"acRate\": \"60.6%\"}",
+  "hints": [
+    "Divide the array in four parts [1 - 25%] [25 - 50 %] [50 - 75 %] [75% - 100%]",
+    "The answer should be in one of the ends of the intervals.",
+    "In order to check which is element is the answer we can count the frequency with binarySearch."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,2,2,6,6,6,6,7,10]",
+  "metaData": "{\n  \"name\": \"findSpecialInteger\",\n  \"params\": [\n    {\n      \"name\": \"arr\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

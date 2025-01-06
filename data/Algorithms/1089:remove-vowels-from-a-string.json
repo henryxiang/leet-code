@@ -1,0 +1,96 @@
+{
+  "questionId": "1089",
+  "questionFrontendId": "1119",
+  "boundTopicId": null,
+  "title": "Remove Vowels from a String",
+  "titleSlug": "remove-vowels-from-a-string",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>S</code>, remove the vowels <code>&#39;a&#39;</code>, <code>&#39;e&#39;</code>, <code>&#39;i&#39;</code>, <code>&#39;o&#39;</code>, and <code>&#39;u&#39;</code> from it, and return the new string.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;leetcodeisacommunityforcoders&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;ltcdscmmntyfrcdrs&quot;</span>\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">&quot;aeiou&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">&quot;&quot;</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>S</code> consists of lowercase English letters only.</li>\r\n\t<li><code>1 &lt;= S.length &lt;= 1000</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 43,
+  "dislikes": 59,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Reverse Vowels of a String\", \"titleSlug\": \"reverse-vowels-of-a-string\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string removeVowels(string S) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String removeVowels(String S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def removeVowels(self, S):\n        \"\"\"\n        :type S: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def removeVowels(self, S: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * removeVowels(char * S){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string RemoveVowels(string S) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @return {string}\n */\nvar removeVowels = function(S) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef remove_vowels(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func removeVowels(_ S: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func removeVowels(S string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def removeVowels(S: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun removeVowels(S: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn remove_vowels(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @return String\n     */\n    function removeVowels($S) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"19K\", \"totalSubmission\": \"21.5K\", \"totalAcceptedRaw\": 18973, \"totalSubmissionRaw\": 21492, \"acRate\": \"88.3%\"}",
+  "hints": [
+    "How to erase vowels in a string?",
+    "Loop over the string and check every character, if it is a vowel ignore it otherwise add it to the answer."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"leetcodeisacommunityforcoders\"",
+  "metaData": "{\n  \"name\": \"removeVowels\",\n  \"params\": [\n    {\n      \"name\": \"S\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  },\n  \"manual\": false\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

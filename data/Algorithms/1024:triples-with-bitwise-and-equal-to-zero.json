@@ -1,0 +1,99 @@
+{
+  "questionId": "1024",
+  "questionFrontendId": "982",
+  "boundTopicId": null,
+  "title": "Triples with Bitwise AND Equal To Zero",
+  "titleSlug": "triples-with-bitwise-and-equal-to-zero",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of integers <code>A</code>, find the number of&nbsp;triples of indices (i, j, k)&nbsp;such that:</p>\r\n\r\n<ul>\r\n\t<li><code>0 &lt;= i &lt; A.length</code></li>\r\n\t<li><code>0 &lt;= j &lt; A.length</code></li>\r\n\t<li><code>0 &lt;= k &lt; A.length</code></li>\r\n\t<li><code>A[i]&nbsp;&amp; A[j]&nbsp;&amp; A[k] == 0</code>, where <code>&amp;</code>&nbsp;represents the bitwise-AND operator.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[2,1,3]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">12</span>\r\n<strong>Explanation: </strong>We could choose the following i, j, k triples:\r\n(i=0, j=0, k=1) : 2 &amp; 2 &amp; 1\r\n(i=0, j=1, k=0) : 2 &amp; 1 &amp; 2\r\n(i=0, j=1, k=1) : 2 &amp; 1 &amp; 1\r\n(i=0, j=1, k=2) : 2 &amp; 1 &amp; 3\r\n(i=0, j=2, k=1) : 2 &amp; 3 &amp; 1\r\n(i=1, j=0, k=0) : 1 &amp; 2 &amp; 2\r\n(i=1, j=0, k=1) : 1 &amp; 2 &amp; 1\r\n(i=1, j=0, k=2) : 1 &amp; 2 &amp; 3\r\n(i=1, j=1, k=0) : 1 &amp; 1 &amp; 2\r\n(i=1, j=2, k=0) : 1 &amp; 3 &amp; 2\r\n(i=2, j=0, k=1) : 3 &amp; 2 &amp; 1\r\n(i=2, j=1, k=0) : 3 &amp; 1 &amp; 2\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code><font face=\"monospace\">1 &lt;= A.length &lt;= 1000</font></code></li>\r\n\t<li><code>0 &lt;= A[i] &lt; 2^16</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 77,
+  "dislikes": 96,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Santanu_Kar",
+      "profileUrl": "/santanu_kar/",
+      "avatarUrl": "https://assets.leetcode.com/users/karsantanu43/avatar_1529436039.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Flipkart\", \"slug\": \"flipkart\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int countTriplets(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int countTriplets(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def countTriplets(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def countTriplets(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint countTriplets(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int CountTriplets(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar countTriplets = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef count_triplets(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func countTriplets(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func countTriplets(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def countTriplets(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun countTriplets(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn count_triplets(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function countTriplets($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.2K\", \"totalSubmission\": \"11.2K\", \"totalAcceptedRaw\": 6181, \"totalSubmissionRaw\": 11220, \"acRate\": \"55.1%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[2,1,3]",
+  "metaData": "{\r\n  \"name\": \"countTriplets\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

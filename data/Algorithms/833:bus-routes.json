@@ -1,0 +1,111 @@
+{
+  "questionId": "833",
+  "questionFrontendId": "815",
+  "boundTopicId": null,
+  "title": "Bus Routes",
+  "titleSlug": "bus-routes",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We have a list of bus routes. Each <code>routes[i]</code> is a bus route that the i-th bus&nbsp;repeats forever. For example if <code>routes[0] = [1, 5, 7]</code>, this means that the first&nbsp;bus (0-th indexed) travels in the sequence 1-&gt;5-&gt;7-&gt;1-&gt;5-&gt;7-&gt;1-&gt;... forever.</p>\r\n\r\n<p>We start at bus stop <code>S</code> (initially not on a bus), and we want to go to bus stop <code>T</code>. Travelling by buses only, what is the least number of buses we must take to reach our destination? Return -1 if it is not possible.</p>\r\n\r\n<pre>\r\n<strong>Example:</strong>\r\n<strong>Input:</strong> \r\nroutes = [[1, 2, 7], [3, 6, 7]]\r\nS = 1\r\nT = 6\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> \r\nThe best strategy is take the first bus to the bus stop 7, then take the second bus to the bus stop 6.\r\n</pre>\r\n\r\n<p><strong>Note: </strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= routes.length &lt;= 500</code>.</li>\r\n\t<li><code>1 &lt;= routes[i].length &lt;= 500</code>.</li>\r\n\t<li><code>0 &lt;= routes[i][j] &lt; 10 ^ 6</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 555,
+  "dislikes": 20,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numBusesToDestination(vector<vector<int>>& routes, int S, int T) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numBusesToDestination(int[][] routes, int S, int T) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numBusesToDestination(self, routes, S, T):\n        \"\"\"\n        :type routes: List[List[int]]\n        :type S: int\n        :type T: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numBusesToDestination(self, routes: List[List[int]], S: int, T: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numBusesToDestination(int** routes, int routesSize, int* routesColSize, int S, int T){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumBusesToDestination(int[][] routes, int S, int T) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} routes\n * @param {number} S\n * @param {number} T\n * @return {number}\n */\nvar numBusesToDestination = function(routes, S, T) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} routes\n# @param {Integer} s\n# @param {Integer} t\n# @return {Integer}\ndef num_buses_to_destination(routes, s, t)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numBusesToDestination(_ routes: [[Int]], _ S: Int, _ T: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numBusesToDestination(routes [][]int, S int, T int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numBusesToDestination(routes: Array[Array[Int]], S: Int, T: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numBusesToDestination(routes: Array<IntArray>, S: Int, T: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_buses_to_destination(routes: Vec<Vec<i32>>, s: i32, t: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $routes\n     * @param Integer $S\n     * @param Integer $T\n     * @return Integer\n     */\n    function numBusesToDestination($routes, $S, $T) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"28.6K\", \"totalSubmission\": \"69K\", \"totalAcceptedRaw\": 28622, \"totalSubmissionRaw\": 69029, \"acRate\": \"41.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "444",
+    "canSeeDetail": true,
+    "url": "/articles/bus-routes/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Breadth First Search [Accepted]\n\n**Intuition**\n\nInstead of thinking of the stops as nodes (of a graph), think of the buses as nodes.  We want to take the least number of buses, which is a shortest path problem, conducive to using a breadth-first search.\n\n**Algorithm**\n\nWe perform a breadth first search on bus numbers.  When we start at `S`, originally we might be able to board many buses, and if we end at `T` we may have many `targets` for our goal state.\n\nOne difficulty is to efficiently decide whether two buses are connected by an edge.  They are connected if they share at least one bus stop.  Whether two lists share a common value can be done by set intersection (HashSet), or by sorting each list and using a two pointer approach.\n\nTo make our search easy, we will annotate the depth of each node: `info[0] = node, info[1] = depth`.\n\n<iframe src=\"https://leetcode.com/playground/fji6uJ5m/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"fji6uJ5m\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  Let $$N$$ denote the number of buses, and $$b_i$$ be the number of stops on the $$i$$th bus.\n\n    * To create the graph, in Python we do $$O(\\sum (N - i) b_i)$$ work (we can improve this by checking for which of `r1, r2` is smaller), while in Java we did a $$O(\\sum b_i \\log b_i)$$ sorting step, plus our searches are $$O(N \\sum b_i)$$ work.\n\n    * Our (breadth-first) search is on $$N$$ nodes, and each node could have $$N$$ edges, so it is $$O(N^2)$$.\n\n* Space Complexity: $$O(N^2 + \\sum b_i)$$ additional space complexity, the size of `graph` and `routes`.  In Java, our space complexity is $$O(N^2)$$ because we do not have an equivalent of `routes`.  Dual-pivot quicksort (as used in `Arrays.sort(int[])`) is an in-place algorithm, so in Java we did not increase our space complexity by sorting.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "439",
+      "count": 19,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2,7],[3,6,7]]\n1\n6",
+  "metaData": "{\r\n  \"name\": \"numBusesToDestination\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"routes\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"T\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

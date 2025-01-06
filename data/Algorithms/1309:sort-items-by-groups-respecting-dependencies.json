@@ -1,0 +1,105 @@
+{
+  "questionId": "1309",
+  "questionFrontendId": "1203",
+  "boundTopicId": null,
+  "title": "Sort Items by Groups Respecting Dependencies",
+  "titleSlug": "sort-items-by-groups-respecting-dependencies",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There are&nbsp;<code>n</code>&nbsp;items each&nbsp;belonging to zero or one of&nbsp;<code>m</code>&nbsp;groups where <code>group[i]</code>&nbsp;is the group that the <code>i</code>-th item belongs to and it&#39;s equal to <code>-1</code>&nbsp;if the <code>i</code>-th item belongs to no group. The items and the groups are zero indexed. A group can have no item belonging to it.</p>\n\n<p>Return a sorted list of the items such that:</p>\n\n<ul>\n\t<li>The items that belong to the same group are next to each other in the sorted list.</li>\n\t<li>There are some&nbsp;relations&nbsp;between these items where&nbsp;<code>beforeItems[i]</code>&nbsp;is a list containing all the items that should come before the&nbsp;<code>i</code>-th item in the sorted array (to the left of the&nbsp;<code>i</code>-th item).</li>\n</ul>\n\n<p>Return any solution if there is more than one solution and return an <strong>empty list</strong>&nbsp;if there is no solution.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/09/11/1359_ex1.png\" style=\"width: 191px; height: 181px;\" /></strong></p>\n\n<pre>\n<strong>Input:</strong> n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3,6],[],[],[]]\n<strong>Output:</strong> [6,3,4,1,5,2,0,7]\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3],[],[4],[]]\n<strong>Output:</strong> []\n<strong>Explanation:</strong>&nbsp;This is the same as example 1 except that 4 needs to be before 6 in the sorted list.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= m &lt;= n &lt;= 3*10^4</code></li>\n\t<li><code>group.length == beforeItems.length == n</code></li>\n\t<li><code>-1 &lt;= group[i] &lt;= m-1</code></li>\n\t<li><code>0 &lt;= beforeItems[i].length &lt;= n-1</code></li>\n\t<li><code>0 &lt;= beforeItems[i][j] &lt;= n-1</code></li>\n\t<li><code>i != beforeItems[i][j]</code></li>\n\t<li><code>beforeItems[i]&nbsp;</code>does not contain&nbsp;duplicates elements.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 97,
+  "dislikes": 22,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    },
+    {
+      "name": "Topological Sort",
+      "slug": "topological-sort"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<int> sortItems(int n, int m, vector<int>& group, vector<vector<int>>& beforeItems) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int[] sortItems(int n, int m, int[] group, List<List<Integer>> beforeItems) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def sortItems(self, n, m, group, beforeItems):\n        \"\"\"\n        :type n: int\n        :type m: int\n        :type group: List[int]\n        :type beforeItems: List[List[int]]\n        :rtype: List[int]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def sortItems(self, n: int, m: int, group: List[int], beforeItems: List[List[int]]) -> List[int]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* sortItems(int n, int m, int* group, int groupSize, int** beforeItems, int beforeItemsSize, int* beforeItemsColSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int[] SortItems(int n, int m, int[] group, IList<IList<int>> beforeItems) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number} m\n * @param {number[]} group\n * @param {number[][]} beforeItems\n * @return {number[]}\n */\nvar sortItems = function(n, m, group, beforeItems) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} m\n# @param {Integer[]} group\n# @param {Integer[][]} before_items\n# @return {Integer[]}\ndef sort_items(n, m, group, before_items)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func sortItems(_ n: Int, _ m: Int, _ group: [Int], _ beforeItems: [[Int]]) -> [Int] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func sortItems(n int, m int, group []int, beforeItems [][]int) []int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def sortItems(n: Int, m: Int, group: Array[Int], beforeItems: List[List[Int]]): Array[Int] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun sortItems(n: Int, m: Int, group: IntArray, beforeItems: List<List<Int>>): IntArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn sort_items(n: i32, m: i32, group: Vec<i32>, before_items: Vec<Vec<i32>>) -> Vec<i32> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $m\n     * @param Integer[] $group\n     * @param Integer[][] $beforeItems\n     * @return Integer[]\n     */\n    function sortItems($n, $m, $group, $beforeItems) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.4K\", \"totalSubmission\": \"5.3K\", \"totalAcceptedRaw\": 2410, \"totalSubmissionRaw\": 5342, \"acRate\": \"45.1%\"}",
+  "hints": [
+    "Think of it as a graph problem.",
+    "We need to find a topological order on the dependency graph.",
+    "Build two graphs, one for the groups and another for the items."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "8\n2\n[-1,-1,1,0,0,1,0,-1]\n[[],[6],[5],[6],[3,6],[],[],[]]",
+  "metaData": "{\n  \"name\": \"sortItems\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"m\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"group\"\n    },\n    {\n      \"type\": \"list<list<integer>>\",\n      \"name\": \"beforeItems\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer[]\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

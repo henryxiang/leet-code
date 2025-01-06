@@ -1,0 +1,72 @@
+{
+  "questionId": "608",
+  "questionFrontendId": "608",
+  "boundTopicId": null,
+  "title": "Tree Node",
+  "titleSlug": "tree-node",
+  "categoryTitle": "Database",
+  "content": "<p>Given a table <code>tree</code>, <b>id</b> is identifier of the tree node and <b>p_id</b> is its parent node&#39;s <b>id</b>.</p>\r\n\r\n<pre>\r\n+----+------+\r\n| id | p_id |\r\n+----+------+\r\n| 1  | null |\r\n| 2  | 1    |\r\n| 3  | 1    |\r\n| 4  | 2    |\r\n| 5  | 2    |\r\n+----+------+\r\n</pre>\r\nEach node in the tree can be one of three types:\r\n\r\n<ul>\r\n\t<li>Leaf: if the node is a leaf node.</li>\r\n\t<li>Root: if the node is the root of the tree.</li>\r\n\t<li>Inner: If the node is neither a leaf node nor a root node.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\nWrite a query to print the node id and the type of the node. Sort your output by the node id. The result for the above sample is:\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n+----+------+\r\n| id | Type |\r\n+----+------+\r\n| 1  | Root |\r\n| 2  | Inner|\r\n| 3  | Leaf |\r\n| 4  | Leaf |\r\n| 5  | Leaf |\r\n+----+------+\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Explanation</b></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>Node &#39;1&#39; is root node, because its parent node is NULL and it has child node &#39;2&#39; and &#39;3&#39;.</li>\r\n\t<li>Node &#39;2&#39; is inner node, because it has parent node &#39;1&#39; and child node &#39;4&#39; and &#39;5&#39;.</li>\r\n\t<li>Node &#39;3&#39;, &#39;4&#39; and &#39;5&#39; is Leaf node, because they have parent node and they don&#39;t have child node.</li>\r\n\t<br />\r\n\t<li>And here is the image of the sample tree as below:\r\n\t<p>&nbsp;</p>\r\n\r\n\t<pre>\r\n\t\t\t  1\r\n\t\t\t/   \\\r\n                      2       3\r\n                    /   \\\r\n                  4       5\r\n</pre>\r\n\r\n\t<p><b>Note</b></p>\r\n\r\n\t<p>If there is only one node on the tree, you only need to output its root attributes.</p>\r\n\t</li>\r\n</ul>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 140,
+  "dislikes": 9,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "artistscript",
+      "profileUrl": "/artistscript/",
+      "avatarUrl": "https://www.gravatar.com/avatar/1d186f42681a157b2cce3ebf9f9c0911.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.3K\", \"totalSubmission\": \"21.4K\", \"totalAcceptedRaw\": 13269, \"totalSubmissionRaw\": 21418, \"acRate\": \"62.0%\"}",
+  "hints": [
+    "You can judge the node type by querying whether the node's id shows up in p_id column and whether the node's p_id is null."
+  ],
+  "solution": {
+    "id": "201",
+    "canSeeDetail": true,
+    "url": "/articles/tree-node/",
+    "content": "[TOC]\n\n## Solution\n---\n\n#### Approach I: Using `UNION` [Accepted]\n\n**Intuition**\n\nWe can print the node type by judging every record by its definition in this table.\n* Root: it does not have a parent node at all\n* Inner: it is the parent node of some nodes, and it has a not NULL parent itself.\n* Leaf: rest of the cases other than above two\n\n**Algorithm**\n\nBy transiting the node type definition, we can have the following code.\n\nFor the root node, it does not have a parent.\n```sql\nSELECT\n    id, 'Root' AS Type\nFROM\n    tree\nWHERE\n    p_id IS NULL\n```\n\nFor the leaf nodes, they do not have any children, and it has a parent.\n```sql\nSELECT\n    id, 'Leaf' AS Type\nFROM\n    tree\nWHERE\n    id NOT IN (SELECT DISTINCT\n            p_id\n        FROM\n            tree\n        WHERE\n            p_id IS NOT NULL)\n        AND p_id IS NOT NULL\n```\n\nFor the inner nodes, they have have some children and a parent.\n```sql\nSELECT\n    id, 'Inner' AS Type\nFROM\n    tree\nWHERE\n    id IN (SELECT DISTINCT\n            p_id\n        FROM\n            tree\n        WHERE\n            p_id IS NOT NULL)\n        AND p_id IS NOT NULL\n```\nSo, one solution to the problem is to combine these cases together using `UNION`.\n\n**MySQL**\n\n```sql\nSELECT\n    id, 'Root' AS Type\nFROM\n    tree\nWHERE\n    p_id IS NULL\n\nUNION\n\nSELECT\n    id, 'Leaf' AS Type\nFROM\n    tree\nWHERE\n    id NOT IN (SELECT DISTINCT\n            p_id\n        FROM\n            tree\n        WHERE\n            p_id IS NOT NULL)\n        AND p_id IS NOT NULL\n\nUNION\n\nSELECT\n    id, 'Inner' AS Type\nFROM\n    tree\nWHERE\n    id IN (SELECT DISTINCT\n            p_id\n        FROM\n            tree\n        WHERE\n            p_id IS NOT NULL)\n        AND p_id IS NOT NULL\nORDER BY id;\n```\n\n#### Approach II: Using flow control statement `CASE` [Accepted]\n\n**Algorithm**\n\nThe idea is similar with the above solution but the code is simpler by utilizing the flow control statements, which is effective to output differently based on different input values. In this case, we can use [`CASE`](https://dev.mysql.com/doc/refman/5.7/en/case.html) statement.\n\n**MySQL**\n\n```sql\nSELECT\n    id AS `Id`,\n    CASE\n        WHEN tree.id = (SELECT atree.id FROM tree atree WHERE atree.p_id IS NULL)\n          THEN 'Root'\n        WHEN tree.id IN (SELECT atree.p_id FROM tree atree)\n          THEN 'Inner'\n        ELSE 'Leaf'\n    END AS Type\nFROM\n    tree\nORDER BY `Id`\n;\n```\n>MySQL provides different flow control statements besides `CASE`. You can try to rewrite the slution above using [`IF`](https://dev.mysql.com/doc/refman/5.7/en/control-flow-functions.html#function_if) flow control statement.\n\n#### Approach III: Using `IF` function [Accepted]\n\n**Algorithm**\n\nAlso, we can use a single [`IF`](https://dev.mysql.com/doc/refman/5.7/en/control-flow-functions.html#function_if) function instead of the complex flow control statements.\n\n**MySQL**\n\n```sql\nSELECT\n    atree.id,\n    IF(ISNULL(atree.p_id),\n        'Root',\n        IF(atree.id IN (SELECT p_id FROM tree), 'Inner','Leaf')) Type\nFROM\n    tree atree\nORDER BY atree.id\n```\n>Note: This solution was inspired by [@richarddia](https://discuss.leetcode.com/user/richarddia)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "195",
+      "count": 8,
+      "average": 4.75,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"tree\": [\"id\", \"p_id\"]}, \"rows\": {\"tree\": [[1,null],[2,1],[3,1],[4,2],[5,2]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists tree (id int, p_id int)\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table tree (id int, p_id int)\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table tree (id int, p_id int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists tree (id int, p_id int)",
+    "Truncate table tree",
+    "insert into tree (id, p_id) values ('1', 'None')",
+    "insert into tree (id, p_id) values ('2', '1')",
+    "insert into tree (id, p_id) values ('3', '1')",
+    "insert into tree (id, p_id) values ('4', '2')",
+    "insert into tree (id, p_id) values ('5', '2')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

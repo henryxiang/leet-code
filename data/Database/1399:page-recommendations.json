@@ -1,0 +1,71 @@
+{
+  "questionId": "1399",
+  "questionFrontendId": "1264",
+  "boundTopicId": null,
+  "title": "Page Recommendations",
+  "titleSlug": "page-recommendations",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Friendship</code></p>\r\n\r\n<pre>\r\n+---------------+---------+\r\n| Column Name   | Type    |\r\n+---------------+---------+\r\n| user1_id      | int     |\r\n| user2_id      | int     |\r\n+---------------+---------+\r\n(user1_id, user2_id) is the primary key for this table.\r\nEach row of this table indicates that there is a friendship relation between user1_id and user2_id.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Table: <code>Likes</code></p>\r\n\r\n<pre>\r\n+-------------+---------+\r\n| Column Name | Type    |\r\n+-------------+---------+\r\n| user_id     | int     |\r\n| page_id     | int     |\r\n+-------------+---------+\r\n(user_id, page_id) is the primary key for this table.\r\nEach row of this table indicates that user_id likes page_id.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Write an SQL query to recommend pages to the user with <code>user_id</code> = 1 using the pages that your friends liked.&nbsp;It should not recommend pages you already liked.</p>\r\n\r\n<p>Return result table in any order without duplicates.</p>\r\n\r\n<p>The query result format is in the following example:</p>\r\n\r\n<pre>\r\nFriendship table:\r\n+----------+----------+\r\n| user1_id | user2_id |\r\n+----------+----------+\r\n| 1        | 2        |\r\n| 1        | 3        |\r\n| 1        | 4        |\r\n| 2        | 3        |\r\n| 2        | 4        |\r\n| 2        | 5        |\r\n| 6        | 1        |\r\n+----------+----------+\r\n \r\nLikes table:\r\n+---------+---------+\r\n| user_id | page_id |\r\n+---------+---------+\r\n| 1       | 88      |\r\n| 2       | 23      |\r\n| 3       | 24      |\r\n| 4       | 56      |\r\n| 5       | 11      |\r\n| 6       | 33      |\r\n| 2       | 77      |\r\n| 3       | 77      |\r\n| 6       | 88      |\r\n+---------+---------+\r\n\r\nResult table:\r\n+------------------+\r\n| recommended_page |\r\n+------------------+\r\n| 23               |\r\n| 24               |\r\n| 56               |\r\n| 33               |\r\n| 77               |\r\n+------------------+\r\nUser one is friend with users 2, 3, 4 and 6.\r\nSuggested pages are 23 from user 2, 24 from user 3, 56 from user 3 and 33 from user 6.\r\nPage 77 is suggested from both user 2 and user 3.\r\nPage 88 is not suggested because user 1 already likes it.\r\n</pre>",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 14,
+  "dislikes": 1,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "WolfPack17",
+      "profileUrl": "/wolfpack17/",
+      "avatarUrl": "https://www.gravatar.com/avatar/e7279fd72b67437ac229e05f3dad6673.png?s=200"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"948\", \"totalSubmission\": \"1.4K\", \"totalAcceptedRaw\": 948, \"totalSubmissionRaw\": 1443, \"acRate\": \"65.7%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Friendship\":[\"user1_id\",\"user2_id\"],\"Likes\":[\"user_id\",\"page_id\"]},\"rows\":{\"Friendship\":[[1,2],[1,3],[1,4],[2,3],[2,4],[2,5],[6,1]],\"Likes\":[[1,88],[2,23],[3,24],[4,56],[5,11],[6,33],[2,77],[3,77],[6,88]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Friendship (user1_id int, user2_id int)\",\n    \"Create table If Not Exists Likes (user_id int, page_id int)\"\n  ],\n  \"mssql\": [\n    \"Create table Friendship (user1_id int, user2_id int)\",\n    \"Create table Likes (user_id int, page_id int)\"\n  ],\n  \"oraclesql\": [\n    \"Create table Friendship (user1_id int, user2_id int)\",\n    \"Create table Likes (user_id int, page_id int)\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Friendship (user1_id int, user2_id int)",
+    "Create table If Not Exists Likes (user_id int, page_id int)",
+    "Truncate table Friendship",
+    "insert into Friendship (user1_id, user2_id) values ('1', '2')",
+    "insert into Friendship (user1_id, user2_id) values ('1', '3')",
+    "insert into Friendship (user1_id, user2_id) values ('1', '4')",
+    "insert into Friendship (user1_id, user2_id) values ('2', '3')",
+    "insert into Friendship (user1_id, user2_id) values ('2', '4')",
+    "insert into Friendship (user1_id, user2_id) values ('2', '5')",
+    "insert into Friendship (user1_id, user2_id) values ('6', '1')",
+    "Truncate table Likes",
+    "insert into Likes (user_id, page_id) values ('1', '88')",
+    "insert into Likes (user_id, page_id) values ('2', '23')",
+    "insert into Likes (user_id, page_id) values ('3', '24')",
+    "insert into Likes (user_id, page_id) values ('4', '56')",
+    "insert into Likes (user_id, page_id) values ('5', '11')",
+    "insert into Likes (user_id, page_id) values ('6', '33')",
+    "insert into Likes (user_id, page_id) values ('2', '77')",
+    "insert into Likes (user_id, page_id) values ('3', '77')",
+    "insert into Likes (user_id, page_id) values ('6', '88')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

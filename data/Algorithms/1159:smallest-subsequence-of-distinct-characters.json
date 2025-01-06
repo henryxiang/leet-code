@@ -1,0 +1,101 @@
+{
+  "questionId": "1159",
+  "questionFrontendId": "1081",
+  "boundTopicId": null,
+  "title": "Smallest Subsequence of Distinct Characters",
+  "titleSlug": "smallest-subsequence-of-distinct-characters",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Return the lexicographically smallest subsequence of <code>text</code> that contains all the distinct characters of <code>text</code> exactly once.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">&quot;cdadabcc&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;adbc&quot;</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">&quot;abcd&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">&quot;abcd&quot;</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">&quot;ecbacba&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">&quot;eacb&quot;</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">&quot;leetcode&quot;</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">&quot;letcod&quot;</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= text.length &lt;= 1000</code></li>\r\n\t<li><code>text</code> consists of lowercase English letters.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n</div>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 229,
+  "dislikes": 46,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "devendrakota21",
+      "profileUrl": "/devendrakota21/",
+      "avatarUrl": "https://assets.leetcode.com/users/devendrakota21/avatar_1554025441.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"FactSet\", \"slug\": \"factset\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    string smallestSubsequence(string text) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String smallestSubsequence(String text) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestSubsequence(self, text):\n        \"\"\"\n        :type text: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestSubsequence(self, text: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * smallestSubsequence(char * text){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public string SmallestSubsequence(string text) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} text\n * @return {string}\n */\nvar smallestSubsequence = function(text) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} text\r\n# @return {String}\r\ndef smallest_subsequence(text)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func smallestSubsequence(_ text: String) -> String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestSubsequence(text string) string {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def smallestSubsequence(text: String): String = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun smallestSubsequence(text: String): String {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_subsequence(text: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $text\n     * @return String\n     */\n    function smallestSubsequence($text) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"6.3K\", \"totalSubmission\": \"13.9K\", \"totalAcceptedRaw\": 6299, \"totalSubmissionRaw\": 13854, \"acRate\": \"45.5%\"}",
+  "hints": [
+    "Greedily try to add one missing character. How to check if adding some character will not cause problems ? Use bit-masks to check whether you will be able to complete the sub-sequence if you add the character at some index i."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"cdadabcc\"",
+  "metaData": "{\r\n  \"name\": \"smallestSubsequence\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"text\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

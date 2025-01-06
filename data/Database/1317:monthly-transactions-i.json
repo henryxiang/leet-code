@@ -1,0 +1,51 @@
+{
+  "questionId": "1317",
+  "questionFrontendId": "1193",
+  "boundTopicId": null,
+  "title": "Monthly Transactions I",
+  "titleSlug": "monthly-transactions-i",
+  "categoryTitle": "Database",
+  "content": "<p>Table: <code>Transactions</code></p>\n\n<pre>\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| id            | int     |\n| country       | varchar |\n| state         | enum    |\n| amount        | int     |\n| trans_date    | date    |\n+---------------+---------+\nid is the primary key of this table.\nThe table has information about incoming transactions.\nThe state column is an enum of type [&quot;approved&quot;, &quot;declined&quot;].\n</pre>\n\n<p>&nbsp;</p>\n\n<p>Write an SQL query to find for each month and country, the number of transactions and their total amount, the number of approved transactions and their total amount.</p>\n\n<p>The query result format is in the following example:</p>\n\n<pre>\n<code>Transactions</code> table:\n+------+---------+----------+--------+------------+\n| id   | country | state    | amount | trans_date |\n+------+---------+----------+--------+------------+\n| 121  | US      | approved | 1000   | 2018-12-18 |\n| 122  | US      | declined | 2000   | 2018-12-19 |\n| 123  | US      | approved | 2000   | 2019-01-01 |\n| 124  | DE      | approved | 2000   | 2019-01-07 |\n+------+---------+----------+--------+------------+\n\nResult table:\n+----------+---------+-------------+----------------+--------------------+-----------------------+\n| month    | country | trans_count | approved_count | trans_total_amount | approved_total_amount |\n+----------+---------+-------------+----------------+--------------------+-----------------------+\n| 2018-12  | US      | 2           | 1              | 3000               | 1000                  |\n| 2019-01  | US      | 1           | 1              | 2000               | 2000                  |\n| 2019-01  | DE      | 1           | 1              | 2000               | 2000                  |\n+----------+---------+-------------+----------------+--------------------+-----------------------+\n</pre>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 17,
+  "dislikes": 1,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Monthly Transactions II\", \"titleSlug\": \"monthly-transactions-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"2.3K\", \"totalSubmission\": \"3.5K\", \"totalAcceptedRaw\": 2282, \"totalSubmissionRaw\": 3469, \"acRate\": \"65.8%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"Transactions\":[\"id\",\"country\",\"state\",\"amount\",\"trans_date\"]},\"rows\":{\"Transactions\":[[121,\"US\",\"approved\",1000,\"2018-12-18\"],[122,\"US\",\"declined\",2000,\"2018-12-19\"],[123,\"US\",\"approved\",2000,\"2019-01-01\"],[124,\"DE\",\"approved\",2000,\"2019-01-07\"]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"create table if not exists Transactions (id int, country varchar(4), state enum('approved', 'declined'), amount int, trans_date date)\"\n  ],\n  \"mssql\": [\n    \"create table Transactions (id int, country varchar(4), state varchar(10) check(state in ('approved', 'declined')), amount int, trans_date date)\"\n  ],\n  \"oraclesql\": [\n    \"create table Transactions (id int, country varchar(4), state varchar(10) check(state in ('approved', 'declined')), amount int, trans_date date)\",\n    \"ALTER SESSION SET nls_date_format='YYYY-MM-DD'\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "create table if not exists Transactions (id int, country varchar(4), state enum('approved', 'declined'), amount int, trans_date date)",
+    "Truncate table Transactions",
+    "insert into Transactions (id, country, state, amount, trans_date) values ('121', 'US', 'approved', '1000', '2018-12-18')",
+    "insert into Transactions (id, country, state, amount, trans_date) values ('122', 'US', 'declined', '2000', '2018-12-19')",
+    "insert into Transactions (id, country, state, amount, trans_date) values ('123', 'US', 'approved', '2000', '2019-01-01')",
+    "insert into Transactions (id, country, state, amount, trans_date) values ('124', 'DE', 'approved', '2000', '2019-01-07')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

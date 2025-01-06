@@ -1,0 +1,83 @@
+{
+  "questionId": "786",
+  "questionFrontendId": "702",
+  "boundTopicId": null,
+  "title": "Search in a Sorted Array of Unknown Size",
+  "titleSlug": "search-in-a-sorted-array-of-unknown-size",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an&nbsp;integer array sorted in ascending order, write a function to search <code>target</code> in <code>nums</code>.&nbsp; If <code>target</code> exists, then return its index, otherwise return <code>-1</code>. <strong>However, the array size is unknown to you</strong>. You may only access the array using an <code>ArrayReader</code>&nbsp;interface, where&nbsp;<code>ArrayReader.get(k)</code> returns the element of the array at index <code>k</code>&nbsp;(0-indexed).</p>\r\n\r\n<p>You may assume all integers in the array are less than&nbsp;<code>10000</code>, and if you access the array out of bounds, <code>ArrayReader.get</code> will return <code>2147483647</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>array</code> = [-1,0,3,5,9,12], <code>target</code> = 9\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> 9 exists in <code>nums</code> and its index is 4\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> <code>array</code> = [-1,0,3,5,9,12], <code>target</code> = 2\r\n<strong>Output:</strong> -1\r\n<strong>Explanation:</strong> 2 does not exist in <code>nums</code> so return -1</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>You may assume that all elements in the array are unique.</li>\r\n\t<li>The value of each element in the array&nbsp;will be in the range <code>[-9999, 9999]</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 221,
+  "dislikes": 18,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Binary Search\", \"titleSlug\": \"binary-search\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "// Forward declaration of ArrayReader class.\r\nclass ArrayReader;\r\n\r\nclass Solution {\r\npublic:\r\n    int search(const ArrayReader& reader, int target) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\r\n    public int search(ArrayReader reader, int target) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def search(self, reader, target):\r\n        \"\"\"\r\n        :type reader: ArrayReader\r\n        :type target: int\r\n        :rtype: int\r\n        \"\"\"\r\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def search(self, reader, target):\r\n        \"\"\"\r\n        :type reader: ArrayReader\r\n        :type target: int\r\n        :rtype: int\r\n        \"\"\"\r\n        "
+    },
+    {
+      "lang": "C",
+      "code": "// Forward declaration of ArrayReader's getElement API.\r\nint getElement(struct ArrayReader* reader, int index);\r\n\r\nint search(struct"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {ArrayReader} reader\r\n * @param {number} target\r\n * @return {number}\r\n */\r\nvar search = function (reader, target) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Go",
+      "code": "func search(reader ArrayReader, target int) int {\r\n    \r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.7K\", \"totalSubmission\": \"26.5K\", \"totalAcceptedRaw\": 16746, \"totalSubmissionRaw\": 26518, \"acRate\": \"63.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "771",
+    "canSeeDetail": true,
+    "url": "/articles/search-in-a-sorted-array-of-unknown-size/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Approach 1: Binary Search \r\n\r\n**Split into Two Subproblems**\r\n\r\nThe array is sorted, i.e. one could \r\ntry to fit into a logarithmic time complexity.\r\nThat means two subproblems, and both should be done\r\nin a logarithmic time:\r\n\r\n- Define search limits, i.e. left and right boundaries for the\r\nsearch.\r\n\r\n- Perform binary search in the defined boundaries.\r\n\r\n![limits](../Figures/702/way.png)\r\n\r\n**Define Search Boundaries**\r\n\r\nThis is a key subproblem here. \r\n\r\nThe idea is quite simple.\r\nLet's take two first indexes, 0 and 1, as left and right boundaries. \r\nIf the target value is not among these zeroth and the first element, \r\nthen it's outside the boundaries, on the right. \r\n\r\nThat means that the left boundary could moved to the right,\r\nand the right boundary should be extended. To keep logarithmic time\r\ncomplexity, let's extend it twice as far: `right = right * 2`. \r\n\r\n![limits](../Figures/702/limits.png)\r\n\r\nIf the target now is less than the right element, we're done, \r\nthe boundaries are set. If not, repeat these two steps till the\r\nboundaries are established:\r\n\r\n- Move the left boundary to the right: `left = right`.\r\n\r\n- Extend the right boundary: `right = right * 2`.  \r\n\r\n![limits](../Figures/702/done.png)\r\n\r\n**Binary Search**\r\n\r\n[Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm)\r\nis a textbook algorithm with a logarithmic time complexity.\r\nIt's based on the idea to \r\ncompare the target value to the middle element of the array.\r\n\r\n- If the target value is equal to the middle element - we're done.\r\n\r\n- If the target value is smaller - continue to search on the left.\r\n\r\n- If the target value is larger - continue to search on the right.\r\n\r\n![limits](../Figures/702/binary2.png)\r\n\r\n**Prerequisites: left and right shifts**\r\n\r\nTo speed up, one could use here [bitwise shifts](https://wiki.python.org/moin/BitwiseOperators):\r\n\r\n- Left shift: `x << 1`. The same as multiplying by 2: `x * 2`.\r\n\r\n- Right shift: `x >> 1`. The same as dividing by 2: `x / 2`.\r\n\r\n**Algorithm**\r\n\r\nDefine boundaries:\r\n\r\n- Initiate `left = 0` and `right = 1`.\r\n\r\n- While target is on the right to the right boundary: `reader.get(right) < target`:\r\n\r\n    - Set left boundary equal to the right one: `left = right`.\r\n    \r\n    - Extend right boundary: `right *= 2`. To speed up, use right shift\r\n    instead of multiplication: `right <<= 1`. \r\n    \r\n- Now the target is between left and right boundaries. \r\n\r\nBinary Search:\r\n\r\n- While `left <= right`:\r\n\r\n    - Pick a pivot index in the middle: `pivot = (left + right) / 2`.\r\n    To avoid overflow, use the form `pivot = left + ((right - left) >> 1)`\r\n    instead of straightforward expression above. \r\n     \r\n    - Retrieve the element at this index: `num = reader.get(pivot)`.  \r\n    \r\n    - Compare middle element `num` to the target value.\r\n    \r\n        - If the middle element _is_ the target `num == target`: \r\n        return `pivot`. \r\n        \r\n        - If the target is not yet found: \r\n        \r\n            - If `num > target`, continue to search on the left \r\n            `right = pivot - 1`.\r\n            \r\n            - Else continue to search on the right \r\n            `left = pivot + 1`.\r\n    \r\n- We're here because target is not found. Return -1. \r\n            \r\n**Implementation**\r\n\r\n\r\n\r\n<iframe src=\"https://leetcode.com/playground/4GzBKww3/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"4GzBKww3\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$\\mathcal{O}(\\log T)$$, where $$T$$ is an index of \r\ntarget value. \r\n\r\n    There are two operations here: to define search boundaries and \r\n    to perform binary search. \r\n    \r\n    Let's first find the number of steps k\r\n    to setup the boundaries. On the first step, the boundaries are\r\n    $$2^0 .. 2^{0 + 1}$$, on the second step $$2^1 .. 2^{1 + 1}$$, etc. \r\n    When everything is done, the boundaries are $$2^k .. 2^{k + 1}$$\r\n    and $$2^k < T \\le 2^{k + 1}$$. That means one needs $$k = \\log T$$\r\n    steps to setup the boundaries, that means $$\\mathcal{O}(\\log T)$$\r\n    time complexity.  \r\n    \r\n    Now let's discuss the complexity of the binary search.\r\n    There are $$2^{k + 1} - 2^k = 2^k$$ elements in the boundaries,\r\n    i.e. $$2^{\\log T} = T$$ elements. \r\n    [As discussed](https://leetcode.com/articles/binary-search/),\r\n    binary search has logarithmic complexity, that results in\r\n    $$\\mathcal{O}(\\log T)$$ time complexity.  \r\n     \r\n* Space complexity : $$\\mathcal{O}(1)$$ since it's a constant space\r\nsolution.\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "756",
+      "count": 17,
+      "average": 4.882,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[-1,0,3,5,9,12]\n9",
+  "metaData": "{\n  \"name\": \"search\",\n  \"params\": [\n    {\n      \"name\": \"secret\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"name\": \"target\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  },\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"c\",\n    \"javascript\",\n    \"golang\",\n    \"python3\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

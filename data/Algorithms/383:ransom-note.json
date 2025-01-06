@@ -1,0 +1,93 @@
+{
+  "questionId": "383",
+  "questionFrontendId": "383",
+  "boundTopicId": null,
+  "title": "Ransom Note",
+  "titleSlug": "ransom-note",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom \r\nnote can be constructed from the magazines ; otherwise, it will return false. \r\n</p>\r\n<p>\r\nEach letter in the magazine string can only be used once in your ransom note.\r\n</p>\r\n\r\n<p><b>Note:</b><br />\r\nYou may assume that both strings contain only lowercase letters.\r\n</p>\r\n\r\n<pre>\r\ncanConstruct(\"a\", \"b\") -> false\r\ncanConstruct(\"aa\", \"ab\") -> false\r\ncanConstruct(\"aa\", \"aab\") -> true\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 402,
+  "dislikes": 149,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Stickers to Spell Word\", \"titleSlug\": \"stickers-to-spell-word\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Hulu\", \"slug\": \"hulu\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool canConstruct(string ransomNote, string magazine) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean canConstruct(String ransomNote, String magazine) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canConstruct(self, ransomNote, magazine):\n        \"\"\"\n        :type ransomNote: str\n        :type magazine: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canConstruct(self, ransomNote: str, magazine: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool canConstruct(char * ransomNote, char * magazine){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CanConstruct(string ransomNote, string magazine) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} ransomNote\n * @param {string} magazine\n * @return {boolean}\n */\nvar canConstruct = function(ransomNote, magazine) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} ransom_note\n# @param {String} magazine\n# @return {Boolean}\ndef can_construct(ransom_note, magazine)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canConstruct(_ ransomNote: String, _ magazine: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canConstruct(ransomNote string, magazine string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canConstruct(ransomNote: String, magazine: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canConstruct(ransomNote: String, magazine: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_construct(ransom_note: String, magazine: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $ransomNote\n     * @param String $magazine\n     * @return Boolean\n     */\n    function canConstruct($ransomNote, $magazine) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"132.4K\", \"totalSubmission\": \"258.7K\", \"totalAcceptedRaw\": 132401, \"totalSubmissionRaw\": 258718, \"acRate\": \"51.2%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"a\"\n\"b\"",
+  "metaData": "{\r\n  \"name\": \"canConstruct\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"ransomNote\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"magazine\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

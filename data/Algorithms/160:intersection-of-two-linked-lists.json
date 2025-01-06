@@ -1,0 +1,87 @@
+{
+  "questionId": "160",
+  "questionFrontendId": "160",
+  "boundTopicId": null,
+  "title": "Intersection of Two Linked Lists",
+  "titleSlug": "intersection-of-two-linked-lists",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Write a program to find the node at which the intersection of two singly linked lists begins.</p>\r\n\r\n<p>For example, the following two linked lists:</p>\r\n<a href=\"https://assets.leetcode.com/uploads/2018/12/13/160_statement.png\" target=\"_blank\"><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/13/160_statement.png\" style=\"margin-top: 10px; margin-bottom: 10px; width: 400px; height: 130px;\" /></a>\r\n\r\n<p>begin to intersect at node c1.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n<a href=\"https://assets.leetcode.com/uploads/2018/12/13/160_example_1.png\" target=\"_blank\"><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/13/160_example_1.png\" style=\"margin-top: 10px; margin-bottom: 10px; width: 400px; height: 130px;\" /></a>\r\n\r\n<pre>\r\n<strong>Input: </strong>intersectVal = 8, listA = [4,1,8,4,5], listB = [5,0,1,8,4,5], skipA = 2, skipB = 3\r\n<strong>Output:</strong> Reference of the node with value = 8\r\n<strong>Input Explanation:</strong> The intersected node&#39;s value is 8 (note that this must not be 0 if the two lists intersect). From the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,0,1,8,4,5]. There are 2 nodes before the intersected node in A; There are 3 nodes before the intersected node in B.</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n<a href=\"https://assets.leetcode.com/uploads/2018/12/13/160_example_2.png\" target=\"_blank\"><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/13/160_example_2.png\" style=\"margin-top: 10px; margin-bottom: 10px; width: 350px; height: 136px;\" /></a>\r\n\r\n<pre>\r\n<strong>Input: </strong>intersectVal&nbsp;= 2, listA = [0,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1\r\n<strong>Output:</strong> Reference of the node with value = 2\r\n<strong>Input Explanation:</strong>&nbsp;The intersected node&#39;s value is 2 (note that this must not be 0 if the two lists intersect). From the head of A, it reads as [0,9,1,2,4]. From the head of B, it reads as [3,2,4]. There are 3 nodes before the intersected node in A; There are 1 node before the intersected node in B.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n<a href=\"https://assets.leetcode.com/uploads/2018/12/13/160_example_3.png\" target=\"_blank\"><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/13/160_example_3.png\" style=\"margin-top: 10px; margin-bottom: 10px; width: 200px; height: 126px;\" /></a>\r\n\r\n<pre>\r\n<strong>Input: </strong>intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2\r\n<strong>Output:</strong> null\r\n<strong>Input Explanation:</strong> From the head of A, it reads as [2,6,4]. From the head of B, it reads as [1,5]. Since the two lists do not intersect, intersectVal must be 0, while skipA and skipB can be arbitrary values.\r\n<strong>Explanation:</strong> The two lists do not intersect, so return null.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Notes:</b></p>\r\n\r\n<ul>\r\n\t<li>If the two linked lists have no intersection at all, return <code>null</code>.</li>\r\n\t<li>The linked lists must retain their original structure after the function returns.</li>\r\n\t<li>You may assume there are no cycles anywhere in the entire linked structure.</li>\r\n\t<li>Your code should preferably run in O(n) time and use only O(1) memory.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 2700,
+  "dislikes": 281,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Minimum Index Sum of Two Lists\", \"titleSlug\": \"minimum-index-sum-of-two-lists\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "stellari",
+      "profileUrl": "/stellari/",
+      "avatarUrl": "https://www.gravatar.com/avatar/b0d4a14eb057dcec3fd0f06001a3657c.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Linked List",
+      "slug": "linked-list"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Redfin\", \"slug\": \"redfin\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode(int x) : val(x), next(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode(int x) {\n *         val = x;\n *         next = null;\n *     }\n * }\n */\npublic class Solution {\n    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for singly-linked list.\n# class ListNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution(object):\n    def getIntersectionNode(self, headA, headB):\n        \"\"\"\n        :type head1, head1: ListNode\n        :rtype: ListNode\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\nclass Solution:\n    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     struct ListNode *next;\n * };\n */\nstruct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *headB) {\n    \n}"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public ListNode GetIntersectionNode(ListNode headA, ListNode headB) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for singly-linked list.\n * function ListNode(val) {\n *     this.val = val;\n *     this.next = null;\n * }\n */\n\n/**\n * @param {ListNode} headA\n * @param {ListNode} headB\n * @return {ListNode}\n */\nvar getIntersectionNode = function(headA, headB) {\n    \n};"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc getIntersectionNode(headA, headB *ListNode) *ListNode {\n    \n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"376.1K\", \"totalSubmission\": \"1M\", \"totalAcceptedRaw\": 376080, \"totalSubmissionRaw\": 1017796, \"acRate\": \"37.0%\"}",
+  "hints": [],
+  "solution": {
+    "id": "18",
+    "canSeeDetail": true,
+    "url": "/articles/intersection-of-two-linked-lists/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach 1: Brute Force\n\nFor each node a<sub>i</sub> in list A, traverse the entire list B and check if any node in list B coincides with a<sub>i</sub>.\n\n**Complexity Analysis**\n\n* Time complexity : $$O(mn)$$.\n\n* Space complexity : $$O(1)$$.\n<br />\n<br />\n---\n#### Approach 2: Hash Table\n\nTraverse list A and store the address / reference to each node in a hash set. Then check every node b<sub>i</sub> in list B: if b<sub>i</sub> appears in the hash set, then b<sub>i</sub> is the intersection node.\n\n**Complexity Analysis**\n\n* Time complexity : $$O(m+n)$$.\n\n* Space complexity : $$O(m)$$ or $$O(n)$$.\n<br />\n<br />\n---\n#### Approach 3: Two Pointers\n\n- Maintain two pointers $$pA$$ and $$pB$$ initialized at the head of A and B, respectively. Then let them both traverse through the lists, one node at a time.\n- When $$pA$$ reaches the end of a list, then redirect it to the head of B (yes, B, that's right.); similarly when $$pB$$ reaches the end of a list, redirect it the head of A.\n- If at any point $$pA$$ meets $$pB$$, then $$pA$$/$$pB$$ is the intersection node.\n- To see why the above trick would work, consider the following two lists: A = {1,3,5,7,9,11} and B = {2,4,9,11}, which are intersected at node '9'. Since B.length (=4) < A.length (=6), $$pB$$ would reach the end of the merged list first, because $$pB$$ traverses exactly 2 nodes less than $$pA$$ does. By redirecting $$pB$$ to head A, and $$pA$$ to head B, we now ask $$pB$$ to travel exactly 2 more nodes than $$pA$$ would. So in the second iteration, they are guaranteed to reach the intersection node at the same time.\n- If two lists have intersection, then their last nodes must be the same one. So when $$pA$$/$$pB$$ reaches the end of a list, record the last element of A/B respectively. If the two last elements are not the same one, then the two lists have no intersections.\n\n**Complexity Analysis**\n\n* Time complexity : $$O(m+n)$$.\n\n* Space complexity : $$O(1)$$.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "10",
+      "count": 162,
+      "average": 4.117,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "8\n[4,1,8,4,5]\n[5,0,1,8,4,5]\n2\n3",
+  "metaData": "{\n  \"name\": \"getIntersectionNode\",\n  \"params\": [\n    {\n      \"name\": \"intersectVal\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"listA\",\n      \"type\": \"ListNode\"\n    },\n    {\n      \"name\": \"listB\",\n      \"type\": \"ListNode\"\n    },\n    {\n      \"name\": \"skipA\",\n      \"type\": \"integer\"\n    },\n    {\n      \"name\": \"skipB\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"ListNode\"\n  },\n  \"languages\": [\n    \"cpp\",\n    \"java\",\n    \"python\",\n    \"c\",\n    \"csharp\",\n    \"javascript\",\n    \"golang\",\n    \"python3\"\n  ],\n  \"manual\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

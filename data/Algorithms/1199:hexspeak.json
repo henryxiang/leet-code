@@ -1,0 +1,101 @@
+{
+  "questionId": "1199",
+  "questionFrontendId": "1271",
+  "boundTopicId": null,
+  "title": "Hexspeak",
+  "titleSlug": "hexspeak",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A decimal number can be converted to its&nbsp;<em>Hexspeak representation</em>&nbsp;by first converting it to an uppercase hexadecimal string, then replacing all occurrences of the digit <code>0</code> with the letter <code>O</code>, and the digit <code>1</code> with the letter <code>I</code>.&nbsp; Such a representation&nbsp;is <em>valid</em>&nbsp;if and only if it consists only of the letters in the set <code>{&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;, &quot;I&quot;, &quot;O&quot;}</code>.</p>\n\n<p>Given a string <code>num</code>&nbsp;representing a decimal integer <code>N</code>, return the Hexspeak representation of <code>N</code> if it is valid, otherwise return <code>&quot;ERROR&quot;</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;257&quot;\n<strong>Output:</strong> &quot;IOI&quot;\n<b>Explanation: </b> 257 is 101 in hexadecimal.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;3&quot;\n<strong>Output:</strong> &quot;ERROR&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= N &lt;= 10^12</code></li>\n\t<li>There are no leading zeros in the given string.</li>\n\t<li>All answers must be in uppercase letters.</li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 16,
+  "dislikes": 26,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Virtu Financial\", \"slug\": \"virtu\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string toHexspeak(string num) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String toHexspeak(String num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def toHexspeak(self, num):\n        \"\"\"\n        :type num: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def toHexspeak(self, num: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * toHexspeak(char * num){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string ToHexspeak(string num) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} num\n * @return {string}\n */\nvar toHexspeak = function(num) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} num\n# @return {String}\ndef to_hexspeak(num)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func toHexspeak(_ num: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func toHexspeak(num string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def toHexspeak(num: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun toHexspeak(num: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn to_hexspeak(num: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $num\n     * @return String\n     */\n    function toHexspeak($num) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3K\", \"totalSubmission\": \"5.7K\", \"totalAcceptedRaw\": 2962, \"totalSubmissionRaw\": 5698, \"acRate\": \"52.0%\"}",
+  "hints": [
+    "Convert the given number to hexadecimal.",
+    "Replace all 0 and 1 with 'O' and 'I'.",
+    "Check if the final string has any numerical digits."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"257\"",
+  "metaData": "{\n  \"name\": \"toHexspeak\",\n  \"params\": [\n    {\n      \"name\": \"num\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

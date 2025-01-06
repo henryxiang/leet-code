@@ -1,0 +1,66 @@
+{
+  "questionId": "773",
+  "questionFrontendId": "558",
+  "boundTopicId": null,
+  "title": "Quad Tree Intersection",
+  "titleSlug": "quad-tree-intersection",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A quadtree is a tree data in which each internal node has exactly four children: <code>topLeft</code>, <code>topRight</code>, <code>bottomLeft</code> and <code>bottomRight</code>. Quad trees are often used to partition a two-dimensional space by recursively subdividing it into four quadrants or regions.</p>\r\n\r\n<p>We want to store True/False information in our quad tree. The quad tree is used to represent a <code>N * N</code> boolean grid. For each node, it will be subdivided into four children nodes <strong>until the values in the region it represents are all the same</strong>. Each node has another two boolean attributes : <code>isLeaf</code> and <code>val</code>. <code>isLeaf</code> is true if and only if the node is a leaf node. The <code>val</code> attribute for a leaf node contains the value of the region it represents.</p>\r\n\r\n<p>For example, below are two quad trees A and B:</p>\r\n\r\n<pre>\r\nA:\r\n+-------+-------+   T: true\r\n|       |       |   F: false\r\n|   T   |   T   |\r\n|       |       |\r\n+-------+-------+\r\n|       |       |\r\n|   F   |   F   |\r\n|       |       |\r\n+-------+-------+\r\ntopLeft: T\r\ntopRight: T\r\nbottomLeft: F\r\nbottomRight: F\r\n\r\nB:               \r\n+-------+---+---+\r\n|       | F | F |\r\n|   T   +---+---+\r\n|       | T | T |\r\n+-------+---+---+\r\n|       |       |\r\n|   T   |   F   |\r\n|       |       |\r\n+-------+-------+\r\ntopLeft: T\r\ntopRight:\r\n     topLeft: F\r\n     topRight: F\r\n     bottomLeft: T\r\n     bottomRight: T\r\nbottomLeft: T\r\nbottomRight: F\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Your task is to implement a function that will take two quadtrees and return a quadtree that represents the logical OR (or union) of the two trees.</p>\r\n\r\n<pre>\r\nA:                 B:                 C (A or B):\r\n+-------+-------+  +-------+---+---+  +-------+-------+\r\n|       |       |  |       | F | F |  |       |       |\r\n|   T   |   T   |  |   T   +---+---+  |   T   |   T   |\r\n|       |       |  |       | T | T |  |       |       |\r\n+-------+-------+  +-------+---+---+  +-------+-------+\r\n|       |       |  |       |       |  |       |       |\r\n|   F   |   F   |  |   T   |   F   |  |   T   |   F   |\r\n|       |       |  |       |       |  |       |       |\r\n+-------+-------+  +-------+-------+  +-------+-------+\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>Both <code>A</code> and <code>B</code>&nbsp;represent grids of size <code>N * N</code>.</li>\r\n\t<li><code>N</code> is guaranteed to be a power of 2.</li>\r\n\t<li>If you want to know more about the quad tree, you can refer to its <a href=\"https://en.wikipedia.org/wiki/Quadtree\">wiki</a>.</li>\r\n\t<li>The logic OR operation is defined as this: &quot;A or B&quot; is true if <code>A is true</code>, or if <code>B is true</code>, or if <code>both A and B are true</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 73,
+  "dislikes": 301,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Sumologic\", \"slug\": \"sumologic\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/*\n// Definition for a QuadTree node.\nclass Node {\npublic:\n    bool val;\n    bool isLeaf;\n    Node* topLeft;\n    Node* topRight;\n    Node* bottomLeft;\n    Node* bottomRight;\n\n    Node() {}\n\n    Node(bool _val, bool _isLeaf, Node* _topLeft, Node* _topRight, Node* _bottomLeft, Node* _bottomRight) {\n        val = _val;\n        isLeaf = _isLeaf;\n        topLeft = _topLeft;\n        topRight = _topRight;\n        bottomLeft = _bottomLeft;\n        bottomRight = _bottomRight;\n    }\n};\n*/\nclass Solution {\npublic:\n    Node* intersect(Node* quadTree1, Node* quadTree2) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/*\n// Definition for a QuadTree node.\nclass Node {\n    public boolean val;\n    public boolean isLeaf;\n    public Node topLeft;\n    public Node topRight;\n    public Node bottomLeft;\n    public Node bottomRight;\n\n    public Node() {}\n\n    public Node(boolean _val,boolean _isLeaf,Node _topLeft,Node _topRight,Node _bottomLeft,Node _bottomRight) {\n        val = _val;\n        isLeaf = _isLeaf;\n        topLeft = _topLeft;\n        topRight = _topRight;\n        bottomLeft = _bottomLeft;\n        bottomRight = _bottomRight;\n    }\n};\n*/\nclass Solution {\n    public Node intersect(Node quadTree1, Node quadTree2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "\"\"\"\n# Definition for a QuadTree node.\nclass Node(object):\n    def __init__(self, val, isLeaf, topLeft, topRight, bottomLeft, bottomRight):\n        self.val = val\n        self.isLeaf = isLeaf\n        self.topLeft = topLeft\n        self.topRight = topRight\n        self.bottomLeft = bottomLeft\n        self.bottomRight = bottomRight\n\"\"\"\nclass Solution(object):\n    def intersect(self, quadTree1, quadTree2):\n        \"\"\"\n        :type quadTree1: Node\n        :type quadTree2: Node\n        :rtype: Node\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "\"\"\"\n# Definition for a QuadTree node.\nclass Node:\n    def __init__(self, val, isLeaf, topLeft, topRight, bottomLeft, bottomRight):\n        self.val = val\n        self.isLeaf = isLeaf\n        self.topLeft = topLeft\n        self.topRight = topRight\n        self.bottomLeft = bottomLeft\n        self.bottomRight = bottomRight\n\"\"\"\nclass Solution:\n    def intersect(self, quadTree1: 'Node', quadTree2: 'Node') -> 'Node':\n        "
+    },
+    {
+      "lang": "C#",
+      "code": "/*\n// Definition for a QuadTree node.\npublic class Node {\n    public bool val;\n    public bool isLeaf;\n    public Node topLeft;\n    public Node topRight;\n    public Node bottomLeft;\n    public Node bottomRight;\n\n    public Node(){}\n    public Node(bool _val,bool _isLeaf,Node _topLeft,Node _topRight,Node _bottomLeft,Node _bottomRight) {\n        val = _val;\n        isLeaf = _isLeaf;\n        topLeft = _topLeft;\n        topRight = _topRight;\n        bottomLeft = _bottomLeft;\n        bottomRight = _bottomRight;\n}\n*/\npublic class Solution {\n    public Node Intersect(Node quadTree1, Node quadTree2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * // Definition for a QuadTree node.\n * function Node(val,isLeaf,topLeft,topRight,bottomLeft,bottomRight) {\n *    this.val = val;\n *    this.isLeaf = isLeaf;\n *    this.topLeft = topLeft;\n *    this.topRight = topRight;\n *    this.bottomLeft = bottomLeft;\n *    this.bottomRight = bottomRight;\n * };\n */\n/**\n * @param {Node} quadTree1\n * @param {Node} quadTree2\n * @return {Node}\n */\nvar intersect = function(quadTree1, quadTree2) {\n    \n};"
+    },
+    {
+      "lang": "PHP",
+      "code": "/*\n// Definition for a QuadTree node.\nclass Node {\n    public $val;\n    public $isLeaf;\n    public $topLeft;\n    public $topRight;\n    public $bottomLeft;\n    public $bottomRight;\n\n    @param Boolean $val \n    @param Boolean $isLeaf \n    @param Node $topLeft \n    @param Node $topRight \n    @param Node $bottomLeft \n    @param Node $bottomRight \n    function __construct($val, $isLeaf, $topLeft, $topRight, $bottomLeft, $bottomRight) {\n        $this->val = $val;\n        $this->isLeaf = $isLeaf;\n        $this->topLeft = $topLeft;\n        $this->topRight = $topRight;\n        $this->bottomLeft = $bottomLeft;\n        $this->bottomRight = $bottomRight;\n    }\n}\n*/\nclass Solution {\n\n    /**\n     * @param Node $quadTree1\n     * @param Node $quadTree2\n     * @return Node\n     */\n    function intersect($quadTree1, $quadTree2) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.3K\", \"totalSubmission\": \"16.8K\", \"totalAcceptedRaw\": 7275, \"totalSubmissionRaw\": 16814, \"acRate\": \"43.3%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "{\"$id\":\"1\",\"bottomLeft\":{\"$id\":\"4\",\"bottomLeft\":null,\"bottomRight\":null,\"isLeaf\":true,\"topLeft\":null,\"topRight\":null,\"val\":false},\"bottomRight\":{\"$id\":\"5\",\"bottomLeft\":null,\"bottomRight\":null,\"isLeaf\":true,\"topLeft\":null,\"topRight\":null,\"val\":false},\"isLeaf\":false,\"topLeft\":{\"$id\":\"2\",\"bottomLeft\":null,\"bottomRight\":null,\"isLeaf\":true,\"topLeft\":null,\"topRight\":null,\"val\":true},\"topRight\":{\"$id\":\"3\",\"bottomLeft\":null,\"bottomRight\":null,\"isLeaf\":true,\"topLeft\":null,\"topRight\":null,\"val\":true},\"val\":true}\n{\"$id\":\"1\",\"bottomLeft\":{\"$id\":\"8\",\"bottomLeft\":null,\"bottomRight\":null,\"isLeaf\":true,\"topLeft\":null,\"topRight\":null,\"val\":true},\"bottomRight\":{\"$id\":\"9\",\"bottomLeft\":null,\"bottomRight\":null,\"isLeaf\":true,\"topLeft\":null,\"topRight\":null,\"val\":false},\"isLeaf\":false,\"topLeft\":{\"$id\":\"2\",\"bottomLeft\":null,\"bottomRight\":null,\"isLeaf\":true,\"topLeft\":null,\"topRight\":null,\"val\":true},\"topRight\":{\"$id\":\"3\",\"bottomLeft\":{\"$id\":\"6\",\"bottomLeft\":null,\"bottomRight\":null,\"isLeaf\":true,\"topLeft\":null,\"topRight\":null,\"val\":true},\"bottomRight\":{\"$id\":\"7\",\"bottomLeft\":null,\"bottomRight\":null,\"isLeaf\":true,\"topLeft\":null,\"topRight\":null,\"val\":true},\"isLeaf\":false,\"topLeft\":{\"$id\":\"4\",\"bottomLeft\":null,\"bottomRight\":null,\"isLeaf\":true,\"topLeft\":null,\"topRight\":null,\"val\":false},\"topRight\":{\"$id\":\"5\",\"bottomLeft\":null,\"bottomRight\":null,\"isLeaf\":true,\"topLeft\":null,\"topRight\":null,\"val\":false},\"val\":true},\"val\":true}",
+  "metaData": "{\n    \"name\": \"intersect\",\n    \"params\": [\n        {\n            \"name\": \"quadTree1\",\n            \"type\": \"Node\"\n        },\n        {\n            \"name\": \"quadTree2\",\n            \"type\": \"Node\"\n        }\n    ],\n    \"return\": {\n        \"type\": \"Node\"\n    },\n    \"structures\": [\n        {\n            \"name\": \"Node\",\n            \"comment\": \"Definition for a QuadTree node.\",\n            \"members\": [\n                {\n                    \"name\": \"val\",\n                    \"type\": \"boolean\"\n                },\n                {\n                    \"name\": \"isLeaf\",\n                    \"type\": \"boolean\"\n                },\n                {\n                    \"name\": \"topLeft\",\n                    \"type\": \"Node\"\n                },\n                {\n                    \"name\": \"topRight\",\n                    \"type\": \"Node\"\n                },\n                {\n                    \"name\": \"bottomLeft\",\n                    \"type\": \"Node\"\n                },\n                {\n                    \"name\": \"bottomRight\",\n                    \"type\": \"Node\"\n                }\n            ]\n        }\n    ],\n    \"languages\": [\n        \"cpp\",\n        \"java\",\n        \"python\",\n        \"csharp\",\n        \"javascript\",\n        \"python3\",\n        \"php\"\n    ]\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

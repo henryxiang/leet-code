@@ -1,0 +1,111 @@
+{
+  "questionId": "875",
+  "questionFrontendId": "845",
+  "boundTopicId": null,
+  "title": "Longest Mountain in Array",
+  "titleSlug": "longest-mountain-in-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Let&#39;s call any (contiguous) subarray B (of A)&nbsp;a <em>mountain</em> if the following properties hold:</p>\r\n\r\n<ul>\r\n\t<li><code>B.length &gt;= 3</code></li>\r\n\t<li>There exists some <code>0 &lt; i&nbsp;&lt; B.length - 1</code> such that <code>B[0] &lt; B[1] &lt; ... B[i-1] &lt; B[i] &gt; B[i+1] &gt; ... &gt; B[B.length - 1]</code></li>\r\n</ul>\r\n\r\n<p>(Note that B could be any subarray of A, including the entire array A.)</p>\r\n\r\n<p>Given an array <code>A</code>&nbsp;of integers,&nbsp;return the length of the longest&nbsp;<em>mountain</em>.&nbsp;</p>\r\n\r\n<p>Return <code>0</code> if there is no mountain.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[2,1,4,7,3,2,5]\r\n<strong>Output: </strong>5\r\n<strong>Explanation: </strong>The largest mountain is [1,4,7,3,2] which has length 5.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[2,2,2]\r\n<strong>Output: </strong>0\r\n<strong>Explanation: </strong>There is no mountain.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= A.length &lt;= 10000</code></li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 10000</code></li>\r\n</ol>\r\n\r\n<p><strong>Follow up:</strong></p>\r\n\r\n<ul>\r\n\t<li>Can you solve it using only one pass?</li>\r\n\t<li>Can you solve it in <code>O(1)</code> space?</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 424,
+  "dislikes": 15,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 7}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestMountain(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestMountain(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestMountain(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestMountain(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint longestMountain(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestMountain(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar longestMountain = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef longest_mountain(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestMountain(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestMountain(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestMountain(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestMountain(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_mountain(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function longestMountain($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24.4K\", \"totalSubmission\": \"68.6K\", \"totalAcceptedRaw\": 24418, \"totalSubmissionRaw\": 68590, \"acRate\": \"35.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "478",
+    "canSeeDetail": true,
+    "url": "/articles/longest-mountain-in-array/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Two Pointer [Accepted]\n\n**Intuition**\n\nWithout loss of generality, a mountain can only start after the previous one ends.\n\nThis is because if it starts before the peak, it will be smaller than a mountain starting previous; and it is impossible to start after the peak.\n\n**Algorithm**\n\nFor a starting index `base`, let's calculate the length of the longest mountain `A[base], A[base+1], ..., A[end]`.\n\nIf such a mountain existed, the next possible mountain will start at `base = end`; if it didn't, then either we reached the end, or we have `A[base] > A[base+1]` and we can start at `base + 1`.\n\n**Example**\n\nHere is a worked example on the array `A = [1, 2, 3, 2, 1, 0, 2, 3, 1]`:\n\n<center>\n    <img src=\"../Figures/845/diagram1.png\" alt=\"Worked example of A = [1,2,3,2,1,0,2,3,1]\" style=\"height: 150px\"/>\n</center>\n\n<br>\n\n`base` starts at `0`, and `end` travels using the first while loop to `end = 2` (`A[end] = 3`), the potential peak of this mountain.  After, it travels to `end = 5` (`A[end] = 0`) during the second while loop, and a candidate answer of 6 `(base = 0, end = 5)` is recorded.\n\nAfterwards, base is set to `5` and the process starts over again, with `end = 7` the peak of the mountain, and `end = 8` the right boundary, and the candidate answer of 4 `(base = 5, end = 8)` being recorded.\n\n<iframe src=\"https://leetcode.com/playground/7cVQKFLP/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"7cVQKFLP\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "473",
+      "count": 17,
+      "average": 3.941,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,1,4,7,3,2,5]",
+  "metaData": "{\r\n  \"name\": \"longestMountain\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,109 @@
+{
+  "questionId": "128",
+  "questionFrontendId": "128",
+  "boundTopicId": null,
+  "title": "Longest Consecutive Sequence",
+  "titleSlug": "longest-consecutive-sequence",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an unsorted array of integers, find the length of the longest consecutive elements sequence.</p>\r\n\r\n<p>Your algorithm should run in O(<em>n</em>) complexity.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong>&nbsp;[100, 4, 200, 1, 3, 2]\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> The longest consecutive elements sequence is <code>[1, 2, 3, 4]</code>. Therefore its length is 4.\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 2436,
+  "dislikes": 141,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Binary Tree Longest Consecutive Sequence\", \"titleSlug\": \"binary-tree-longest-consecutive-sequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Wish\", \"slug\": \"wish\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Oracle\", \"slug\": \"oracle\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Alibaba\", \"slug\": \"alibaba\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Spotify\", \"slug\": \"spotify\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int longestConsecutive(vector<int>& nums) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int longestConsecutive(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def longestConsecutive(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def longestConsecutive(self, nums: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint longestConsecutive(int* nums, int numsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int LongestConsecutive(int[] nums) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar longestConsecutive = function(nums) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\n# @return {Integer}\ndef longest_consecutive(nums)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func longestConsecutive(_ nums: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func longestConsecutive(nums []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def longestConsecutive(nums: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun longestConsecutive(nums: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn longest_consecutive(nums: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @return Integer\n     */\n    function longestConsecutive($nums) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"249.2K\", \"totalSubmission\": \"574.7K\", \"totalAcceptedRaw\": 249243, \"totalSubmissionRaw\": 574682, \"acRate\": \"43.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "280",
+    "canSeeDetail": true,
+    "url": "/articles/longest-consecutive-sequence/",
+    "content": "[TOC]\n\n#### Approach 1: Brute Force\n\n**Intuition**\n\nBecause a sequence could start at any number in `nums`, we can exhaust the\nentire search space by building as long a sequence as possible from every\nnumber.\n\n**Algorithm**\n\nThe brute force algorithm does not do anything clever - it just considers\neach number in `nums`, attempting to count as high as possible from that\nnumber using only numbers in `nums`. After it counts too high (i.e.\n`currentNum` refers to a number that `nums` does not contain), it records the\nlength of the sequence if it is larger than the current best. The algorithm\nis necessarily optimal because it explores every possibility.\n\n<iframe src=\"https://leetcode.com/playground/puxLaX5E/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"puxLaX5E\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n^3)$$.\n\n    The outer loop runs exactly $$n$$ times, and because `currentNum`\n    increments by 1 during each iteration of the `while` loop, it runs in\n    $$O(n)$$ time. Then, on each iteration of the `while` loop, an $$O(n)$$\n    lookup in the array is performed. Therefore, this brute force algorithm\n    is really three nested $$O(n)$$ loops, which compound multiplicatively to a\n    cubic runtime.\n\n* Space complexity : $$O(1)$$.\n\n    The brute force algorithm only allocates a handful of integers, so it uses constant\n    additional space.\n\n<br />\n\n---\n\n#### Approach 2: Sorting\n\n**Intuition**\n\nIf we can iterate over the numbers in ascending order, then it will be\neasy to find sequences of consecutive numbers. To do so, we can sort the\narray.\n\n**Algorithm**\n\nBefore we do anything, we check for the base case input of the empty array.\nThe longest sequence in an empty array is, of course, 0, so we can simply\nreturn that. For all other cases, we sort `nums` and consider each number\nafter the first (because we need to compare each number to its previous\nnumber). If the current number and the previous are equal, then our current\nsequence is neither extended nor broken, so we simply move on to the next\nnumber. If they are unequal, then we must check whether the current number\nextends the sequence (i.e. `nums[i] == nums[i-1] + 1`). If it does, then we\nadd to our current count and continue. Otherwise, the sequence is broken, so\nwe record our current sequence and reset it to 1 (to include the number that\nbroke the sequence). It is possible that the last element of `nums` is part\nof the longest sequence, so we return the maximum of the current sequence and\nthe longest one.\n\n![Sorting Example](../Figures/128/sorting.png)\n{:align=\"center\"}\n\nHere, an example array is sorted before the linear scan identifies all consecutive sequences.\nThe longest sequence is colored in red.\n\n<iframe src=\"https://leetcode.com/playground/M9Rxw5qk/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"M9Rxw5qk\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(nlgn)$$.\n\n    The main `for` loop does constant work $$n$$ times, so the algorithm's time\n    complexity is dominated by the invocation of `sort`, which will run in\n    $$O(nlgn)$$ time for any sensible implementation.\n\n* Space complexity : $$O(1)$$ (or $$O(n)$$).\n\n    For the implementations provided here, the space complexity is constant\n    because we sort the input array in place. If we are not allowed to modify\n    the input array, we must spend linear space to store a sorted copy.\n\n<br />\n\n---\n\n#### Approach 3: HashSet and Intelligent Sequence Building\n\n**Intuition**\n\nIt turns out that our initial brute force solution was on the right track, but missing\na few optimizations necessary to reach $$O(n)$$ time complexity.\n\n**Algorithm**\n\nThis optimized algorithm contains only two changes from the brute force\napproach: the numbers are stored in a `HashSet` (or `Set`, in Python) to\nallow $$O(1)$$ lookups, and we only attempt to build sequences from numbers\nthat are not already part of a longer sequence. This is accomplished by first\nensuring that the number that would immediately precede the current number in\na sequence is not present, as that number would necessarily be part of a\nlonger sequence.\n\n<iframe src=\"https://leetcode.com/playground/KbUGJ84k/shared\" frameBorder=\"0\" width=\"100%\" height=\"497\" name=\"KbUGJ84k\"></iframe>\n\n\n**Complexity Analysis**\n\n* Time complexity : $$O(n)$$.\n\n    Although the time complexity appears to be quadratic due to the `while`\n    loop nested within the `for` loop, closer inspection reveals it to be\n    linear. Because the `while` loop is reached only when `currentNum` marks\n    the beginning of a sequence (i.e. `currentNum-1` is not present in\n    `nums`), the `while` loop can only run for $$n$$ iterations throughout the\n    entire runtime of the algorithm. This means that despite looking like\n    $$O(n \\cdot n)$$ complexity, the nested loops actually run in $$O(n + n) = O(n)$$\n    time. All other computations occur in constant time, so the overall\n    runtime is linear.\n\n* Space complexity : $$O(n)$$.\n\n    In order to set up $$O(1)$$ containment lookups, we allocate linear space\n    for a hash table to store the $$O(n)$$ numbers in `nums`. Other than that,\n    the space complexity is identical to that of the brute force solution.",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "275",
+      "count": 43,
+      "average": 4.512,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[100,4,200,1,3,2]",
+  "metaData": "{\r\n  \"name\": \"longestConsecutive\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"nums\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

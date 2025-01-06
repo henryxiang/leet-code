@@ -1,0 +1,109 @@
+{
+  "questionId": "1037",
+  "questionFrontendId": "995",
+  "boundTopicId": null,
+  "title": "Minimum Number of K Consecutive Bit Flips",
+  "titleSlug": "minimum-number-of-k-consecutive-bit-flips",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In an array <code>A</code> containing only 0s and 1s, a <i><code>K</code>-bit flip&nbsp;</i>consists of choosing a (contiguous) subarray of length <code>K</code> and simultaneously changing every 0 in the subarray to 1, and every 1 in the subarray to 0.</p>\r\n\r\n<p>Return the minimum number of <code>K</code>-bit flips required so that there is no 0 in the array.&nbsp; If it is not possible, return <code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-1-1\">[0,1,0]</span>, K = <span id=\"example-input-1-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\r\n<strong>Explanation: </strong>Flip A[0], then flip A[2].\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-2-1\">[1,1,0]</span>, K = <span id=\"example-input-2-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">-1</span>\r\n<strong>Explanation:</strong>&nbsp;No matter how we flip subarrays of size 2, we can&#39;t make the array become [1,1,1].\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>A = <span id=\"example-input-3-1\">[0,0,0,1,0,1,1,0]</span>, K = <span id=\"example-input-3-2\">3</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">3</span>\r\n<strong>Explanation:</strong>\r\nFlip A[0],A[1],A[2]:&nbsp;A becomes [1,1,1,1,0,1,1,0]\r\nFlip A[4],A[5],A[6]:&nbsp;A becomes [1,1,1,1,1,0,0,0]\r\nFlip A[5],A[6],A[7]:&nbsp;A becomes [1,1,1,1,1,1,1,1]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;=&nbsp;30000</code></li>\r\n\t<li><code>1 &lt;= K &lt;= A.length</code></li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 188,
+  "dislikes": 24,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Bulb Switcher\", \"titleSlug\": \"bulb-switcher\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Akuna\", \"slug\": \"akuna\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 3}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minKBitFlips(vector<int>& A, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minKBitFlips(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minKBitFlips(self, A, K):\n        \"\"\"\n        :type A: List[int]\n        :type K: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minKBitFlips(self, A: List[int], K: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minKBitFlips(int* A, int ASize, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinKBitFlips(int[] A, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number} K\n * @return {number}\n */\nvar minKBitFlips = function(A, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer} k\n# @return {Integer}\ndef min_k_bit_flips(a, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minKBitFlips(_ A: [Int], _ K: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minKBitFlips(A []int, K int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minKBitFlips(A: Array[Int], K: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minKBitFlips(A: IntArray, K: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_k_bit_flips(a: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer $K\n     * @return Integer\n     */\n    function minKBitFlips($A, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.1K\", \"totalSubmission\": \"15.3K\", \"totalAcceptedRaw\": 7080, \"totalSubmissionRaw\": 15282, \"acRate\": \"46.3%\"}",
+  "hints": [],
+  "solution": {
+    "id": "697",
+    "canSeeDetail": true,
+    "url": "/articles/minimum-number-of-k-consecutive-bit-flips/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Greedy + Events\n\n**Intuition**\n\nIf the leftmost element is a 0, we must flip the subarray starting at index 0.  Similarly, if the leftmost element is a 1, we should not flip the subarray starting at index 0.  This proves we can proceed in a greedy manner: after finding out whether we have to flip the first subarray (positions 0 to K-1) or not, we can consider the array with the first element (value 1) removed, and repeat this process.\n\nWe can do better.  Every time we flip a subarray `A[i], A[i+1], ..., A[i+K-1]`, we can consider this as two \"events\", one 'opening event' at position `i` that marks the start of the subarray, and one 'closing event' at position `i+K` that marks the end of the subarray.  Using these events, we always know how many overlapping flipped subarrays there are: its simply the number of opening events minus the number of closing events.\n\n**Algorithm**\n\nWhen we flip a subarray, let's call the set of indices we flipped an interval.  We'll keep track of `flip`, the number of overlapping intervals in our current position.  We only care about the value of `flip` modulo 2.\n\nWhen we flip an interval starting at `i`, we create a hint for a closing event at `i+K` telling us to flip our writing state back.\n\nPlease see the inline comments for more details.\n\n<iframe src=\"https://leetcode.com/playground/C4RkaMHp/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"C4RkaMHp\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is length of `A`.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "682",
+      "count": 31,
+      "average": 3.032,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,1,0]\n1",
+  "metaData": "{\r\n  \"name\": \"minKBitFlips\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

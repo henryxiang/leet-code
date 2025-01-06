@@ -1,0 +1,94 @@
+{
+  "questionId": "465",
+  "questionFrontendId": "465",
+  "boundTopicId": null,
+  "title": "Optimal Account Balancing",
+  "titleSlug": "optimal-account-balancing",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A group of friends went on holiday and sometimes lent each other money. For example, Alice paid for Bill's lunch for $10. Then later Chris gave Alice $5 for a taxi ride. We can model each transaction as a tuple (x, y, z) which means person x gave person y $z. Assuming Alice, Bill, and Chris are person 0, 1, and 2 respectively (0, 1, 2 are the person's ID), the transactions can be represented as <code>[[0, 1, 10], [2, 0, 5]]</code>.</p>\r\n\r\n<p>Given a list of transactions between a group of people, return the minimum number of transactions required to settle the debt.</p>\r\n\r\n<p><b>Note:</b>\r\n<ol>\r\n<li>A transaction will be given as a tuple (x, y, z). Note that <code>x &ne; y</code> and <code>z > 0</code>.</li>\r\n<li>Person's IDs may not be linear, e.g. we could have the persons 0, 1, 2 or we could also have the persons 0, 2, 6.</li>\r\n</ol>\r\n</p>\r\n\r\n<p><b>Example 1:</b>\r\n<pre>\r\n<b>Input:</b>\r\n[[0,1,10], [2,0,5]]\r\n\r\n<b>Output:</b>\r\n2\r\n\r\n<b>Explanation:</b>\r\nPerson #0 gave person #1 $10.\r\nPerson #2 gave person #0 $5.\r\n\r\nTwo transactions are needed. One way to settle the debt is person #1 pays person #0 and #2 $5 each.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b>\r\n<pre>\r\n<b>Input:</b>\r\n[[0,1,10], [1,0,1], [1,2,5], [2,0,5]]\r\n\r\n<b>Output:</b>\r\n1\r\n\r\n<b>Explanation:</b>\r\nPerson #0 gave person #1 $10.\r\nPerson #1 gave person #0 $1.\r\nPerson #1 gave person #2 $5.\r\nPerson #2 gave person #0 $5.\r\n\r\nTherefore, person #1 only need to give person #0 $4, and all debt is settled.\r\n</pre>\r\n</p>",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 363,
+  "dislikes": 49,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "vulkum",
+      "profileUrl": "/vulkum/",
+      "avatarUrl": "https://assets.leetcode.com/users/vulkum/avatar_1576096173.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 10}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minTransfers(vector<vector<int>>& transactions) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minTransfers(int[][] transactions) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minTransfers(self, transactions):\n        \"\"\"\n        :type transactions: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minTransfers(self, transactions: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minTransfers(int** transactions, int transactionsSize, int* transactionsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinTransfers(int[][] transactions) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} transactions\n * @return {number}\n */\nvar minTransfers = function(transactions) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} transactions\n# @return {Integer}\ndef min_transfers(transactions)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minTransfers(_ transactions: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minTransfers(transactions [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minTransfers(transactions: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minTransfers(transactions: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_transfers(transactions: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $transactions\n     * @return Integer\n     */\n    function minTransfers($transactions) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24K\", \"totalSubmission\": \"53.2K\", \"totalAcceptedRaw\": 24042, \"totalSubmissionRaw\": 53247, \"acRate\": \"45.2%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[0,1,10],[2,0,5]]",
+  "metaData": "{\r\n  \"name\": \"minTransfers\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"transactions\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

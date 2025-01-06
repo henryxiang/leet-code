@@ -1,0 +1,111 @@
+{
+  "questionId": "867",
+  "questionFrontendId": "837",
+  "boundTopicId": null,
+  "title": "New 21 Game",
+  "titleSlug": "new-21-game",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Alice plays the following game, loosely based on the card game &quot;21&quot;.</p>\r\n\r\n<p>Alice starts with <code>0</code> points, and draws numbers while she has less than <code>K</code> points.&nbsp; During each draw, she gains an integer number of points randomly from the range <code>[1, W]</code>, where <code>W</code> is an integer.&nbsp; Each draw is independent and the outcomes have equal probabilities.</p>\r\n\r\n<p>Alice stops drawing numbers when she gets <code>K</code> or more points.&nbsp; What is the probability&nbsp;that she has <code>N</code> or less points?</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = 10, K = 1, W = 10\r\n<strong>Output: </strong>1.00000\r\n<strong>Explanation: </strong> Alice gets a single card, then stops.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = 6, K = 1, W = 10\r\n<strong>Output: </strong>0.60000\r\n<strong>Explanation: </strong> Alice gets a single card, then stops.\r\nIn 6 out of W = 10 possibilities, she is at or below N = 6 points.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>N = 21, K = 17, W = 10\r\n<strong>Output: </strong>0.73278</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= K &lt;= N &lt;= 10000</code></li>\r\n\t<li><code>1 &lt;= W &lt;= 10000</code></li>\r\n\t<li>Answers will be accepted as correct if they are within <code>10^-5</code> of the correct answer.</li>\r\n\t<li>The judging time limit has been reduced for this question.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 447,
+  "dislikes": 238,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "lee215",
+      "profileUrl": "/lee215/",
+      "avatarUrl": "https://assets.leetcode.com/users/lee215/avatar_1551541889.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    double new21Game(int N, int K, int W) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public double new21Game(int N, int K, int W) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def new21Game(self, N, K, W):\n        \"\"\"\n        :type N: int\n        :type K: int\n        :type W: int\n        :rtype: float\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def new21Game(self, N: int, K: int, W: int) -> float:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\ndouble new21Game(int N, int K, int W){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public double New21Game(int N, int K, int W) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @param {number} K\n * @param {number} W\n * @return {number}\n */\nvar new21Game = function(N, K, W) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} k\n# @param {Integer} w\n# @return {Float}\ndef new21_game(n, k, w)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func new21Game(_ N: Int, _ K: Int, _ W: Int) -> Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func new21Game(N int, K int, W int) float64 {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def new21Game(N: Int, K: Int, W: Int): Double = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun new21Game(N: Int, K: Int, W: Int): Double {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn new21_game(n: i32, k: i32, w: i32) -> f64 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @param Integer $K\n     * @param Integer $W\n     * @return Float\n     */\n    function new21Game($N, $K, $W) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"13.5K\", \"totalSubmission\": \"40.4K\", \"totalAcceptedRaw\": 13503, \"totalSubmissionRaw\": 40392, \"acRate\": \"33.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "469",
+    "canSeeDetail": true,
+    "url": "/articles/new-21-game/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Dynamic Programming [Accepted]\n\n**Intuition**\n\nIt is clear that the probability that Alice wins the game is only related to how many points `x` she starts the next draw with, so we can try to formulate an answer in terms of `x`.\n\n**Algorithm**\n\nLet `f(x)` be the answer when we already have `x` points.  When she has between `K` and `N` points, then she stops drawing and wins.  If she has more than `N` points, then she loses.\n\nThe key recursion is $$f(x) = (\\frac{1}{W}) * (f(x+1) + f(x+2) + ... + f(x+W))$$  This is because there is a probability of $$\\frac{1}{W}$$ to draw each card from $$1$$ to $$W$$.\n\nWith this recursion, we could do a naive dynamic programming solution as follows:\n\n```python\n#psuedocode\ndp[k] = 1.0 when K <= k <= N, else 0.0\n# dp[x] = the answer when Alice has x points\nfor k from K-1 to 0:\n    dp[k] = (dp[k+1] + ... + dp[k+W]) / W\nreturn dp[0]\n```\n\nThis leads to a solution with $$O(K*W + (N-K))$$ time complexity, which isn't efficient enough.  Every calculation of `dp[k]` does $$O(W)$$ work, but the work is quite similar.\n\nActually, the difference is $$f(x) - f(x-1) = \\frac{1}{W} \\big( f(x+W) - f(x) \\big)$$.  This allows us to calculate subsequent $$f(k)$$'s in $$O(1)$$ time, by maintaining the numerator $$S = f(x+1) + f(x+2) + \\cdots + f(x+W)$$.\n\nAs we calculate each `dp[k] = S / W`, we maintain the correct value of this numerator $$S \\Rightarrow S + f(k) - f(k+W)$$.\n\n<iframe src=\"https://leetcode.com/playground/x4pmytdi/shared\" frameBorder=\"0\" width=\"100%\" height=\"327\" name=\"x4pmytdi\"></iframe>\n\n**Complexity Analysis**\n\n* Time and Space Complexity:  $$O(N + W)$$.  \nNote that we can reduce the time complexity to $$O(\\max(K, W))$$ and the space complexity to $$O(W)$$ by only keeping track of the last $$W$$ values of `dp`, but it isn't required.\n\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "464",
+      "count": 75,
+      "average": 2.107,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "10\n1\n10",
+  "metaData": "{\r\n  \"name\": \"new21Game\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"W\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"double\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "680",
+  "questionFrontendId": "680",
+  "boundTopicId": null,
+  "title": "Valid Palindrome II",
+  "titleSlug": "valid-palindrome-ii",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a non-empty string <code>s</code>, you may delete <b>at most</b> one character.  Judge whether you can make it a palindrome.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> \"aba\"\r\n<b>Output:</b> True\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> \"abca\"\r\n<b>Output:</b> True\r\n<b>Explanation:</b> You could delete the character 'c'.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li>The string will only contain lowercase characters a-z.\r\nThe maximum length of the string is 50000.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1041,
+  "dislikes": 70,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Valid Palindrome\", \"titleSlug\": \"valid-palindrome\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "just_not_over_12",
+      "profileUrl": "/just_not_over_12/",
+      "avatarUrl": "https://www.gravatar.com/avatar/464d04f3923cca7da1660e31335cd246.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 51}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Atlassian\", \"slug\": \"atlassian\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool validPalindrome(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean validPalindrome(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def validPalindrome(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def validPalindrome(self, s: str) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool validPalindrome(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool ValidPalindrome(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {boolean}\n */\nvar validPalindrome = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {Boolean}\ndef valid_palindrome(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func validPalindrome(_ s: String) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func validPalindrome(s string) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def validPalindrome(s: String): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun validPalindrome(s: String): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn valid_palindrome(s: String) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Boolean\n     */\n    function validPalindrome($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"111.7K\", \"totalSubmission\": \"314.4K\", \"totalAcceptedRaw\": 111685, \"totalSubmissionRaw\": 314380, \"acRate\": \"35.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "248",
+    "canSeeDetail": true,
+    "url": "/articles/valid-palindrome-ii/",
+    "content": "[TOC]\n\n#### Approach #1: Brute Force [Time Limit Exceeded]\n\n**Intuition and Algorithm**\n\nFor each index `i` in the given string, let's remove that character, then check if the resulting string is a palindrome.  If it is, (or if the original string was a palindrome), then we'll return `true`\n\n<iframe src=\"https://leetcode.com/playground/F8rXiMNb/shared\" frameBorder=\"0\" name=\"F8rXiMNb\" width=\"100%\" height=\"394\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N^2)$$ where $$N$$ is the length of the string.  We do the following $$N$$ times: create a string of length $$N$$ and iterate over it.\n\n* Space Complexity: $$O(N)$$, the space used by our candidate answer.\n\n---\n#### Approach #2: Greedy [Accepted]\n\n**Intuition**\n\nIf the beginning and end characters of a string are the same (ie. `s[0] == s[s.length - 1]`), then whether the inner characters are a palindrome (`s[1], s[2], ..., s[s.length - 2]`) uniquely determines whether the entire string is a palindrome.\n\n**Algorithm**\n\nSuppose we want to know whether `s[i], s[i+1], ..., s[j]` form a palindrome.  If `i >= j` then we are done.  If `s[i] == s[j]` then we may take `i++; j--`.  Otherwise, the palindrome must be either `s[i+1], s[i+2],  ..., s[j]` or `s[i], s[i+1], ..., s[j-1]`, and we should check both cases.\n\n<iframe src=\"https://leetcode.com/playground/46SiEhrv/shared\" frameBorder=\"0\" name=\"46SiEhrv\" width=\"100%\" height=\"360\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ where $$N$$ is the length of the string.  Each of two checks of whether some substring is a palindrome is $$O(N)$$.\n\n* Space Complexity: $$O(1)$$ additional complexity.  Only pointers were stored in memory.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "242",
+      "count": 24,
+      "average": 3.875,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"aba\"",
+  "metaData": "{\r\n  \"name\": \"validPalindrome\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

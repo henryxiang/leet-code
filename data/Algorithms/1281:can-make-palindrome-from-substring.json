@@ -1,0 +1,109 @@
+{
+  "questionId": "1281",
+  "questionFrontendId": "1177",
+  "boundTopicId": null,
+  "title": "Can Make Palindrome from Substring",
+  "titleSlug": "can-make-palindrome-from-substring",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string <code>s</code>, we make queries on substrings of <code>s</code>.</p>\n\n<p>For each query <code>queries[i] = [left, right, k]</code>, we may <strong>rearrange</strong>&nbsp;the substring <code>s[left], ..., s[right]</code>, and then choose <strong>up to</strong> <code>k</code> of them to replace with any lowercase English letter.&nbsp;</p>\n\n<p>If the substring&nbsp;is possible to be a&nbsp;palindrome string after the operations above, the result of the query is <code>true</code>.&nbsp;Otherwise, the result&nbsp;is <code>false</code>.</p>\n\n<p>Return an array <code>answer[]</code>, where <code>answer[i]</code> is the result of the <code>i</code>-th query <code>queries[i]</code>.</p>\n\n<p>Note that: Each letter is counted <strong>individually</strong> for replacement so&nbsp;if for example&nbsp;<code>s[left..right] = &quot;aaa&quot;</code>, and <code>k = 2</code>, we can only replace two of the letters.&nbsp; (Also, note that the initial string <code>s</code>&nbsp;is never modified by any query.)</p>\n\n<p>&nbsp;</p>\n<p><strong>Example :</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abcda&quot;, queries = [[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]\n<strong>Output:</strong> [true,false,false,true,true]\n<strong>Explanation:</strong>\nqueries[0] : substring = &quot;d&quot;, is palidrome.\nqueries[1] :&nbsp;substring = &quot;bc&quot;, is not palidrome.\nqueries[2] :&nbsp;substring = &quot;abcd&quot;, is not palidrome after replacing only 1 character.\nqueries[3] :&nbsp;substring = &quot;abcd&quot;, could be changed to &quot;abba&quot; which is palidrome. Also this can be changed to &quot;baab&quot; first rearrange it &quot;bacd&quot; then replace &quot;cd&quot; with &quot;ab&quot;.\nqueries[4] :&nbsp;substring = &quot;abcda&quot;,&nbsp;could be changed to &quot;abcba&quot; which is palidrome.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length,&nbsp;queries.length&nbsp;&lt;= 10^5</code></li>\n\t<li><code>0 &lt;= queries[i][0] &lt;= queries[i][1] &lt;&nbsp;s.length</code></li>\n\t<li><code>0 &lt;= queries[i][2] &lt;= s.length</code></li>\n\t<li><code>s</code> only contains lowercase English letters.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 112,
+  "dislikes": 106,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    vector<bool> canMakePaliQueries(string s, vector<vector<int>>& queries) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<Boolean> canMakePaliQueries(String s, int[][] queries) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def canMakePaliQueries(self, s, queries):\n        \"\"\"\n        :type s: str\n        :type queries: List[List[int]]\n        :rtype: List[bool]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def canMakePaliQueries(self, s: str, queries: List[List[int]]) -> List[bool]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nbool* canMakePaliQueries(char * s, int** queries, int queriesSize, int* queriesColSize, int* returnSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public IList<bool> CanMakePaliQueries(string s, int[][] queries) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number[][]} queries\n * @return {boolean[]}\n */\nvar canMakePaliQueries = function(s, queries) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer[][]} queries\n# @return {Boolean[]}\ndef can_make_pali_queries(s, queries)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func canMakePaliQueries(_ s: String, _ queries: [[Int]]) -> [Bool] {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func canMakePaliQueries(s string, queries [][]int) []bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def canMakePaliQueries(s: String, queries: Array[Array[Int]]): Array[Boolean] = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun canMakePaliQueries(s: String, queries: Array<IntArray>): BooleanArray {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn can_make_pali_queries(s: String, queries: Vec<Vec<i32>>) -> Vec<bool> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer[][] $queries\n     * @return Boolean[]\n     */\n    function canMakePaliQueries($s, $queries) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7K\", \"totalSubmission\": \"21.4K\", \"totalAcceptedRaw\": 7037, \"totalSubmissionRaw\": 21399, \"acRate\": \"32.9%\"}",
+  "hints": [
+    "Since we can rearrange the substring, all we care about is the frequency of each character in that substring.",
+    "How to find the character frequencies efficiently ?",
+    "As a preprocess, calculate the accumulate frequency of all characters for all prefixes of the string.",
+    "How to check if a substring can be changed to a palindrome given its characters frequency ?",
+    "Count the number of odd frequencies, there can be at most one odd frequency in a palindrome."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"abcda\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+  "metaData": "{\n  \"name\": \"canMakePaliQueries\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"integer[][]\",\n      \"name\": \"queries\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"list<boolean>\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

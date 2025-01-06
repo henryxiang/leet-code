@@ -1,0 +1,102 @@
+{
+  "questionId": "1378",
+  "questionFrontendId": "1252",
+  "boundTopicId": null,
+  "title": "Cells with Odd Values in a Matrix",
+  "titleSlug": "cells-with-odd-values-in-a-matrix",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given&nbsp;<code>n</code>&nbsp;and&nbsp;<code>m</code>&nbsp;which are the dimensions of a matrix initialized by zeros and given an array <code>indices</code>&nbsp;where <code>indices[i] = [ri, ci]</code>. For each pair of <code>[ri, ci]</code>&nbsp;you have to increment all cells in row <code>ri</code> and column <code>ci</code>&nbsp;by 1.</p>\n\n<p>Return <em>the number of cells with odd values</em> in the matrix after applying the increment to all <code>indices</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/30/e1.png\" style=\"width: 600px; height: 118px;\" />\n<pre>\n<strong>Input:</strong> n = 2, m = 3, indices = [[0,1],[1,1]]\n<strong>Output:</strong> 6\n<strong>Explanation:</strong> Initial matrix = [[0,0,0],[0,0,0]].\nAfter applying first increment it becomes [[1,2,1],[0,1,0]].\nThe final matrix will be [[1,3,1],[1,3,1]] which contains 6 odd numbers.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/10/30/e2.png\" style=\"width: 600px; height: 150px;\" />\n<pre>\n<strong>Input:</strong> n = 2, m = 2, indices = [[1,1],[0,0]]\n<strong>Output:</strong> 0\n<strong>Explanation:</strong> Final matrix = [[2,2],[2,2]]. There is no odd number in the final matrix.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 50</code></li>\n\t<li><code>1 &lt;= m &lt;= 50</code></li>\n\t<li><code>1 &lt;= indices.length &lt;= 100</code></li>\n\t<li><code>0 &lt;= indices[i][0] &lt;&nbsp;n</code></li>\n\t<li><code>0 &lt;= indices[i][1] &lt;&nbsp;m</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 96,
+  "dislikes": 96,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "MaloFleur",
+      "profileUrl": "/malofleur/",
+      "avatarUrl": "https://www.gravatar.com/avatar/5200f7650a635a331eb6d22bb7c66240.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int oddCells(int n, int m, vector<vector<int>>& indices) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int oddCells(int n, int m, int[][] indices) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def oddCells(self, n, m, indices):\n        \"\"\"\n        :type n: int\n        :type m: int\n        :type indices: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def oddCells(self, n: int, m: int, indices: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint oddCells(int n, int m, int** indices, int indicesSize, int* indicesColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int OddCells(int n, int m, int[][] indices) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} n\n * @param {number} m\n * @param {number[][]} indices\n * @return {number}\n */\nvar oddCells = function(n, m, indices) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @param {Integer} m\n# @param {Integer[][]} indices\n# @return {Integer}\ndef odd_cells(n, m, indices)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func oddCells(_ n: Int, _ m: Int, _ indices: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func oddCells(n int, m int, indices [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def oddCells(n: Int, m: Int, indices: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun oddCells(n: Int, m: Int, indices: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn odd_cells(n: i32, m: i32, indices: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $m\n     * @param Integer[][] $indices\n     * @return Integer\n     */\n    function oddCells($n, $m, $indices) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"15.2K\", \"totalSubmission\": \"19.5K\", \"totalAcceptedRaw\": 15203, \"totalSubmissionRaw\": 19527, \"acRate\": \"77.9%\"}",
+  "hints": [
+    "Simulation : With small constraints, it is possible to apply changes to each row and column and count odd cells after applying it.",
+    "You can accumulate the number you should add to each row and column and then you can count the number of odd cells."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "2\n3\n[[0,1],[1,1]]",
+  "metaData": "{\n  \"name\": \"oddCells\",\n  \"params\": [\n    {\n      \"name\": \"n\",\n      \"type\": \"integer\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"m\"\n    },\n    {\n      \"type\": \"integer[][]\",\n      \"name\": \"indices\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

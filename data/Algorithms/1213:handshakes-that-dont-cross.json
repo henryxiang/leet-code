@@ -1,0 +1,101 @@
+{
+  "questionId": "1213",
+  "questionFrontendId": "1259",
+  "boundTopicId": null,
+  "title": "Handshakes That Don't Cross",
+  "titleSlug": "handshakes-that-dont-cross",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given an&nbsp;<strong>even</strong> number of people <code>num_people</code>&nbsp;that stand around a circle and each person shakes hands&nbsp;with someone else, so that there are <code>num_people / 2</code> handshakes total.</p>\n\n<p>Return the number of ways these handshakes could occur such that none of the handshakes cross.</p>\n\n<p>Since this number could be very big, return the answer <strong>mod&nbsp;<code>10^9 + 7</code></strong></p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num_people = 2\n<strong>Output:</strong> 1\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/07/11/5125_example_2.png\" style=\"width: 651px; height: 311px;\" /></p>\n\n<pre>\n<strong>Input:</strong> num_people = 4\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> There are two ways to do it, the first way is [(1,2),(3,4)] and the second one is [(2,3),(4,1)].\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<p><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/07/11/5125_example_3.png\" style=\"width: 664px; height: 992px;\" /></p>\n\n<pre>\n<strong>Input:</strong> num_people = 6\n<strong>Output:</strong> 5\n</pre>\n\n<p><strong>Example 4:</strong></p>\n\n<pre>\n<strong>Input:</strong> num_people = 8\n<strong>Output:</strong> 14\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>2 &lt;= num_people &lt;= 1000</code></li>\n\t<li><code>num_people % 2 == 0</code></li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 37,
+  "dislikes": 1,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numberOfWays(int num_people) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numberOfWays(int num_people) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numberOfWays(self, num_people):\n        \"\"\"\n        :type num_people: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numberOfWays(self, num_people: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numberOfWays(int num_people){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumberOfWays(int num_people) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} num_people\n * @return {number}\n */\nvar numberOfWays = function(num_people) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} num_people\n# @return {Integer}\ndef number_of_ways(num_people)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numberOfWays(_ num_people: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numberOfWays(num_people int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numberOfWays(num_people: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numberOfWays(num_people: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn number_of_ways(num_people: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $num_people\n     * @return Integer\n     */\n    function numberOfWays($num_people) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"1.7K\", \"totalSubmission\": \"3.2K\", \"totalAcceptedRaw\": 1657, \"totalSubmissionRaw\": 3177, \"acRate\": \"52.2%\"}",
+  "hints": [
+    "Use dynamic programming.",
+    "Let dp[n] be the number of ways that n people can handshake.",
+    "Then fix a person as a pivot and turn for every other person who will have a handshake, the answer is the sum of the products of the new two subproblems."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "2",
+  "metaData": "{\n  \"name\": \"numberOfWays\",\n  \"params\": [\n    {\n      \"name\": \"num_people\",\n      \"type\": \"integer\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

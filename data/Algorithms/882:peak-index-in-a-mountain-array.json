@@ -1,0 +1,111 @@
+{
+  "questionId": "882",
+  "questionFrontendId": "852",
+  "boundTopicId": null,
+  "title": "Peak Index in a Mountain Array",
+  "titleSlug": "peak-index-in-a-mountain-array",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Let&#39;s call an array <code>A</code> a <em>mountain</em>&nbsp;if the following properties hold:</p>\r\n\r\n<ul>\r\n\t<li><code>A.length &gt;= 3</code></li>\r\n\t<li>There exists some <code>0 &lt; i&nbsp;&lt; A.length - 1</code> such that <code>A[0] &lt; A[1] &lt; ... A[i-1] &lt; A[i] &gt; A[i+1] &gt; ... &gt; A[A.length - 1]</code></li>\r\n</ul>\r\n\r\n<p>Given an array that is definitely a mountain, return any&nbsp;<code>i</code>&nbsp;such that&nbsp;<code>A[0] &lt; A[1] &lt; ... A[i-1] &lt; A[i] &gt; A[i+1] &gt; ... &gt; A[A.length - 1]</code>.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[0,1,0]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">1</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[0,2,1,0]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">1</span></pre>\r\n</div>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>3 &lt;= A.length &lt;= 10000</code></li>\r\n\t<li><code><font face=\"monospace\">0 &lt;= A[i] &lt;= 10^6</font></code></li>\r\n\t<li>A&nbsp;is a mountain, as defined above.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 409,
+  "dislikes": 892,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Find Peak Element\", \"titleSlug\": \"find-peak-element\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find in Mountain Array\", \"titleSlug\": \"find-in-mountain-array\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "1337c0d3r",
+      "profileUrl": "/1337c0d3r/",
+      "avatarUrl": "https://assets.leetcode.com/users/1337c0d3r/avatar_1547177258.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 3}], \"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int peakIndexInMountainArray(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int peakIndexInMountainArray(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def peakIndexInMountainArray(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def peakIndexInMountainArray(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint peakIndexInMountainArray(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int PeakIndexInMountainArray(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar peakIndexInMountainArray = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef peak_index_in_mountain_array(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func peakIndexInMountainArray(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func peakIndexInMountainArray(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def peakIndexInMountainArray(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun peakIndexInMountainArray(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn peak_index_in_mountain_array(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function peakIndexInMountainArray($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"115K\", \"totalSubmission\": \"163K\", \"totalAcceptedRaw\": 114959, \"totalSubmissionRaw\": 162955, \"acRate\": \"70.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "488",
+    "canSeeDetail": true,
+    "url": "/articles/peak-index-in-a-mountain-array/",
+    "content": "[TOC]\n\n---\n#### Approach 1: Linear Scan\n\n**Intuition and Algorithm**\n\nThe mountain increases until it doesn't.  The point at which it stops increasing is the peak.\n\n<iframe src=\"https://leetcode.com/playground/wnFAmS4Z/shared\" frameBorder=\"0\" width=\"100%\" height=\"174\" name=\"wnFAmS4Z\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$.\n\n\n---\n#### Approach 2: Binary Search\n\n**Intuition and Algorithm**\n\nThe comparison `A[i] < A[i+1]` in a mountain array looks like `[True, True, True, ..., True, False, False, ..., False]`: 1 or more boolean `True`s, followed by 1 or more boolean `False`.  For example, in the mountain array `[1, 2, 3, 4, 1]`, the comparisons `A[i] < A[i+1]` would be `True, True, True, False`.\n\nWe can binary search over this array of comparisons, to find the largest index `i` such that `A[i] < A[i+1]`.  For more on *binary search*, see the [LeetCode explore topic here.](https://leetcode.com/explore/learn/card/binary-search/)\n\n<iframe src=\"https://leetcode.com/playground/FoZ3SCRk/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"FoZ3SCRk\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\log N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity:  $$O(1)$$.\n\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "481",
+      "count": 31,
+      "average": 4.097,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,1,0]",
+  "metaData": "{\r\n  \"name\": \"peakIndexInMountainArray\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

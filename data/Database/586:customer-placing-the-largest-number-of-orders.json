@@ -1,0 +1,71 @@
+{
+  "questionId": "586",
+  "questionFrontendId": "586",
+  "boundTopicId": null,
+  "title": "Customer Placing the Largest Number of Orders",
+  "titleSlug": "customer-placing-the-largest-number-of-orders",
+  "categoryTitle": "Database",
+  "content": "<p>Query the <b>customer_number</b> from the <b><i>orders</i></b> table for the customer who has placed the largest number of orders.</p>\r\n\r\n<p>It is guaranteed that exactly one customer will have placed more orders than any other customer.</p>\r\n\r\n<p>The <b><i>orders</i></b> table is defined as follows:</p>\r\n\r\n<pre>\r\n| Column            | Type      |\r\n|-------------------|-----------|\r\n| order_number (PK) | int       |\r\n| customer_number   | int       |\r\n| order_date        | date      |\r\n| required_date     | date      |\r\n| shipped_date      | date      |\r\n| status            | char(15)  |\r\n| comment           | char(200) |\r\n</pre>\r\n\r\n<p><b>Sample Input</b></p>\r\n\r\n<pre>\r\n| order_number | customer_number | order_date | required_date | shipped_date | status | comment |\r\n|--------------|-----------------|------------|---------------|--------------|--------|---------|\r\n| 1            | 1               | 2017-04-09 | 2017-04-13    | 2017-04-12   | Closed |         |\r\n| 2            | 2               | 2017-04-15 | 2017-04-20    | 2017-04-18   | Closed |         |\r\n| 3            | 3               | 2017-04-16 | 2017-04-25    | 2017-04-20   | Closed |         |\r\n| 4            | 3               | 2017-04-18 | 2017-04-28    | 2017-04-25   | Closed |         |\r\n</pre>\r\n\r\n<p><b>Sample Output</b></p>\r\n\r\n<pre>\r\n| customer_number |\r\n|-----------------|\r\n| 3               |\r\n</pre>\r\n\r\n<p><b>Explanation</b></p>\r\n\r\n<pre>\r\nThe customer with number &#39;3&#39; has two orders, which is greater than either customer &#39;1&#39; or &#39;2&#39; because each of them  only has one order. \r\nSo the result is customer_number &#39;3&#39;.\r\n</pre>\r\n\r\n<p><i><b>Follow up:</b> What if more than one customer have the largest number of orders, can you find all the customer_number in this case?</i></p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 78,
+  "dislikes": 6,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "Mr-Bin",
+      "profileUrl": "/mr-bin/",
+      "avatarUrl": "https://assets.leetcode.com/users/mr-bin/avatar_1547655304.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"18.9K\", \"totalSubmission\": \"27.2K\", \"totalAcceptedRaw\": 18866, \"totalSubmissionRaw\": 27235, \"acRate\": \"69.3%\"}",
+  "hints": [
+    "MySQL uses a different expression to get the first records other than MSSQL's TOP expression."
+  ],
+  "solution": {
+    "id": "160",
+    "canSeeDetail": true,
+    "url": "/articles/customer-placing-the-largest-number-of-orders/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using `LIMIT` [Accepted]\n\n**Algorithm**\n\nFirst, we can select the <b>customer_number</b> and the according count of orders using `GROUP BY`.\n```sql\nSELECT\n    customer_number, COUNT(*)\nFROM\n    orders\nGROUP BY customer_number\n```\n\n| customer_number | COUNT(*) |\n|-----------------|----------|\n| 1               | 1        |\n| 2               | 1        |\n| 3               | 2        |\n\nThen, the <b>customer_number</b> of first record is the result after sorting them by order count descending.\n\n| customer_number | COUNT(*) |\n|-----------------|----------|\n| 3               | 2        |\n\nIn MySQL, the [LIMIT](https://dev.mysql.com/doc/refman/5.7/en/select.html) clause can be used to constrain the number of rows returned by the SELECT statement. It takes one or two nonnegative numeric arguments, the first of which specifies the offset of the first row to return, and the second specifies the maximum number of rows to return. The offset of the initial row is 0 (not 1).\n\nIt can be used with only one argument, which specifies the number of rows to return from the beginning of the result set. So `LIMIT 1` will return the first record.\n\n**MySQL**\n\n```sql\nSELECT\n    customer_number\nFROM\n    orders\nGROUP BY customer_number\nORDER BY COUNT(*) DESC\nLIMIT 1\n;\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "155",
+      "count": 17,
+      "average": 4.588,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\":{\"orders\":[\"order_number\",\"customer_number\"]},\"rows\":{\"orders\":[[1,1],[2,2],[3,3],[4,3]]}}",
+  "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists orders (order_number int, customer_number int, order_date date, required_date date, shipped_date date, status char(15), comment char(200), key(order_number))\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table orders (order_number int, customer_number int, order_date date, required_date date, shipped_date date, status char(15), comment char(200))\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table orders (order_number int, customer_number int)\"\r\n  ],\r\n  \"database\": true\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists orders (order_number int, customer_number int, order_date date, required_date date, shipped_date date, status char(15), comment char(200), key(order_number))",
+    "Truncate table orders",
+    "insert into orders (order_number, customer_number) values ('1', '1')",
+    "insert into orders (order_number, customer_number) values ('2', '2')",
+    "insert into orders (order_number, customer_number) values ('3', '3')",
+    "insert into orders (order_number, customer_number) values ('4', '3')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

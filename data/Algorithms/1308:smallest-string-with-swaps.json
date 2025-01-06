@@ -1,0 +1,107 @@
+{
+  "questionId": "1308",
+  "questionFrontendId": "1202",
+  "boundTopicId": null,
+  "title": "Smallest String With Swaps",
+  "titleSlug": "smallest-string-with-swaps",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are given a string <code>s</code>, and an array of pairs of indices in the string&nbsp;<code>pairs</code>&nbsp;where&nbsp;<code>pairs[i] =&nbsp;[a, b]</code>&nbsp;indicates 2 indices(0-indexed) of the string.</p>\n\n<p>You can&nbsp;swap the characters at any pair of indices in the given&nbsp;<code>pairs</code>&nbsp;<strong>any number of times</strong>.</p>\n\n<p>Return the&nbsp;lexicographically smallest string that <code>s</code>&nbsp;can be changed to after using the swaps.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;dcab&quot;, pairs = [[0,3],[1,2]]\n<strong>Output:</strong> &quot;bacd&quot;\n<strong>Explaination:</strong> \nSwap s[0] and s[3], s = &quot;bcad&quot;\nSwap s[1] and s[2], s = &quot;bacd&quot;\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;dcab&quot;, pairs = [[0,3],[1,2],[0,2]]\n<strong>Output:</strong> &quot;abcd&quot;\n<strong>Explaination: </strong>\nSwap s[0] and s[3], s = &quot;bcad&quot;\nSwap s[0] and s[2], s = &quot;acbd&quot;\nSwap s[1] and s[2], s = &quot;abcd&quot;</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;cba&quot;, pairs = [[0,1],[1,2]]\n<strong>Output:</strong> &quot;abc&quot;\n<strong>Explaination: </strong>\nSwap s[0] and s[1], s = &quot;bca&quot;\nSwap s[1] and s[2], s = &quot;bac&quot;\nSwap s[0] and s[1], s = &quot;abc&quot;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 10^5</code></li>\n\t<li><code>0 &lt;= pairs.length &lt;= 10^5</code></li>\n\t<li><code>0 &lt;= pairs[i][0], pairs[i][1] &lt;&nbsp;s.length</code></li>\n\t<li><code>s</code>&nbsp;only contains lower case English letters.</li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 246,
+  "dislikes": 10,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "siddharthp538",
+      "profileUrl": "/siddharthp538/",
+      "avatarUrl": "https://assets.leetcode.com/users/siddharthp538/avatar_1530443563.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Union Find",
+      "slug": "union-find"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"PHONEPE\", \"slug\": \"phonepe\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"ByteDance\", \"slug\": \"bytedance\", \"timesEncountered\": 3}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string smallestStringWithSwaps(string s, vector<vector<int>>& pairs) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def smallestStringWithSwaps(self, s, pairs):\n        \"\"\"\n        :type s: str\n        :type pairs: List[List[int]]\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def smallestStringWithSwaps(self, s: str, pairs: List[List[int]]) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * smallestStringWithSwaps(char * s, int** pairs, int pairsSize, int* pairsColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string SmallestStringWithSwaps(string s, IList<IList<int>> pairs) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @param {number[][]} pairs\n * @return {string}\n */\nvar smallestStringWithSwaps = function(s, pairs) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer[][]} pairs\n# @return {String}\ndef smallest_string_with_swaps(s, pairs)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func smallestStringWithSwaps(_ s: String, _ pairs: [[Int]]) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func smallestStringWithSwaps(s string, pairs [][]int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def smallestStringWithSwaps(s: String, pairs: List[List[Int]]): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun smallestStringWithSwaps(s: String, pairs: List<List<Int>>): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn smallest_string_with_swaps(s: String, pairs: Vec<Vec<i32>>) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer[][] $pairs\n     * @return String\n     */\n    function smallestStringWithSwaps($s, $pairs) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"7.2K\", \"totalSubmission\": \"17.1K\", \"totalAcceptedRaw\": 7215, \"totalSubmissionRaw\": 17109, \"acRate\": \"42.2%\"}",
+  "hints": [
+    "Think of it as a graph problem.",
+    "Consider the pairs as connected nodes in the graph, what can you do with a connected component of indices ?",
+    "We can sort each connected component alone to get the lexicographically minimum string."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"dcab\"\n[[0,3],[1,2]]",
+  "metaData": "{\n  \"name\": \"smallestStringWithSwaps\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"type\": \"list<list<integer>>\",\n      \"name\": \"pairs\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

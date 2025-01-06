@@ -1,0 +1,113 @@
+{
+  "questionId": "443",
+  "questionFrontendId": "443",
+  "boundTopicId": null,
+  "title": "String Compression",
+  "titleSlug": "string-compression",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array of characters, compress it <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\"><b>in-place</b></a>.</p>\r\n\r\n<p>The length after compression must always be smaller than or equal to the original array.</p>\r\n\r\n<p>Every element of the array should be a <b>character</b> (not int) of length 1.</p>\r\n\r\n<p>After you are done <b>modifying the input array <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\">in-place</a></b>, return the new length of the array.</p>\r\n&nbsp;\r\n\r\n<p><b>Follow up:</b><br />\r\nCould you solve it using only O(1) extra space?</p>\r\n&nbsp;\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b>\r\n[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;b&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;]\r\n\r\n<b>Output:</b>\r\nReturn 6, and the first 6 characters of the input array should be: [&quot;a&quot;,&quot;2&quot;,&quot;b&quot;,&quot;2&quot;,&quot;c&quot;,&quot;3&quot;]\r\n\r\n<b>Explanation:</b>\r\n&quot;aa&quot; is replaced by &quot;a2&quot;. &quot;bb&quot; is replaced by &quot;b2&quot;. &quot;ccc&quot; is replaced by &quot;c3&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b>\r\n[&quot;a&quot;]\r\n\r\n<b>Output:</b>\r\nReturn 1, and the first 1 characters of the input array should be: [&quot;a&quot;]\r\n\r\n<b>Explanation:</b>\r\nNothing is replaced.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 3:</b></p>\r\n\r\n<pre>\r\n<b>Input:</b>\r\n[&quot;a&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;b&quot;]\r\n\r\n<b>Output:</b>\r\nReturn 4, and the first 4 characters of the input array should be: [&quot;a&quot;,&quot;b&quot;,&quot;1&quot;,&quot;2&quot;].\r\n\r\n<b>Explanation:</b>\r\nSince the character &quot;a&quot; does not repeat, it is not compressed. &quot;bbbbbbbbbbbb&quot; is replaced by &quot;b12&quot;.\r\nNotice each digit has it&#39;s own entry in the array.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>All characters have an ASCII value in <code>[35, 126]</code>.</li>\r\n\t<li><code>1 &lt;= len(chars) &lt;= 1000</code>.</li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 527,
+  "dislikes": 1664,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Count and Say\", \"titleSlug\": \"count-and-say\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Encode and Decode Strings\", \"titleSlug\": \"encode-and-decode-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Design Compressed String Iterator\", \"titleSlug\": \"design-compressed-string-iterator\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "Grain_In_Ear",
+      "profileUrl": "/grain_in_ear/",
+      "avatarUrl": "https://www.gravatar.com/avatar/ddc63ab85c16fd2cf5a2c9d7ce305354.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 8}, {\"taggedByAdmin\": true, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Citrix\", \"slug\": \"citrix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yandex\", \"slug\": \"yandex\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"GoDaddy\", \"slug\": \"godaddy\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Snapchat\", \"slug\": \"snapchat\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Yelp\", \"slug\": \"yelp\", \"timesEncountered\": 0}, {\"taggedByAdmin\": true, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 0}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Redfin\", \"slug\": \"redfin\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Akuna Capital\", \"slug\": \"akuna-capital\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int compress(vector<char>& chars) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int compress(char[] chars) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def compress(self, chars):\n        \"\"\"\n        :type chars: List[str]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def compress(self, chars: List[str]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint compress(char* chars, int charsSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int Compress(char[] chars) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[]} chars\n * @return {number}\n */\nvar compress = function(chars) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[]} chars\n# @return {Integer}\ndef compress(chars)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func compress(_ chars: inout [Character]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func compress(chars []byte) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def compress(chars: Array[Char]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun compress(chars: CharArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn compress(chars: &mut Vec<char>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $chars\n     * @return Integer\n     */\n    function compress(&$chars) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"78.8K\", \"totalSubmission\": \"200.8K\", \"totalAcceptedRaw\": 78822, \"totalSubmissionRaw\": 200799, \"acRate\": \"39.3%\"}",
+  "hints": [
+    "How do you know if you are at the end of a consecutive group of characters?"
+  ],
+  "solution": {
+    "id": "272",
+    "canSeeDetail": true,
+    "url": "/articles/string-compression/",
+    "content": "[TOC]\n\n\n#### Approach #1: Read and Write Heads [Accepted]\n\n**Intuition**\n\nWe will use separate pointers `read` and `write` to mark where we are reading and writing from.  Both operations will be done left to right alternately:  we will read a contiguous group of characters, then write the compressed version to the array.  At the end, the position of the `write` head will be the length of the answer that was written.\n\n**Algorithm**\n\nLet's maintain `anchor`, the start position of the contiguous group of characters we are currently reading.\n\nNow, let's read from left to right.  We know that we must be at the end of the block when we are at the last character, or when the next character is different from the current character.\n\nWhen we are at the end of a group, we will write the result of that group down using our `write` head.  `chars[anchor]` will be the correct character, and the length (if greater than 1) will be `read - anchor + 1`.  We will write the digits of that number to the array.\n\n**Python**\n```python\nclass Solution(object):\n    def compress(self, chars):\n        anchor = write = 0\n        for read, c in enumerate(chars):\n            if read + 1 == len(chars) or chars[read + 1] != c:\n                chars[write] = chars[anchor]\n                write += 1\n                if read > anchor:\n                    for digit in str(read - anchor + 1):\n                        chars[write] = digit\n                        write += 1\n                anchor = read + 1\n        return write\n```\n\n**Java**\n```java\nclass Solution {\n    public int compress(char[] chars) {\n        int anchor = 0, write = 0;\n        for (int read = 0; read < chars.length; read++) {\n            if (read + 1 == chars.length || chars[read + 1] != chars[read]) {\n                chars[write++] = chars[anchor];\n                if (read > anchor) {\n                    for (char c: (\"\" + (read - anchor + 1)).toCharArray()) {\n                        chars[write++] = c;\n                    }\n                }\n                anchor = read + 1;\n            }\n        }\n        return write;\n    }\n}\n```\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `chars`.\n\n* Space Complexity: $$O(1)$$, the space used by `read`, `write`, and `anchor`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "267",
+      "count": 40,
+      "average": 3.05,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"a\",\"a\",\"b\",\"b\",\"c\",\"c\",\"c\"]",
+  "metaData": "{\r\n  \"name\": \"compress\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"chars\",\r\n      \"type\": \"character[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  },\r\n  \"output\": {\r\n    \"paramindex\": 0,\r\n    \"size\": \"ret\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

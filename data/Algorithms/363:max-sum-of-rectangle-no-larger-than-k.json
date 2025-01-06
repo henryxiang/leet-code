@@ -1,0 +1,107 @@
+{
+  "questionId": "363",
+  "questionFrontendId": "363",
+  "boundTopicId": null,
+  "title": "Max Sum of Rectangle No Larger Than K",
+  "titleSlug": "max-sum-of-rectangle-no-larger-than-k",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a non-empty 2D matrix <i>matrix</i> and an integer <i>k</i>, find the max sum of a rectangle in the <i>matrix</i> such that its sum is no larger than <i>k</i>.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>matrix = <span id=\"example-input-1-1\">[[1,0,1],[0,-2,3]]</span>, k = <span id=\"example-input-1-2\">2</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2 \r\n<strong>Explanation:</strong></span>&nbsp;Because the sum of rectangle <code>[[0, 1], [-2, 3]]</code> is 2,\r\n&nbsp;            and 2 is the max number no larger than k (k = 2).</pre>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>The rectangle inside the matrix must have an area &gt; 0.</li>\r\n\t<li>What if the number of rows is much larger than the number of columns?</li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 544,
+  "dislikes": 38,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "fujiaozhu",
+      "profileUrl": "/fujiaozhu/",
+      "avatarUrl": "https://www.gravatar.com/avatar/638fd824fd35c2f6bb2753579d36276f.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    },
+    {
+      "name": "Queue",
+      "slug": "queue"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxSumSubmatrix(vector<vector<int>>& matrix, int k) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxSumSubmatrix(int[][] matrix, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxSumSubmatrix(self, matrix, k):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxSumSubmatrix(self, matrix: List[List[int]], k: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxSumSubmatrix(int** matrix, int matrixSize, int* matrixColSize, int k){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxSumSubmatrix(int[][] matrix, int k) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} matrix\n * @param {number} k\n * @return {number}\n */\nvar maxSumSubmatrix = function(matrix, k) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} matrix\n# @param {Integer} k\n# @return {Integer}\ndef max_sum_submatrix(matrix, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxSumSubmatrix(_ matrix: [[Int]], _ k: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxSumSubmatrix(matrix [][]int, k int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxSumSubmatrix(matrix: Array[Array[Int]], k: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxSumSubmatrix(matrix: Array<IntArray>, k: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_sum_submatrix(matrix: Vec<Vec<i32>>, k: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @param Integer $k\n     * @return Integer\n     */\n    function maxSumSubmatrix($matrix, $k) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"33K\", \"totalSubmission\": \"91.9K\", \"totalAcceptedRaw\": 33042, \"totalSubmissionRaw\": 91945, \"acRate\": \"35.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,0,1],[0,-2,3]]\n2",
+  "metaData": "{\r\n  \"name\": \"maxSumSubmatrix\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"matrix\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"k\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

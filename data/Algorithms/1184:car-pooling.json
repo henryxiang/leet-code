@@ -1,0 +1,95 @@
+{
+  "questionId": "1184",
+  "questionFrontendId": "1094",
+  "boundTopicId": null,
+  "title": "Car Pooling",
+  "titleSlug": "car-pooling",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are driving a vehicle that&nbsp;has <code>capacity</code> empty seats initially available for passengers.&nbsp; The vehicle <strong>only</strong> drives east (ie. it <strong>cannot</strong> turn around and drive west.)</p>\n\n<p>Given a list of <code>trips</code>, <code>trip[i] = [num_passengers, start_location, end_location]</code>&nbsp;contains information about the <code>i</code>-th trip: the number of passengers that must be picked up, and the locations to pick them up and drop them off.&nbsp; The locations are given as the number of kilometers&nbsp;due east from your vehicle&#39;s initial location.</p>\n\n<p>Return <code>true</code> if and only if&nbsp;it is possible to pick up and drop off all passengers for all the given trips.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong>trips = <span id=\"example-input-1-1\">[[2,1,5],[3,3,7]]</span>, capacity = <span id=\"example-input-1-2\">4</span>\n<strong>Output: </strong><span id=\"example-output-1\">false</span>\n</pre>\n\n<div>\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input: </strong>trips = <span id=\"example-input-2-1\">[[2,1,5],[3,3,7]]</span>, capacity = <span id=\"example-input-2-2\">5</span>\n<strong>Output: </strong><span id=\"example-output-2\">true</span>\n</pre>\n\n<div>\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input: </strong>trips = <span id=\"example-input-3-1\">[[2,1,5],[3,5,7]]</span>, capacity = <span id=\"example-input-3-2\">3</span>\n<strong>Output: </strong><span id=\"example-output-3\">true</span>\n</pre>\n\n<div>\n<p><strong>Example 4:</strong></p>\n\n<pre>\n<strong>Input: </strong>trips = <span id=\"example-input-4-1\">[[3,2,7],[3,7,9],[8,3,9]]</span>, capacity = <span id=\"example-input-4-2\">11</span>\n<strong>Output: </strong><span id=\"example-output-4\">true</span>\n</pre>\n</div>\n</div>\n</div>\n\n<div>\n<div>\n<div>\n<div>&nbsp;</div>\n</div>\n</div>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ol>\n\t<li><code>trips.length &lt;= 1000</code></li>\n\t<li><code>trips[i].length == 3</code></li>\n\t<li><code>1 &lt;= trips[i][0] &lt;= 100</code></li>\n\t<li><code>0 &lt;= trips[i][1] &lt; trips[i][2] &lt;= 1000</code></li>\n\t<li><code>1 &lt;=&nbsp;capacity &lt;= 100000</code></li>\n</ol>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 296,
+  "dislikes": 13,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Meeting Rooms II\", \"titleSlug\": \"meeting-rooms-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Lyft\", \"slug\": \"lyft\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool carPooling(vector<vector<int>>& trips, int capacity) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean carPooling(int[][] trips, int capacity) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def carPooling(self, trips, capacity):\n        \"\"\"\n        :type trips: List[List[int]]\n        :type capacity: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def carPooling(self, trips: List[List[int]], capacity: int) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool carPooling(int** trips, int tripsSize, int* tripsColSize, int capacity){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool CarPooling(int[][] trips, int capacity) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} trips\n * @param {number} capacity\n * @return {boolean}\n */\nvar carPooling = function(trips, capacity) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} trips\n# @param {Integer} capacity\n# @return {Boolean}\ndef car_pooling(trips, capacity)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func carPooling(_ trips: [[Int]], _ capacity: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func carPooling(trips [][]int, capacity int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def carPooling(trips: Array[Array[Int]], capacity: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun carPooling(trips: Array<IntArray>, capacity: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn car_pooling(trips: Vec<Vec<i32>>, capacity: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $trips\n     * @param Integer $capacity\n     * @return Boolean\n     */\n    function carPooling($trips, $capacity) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.8K\", \"totalSubmission\": \"31.3K\", \"totalAcceptedRaw\": 17800, \"totalSubmissionRaw\": 31308, \"acRate\": \"56.9%\"}",
+  "hints": [
+    "Sort the pickup and dropoff events by location, then process them in order."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[2,1,5],[3,3,7]]\n4",
+  "metaData": "{\r\n  \"name\": \"carPooling\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"trips\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"capacity\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,106 @@
+{
+  "questionId": "814",
+  "questionFrontendId": "798",
+  "boundTopicId": null,
+  "title": "Smallest Rotation with Highest Score",
+  "titleSlug": "smallest-rotation-with-highest-score",
+  "categoryTitle": "Algorithms",
+  "content": "<p>&nbsp;Given an array <code>A</code>, we may rotate it by a non-negative integer <code>K</code> so that the array becomes <code>A[K], A[K+1], A{K+2], ... A[A.length - 1], A[0], A[1], ..., A[K-1]</code>.&nbsp; Afterward, any entries that are less than or equal to their index are worth 1 point.&nbsp;</p>\r\n\r\n<p>For example, if we have <code>[2, 4, 1, 3, 0]</code>, and we rotate by <code>K = 2</code>, it becomes <code>[1, 3, 0, 2, 4]</code>.&nbsp; This is worth 3 points because 1 &gt; 0 [no points], 3 &gt; 1 [no points], 0 &lt;= 2 [one point], 2 &lt;= 3 [one point], 4 &lt;= 4 [one point].</p>\r\n\r\n<p>Over all possible rotations, return the rotation index K that corresponds to the highest score we could receive.&nbsp; If there are multiple answers, return the smallest such index K.</p>\r\n\r\n<pre>\r\n<strong>Example 1:</strong>\r\n<strong>Input:</strong> [2, 3, 1, 4, 0]\r\n<strong>Output:</strong> 3\r\n<strong>Explanation: </strong> \r\nScores for each K are listed below: \r\nK = 0,  A = [2,3,1,4,0],    score 2\r\nK = 1,  A = [3,1,4,0,2],    score 3\r\nK = 2,  A = [1,4,0,2,3],    score 3\r\nK = 3,  A = [4,0,2,3,1],    score 4\r\nK = 4,  A = [0,2,3,1,4],    score 3\r\n</pre>\r\n\r\n<p>So we should choose K = 3, which has the highest score.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n<strong>Example 2:</strong>\r\n<strong>Input:</strong> [1, 3, 0, 2, 4]\r\n<strong>Output:</strong> 0\r\n<strong>Explanation: </strong> A will always have 3 points no matter how it shifts.\r\nSo we will choose the smallest K, which is 0.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>A</code>&nbsp;will have&nbsp;length at most <code>20000</code>.</li>\r\n\t<li><code>A[i]</code> will be in the range <code>[0, A.length]</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 189,
+  "dislikes": 15,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ngoc_lam",
+      "profileUrl": "/ngoc_lam/",
+      "avatarUrl": "https://assets.leetcode.com/users/ngoc_lam/avatar_1528594557.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int bestRotation(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int bestRotation(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def bestRotation(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def bestRotation(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint bestRotation(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int BestRotation(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar bestRotation = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef best_rotation(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func bestRotation(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func bestRotation(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def bestRotation(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun bestRotation(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn best_rotation(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function bestRotation($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"5.1K\", \"totalSubmission\": \"12.2K\", \"totalAcceptedRaw\": 5122, \"totalSubmissionRaw\": 12169, \"acRate\": \"42.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "428",
+    "canSeeDetail": true,
+    "url": "/articles/smallest-rotation-with-highest-score/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Interval Stabbing [Accepted]\n\n**Intuition**\n\nSay `N = 10` and `A[2] = 5`.  Then there are 5 rotations that are bad for this number: rotation indexes `0, 1, 2, 8, 9` - these rotations will cause this number to not get 1 point later.\n\nIn general, for each number in the array, we can map out what rotation indexes will be bad for this number.  It will always be a region of one interval, possibly two if the interval wraps around (eg. `8, 9, 0, 1, 2` wraps around, to become `[8, 9]` and `[0, 1, 2]`.)\n\nAt the end of plotting these intervals, we need to know which rotation index has the least intervals overlapping it - this one is the answer.\n\n**Algorithm**\n\nFirst, an element like `A[2] = 5` will not get score in (up to) 5 posiitons: when the 5 is at final index 0, 1, 2, 3, or 4.  When we shift by 2, we'll get final index 0.  If we shift `5-1 = 4` before this, this element will end up at final index 4.  In general (modulo N), a shift of `i - A[i] + 1` to `i` will be the rotation indexes that will make `A[i]` not score a point.\n\nIf we are trying to plot an interval like `[2, 3, 4]`, then instead of doing `bad[2]--; bad[3]--; bad[4]--;`, what we will do instead is keep track of the cumulative total: `bad[2]--; bad[5]++`.  For \"wrap-around\" intervals like `[8, 9, 0, 1, 2]`, we will keep track of this as two separate intervals: `bad[8]--, bad[10]++, bad[0]--, bad[3]++`.  (Actually, because of our implementation, we don't need to remember the `bad[10]++` part.)\n\nAt the end, we want to find a rotation index with the least intervals overlapping.  We'll maintain a cumulative total `cur` representing how many intervals are currently overlapping our current rotation index, then update it as we step through each rotation index.\n\n<iframe src=\"https://leetcode.com/playground/wYbwGZmT/shared\" frameBorder=\"0\" width=\"100%\" height=\"480\" name=\"wYbwGZmT\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\n\n* Space Complexity: $$O(N)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "423",
+      "count": 20,
+      "average": 2.95,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,3,1,4,0]",
+  "metaData": "{\r\n  \"name\": \"bestRotation\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

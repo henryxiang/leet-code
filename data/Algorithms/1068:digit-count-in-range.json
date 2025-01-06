@@ -1,0 +1,106 @@
+{
+  "questionId": "1068",
+  "questionFrontendId": "1067",
+  "boundTopicId": null,
+  "title": "Digit Count in Range",
+  "titleSlug": "digit-count-in-range",
+  "categoryTitle": "Algorithms",
+  "content": "Given an integer <code>d</code> between <code>0</code> and <code>9</code>, and two positive integers <code>low</code> and <code>high</code> as lower and upper bounds, respectively. Return the number of times that <code>d</code> occurs as a digit in all integers between <code>low</code> and <code>high</code>, including the bounds <code>low</code> and <code>high</code>.\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>d = <span id=\"example-input-1-1\">1</span>, low = <span id=\"example-input-1-2\">1</span>, high = <span id=\"example-input-1-3\">13</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">6</span>\r\n<strong>Explanation: </strong>\r\nThe digit <code>d=1</code> occurs <code>6</code> times in <code>1,10,11,12,13</code>. Note that the digit <code>d=1</code> occurs twice in the number <code>11</code>.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>d = <span id=\"example-input-2-1\">3</span>, low = <span id=\"example-input-2-2\">100</span>, high = <span id=\"example-input-2-3\">250</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">35</span>\r\n<strong>Explanation: </strong>\r\nThe digit <code>d=3</code> occurs <code>35</code> times in <code>103,113,123,130,131,...,238,239,243</code>.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>0 &lt;= d &lt;= 9</code></li>\r\n\t<li><code>1 &lt;= low &lt;= high &lt;= 2&times;10^8</code></li>\r\n</ol>\r\n</div>",
+  "isPaidOnly": true,
+  "difficulty": "Hard",
+  "likes": 25,
+  "dislikes": 5,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Number of Digit One\", \"titleSlug\": \"number-of-digit-one\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "ngoc_lam",
+      "profileUrl": "/ngoc_lam/",
+      "avatarUrl": "https://assets.leetcode.com/users/ngoc_lam/avatar_1528594557.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int digitsCount(int d, int low, int high) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int digitsCount(int d, int low, int high) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def digitsCount(self, d, low, high):\n        \"\"\"\n        :type d: int\n        :type low: int\n        :type high: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def digitsCount(self, d: int, low: int, high: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint digitsCount(int d, int low, int high){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int DigitsCount(int d, int low, int high) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} d\n * @param {number} low\n * @param {number} high\n * @return {number}\n */\nvar digitsCount = function(d, low, high) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} d\r\n# @param {Integer} low\r\n# @param {Integer} high\r\n# @return {Integer}\r\ndef digits_count(d, low, high)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func digitsCount(_ d: Int, _ low: Int, _ high: Int) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func digitsCount(d int, low int, high int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def digitsCount(d: Int, low: Int, high: Int): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun digitsCount(d: Int, low: Int, high: Int): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn digits_count(d: i32, low: i32, high: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $d\n     * @param Integer $low\n     * @param Integer $high\n     * @return Integer\n     */\n    function digitsCount($d, $low, $high) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"973\", \"totalSubmission\": \"2.7K\", \"totalAcceptedRaw\": 973, \"totalSubmissionRaw\": 2652, \"acRate\": \"36.7%\"}",
+  "hints": [
+    "Define a function f(x) to get the requested sum from 1 to x. So the answer will be f(hi) - f(lo - 1)",
+    "In order to solve f(x) we need to do a DP over digits approach."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "1\n1\n13",
+  "metaData": "{\r\n  \"name\": \"digitsCount\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"d\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"low\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"high\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

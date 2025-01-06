@@ -1,0 +1,101 @@
+{
+  "questionId": "1196",
+  "questionFrontendId": "1105",
+  "boundTopicId": null,
+  "title": "Filling Bookcase Shelves",
+  "titleSlug": "filling-bookcase-shelves",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We have a sequence of <code>books</code>: the <code>i</code>-th book has thickness <code>books[i][0]</code> and height <code>books[i][1]</code>.</p>\n\n<p>We want to place these books <strong>in order</strong>&nbsp;onto bookcase shelves that have total width <code>shelf_width</code>.</p>\n\n<p>We choose&nbsp;some of the books to place on this shelf (such that the sum of their thickness is <code>&lt;= shelf_width</code>), then build another level of shelf of the bookcase so that the total height of the bookcase has increased by the maximum height of the books we just put down.&nbsp; We repeat this process until there are no more books to place.</p>\n\n<p>Note again that at each step of the above&nbsp;process, <u>the order of the books we place is the same order as the given sequence of books</u>.&nbsp; For example, if we have an ordered list of 5&nbsp;books, we might place the first and second book onto the first shelf, the third book on the second shelf, and the fourth and fifth book on the last shelf.</p>\n\n<p>Return the minimum possible height that the total bookshelf can be after placing shelves in this manner.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/06/24/shelves.png\" style=\"width: 250px; height: 370px;\" />\n<pre>\n<strong>Input:</strong> books = [[1,1],[2,3],[2,3],[1,1],[1,1],[1,1],[1,2]], shelf_width = 4\n<strong>Output:</strong> 6\n<strong>Explanation:</strong>\nThe sum of the heights of the 3 shelves are 1 + 3 + 2 = 6.\nNotice that book number 2 does not have to be on the first shelf.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= books.length &lt;= 1000</code></li>\n\t<li><code>1 &lt;= books[i][0] &lt;= shelf_width &lt;= 1000</code></li>\n\t<li><code>1 &lt;= books[i][1] &lt;= 1000</code></li>\n</ul>\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 344,
+  "dislikes": 16,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minHeightShelves(vector<vector<int>>& books, int shelf_width) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minHeightShelves(int[][] books, int shelf_width) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minHeightShelves(self, books, shelf_width):\n        \"\"\"\n        :type books: List[List[int]]\n        :type shelf_width: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minHeightShelves(self, books: List[List[int]], shelf_width: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minHeightShelves(int** books, int booksSize, int* booksColSize, int shelf_width){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinHeightShelves(int[][] books, int shelf_width) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} books\n * @param {number} shelf_width\n * @return {number}\n */\nvar minHeightShelves = function(books, shelf_width) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} books\n# @param {Integer} shelf_width\n# @return {Integer}\ndef min_height_shelves(books, shelf_width)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minHeightShelves(_ books: [[Int]], _ shelf_width: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minHeightShelves(books [][]int, shelf_width int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minHeightShelves(books: Array[Array[Int]], shelf_width: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minHeightShelves(books: Array<IntArray>, shelf_width: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_height_shelves(books: Vec<Vec<i32>>, shelf_width: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $books\n     * @param Integer $shelf_width\n     * @return Integer\n     */\n    function minHeightShelves($books, $shelf_width) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"8.9K\", \"totalSubmission\": \"15.6K\", \"totalAcceptedRaw\": 8920, \"totalSubmissionRaw\": 15608, \"acRate\": \"57.2%\"}",
+  "hints": [
+    "Use dynamic programming:  dp(i) will be the answer to the problem for books[i:]."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[1,1],[2,3],[2,3],[1,1],[1,1],[1,1],[1,2]]\n4",
+  "metaData": "{\n  \"name\": \"minHeightShelves\",\n  \"params\": [\n    {\n      \"name\": \"books\",\n      \"type\": \"integer[][]\"\n    },\n    {\n      \"type\": \"integer\",\n      \"name\": \"shelf_width\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

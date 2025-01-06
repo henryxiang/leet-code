@@ -1,0 +1,105 @@
+{
+  "questionId": "916",
+  "questionFrontendId": "880",
+  "boundTopicId": null,
+  "title": "Decoded String at Index",
+  "titleSlug": "decoded-string-at-index",
+  "categoryTitle": "Algorithms",
+  "content": "<p>An encoded string <code>S</code> is given.&nbsp; To find and write the <em>decoded</em> string to a tape, the encoded string is read <strong>one character at a time</strong>&nbsp;and the following steps are taken:</p>\r\n\r\n<ul>\r\n\t<li>If the character read is a letter, that letter is written onto the tape.</li>\r\n\t<li>If the character read is a digit (say <code>d</code>), the entire current tape is repeatedly written&nbsp;<code>d-1</code>&nbsp;more times in total.</li>\r\n</ul>\r\n\r\n<p>Now for some encoded string <code>S</code>, and an index <code>K</code>, find and return the <code>K</code>-th letter (1 indexed) in the decoded string.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>S = <span id=\"example-input-1-1\">&quot;leet2code3&quot;</span>, K = <span id=\"example-input-1-2\">10</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">&quot;o&quot;</span>\r\n<strong>Explanation: </strong>\r\nThe decoded string is &quot;leetleetcodeleetleetcodeleetleetcode&quot;.\r\nThe 10th letter in the string is &quot;o&quot;.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>S = <span id=\"example-input-2-1\">&quot;ha22&quot;</span>, K = <span id=\"example-input-2-2\">5</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">&quot;h&quot;</span>\r\n<strong>Explanation: </strong>\r\nThe decoded string is &quot;hahahaha&quot;.  The 5th letter is &quot;h&quot;.\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>S = <span id=\"example-input-3-1\">&quot;a2345678999999999999999&quot;</span>, K = <span id=\"example-input-3-2\">1</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">&quot;a&quot;</span>\r\n<strong>Explanation: </strong>\r\nThe decoded string is &quot;a&quot; repeated 8301530446056247680 times.  The 1st letter is &quot;a&quot;.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>2 &lt;= S.length &lt;= 100</code></li>\r\n\t<li><code>S</code>&nbsp;will only contain lowercase letters and digits <code>2</code> through <code>9</code>.</li>\r\n\t<li><code>S</code>&nbsp;starts with a letter.</li>\r\n\t<li><code>1 &lt;= K &lt;= 10^9</code></li>\r\n\t<li>The decoded string is guaranteed to have less than <code>2^63</code> letters.</li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 325,
+  "dislikes": 67,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"National Instruments\", \"slug\": \"national-instruments\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string decodeAtIndex(string S, int K) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String decodeAtIndex(String S, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def decodeAtIndex(self, S, K):\n        \"\"\"\n        :type S: str\n        :type K: int\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def decodeAtIndex(self, S: str, K: int) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * decodeAtIndex(char * S, int K){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string DecodeAtIndex(string S, int K) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} S\n * @param {number} K\n * @return {string}\n */\nvar decodeAtIndex = function(S, K) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @param {Integer} k\n# @return {String}\ndef decode_at_index(s, k)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func decodeAtIndex(_ S: String, _ K: Int) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func decodeAtIndex(S string, K int) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def decodeAtIndex(S: String, K: Int): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun decodeAtIndex(S: String, K: Int): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn decode_at_index(s: String, k: i32) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $S\n     * @param Integer $K\n     * @return String\n     */\n    function decodeAtIndex($S, $K) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"9.9K\", \"totalSubmission\": \"41.5K\", \"totalAcceptedRaw\": 9864, \"totalSubmissionRaw\": 41513, \"acRate\": \"23.8%\"}",
+  "hints": [],
+  "solution": {
+    "id": "527",
+    "canSeeDetail": true,
+    "url": "/articles/decoded-string-at-index/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Work Backwards\n\n**Intuition**\n\nIf we have a decoded string like `appleappleappleappleappleapple` and an index like `K = 24`, the answer is the same if `K = 4`.\n\nIn general, when a decoded string is equal to some word with `size` length repeated some number of times (such as `apple` with `size = 5` repeated 6 times), the answer is the same for the index `K` as it is for the index `K % size`.\n\nWe can use this insight by working backwards, keeping track of the size of the decoded string.  Whenever the decoded string would equal some `word` repeated `d` times, we can reduce `K` to `K % (word.length)`.\n\n**Algorithm**\n\nFirst, find the length of the decoded string.  After, we'll work backwards, keeping track of `size`: the length of the decoded string after parsing symbols `S[0], S[1], ..., S[i]`.\n\nIf we see a digit `S[i]`, it means the size of the decoded string after parsing `S[0], S[1], ..., S[i-1]` will be `size / Integer(S[i])`.  Otherwise, it will be `size - 1`.\n\n\n<iframe src=\"https://leetcode.com/playground/HGcLTehJ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"HGcLTehJ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `S`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "520",
+      "count": 24,
+      "average": 4.792,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"leet2code3\"\n10",
+  "metaData": "{\r\n  \"name\": \"decodeAtIndex\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"S\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"K\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

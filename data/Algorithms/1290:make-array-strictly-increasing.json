@@ -1,0 +1,102 @@
+{
+  "questionId": "1290",
+  "questionFrontendId": "1187",
+  "boundTopicId": null,
+  "title": "Make Array Strictly Increasing",
+  "titleSlug": "make-array-strictly-increasing",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given two integer arrays&nbsp;<code>arr1</code> and <code>arr2</code>, return the minimum number of operations (possibly zero) needed&nbsp;to make <code>arr1</code> strictly increasing.</p>\r\n\r\n<p>In one operation, you can choose two indices&nbsp;<code>0 &lt;=&nbsp;i &lt; arr1.length</code>&nbsp;and&nbsp;<code>0 &lt;= j &lt; arr2.length</code>&nbsp;and do the assignment&nbsp;<code>arr1[i] = arr2[j]</code>.</p>\r\n\r\n<p>If there is no way to make&nbsp;<code>arr1</code>&nbsp;strictly increasing,&nbsp;return&nbsp;<code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr1 = [1,5,3,6,7], arr2 = [1,3,2,4]\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> Replace <code>5</code> with <code>2</code>, then <code>arr1 = [1, 2, 3, 6, 7]</code>.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr1 = [1,5,3,6,7], arr2 = [4,3,1]\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> Replace <code>5</code> with <code>3</code> and then replace <code>3</code> with <code>4</code>. <code>arr1 = [1, 3, 4, 6, 7]</code>.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr1 = [1,5,3,6,7], arr2 = [1,6,3,3]\r\n<strong>Output:</strong> -1\r\n<strong>Explanation:</strong> You can&#39;t make <code>arr1</code> strictly increasing.</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= arr1.length, arr2.length &lt;= 2000</code></li>\r\n\t<li><code>0 &lt;= arr1[i], arr2[i] &lt;= 10^9</code></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 182,
+  "dislikes": 6,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "hackerwang",
+      "profileUrl": "/hackerwang/",
+      "avatarUrl": "https://www.gravatar.com/avatar/4655c8a5692ea13bee889b4a26111f1b.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int makeArrayIncreasing(vector<int>& arr1, vector<int>& arr2) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int makeArrayIncreasing(int[] arr1, int[] arr2) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def makeArrayIncreasing(self, arr1, arr2):\r\n        \"\"\"\r\n        :type arr1: List[int]\r\n        :type arr2: List[int]\r\n        :rtype: int\r\n        \"\"\""
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def makeArrayIncreasing(self, arr1: List[int], arr2: List[int]) -> int:"
+    },
+    {
+      "lang": "C",
+      "code": "int makeArrayIncreasing(int* arr1, int arr1Size, int* arr2, int arr2Size){\r\n\r\n}"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int MakeArrayIncreasing(int[] arr1, int[] arr2) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {number[]} arr1\r\n * @param {number[]} arr2\r\n * @return {number}\r\n */\r\nvar makeArrayIncreasing = function(arr1, arr2) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} arr1\r\n# @param {Integer[]} arr2\r\n# @return {Integer}\r\ndef make_array_increasing(arr1, arr2)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func makeArrayIncreasing(_ arr1: [Int], _ arr2: [Int]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func makeArrayIncreasing(arr1 []int, arr2 []int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def makeArrayIncreasing(arr1: Array[Int], arr2: Array[Int]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun makeArrayIncreasing(arr1: IntArray, arr2: IntArray): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn make_array_increasing(arr1: Vec<i32>, arr2: Vec<i32>) -> i32 {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param Integer[] $arr1\r\n     * @param Integer[] $arr2\r\n     * @return Integer\r\n     */\r\n    function makeArrayIncreasing($arr1, $arr2) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.5K\", \"totalSubmission\": \"8.7K\", \"totalAcceptedRaw\": 3518, \"totalSubmissionRaw\": 8718, \"acRate\": \"40.4%\"}",
+  "hints": [
+    "Use dynamic programming.",
+    "The state would be the index in arr1 and the index of the previous element in arr2 after sorting it and removing duplicates."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,5,3,6,7]\n[1,3,2,4]",
+  "metaData": "{\n  \"name\": \"makeArrayIncreasing\",\n  \"params\": [\n    {\n      \"name\": \"arr1\",\n      \"type\": \"integer[]\"\n    },\n    {\n      \"type\": \"integer[]\",\n      \"name\": \"arr2\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

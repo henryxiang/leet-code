@@ -1,0 +1,111 @@
+{
+  "questionId": "856",
+  "questionFrontendId": "829",
+  "boundTopicId": null,
+  "title": "Consecutive Numbers Sum",
+  "titleSlug": "consecutive-numbers-sum",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a positive integer&nbsp;<code>N</code>, how many ways can we write it as a sum of&nbsp;consecutive positive integers?</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>5\r\n<strong>Output: </strong>2\r\n<strong>Explanation: </strong>5 = 5 = 2 + 3</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>9\r\n<strong>Output: </strong>3\r\n<strong>Explanation: </strong>9 = 9 = 4 + 5 = 2 + 3 + 4</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>15\r\n<strong>Output: </strong>4\r\n<strong>Explanation: </strong>15 = 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5</pre>\r\n\r\n<p><strong>Note:</strong>&nbsp;<code>1 &lt;= N &lt;= 10 ^ 9</code>.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 224,
+  "dislikes": 336,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "lee215",
+      "profileUrl": "/lee215/",
+      "avatarUrl": "https://assets.leetcode.com/users/lee215/avatar_1551541889.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Indeed\", \"slug\": \"indeed\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"VMware\", \"slug\": \"vmware\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Visa\", \"slug\": \"visa\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Roblox\", \"slug\": \"roblox\", \"timesEncountered\": 8}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int consecutiveNumbersSum(int N) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int consecutiveNumbersSum(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def consecutiveNumbersSum(self, N):\n        \"\"\"\n        :type N: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def consecutiveNumbersSum(self, N: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint consecutiveNumbersSum(int N){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ConsecutiveNumbersSum(int N) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number} N\n * @return {number}\n */\nvar consecutiveNumbersSum = function(N) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer} n\n# @return {Integer}\ndef consecutive_numbers_sum(n)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func consecutiveNumbersSum(_ N: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func consecutiveNumbersSum(N int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def consecutiveNumbersSum(N: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun consecutiveNumbersSum(N: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn consecutive_numbers_sum(n: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer $N\n     * @return Integer\n     */\n    function consecutiveNumbersSum($N) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.6K\", \"totalSubmission\": \"46.5K\", \"totalAcceptedRaw\": 16553, \"totalSubmissionRaw\": 46491, \"acRate\": \"35.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "461",
+    "canSeeDetail": true,
+    "url": "/articles/consecutive-numbers-sum/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Brute Force [Time Limit Exceeded]\n\n**Intuition and Algorithm**\n\nFor each starting number, we scan forward until we meet or exceed the target `N`.  If we meet it, then it represents one way to write `N` as a sum of consecutive numbers.\n\nFor example, if `N = 6`, and we scan forward from `1`, we'll get `1 + 2 + 3 = 6` which contributes to the answer.  If we scan forward from `2`, we'll get `2 + 3 + 4` (the first time that the sum is `>= N`) which is too big.\n\n<iframe src=\"https://leetcode.com/playground/W5wabBJ4/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"W5wabBJ4\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$.\n\n* Space Complexity: $$O(1)$$.\n\n---\n#### Approach #2: Mathematical (Naive) [Time Limit Exceeded]\n\n**Intuition and Algorithm**\n\nWe can model the situation by the equation $$N = (x+1) + (x+2) + \\cdots + (x+k)$$.  Here, $$x \\geq 0, k \\geq 1$$.  Using the identity $$1 + 2 + \\cdots + k = \\frac{k(k+1)}{2}$$, we can simplify this equation to $$2*N = k(2*x + k + 1)$$.\n\nFrom here, clearly $$1 \\leq k \\leq 2*N$$.  We can try every such $$k$$.  We need $$x = \\frac{\\frac{2*N}{k} - k - 1}{2}$$ to be a non-negative integer for a solution to exist for the $$k$$ we are trying.\n\n\n<iframe src=\"https://leetcode.com/playground/y3LRDRHT/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"y3LRDRHT\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N)$$.\n\n* Space Complexity: $$O(1)$$.\n\n\n---\n#### Approach #3: Mathematical (Fast) [Accepted]\n\n**Intuition and Algorithm**\n\nAs in *Approach #2*, $$2*N = k(2*x + k + 1)$$ with $$x \\geq 0, k \\geq 1$$.  Call $$k$$ the first factor, and $$2*x + k + 1$$ the second factor.  We are looking for ways to solve this equation without trying all $$2*N$$ possibilities.\n\nNow notice that the parity of $$k$$ and $$(2*x + k + 1)$$ are different.  That is, if $$k$$ is even then the other quantity is odd, and vice versa.  Also, $$2*x + k + 1 \\geq k + 1 > k$$, so the second factor must be bigger.\n\nNow write $$2N = 2^\\alpha * M$$ where $$M$$ is odd.  If we factor $$M = a * b$$, then two candidate solutions are $$k = a, 2x+k+1 = b * 2^\\alpha$$, or $$k = a * 2^\\alpha, 2x+k+1 = b$$.  However, only one of these solutions will have the second factor larger than the first.  (Because $$\\alpha \\geq 1$$, we are guaranteed that one factor is strictly larger.)\n\nThus, the answer is the number of ways to factor the odd part of $$N$$.\n\n\n<iframe src=\"https://leetcode.com/playground/RNh28dQE/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"RNh28dQE\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(\\sqrt(N))$$.\n\n* Space Complexity: $$O(1)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "456",
+      "count": 41,
+      "average": 2.22,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "5",
+  "metaData": "{\r\n  \"name\": \"consecutiveNumbersSum\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"N\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,119 @@
+{
+  "questionId": "1038",
+  "questionFrontendId": "996",
+  "boundTopicId": null,
+  "title": "Number of Squareful Arrays",
+  "titleSlug": "number-of-squareful-arrays",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given an array <code>A</code> of non-negative integers, the array is <em>squareful</em> if for every pair of adjacent elements, their sum is a perfect square.</p>\r\n\r\n<p>Return the number of permutations of A that are squareful.&nbsp; Two permutations <code>A1</code> and <code>A2</code> differ if and only if there is some index <code>i</code> such that <code>A1[i] != A2[i]</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[1,17,8]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\r\n<strong>Explanation: </strong>\r\n[1,8,17] and [17,8,1] are the valid permutations.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[2,2,2]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">1</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 12</code></li>\r\n\t<li><code>0 &lt;= A[i] &lt;= 1e9</code></li>\r\n</ol>",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 206,
+  "dislikes": 17,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Permutations II\", \"titleSlug\": \"permutations-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "telilal",
+      "profileUrl": "/telilal/",
+      "avatarUrl": "https://assets.leetcode.com/users/aanjaneya/avatar_1528609791.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    },
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numSquarefulPerms(vector<int>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numSquarefulPerms(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numSquarefulPerms(self, A):\n        \"\"\"\n        :type A: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numSquarefulPerms(self, A: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numSquarefulPerms(int* A, int ASize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumSquarefulPerms(int[] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @return {number}\n */\nvar numSquarefulPerms = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @return {Integer}\ndef num_squareful_perms(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numSquarefulPerms(_ A: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numSquarefulPerms(A []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numSquarefulPerms(A: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numSquarefulPerms(A: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_squareful_perms(a: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @return Integer\n     */\n    function numSquarefulPerms($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"8.9K\", \"totalSubmission\": \"18.8K\", \"totalAcceptedRaw\": 8925, \"totalSubmissionRaw\": 18760, \"acRate\": \"47.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "698",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-squareful-arrays/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Backtracking\n\n**Intuition**\n\nConstruct a graph where an edge from $$i$$ to $$j$$ exists if $$A[i] + A[j]$$ is a perfect square.  Our goal is to investigate Hamiltonian paths of this graph: paths that visit all the nodes exactly once.\n\n**Algorithm**\n\nLet's keep a current `count` of what values of nodes are left to visit, and a count `todo` of how many nodes left to visit.\n\nFrom each node, we can explore all neighboring nodes (by value, which reduces the complexity blowup).\n\nPlease see the inline comments for more details.\n\n<iframe src=\"https://leetcode.com/playground/bQrNAHHo/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"bQrNAHHo\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^N)$$, where $$N$$ is length of `A`.  A tighter bound is outside the scope of this article.  However, it can be shown that the underlying graph is triangle free, as well as other properties that would dramatically shrink this complexity.\n\n* Space Complexity:  $$O(N)$$.\n<br />\n<br />\n\n\n---\n#### Approach 2: Dynamic Programming\n\n**Intuition**\n\nAs in *Approach 1*, construct an underlying graph.  Since the number of nodes is small, we can use dynamic programming with a 'visited' mask.\n\n**Algorithm**\n\nWe construct the graph in the same method as in *Approach 1*.\n\nNow, let `dfs(node, visited)` be the number of ways from `node` to visit the remaining unvisited nodes.  Here, `visited` is a mask: `(visited >> i) & 1` is true if and only if the `i`th node has been visited.\n\nAfterwards, we may have overcounted if there are repeated values in `A`.  To account for this, for every `x` in `A`, if `A` contains `x` a total of `k` times, we divide the answer by `k!`.\n\n<iframe src=\"https://leetcode.com/playground/odBEReYN/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"odBEReYN\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N 2^N)$$, where $$N$$ is length of `A`.\n\n* Space Complexity:  $$O(N 2^N)$$.\n<br />\n<br />\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "683",
+      "count": 25,
+      "average": 2.76,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,17,8]",
+  "metaData": "{\r\n  \"name\": \"numSquarefulPerms\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,111 @@
+{
+  "questionId": "870",
+  "questionFrontendId": "840",
+  "boundTopicId": null,
+  "title": "Magic Squares In Grid",
+  "titleSlug": "magic-squares-in-grid",
+  "categoryTitle": "Algorithms",
+  "content": "<p>A 3 x 3 magic square is a 3 x 3 grid filled with distinct numbers <strong>from 1 to 9</strong> such that each row, column, and both diagonals all have the same sum.</p>\r\n\r\n<p>Given an <code>grid</code>&nbsp;of integers, how many 3 x 3 &quot;magic square&quot; subgrids are there?&nbsp; (Each subgrid is contiguous).</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>[[4,3,8,4],\r\n        [9,5,1,9],\r\n        [2,7,6,2]]\r\n<strong>Output: </strong>1\r\n<strong>Explanation: </strong>\r\nThe following subgrid is a 3 x 3 magic square:\r\n438\r\n951\r\n276\r\n\r\nwhile this one is not:\r\n384\r\n519\r\n762\r\n\r\nIn total, there is only one magic square inside the given grid.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= grid.length&nbsp;&lt;= 10</code></li>\r\n\t<li><code>1 &lt;= grid[0].length&nbsp;&lt;= 10</code></li>\r\n\t<li><code>0 &lt;= grid[i][j] &lt;= 15</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 95,
+  "dislikes": 873,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 11}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numMagicSquaresInside(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numMagicSquaresInside(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numMagicSquaresInside(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numMagicSquaresInside(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numMagicSquaresInside(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumMagicSquaresInside(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar numMagicSquaresInside = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef num_magic_squares_inside(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numMagicSquaresInside(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numMagicSquaresInside(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numMagicSquaresInside(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numMagicSquaresInside(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_magic_squares_inside(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function numMagicSquaresInside($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"17.5K\", \"totalSubmission\": \"47.9K\", \"totalAcceptedRaw\": 17470, \"totalSubmissionRaw\": 47866, \"acRate\": \"36.5%\"}",
+  "hints": [],
+  "solution": {
+    "id": "474",
+    "canSeeDetail": true,
+    "url": "/articles/magic-squares-in-grid/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Brute Force [Accepted]\n\n**Intuition and Algorithm**\n\nLet's check every 3x3 grid individually.  For each grid, all numbers must be unique and between 1 and 9; plus every row, column, and diagonal must have the same sum.\n\n**Extra Credit**\n\nWe could also include an `if grid[r+1][c+1] != 5: continue` check into our code, helping us skip over our `for r... for c...` for loops faster.  This is based on the following observations:\n\n* The sum of the grid must be 45, as it is the sum of the distinct values from 1 to 9.\n* Each horizontal and vertical line must add up to 15, as the sum of 3 of these lines equals the sum of the whole grid.\n* The diagonal lines must also sum to 15, by definition of the problem statement.\n* Adding the 12 values from the four lines that cross the center, these 4 lines add up to 60; but they also add up to the entire grid (45), plus 3 times the middle value.  This implies the middle value is 5.\n\n<iframe src=\"https://leetcode.com/playground/6yuMDRxQ/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"6yuMDRxQ\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(R*C)$$, where $$R, C$$ are the number of rows and columns in the given `grid`.\n\n* Space Complexity:  $$O(1)$$.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "468",
+      "count": 6,
+      "average": 3.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[4,3,8,4],[9,5,1,9],[2,7,6,2]]",
+  "metaData": "{\r\n  \"name\": \"numMagicSquaresInside\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

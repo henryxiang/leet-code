@@ -1,0 +1,110 @@
+{
+  "questionId": "1116",
+  "questionFrontendId": "1161",
+  "boundTopicId": null,
+  "title": "Maximum Level Sum of a Binary Tree",
+  "titleSlug": "maximum-level-sum-of-a-binary-tree",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given the <code>root</code> of a binary tree, the level of its root is <code>1</code>,&nbsp;the level of its children is <code>2</code>,&nbsp;and so on.</p>\r\n\r\n<p>Return the <strong>smallest</strong> level <code>X</code> such that the sum of all the values of nodes at level <code>X</code> is <strong>maximal</strong>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<p><strong><img alt=\"\" src=\"https://assets.leetcode.com/uploads/2019/05/03/capture.JPG\" style=\"width: 200px; height: 175px;\" /></strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[1,7,0,7,-8,null,null]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">2</span>\r\n<strong>Explanation: </strong>\r\nLevel 1 sum = 1.\r\nLevel 2 sum = 7 + 0 = 7.\r\nLevel 3 sum = 7 + -8 = -1.\r\nSo we return the level with the maximum sum which is level 2.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li>The number of nodes in the given tree is between <code>1</code> and <code>10^4</code>.</li>\r\n\t<li><code>-10^5 &lt;= node.val &lt;= 10^5</code></li>\r\n</ol>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 176,
+  "dislikes": 11,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Graph",
+      "slug": "graph"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * struct TreeNode {\r\n *     int val;\r\n *     TreeNode *left;\r\n *     TreeNode *right;\r\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\r\n * };\r\n */\r\nclass Solution {\r\npublic:\r\n    int maxLevelSum(TreeNode* root) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public int maxLevelSum(TreeNode root) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def maxLevelSum(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def maxLevelSum(self, root: TreeNode) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\n\n\nint maxLevelSum(struct TreeNode* root){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * public class TreeNode {\r\n *     public int val;\r\n *     public TreeNode left;\r\n *     public TreeNode right;\r\n *     public TreeNode(int x) { val = x; }\r\n * }\r\n */\r\npublic class Solution {\r\n    public int MaxLevelSum(TreeNode root) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @return {number}\n */\nvar maxLevelSum = function(root) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# Definition for a binary tree node.\r\n# class TreeNode\r\n#     attr_accessor :val, :left, :right\r\n#     def initialize(val)\r\n#         @val = val\r\n#         @left, @right = nil, nil\r\n#     end\r\n# end\r\n\r\n# @param {TreeNode} root\r\n# @return {Integer}\r\ndef max_level_sum(root)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * public class TreeNode {\r\n *     public var val: Int\r\n *     public var left: TreeNode?\r\n *     public var right: TreeNode?\r\n *     public init(_ val: Int) {\r\n *         self.val = val\r\n *         self.left = nil\r\n *         self.right = nil\r\n *     }\r\n * }\r\n */\r\nclass Solution {\r\n    func maxLevelSum(_ root: TreeNode?) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * type TreeNode struct {\r\n *     Val int\r\n *     Left *TreeNode\r\n *     Right *TreeNode\r\n * }\r\n */\r\nfunc maxLevelSum(root *TreeNode) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "/**\r\n * Definition for a binary tree node.\r\n * class TreeNode(var _value: Int) {\r\n *   var value: Int = _value\r\n *   var left: TreeNode = null\r\n *   var right: TreeNode = null\r\n * }\r\n */\r\nobject Solution {\r\n    def maxLevelSum(root: TreeNode): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "/**\r\n * Example:\r\n * var ti = TreeNode(5)\r\n * var v = ti.`val`\r\n * Definition for a binary tree node.\r\n * class TreeNode(var `val`: Int) {\r\n *     var left: TreeNode? = null\r\n *     var right: TreeNode? = null\r\n * }\r\n */\r\nclass Solution {\r\n    fun maxLevelSum(root: TreeNode?): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn max_level_sum(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\nclass Solution {\n\n    /**\n     * @param TreeNode $root\n     * @return Integer\n     */\n    function maxLevelSum($root) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"21.1K\", \"totalSubmission\": \"29.8K\", \"totalAcceptedRaw\": 21150, \"totalSubmissionRaw\": 29844, \"acRate\": \"70.9%\"}",
+  "hints": [
+    "Calculate the sum for each level then find the level with the maximum sum.",
+    "How can you traverse the tree ?",
+    "How can you sum up the values for every level ?",
+    "Use DFS or BFS to traverse the tree keeping the level of each node, and sum up those values with a map or a frequency array."
+  ],
+  "solution": {
+    "id": "765",
+    "canSeeDetail": true,
+    "url": "/articles/maximum-level-sum-of-a-binary-tree/",
+    "content": "[TOC]\n\n## Solution\n\n--- \n\n#### Overview\n\nThere are two general strategies to traverse a tree:\n     \n- *Depth First Search* (`DFS`)\n\n    In this strategy, `depth` is adopted as the priority, so that one\n    would start from a root and reach all the way down to certain leaf,\n    and then back to root to reach another branch.\n\n    The DFS strategy can further be distinguished as\n    `preorder`, `inorder`, and `postorder` depending on the relative order\n    among the root node, left node and right node.\n    \n    DFS traversals could be implemented in three possible ways: `recursion`,\n    `iteration` and `Morris`. The simplest one is to use a recursion.\n    \n![postorder](../Figures/1161/dfs2.png) \n    \n- *Breadth First Search* (`BFS`)\n\n    In this strategy, he tree is scanned `level by level`, \n    following the order of height,\n    from top to bottom. The nodes on higher level would be visited before\n    the ones with lower levels. \n    \n    The standard implementation is `iteration with queue`.\n    \nOn the following figure the nodes are enumerated in the order you visit them,\nplease follow `1-2-3-4-5` to compare different strategies.\n\n![postorder](../Figures/1161/bfs_dfs2.png)\n\nThe current problem could be solved with both strategies: DFS and BFS.\nRecently we discussed DFS implementations quite a lot, here are several \nproblems: [Recover BST](https://leetcode.com/articles/recover-binary-search-tree/), \n[Construct Binary Tree from Inorder and Postorder Traversals](https://leetcode.com/articles/construct-binary-tree-from-inorder-and-postorder-t/), \n[Kth Smallest Element in BST](https://leetcode.com/articles/kth-smallest-element-in-a-bst/). \n\nSo let's implement here very simple recursive inorder DFS \nand then profit this problem to discuss BFS iterative traversal \nwith queue in more details.\n<br /> \n<br />\n\n\n---\n#### Approach 1: DFS : Recursive Inorder Traversal \n\nRecursive inorder traversal is extremely simple: \nfollow `Left->Node->Right` direction, i.e. do the recursive call\nfor the _left_ child, then do all the business with the node, and\nthen do the recursive call for the _right_ child.\n\nThe business here is to update a structure which keeps\na sum for the current level. \nLet's use hashmap for the Python solution \nand array for the Java one, \nbecause of known problems with \n[Java HashMap performance](https://github.com/vavr-io/vavr/issues/571).\n\n**Algorithm**\n\n- Implement recursive inorder traversal. Create a function\n`inorder(node, level)` which takes node and its level as input\nvariables and recursively updates `level_sum[level]` structure. \n\n- Return key with max value in `level_sum`.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/JH2sQWF2/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"JH2sQWF2\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$\\mathcal{O}(N)$$, to visit each node \nexactly once during the inorder traversal, and then to iterate over `level_sum` structure. \n\n* Space complexity : $$\\mathcal{O}(10000) = \\mathcal{O}(1)$$ for the Java solution\nto keep `level_sum`. $$\\mathcal{O}(D)$$ for the Python solution, where D is \na tree depth, that results in $$\\mathcal{O}(\\log N)$$ in the average case\nof balanced tree and in $$\\mathcal{O}(N)$$ in the worst case of the skewed tree.\n<br /> \n<br />\n\n\n---\n#### Approach 2: BFS: Iterative Level Order Traversal with Queue\n\nThe drawback of DFS solution is that one has to keep all level sums.\nThat could be fixed with the level by level BFS solution :\n\n- Initiate `max_sum = 0`. \n\n- Do BFS traversal, level by level. Compute the `curr_sum` for each level,\nand update global maximum at the end of each level: \n`max_sum = max(max_sum, curr_sum)`.\n\nLet's implement very standard BFS traversal with queue (FIFO structure) :\n\n1. Push all nodes from the current level into the queue.\n\n2. Iterate over that queue. At each step pop out a node from the \nleft side of the queue, and push the children of that node into the right \nside of the queue. \n\n![postorder](../Figures/1161/bfs_queue2.png)\n\nThis way one could traverse the tree from root to leafs. \nThough one should stop somehow at the end of each level\nto compute that level sum.\n\n> Interview tip. Use _marker_ nodes to separate nodes \nin the queue / linked lists / trees. \nExample: [LRU Cache](https://leetcode.com/articles/lru-cache/). \n\nHere null marker node could be used to mark the end of the level.\n\n![postorder](../Figures/1161/marker2.png)\n\n**Algorithm** \n\n- Initiate variables:\n\n    - Set current level and level with max sum to be equal to 1.\n    \n    - Set current sum to 0, and max sum to root value.\n    \n    - Let's use null as a marker. Initiate the queue :\n    push the root and then push the marker, \n    to mark the end of level number 1.\n    \n- While there is more nodes than one marker in the queue, _i.e._\nwhile the queue length is larger than 1:\n\n    - Pop the node from the left side of the queue. \n    \n    - If it's not the marker node, the current level continues:\n        \n        - Update current sum.\n        \n        - Push the children of that \n        node in the right side of the queue. \n    \n    - If it _is_ the marker node, the level is ended. \n        \n        - Update max sum and a level with max sum.\n        \n        - Set current sum to 0.\n        \n        - Increase the level number by 1, \n        and push marker node into queue to mark next level end.\n        \n- Return the number of level with max sum.\n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/i5NDpDrm/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"i5NDpDrm\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N)$$ since each node is\nprocessed exactly twice: to push into queue and then to pop out. \n\n* Space complexity: $$\\mathcal{O}(N)$$ to keep the queue.\nAt each moment the queue contains not more than all nodes \nfrom one level. The max number of nodes on one level is\n$$(N + 1)/2$$, \nin the case of [perfect tree](https://en.wikipedia.org/wiki/Binary_tree#Properties_of_binary_trees).\n<br /> \n<br />\n\n\n---\n#### Approach 3: BFS: Short Python Solution \n\nIn Python Approach 2 could be rewritten much shorter with \nthe help of list comprehension. \n\n**Implementation**\n\n<iframe src=\"https://leetcode.com/playground/FwrV9JHL/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"FwrV9JHL\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity: $$\\mathcal{O}(N)$$. \n\n* Space complexity: $$\\mathcal{O}(N)$$ to keep the queue.\nAt each moment the queue contains not more than all nodes \nfrom one level. The max number of nodes on one level is\n$$(N + 1)/2$$, \nin the case of [perfect tree](https://en.wikipedia.org/wiki/Binary_tree#Properties_of_binary_trees).\n\n\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "750",
+      "count": 6,
+      "average": 4.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[1,7,0,7,-8,null,null]",
+  "metaData": "{\r\n  \"name\": \"maxLevelSum\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"root\",\r\n      \"type\": \"TreeNode\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

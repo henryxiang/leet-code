@@ -1,0 +1,97 @@
+{
+  "questionId": "8",
+  "questionFrontendId": "8",
+  "boundTopicId": null,
+  "title": "String to Integer (atoi)",
+  "titleSlug": "string-to-integer-atoi",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Implement <code><span>atoi</span></code> which&nbsp;converts a string to an integer.</p>\r\n\r\n<p>The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.</p>\r\n\r\n<p>The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.</p>\r\n\r\n<p>If the first sequence of non-whitespace characters in str is not a valid integral number, or if no such sequence exists because either str is empty or it contains only whitespace characters, no conversion is performed.</p>\r\n\r\n<p>If no valid conversion could be performed, a zero value is returned.</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>Only the space character <code>&#39; &#39;</code> is considered as whitespace character.</li>\r\n\t<li>Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [&minus;2<sup>31</sup>,&nbsp; 2<sup>31&nbsp;</sup>&minus; 1]. If the numerical value is out of the range of representable values, INT_MAX (2<sup>31&nbsp;</sup>&minus; 1) or INT_MIN (&minus;2<sup>31</sup>) is returned.</li>\r\n</ul>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;42&quot;\r\n<strong>Output:</strong> 42\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;   -42&quot;\r\n<strong>Output:</strong> -42\r\n<strong>Explanation:</strong> The first non-whitespace character is &#39;-&#39;, which is the minus sign.\r\n&nbsp;            Then take as many numerical digits as possible, which gets 42.\r\n</pre>\r\n\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;4193 with words&quot;\r\n<strong>Output:</strong> 4193\r\n<strong>Explanation:</strong> Conversion stops at digit &#39;3&#39; as the next character is not a numerical digit.\r\n</pre>\r\n\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;words and 987&quot;\r\n<strong>Output:</strong> 0\r\n<strong>Explanation:</strong> The first non-whitespace character is &#39;w&#39;, which is not a numerical \r\n&nbsp;            digit or a +/- sign. Therefore no valid conversion could be performed.</pre>\r\n\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> &quot;-91283472332&quot;\r\n<strong>Output:</strong> -2147483648\r\n<strong>Explanation:</strong> The number &quot;-91283472332&quot; is out of the range of a 32-bit signed integer.\r\n&nbsp;            Thefore INT_MIN (&minus;2<sup>31</sup>) is returned.</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 1219,
+  "dislikes": 7461,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Reverse Integer\", \"titleSlug\": \"reverse-integer\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Valid Number\", \"titleSlug\": \"valid-number\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 9}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 8}, {\"taggedByAdmin\": true, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 5}, {\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Goldman Sachs\", \"slug\": \"goldman-sachs\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"SAP\", \"slug\": \"sap\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Redfin\", \"slug\": \"redfin\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Citrix\", \"slug\": \"citrix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Tencent\", \"slug\": \"tencent\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Cisco\", \"slug\": \"cisco\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int myAtoi(string str) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int myAtoi(String str) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def myAtoi(self, str):\n        \"\"\"\n        :type str: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def myAtoi(self, str: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint myAtoi(char * str){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MyAtoi(string str) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} str\n * @return {number}\n */\nvar myAtoi = function(str) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} str\n# @return {Integer}\ndef my_atoi(str)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func myAtoi(_ str: String) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func myAtoi(str string) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def myAtoi(str: String): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun myAtoi(str: String): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn my_atoi(str: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $str\n     * @return Integer\n     */\n    function myAtoi($str) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"457.7K\", \"totalSubmission\": \"3.1M\", \"totalAcceptedRaw\": 457670, \"totalSubmissionRaw\": 3069115, \"acRate\": \"14.9%\"}",
+  "hints": [],
+  "solution": null,
+  "status": "ac",
+  "sampleTestCase": "\"42\"",
+  "metaData": "{ \r\n  \"name\": \"myAtoi\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"str\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

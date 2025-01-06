@@ -1,0 +1,109 @@
+{
+  "questionId": "28",
+  "questionFrontendId": "28",
+  "boundTopicId": null,
+  "title": "Implement strStr()",
+  "titleSlug": "implement-strstr",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Implement <a href=\"http://www.cplusplus.com/reference/cstring/strstr/\" target=\"_blank\">strStr()</a>.</p>\r\n\r\n<p>Return the index of the first occurrence of needle in haystack, or <strong>-1</strong> if needle is not part of haystack.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> haystack = &quot;hello&quot;, needle = &quot;ll&quot;\r\n<strong>Output:</strong> 2\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> haystack = &quot;aaaaa&quot;, needle = &quot;bba&quot;\r\n<strong>Output:</strong> -1\r\n</pre>\r\n\r\n<p><strong>Clarification:</strong></p>\r\n\r\n<p>What should we return when <code>needle</code> is an empty string? This is a great question to ask during an interview.</p>\r\n\r\n<p>For the purpose of this problem, we will return 0 when <code>needle</code> is an empty string. This is consistent to C&#39;s&nbsp;<a href=\"http://www.cplusplus.com/reference/cstring/strstr/\" target=\"_blank\">strstr()</a> and Java&#39;s&nbsp;<a href=\"https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#indexOf(java.lang.String)\" target=\"_blank\">indexOf()</a>.</p>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1177,
+  "dislikes": 1598,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Shortest Palindrome\", \"titleSlug\": \"shortest-palindrome\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Repeated Substring Pattern\", \"titleSlug\": \"repeated-substring-pattern\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Two Pointers",
+      "slug": "two-pointers"
+    },
+    {
+      "name": "String",
+      "slug": "string"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Citadel\", \"slug\": \"citadel\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Dropbox\", \"slug\": \"dropbox\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Apple\", \"slug\": \"apple\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"eBay\", \"slug\": \"ebay\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Pocket Gems\", \"slug\": \"pocket-gems\", \"timesEncountered\": 0}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int strStr(string haystack, string needle) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int strStr(String haystack, String needle) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def strStr(self, haystack, needle):\n        \"\"\"\n        :type haystack: str\n        :type needle: str\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def strStr(self, haystack: str, needle: str) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint strStr(char * haystack, char * needle){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int StrStr(string haystack, string needle) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} haystack\n * @param {string} needle\n * @return {number}\n */\nvar strStr = function(haystack, needle) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} haystack\r\n# @param {String} needle\r\n# @return {Integer}\r\ndef str_str(haystack, needle)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func strStr(_ haystack: String, _ needle: String) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func strStr(haystack string, needle string) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def strStr(haystack: String, needle: String): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun strStr(haystack: String, needle: String): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn str_str(haystack: String, needle: String) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $haystack\n     * @param String $needle\n     * @return Integer\n     */\n    function strStr($haystack, $needle) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"542.9K\", \"totalSubmission\": \"1.6M\", \"totalAcceptedRaw\": 542884, \"totalSubmissionRaw\": 1624093, \"acRate\": \"33.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "840",
+    "canSeeDetail": true,
+    "url": "/articles/implement-strstr/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n--- \r\n\r\n#### Overview\r\n\r\nThe problem is to find needle of length L in the haystack of length N.\r\n\r\nLet's discuss three different ideas how to proceed. \r\nThey are all based on sliding window idea. \r\nThe key point is how to implement a window slice.\r\n\r\nLinear time window slice $$\\mathcal{O}(L)$$ is quite easy, \r\nmove the window of length L along the haystack \r\nand compare substring in the window with the needle. \r\nOverall that would result in \r\n$$\\mathcal{O}((N - L)L)$$ time complexity.\r\n\r\nCould that be improved? Yes. \r\nTwo pointers approach is still the case of linear time slice, though \r\nthe comparison happens not for all substrings, and that improves the best\r\ntime complexity up to $$\\mathcal{O}(N)$$. \r\nThe worst time complexity is still $$\\mathcal{O}((N - L)L)$$ though.\r\n\r\nCould that be improved to $$\\mathcal{O}(N)$$? Yes, but one has to implement \r\nconstant time slice $$\\mathcal{O}(1)$$. There are two ways to do it:\r\n\r\n- Rabin-Karp = constant-time slice using rolling hash algorithm.\r\n\r\n- Bit manipulation = constant-time slice using bitmasks.\r\n\r\nBit Manipulation approach in Java is more suitable for the short \r\nstrings or strings with very limited number of characters, ex. \r\n[Repeated DNA Sequences](https://leetcode.com/articles/repeated-dna-sequences/).\r\nThat's a consequence of overflow issues in Java\r\n(in Python there is no such a problem).\r\nHere we deal with quite long strings and it's more \r\nsimple to implement the basic version of Rabin Karp algorithm.\r\n\r\n#### Approach 1: Substring: Linear Time Slice\r\n\r\nQuite straightforward approach - move sliding window along the string \r\nand compare substring in the window with the needle.\r\n\r\n![fig](../Figures/28/substrings.png)\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/68jo6PQD/shared\" frameBorder=\"0\" width=\"100%\" height=\"259\" name=\"68jo6PQD\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity: $$\\mathcal{O}((N - L)L)$$, where N is a length of \r\nhaystack and L is a length of needle. We compute a substring\r\nof length L in a loop, which is executed (N - L) times.\r\n\r\n* Space complexity: $$\\mathcal{O}(1)$$.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 2: Two Pointers: Linear Time Slice \r\n\r\nDrawback of the previous algorithm is that one compares absolutely \r\nall substrings of length L with the needle.\r\nThere is no need to that. \r\n\r\nFirst, let's compare only substrings which starts from the first \r\ncharacter in the needle substring. \r\n\r\n![fig](../Figures/28/two_pointers_start2.png)\r\n\r\nSecond, let's compare the characters one by one and stop \r\nimmediately in the case of mismatch.\r\n\r\n![fig](../Figures/28/mismatch2.png)\r\n\r\nHere it was impossible to manage the full match up to the length\r\nof needle string, which is L = 5. Let's backtrack then.\r\nNote, that we move pn pointer back to the position \r\npn = pn - curr_len + 1, and _not_ to the position pn = pn - curr_len,\r\nsince this last one was already investigated. \r\n\r\n![fig](../Figures/28/backtrack2.png)\r\n\r\nLet's try again. Here we've managed to get the full match during the \r\nsecond attempt, so let's return the start position of that match,\r\npn - L.\r\n\r\n![fig](../Figures/28/match.png)\r\n\r\n**Algorithm**\r\n\r\n- Move pn till you'll find the first character of the needle string\r\nin the haystack.\r\n\r\n- Compute the max string match by increasing pn, pL and curr_len in \r\nthe case of equal characters. \r\n\r\n- If you managed to get the full match, curr_len == L,\r\nreturn the start position of that match, pn - L.\r\n\r\n- If you didn't, backtrack: pn = pn - curr_len + 1, pL = 0, curr_len = 0.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/kAochtDi/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"kAochtDi\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity: $$\\mathcal{O}((N - L)L)$$ in the worst case of \r\nnumerous almost complete false matches, \r\nand $$\\mathcal{O}(N)$$ in the best case of one single match.\r\n\r\n* Space complexity: $$\\mathcal{O}(1)$$.\r\n<br /> \r\n<br />\r\n\r\n\r\n---\r\n#### Approach 3: Rabin Karp: Constant Time Slice\r\n\r\nLet's now design the algorithm with $$\\mathcal{O}(N)$$ time complexity\r\neven in the worst case. The idea is simple: move along the string,\r\ngenerate hash of substring in the sliding window and compare it \r\nwith the reference hash of the needle string. \r\n\r\nThere are two technical problems:\r\n\r\n1. How to implement a string slice in a constant time? \r\n\r\n2. How to generate substring hash in a constant time?\r\n\r\n**String slice in a constant time**\r\n\r\nStrings are immutable in Java and Python, \r\nand to move sliding window in a constant time\r\none has to convert string to another data structure, \r\nfor example, to integer array of ascii-values.\r\n\r\n**Rolling hash: hash generation in a constant time**\r\n\r\nTo generate hash of array of length L, one needs $$\\mathcal{O}(L)$$ time.\r\n\r\n> How to have constant time of hash generation? Use the advantage of \r\nslice: only one integer in, and only one - out. \r\n\r\nThat's the idea of [rolling hash](https://en.wikipedia.org/wiki/Rolling_hash).\r\nHere we'll implement the simplest one, polynomial rolling hash.\r\nBeware that's polynomial rolling hash is NOT the [Rabin fingerprint](https://en.wikipedia.org/wiki/Rolling_hash#Rabin_fingerprint).\r\n\r\nSince one deals here with lowercase English letters, all values \r\nin the integer array are between 0 and 25 :\r\n`arr[i] = (int)S.charAt(i) - (int)'a'`.  \r\nSo one could consider string `abcd` -> `[0, 1, 2, 3]` as a number \r\nin a [numeral system](https://en.wikipedia.org/wiki/Numeral_system) with the base 26. \r\nHence `abcd` -> `[0, 1, 2, 3]` could be hashed as \r\n\r\n$$\r\nh_0 = 0 \\times 26^3 + 1 \\times 26^2 + 2 \\times 26^1 + 3 \\times 26^0\r\n$$\r\n\r\nLet's write the same formula in a generalised way, where $$c_i$$\r\nis an integer array element and $$a = 26$$ is a system base.\r\n\r\n$$\r\nh_0 = c_0 a^{L - 1} + c_1 a^{L - 2} + ... + c_i a^{L - 1 - i} + ... + c_{L - 1} a^1 + c_L a^0\r\n$$\r\n\r\n$$\r\nh_0 = \\sum_{i = 0}^{L - 1}{c_i a^{L - 1 - i}}\r\n$$\r\n\r\nNow let's consider the slice `abcd` -> `bcde`. For int arrays that means\r\n`[0, 1, 2, 3]` -> `[1, 2, 3, 4]`, to remove number 0 and to add number 4.\r\n\r\n$$\r\nh_1 = (h_0 - 0 \\times 26^3) \\times 26 + 4 \\times 26^0\r\n$$\r\n\r\nIn a generalised way\r\n\r\n$$\r\nh_1 = (h_0 a - c_0 a^L) + c_{L + 1}\r\n$$\r\n\r\nNow hash regeneration is perfect and fits in a constant time. \r\nThere is one more issue to address: possible overflow problem. \r\n\r\n**How to avoid overflow**\r\n\r\n$$a^L$$ could be a large number and hence\r\nthe idea is to set limits to avoid the overflow. \r\nTo set limits means to limit a hash by a given number called modulus\r\nand use everywhere not hash itself but `h % modulus`.\r\n\r\nIt's quite obvious that modulus should be large enough, but how \r\nlarge? [Here one could read more about the topic](https://en.wikipedia.org/wiki/Linear_congruential_generator#Parameters_in_common_use),\r\nfor the problem here $$2^{31}$$ is enough.\r\n\r\n**Algorithm**\r\n\r\n- Compute the hash of substring `haystack.substring(0, L)` and\r\nreference hash of `needle.substring(0, L)`.\r\n\r\n- Iterate over the start position of possible match: from 1 to N - L.\r\n\r\n    - Compute rolling hash based on the previous hash value.\r\n\r\n    - Return start position if the hash is equal to the reference one.\r\n\r\n- Return -1, that means that needle is not found.\r\n\r\n**Implementation**\r\n\r\n<iframe src=\"https://leetcode.com/playground/EDfhWJqP/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"EDfhWJqP\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity: $$\\mathcal{O}(N)$$, one computes the reference hash \r\nof the needle string in $$\\mathcal{O}(L)$$ time, and then runs a loop of\r\n$$(N - L)$$ steps with constant time operations in it.\r\n\r\n* Space complexity: $$\\mathcal{O}(1)$$.\r\n\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "798",
+      "count": 5,
+      "average": 4.6,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"hello\"\n\"ll\"",
+  "metaData": "{ \r\n  \"name\": \"strStr\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"haystack\",\r\n      \"type\": \"string\"\r\n    },\r\n    {\r\n      \"name\": \"needle\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

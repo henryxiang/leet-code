@@ -1,0 +1,115 @@
+{
+  "questionId": "490",
+  "questionFrontendId": "490",
+  "boundTopicId": null,
+  "title": "The Maze",
+  "titleSlug": "the-maze",
+  "categoryTitle": "Algorithms",
+  "content": "<p>There is a <b>ball</b> in a maze with empty spaces and walls. The ball can go through empty spaces by rolling <b>up</b>, <b>down</b>, <b>left</b> or <b>right</b>, but it won&#39;t stop rolling until hitting a wall. When the ball stops, it could choose the next direction.</p>\r\n\r\n<p>Given the ball&#39;s <b>start position</b>, the <b>destination</b> and the <b>maze</b>, determine whether the ball could stop at the destination.</p>\r\n\r\n<p>The maze is represented by a binary 2D array. 1 means the wall and 0 means the empty space. You may assume that the borders of the maze are all walls. The start and destination coordinates are represented by row and column indexes.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Example 1:</b></p>\r\n\r\n<pre>\r\n<b>Input 1:</b> a maze represented by a 2D array\r\n\r\n0 0 1 0 0\r\n0 0 0 0 0\r\n0 0 0 1 0\r\n1 1 0 1 1\r\n0 0 0 0 0\r\n\r\n<b>Input 2:</b> start coordinate (rowStart, colStart) = (0, 4)\r\n<b>Input 3:</b> destination coordinate (rowDest, colDest) = (4, 4)\r\n\r\n<b>Output:</b> true\r\n\r\n<b>Explanation:</b> One possible way is : left -&gt; down -&gt; left -&gt; down -&gt; right -&gt; down -&gt; right.\r\n<img src=\"https://assets.leetcode.com/uploads/2018/10/12/maze_1_example_1.png\" style=\"width: 100%; max-width:350px;\" />\r\n</pre>\r\n\r\n<p><b>Example 2:</b></p>\r\n\r\n<pre>\r\n<b>Input 1:</b> a maze represented by a 2D array\r\n\r\n0 0 1 0 0\r\n0 0 0 0 0\r\n0 0 0 1 0\r\n1 1 0 1 1\r\n0 0 0 0 0\r\n\r\n<b>Input 2:</b> start coordinate (rowStart, colStart) = (0, 4)\r\n<b>Input 3:</b> destination coordinate (rowDest, colDest) = (3, 2)\r\n\r\n<b>Output:</b> false\r\n\r\n<b>Explanation:</b> There is no way for the ball to stop at the destination.\r\n<img src=\"https://assets.leetcode.com/uploads/2018/10/13/maze_1_example_2.png\" style=\"width: 100%; max-width:350px;\" />\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b></p>\r\n\r\n<ol>\r\n\t<li>There is only one ball and one destination in the maze.</li>\r\n\t<li>Both the ball and the destination exist on an empty space, and they will not be at the same position initially.</li>\r\n\t<li>The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.</li>\r\n\t<li>The maze contains at least 2 empty spaces, and both the width and height of the maze won&#39;t exceed 100.</li>\r\n</ol>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 543,
+  "dislikes": 57,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"The Maze III\", \"titleSlug\": \"the-maze-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"The Maze II\", \"titleSlug\": \"the-maze-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "fallcreek",
+      "profileUrl": "/fallcreek/",
+      "avatarUrl": "https://www.gravatar.com/avatar/043194ec5c4c5d2778049a3fa6d2e1d8.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Depth-first Search",
+      "slug": "depth-first-search"
+    },
+    {
+      "name": "Breadth-first Search",
+      "slug": "breadth-first-search"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 4}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    bool hasPath(vector<vector<int>>& maze, vector<int>& start, vector<int>& destination) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public boolean hasPath(int[][] maze, int[] start, int[] destination) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def hasPath(self, maze, start, destination):\n        \"\"\"\n        :type maze: List[List[int]]\n        :type start: List[int]\n        :type destination: List[int]\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def hasPath(self, maze: List[List[int]], start: List[int], destination: List[int]) -> bool:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nbool hasPath(int** maze, int mazeSize, int* mazeColSize, int* start, int startSize, int* destination, int destinationSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public bool HasPath(int[][] maze, int[] start, int[] destination) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} maze\n * @param {number[]} start\n * @param {number[]} destination\n * @return {boolean}\n */\nvar hasPath = function(maze, start, destination) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} maze\n# @param {Integer[]} start\n# @param {Integer[]} destination\n# @return {Boolean}\ndef has_path(maze, start, destination)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func hasPath(_ maze: [[Int]], _ start: [Int], _ destination: [Int]) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func hasPath(maze [][]int, start []int, destination []int) bool {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def hasPath(maze: Array[Array[Int]], start: Array[Int], destination: Array[Int]): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun hasPath(maze: Array<IntArray>, start: IntArray, destination: IntArray): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn has_path(maze: Vec<Vec<i32>>, start: Vec<i32>, destination: Vec<i32>) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $maze\n     * @param Integer[] $start\n     * @param Integer[] $destination\n     * @return Boolean\n     */\n    function hasPath($maze, $start, $destination) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"48.9K\", \"totalSubmission\": \"98.6K\", \"totalAcceptedRaw\": 48887, \"totalSubmissionRaw\": 98575, \"acRate\": \"49.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "143",
+    "canSeeDetail": true,
+    "url": "/articles/the-maze/",
+    "content": "[TOC]\n\n## Solution\n\n---\n#### Approach #1 Depth First Search [Time Limit Exceeded]\n\nWe can view the given search space in the form of a tree. The root node of the tree represents the starting position. Four different routes are possible from each position i.e. left, right, up or down. These four options can be represented by 4 branches of each node in the given tree. Thus, the new node reached from the root traversing over the branch represents the new position occupied by the ball after choosing the corresponding direction of travel.\n\n![Maze_Tree](../Figures/490_Maze_Tree.PNG)\n\nIn order to do this traversal, one of the simplest schemes is to undergo depth first search. In this case, we choose one path at a time and try to go as deep as possible into the levels of the tree before going for the next path. In order to implement this, we make use of a recursive function `dfs(maze, start, desination, visited)`. This function takes the given $$maze$$ array, the $$start$$ position and the $$destination$$ position as its arguments along with a $$visited$$ array. $$visited$$ array is a 2-D boolean array of the same size as that of $$maze$$. A True value at $$visited[i][j]$$ represents that the current position has already been reached earlier during the path traversal. We make use of this array so as to keep track of the same paths being repeated over and over. We mark a True at the current position in the $$visited$$ array once we reach that particular positon in the $$maze$$.\n\nFrom every $$start$$ position, we can move continuously in either left, right, upward or downward direction till we reach the boundary or a wall. Thus, from the $$start$$ position, we determine all the end points which can be reached by choosing the four directions. For each of the cases, the new endpoint will now act as the new start point for the traversals. The destination, obviously remains unchanged. Thus, now we call the same function four times for the four directions, each time with a new start point obtained previously. \n\nIf any of the function call returns a True value, it means we can reach the desination. \n\nThe following animation depicts the process:\n\n!?!../Documents/490_Maze_DFS.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/mNXpP4ZF/shared\" frameBorder=\"0\" name=\"mNXpP4ZF\" width=\"100%\" height=\"515\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(mn)$$. Complete traversal of maze will be done in the worst case. Here, $$m$$ and $$n$$ refers to the number of rows and coloumns of the maze.\n\n* Space complexity : $$O(mn)$$. $$visited$$ array of size $$m*n$$ is used.\n\n---\n#### Approach #2 Breadth First Search [Accepted]\n\n**Algorithm**\n\nThe same search space tree can also be explored in a Depth First Search manner. In this case, we try to explore the search space on a level by level basis. i.e. We try to move in all the directions at every step. When all the directions have been explored and we still don't reach the destination, then only we proceed to the new set of traversals from the new positions obtained. \n\nIn order to implement this, we make use of a $$queue$$. We start with the ball at the $$start$$ position. For every current position, we add all the new positions possible by traversing in all the four directions(till reaching the wall or boundary) into the $$queue$$ to act as the new start positions and mark these positions as True in the $$visited$$ array. When all the directions have been covered up, we remove a position value, $$s$$, from the front of the $$queue$$ and again continue the same process with $$s$$ acting as the new $$start$$ position. \n\nFurther, in order to choose the direction of travel, we make use of a $$dir$$ array, which contains 4 entries. Each entry represents a  one-dimensional direction of travel. To travel in a particular direction, we keep on adding the particular entry of the $$dirs$$ array till we hit a wall or a boundary. For a particular start position, we do this process of $$dir$$ addition for all all the four directions possible.\n\nIf we hit the destination position at any moment, we return a True directly indicating that the $$destination$$ position can be reached starting from the $$start$$ position. \n\nThe following animation depicts the process:\n\n!?!../Documents/490_Maze_BFS.json:1000,563!?!\n\n<iframe src=\"https://leetcode.com/playground/5jvdfXTK/shared\" frameBorder=\"0\" name=\"5jvdfXTK\" width=\"100%\" height=\"513\"></iframe>\n\n**Complexity Analysis**\n\n* Time complexity : $$O(mn)$$. Complete traversal of maze will be done in the worst case. Here, $$m$$ and $$n$$ refers to the number of rows and coloumns of the maze.\n\n* Space complexity : $$O(mn)$$. $$visited$$ array of size $$m*n$$ is used and $$queue$$ size can grow upto $$m*n$$ in worst case.\n\n---\nAnalysis written by: [@vinod23](https://leetcode.com/vinod23)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "138",
+      "count": 35,
+      "average": 4.114,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]]\n[0,4]\n[4,4]",
+  "metaData": "{\r\n  \"name\": \"hasPath\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"maze\",\r\n      \"type\": \"integer[][]\"\r\n    },\r\n    {\r\n      \"name\": \"start\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"destination\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"boolean\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

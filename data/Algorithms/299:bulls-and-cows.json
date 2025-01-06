@@ -1,0 +1,99 @@
+{
+  "questionId": "299",
+  "questionFrontendId": "299",
+  "boundTopicId": null,
+  "title": "Bulls and Cows",
+  "titleSlug": "bulls-and-cows",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You are playing the following <a href=\"https://en.wikipedia.org/wiki/Bulls_and_Cows\" target=\"_blank\">Bulls and Cows</a> game with your friend: You write down a number and ask your friend to guess what the number is. Each time your friend makes a guess, you provide a hint that indicates how many digits in said guess match your secret number exactly in both digit and position (called &quot;bulls&quot;) and how many digits match the secret number but locate in the wrong position (called &quot;cows&quot;). Your friend will use successive guesses and hints to eventually derive the secret number.</p>\r\n\r\n<p>Write a function to return a hint according to the secret number and friend&#39;s guess, use <code>A</code> to indicate the bulls and <code>B</code> to indicate the cows.&nbsp;</p>\r\n\r\n<p>Please note that both secret number and friend&#39;s guess may contain duplicate digits.</p>\r\n\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> secret = &quot;1807&quot;, guess = &quot;7810&quot;\r\n\r\n<strong>Output:</strong> &quot;1A3B&quot;\r\n\r\n<strong>Explanation:</strong> <code>1</code><span style=\"font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;\"> bull and </span><code>3</code><span style=\"font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;\"> cows. The bull is </span><code>8</code><span style=\"font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;\">, the cows are </span><code>0</code><span style=\"font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;\">, </span><code>1</code><span style=\"font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;\"> and </span><code>7<font face=\"sans-serif, Arial, Verdana, Trebuchet MS\">.</font></code></pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> secret = &quot;1123&quot;, guess = &quot;0111&quot;\r\n\r\n<strong>Output:</strong> &quot;1A1B&quot;\r\n\r\n<strong>Explanation: </strong>The 1st <code>1 </code><span style=\"font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;\">in friend&#39;s guess is a bull, the 2nd or 3rd </span><code>1</code><span style=\"font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;\"> is a cow</span><span style=\"font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;\">.</span></pre>\r\n\r\n<p><strong>Note: </strong>You may assume that the secret number and your friend&#39;s guess only contain digits, and their lengths are always equal.</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 460,
+  "dislikes": 521,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "jeantimex",
+      "profileUrl": "/jeantimex/",
+      "avatarUrl": "https://www.gravatar.com/avatar/647f6db67906ba406fe92b62782d401e.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 13}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Airbnb\", \"slug\": \"airbnb\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Zillow\", \"slug\": \"zillow\", \"timesEncountered\": 2}], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string getHint(string secret, string guess) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String getHint(String secret, String guess) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def getHint(self, secret, guess):\n        \"\"\"\n        :type secret: str\n        :type guess: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def getHint(self, secret: str, guess: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * getHint(char * secret, char * guess){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string GetHint(string secret, string guess) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} secret\n * @param {string} guess\n * @return {string}\n */\nvar getHint = function(secret, guess) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} secret\n# @param {String} guess\n# @return {String}\ndef get_hint(secret, guess)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func getHint(_ secret: String, _ guess: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func getHint(secret string, guess string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def getHint(secret: String, guess: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun getHint(secret: String, guess: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn get_hint(secret: String, guess: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $secret\n     * @param String $guess\n     * @return String\n     */\n    function getHint($secret, $guess) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"122.6K\", \"totalSubmission\": \"298.7K\", \"totalAcceptedRaw\": 122596, \"totalSubmissionRaw\": 298709, \"acRate\": \"41.0%\"}",
+  "hints": [],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "\"1807\"\n\"7810\"",
+  "metaData": "{ \r\n  \"name\": \"getHint\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"secret\",\r\n      \"type\": \"string\"\r\n    },\r\n    { \r\n      \"name\": \"guess\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

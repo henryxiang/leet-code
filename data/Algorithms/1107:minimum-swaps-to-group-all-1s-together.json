@@ -1,0 +1,110 @@
+{
+  "questionId": "1107",
+  "questionFrontendId": "1151",
+  "boundTopicId": null,
+  "title": "Minimum Swaps to Group All 1's Together",
+  "titleSlug": "minimum-swaps-to-group-all-1s-together",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a&nbsp;binary array <code>data</code>, return&nbsp;the minimum number of swaps required to group all <code>1</code>&rsquo;s present in the array together in <strong>any place</strong> in the array.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-1-1\">[1,0,1,0,1]</span>\n<strong>Output: </strong><span id=\"example-output-1\">1</span>\n<strong>Explanation: </strong>\nThere are 3 ways to group all 1&#39;s together:\n[1,1,1,0,0] using 1 swap.\n[0,1,1,1,0] using 2 swaps.\n[0,0,1,1,1] using 1 swap.\nThe minimum is 1.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-2-1\">[0,0,0,1,0]</span>\n<strong>Output: </strong><span id=\"example-output-2\">0</span>\n<strong>Explanation: </strong>\nSince there is only one 1 in the array, no swaps needed.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input: </strong><span id=\"example-input-3-1\">[1,0,1,0,1,0,0,1,1,0,1]</span>\n<strong>Output: </strong><span id=\"example-output-3\">3</span>\n<strong>Explanation: </strong>\nOne possible solution that uses 3 swaps is [0,0,0,0,0,1,1,1,1,1,1].\n</pre>\n\n<p>&nbsp;</p>\n\n<p><span><strong>Note</strong><strong>:</strong></span></p>\n\n<ol>\n\t<li><code>1 &lt;= data.length &lt;= 10^5</code></li>\n\t<li><code>0 &lt;= data[i] &lt;= 1</code></li>\n</ol>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 89,
+  "dislikes": 0,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "coding4232",
+      "profileUrl": "/coding4232/",
+      "avatarUrl": "https://assets.leetcode.com/users/coding4232/avatar_1554483797.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Sliding Window",
+      "slug": "sliding-window"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Expedia\", \"slug\": \"expedia\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minSwaps(vector<int>& data) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minSwaps(int[] data) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minSwaps(self, data):\n        \"\"\"\n        :type data: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minSwaps(self, data: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minSwaps(int* data, int dataSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinSwaps(int[] data) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} data\n * @return {number}\n */\nvar minSwaps = function(data) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} data\n# @return {Integer}\ndef min_swaps(data)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minSwaps(_ data: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minSwaps(data []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minSwaps(data: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minSwaps(data: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_swaps(data: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $data\n     * @return Integer\n     */\n    function minSwaps($data) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3.2K\", \"totalSubmission\": \"5.6K\", \"totalAcceptedRaw\": 3240, \"totalSubmissionRaw\": 5603, \"acRate\": \"57.8%\"}",
+  "hints": [
+    "How many 1's should be grouped together ? Is not a fixed number?",
+    "Yeah it's just the number of 1's the whole array has. Let's name this number as ones",
+    "Every subarray of size of ones, needs some number of swaps to reach, Can you find the number of swaps needed to group all 1's in this subarray?",
+    "It's the number of zeros in that subarray.",
+    "Do you need to count the number of zeros all over again for every position ?",
+    "Use Sliding Window technique."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[1,0,1,0,1]",
+  "metaData": "{\n  \"name\": \"minSwaps\",\n  \"params\": [\n    {\n      \"name\": \"data\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

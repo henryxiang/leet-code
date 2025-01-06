@@ -1,0 +1,113 @@
+{
+  "questionId": "745",
+  "questionFrontendId": "744",
+  "boundTopicId": null,
+  "title": "Find Smallest Letter Greater Than Target",
+  "titleSlug": "find-smallest-letter-greater-than-target",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nGiven a list of sorted characters <code>letters</code> containing only lowercase letters, and given a target letter <code>target</code>, find the smallest element in the list that is larger than the given target.\r\n</p><p>\r\nLetters also wrap around.  For example, if the target is <code>target = 'z'</code> and <code>letters = ['a', 'b']</code>, the answer is <code>'a'</code>.\r\n</p>\r\n\r\n<p><b>Examples:</b><br />\r\n<pre>\r\n<b>Input:</b>\r\nletters = [\"c\", \"f\", \"j\"]\r\ntarget = \"a\"\r\n<b>Output:</b> \"c\"\r\n\r\n<b>Input:</b>\r\nletters = [\"c\", \"f\", \"j\"]\r\ntarget = \"c\"\r\n<b>Output:</b> \"f\"\r\n\r\n<b>Input:</b>\r\nletters = [\"c\", \"f\", \"j\"]\r\ntarget = \"d\"\r\n<b>Output:</b> \"f\"\r\n\r\n<b>Input:</b>\r\nletters = [\"c\", \"f\", \"j\"]\r\ntarget = \"g\"\r\n<b>Output:</b> \"j\"\r\n\r\n<b>Input:</b>\r\nletters = [\"c\", \"f\", \"j\"]\r\ntarget = \"j\"\r\n<b>Output:</b> \"c\"\r\n\r\n<b>Input:</b>\r\nletters = [\"c\", \"f\", \"j\"]\r\ntarget = \"k\"\r\n<b>Output:</b> \"c\"\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li><code>letters</code> has a length in range <code>[2, 10000]</code>.</li>\r\n<li><code>letters</code> consists of lowercase letters, and contains at least 2 unique letters.</li>\r\n<li><code>target</code> is a lowercase letter.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 297,
+  "dislikes": 416,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "imsure",
+      "profileUrl": "/imsure/",
+      "avatarUrl": "https://assets.leetcode.com/users/imsure/avatar_1521747091.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": true, \"name\": \"LinkedIn\", \"slug\": \"linkedin\", \"timesEncountered\": 3}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    char nextGreatestLetter(vector<char>& letters, char target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public char nextGreatestLetter(char[] letters, char target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def nextGreatestLetter(self, letters, target):\n        \"\"\"\n        :type letters: List[str]\n        :type target: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def nextGreatestLetter(self, letters: List[str], target: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar nextGreatestLetter(char* letters, int lettersSize, char target){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public char NextGreatestLetter(char[] letters, char target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {character[]} letters\n * @param {character} target\n * @return {character}\n */\nvar nextGreatestLetter = function(letters, target) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Character[]} letters\n# @param {Character} target\n# @return {Character}\ndef next_greatest_letter(letters, target)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func nextGreatestLetter(_ letters: [Character], _ target: Character) -> Character {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func nextGreatestLetter(letters []byte, target byte) byte {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def nextGreatestLetter(letters: Array[Char], target: Char): Char = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun nextGreatestLetter(letters: CharArray, target: Char): Char {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn next_greatest_letter(letters: Vec<char>, target: char) -> char {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String[] $letters\n     * @param String $target\n     * @return String\n     */\n    function nextGreatestLetter($letters, $target) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"55K\", \"totalSubmission\": \"123.1K\", \"totalAcceptedRaw\": 55036, \"totalSubmissionRaw\": 123144, \"acRate\": \"44.7%\"}",
+  "hints": [
+    "Try to find whether each of 26 next letters are in the given string array."
+  ],
+  "solution": {
+    "id": "336",
+    "canSeeDetail": true,
+    "url": "/articles/find-smallest-letter-greater-than-target/",
+    "content": "[TOC]\n\n#### Approach #1: Record Letters Seen [Accepted]\n\n**Intuition and Algorithm**\n\nLet's scan through `letters` and record if we see a letter or not.  We could do this with an array of size 26, or with a Set structure.\n\nThen, for every next letter (starting with the letter that is one greater than the target), let's check if we've seen it.  If we have, it must be the answer.\n\n<iframe src=\"https://leetcode.com/playground/auZQ7CwK/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"auZQ7CwK\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `letters`.  We scan every element of the array.\n\n* Space Complexity: $$O(1)$$, the maximum size of `seen`.\n\n---\n#### Approach #2: Linear Scan [Accepted]\n\n**Intuition and Algorithm**\n\nSince `letters` are sorted, if we see something larger when scanning form left to right, it must be the answer.  Otherwise, (since `letters` is non-empty), the answer is `letters[0]`.\n\n<iframe src=\"https://leetcode.com/playground/RvMYaXpq/shared\" frameBorder=\"0\" width=\"100%\" height=\"174\" name=\"RvMYaXpq\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$, where $$N$$ is the length of `letters`.  We scan every element of the array.\n\n* Space Complexity: $$O(1)$$, as we maintain only pointers.\n\n---\n#### Approach #3: Binary Search [Accepted]\n\n**Intuition and Algorithm**\n\nLike in *Approach #2*, we want to find something larger than target in a sorted array.  This is ideal for a *binary search*: Let's find the rightmost position to insert `target` into `letters` so that it remains sorted.\n\nOur binary search (a typical one) proceeds in a number of rounds.  At each round, let's maintain the *loop invariant* that the answer must be in the interval `[lo, hi]`.  Let `mi = (lo + hi) / 2`.  If `letters[mi] <= target`, then we must insert it in the interval `[mi + 1, hi]`.  Otherwise, we must insert it in the interval `[lo, mi]`.\n\nAt the end, if our insertion position says to insert `target` into the last position `letters.length`, we return `letters[0]` instead.  This is what the modulo operation does.\n\n<iframe src=\"https://leetcode.com/playground/bQDjgxiu/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"bQDjgxiu\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(\\log N)$$, where $$N$$ is the length of `letters`.  We peek only at $$\\log N$$ elements in the array.\n\n* Space Complexity: $$O(1)$$, as we maintain only pointers.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "331",
+      "count": 9,
+      "average": 4.444,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"c\",\"f\",\"j\"]\n\"a\"",
+  "metaData": "{\r\n  \"name\": \"nextGreatestLetter\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"letters\",\r\n      \"type\": \"character[]\"\r\n    },\r\n    {\r\n      \"name\": \"target\",\r\n      \"type\": \"character\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"character\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

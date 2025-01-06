@@ -1,0 +1,106 @@
+{
+  "questionId": "813",
+  "questionFrontendId": "797",
+  "boundTopicId": null,
+  "title": "All Paths From Source to Target",
+  "titleSlug": "all-paths-from-source-to-target",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a directed, acyclic graph of <code>N</code> nodes.&nbsp; Find all possible paths from node <code>0</code> to node <code>N-1</code>, and return them in any order.</p>\r\n\r\n<p>The graph is given as follows:&nbsp; the nodes are 0, 1, ..., graph.length - 1.&nbsp; graph[i] is a list of all nodes j for which the edge (i, j) exists.</p>\r\n\r\n<pre>\r\n<strong>Example:</strong>\r\n<strong>Input:</strong> [[1,2], [3], [3], []] \r\n<strong>Output:</strong> [[0,1,3],[0,2,3]] \r\n<strong>Explanation:</strong> The graph looks like this:\r\n0---&gt;1\r\n|    |\r\nv    v\r\n2---&gt;3\r\nThere are two paths: 0 -&gt; 1 -&gt; 3 and 0 -&gt; 2 -&gt; 3.\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in the graph will be in the range <code>[2, 15]</code>.</li>\r\n\t<li>You can print different paths in any order, but you should keep the order of nodes inside one path.</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 546,
+  "dislikes": 46,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 8}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public List<List<Integer>> allPathsSourceTarget(int[][] graph) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def allPathsSourceTarget(self, graph):\n        \"\"\"\n        :type graph: List[List[int]]\n        :rtype: List[List[int]]\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\n/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** allPathsSourceTarget(int** graph, int graphSize, int* graphColSize, int* returnSize, int** returnColumnSizes){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public IList<IList<int>> AllPathsSourceTarget(int[][] graph) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} graph\n * @return {number[][]}\n */\nvar allPathsSourceTarget = function(graph) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} graph\r\n# @return {Integer[][]}\r\ndef all_paths_source_target(graph)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func allPathsSourceTarget(_ graph: [[Int]]) -> [[Int]] {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func allPathsSourceTarget(graph [][]int) [][]int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def allPathsSourceTarget(graph: Array[Array[Int]]): List[List[Int]] = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun allPathsSourceTarget(graph: Array<IntArray>): List<List<Int>> {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn all_paths_source_target(graph: Vec<Vec<i32>>) -> Vec<Vec<i32>> {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $graph\n     * @return Integer[][]\n     */\n    function allPathsSourceTarget($graph) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"40.8K\", \"totalSubmission\": \"56.1K\", \"totalAcceptedRaw\": 40787, \"totalSubmissionRaw\": 56125, \"acRate\": \"72.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "430",
+    "canSeeDetail": true,
+    "url": "/articles/all-paths-from-source-to-target/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Recursion [Accepted]\n\n**Intuition**\n\nSince the graph is a directed, acyclic graph, any path from `A` to `B` is going to be composed of `A` plus a path from any neighbor of `A` to `B`.  We can use a recursion to return the answer.\n\n**Algorithm**\n\nLet `N` be the number of nodes in the graph.  If we are at node `N-1`, the answer is just the path `{N-1}`.  Otherwise, if we are at node `node`, the answer is `{node} + {path from nei to N-1}` for each neighbor `nei` of `node`.  This is a natural setting to use a recursion to form the answer.\n\n<iframe src=\"https://leetcode.com/playground/KUaNbvp4/shared\" frameBorder=\"0\" width=\"100%\" height=\"463\" name=\"KUaNbvp4\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(2^N N^2)$$.  We can have exponentially many paths, and for each such path, our prepending operation `path.add(0, node)` will be $$O(N^2)$$.\n\n* Space Complexity: $$O(2^N N)$$, the size of the output dominating the final space complexity.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "425",
+      "count": 36,
+      "average": 2.5,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[1,2],[3],[3],[]]",
+  "metaData": "{\r\n  \"name\": \"allPathsSourceTarget\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"graph\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<list<integer>>\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,115 @@
+{
+  "questionId": "316",
+  "questionFrontendId": "316",
+  "boundTopicId": null,
+  "title": "Remove Duplicate Letters",
+  "titleSlug": "remove-duplicate-letters",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a string which contains only lowercase letters, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.</p>\n\n<p><b>Example 1:</b></p>\n\n<pre>\n<b>Input:</b> <code>&quot;bcabc&quot;</code>\n<b>Output:</b> <code>&quot;abc&quot;</code>\n</pre>\n\n<p><b>Example 2:</b></p>\n\n<pre>\n<b>Input:</b> <code>&quot;cbacdcbc&quot;</code>\n<b>Output:</b> <code>&quot;acdb&quot;</code>\n</pre>\n",
+  "isPaidOnly": false,
+  "difficulty": "Hard",
+  "likes": 982,
+  "dislikes": 91,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "dietpepsi",
+      "profileUrl": "/dietpepsi/",
+      "avatarUrl": "https://www.gravatar.com/avatar/5db7cd8986dd0171d1682b730ce85555.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Stack",
+      "slug": "stack"
+    },
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Nutanix\", \"slug\": \"nutanix\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    string removeDuplicateLetters(string s) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public String removeDuplicateLetters(String s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def removeDuplicateLetters(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def removeDuplicateLetters(self, s: str) -> str:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nchar * removeDuplicateLetters(char * s){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public string RemoveDuplicateLetters(string s) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar removeDuplicateLetters = function(s) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {String} s\n# @return {String}\ndef remove_duplicate_letters(s)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func removeDuplicateLetters(_ s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func removeDuplicateLetters(s string) string {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def removeDuplicateLetters(s: String): String = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun removeDuplicateLetters(s: String): String {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn remove_duplicate_letters(s: String) -> String {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function removeDuplicateLetters($s) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"66.7K\", \"totalSubmission\": \"196.8K\", \"totalAcceptedRaw\": 66684, \"totalSubmissionRaw\": 196801, \"acRate\": \"33.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "761",
+    "canSeeDetail": true,
+    "url": "/articles/remove-duplicate-letters/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n\r\n#### Intuition\r\n\r\nFirst we should make sure we understand what \"lexicographical order\" means. Comparing strings doesn't work the same way as comparing numbers. Strings are compared from the first character to the last one. Which string is greater depends on the comparison between _the first unequal corresponding character_ in the two strings. As a result any string beginning with `a` will always be less than any string beginning with `b`, regardless of the ends of both strings. \r\n\r\nBecause of this, the optimal solution will have _the smallest characters as early as possible_. We draw two conclusions that provide different methods of solving this problem in $$O(N)$$:\r\n\r\n1. The leftmost letter in our solution will be the smallest letter such that the suffix from that letter contains every other. This is because we know that the solution must have one copy of every letter, and we know that the solution will have the lexicographically smallest leftmost character possible.\r\n\r\n    If there are multiple smallest letters, then we pick the leftmost one simply because it gives us more options. We can always eliminate more letters later on, so the optimal solution will always remain in our search space.\r\n\r\n2. As we iterate over our string, if character `i` is greater than character `i+1` and another occurrence of character `i` exists later in the string, deleting character `i` will **always** lead to the optimal solution. Characters that come later in the string `i` don't matter in this calculation because `i` is in a more significant spot. Even if character `i+1` isn't the best yet, we can always replace it for a smaller character down the line if possible.\r\n\r\nSince we try to remove characters as early as possible, and picking the best letter at each step leads to the best solution, \"greedy\" should be going off like an alarm.  \r\n\r\n---\r\n\r\n#### Approach 1: Greedy - Solving Letter by Letter\r\n\r\n**Algorithm**\r\n\r\nWe use idea number one from the intuition. In each iteration, we determine leftmost letter in our solution. This will be **the smallest character such that its suffix contains at least one copy of every character in the string**. We determine the rest our answer by recursively calling the function on the suffix we generate from the original string (leftmost letter is removed).\r\n\r\n\r\n**Implementation**\r\n<iframe src=\"https://leetcode.com/playground/AfGyxBeY/shared\" frameBorder=\"0\" width=\"100%\" height=\"361\" name=\"AfGyxBeY\"></iframe>\r\n\r\nNote that the code in this section is a translated / commented version of the code [in this post](https://leetcode.com/problems/remove-duplicate-letters/discuss/76768/A-short-O(n)-recursive-greedy-solution) originally written by [lixx2100](https://leetcode.com/lixx2100/).\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(N)$$. Each recursive call will take $$O(N)$$. The number of recursive calls is bounded by a constant (26 letters in the alphabet), so we have $$O(N) * C = O(N)$$.\r\n\r\n* Space complexity : $$O(N)$$. Each time we slice the string we're creating a new one (strings are immutable). The number of slices is bound by a constant, so we have $$O(N) * C = O(N)$$.\r\n\r\n\r\n---\r\n#### Approach 2: Greedy - Solving with Stack\r\n\r\n**Algorithm**\r\n\r\nWe use idea number two from the intuition. We will keep a stack to store the solution we have built as we iterate over the string, and we will delete characters off the stack whenever it is possible and it makes our string smaller.\r\n\r\nEach iteration we add the current character to the solution if it hasn't already been used. We try to remove as many characters as possible off the top of the stack, and then add the current character\r\n\r\nThe conditions for deletion are:\r\n\r\n1. The character is greater than the current characters\r\n2. The character can be removed because it occurs later on\r\n\r\nAt each stage in our iteration through the string, we greedily keep what's on the stack as small as possible.\r\n\r\nThe following animation makes this more clear:\r\n\r\n!?!../Documents/316_remove_duplicate_letters.json:960,540!?!\r\n\r\n**Implementation**\r\n<iframe src=\"https://leetcode.com/playground/5LMwNsW9/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"5LMwNsW9\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time complexity : $$O(N)$$. Although there is a loop inside a loop, the time complexity is still $$O(N)$$. This is because the inner while loop is bounded by the total number of elements added to the stack (each time it fires an element goes). This means that the _total_ amount of time spent in the inner loop is bounded by $$O(N)$$, giving us a total time complexity of $$O(N)$$\r\n\r\n* Space complexity : $$O(1)$$. At first glance it looks like this is $$O(N)$$, but that is not true! `seen` will only contain unique elements, so it's bounded by the number of characters in the alphabet (a constant). You can only add to `stack` if an element has not been seen, so `stack` also only consists of unique elements. This means that _both_ `stack` and `seen` are bounded by constant, giving us $$O(1)$$ space complexity.\r\n\r\n---\r\n\r\nAnalysis written by @[alwinpeng](https://leetcode.com/alwinpeng/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "746",
+      "count": 14,
+      "average": 4.786,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "\"bcabc\"",
+  "metaData": "{ \r\n  \"name\": \"removeDuplicateLetters\",\r\n  \"params\": [\r\n    { \r\n      \"name\": \"s\",\r\n      \"type\": \"string\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"string\"\r\n  }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,117 @@
+{
+  "questionId": "747",
+  "questionFrontendId": "746",
+  "boundTopicId": null,
+  "title": "Min Cost Climbing Stairs",
+  "titleSlug": "min-cost-climbing-stairs",
+  "categoryTitle": "Algorithms",
+  "content": "<p>\r\nOn a staircase, the <code>i</code>-th step has some non-negative cost <code>cost[i]</code> assigned (0 indexed).\r\n</p><p>\r\nOnce you pay the cost, you can either climb one or two steps. You need to find minimum cost to reach the top of the floor, and you can either start from the step with index 0, or the step with index 1.\r\n</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre>\r\n<b>Input:</b> cost = [10, 15, 20]\r\n<b>Output:</b> 15\r\n<b>Explanation:</b> Cheapest is start on cost[1], pay that cost and go to the top.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre>\r\n<b>Input:</b> cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]\r\n<b>Output:</b> 6\r\n<b>Explanation:</b> Cheapest is start on cost[0], and only step on 1s, skipping cost[3].\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b><br>\r\n<ol>\r\n<li><code>cost</code> will have a length in the range <code>[2, 1000]</code>.</li>\r\n<li>Every <code>cost[i]</code> will be an integer in the range <code>[0, 999]</code>.</li>\r\n</ol>\r\n</p>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 1395,
+  "dislikes": 321,
+  "isLiked": null,
+  "similarQuestions": "[{\"title\": \"Climbing Stairs\", \"titleSlug\": \"climbing-stairs\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "contributors": [
+    {
+      "username": "TopCoder111",
+      "profileUrl": "/topcoder111/",
+      "avatarUrl": "https://www.gravatar.com/avatar/07d37cabdf9ca9925de617df3574c460.png?s=200"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int minCostClimbingStairs(vector<int>& cost) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int minCostClimbingStairs(int[] cost) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def minCostClimbingStairs(self, cost):\n        \"\"\"\n        :type cost: List[int]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def minCostClimbingStairs(self, cost: List[int]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint minCostClimbingStairs(int* cost, int costSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MinCostClimbingStairs(int[] cost) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} cost\n * @return {number}\n */\nvar minCostClimbingStairs = function(cost) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} cost\n# @return {Integer}\ndef min_cost_climbing_stairs(cost)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func minCostClimbingStairs(_ cost: [Int]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func minCostClimbingStairs(cost []int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def minCostClimbingStairs(cost: Array[Int]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun minCostClimbingStairs(cost: IntArray): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn min_cost_climbing_stairs(cost: Vec<i32>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $cost\n     * @return Integer\n     */\n    function minCostClimbingStairs($cost) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"111.6K\", \"totalSubmission\": \"229.7K\", \"totalAcceptedRaw\": 111575, \"totalSubmissionRaw\": 229747, \"acRate\": \"48.6%\"}",
+  "hints": [
+    "Say f[i] is the final cost to climb to the top from step i.  Then f[i] = cost[i] + min(f[i+1], f[i+2])."
+  ],
+  "solution": {
+    "id": "347",
+    "canSeeDetail": true,
+    "url": "/articles/min-cost-climbing-stairs/",
+    "content": "[TOC]\n\n#### Approach #1: Dynamic Programming [Accepted]\n\n**Intuition**\n\nThere is a clear recursion available: the final cost `f[i]` to climb the staircase from some step `i` is `f[i] = cost[i] + min(f[i+1], f[i+2])`.  This motivates *dynamic programming*.\n\n**Algorithm**\n\nLet's evaluate `f` backwards in order.  That way, when we are deciding what `f[i]` will be, we've already figured out `f[i+1]` and `f[i+2]`.\n\nWe can do even better than that.  At the `i`-th step, let `f1, f2` be the old value of `f[i+1]`, `f[i+2]`, and update them to be the new values `f[i], f[i+1]`.  We keep these updated as we iterate through `i` backwards.  At the end, we want `min(f1, f2)`.\n\n<iframe src=\"https://leetcode.com/playground/R8h7KgV3/shared\" frameBorder=\"0\" width=\"100%\" height=\"242\" name=\"R8h7KgV3\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity: $$O(N)$$ where $$N$$ is the length of `cost`.\n\n* Space Complexity: $$O(1)$$, the space used by `f1, f2`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "342",
+      "count": 83,
+      "average": 2.711,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[0,0,0,0]",
+  "metaData": "{\r\n  \"name\": \"minCostClimbingStairs\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"cost\",\r\n      \"type\": \"integer[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

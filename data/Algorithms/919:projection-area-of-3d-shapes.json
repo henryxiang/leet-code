@@ -1,0 +1,111 @@
+{
+  "questionId": "919",
+  "questionFrontendId": "883",
+  "boundTopicId": null,
+  "title": "Projection Area of 3D Shapes",
+  "titleSlug": "projection-area-of-3d-shapes",
+  "categoryTitle": "Algorithms",
+  "content": "<p>On a&nbsp;<code>N&nbsp;*&nbsp;N</code> grid, we place some&nbsp;<code>1 * 1 * 1&nbsp;</code>cubes that are axis-aligned with the x, y, and z axes.</p>\r\n\r\n<p>Each value&nbsp;<code>v = grid[i][j]</code>&nbsp;represents a tower of&nbsp;<code>v</code>&nbsp;cubes placed on top of grid cell <code>(i, j)</code>.</p>\r\n\r\n<p>Now we view the&nbsp;<em>projection</em>&nbsp;of these cubes&nbsp;onto the xy, yz, and zx planes.</p>\r\n\r\n<p>A projection is like a shadow, that&nbsp;maps our 3 dimensional figure to a 2 dimensional plane.&nbsp;</p>\r\n\r\n<p>Here, we are viewing the &quot;shadow&quot; when looking at the cubes from the top, the front, and the side.</p>\r\n\r\n<p>Return the total area of all three projections.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<ul>\r\n</ul>\r\n</div>\r\n\r\n<div>\r\n<div>\r\n<ul>\r\n</ul>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<ul>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<ul>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[[2]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">5</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-2-1\">[[1,2],[3,4]]</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">17</span>\r\n<strong>Explanation: </strong>\r\nHere are the three projections (&quot;shadows&quot;) of the shape made with each axis-aligned plane.\r\n<img alt=\"\" src=\"https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/02/shadow.png\" style=\"width: 749px; height: 200px;\" />\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-3-1\">[[1,0],[0,2]]</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">8</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 4:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-4-1\">[[1,1,1],[1,0,1],[1,1,1]]</span>\r\n<strong>Output: </strong><span id=\"example-output-4\">14</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 5:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-5-1\">[[2,2,2],[2,1,2],[2,2,2]]</span>\r\n<strong>Output: </strong><span id=\"example-output-5\">21</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div>\r\n<div>\r\n<div>\r\n<p><span><strong>Note:</strong></span></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= grid.length = grid[0].length&nbsp;&lt;= 50</code></li>\r\n\t<li><code>0 &lt;= grid[i][j] &lt;= 50</code></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 193,
+  "dislikes": 655,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "lee215",
+      "profileUrl": "/lee215/",
+      "avatarUrl": "https://assets.leetcode.com/users/lee215/avatar_1551541889.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Math",
+      "slug": "math"
+    }
+  ],
+  "companyTagStats": "{\"1\": [], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int projectionArea(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int projectionArea(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def projectionArea(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def projectionArea(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint projectionArea(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int ProjectionArea(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar projectionArea = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef projection_area(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func projectionArea(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func projectionArea(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def projectionArea(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun projectionArea(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn projection_area(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function projectionArea($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"24.1K\", \"totalSubmission\": \"36.2K\", \"totalAcceptedRaw\": 24108, \"totalSubmissionRaw\": 36156, \"acRate\": \"66.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "526",
+    "canSeeDetail": true,
+    "url": "/articles/projection-area-of-3d-shapes/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Mathematical\n\n**Intuition and Algorithm**\n\nFrom the top, the shadow made by the shape will be 1 square for each non-zero value.\n\nFrom the side, the shadow made by the shape will be the largest value for each row in the grid.\n\nFrom the front, the shadow made by the shape will be the largest value for each column in the grid.\n\n\n**Example**\n\nWith the example `[[1,2],[3,4]]`:\n\n* The shadow from the top will be 4, since there are four non-zero values in the grid;\n\n* The shadow from the side will be `2 + 4`, since the maximum value of the first row is `2`, and the maximum value of the second row is `4`;\n\n* The shadow from the front will be `3 + 4`, since the maximum value of the first column is `3`, and the maximum value of the second column is `4`.\n\n<iframe src=\"https://leetcode.com/playground/unjtgTJT/shared\" frameBorder=\"0\" width=\"100%\" height=\"429\" name=\"unjtgTJT\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the length of `grid`.\n\n* Space Complexity:  $$O(1)$$.\n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "519",
+      "count": 12,
+      "average": 4.167,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[2]]",
+  "metaData": "{\r\n  \"name\": \"projectionArea\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

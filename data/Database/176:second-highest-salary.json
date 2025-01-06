@@ -1,0 +1,62 @@
+{
+  "questionId": "176",
+  "questionFrontendId": "176",
+  "boundTopicId": null,
+  "title": "Second Highest Salary",
+  "titleSlug": "second-highest-salary",
+  "categoryTitle": "Database",
+  "content": "<p>Write a SQL query to get the second highest salary from the <code>Employee</code> table.</p>\r\n\r\n<pre>\r\n+----+--------+\r\n| Id | Salary |\r\n+----+--------+\r\n| 1  | 100    |\r\n| 2  | 200    |\r\n| 3  | 300    |\r\n+----+--------+\r\n</pre>\r\n\r\n<p>For example, given the above Employee table, the query should return <code>200</code> as the second highest salary. If there is no second highest salary, then the query should return <code>null</code>.</p>\r\n\r\n<pre>\r\n+---------------------+\r\n| SecondHighestSalary |\r\n+---------------------+\r\n| 200                 |\r\n+---------------------+\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 619,
+  "dislikes": 339,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 2}, {\"taggedByAdmin\": false, \"name\": \"Yahoo\", \"slug\": \"yahoo\", \"timesEncountered\": 2}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 3}, {\"taggedByAdmin\": false, \"name\": \"Walmart Labs\", \"slug\": \"walmart-labs\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"174.5K\", \"totalSubmission\": \"594.5K\", \"totalAcceptedRaw\": 174519, \"totalSubmissionRaw\": 594507, \"acRate\": \"29.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "217",
+    "canSeeDetail": true,
+    "url": "/articles/second-highest-salary/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using sub-query and `LIMIT` clause [Accepted]\n\n**Algorithm**\n\nSort the distinct salary in descend order and then utilize the [`LIMIT`](https://dev.mysql.com/doc/refman/5.7/en/select.html) clause to get the second highest salary.\n\n```sql\nSELECT DISTINCT\n    Salary AS SecondHighestSalary\nFROM\n    Employee\nORDER BY Salary DESC\nLIMIT 1 OFFSET 1\n```\n\nHowever, this solution will be judged as 'Wrong Answer' if there is no such second highest salary since there might be only one record in this table. To overcome this issue, we can take this as a temp table.\n\n**MySQL**\n\n```sql\nSELECT\n    (SELECT DISTINCT\n            Salary\n        FROM\n            Employee\n        ORDER BY Salary DESC\n        LIMIT 1 OFFSET 1) AS SecondHighestSalary\n;\n```\n\n#### Approach: Using `IFNULL` and `LIMIT` clause [Accepted]\n\nAnother way to solve the 'NULL' problem is to use `IFNULL` funtion as below.\n\n**MySQL**\n```sql\nSELECT\n    IFNULL(\n      (SELECT DISTINCT Salary\n       FROM Employee\n       ORDER BY Salary DESC\n        LIMIT 1 OFFSET 1),\n    NULL) AS SecondHighestSalary\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "212",
+      "count": 72,
+      "average": 4.028,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"Employee\": [\"Id\", \"Salary\"]}, \"rows\": {\"Employee\": [[1, 100], [2, 200], [3, 300]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Employee (Id int, Salary int)\"\n  ],\n  \"mssql\": [\n    \"create table Employee ( Id int, Salary int )\"\n  ],\n  \"oraclesql\": [\n    \"create table Employee ( Id int, Salary int )\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Employee (Id int, Salary int)",
+    "Truncate table Employee",
+    "insert into Employee (Id, Salary) values ('1', '100')",
+    "insert into Employee (Id, Salary) values ('2', '200')",
+    "insert into Employee (Id, Salary) values ('3', '300')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

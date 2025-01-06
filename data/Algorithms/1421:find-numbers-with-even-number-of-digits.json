@@ -1,0 +1,96 @@
+{
+  "questionId": "1421",
+  "questionFrontendId": "1295",
+  "boundTopicId": null,
+  "title": "Find Numbers with Even Number of Digits",
+  "titleSlug": "find-numbers-with-even-number-of-digits",
+  "categoryTitle": "Algorithms",
+  "content": "Given an array <code>nums</code> of integers, return how many of them contain an <strong>even number</strong> of digits.\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [12,345,2,6,7896]\r\n<strong>Output:</strong> 2\r\n<strong>Explanation: \r\n</strong>12 contains 2 digits (even number of digits).&nbsp;\r\n345 contains 3 digits (odd number of digits).&nbsp;\r\n2 contains 1 digit (odd number of digits).&nbsp;\r\n6 contains 1 digit (odd number of digits).&nbsp;\r\n7896 contains 4 digits (even number of digits).&nbsp;\r\nTherefore only 12 and 7896 contain an even number of digits.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [555,901,482,1771]\r\n<strong>Output:</strong> 1 \r\n<strong>Explanation: </strong>\r\nOnly 1771 contains an even number of digits.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= nums.length &lt;= 500</code></li>\r\n\t<li><code>1 &lt;= nums[i] &lt;= 10^5</code></li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 40,
+  "dislikes": 9,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Quora\", \"slug\": \"quora\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\r\npublic:\r\n    int findNumbers(vector<int>& nums) {\r\n        \r\n    }\r\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\r\n    public int findNumbers(int[] nums) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\r\n    def findNumbers(self, nums):\r\n        \"\"\"\r\n        :type nums: List[int]\r\n        :rtype: int\r\n        \"\"\""
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\r\n    def findNumbers(self, nums: List[int]) -> int:"
+    },
+    {
+      "lang": "C",
+      "code": "int findNumbers(int* nums, int numsSize){\r\n\r\n}"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\r\n    public int FindNumbers(int[] nums) {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\r\n * @param {number[]} nums\r\n * @return {number}\r\n */\r\nvar findNumbers = function(nums) {\r\n    \r\n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} nums\r\n# @return {Integer}\r\ndef find_numbers(nums)\r\n    \r\nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\r\n    func findNumbers(_ nums: [Int]) -> Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func findNumbers(nums []int) int {\r\n    \r\n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\r\n    def findNumbers(nums: Array[Int]): Int = {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\r\n    fun findNumbers(nums: IntArray): Int {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\r\n    pub fn find_numbers(nums: Vec<i32>) -> i32 {\r\n        \r\n    }\r\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\r\n\r\n    /**\r\n     * @param Integer[] $nums\r\n     * @return Integer\r\n     */\r\n    function findNumbers($nums) {\r\n        \r\n    }\r\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"8.9K\", \"totalSubmission\": \"10.3K\", \"totalAcceptedRaw\": 8934, \"totalSubmissionRaw\": 10324, \"acRate\": \"86.5%\"}",
+  "hints": [
+    "How to compute the number of digits of a number ?",
+    "Divide the number by 10 again and again to get the number of digits."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[12,345,2,6,7896]",
+  "metaData": "{\n  \"name\": \"findNumbers\",\n  \"params\": [\n    {\n      \"name\": \"nums\",\n      \"type\": \"integer[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

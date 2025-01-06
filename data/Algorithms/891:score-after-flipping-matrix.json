@@ -1,0 +1,105 @@
+{
+  "questionId": "891",
+  "questionFrontendId": "861",
+  "boundTopicId": null,
+  "title": "Score After Flipping Matrix",
+  "titleSlug": "score-after-flipping-matrix",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We have a two dimensional matrix&nbsp;<code>A</code> where each value is <code>0</code> or <code>1</code>.</p>\r\n\r\n<p>A move consists of choosing any row or column, and toggling each value in that row or column: changing all <code>0</code>s to <code>1</code>s, and all <code>1</code>s to <code>0</code>s.</p>\r\n\r\n<p>After making any number of moves, every row of this matrix is interpreted as a binary number, and the score of the matrix is the sum of these numbers.</p>\r\n\r\n<p>Return the highest possible&nbsp;score.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong><span id=\"example-input-1-1\">[[0,0,1,1],[1,0,1,0],[1,1,0,0]]</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">39</span>\r\n<strong>Explanation:\r\n</strong>Toggled to <span id=\"example-input-1-1\">[[1,1,1,1],[1,0,0,1],[1,1,1,1]].\r\n0b1111 + 0b1001 + 0b1111 = 15 + 9 + 15 = 39</span></pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>1 &lt;= A.length &lt;= 20</code></li>\r\n\t<li><code>1 &lt;= A[0].length &lt;= 20</code></li>\r\n\t<li><code>A[i][j]</code>&nbsp;is <code>0</code> or <code>1</code>.</li>\r\n</ol>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 345,
+  "dislikes": 88,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"IIT Bombay\", \"slug\": \"iit-bombay\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int matrixScore(vector<vector<int>>& A) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int matrixScore(int[][] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def matrixScore(self, A):\n        \"\"\"\n        :type A: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def matrixScore(self, A: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint matrixScore(int** A, int ASize, int* AColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MatrixScore(int[][] A) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} A\n * @return {number}\n */\nvar matrixScore = function(A) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} a\n# @return {Integer}\ndef matrix_score(a)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func matrixScore(_ A: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func matrixScore(A [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def matrixScore(A: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun matrixScore(A: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn matrix_score(a: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $A\n     * @return Integer\n     */\n    function matrixScore($A) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"16.6K\", \"totalSubmission\": \"23.4K\", \"totalAcceptedRaw\": 16639, \"totalSubmissionRaw\": 23414, \"acRate\": \"71.1%\"}",
+  "hints": [],
+  "solution": {
+    "id": "497",
+    "canSeeDetail": true,
+    "url": "/articles/score-after-flipping-matrix/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Brute Force\n\n**Intuition**\n\nNotice that a `1` in the $$i$$th column from the right, contributes $$2^i$$ to the score.\n\nSay we are finished toggling the rows in some configuration.  Then for each column, (to maximize the score), we'll toggle the column if it would increase the number of `1`s.\n\nWe can brute force over every possible way to toggle rows.\n\n**Algorithm**\n\nSay the matrix has `R` rows and `C` columns.\n\nFor each `state`, the transition `trans = state ^ (state-1)` represents the rows that must be toggled to get into the state of toggled rows represented by (the bits of) `state`.\n\nWe'll toggle them, and also maintain the correct column sums of the matrix on the side.\n\nAfterwards, we'll calculate the score.  If for example the last column has a column sum of `3`, then the score is `max(3, R-3)`, where `R-3` represents the score we get from toggling the last column.\n\nIn general, the score is increased by `max(col_sum, R - col_sum) * (1 << (C-1-c))`, where the factor `(1 << (C-1-c))` is the power of `2` that each `1` contributes.\n\nNote that this approach may not run in the time allotted.\n\n\n<iframe src=\"https://leetcode.com/playground/RqkiosdE/shared\" frameBorder=\"0\" width=\"100%\" height=\"500\" name=\"RqkiosdE\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(2^R * R * C)$$, where $$R, C$$ is the number of rows and columns in the matrix.\n\n* Space Complexity:  $$O(C)$$ in additional space complexity.\n<br />\n<br />\n\n\n---\n#### Approach 2: Greedy\n\n**Intuition**\n\nNotice that a `1` in the $$i$$th column from the right, contributes $$2^i$$ to the score.\n\nSince $$2^n > 2^{n-1} + 2^{n-2} + \\cdots + 2^0$$, maximizing the left-most digit is more important than any other digit.  Thus, the rows should be toggled such that the left-most column is either all `0` or all `1` (so that after toggling the left-most column [if necessary], the left column is all `1`.)\n\n**Algorithm**\n\nIf we toggle rows by the first column (`A[r][c] ^= A[r][0]`), then the first column will be all `0`.\n\nAfterwards, the base score is `max(col, R - col)` where `col` is the column sum; and `(1 << (C-1-c))` is the power of 2 that each `1` in that column contributes to the score.\n\n<iframe src=\"https://leetcode.com/playground/2SApjxHH/shared\" frameBorder=\"0\" width=\"100%\" height=\"276\" name=\"2SApjxHH\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(R * C)$$, $$R, C$$ is the number of rows and columns in the matrix.\n\n* Space Complexity:  $$O(1)$$ in additional space complexity.\n<br />\n<br />\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "490",
+      "count": 27,
+      "average": 3,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[0,0,1,1],[1,0,1,0],[1,1,0,0]]",
+  "metaData": "{\r\n  \"name\": \"matrixScore\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

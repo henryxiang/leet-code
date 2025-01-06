@@ -1,0 +1,67 @@
+{
+  "questionId": "183",
+  "questionFrontendId": "183",
+  "boundTopicId": null,
+  "title": "Customers Who Never Order",
+  "titleSlug": "customers-who-never-order",
+  "categoryTitle": "Database",
+  "content": "<p>Suppose that a website contains two tables, the <code>Customers</code> table and the <code>Orders</code> table. Write a SQL query to find all customers who never order anything.</p>\r\n\r\n<p>Table: <code>Customers</code>.</p>\r\n\r\n<pre>\r\n+----+-------+\r\n| Id | Name  |\r\n+----+-------+\r\n| 1  | Joe   |\r\n| 2  | Henry |\r\n| 3  | Sam   |\r\n| 4  | Max   |\r\n+----+-------+\r\n</pre>\r\n\r\n<p>Table: <code>Orders</code>.</p>\r\n\r\n<pre>\r\n+----+------------+\r\n| Id | CustomerId |\r\n+----+------------+\r\n| 1  | 3          |\r\n| 2  | 1          |\r\n+----+------------+\r\n</pre>\r\n\r\n<p>Using the above tables as example, return the following:</p>\r\n\r\n<pre>\r\n+-----------+\r\n| Customers |\r\n+-----------+\r\n| Henry     |\r\n| Max       |\r\n+-----------+\r\n</pre>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Easy",
+  "likes": 292,
+  "dislikes": 38,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [],
+  "companyTagStats": "{\"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "Oracle",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"133.7K\", \"totalSubmission\": \"274.8K\", \"totalAcceptedRaw\": 133736, \"totalSubmissionRaw\": 274801, \"acRate\": \"48.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "218",
+    "canSeeDetail": true,
+    "url": "/articles/customers-who-never-order/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach: Using sub-query and `NOT IN` clause [Accepted]\n\n**Algorithm**\n\nIf we have a list of customers who have ever ordered, it will be easy to know who never ordered.\n\nWe can use the following code to get such list.\n\n```sql\nselect customerid from orders;\n```\n\nThen, we can use `NOT IN` to query the customers who are not in this list.\n\n**MySQL**\n\n```sql\nselect customers.name as 'Customers'\nfrom customers\nwhere customers.id not in\n(\n    select customerid from orders\n);\n```",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "213",
+      "count": 10,
+      "average": 4.6,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "{\"headers\": {\"Customers\": [\"Id\", \"Name\"], \"Orders\": [\"Id\", \"CustomerId\"]}, \"rows\": {\"Customers\": [[1, \"Joe\"], [2, \"Henry\"], [3, \"Sam\"], [4, \"Max\"]], \"Orders\": [[1, 3], [2, 1]]}}",
+  "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Customers (Id int, Name varchar(255))\",\n    \"Create table If Not Exists Orders (Id int, CustomerId int)\"\n  ],\n  \"mssql\": [\n    \"create table Customers ( Id int,  Name varchar(255) )\",\n    \"Create table Orders (Id int, CustomerId int)\"\n  ],\n  \"oraclesql\": [\n    \"create table Customers ( Id int,  Name varchar(255) )\",\n    \"Create table Orders (Id int, CustomerId int)\"\n  ],\n  \"database\": true\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [
+    "Create table If Not Exists Customers (Id int, Name varchar(255))",
+    "Create table If Not Exists Orders (Id int, CustomerId int)",
+    "Truncate table Customers",
+    "insert into Customers (Id, Name) values ('1', 'Joe')",
+    "insert into Customers (Id, Name) values ('2', 'Henry')",
+    "insert into Customers (Id, Name) values ('3', 'Sam')",
+    "insert into Customers (Id, Name) values ('4', 'Max')",
+    "Truncate table Orders",
+    "insert into Orders (Id, CustomerId) values ('1', '3')",
+    "insert into Orders (Id, CustomerId) values ('2', '1')"
+  ],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

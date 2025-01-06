@@ -1,0 +1,105 @@
+{
+  "questionId": "985",
+  "questionFrontendId": "948",
+  "boundTopicId": null,
+  "title": "Bag of Tokens",
+  "titleSlug": "bag-of-tokens",
+  "categoryTitle": "Algorithms",
+  "content": "<p>You have an initial power <code>P</code>, an initial score of <code>0</code> points, and a bag of tokens.</p>\r\n\r\n<p>Each token can be used at most once, has a value <code>token[i]</code>, and has potentially two ways to use it.</p>\r\n\r\n<ul>\r\n\t<li>If we have at least <code>token[i]</code> power, we may play the token face up, losing <code>token[i]</code> power, and gaining <code>1</code> point.</li>\r\n\t<li>If we have at least <code>1</code> point, we may play the token face down, gaining <code>token[i]</code> power, and losing <code>1</code> point.</li>\r\n</ul>\r\n\r\n<p>Return the largest number of points we can have after playing any number of tokens.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ol>\r\n</ol>\r\n\r\n<div>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>tokens = <span id=\"example-input-1-1\">[100]</span>, P = <span id=\"example-input-1-2\">50</span>\r\n<strong>Output: </strong><span id=\"example-output-1\">0</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>tokens = <span id=\"example-input-2-1\">[100,200]</span>, P = <span id=\"example-input-2-2\">150</span>\r\n<strong>Output: </strong><span id=\"example-output-2\">1</span>\r\n</pre>\r\n\r\n<div>\r\n<p><strong>Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input: </strong>tokens = <span id=\"example-input-3-1\">[100,200,300,400]</span>, P = <span id=\"example-input-3-2\">200</span>\r\n<strong>Output: </strong><span id=\"example-output-3\">2</span>\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ol>\r\n\t<li><code>tokens.length &lt;= 1000</code></li>\r\n\t<li><code>0 &lt;= tokens[i] &lt; 10000</code></li>\r\n\t<li><code>0 &lt;= P &lt; 10000</code></li>\r\n</ol>\r\n</div>\r\n</div>\r\n</div>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 126,
+  "dislikes": 122,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Greedy",
+      "slug": "greedy"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int bagOfTokensScore(vector<int>& tokens, int P) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int bagOfTokensScore(int[] tokens, int P) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def bagOfTokensScore(self, tokens, P):\n        \"\"\"\n        :type tokens: List[int]\n        :type P: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def bagOfTokensScore(self, tokens: List[int], P: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint bagOfTokensScore(int* tokens, int tokensSize, int P){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int BagOfTokensScore(int[] tokens, int P) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} tokens\n * @param {number} P\n * @return {number}\n */\nvar bagOfTokensScore = function(tokens, P) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} tokens\n# @param {Integer} p\n# @return {Integer}\ndef bag_of_tokens_score(tokens, p)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func bagOfTokensScore(_ tokens: [Int], _ P: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func bagOfTokensScore(tokens []int, P int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def bagOfTokensScore(tokens: Array[Int], P: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun bagOfTokensScore(tokens: IntArray, P: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn bag_of_tokens_score(tokens: Vec<i32>, p: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $tokens\n     * @param Integer $P\n     * @return Integer\n     */\n    function bagOfTokensScore($tokens, $P) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"8.6K\", \"totalSubmission\": \"21.6K\", \"totalAcceptedRaw\": 8631, \"totalSubmissionRaw\": 21624, \"acRate\": \"39.9%\"}",
+  "hints": [],
+  "solution": {
+    "id": "626",
+    "canSeeDetail": true,
+    "url": "/articles/bag-of-tokens/",
+    "content": "[TOC]\n\n## Solution\n---\n#### Approach 1: Greedy\n\n**Intuition**\n\nIf we play a token face up, we might as well play the one with the smallest value.  Similarly, if we play a token face down, we might as well play the one with the largest value.\n\n**Algorithm**\n\nWe don't need to play anything until absolutely necessary.  Let's play tokens face up until we can't, then play a token face down and continue.\n\nWe must be careful, as it is easy for our implementation to be incorrect if we do not handle corner cases correctly.  We should always play tokens face up until exhaustion, then play one token face down and continue.\n\nOur loop must be constructed with the right termination condition: we can either play a token face up or face down.\n\nOur final answer could be any of the intermediate answers we got after playing tokens face up (but before playing them face down.)\n\n<iframe src=\"https://leetcode.com/playground/FarrjFkE/shared\" frameBorder=\"0\" width=\"100%\" height=\"412\" name=\"FarrjFkE\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N \\log N)$$, where $$N$$ is the length of `tokens`.\n\n* Space Complexity:  $$O(N)$$. \n<br />\n<br />\n\n\n---\n\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "612",
+      "count": 5,
+      "average": 4,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[100]\n50",
+  "metaData": "{\r\n  \"name\": \"bagOfTokensScore\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"tokens\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"P\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

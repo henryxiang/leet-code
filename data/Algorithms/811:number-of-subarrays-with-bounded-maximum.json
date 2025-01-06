@@ -1,0 +1,111 @@
+{
+  "questionId": "811",
+  "questionFrontendId": "795",
+  "boundTopicId": null,
+  "title": "Number of Subarrays with Bounded Maximum",
+  "titleSlug": "number-of-subarrays-with-bounded-maximum",
+  "categoryTitle": "Algorithms",
+  "content": "<p>We are given an array <code>A</code> of positive integers, and two positive integers <code>L</code> and <code>R</code> (<code>L &lt;= R</code>).</p>\r\n\r\n<p>Return the number of (contiguous, non-empty) subarrays such that the value of the maximum array element in that subarray is at least <code>L</code> and at most <code>R</code>.</p>\r\n\r\n<pre>\r\n<strong>Example :</strong>\r\n<strong>Input:</strong> \r\nA = [2, 1, 4, 3]\r\nL = 2\r\nR = 3\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> There are three subarrays that meet the requirements: [2], [2, 1], [3].\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<ul>\r\n\t<li>L, R&nbsp; and <code>A[i]</code> will be an integer in the range <code>[0, 10^9]</code>.</li>\r\n\t<li>The length of <code>A</code> will be in the range of <code>[1, 50000]</code>.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 421,
+  "dislikes": 38,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "ngoc_lam",
+      "profileUrl": "/ngoc_lam/",
+      "avatarUrl": "https://assets.leetcode.com/users/ngoc_lam/avatar_1528594557.png"
+    }
+  ],
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Adobe\", \"slug\": \"adobe\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int numSubarrayBoundedMax(vector<int>& A, int L, int R) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int numSubarrayBoundedMax(int[] A, int L, int R) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def numSubarrayBoundedMax(self, A, L, R):\n        \"\"\"\n        :type A: List[int]\n        :type L: int\n        :type R: int\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def numSubarrayBoundedMax(self, A: List[int], L: int, R: int) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint numSubarrayBoundedMax(int* A, int ASize, int L, int R){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int NumSubarrayBoundedMax(int[] A, int L, int R) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[]} A\n * @param {number} L\n * @param {number} R\n * @return {number}\n */\nvar numSubarrayBoundedMax = function(A, L, R) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[]} a\n# @param {Integer} l\n# @param {Integer} r\n# @return {Integer}\ndef num_subarray_bounded_max(a, l, r)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func numSubarrayBoundedMax(_ A: [Int], _ L: Int, _ R: Int) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func numSubarrayBoundedMax(A []int, L int, R int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def numSubarrayBoundedMax(A: Array[Int], L: Int, R: Int): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun numSubarrayBoundedMax(A: IntArray, L: Int, R: Int): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn num_subarray_bounded_max(a: Vec<i32>, l: i32, r: i32) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $A\n     * @param Integer $L\n     * @param Integer $R\n     * @return Integer\n     */\n    function numSubarrayBoundedMax($A, $L, $R) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"14.6K\", \"totalSubmission\": \"32.6K\", \"totalAcceptedRaw\": 14596, \"totalSubmissionRaw\": 32647, \"acRate\": \"44.7%\"}",
+  "hints": [],
+  "solution": {
+    "id": "424",
+    "canSeeDetail": true,
+    "url": "/articles/number-of-subarrays-with-bounded-maximum/",
+    "content": "[TOC]\r\n\r\n---\r\n#### Approach #1: Counting [Accepted]\r\n\r\n**Intuition**\r\n\r\nWe can make the following logical steps to arrive at the solution:\r\n\r\nAs we only care about whether each element is less than, between, or greater than the interval `[L, R]`, let's pretend each element is either `0` if it is less than `L`; `1` if it is between `L` and `R`; or `2` if it is greater than `R`.\r\n\r\nThen, we want the number of subarrays with no `2` and at least one `1`.  The `2`s split the array into groups of arrays with only `0`s and `1`s.  For example, if our array is `[0, 0, 1, 2, 2, 1, 0, 2, 0]`, then the answer is just the answer for `[0, 0, 1]` plus the answer for `[1, 0]` plus the answer for `[0]`.\r\n\r\nFor each such group (arrays of only `0`s or `1`s), to count the number of subarrays that have at least one `1`, let's count all the subarrays in the group, minus the subarrays that only have zeroes.  \r\n\r\nFor example, `[0, 0, 1]` has 6 subarrays, 3 of which are zero-only, which adds 3 to the answer; `[1, 0]` has 3 subarrays, 1 of which is zero-only, which adds 2 to the answer; and `[0]` has 1 subarray, 1 of which is zero-only, which adds 0 to the answer.  The final answer to the previous original example of `A = [0, 0, 1, 2, 2, 1, 0, 2, 0]` is `3 + 2 + 0 = 5`.\r\n\r\n**Algorithm**\r\n\r\nSay `count(B)` is the number of subarrays that have all elements less than or equal to `B`.  From the above reasoning, the answer is `count(R) - count(L-1)`.\r\n\r\nHow do we compute `count(B)`?  We remember `cur`, the number of contiguous, previous elements less than or equal to `B`.  When we see a new element less than or equal to `B`, the number of valid subarrays ending at this position is `cur + 1`.  When we see a new element greater than `B`, the number of valid subarrays ending at this position is 0.\r\n\r\n<iframe src=\"https://leetcode.com/playground/SHWXFYBb/shared\" frameBorder=\"0\" width=\"100%\" height=\"293\" name=\"SHWXFYBb\"></iframe>\r\n\r\n**Complexity Analysis**\r\n\r\n* Time Complexity:  $$O(N)$$, where $$N$$ is the length of `A`.\r\n\r\n* Space Complexity: $$O(1)$$.\r\n\r\n---\r\n\r\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "419",
+      "count": 11,
+      "average": 4.454,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[2,1,4,3]\n2\n3",
+  "metaData": "{\r\n  \"name\": \"numSubarrayBoundedMax\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"A\",\r\n      \"type\": \"integer[]\"\r\n    },\r\n    {\r\n      \"name\": \"L\",\r\n      \"type\": \"integer\"\r\n    },\r\n    {\r\n      \"name\": \"R\",\r\n      \"type\": \"integer\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

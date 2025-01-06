@@ -1,0 +1,109 @@
+{
+  "questionId": "346",
+  "questionFrontendId": "346",
+  "boundTopicId": null,
+  "title": "Moving Average from Data Stream",
+  "titleSlug": "moving-average-from-data-stream",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.</p>\r\n\r\n<p><strong>Example:</strong></p>\r\n\r\n<pre>\r\nMovingAverage m = new MovingAverage(3);\r\nm.next(1) = 1\r\nm.next(10) = (1 + 10) / 2\r\nm.next(3) = (1 + 10 + 3) / 3\r\nm.next(5) = (10 + 3 + 5) / 3\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "isPaidOnly": true,
+  "difficulty": "Easy",
+  "likes": 405,
+  "dislikes": 46,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Design",
+      "slug": "design"
+    },
+    {
+      "name": "Queue",
+      "slug": "queue"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 4}, {\"taggedByAdmin\": false, \"name\": \"Microsoft\", \"slug\": \"microsoft\", \"timesEncountered\": 2}, {\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 2}], \"3\": [{\"taggedByAdmin\": false, \"name\": \"Facebook\", \"slug\": \"facebook\", \"timesEncountered\": 8}, {\"taggedByAdmin\": false, \"name\": \"Bloomberg\", \"slug\": \"bloomberg\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Twitter\", \"slug\": \"twitter\", \"timesEncountered\": 3}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Uber\", \"slug\": \"uber\", \"timesEncountered\": 5}, {\"taggedByAdmin\": false, \"name\": \"Indeed\", \"slug\": \"indeed\", \"timesEncountered\": 2}]}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class MovingAverage {\npublic:\n    /** Initialize your data structure here. */\n    MovingAverage(int size) {\n        \n    }\n    \n    double next(int val) {\n        \n    }\n};\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * MovingAverage* obj = new MovingAverage(size);\n * double param_1 = obj->next(val);\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class MovingAverage {\n\n    /** Initialize your data structure here. */\n    public MovingAverage(int size) {\n        \n    }\n    \n    public double next(int val) {\n        \n    }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * MovingAverage obj = new MovingAverage(size);\n * double param_1 = obj.next(val);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class MovingAverage(object):\n\n    def __init__(self, size):\n        \"\"\"\n        Initialize your data structure here.\n        :type size: int\n        \"\"\"\n        \n\n    def next(self, val):\n        \"\"\"\n        :type val: int\n        :rtype: float\n        \"\"\"\n        \n\n\n# Your MovingAverage object will be instantiated and called as such:\n# obj = MovingAverage(size)\n# param_1 = obj.next(val)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class MovingAverage:\n\n    def __init__(self, size: int):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        \n\n    def next(self, val: int) -> float:\n        \n\n\n# Your MovingAverage object will be instantiated and called as such:\n# obj = MovingAverage(size)\n# param_1 = obj.next(val)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} MovingAverage;\n\n/** Initialize your data structure here. */\n\nMovingAverage* movingAverageCreate(int size) {\n    \n}\n\ndouble movingAverageNext(MovingAverage* obj, int val) {\n  \n}\n\nvoid movingAverageFree(MovingAverage* obj) {\n    \n}\n\n/**\n * Your MovingAverage struct will be instantiated and called as such:\n * MovingAverage* obj = movingAverageCreate(size);\n * double param_1 = movingAverageNext(obj, val);\n \n * movingAverageFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class MovingAverage {\n\n    /** Initialize your data structure here. */\n    public MovingAverage(int size) {\n        \n    }\n    \n    public double Next(int val) {\n        \n    }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * MovingAverage obj = new MovingAverage(size);\n * double param_1 = obj.Next(val);\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * Initialize your data structure here.\n * @param {number} size\n */\nvar MovingAverage = function(size) {\n    \n};\n\n/** \n * @param {number} val\n * @return {number}\n */\nMovingAverage.prototype.next = function(val) {\n    \n};\n\n/** \n * Your MovingAverage object will be instantiated and called as such:\n * var obj = new MovingAverage(size)\n * var param_1 = obj.next(val)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class MovingAverage\n\n=begin\n    Initialize your data structure here.\n    :type size: Integer\n=end\n    def initialize(size)\n        \n    end\n\n\n=begin\n    :type val: Integer\n    :rtype: Float\n=end\n    def next(val)\n        \n    end\n\n\nend\n\n# Your MovingAverage object will be instantiated and called as such:\n# obj = MovingAverage.new(size)\n# param_1 = obj.next(val)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\nclass MovingAverage {\n\n    /** Initialize your data structure here. */\n    init(_ size: Int) {\n        \n    }\n    \n    func next(_ val: Int) -> Double {\n        \n    }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * let obj = MovingAverage(size)\n * let ret_1: Double = obj.next(val)\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type MovingAverage struct {\n    \n}\n\n\n/** Initialize your data structure here. */\nfunc Constructor(size int) MovingAverage {\n    \n}\n\n\nfunc (this *MovingAverage) Next(val int) float64 {\n    \n}\n\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * obj := Constructor(size);\n * param_1 := obj.Next(val);\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class MovingAverage(_size: Int) {\n\n    /** Initialize your data structure here. */\n    \n\n    def next(`val`: Int): Double = {\n        \n    }\n\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * var obj = new MovingAverage(size)\n * var param_1 = obj.next(`val`)\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class MovingAverage(size: Int) {\n\n    /** Initialize your data structure here. */\n    \n\n    fun next(`val`: Int): Double {\n        \n    }\n\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * var obj = MovingAverage(size)\n * var param_1 = obj.next(`val`)\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct MovingAverage {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl MovingAverage {\n\n    /** Initialize your data structure here. */\n    fn new(size: i32) -> Self {\n        \n    }\n    \n    fn next(&self, val: i32) -> f64 {\n        \n    }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * let obj = MovingAverage::new(size);\n * let ret_1: f64 = obj.next(val);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class MovingAverage {\n    /**\n     * Initialize your data structure here.\n     * @param Integer $size\n     */\n    function __construct($size) {\n        \n    }\n  \n    /**\n     * @param Integer $val\n     * @return Float\n     */\n    function next($val) {\n        \n    }\n}\n\n/**\n * Your MovingAverage object will be instantiated and called as such:\n * $obj = MovingAverage($size);\n * $ret_1 = $obj->next($val);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"98K\", \"totalSubmission\": \"143.2K\", \"totalAcceptedRaw\": 98043, \"totalSubmissionRaw\": 143242, \"acRate\": \"68.4%\"}",
+  "hints": [],
+  "solution": {
+    "id": "777",
+    "canSeeDetail": true,
+    "url": "/articles/moving-average-from-data-stream/",
+    "content": "[TOC]\r\n\r\n## Solution\r\n\r\n---\r\n#### Approach 1: Array or List\r\n\r\n**Intuition**\r\n\r\nFollowing the description of the problem, we could simply keep track of all the incoming values with the data structure of *Array* or *List*. Then from the data structure, later we retrieve the necessary elements to calculate the average. \r\n\r\n![pic](../Figures/346/346_array.png)\r\n\r\n**Algorithm**\r\n\r\n- First, we initialize a variable `queue` to store the values from the data stream, and the variable `n` for the size of the moving window.\r\n\r\n- At each invocation of `next(val)`, we first append the value to the queue. We then retrieve the last `n` values from the queue, in order to calculate the average. \r\n\r\n<iframe src=\"https://leetcode.com/playground/Yf8sdMTA/shared\" frameBorder=\"0\" width=\"100%\" height=\"344\" name=\"Yf8sdMTA\"></iframe>\r\n\r\n\r\n\r\n**Complexity**\r\n\r\n- Time Complexity: $$\\mathcal{O}(N)$$ where $$N$$ is the size of the moving window, since we need to retrieve $$N$$ elements from the queue at each invocation of `next(val)` function.\r\n<br/>\r\n- Space Complexity: $$\\mathcal{O}(M)$$, where $$M$$ is the length of the queue which would grow at each invocation of the `next(val)` function.\r\n<br/>\r\n<br/>\r\n\r\n\r\n---\r\n#### Approach 2: Double-ended Queue\r\n\r\n**Intuition**\r\n\r\nWe could do better than the first approach in both time and space complexity.\r\n\r\n>First of all, one might notice that we do not need to keep all values from the data stream, but rather the last `n` values which falls into the moving window.\r\n\r\nBy definition of the moving window, at each step, we add a new element to the window, and at the same time we remove the oldest element from the window. Here, we could apply a data structure called *double-ended queue* (_a.k.a_ deque) to implement the moving window, which would have the constant time complexity ($$\\mathcal{O}(1)$$) to add or remove an element from both its ends. With the deque, we could reduce the space complexity down to $$\\mathcal{O}(N)$$ where $$N$$ is the size of the moving window.\r\n\r\n![pic](../Figures/346/346_deque.png)\r\n\r\n>Secondly, to calculate the sum, we do not need to reiterate the elements in the moving window.\r\n\r\nWe could keep the sum of the previous moving window, then in order to obtain the sum of the new moving window, we simply add the new element and deduce the oldest element. With this measure, we then can reduce the time complexity to constant.\r\n\r\n**Algorithm**\r\n\r\nHere is the definition of the _deque_ from Python. We have similar implementation of deque in other programming languages such as Java.\r\n\r\n>Deques are a generalization of stacks and queues (the name is pronounced `deck` and is short for `double-ended queue`). Deques support thread-safe, memory efficient appends and pops from either side of the deque with approximately the same O(1) performance in either direction.\r\n\r\nFollow the intuition, we replace the queue with the _deque_ and add a new variable `window_sum` in order to calculate the sum of moving window in constant time.\r\n\r\n<iframe src=\"https://leetcode.com/playground/omRCzmqa/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"omRCzmqa\"></iframe>\r\n\r\n\r\n\r\n**Complexity**\r\n\r\n- Time Complexity: $$\\mathcal{O}(1)$$, as we explained in intuition.\r\n<br/>\r\n- Space Complexity: $$\\mathcal{O}(N)$$, where $$N$$ is the size of the moving window.\r\n<br/>\r\n<br/>\r\n\r\n\r\n---\r\n#### Approach 3: Circular Queue with Array\r\n\r\n**Intuition**\r\n\r\nOther than the _deque_ data structure, one could also apply another fun data structure called `circular queue`, which is basically a queue with the circular shape.\r\n\r\n![pic](../Figures/346/346_circular_queue.png)\r\n\r\n- The major advantage of circular queue is that by adding a new element to a full circular queue, it automatically discards the oldest element. Unlike deque, we do not need to explicitly remove the oldest element.\r\n<br/>\r\n- Another advantage of circular queue is that a single index suffices to keep track of both ends of the queue, unlike deque where we have to keep a pointer for each end.\r\n\r\n**Algorithm**\r\n\r\nNo need to resort to any library, one could easily implement a circular queue with a fixed-size array. The key to the implementation is the correlation between the index of `head` and `tail` elements, which we could summarize in the following formula:\r\n\r\n$$\r\n    \\text{tail} = (\\text{head} + 1) \\mod \\text{size}\r\n$$\r\n\r\nIn other words, the `tail` element is right next to the `head` element. Once we move the head forward, we would overwrite the previous tail element.\r\n\r\n![pic](../Figures/346/346_snake.png)\r\n\r\n<iframe src=\"https://leetcode.com/playground/JoSDQcR9/shared\" frameBorder=\"0\" width=\"100%\" height=\"378\" name=\"JoSDQcR9\"></iframe>\r\n\r\n\r\n\r\n**Complexity**\r\n\r\n- Time Complexity: $$\\mathcal{O}(1)$$, as we can see that there is no loop in the `next(val)` function.\r\n<br/>\r\n- Space Complexity: $$\\mathcal{O}(N)$$, where $$N$$ is the size of the circular queue.\r\n\r\n\r\n---\r\n\r\nAnalysis written by @[liaison](https://leetcode.com/liaison/)\r\nand @[andvary](https://leetcode.com/andvary/)",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "762",
+      "count": 15,
+      "average": 4.467,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[\"MovingAverage\",\"next\",\"next\",\"next\",\"next\"]\n[[3],[1],[10],[3],[5]]",
+  "metaData": "{\r\n    \"classname\": \"MovingAverage\",\r\n    \"constructor\": {\r\n        \"params\": [\r\n            {\r\n                \"type\": \"integer\",\r\n                \"name\": \"size\"\r\n            }\r\n        ],\r\n        \"comment\": \"Initialize your data structure here.\"\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"next\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"val\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"double\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

@@ -1,0 +1,105 @@
+{
+  "questionId": "1176",
+  "questionFrontendId": "1244",
+  "boundTopicId": null,
+  "title": "Design A Leaderboard",
+  "titleSlug": "design-a-leaderboard",
+  "categoryTitle": "Algorithms",
+  "content": "<p>Design a Leaderboard class, which has 3 functions:</p>\n\n<ol>\n\t<li><code>addScore(playerId, score)</code>: Update the leaderboard by adding <code>score</code> to the given player&#39;s score. If there is no player with such id in the leaderboard, add him to the leaderboard with the given <code>score</code>.</li>\n\t<li><code>top(K)</code>: Return the score sum of the top <code>K</code> players.</li>\n\t<li><code>reset(playerId)</code>: Reset the score of the player with the given id&nbsp;to 0. It is guaranteed that the player was added to the leaderboard before calling this function.</li>\n</ol>\n\n<p>Initially, the leaderboard is empty.</p>\n\n<p>&nbsp;</p>\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<b>Input: </b>\n[&quot;Leaderboard&quot;,&quot;addScore&quot;,&quot;addScore&quot;,&quot;addScore&quot;,&quot;addScore&quot;,&quot;addScore&quot;,&quot;top&quot;,&quot;reset&quot;,&quot;reset&quot;,&quot;addScore&quot;,&quot;top&quot;]\n[[],[1,73],[2,56],[3,39],[4,51],[5,4],[1],[1],[2],[2,51],[3]]\n<b>Output: </b>\n[null,null,null,null,null,null,73,null,null,null,141]\n\n<b>Explanation: </b>\nLeaderboard leaderboard = new Leaderboard ();\nleaderboard.addScore(1,73);   // leaderboard = [[1,73]];\nleaderboard.addScore(2,56);   // leaderboard = [[1,73],[2,56]];\nleaderboard.addScore(3,39);   // leaderboard = [[1,73],[2,56],[3,39]];\nleaderboard.addScore(4,51);   // leaderboard = [[1,73],[2,56],[3,39],[4,51]];\nleaderboard.addScore(5,4);    // leaderboard = [[1,73],[2,56],[3,39],[4,51],[5,4]];\nleaderboard.top(1);           // returns 73;\nleaderboard.reset(1);         // leaderboard = [[2,56],[3,39],[4,51],[5,4]];\nleaderboard.reset(2);         // leaderboard = [[3,39],[4,51],[5,4]];\nleaderboard.addScore(2,51);   // leaderboard = [[2,51],[3,39],[4,51],[5,4]];\nleaderboard.top(3);           // returns 141 = 51 + 51 + 39;\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= playerId, K &lt;= 10000</code></li>\n\t<li>It&#39;s guaranteed that <code>K</code> is less than or equal to the current number of players.</li>\n\t<li><code>1 &lt;= score&nbsp;&lt;= 100</code></li>\n\t<li>There will be at most <code>1000</code>&nbsp;function calls.</li>\n</ul>\n",
+  "isPaidOnly": true,
+  "difficulty": "Medium",
+  "likes": 48,
+  "dislikes": 36,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Hash Table",
+      "slug": "hash-table"
+    },
+    {
+      "name": "Sort",
+      "slug": "sort"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": true, \"name\": \"Wayfair\", \"slug\": \"wayfair\", \"timesEncountered\": 0}], \"1\": [], \"2\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Leaderboard {\r\npublic:\r\n    Leaderboard() {\r\n        \r\n    }\r\n    \r\n    void addScore(int playerId, int score) {\r\n        \r\n    }\r\n    \r\n    int top(int K) {\r\n        \r\n    }\r\n    \r\n    void reset(int playerId) {\r\n        \r\n    }\r\n};\r\n\r\n/**\r\n * Your Leaderboard object will be instantiated and called as such:\r\n * Leaderboard* obj = new Leaderboard();\r\n * obj->addScore(playerId,score);\r\n * int param_2 = obj->top(K);\r\n * obj->reset(playerId);\r\n */"
+    },
+    {
+      "lang": "Java",
+      "code": "class Leaderboard {\n\n    public Leaderboard() {\n        \n    }\n    \n    public void addScore(int playerId, int score) {\n        \n    }\n    \n    public int top(int K) {\n        \n    }\n    \n    public void reset(int playerId) {\n        \n    }\n}\n\n/**\n * Your Leaderboard object will be instantiated and called as such:\n * Leaderboard obj = new Leaderboard();\n * obj.addScore(playerId,score);\n * int param_2 = obj.top(K);\n * obj.reset(playerId);\n */"
+    },
+    {
+      "lang": "Python",
+      "code": "class Leaderboard(object):\n\n    def __init__(self):\n        \n\n    def addScore(self, playerId, score):\n        \"\"\"\n        :type playerId: int\n        :type score: int\n        :rtype: None\n        \"\"\"\n        \n\n    def top(self, K):\n        \"\"\"\n        :type K: int\n        :rtype: int\n        \"\"\"\n        \n\n    def reset(self, playerId):\n        \"\"\"\n        :type playerId: int\n        :rtype: None\n        \"\"\"\n        \n\n\n# Your Leaderboard object will be instantiated and called as such:\n# obj = Leaderboard()\n# obj.addScore(playerId,score)\n# param_2 = obj.top(K)\n# obj.reset(playerId)"
+    },
+    {
+      "lang": "Python3",
+      "code": "class Leaderboard:\n\n    def __init__(self):\n        \n\n    def addScore(self, playerId: int, score: int) -> None:\n        \n\n    def top(self, K: int) -> int:\n        \n\n    def reset(self, playerId: int) -> None:\n        \n\n\n# Your Leaderboard object will be instantiated and called as such:\n# obj = Leaderboard()\n# obj.addScore(playerId,score)\n# param_2 = obj.top(K)\n# obj.reset(playerId)"
+    },
+    {
+      "lang": "C",
+      "code": "\n\n\ntypedef struct {\n    \n} Leaderboard;\n\n\nLeaderboard* leaderboardCreate() {\n    \n}\n\nvoid leaderboardAddScore(Leaderboard* obj, int playerId, int score) {\n  \n}\n\nint leaderboardTop(Leaderboard* obj, int K) {\n  \n}\n\nvoid leaderboardReset(Leaderboard* obj, int playerId) {\n  \n}\n\nvoid leaderboardFree(Leaderboard* obj) {\n    \n}\n\n/**\n * Your Leaderboard struct will be instantiated and called as such:\n * Leaderboard* obj = leaderboardCreate();\n * leaderboardAddScore(obj, playerId, score);\n \n * int param_2 = leaderboardTop(obj, K);\n \n * leaderboardReset(obj, playerId);\n \n * leaderboardFree(obj);\n*/"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Leaderboard {\r\n\r\n    public Leaderboard() {\r\n        \r\n    }\r\n    \r\n    public void AddScore(int playerId, int score) {\r\n        \r\n    }\r\n    \r\n    public int Top(int K) {\r\n        \r\n    }\r\n    \r\n    public void Reset(int playerId) {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your Leaderboard object will be instantiated and called as such:\r\n * Leaderboard obj = new Leaderboard();\r\n * obj.AddScore(playerId,score);\r\n * int param_2 = obj.Top(K);\r\n * obj.Reset(playerId);\r\n */"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "\nvar Leaderboard = function() {\n    \n};\n\n/** \n * @param {number} playerId \n * @param {number} score\n * @return {void}\n */\nLeaderboard.prototype.addScore = function(playerId, score) {\n    \n};\n\n/** \n * @param {number} K\n * @return {number}\n */\nLeaderboard.prototype.top = function(K) {\n    \n};\n\n/** \n * @param {number} playerId\n * @return {void}\n */\nLeaderboard.prototype.reset = function(playerId) {\n    \n};\n\n/** \n * Your Leaderboard object will be instantiated and called as such:\n * var obj = new Leaderboard()\n * obj.addScore(playerId,score)\n * var param_2 = obj.top(K)\n * obj.reset(playerId)\n */"
+    },
+    {
+      "lang": "Ruby",
+      "code": "class Leaderboard\r\n    def initialize()\r\n        \r\n    end\r\n\r\n\r\n=begin\r\n    :type player_id: Integer\r\n    :type score: Integer\r\n    :rtype: Void\r\n=end\r\n    def add_score(player_id, score)\r\n        \r\n    end\r\n\r\n\r\n=begin\r\n    :type k: Integer\r\n    :rtype: Integer\r\n=end\r\n    def top(k)\r\n        \r\n    end\r\n\r\n\r\n=begin\r\n    :type player_id: Integer\r\n    :rtype: Void\r\n=end\r\n    def reset(player_id)\r\n        \r\n    end\r\n\r\n\r\nend\r\n\r\n# Your Leaderboard object will be instantiated and called as such:\r\n# obj = Leaderboard.new()\r\n# obj.add_score(player_id, score)\r\n# param_2 = obj.top(k)\r\n# obj.reset(player_id)"
+    },
+    {
+      "lang": "Swift",
+      "code": "\r\nclass Leaderboard {\r\n\r\n    init() {\r\n        \r\n    }\r\n    \r\n    func addScore(_ playerId: Int, _ score: Int) {\r\n        \r\n    }\r\n    \r\n    func top(_ K: Int) -> Int {\r\n        \r\n    }\r\n    \r\n    func reset(_ playerId: Int) {\r\n        \r\n    }\r\n}\r\n\r\n/**\r\n * Your Leaderboard object will be instantiated and called as such:\r\n * let obj = Leaderboard()\r\n * obj.addScore(playerId, score)\r\n * let ret_2: Int = obj.top(K)\r\n * obj.reset(playerId)\r\n */"
+    },
+    {
+      "lang": "Go",
+      "code": "type Leaderboard struct {\r\n    \r\n}\r\n\r\n\r\nfunc Constructor() Leaderboard {\r\n    \r\n}\r\n\r\n\r\nfunc (this *Leaderboard) AddScore(playerId int, score int)  {\r\n    \r\n}\r\n\r\n\r\nfunc (this *Leaderboard) Top(K int) int {\r\n    \r\n}\r\n\r\n\r\nfunc (this *Leaderboard) Reset(playerId int)  {\r\n    \r\n}\r\n\r\n\r\n/**\r\n * Your Leaderboard object will be instantiated and called as such:\r\n * obj := Constructor();\r\n * obj.AddScore(playerId,score);\r\n * param_2 := obj.Top(K);\r\n * obj.Reset(playerId);\r\n */"
+    },
+    {
+      "lang": "Scala",
+      "code": "class Leaderboard() {\r\n\r\n    def addScore(playerId: Int, score: Int) {\r\n        \r\n    }\r\n\r\n    def top(K: Int): Int = {\r\n        \r\n    }\r\n\r\n    def reset(playerId: Int) {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your Leaderboard object will be instantiated and called as such:\r\n * var obj = new Leaderboard()\r\n * obj.addScore(playerId,score)\r\n * var param_2 = obj.top(K)\r\n * obj.reset(playerId)\r\n */"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Leaderboard() {\r\n\r\n    fun addScore(playerId: Int, score: Int) {\r\n        \r\n    }\r\n\r\n    fun top(K: Int): Int {\r\n        \r\n    }\r\n\r\n    fun reset(playerId: Int) {\r\n        \r\n    }\r\n\r\n}\r\n\r\n/**\r\n * Your Leaderboard object will be instantiated and called as such:\r\n * var obj = Leaderboard()\r\n * obj.addScore(playerId,score)\r\n * var param_2 = obj.top(K)\r\n * obj.reset(playerId)\r\n */"
+    },
+    {
+      "lang": "Rust",
+      "code": "struct Leaderboard {\n\n}\n\n\n/** \n * `&self` means the method takes an immutable reference.\n * If you need a mutable reference, change it to `&mut self` instead.\n */\nimpl Leaderboard {\n\n    fn new() -> Self {\n        \n    }\n    \n    fn add_score(&self, player_id: i32, score: i32) {\n        \n    }\n    \n    fn top(&self, k: i32) -> i32 {\n        \n    }\n    \n    fn reset(&self, player_id: i32) {\n        \n    }\n}\n\n/**\n * Your Leaderboard object will be instantiated and called as such:\n * let obj = Leaderboard::new();\n * obj.add_score(playerId, score);\n * let ret_2: i32 = obj.top(K);\n * obj.reset(playerId);\n */"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Leaderboard {\n    /**\n     */\n    function __construct() {\n        \n    }\n  \n    /**\n     * @param Integer $playerId\n     * @param Integer $score\n     * @return NULL\n     */\n    function addScore($playerId, $score) {\n        \n    }\n  \n    /**\n     * @param Integer $K\n     * @return Integer\n     */\n    function top($K) {\n        \n    }\n  \n    /**\n     * @param Integer $playerId\n     * @return NULL\n     */\n    function reset($playerId) {\n        \n    }\n}\n\n/**\n * Your Leaderboard object will be instantiated and called as such:\n * $obj = Leaderboard();\n * $obj->addScore($playerId, $score);\n * $ret_2 = $obj->top($K);\n * $obj->reset($playerId);\n */"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"3K\", \"totalSubmission\": \"5.5K\", \"totalAcceptedRaw\": 2977, \"totalSubmissionRaw\": 5522, \"acRate\": \"53.9%\"}",
+  "hints": [
+    "What data structure can we use to keep the players' data?",
+    "Keep a map (dictionary) of player scores.",
+    "For each top(K) function call, find the maximum K scores and add them."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[\"Leaderboard\",\"addScore\",\"addScore\",\"addScore\",\"addScore\",\"addScore\",\"top\",\"reset\",\"reset\",\"addScore\",\"top\"]\n[[],[1,73],[2,56],[3,39],[4,51],[5,4],[1],[1],[2],[2,51],[3]]",
+  "metaData": "{\r\n    \"classname\": \"Leaderboard\",\r\n    \"maxbytesperline\": 200000,\r\n    \"constructor\": {\r\n        \"params\": []\r\n    },\r\n    \"methods\": [\r\n        {\r\n            \"name\" : \"addScore\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"playerId\"\r\n                },\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"score\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            }\r\n        },\r\n        {\r\n            \"name\" : \"top\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"K\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"integer\"\r\n            }\r\n        },\r\n        {\r\n            \"name\" : \"reset\",\r\n            \"params\": [\r\n                {\r\n                    \"type\": \"integer\",\r\n                    \"name\": \"playerId\"\r\n                }\r\n            ],\r\n            \"return\": {\r\n                \"type\": \"void\"\r\n            }\r\n        }\r\n    ],\r\n    \"systemdesign\": true,\r\n    \"params\": [\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        },\r\n        {\r\n            \"name\": \"inputs\",\r\n            \"type\": \"integer[]\"\r\n        }\r\n    ],\r\n    \"return\": {\r\n        \"type\": \"list<String>\",\r\n        \"dealloc\": true\r\n    }\r\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

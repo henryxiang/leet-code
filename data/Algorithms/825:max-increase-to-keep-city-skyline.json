@@ -1,0 +1,106 @@
+{
+  "questionId": "825",
+  "questionFrontendId": "807",
+  "boundTopicId": null,
+  "title": "Max Increase to Keep City Skyline",
+  "titleSlug": "max-increase-to-keep-city-skyline",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a 2 dimensional array <code>grid</code>, each value <code>grid[i][j]</code> represents the height of a building located there. We are allowed to increase the height of any number of buildings, by any amount (the amounts&nbsp;can be different for different buildings). Height&nbsp;0 is considered to be a&nbsp;building&nbsp;as well.&nbsp;</p>\r\n\r\n<p>At the end, the &quot;skyline&quot; when viewed from all four directions&nbsp;of the grid, i.e.&nbsp;top, bottom, left, and right,&nbsp;must be the same as the&nbsp;skyline of the original grid. A city&#39;s skyline is the outer contour of the rectangles formed by all the buildings when viewed from a distance. See&nbsp;the following example.</p>\r\n\r\n<p>What is the maximum total sum that the height of the buildings can be increased?</p>\r\n\r\n<pre>\r\n<strong>Example:</strong>\r\n<strong>Input:</strong> grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]\r\n<strong>Output:</strong> 35\r\n<strong>Explanation:</strong> \r\nThe grid is:\r\n[ [3, 0, 8, 4], \r\n  [2, 4, 5, 7],\r\n  [9, 2, 6, 3],\r\n  [0, 3, 1, 0] ]\r\n\r\nThe skyline viewed from top or bottom is: [9, 4, 8, 7]\r\nThe skyline viewed from left or right is: [8, 7, 9, 3]\r\n\r\nThe grid after increasing the height of buildings without affecting skylines is:\r\n\r\ngridNew = [ [8, 4, 8, 7],\r\n            [7, 4, 7, 7],\r\n            [9, 4, 8, 7],\r\n            [3, 3, 3, 3] ]\r\n\r\n</pre>\r\n\r\n<p><strong>Notes: </strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt; grid.length = grid[0].length &lt;= 50</code>.</li>\r\n\t<li>All heights <code>grid[i][j]</code> are in the range <code>[0, 100]</code>.</li>\r\n\t<li>All buildings in <code>grid[i][j]</code> occupy the entire grid cell: that is, they are a <code>1 x 1 x grid[i][j]</code> rectangular prism.</li>\r\n</ul>\r\n",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 683,
+  "dislikes": 189,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [
+    {
+      "username": "awice",
+      "profileUrl": "/awice/",
+      "avatarUrl": "https://assets.leetcode.com/users/awice/avatar_1576905115.png"
+    }
+  ],
+  "topicTags": [],
+  "companyTagStats": "{\"3\": [{\"taggedByAdmin\": false, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 5}], \"2\": [{\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"1\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int maxIncreaseKeepingSkyline(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int maxIncreaseKeepingSkyline(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def maxIncreaseKeepingSkyline(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def maxIncreaseKeepingSkyline(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint maxIncreaseKeepingSkyline(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int MaxIncreaseKeepingSkyline(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar maxIncreaseKeepingSkyline = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef max_increase_keeping_skyline(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func maxIncreaseKeepingSkyline(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func maxIncreaseKeepingSkyline(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def maxIncreaseKeepingSkyline(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun maxIncreaseKeepingSkyline(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn max_increase_keeping_skyline(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function maxIncreaseKeepingSkyline($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"69.3K\", \"totalSubmission\": \"84K\", \"totalAcceptedRaw\": 69336, \"totalSubmissionRaw\": 83991, \"acRate\": \"82.6%\"}",
+  "hints": [],
+  "solution": {
+    "id": "436",
+    "canSeeDetail": true,
+    "url": "/articles/max-increase-to-keep-city-skyline/",
+    "content": "[TOC]\n\n---\n#### Approach #1: Row and Column Maximums [Accepted]\n\n**Intuition and Algorithm**\n\nThe skyline looking from the top is `col_maxes = [max(column_0), max(column_1), ...]`.  Similarly, the skyline from the left is `row_maxes [max(row_0), max(row_1), ...]`\n\nIn particular, each building `grid[r][c]` could become height `min(max(row_r), max(col_c))`, and this is the largest such height.  If it were larger, say `grid[r][c] > max(row_r)`, then the part of the skyline `row_maxes = [..., max(row_r), ...]` would change.\n\nThese increases are also independent (none of them change the skyline), so we can perform them independently.\n\n<iframe src=\"https://leetcode.com/playground/ELQgWsrX/shared\" frameBorder=\"0\" width=\"100%\" height=\"395\" name=\"ELQgWsrX\"></iframe>\n\n**Complexity Analysis**\n\n* Time Complexity:  $$O(N^2)$$, where $$N$$ is the number of rows (and columns) of the grid.  We iterate through every cell of the grid.\n\n* Space Complexity: $$O(N)$$, the space used by `row_maxes` and `col_maxes`.\n\n---\n\nAnalysis written by: [@awice](https://leetcode.com/awice).",
+    "contentTypeId": "107",
+    "rating": {
+      "id": "431",
+      "count": 24,
+      "average": 3.667,
+      "userRating": null
+    }
+  },
+  "status": null,
+  "sampleTestCase": "[[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]",
+  "metaData": "{\r\n  \"name\": \"maxIncreaseKeepingSkyline\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"grid\",\r\n      \"type\": \"integer[][]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"integer\"\r\n  }\r\n}\r\n",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}

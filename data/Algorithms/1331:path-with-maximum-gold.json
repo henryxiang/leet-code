@@ -1,0 +1,95 @@
+{
+  "questionId": "1331",
+  "questionFrontendId": "1219",
+  "boundTopicId": null,
+  "title": "Path with Maximum Gold",
+  "titleSlug": "path-with-maximum-gold",
+  "categoryTitle": "Algorithms",
+  "content": "<p>In a gold mine <code>grid</code>&nbsp;of size <code>m * n</code>,&nbsp;each cell in this mine has an integer representing the amount of gold&nbsp;in that cell,&nbsp;<code>0</code> if it is empty.</p>\r\n\r\n<p>Return the maximum amount of gold you&nbsp;can collect under the conditions:</p>\r\n\r\n<ul>\r\n\t<li>Every time you are located in a cell you will collect all the gold in that cell.</li>\r\n\t<li>From your position you can walk one step to the left, right, up or down.</li>\r\n\t<li>You can&#39;t visit the same cell more than once.</li>\r\n\t<li>Never visit a cell with&nbsp;<code>0</code> gold.</li>\r\n\t<li>You can start and stop collecting gold from&nbsp;<strong>any </strong>position in the grid that has some gold.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> grid = [[0,6,0],[5,8,7],[0,9,0]]\r\n<strong>Output:</strong> 24\r\n<strong>Explanation:</strong>\r\n[[0,6,0],\r\n [5,8,7],\r\n [0,9,0]]\r\nPath to get the maximum gold, 9 -&gt; 8 -&gt; 7.\r\n</pre>\r\n\r\n<p><strong>Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> grid = [[1,0,7],[2,0,6],[3,4,5],[0,3,0],[9,0,20]]\r\n<strong>Output:</strong> 28\r\n<strong>Explanation:</strong>\r\n[[1,0,7],\r\n [2,0,6],\r\n [3,4,5],\r\n [0,3,0],\r\n [9,0,20]]\r\nPath to get the maximum gold, 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5 -&gt; 6 -&gt; 7.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= grid.length,&nbsp;grid[i].length &lt;= 15</code></li>\r\n\t<li><code>0 &lt;= grid[i][j] &lt;= 100</code></li>\r\n\t<li>There are at most <strong>25&nbsp;</strong>cells containing gold.</li>\r\n</ul>",
+  "isPaidOnly": false,
+  "difficulty": "Medium",
+  "likes": 195,
+  "dislikes": 10,
+  "isLiked": null,
+  "similarQuestions": "[]",
+  "contributors": [],
+  "topicTags": [
+    {
+      "name": "Backtracking",
+      "slug": "backtracking"
+    }
+  ],
+  "companyTagStats": "{\"1\": [{\"taggedByAdmin\": true, \"name\": \"Google\", \"slug\": \"google\", \"timesEncountered\": 6}, {\"taggedByAdmin\": false, \"name\": \"Amazon\", \"slug\": \"amazon\", \"timesEncountered\": 2}], \"2\": [], \"3\": []}",
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "code": "class Solution {\npublic:\n    int getMaximumGold(vector<vector<int>>& grid) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "code": "class Solution {\n    public int getMaximumGold(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python",
+      "code": "class Solution(object):\n    def getMaximumGold(self, grid):\n        \"\"\"\n        :type grid: List[List[int]]\n        :rtype: int\n        \"\"\"\n        "
+    },
+    {
+      "lang": "Python3",
+      "code": "class Solution:\n    def getMaximumGold(self, grid: List[List[int]]) -> int:\n        "
+    },
+    {
+      "lang": "C",
+      "code": "\n\nint getMaximumGold(int** grid, int gridSize, int* gridColSize){\n\n}\n\n"
+    },
+    {
+      "lang": "C#",
+      "code": "public class Solution {\n    public int GetMaximumGold(int[][] grid) {\n        \n    }\n}"
+    },
+    {
+      "lang": "JavaScript",
+      "code": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nvar getMaximumGold = function(grid) {\n    \n};"
+    },
+    {
+      "lang": "Ruby",
+      "code": "# @param {Integer[][]} grid\n# @return {Integer}\ndef get_maximum_gold(grid)\n    \nend"
+    },
+    {
+      "lang": "Swift",
+      "code": "class Solution {\n    func getMaximumGold(_ grid: [[Int]]) -> Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Go",
+      "code": "func getMaximumGold(grid [][]int) int {\n    \n}"
+    },
+    {
+      "lang": "Scala",
+      "code": "object Solution {\n    def getMaximumGold(grid: Array[Array[Int]]): Int = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Kotlin",
+      "code": "class Solution {\n    fun getMaximumGold(grid: Array<IntArray>): Int {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "code": "impl Solution {\n    pub fn get_maximum_gold(grid: Vec<Vec<i32>>) -> i32 {\n        \n    }\n}"
+    },
+    {
+      "lang": "PHP",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @return Integer\n     */\n    function getMaximumGold($grid) {\n        \n    }\n}"
+    }
+  ],
+  "stats": "{\"totalAccepted\": \"12.1K\", \"totalSubmission\": \"19.5K\", \"totalAcceptedRaw\": 12078, \"totalSubmissionRaw\": 19461, \"acRate\": \"62.1%\"}",
+  "hints": [
+    "Use recursion to try all such paths and find the one with the maximum value."
+  ],
+  "solution": null,
+  "status": null,
+  "sampleTestCase": "[[0,6,0],[5,8,7],[0,9,0]]",
+  "metaData": "{\n  \"name\": \"getMaximumGold\",\n  \"params\": [\n    {\n      \"name\": \"grid\",\n      \"type\": \"integer[][]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+  "judgerAvailable": true,
+  "judgeType": "large",
+  "mysqlSchemas": [],
+  "enableRunCode": true,
+  "enableTestMode": false,
+  "libraryUrl": null
+}
